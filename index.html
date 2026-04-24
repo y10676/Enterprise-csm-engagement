@@ -210,6 +210,9 @@ td { padding: 12px 14px; font-size: 13px; vertical-align: middle; }
 
 .sum-card[onclick] { cursor: pointer; transition: transform 0.12s ease, box-shadow 0.12s ease; }
 .sum-card[onclick]:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+
+.csm-row-stats .row-stat { cursor: pointer; border-radius: 6px; padding: 4px 8px; transition: background 0.12s ease; }
+.csm-row-stats .row-stat:hover { background: #eef2ff; }
 </style>
 </head>
 <body>
@@ -411,6 +414,17 @@ function renderNoReport() {
   </div>`;
 }
 
+
+function jumpToDetail(type, csm) {
+  const isMonth = gran === 'month';
+  const isWeek = gran === 'week';
+  let tab = '', health = 'all';
+  if (type === 'calls')   tab = isMonth ? 'mcalls'  : (isWeek ? 'wcalls'  : 'calls');
+  else if (type === 'pulses') tab = isMonth ? 'mpulses' : (isWeek ? 'wpulses' : 'pulses');
+  else if (type === 'risks')  { tab = isMonth ? 'mpulses' : (isWeek ? 'wpulses' : 'pulses'); health = 'Concerning'; }
+  if (!tab) return;
+  jumpToTab(tab, csm || 'all', health);
+}
 
 function jumpToTab(tab, csm, health) {
   activeTab = tab;
@@ -1152,6 +1166,20 @@ document.querySelectorAll('[data-filter-health]').forEach(chip => {
 
 // ─── CSM CARD CLICK (click-to-filter) ─────────────────────────
 document.addEventListener('click', function(ev) {
+  // Clickable .row-stat inside a CSM breakdown → jump to detail tab filtered by CSM
+  const stat = ev.target.closest('.csm-row-stats .row-stat');
+  if (stat) {
+    const row = stat.closest('[data-csm]');
+    const csm = row ? row.dataset.csm : 'all';
+    const lblEl = stat.querySelector('.l');
+    const label = (lblEl && lblEl.textContent || '').toLowerCase();
+    let type = null;
+    if (label.includes('call')) type = 'calls';
+    else if (label.includes('pulse')) type = 'pulses';
+    else if (label.includes('risk')) type = 'risks';
+    if (type) { ev.stopPropagation(); jumpToDetail(type, csm); return; }
+  }
+
   const card = ev.target.closest('.csm-card[data-csm], .csm-row[data-csm], .hm-csm-row[data-csm], .acct-csm[data-csm]');
   if (!card) return;
   if (ev.target.closest('a,button,input,.action-checkbox')) return;
