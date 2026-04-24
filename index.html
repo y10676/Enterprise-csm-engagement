@@ -453,8 +453,8 @@ function renderDay(mc, tabsRow, statPills) {
 
 function getDayData(key) {
   if (key === '2026-04-23') return {
-    pills: [['dot-teal','4 Calls'],['dot-amber','1 Cross-coverage'],['dot-grey','4 Active CSMs']],
-    tabs: ['Overview','Calls (4)','Pulses (0)','Action Items (1)'],
+    pills: [['dot-teal','8 Calls'],['dot-purple','0 Pulses'],['dot-amber','4 Actions'],['dot-grey','6 Active CSMs']],
+    tabs: ['Overview','Calls (8)','Pulses (0)','Action Items (4)'],
     overviewHTML: dayOverviewHTML_2026_04_23,
     callsHTML: dayCallsHTML_2026_04_23,
     pulsesHTML: dayPulsesHTML_2026_04_23,
@@ -718,25 +718,28 @@ function dayActionsHTML_Apr23() {
 function dayOverviewHTML_2026_04_23() {
   return `<div class="section-label">Team Activity — Thursday Apr 23</div>
   <div class="overview-grid">
-    <div class="csm-card has-calls" data-csm="riley"><span class="call-badge">1 CALL</span><div class="csm-card-header"><div class="avatar av-riley">RR</div><div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">0</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">15m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">BMC Software · TrustRadius EBR Sync · Cross-coverage with Varun</div></div>
-    <div class="csm-card has-calls" data-csm="nick"><span class="call-badge">1 CALL</span><div class="csm-card-header"><div class="avatar av-grey">NJ</div><div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">0</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">Check Point Software · Platform onboarding · New stakeholder Pedro Yamamoto</div></div>
-    <div class="csm-card has-calls" data-csm="atisha"><span class="call-badge">1 CALL</span><div class="csm-card-header"><div class="avatar av-grey">AW</div><div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">0</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">Strada · Alignment call · Whitespace use cases and MI seat gap</div></div>
-    <div class="csm-card has-calls" data-csm="varun"><span class="call-badge">1 CALL</span><div class="csm-card-header"><div class="avatar av-varun">VT</div><div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">0</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">Autodesk · Whitespace definition · Renewal positioning · Target: Apr 30</div></div>
-    <div class="csm-card no-calls" data-csm="divyam"><div class="csm-card-header"><div class="avatar av-divyam">DD</div><div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No calls logged this period</div></div>
-    <div class="csm-card no-calls" data-csm="pam"><div class="csm-card-header"><div class="avatar av-grey">PH</div><div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No calls logged this period</div></div>
-    <div class="csm-card no-calls" data-csm="rani"><div class="csm-card-header"><div class="avatar av-grey">RG</div><div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No calls logged this period</div></div>
+    <div class="csm-card has-calls" data-csm="varun"><span class="call-badge">2 CALLS</span><div class="csm-card-header"><div class="avatar av-varun">VT</div><div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">DXC Technology · Autodesk — Quarterly review + whitespace file delivery</div></div>
+    <div class="csm-card has-calls" data-csm="pam"><span class="call-badge">2 CALLS</span><div class="csm-card-header"><div class="avatar av-grey">PH</div><div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">90m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">Microsoft · Cisco — Bi-weekly syncs + renewal alignment</div></div>
+    <div class="csm-card has-calls" data-csm="rani"><span class="call-badge">1 CALL</span><div class="csm-card-header"><div class="avatar av-grey">RG</div><div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">Cloudflare — Data hierarchy alignment; May NYC onsite</div></div>
+    <div class="csm-card has-calls" data-csm="atisha"><span class="call-badge">1 CALL</span><div class="csm-card-header"><div class="avatar av-grey">AW</div><div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">Strada — Post-renewal alignment; Salesforce integration</div></div>
+    <div class="csm-card has-calls" data-csm="divyam"><span class="call-badge">1 CALL</span><div class="csm-card-header"><div class="avatar av-divyam">DD</div><div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">Dynatrace — Datafeed upsell strategy; new logo propensity</div></div>
+    <div class="csm-card has-calls" data-csm="nick"><span class="call-badge">1 CALL</span><div class="csm-card-header"><div class="avatar av-grey">NJ</div><div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-grey">—</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">NTT Data — POC scoping; no transcript yet</div></div>
+    <div class="csm-card no-calls" data-csm="riley"><div class="csm-card-header"><div class="avatar av-riley">RR</div><div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No calls logged this period</div></div>
     <div class="csm-card no-calls" data-csm="andy"><div class="csm-card-header"><div class="avatar av-grey">AL</div><div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No calls logged this period</div></div>
   </div>`;
 }
-
 function dayCallsHTML_2026_04_23() {
   return `<div class="table-card"><table>
     <thead><tr><th>Time (PT)</th><th>CSM</th><th>Account</th><th>Duration</th><th>Signal</th></tr></thead>
     <tbody>
-      <tr data-csm="riley" data-health="Healthy" onclick="openModal('call-bmc-ebrdecksync')"><td style="color:#9ca3af;font-size:12px">Apr 23 · 06:45 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-riley">RR</div>Riley Rogers</div></td><td><strong>BMC Software Inc</strong> <span style="font-size:11px;color:#9ca3af">TrustRadius EBR Sync</span></td><td>15 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
-      <tr data-csm="nick" data-health="Healthy" onclick="openModal('call-cp-platform')"><td style="color:#9ca3af;font-size:12px">Apr 23 · 08:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">NJ</div>Nick Johnson</div></td><td><strong>Check Point Software</strong> <span style="font-size:11px;color:#9ca3af">Platform Training</span></td><td>60 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
-      <tr data-csm="atisha" data-health="Healthy" onclick="openModal('call-strada-align')"><td style="color:#9ca3af;font-size:12px">Apr 23 · 08:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">AW</div>Atisha Waghela</div></td><td><strong>Strada U.S. Professional Services</strong> <span style="font-size:11px;color:#9ca3af">Alignment</span></td><td>30 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
-      <tr data-csm="varun" data-health="Healthy" onclick="openModal('call-autodesk-ws')"><td style="color:#9ca3af;font-size:12px">Apr 23 · 10:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-varun">VT</div>Varun Tiwari</div></td><td><strong>Autodesk Inc</strong> <span style="font-size:11px;color:#9ca3af">Whitespace File</span></td><td>30 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
+      <tr data-csm="varun" data-health="Concerning" onclick="openModal('call-dxc-apr23')"><td style="color:#9ca3af;font-size:12px">Apr 23 · 2:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-varun">VT</div>Varun Tiwari</div></td><td><strong>DXC Technology</strong> <span style="font-size:11px;color:#9ca3af">Quarterly Review</span></td><td>30 min</td><td><span class="badge badge-concerning">🟡 Concerning</span></td></tr>
+      <tr data-csm="nick" data-health="Pending" onclick="openModal('call-ntt-apr23')"><td style="color:#9ca3af;font-size:12px">Apr 23 · 2:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">NJ</div>Nick Johnson</div></td><td><strong>NTT Data</strong> <span style="font-size:11px;color:#9ca3af">POC Discussion</span></td><td>30 min</td><td><span class="badge badge-pending">⚪ Pending</span></td></tr>
+      <tr data-csm="rani" data-health="Healthy" onclick="openModal('call-cf-apr23')"><td style="color:#9ca3af;font-size:12px">Apr 23 · 3:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">RG</div>Rani Guy</div></td><td><strong>Cloudflare</strong> <span style="font-size:11px;color:#9ca3af">Data Hierarchy Alignment</span></td><td>30 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
+      <tr data-csm="atisha" data-health="Healthy" onclick="openModal('call-strada-apr23')"><td style="color:#9ca3af;font-size:12px">Apr 23 · 3:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">AW</div>Atisha Waghela</div></td><td><strong>Strada U.S. Professional Services</strong> <span style="font-size:11px;color:#9ca3af">Post-Renewal Alignment</span></td><td>30 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
+      <tr data-csm="divyam" data-health="Healthy" onclick="openModal('call-dynatrace-apr23')"><td style="color:#9ca3af;font-size:12px">Apr 23 · 4:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-divyam">DD</div>Divyam Dewan</div></td><td><strong>Dynatrace</strong> <span style="font-size:11px;color:#9ca3af">Datafeed Strategy</span></td><td>30 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
+      <tr data-csm="varun" data-health="Healthy" onclick="openModal('call-autodesk-apr23')"><td style="color:#9ca3af;font-size:12px">Apr 23 · 5:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-varun">VT</div>Varun Tiwari</div></td><td><strong>Autodesk Inc</strong> <span style="font-size:11px;color:#9ca3af">Whitespace File</span></td><td>30 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
+      <tr data-csm="pam" data-health="Pending" onclick="openModal('call-msft-apr23')"><td style="color:#9ca3af;font-size:12px">Apr 23 · 5:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">PH</div>Pam Huck</div></td><td><strong>Microsoft</strong> <span style="font-size:11px;color:#9ca3af">Bi-Weekly Sync</span></td><td>60 min</td><td><span class="badge badge-pending">⚪ Pending</span></td></tr>
+      <tr data-csm="pam" data-health="Healthy" onclick="openModal('call-cisco-apr23')"><td style="color:#9ca3af;font-size:12px">Apr 23 · 7:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">PH</div>Pam Huck</div></td><td><strong>Cisco</strong> <span style="font-size:11px;color:#9ca3af">Market Share Intelligence</span></td><td>30 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
     </tbody>
   </table></div>
   <div class="empty-state" id="calls-empty" style="display:none"><div class="empty-icon">🔍</div>No calls match these filters.</div>`;
@@ -749,9 +752,13 @@ function dayPulsesHTML_2026_04_23() {
 
 function dayActionsHTML_2026_04_23() {
   return `<div class="action-list">
-    <div class="action-item ${doneActions.has(41)?'done':''}" data-csm="riley" id="action-41"><div class="action-checkbox ${doneActions.has(41)?'checked':''}" onclick="toggleAction(41)"></div><div class="action-body"><div class="action-title">Cross-coverage flag: Riley Rogers spoke on BMC (Varun Tiwari's account) — TrustRadius EBR sync</div><div class="action-meta"><span class="urgency-badge urgency-info">INFO</span>Riley Rogers / Varun Tiwari · Varun still owns the HG Platform/MadKudu workstream. No action required, informational.</div></div></div>
+    <div class="action-item ${doneActions.has(51)?'done':''}" data-csm="system" id="action-51"><div class="action-checkbox ${doneActions.has(51)?'checked':''}" onclick="toggleAction(51)"></div><div class="action-body"><div class="action-title">✅ Cross-coverage clean: All 8 calls attributed to correct CSM owners</div><div class="action-meta"><span class="urgency-badge urgency-success">CLEAR</span>No conflicts detected. Clean window.</div></div></div>
+    <div class="action-item ${doneActions.has(52)?'done':''}" data-csm="system" id="action-52"><div class="action-checkbox ${doneActions.has(52)?'checked':''}" onclick="toggleAction(52)"></div><div class="action-body"><div class="action-title">⚠️ NTT Data & Microsoft — No transcripts available</div><div class="action-meta"><span class="urgency-badge urgency-warning">WARNING</span>Both returned has_transcript: false. May be picked up in tomorrow's run.</div></div></div>
+    <div class="action-item ${doneActions.has(53)?'done':''}" data-csm="varun" id="action-53"><div class="action-checkbox ${doneActions.has(53)?'checked':''}" onclick="toggleAction(53)"></div><div class="action-body"><div class="action-title">🔴 DXC Technology — November renewal risk ongoing</div><div class="action-meta"><span class="urgency-badge urgency-critical">CRITICAL</span>Varun Tiwari · AWS QuickSight/agent integration stakeholder alignment pending. $816K + $80K renewal in Discovery.</div></div></div>
+    <div class="action-item ${doneActions.has(54)?'done':''}" data-csm="varun" id="action-54"><div class="action-checkbox ${doneActions.has(54)?'checked':''}" onclick="toggleAction(54)"></div><div class="action-body"><div class="action-title">🔴 Autodesk & Cisco renewals converging</div><div class="action-meta"><span class="urgency-badge urgency-critical">CRITICAL</span>Autodesk $1.48M (Apr 30 close, price increase discussion). Cisco $2.3M ARR (Nov 2026, Project Phoenix active).</div></div></div>
   </div>
   <div class="empty-state" id="actions-empty" style="display:none"><div class="empty-icon">🔍</div>No action items match these filters.</div>`;
+}
 }
 
 
@@ -1104,87 +1111,68 @@ const modals = {
     {label:'Next Steps',body:'Determine if executive outreach to Justin Poole is warranted. Explore if any remaining stakeholders are reachable.'},
   ]},
   // ── Apr 23 Report Modals ────────────────────────────────────
-  'call-hcl-apr23':{ title:'HCL SW — MCP + Clay + LLM Strategy · Apr 22 · 2:30 AM PT', subtitle:'Nick Johnson · 45 min · Zoom · Signal: Healthy', sections:[
-    {label:'What Happened',body:'Nick Johnson led with Angus Hyams and Gavin Padden from HG. Strong engagement from Alexander Knaani Klein (innovation/AI lead), Navneet Kaur, and Mohan K. Discussion centered on using HG data for customer retention via MCP + Clay + internal LLM workflows. Competitive differentiation vs ZoomInfo discussed; data contradictions on Charles Schwab surfaced.'},
-    {label:'Key Signals',body:'✅ HCL team actively interested in expanding HG data usage for customer retention\n✅ AI/MCP use cases resonate strongly — aligns with HCL\'s internal innovation agenda\n✅ Alexander Knaani Klein is a strong internal champion\n⚠️ Data quality questions on Charles Schwab need follow-up response'},
-    {label:'Next Steps',body:'Nick to share HG use cases document with the team next week. Schedule deep dive on data quality questions, addressing ZoomInfo competitive comparison and Charles Schwab data contradiction.'},
+  'call-dxc-apr23':{ title:'DXC Technology — Gabriella & HG Quarterly · Apr 23 · 2:00 PM PT', subtitle:'Varun Tiwari · 30 min · Zoom · Signal: Concerning', sections:[
+    {label:'What Happened',body:'Quarterly sync with Gabriella Aston (returned from vacation, platform access reactivated). Discussion covered AI spending opportunities and HG agent strategy integration with AWS QuickSight. Stakeholder alignment pending.'},
+    {label:'Key Signals',body:'✅ Platform access successfully reactivated
+✅ AI/AWS integration opportunities explored
+⚠️ AWS QuickSight / agent integration stakeholder alignment still pending
+⚠️ November renewal risk ongoing: $816K + $80K in Discovery stage'},
+    {label:'Next Steps',body:'Continue budget approval and AWS integration discussions. Coordinate stakeholder alignment meeting. Monitor November renewal timing.'},
   ]},
-  'call-dxc-intent-apr23':{ title:'DXC Technology — Intent Data Integration · Apr 22 · 4:30 AM PT', subtitle:'Varun Tiwari · 30 min · Zoom · Signal: Healthy', sections:[
-    {label:'What Happened',body:'Productive session with Preethi (SalesOps) and Sunil on integrating HG buying intent data into DXC\'s AI-driven account planning workflow built on AWS QuickSight (AQS/MCP environment). Contract amendment discussions progressing — AWS Marketplace emerging as primary funding path.'},
-    {label:'Key Signals',body:'✅ Intent data integration into AQS/MCP AI agent validated as priority use case\n✅ AWS Marketplace funding path being explored — reduces procurement friction\n✅ Sunil trial license active; deeper intent enablement session scheduled\n⚠️ Budget approval and contract ownership transition still in progress internally'},
-    {label:'Next Steps',body:'Sunil trial: schedule deeper intent enablement session. Preethi to coordinate internally on budget approval and contract ownership. Follow up on AWS Marketplace funding path.'},
+  'call-ntt-apr23':{ title:'NTT Data — HGi / POC Discussion · Apr 23 · 2:00 PM PT', subtitle:'Nick Johnson · 30 min · Zoom · No Transcript', sections:[
+    {label:'What Happened',body:'POC scoping call — part of ongoing AI-driven pipeline generation engine series. Prior calls covered seller workflow automation and account insights platform design. Transcript not yet available.'},
+    {label:'Key Signals',body:'✅ POC series progressing through discovery phases
+✅ Multi-call engagement indicates serious evaluation
+⚠️ Transcript unavailable for sentiment analysis'},
+    {label:'Next Steps',body:'Follow up on POC scope and timeline. Expect transcript to be available in next run.'},
   ]},
-  'call-lenovo-apr23':{ title:'Lenovo — RGIP Platform Overview · Apr 22 · 7:00 AM PT', subtitle:'Rani Guy · 25 min · Zoom · Signal: Healthy', sections:[
-    {label:'What Happened',body:'Rani Guy introduced Kristen (new Lenovo stakeholder) to HG Insights Revenue Growth Intelligence Platform (RGIP). Covered firmographics, tech install data, GSI contract data, Cloud maturity modeling, and spend methodology. Kristen is net-new to HG platform and engaged actively throughout.'},
-    {label:'Key Signals',body:'✅ Kristen is a new stakeholder with strong first-call engagement\n✅ Full suite walk-through completed — firmographics, tech installs, GSI contracts, Cloud maturity, spend modeling\n✅ Clear follow-up sessions confirmed: new UI demo + Microsoft Dynamics integration deep-dive\n✅ Positive first impression with new Lenovo contact'},
-    {label:'Next Steps',body:'Schedule new UI demo for Kristen. Set up Microsoft Dynamics integration deep-dive session. Maintain momentum with this new stakeholder.'},
+  'call-cf-apr23':{ title:'Cloudflare — HG Insights Connect · Apr 23 · 3:00 PM PT', subtitle:'Rani Guy · 30 min · Zoom · Signal: Healthy', sections:[
+    {label:'What Happened',body:'Data hierarchy and source-of-truth definition session. Building foundational data structure to support AI-driven sales and marketing. Data harmonization challenges identified. May NYC onsite prep continuing.'},
+    {label:'Key Signals',body:'✅ Strong strategic momentum with multi-stakeholder engagement
+✅ May onsite confirmed with clear agenda
+✅ Data harmonization pathway emerging
+✅ Healthy sentiment throughout'},
+    {label:'Next Steps',body:'Resolve APAC/Japan hierarchy issues. Prepare pre-onsite scoring model gap analysis. Finalize May onsite agenda.'},
   ]},
-  'call-elastic-apr23':{ title:'Elastic — TAM/SAM Alignment · Apr 22 · 8:00 AM PT', subtitle:'Rani Guy · 30 min · Zoom · Signal: Healthy', sections:[
-    {label:'What Happened',body:'Working session to bridge Elastic\'s internal market definitions (based on IDC categories) with HG Insights data, aiming to create a unified TAM/SAM view for sales and marketing. Session with David Adamson, Sydney, Sriraman, and Noelle. Core challenge: HG data doesn\'t map directly to Elastic\'s IDC-based market segmentation.'},
-    {label:'Key Signals',body:'✅ Deep strategic engagement — Elastic team invested in making HG data work within their GTM framework\n✅ Multiple stakeholders engaged across sales and marketing\n✅ Clear use case: unified market definition for seller territory planning\n⚠️ IDC vs HG taxonomy gap needs structured resolution — mapping exercise required'},
-    {label:'Next Steps',body:'Develop mapping between Elastic IDC categories and HG taxonomy. Create unified market definition framework for sales and marketing. Follow up with David Adamson on TAM/SAM model validation.'},
+  'call-strada-apr23':{ title:'Strada U.S. — HG / Alignment Call · Apr 23 · 3:00 PM PT', subtitle:'Atisha Waghela · 30 min · Zoom · Signal: Healthy', sections:[
+    {label:'What Happened',body:'Post-renewal alignment and HG data optimization discussion. Covered sales and territory management use cases. Salesforce integration challenges surfaced. Advanced analytics capabilities and new data fabric model explored for increased coverage. LATAM data questions ongoing.'},
+    {label:'Key Signals',body:'✅ Post-renewal engagement active and strong
+✅ Salesforce integration roadmap clarified
+✅ Advanced analytics capabilities interest noted
+✅ LATAM expansion opportunity identified'},
+    {label:'Next Steps',body:'Address Salesforce integration gaps. Develop data fabric model for expanded coverage. Follow up on LATAM data questions.'},
   ]},
-  'call-cloudflare-apr23':{ title:'Cloudflare — May Onsite Prep · Apr 22 · 9:00 AM PT', subtitle:'Rani Guy · 30 min · Zoom · Signal: Healthy', sections:[
-    {label:'What Happened',body:'Strategic pre-onsite sync with Cloudflare team. Confirmed May onsite agenda forming around data quality, scoring model enhancements, and AI search optimization. Key gaps identified: firmographic data coverage, APAC/Japan hierarchy issues. HG + TrustRadius data blending discussed as seller intelligence layer.'},
-    {label:'Key Signals',body:'✅ May onsite confirmed and agenda forming clearly\n✅ Customer strategically engaged and preparing for deeper collaboration\n✅ HG + TR data blending explored as new seller intelligence use case\n✅ AI search optimization emerging as new GTM use case\n⚠️ APAC/Japan firmographic hierarchy gaps flagged — must be resolved before onsite'},
-    {label:'Next Steps',body:'Resolve APAC/Japan firmographic hierarchy issues. Prepare pre-onsite scoring model gap analysis. Finalize May onsite agenda around data quality, scoring, and AI search optimization.'},
+  'call-dynatrace-apr23':{ title:'Dynatrace → HG Datafeed Collaboration · Apr 23 · 4:00 PM PT', subtitle:'Divyam Dewan · 30 min · Zoom · Signal: Healthy', sections:[
+    {label:'What Happened',body:'Dynatrace strategy session on data feed integration for new logo readiness and propensity-to-buy modeling. Evaluating delivery method: data feed vs. API/direct. Datafeed upsell opportunity active (~$178K potential). 2028 renewal anchors long-term expansion.'},
+    {label:'Key Signals',body:'✅ High-value upsell opportunity ($178K) actively being scoped
+✅ New logo readiness use case validated
+✅ 2028 renewal provides long expansion trajectory
+✅ Healthy engagement throughout'},
+    {label:'Next Steps',body:'Finalize delivery method decision (feed vs API). Quantify ROI for $178K upsell. Schedule implementation planning session.'},
   ]},
-  'call-zendesk-apr23':{ title:'Zendesk — TrustRadius CSM Sync · Apr 22 · 9:30 AM PT', subtitle:'Varun Tiwari · 30 min · Zoom · Signal: Healthy', sections:[
-    {label:'What Happened',body:'Bi-weekly TrustRadius sync with Joyce. Forethought TrustRadius profile exists but is currently inactive/unclaimed. Integration direction — whether Forethought remains standalone or rolls into Zendesk — pending decision post-Relate conference in mid-May. Riley facilitating Forethought profile access. Decision impacts renewal structure.'},
-    {label:'Key Signals',body:'✅ 6 April reviews added via HG research outreach\n✅ Top Rated already secured\n✅ Buyer\'s Choice: 3 more reviews needed by Sept 26 — outreach window May–Aug\n✅ SEO tracking early access opportunity identified\n⚠️ Forethought positioning decision pending mid-May — impacts subscription scope'},
-    {label:'Next Steps',body:'Confirm Forethought integration direction by mid-May. Coordinate SEO early-access participation (Varun to check with James/HG leadership). Schedule June roadmap + renewal alignment session. Plan May–Aug community outreach for Buyer\'s Choice reviews.'},
+  'call-autodesk-apr23':{ title:'Autodesk — HG Whitespace File · Apr 23 · 5:00 PM PT', subtitle:'Varun Tiwari · 30 min · Zoom · Signal: Healthy', sections:[
+    {label:'What Happened',body:'Whitespace account analysis with data filter refinement and one-time export deliverable for Autodesk field team. Renewal conversation initiated; price increase justification underway. $1.48M renewal in Validation stage, close date Apr 30.'},
+    {label:'Key Signals',body:'✅ Renewal conversation initiated with pricing discussion
+✅ $1.48M in Validation — high-value opportunity
+✅ Apr 30 close date sets urgency
+✅ One-time export deliverable demonstrates value'},
+    {label:'Next Steps',body:'Complete price increase justification. Finalize renewal terms before Apr 30. Schedule final approval call this week.'},
   ]},
-  'call-epicor-kinetic-apr23':{ title:'Epicor Kinetic — TrustRadius Product Listings + Event Prep · Apr 22 · 11:00 AM PT', subtitle:'Pam Huck · 30 min · Zoom · Signal: Healthy', sections:[
-    {label:'What Happened',body:'Session focused on updating Kinetic product listings before the Insights Nashville event. Pam\'s team offered assistance with older content refresh. Booth logistics for Nashville confirmed. Target: content updates complete before event date.'},
-    {label:'Key Signals',body:'✅ Epicor actively preparing for Insights Nashville — strong event engagement\n✅ Kinetic product listing update underway with clear deadline\n✅ Pam\'s team assisting with content refresh\n✅ Booth logistics confirmed for Nashville'},
-    {label:'Next Steps',body:'Complete Kinetic product listing updates before Insights Nashville. Finalize booth setup logistics. Coordinate on-site content presentation strategy.'},
+  'call-msft-apr23':{ title:'Microsoft / HG Insights Bi-Weekly · Apr 23 · 5:00 PM PT', subtitle:'Pam Huck · 60 min · Teams · No Transcript', sections:[
+    {label:'What Happened',body:'Recurring bi-weekly cadence call. Teams recording — transcript not available. Active open opportunities include Contract Consolidation ($3M), AIBS Expansion ($500K), and Americas Region renewal ($675K). ICP Builder skill discussion noted in Vitally.'},
+    {label:'Key Signals',body:'✅ $4.175M in active opportunities across three initiatives
+✅ Regular cadence maintained — strong engagement
+✅ ICP Builder capability of interest
+⚠️ Transcript unavailable for sentiment analysis'},
+    {label:'Next Steps',body:'Expect transcript in next run. Prioritize opportunity progress tracking. Advance ICP Builder discussion.'},
   ]},
-  'call-epicor-eclipse-apr23':{ title:'Epicor Eclipse — Bundled Package Campaign · Apr 22 · 11:30 AM PT', subtitle:'Pam Huck · 30 min · Zoom · Signal: Healthy', sections:[
-    {label:'What Happened',body:'Discussion evaluating the bundled package campaign performance for P21 and lead generation through API integrations. Decision made to reschedule follow-up meeting to include Libby and Ben Halverson for broader product scope coverage (including pricing and lead gen structure).'},
-    {label:'Key Signals',body:'✅ Eclipse actively being added to campaign scope — expansion signal\n✅ Stakeholder breadth expanding (Libby, Ben Halverson)\n✅ API integration lead gen pathway under evaluation\n⚠️ Bundled campaign performance under review — P21 scope and pricing to be clarified'},
-    {label:'Next Steps',body:'Reschedule expanded meeting including Libby and Ben Halverson. Cover P21 scope, Eclipse bundle pricing, and API integration lead gen structure. Align on campaign direction before Insights Nashville.'},
-  ]},
-  'pulse-hcl-apr23':{ title:'HCL SW — HG Platform Customer Intelligence', subtitle:'Healthy · Nick Johnson', sections:[
-    {label:'Pulse Explanation',body:'Call: "HCL SW / HG Insights" — Apr 22, 2026, 09:30–10:15 UTC (45 min, Zoom). Nick Johnson led with Angus Hyams and Gavin Padden. Strong engagement from Alexander Knaani Klein (innovation/AI lead), Navneet Kaur, and Mohan K around using HG data for customer retention via MCP + Clay + internal LLM workflows. Competitive discussion vs ZoomInfo; data contradictions on Charles Schwab flagged.'},
-    {label:'Positive Signals',body:'✅ Active interest in MCP + Clay + LLM retention use cases\n✅ Alexander Knaani Klein as internal champion\n✅ Positive tone throughout — account exploring HG data expansion'},
-    {label:'Next Steps',body:'Share HG use cases document with team. Schedule deep dive on data quality questions (Charles Schwab ZoomInfo comparison). Address competitive positioning vs ZoomInfo.'},
-  ]},
-  'pulse-dxc-apr23':{ title:'DXC Technology — HG Intent Data Integration', subtitle:'Healthy · Varun Tiwari', sections:[
-    {label:'Pulse Explanation',body:'"HGI + DXC <> Intent" — Apr 22, 2026, 11:30 UTC (30 min, Zoom). Productive session with Preethi (SalesOps) and Sunil on integrating buying intent data into DXC\'s AI-driven account planning workflow (AWS QuickSight/AQS environment). Contract amendment and AWS Marketplace funding path actively being explored.'},
-    {label:'Positive Signals',body:'✅ Intent data integration into AI agent validated as priority\n✅ AWS Marketplace as funding path reduces procurement friction\n✅ Sunil trial license active with deeper enablement planned'},
-    {label:'Next Steps',body:'Sunil deeper intent enablement session. Preethi to coordinate budget approval and contract ownership internally. Continue AWS Marketplace pathway exploration.'},
-  ]},
-  'pulse-lenovo-apr23':{ title:'Lenovo — RGIP Platform Introduction', subtitle:'Healthy · Rani Guy', sections:[
-    {label:'Pulse Explanation',body:'"HG Insights / Lenovo HG Overview" — Apr 22, 2026, 14:00 UTC (25 min, Zoom). Rani Guy introduced Kristen (new Lenovo stakeholder) to HG RGIP. Covered firmographics, tech install data, GSI contract data, Cloud maturity modeling, and spend methodology. New stakeholder successfully onboarded with clear next steps.'},
-    {label:'Positive Signals',body:'✅ Net-new stakeholder Kristen engaged and actively learning\n✅ Full RGIP suite walked through in one session\n✅ Follow-up sessions confirmed: new UI demo + Dynamics integration deep-dive'},
-    {label:'Next Steps',body:'Schedule new UI demo. Set up Microsoft Dynamics integration deep-dive. Maintain engagement momentum with Kristen.'},
-  ]},
-  'pulse-elastic-apr23':{ title:'Elastic — TAM/SAM Market Intelligence', subtitle:'Healthy · Rani Guy', sections:[
-    {label:'Pulse Explanation',body:'"HG Insights / Elastic" — Apr 22, 2026, 15:00 UTC (30 min, Zoom). Working session to bridge Elastic\'s IDC-based market categories with HG data for a unified TAM/SAM view. Session with David Adamson, Sydney, Sriraman, and Noelle. Deep technical collaboration on market definition mapping for sales territory planning.'},
-    {label:'Positive Signals',body:'✅ Multiple senior stakeholders engaged across sales and marketing\n✅ Strategic use case — unified market definition for territory planning\n✅ Deep collaborative engagement indicates strong partnership intent'},
-    {label:'Next Steps',body:'Develop IDC-to-HG taxonomy mapping. Build unified market definition framework. Validate TAM/SAM model with David Adamson.'},
-  ]},
-  'pulse-cloudflare-apr23':{ title:'Cloudflare — May Onsite Prep', subtitle:'Healthy · Rani Guy', sections:[
-    {label:'Pulse Explanation',body:'"Cloudflare // HG Insights" — Apr 22, 2026, 16:00 UTC (30 min, Zoom). Pre-onsite strategic sync. May onsite confirmed. Agenda forming around data quality, scoring model enhancements, and AI search optimization. APAC/Japan firmographic hierarchy issues and HG + TR data blending discussed.'},
-    {label:'Positive Signals',body:'✅ May onsite locked in — strong strategic engagement\n✅ HG + TR data blending as new seller intelligence use case\n✅ AI search optimization as emerging GTM motion'},
-    {label:'Watch Items',body:'⚠️ APAC/Japan firmographic hierarchy gaps — must resolve before onsite\n⚠️ Firmographic data coverage gaps in scoring model'},
-    {label:'Next Steps',body:'Fix APAC/Japan hierarchy issues. Prepare scoring model gap analysis. Finalize May onsite agenda.'},
-  ]},
-  'pulse-zendesk-apr23':{ title:'Zendesk — TrustRadius CSM Sync', subtitle:'Healthy · Varun Tiwari · Renewal Aug', sections:[
-    {label:'Pulse Explanation',body:'"Zendesk <> TrustRadius CSM Syncs" — Apr 22, 2026, 16:30 UTC (30 min, Zoom). Joyce requested Forethought TrustRadius profile access to explore integration possibilities. Forethought direction (standalone vs Zendesk rollup) pending mid-May. 6 April reviews added; Top Rated secured. Renewal planning initiated for August.'},
-    {label:'Positive Signals',body:'✅ Top Rated secured\n✅ 6 reviews added via research outreach in April\n✅ SEO tracking early access opportunity identified\n✅ Aug renewal scope likely unchanged'},
-    {label:'Watch Items',body:'⚠️ Forethought integration decision pending mid-May — impacts renewal structure\n⚠️ Buyer\'s Choice: 3 more reviews needed by Sept 26'},
-    {label:'Next Steps',body:'Confirm Forethought direction by mid-May. SEO early-access coordination. Schedule June renewal alignment with James. Plan May–Aug outreach for Buyer\'s Choice reviews.'},
-  ]},
-  'pulse-epicor-kinetic-apr23':{ title:'Epicor Kinetic — TrustRadius Lead Acceleration', subtitle:'Healthy · Pam Huck', sections:[
-    {label:'Pulse Explanation',body:'"Epicor - TrustRadius" — Apr 22, 2026, 18:00 UTC (30 min, Zoom). Kinetic product listing updates in progress ahead of Insights Nashville. Content refresh targeting pre-event completion. Pam\'s team assisting. Booth logistics confirmed.'},
-    {label:'Positive Signals',body:'✅ Active product listing maintenance signals customer investment in TrustRadius presence\n✅ Insights Nashville participation confirmed — event engagement strong\n✅ Clear ownership and timeline for content updates'},
-    {label:'Next Steps',body:'Complete Kinetic product listing updates before Insights Nashville. Finalize booth logistics.'},
-  ]},
-  'pulse-epicor-eclipse-apr23':{ title:'Epicor Eclipse — TrustRadius Bundled Package', subtitle:'Healthy · Pam Huck', sections:[
-    {label:'Pulse Explanation',body:'"Epicor Eclipse - TrustRadius" — Apr 22, 2026, 18:30 UTC (30 min, Zoom). Evaluated bundled package campaign performance for P21 and API-based lead gen. Rescheduled follow-up to include Libby and Ben Halverson for broader product scope coverage.'},
-    {label:'Positive Signals',body:'✅ Eclipse being added to TR campaign scope — expansion signal\n✅ Broader stakeholder engagement (Libby, Ben Halverson)\n✅ API integration lead gen pathway under active evaluation'},
-    {label:'Next Steps',body:'Reschedule meeting with Libby and Ben Halverson. Align on P21/Eclipse bundle scope and pricing. Confirm API integration structure before Nashville.'},
+  'call-cisco-apr23':{ title:'Cisco — HG Insights Connect · Apr 23 · 7:00 PM PT', subtitle:'Pam Huck · 30 min · Zoom · Signal: Healthy', sections:[
+    {label:'What Happened',body:'Granular market share intelligence discussion for networking and security. Bridging regional vs. country-level wallet share gap. Proposed solution for country-specific data advancing. Project Phoenix data use case active. $2.3M ARR account with multiple renewals.'},
+    {label:'Key Signals',body:'✅ $2.3M ARR account — significant strategic importance
+✅ Country-level market share solution advancing
+✅ Project Phoenix use case validation
+✅ Multiple renewals converging Nov 2026 (IDL, WarRoom, TR)'},
+    {label:'Next Steps',body:'Finalize country-level data structure. Coordinate multi-product renewal planning. Align Project Phoenix roadmap with Cisco requirements.'},
   ]},
 };
 
