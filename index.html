@@ -296,14 +296,14 @@ td { padding: 12px 14px; font-size: 13px; vertical-align: middle; }
 <script>
 // ─── REPORT DATA ───────────────────────────────────────────────
 const REPORTS = {
-  day: { '2026-04-22': true, '2026-04-21': true, '2026-04-20': true, '2026-04-19': true },
+  day: { '2026-04-23': true, '2026-04-22': true, '2026-04-21': true, '2026-04-20': true, '2026-04-19': true },
   week: { '2026-W17': true },   // ISO week 17 = Apr 20-26
   month: { '2026-04': true },
 };
 
 // ─── STATE ─────────────────────────────────────────────────────
 let gran = 'day';
-let currentKey = '2026-04-22';
+let currentKey = '2026-04-23';
 let activeTab = '';
 let activeCsm = 'all';
 let activeHealth = 'all';
@@ -452,6 +452,14 @@ function renderDay(mc, tabsRow, statPills) {
 }
 
 function getDayData(key) {
+  if (key === '2026-04-23') return {
+    pills: [['dot-teal','4 Calls'],['dot-amber','1 Cross-coverage'],['dot-grey','4 Active CSMs']],
+    tabs: ['Overview','Calls (4)','Pulses (0)','Action Items (1)'],
+    overviewHTML: dayOverviewHTML_2026_04_23,
+    callsHTML: dayCallsHTML_2026_04_23,
+    pulsesHTML: dayPulsesHTML_2026_04_23,
+    actionsHTML: dayActionsHTML_2026_04_23,
+  };
   if (key === '2026-04-22') return {
     pills: [['dot-teal','8 Calls'],['dot-purple','8 Pulses'],['dot-amber','4 Actions']],
     tabs: ['Overview','Calls (8)','Pulses (8)','Action Items (4)'],
@@ -706,6 +714,46 @@ function dayActionsHTML_Apr23() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none"><div class="empty-icon">🔍</div>No action items match these filters.</div>`;
 }
+
+function dayOverviewHTML_2026_04_23() {
+  return `<div class="section-label">Team Activity — Thursday Apr 23</div>
+  <div class="overview-grid">
+    <div class="csm-card has-calls" data-csm="riley"><span class="call-badge">1 CALL</span><div class="csm-card-header"><div class="avatar av-riley">RR</div><div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">0</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">15m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">BMC Software · TrustRadius EBR Sync · Cross-coverage with Varun</div></div>
+    <div class="csm-card has-calls" data-csm="nick"><span class="call-badge">1 CALL</span><div class="csm-card-header"><div class="avatar av-grey">NJ</div><div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">0</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">Check Point Software · Platform onboarding · New stakeholder Pedro Yamamoto</div></div>
+    <div class="csm-card has-calls" data-csm="atisha"><span class="call-badge">1 CALL</span><div class="csm-card-header"><div class="avatar av-grey">AW</div><div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">0</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">Strada · Alignment call · Whitespace use cases and MI seat gap</div></div>
+    <div class="csm-card has-calls" data-csm="varun"><span class="call-badge">1 CALL</span><div class="csm-card-header"><div class="avatar av-varun">VT</div><div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">0</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">Autodesk · Whitespace definition · Renewal positioning · Target: Apr 30</div></div>
+    <div class="csm-card no-calls" data-csm="divyam"><div class="csm-card-header"><div class="avatar av-divyam">DD</div><div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No calls logged this period</div></div>
+    <div class="csm-card no-calls" data-csm="pam"><div class="csm-card-header"><div class="avatar av-grey">PH</div><div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No calls logged this period</div></div>
+    <div class="csm-card no-calls" data-csm="rani"><div class="csm-card-header"><div class="avatar av-grey">RG</div><div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No calls logged this period</div></div>
+    <div class="csm-card no-calls" data-csm="andy"><div class="csm-card-header"><div class="avatar av-grey">AL</div><div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No calls logged this period</div></div>
+  </div>`;
+}
+
+function dayCallsHTML_2026_04_23() {
+  return `<div class="table-card"><table>
+    <thead><tr><th>Time (PT)</th><th>CSM</th><th>Account</th><th>Duration</th><th>Signal</th></tr></thead>
+    <tbody>
+      <tr data-csm="riley" data-health="Healthy" onclick="openModal('call-bmc-ebrdecksync')"><td style="color:#9ca3af;font-size:12px">Apr 23 · 06:45 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-riley">RR</div>Riley Rogers</div></td><td><strong>BMC Software Inc</strong> <span style="font-size:11px;color:#9ca3af">TrustRadius EBR Sync</span></td><td>15 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
+      <tr data-csm="nick" data-health="Healthy" onclick="openModal('call-cp-platform')"><td style="color:#9ca3af;font-size:12px">Apr 23 · 08:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">NJ</div>Nick Johnson</div></td><td><strong>Check Point Software</strong> <span style="font-size:11px;color:#9ca3af">Platform Training</span></td><td>60 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
+      <tr data-csm="atisha" data-health="Healthy" onclick="openModal('call-strada-align')"><td style="color:#9ca3af;font-size:12px">Apr 23 · 08:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">AW</div>Atisha Waghela</div></td><td><strong>Strada U.S. Professional Services</strong> <span style="font-size:11px;color:#9ca3af">Alignment</span></td><td>30 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
+      <tr data-csm="varun" data-health="Healthy" onclick="openModal('call-autodesk-ws')"><td style="color:#9ca3af;font-size:12px">Apr 23 · 10:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-varun">VT</div>Varun Tiwari</div></td><td><strong>Autodesk Inc</strong> <span style="font-size:11px;color:#9ca3af">Whitespace File</span></td><td>30 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
+    </tbody>
+  </table></div>
+  <div class="empty-state" id="calls-empty" style="display:none"><div class="empty-icon">🔍</div>No calls match these filters.</div>`;
+}
+
+function dayPulsesHTML_2026_04_23() {
+  return `<div class="pulse-grid"></div>
+  <div class="empty-state" id="pulses-empty"><div class="empty-icon">∼</div>No pulses created on Apr 23. Sentiment cannot be auto-assigned; create manually in Vitally if needed.</div>`;
+}
+
+function dayActionsHTML_2026_04_23() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has(41)?'done':''}" data-csm="riley" id="action-41"><div class="action-checkbox ${doneActions.has(41)?'checked':''}" onclick="toggleAction(41)"></div><div class="action-body"><div class="action-title">Cross-coverage flag: Riley Rogers spoke on BMC (Varun Tiwari's account) — TrustRadius EBR sync</div><div class="action-meta"><span class="urgency-badge urgency-info">INFO</span>Riley Rogers / Varun Tiwari · Varun still owns the HG Platform/MadKudu workstream. No action required, informational.</div></div></div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none"><div class="empty-icon">🔍</div>No action items match these filters.</div>`;
+}
+
 
 function applyDayFilters() {
   const showHealth = activeTab==='calls'||activeTab==='pulses';
