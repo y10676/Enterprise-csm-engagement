@@ -793,7 +793,7 @@ function toggleAction(n) {
 // WEEK VIEW
 // ═══════════════════════════════════════════════════════════════
 function renderWeek(mc, tabsRow, statPills) {
-  setPills([['dot-teal','16 Calls'],['dot-green','21 Pulses'],['dot-purple','6 Active CSMs'],['dot-amber','3 Concerning']]);
+  setPills([['dot-teal','24 Calls'],['dot-green','21 Pulses'],['dot-purple','6 Active CSMs'],['dot-amber','4 Concerning']]);
   const tabs = ['Summary','CSM Breakdown','Call Log (16)','Pulse Notes (21)'];
   if (!activeTab || !['wsummary','wcsm','wcalls','wpulses'].includes(activeTab)) activeTab='wsummary';
   tabsRow.innerHTML = ['wsummary','wcsm','wcalls','wpulses'].map((k,i)=>
@@ -818,10 +818,10 @@ function weekSummaryHTML() {
   return `
   <div class="section-label">Week of Apr 20–26, 2026 · Overview</div>
   <div class="summary-cards">
-    <div class="sum-card c-teal"><div class="sum-val">16</div><div class="sum-lbl">Calls w/ Transcripts</div><div class="sum-sub">15 accounts · Mon–Wed</div></div>
+    <div class="sum-card c-teal"><div class="sum-val">24</div><div class="sum-lbl">Calls w/ Transcripts</div><div class="sum-sub">22 accounts · Mon–Thu</div></div>
     <div class="sum-card c-green"><div class="sum-val">21</div><div class="sum-lbl">Pulse Notes Created</div><div class="sum-sub">18 Healthy · 3 Concerning</div></div>
     <div class="sum-card c-purple"><div class="sum-val">6</div><div class="sum-lbl">Active CSMs</div><div class="sum-sub">of 8 on the team</div></div>
-    <div class="sum-card c-amber"><div class="sum-val">3</div><div class="sum-lbl">Concerning Signals</div><div class="sum-sub">Cisco · Datadog CD · eHouse</div></div>
+    <div class="sum-card c-amber"><div class="sum-val">4</div><div class="sum-lbl">Concerning Signals</div><div class="sum-sub">Cisco · Datadog CD · eHouse · DXC</div></div>
     <div class="sum-card c-red"><div class="sum-val">1</div><div class="sum-lbl">Churn Risk Escalated</div><div class="sum-sub">eHouse Studio — no engagement</div></div>
     <div class="sum-card c-green"><div class="sum-val">3</div><div class="sum-lbl">Pulse Upgrades</div><div class="sum-sub">Intuit: Concerning→Healthy</div></div>
   </div>
@@ -1047,6 +1047,21 @@ document.querySelectorAll('[data-filter-health]').forEach(chip => {
     if (gran==='day') applyDayFilters();
     else if (gran==='week') applyWeekPulseFilters();
   });
+});
+
+// ─── CSM CARD CLICK (click-to-filter) ─────────────────────────
+document.addEventListener('click', function(ev) {
+  const card = ev.target.closest('.csm-card[data-csm]');
+  if (!card) return;
+  if (ev.target.closest('a,button,input,.action-checkbox')) return;
+  const csm = card.dataset.csm;
+  if (!csm) return;
+  activeCsm = csm;
+  document.querySelectorAll('[data-filter-csm]').forEach(c =>
+    c.classList.toggle('active-chip', c.dataset.filterCsm === activeCsm)
+  );
+  if (gran === 'day') applyDayFilters();
+  else if (gran === 'week') { if (activeTab === 'wpulses') applyWeekPulseFilters(); else applyWeekCSMFilter(); }
 });
 
 // ─── MODAL ─────────────────────────────────────────────────────
