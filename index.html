@@ -207,6 +207,9 @@ td { padding: 12px 14px; font-size: 13px; vertical-align: middle; }
 .hm-csm-row[data-csm], .acct-csm[data-csm] { cursor: pointer; }
 .hm-csm-row[data-csm]:hover td:first-child, .acct-csm[data-csm]:hover { color: #1d4ed8 !important; text-decoration: underline; }
 .csm-card[data-csm], .csm-row[data-csm] { cursor: pointer; }
+
+.sum-card[onclick] { cursor: pointer; transition: transform 0.12s ease, box-shadow 0.12s ease; }
+.sum-card[onclick]:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
 </style>
 </head>
 <body>
@@ -406,6 +409,20 @@ function renderNoReport() {
     <div class="no-report-sub">Daily CSM engagement reports are generated automatically each morning and rolled up weekly and monthly. No report was found for the selected period.</div>
     <div class="no-report-hint" onclick="jumpToLatest()">← Go to most recent report</div>
   </div>`;
+}
+
+
+function jumpToTab(tab, csm, health) {
+  activeTab = tab;
+  if (csm !== undefined && csm !== null) activeCsm = csm;
+  if (health !== undefined && health !== null) activeHealth = health;
+  document.querySelectorAll('[data-filter-csm]').forEach(c =>
+    c.classList.toggle('active-chip', c.dataset.filterCsm === activeCsm)
+  );
+  document.querySelectorAll('[data-filter-health]').forEach(c =>
+    c.classList.toggle('active-chip', c.dataset.filterHealth === activeHealth)
+  );
+  render();
 }
 
 function jumpToLatest() {
@@ -798,7 +815,7 @@ function toggleAction(n) {
 // ═══════════════════════════════════════════════════════════════
 function renderWeek(mc, tabsRow, statPills) {
   setPills([['dot-teal','24 Calls'],['dot-green','21 Pulses'],['dot-purple','6 Active CSMs'],['dot-amber','4 Concerning']]);
-  const tabs = ['Summary','CSM Breakdown','Call Log (16)','Pulse Notes (21)'];
+  const tabs = ['Summary','CSM Breakdown','Call Log (24)','Pulse Notes (21)'];
   if (!activeTab || !['wsummary','wcsm','wcalls','wpulses'].includes(activeTab)) activeTab='wsummary';
   tabsRow.innerHTML = ['wsummary','wcsm','wcalls','wpulses'].map((k,i)=>
     `<div class="tab ${activeTab===k?'active':''}" onclick="switchTab('${k}')">${tabs[i]}</div>`
@@ -822,12 +839,12 @@ function weekSummaryHTML() {
   return `
   <div class="section-label">Week of Apr 20–26, 2026 · Overview</div>
   <div class="summary-cards">
-    <div class="sum-card c-teal"><div class="sum-val">24</div><div class="sum-lbl">Calls w/ Transcripts</div><div class="sum-sub">22 accounts · Mon–Thu</div></div>
-    <div class="sum-card c-green"><div class="sum-val">21</div><div class="sum-lbl">Pulse Notes Created</div><div class="sum-sub">18 Healthy · 3 Concerning</div></div>
-    <div class="sum-card c-purple"><div class="sum-val">6</div><div class="sum-lbl">Active CSMs</div><div class="sum-sub">of 8 on the team</div></div>
-    <div class="sum-card c-amber"><div class="sum-val">4</div><div class="sum-lbl">Concerning Signals</div><div class="sum-sub">Cisco · Datadog CD · eHouse · DXC</div></div>
-    <div class="sum-card c-red"><div class="sum-val">1</div><div class="sum-lbl">Churn Risk Escalated</div><div class="sum-sub">eHouse Studio — no engagement</div></div>
-    <div class="sum-card c-green"><div class="sum-val">3</div><div class="sum-lbl">Pulse Upgrades</div><div class="sum-sub">Intuit: Concerning→Healthy</div></div>
+    <div class="sum-card c-teal" onclick="jumpToTab('wcalls','all','all')"><div class="sum-val">24</div><div class="sum-lbl">Calls w/ Transcripts</div><div class="sum-sub">22 accounts · Mon–Thu</div></div>
+    <div class="sum-card c-green" onclick="jumpToTab('wpulses','all','all')"><div class="sum-val">21</div><div class="sum-lbl">Pulse Notes Created</div><div class="sum-sub">18 Healthy · 3 Concerning</div></div>
+    <div class="sum-card c-purple" onclick="jumpToTab('wcsm','all','all')"><div class="sum-val">6</div><div class="sum-lbl">Active CSMs</div><div class="sum-sub">of 8 on the team</div></div>
+    <div class="sum-card c-amber" onclick="jumpToTab('wpulses','all','Concerning')"><div class="sum-val">4</div><div class="sum-lbl">Concerning Signals</div><div class="sum-sub">Cisco · Datadog CD · eHouse · DXC</div></div>
+    <div class="sum-card c-red" onclick="jumpToTab('wpulses','atisha','Concerning')"><div class="sum-val">1</div><div class="sum-lbl">Churn Risk Escalated</div><div class="sum-sub">eHouse Studio — no engagement</div></div>
+    <div class="sum-card c-green" onclick="jumpToTab('wpulses','riley','Healthy')"><div class="sum-val">3</div><div class="sum-lbl">Pulse Upgrades</div><div class="sum-sub">Intuit: Concerning→Healthy</div></div>
   </div>
 
   <div class="section-label">Active Accounts This Week</div>
@@ -963,7 +980,7 @@ function applyWeekCSMFilter() {
 // ═══════════════════════════════════════════════════════════════
 function renderMonth(mc, tabsRow, statPills) {
   setPills([['dot-teal','24 Calls'],['dot-green','21 Pulses'],['dot-purple','22 Accounts'],['dot-amber','4 Concerning']]);
-  const tabs = ['Summary','CSM Breakdown','Call Log','Pulse Notes','Pulse Health'];
+  const tabs = ['Summary','CSM Breakdown','Call Log (24)','Pulse Notes (21)','Pulse Health'];
   if (!activeTab || !['msummary','mcsm','mcalls','mpulses','mhealth'].includes(activeTab)) activeTab='msummary';
   tabsRow.innerHTML = ['msummary','mcsm','mcalls','mpulses','mhealth'].map((k,i)=>
     `<div class="tab ${activeTab===k?'active':''}" onclick="switchTab('${k}')">${tabs[i]}</div>`
@@ -1005,12 +1022,12 @@ function monthSummaryHTML() {
   return `
   <div class="section-label">April 2026 · Month-to-Date Summary</div>
   <div class="summary-cards">
-    <div class="sum-card c-teal"><div class="sum-val">24</div><div class="sum-lbl">Calls w/ Transcripts</div><div class="sum-sub">Apr 20–23 · 7 CSMs</div></div>
-    <div class="sum-card c-green"><div class="sum-val">21</div><div class="sum-lbl">Pulse Notes</div><div class="sum-sub">18 Healthy · 3 Concerning</div></div>
-    <div class="sum-card c-purple"><div class="sum-val">7</div><div class="sum-lbl">CSMs w/ Activity</div><div class="sum-sub">of 8 on the team</div></div>
-    <div class="sum-card c-amber"><div class="sum-val">$826K</div><div class="sum-lbl">ARR w/ Pulse Coverage</div><div class="sum-sub">Quadient · Datadog · Intuit</div></div>
-    <div class="sum-card c-red"><div class="sum-val">4</div><div class="sum-lbl">Open Risk Signals</div><div class="sum-sub">Datadog · Cisco · eHouse · DXC</div></div>
-    <div class="sum-card c-green"><div class="sum-val">3</div><div class="sum-lbl">Pulse Upgrades</div><div class="sum-sub">Concerning → Healthy</div></div>
+    <div class="sum-card c-teal" onclick="jumpToTab('mcalls','all','all')"><div class="sum-val">24</div><div class="sum-lbl">Calls w/ Transcripts</div><div class="sum-sub">Apr 20–23 · 7 CSMs</div></div>
+    <div class="sum-card c-green" onclick="jumpToTab('mpulses','all','all')"><div class="sum-val">21</div><div class="sum-lbl">Pulse Notes</div><div class="sum-sub">18 Healthy · 3 Concerning</div></div>
+    <div class="sum-card c-purple" onclick="jumpToTab('mcsm','all','all')"><div class="sum-val">7</div><div class="sum-lbl">CSMs w/ Activity</div><div class="sum-sub">of 8 on the team</div></div>
+    <div class="sum-card c-amber" onclick="jumpToTab('mhealth','all','all')"><div class="sum-val">$826K</div><div class="sum-lbl">ARR w/ Pulse Coverage</div><div class="sum-sub">Quadient · Datadog · Intuit</div></div>
+    <div class="sum-card c-red" onclick="jumpToTab('mpulses','all','Concerning')"><div class="sum-val">4</div><div class="sum-lbl">Open Risk Signals</div><div class="sum-sub">Datadog · Cisco · eHouse · DXC</div></div>
+    <div class="sum-card c-green" onclick="jumpToTab('mpulses','riley','Healthy')"><div class="sum-val">3</div><div class="sum-lbl">Pulse Upgrades</div><div class="sum-sub">Concerning → Healthy</div></div>
   </div>
 
   <div class="section-label">Top Accounts by Engagement</div>
