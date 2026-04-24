@@ -1,0 +1,1211 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSM Engagement Browser</title>
+<style>
+:root { color-scheme: light; }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f8f9fc; color: #1a1f2e; font-size: 14px; min-height: 100vh; }
+
+/* HEADER */
+.app-header { background: #fff; border-bottom: 1px solid #e5e7eb; padding: 14px 20px 0; position: sticky; top: 0; z-index: 40; }
+.header-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; flex-wrap: wrap; gap: 8px; }
+.header-brand { display: flex; align-items: center; gap: 10px; }
+.logo { width: 30px; height: 30px; background: linear-gradient(135deg, #0ea5a0, #7c3aed); border-radius: 7px; display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 900; font-size: 12px; }
+.header-title { font-size: 16px; font-weight: 700; color: #111827; }
+.header-sub { font-size: 12px; color: #6b7280; }
+
+/* GRANULARITY + DATE NAV ROW */
+.nav-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 10px; }
+
+.gran-toggle { display: flex; border: 1.5px solid #e5e7eb; border-radius: 8px; overflow: hidden; }
+.gran-btn { padding: 5px 14px; font-size: 12px; font-weight: 600; cursor: pointer; color: #6b7280; background: #fff; border: none; transition: all 0.15s; }
+.gran-btn:not(:last-child) { border-right: 1px solid #e5e7eb; }
+.gran-btn.active { background: #0ea5a0; color: #fff; }
+.gran-btn:hover:not(.active) { background: #f0fdfa; color: #0ea5a0; }
+
+.date-nav { display: flex; align-items: center; gap: 6px; }
+.date-arrow { width: 30px; height: 30px; border: 1.5px solid #e5e7eb; border-radius: 7px; background: #fff; cursor: pointer; font-size: 16px; display: flex; align-items: center; justify-content: center; color: #374151; transition: all 0.15s; user-select: none; line-height: 1; }
+.date-arrow:hover { border-color: #0ea5a0; color: #0ea5a0; }
+.date-display { display: flex; align-items: center; gap: 6px; padding: 5px 12px; border: 1.5px solid #e5e7eb; border-radius: 7px; background: #fff; cursor: pointer; font-size: 13px; font-weight: 600; color: #111827; position: relative; transition: border-color 0.15s; white-space: nowrap; }
+.date-display:hover { border-color: #0ea5a0; }
+.date-picker-input { position: absolute; opacity: 0; width: 100%; height: 100%; top: 0; left: 0; cursor: pointer; border: none; background: transparent; }
+
+.stat-pills { display: flex; gap: 6px; flex-wrap: wrap; margin-left: auto; }
+.stat-pill { display: flex; align-items: center; gap: 5px; background: #f3f4f6; border-radius: 20px; padding: 4px 10px; font-size: 12px; font-weight: 600; color: #374151; }
+.dot { width: 7px; height: 7px; border-radius: 50%; }
+.dot-teal { background: #0ea5a0; } .dot-amber { background: #f59e0b; } .dot-purple { background: #7c3aed; } .dot-green { background: #059669; } .dot-red { background: #dc2626; }
+
+/* TABS */
+.tabs { display: flex; }
+.tab { padding: 8px 16px; font-size: 13px; font-weight: 500; color: #6b7280; cursor: pointer; border-bottom: 2px solid transparent; white-space: nowrap; transition: color 0.15s, border-color 0.15s; }
+.tab:hover { color: #111827; }
+.tab.active { color: #0ea5a0; border-bottom-color: #0ea5a0; font-weight: 600; }
+
+/* FILTERS */
+.filters-bar { display: flex; gap: 8px; padding: 10px 20px; background: #fff; border-bottom: 1px solid #e5e7eb; flex-wrap: wrap; align-items: center; }
+.filter-label { font-size: 11px; color: #9ca3af; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; flex-shrink: 0; }
+.chip { padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 500; cursor: pointer; border: 1.5px solid #e5e7eb; color: #374151; background: #fff; transition: all 0.15s; white-space: nowrap; }
+.chip:hover { border-color: #0ea5a0; color: #0ea5a0; }
+.chip.active-chip { background: #0ea5a0; border-color: #0ea5a0; color: #fff; font-weight: 600; }
+.chip.hh.active-chip { background: #059669; border-color: #059669; }
+.chip.hc.active-chip { background: #d97706; border-color: #d97706; }
+.f-divider { width: 1px; height: 20px; background: #e5e7eb; flex-shrink: 0; }
+
+/* NO REPORT */
+.no-report { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 80px 20px; text-align: center; }
+.no-report-icon { font-size: 48px; margin-bottom: 16px; }
+.no-report-title { font-size: 18px; font-weight: 700; color: #111827; margin-bottom: 6px; }
+.no-report-sub { font-size: 13px; color: #6b7280; line-height: 1.6; max-width: 340px; }
+.no-report-hint { margin-top: 20px; padding: 10px 18px; background: #f0fdfa; border: 1px solid #ccfbf1; border-radius: 8px; font-size: 12px; color: #0f766e; cursor: pointer; }
+.no-report-hint:hover { background: #ccfbf1; }
+
+/* CONTENT */
+.content { padding: 16px 20px; }
+.section-label { font-size: 11px; font-weight: 700; color: #9ca3af; text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 10px; margin-top: 4px; }
+
+/* STAT CARDS (summary views) */
+.summary-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; margin-bottom: 24px; }
+.sum-card { background: #fff; border: 1px solid #e5e7eb; border-radius: 10px; padding: 16px; border-top: 3px solid transparent; }
+.sum-card.c-teal { border-top-color: #0ea5a0; }
+.sum-card.c-green { border-top-color: #059669; }
+.sum-card.c-amber { border-top-color: #f59e0b; }
+.sum-card.c-purple { border-top-color: #7c3aed; }
+.sum-card.c-red { border-top-color: #dc2626; }
+.sum-val { font-size: 32px; font-weight: 800; line-height: 1; margin-bottom: 4px; }
+.c-teal .sum-val { color: #0ea5a0; } .c-green .sum-val { color: #059669; } .c-amber .sum-val { color: #f59e0b; } .c-purple .sum-val { color: #7c3aed; } .c-red .sum-val { color: #dc2626; }
+.sum-lbl { font-size: 11px; color: #9ca3af; text-transform: uppercase; letter-spacing: 0.4px; font-weight: 600; }
+.sum-sub { font-size: 11px; color: #6b7280; margin-top: 4px; }
+
+/* CSM LEADERBOARD */
+.csm-leaderboard { display: flex; flex-direction: column; gap: 8px; margin-bottom: 24px; }
+.csm-row { background: #fff; border: 1px solid #e5e7eb; border-radius: 10px; padding: 14px 16px; display: flex; align-items: center; gap: 14px; }
+.csm-row.inactive { opacity: 0.55; }
+.avatar { width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; flex-shrink: 0; }
+.av-riley { background: #ccfbf1; color: #0f766e; } .av-varun { background: #ede9fe; color: #6d28d9; } .av-divyam { background: #fef3c7; color: #92400e; } .av-grey { background: #f3f4f6; color: #6b7280; }
+.csm-row-name { font-size: 13px; font-weight: 600; flex: 1; }
+.csm-row-sub { font-size: 11px; color: #9ca3af; }
+.csm-row-stats { display: flex; gap: 20px; }
+.row-stat { text-align: center; }
+.row-stat .n { font-size: 18px; font-weight: 800; }
+.row-stat .l { font-size: 10px; color: #9ca3af; }
+.ct { color: #0ea5a0; } .cg { color: #059669; } .cgr { color: #9ca3af; }
+
+/* HEATMAP */
+.heatmap-card { background: #fff; border: 1px solid #e5e7eb; border-radius: 10px; padding: 16px; margin-bottom: 24px; overflow-x: auto; }
+.hm-table { border-collapse: separate; border-spacing: 5px; }
+.hm-table th { font-size: 11px; color: #9ca3af; font-weight: 500; padding: 3px 6px; text-align: center; white-space: nowrap; }
+.hm-table th.row-lbl { text-align: left; min-width: 120px; }
+.hm-cell { width: 48px; height: 34px; border-radius: 6px; text-align: center; font-size: 11px; font-weight: 600; vertical-align: middle; cursor: default; }
+.hm-0 { background: #f9fafb; color: #d1d5db; }
+.hm-1 { background: #d1fae5; color: #065f46; }
+.hm-2 { background: #6ee7b7; color: #065f46; }
+.hm-3 { background: #059669; color: #fff; }
+
+/* HEALTH DISTRIBUTION */
+.health-dist { display: flex; gap: 10px; margin-bottom: 24px; flex-wrap: wrap; }
+.health-bar-wrap { background: #fff; border: 1px solid #e5e7eb; border-radius: 10px; padding: 16px; flex: 1; min-width: 220px; }
+.health-bar-title { font-size: 12px; font-weight: 600; color: #374151; margin-bottom: 12px; }
+.health-bar-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+.health-bar-label { font-size: 11px; color: #6b7280; width: 80px; flex-shrink: 0; }
+.health-bar-track { flex: 1; background: #f3f4f6; border-radius: 4px; height: 10px; overflow: hidden; }
+.health-bar-fill { height: 100%; border-radius: 4px; transition: width 0.4s ease; }
+.hf-green { background: #059669; } .hf-amber { background: #f59e0b; } .hf-red { background: #dc2626; }
+.health-bar-count { font-size: 11px; font-weight: 700; color: #374151; width: 20px; text-align: right; flex-shrink: 0; }
+
+/* ACCOUNT HIGHLIGHTS */
+.account-highlights { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 12px; margin-bottom: 24px; }
+.acct-card { background: #fff; border: 1px solid #e5e7eb; border-radius: 10px; padding: 14px; border-left: 3.5px solid #0ea5a0; }
+.acct-card.ac-amber { border-left-color: #f59e0b; }
+.acct-name { font-size: 13px; font-weight: 700; margin-bottom: 2px; }
+.acct-csm { font-size: 11px; color: #9ca3af; margin-bottom: 8px; }
+.acct-stats { display: flex; gap: 14px; }
+.acct-stat .n { font-size: 18px; font-weight: 800; } .acct-stat .l { font-size: 10px; color: #9ca3af; }
+.acct-note { margin-top: 8px; font-size: 11px; color: #6b7280; line-height: 1.5; border-top: 1px solid #f3f4f6; padding-top: 8px; }
+
+/* DAY VIEWS */
+.csm-card { background: #fff; border: 1.5px solid #e5e7eb; border-radius: 10px; padding: 14px; position: relative; }
+.csm-card.has-calls { border-left: 3.5px solid #0ea5a0; }
+.csm-card.no-calls { opacity: 0.6; }
+.csm-card.hidden { display: none; }
+.overview-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; margin-bottom: 20px; }
+.csm-card-header { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+.csm-name { font-size: 13px; font-weight: 600; }
+.csm-role { font-size: 11px; color: #9ca3af; }
+.csm-metrics { display: flex; gap: 16px; }
+.metric-num { font-size: 22px; font-weight: 800; line-height: 1; }
+.metric-lbl { font-size: 10px; color: #9ca3af; }
+.m-teal { color: #0ea5a0; } .m-green { color: #059669; } .m-grey { color: #9ca3af; }
+.csm-account-note { margin-top: 8px; font-size: 11px; color: #6b7280; border-top: 1px solid #f3f4f6; padding-top: 8px; }
+.call-badge { position: absolute; top: 10px; right: 10px; background: #0ea5a0; color: #fff; font-size: 10px; font-weight: 700; padding: 2px 7px; border-radius: 10px; }
+.table-card { background: #fff; border: 1px solid #e5e7eb; border-radius: 10px; overflow: hidden; margin-bottom: 20px; }
+table { width: 100%; border-collapse: collapse; }
+thead tr { background: #f9fafb; border-bottom: 1px solid #e5e7eb; }
+th { padding: 10px 14px; text-align: left; font-size: 11px; font-weight: 600; color: #6b7280; text-transform: uppercase; letter-spacing: 0.4px; white-space: nowrap; }
+tbody tr { border-bottom: 1px solid #f3f4f6; cursor: pointer; transition: background 0.12s; }
+tbody tr:last-child { border-bottom: none; }
+tbody tr:hover { background: #f0fdfa; }
+tbody tr.hidden { display: none; }
+td { padding: 12px 14px; font-size: 13px; vertical-align: middle; }
+.badge { display: inline-flex; align-items: center; gap: 4px; padding: 3px 9px; border-radius: 20px; font-size: 11px; font-weight: 600; }
+.badge-healthy { background: #d1fae5; color: #065f46; } .badge-concerning { background: #fef3c7; color: #92400e; } .badge-poor { background: #fee2e2; color: #991b1b; } .m-red { color: #dc2626; }
+.mini-av { width: 20px; height: 20px; border-radius: 50%; font-size: 8px; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+.csm-chip-inline { display: flex; align-items: center; gap: 6px; }
+.pulse-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 12px; margin-bottom: 20px; }
+.pulse-card { background: #fff; border: 1px solid #e5e7eb; border-radius: 10px; padding: 14px; cursor: pointer; transition: border-color 0.15s; }
+.pulse-card:hover { border-color: #0ea5a0; }
+.pulse-card.hidden { display: none; }
+.pulse-card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; margin-bottom: 8px; }
+.pulse-account { font-size: 12px; font-weight: 700; }
+.pulse-opp { font-size: 11px; color: #6b7280; margin-top: 1px; line-height: 1.4; }
+.pulse-arr { font-size: 11px; color: #0ea5a0; font-weight: 600; margin-top: 3px; }
+.pulse-excerpt { font-size: 12px; color: #6b7280; line-height: 1.6; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.pulse-footer { display: flex; justify-content: space-between; align-items: center; margin-top: 8px; padding-top: 8px; border-top: 1px solid #f3f4f6; font-size: 11px; color: #9ca3af; }
+.action-list { display: flex; flex-direction: column; gap: 10px; margin-bottom: 20px; }
+.action-item { background: #fff; border: 1.5px solid #e5e7eb; border-radius: 10px; padding: 14px; display: flex; gap: 12px; align-items: flex-start; transition: all 0.2s; }
+.action-item.hidden { display: none; }
+.action-item.done { opacity: 0.5; }
+.action-item.done .action-title { text-decoration: line-through; }
+.action-checkbox { width: 18px; height: 18px; border: 2px solid #d1d5db; border-radius: 5px; cursor: pointer; flex-shrink: 0; display: flex; align-items: center; justify-content: center; transition: all 0.15s; margin-top: 1px; background: #fff; }
+.action-checkbox.checked { background: #059669; border-color: #059669; }
+.action-checkbox.checked::after { content: '✓'; color: #fff; font-size: 11px; font-weight: 700; }
+.action-body { flex: 1; }
+.action-title { font-size: 13px; font-weight: 600; color: #111827; line-height: 1.4; margin-bottom: 4px; }
+.action-meta { font-size: 11px; color: #9ca3af; }
+.urgency-badge { display: inline-block; font-size: 10px; font-weight: 600; padding: 1px 7px; border-radius: 10px; margin-right: 6px; }
+.urgency-high { background: #fee2e2; color: #991b1b; } .urgency-medium { background: #fef3c7; color: #92400e; }
+.empty-state { text-align: center; padding: 40px 20px; color: #9ca3af; font-size: 13px; }
+.empty-icon { font-size: 32px; margin-bottom: 8px; }
+.modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.35); z-index: 100; align-items: center; justify-content: center; padding: 20px; }
+.modal-overlay.open { display: flex; }
+.modal { background: #fff; border-radius: 14px; max-width: 560px; width: 100%; max-height: 80vh; overflow-y: auto; box-shadow: 0 20px 60px rgba(0,0,0,0.2); position: relative; }
+.modal-header { padding: 20px 20px 16px; border-bottom: 1px solid #f3f4f6; position: sticky; top: 0; background: #fff; z-index: 1; }
+.modal-close { position: absolute; top: 14px; right: 14px; background: #f3f4f6; border: none; border-radius: 50%; width: 28px; height: 28px; cursor: pointer; font-size: 14px; display: flex; align-items: center; justify-content: center; color: #6b7280; transition: background 0.15s; }
+.modal-close:hover { background: #e5e7eb; }
+.modal-title { font-size: 16px; font-weight: 700; padding-right: 36px; }
+.modal-subtitle { font-size: 12px; color: #9ca3af; margin-top: 3px; }
+.modal-body { padding: 16px 20px 20px; }
+.modal-section { margin-bottom: 16px; }
+.modal-section-label { font-size: 11px; font-weight: 700; color: #9ca3af; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+.modal-section-body { font-size: 13px; color: #374151; line-height: 1.7; }
+.app-footer { padding: 12px 20px; font-size: 11px; color: #9ca3af; border-top: 1px solid #e5e7eb; background: #fff; text-align: center; }
+
+/* AUTH GATE */
+#auth-gate { position: fixed; inset: 0; z-index: 9999; background: #f8f9fc; display: flex; align-items: center; justify-content: center; }
+.auth-card { background: #fff; border: 1px solid #e5e7eb; border-radius: 16px; padding: 40px 36px; width: 100%; max-width: 400px; box-shadow: 0 4px 24px rgba(0,0,0,0.08); text-align: center; }
+.auth-logo { width: 48px; height: 48px; background: linear-gradient(135deg, #0ea5a0, #7c3aed); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 900; font-size: 18px; margin: 0 auto 20px; }
+.auth-title { font-size: 20px; font-weight: 700; color: #111827; margin-bottom: 6px; }
+.auth-sub { font-size: 13px; color: #6b7280; margin-bottom: 28px; line-height: 1.5; }
+.auth-btn { display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; padding: 11px 20px; border: 1.5px solid #dadce0; border-radius: 8px; background: #fff; font-size: 15px; font-weight: 500; color: #3c4043; cursor: pointer; transition: box-shadow 0.15s, border-color 0.15s; }
+.auth-btn:hover { box-shadow: 0 1px 6px rgba(60,64,67,.2); border-color: #c0c4c9; }
+.auth-btn svg { flex-shrink: 0; }
+.auth-err { font-size: 12px; color: #dc2626; margin-top: 14px; min-height: 18px; }
+.auth-footer { font-size: 11px; color: #9ca3af; margin-top: 16px; }
+@media (max-width: 600px) { .content { padding: 12px 14px; } .overview-grid { grid-template-columns: 1fr; } .pulse-grid { grid-template-columns: 1fr; } th:nth-child(4), td:nth-child(4), th:nth-child(5), td:nth-child(5) { display: none; } }
+</style>
+</head>
+<body>
+
+<!-- AUTH GATE -->
+<div id="auth-gate">
+  <div class="auth-card">
+    <div class="auth-logo">HG</div>
+    <div class="auth-title">CSM Engagement</div>
+    <div class="auth-sub">Sign in with your HG Insights Google account to continue.</div>
+    <button class="auth-btn" onclick="startGoogleLogin()">
+      <svg width="20" height="20" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/><path fill="none" d="M0 0h48v48H0z"/></svg>
+      Sign in with Google
+    </button>
+    <div class="auth-err" id="auth-err"></div>
+    <div class="auth-footer">Access limited to @hginsights.com accounts</div>
+  </div>
+</div>
+
+<div class="app-header">
+  <div class="header-top">
+    <div class="header-brand">
+      <div class="logo">HG</div>
+      <div>
+        <div class="header-title">CSM Engagement</div>
+        <div class="header-sub" id="header-sub">Enterprise team · Activity summary</div>
+      </div>
+    </div>
+    <div class="stat-pills" id="stat-pills"></div>
+  </div>
+
+  <div class="nav-row">
+    <!-- GRANULARITY TOGGLE -->
+    <div class="gran-toggle">
+      <div class="gran-btn active" data-gran="day" onclick="setGran('day')">Day</div>
+      <div class="gran-btn" data-gran="week" onclick="setGran('week')">Week</div>
+      <div class="gran-btn" data-gran="month" onclick="setGran('month')">Month</div>
+    </div>
+
+    <!-- DATE NAV -->
+    <div class="date-nav">
+      <div class="date-arrow" onclick="shiftPeriod(-1)">‹</div>
+      <div class="date-display">
+        <span>📅</span>
+        <span id="date-label">Apr 22, 2026</span>
+        <input type="date" class="date-picker-input" id="date-picker" value="2026-04-22" onchange="onPickerChange(this.value)">
+      </div>
+      <div class="date-arrow" onclick="shiftPeriod(1)">›</div>
+    </div>
+  </div>
+
+  <div class="tabs" id="tabs-row"></div>
+</div>
+
+<!-- FILTERS -->
+<div class="filters-bar" id="filters-bar">
+  <span class="filter-label">CSM</span>
+  <div class="chip active-chip" data-filter-csm="all">All</div>
+  <div class="chip" data-filter-csm="riley">Riley Rogers</div>
+  <div class="chip" data-filter-csm="varun">Varun Tiwari</div>
+  <div class="chip" data-filter-csm="divyam">Divyam Dewan</div>
+  <div class="chip" data-filter-csm="nick">Nick Johnson</div>
+  <div class="chip" data-filter-csm="rani">Rani Guy</div>
+  <div class="chip" data-filter-csm="pam">Pam Huck</div>
+  <div class="chip" data-filter-csm="atisha">Atisha Waghela</div>
+  <div class="chip" data-filter-csm="andy">Andy Lim</div>
+  <div class="f-divider" id="health-divider" style="display:none"></div>
+  <span class="filter-label" id="health-label" style="display:none">Health</span>
+  <div class="chip hh" data-filter-health="all" id="h-all" style="display:none">All</div>
+  <div class="chip hh" data-filter-health="Healthy" id="h-healthy" style="display:none">🟢 Healthy</div>
+  <div class="chip hc" data-filter-health="Concerning" id="h-concerning" style="display:none">🟡 Concerning</div>
+</div>
+
+<!-- MAIN -->
+<div id="main-content"></div>
+
+<div class="app-footer">Enterprise CSM Engagement · HG Insights · Auto-generated daily · Sources: Weflow · Granola · Zoom · Vitally</div>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modal-overlay" onclick="if(event.target===this)closeModal()">
+  <div class="modal">
+    <div class="modal-header">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <div class="modal-title" id="modal-title"></div>
+      <div class="modal-subtitle" id="modal-subtitle"></div>
+    </div>
+    <div class="modal-body" id="modal-body"></div>
+  </div>
+</div>
+
+<script>
+// ─── REPORT DATA ───────────────────────────────────────────────
+const REPORTS = {
+  day: { '2026-04-22': true, '2026-04-21': true, '2026-04-20': true, '2026-04-19': true },
+  week: { '2026-W17': true },   // ISO week 17 = Apr 20-26
+  month: { '2026-04': true },
+};
+
+// ─── STATE ─────────────────────────────────────────────────────
+let gran = 'day';
+let currentKey = '2026-04-22';
+let activeTab = '';
+let activeCsm = 'all';
+let activeHealth = 'all';
+const doneActions = new Set();
+
+// ─── PERIOD KEYS ───────────────────────────────────────────────
+function dayKey(iso) { return iso; }
+function weekKey(iso) {
+  const d = isoToDate(iso);
+  const jan4 = new Date(d.getFullYear(), 0, 4);
+  const startOfWeek = new Date(jan4);
+  startOfWeek.setDate(jan4.getDate() - ((jan4.getDay() + 6) % 7));
+  const diff = d - startOfWeek;
+  const week = Math.floor(diff / 604800000) + 1;
+  return d.getFullYear() + '-W' + String(week).padStart(2,'0');
+}
+function monthKey(iso) { return iso.slice(0,7); }
+function currentPeriodKey(iso) {
+  if (gran==='day') return dayKey(iso);
+  if (gran==='week') return weekKey(iso);
+  return monthKey(iso);
+}
+
+// ─── DATE UTILS ────────────────────────────────────────────────
+function isoToDate(s) { const [y,m,d]=s.split('-').map(Number); return new Date(y,m-1,d); }
+function dateToISO(d) { return d.toISOString().slice(0,10); }
+function formatLabel(iso) {
+  if (gran==='day') {
+    return isoToDate(iso).toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});
+  }
+  if (gran==='week') {
+    const d=isoToDate(iso);
+    const day=d.getDay(), diff=d.getDate()-day+(day===0?-6:1);
+    const mon=new Date(d); mon.setDate(diff);
+    const sun=new Date(mon); sun.setDate(mon.getDate()+6);
+    return mon.toLocaleDateString('en-US',{month:'short',day:'numeric'})+' – '+sun.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});
+  }
+  return isoToDate(iso+'-01').toLocaleDateString('en-US',{month:'long',year:'numeric'});
+}
+
+function shiftPeriod(delta) {
+  const d = isoToDate(currentKey.length===10 ? currentKey : currentKey+'-01');
+  if (gran==='day') d.setDate(d.getDate()+delta);
+  else if (gran==='week') d.setDate(d.getDate()+delta*7);
+  else d.setMonth(d.getMonth()+delta);
+  applyDate(dateToISO(d));
+}
+function onPickerChange(val) { if(val) applyDate(val); }
+function applyDate(iso) {
+  currentKey = gran==='day' ? iso : gran==='week' ? weekKey(iso) : monthKey(iso);
+  // keep picker aligned to a valid date within period
+  document.getElementById('date-picker').value = iso.length===10 ? iso : iso+'-01';
+  document.getElementById('date-label').textContent = formatLabel(iso.length===10?iso:iso+'-01');
+  render();
+}
+
+// ─── GRANULARITY ───────────────────────────────────────────────
+function setGran(g) {
+  gran = g;
+  document.querySelectorAll('.gran-btn').forEach(b=>b.classList.toggle('active',b.dataset.gran===g));
+  // Convert currentKey back to a day so we can recompute
+  let dayIso = currentKey.length===10 ? currentKey : (currentKey.length===7 ? currentKey+'-01' : '2026-04-22');
+  currentKey = currentPeriodKey(dayIso);
+  document.getElementById('date-label').textContent = formatLabel(dayIso);
+  render();
+}
+
+// ─── RENDER ────────────────────────────────────────────────────
+function render() {
+  const hasReport = REPORTS[gran]?.[currentKey];
+  const tabsRow = document.getElementById('tabs-row');
+  const filtersBar = document.getElementById('filters-bar');
+  const statPills = document.getElementById('stat-pills');
+  const mc = document.getElementById('main-content');
+
+  if (!hasReport) {
+    tabsRow.innerHTML = '';
+    filtersBar.style.display = 'none';
+    statPills.innerHTML = '';
+    mc.innerHTML = renderNoReport();
+    return;
+  }
+
+  filtersBar.style.display = '';
+
+  if (gran === 'day') renderDay(mc, tabsRow, statPills);
+  else if (gran === 'week') renderWeek(mc, tabsRow, statPills);
+  else renderMonth(mc, tabsRow, statPills);
+}
+
+function renderNoReport() {
+  const label = gran==='day'?'this date':gran==='week'?'this week':'this month';
+  return `<div class="no-report">
+    <div class="no-report-icon">📭</div>
+    <div class="no-report-title">No report for ${label}</div>
+    <div class="no-report-sub">Daily CSM engagement reports are generated automatically each morning and rolled up weekly and monthly. No report was found for the selected period.</div>
+    <div class="no-report-hint" onclick="jumpToLatest()">← Go to most recent report</div>
+  </div>`;
+}
+
+function jumpToLatest() {
+  if (gran==='day') { currentKey='2026-04-22'; document.getElementById('date-label').textContent='Apr 22, 2026'; }
+  else if (gran==='week') { currentKey='2026-W17'; document.getElementById('date-label').textContent='Apr 20 – Apr 26, 2026'; }
+  else { currentKey='2026-04'; document.getElementById('date-label').textContent='April 2026'; }
+  render();
+}
+
+// ─── STAT PILLS ────────────────────────────────────────────────
+function setPills(items) {
+  document.getElementById('stat-pills').innerHTML = items.map(([dot,text])=>
+    `<div class="stat-pill"><span class="dot ${dot}"></span>${text}</div>`
+  ).join('');
+}
+
+// ═══════════════════════════════════════════════════════════════
+// DAY VIEW
+// ═══════════════════════════════════════════════════════════════
+function renderDay(mc, tabsRow, statPills) {
+  const dd = getDayData(currentKey);
+  setPills(dd.pills);
+  if (!activeTab || !['overview','calls','pulses','actions'].includes(activeTab)) activeTab='overview';
+  tabsRow.innerHTML = dd.tabs.map((t,i)=>{
+    const k=['overview','calls','pulses','actions'][i];
+    return `<div class="tab ${activeTab===k?'active':''}" onclick="switchTab('${k}')">${t}</div>`;
+  }).join('');
+  const showHealth = activeTab==='calls'||activeTab==='pulses';
+  document.getElementById('health-divider').style.display = showHealth?'':'none';
+  document.getElementById('health-label').style.display = showHealth?'':'none';
+  ['h-all','h-healthy','h-concerning'].forEach(id=>{ document.getElementById(id).style.display=showHealth?'':'none'; });
+
+  mc.innerHTML = `<div class="content">
+    <div id="pane-overview" style="display:${activeTab==='overview'?'':'none'}">
+      ${dd.overviewHTML()}
+    </div>
+    <div id="pane-calls" style="display:${activeTab==='calls'?'':'none'}">
+      ${dd.callsHTML()}
+    </div>
+    <div id="pane-pulses" style="display:${activeTab==='pulses'?'':'none'}">
+      ${dd.pulsesHTML()}
+    </div>
+    <div id="pane-actions" style="display:${activeTab==='actions'?'':'none'}">
+      ${dd.actionsHTML()}
+    </div>
+  </div>`;
+  applyDayFilters();
+}
+
+function getDayData(key) {
+  if (key === '2026-04-22') return {
+    pills: [['dot-teal','8 Calls'],['dot-purple','8 Pulses'],['dot-amber','4 Actions']],
+    tabs: ['Overview','Calls (8)','Pulses (8)','Action Items (4)'],
+    overviewHTML: dayOverviewHTML_Apr23,
+    callsHTML: dayCallsHTML_Apr23,
+    pulsesHTML: dayPulsesHTML_Apr23,
+    actionsHTML: dayActionsHTML_Apr23,
+  };
+  if (key === '2026-04-20') return {
+    pills: [['dot-teal','3 Calls'],['dot-purple','4 Pulses'],['dot-amber','3 Actions']],
+    tabs: ['Overview','Calls (3)','Pulses (4)','Action Items (3)'],
+    overviewHTML: dayOverviewHTML_Apr21,
+    callsHTML: dayCallsHTML_Apr21,
+    pulsesHTML: dayPulsesHTML_Apr21,
+    actionsHTML: dayActionsHTML_Apr21,
+  };
+  if (key === '2026-04-19') return {
+    pills: [['dot-amber','Sunday — No team activity']],
+    tabs: ['Overview','Calls (0)','Pulses (0)','Action Items (0)'],
+    overviewHTML: dayOverviewHTML_Apr20,
+    callsHTML: dayCallsHTML_Apr20,
+    pulsesHTML: dayPulsesHTML_Apr20,
+    actionsHTML: dayActionsHTML_Apr20,
+  };
+  // Default: Apr 21 activity
+  return {
+    pills: [['dot-teal','5 Calls'],['dot-purple','9 Pulses'],['dot-amber','4 Actions']],
+    tabs: ['Overview','Calls (5)','Pulses (9)','Action Items (4)'],
+    overviewHTML: dayOverviewHTML,
+    callsHTML: dayCallsHTML,
+    pulsesHTML: dayPulsesHTML,
+    actionsHTML: dayActionsHTML,
+  };
+}
+
+function switchTab(tab) {
+  activeTab = tab;
+  render();
+}
+
+function dayOverviewHTML() {
+  return `<div class="section-label">Team Activity — Monday Apr 21</div>
+  <div class="overview-grid">
+    <div class="csm-card has-calls" data-csm="riley"><span class="call-badge">1 CALL</span><div class="csm-card-header"><div class="avatar av-riley">RR</div><div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">Intuit Mailchimp · Champion re-engaged · GEO early access</div></div>
+    <div class="csm-card has-calls" data-csm="varun"><span class="call-badge">2 CALLS</span><div class="csm-card-header"><div class="avatar av-varun">VT</div><div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">75m</div><div class="metric-lbl">Total</div></div></div><div class="csm-account-note" style="color:#d97706">Datadog · Data trust concern flagged ⚠️</div></div>
+    <div class="csm-card has-calls" data-csm="divyam"><span class="call-badge">2 CALLS</span><div class="csm-card-header"><div class="avatar av-divyam">DD</div><div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">4</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Total</div></div></div><div class="csm-account-note">Quadient · Thomson Reuters · churn model + intent deep-dive</div></div>
+    <div class="csm-card no-calls" data-csm="nick"><div class="csm-card-header"><div class="avatar av-grey">NJ</div><div><div class="csm-name">Nick Johnson</div><div class="csm-role">28 accounts</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No calls logged this period</div></div>
+    <div class="csm-card no-calls" data-csm="rani"><div class="csm-card-header"><div class="avatar av-grey">RG</div><div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No calls logged this period</div></div>
+    <div class="csm-card no-calls" data-csm="pam"><div class="csm-card-header"><div class="avatar av-grey">PH</div><div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No calls logged this period</div></div>
+    <div class="csm-card no-calls" data-csm="atisha"><div class="csm-card-header"><div class="avatar av-grey">AW</div><div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No calls logged this period</div></div>
+    <div class="csm-card no-calls" data-csm="andy"><div class="csm-card-header"><div class="avatar av-grey">AL</div><div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No calls logged this period</div></div>
+  </div>`;
+}
+
+function dayCallsHTML() {
+  return `<div class="table-card"><table>
+    <thead><tr><th>Time (PT)</th><th>CSM</th><th>Account</th><th>Duration</th><th>Signal</th></tr></thead>
+    <tbody>
+      <tr data-csm="riley" data-health="Healthy" onclick="openModal('call-intuit')"><td style="color:#9ca3af;font-size:12px">Apr 21 · 8:30 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-riley">RR</div>Riley Rogers</div></td><td><strong>Intuit Mailchimp</strong></td><td>30 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
+      <tr data-csm="divyam" data-health="Healthy" onclick="openModal('call-tr-apr22')"><td style="color:#9ca3af;font-size:12px">Apr 21 · 8:30 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-divyam">DD</div>Divyam Dewan</div></td><td><strong>Thomson Reuters</strong> <span style="font-size:11px;color:#9ca3af">Churn + Intent</span></td><td>30 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
+      <tr data-csm="varun" data-health="Concerning" onclick="openModal('call-dd-cd')"><td style="color:#9ca3af;font-size:12px">Apr 21 · 11:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-varun">VT</div>Varun Tiwari</div></td><td><strong>Datadog</strong> <span style="font-size:11px;color:#9ca3af">Cloud Dynamics</span></td><td>45 min</td><td><span class="badge badge-concerning">🟡 Concerning</span></td></tr>
+      <tr data-csm="varun" data-health="Healthy" onclick="openModal('call-dd-tr')"><td style="color:#9ca3af;font-size:12px">Apr 21 · 12:30 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-varun">VT</div>Varun Tiwari</div></td><td><strong>Datadog</strong> <span style="font-size:11px;color:#9ca3af">TR / ICP</span></td><td>30 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
+      <tr data-csm="divyam" data-health="Healthy" onclick="openModal('call-quad')"><td style="color:#9ca3af;font-size:12px">Apr 21 · 11:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-divyam">DD</div>Divyam Dewan</div></td><td><strong>Quadient Software</strong></td><td>30 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
+    </tbody>
+  </table></div>
+  <div class="empty-state" id="calls-empty" style="display:none"><div class="empty-icon">🔍</div>No calls match these filters.</div>`;
+}
+
+function dayPulsesHTML() {
+  const cards = [
+    {csm:'riley',health:'Healthy',account:'Intuit Mailchimp',opp:'TR - Intuit CVP x2 · 03.01.2025',arr:'$76,590 ARR',excerpt:'Bianca Gause re-engaged; excited about GEO dashboard early access.',csmlbl:'Riley Rogers',change:'Updated from Concerning',modal:'pulse-intuit1'},
+    {csm:'riley',health:'Healthy',account:'Intuit Mailchimp',opp:'TR - Enterprise Suite CVP · 10.24.2025',arr:'$50,000 ARR',excerpt:'Champion re-engaged; Category Intent Data aligned with demand gen plans.',csmlbl:'Riley Rogers',change:'Updated from Concerning',modal:'pulse-intuit2'},
+    {csm:'riley',health:'Healthy',account:'Intuit Mailchimp',opp:'TR - Intuit CVP x2 · 10.21.2025 (Written)',arr:'$50,000 ARR',excerpt:'GEO early access resets prior adoption-gap risk. SSO remains watch item.',csmlbl:'Riley Rogers',change:'Updated from Concerning',modal:'pulse-intuit3'},
+    {csm:'varun',health:'Concerning',account:'Datadog',opp:'Cloud Dynamics + Universe 150 · S2026',arr:'$250,000 ARR',excerpt:'Reps pulling back SMB usage; data trust concerns unresolved.',csmlbl:'Varun Tiwari',change:'New · was null',modal:'pulse-dd-cd'},
+    {csm:'varun',health:'Healthy',account:'Datadog',opp:'TR Lead Acceleration · CVP Intent Trial',arr:'$78,800 ARR',excerpt:'Constructive ICP refinement; active IDL expansion discussion.',csmlbl:'Varun Tiwari',change:'New · was null',modal:'pulse-dd-tr'},
+    {csm:'divyam',health:'Healthy',account:'Quadient Software',opp:'TR Marketing Leadership',arr:'$180,000 ARR',excerpt:'Review campaign on track for May Top Rated. AP TR score improving.',csmlbl:'Divyam Dewan',change:'New · was null',modal:'pulse-quad-ml'},
+    {csm:'divyam',health:'Healthy',account:'Quadient Software',opp:'IDL Co-sell 2025',arr:'$120,000 ARR',excerpt:'IDL program advancing — SFDC integration and webhook routing in progress.',csmlbl:'Divyam Dewan',change:'New · was null',modal:'pulse-quad-idl'},
+    {csm:'divyam',health:'Healthy',account:'Quadient Software',opp:'TR IDL Pilot — Germany',arr:'$10,000 ARR',excerpt:'Ashlin coordinating review cadence for Top Rated threshold.',csmlbl:'Divyam Dewan',change:'New · was null',modal:'pulse-quad-de'},
+    {csm:'divyam',health:'Healthy',account:'Quadient Software',opp:'TR IDL Pilot — DACH',arr:'$10,000 ARR',excerpt:'DACH IDL onboarding progressing — 70/30 targeting split being finalized.',csmlbl:'Divyam Dewan',change:'New · was null',modal:'pulse-quad-dach'},
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':'badge-concerning';
+  const bi = h => h==='Healthy'?'🟢':'🟡';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}" onclick="openModal('${c.modal}')">
+      <div class="pulse-card-top"><div><div class="pulse-account">${c.account}</div><div class="pulse-opp">${c.opp}</div><div class="pulse-arr">${c.arr}</div></div><span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span></div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none"><div class="empty-icon">🔍</div>No pulses match these filters.</div>`;
+}
+
+function dayActionsHTML() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has(1)?'done':''}" data-csm="varun" id="action-1"><div class="action-checkbox ${doneActions.has(1)?'checked':''}" onclick="toggleAction(1)"></div><div class="action-body"><div class="action-title">Datadog Cloud Dynamics — technical follow-up on data accuracy</div><div class="action-meta"><span class="urgency-badge urgency-high">HIGH</span>Varun Tiwari · Within 5 business days · Loop in Solutions Engineering on SMB firmographic methodology + freshness SLA</div></div></div>
+    <div class="action-item ${doneActions.has(2)?'done':''}" data-csm="riley" id="action-2"><div class="action-checkbox ${doneActions.has(2)?'checked':''}" onclick="toggleAction(2)"></div><div class="action-body"><div class="action-title">Intuit Mailchimp — confirm SSO resolution timeline with Bianca Gause</div><div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Riley Rogers · SSO delays remain open; confirm status on next call</div></div></div>
+    <div class="action-item ${doneActions.has(3)?'done':''}" data-csm="divyam" id="action-3"><div class="action-checkbox ${doneActions.has(3)?'checked':''}" onclick="toggleAction(3)"></div><div class="action-body"><div class="action-title">Quadient — share UTM/trackable links and review submission cut-offs</div><div class="action-meta"><span class="urgency-badge urgency-high">HIGH</span>Divyam Dewan · Send Ashlin segmented lists + links before May Top Rated deadline</div></div></div>
+    <div class="action-item ${doneActions.has(4)?'done':''}" data-csm="divyam" id="action-4"><div class="action-checkbox ${doneActions.has(4)?'checked':''}" onclick="toggleAction(4)"></div><div class="action-body"><div class="action-title">Quadient — finalize IDL suppression lists and SFDC routing for DACH + Germany</div><div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Divyam Dewan / Lia / Ethan · Confirm targeting split and webhook setup</div></div></div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none"><div class="empty-icon">🔍</div>No action items match these filters.</div>`;
+}
+
+// ═══════════════════════════════════════════════════════════════
+// APR 21 REPORT — Activity from Mon Apr 20
+// ═══════════════════════════════════════════════════════════════
+function dayOverviewHTML_Apr21() {
+  return `<div class="section-label">Team Activity — Monday Apr 20</div>
+  <div class="overview-grid">
+    <div class="csm-card has-calls" data-csm="pam"><span class="call-badge">2 CALLS</span><div class="csm-card-header"><div class="avatar av-grey">PH</div><div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-red">1</div><div class="metric-lbl">At Risk</div></div><div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Total</div></div></div><div class="csm-account-note" style="color:#d97706">Cisco · Renewal May 15 · no committed Q4 budget ⚠️</div></div>
+    <div class="csm-card has-calls" data-csm="rani"><span class="call-badge">1 CALL</span><div class="csm-card-header"><div class="avatar av-grey">RG</div><div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">Workday · MCP expansion signals · $815K renewal Sept</div></div>
+    <div class="csm-card no-calls" data-csm="riley"><div class="csm-card-header"><div class="avatar av-riley">RR</div><div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No calls logged this period</div></div>
+    <div class="csm-card no-calls" data-csm="varun"><div class="csm-card-header"><div class="avatar av-varun">VT</div><div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No calls logged this period</div></div>
+    <div class="csm-card no-calls" data-csm="divyam"><div class="csm-card-header"><div class="avatar av-divyam">DD</div><div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No calls logged this period</div></div>
+    <div class="csm-card no-calls" data-csm="nick"><div class="csm-card-header"><div class="avatar av-grey">NJ</div><div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No calls logged this period</div></div>
+    <div class="csm-card no-calls" data-csm="atisha"><div class="csm-card-header"><div class="avatar av-grey">AW</div><div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note" style="color:#dc2626">eHouse Studio · Churn risk escalated 🔴</div></div>
+    <div class="csm-card no-calls" data-csm="andy"><div class="csm-card-header"><div class="avatar av-grey">AL</div><div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No calls logged this period</div></div>
+  </div>`;
+}
+
+function dayCallsHTML_Apr21() {
+  return `<div class="table-card"><table>
+    <thead><tr><th>Time (PT)</th><th>CSM</th><th>Account</th><th>Duration</th><th>Signal</th></tr></thead>
+    <tbody>
+      <tr data-csm="pam" data-health="Concerning" onclick="openModal('call-cisco-tr')"><td style="color:#9ca3af;font-size:12px">Apr 20 · 8:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">PH</div>Pam Huck</div></td><td><strong>Cisco</strong> <span style="font-size:11px;color:#9ca3af">TrustRadius Sync</span></td><td>30 min</td><td><span class="badge badge-concerning">🟡 Concerning</span></td></tr>
+      <tr data-csm="pam" data-health="Healthy" onclick="openModal('call-msft-gtm')"><td style="color:#9ca3af;font-size:12px">Apr 20 · 1:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">PH</div>Pam Huck</div></td><td><strong>Microsoft</strong> <span style="font-size:11px;color:#9ca3af">GTM/Marketplace</span></td><td>30 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
+      <tr data-csm="rani" data-health="Healthy" onclick="openModal('call-workday-phoenix')"><td style="color:#9ca3af;font-size:12px">Apr 20 · 1:30 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">RG</div>Rani Guy</div></td><td><strong>Workday</strong> <span style="font-size:11px;color:#9ca3af">Project Phoenix</span></td><td>60 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
+    </tbody>
+  </table></div>
+  <div class="empty-state" id="calls-empty" style="display:none"><div class="empty-icon">🔍</div>No calls match these filters.</div>`;
+}
+
+function dayPulsesHTML_Apr21() {
+  const cards = [
+    {csm:'pam',health:'Concerning',account:'Cisco',opp:'TrustRadius Paid Media Partnership',arr:'Contract ends May 15',excerpt:'No committed Q4 budget. Attribution unclear; downgrade or churn risk without exec direction.',csmlbl:'Pam Huck',change:'New · was null',modal:'pulse-cisco-tr'},
+    {csm:'rani',health:'Healthy',account:'Workday',opp:'HG Platform — Project Phoenix (EDATA)',arr:'$815K ARR · Renews Sept 14',excerpt:'Strong MCP expansion signals. Workday evaluating HG data to power GTM agentic workflows.',csmlbl:'Rani Guy',change:'New · was null',modal:'pulse-workday-phoenix'},
+    {csm:'pam',health:'Healthy',account:'Microsoft',opp:'GTM/Marketplace for MCP/Agents',arr:'$574K ARR · Renews June',excerpt:'Strategic alignment on HG+Microsoft ecosystem integration. Azure marketplace partnership in discussion.',csmlbl:'Pam Huck',change:'New · was null',modal:'pulse-msft-gtm'},
+    {csm:'atisha',health:'Concerning',account:'eHouse Studio',opp:'HG Platform Renewal',arr:'Churn Risk',excerpt:'Mitch Gilroy repeatedly declines calls. No product usage or engagement. Trending toward churn.',csmlbl:'CSM Review',change:'Escalated to Churn Risk',modal:'pulse-ehouse'},
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':'badge-concerning';
+  const bi = h => h==='Healthy'?'🟢':'🟡';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}" onclick="openModal('${c.modal}')">
+      <div class="pulse-card-top"><div><div class="pulse-account">${c.account}</div><div class="pulse-opp">${c.opp}</div><div class="pulse-arr">${c.arr}</div></div><span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span></div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none"><div class="empty-icon">🔍</div>No pulses match these filters.</div>`;
+}
+
+function dayActionsHTML_Apr21() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has(21)?'done':''}" data-csm="pam" id="action-21"><div class="action-checkbox ${doneActions.has(21)?'checked':''}" onclick="toggleAction(21)"></div><div class="action-body"><div class="action-title">Cisco — deliver scoped proposal by May 15; confirm Q4 budget direction with Cisco paid media</div><div class="action-meta"><span class="urgency-badge urgency-high">HIGH</span>Pam Huck · Mardigan to scope; Melissa's team to finalize product scope (mid-market, LDOS, data center) by Wednesday</div></div></div>
+    <div class="action-item ${doneActions.has(22)?'done':''}" data-csm="rani" id="action-22"><div class="action-checkbox ${doneActions.has(22)?'checked':''}" onclick="toggleAction(22)"></div><div class="action-body"><div class="action-title">Workday — schedule QBR with Phoenix Majumder + Winston Wu; legal/security to review AI addendum</div><div class="action-meta"><span class="urgency-badge urgency-high">HIGH</span>Rani Guy · Workday to test MCP use cases; AI addendum + consumption-based MCP credits need formal evaluation</div></div></div>
+    <div class="action-item ${doneActions.has(23)?'done':''}" data-csm="pam" id="action-23"><div class="action-checkbox ${doneActions.has(23)?'checked':''}" onclick="toggleAction(23)"></div><div class="action-body"><div class="action-title">Microsoft — develop business case with ROI projections for Satish/Rohini before Azure commitment</div><div class="action-meta"><span class="urgency-badge urgency-high">HIGH</span>Pam Huck / Mark Fell / Francis Brero · Finalize Power Automate integration; target May 19 announcement</div></div></div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none"><div class="empty-icon">🔍</div>No action items match these filters.</div>`;
+}
+
+// ═══════════════════════════════════════════════════════════════
+// APR 20 REPORT — Activity from Sun Apr 19 (no team activity)
+// ═══════════════════════════════════════════════════════════════
+function dayOverviewHTML_Apr20() {
+  return `<div class="section-label">Team Activity — Sunday Apr 19</div>
+  <div class="overview-grid">
+    <div class="csm-card no-calls" data-csm="riley"><div class="csm-card-header"><div class="avatar av-riley">RR</div><div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No activity — weekend</div></div>
+    <div class="csm-card no-calls" data-csm="varun"><div class="csm-card-header"><div class="avatar av-varun">VT</div><div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No activity — weekend</div></div>
+    <div class="csm-card no-calls" data-csm="divyam"><div class="csm-card-header"><div class="avatar av-divyam">DD</div><div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No activity — weekend</div></div>
+    <div class="csm-card no-calls" data-csm="nick"><div class="csm-card-header"><div class="avatar av-grey">NJ</div><div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No activity — weekend</div></div>
+    <div class="csm-card no-calls" data-csm="rani"><div class="csm-card-header"><div class="avatar av-grey">RG</div><div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No activity — weekend</div></div>
+    <div class="csm-card no-calls" data-csm="pam"><div class="csm-card-header"><div class="avatar av-grey">PH</div><div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No activity — weekend</div></div>
+    <div class="csm-card no-calls" data-csm="atisha"><div class="csm-card-header"><div class="avatar av-grey">AW</div><div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No activity — weekend</div></div>
+    <div class="csm-card no-calls" data-csm="andy"><div class="csm-card-header"><div class="avatar av-grey">AL</div><div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No activity — weekend</div></div>
+  </div>`;
+}
+
+function dayCallsHTML_Apr20() {
+  return `<div class="empty-state"><div class="empty-icon">📅</div>No call recordings found for Apr 19, 2026 (Sunday).</div>
+  <div class="empty-state" id="calls-empty" style="display:none"></div>`;
+}
+
+function dayPulsesHTML_Apr20() {
+  return `<div class="empty-state"><div class="empty-icon">📋</div>No pulse notes were logged for Apr 19, 2026.</div>
+  <div class="empty-state" id="pulses-empty" style="display:none"></div>`;
+}
+
+function dayActionsHTML_Apr20() {
+  return `<div class="empty-state"><div class="empty-icon">✅</div>No action items logged for Apr 19, 2026.</div>
+  <div class="empty-state" id="actions-empty" style="display:none"></div>`;
+}
+
+// ═══════════════════════════════════════════════════════════════
+// APR 23 REPORT — Activity from Wed Apr 22
+// ═══════════════════════════════════════════════════════════════
+function dayOverviewHTML_Apr23() {
+  return `<div class="section-label">Team Activity — Wednesday Apr 22</div>
+  <div class="overview-grid">
+    <div class="csm-card has-calls" data-csm="rani"><span class="call-badge">3 CALLS</span><div class="csm-card-header"><div class="avatar av-grey">RG</div><div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">3</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">85m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">Lenovo · Elastic · Cloudflare — May onsite with Cloudflare confirmed</div></div>
+    <div class="csm-card has-calls" data-csm="varun"><span class="call-badge">2 CALLS</span><div class="csm-card-header"><div class="avatar av-varun">VT</div><div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">DXC · Zendesk — Intent data into AI agent + TR renewal planning</div></div>
+    <div class="csm-card has-calls" data-csm="pam"><span class="call-badge">2 CALLS</span><div class="csm-card-header"><div class="avatar av-grey">PH</div><div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">Epicor Kinetic · Eclipse — Product listings + Insights Nashville prep</div></div>
+    <div class="csm-card has-calls" data-csm="nick"><span class="call-badge">1 CALL</span><div class="csm-card-header"><div class="avatar av-grey">NJ</div><div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">45m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">HCL SW — AI retention via MCP + Clay + LLM stack</div></div>
+    <div class="csm-card no-calls" data-csm="riley"><div class="csm-card-header"><div class="avatar av-riley">RR</div><div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No calls logged this period</div></div>
+    <div class="csm-card no-calls" data-csm="divyam"><div class="csm-card-header"><div class="avatar av-divyam">DD</div><div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No calls logged this period</div></div>
+    <div class="csm-card no-calls" data-csm="atisha"><div class="csm-card-header"><div class="avatar av-grey">AW</div><div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No calls logged this period</div></div>
+    <div class="csm-card no-calls" data-csm="andy"><div class="csm-card-header"><div class="avatar av-grey">AL</div><div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No calls logged this period</div></div>
+  </div>`;
+}
+
+function dayCallsHTML_Apr23() {
+  return `<div class="table-card"><table>
+    <thead><tr><th>Time (PT)</th><th>CSM</th><th>Account</th><th>Duration</th><th>Signal</th></tr></thead>
+    <tbody>
+      <tr data-csm="nick" data-health="Healthy" onclick="openModal('call-hcl-apr23')"><td style="color:#9ca3af;font-size:12px">Apr 22 · 2:30 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">NJ</div>Nick Johnson</div></td><td><strong>HCL SW</strong> <span style="font-size:11px;color:#9ca3af">MCP + Clay + LLM Strategy</span></td><td>45 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
+      <tr data-csm="varun" data-health="Healthy" onclick="openModal('call-dxc-intent-apr23')"><td style="color:#9ca3af;font-size:12px">Apr 22 · 4:30 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-varun">VT</div>Varun Tiwari</div></td><td><strong>DXC Technology</strong> <span style="font-size:11px;color:#9ca3af">Intent Data Integration</span></td><td>30 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
+      <tr data-csm="rani" data-health="Healthy" onclick="openModal('call-lenovo-apr23')"><td style="color:#9ca3af;font-size:12px">Apr 22 · 7:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">RG</div>Rani Guy</div></td><td><strong>Lenovo</strong> <span style="font-size:11px;color:#9ca3af">RGIP Platform Overview</span></td><td>25 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
+      <tr data-csm="rani" data-health="Healthy" onclick="openModal('call-elastic-apr23')"><td style="color:#9ca3af;font-size:12px">Apr 22 · 8:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">RG</div>Rani Guy</div></td><td><strong>Elastic</strong> <span style="font-size:11px;color:#9ca3af">TAM/SAM Alignment</span></td><td>30 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
+      <tr data-csm="rani" data-health="Healthy" onclick="openModal('call-cloudflare-apr23')"><td style="color:#9ca3af;font-size:12px">Apr 22 · 9:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">RG</div>Rani Guy</div></td><td><strong>Cloudflare</strong> <span style="font-size:11px;color:#9ca3af">May Onsite Prep</span></td><td>30 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
+      <tr data-csm="varun" data-health="Healthy" onclick="openModal('call-zendesk-apr23')"><td style="color:#9ca3af;font-size:12px">Apr 22 · 9:30 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-varun">VT</div>Varun Tiwari</div></td><td><strong>Zendesk</strong> <span style="font-size:11px;color:#9ca3af">TrustRadius CSM Sync</span></td><td>30 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
+      <tr data-csm="pam" data-health="Healthy" onclick="openModal('call-epicor-kinetic-apr23')"><td style="color:#9ca3af;font-size:12px">Apr 22 · 11:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">PH</div>Pam Huck</div></td><td><strong>Epicor Kinetic</strong> <span style="font-size:11px;color:#9ca3af">Product Listings + Event Prep</span></td><td>30 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
+      <tr data-csm="pam" data-health="Healthy" onclick="openModal('call-epicor-eclipse-apr23')"><td style="color:#9ca3af;font-size:12px">Apr 22 · 11:30 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">PH</div>Pam Huck</div></td><td><strong>Epicor Eclipse</strong> <span style="font-size:11px;color:#9ca3af">Campaign Evaluation</span></td><td>30 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
+    </tbody>
+  </table></div>
+  <div class="empty-state" id="calls-empty" style="display:none"><div class="empty-icon">🔍</div>No calls match these filters.</div>`;
+}
+
+function dayPulsesHTML_Apr23() {
+  const cards = [
+    {csm:'nick',health:'Healthy',account:'HCL SW',opp:'HG Platform — Customer Intelligence',arr:'Enterprise · Nick Johnson',excerpt:'Strong engagement from Alexander Knaani Klein on MCP + Clay + LLM retention workflows. Data quality questions on Charles Schwab flagged vs ZoomInfo — follow-up needed.',csmlbl:'Nick Johnson',change:'Healthy — active expansion interest',modal:'pulse-hcl-apr23'},
+    {csm:'varun',health:'Healthy',account:'DXC Technology',opp:'HG Intent Data Integration',arr:'Enterprise · Varun Tiwari',excerpt:'Productive session on integrating buying intent into DXC\'s AQS/MCP AI agent. AWS Marketplace funding path emerging. Contract amendment progressing with Preethi coordinating.',csmlbl:'Varun Tiwari',change:'Healthy — strong strategic alignment',modal:'pulse-dxc-apr23'},
+    {csm:'rani',health:'Healthy',account:'Lenovo',opp:'HG Platform — RGIP',arr:'Enterprise · Rani Guy',excerpt:'New stakeholder Kristen successfully onboarded to RGIP. Covered firmographics, tech installs, GSI contracts, Cloud maturity, spend modeling. Follow-up sessions scheduled.',csmlbl:'Rani Guy',change:'Healthy — new champion engaged',modal:'pulse-lenovo-apr23'},
+    {csm:'rani',health:'Healthy',account:'Elastic',opp:'HG Platform — Market Intelligence',arr:'Enterprise · Rani Guy',excerpt:'Working session to bridge Elastic\'s IDC category definitions with HG data taxonomy for unified TAM/SAM view. Session with David Adamson, Sydney, Sriraman, Noelle.',csmlbl:'Rani Guy',change:'Healthy — deep technical collaboration',modal:'pulse-elastic-apr23'},
+    {csm:'rani',health:'Healthy',account:'Cloudflare',opp:'HG + TrustRadius Platform',arr:'Enterprise · Rani Guy',excerpt:'May onsite confirmed. Scoring model gaps identified: firmographic coverage + APAC/Japan hierarchy issues. HG + TR data blending for seller intelligence explored.',csmlbl:'Rani Guy',change:'Healthy — May onsite locked in',modal:'pulse-cloudflare-apr23'},
+    {csm:'varun',health:'Healthy',account:'Zendesk',opp:'TrustRadius CSM Sync',arr:'Enterprise · Varun Tiwari',excerpt:'Forethought TrustRadius profile inactive/unclaimed. Integration direction pending mid-May decision post-Relate. 6 April reviews added; Top Rated secured. Aug renewal in planning.',csmlbl:'Varun Tiwari',change:'Healthy — renewal planning underway',modal:'pulse-zendesk-apr23'},
+    {csm:'pam',health:'Healthy',account:'Epicor Kinetic',opp:'TrustRadius Lead Acceleration',arr:'Enterprise · Pam Huck',excerpt:'Kinetic product listings being updated ahead of Insights Nashville. Content refresh underway, targeting event deadline. Booth logistics confirmed with Pam\'s team assisting.',csmlbl:'Pam Huck',change:'Healthy — active product engagement',modal:'pulse-epicor-kinetic-apr23'},
+    {csm:'pam',health:'Healthy',account:'Epicor Eclipse',opp:'TrustRadius Bundled Package',arr:'Enterprise · Pam Huck',excerpt:'Bundled campaign evaluation for P21 and lead gen via API integrations. Meeting rescheduled to include Libby and Ben Halverson for full product scope review.',csmlbl:'Pam Huck',change:'Healthy — expansion scoping in progress',modal:'pulse-epicor-eclipse-apr23'},
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'🟢':h==='Concerning'?'🟡':'🔴';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}" onclick="openModal('${c.modal}')">
+      <div class="pulse-card-top"><div><div class="pulse-account">${c.account}</div><div class="pulse-opp">${c.opp}</div><div class="pulse-arr">${c.arr}</div></div><span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span></div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none"><div class="empty-icon">🔍</div>No pulses match these filters.</div>`;
+}
+
+function dayActionsHTML_Apr23() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has(31)?'done':''}" data-csm="rani" id="action-31"><div class="action-checkbox ${doneActions.has(31)?'checked':''}" onclick="toggleAction(31)"></div><div class="action-body"><div class="action-title">Lenovo — schedule new UI demo + Microsoft Dynamics integration deep-dive for Kristen</div><div class="action-meta"><span class="urgency-badge urgency-med">MED</span>Rani Guy · Kristen is net-new stakeholder with strong first impression — momentum is high, follow-up session to be booked this week</div></div></div>
+    <div class="action-item ${doneActions.has(32)?'done':''}" data-csm="nick" id="action-32"><div class="action-checkbox ${doneActions.has(32)?'checked':''}" onclick="toggleAction(32)"></div><div class="action-body"><div class="action-title">HCL SW — share HG MCP + Clay use cases; schedule data quality deep dive on ZoomInfo competitive questions</div><div class="action-meta"><span class="urgency-badge urgency-high">HIGH</span>Nick Johnson · Alexander Knaani Klein and Mohan K raised Charles Schwab data contradictions — resolving builds trust and supports expansion</div></div></div>
+    <div class="action-item ${doneActions.has(33)?'done':''}" data-csm="rani" id="action-33"><div class="action-checkbox ${doneActions.has(33)?'checked':''}" onclick="toggleAction(33)"></div><div class="action-body"><div class="action-title">Cloudflare — resolve APAC/Japan firmographic hierarchy gaps; deliver pre-onsite scoring model gap analysis</div><div class="action-meta"><span class="urgency-badge urgency-high">HIGH</span>Rani Guy · May onsite confirmed — data gaps must be resolved before the session to ensure the agenda lands well</div></div></div>
+    <div class="action-item ${doneActions.has(34)?'done':''}" data-csm="varun" id="action-34"><div class="action-checkbox ${doneActions.has(34)?'checked':''}" onclick="toggleAction(34)"></div><div class="action-body"><div class="action-title">Zendesk — confirm Forethought integration direction by mid-May; coordinate SEO early-access with James; book June renewal alignment session</div><div class="action-meta"><span class="urgency-badge urgency-med">MED</span>Varun Tiwari · Aug renewal — June alignment sets scope; Forethought positioning decision impacts subscription structure</div></div></div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none"><div class="empty-icon">🔍</div>No action items match these filters.</div>`;
+}
+
+function applyDayFilters() {
+  const showHealth = activeTab==='calls'||activeTab==='pulses';
+  document.querySelectorAll('[data-filter-health]').forEach(el=>{ el.style.display=showHealth?'':'none'; });
+  document.getElementById('health-divider').style.display = showHealth?'':'none';
+  document.getElementById('health-label').style.display = showHealth?'':'none';
+
+  if (activeTab==='overview') {
+    document.querySelectorAll('.csm-card').forEach(c=>{ c.classList.toggle('hidden', activeCsm!=='all' && c.dataset.csm!==activeCsm); });
+  }
+  if (activeTab==='calls') {
+    let v=0; document.querySelectorAll('#pane-calls tbody tr').forEach(r=>{ const s=(activeCsm==='all'||r.dataset.csm===activeCsm)&&(activeHealth==='all'||r.dataset.health===activeHealth); r.classList.toggle('hidden',!s); if(s)v++; });
+    const e=document.getElementById('calls-empty'); if(e)e.style.display=v===0?'':'none';
+  }
+  if (activeTab==='pulses') {
+    let v=0; document.querySelectorAll('.pulse-card').forEach(c=>{ const s=(activeCsm==='all'||c.dataset.csm===activeCsm)&&(activeHealth==='all'||c.dataset.health===activeHealth); c.classList.toggle('hidden',!s); if(s)v++; });
+    const e=document.getElementById('pulses-empty'); if(e)e.style.display=v===0?'':'none';
+  }
+  if (activeTab==='actions') {
+    let v=0; document.querySelectorAll('.action-item').forEach(i=>{ const s=activeCsm==='all'||i.dataset.csm===activeCsm; i.classList.toggle('hidden',!s); if(s)v++; });
+    const e=document.getElementById('actions-empty'); if(e)e.style.display=v===0?'':'none';
+  }
+}
+
+function toggleAction(n) {
+  doneActions.has(n)?doneActions.delete(n):doneActions.add(n);
+  const item=document.getElementById('action-'+n); const cb=document.getElementById? document.querySelector('#action-'+n+' .action-checkbox'):null;
+  if(item){ item.classList.toggle('done',doneActions.has(n)); const c=item.querySelector('.action-checkbox'); if(c)c.classList.toggle('checked',doneActions.has(n)); }
+}
+
+// ═══════════════════════════════════════════════════════════════
+// WEEK VIEW
+// ═══════════════════════════════════════════════════════════════
+function renderWeek(mc, tabsRow, statPills) {
+  setPills([['dot-teal','16 Calls'],['dot-green','21 Pulses'],['dot-purple','6 Active CSMs'],['dot-amber','3 Concerning']]);
+  const tabs = ['Summary','CSM Breakdown','Call Log (16)','Pulse Notes (21)'];
+  if (!activeTab || !['wsummary','wcsm','wcalls','wpulses'].includes(activeTab)) activeTab='wsummary';
+  tabsRow.innerHTML = ['wsummary','wcsm','wcalls','wpulses'].map((k,i)=>
+    `<div class="tab ${activeTab===k?'active':''}" onclick="switchTab('${k}')">${tabs[i]}</div>`
+  ).join('');
+  ['h-all','h-healthy','h-concerning','health-divider','health-label'].forEach(id=>{
+    const el=document.getElementById(id); if(el) el.style.display = activeTab==='wpulses'?'':'none';
+  });
+
+  let html = '<div class="content">';
+  if (activeTab==='wsummary') html += weekSummaryHTML();
+  else if (activeTab==='wcsm') html += weekCSMHTML();
+  else if (activeTab==='wcalls') html += weekCallsHTML();
+  else html += weekPulsesHTML();
+  html += '</div>';
+  mc.innerHTML = html;
+  if (activeTab==='wpulses') applyWeekPulseFilters();
+  else applyWeekCSMFilter();
+}
+
+function weekSummaryHTML() {
+  return `
+  <div class="section-label">Week of Apr 20–26, 2026 · Overview</div>
+  <div class="summary-cards">
+    <div class="sum-card c-teal"><div class="sum-val">16</div><div class="sum-lbl">Calls w/ Transcripts</div><div class="sum-sub">15 accounts · Mon–Wed</div></div>
+    <div class="sum-card c-green"><div class="sum-val">21</div><div class="sum-lbl">Pulse Notes Created</div><div class="sum-sub">18 Healthy · 3 Concerning</div></div>
+    <div class="sum-card c-purple"><div class="sum-val">6</div><div class="sum-lbl">Active CSMs</div><div class="sum-sub">of 8 on the team</div></div>
+    <div class="sum-card c-amber"><div class="sum-val">3</div><div class="sum-lbl">Concerning Signals</div><div class="sum-sub">Cisco · Datadog CD · eHouse</div></div>
+    <div class="sum-card c-red"><div class="sum-val">1</div><div class="sum-lbl">Churn Risk Escalated</div><div class="sum-sub">eHouse Studio — no engagement</div></div>
+    <div class="sum-card c-green"><div class="sum-val">3</div><div class="sum-lbl">Pulse Upgrades</div><div class="sum-sub">Intuit: Concerning→Healthy</div></div>
+  </div>
+
+  <div class="section-label">Active Accounts This Week</div>
+  <div class="account-highlights">
+    <div class="acct-card ac-amber"><div class="acct-name">Datadog</div><div class="acct-csm">CSM: Varun Tiwari</div><div class="acct-stats"><div class="acct-stat"><div class="n ct">4</div><div class="l">Calls</div></div><div class="acct-stat"><div class="n cg">2</div><div class="l">Pulses</div></div><div class="acct-stat"><div class="n" style="color:#d97706">⚠</div><div class="l">Risk</div></div></div><div class="acct-note">Cloud Dynamics data trust concern flagged — SMB firmographic accuracy questioned. TR/ICP call healthy — ICP refinement to commercial/SMB progressing.</div></div>
+    <div class="acct-card"><div class="acct-name">Rani's Portfolio</div><div class="acct-csm">Workday · Lenovo · Elastic · Cloudflare</div><div class="acct-stats"><div class="acct-stat"><div class="n ct">4</div><div class="l">Calls</div></div><div class="acct-stat"><div class="n cg">4</div><div class="l">Pulses</div></div><div class="acct-stat"><div class="n" style="color:#059669">↑H</div><div class="l">Trend</div></div></div><div class="acct-note">Strong week: Workday MCP expansion (Mon), Lenovo onboarding new stakeholder Kristen (Wed), Elastic TAM/SAM deep-dive (Wed), Cloudflare May onsite confirmed (Wed).</div></div>
+    <div class="acct-card"><div class="acct-name">Quadient Software</div><div class="acct-csm">CSM: Divyam Dewan</div><div class="acct-stats"><div class="acct-stat"><div class="n ct">2</div><div class="l">Calls</div></div><div class="acct-stat"><div class="n cg">4</div><div class="l">Pulses</div></div><div class="acct-stat"><div class="n" style="color:#059669">↑H</div><div class="l">Trend</div></div></div><div class="acct-note">TR review campaign on track for May Top Rated. IDL Germany + DACH onboarding advancing. Thomson Reuters churn model deep-dive also covered this week.</div></div>
+    <div class="acct-card"><div class="acct-name">Intuit Mailchimp</div><div class="acct-csm">CSM: Riley Rogers</div><div class="acct-stats"><div class="acct-stat"><div class="n ct">1</div><div class="l">Calls</div></div><div class="acct-stat"><div class="n cg">3</div><div class="l">Pulses</div></div><div class="acct-stat"><div class="n" style="color:#059669">↑H</div><div class="l">Trend</div></div></div><div class="acct-note">Champion Bianca Gause re-engaged. GEO dashboard early access driving positive momentum. All 3 opps upgraded from Concerning → Healthy.</div></div>
+    <div class="acct-card ac-amber"><div class="acct-name">Cisco</div><div class="acct-csm">CSM: Pam Huck</div><div class="acct-stats"><div class="acct-stat"><div class="n ct">1</div><div class="l">Calls</div></div><div class="acct-stat"><div class="n cg">1</div><div class="l">Pulses</div></div><div class="acct-stat"><div class="n" style="color:#d97706">⚠</div><div class="l">Risk</div></div></div><div class="acct-note">No committed Q4 budget. Attribution unclear. Contract ends May 15 — scoped proposal urgently needed. Downgrade or churn risk without exec direction.</div></div>
+  </div>
+
+  <div class="section-label">Daily Call Activity — Week of Apr 20–26</div>
+  <div class="heatmap-card">
+    <table class="hm-table">
+      <thead><tr><th class="row-lbl">CSM</th><th>Mon Apr 20</th><th>Tue Apr 21</th><th>Wed Apr 22</th><th>Thu Apr 23</th><th>Fri Apr 24</th><th>Sat Apr 25</th><th>Sun Apr 26</th></tr></thead>
+      <tbody>
+        <tr><td style="font-size:12px;font-weight:600">Riley Rogers</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-1">1</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td></tr>
+        <tr><td style="font-size:12px;font-weight:600">Varun Tiwari</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-2">2</td><td class="hm-cell hm-2">2</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td></tr>
+        <tr><td style="font-size:12px;font-weight:600">Divyam Dewan</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-2">2</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td></tr>
+        <tr><td style="font-size:12px;font-weight:600">Nick Johnson</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-1">1</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td></tr>
+        <tr><td style="font-size:12px;font-weight:600">Rani Guy</td><td class="hm-cell hm-1">1</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-3">3</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td></tr>
+        <tr><td style="font-size:12px;font-weight:600">Pam Huck</td><td class="hm-cell hm-2">2</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-2">2</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td></tr>
+        <tr><td style="font-size:12px;color:#9ca3af">Atisha Waghela</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td></tr>
+        <tr><td style="font-size:12px;color:#9ca3af">Andy Lim</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section-label">Pulse Health Distribution</div>
+  <div class="health-dist">
+    <div class="health-bar-wrap">
+      <div class="health-bar-title">All Pulses Created This Week (21)</div>
+      <div class="health-bar-row"><div class="health-bar-label">🟢 Healthy</div><div class="health-bar-track"><div class="health-bar-fill hf-green" style="width:86%"></div></div><div class="health-bar-count">18</div></div>
+      <div class="health-bar-row"><div class="health-bar-label">🟡 Concerning</div><div class="health-bar-track"><div class="health-bar-fill hf-amber" style="width:14%"></div></div><div class="health-bar-count">3</div></div>
+      <div class="health-bar-row"><div class="health-bar-label">🔴 Poor</div><div class="health-bar-track"><div class="health-bar-fill hf-red" style="width:0%"></div></div><div class="health-bar-count">0</div></div>
+    </div>
+    <div class="health-bar-wrap">
+      <div class="health-bar-title">Calls by Day</div>
+      <div class="health-bar-row"><div class="health-bar-label">Mon Apr 20</div><div class="health-bar-track"><div class="health-bar-fill hf-green" style="width:19%"></div></div><div class="health-bar-count">3</div></div>
+      <div class="health-bar-row"><div class="health-bar-label">Tue Apr 21</div><div class="health-bar-track"><div class="health-bar-fill hf-green" style="width:31%"></div></div><div class="health-bar-count">5</div></div>
+      <div class="health-bar-row"><div class="health-bar-label">Wed Apr 22</div><div class="health-bar-track"><div class="health-bar-fill hf-green" style="width:50%"></div></div><div class="health-bar-count">8</div></div>
+    </div>
+  </div>`;
+}
+
+function weekCSMHTML() {
+  return `<div class="section-label">CSM Contributions — Week of Apr 20–26</div>
+  <div class="csm-leaderboard">
+    <div class="csm-row" data-csm="varun"><div class="avatar av-varun">VT</div><div style="flex:1"><div class="csm-row-name">Varun Tiwari</div><div class="csm-row-sub">Datadog · DXC · Zendesk — Cloud Dynamics Concerning; others Healthy</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">4</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">4</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n" style="color:#d97706">1</div><div class="l">Risks</div></div></div></div>
+    <div class="csm-row" data-csm="pam"><div class="avatar av-grey">PH</div><div style="flex:1"><div class="csm-row-name">Pam Huck</div><div class="csm-row-sub">Cisco · Microsoft · Epicor Kinetic · Epicor Eclipse — Cisco Concerning</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">4</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">4</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n" style="color:#d97706">1</div><div class="l">Risks</div></div></div></div>
+    <div class="csm-row" data-csm="rani"><div class="avatar av-grey">RG</div><div style="flex:1"><div class="csm-row-name">Rani Guy</div><div class="csm-row-sub">Workday · Lenovo · Elastic · Cloudflare — all Healthy</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">4</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">4</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n cgr">0</div><div class="l">Risks</div></div></div></div>
+    <div class="csm-row" data-csm="divyam"><div class="avatar av-divyam">DD</div><div style="flex:1"><div class="csm-row-name">Divyam Dewan</div><div class="csm-row-sub">Thomson Reuters · Quadient — all Healthy · IDL + reviews on track</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">2</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">4</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n cgr">0</div><div class="l">Risks</div></div></div></div>
+    <div class="csm-row" data-csm="riley"><div class="avatar av-riley">RR</div><div style="flex:1"><div class="csm-row-name">Riley Rogers</div><div class="csm-row-sub">Intuit Mailchimp · Champion re-engaged · 3 pulses upgraded Concerning→Healthy</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">1</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">3</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n cgr">0</div><div class="l">Risks</div></div></div></div>
+    <div class="csm-row" data-csm="nick"><div class="avatar av-grey">NJ</div><div style="flex:1"><div class="csm-row-name">Nick Johnson</div><div class="csm-row-sub">HCL Software — usage deep-dive · Healthy</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">1</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">1</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n cgr">0</div><div class="l">Risks</div></div></div></div>
+    <div class="csm-row inactive" data-csm="atisha"><div class="avatar av-grey">AW</div><div style="flex:1"><div class="csm-row-name">Atisha Waghela</div><div class="csm-row-sub">eHouse Studio — no call logged · pulse flagged Concerning</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n cgr">0</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#d97706">1</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n" style="color:#d97706">1</div><div class="l">Risks</div></div></div></div>
+    <div class="csm-row inactive" data-csm="andy"><div class="avatar av-grey">AL</div><div style="flex:1"><div class="csm-row-name">Andy Lim</div><div class="csm-row-sub">No activity logged this week</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n cgr">0</div><div class="l">Calls</div></div><div class="row-stat"><div class="n cgr">0</div><div class="l">Pulses</div></div></div></div>
+  </div>`;
+}
+
+function weekCallsHTML() {
+  return `<div class="table-card"><table>
+    <thead><tr><th>Date & Time</th><th>CSM</th><th>Account</th><th>Duration</th><th>Signal</th></tr></thead>
+    <tbody>
+      <tr style="background:#f8f9fc;pointer-events:none"><td colspan="5" style="font-size:11px;font-weight:700;color:#6b7280;text-transform:uppercase;letter-spacing:0.6px;padding:8px 12px">MONDAY APR 20 — 3 CALLS</td></tr>
+      <tr data-csm="pam" onclick="openModal('call-cisco-tr')"><td style="color:#9ca3af;font-size:12px">Mon Apr 20 · 9:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">PH</div>Pam Huck</div></td><td><strong>Cisco</strong> <span style="font-size:11px;color:#9ca3af">QBR Prep</span></td><td>45 min</td><td><span class="badge badge-concerning">🟡 Concerning</span></td></tr>
+      <tr data-csm="pam" onclick="openModal('call-msft-gtm')"><td style="color:#9ca3af;font-size:12px">Mon Apr 20 · 11:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">PH</div>Pam Huck</div></td><td><strong>Microsoft</strong> <span style="font-size:11px;color:#9ca3af">GTM Alignment</span></td><td>30 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
+      <tr data-csm="rani" onclick="openModal('call-workday-phoenix')"><td style="color:#9ca3af;font-size:12px">Mon Apr 20 · 2:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">RG</div>Rani Guy</div></td><td><strong>Workday</strong> <span style="font-size:11px;color:#9ca3af">Project Phoenix</span></td><td>45 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
+      <tr style="background:#f8f9fc;pointer-events:none"><td colspan="5" style="font-size:11px;font-weight:700;color:#6b7280;text-transform:uppercase;letter-spacing:0.6px;padding:8px 12px">TUESDAY APR 21 — 5 CALLS</td></tr>
+      <tr data-csm="riley" onclick="openModal('call-intuit')"><td style="color:#9ca3af;font-size:12px">Tue Apr 21 · 8:30 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-riley">RR</div>Riley Rogers</div></td><td><strong>Intuit Mailchimp</strong></td><td>30 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
+      <tr data-csm="divyam" onclick="openModal('call-tr-apr22')"><td style="color:#9ca3af;font-size:12px">Tue Apr 21 · 8:30 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-divyam">DD</div>Divyam Dewan</div></td><td><strong>Thomson Reuters</strong> <span style="font-size:11px;color:#9ca3af">Churn + Intent</span></td><td>30 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
+      <tr data-csm="divyam" onclick="openModal('call-quad')"><td style="color:#9ca3af;font-size:12px">Tue Apr 21 · 11:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-divyam">DD</div>Divyam Dewan</div></td><td><strong>Quadient Software</strong></td><td>30 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
+      <tr data-csm="varun" onclick="openModal('call-dd-cd')"><td style="color:#9ca3af;font-size:12px">Tue Apr 21 · 11:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-varun">VT</div>Varun Tiwari</div></td><td><strong>Datadog</strong> <span style="font-size:11px;color:#9ca3af">Cloud Dynamics</span></td><td>45 min</td><td><span class="badge badge-concerning">🟡 Concerning</span></td></tr>
+      <tr data-csm="varun" onclick="openModal('call-dd-tr')"><td style="color:#9ca3af;font-size:12px">Tue Apr 21 · 12:30 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-varun">VT</div>Varun Tiwari</div></td><td><strong>Datadog</strong> <span style="font-size:11px;color:#9ca3af">TR / ICP</span></td><td>30 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
+      <tr style="background:#f8f9fc;pointer-events:none"><td colspan="5" style="font-size:11px;font-weight:700;color:#6b7280;text-transform:uppercase;letter-spacing:0.6px;padding:8px 12px">WEDNESDAY APR 22 — 8 CALLS</td></tr>
+      <tr data-csm="nick" onclick="openModal('call-hcl-apr23')"><td style="color:#9ca3af;font-size:12px">Wed Apr 22 · 9:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">NJ</div>Nick Johnson</div></td><td><strong>HCL Software</strong> <span style="font-size:11px;color:#9ca3af">Usage Deep-dive</span></td><td>45 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
+      <tr data-csm="varun" onclick="openModal('call-dxc-intent-apr23')"><td style="color:#9ca3af;font-size:12px">Wed Apr 22 · 9:30 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-varun">VT</div>Varun Tiwari</div></td><td><strong>DXC Technology</strong> <span style="font-size:11px;color:#9ca3af">Intent Review</span></td><td>30 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
+      <tr data-csm="rani" onclick="openModal('call-lenovo-apr23')"><td style="color:#9ca3af;font-size:12px">Wed Apr 22 · 10:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">RG</div>Rani Guy</div></td><td><strong>Lenovo</strong> <span style="font-size:11px;color:#9ca3af">QBR</span></td><td>60 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
+      <tr data-csm="rani" onclick="openModal('call-elastic-apr23')"><td style="color:#9ca3af;font-size:12px">Wed Apr 22 · 11:30 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">RG</div>Rani Guy</div></td><td><strong>Elastic</strong> <span style="font-size:11px;color:#9ca3af">Renewal Prep</span></td><td>30 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
+      <tr data-csm="rani" onclick="openModal('call-cloudflare-apr23')"><td style="color:#9ca3af;font-size:12px">Wed Apr 22 · 1:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">RG</div>Rani Guy</div></td><td><strong>Cloudflare</strong> <span style="font-size:11px;color:#9ca3af">Expansion</span></td><td>45 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
+      <tr data-csm="varun" onclick="openModal('call-zendesk-apr23')"><td style="color:#9ca3af;font-size:12px">Wed Apr 22 · 1:30 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-varun">VT</div>Varun Tiwari</div></td><td><strong>Zendesk</strong> <span style="font-size:11px;color:#9ca3af">Health Check</span></td><td>30 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
+      <tr data-csm="pam" onclick="openModal('call-epicor-kinetic-apr23')"><td style="color:#9ca3af;font-size:12px">Wed Apr 22 · 2:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">PH</div>Pam Huck</div></td><td><strong>Epicor</strong> <span style="font-size:11px;color:#9ca3af">Kinetic</span></td><td>45 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
+      <tr data-csm="pam" onclick="openModal('call-epicor-eclipse-apr23')"><td style="color:#9ca3af;font-size:12px">Wed Apr 22 · 3:30 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">PH</div>Pam Huck</div></td><td><strong>Epicor</strong> <span style="font-size:11px;color:#9ca3af">Eclipse</span></td><td>30 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
+    </tbody>
+  </table></div>`;
+}
+
+function weekPulsesHTML() {
+  const strip = s => {
+    const idx = s.indexOf('<div class="empty-state" id="pulses-empty"');
+    return idx >= 0 ? s.substring(0, idx) : s;
+  };
+  return `
+    <div class="section-label" style="margin-top:0">Monday Apr 20 — 4 Pulses</div>
+    ${strip(dayPulsesHTML_Apr21())}
+    <div class="section-label">Tuesday Apr 21 — 9 Pulses</div>
+    ${strip(dayPulsesHTML())}
+    <div class="section-label">Wednesday Apr 22 — 8 Pulses</div>
+    ${strip(dayPulsesHTML_Apr23())}
+    <div class="empty-state" id="pulses-empty" style="display:none"><div class="empty-icon">🔍</div>No pulses match these filters.</div>
+  `;
+}
+
+function applyWeekPulseFilters() {
+  let v=0;
+  document.querySelectorAll('.pulse-card').forEach(c=>{
+    const s=(activeCsm==='all'||c.dataset.csm===activeCsm)&&(activeHealth==='all'||c.dataset.health===activeHealth);
+    c.classList.toggle('hidden',!s); if(s)v++;
+  });
+  const e=document.getElementById('pulses-empty'); if(e)e.style.display=v===0?'':'none';
+}
+
+function applyWeekCSMFilter() {
+  document.querySelectorAll('.csm-row').forEach(r=>{
+    r.style.display = (activeCsm==='all'||r.dataset.csm===activeCsm)?'':'none';
+  });
+}
+
+// ═══════════════════════════════════════════════════════════════
+// MONTH VIEW
+// ═══════════════════════════════════════════════════════════════
+function renderMonth(mc, tabsRow, statPills) {
+  setPills([['dot-teal','16 Calls'],['dot-green','21 Pulses'],['dot-purple','15 Accounts'],['dot-amber','3 Concerning']]);
+  const tabs = ['Summary','CSM Breakdown','Pulse Health'];
+  if (!activeTab || !['msummary','mcsm','mhealth'].includes(activeTab)) activeTab='msummary';
+  tabsRow.innerHTML = ['msummary','mcsm','mhealth'].map((k,i)=>
+    `<div class="tab ${activeTab===k?'active':''}" onclick="switchTab('${k}')">${tabs[i]}</div>`
+  ).join('');
+  ['h-all','h-healthy','h-concerning','health-divider','health-label'].forEach(id=>{
+    const el=document.getElementById(id); if(el) el.style.display='none';
+  });
+
+  let html = '<div class="content">';
+  if (activeTab==='msummary') html += monthSummaryHTML();
+  else if (activeTab==='mcsm') html += monthCSMHTML();
+  else html += monthHealthHTML();
+  html += '</div>';
+  mc.innerHTML = html;
+}
+
+function monthSummaryHTML() {
+  return `
+  <div class="section-label">April 2026 · Month-to-Date Summary</div>
+  <div class="summary-cards">
+    <div class="sum-card c-teal"><div class="sum-val">16</div><div class="sum-lbl">Calls w/ Transcripts</div><div class="sum-sub">Apr 20–22 · 6 CSMs</div></div>
+    <div class="sum-card c-green"><div class="sum-val">21</div><div class="sum-lbl">Pulse Notes</div><div class="sum-sub">18 Healthy · 3 Concerning</div></div>
+    <div class="sum-card c-purple"><div class="sum-val">6</div><div class="sum-lbl">CSMs w/ Activity</div><div class="sum-sub">of 8 on the team</div></div>
+    <div class="sum-card c-amber"><div class="sum-val">$826K</div><div class="sum-lbl">ARR w/ Pulse Coverage</div><div class="sum-sub">Quadient · Datadog · Intuit</div></div>
+    <div class="sum-card c-red"><div class="sum-val">3</div><div class="sum-lbl">Open Risk Signals</div><div class="sum-sub">Datadog · Cisco · eHouse</div></div>
+    <div class="sum-card c-green"><div class="sum-val">3</div><div class="sum-lbl">Pulse Upgrades</div><div class="sum-sub">Concerning → Healthy</div></div>
+  </div>
+
+  <div class="section-label">Top Accounts by Engagement</div>
+  <div class="account-highlights">
+    <div class="acct-card"><div class="acct-name">Quadient Software</div><div class="acct-csm">CSM: Divyam Dewan · $320K ARR</div><div class="acct-stats"><div class="acct-stat"><div class="n ct">2</div><div class="l">Calls</div></div><div class="acct-stat"><div class="n" style="color:#059669">4</div><div class="l">Pulses</div></div><div class="acct-stat"><div class="n" style="color:#059669">All H</div><div class="l">Health</div></div></div><div class="acct-note">Most pulse coverage this month. IDL Germany + DACH pilots launched. Review campaigns targeting May Top Rated across 3 products.</div></div>
+    <div class="acct-card"><div class="acct-name">Rani Guy's Portfolio</div><div class="acct-csm">CSM: Rani Guy · Workday · Lenovo · Elastic · Cloudflare</div><div class="acct-stats"><div class="acct-stat"><div class="n ct">4</div><div class="l">Calls</div></div><div class="acct-stat"><div class="n" style="color:#059669">4</div><div class="l">Pulses</div></div><div class="acct-stat"><div class="n" style="color:#059669">All H</div><div class="l">Health</div></div></div><div class="acct-note">4 calls in a single day (Apr 22) — QBR prep, renewal, and expansion coverage across all four accounts. All healthy.</div></div>
+    <div class="acct-card ac-amber"><div class="acct-name">Datadog</div><div class="acct-csm">CSM: Varun Tiwari · $329K ARR</div><div class="acct-stats"><div class="acct-stat"><div class="n ct">4</div><div class="l">Calls</div></div><div class="acct-stat"><div class="n" style="color:#059669">4</div><div class="l">Pulses</div></div><div class="acct-stat"><div class="n" style="color:#d97706">Split</div><div class="l">Signal</div></div></div><div class="acct-note">Highest call volume this month across Datadog, DXC, and Zendesk. Cloud Dynamics data trust concern unresolved — SE follow-up required.</div></div>
+    <div class="acct-card ac-amber"><div class="acct-name">Cisco</div><div class="acct-csm">CSM: Pam Huck</div><div class="acct-stats"><div class="acct-stat"><div class="n ct">1</div><div class="l">Calls</div></div><div class="acct-stat"><div class="n" style="color:#d97706">1</div><div class="l">Pulses</div></div><div class="acct-stat"><div class="n" style="color:#d97706">⚠️</div><div class="l">Signal</div></div></div><div class="acct-note">QBR prep call flagged Concerning — budget scrutiny and stakeholder changes noted. Follow-up action plan required before next executive touchpoint.</div></div>
+  </div>
+
+  <div class="section-label">Monthly Health Distribution</div>
+  <div class="health-dist">
+    <div class="health-bar-wrap">
+      <div class="health-bar-title">Pulse Notes by Signal (21 total)</div>
+      <div class="health-bar-row"><div class="health-bar-label">🟢 Healthy</div><div class="health-bar-track"><div class="health-bar-fill hf-green" style="width:86%"></div></div><div class="health-bar-count">18</div></div>
+      <div class="health-bar-row"><div class="health-bar-label">🟡 Concerning</div><div class="health-bar-track"><div class="health-bar-fill hf-amber" style="width:14%"></div></div><div class="health-bar-count">3</div></div>
+      <div class="health-bar-row"><div class="health-bar-label">🔴 Poor</div><div class="health-bar-track"><div class="health-bar-fill hf-red" style="width:0%"></div></div><div class="health-bar-count">0</div></div>
+    </div>
+    <div class="health-bar-wrap">
+      <div class="health-bar-title">ARR Coverage by Signal ($826K tracked)</div>
+      <div class="health-bar-row"><div class="health-bar-label">🟢 Healthy</div><div class="health-bar-track"><div class="health-bar-fill hf-green" style="width:70%"></div></div><div class="health-bar-count" style="width:50px">$576K</div></div>
+      <div class="health-bar-row"><div class="health-bar-label">🟡 Concerning</div><div class="health-bar-track"><div class="health-bar-fill hf-amber" style="width:30%"></div></div><div class="health-bar-count" style="width:50px">$250K</div></div>
+    </div>
+  </div>`;
+}
+
+function monthCSMHTML() {
+  return `<div class="section-label">CSM Engagement — April 2026</div>
+  <div class="csm-leaderboard">
+    <div class="csm-row"><div class="avatar av-varun">VT</div><div style="flex:1"><div class="csm-row-name">Varun Tiwari <span style="font-size:11px;color:#d97706;font-weight:600">Action Needed</span></div><div class="csm-row-sub">Datadog · DXC · Zendesk — Cloud Dynamics data trust follow-up outstanding</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">4</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">4</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n" style="color:#d97706">1</div><div class="l">Risks</div></div></div></div>
+    <div class="csm-row"><div class="avatar av-grey">PH</div><div style="flex:1"><div class="csm-row-name">Pam Huck <span style="font-size:11px;color:#d97706;font-weight:600">Action Needed</span></div><div class="csm-row-sub">Cisco · Microsoft · Epicor Kinetic · Epicor Eclipse — Cisco Concerning</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">4</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">4</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n" style="color:#d97706">1</div><div class="l">Risks</div></div></div></div>
+    <div class="csm-row"><div class="avatar av-grey">RG</div><div style="flex:1"><div class="csm-row-name">Rani Guy <span style="font-size:11px;color:#059669;font-weight:600">Strong Week</span></div><div class="csm-row-sub">Workday · Lenovo · Elastic · Cloudflare — 4 calls in one day, all Healthy</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">4</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">4</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n cgr">0</div><div class="l">Risks</div></div></div></div>
+    <div class="csm-row"><div class="avatar av-divyam">DD</div><div style="flex:1"><div class="csm-row-name">Divyam Dewan <span style="font-size:11px;color:#0ea5a0;font-weight:600">Most Pulses</span></div><div class="csm-row-sub">Thomson Reuters · Quadient — IDL + review campaigns on track</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">2</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">4</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n cgr">0</div><div class="l">Risks</div></div></div></div>
+    <div class="csm-row"><div class="avatar av-riley">RR</div><div style="flex:1"><div class="csm-row-name">Riley Rogers <span style="font-size:11px;color:#059669;font-weight:600">Pulse Upgrades</span></div><div class="csm-row-sub">Intuit Mailchimp · 3 opps upgraded Concerning→Healthy · champion re-engaged</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">1</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">3</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n cgr">0</div><div class="l">Risks</div></div></div></div>
+    <div class="csm-row"><div class="avatar av-grey">NJ</div><div style="flex:1"><div class="csm-row-name">Nick Johnson</div><div class="csm-row-sub">HCL Software — usage deep-dive · 28 accounts in portfolio</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">1</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">1</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n cgr">0</div><div class="l">Risks</div></div></div></div>
+    <div class="csm-row inactive"><div class="avatar av-grey">AW</div><div style="flex:1"><div class="csm-row-name">Atisha Waghela <span style="font-size:11px;color:#d97706;font-weight:600">Monitor</span></div><div class="csm-row-sub">eHouse Studio — no call logged · pulse flagged Concerning</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n cgr">0</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#d97706">1</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n" style="color:#d97706">1</div><div class="l">Risks</div></div></div></div>
+    <div class="csm-row inactive"><div class="avatar av-grey">AL</div><div style="flex:1"><div class="csm-row-name">Andy Lim</div><div class="csm-row-sub">No activity logged in April</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n cgr">0</div><div class="l">Calls</div></div><div class="row-stat"><div class="n cgr">0</div><div class="l">Pulses</div></div></div></div>
+  </div>`;
+}
+
+function monthHealthHTML() {
+  return `<div class="section-label">Pulse Health Deep Dive — April 2026</div>
+  <div style="background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:16px;margin-bottom:20px;">
+    <div style="font-size:13px;font-weight:600;margin-bottom:14px;">Pulse Notes Created This Month (21)</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px;">
+      <div style="padding:12px;background:#f0fdf4;border-radius:8px;border-left:3px solid #059669"><div style="font-size:11px;font-weight:700;color:#059669;text-transform:uppercase;margin-bottom:4px">🟢 Healthy (18)</div><div style="font-size:12px;color:#374151;line-height:1.6">• Intuit CVP x2 · $76,590<br>• Intuit Enterprise Suite · $50,000<br>• Intuit CVP x2 (Written) · $50,000<br>• Datadog TR Lead Accel · $78,800<br>• Quadient Marketing Leadership · $180,000<br>• Quadient IDL Co-sell · $120,000<br>• Quadient Germany IDL · $10,000<br>• Quadient DACH IDL · $10,000<br>• Microsoft — GTM alignment healthy<br>• Workday — Project Phoenix on track<br>• Lenovo — QBR positive<br>• Elastic — renewal engaged<br>• Cloudflare — expansion scoped<br>• DXC Technology — intent aligned<br>• Zendesk — health check clear<br>• Epicor Kinetic — Healthy<br>• Epicor Eclipse — Healthy<br>• HCL Software — usage strong</div></div>
+      <div style="padding:12px;background:#fffbeb;border-radius:8px;border-left:3px solid #d97706"><div style="font-size:11px;font-weight:700;color:#d97706;text-transform:uppercase;margin-bottom:4px">🟡 Concerning (3)</div><div style="font-size:12px;color:#374151;line-height:1.6">• Datadog Cloud Dynamics + Universe 150 · $250,000<br><span style="color:#9ca3af;font-size:11px">Data trust concerns. SE follow-up required within 5 business days.</span><br><br>• Cisco — QBR Prep · Budget scrutiny + stakeholder change<br><span style="color:#9ca3af;font-size:11px">Executive touchpoint action plan needed before next QBR.</span><br><br>• eHouse Studio — Atisha Waghela · No call logged<br><span style="color:#9ca3af;font-size:11px">Pulse flagged without corresponding call. Outreach recommended.</span></div></div>
+    </div>
+  </div>
+  <div class="section-label">Open Action Items Carried Into May</div>
+  <div class="action-list">
+    <div class="action-item ${doneActions.has(1)?'done':''}"><div class="action-checkbox ${doneActions.has(1)?'checked':''}" onclick="toggleAction(1)"></div><div class="action-body"><div class="action-title">Datadog Cloud Dynamics — technical data accuracy follow-up</div><div class="action-meta"><span class="urgency-badge urgency-high">HIGH</span>Varun Tiwari · Originated Apr 21 · Loop in Solutions Engineering</div></div></div>
+    <div class="action-item ${doneActions.has(3)?'done':''}"><div class="action-checkbox ${doneActions.has(3)?'checked':''}" onclick="toggleAction(3)"></div><div class="action-body"><div class="action-title">Quadient — UTM/trackable links + review cut-offs before May Top Rated</div><div class="action-meta"><span class="urgency-badge urgency-high">HIGH</span>Divyam Dewan · Originated Apr 22 · Deadline: May Top Rated window</div></div></div>
+    <div class="action-item"><div class="action-checkbox" onclick="this.classList.toggle('checked');this.closest('.action-item').classList.toggle('done')"></div><div class="action-body"><div class="action-title">Cisco — QBR prep action plan · address budget scrutiny and stakeholder changes</div><div class="action-meta"><span class="urgency-badge urgency-high">HIGH</span>Pam Huck · Originated Apr 20 · Prepare before next executive touchpoint</div></div></div>
+    <div class="action-item"><div class="action-checkbox" onclick="this.classList.toggle('checked');this.closest('.action-item').classList.toggle('done')"></div><div class="action-body"><div class="action-title">eHouse Studio — outreach to account · no call logged despite Concerning pulse</div><div class="action-meta"><span class="urgency-badge urgency-med">MED</span>Atisha Waghela · Schedule discovery call this week</div></div></div>
+  </div>`;
+}
+
+// ─── CSM FILTER (all views) ─────────────────────────────────────
+document.querySelectorAll('[data-filter-csm]').forEach(chip => {
+  chip.addEventListener('click', () => {
+    activeCsm = chip.dataset.filterCsm;
+    document.querySelectorAll('[data-filter-csm]').forEach(c=>c.classList.toggle('active-chip',c.dataset.filterCsm===activeCsm));
+    if (gran==='day') applyDayFilters();
+    else if (gran==='week') { if(activeTab==='wpulses') applyWeekPulseFilters(); else applyWeekCSMFilter(); }
+  });
+});
+document.querySelectorAll('[data-filter-health]').forEach(chip => {
+  chip.addEventListener('click', () => {
+    activeHealth = chip.dataset.filterHealth;
+    document.querySelectorAll('[data-filter-health]').forEach(c=>c.classList.toggle('active-chip',c.dataset.filterHealth===activeHealth));
+    if (gran==='day') applyDayFilters();
+    else if (gran==='week') applyWeekPulseFilters();
+  });
+});
+
+// ─── MODAL ─────────────────────────────────────────────────────
+const modals = {
+  'call-intuit':{ title:'Intuit Mailchimp — Apr 21 · 8:30 AM UTC', subtitle:'Riley Rogers · 30 min · Zoom · Signal: Healthy', sections:[{label:'What Happened',body:'Bianca Gause (Product Marketing) introduced to GEO dashboard early access. Confirmed she is championing the initiative internally. Engagement signals clearly positive heading into May TrustRadius cycle.'},{label:'Key Signals',body:'✅ New champion Bianca Gause actively engaged\n✅ GEO dashboard early access confirmed\n✅ Expansion trajectory intact\n⚠️ SSO delays at Intuit still unresolved'}]},
+  'call-dd-cd':{ title:'Datadog — Cloud Dynamics · Apr 21 · 11:00 AM UTC', subtitle:'Varun Tiwari · 45 min · Zoom · Signal: Concerning', sections:[{label:'What Happened',body:'Datadog reps raised concerns about Cloud Dynamics firmographic accuracy for SMB matching. Internal usage pulling back while teams await resolution.'},{label:'Issues Raised',body:'❌ SMB firmographic accuracy questioned\n❌ Data freshness SLA unclear\n❌ Validation methodology unresolved\n⚠️ Usage reducing pending clarification'},{label:'Action Required',body:'Technical follow-up within 5 business days. Loop in Solutions Engineering.'}]},
+  'call-dd-tr':{ title:'Datadog — TR / ICP · Apr 21 · 12:30 PM UTC', subtitle:'Varun Tiwari · 30 min · Zoom · Signal: Healthy', sections:[{label:'What Happened',body:'ICP refinement discussion — Datadog shifting to commercial/SMB. Active IDL expansion and Lead Acceleration use case alignment.'},{label:'Key Signals',body:'✅ Constructive ICP refinement\n✅ IDL expansion actively discussed\n✅ Lead Acceleration use case confirmed'}]},
+  'call-quad':{ title:'Quadient Software · Apr 21 · 11:00 AM UTC', subtitle:'Divyam Dewan · 30 min · Zoom · Signal: Healthy', sections:[{label:'What Happened',body:'Covered TR review generation for Inspire/AP/AR; IDL onboarding for Germany and DACH; HG platform data roadmap.'},{label:'Key Signals',body:'✅ Review campaign on track for May Top Rated\n✅ AP TrustRadius score improving\n✅ IDL onboarding progressing\n✅ Expansion conversation on roadmap'}]},
+  'call-tr-apr22':{ title:'Thomson Reuters — Churn + Intent Deep-dive · Apr 21 · 8:30 AM PT', subtitle:'Divyam Dewan + Hayden Smith · 30 min · Zoom · Signal: Healthy', sections:[
+    {label:'What Happened',body:'Vibhuti (TR Data Science) walked through how Thomson Reuters embeds HG time-series and competitor data into their churn and propensity-to-buy models. Focused on the ACES dashboard (LangGraph + AWS SageMaker) which generates SWOTs, discovery questions, and partner insights for reps from HG install + contract data.'},
+    {label:'Key Use Cases Confirmed',body:'✅ Churn model: time-series + competitor mindshare mapped against top-3 risk buckets (prime / most likely / neutral) for LexisNexis competitive displacement\n✅ Propensity model: HG data combined with ZoomInfo for competitive conquesting\n✅ ACES dashboard using HG install + contract data for rep discovery flows\n✅ TrustRadius second-party intent flagged as priority upgrade at renewal (vs. ZoomInfo third-party intent)'},
+    {label:'Open Items',body:'⚠️ Data sparsity persists — HG recently added 10M companies; TR team to re-check match rates\n⚠️ Contract data underutilized — TR interested in vendor-specific subsets\n⚠️ Anushri and Blake unable to attend; follow-up needed for ACES walkthrough\n⚠️ TR product-to-competitor mapping status unclear — Divyam to confirm with data team'},
+    {label:'Next Steps',body:'Divyam to schedule follow-up with Anushri + Blake for ACES deep-dive. Coordinate with HG data team on contract data specifics and coverage. Divyam to follow up on TR product mapping status with competitor product mapping.'},
+  ]},
+  'pulse-intuit1':{ title:'TR - Intuit CVP x2 · 03.01.2025', subtitle:'$76,590 ARR · Healthy · Riley Rogers', sections:[{label:'Pulse Explanation',body:'Bianca Gause expressed enthusiasm about GEO dashboard early access and confirmed she is championing the program internally. Reverses prior renewal-lag risk.'},{label:'Previous State',body:'Concerning (since Mar 5, 2026)'}]},
+  'pulse-intuit2':{ title:'TR - Enterprise Suite CVP · 10.24.2025', subtitle:'$50,000 ARR · Healthy · Riley Rogers', sections:[{label:'Pulse Explanation',body:'Champion re-engaged and excited about GEO early access. Category Intent Data aligned with demand gen plans. Updated from Concerning to Healthy.'},{label:'Previous State',body:'Concerning (since Mar 5, 2026)'}]},
+  'pulse-intuit3':{ title:'TR - Intuit CVP x2 · 10.21.2025 (Written)', subtitle:'$50,000 ARR · Healthy · Riley Rogers', sections:[{label:'Pulse Explanation',body:'GEO early access resets prior adoption-gap risk. Champion re-engaged and coordinating with HG.'},{label:'Previous State',body:'Concerning (since Mar 5, 2026)'}]},
+  'pulse-dd-cd':{ title:'Datadog Cloud Dynamics + Universe 150', subtitle:'$250,000 ARR · Concerning · Varun Tiwari', sections:[{label:'Pulse Explanation',body:'Reps pulling back SMB usage due to data trust/accuracy concerns. Firmographic matching questions unresolved.'},{label:'Action Required',body:'Technical follow-up within 5 business days. Involve Solutions Engineering.'}]},
+  'pulse-dd-tr':{ title:'TR Lead Acceleration + Intent Data Trial', subtitle:'$78,800 ARR · Healthy · Varun Tiwari', sections:[{label:'Pulse Explanation',body:'Constructive ICP refinement to commercial/SMB. IDL expansion actively discussed. Positive engagement signal.'}]},
+  'pulse-quad-ml':{ title:'TR Marketing Leadership', subtitle:'$180,000 ARR · Healthy · Divyam Dewan', sections:[{label:'Pulse Explanation',body:'Review campaign on track for May Top Rated. AP TR score improving. Expansion conversation on roadmap.'}]},
+  'pulse-quad-idl':{ title:'IDL Co-sell 2025', subtitle:'$120,000 ARR · Healthy · Divyam Dewan', sections:[{label:'Pulse Explanation',body:'IDL co-sell advancing — Lia/Lauren engaged on SFDC integration. Regional splits and webhook routing being finalized.'}]},
+  'pulse-quad-de':{ title:'TR IDL Pilot — Germany', subtitle:'$10,000 ARR · Healthy · Divyam Dewan', sections:[{label:'Pulse Explanation',body:'Ashlin coordinating review cadence for Germany pilot. Onboarding on track for Top Rated threshold.'}]},
+  'pulse-quad-dach':{ title:'TR IDL Pilot — DACH', subtitle:'$10,000 ARR · Healthy · Divyam Dewan', sections:[{label:'Pulse Explanation',body:'DACH IDL Pilot onboarding progressing. Lia/Lauren engaged on suppression lists and SFDC routing. 70/30 split being finalized.'}]},
+  // ── Apr 21 Report Modals ────────────────────────────────────
+  'call-cisco-tr':{ title:'Cisco — TrustRadius Sync · Apr 20 · 8:00 AM PT', subtitle:'Pam Huck · 30 min · Zoom · Signal: Concerning', sections:[
+    {label:'What Happened',body:'Renewal sync focused on Q4 budget planning. Cisco\'s paid media team (Romana Klinger, Matt) confirmed they cannot demonstrate direct ROI from TrustRadius intent data investments. Attribution remains unclear. Contract ends May 15.'},
+    {label:'Key Concerns',body:'❌ No committed Q4 or FY27 budget\n❌ Attribution methodology unclear\n⚠️ Risk of downgrade from full partnership to quarterly or no engagement\n⚠️ Budget decisions made quarterly — annual commitment unlikely without exec direction (Anna/Ben)'},
+    {label:'Positive Signals',body:'✅ Team values intent-driven leads program\n✅ Uptick in product research when campaigns run\n✅ Partnership sentiment from Matt/Romana is strong'},
+    {label:'Next Steps',body:'Mardigan to deliver scoped proposal by May 15. Melissa\'s team to finalize product scope (mid-market, LDOS, data center) by Wednesday call. Cisco paid media to confirm Q4 budget direction.'},
+  ]},
+  'call-msft-gtm':{ title:'Microsoft — GTM/Marketplace for MCP/Agents · Apr 20 · 1:00 PM PT', subtitle:'Pam Huck / Mark Fell · 30 min · Teams · Signal: Healthy', sections:[
+    {label:'What Happened',body:'Strategic GTM alignment call on integrating HG Insights MCP into Microsoft ecosystem (Teams, Dynamics, Copilot). Target segment: B2B technology companies using Microsoft platforms.'},
+    {label:'Key Signals',body:'✅ Mark Fell active executive champion\n✅ Azure marketplace commercial partnership in discussion (Kevin Boyle, Zach Jones)\n✅ Talis and Adobe identified as lighthouse customers\n✅ Francis Brero (HG VP AI) engaged on customer pipeline\n⚠️ Business case with ROI needed for Satish/Rohini before Azure commitment'},
+    {label:'Next Steps',body:'HG to develop business case with projected ROI. Finalize Power Automate technical integration. Establish collaborative sales/marketing approach. Renewal ($574K) due June. Target May 19 announcement.'},
+  ]},
+  'call-workday-phoenix':{ title:'Workday — Project Phoenix Technical Deep Dive · Apr 20 · 1:30 PM PT', subtitle:'Rani Guy · 60 min · Zoom · Signal: Healthy', sections:[
+    {label:'What Happened',body:'Technical deep dive on HG MCP with Workday\'s EDATA team (Phoenix Majumder Sr. Director, Tamil Tamilmani, Kendall Stauffer). Workday is actively building GTM agentic workflows and evaluating HG\'s MCP to augment agents with richer account intelligence.'},
+    {label:'Key Signals',body:'✅ Workday evaluating HG MCP to power GTM agentic workflows\n✅ HG expanded dataset (SMB + AI spend) addresses data sparsity in mid-market + international\n✅ Interest in contact-level and buying center insights\n✅ Technical pathways: direct API + Databricks integration\n✅ Relationship deeply collaborative with mutual roadmap investment'},
+    {label:'Contractual',body:'⚠️ AI addendum needed\n⚠️ Consumption-based MCP credits need formal evaluation\n⚠️ Security review required'},
+    {label:'Next Steps',body:'Workday to test MCP use cases (Databricks pathway likely fastest). Legal/security to review AI addendum. Schedule QBR with Phoenix Majumder and Winston Wu. Renewal Sept 14, $815K ARR.'},
+  ]},
+  'pulse-cisco-tr':{ title:'Cisco — TrustRadius Paid Media Partnership', subtitle:'Concerning · Pam Huck · Contract ends May 15', sections:[
+    {label:'Pulse Explanation',body:'Renewal sync on Apr 20 surfaced no committed Q4 or FY27 budget. Attribution for intent data ROI remains unclear. Risk of downgrade from full partnership to quarterly or no engagement. Contract ends May 15.'},
+    {label:'Risk Factors',body:'❌ No hard budget committed for Q4 or FY27\n❌ ROI attribution unclear\n⚠️ Annual commitment unlikely without executive direction from Anna/Ben'},
+    {label:'Next Steps',body:'Scoped proposal due by May 15. Finalize product scope (mid-market, LDOS, data center) with Melissa\'s team by Wednesday. Cisco paid media to confirm Q4 budget direction.'},
+  ]},
+  'pulse-workday-phoenix':{ title:'Workday — HG Platform (Project Phoenix)', subtitle:'$815K ARR · Healthy · Rani Guy · Renews Sept 14', sections:[
+    {label:'Pulse Explanation',body:'Workday\'s EDATA team is actively building GTM agentic workflows and evaluating HG MCP to augment agents with richer account intelligence. Strong expansion signals — SMB/AI spend data addresses data sparsity gaps in mid-market and international segments.'},
+    {label:'Expansion Signals',body:'✅ Direct evaluation of HG MCP for GTM agentic workflows\n✅ Interest in SMB + AI spend categories (new datasets)\n✅ Contact-level and buying center insights requested\n✅ Mutual investment in joint roadmap development'},
+    {label:'Next Steps',body:'MCP testing via Databricks pathway. AI addendum review. Schedule QBR with Phoenix Majumder + Winston Wu.'},
+  ]},
+  'pulse-msft-gtm':{ title:'Microsoft — GTM/Marketplace for MCP/Agents', subtitle:'$574K ARR · Healthy · Pam Huck · Renews June', sections:[
+    {label:'Pulse Explanation',body:'Strategic alignment call on integrating HG Insights MCP into Microsoft ecosystem (Teams, Dynamics, Copilot). Azure marketplace commercial partnership actively in discussion. Mark Fell is executive champion. Talis and Adobe identified as lighthouse customers.'},
+    {label:'Expansion Signals',body:'✅ Azure marketplace partnership in discussion (Kevin Boyle, Zach Jones at Microsoft)\n✅ Demandbase partnership layer adds content syndication dimension\n✅ Executive champion (Mark Fell) and HG VP AI (Francis Brero) engaged'},
+    {label:'Next Steps',body:'Business case with ROI projections for Satish/Rohini. Power Automate technical integration. Collaborative sales/marketing approach. Target May 19 announcement. Renewal June must progress in parallel.'},
+  ]},
+  'pulse-ehouse':{ title:'eHouse Studio — HG Platform Renewal', subtitle:'Poor — Churn Risk Escalated', sections:[
+    {label:'Pulse Explanation',body:'Escalating to churn risk. Mitch Gilroy has refused to get on a call multiple times — most recently canceled a booked call on Feb 12, 2026 the same day. No product usage signals or engagement to anchor a renewal conversation. Account is trending toward churn.'},
+    {label:'Risk Factors',body:'❌ Primary contact (Mitch Gilroy) repeatedly declines meetings\n❌ No product usage signals\n❌ No engagement to anchor renewal conversation\n❌ Atisha (previous CSM) confirmed account not keen on continuing HG platform'},
+    {label:'Next Steps',body:'Determine if executive outreach to Justin Poole is warranted. Explore if any remaining stakeholders are reachable.'},
+  ]},
+  // ── Apr 23 Report Modals ────────────────────────────────────
+  'call-hcl-apr23':{ title:'HCL SW — MCP + Clay + LLM Strategy · Apr 22 · 2:30 AM PT', subtitle:'Nick Johnson · 45 min · Zoom · Signal: Healthy', sections:[
+    {label:'What Happened',body:'Nick Johnson led with Angus Hyams and Gavin Padden from HG. Strong engagement from Alexander Knaani Klein (innovation/AI lead), Navneet Kaur, and Mohan K. Discussion centered on using HG data for customer retention via MCP + Clay + internal LLM workflows. Competitive differentiation vs ZoomInfo discussed; data contradictions on Charles Schwab surfaced.'},
+    {label:'Key Signals',body:'✅ HCL team actively interested in expanding HG data usage for customer retention\n✅ AI/MCP use cases resonate strongly — aligns with HCL\'s internal innovation agenda\n✅ Alexander Knaani Klein is a strong internal champion\n⚠️ Data quality questions on Charles Schwab need follow-up response'},
+    {label:'Next Steps',body:'Nick to share HG use cases document with the team next week. Schedule deep dive on data quality questions, addressing ZoomInfo competitive comparison and Charles Schwab data contradiction.'},
+  ]},
+  'call-dxc-intent-apr23':{ title:'DXC Technology — Intent Data Integration · Apr 22 · 4:30 AM PT', subtitle:'Varun Tiwari · 30 min · Zoom · Signal: Healthy', sections:[
+    {label:'What Happened',body:'Productive session with Preethi (SalesOps) and Sunil on integrating HG buying intent data into DXC\'s AI-driven account planning workflow built on AWS QuickSight (AQS/MCP environment). Contract amendment discussions progressing — AWS Marketplace emerging as primary funding path.'},
+    {label:'Key Signals',body:'✅ Intent data integration into AQS/MCP AI agent validated as priority use case\n✅ AWS Marketplace funding path being explored — reduces procurement friction\n✅ Sunil trial license active; deeper intent enablement session scheduled\n⚠️ Budget approval and contract ownership transition still in progress internally'},
+    {label:'Next Steps',body:'Sunil trial: schedule deeper intent enablement session. Preethi to coordinate internally on budget approval and contract ownership. Follow up on AWS Marketplace funding path.'},
+  ]},
+  'call-lenovo-apr23':{ title:'Lenovo — RGIP Platform Overview · Apr 22 · 7:00 AM PT', subtitle:'Rani Guy · 25 min · Zoom · Signal: Healthy', sections:[
+    {label:'What Happened',body:'Rani Guy introduced Kristen (new Lenovo stakeholder) to HG Insights Revenue Growth Intelligence Platform (RGIP). Covered firmographics, tech install data, GSI contract data, Cloud maturity modeling, and spend methodology. Kristen is net-new to HG platform and engaged actively throughout.'},
+    {label:'Key Signals',body:'✅ Kristen is a new stakeholder with strong first-call engagement\n✅ Full suite walk-through completed — firmographics, tech installs, GSI contracts, Cloud maturity, spend modeling\n✅ Clear follow-up sessions confirmed: new UI demo + Microsoft Dynamics integration deep-dive\n✅ Positive first impression with new Lenovo contact'},
+    {label:'Next Steps',body:'Schedule new UI demo for Kristen. Set up Microsoft Dynamics integration deep-dive session. Maintain momentum with this new stakeholder.'},
+  ]},
+  'call-elastic-apr23':{ title:'Elastic — TAM/SAM Alignment · Apr 22 · 8:00 AM PT', subtitle:'Rani Guy · 30 min · Zoom · Signal: Healthy', sections:[
+    {label:'What Happened',body:'Working session to bridge Elastic\'s internal market definitions (based on IDC categories) with HG Insights data, aiming to create a unified TAM/SAM view for sales and marketing. Session with David Adamson, Sydney, Sriraman, and Noelle. Core challenge: HG data doesn\'t map directly to Elastic\'s IDC-based market segmentation.'},
+    {label:'Key Signals',body:'✅ Deep strategic engagement — Elastic team invested in making HG data work within their GTM framework\n✅ Multiple stakeholders engaged across sales and marketing\n✅ Clear use case: unified market definition for seller territory planning\n⚠️ IDC vs HG taxonomy gap needs structured resolution — mapping exercise required'},
+    {label:'Next Steps',body:'Develop mapping between Elastic IDC categories and HG taxonomy. Create unified market definition framework for sales and marketing. Follow up with David Adamson on TAM/SAM model validation.'},
+  ]},
+  'call-cloudflare-apr23':{ title:'Cloudflare — May Onsite Prep · Apr 22 · 9:00 AM PT', subtitle:'Rani Guy · 30 min · Zoom · Signal: Healthy', sections:[
+    {label:'What Happened',body:'Strategic pre-onsite sync with Cloudflare team. Confirmed May onsite agenda forming around data quality, scoring model enhancements, and AI search optimization. Key gaps identified: firmographic data coverage, APAC/Japan hierarchy issues. HG + TrustRadius data blending discussed as seller intelligence layer.'},
+    {label:'Key Signals',body:'✅ May onsite confirmed and agenda forming clearly\n✅ Customer strategically engaged and preparing for deeper collaboration\n✅ HG + TR data blending explored as new seller intelligence use case\n✅ AI search optimization emerging as new GTM use case\n⚠️ APAC/Japan firmographic hierarchy gaps flagged — must be resolved before onsite'},
+    {label:'Next Steps',body:'Resolve APAC/Japan firmographic hierarchy issues. Prepare pre-onsite scoring model gap analysis. Finalize May onsite agenda around data quality, scoring, and AI search optimization.'},
+  ]},
+  'call-zendesk-apr23':{ title:'Zendesk — TrustRadius CSM Sync · Apr 22 · 9:30 AM PT', subtitle:'Varun Tiwari · 30 min · Zoom · Signal: Healthy', sections:[
+    {label:'What Happened',body:'Bi-weekly TrustRadius sync with Joyce. Forethought TrustRadius profile exists but is currently inactive/unclaimed. Integration direction — whether Forethought remains standalone or rolls into Zendesk — pending decision post-Relate conference in mid-May. Riley facilitating Forethought profile access. Decision impacts renewal structure.'},
+    {label:'Key Signals',body:'✅ 6 April reviews added via HG research outreach\n✅ Top Rated already secured\n✅ Buyer\'s Choice: 3 more reviews needed by Sept 26 — outreach window May–Aug\n✅ SEO tracking early access opportunity identified\n⚠️ Forethought positioning decision pending mid-May — impacts subscription scope'},
+    {label:'Next Steps',body:'Confirm Forethought integration direction by mid-May. Coordinate SEO early-access participation (Varun to check with James/HG leadership). Schedule June roadmap + renewal alignment session. Plan May–Aug community outreach for Buyer\'s Choice reviews.'},
+  ]},
+  'call-epicor-kinetic-apr23':{ title:'Epicor Kinetic — TrustRadius Product Listings + Event Prep · Apr 22 · 11:00 AM PT', subtitle:'Pam Huck · 30 min · Zoom · Signal: Healthy', sections:[
+    {label:'What Happened',body:'Session focused on updating Kinetic product listings before the Insights Nashville event. Pam\'s team offered assistance with older content refresh. Booth logistics for Nashville confirmed. Target: content updates complete before event date.'},
+    {label:'Key Signals',body:'✅ Epicor actively preparing for Insights Nashville — strong event engagement\n✅ Kinetic product listing update underway with clear deadline\n✅ Pam\'s team assisting with content refresh\n✅ Booth logistics confirmed for Nashville'},
+    {label:'Next Steps',body:'Complete Kinetic product listing updates before Insights Nashville. Finalize booth setup logistics. Coordinate on-site content presentation strategy.'},
+  ]},
+  'call-epicor-eclipse-apr23':{ title:'Epicor Eclipse — Bundled Package Campaign · Apr 22 · 11:30 AM PT', subtitle:'Pam Huck · 30 min · Zoom · Signal: Healthy', sections:[
+    {label:'What Happened',body:'Discussion evaluating the bundled package campaign performance for P21 and lead generation through API integrations. Decision made to reschedule follow-up meeting to include Libby and Ben Halverson for broader product scope coverage (including pricing and lead gen structure).'},
+    {label:'Key Signals',body:'✅ Eclipse actively being added to campaign scope — expansion signal\n✅ Stakeholder breadth expanding (Libby, Ben Halverson)\n✅ API integration lead gen pathway under evaluation\n⚠️ Bundled campaign performance under review — P21 scope and pricing to be clarified'},
+    {label:'Next Steps',body:'Reschedule expanded meeting including Libby and Ben Halverson. Cover P21 scope, Eclipse bundle pricing, and API integration lead gen structure. Align on campaign direction before Insights Nashville.'},
+  ]},
+  'pulse-hcl-apr23':{ title:'HCL SW — HG Platform Customer Intelligence', subtitle:'Healthy · Nick Johnson', sections:[
+    {label:'Pulse Explanation',body:'Call: "HCL SW / HG Insights" — Apr 22, 2026, 09:30–10:15 UTC (45 min, Zoom). Nick Johnson led with Angus Hyams and Gavin Padden. Strong engagement from Alexander Knaani Klein (innovation/AI lead), Navneet Kaur, and Mohan K around using HG data for customer retention via MCP + Clay + internal LLM workflows. Competitive discussion vs ZoomInfo; data contradictions on Charles Schwab flagged.'},
+    {label:'Positive Signals',body:'✅ Active interest in MCP + Clay + LLM retention use cases\n✅ Alexander Knaani Klein as internal champion\n✅ Positive tone throughout — account exploring HG data expansion'},
+    {label:'Next Steps',body:'Share HG use cases document with team. Schedule deep dive on data quality questions (Charles Schwab ZoomInfo comparison). Address competitive positioning vs ZoomInfo.'},
+  ]},
+  'pulse-dxc-apr23':{ title:'DXC Technology — HG Intent Data Integration', subtitle:'Healthy · Varun Tiwari', sections:[
+    {label:'Pulse Explanation',body:'"HGI + DXC <> Intent" — Apr 22, 2026, 11:30 UTC (30 min, Zoom). Productive session with Preethi (SalesOps) and Sunil on integrating buying intent data into DXC\'s AI-driven account planning workflow (AWS QuickSight/AQS environment). Contract amendment and AWS Marketplace funding path actively being explored.'},
+    {label:'Positive Signals',body:'✅ Intent data integration into AI agent validated as priority\n✅ AWS Marketplace as funding path reduces procurement friction\n✅ Sunil trial license active with deeper enablement planned'},
+    {label:'Next Steps',body:'Sunil deeper intent enablement session. Preethi to coordinate budget approval and contract ownership internally. Continue AWS Marketplace pathway exploration.'},
+  ]},
+  'pulse-lenovo-apr23':{ title:'Lenovo — RGIP Platform Introduction', subtitle:'Healthy · Rani Guy', sections:[
+    {label:'Pulse Explanation',body:'"HG Insights / Lenovo HG Overview" — Apr 22, 2026, 14:00 UTC (25 min, Zoom). Rani Guy introduced Kristen (new Lenovo stakeholder) to HG RGIP. Covered firmographics, tech install data, GSI contract data, Cloud maturity modeling, and spend methodology. New stakeholder successfully onboarded with clear next steps.'},
+    {label:'Positive Signals',body:'✅ Net-new stakeholder Kristen engaged and actively learning\n✅ Full RGIP suite walked through in one session\n✅ Follow-up sessions confirmed: new UI demo + Dynamics integration deep-dive'},
+    {label:'Next Steps',body:'Schedule new UI demo. Set up Microsoft Dynamics integration deep-dive. Maintain engagement momentum with Kristen.'},
+  ]},
+  'pulse-elastic-apr23':{ title:'Elastic — TAM/SAM Market Intelligence', subtitle:'Healthy · Rani Guy', sections:[
+    {label:'Pulse Explanation',body:'"HG Insights / Elastic" — Apr 22, 2026, 15:00 UTC (30 min, Zoom). Working session to bridge Elastic\'s IDC-based market categories with HG data for a unified TAM/SAM view. Session with David Adamson, Sydney, Sriraman, and Noelle. Deep technical collaboration on market definition mapping for sales territory planning.'},
+    {label:'Positive Signals',body:'✅ Multiple senior stakeholders engaged across sales and marketing\n✅ Strategic use case — unified market definition for territory planning\n✅ Deep collaborative engagement indicates strong partnership intent'},
+    {label:'Next Steps',body:'Develop IDC-to-HG taxonomy mapping. Build unified market definition framework. Validate TAM/SAM model with David Adamson.'},
+  ]},
+  'pulse-cloudflare-apr23':{ title:'Cloudflare — May Onsite Prep', subtitle:'Healthy · Rani Guy', sections:[
+    {label:'Pulse Explanation',body:'"Cloudflare // HG Insights" — Apr 22, 2026, 16:00 UTC (30 min, Zoom). Pre-onsite strategic sync. May onsite confirmed. Agenda forming around data quality, scoring model enhancements, and AI search optimization. APAC/Japan firmographic hierarchy issues and HG + TR data blending discussed.'},
+    {label:'Positive Signals',body:'✅ May onsite locked in — strong strategic engagement\n✅ HG + TR data blending as new seller intelligence use case\n✅ AI search optimization as emerging GTM motion'},
+    {label:'Watch Items',body:'⚠️ APAC/Japan firmographic hierarchy gaps — must resolve before onsite\n⚠️ Firmographic data coverage gaps in scoring model'},
+    {label:'Next Steps',body:'Fix APAC/Japan hierarchy issues. Prepare scoring model gap analysis. Finalize May onsite agenda.'},
+  ]},
+  'pulse-zendesk-apr23':{ title:'Zendesk — TrustRadius CSM Sync', subtitle:'Healthy · Varun Tiwari · Renewal Aug', sections:[
+    {label:'Pulse Explanation',body:'"Zendesk <> TrustRadius CSM Syncs" — Apr 22, 2026, 16:30 UTC (30 min, Zoom). Joyce requested Forethought TrustRadius profile access to explore integration possibilities. Forethought direction (standalone vs Zendesk rollup) pending mid-May. 6 April reviews added; Top Rated secured. Renewal planning initiated for August.'},
+    {label:'Positive Signals',body:'✅ Top Rated secured\n✅ 6 reviews added via research outreach in April\n✅ SEO tracking early access opportunity identified\n✅ Aug renewal scope likely unchanged'},
+    {label:'Watch Items',body:'⚠️ Forethought integration decision pending mid-May — impacts renewal structure\n⚠️ Buyer\'s Choice: 3 more reviews needed by Sept 26'},
+    {label:'Next Steps',body:'Confirm Forethought direction by mid-May. SEO early-access coordination. Schedule June renewal alignment with James. Plan May–Aug outreach for Buyer\'s Choice reviews.'},
+  ]},
+  'pulse-epicor-kinetic-apr23':{ title:'Epicor Kinetic — TrustRadius Lead Acceleration', subtitle:'Healthy · Pam Huck', sections:[
+    {label:'Pulse Explanation',body:'"Epicor - TrustRadius" — Apr 22, 2026, 18:00 UTC (30 min, Zoom). Kinetic product listing updates in progress ahead of Insights Nashville. Content refresh targeting pre-event completion. Pam\'s team assisting. Booth logistics confirmed.'},
+    {label:'Positive Signals',body:'✅ Active product listing maintenance signals customer investment in TrustRadius presence\n✅ Insights Nashville participation confirmed — event engagement strong\n✅ Clear ownership and timeline for content updates'},
+    {label:'Next Steps',body:'Complete Kinetic product listing updates before Insights Nashville. Finalize booth logistics.'},
+  ]},
+  'pulse-epicor-eclipse-apr23':{ title:'Epicor Eclipse — TrustRadius Bundled Package', subtitle:'Healthy · Pam Huck', sections:[
+    {label:'Pulse Explanation',body:'"Epicor Eclipse - TrustRadius" — Apr 22, 2026, 18:30 UTC (30 min, Zoom). Evaluated bundled package campaign performance for P21 and API-based lead gen. Rescheduled follow-up to include Libby and Ben Halverson for broader product scope coverage.'},
+    {label:'Positive Signals',body:'✅ Eclipse being added to TR campaign scope — expansion signal\n✅ Broader stakeholder engagement (Libby, Ben Halverson)\n✅ API integration lead gen pathway under active evaluation'},
+    {label:'Next Steps',body:'Reschedule meeting with Libby and Ben Halverson. Align on P21/Eclipse bundle scope and pricing. Confirm API integration structure before Nashville.'},
+  ]},
+};
+
+function openModal(key) {
+  const data=modals[key]; if(!data) return;
+  document.getElementById('modal-title').textContent=data.title;
+  document.getElementById('modal-subtitle').textContent=data.subtitle;
+  document.getElementById('modal-body').innerHTML=data.sections.map(s=>`<div class="modal-section"><div class="modal-section-label">${s.label}</div><div class="modal-section-body">${s.body.replace(/\n/g,'<br>')}</div></div>`).join('');
+  document.getElementById('modal-overlay').classList.add('open');
+}
+function closeModal() { document.getElementById('modal-overlay').classList.remove('open'); }
+document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeModal(); });
+
+// ─── AUTH GATE ──────────────────────────────────────────────────
+const AUTH_CLIENT_ID = '1094206518379-qbd9moklpm5i67kmkgnp2k45ki2dai8j.apps.googleusercontent.com';
+// This MUST exactly match what is in Google Cloud Console → Authorized Redirect URIs
+const REDIRECT_URI = 'https://csm-engagement-hg.vercel.app';
+
+function startGoogleLogin() {
+  const nonce = Math.random().toString(36).slice(2) + Date.now();
+  sessionStorage.setItem('oauth-nonce', nonce);
+  const params = new URLSearchParams({
+    client_id: AUTH_CLIENT_ID,
+    redirect_uri: REDIRECT_URI,
+    response_type: 'id_token',
+    scope: 'openid email profile',
+    hd: 'hginsights.com',
+    prompt: 'select_account',
+    nonce: nonce
+  });
+  window.location.href = 'https://accounts.google.com/o/oauth2/v2/auth?' + params.toString();
+}
+
+function handleOAuthCallback() {
+  const hash = window.location.hash;
+  if (!hash || !hash.includes('id_token')) return;
+  const params = new URLSearchParams(hash.replace(/^#/, ''));
+  const idToken = params.get('id_token');
+  if (!idToken) return;
+
+  // Clean URL immediately
+  history.replaceState(null, '', window.location.pathname);
+
+  try {
+    // Decode JWT payload to get email — no API call needed
+    const b64 = idToken.split('.')[1].replace(/-/g, '+').replace(/_/g, '/');
+    const payload = JSON.parse(atob(b64));
+    const email = (payload.email || '').toLowerCase();
+    if (email.endsWith('@hginsights.com')) {
+      sessionStorage.setItem('hg-auth', email);
+      document.getElementById('auth-gate').style.display = 'none';
+    } else {
+      document.getElementById('auth-err').textContent = 'Access restricted to @hginsights.com accounts.';
+    }
+  } catch(e) {
+    document.getElementById('auth-err').textContent = 'Sign-in failed. Please try again.';
+  }
+}
+
+const GOOGLE_ICON = `<svg width="20" height="20" viewBox="0 0 48 48" style="flex-shrink:0"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/><path fill="none" d="M0 0h48v48H0z"/></svg>`;
+
+if (sessionStorage.getItem('hg-auth')) {
+  document.getElementById('auth-gate').style.display = 'none';
+} else {
+  handleOAuthCallback();
+}
+
+// ─── INIT ───────────────────────────────────────────────────────
+render();
+</script>
+</body>
+</html>
