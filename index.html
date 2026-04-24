@@ -203,6 +203,10 @@ td { padding: 12px 14px; font-size: 13px; vertical-align: middle; }
 .auth-err { font-size: 12px; color: #dc2626; margin-top: 14px; min-height: 18px; }
 .auth-footer { font-size: 11px; color: #9ca3af; margin-top: 16px; }
 @media (max-width: 600px) { .content { padding: 12px 14px; } .overview-grid { grid-template-columns: 1fr; } .pulse-grid { grid-template-columns: 1fr; } th:nth-child(4), td:nth-child(4), th:nth-child(5), td:nth-child(5) { display: none; } }
+
+.hm-csm-row[data-csm], .acct-csm[data-csm] { cursor: pointer; }
+.hm-csm-row[data-csm]:hover td:first-child, .acct-csm[data-csm]:hover { color: #1d4ed8 !important; text-decoration: underline; }
+.csm-card[data-csm], .csm-row[data-csm] { cursor: pointer; }
 </style>
 </head>
 <body>
@@ -828,11 +832,11 @@ function weekSummaryHTML() {
 
   <div class="section-label">Active Accounts This Week</div>
   <div class="account-highlights">
-    <div class="acct-card ac-amber"><div class="acct-name">Datadog</div><div class="acct-csm">CSM: Varun Tiwari</div><div class="acct-stats"><div class="acct-stat"><div class="n ct">4</div><div class="l">Calls</div></div><div class="acct-stat"><div class="n cg">2</div><div class="l">Pulses</div></div><div class="acct-stat"><div class="n" style="color:#d97706">⚠</div><div class="l">Risk</div></div></div><div class="acct-note">Cloud Dynamics data trust concern flagged — SMB firmographic accuracy questioned. TR/ICP call healthy — ICP refinement to commercial/SMB progressing.</div></div>
+    <div class="acct-card ac-amber"><div class="acct-name">Datadog</div><div class="acct-csm" data-csm="varun">CSM: Varun Tiwari</div><div class="acct-stats"><div class="acct-stat"><div class="n ct">4</div><div class="l">Calls</div></div><div class="acct-stat"><div class="n cg">2</div><div class="l">Pulses</div></div><div class="acct-stat"><div class="n" style="color:#d97706">⚠</div><div class="l">Risk</div></div></div><div class="acct-note">Cloud Dynamics data trust concern flagged — SMB firmographic accuracy questioned. TR/ICP call healthy — ICP refinement to commercial/SMB progressing.</div></div>
     <div class="acct-card"><div class="acct-name">Rani's Portfolio</div><div class="acct-csm">Workday · Lenovo · Elastic · Cloudflare</div><div class="acct-stats"><div class="acct-stat"><div class="n ct">4</div><div class="l">Calls</div></div><div class="acct-stat"><div class="n cg">4</div><div class="l">Pulses</div></div><div class="acct-stat"><div class="n" style="color:#059669">↑H</div><div class="l">Trend</div></div></div><div class="acct-note">Strong week: Workday MCP expansion (Mon), Lenovo onboarding new stakeholder Kristen (Wed), Elastic TAM/SAM deep-dive (Wed), Cloudflare May onsite confirmed (Wed).</div></div>
-    <div class="acct-card"><div class="acct-name">Quadient Software</div><div class="acct-csm">CSM: Divyam Dewan</div><div class="acct-stats"><div class="acct-stat"><div class="n ct">2</div><div class="l">Calls</div></div><div class="acct-stat"><div class="n cg">4</div><div class="l">Pulses</div></div><div class="acct-stat"><div class="n" style="color:#059669">↑H</div><div class="l">Trend</div></div></div><div class="acct-note">TR review campaign on track for May Top Rated. IDL Germany + DACH onboarding advancing. Thomson Reuters churn model deep-dive also covered this week.</div></div>
-    <div class="acct-card"><div class="acct-name">Intuit Mailchimp</div><div class="acct-csm">CSM: Riley Rogers</div><div class="acct-stats"><div class="acct-stat"><div class="n ct">1</div><div class="l">Calls</div></div><div class="acct-stat"><div class="n cg">3</div><div class="l">Pulses</div></div><div class="acct-stat"><div class="n" style="color:#059669">↑H</div><div class="l">Trend</div></div></div><div class="acct-note">Champion Bianca Gause re-engaged. GEO dashboard early access driving positive momentum. All 3 opps upgraded from Concerning → Healthy.</div></div>
-    <div class="acct-card ac-amber"><div class="acct-name">Cisco</div><div class="acct-csm">CSM: Pam Huck</div><div class="acct-stats"><div class="acct-stat"><div class="n ct">1</div><div class="l">Calls</div></div><div class="acct-stat"><div class="n cg">1</div><div class="l">Pulses</div></div><div class="acct-stat"><div class="n" style="color:#d97706">⚠</div><div class="l">Risk</div></div></div><div class="acct-note">No committed Q4 budget. Attribution unclear. Contract ends May 15 — scoped proposal urgently needed. Downgrade or churn risk without exec direction.</div></div>
+    <div class="acct-card"><div class="acct-name">Quadient Software</div><div class="acct-csm" data-csm="divyam">CSM: Divyam Dewan</div><div class="acct-stats"><div class="acct-stat"><div class="n ct">2</div><div class="l">Calls</div></div><div class="acct-stat"><div class="n cg">4</div><div class="l">Pulses</div></div><div class="acct-stat"><div class="n" style="color:#059669">↑H</div><div class="l">Trend</div></div></div><div class="acct-note">TR review campaign on track for May Top Rated. IDL Germany + DACH onboarding advancing. Thomson Reuters churn model deep-dive also covered this week.</div></div>
+    <div class="acct-card"><div class="acct-name">Intuit Mailchimp</div><div class="acct-csm" data-csm="riley">CSM: Riley Rogers</div><div class="acct-stats"><div class="acct-stat"><div class="n ct">1</div><div class="l">Calls</div></div><div class="acct-stat"><div class="n cg">3</div><div class="l">Pulses</div></div><div class="acct-stat"><div class="n" style="color:#059669">↑H</div><div class="l">Trend</div></div></div><div class="acct-note">Champion Bianca Gause re-engaged. GEO dashboard early access driving positive momentum. All 3 opps upgraded from Concerning → Healthy.</div></div>
+    <div class="acct-card ac-amber"><div class="acct-name">Cisco</div><div class="acct-csm" data-csm="pam">CSM: Pam Huck</div><div class="acct-stats"><div class="acct-stat"><div class="n ct">1</div><div class="l">Calls</div></div><div class="acct-stat"><div class="n cg">1</div><div class="l">Pulses</div></div><div class="acct-stat"><div class="n" style="color:#d97706">⚠</div><div class="l">Risk</div></div></div><div class="acct-note">No committed Q4 budget. Attribution unclear. Contract ends May 15 — scoped proposal urgently needed. Downgrade or churn risk without exec direction.</div></div>
   </div>
 
   <div class="section-label">Daily Call Activity — Week of Apr 20–26</div>
@@ -840,14 +844,14 @@ function weekSummaryHTML() {
     <table class="hm-table">
       <thead><tr><th class="row-lbl">CSM</th><th>Mon Apr 20</th><th>Tue Apr 21</th><th>Wed Apr 22</th><th>Thu Apr 23</th><th>Fri Apr 24</th><th>Sat Apr 25</th><th>Sun Apr 26</th></tr></thead>
       <tbody>
-        <tr><td style="font-size:12px;font-weight:600">Riley Rogers</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-1">1</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td></tr>
-        <tr><td style="font-size:12px;font-weight:600">Varun Tiwari</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-2">2</td><td class="hm-cell hm-2">2</td><td class="hm-cell hm-2">2</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td></tr>
-        <tr><td style="font-size:12px;font-weight:600">Divyam Dewan</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-2">2</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-1">1</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td></tr>
-        <tr><td style="font-size:12px;font-weight:600">Nick Johnson</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-1">1</td><td class="hm-cell hm-1">1</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td></tr>
-        <tr><td style="font-size:12px;font-weight:600">Rani Guy</td><td class="hm-cell hm-1">1</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-3">3</td><td class="hm-cell hm-1">1</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td></tr>
-        <tr><td style="font-size:12px;font-weight:600">Pam Huck</td><td class="hm-cell hm-2">2</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-2">2</td><td class="hm-cell hm-2">2</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td></tr>
-        <tr><td style="font-size:12px;font-weight:600">Atisha Waghela</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-1">1</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td></tr>
-        <tr><td style="font-size:12px;color:#9ca3af">Andy Lim</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td></tr>
+        <tr class="hm-csm-row" data-csm="riley"><td style="font-size:12px;font-weight:600">Riley Rogers</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-1">1</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td></tr>
+        <tr class="hm-csm-row" data-csm="varun"><td style="font-size:12px;font-weight:600">Varun Tiwari</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-2">2</td><td class="hm-cell hm-2">2</td><td class="hm-cell hm-2">2</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td></tr>
+        <tr class="hm-csm-row" data-csm="divyam"><td style="font-size:12px;font-weight:600">Divyam Dewan</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-2">2</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-1">1</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td></tr>
+        <tr class="hm-csm-row" data-csm="nick"><td style="font-size:12px;font-weight:600">Nick Johnson</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-1">1</td><td class="hm-cell hm-1">1</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td></tr>
+        <tr class="hm-csm-row" data-csm="rani"><td style="font-size:12px;font-weight:600">Rani Guy</td><td class="hm-cell hm-1">1</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-3">3</td><td class="hm-cell hm-1">1</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td></tr>
+        <tr class="hm-csm-row" data-csm="pam"><td style="font-size:12px;font-weight:600">Pam Huck</td><td class="hm-cell hm-2">2</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-2">2</td><td class="hm-cell hm-2">2</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td></tr>
+        <tr class="hm-csm-row" data-csm="atisha"><td style="font-size:12px;font-weight:600">Atisha Waghela</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-1">1</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td></tr>
+        <tr class="hm-csm-row" data-csm="andy"><td style="font-size:12px;font-weight:600">Andy Lim</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td></tr>
       </tbody>
     </table>
   </div>
@@ -910,6 +914,15 @@ function weekCallsHTML() {
       <tr data-csm="varun" onclick="openModal('call-zendesk-apr23')"><td style="color:#9ca3af;font-size:12px">Wed Apr 22 · 1:30 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-varun">VT</div>Varun Tiwari</div></td><td><strong>Zendesk</strong> <span style="font-size:11px;color:#9ca3af">Health Check</span></td><td>30 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
       <tr data-csm="pam" onclick="openModal('call-epicor-kinetic-apr23')"><td style="color:#9ca3af;font-size:12px">Wed Apr 22 · 2:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">PH</div>Pam Huck</div></td><td><strong>Epicor</strong> <span style="font-size:11px;color:#9ca3af">Kinetic</span></td><td>45 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
       <tr data-csm="pam" onclick="openModal('call-epicor-eclipse-apr23')"><td style="color:#9ca3af;font-size:12px">Wed Apr 22 · 3:30 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">PH</div>Pam Huck</div></td><td><strong>Epicor</strong> <span style="font-size:11px;color:#9ca3af">Eclipse</span></td><td>30 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
+      <tr style="background:#f8f9fc;pointer-events:none"><td colspan="5" style="font-size:11px;font-weight:700;color:#6b7280;text-transform:uppercase;letter-spacing:0.6px;padding:8px 12px">THURSDAY APR 23 — 8 CALLS</td></tr>
+      <tr data-csm="varun" onclick="openModal('call-dxc-apr23')"><td style="color:#9ca3af;font-size:12px">Thu Apr 23 · 2:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-varun">VT</div>Varun Tiwari</div></td><td><strong>DXC Technology</strong> <span style="font-size:11px;color:#9ca3af">Gabriella &amp; HG Quarterly</span></td><td>30 min</td><td><span class="badge badge-concerning">🟡 Concerning</span></td></tr>
+      <tr data-csm="nick" onclick="openModal('call-ntt-apr23')"><td style="color:#9ca3af;font-size:12px">Thu Apr 23 · 2:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">NJ</div>Nick Johnson</div></td><td><strong>NTT Data</strong> <span style="font-size:11px;color:#9ca3af">POC Discussion</span></td><td>30 min</td><td><span style="font-size:11px;color:#9ca3af">— No transcript</span></td></tr>
+      <tr data-csm="rani" onclick="openModal('call-cf-apr23')"><td style="color:#9ca3af;font-size:12px">Thu Apr 23 · 3:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">RG</div>Rani Guy</div></td><td><strong>Cloudflare</strong> <span style="font-size:11px;color:#9ca3af">Connect</span></td><td>30 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
+      <tr data-csm="atisha" onclick="openModal('call-strada-apr23')"><td style="color:#9ca3af;font-size:12px">Thu Apr 23 · 3:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">AW</div>Atisha Waghela</div></td><td><strong>Strada</strong> <span style="font-size:11px;color:#9ca3af">Alignment Call</span></td><td>30 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
+      <tr data-csm="divyam" onclick="openModal('call-dynatrace-apr23')"><td style="color:#9ca3af;font-size:12px">Thu Apr 23 · 4:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-divyam">DD</div>Divyam Dewan</div></td><td><strong>Dynatrace</strong> <span style="font-size:11px;color:#9ca3af">Datafeed Collaboration</span></td><td>30 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
+      <tr data-csm="varun" onclick="openModal('call-autodesk-apr23')"><td style="color:#9ca3af;font-size:12px">Thu Apr 23 · 5:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-varun">VT</div>Varun Tiwari</div></td><td><strong>Autodesk</strong> <span style="font-size:11px;color:#9ca3af">Whitespace File</span></td><td>30 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
+      <tr data-csm="pam" onclick="openModal('call-msft-apr23')"><td style="color:#9ca3af;font-size:12px">Thu Apr 23 · 5:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">PH</div>Pam Huck</div></td><td><strong>Microsoft</strong> <span style="font-size:11px;color:#9ca3af">Bi-Weekly</span></td><td>60 min</td><td><span style="font-size:11px;color:#9ca3af">— No transcript</span></td></tr>
+      <tr data-csm="pam" onclick="openModal('call-cisco-apr23')"><td style="color:#9ca3af;font-size:12px">Thu Apr 23 · 7:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">PH</div>Pam Huck</div></td><td><strong>Cisco</strong> <span style="font-size:11px;color:#9ca3af">Connect</span></td><td>30 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
     </tbody>
   </table></div>`;
 }
@@ -950,21 +963,42 @@ function applyWeekCSMFilter() {
 // ═══════════════════════════════════════════════════════════════
 function renderMonth(mc, tabsRow, statPills) {
   setPills([['dot-teal','24 Calls'],['dot-green','21 Pulses'],['dot-purple','22 Accounts'],['dot-amber','4 Concerning']]);
-  const tabs = ['Summary','CSM Breakdown','Pulse Health'];
-  if (!activeTab || !['msummary','mcsm','mhealth'].includes(activeTab)) activeTab='msummary';
-  tabsRow.innerHTML = ['msummary','mcsm','mhealth'].map((k,i)=>
+  const tabs = ['Summary','CSM Breakdown','Call Log','Pulse Notes','Pulse Health'];
+  if (!activeTab || !['msummary','mcsm','mcalls','mpulses','mhealth'].includes(activeTab)) activeTab='msummary';
+  tabsRow.innerHTML = ['msummary','mcsm','mcalls','mpulses','mhealth'].map((k,i)=>
     `<div class="tab ${activeTab===k?'active':''}" onclick="switchTab('${k}')">${tabs[i]}</div>`
   ).join('');
+  const showHealth = activeTab==='mpulses' || activeTab==='mcalls';
   ['h-all','h-healthy','h-concerning','health-divider','health-label'].forEach(id=>{
-    const el=document.getElementById(id); if(el) el.style.display='none';
+    const el=document.getElementById(id); if(el) el.style.display = showHealth ? '' : 'none';
   });
 
   let html = '<div class="content">';
   if (activeTab==='msummary') html += monthSummaryHTML();
   else if (activeTab==='mcsm') html += monthCSMHTML();
+  else if (activeTab==='mcalls') html += monthCallsHTML();
+  else if (activeTab==='mpulses') html += monthPulsesHTML();
   else html += monthHealthHTML();
   html += '</div>';
   mc.innerHTML = html;
+  if (activeTab==='mpulses') applyWeekPulseFilters();
+  else if (activeTab==='mcalls') applyMonthCallFilters();
+  else if (activeTab==='mcsm') applyWeekCSMFilter();
+}
+
+function monthCallsHTML() {
+  // April 2026 MTD — all 24 calls live in Week 17 (Mon–Thu)
+  return weekCallsHTML().replace('Week 17','April 2026 · Month-to-Date');
+}
+function monthPulsesHTML() {
+  return weekPulsesHTML();
+}
+function applyMonthCallFilters() {
+  document.querySelectorAll('.table-card tbody tr[data-csm]').forEach(r=>{
+    const okCsm = (activeCsm==='all' || r.dataset.csm===activeCsm);
+    const okHealth = (activeHealth==='all' || r.dataset.health===activeHealth);
+    r.classList.toggle('hidden', !(okCsm && okHealth));
+  });
 }
 
 function monthSummaryHTML() {
@@ -982,9 +1016,27 @@ function monthSummaryHTML() {
   <div class="section-label">Top Accounts by Engagement</div>
   <div class="account-highlights">
     <div class="acct-card"><div class="acct-name">Quadient Software</div><div class="acct-csm">CSM: Divyam Dewan · $320K ARR</div><div class="acct-stats"><div class="acct-stat"><div class="n ct">2</div><div class="l">Calls</div></div><div class="acct-stat"><div class="n" style="color:#059669">4</div><div class="l">Pulses</div></div><div class="acct-stat"><div class="n" style="color:#059669">All H</div><div class="l">Health</div></div></div><div class="acct-note">Most pulse coverage this month. IDL Germany + DACH pilots launched. Review campaigns targeting May Top Rated across 3 products.</div></div>
-    <div class="acct-card"><div class="acct-name">Rani Guy's Portfolio</div><div class="acct-csm">CSM: Rani Guy · Workday · Lenovo · Elastic · Cloudflare</div><div class="acct-stats"><div class="acct-stat"><div class="n ct">4</div><div class="l">Calls</div></div><div class="acct-stat"><div class="n" style="color:#059669">4</div><div class="l">Pulses</div></div><div class="acct-stat"><div class="n" style="color:#059669">All H</div><div class="l">Health</div></div></div><div class="acct-note">4 calls in a single day (Apr 22) — QBR prep, renewal, and expansion coverage across all four accounts. All healthy.</div></div>
+    <div class="acct-card"><div class="acct-name">Rani Guy's Portfolio</div><div class="acct-csm" data-csm="rani">CSM: Rani Guy · Workday · Lenovo · Elastic · Cloudflare</div><div class="acct-stats"><div class="acct-stat"><div class="n ct">4</div><div class="l">Calls</div></div><div class="acct-stat"><div class="n" style="color:#059669">4</div><div class="l">Pulses</div></div><div class="acct-stat"><div class="n" style="color:#059669">All H</div><div class="l">Health</div></div></div><div class="acct-note">4 calls in a single day (Apr 22) — QBR prep, renewal, and expansion coverage across all four accounts. All healthy.</div></div>
     <div class="acct-card ac-amber"><div class="acct-name">Datadog</div><div class="acct-csm">CSM: Varun Tiwari · $329K ARR</div><div class="acct-stats"><div class="acct-stat"><div class="n ct">4</div><div class="l">Calls</div></div><div class="acct-stat"><div class="n" style="color:#059669">4</div><div class="l">Pulses</div></div><div class="acct-stat"><div class="n" style="color:#d97706">Split</div><div class="l">Signal</div></div></div><div class="acct-note">Highest call volume this month across Datadog, DXC, and Zendesk. Cloud Dynamics data trust concern unresolved — SE follow-up required.</div></div>
     <div class="acct-card ac-amber"><div class="acct-name">Cisco</div><div class="acct-csm">CSM: Pam Huck</div><div class="acct-stats"><div class="acct-stat"><div class="n ct">1</div><div class="l">Calls</div></div><div class="acct-stat"><div class="n" style="color:#d97706">1</div><div class="l">Pulses</div></div><div class="acct-stat"><div class="n" style="color:#d97706">⚠️</div><div class="l">Signal</div></div></div><div class="acct-note">QBR prep call flagged Concerning — budget scrutiny and stakeholder changes noted. Follow-up action plan required before next executive touchpoint.</div></div>
+  </div>
+
+  <div class="section-label">Weekly Call Activity — April 2026</div>
+  <div class="heatmap-card">
+    <table class="hm-table">
+      <thead><tr><th class="row-lbl">CSM</th><th>Apr 1–5<br><span style="font-size:10px;color:#9ca3af;font-weight:400">(Wk 14)</span></th><th>Apr 6–12<br><span style="font-size:10px;color:#9ca3af;font-weight:400">(Wk 15)</span></th><th>Apr 13–19<br><span style="font-size:10px;color:#9ca3af;font-weight:400">(Wk 16)</span></th><th>Apr 20–26<br><span style="font-size:10px;color:#9ca3af;font-weight:400">(Wk 17, MTD)</span></th></tr></thead>
+      <tbody>
+        <tr class="hm-csm-row" data-csm="varun"><td style="font-size:12px;font-weight:600">Varun Tiwari</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-3">6</td></tr>
+        <tr class="hm-csm-row" data-csm="pam"><td style="font-size:12px;font-weight:600">Pam Huck</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-3">6</td></tr>
+        <tr class="hm-csm-row" data-csm="rani"><td style="font-size:12px;font-weight:600">Rani Guy</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-3">5</td></tr>
+        <tr class="hm-csm-row" data-csm="divyam"><td style="font-size:12px;font-weight:600">Divyam Dewan</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-3">3</td></tr>
+        <tr class="hm-csm-row" data-csm="nick"><td style="font-size:12px;font-weight:600">Nick Johnson</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-2">2</td></tr>
+        <tr class="hm-csm-row" data-csm="riley"><td style="font-size:12px;font-weight:600">Riley Rogers</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-1">1</td></tr>
+        <tr class="hm-csm-row" data-csm="atisha"><td style="font-size:12px;font-weight:600">Atisha Waghela</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-1">1</td></tr>
+        <tr class="hm-csm-row" data-csm="andy"><td style="font-size:12px;font-weight:600">Andy Lim</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td></tr>
+        <tr style="background:#f8f9fc;font-weight:700"><td style="font-size:12px;font-weight:700">Week total</td><td class="hm-cell hm-0">0</td><td class="hm-cell hm-0">0</td><td class="hm-cell hm-0">0</td><td class="hm-cell hm-3">24</td></tr>
+      </tbody>
+    </table>
   </div>
 
   <div class="section-label">Monthly Health Distribution</div>
@@ -996,9 +1048,35 @@ function monthSummaryHTML() {
       <div class="health-bar-row"><div class="health-bar-label">🔴 Poor</div><div class="health-bar-track"><div class="health-bar-fill hf-red" style="width:0%"></div></div><div class="health-bar-count">0</div></div>
     </div>
     <div class="health-bar-wrap">
-      <div class="health-bar-title">ARR Coverage by Signal ($826K tracked)</div>
-      <div class="health-bar-row"><div class="health-bar-label">🟢 Healthy</div><div class="health-bar-track"><div class="health-bar-fill hf-green" style="width:70%"></div></div><div class="health-bar-count" style="width:50px">$576K</div></div>
-      <div class="health-bar-row"><div class="health-bar-label">🟡 Concerning</div><div class="health-bar-track"><div class="health-bar-fill hf-amber" style="width:30%"></div></div><div class="health-bar-count" style="width:50px">$250K</div></div>
+      <div class="health-bar-title">ARR Coverage by Signal — all 21 pulses itemized</div>
+      <div class="health-bar-row"><div class="health-bar-label">🟢 Healthy (18)</div><div class="health-bar-track"><div class="health-bar-fill hf-green" style="width:70%"></div></div><div class="health-bar-count" style="width:50px">$576K*</div></div>
+      <div style="margin:4px 0 10px 24px;padding:8px 12px;background:#f0fdf4;border-left:3px solid #059669;border-radius:4px;font-size:11px;color:#374151;line-height:1.7">
+        • Intuit CVP x2 · <strong>$76,590</strong><br>
+        • Intuit Enterprise Suite · <strong>$50,000</strong><br>
+        • Intuit CVP x2 (Written) · <strong>$50,000</strong><br>
+        • Datadog TR Lead Accel · <strong>$78,800</strong><br>
+        • Quadient Marketing Leadership · <strong>$180,000</strong><br>
+        • Quadient IDL Co-sell · <strong>$120,000</strong><br>
+        • Quadient Germany IDL · <strong>$10,000</strong><br>
+        • Quadient DACH IDL · <strong>$10,000</strong><br>
+        • Microsoft — GTM alignment healthy · <em style="color:#9ca3af">account-level ARR</em><br>
+        • Workday — Project Phoenix on track · <em style="color:#9ca3af">account-level ARR</em><br>
+        • Lenovo — QBR positive · <em style="color:#9ca3af">account-level ARR</em><br>
+        • Elastic — renewal engaged · <em style="color:#9ca3af">account-level ARR</em><br>
+        • Cloudflare — expansion scoped · <em style="color:#9ca3af">account-level ARR</em><br>
+        • DXC Technology — intent aligned · <em style="color:#9ca3af">account-level ARR</em><br>
+        • Zendesk — health check clear · <em style="color:#9ca3af">account-level ARR</em><br>
+        • Epicor Kinetic — Healthy · <em style="color:#9ca3af">account-level ARR</em><br>
+        • Epicor Eclipse — Healthy · <em style="color:#9ca3af">account-level ARR</em><br>
+        • HCL Software — usage strong · <em style="color:#9ca3af">account-level ARR</em>
+      </div>
+      <div class="health-bar-row"><div class="health-bar-label">🟡 Concerning (3)</div><div class="health-bar-track"><div class="health-bar-fill hf-amber" style="width:30%"></div></div><div class="health-bar-count" style="width:50px">$250K*</div></div>
+      <div style="margin:4px 0 10px 24px;padding:8px 12px;background:#fffbeb;border-left:3px solid #d97706;border-radius:4px;font-size:11px;color:#374151;line-height:1.7">
+        • Datadog Cloud Dynamics + Universe 150 · <strong>$250,000</strong><br>
+        • Cisco — QBR Prep · Budget scrutiny + stakeholder change · <em style="color:#9ca3af">account-level ARR</em><br>
+        • eHouse Studio — Atisha Waghela · No call logged · <em style="color:#9ca3af">account-level ARR</em>
+      </div>
+      <div style="margin-top:8px;font-size:10px;color:#9ca3af;font-style:italic">* Bar widths reflect the $826K in itemized opp-level ARR (8 Healthy + 1 Concerning opps). Remaining 10 Healthy and 2 Concerning pulses are tracked at account level — their ARR isn't included in the $826K.</div>
     </div>
   </div>`;
 }
@@ -1006,14 +1084,14 @@ function monthSummaryHTML() {
 function monthCSMHTML() {
   return `<div class="section-label">CSM Engagement — April 2026</div>
   <div class="csm-leaderboard">
-    <div class="csm-row"><div class="avatar av-varun">VT</div><div style="flex:1"><div class="csm-row-name">Varun Tiwari <span style="font-size:11px;color:#d97706;font-weight:600">Action Needed</span></div><div class="csm-row-sub">Datadog · DXC · Zendesk · Autodesk — Cloud Dynamics data trust follow-up outstanding</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">6</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">4</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n" style="color:#d97706">1</div><div class="l">Risks</div></div></div></div>
-    <div class="csm-row"><div class="avatar av-grey">PH</div><div style="flex:1"><div class="csm-row-name">Pam Huck <span style="font-size:11px;color:#d97706;font-weight:600">Action Needed</span></div><div class="csm-row-sub">Cisco · Microsoft · Epicor Kinetic · Epicor Eclipse — Cisco Concerning</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">6</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">4</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n" style="color:#d97706">1</div><div class="l">Risks</div></div></div></div>
-    <div class="csm-row"><div class="avatar av-grey">RG</div><div style="flex:1"><div class="csm-row-name">Rani Guy <span style="font-size:11px;color:#059669;font-weight:600">Strong Week</span></div><div class="csm-row-sub">Workday · Lenovo · Elastic · Cloudflare — 4 calls Apr 22 + Cloudflare sync Apr 23</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">5</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">4</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n cgr">0</div><div class="l">Risks</div></div></div></div>
-    <div class="csm-row"><div class="avatar av-divyam">DD</div><div style="flex:1"><div class="csm-row-name">Divyam Dewan <span style="font-size:11px;color:#0ea5a0;font-weight:600">Most Pulses</span></div><div class="csm-row-sub">Thomson Reuters · Quadient · Dynatrace — IDL + review campaigns + datafeed upsell</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">3</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">4</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n cgr">0</div><div class="l">Risks</div></div></div></div>
-    <div class="csm-row"><div class="avatar av-riley">RR</div><div style="flex:1"><div class="csm-row-name">Riley Rogers <span style="font-size:11px;color:#059669;font-weight:600">Pulse Upgrades</span></div><div class="csm-row-sub">Intuit Mailchimp · 3 opps upgraded Concerning→Healthy · champion re-engaged</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">1</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">3</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n cgr">0</div><div class="l">Risks</div></div></div></div>
-    <div class="csm-row"><div class="avatar av-grey">NJ</div><div style="flex:1"><div class="csm-row-name">Nick Johnson</div><div class="csm-row-sub">HCL Software · NTT Data — usage deep-dive + POC scoping · 28 accounts in portfolio</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">2</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">1</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n cgr">0</div><div class="l">Risks</div></div></div></div>
+    <div class="csm-row" data-csm="varun"><div class="avatar av-varun">VT</div><div style="flex:1"><div class="csm-row-name">Varun Tiwari <span style="font-size:11px;color:#d97706;font-weight:600">Action Needed</span></div><div class="csm-row-sub">Datadog · DXC · Zendesk · Autodesk — Cloud Dynamics data trust follow-up outstanding</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">6</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">4</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n" style="color:#d97706">1</div><div class="l">Risks</div></div></div></div>
+    <div class="csm-row" data-csm="pam"><div class="avatar av-grey">PH</div><div style="flex:1"><div class="csm-row-name">Pam Huck <span style="font-size:11px;color:#d97706;font-weight:600">Action Needed</span></div><div class="csm-row-sub">Cisco · Microsoft · Epicor Kinetic · Epicor Eclipse — Cisco Concerning</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">6</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">4</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n" style="color:#d97706">1</div><div class="l">Risks</div></div></div></div>
+    <div class="csm-row" data-csm="rani"><div class="avatar av-grey">RG</div><div style="flex:1"><div class="csm-row-name">Rani Guy <span style="font-size:11px;color:#059669;font-weight:600">Strong Week</span></div><div class="csm-row-sub">Workday · Lenovo · Elastic · Cloudflare — 4 calls Apr 22 + Cloudflare sync Apr 23</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">5</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">4</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n cgr">0</div><div class="l">Risks</div></div></div></div>
+    <div class="csm-row" data-csm="divyam"><div class="avatar av-divyam">DD</div><div style="flex:1"><div class="csm-row-name">Divyam Dewan <span style="font-size:11px;color:#0ea5a0;font-weight:600">Most Pulses</span></div><div class="csm-row-sub">Thomson Reuters · Quadient · Dynatrace — IDL + review campaigns + datafeed upsell</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">3</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">4</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n cgr">0</div><div class="l">Risks</div></div></div></div>
+    <div class="csm-row" data-csm="riley"><div class="avatar av-riley">RR</div><div style="flex:1"><div class="csm-row-name">Riley Rogers <span style="font-size:11px;color:#059669;font-weight:600">Pulse Upgrades</span></div><div class="csm-row-sub">Intuit Mailchimp · 3 opps upgraded Concerning→Healthy · champion re-engaged</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">1</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">3</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n cgr">0</div><div class="l">Risks</div></div></div></div>
+    <div class="csm-row" data-csm="nick"><div class="avatar av-grey">NJ</div><div style="flex:1"><div class="csm-row-name">Nick Johnson</div><div class="csm-row-sub">HCL Software · NTT Data — usage deep-dive + POC scoping · 28 accounts in portfolio</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">2</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">1</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n cgr">0</div><div class="l">Risks</div></div></div></div>
     <div class="csm-row" data-csm="atisha"><div class="avatar av-grey">AW</div><div style="flex:1"><div class="csm-row-name">Atisha Waghela <span style="font-size:11px;color:#d97706;font-weight:600">Monitor</span></div><div class="csm-row-sub">Strada — Apr 23 alignment call · eHouse Studio still no call · pulse Concerning</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">1</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#d97706">1</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n" style="color:#d97706">1</div><div class="l">Risks</div></div></div></div>
-    <div class="csm-row inactive"><div class="avatar av-grey">AL</div><div style="flex:1"><div class="csm-row-name">Andy Lim</div><div class="csm-row-sub">No activity logged in April</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n cgr">0</div><div class="l">Calls</div></div><div class="row-stat"><div class="n cgr">0</div><div class="l">Pulses</div></div></div></div>
+    <div class="csm-row inactive" data-csm="andy"><div class="avatar av-grey">AL</div><div style="flex:1"><div class="csm-row-name">Andy Lim</div><div class="csm-row-sub">No activity logged in April</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n cgr">0</div><div class="l">Calls</div></div><div class="row-stat"><div class="n cgr">0</div><div class="l">Pulses</div></div></div></div>
   </div>`;
 }
 
@@ -1041,7 +1119,8 @@ document.querySelectorAll('[data-filter-csm]').forEach(chip => {
     activeCsm = chip.dataset.filterCsm;
     document.querySelectorAll('[data-filter-csm]').forEach(c=>c.classList.toggle('active-chip',c.dataset.filterCsm===activeCsm));
     if (gran==='day') applyDayFilters();
-    else if (gran==='week') { if(activeTab==='wpulses') applyWeekPulseFilters(); else applyWeekCSMFilter(); }
+    else if (gran==='week') { if(activeTab==='wpulses') applyWeekPulseFilters(); else if(activeTab==='wcalls') applyMonthCallFilters(); else applyWeekCSMFilter(); }
+    else if (gran==='month') { if(activeTab==='mpulses') applyWeekPulseFilters(); else if(activeTab==='mcalls') applyMonthCallFilters(); else applyWeekCSMFilter(); }
   });
 });
 document.querySelectorAll('[data-filter-health]').forEach(chip => {
@@ -1049,13 +1128,14 @@ document.querySelectorAll('[data-filter-health]').forEach(chip => {
     activeHealth = chip.dataset.filterHealth;
     document.querySelectorAll('[data-filter-health]').forEach(c=>c.classList.toggle('active-chip',c.dataset.filterHealth===activeHealth));
     if (gran==='day') applyDayFilters();
-    else if (gran==='week') applyWeekPulseFilters();
+    else if (gran==='week') { if(activeTab==='wcalls') applyMonthCallFilters(); else applyWeekPulseFilters(); }
+    else if (gran==='month') { if(activeTab==='mcalls') applyMonthCallFilters(); else applyWeekPulseFilters(); }
   });
 });
 
 // ─── CSM CARD CLICK (click-to-filter) ─────────────────────────
 document.addEventListener('click', function(ev) {
-  const card = ev.target.closest('.csm-card[data-csm], .csm-row[data-csm]');
+  const card = ev.target.closest('.csm-card[data-csm], .csm-row[data-csm], .hm-csm-row[data-csm], .acct-csm[data-csm]');
   if (!card) return;
   if (ev.target.closest('a,button,input,.action-checkbox')) return;
   const csm = card.dataset.csm;
@@ -1065,7 +1145,8 @@ document.addEventListener('click', function(ev) {
     c.classList.toggle('active-chip', c.dataset.filterCsm === activeCsm)
   );
   if (gran === 'day') applyDayFilters();
-  else if (gran === 'week') { if (activeTab === 'wpulses') applyWeekPulseFilters(); else applyWeekCSMFilter(); }
+  else if (gran === 'week') { if (activeTab === 'wpulses') applyWeekPulseFilters(); else if (activeTab === 'wcalls') applyMonthCallFilters(); else applyWeekCSMFilter(); }
+  else if (gran === 'month') { if (activeTab === 'mpulses') applyWeekPulseFilters(); else if (activeTab === 'mcalls') applyMonthCallFilters(); else applyWeekCSMFilter(); }
 });
 
 // ─── MODAL ─────────────────────────────────────────────────────
