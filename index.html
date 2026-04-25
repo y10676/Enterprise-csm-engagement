@@ -1599,15 +1599,15 @@ function accountsHTML() {
       <table style="width:100%;border-collapse:collapse;font-size:13px" id="accounts-table">
         <thead style="position:sticky;top:0;background:#f9fafb;border-bottom:1px solid #e5e7eb">
           <tr>
-            <th style="padding:8px 10px;text-align:left;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px;cursor:pointer" onclick="window.sortAccountsTable('name')">Account</th>
-            <th style="padding:8px 10px;text-align:left;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px;cursor:pointer" onclick="window.sortAccountsTable('csm')">CSM</th>
-            <th style="padding:8px 10px;text-align:left;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px;cursor:pointer" onclick="window.sortAccountsTable('am')">AM</th>
-            <th style="padding:8px 10px;text-align:left;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px;cursor:pointer" onclick="window.sortAccountsTable('segment')">Segment</th>
-            <th style="padding:8px 10px;text-align:right;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px;cursor:pointer" onclick="window.sortAccountsTable('arr')">ARR</th>
-            <th style="padding:8px 10px;text-align:left;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px;cursor:pointer" onclick="window.sortAccountsTable('lastOutbound')">Last Outbound</th>
-            <th style="padding:8px 10px;text-align:left;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px;cursor:pointer" onclick="window.sortAccountsTable('pulse')">Pulse</th>
-            <th style="padding:8px 10px;text-align:left;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px;cursor:pointer" onclick="window.sortAccountsTable('pulseNote')">Pulse Note</th>
-            <th style="padding:8px 10px;text-align:left;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px;cursor:pointer" onclick="window.sortAccountsTable('renewalDate')">Renewal Date</th>
+            <th data-sort-col="name" style="padding:8px 10px;text-align:left;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px;cursor:pointer;user-select:none;white-space:nowrap" onclick="window.sortAccountsTable('name')">Account</th>
+            <th data-sort-col="csm" style="padding:8px 10px;text-align:left;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px;cursor:pointer;user-select:none;white-space:nowrap" onclick="window.sortAccountsTable('csm')">CSM</th>
+            <th data-sort-col="am" style="padding:8px 10px;text-align:left;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px;cursor:pointer;user-select:none;white-space:nowrap" onclick="window.sortAccountsTable('am')">AM</th>
+            <th data-sort-col="segment" style="padding:8px 10px;text-align:left;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px;cursor:pointer;user-select:none;white-space:nowrap" onclick="window.sortAccountsTable('segment')">Segment</th>
+            <th data-sort-col="arr" style="padding:8px 10px;text-align:right;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px;cursor:pointer;user-select:none;white-space:nowrap" onclick="window.sortAccountsTable('arr')">ARR <span class="sort-arrow" style="color:#1d4ed8">↓</span></th>
+            <th data-sort-col="lastOutbound" style="padding:8px 10px;text-align:left;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px;cursor:pointer;user-select:none;white-space:nowrap" onclick="window.sortAccountsTable('lastOutbound')">Last Outbound</th>
+            <th data-sort-col="pulse" style="padding:8px 10px;text-align:left;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px;cursor:pointer;user-select:none;white-space:nowrap" onclick="window.sortAccountsTable('pulse')">Pulse</th>
+            <th data-sort-col="pulseNote" style="padding:8px 10px;text-align:left;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px;cursor:pointer;user-select:none;white-space:nowrap" onclick="window.sortAccountsTable('pulseNote')">Pulse Date</th>
+            <th data-sort-col="renewalDate" style="padding:8px 10px;text-align:left;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px;cursor:pointer;user-select:none;white-space:nowrap" onclick="window.sortAccountsTable('renewalDate')">Renewal Date</th>
           </tr>
         </thead>
         <tbody>${tableRows}</tbody>
@@ -1798,6 +1798,21 @@ window.sortAccountsTable = function(col) {
       oppRowsByAcct[acctIdx].forEach(oppRow => {
         tbody.appendChild(oppRow);
       });
+    }
+  });
+
+  // Update header sort arrows
+  table.querySelectorAll('thead th[data-sort-col]').forEach(th => {
+    const thCol = th.dataset.sortCol;
+    // Remove any existing arrow span
+    const existing = th.querySelector('.sort-arrow');
+    if (existing) existing.remove();
+    if (thCol === accountsSortColumn) {
+      const arrow = document.createElement('span');
+      arrow.className = 'sort-arrow';
+      arrow.style.cssText = 'color:#1d4ed8;margin-left:3px';
+      arrow.textContent = accountsSortDesc ? '↓' : '↑';
+      th.appendChild(arrow);
     }
   });
 };
