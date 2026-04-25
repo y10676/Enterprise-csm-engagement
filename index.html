@@ -1,6 +1,5 @@
 <!DOCTYPE html><html lang="en">
 <head>
-<script src="https://accounts.google.com/gsi/client" defer></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CSM Engagement Browser</title>
@@ -1419,31 +1418,6 @@ function handleGISCredential(response) {
   }
 }
 
-// Called by GIS library as soon as it is ready (window.onGoogleLibraryLoad)
-function _initGISButton() {
-  if (sessionStorage.getItem('hg-auth')) return;
-  google.accounts.id.initialize({
-    client_id: GIS_CLIENT_ID,
-    callback: handleGISCredential,
-    hosted_domain: 'hginsights.com',
-    ux_mode: 'popup',
-  });
-  const container = document.getElementById('gis-btn-container');
-  if (!container) return;
-  google.accounts.id.renderButton(container,
-    { theme: 'outline', size: 'large', text: 'signin_with', width: 280 });
-  // Show fallback if GIS didn't render (e.g. origin not in Cloud Console)
-  setTimeout(function() {
-    const hasContent = container.querySelector('iframe,div,span');
-    if (!hasContent) {
-      container.style.display = 'none';
-      const fb = document.getElementById('gis-fallback-btn');
-      if (fb) fb.style.display = 'flex';
-    }
-  }, 1500);
-}
-window.onGoogleLibraryLoad = _initGISButton;
-
 function _promptSignIn() {
   if (typeof google !== 'undefined' && google.accounts) {
     google.accounts.id.prompt();
@@ -1483,5 +1457,25 @@ discoverDriveReports();
 
 render();
 </script>
+
+<script src="https://accounts.google.com/gsi/client" onload="(function(){
+  if (sessionStorage.getItem('hg-auth')) return;
+  google.accounts.id.initialize({
+    client_id: GIS_CLIENT_ID,
+    callback: handleGISCredential,
+    hosted_domain: 'hginsights.com',
+    ux_mode: 'popup'
+  });
+  var c = document.getElementById('gis-btn-container');
+  if (!c) return;
+  google.accounts.id.renderButton(c, {theme:'outline',size:'large',text:'signin_with',width:280});
+  setTimeout(function(){
+    if (!c.querySelector('iframe,div,span')){
+      c.style.display='none';
+      var fb = document.getElementById('gis-fallback-btn');
+      if (fb) fb.style.display = 'flex';
+    }
+  }, 1500);
+})()"></script>
 </body>
 </html>
