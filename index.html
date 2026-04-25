@@ -213,6 +213,10 @@ td { padding: 12px 14px; font-size: 13px; vertical-align: middle; }
 
 .csm-row-stats .row-stat { cursor: pointer; border-radius: 6px; padding: 4px 8px; transition: background 0.12s ease; }
 .csm-row-stats .row-stat:hover { background: #eef2ff; }
+.csm-row.csm-total { background: #f9fafb; border: 1px solid #d1d5db; font-weight: 600; }
+.csm-row.csm-total .csm-row-name { color: #1f2937; letter-spacing: 0.2px; }
+.csm-row.csm-total .csm-row-sub { color: #6b7280; }
+.csm-row.csm-total .avatar { background: #1f2937; color: #fff; }
 </style>
 </head>
 <body>
@@ -257,8 +261,8 @@ td { padding: 12px 14px; font-size: 13px; vertical-align: middle; }
       <div class="date-arrow" onclick="shiftPeriod(-1)">‹</div>
       <div class="date-display">
         <span>📅</span>
-        <span id="date-label">Apr 22, 2026</span>
-        <input type="date" class="date-picker-input" id="date-picker" value="2026-04-22" onchange="onPickerChange(this.value)">
+        <span id="date-label">Apr 24, 2026</span>
+        <input type="date" class="date-picker-input" id="date-picker" value="2026-04-24" onchange="onPickerChange(this.value)">
       </div>
       <div class="date-arrow" onclick="shiftPeriod(1)">›</div>
     </div>
@@ -375,7 +379,7 @@ function setGran(g) {
   gran = g;
   document.querySelectorAll('.gran-btn').forEach(b=>b.classList.toggle('active',b.dataset.gran===g));
   // Convert currentKey back to a day so we can recompute
-  let dayIso = currentKey.length===10 ? currentKey : (currentKey.length===7 ? currentKey+'-01' : '2026-04-22');
+  let dayIso = currentKey.length===10 ? currentKey : (currentKey.length===7 ? currentKey+'-01' : '2026-04-24');
   currentKey = currentPeriodKey(dayIso);
   document.getElementById('date-label').textContent = formatLabel(dayIso);
   render();
@@ -440,7 +444,7 @@ function jumpToTab(tab, csm, health) {
 }
 
 function jumpToLatest() {
-  if (gran==='day') { currentKey='2026-04-22'; document.getElementById('date-label').textContent='Apr 22, 2026'; }
+  if (gran==='day') { currentKey='2026-04-24'; document.getElementById('date-label').textContent='Apr 24, 2026'; }
   else if (gran==='week') { currentKey='2026-W17'; document.getElementById('date-label').textContent='Apr 20 – Apr 26, 2026'; }
   else { currentKey='2026-04'; document.getElementById('date-label').textContent='April 2026'; }
   render();
@@ -973,14 +977,15 @@ function weekSummaryHTML() {
 function weekCSMHTML() {
   return `<div class="section-label">CSM Contributions — Week of Apr 20–26</div>
   <div class="csm-leaderboard">
-    <div class="csm-row" data-csm="varun"><div class="avatar av-varun">VT</div><div style="flex:1"><div class="csm-row-name">Varun Tiwari</div><div class="csm-row-sub">Datadog · DXC · Zendesk — Cloud Dynamics Concerning; others Healthy</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">4</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">4</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n" style="color:#d97706">1</div><div class="l">Risks</div></div></div></div>
-    <div class="csm-row" data-csm="pam"><div class="avatar av-grey">PH</div><div style="flex:1"><div class="csm-row-name">Pam Huck</div><div class="csm-row-sub">Cisco · Microsoft · Epicor Kinetic · Epicor Eclipse — Cisco Concerning</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">4</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">4</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n" style="color:#d97706">1</div><div class="l">Risks</div></div></div></div>
-    <div class="csm-row" data-csm="rani"><div class="avatar av-grey">RG</div><div style="flex:1"><div class="csm-row-name">Rani Guy</div><div class="csm-row-sub">Workday · Lenovo · Elastic · Cloudflare — all Healthy</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">4</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">4</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n cgr">0</div><div class="l">Risks</div></div></div></div>
-    <div class="csm-row" data-csm="divyam"><div class="avatar av-divyam">DD</div><div style="flex:1"><div class="csm-row-name">Divyam Dewan</div><div class="csm-row-sub">Thomson Reuters · Quadient — all Healthy · IDL + reviews on track</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">2</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">4</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n cgr">0</div><div class="l">Risks</div></div></div></div>
-    <div class="csm-row" data-csm="riley"><div class="avatar av-riley">RR</div><div style="flex:1"><div class="csm-row-name">Riley Rogers</div><div class="csm-row-sub">Intuit Mailchimp · Champion re-engaged · 3 pulses upgraded Concerning→Healthy</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">1</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">3</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n cgr">0</div><div class="l">Risks</div></div></div></div>
-    <div class="csm-row" data-csm="nick"><div class="avatar av-grey">NJ</div><div style="flex:1"><div class="csm-row-name">Nick Johnson</div><div class="csm-row-sub">HCL Software — usage deep-dive · Healthy</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">1</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">1</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n cgr">0</div><div class="l">Risks</div></div></div></div>
-    <div class="csm-row inactive" data-csm="atisha"><div class="avatar av-grey">AW</div><div style="flex:1"><div class="csm-row-name">Atisha Waghela</div><div class="csm-row-sub">eHouse Studio — no call logged · pulse flagged Concerning</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n cgr">0</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#d97706">1</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n" style="color:#d97706">1</div><div class="l">Risks</div></div></div></div>
-    <div class="csm-row inactive" data-csm="andy"><div class="avatar av-grey">AL</div><div style="flex:1"><div class="csm-row-name">Andy Lim</div><div class="csm-row-sub">No activity logged this week</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n cgr">0</div><div class="l">Calls</div></div><div class="row-stat"><div class="n cgr">0</div><div class="l">Pulses</div></div></div></div>
+    <div class="csm-row csm-total" data-csm="all"><div class="avatar">Σ</div><div style="flex:1"><div class="csm-row-name">Total — All CSMs</div><div class="csm-row-sub">8 Enterprise CSMs · 120 accounts · $47.3M ARR</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">16</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">21</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n" style="color:#d97706">3</div><div class="l">Risks</div></div><div class="row-stat"><div class="n" style="color:#7c3aed">120</div><div class="l">Accounts</div></div></div></div>
+    <div class="csm-row" data-csm="varun"><div class="avatar av-varun">VT</div><div style="flex:1"><div class="csm-row-name">Varun Tiwari</div><div class="csm-row-sub">Datadog · DXC · Zendesk — Cloud Dynamics Concerning; others Healthy</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">4</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">4</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n" style="color:#d97706">1</div><div class="l">Risks</div></div><div class="row-stat"><div class="n" style="color:#7c3aed">21</div><div class="l">Accounts</div></div></div></div>
+    <div class="csm-row" data-csm="pam"><div class="avatar av-grey">PH</div><div style="flex:1"><div class="csm-row-name">Pam Huck</div><div class="csm-row-sub">Cisco · Microsoft · Epicor Kinetic · Epicor Eclipse — Cisco Concerning</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">4</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">4</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n" style="color:#d97706">1</div><div class="l">Risks</div></div><div class="row-stat"><div class="n" style="color:#7c3aed">7</div><div class="l">Accounts</div></div></div></div>
+    <div class="csm-row" data-csm="rani"><div class="avatar av-grey">RG</div><div style="flex:1"><div class="csm-row-name">Rani Guy</div><div class="csm-row-sub">Workday · Lenovo · Elastic · Cloudflare — all Healthy</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">4</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">4</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n cgr">0</div><div class="l">Risks</div></div><div class="row-stat"><div class="n" style="color:#7c3aed">10</div><div class="l">Accounts</div></div></div></div>
+    <div class="csm-row" data-csm="divyam"><div class="avatar av-divyam">DD</div><div style="flex:1"><div class="csm-row-name">Divyam Dewan</div><div class="csm-row-sub">Thomson Reuters · Quadient — all Healthy · IDL + reviews on track</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">2</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">4</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n cgr">0</div><div class="l">Risks</div></div><div class="row-stat"><div class="n" style="color:#7c3aed">21</div><div class="l">Accounts</div></div></div></div>
+    <div class="csm-row" data-csm="riley"><div class="avatar av-riley">RR</div><div style="flex:1"><div class="csm-row-name">Riley Rogers</div><div class="csm-row-sub">Intuit Mailchimp · Champion re-engaged · 3 pulses upgraded Concerning→Healthy</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">1</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">3</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n cgr">0</div><div class="l">Risks</div></div><div class="row-stat"><div class="n" style="color:#7c3aed">6</div><div class="l">Accounts</div></div></div></div>
+    <div class="csm-row" data-csm="nick"><div class="avatar av-grey">NJ</div><div style="flex:1"><div class="csm-row-name">Nick Johnson</div><div class="csm-row-sub">HCL Software — usage deep-dive · Healthy</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">1</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">1</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n cgr">0</div><div class="l">Risks</div></div><div class="row-stat"><div class="n" style="color:#7c3aed">27</div><div class="l">Accounts</div></div></div></div>
+    <div class="csm-row inactive" data-csm="atisha"><div class="avatar av-grey">AW</div><div style="flex:1"><div class="csm-row-name">Atisha Waghela</div><div class="csm-row-sub">eHouse Studio — no call logged · pulse flagged Concerning</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n cgr">0</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#d97706">1</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n" style="color:#d97706">1</div><div class="l">Risks</div></div><div class="row-stat"><div class="n" style="color:#7c3aed">18</div><div class="l">Accounts</div></div></div></div>
+    <div class="csm-row inactive" data-csm="andy"><div class="avatar av-grey">AL</div><div style="flex:1"><div class="csm-row-name">Andy Lim</div><div class="csm-row-sub">No activity logged this week</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n cgr">0</div><div class="l">Calls</div></div><div class="row-stat"><div class="n cgr">0</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n cgr">0</div><div class="l">Risks</div></div><div class="row-stat"><div class="n" style="color:#7c3aed">10</div><div class="l">Accounts</div></div></div></div>
   </div>`;
 }
 
@@ -1177,14 +1182,15 @@ function monthSummaryHTML() {
 function monthCSMHTML() {
   return `<div class="section-label">CSM Engagement — April 2026</div>
   <div class="csm-leaderboard">
-    <div class="csm-row" data-csm="varun"><div class="avatar av-varun">VT</div><div style="flex:1"><div class="csm-row-name">Varun Tiwari <span style="font-size:11px;color:#d97706;font-weight:600">Action Needed</span></div><div class="csm-row-sub">Datadog · DXC · Zendesk · Autodesk — Cloud Dynamics data trust follow-up outstanding</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">6</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">4</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n" style="color:#d97706">1</div><div class="l">Risks</div></div></div></div>
-    <div class="csm-row" data-csm="pam"><div class="avatar av-grey">PH</div><div style="flex:1"><div class="csm-row-name">Pam Huck <span style="font-size:11px;color:#d97706;font-weight:600">Action Needed</span></div><div class="csm-row-sub">Cisco · Microsoft · Epicor Kinetic · Epicor Eclipse — Cisco Concerning</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">6</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">4</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n" style="color:#d97706">1</div><div class="l">Risks</div></div></div></div>
-    <div class="csm-row" data-csm="rani"><div class="avatar av-grey">RG</div><div style="flex:1"><div class="csm-row-name">Rani Guy <span style="font-size:11px;color:#059669;font-weight:600">Strong Week</span></div><div class="csm-row-sub">Workday · Lenovo · Elastic · Cloudflare — 4 calls Apr 22 + Cloudflare sync Apr 23</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">5</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">4</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n cgr">0</div><div class="l">Risks</div></div></div></div>
-    <div class="csm-row" data-csm="divyam"><div class="avatar av-divyam">DD</div><div style="flex:1"><div class="csm-row-name">Divyam Dewan <span style="font-size:11px;color:#0ea5a0;font-weight:600">Most Pulses</span></div><div class="csm-row-sub">Thomson Reuters · Quadient · Dynatrace — IDL + review campaigns + datafeed upsell</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">3</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">4</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n cgr">0</div><div class="l">Risks</div></div></div></div>
-    <div class="csm-row" data-csm="riley"><div class="avatar av-riley">RR</div><div style="flex:1"><div class="csm-row-name">Riley Rogers <span style="font-size:11px;color:#059669;font-weight:600">Pulse Upgrades</span></div><div class="csm-row-sub">Intuit Mailchimp · 3 opps upgraded Concerning→Healthy · champion re-engaged</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">1</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">3</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n cgr">0</div><div class="l">Risks</div></div></div></div>
-    <div class="csm-row" data-csm="nick"><div class="avatar av-grey">NJ</div><div style="flex:1"><div class="csm-row-name">Nick Johnson</div><div class="csm-row-sub">HCL Software · NTT Data — usage deep-dive + POC scoping · 28 accounts in portfolio</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">2</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">1</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n cgr">0</div><div class="l">Risks</div></div></div></div>
-    <div class="csm-row" data-csm="atisha"><div class="avatar av-grey">AW</div><div style="flex:1"><div class="csm-row-name">Atisha Waghela <span style="font-size:11px;color:#d97706;font-weight:600">Monitor</span></div><div class="csm-row-sub">Strada — Apr 23 alignment call · eHouse Studio still no call · pulse Concerning</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">1</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#d97706">1</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n" style="color:#d97706">1</div><div class="l">Risks</div></div></div></div>
-    <div class="csm-row inactive" data-csm="andy"><div class="avatar av-grey">AL</div><div style="flex:1"><div class="csm-row-name">Andy Lim</div><div class="csm-row-sub">No activity logged in April</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n cgr">0</div><div class="l">Calls</div></div><div class="row-stat"><div class="n cgr">0</div><div class="l">Pulses</div></div></div></div>
+    <div class="csm-row csm-total" data-csm="all"><div class="avatar">Σ</div><div style="flex:1"><div class="csm-row-name">Total — All CSMs</div><div class="csm-row-sub">8 Enterprise CSMs · 120 accounts · $47.3M ARR</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">24</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">21</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n" style="color:#d97706">3</div><div class="l">Risks</div></div><div class="row-stat"><div class="n" style="color:#7c3aed">120</div><div class="l">Accounts</div></div></div></div>
+    <div class="csm-row" data-csm="varun"><div class="avatar av-varun">VT</div><div style="flex:1"><div class="csm-row-name">Varun Tiwari <span style="font-size:11px;color:#d97706;font-weight:600">Action Needed</span></div><div class="csm-row-sub">Datadog · DXC · Zendesk · Autodesk — Cloud Dynamics data trust follow-up outstanding</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">6</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">4</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n" style="color:#d97706">1</div><div class="l">Risks</div></div><div class="row-stat"><div class="n" style="color:#7c3aed">21</div><div class="l">Accounts</div></div></div></div>
+    <div class="csm-row" data-csm="pam"><div class="avatar av-grey">PH</div><div style="flex:1"><div class="csm-row-name">Pam Huck <span style="font-size:11px;color:#d97706;font-weight:600">Action Needed</span></div><div class="csm-row-sub">Cisco · Microsoft · Epicor Kinetic · Epicor Eclipse — Cisco Concerning</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">6</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">4</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n" style="color:#d97706">1</div><div class="l">Risks</div></div><div class="row-stat"><div class="n" style="color:#7c3aed">7</div><div class="l">Accounts</div></div></div></div>
+    <div class="csm-row" data-csm="rani"><div class="avatar av-grey">RG</div><div style="flex:1"><div class="csm-row-name">Rani Guy <span style="font-size:11px;color:#059669;font-weight:600">Strong Week</span></div><div class="csm-row-sub">Workday · Lenovo · Elastic · Cloudflare — 4 calls Apr 22 + Cloudflare sync Apr 23</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">5</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">4</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n cgr">0</div><div class="l">Risks</div></div><div class="row-stat"><div class="n" style="color:#7c3aed">10</div><div class="l">Accounts</div></div></div></div>
+    <div class="csm-row" data-csm="divyam"><div class="avatar av-divyam">DD</div><div style="flex:1"><div class="csm-row-name">Divyam Dewan <span style="font-size:11px;color:#0ea5a0;font-weight:600">Most Pulses</span></div><div class="csm-row-sub">Thomson Reuters · Quadient · Dynatrace — IDL + review campaigns + datafeed upsell</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">3</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">4</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n cgr">0</div><div class="l">Risks</div></div><div class="row-stat"><div class="n" style="color:#7c3aed">21</div><div class="l">Accounts</div></div></div></div>
+    <div class="csm-row" data-csm="riley"><div class="avatar av-riley">RR</div><div style="flex:1"><div class="csm-row-name">Riley Rogers <span style="font-size:11px;color:#059669;font-weight:600">Pulse Upgrades</span></div><div class="csm-row-sub">Intuit Mailchimp · 3 opps upgraded Concerning→Healthy · champion re-engaged</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">1</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">3</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n cgr">0</div><div class="l">Risks</div></div><div class="row-stat"><div class="n" style="color:#7c3aed">6</div><div class="l">Accounts</div></div></div></div>
+    <div class="csm-row" data-csm="nick"><div class="avatar av-grey">NJ</div><div style="flex:1"><div class="csm-row-name">Nick Johnson</div><div class="csm-row-sub">HCL Software · NTT Data — usage deep-dive + POC scoping · 27 accounts in portfolio</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">2</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">1</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n cgr">0</div><div class="l">Risks</div></div><div class="row-stat"><div class="n" style="color:#7c3aed">27</div><div class="l">Accounts</div></div></div></div>
+    <div class="csm-row" data-csm="atisha"><div class="avatar av-grey">AW</div><div style="flex:1"><div class="csm-row-name">Atisha Waghela <span style="font-size:11px;color:#d97706;font-weight:600">Monitor</span></div><div class="csm-row-sub">Strada — Apr 23 alignment call · eHouse Studio still no call · pulse Concerning</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">1</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#d97706">1</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n" style="color:#d97706">1</div><div class="l">Risks</div></div><div class="row-stat"><div class="n" style="color:#7c3aed">18</div><div class="l">Accounts</div></div></div></div>
+    <div class="csm-row inactive" data-csm="andy"><div class="avatar av-grey">AL</div><div style="flex:1"><div class="csm-row-name">Andy Lim</div><div class="csm-row-sub">No activity logged in April</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n cgr">0</div><div class="l">Calls</div></div><div class="row-stat"><div class="n cgr">0</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n cgr">0</div><div class="l">Risks</div></div><div class="row-stat"><div class="n" style="color:#7c3aed">10</div><div class="l">Accounts</div></div></div></div>
   </div>`;
 }
 
@@ -1236,6 +1242,7 @@ document.addEventListener('click', function(ev) {
     const lblEl = stat.querySelector('.l');
     const label = (lblEl && lblEl.textContent || '').toLowerCase();
     let type = null;
+    if (label.includes('account')) { ev.stopPropagation(); openCsmAccounts(csm); return; }
     if (label.includes('call')) type = 'calls';
     else if (label.includes('pulse')) type = 'pulses';
     else if (label.includes('risk')) type = 'risks';
@@ -1255,6 +1262,202 @@ document.addEventListener('click', function(ev) {
   else if (gran === 'week') { if (activeTab === 'wpulses') applyWeekPulseFilters(); else if (activeTab === 'wcalls') applyMonthCallFilters(); else applyWeekCSMFilter(); }
   else if (gran === 'month') { if (activeTab === 'mpulses') applyWeekPulseFilters(); else if (activeTab === 'mcalls') applyMonthCallFilters(); else applyWeekCSMFilter(); }
 });
+
+// ─── CSM ACCOUNT BOOKS ─────────────────────────────────────────
+// Source: HG GTM Tools — get_book_of_accounts (snapshot Apr 25, 2026)
+const CSM_ACCOUNTS = {
+  riley: [
+    {name:"Concur", seg:"Enterprise", arr:105000, pulse:"Some Risk", renewal:"2026-12-31"},
+    {name:"Intuit Mailchimp", seg:"Enterprise", arr:145000, pulse:"Extremely Satisfied", renewal:"2026-12-04"},
+    {name:"Paycom Software Inc", seg:"Enterprise", arr:91500, pulse:"Extremely Satisfied", renewal:"2027-03-30"},
+    {name:"Paylocity", seg:"Enterprise", arr:66275, pulse:"Very Satisfied", renewal:"2026-08-11"},
+    {name:"RingCentral", seg:"Enterprise", arr:68000, pulse:"Extremely Satisfied", renewal:"2026-07-27"},
+    {name:"TriNet Group Inc", seg:"Enterprise", arr:78189, pulse:"Extremely Satisfied", renewal:"2027-01-19"}
+  ],
+  varun: [
+    {name:"Akamai Technologies, Inc.", seg:"Enterprise", arr:73000, pulse:"Some Risk", renewal:"2026-03-28"},
+    {name:"Alight Solutions LLC", seg:"Enterprise", arr:49990, pulse:"Some Risk", renewal:"2026-12-30"},
+    {name:"Autodesk Inc", seg:"Enterprise", arr:521000, pulse:"Extremely Satisfied", renewal:"2027-02-15"},
+    {name:"BMC Software Inc", seg:"Enterprise", arr:284750, pulse:"Severe Risk", renewal:"2026-11-29"},
+    {name:"Capital One Services LLC", seg:"Strategic", arr:57500, pulse:"Extremely Satisfied", renewal:"2027-02-23"},
+    {name:"CIENA Corporation", seg:"Enterprise", arr:10000, pulse:"Extremely Satisfied", renewal:"2029-04-29"},
+    {name:"Datadog", seg:"Enterprise", arr:328838, pulse:"Extremely Satisfied", renewal:"2027-04-11"},
+    {name:"Dayforce US, Inc.", seg:"Enterprise", arr:136373, pulse:"Extremely Satisfied", renewal:"2026-12-30"},
+    {name:"DXC Technology Services LLC", seg:"Strategic", arr:311999, pulse:"Some Risk", renewal:"2026-11-30"},
+    {name:"Exclusive Networks", seg:"Enterprise", arr:125000, pulse:"Extremely Satisfied", renewal:"2026-12-22"},
+    {name:"Five9 Inc", seg:"Enterprise", arr:105000, pulse:"Extremely Satisfied", renewal:"2027-05-30"},
+    {name:"Hyland", seg:"Enterprise", arr:211000, pulse:"Extremely Satisfied", renewal:"2027-09-29"},
+    {name:"IFS", seg:"Enterprise", arr:357750, pulse:"Extremely Satisfied", renewal:"2026-12-05"},
+    {name:"Iron Mountain Incorporated", seg:"Enterprise", arr:190000, pulse:"Extremely Satisfied", renewal:"2026-10-27"},
+    {name:"MongoDB Inc", seg:"Enterprise", arr:65000, pulse:"Extremely Satisfied", renewal:"2026-10-22"},
+    {name:"Open Text Corporation", seg:"Enterprise", arr:226575, pulse:"Extremely Satisfied", renewal:"2026-09-30"},
+    {name:"Pegasystems Inc", seg:"Enterprise", arr:190675, pulse:"Extremely Satisfied", renewal:"2026-10-31"},
+    {name:"ServiceNow", seg:"Strategic", arr:545000, pulse:"Extremely Satisfied", renewal:"2027-02-27"},
+    {name:"Unum", seg:"Strategic", arr:88852, pulse:"Some Risk", renewal:"2028-04-30"},
+    {name:"Zendesk, Inc.", seg:"Enterprise", arr:402232, pulse:"Some Risk", renewal:"2027-11-24"},
+    {name:"zScaler", seg:"Enterprise", arr:424915, pulse:"Extremely Satisfied", renewal:"2026-12-30"}
+  ],
+  divyam: [
+    {name:"Adobe Systems Incorporated", seg:"Strategic", arr:612847, pulse:"Some Risk", renewal:"2026-12-09"},
+    {name:"Airtel Africa", seg:"Enterprise", arr:22000, pulse:"Some Risk", renewal:"2027-05-28"},
+    {name:"BILL Operations, LLC", seg:"Enterprise", arr:103000, pulse:"Some Risk", renewal:"2027-02-01"},
+    {name:"Blackbaud, Inc.", seg:"Enterprise", arr:61825, pulse:"Extremely Satisfied", renewal:"2026-06-28"},
+    {name:"CrowdStrike", seg:"Enterprise", arr:400000, pulse:"Some Risk", renewal:"2027-03-16"},
+    {name:"Dynatrace", seg:"Enterprise", arr:165124, pulse:"Some Risk", renewal:"2028-03-03"},
+    {name:"Genesys", seg:"Enterprise", arr:30000, pulse:"Extremely Satisfied", renewal:"2027-03-31"},
+    {name:"Globoforce / Workhuman", seg:"Enterprise", arr:27000, pulse:"Extremely Satisfied", renewal:"2028-01-31"},
+    {name:"HubSpot", seg:"Enterprise", arr:42822, pulse:"Extremely Satisfied", renewal:"2027-03-18"},
+    {name:"Informatica LLC", seg:"Enterprise", arr:257775, pulse:"Some Risk", renewal:"2026-08-07"},
+    {name:"Lumen Technologies", seg:"Strategic", arr:60000, pulse:"Some Risk", renewal:"2026-06-27"},
+    {name:"Omnissa, LLC", seg:"Enterprise", arr:74995, pulse:"Extremely Satisfied", renewal:"2027-10-20"},
+    {name:"OpenAI", seg:"Enterprise", arr:72600, pulse:"Extremely Satisfied", renewal:"2026-12-29"},
+    {name:"Paychex, Inc.", seg:"Enterprise", arr:22050, pulse:"Some Risk", renewal:"2026-04-29"},
+    {name:"Paycor Inc.", seg:"Enterprise", arr:20000, pulse:"Extremely Satisfied", renewal:"2026-04-30"},
+    {name:"Procore Technologies Inc", seg:"Enterprise", arr:77000, pulse:"Extremely Satisfied", renewal:"2026-09-19"},
+    {name:"Quadient Software, Inc", seg:"Enterprise", arr:320000, pulse:"Extremely Satisfied", renewal:"2027-04-20"},
+    {name:"Safaricom Limited", seg:"Enterprise", arr:50000, pulse:"Extremely Satisfied", renewal:"2026-08-31"},
+    {name:"Snowflake Inc.", seg:"Enterprise", arr:120750, pulse:"Some Risk", renewal:"2028-04-15"},
+    {name:"Thomson Reuters", seg:"Enterprise", arr:153750, pulse:"Extremely Satisfied", renewal:"2026-07-30"},
+    {name:"Xero Limited", seg:"Enterprise", arr:32400, pulse:"Extremely Satisfied", renewal:"2027-03-19"}
+  ],
+  nick: [
+    {name:"Accel4", seg:"Commercial", arr:30000, pulse:"—", renewal:"2027-02-11"},
+    {name:"Accenture", seg:"Strategic", arr:301875, pulse:"Some Risk", renewal:"2026-06-29"},
+    {name:"Argano LLC", seg:"Enterprise", arr:30000, pulse:"Some Risk", renewal:"2026-10-12"},
+    {name:"Check Point Software", seg:"Enterprise", arr:150000, pulse:"Extremely Satisfied", renewal:"2027-11-21"},
+    {name:"Dintec LLC", seg:"Commercial", arr:30000, pulse:"Some Risk", renewal:"2026-11-10"},
+    {name:"E-Strategy International", seg:"Commercial", arr:30000, pulse:"Some Risk", renewal:"2026-11-23"},
+    {name:"HCL America Inc.", seg:"Enterprise", arr:188333, pulse:"Some Risk", renewal:"2026-11-03"},
+    {name:"IBM", seg:"Enterprise", arr:3331538, pulse:"Extremely Satisfied", renewal:"2028-11-29"},
+    {name:"Infor (US), LLC", seg:"Enterprise", arr:882666, pulse:"Extremely Satisfied", renewal:"2027-11-06"},
+    {name:"Kaar Technologies", seg:"SMB", arr:30000, pulse:"Some Risk", renewal:"2026-10-12"},
+    {name:"Korcomptenz", seg:"SMB", arr:30000, pulse:"Some Risk", renewal:"2026-11-30"},
+    {name:"KPMG LLP", seg:"Strategic", arr:264967, pulse:"Extremely Satisfied", renewal:"2026-07-31"},
+    {name:"LTIMindtree Limited", seg:"Enterprise", arr:30000, pulse:"Some Risk", renewal:"2026-10-16"},
+    {name:"NTT Data Corporation", seg:"Strategic", arr:120450, pulse:"Extremely Satisfied", renewal:"2028-09-14"},
+    {name:"Phoenix Business Consulting", seg:"Enterprise", arr:30000, pulse:"Some Risk", renewal:"2026-11-30"},
+    {name:"Protiviti Inc", seg:"Enterprise", arr:30000, pulse:"Some Risk", renewal:"2026-10-19"},
+    {name:"Red Hat Inc", seg:"Enterprise", arr:450500, pulse:"Extremely Satisfied", renewal:"2028-11-29"},
+    {name:"SAP Inc", seg:"Strategic", arr:3051889, pulse:"Extremely Satisfied", renewal:"2027-03-22"},
+    {name:"Siemens AG", seg:"Strategic", arr:888500, pulse:"Extremely Satisfied", renewal:"2026-12-30"},
+    {name:"Softcat Ltd", seg:"Enterprise", arr:211667, pulse:"Extremely Satisfied", renewal:"2027-08-31"},
+    {name:"Sopra Steria", seg:"Enterprise", arr:28000, pulse:"Some Risk", renewal:"2027-06-29"},
+    {name:"Syskoplan Reply LLC", seg:"Enterprise", arr:30000, pulse:"Some Risk", renewal:"2026-10-16"},
+    {name:"Telefónica S.A", seg:"Strategic", arr:81000, pulse:"Some Risk", renewal:"2026-11-13"},
+    {name:"UKG (Ultimate Kronos)", seg:"Enterprise", arr:447433, pulse:"Extremely Satisfied", renewal:"2027-10-21"},
+    {name:"VASS", seg:"Enterprise", arr:30000, pulse:"Some Risk", renewal:"2026-10-12"},
+    {name:"Veeam Software AG", seg:"Enterprise", arr:822500, pulse:"Some Risk", renewal:"2027-12-31"},
+    {name:"Westcon", seg:"Strategic", arr:535000, pulse:"Extremely Satisfied", renewal:"2028-10-31"}
+  ],
+  rani: [
+    {name:"Amazon Web Services (AWS)", seg:"Strategic", arr:4622796, pulse:"Extremely Satisfied", renewal:"2027-06-30"},
+    {name:"CloudFlare Inc", seg:"Enterprise", arr:697318, pulse:"Some Risk", renewal:"2028-08-30"},
+    {name:"Docusign, Inc.", seg:"Enterprise", arr:205000, pulse:"Some Risk", renewal:"2027-01-05"},
+    {name:"Elastic.co", seg:"Enterprise", arr:329525, pulse:"Some Risk", renewal:"2027-03-31"},
+    {name:"Google Inc.", seg:"Strategic", arr:3380938, pulse:"Some Risk", renewal:"2026-12-31"},
+    {name:"Hewlett Packard Enterprise", seg:"Strategic", arr:1188272, pulse:"High Risk", renewal:"2028-10-31"},
+    {name:"Hitachi Vantara", seg:"Enterprise", arr:622400, pulse:"Some Risk", renewal:"2026-10-23"},
+    {name:"Lenovo Group Ltd.", seg:"Strategic", arr:695733, pulse:"High Risk", renewal:"2029-02-27"},
+    {name:"NetApp", seg:"Enterprise", arr:840680, pulse:"Some Risk", renewal:"2026-08-31"},
+    {name:"Workday Inc", seg:"Enterprise", arr:815250, pulse:"Some Risk", renewal:"2026-09-14"}
+  ],
+  pam: [
+    {name:"Cisco", seg:"Strategic", arr:2297646, pulse:"Some Risk", renewal:"2026-11-03"},
+    {name:"Epicor Software Corporation", seg:"Enterprise", arr:216572, pulse:"Extremely Satisfied", renewal:"2027-03-22"},
+    {name:"F5", seg:"Enterprise", arr:144000, pulse:"Extremely Satisfied", renewal:"2026-09-30"},
+    {name:"Microsoft", seg:"Strategic", arr:1954167, pulse:"Extremely Satisfied", renewal:"2027-03-31"},
+    {name:"NetSuite Inc", seg:"Enterprise", arr:35000, pulse:"Extremely Satisfied", renewal:"2026-09-30"},
+    {name:"Oracle", seg:"Strategic", arr:1000000, pulse:"Extremely Satisfied", renewal:"2026-11-30"},
+    {name:"ZoomInfo", seg:"Enterprise", arr:114000, pulse:"Severe Risk", renewal:"2026-06-30"}
+  ],
+  atisha: [
+    {name:"Advanced Micro Devices, Inc.", seg:"Strategic", arr:157500, pulse:"Very Satisfied", renewal:"2026-12-31"},
+    {name:"Apple Inc.", seg:"Strategic", arr:357600, pulse:"Very Satisfied", renewal:"2027-07-31"},
+    {name:"Cognizant", seg:"Strategic", arr:45000, pulse:"Very Satisfied", renewal:"2026-06-10"},
+    {name:"Databricks Inc.", seg:"Enterprise", arr:663284, pulse:"Very Satisfied", renewal:"2027-01-27"},
+    {name:"Deloitte", seg:"Strategic", arr:365908, pulse:"High Risk", renewal:"2026-05-19"},
+    {name:"Digital Realty Trust", seg:"Enterprise", arr:350000, pulse:"Very Satisfied", renewal:"2027-11-07"},
+    {name:"Equinix, Inc.", seg:"Enterprise", arr:817500, pulse:"Some Risk", renewal:"2027-06-30"},
+    {name:"Insight Direct USA Ltd", seg:"Enterprise", arr:260000, pulse:"Very Satisfied", renewal:"2027-03-04"},
+    {name:"Intel Corporation", seg:"Strategic", arr:115021, pulse:"Extremely Satisfied", renewal:"2026-12-11"},
+    {name:"Intuit", seg:"Strategic", arr:100000, pulse:"Very Satisfied", renewal:"2026-11-30"},
+    {name:"Kyndryl", seg:"Strategic", arr:709748, pulse:"Very Satisfied", renewal:"2027-03-31"},
+    {name:"LogicMonitor, Inc.", seg:"SMB", arr:70000, pulse:"Some Risk", renewal:"2027-03-31"},
+    {name:"Optiv Security Inc", seg:"Enterprise", arr:685997, pulse:"Very Satisfied", renewal:"2028-12-31"},
+    {name:"Palo Alto Networks Inc", seg:"Enterprise", arr:747928, pulse:"High Risk", renewal:"2026-05-03"},
+    {name:"RSM US", seg:"Enterprise", arr:115000, pulse:"Very Satisfied", renewal:"2026-12-30"},
+    {name:"Salesforce Inc.", seg:"Strategic", arr:25000, pulse:"Very Satisfied", renewal:"2027-01-31"},
+    {name:"Strada U.S. Professional Services", seg:"Mid-Market", arr:49350, pulse:"Very Satisfied", renewal:"2026-12-31"},
+    {name:"TD Synnex", seg:"Strategic", arr:150000, pulse:"Severe Risk", renewal:"2027-12-31"}
+  ],
+  andy: [
+    {name:"ADP, Inc", seg:"Strategic", arr:396000, pulse:"Some Risk", renewal:"2027-09-07"},
+    {name:"ALIBABA.COM CHINA LIMITED", seg:"Strategic", arr:119700, pulse:"Some Risk", renewal:"2027-04-14"},
+    {name:"Colt Technology Services", seg:"Enterprise", arr:514555, pulse:"Extremely Satisfied", renewal:"2028-12-16"},
+    {name:"Cvent", seg:"Enterprise", arr:80000, pulse:"Very Satisfied", renewal:"2027-01-30"},
+    {name:"FactSet Research Systems Inc", seg:"Enterprise", arr:40000, pulse:"Some Risk", renewal:"2026-07-15"},
+    {name:"Pure Storage", seg:"Enterprise", arr:225000, pulse:"Very Satisfied", renewal:"2027-11-09"},
+    {name:"Sage Global Services", seg:"Enterprise", arr:223250, pulse:"High Risk", renewal:"2027-01-25"},
+    {name:"SAS Institute Inc.", seg:"Enterprise", arr:460250, pulse:"Very Satisfied", renewal:"2027-01-01"},
+    {name:"Toast", seg:"Enterprise", arr:84000, pulse:"Extremely Satisfied", renewal:"2027-03-07"},
+    {name:"Zoom Video Communications", seg:"Enterprise", arr:72000, pulse:"Some Risk", renewal:"2027-01-23"}
+  ]
+};
+const CSM_NAME_MAP = {riley:'Riley Rogers',varun:'Varun Tiwari',divyam:'Divyam Dewan',nick:'Nick Johnson',rani:'Rani Guy',pam:'Pam Huck',atisha:'Atisha Waghela',andy:'Andy Lim'};
+function csmAccountCount(csm) { return (CSM_ACCOUNTS[csm] || []).length; }
+function csmTotalAccounts() { return Object.values(CSM_ACCOUNTS).reduce((s,a)=>s+a.length,0); }
+function fmtArr(n) { return n>=1e6 ? '$'+(n/1e6).toFixed(1)+'M' : n>=1e3 ? '$'+Math.round(n/1e3)+'K' : '$'+n; }
+function pulseColor(p) {
+  if (!p || p==='—') return '#9ca3af';
+  if (/Severe|High Risk/.test(p)) return '#dc2626';
+  if (/Some Risk/.test(p)) return '#d97706';
+  if (/Extremely|Very Satisfied/.test(p)) return '#059669';
+  return '#6b7280';
+}
+function openCsmAccounts(csm) {
+  let accounts, name;
+  if (csm === 'all') {
+    name = 'All Enterprise CSMs';
+    accounts = [];
+    Object.keys(CSM_ACCOUNTS).forEach(k => CSM_ACCOUNTS[k].forEach(a => accounts.push({...a, csm: CSM_NAME_MAP[k]})));
+    accounts.sort((x,y) => (y.arr||0) - (x.arr||0));
+  } else {
+    name = CSM_NAME_MAP[csm] || csm;
+    accounts = (CSM_ACCOUNTS[csm] || []).slice().sort((x,y) => (y.arr||0) - (x.arr||0));
+  }
+  const totalArr = accounts.reduce((s,a)=>s+(a.arr||0),0);
+  const showCsm = csm === 'all';
+  const rows = accounts.map(a => `
+    <tr>
+      <td style="padding:6px 10px;font-size:12px;font-weight:600;color:#1f2937">${a.name}</td>
+      ${showCsm ? `<td style="padding:6px 10px;font-size:11px;color:#6b7280">${a.csm||''}</td>` : ''}
+      <td style="padding:6px 10px;font-size:11px;color:#6b7280">${a.seg||'—'}</td>
+      <td style="padding:6px 10px;font-size:12px;text-align:right;font-variant-numeric:tabular-nums;color:#1f2937">${fmtArr(a.arr||0)}</td>
+      <td style="padding:6px 10px;font-size:11px;color:${pulseColor(a.pulse)}">${a.pulse||'—'}</td>
+      <td style="padding:6px 10px;font-size:11px;color:#6b7280;font-variant-numeric:tabular-nums">${a.renewal||'—'}</td>
+    </tr>
+  `).join('');
+  document.getElementById('modal-title').textContent = `${name} — Accounts (${accounts.length})`;
+  document.getElementById('modal-subtitle').textContent = `Portfolio total: ${fmtArr(totalArr)} ARR`;
+  document.getElementById('modal-body').innerHTML = `
+    <div style="overflow:auto;max-height:60vh;border:1px solid #e5e7eb;border-radius:8px">
+      <table style="width:100%;border-collapse:collapse">
+        <thead style="position:sticky;top:0;background:#f9fafb;border-bottom:1px solid #e5e7eb">
+          <tr>
+            <th style="padding:8px 10px;text-align:left;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px">Account</th>
+            ${showCsm ? '<th style="padding:8px 10px;text-align:left;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px">CSM</th>' : ''}
+            <th style="padding:8px 10px;text-align:left;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px">Segment</th>
+            <th style="padding:8px 10px;text-align:right;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px">ARR</th>
+            <th style="padding:8px 10px;text-align:left;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px">Pulse</th>
+            <th style="padding:8px 10px;text-align:left;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px">Renewal</th>
+          </tr>
+        </thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>
+  `;
+  document.getElementById('modal-overlay').classList.add('open');
+}
 
 // ─── MODAL ─────────────────────────────────────────────────────
 const modals = {
