@@ -1454,7 +1454,36 @@ render();
 </script>
 
 <script>
-// Load GIS and try to render Google's button; fallback is already visible
+// Self-contained auth block — no dependencies on other script blocks
+var _GIS_CLIENT_ID = '1094206518379-qbd9moklpm5i67kmkgnp2k45ki2dai8j.apps.googleusercontent.com';
+
+function _onGISCredential(response) {
+  var errEl = document.getElementById('auth-err');
+  try {
+    if (!response || !response.credential) {
+      if (errEl) errEl.textContent = 'No credential returned — please try again.';
+      return;
+    }
+    var parts = response.credential.split('.');
+    var b64 = parts[1].replace(/-/g, '+').replace(/_/g, '/');
+    var padded = b64 + '==='.slice(0, (4 - b64.length % 4) % 4);
+    var payload = JSON.parse(decodeURIComponent(
+      atob(padded).split('').map(function(c){ return '%' + c.charCodeAt(0).toString(16).padStart(2,'0'); }).join('')
+    ));
+    var email = (payload.email || '').toLowerCase();
+    if (email.endsWith('@hginsights.com')) {
+      sessionStorage.setItem('hg-auth', email);
+      document.getElementById('auth-gate').style.display = 'none';
+    } else {
+      if (errEl) errEl.textContent = 'Access restricted to @hginsights.com. Signed in as: ' + (email || 'unknown');
+    }
+  } catch(e) {
+    if (errEl) errEl.textContent = 'Sign-in error: ' + e.message;
+  }
+}
+// Make callback globally reachable by name (GIS popup flow requires this)
+window._onGISCredential = _onGISCredential;
+
 function startGoogleLogin() {
   var errEl = document.getElementById('auth-err');
   if (errEl) errEl.textContent = 'Loading...';
@@ -1476,21 +1505,19 @@ function _tryRenderGIS() {
   if (errEl) errEl.textContent = '';
   try {
     google.accounts.id.initialize({
-      client_id: '1094206518379-qbd9moklpm5i67kmkgnp2k45ki2dai8j.apps.googleusercontent.com',
-      callback: handleGISCredential,
+      client_id: _GIS_CLIENT_ID,
+      callback: window._onGISCredential,
       ux_mode: 'popup'
     });
     var c = document.getElementById('gis-btn-container');
     c.style.display = 'flex';
     google.accounts.id.renderButton(c, {theme:'outline',size:'large',text:'signin_with',width:280});
-    // If renderButton worked (iframe appears), hide fallback
     setTimeout(function() {
       if (c.querySelector('iframe')) {
         document.getElementById('gis-fallback-btn').style.display = 'none';
       } else {
-        // renderButton produced nothing — origin not in Cloud Console
         c.style.display = 'none';
-        if (errEl) errEl.textContent = 'Add https://csm-engagement-hg.vercel.app to Authorized JavaScript origins in Google Cloud Console, then try again.';
+        if (errEl) errEl.textContent = 'Add https://csm-engagement-hg.vercel.app to Authorized JavaScript origins in Google Cloud Console, then retry.';
       }
     }, 1000);
   } catch(e) {
