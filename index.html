@@ -306,14 +306,14 @@ td { padding: 12px 14px; font-size: 13px; vertical-align: middle; }
 <script>
 // ─── REPORT DATA ───────────────────────────────────────────────
 const REPORTS = {
-  day: { '2026-04-23': true, '2026-04-22': true, '2026-04-21': true, '2026-04-20': true, '2026-04-19': true },
+  day: { '2026-04-24': true, '2026-04-23': true, '2026-04-22': true, '2026-04-21': true, '2026-04-20': true, '2026-04-19': true },
   week: { '2026-W17': true },   // ISO week 17 = Apr 20-26
   month: { '2026-04': true },
 };
 
 // ─── STATE ─────────────────────────────────────────────────────
 let gran = 'day';
-let currentKey = '2026-04-23';
+let currentKey = '2026-04-24';
 let activeTab = '';
 let activeCsm = 'all';
 let activeHealth = 'all';
@@ -487,7 +487,23 @@ function renderDay(mc, tabsRow, statPills) {
 }
 
 function getDayData(key) {
-  if (key === '2026-04-23') return {
+  // Drive-discovered report (no embedded content)
+  const rep = REPORTS.day[key];
+  if (rep && rep.driveOnly) return {
+    pills: [['dot-teal','\u{1F4C1} Drive']],
+    tabs: ['Report'],
+    overviewHTML: () => `<div style="padding:24px;text-align:center"><p style="font-size:14px;color:#374151;margin-bottom:16px;">This report is stored in Google Drive.</p><a href="${rep.viewUrl}" target="_blank" style="display:inline-block;background:#1e2d45;color:#fff;padding:10px 20px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600;">Open Report in Drive</a><div style="margin-top:16px"><iframe src="${rep.embedUrl}" width="100%" height="600" style="border:1px solid #e5e7eb;border-radius:6px;"></iframe></div></div>`,
+    callsHTML: () => '', pulsesHTML: () => '', actionsHTML: () => '',
+  };
+    if (key === '2026-04-24') return {
+    pills: [['dot-teal','3 Calls'],['dot-purple','3 Pulses'],['dot-amber','1 Action'],['dot-grey','3 Active CSMs']],
+    tabs: ['Overview','Calls (3)','Pulses (3)','Action Items (1)'],
+    overviewHTML: dayOverviewHTML_2026_04_24,
+    callsHTML: dayCallsHTML_2026_04_24,
+    pulsesHTML: dayPulsesHTML_2026_04_24,
+    actionsHTML: dayActionsHTML_2026_04_24,
+  };
+    if (key === '2026-04-23') return {
     pills: [['dot-teal','8 Calls'],['dot-purple','0 Pulses'],['dot-amber','4 Actions'],['dot-grey','6 Active CSMs']],
     tabs: ['Overview','Calls (8)','Pulses (0)','Action Items (4)'],
     overviewHTML: dayOverviewHTML_2026_04_23,
@@ -1196,14 +1212,31 @@ document.addEventListener('click', function(ev) {
 
 // ─── MODAL ─────────────────────────────────────────────────────
 const modals = {
-  'call-intuit':{ title:'Intuit Mailchimp — Apr 21 · 8:30 AM UTC', subtitle:'Riley Rogers · 30 min · Zoom · Signal: Healthy', sections:[{label:'What Happened',body:'Bianca Gause (Product Marketing) introduced to GEO dashboard early access. Confirmed she is championing the initiative internally. Engagement signals clearly positive heading into May TrustRadius cycle.'},{label:'Key Signals',body:'✅ New champion Bianca Gause actively engaged\n✅ GEO dashboard early access confirmed\n✅ Expansion trajectory intact\n⚠️ SSO delays at Intuit still unresolved'}]},
-  'call-dd-cd':{ title:'Datadog — Cloud Dynamics · Apr 21 · 11:00 AM UTC', subtitle:'Varun Tiwari · 45 min · Zoom · Signal: Concerning', sections:[{label:'What Happened',body:'Datadog reps raised concerns about Cloud Dynamics firmographic accuracy for SMB matching. Internal usage pulling back while teams await resolution.'},{label:'Issues Raised',body:'❌ SMB firmographic accuracy questioned\n❌ Data freshness SLA unclear\n❌ Validation methodology unresolved\n⚠️ Usage reducing pending clarification'},{label:'Action Required',body:'Technical follow-up within 5 business days. Loop in Solutions Engineering.'}]},
-  'call-dd-tr':{ title:'Datadog — TR / ICP · Apr 21 · 12:30 PM UTC', subtitle:'Varun Tiwari · 30 min · Zoom · Signal: Healthy', sections:[{label:'What Happened',body:'ICP refinement discussion — Datadog shifting to commercial/SMB. Active IDL expansion and Lead Acceleration use case alignment.'},{label:'Key Signals',body:'✅ Constructive ICP refinement\n✅ IDL expansion actively discussed\n✅ Lead Acceleration use case confirmed'}]},
-  'call-quad':{ title:'Quadient Software · Apr 21 · 11:00 AM UTC', subtitle:'Divyam Dewan · 30 min · Zoom · Signal: Healthy', sections:[{label:'What Happened',body:'Covered TR review generation for Inspire/AP/AR; IDL onboarding for Germany and DACH; HG platform data roadmap.'},{label:'Key Signals',body:'✅ Review campaign on track for May Top Rated\n✅ AP TrustRadius score improving\n✅ IDL onboarding progressing\n✅ Expansion conversation on roadmap'}]},
+  'call-intuit':{ title:'Intuit Mailchimp — Apr 21 · 8:30 AM UTC', subtitle:'Riley Rogers · 30 min · Zoom · Signal: Healthy', sections:[{label:'What Happened',body:'Bianca Gause (Product Marketing) introduced to GEO dashboard early access. Confirmed she is championing the initiative internally. Engagement signals clearly positive heading into May TrustRadius cycle.'},{label:'Key Signals',body:'✅ New champion Bianca Gause actively engaged\
+✅ GEO dashboard early access confirmed\
+✅ Expansion trajectory intact\
+⚠️ SSO delays at Intuit still unresolved'}]},
+  'call-dd-cd':{ title:'Datadog — Cloud Dynamics · Apr 21 · 11:00 AM UTC', subtitle:'Varun Tiwari · 45 min · Zoom · Signal: Concerning', sections:[{label:'What Happened',body:'Datadog reps raised concerns about Cloud Dynamics firmographic accuracy for SMB matching. Internal usage pulling back while teams await resolution.'},{label:'Issues Raised',body:'❌ SMB firmographic accuracy questioned\
+❌ Data freshness SLA unclear\
+❌ Validation methodology unresolved\
+⚠️ Usage reducing pending clarification'},{label:'Action Required',body:'Technical follow-up within 5 business days. Loop in Solutions Engineering.'}]},
+  'call-dd-tr':{ title:'Datadog — TR / ICP · Apr 21 · 12:30 PM UTC', subtitle:'Varun Tiwari · 30 min · Zoom · Signal: Healthy', sections:[{label:'What Happened',body:'ICP refinement discussion — Datadog shifting to commercial/SMB. Active IDL expansion and Lead Acceleration use case alignment.'},{label:'Key Signals',body:'✅ Constructive ICP refinement\
+✅ IDL expansion actively discussed\
+✅ Lead Acceleration use case confirmed'}]},
+  'call-quad':{ title:'Quadient Software · Apr 21 · 11:00 AM UTC', subtitle:'Divyam Dewan · 30 min · Zoom · Signal: Healthy', sections:[{label:'What Happened',body:'Covered TR review generation for Inspire/AP/AR; IDL onboarding for Germany and DACH; HG platform data roadmap.'},{label:'Key Signals',body:'✅ Review campaign on track for May Top Rated\
+✅ AP TrustRadius score improving\
+✅ IDL onboarding progressing\
+✅ Expansion conversation on roadmap'}]},
   'call-tr-apr22':{ title:'Thomson Reuters — Churn + Intent Deep-dive · Apr 21 · 8:30 AM PT', subtitle:'Divyam Dewan + Hayden Smith · 30 min · Zoom · Signal: Healthy', sections:[
     {label:'What Happened',body:'Vibhuti (TR Data Science) walked through how Thomson Reuters embeds HG time-series and competitor data into their churn and propensity-to-buy models. Focused on the ACES dashboard (LangGraph + AWS SageMaker) which generates SWOTs, discovery questions, and partner insights for reps from HG install + contract data.'},
-    {label:'Key Use Cases Confirmed',body:'✅ Churn model: time-series + competitor mindshare mapped against top-3 risk buckets (prime / most likely / neutral) for LexisNexis competitive displacement\n✅ Propensity model: HG data combined with ZoomInfo for competitive conquesting\n✅ ACES dashboard using HG install + contract data for rep discovery flows\n✅ TrustRadius second-party intent flagged as priority upgrade at renewal (vs. ZoomInfo third-party intent)'},
-    {label:'Open Items',body:'⚠️ Data sparsity persists — HG recently added 10M companies; TR team to re-check match rates\n⚠️ Contract data underutilized — TR interested in vendor-specific subsets\n⚠️ Anushri and Blake unable to attend; follow-up needed for ACES walkthrough\n⚠️ TR product-to-competitor mapping status unclear — Divyam to confirm with data team'},
+    {label:'Key Use Cases Confirmed',body:'✅ Churn model: time-series + competitor mindshare mapped against top-3 risk buckets (prime / most likely / neutral) for LexisNexis competitive displacement\
+✅ Propensity model: HG data combined with ZoomInfo for competitive conquesting\
+✅ ACES dashboard using HG install + contract data for rep discovery flows\
+✅ TrustRadius second-party intent flagged as priority upgrade at renewal (vs. ZoomInfo third-party intent)'},
+    {label:'Open Items',body:'⚠️ Data sparsity persists — HG recently added 10M companies; TR team to re-check match rates\
+⚠️ Contract data underutilized — TR interested in vendor-specific subsets\
+⚠️ Anushri and Blake unable to attend; follow-up needed for ACES walkthrough\
+⚠️ TR product-to-competitor mapping status unclear — Divyam to confirm with data team'},
     {label:'Next Steps',body:'Divyam to schedule follow-up with Anushri + Blake for ACES deep-dive. Coordinate with HG data team on contract data specifics and coverage. Divyam to follow up on TR product mapping status with competitor product mapping.'},
   ]},
   'pulse-intuit1':{ title:'TR - Intuit CVP x2 · 03.01.2025', subtitle:'$76,590 ARR · Healthy · Riley Rogers', sections:[{label:'Pulse Explanation',body:'Bianca Gause expressed enthusiasm about GEO dashboard early access and confirmed she is championing the program internally. Reverses prior renewal-lag risk.'},{label:'Previous State',body:'Concerning (since Mar 5, 2026)'}]},
@@ -1218,39 +1251,64 @@ const modals = {
   // ── Apr 21 Report Modals ────────────────────────────────────
   'call-cisco-tr':{ title:'Cisco — TrustRadius Sync · Apr 20 · 8:00 AM PT', subtitle:'Pam Huck · 30 min · Zoom · Signal: Concerning', sections:[
     {label:'What Happened',body:'Renewal sync focused on Q4 budget planning. Cisco\'s paid media team (Romana Klinger, Matt) confirmed they cannot demonstrate direct ROI from TrustRadius intent data investments. Attribution remains unclear. Contract ends May 15.'},
-    {label:'Key Concerns',body:'❌ No committed Q4 or FY27 budget\n❌ Attribution methodology unclear\n⚠️ Risk of downgrade from full partnership to quarterly or no engagement\n⚠️ Budget decisions made quarterly — annual commitment unlikely without exec direction (Anna/Ben)'},
-    {label:'Positive Signals',body:'✅ Team values intent-driven leads program\n✅ Uptick in product research when campaigns run\n✅ Partnership sentiment from Matt/Romana is strong'},
+    {label:'Key Concerns',body:'❌ No committed Q4 or FY27 budget\
+❌ Attribution methodology unclear\
+⚠️ Risk of downgrade from full partnership to quarterly or no engagement\
+⚠️ Budget decisions made quarterly — annual commitment unlikely without exec direction (Anna/Ben)'},
+    {label:'Positive Signals',body:'✅ Team values intent-driven leads program\
+✅ Uptick in product research when campaigns run\
+✅ Partnership sentiment from Matt/Romana is strong'},
     {label:'Next Steps',body:'Mardigan to deliver scoped proposal by May 15. Melissa\'s team to finalize product scope (mid-market, LDOS, data center) by Wednesday call. Cisco paid media to confirm Q4 budget direction.'},
   ]},
   'call-msft-gtm':{ title:'Microsoft — GTM/Marketplace for MCP/Agents · Apr 20 · 1:00 PM PT', subtitle:'Pam Huck / Mark Fell · 30 min · Teams · Signal: Healthy', sections:[
     {label:'What Happened',body:'Strategic GTM alignment call on integrating HG Insights MCP into Microsoft ecosystem (Teams, Dynamics, Copilot). Target segment: B2B technology companies using Microsoft platforms.'},
-    {label:'Key Signals',body:'✅ Mark Fell active executive champion\n✅ Azure marketplace commercial partnership in discussion (Kevin Boyle, Zach Jones)\n✅ Talis and Adobe identified as lighthouse customers\n✅ Francis Brero (HG VP AI) engaged on customer pipeline\n⚠️ Business case with ROI needed for Satish/Rohini before Azure commitment'},
+    {label:'Key Signals',body:'✅ Mark Fell active executive champion\
+✅ Azure marketplace commercial partnership in discussion (Kevin Boyle, Zach Jones)\
+✅ Talis and Adobe identified as lighthouse customers\
+✅ Francis Brero (HG VP AI) engaged on customer pipeline\
+⚠️ Business case with ROI needed for Satish/Rohini before Azure commitment'},
     {label:'Next Steps',body:'HG to develop business case with projected ROI. Finalize Power Automate technical integration. Establish collaborative sales/marketing approach. Renewal ($574K) due June. Target May 19 announcement.'},
   ]},
   'call-workday-phoenix':{ title:'Workday — Project Phoenix Technical Deep Dive · Apr 20 · 1:30 PM PT', subtitle:'Rani Guy · 60 min · Zoom · Signal: Healthy', sections:[
     {label:'What Happened',body:'Technical deep dive on HG MCP with Workday\'s EDATA team (Phoenix Majumder Sr. Director, Tamil Tamilmani, Kendall Stauffer). Workday is actively building GTM agentic workflows and evaluating HG\'s MCP to augment agents with richer account intelligence.'},
-    {label:'Key Signals',body:'✅ Workday evaluating HG MCP to power GTM agentic workflows\n✅ HG expanded dataset (SMB + AI spend) addresses data sparsity in mid-market + international\n✅ Interest in contact-level and buying center insights\n✅ Technical pathways: direct API + Databricks integration\n✅ Relationship deeply collaborative with mutual roadmap investment'},
-    {label:'Contractual',body:'⚠️ AI addendum needed\n⚠️ Consumption-based MCP credits need formal evaluation\n⚠️ Security review required'},
+    {label:'Key Signals',body:'✅ Workday evaluating HG MCP to power GTM agentic workflows\
+✅ HG expanded dataset (SMB + AI spend) addresses data sparsity in mid-market + international\
+✅ Interest in contact-level and buying center insights\
+✅ Technical pathways: direct API + Databricks integration\
+✅ Relationship deeply collaborative with mutual roadmap investment'},
+    {label:'Contractual',body:'⚠️ AI addendum needed\
+⚠️ Consumption-based MCP credits need formal evaluation\
+⚠️ Security review required'},
     {label:'Next Steps',body:'Workday to test MCP use cases (Databricks pathway likely fastest). Legal/security to review AI addendum. Schedule QBR with Phoenix Majumder and Winston Wu. Renewal Sept 14, $815K ARR.'},
   ]},
   'pulse-cisco-tr':{ title:'Cisco — TrustRadius Paid Media Partnership', subtitle:'Concerning · Pam Huck · Contract ends May 15', sections:[
     {label:'Pulse Explanation',body:'Renewal sync on Apr 20 surfaced no committed Q4 or FY27 budget. Attribution for intent data ROI remains unclear. Risk of downgrade from full partnership to quarterly or no engagement. Contract ends May 15.'},
-    {label:'Risk Factors',body:'❌ No hard budget committed for Q4 or FY27\n❌ ROI attribution unclear\n⚠️ Annual commitment unlikely without executive direction from Anna/Ben'},
+    {label:'Risk Factors',body:'❌ No hard budget committed for Q4 or FY27\
+❌ ROI attribution unclear\
+⚠️ Annual commitment unlikely without executive direction from Anna/Ben'},
     {label:'Next Steps',body:'Scoped proposal due by May 15. Finalize product scope (mid-market, LDOS, data center) with Melissa\'s team by Wednesday. Cisco paid media to confirm Q4 budget direction.'},
   ]},
   'pulse-workday-phoenix':{ title:'Workday — HG Platform (Project Phoenix)', subtitle:'$815K ARR · Healthy · Rani Guy · Renews Sept 14', sections:[
     {label:'Pulse Explanation',body:'Workday\'s EDATA team is actively building GTM agentic workflows and evaluating HG MCP to augment agents with richer account intelligence. Strong expansion signals — SMB/AI spend data addresses data sparsity gaps in mid-market and international segments.'},
-    {label:'Expansion Signals',body:'✅ Direct evaluation of HG MCP for GTM agentic workflows\n✅ Interest in SMB + AI spend categories (new datasets)\n✅ Contact-level and buying center insights requested\n✅ Mutual investment in joint roadmap development'},
+    {label:'Expansion Signals',body:'✅ Direct evaluation of HG MCP for GTM agentic workflows\
+✅ Interest in SMB + AI spend categories (new datasets)\
+✅ Contact-level and buying center insights requested\
+✅ Mutual investment in joint roadmap development'},
     {label:'Next Steps',body:'MCP testing via Databricks pathway. AI addendum review. Schedule QBR with Phoenix Majumder + Winston Wu.'},
   ]},
   'pulse-msft-gtm':{ title:'Microsoft — GTM/Marketplace for MCP/Agents', subtitle:'$574K ARR · Healthy · Pam Huck · Renews June', sections:[
     {label:'Pulse Explanation',body:'Strategic alignment call on integrating HG Insights MCP into Microsoft ecosystem (Teams, Dynamics, Copilot). Azure marketplace commercial partnership actively in discussion. Mark Fell is executive champion. Talis and Adobe identified as lighthouse customers.'},
-    {label:'Expansion Signals',body:'✅ Azure marketplace partnership in discussion (Kevin Boyle, Zach Jones at Microsoft)\n✅ Demandbase partnership layer adds content syndication dimension\n✅ Executive champion (Mark Fell) and HG VP AI (Francis Brero) engaged'},
+    {label:'Expansion Signals',body:'✅ Azure marketplace partnership in discussion (Kevin Boyle, Zach Jones at Microsoft)\
+✅ Demandbase partnership layer adds content syndication dimension\
+✅ Executive champion (Mark Fell) and HG VP AI (Francis Brero) engaged'},
     {label:'Next Steps',body:'Business case with ROI projections for Satish/Rohini. Power Automate technical integration. Collaborative sales/marketing approach. Target May 19 announcement. Renewal June must progress in parallel.'},
   ]},
   'pulse-ehouse':{ title:'eHouse Studio — HG Platform Renewal', subtitle:'Poor — Churn Risk Escalated', sections:[
     {label:'Pulse Explanation',body:'Escalating to churn risk. Mitch Gilroy has refused to get on a call multiple times — most recently canceled a booked call on Feb 12, 2026 the same day. No product usage signals or engagement to anchor a renewal conversation. Account is trending toward churn.'},
-    {label:'Risk Factors',body:'❌ Primary contact (Mitch Gilroy) repeatedly declines meetings\n❌ No product usage signals\n❌ No engagement to anchor renewal conversation\n❌ Atisha (previous CSM) confirmed account not keen on continuing HG platform'},
+    {label:'Risk Factors',body:'❌ Primary contact (Mitch Gilroy) repeatedly declines meetings\
+❌ No product usage signals\
+❌ No engagement to anchor renewal conversation\
+❌ Atisha (previous CSM) confirmed account not keen on continuing HG platform'},
     {label:'Next Steps',body:'Determine if executive outreach to Justin Poole is warranted. Explore if any remaining stakeholders are reachable.'},
   ]},
   // ── Apr 23 Report Modals ────────────────────────────────────
@@ -1323,7 +1381,8 @@ function openModal(key) {
   const data=modals[key]; if(!data) return;
   document.getElementById('modal-title').textContent=data.title;
   document.getElementById('modal-subtitle').textContent=data.subtitle;
-  document.getElementById('modal-body').innerHTML=data.sections.map(s=>`<div class="modal-section"><div class="modal-section-label">${s.label}</div><div class="modal-section-body">${s.body.replace(/\n/g,'<br>')}</div></div>`).join('');
+  document.getElementById('modal-body').innerHTML=data.sections.map(s=>`<div class="modal-section"><div class="modal-section-label">${s.label}</div><div class="modal-section-body">${s.body.replace(/\
+/g,'<br>')}</div></div>`).join('');
   document.getElementById('modal-overlay').classList.add('open');
 }
 function closeModal() { document.getElementById('modal-overlay').classList.remove('open'); }
@@ -1384,6 +1443,26 @@ if (sessionStorage.getItem('hg-auth')) {
 }
 
 // ─── INIT ───────────────────────────────────────────────────────
+
+// ─── AUTO-DISCOVERY FROM GOOGLE DRIVE ───────────────────────────────────────
+async function discoverDriveReports() {
+  try {
+    const res = await fetch('/api/scan');
+    if (!res.ok) return;
+    const data = await res.json();
+    if (!data.configured || !data.reports) return;
+    data.reports.forEach(r => {
+      const d = r.date;
+      if (!REPORTS.day[d]) {
+        REPORTS.day[d] = { driveOnly: true, viewUrl: r.viewUrl, embedUrl: r.embedUrl };
+      }
+    });
+    // Re-render picker if we found new dates
+    buildPicker();
+  } catch(e) { /* silent fail */ }
+}
+discoverDriveReports();
+
 render();
 </script>
 </body>
