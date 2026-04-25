@@ -1427,8 +1427,7 @@ function openModal(key) {
   const data=modals[key]; if(!data) return;
   document.getElementById('modal-title').textContent=data.title;
   document.getElementById('modal-subtitle').textContent=data.subtitle;
-  document.getElementById('modal-body').innerHTML=data.sections.map(s=>`<div class="modal-section"><div class="modal-section-label">${s.label}</div><div class="modal-section-body">${s.body.replace(/\
-/g,'<br>')}</div></div>`).join('');
+  document.getElementById('modal-body').innerHTML=data.sections.map(s=>`<div class="modal-section"><div class="modal-section-label">${s.label}</div><div class="modal-section-body">${s.body.replace(/\n/g,'<br>')}</div></div>`).join('');
   document.getElementById('modal-overlay').classList.add('open');
 }
 function closeModal() { document.getElementById('modal-overlay').classList.remove('open'); }
