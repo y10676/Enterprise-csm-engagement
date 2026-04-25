@@ -1,5 +1,6 @@
 <!DOCTYPE html><html lang="en">
 <head>
+<script src="https://accounts.google.com/gsi/client" defer></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CSM Engagement Browser</title>
@@ -1390,7 +1391,7 @@ function closeModal() { document.getElementById('modal-overlay').classList.remov
 document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeModal(); });
 
 // ─── AUTH GATE ──────────────────────────────────────────────────
-// ─── AUTH (Google Identity Services — JS API popup) ─────────────────────────
+// ─── AUTH (Google Identity Services) ────────────────────────────────────────
 const GIS_CLIENT_ID = '1094206518379-qbd9moklpm5i67kmkgnp2k45ki2dai8j.apps.googleusercontent.com';
 
 function handleGISCredential(response) {
@@ -1411,20 +1412,16 @@ function handleGISCredential(response) {
       sessionStorage.setItem('hg-auth', email);
       document.getElementById('auth-gate').style.display = 'none';
     } else {
-      errEl.textContent = 'Access restricted to @hginsights.com. You signed in as: ' + (email || '(unknown)');
+      errEl.textContent = 'Access restricted to @hginsights.com. Signed in as: ' + (email || '(unknown)');
     }
   } catch(e) {
     errEl.textContent = 'Sign-in error: ' + e.message;
   }
 }
 
-function _promptSignIn() {
-  if (typeof google !== 'undefined' && google.accounts) {
-    google.accounts.id.prompt();
-  }
-}
-
-function _renderGISButton() {
+// Called by GIS library as soon as it is ready (window.onGoogleLibraryLoad)
+function _initGISButton() {
+  if (sessionStorage.getItem('hg-auth')) return;
   google.accounts.id.initialize({
     client_id: GIS_CLIENT_ID,
     callback: handleGISCredential,
@@ -1432,30 +1429,26 @@ function _renderGISButton() {
     ux_mode: 'popup',
   });
   const container = document.getElementById('gis-btn-container');
-  google.accounts.id.renderButton(container, { theme: 'outline', size: 'large', text: 'signin_with', width: 280 });
-  // If renderButton produces nothing (origin not authorized), show fallback after 1s
+  if (!container) return;
+  google.accounts.id.renderButton(container,
+    { theme: 'outline', size: 'large', text: 'signin_with', width: 280 });
+  // Show fallback if GIS didn't render (e.g. origin not in Cloud Console)
   setTimeout(function() {
-    if (!container.querySelector('iframe') && !container.querySelector('div[class]')) {
+    const hasContent = container.querySelector('iframe,div,span');
+    if (!hasContent) {
       container.style.display = 'none';
       const fb = document.getElementById('gis-fallback-btn');
       if (fb) fb.style.display = 'flex';
     }
-  }, 1000);
+  }, 1500);
 }
+window.onGoogleLibraryLoad = _initGISButton;
 
-// Load GIS and render button once DOM is ready
-document.addEventListener('DOMContentLoaded', function() {
-  if (sessionStorage.getItem('hg-auth')) return;
-  const s = document.createElement('script');
-  s.src = 'https://accounts.google.com/gsi/client';
-  s.onload = _renderGISButton;
-  s.onerror = function() {
-    document.getElementById('auth-err').textContent = 'Could not load Google sign-in. Check your network.';
-    const fb = document.getElementById('gis-fallback-btn');
-    if (fb) fb.style.display = 'flex';
-  };
-  document.head.appendChild(s);
-});
+function _promptSignIn() {
+  if (typeof google !== 'undefined' && google.accounts) {
+    google.accounts.id.prompt();
+  }
+}
 
 function handleOAuthCallback() { /* no-op */ }
 
