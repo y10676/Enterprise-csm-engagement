@@ -1534,23 +1534,34 @@ let accountsSortDesc = true;
 
 function accountsHTML() {
   const tableRows = ACCOUNTS_DATA.map((acct, idx) => {
-    const oppRows = (acct.opportunities || []).map(opp => `
-      <tr class="opp-row" data-account-idx="${idx}">
-        <td colspan="1" style="padding:4px 10px;font-size:11px;color:#6b7280;border-left:3px solid #f3f4f6"></td>
-        <td style="padding:4px 10px;font-size:11px;color:#1f2937;font-weight:500">${opp.name}</td>
-        <td style="padding:4px 10px;font-size:11px;color:#6b7280"></td>
-        <td style="padding:4px 10px;font-size:11px;color:#6b7280"></td>
-        <td style="padding:4px 10px;font-size:11px;text-align:right;font-variant-numeric:tabular-nums;color:#1f2937">${fmtArr(opp.arr||0)}</td>
-        <td style="padding:4px 10px;font-size:11px;color:#6b7280"></td>
-        <td style="padding:4px 10px;font-size:11px;color:#6b7280"></td>
-        <td style="padding:4px 10px;font-size:11px;color:#6b7280"></td>
-        <td style="padding:4px 10px;font-size:11px;color:#6b7280;font-variant-numeric:tabular-nums"></td>
+    const opps = acct.opportunities || [];
+    const oppCount = opps.length;
+    const hasOpps = oppCount > 0;
+    const oppRows = opps.map(opp => `
+      <tr class="opp-row" data-account-idx="${idx}" style="display:none;background:#fafbfc">
+        <td style="padding:4px 10px 4px 28px;font-size:11px;color:#374151;font-weight:500;border-left:3px solid #e5e7eb">↳ ${opp.name}</td>
+        <td style="padding:4px 10px;font-size:11px;color:#9ca3af">—</td>
+        <td style="padding:4px 10px;font-size:11px;color:#9ca3af">—</td>
+        <td style="padding:4px 10px;font-size:11px;color:#9ca3af">${opp.deal_type || '—'}</td>
+        <td style="padding:4px 10px;font-size:11px;text-align:right;font-variant-numeric:tabular-nums;color:#374151">${fmtArr(opp.arr||0)}</td>
+        <td style="padding:4px 10px;font-size:11px;color:#9ca3af">—</td>
+        <td style="padding:4px 10px;font-size:11px;color:#9ca3af">—</td>
+        <td style="padding:4px 10px;font-size:11px;color:#6b7280">${opp.pulseNote || '—'}</td>
+        <td style="padding:4px 10px;font-size:11px;color:#6b7280;font-variant-numeric:tabular-nums">${opp.contract_end || '—'}</td>
       </tr>
     `).join('');
 
+    const chevron = hasOpps
+      ? `<span class="acct-chev" data-account-idx="${idx}" style="display:inline-block;width:12px;color:#6b7280;font-size:10px;margin-right:4px;transition:transform 0.15s">▶</span>`
+      : `<span style="display:inline-block;width:12px;margin-right:4px"></span>`;
+    const oppCountBadge = hasOpps
+      ? `<span style="font-size:11px;color:#6b7280;font-weight:500;margin-left:6px">(${oppCount})</span>`
+      : '';
+    const cursorStyle = hasOpps ? 'cursor:pointer' : '';
+
     return `
-      <tr class="acct-row" data-account-idx="${idx}" data-arr="${acct.arr || 0}">
-        <td style="padding:6px 10px;font-size:12px;font-weight:600;color:#1f2937">${acct.accountName}</td>
+      <tr class="acct-row" data-account-idx="${idx}" data-arr="${acct.arr || 0}" data-expanded="false" ${hasOpps ? `onclick="window.toggleAccountOpps(${idx})"` : ''} style="${cursorStyle}">
+        <td style="padding:6px 10px;font-size:12px;font-weight:600;color:#1f2937">${chevron}${acct.accountName}${oppCountBadge}</td>
         <td style="padding:6px 10px;font-size:11px;color:#6b7280">${acct.csm || '—'}</td>
         <td style="padding:6px 10px;font-size:11px;color:#6b7280">${acct.am || '—'}</td>
         <td style="padding:6px 10px;font-size:11px;color:#6b7280">${acct.segment || '—'}</td>
@@ -1566,6 +1577,10 @@ function accountsHTML() {
 
   return `
     <div class="section-label">Accounts · 120 Total · $47.2M ARR · 240 Opportunities</div>
+    <div style="display:flex;justify-content:flex-end;gap:8px;margin-bottom:8px">
+      <button onclick="window.toggleAllAccountOpps(true)" style="font-size:11px;padding:4px 10px;border:1px solid #d1d5db;background:#fff;border-radius:6px;cursor:pointer;color:#374151">▼ Expand all</button>
+      <button onclick="window.toggleAllAccountOpps(false)" style="font-size:11px;padding:4px 10px;border:1px solid #d1d5db;background:#fff;border-radius:6px;cursor:pointer;color:#374151">▶ Collapse all</button>
+    </div>
     <div style="overflow:auto;border:1px solid #e5e7eb;border-radius:8px;margin-bottom:20px">
       <table style="width:100%;border-collapse:collapse;font-size:13px" id="accounts-table">
         <thead style="position:sticky;top:0;background:#f9fafb;border-bottom:1px solid #e5e7eb">
@@ -1587,6 +1602,46 @@ function accountsHTML() {
   `;
 }
 
+window.toggleAccountOpps = function(idx) {
+  const acctRow = document.querySelector(`tr.acct-row[data-account-idx="${idx}"]`);
+  if (!acctRow) return;
+  const expanded = acctRow.dataset.expanded === 'true';
+  const next = !expanded;
+  acctRow.dataset.expanded = next ? 'true' : 'false';
+  document.querySelectorAll(`tr.opp-row[data-account-idx="${idx}"]`).forEach(r => {
+    r.style.display = next ? '' : 'none';
+  });
+  const chev = acctRow.querySelector('.acct-chev');
+  if (chev) {
+    chev.textContent = next ? '▼' : '▶';
+  }
+};
+
+window.toggleAllAccountOpps = function(expand) {
+  document.querySelectorAll('tr.acct-row').forEach(r => {
+    const idx = r.dataset.accountIdx;
+    if (idx === undefined) return;
+    const oppRows = document.querySelectorAll(`tr.opp-row[data-account-idx="${idx}"]`);
+    if (oppRows.length === 0) return;
+    r.dataset.expanded = expand ? 'true' : 'false';
+    oppRows.forEach(or => { or.style.display = expand ? '' : 'none'; });
+    const chev = r.querySelector('.acct-chev');
+    if (chev) chev.textContent = expand ? '▼' : '▶';
+  });
+};
+
+function pulseRiskScore(p) {
+  // Higher = more at-risk. Default desc puts worst first.
+  if (!p) return 2;
+  const s = String(p).toLowerCase();
+  if (s.includes('severe')) return 5;
+  if (s.includes('high risk')) return 4;
+  if (s.includes('some risk')) return 3;
+  if (s.includes('extremely')) return 0;
+  if (s.includes('very satisfied') || s.includes('healthy')) return 1;
+  return 2;
+}
+
 window.sortAccountsTable = function(col) {
   const table = document.getElementById('accounts-table');
   if (!table) return;
@@ -1595,7 +1650,9 @@ window.sortAccountsTable = function(col) {
     accountsSortDesc = !accountsSortDesc;
   } else {
     accountsSortColumn = col;
-    accountsSortDesc = col === 'arr';
+    // Columns that default to descending on first click (largest/worst/most-recent first).
+    // Renewal Date defaults to ascending (soonest renewal first).
+    accountsSortDesc = (col === 'arr' || col === 'pulse' || col === 'lastOutbound');
   }
 
   const rows = Array.from(table.querySelectorAll('tbody tr.acct-row'));
@@ -1631,17 +1688,28 @@ window.sortAccountsTable = function(col) {
       valA = acctA.segment || '';
       valB = acctB.segment || '';
     } else if (col === 'lastOutbound') {
-      valA = acctA.lastOutbound || '';
-      valB = acctB.lastOutbound || '';
+      // Sort by date (numeric). Missing dates always sort to the bottom.
+      const ta = acctA.lastOutbound ? Date.parse(acctA.lastOutbound) : NaN;
+      const tb = acctB.lastOutbound ? Date.parse(acctB.lastOutbound) : NaN;
+      const aMissing = isNaN(ta), bMissing = isNaN(tb);
+      if (aMissing && bMissing) return 0;
+      if (aMissing) return 1;
+      if (bMissing) return -1;
+      valA = ta; valB = tb;
     } else if (col === 'pulse') {
-      valA = acctA.pulse || '';
-      valB = acctB.pulse || '';
+      valA = pulseRiskScore(acctA.pulse);
+      valB = pulseRiskScore(acctB.pulse);
     } else if (col === 'pulseNote') {
       valA = acctA.pulseNote || '';
       valB = acctB.pulseNote || '';
     } else if (col === 'renewalDate') {
-      valA = acctA.renewalDate || '';
-      valB = acctB.renewalDate || '';
+      const ta = acctA.renewalDate ? Date.parse(acctA.renewalDate) : NaN;
+      const tb = acctB.renewalDate ? Date.parse(acctB.renewalDate) : NaN;
+      const aMissing = isNaN(ta), bMissing = isNaN(tb);
+      if (aMissing && bMissing) return 0;
+      if (aMissing) return 1;
+      if (bMissing) return -1;
+      valA = ta; valB = tb;
     }
 
     if (typeof valA === 'number' && typeof valB === 'number') {
