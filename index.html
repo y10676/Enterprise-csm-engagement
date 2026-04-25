@@ -229,7 +229,6 @@ td { padding: 12px 14px; font-size: 13px; vertical-align: middle; }
       data-callback="handleGISCredential"
       data-hosted_domain="hginsights.com"
       data-context="signin"
-      data-ux_mode="popup"
       data-auto_prompt="false">
     </div>
     <div class="g_id_signin"
@@ -1405,18 +1404,31 @@ document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeModal(); });
 // ─── AUTH GATE ──────────────────────────────────────────────────
 // ─── AUTH (Google Identity Services HTML API) ───────────────────────────────
 function handleGISCredential(response) {
+  const errEl = document.getElementById('auth-err');
   try {
-    const b64 = response.credential.split('.')[1].replace(/-/g, '+').replace(/_/g, '/');
-    const payload = JSON.parse(atob(b64.padEnd(b64.length + (4 - b64.length % 4) % 4, '=')));
+    if (!response || !response.credential) {
+      errEl.textContent = 'No credential returned from Google.';
+      return;
+    }
+    const parts = response.credential.split('.');
+    if (parts.length !== 3) {
+      errEl.textContent = 'Unexpected token format.';
+      return;
+    }
+    const b64 = parts[1].replace(/-/g, '+').replace(/_/g, '/');
+    const padded = b64 + '==='.slice(0, (4 - b64.length % 4) % 4);
+    const payload = JSON.parse(decodeURIComponent(
+      atob(padded).split('').map(c => '%' + c.charCodeAt(0).toString(16).padStart(2,'0')).join('')
+    ));
     const email = (payload.email || '').toLowerCase();
     if (email.endsWith('@hginsights.com')) {
       sessionStorage.setItem('hg-auth', email);
       document.getElementById('auth-gate').style.display = 'none';
     } else {
-      document.getElementById('auth-err').textContent = 'Access restricted to @hginsights.com accounts.';
+      errEl.textContent = 'Access restricted to @hginsights.com. Signed in as: ' + (email || '(unknown)');
     }
   } catch(e) {
-    document.getElementById('auth-err').textContent = 'Sign-in failed. Please try again.';
+    errEl.textContent = 'Sign-in error: ' + e.message;
   }
 }
 
