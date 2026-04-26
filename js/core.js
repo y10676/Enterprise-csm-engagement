@@ -350,6 +350,11 @@ function renderWeek(mc, tabsRow, statPills) {
   html += '</div>';
   mc.innerHTML = html;
   if (activeTab==='wpulses') applyWeekPulseFilters();
+  else if (activeTab==='wsummary') {
+    document.querySelectorAll('.hm-csm-row[data-csm]').forEach(row => {
+      row.addEventListener('click', () => jumpToTab('wcsm', row.dataset.csm, 'all'));
+    });
+  }
   else applyWeekCSMFilter();
 }
 
@@ -376,6 +381,11 @@ function renderMonth(mc, tabsRow, statPills) {
   mc.innerHTML = html;
   if (activeTab==='mpulses') applyWeekPulseFilters();
   else if (activeTab==='mcalls') applyMonthCallFilters();
+  else if (activeTab==='msummary') {
+    document.querySelectorAll('.hm-csm-row[data-csm]').forEach(row => {
+      row.addEventListener('click', () => jumpToTab('mcsm', row.dataset.csm, 'all'));
+    });
+  }
   else if (activeTab==='mcsm') applyWeekCSMFilter();
 }
 
