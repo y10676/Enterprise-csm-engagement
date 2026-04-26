@@ -1649,36 +1649,25 @@ let accountsCsmFilter = 'all';
 let oppCsmNameFilter = null; // active opp-level CSM name filter
 
 window.filterAccountsByCsm = function(csmKey) {
-  // Clear any opp-level filter when dropdown is used
-  oppCsmNameFilter = null;
-  accountsCsmFilter = csmKey || 'all';
-  let visible = 0;
-  document.querySelectorAll('tr.acct-row').forEach(r => {
-    const idx = r.dataset.accountIdx;
-    if (idx === undefined) return;
-    const acct = ACCOUNTS_DATA[parseInt(idx)];
-    if (!acct) return;
-    const matches = (accountsCsmFilter === 'all') || (acct.csmKey === accountsCsmFilter);
-    r.style.display = matches ? '' : 'none';
-    if (matches) visible++;
-    // Restore ALL opp rows visibility based on expand state (no opp-level filter active)
-    const oppRows = document.querySelectorAll(`tr.opp-row[data-account-idx="${idx}"]`);
-    const expanded = r.dataset.expanded === 'true';
-    oppRows.forEach(or => {
-      or.style.display = (matches && expanded) ? '' : 'none';
-    });
-  });
-  const counter = document.getElementById('accounts-filter-count');
-  if (counter) counter.textContent = (accountsCsmFilter === 'all') ? '' : `${visible} account${visible === 1 ? '' : 's'} shown`;
+  if (!csmKey || csmKey === 'all') {
+    window.clearCsmNameFilter();
+    return;
+  }
+  // Look up full CSM name from data, then delegate to opp-level filter
+  const match = ACCOUNTS_DATA.find(a => a.csmKey === csmKey);
+  const csmName = match ? match.csm : null;
+  if (csmName) {
+    window.filterByCsmName(csmName);
+    // Keep dropdown in sync (filterByCsmName resets it to 'all', put it back)
+    const sel = document.getElementById('accounts-csm-filter');
+    if (sel) sel.value = csmKey;
+  }
 };
 
 window.filterByCsmName = function(csmName) {
   if (!csmName) return;
   oppCsmNameFilter = csmName;
-  // Reset dropdown to 'all' since we're doing opp-level filtering
-  accountsCsmFilter = 'all';
-  const sel = document.getElementById('accounts-csm-filter');
-  if (sel) sel.value = 'all';
+  accountsCsmFilter = 'all'; // will be overridden by caller if driven from dropdown
 
   let acctCount = 0, oppCount = 0;
   document.querySelectorAll('tr.acct-row').forEach(r => {
@@ -1715,6 +1704,9 @@ window.filterByCsmName = function(csmName) {
 
 window.clearCsmNameFilter = function() {
   oppCsmNameFilter = null;
+  accountsCsmFilter = 'all';
+  const sel = document.getElementById('accounts-csm-filter');
+  if (sel) sel.value = 'all';
   // Restore all accounts and their opp rows to natural state
   document.querySelectorAll('tr.acct-row').forEach(r => {
     r.style.display = '';
