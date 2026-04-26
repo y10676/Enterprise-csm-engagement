@@ -954,8 +954,9 @@ function pulseCoverageHTML() {
   const rows = stats.map(({ csm, total, both, pulseOnly, noteOnly, neither, pct }) => {
     const name = CSM_NAME_MAP[csm];
     const bar = `<div style="background:#e5e7eb;border-radius:4px;height:8px;width:110px;display:inline-block;vertical-align:middle"><div style="background:${barColor(pct)};height:8px;border-radius:4px;width:${pct}%"></div></div>`;
-    const missingChip = neither > 0
-      ? `<span onclick="window.openMissingOpps('${csm}')" style="cursor:pointer;background:#fee2e2;color:#dc2626;padding:2px 10px;border-radius:12px;font-size:11px;font-weight:600">${neither} missing →</span>`
+    const missingAny = total - both; // opps missing pulse, note, or both
+    const missingChip = missingAny > 0
+      ? `<span onclick="window.openMissingOpps('${csm}')" style="cursor:pointer;background:#fee2e2;color:#dc2626;padding:2px 10px;border-radius:12px;font-size:11px;font-weight:600">${missingAny} missing →</span>`
       : `<span style="background:#dcfce7;color:#059669;padding:2px 10px;border-radius:12px;font-size:11px;font-weight:600">✓ Complete</span>`;
     return `<tr style="border-bottom:1px solid #f3f4f6">
       <td style="padding:10px 16px;font-size:13px;font-weight:600;color:#1f2937">${name}</td>
