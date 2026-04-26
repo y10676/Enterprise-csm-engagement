@@ -155,6 +155,13 @@ function renderNoReport() {
 }
 
 
+// Navigate from summary view to CSM breakdown tab filtered to one CSM.
+// Called by direct onclick on CSM name cells in weekSummaryHTML / monthSummaryHTML.
+window.csmClickSummary = function(csmKey) {
+  const tab = gran === 'month' ? 'mcsm' : 'wcsm';
+  jumpToTab(tab, csmKey, 'all');
+};
+
 function jumpToDetail(type, csm) {
   const isMonth = gran === 'month';
   const isWeek = gran === 'week';
