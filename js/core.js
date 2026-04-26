@@ -420,6 +420,7 @@ document.addEventListener('click', function(ev) {
     const label = (lblEl && lblEl.textContent || '').toLowerCase();
     let type = null;
     if (label.includes('account')) { ev.stopPropagation(); openCsmAccounts(csm); return; }
+    if (label.includes('opp')) { ev.stopPropagation(); openCsmOpps(csm); return; }
     if (label.includes('call')) type = 'calls';
     else if (label.includes('pulse')) type = 'pulses';
     else if (label.includes('risk')) type = 'risks';
@@ -859,6 +860,52 @@ function openCsmAccounts(csm) {
             <th style="padding:8px 10px;text-align:left;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px">Account</th>
             ${showCsm ? '<th style="padding:8px 10px;text-align:left;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px">CSM</th>' : ''}
             <th style="padding:8px 10px;text-align:left;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px">Segment</th>
+            <th style="padding:8px 10px;text-align:right;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px">ARR</th>
+            <th style="padding:8px 10px;text-align:left;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px">Pulse</th>
+            <th style="padding:8px 10px;text-align:left;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px">Renewal</th>
+          </tr>
+        </thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>
+  `;
+  document.getElementById('modal-overlay').classList.add('open');
+}
+
+function openCsmOpps(csm) {
+  const name = csm === 'all' ? 'All Enterprise CSMs' : (CSM_NAME_MAP[csm] || csm);
+  const opps = [];
+  ACCOUNTS_DATA.forEach(acct => {
+    if (csm !== 'all' && acct.csmKey !== csm) return;
+    (acct.opportunities || []).forEach(opp => {
+      opps.push({ accountName: acct.accountName, csmName: acct.csm, ...opp });
+    });
+  });
+  opps.sort((a, b) => (b.arr || 0) - (a.arr || 0));
+  const totalArr = opps.reduce((s, o) => s + (o.arr || 0), 0);
+  const showCsm = csm === 'all';
+  const rows = opps.map(o => `
+    <tr>
+      <td style="padding:6px 10px;font-size:12px;color:#6b7280">${o.accountName}</td>
+      <td style="padding:6px 10px;font-size:12px;font-weight:600;color:#1f2937">${o.name || '—'}</td>
+      ${showCsm ? `<td style="padding:6px 10px;font-size:11px;color:#6b7280">${o.csmName || ''}</td>` : ''}
+      <td style="padding:6px 10px;font-size:11px;color:#6b7280">${o.deal_type || '—'}</td>
+      <td style="padding:6px 10px;font-size:12px;text-align:right;font-variant-numeric:tabular-nums;color:#1f2937">${fmtArr(o.arr || 0)}</td>
+      <td style="padding:6px 10px;font-size:11px;color:${pulseColor(o.pulse)}">${o.pulse || '—'}</td>
+      <td style="padding:6px 10px;font-size:11px;color:#6b7280;font-variant-numeric:tabular-nums">${o.contract_end || '—'}</td>
+    </tr>
+  `).join('');
+  document.getElementById('modal-title').textContent = `${name} — Opportunities (${opps.length})`;
+  document.getElementById('modal-subtitle').textContent = `Total opp ARR: ${fmtArr(totalArr)}`;
+  document.getElementById('modal-body').innerHTML = `
+    <div style="overflow:auto;max-height:60vh;border:1px solid #e5e7eb;border-radius:8px">
+      <table style="width:100%;border-collapse:collapse">
+        <thead style="position:sticky;top:0;background:#f9fafb;border-bottom:1px solid #e5e7eb">
+          <tr>
+            <th style="padding:8px 10px;text-align:left;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px">Account</th>
+            <th style="padding:8px 10px;text-align:left;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px">Opportunity</th>
+            ${showCsm ? '<th style="padding:8px 10px;text-align:left;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px">CSM</th>' : ''}
+            <th style="padding:8px 10px;text-align:left;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px">Type</th>
             <th style="padding:8px 10px;text-align:right;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px">ARR</th>
             <th style="padding:8px 10px;text-align:left;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px">Pulse</th>
             <th style="padding:8px 10px;text-align:left;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px">Renewal</th>
