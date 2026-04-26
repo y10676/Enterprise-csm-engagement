@@ -419,8 +419,18 @@ document.addEventListener('click', function(ev) {
     c.classList.toggle('active-chip', c.dataset.filterCsm === activeCsm)
   );
   if (gran === 'day') applyDayFilters();
-  else if (gran === 'week') { if (activeTab === 'wpulses') applyWeekPulseFilters(); else if (activeTab === 'wcalls') applyMonthCallFilters(); else applyWeekCSMFilter(); }
-  else if (gran === 'month') { if (activeTab === 'mpulses') applyWeekPulseFilters(); else if (activeTab === 'mcalls') applyMonthCallFilters(); else applyWeekCSMFilter(); }
+  else if (gran === 'week') {
+    if (activeTab === 'wsummary') { jumpToTab('wcsm', csm, 'all'); }
+    else if (activeTab === 'wpulses') applyWeekPulseFilters();
+    else if (activeTab === 'wcalls') applyMonthCallFilters();
+    else applyWeekCSMFilter();
+  }
+  else if (gran === 'month') {
+    if (activeTab === 'msummary') { jumpToTab('mcsm', csm, 'all'); }
+    else if (activeTab === 'mpulses') applyWeekPulseFilters();
+    else if (activeTab === 'mcalls') applyMonthCallFilters();
+    else applyWeekCSMFilter();
+  }
 });
 
 function accountsHTML() {
