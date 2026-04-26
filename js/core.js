@@ -123,6 +123,7 @@ function render() {
     tabsRow.innerHTML = acctTabHtml + periodTabsHtml();
     filtersBar.style.display = 'none';
     statPills.innerHTML = '';
+    accountSearchQuery = '';
     mc.innerHTML = `<div class="content">${accountsHTML()}</div>`;
     return;
   }
@@ -513,8 +514,12 @@ function accountsHTML() {
 
   return `
     <div class="section-label">Accounts · 120 Total · $47.2M ARR · 240 Opportunities</div>
-    <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:8px">
-      <div style="display:flex;align-items:center;gap:8px">
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap">
+      <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
+        <div style="position:relative;display:flex;align-items:center">
+          <span style="position:absolute;left:8px;font-size:13px;color:#9ca3af;pointer-events:none">🔍</span>
+          <input id="accounts-search" type="text" placeholder="Search accounts…" oninput="window.searchAccounts(this.value)" style="font-size:12px;padding:4px 10px 4px 28px;border:1px solid #d1d5db;background:#fff;border-radius:6px;color:#374151;min-width:200px;outline:none" />
+        </div>
         <label for="accounts-csm-filter" style="font-size:11px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px;font-weight:600">CSM</label>
         <select id="accounts-csm-filter" onchange="window.filterAccountsByCsm(this.value)" style="font-size:12px;padding:4px 10px;border:1px solid #d1d5db;background:#fff;border-radius:6px;cursor:pointer;color:#374151;min-width:180px">
           <option value="all">All CSMs (120)</option>
@@ -555,6 +560,7 @@ function accountsHTML() {
 
 let accountsCsmFilter = 'all';
 let oppCsmNameFilter = null; // active opp-level CSM name filter
+let accountSearchQuery = '';  // active text search query
 
 window.filterAccountsByCsm = function(csmKey) {
   if (!csmKey || csmKey === 'all') {
@@ -626,6 +632,41 @@ window.clearCsmNameFilter = function() {
   });
   const counter = document.getElementById('accounts-filter-count');
   if (counter) counter.textContent = '';
+};
+
+window.searchAccounts = function(query) {
+  accountSearchQuery = (query || '').toLowerCase().trim();
+  const q = accountSearchQuery;
+  let visible = 0;
+
+  document.querySelectorAll('tr.acct-row').forEach(r => {
+    const idx = r.dataset.accountIdx;
+    if (idx === undefined) return;
+    const acct = ACCOUNTS_DATA[parseInt(idx)];
+    if (!acct) return;
+
+    // CSM filter: respect active oppCsmNameFilter if set, otherwise accountsCsmFilter
+    let csmPass = true;
+    if (oppCsmNameFilter) {
+      csmPass = (acct.opportunities || []).some(o => o.csm === oppCsmNameFilter);
+    } else if (accountsCsmFilter !== 'all') {
+      csmPass = acct.csmKey === accountsCsmFilter;
+    }
+
+    // Search filter: match account name (case-insensitive)
+    const searchPass = !q || acct.accountName.toLowerCase().includes(q);
+
+    const show = csmPass && searchPass;
+    r.style.display = show ? '' : 'none';
+    if (show) visible++;
+  });
+
+  // Update counter
+  const counter = document.getElementById('accounts-filter-count');
+  if (counter) {
+    if (q) counter.textContent = `${visible} account${visible !== 1 ? 's' : ''} matching "${query}"`;
+    else counter.textContent = '';
+  }
 };
 
 window.toggleAccountOpps = function(idx) {
