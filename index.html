@@ -393,8 +393,19 @@ function render() {
   const statPills = document.getElementById('stat-pills');
   const mc = document.getElementById('main-content');
 
+  // Global Accounts tab — always first, always visible
+  const acctTabHtml = `<div class="tab${activeTab==='accounts'?' active':''}" onclick="switchTab('accounts')" style="border-bottom-color:${activeTab==='accounts'?'#0ea5a0':'transparent'}">Accounts (120)</div>`;
+
+  if (activeTab === 'accounts') {
+    tabsRow.innerHTML = acctTabHtml;
+    filtersBar.style.display = 'none';
+    statPills.innerHTML = '';
+    mc.innerHTML = `<div class="content">${accountsHTML()}</div>`;
+    return;
+  }
+
   if (!hasReport) {
-    tabsRow.innerHTML = '';
+    tabsRow.innerHTML = acctTabHtml;
     filtersBar.style.display = 'none';
     statPills.innerHTML = '';
     mc.innerHTML = renderNoReport();
@@ -402,10 +413,12 @@ function render() {
   }
 
   filtersBar.style.display = '';
-
   if (gran === 'day') renderDay(mc, tabsRow, statPills);
   else if (gran === 'week') renderWeek(mc, tabsRow, statPills);
   else renderMonth(mc, tabsRow, statPills);
+
+  // Prepend the global Accounts tab to whatever the period renderer set
+  tabsRow.innerHTML = acctTabHtml + tabsRow.innerHTML;
 }
 
 function renderNoReport() {
@@ -895,9 +908,9 @@ function toggleAction(n) {
 // ═══════════════════════════════════════════════════════════════
 function renderWeek(mc, tabsRow, statPills) {
   setPills([['dot-teal','24 Calls'],['dot-green','21 Pulses'],['dot-purple','6 Active CSMs'],['dot-amber','4 Concerning']]);
-  const tabs = ['Summary','CSM Breakdown','Call Log (24)','Pulse Log (21)','Accounts (120)'];
-  if (!activeTab || !['wsummary','wcsm','wcalls','wpulses','wacct'].includes(activeTab)) activeTab='wsummary';
-  tabsRow.innerHTML = ['wsummary','wcsm','wcalls','wpulses','wacct'].map((k,i)=>
+  const tabs = ['Summary','CSM Breakdown','Call Log (24)','Pulse Log (21)'];
+  if (!activeTab || !['wsummary','wcsm','wcalls','wpulses'].includes(activeTab)) activeTab='wsummary';
+  tabsRow.innerHTML = ['wsummary','wcsm','wcalls','wpulses'].map((k,i)=>
     `<div class="tab ${activeTab===k?'active':''}" onclick="switchTab('${k}')">${tabs[i]}</div>`
   ).join('');
   ['h-all','h-healthy','h-concerning','health-divider','health-label'].forEach(id=>{
@@ -1062,9 +1075,9 @@ function applyWeekCSMFilter() {
 // ═══════════════════════════════════════════════════════════════
 function renderMonth(mc, tabsRow, statPills) {
   setPills([['dot-teal','24 Calls'],['dot-green','21 Pulses'],['dot-purple','22 Accounts'],['dot-amber','4 Concerning']]);
-  const tabs = ['Summary','CSM Breakdown','Call Log (24)','Pulse Notes (21)','Pulse Health','Accounts (120)'];
-  if (!activeTab || !['msummary','mcsm','mcalls','mpulses','mhealth','macct'].includes(activeTab)) activeTab='msummary';
-  tabsRow.innerHTML = ['msummary','mcsm','mcalls','mpulses','mhealth','macct'].map((k,i)=>
+  const tabs = ['Summary','CSM Breakdown','Call Log (24)','Pulse Notes (21)','Pulse Health'];
+  if (!activeTab || !['msummary','mcsm','mcalls','mpulses','mhealth'].includes(activeTab)) activeTab='msummary';
+  tabsRow.innerHTML = ['msummary','mcsm','mcalls','mpulses','mhealth'].map((k,i)=>
     `<div class="tab ${activeTab===k?'active':''}" onclick="switchTab('${k}')">${tabs[i]}</div>`
   ).join('');
   const showHealth = activeTab==='mpulses' || activeTab==='mcalls';
@@ -1551,15 +1564,16 @@ function accountsHTML() {
         ? `<td style="padding:4px 10px;font-size:11px;background-color:${pc};color:white;border-radius:4px;text-align:center">${opp.pulse}</td>`
         : `<td style="padding:4px 10px;font-size:11px;color:#9ca3af">—</td>`;
       return `
-      <tr class="opp-row" data-account-idx="${idx}" style="display:none;background:#fafbfc">
+      <tr class="opp-row" data-account-idx="${idx}" data-opp-csm="${opp.csm || ''}" style="display:none;background:#fafbfc">
         <td style="padding:4px 10px 4px 28px;font-size:11px;color:#374151;font-weight:500;border-left:3px solid #e5e7eb">↳ ${opp.name}</td>
-        <td style="padding:4px 10px;font-size:11px;color:#6b7280">${opp.csm || '—'}</td>
+        <td style="padding:4px 10px;font-size:11px;color:${opp.csm ? '#2563eb' : '#9ca3af'};cursor:${opp.csm ? 'pointer' : 'default'}" onclick="${opp.csm ? `event.stopPropagation();window.filterByCsmName('${opp.csm.replace(/'/g,"\\'")}')` : ''}" title="${opp.csm ? `Show only ${opp.csm}'s opps` : ''}">${opp.csm || '—'}</td>
         <td style="padding:4px 10px;font-size:11px;color:#9ca3af">—</td>
         <td style="padding:4px 10px;font-size:11px;color:#9ca3af">${opp.deal_type || '—'}</td>
         <td style="padding:4px 10px;font-size:11px;text-align:right;font-variant-numeric:tabular-nums;color:#374151">${fmtArr(opp.arr||0)}</td>
         <td style="padding:4px 10px;font-size:11px;color:#9ca3af">—</td>
+        <td style="padding:4px 10px;font-size:11px;color:#6b7280;font-variant-numeric:tabular-nums">${opp.pulseDate || '—'}</td>
         ${pulseCell}
-        <td style="padding:4px 10px;font-size:11px;color:#6b7280">${opp.pulseNote ? (opp.pulseDate ? `<span style="color:#9ca3af;font-size:10px;font-variant-numeric:tabular-nums">[${opp.pulseDate}] </span>` : '') + opp.pulseNote : '—'}</td>
+        <td style="padding:4px 10px;font-size:11px;color:#6b7280">${opp.pulseNote || '—'}</td>
         <td style="padding:4px 10px;font-size:11px;color:#6b7280;font-variant-numeric:tabular-nums">${opp.contract_end || '—'}</td>
       </tr>
     `}).join('');
@@ -1575,12 +1589,13 @@ function accountsHTML() {
     return `
       <tr class="acct-row" data-account-idx="${idx}" data-arr="${acct.arr || 0}" data-expanded="false" ${hasOpps ? `onclick="window.toggleAccountOpps(${idx})"` : ''} style="${cursorStyle}">
         <td style="padding:6px 10px;font-size:12px;font-weight:600;color:#1f2937">${chevron}${acct.accountName}${oppCountBadge}</td>
-        <td style="padding:6px 10px;font-size:11px;color:#6b7280">${acct.csm || '—'}</td>
+        <td style="padding:6px 10px;font-size:11px;color:${acct.csm ? '#2563eb' : '#9ca3af'};cursor:${acct.csm ? 'pointer' : 'default'}" onclick="${acct.csm ? `event.stopPropagation();window.filterByCsmName('${acct.csm.replace(/'/g,"\\'")}')` : ''}" title="${acct.csm ? `Show only ${acct.csm}'s opps` : ''}">${acct.csm || '—'}</td>
         <td style="padding:6px 10px;font-size:11px;color:#6b7280">${acct.am || '—'}</td>
         <td style="padding:6px 10px;font-size:11px;color:#6b7280">${acct.segment || '—'}</td>
         <td style="padding:6px 10px;font-size:12px;text-align:right;font-variant-numeric:tabular-nums;color:#1f2937">${fmtArr(acct.arr || 0)}</td>
         <td style="padding:6px 10px;font-size:11px;color:#6b7280">${acct.lastOutbound ? new Date(acct.lastOutbound).toLocaleDateString('en-US', {month:'short', day:'numeric'}) : '—'}</td>
         <td style="padding:6px 10px;font-size:11px;color:#6b7280;font-variant-numeric:tabular-nums">${acct.latestPulseDate ? new Date(acct.latestPulseDate).toLocaleDateString('en-US', {month:'short', day:'numeric', year:'numeric'}) : '—'}</td>
+        <td style="${acct.pulse && acct.pulseColor ? `padding:4px 10px;font-size:11px;background-color:${acct.pulseColor};color:white;border-radius:4px;text-align:center;font-weight:500` : 'padding:6px 10px;font-size:11px;color:#9ca3af'}">${acct.pulse || '—'}</td>
         <td style="padding:6px 10px;font-size:11px;color:#6b7280">${acct.pulseNote || '—'}</td>
         <td style="padding:6px 10px;font-size:11px;color:#6b7280;font-variant-numeric:tabular-nums">${acct.renewalDate || '—'}</td>
       </tr>
@@ -1618,7 +1633,8 @@ function accountsHTML() {
             <th data-sort-col="segment" style="padding:8px 10px;text-align:left;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px;cursor:pointer;user-select:none;white-space:nowrap" onclick="window.sortAccountsTable('segment')">Segment</th>
             <th data-sort-col="arr" style="padding:8px 10px;text-align:right;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px;cursor:pointer;user-select:none;white-space:nowrap" onclick="window.sortAccountsTable('arr')">ARR <span class="sort-arrow" style="color:#1d4ed8">↓</span></th>
             <th data-sort-col="lastOutbound" style="padding:8px 10px;text-align:left;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px;cursor:pointer;user-select:none;white-space:nowrap" onclick="window.sortAccountsTable('lastOutbound')">Last Outbound</th>
-            <th data-sort-col="pulse" style="padding:8px 10px;text-align:left;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px;cursor:pointer;user-select:none;white-space:nowrap" onclick="window.sortAccountsTable('pulse')">Last Pulse</th>
+            <th data-sort-col="pulseDate" style="padding:8px 10px;text-align:left;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px;cursor:pointer;user-select:none;white-space:nowrap" onclick="window.sortAccountsTable('pulseDate')">Pulse Date</th>
+            <th data-sort-col="pulse" style="padding:8px 10px;text-align:left;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px;cursor:pointer;user-select:none;white-space:nowrap" onclick="window.sortAccountsTable('pulse')">Pulse</th>
             <th data-sort-col="pulseNote" style="padding:8px 10px;text-align:left;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px;cursor:pointer;user-select:none;white-space:nowrap" onclick="window.sortAccountsTable('pulseNote')">Pulse Note</th>
             <th data-sort-col="renewalDate" style="padding:8px 10px;text-align:left;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px;cursor:pointer;user-select:none;white-space:nowrap" onclick="window.sortAccountsTable('renewalDate')">Renewal Date</th>
           </tr>
@@ -1630,8 +1646,11 @@ function accountsHTML() {
 }
 
 let accountsCsmFilter = 'all';
+let oppCsmNameFilter = null; // active opp-level CSM name filter
 
 window.filterAccountsByCsm = function(csmKey) {
+  // Clear any opp-level filter when dropdown is used
+  oppCsmNameFilter = null;
   accountsCsmFilter = csmKey || 'all';
   let visible = 0;
   document.querySelectorAll('tr.acct-row').forEach(r => {
@@ -1642,7 +1661,7 @@ window.filterAccountsByCsm = function(csmKey) {
     const matches = (accountsCsmFilter === 'all') || (acct.csmKey === accountsCsmFilter);
     r.style.display = matches ? '' : 'none';
     if (matches) visible++;
-    // Also hide all opp rows for filtered-out accounts. For visible accounts, preserve their existing expand state.
+    // Restore ALL opp rows visibility based on expand state (no opp-level filter active)
     const oppRows = document.querySelectorAll(`tr.opp-row[data-account-idx="${idx}"]`);
     const expanded = r.dataset.expanded === 'true';
     oppRows.forEach(or => {
@@ -1650,9 +1669,63 @@ window.filterAccountsByCsm = function(csmKey) {
     });
   });
   const counter = document.getElementById('accounts-filter-count');
-  if (counter) {
-    counter.textContent = (accountsCsmFilter === 'all') ? '' : `${visible} account${visible === 1 ? '' : 's'} shown`;
-  }
+  if (counter) counter.textContent = (accountsCsmFilter === 'all') ? '' : `${visible} account${visible === 1 ? '' : 's'} shown`;
+};
+
+window.filterByCsmName = function(csmName) {
+  if (!csmName) return;
+  oppCsmNameFilter = csmName;
+  // Reset dropdown to 'all' since we're doing opp-level filtering
+  accountsCsmFilter = 'all';
+  const sel = document.getElementById('accounts-csm-filter');
+  if (sel) sel.value = 'all';
+
+  let acctCount = 0, oppCount = 0;
+  document.querySelectorAll('tr.acct-row').forEach(r => {
+    const idx = r.dataset.accountIdx;
+    if (idx === undefined) return;
+    const acct = ACCOUNTS_DATA[parseInt(idx)];
+    if (!acct) return;
+
+    // Check if this account has any opp belonging to this CSM
+    const matchingOpps = (acct.opportunities || []).filter(o => o.csm === csmName);
+    const hasMatch = matchingOpps.length > 0;
+
+    r.style.display = hasMatch ? '' : 'none';
+    if (hasMatch) { acctCount++; oppCount += matchingOpps.length; }
+
+    // Show/hide opp rows: expand the account and show only matching opp rows
+    const oppRows = document.querySelectorAll(`tr.opp-row[data-account-idx="${idx}"]`);
+    if (hasMatch) {
+      r.dataset.expanded = 'true';
+      const chev = r.querySelector('.acct-chev');
+      if (chev) chev.textContent = '▼';
+      oppRows.forEach(or => {
+        or.style.display = (or.dataset.oppCsm === csmName) ? '' : 'none';
+      });
+    } else {
+      r.dataset.expanded = 'false';
+      oppRows.forEach(or => { or.style.display = 'none'; });
+    }
+  });
+
+  const counter = document.getElementById('accounts-filter-count');
+  if (counter) counter.innerHTML = `${acctCount} account${acctCount !== 1 ? 's' : ''} · ${oppCount} opp${oppCount !== 1 ? 's' : ''} &nbsp;<span style="color:#2563eb;cursor:pointer;text-decoration:underline" onclick="window.clearCsmNameFilter()">✕ ${csmName}</span>`;
+};
+
+window.clearCsmNameFilter = function() {
+  oppCsmNameFilter = null;
+  // Restore all accounts and their opp rows to natural state
+  document.querySelectorAll('tr.acct-row').forEach(r => {
+    r.style.display = '';
+    const idx = r.dataset.accountIdx;
+    const expanded = r.dataset.expanded === 'true';
+    document.querySelectorAll(`tr.opp-row[data-account-idx="${idx}"]`).forEach(or => {
+      or.style.display = expanded ? '' : 'none';
+    });
+  });
+  const counter = document.getElementById('accounts-filter-count');
+  if (counter) counter.textContent = '';
 };
 
 window.toggleAccountOpps = function(idx) {
@@ -1662,12 +1735,15 @@ window.toggleAccountOpps = function(idx) {
   const next = !expanded;
   acctRow.dataset.expanded = next ? 'true' : 'false';
   document.querySelectorAll(`tr.opp-row[data-account-idx="${idx}"]`).forEach(r => {
-    r.style.display = next ? '' : 'none';
+    if (!next) {
+      r.style.display = 'none';
+    } else {
+      // Respect active opp CSM filter when expanding
+      r.style.display = (oppCsmNameFilter && r.dataset.oppCsm !== oppCsmNameFilter) ? 'none' : '';
+    }
   });
   const chev = acctRow.querySelector('.acct-chev');
-  if (chev) {
-    chev.textContent = next ? '▼' : '▶';
-  }
+  if (chev) chev.textContent = next ? '▼' : '▶';
 };
 
 // Toggle: if `expand` is omitted, infer from whether the majority of expandable rows are currently collapsed.
@@ -1729,7 +1805,7 @@ window.sortAccountsTable = function(col) {
     accountsSortColumn = col;
     // Columns that default to descending on first click (largest/worst/most-recent first).
     // Renewal Date defaults to ascending (soonest renewal first).
-    accountsSortDesc = (col === 'arr' || col === 'pulse' || col === 'lastOutbound' || col === 'pulseNote');
+    accountsSortDesc = (col === 'arr' || col === 'pulseDate' || col === 'lastOutbound' || col === 'pulseNote');
     // pulse now sorts by date (most recent first = desc)
   }
 
@@ -1774,7 +1850,7 @@ window.sortAccountsTable = function(col) {
       if (aMissing) return 1;
       if (bMissing) return -1;
       valA = ta; valB = tb;
-    } else if (col === 'pulse') {
+    } else if (col === 'pulseDate') {
       // Sort by latestPulseDate (most recent first). Accounts with no date sink to the bottom.
       const ta = acctA.latestPulseDate ? Date.parse(acctA.latestPulseDate) : NaN;
       const tb = acctB.latestPulseDate ? Date.parse(acctB.latestPulseDate) : NaN;
@@ -1783,6 +1859,20 @@ window.sortAccountsTable = function(col) {
       if (aMissing) return 1;
       if (bMissing) return -1;
       valA = ta; valB = tb;
+    } else if (col === 'pulse') {
+      // Sort by risk severity: High Risk first, Extremely Satisfied last
+      const pulseRank = p => {
+        if (!p) return 99;
+        const lp = p.toLowerCase();
+        if (lp.includes('high risk')) return 0;
+        if (lp === 'at risk' || lp.includes('at risk')) return 1;
+        if (lp.includes('concerning')) return 2;
+        if (lp.includes('some risk') || lp.includes('poor')) return 3;
+        if (lp === 'healthy' || lp.includes('healthy')) return 4;
+        if (lp.includes('satisfied')) return 5;
+        return 6;
+      };
+      valA = pulseRank(acctA.pulse); valB = pulseRank(acctB.pulse);
     } else if (col === 'pulseNote') {
       valA = acctA.pulseNote || '';
       valB = acctB.pulseNote || '';
