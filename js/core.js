@@ -107,13 +107,13 @@ function render() {
       ).join('');
     }
     if (gran === 'week' && hasReport) {
-      return ['wsummary','wcsm','wcalls','wpulses'].map((k,i) =>
-        `<div class="tab${activeTab===k?' active':''}" onclick="switchTab('${k}')">${['Summary','CSM Breakdown','Call Log (24)','Pulse Log (21)'][i]}</div>`
+      return ['wsummary','wcsm','wcalls','wpulses','wcoverage'].map((k,i) =>
+        `<div class="tab${activeTab===k?' active':''}" onclick="switchTab('${k}')">${['Summary','CSM Breakdown','Call Log (24)','Pulse Log (21)','Pulse Coverage'][i]}</div>`
       ).join('');
     }
     if (gran === 'month' && hasReport) {
-      return ['msummary','mcsm','mcalls','mpulses','mhealth'].map((k,i) =>
-        `<div class="tab${activeTab===k?' active':''}" onclick="switchTab('${k}')">${['Summary','CSM Breakdown','Call Log (24)','Pulse Notes (21)','Pulse Health'][i]}</div>`
+      return ['msummary','mcsm','mcalls','mpulses','mhealth','mcoverage'].map((k,i) =>
+        `<div class="tab${activeTab===k?' active':''}" onclick="switchTab('${k}')">${['Summary','CSM Breakdown','Call Log (24)','Pulse Notes (21)','Pulse Health','Pulse Coverage'][i]}</div>`
       ).join('');
     }
     return '';
@@ -332,9 +332,9 @@ function toggleAction(n) {
 // ═══════════════════════════════════════════════════════════════
 function renderWeek(mc, tabsRow, statPills) {
   setPills([['dot-teal','24 Calls'],['dot-green','21 Pulses'],['dot-purple','6 Active CSMs'],['dot-amber','4 Concerning']]);
-  const tabs = ['Summary','CSM Breakdown','Call Log (24)','Pulse Log (21)'];
-  if (!activeTab || !['wsummary','wcsm','wcalls','wpulses'].includes(activeTab)) activeTab='wsummary';
-  tabsRow.innerHTML = ['wsummary','wcsm','wcalls','wpulses'].map((k,i)=>
+  const tabs = ['Summary','CSM Breakdown','Call Log (24)','Pulse Log (21)','Pulse Coverage'];
+  if (!activeTab || !['wsummary','wcsm','wcalls','wpulses','wcoverage'].includes(activeTab)) activeTab='wsummary';
+  tabsRow.innerHTML = ['wsummary','wcsm','wcalls','wpulses','wcoverage'].map((k,i)=>
     `<div class="tab ${activeTab===k?'active':''}" onclick="switchTab('${k}')">${tabs[i]}</div>`
   ).join('');
   ['h-all','h-healthy','h-concerning','health-divider','health-label'].forEach(id=>{
@@ -345,6 +345,7 @@ function renderWeek(mc, tabsRow, statPills) {
   if (activeTab==='wsummary') html += weekSummaryHTML();
   else if (activeTab==='wcsm') html += weekCSMHTML();
   else if (activeTab==='wcalls') html += weekCallsHTML();
+  else if (activeTab==='wcoverage') html += pulseCoverageHTML();
   else if (activeTab==='wacct') html += accountsHTML();
   else html += weekPulsesHTML();
   html += '</div>';
@@ -355,14 +356,15 @@ function renderWeek(mc, tabsRow, statPills) {
       row.addEventListener('click', () => jumpToTab('wcsm', row.dataset.csm, 'all'));
     });
   }
+  else if (activeTab==='wcoverage') { /* no filter needed */ }
   else applyWeekCSMFilter();
 }
 
 function renderMonth(mc, tabsRow, statPills) {
   setPills([['dot-teal','24 Calls'],['dot-green','21 Pulses'],['dot-purple','22 Accounts'],['dot-amber','4 Concerning']]);
-  const tabs = ['Summary','CSM Breakdown','Call Log (24)','Pulse Notes (21)','Pulse Health'];
-  if (!activeTab || !['msummary','mcsm','mcalls','mpulses','mhealth'].includes(activeTab)) activeTab='msummary';
-  tabsRow.innerHTML = ['msummary','mcsm','mcalls','mpulses','mhealth'].map((k,i)=>
+  const tabs = ['Summary','CSM Breakdown','Call Log (24)','Pulse Notes (21)','Pulse Health','Pulse Coverage'];
+  if (!activeTab || !['msummary','mcsm','mcalls','mpulses','mhealth','mcoverage'].includes(activeTab)) activeTab='msummary';
+  tabsRow.innerHTML = ['msummary','mcsm','mcalls','mpulses','mhealth','mcoverage'].map((k,i)=>
     `<div class="tab ${activeTab===k?'active':''}" onclick="switchTab('${k}')">${tabs[i]}</div>`
   ).join('');
   const showHealth = activeTab==='mpulses' || activeTab==='mcalls';
@@ -375,6 +377,7 @@ function renderMonth(mc, tabsRow, statPills) {
   else if (activeTab==='mcsm') html += monthCSMHTML();
   else if (activeTab==='mcalls') html += monthCallsHTML();
   else if (activeTab==='mpulses') html += monthPulsesHTML();
+  else if (activeTab==='mcoverage') html += pulseCoverageHTML();
   else if (activeTab==='macct') html += accountsHTML();
   else html += monthHealthHTML();
   html += '</div>';
@@ -386,6 +389,7 @@ function renderMonth(mc, tabsRow, statPills) {
       row.addEventListener('click', () => jumpToTab('mcsm', row.dataset.csm, 'all'));
     });
   }
+  else if (activeTab==='mcoverage') { /* no filter needed */ }
   else if (activeTab==='mcsm') applyWeekCSMFilter();
 }
 
@@ -917,6 +921,133 @@ function openCsmOpps(csm) {
   `;
   document.getElementById('modal-overlay').classList.add('open');
 }
+
+// ─── PULSE COVERAGE ────────────────────────────────────────────
+function pulseCoverageHTML() {
+  const csmKeys = ['riley','varun','divyam','nick','rani','pam','atisha','andy'];
+  const hasPulse = o => !!(o.pulse && o.pulse !== '—');
+  const hasNote  = o => !!(o.pulseNote && o.pulseNote !== '—');
+
+  const stats = csmKeys.map(csm => {
+    const opps = [];
+    ACCOUNTS_DATA.forEach(a => {
+      if (a.csmKey !== csm) return;
+      (a.opportunities || []).forEach(o => opps.push({ ...o, accountName: a.accountName }));
+    });
+    const total     = opps.length;
+    const both      = opps.filter(o => hasPulse(o) && hasNote(o)).length;
+    const pulseOnly = opps.filter(o => hasPulse(o) && !hasNote(o)).length;
+    const noteOnly  = opps.filter(o => !hasPulse(o) && hasNote(o)).length;
+    const neither   = opps.filter(o => !hasPulse(o) && !hasNote(o)).length;
+    const pct       = total > 0 ? Math.round(both / total * 100) : 0;
+    return { csm, total, both, pulseOnly, noteOnly, neither, pct };
+  });
+
+  const totalOpps = stats.reduce((s, r) => s + r.total, 0);
+  const totalBoth = stats.reduce((s, r) => s + r.both, 0);
+  const teamPct   = totalOpps > 0 ? Math.round(totalBoth / totalOpps * 100) : 0;
+
+  const barColor  = p => p >= 80 ? '#059669' : p >= 50 ? '#d97706' : '#dc2626';
+  const textColor = p => p >= 80 ? '#059669' : p >= 50 ? '#d97706' : '#dc2626';
+  const bgChip    = p => p >= 80 ? '#dcfce7' : p >= 50 ? '#fef3c7' : '#fee2e2';
+
+  const rows = stats.map(({ csm, total, both, pulseOnly, noteOnly, neither, pct }) => {
+    const name = CSM_NAME_MAP[csm];
+    const bar = `<div style="background:#e5e7eb;border-radius:4px;height:8px;width:110px;display:inline-block;vertical-align:middle"><div style="background:${barColor(pct)};height:8px;border-radius:4px;width:${pct}%"></div></div>`;
+    const missingChip = neither > 0
+      ? `<span onclick="window.openMissingOpps('${csm}')" style="cursor:pointer;background:#fee2e2;color:#dc2626;padding:2px 10px;border-radius:12px;font-size:11px;font-weight:600">${neither} missing →</span>`
+      : `<span style="background:#dcfce7;color:#059669;padding:2px 10px;border-radius:12px;font-size:11px;font-weight:600">✓ Complete</span>`;
+    return `<tr style="border-bottom:1px solid #f3f4f6">
+      <td style="padding:10px 16px;font-size:13px;font-weight:600;color:#1f2937">${name}</td>
+      <td style="padding:10px 16px"><div style="display:flex;align-items:center;gap:8px">${bar}<span style="font-size:13px;font-weight:700;color:${textColor(pct)}">${pct}%</span></div></td>
+      <td style="padding:10px 16px;font-size:12px;text-align:center;color:#1f2937;font-weight:600">${both} / ${total}</td>
+      <td style="padding:10px 16px;font-size:12px;text-align:center;color:#6b7280">${pulseOnly}</td>
+      <td style="padding:10px 16px;font-size:12px;text-align:center;color:#6b7280">${noteOnly}</td>
+      <td style="padding:10px 16px">${missingChip}</td>
+    </tr>`;
+  }).join('');
+
+  return `
+  <div class="section-label">Pulse Coverage — Opportunity Tracking Quality</div>
+  <div style="display:flex;gap:16px;margin-bottom:20px;flex-wrap:wrap">
+    <div style="background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;padding:12px 20px;min-width:130px">
+      <div style="font-size:22px;font-weight:700;color:${textColor(teamPct)}">${teamPct}%</div>
+      <div style="font-size:11px;color:#6b7280;margin-top:2px;text-transform:uppercase;letter-spacing:.5px">Team Coverage</div>
+    </div>
+    <div style="background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;padding:12px 20px;min-width:160px">
+      <div style="font-size:22px;font-weight:700;color:#1f2937">${totalBoth} / ${totalOpps}</div>
+      <div style="font-size:11px;color:#6b7280;margin-top:2px;text-transform:uppercase;letter-spacing:.5px">Opps with Pulse + Note</div>
+    </div>
+    <div style="background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;padding:12px 20px;min-width:160px">
+      <div style="font-size:22px;font-weight:700;color:#dc2626">${totalOpps - totalBoth}</div>
+      <div style="font-size:11px;color:#6b7280;margin-top:2px;text-transform:uppercase;letter-spacing:.5px">Missing Coverage</div>
+    </div>
+  </div>
+  <div style="border:1px solid #e5e7eb;border-radius:8px;overflow:hidden;margin-bottom:10px">
+    <table style="width:100%;border-collapse:collapse">
+      <thead style="background:#f9fafb;border-bottom:1px solid #e5e7eb">
+        <tr>
+          <th style="padding:10px 16px;text-align:left;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px">CSM</th>
+          <th style="padding:10px 16px;text-align:left;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px">Coverage</th>
+          <th style="padding:10px 16px;text-align:center;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px">Full (Pulse + Note)</th>
+          <th style="padding:10px 16px;text-align:center;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px">Pulse Only</th>
+          <th style="padding:10px 16px;text-align:center;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px">Note Only</th>
+          <th style="padding:10px 16px;text-align:left;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px">Neither</th>
+        </tr>
+      </thead>
+      <tbody>${rows}</tbody>
+    </table>
+  </div>
+  <div style="font-size:11px;color:#9ca3af">Full coverage = opportunity has both a pulse status and a pulse note. Click "N missing →" to review which opportunities need attention.</div>`;
+}
+
+window.openMissingOpps = function(csmKey) {
+  const name = CSM_NAME_MAP[csmKey] || csmKey;
+  const opps = [];
+  ACCOUNTS_DATA.forEach(acct => {
+    if (acct.csmKey !== csmKey) return;
+    (acct.opportunities || []).forEach(opp => {
+      const hp = !!(opp.pulse && opp.pulse !== '—');
+      const hn = !!(opp.pulseNote && opp.pulseNote !== '—');
+      if (!hp || !hn) opps.push({ accountName: acct.accountName, ...opp, _missingPulse: !hp, _missingNote: !hn });
+    });
+  });
+  opps.sort((a, b) => (b.arr || 0) - (a.arr || 0));
+  const rows = opps.map(o => {
+    const tag = o._missingPulse && o._missingNote
+      ? `<span style="background:#fee2e2;color:#dc2626;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:600">Missing both</span>`
+      : o._missingPulse
+        ? `<span style="background:#fef3c7;color:#d97706;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:600">No pulse</span>`
+        : `<span style="background:#fef3c7;color:#d97706;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:600">No note</span>`;
+    return `<tr>
+      <td style="padding:6px 10px;font-size:12px;color:#6b7280">${o.accountName}</td>
+      <td style="padding:6px 10px;font-size:12px;font-weight:600;color:#1f2937">${o.name || '—'}</td>
+      <td style="padding:6px 10px;font-size:11px;color:#6b7280">${o.deal_type || '—'}</td>
+      <td style="padding:6px 10px;font-size:12px;text-align:right;font-variant-numeric:tabular-nums;color:#1f2937">${fmtArr(o.arr || 0)}</td>
+      <td style="padding:6px 10px;font-size:11px;color:#6b7280;font-variant-numeric:tabular-nums">${o.contract_end || '—'}</td>
+      <td style="padding:6px 10px">${tag}</td>
+    </tr>`;
+  }).join('');
+  document.getElementById('modal-title').textContent = `${name} — Missing Coverage (${opps.length} opps)`;
+  document.getElementById('modal-subtitle').textContent = 'Opportunities missing pulse status and/or pulse note';
+  document.getElementById('modal-body').innerHTML = `
+    <div style="overflow:auto;max-height:60vh;border:1px solid #e5e7eb;border-radius:8px">
+      <table style="width:100%;border-collapse:collapse">
+        <thead style="position:sticky;top:0;background:#f9fafb;border-bottom:1px solid #e5e7eb">
+          <tr>
+            <th style="padding:8px 10px;text-align:left;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px">Account</th>
+            <th style="padding:8px 10px;text-align:left;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px">Opportunity</th>
+            <th style="padding:8px 10px;text-align:left;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px">Type</th>
+            <th style="padding:8px 10px;text-align:right;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px">ARR</th>
+            <th style="padding:8px 10px;text-align:left;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px">Renewal</th>
+            <th style="padding:8px 10px;text-align:left;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px">Missing</th>
+          </tr>
+        </thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>`;
+  document.getElementById('modal-overlay').classList.add('open');
+};
 
 // ─── MODAL ─────────────────────────────────────────────────────
 const modals = {
