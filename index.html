@@ -394,10 +394,31 @@ function render() {
   const mc = document.getElementById('main-content');
 
   // Global Accounts tab — always first, always visible
-  const acctTabHtml = `<div class="tab${activeTab==='accounts'?' active':''}" onclick="switchTab('accounts')" style="border-bottom-color:${activeTab==='accounts'?'#0ea5a0':'transparent'}">Accounts (120)</div>`;
+  const acctTabHtml = `<div class="tab${activeTab==='accounts'?' active':''}" onclick="switchTab('accounts')">Accounts (120)</div>`;
+
+  // Build period tabs HTML without calling the full renderer (avoids activeTab side-effects)
+  function periodTabsHtml() {
+    if (gran === 'day' && hasReport) {
+      const dd = getDayData(currentKey);
+      return ['overview','calls','pulses','actions'].map((k,i) =>
+        `<div class="tab${activeTab===k?' active':''}" onclick="switchTab('${k}')">${dd.tabs[i]}</div>`
+      ).join('');
+    }
+    if (gran === 'week' && hasReport) {
+      return ['wsummary','wcsm','wcalls','wpulses'].map((k,i) =>
+        `<div class="tab${activeTab===k?' active':''}" onclick="switchTab('${k}')">${['Summary','CSM Breakdown','Call Log (24)','Pulse Log (21)'][i]}</div>`
+      ).join('');
+    }
+    if (gran === 'month' && hasReport) {
+      return ['msummary','mcsm','mcalls','mpulses','mhealth'].map((k,i) =>
+        `<div class="tab${activeTab===k?' active':''}" onclick="switchTab('${k}')">${['Summary','CSM Breakdown','Call Log (24)','Pulse Notes (21)','Pulse Health'][i]}</div>`
+      ).join('');
+    }
+    return '';
+  }
 
   if (activeTab === 'accounts') {
-    tabsRow.innerHTML = acctTabHtml;
+    tabsRow.innerHTML = acctTabHtml + periodTabsHtml();
     filtersBar.style.display = 'none';
     statPills.innerHTML = '';
     mc.innerHTML = `<div class="content">${accountsHTML()}</div>`;
