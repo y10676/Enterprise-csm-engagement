@@ -919,11 +919,13 @@ function openCsmAccounts(csm) {
 
 function openCsmOpps(csm) {
   const name = csm === 'all' ? 'All Enterprise CSMs' : (CSM_NAME_MAP[csm] || csm);
+  const csmName = CSM_NAME_MAP[csm];
   const opps = [];
   ACCOUNTS_DATA.forEach(acct => {
-    if (csm !== 'all' && acct.csmKey !== csm) return;
     (acct.opportunities || []).forEach(opp => {
-      opps.push({ accountName: acct.accountName, csmName: acct.csm, ...opp });
+      const oppOwner = opp.csm || acct.csm;
+      if (csm !== 'all' && oppOwner !== csmName) return;
+      opps.push({ accountName: acct.accountName, csmName: oppOwner, ...opp });
     });
   });
   opps.sort((a, b) => (b.arr || 0) - (a.arr || 0));
@@ -971,9 +973,12 @@ function pulseCoverageHTML() {
 
   const stats = csmKeys.map(csm => {
     const opps = [];
+    const csmName = CSM_NAME_MAP[csm];
     ACCOUNTS_DATA.forEach(a => {
-      if (a.csmKey !== csm) return;
-      (a.opportunities || []).forEach(o => opps.push({ ...o, accountName: a.accountName }));
+      (a.opportunities || []).forEach(o => {
+        const oppOwner = o.csm || a.csm;
+        if (oppOwner === csmName) opps.push({ ...o, accountName: a.accountName });
+      });
     });
     const total     = opps.length;
     const both      = opps.filter(o => hasPulse(o) && hasNote(o)).length;
@@ -1046,9 +1051,11 @@ function pulseCoverageHTML() {
 window.openMissingOpps = function(csmKey) {
   const name = CSM_NAME_MAP[csmKey] || csmKey;
   const opps = [];
+  const csmName = CSM_NAME_MAP[csmKey] || csmKey;
   ACCOUNTS_DATA.forEach(acct => {
-    if (acct.csmKey !== csmKey) return;
     (acct.opportunities || []).forEach(opp => {
+      const oppOwner = opp.csm || acct.csm;
+      if (oppOwner !== csmName) return;
       const hp = !!(opp.pulse && opp.pulse !== '—');
       const hn = !!(opp.pulseNote && opp.pulseNote !== '—');
       if (!hp || !hn) opps.push({ accountName: acct.accountName, ...opp, _missingPulse: !hp, _missingNote: !hn });
