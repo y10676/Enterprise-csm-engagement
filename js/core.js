@@ -10,14 +10,14 @@
 
 // ─── REPORT DATA ───────────────────────────────────────────────
 const REPORTS = {
-  day: { '2026-04-27': true, '2026-04-24': true, '2026-04-23': true, '2026-04-22': true, '2026-04-21': true, '2026-04-20': true, '2026-04-19': true },
+  day: { '2026-04-28': true, '2026-04-27': true, '2026-04-24': true, '2026-04-23': true, '2026-04-22': true, '2026-04-21': true, '2026-04-20': true, '2026-04-19': true },
   week: { '2026-W17': true },   // ISO week 17 = Apr 20-26
   month: { '2026-04': true },
 };
 
 // ─── STATE ─────────────────────────────────────────────────────
 let gran = 'day';
-let currentKey = '2026-04-27';
+let currentKey = '2026-04-28';
 let activeTab = '';
 let activeCsm = 'all';
 let activeHealth = 'all';
@@ -188,7 +188,7 @@ function jumpToTab(tab, csm, health) {
 }
 
 function jumpToLatest() {
-  if (gran==='day') { currentKey='2026-04-27'; document.getElementById('date-label').textContent='Apr 27, 2026'; }
+  if (gran==='day') { currentKey='2026-04-28'; document.getElementById('date-label').textContent='Apr 28, 2026'; }
   else if (gran==='week') { currentKey='2026-W17'; document.getElementById('date-label').textContent='Apr 20 – Apr 26, 2026'; }
   else { currentKey='2026-04'; document.getElementById('date-label').textContent='April 2026'; }
   render();
@@ -242,6 +242,14 @@ function getDayData(key) {
     tabs: ['Report'],
     overviewHTML: () => `<div style="padding:24px;text-align:center"><p style="font-size:14px;color:#374151;margin-bottom:16px;">This report is stored in Google Drive.</p><a href="${rep.viewUrl}" target="_blank" style="display:inline-block;background:#1e2d45;color:#fff;padding:10px 20px;border-radius:6px;text-decoration:none;font-size:13px;font-weight:600;">Open Report in Drive</a><div style="margin-top:16px"><iframe src="${rep.embedUrl}" width="100%" height="600" style="border:1px solid #e5e7eb;border-radius:6px;"></iframe></div></div>`,
     callsHTML: () => '', pulsesHTML: () => '', actionsHTML: () => '',
+  };
+  if (key === '2026-04-28') return {
+    pills: [['dot-teal','7 Verified Calls'],['dot-purple','7 Pulses'],['dot-amber','4 Processing'],['dot-red','1 Excluded']],
+    tabs: ['Overview','Calls (11)','Pulses (7)','Action Items (3)'],
+    overviewHTML: dayOverviewHTML_2026_04_28,
+    callsHTML: dayCallsHTML_2026_04_28,
+    pulsesHTML: dayPulsesHTML_2026_04_28,
+    actionsHTML: dayActionsHTML_2026_04_28,
   };
   if (key === '2026-04-27') return {
     pills: [['dot-teal','7 Calls'],['dot-purple','0 Pulses'],['dot-amber','2 Warnings'],['dot-green','5 Active CSMs']],
