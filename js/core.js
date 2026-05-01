@@ -484,13 +484,26 @@ function accountsHTML() {
     const lp = p.toLowerCase();
     if (lp === 'healthy' || lp.includes('very satisfied') || lp.includes('extremely')) return '#059669';
     if (lp.includes('concerning') || lp.includes('some risk')) return '#d97706';
-    if (lp.includes('at risk')) return '#dc2626';
+    if (lp.includes('severe') || lp.includes('high risk') || lp.includes('at risk')) return '#dc2626';
     return '#6b7280';
+  };
+  // Returns the worst pulse across all opps for an account (highest risk score).
+  const worstOppPulse = opps => {
+    if (!opps || !opps.length) return { pulse: null, color: null };
+    let worst = null, worstScore = -1;
+    opps.forEach(o => {
+      if (!o.pulse || o.pulse === '—') return;
+      const score = pulseRiskScore(o.pulse);
+      if (score > worstScore) { worstScore = score; worst = o.pulse; }
+    });
+    if (!worst) return { pulse: null, color: null };
+    return { pulse: worst, color: oppPulseColor(worst) };
   };
   const tableRows = ACCOUNTS_DATA.map((acct, idx) => {
     const opps = acct.opportunities || [];
     const oppCount = opps.length;
     const hasOpps = oppCount > 0;
+    const wp = worstOppPulse(opps);
     const oppRows = opps.map(opp => {
       const pc = opp.pulse ? oppPulseColor(opp.pulse) : null;
       const pulseCell = pc
@@ -528,7 +541,7 @@ function accountsHTML() {
         <td style="padding:6px 10px;font-size:12px;text-align:right;font-variant-numeric:tabular-nums;color:#1f2937">${fmtArr(acct.arr || 0)}</td>
         <td style="padding:6px 10px;font-size:11px;color:#6b7280">${acct.lastOutbound ? new Date(acct.lastOutbound).toLocaleDateString('en-US', {month:'short', day:'numeric'}) : '—'}</td>
         <td style="padding:6px 10px;font-size:11px;color:#6b7280;font-variant-numeric:tabular-nums">${acct.latestPulseDate ? new Date(acct.latestPulseDate).toLocaleDateString('en-US', {month:'short', day:'numeric', year:'numeric'}) : '—'}</td>
-        <td style="${acct.pulse && acct.pulseColor ? `padding:4px 10px;font-size:11px;background-color:${acct.pulseColor};color:white;border-radius:4px;text-align:center;font-weight:500` : 'padding:6px 10px;font-size:11px;color:#9ca3af'}">${acct.pulse || '—'}</td>
+        <td style="${wp.pulse && wp.color ? `padding:4px 10px;font-size:11px;background-color:${wp.color};color:white;border-radius:4px;text-align:center;font-weight:500` : 'padding:6px 10px;font-size:11px;color:#9ca3af'}">${wp.pulse || '—'}</td>
         <td style="padding:6px 10px;font-size:11px;color:#6b7280">${acct.pulseNote || '—'}</td>
         <td style="padding:6px 10px;font-size:11px;color:#6b7280;font-variant-numeric:tabular-nums">${acct.renewalDate || '—'}</td>
       </tr>
@@ -837,7 +850,17 @@ window.sortAccountsTable = function(col) {
         if (lp.includes('satisfied')) return 5;
         return 6;
       };
-      valA = pulseRank(acctA.pulse); valB = pulseRank(acctB.pulse);
+      const worstPulse = acct => {
+        const opps = acct.opportunities || [];
+        let worst = null, worstScore = -1;
+        opps.forEach(o => {
+          if (!o.pulse || o.pulse === '—') return;
+          const s = pulseRiskScore(o.pulse);
+          if (s > worstScore) { worstScore = s; worst = o.pulse; }
+        });
+        return worst;
+      };
+      valA = pulseRank(worstPulse(acctA)); valB = pulseRank(worstPulse(acctB));
     } else if (col === 'pulseNote') {
       valA = acctA.pulseNote || '';
       valB = acctB.pulseNote || '';
