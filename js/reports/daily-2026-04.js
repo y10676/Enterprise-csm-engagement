@@ -529,6 +529,13 @@ function dayActionsHTML_2026_04_29() {
 // APR 30 — Thursday Apr 30, 2026
 // ═══════════════════════════════════════════════════════════════
 
+function dayMeta_2026_04_30() {
+  return {
+    pills: [['dot-teal','7 Calls'],['dot-purple','5 Vitally Notes'],['dot-grey','2 Pending Transcripts']],
+    tabs:  ['Overview','Calls (9)','Notes (5)','Action Items (4)'],
+  };
+}
+
 function dayOverviewHTML_2026_04_30() {
   return `<div class="section-label">Team Activity &mdash; Thursday Apr 30</div>
   <div class="overview-grid">
