@@ -10,7 +10,7 @@
 
 // ─── REPORT DATA ───────────────────────────────────────────────
 const REPORTS = {
-  day: { '2026-04-30': true, '2026-04-29': true, '2026-04-28': true, '2026-04-27': true, '2026-04-24': true, '2026-04-23': true, '2026-04-22': true, '2026-04-21': true, '2026-04-20': true, '2026-04-19': true },
+  day: {},  // auto-populated at init by probing for dayOverviewHTML_* functions
   week: { '2026-W17': true },   // ISO week 17 = Apr 20-26
   month: { '2026-04': true },
 };
@@ -188,9 +188,16 @@ function jumpToTab(tab, csm, health) {
 }
 
 function jumpToLatest() {
-  if (gran==='day') { currentKey='2026-04-30'; document.getElementById('date-label').textContent='Apr 30, 2026'; }
-  else if (gran==='week') { currentKey='2026-W17'; document.getElementById('date-label').textContent='Apr 20 – Apr 26, 2026'; }
-  else { currentKey='2026-04'; document.getElementById('date-label').textContent='April 2026'; }
+  if (gran==='day') {
+    const latest = Object.keys(REPORTS.day).sort().reverse()[0];
+    if (latest) { applyDate(latest); return; }
+  } else if (gran==='week') {
+    const latest = Object.keys(REPORTS.week).sort().reverse()[0];
+    if (latest) { currentKey = latest; document.getElementById('date-label').textContent = formatLabel(latest + '-01'); render(); return; }
+  } else {
+    const latest = Object.keys(REPORTS.month).sort().reverse()[0];
+    if (latest) { currentKey = latest; document.getElementById('date-label').textContent = formatLabel(latest + '-01'); render(); return; }
+  }
   render();
 }
 
@@ -234,7 +241,59 @@ function renderDay(mc, tabsRow, statPills) {
   applyDayFilters();
 }
 
+// ─── CSM REGISTRY ──────────────────────────────────────────────
+// Stable display metadata for all 8 Enterprise CSMs.
+// Update accounts/opps counts here if the book changes.
+const CSM_DISPLAY = {
+  atisha: { name: 'Atisha Waghela', initials: 'AW', cls: 'av-grey',   accounts: 18, opps: 24 },
+  nick:   { name: 'Nick Johnson',   initials: 'NJ', cls: 'av-grey',   accounts: 27, opps: 83 },
+  varun:  { name: 'Varun Tiwari',   initials: 'VT', cls: 'av-varun',  accounts: 21, opps: 30 },
+  pam:    { name: 'Pam Huck',       initials: 'PH', cls: 'av-grey',   accounts:  7, opps: 19 },
+  rani:   { name: 'Rani Guy',       initials: 'RG', cls: 'av-grey',   accounts: 10, opps: 25 },
+  riley:  { name: 'Riley Rogers',   initials: 'RR', cls: 'av-riley',  accounts:  6, opps: 12 },
+  andy:   { name: 'Andy Lim',       initials: 'AL', cls: 'av-grey',   accounts: 10, opps: 18 },
+  divyam: { name: 'Divyam Dewan',   initials: 'DD', cls: 'av-divyam', accounts: 21, opps: 29 },
+};
+const CSM_ORDER = ['varun','pam','rani','divyam','riley','nick','atisha','andy'];
+
+// ─── MONTH AGGREGATOR ──────────────────────────────────────────
+// Collects all dayData_YYYY_MM_DD() calls for the given month key.
+// Returns { hasData, days[], calls[], pulses[] }.
+// Days without a dayData_* function are silently skipped.
+function getMonthData(monthKey) {
+  const [year, month] = monthKey.split('-').map(Number);
+  const daysInMonth = new Date(year, month, 0).getDate();
+  const out = { hasData: false, days: [], calls: [], pulses: [] };
+  for (let d = 1; d <= daysInMonth; d++) {
+    const iso = `${year}-${String(month).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
+    const fn = window['dayData_' + iso.replace(/-/g, '_')];
+    if (typeof fn === 'function') {
+      const day = fn();
+      out.hasData = true;
+      out.days.push(iso);
+      (day.calls  || []).forEach(c => out.calls.push({...c, date: iso}));
+      (day.pulses || []).forEach(p => out.pulses.push({...p, date: iso}));
+    }
+  }
+  return out;
+}
+
 function getDayData(key) {
+  // Auto-discover: if dayMeta_ + dayOverviewHTML_ functions exist, use them directly
+  const k = key.replace(/-/g, '_');
+  const metaFn = window['dayMeta_' + k];
+  const ovFn   = window['dayOverviewHTML_' + k];
+  if (metaFn && ovFn) {
+    const meta = metaFn();
+    return {
+      pills:       meta.pills,
+      tabs:        meta.tabs,
+      overviewHTML: ovFn,
+      callsHTML:   window['dayCallsHTML_'   + k] || (() => ''),
+      pulsesHTML:  window['dayPulsesHTML_'  + k] || (() => ''),
+      actionsHTML: window['dayActionsHTML_' + k] || (() => ''),
+    };
+  }
   // Drive-discovered report (no embedded content)
   const rep = REPORTS.day[key];
   if (rep && rep.driveOnly) return {
@@ -1372,6 +1431,21 @@ if (sessionStorage.getItem('hg-auth')) {
 }
 
 // ─── INIT ───────────────────────────────────────────────────────
-
+// Auto-detect available day reports by probing for dayOverviewHTML_* function names.
+// Scans the last 180 days so reports from any loaded monthly JS file are discovered.
+(function detectDayReports() {
+  const today = new Date();
+  for (let i = 0; i < 180; i++) {
+    const d = new Date(today);
+    d.setDate(today.getDate() - i);
+    const iso = d.toISOString().slice(0, 10);
+    if (typeof window['dayOverviewHTML_' + iso.replace(/-/g, '_')] === 'function') {
+      REPORTS.day[iso] = true;
+    }
+  }
+  // Point currentKey at the most recent available report
+  const latest = Object.keys(REPORTS.day).sort().reverse()[0];
+  if (latest) currentKey = latest;
+})();
 
 render();
