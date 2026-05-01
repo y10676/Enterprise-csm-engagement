@@ -290,7 +290,9 @@ function monthSummaryHTML() {
       <div class="health-bar-row"><div class="health-bar-label">🟢 Healthy</div><div class="health-bar-track"><div class="health-bar-fill hf-green" style="width:${healthPct}%"></div></div><div class="health-bar-count">${healthyPulses}</div></div>
       <div class="health-bar-row"><div class="health-bar-label">🟡 Concerning</div><div class="health-bar-track"><div class="health-bar-fill hf-amber" style="width:${concerningPct}%"></div></div><div class="health-bar-count">${concerningPulses}</div></div>
       <div class="health-bar-row"><div class="health-bar-label">🔴 Poor</div><div class="health-bar-track"><div class="health-bar-fill hf-red" style="width:0%"></div></div><div class="health-bar-count">0</div></div>
-    </div></div>`;
+    </div>
+    ${(()=>{ const arrFn = window['monthArrHTML_' + currentKey.replace('-','_')]; return arrFn ? arrFn() : ''; })()}
+    </div>`;
   }
 
   // ── Static fallback (months without dayData_* functions) ──────
@@ -495,6 +497,53 @@ function monthHealthHTML() {
     <div class="action-item ${doneActions.has(3)?'done':''}"><div class="action-checkbox ${doneActions.has(3)?'checked':''}" onclick="toggleAction(3)"></div><div class="action-body"><div class="action-title">Quadient — UTM/trackable links + review cut-offs before May Top Rated</div><div class="action-meta"><span class="urgency-badge urgency-high">HIGH</span>Divyam Dewan · Originated Apr 22 · Deadline: May Top Rated window</div></div></div>
     <div class="action-item"><div class="action-checkbox" onclick="this.classList.toggle('checked');this.closest('.action-item').classList.toggle('done')"></div><div class="action-body"><div class="action-title">Cisco — QBR prep action plan · address budget scrutiny and stakeholder changes</div><div class="action-meta"><span class="urgency-badge urgency-high">HIGH</span>Pam Huck · Originated Apr 20 · Prepare before next executive touchpoint</div></div></div>
     <div class="action-item"><div class="action-checkbox" onclick="this.classList.toggle('checked');this.closest('.action-item').classList.toggle('done')"></div><div class="action-body"><div class="action-title">eHouse Studio — outreach to account · no call logged despite Concerning pulse</div><div class="action-meta"><span class="urgency-badge urgency-med">MED</span>Atisha Waghela · Schedule discovery call this week</div></div></div>
+  </div>`;
+}
+
+// ═══════════════════════════════════════════════════════════════
+// APRIL 2026 — ARR BY PULSE SIGNAL
+// monthArrHTML_2026_04() is injected into the dynamic monthly
+// summary view by the monthArrHTML_* hook in monthSummaryHTML().
+// Itemized opp-level ARR drawn from Apr 21 pulse cards (the only
+// day with structured per-opp ARR amounts); all other April pulses
+// are tracked at account level.
+// ═══════════════════════════════════════════════════════════════
+function monthArrHTML_2026_04() {
+  return `<div class="health-bar-wrap">
+    <div class="health-bar-title">ARR Coverage by Pulse Signal — April 2026</div>
+    <div class="health-bar-row"><div class="health-bar-label">🟢 Healthy</div><div class="health-bar-track"><div class="health-bar-fill hf-green" style="width:70%"></div></div><div class="health-bar-count" style="width:50px">$576K*</div></div>
+    <div style="margin:4px 0 10px 24px;padding:8px 12px;background:#f0fdf4;border-left:3px solid #059669;border-radius:4px;font-size:11px;color:#374151;line-height:1.7">
+      <strong>Opp-level ARR (itemized)</strong><br>
+      • Intuit CVP x2 · <strong>$76,590</strong><br>
+      • Intuit Enterprise Suite · <strong>$50,000</strong><br>
+      • Intuit CVP x2 (Written) · <strong>$50,000</strong><br>
+      • Datadog TR Lead Accel · <strong>$78,800</strong><br>
+      • Quadient Marketing Leadership · <strong>$180,000</strong><br>
+      • Quadient IDL Co-sell · <strong>$120,000</strong><br>
+      • Quadient Germany IDL · <strong>$10,000</strong><br>
+      • Quadient DACH IDL · <strong>$10,000</strong><br>
+      <em style="color:#9ca3af">Subtotal: $575,390</em><br><br>
+      <strong>Account-level ARR (pulses without opp-level $)</strong><br>
+      • Microsoft · Workday · ServiceNow · Equinix · Epicor (x3) · SAP Inc<br>
+      • HCL SW · DXC Technology · Zendesk · Salesforce ASEAN · Lumen Technologies<br>
+      • Intuit (handover) · Lenovo · Elastic · Cloudflare · BMC Software (x2)<br>
+      • NTT Data · Infor · TD Synnex · Siemens AG · Red Hat · Accenture<br>
+      • Veeam · Insight Direct · FactSet · Check Point · zScaler · Cvent<br>
+      • OpenAI · Autodesk · Digital Realty · Palo Alto Networks · Apple · Intel
+    </div>
+    <div class="health-bar-row"><div class="health-bar-label">🟡 Concerning</div><div class="health-bar-track"><div class="health-bar-fill hf-amber" style="width:30%"></div></div><div class="health-bar-count" style="width:50px">$250K*</div></div>
+    <div style="margin:4px 0 10px 24px;padding:8px 12px;background:#fffbeb;border-left:3px solid #d97706;border-radius:4px;font-size:11px;color:#374151;line-height:1.7">
+      • Datadog Cloud Dynamics + Universe 150 · <strong>$250,000</strong><br>
+      <span style="color:#9ca3af">Data trust concerns. SE follow-up required.</span><br><br>
+      • Cisco (CVP/Media + Splunk/IDL) — budget risk · renewal May 15<br>
+      • TD Synnex — poor health post Dec 2025 RFP loss · IBM agent re-engagement<br>
+      • NetApp — no exec sponsor confirmed · spend model accuracy disputes<br>
+      • Korcomptenz — HubSpot connector; first documented call Apr 2026<br>
+      • eHouse Studio — no call logged; Mitch Gilroy repeatedly declining<br>
+      • Deloitte — vendor consolidation push; direct CSM re-engagement needed<br>
+      <span style="color:#9ca3af;font-size:10px">Account-level ARR for Cisco, TD Synnex, NetApp, Korcomptenz, eHouse, Deloitte not itemized here.</span>
+    </div>
+    <div style="margin-top:8px;font-size:10px;color:#9ca3af;font-style:italic">* Bar widths reflect the $826K in itemized opp-level ARR (8 healthy opps, 1 concerning opp). Account-level pulses cover an additional ~35 accounts whose ARR is tracked in Vitally but not broken out here.</div>
   </div>`;
 }
 
