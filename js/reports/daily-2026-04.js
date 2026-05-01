@@ -529,6 +529,27 @@ function dayActionsHTML_2026_04_29() {
 // APR 30 — Thursday Apr 30, 2026
 // ═══════════════════════════════════════════════════════════════
 
+function dayData_2026_04_30() {
+  return {
+    calls: [
+      { ts: 'Apr 30 · 6:30 AM',  csm: 'atisha', account: 'Equinix',           note: 'APAC competitive intel request',             mins: 30, health: 'Healthy' },
+      { ts: 'Apr 30 · 2:00 PM',  csm: 'nick',   account: 'SAP Inc',            note: 'Partner program · Jake Eisbart new role',    mins: 30, health: 'Healthy' },
+      { ts: 'Apr 30 · 4:00 PM',  csm: 'varun',  account: 'ServiceNow',         note: 'TAM model · May 27 data deadline',           mins: 30, health: 'Healthy' },
+      { ts: 'Apr 30 · 4:30 PM',  csm: 'pam',    account: 'Epicor',             note: '2 intent SQLs · Insights conf prep',         mins: 30, health: 'Healthy' },
+      { ts: 'Apr 30 · 5:00 PM',  csm: 'riley',  account: 'Red Hat',            note: 'Cross-coverage',                             mins: 30, health: 'Healthy', xcov: 'nick' },
+      { ts: 'Apr 30 · 5:30 PM',  csm: 'rani',   account: 'Workday',            note: 'Databricks delivery · MCP agentic workflow', mins: 30, health: 'Healthy' },
+      { ts: 'Apr 30 · 6:30 PM',  csm: 'riley',  account: 'SAP SuccessFactors', note: 'Cross-coverage',                             mins: 30, health: 'Healthy', xcov: 'nick' },
+    ],
+    pulses: [
+      { csm: 'atisha', account: 'Equinix',    health: 'Healthy', note: 'APAC competitive intel request' },
+      { csm: 'nick',   account: 'SAP Inc',    health: 'Healthy', note: 'Partner program' },
+      { csm: 'varun',  account: 'ServiceNow', health: 'Healthy', note: 'TAM model · May 27 data deadline' },
+      { csm: 'pam',    account: 'Epicor',     health: 'Healthy', note: '2 intent SQLs' },
+      { csm: 'rani',   account: 'Workday',    health: 'Healthy', note: 'MCP agentic workflow' },
+    ],
+  };
+}
+
 function dayMeta_2026_04_30() {
   return {
     pills: [['dot-teal','7 Calls'],['dot-purple','5 Vitally Notes'],['dot-grey','2 Pending Transcripts']],
@@ -599,3 +620,271 @@ function dayActionsHTML_2026_04_30() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none"><div class="empty-icon">&#128269;</div>No action items match these filters.</div>`;
 }
+
+// ═══════════════════════════════════════════════════════════════
+// STRUCTURED dayData_* BACKFILL — APR 19–29
+// These feed getMonthData() for dynamic monthly aggregation.
+// ═══════════════════════════════════════════════════════════════
+
+function dayData_2026_04_19() {
+  return { calls: [], pulses: [] };
+}
+
+function dayData_2026_04_20() {
+  return {
+    calls: [
+      { ts: 'Apr 20 · 8:00 AM',  csm: 'pam',  account: 'Cisco',     note: 'TrustRadius Sync',        mins: 30, health: 'Concerning' },
+      { ts: 'Apr 20 · 1:00 PM',  csm: 'pam',  account: 'Microsoft', note: 'GTM/Marketplace',         mins: 30, health: 'Healthy' },
+      { ts: 'Apr 20 · 1:30 PM',  csm: 'rani', account: 'Workday',   note: 'Project Phoenix',         mins: 60, health: 'Healthy' },
+    ],
+    pulses: [
+      { csm: 'pam',    account: 'Cisco',        health: 'Concerning', note: 'No committed Q4 budget; renewal May 15' },
+      { csm: 'rani',   account: 'Workday',       health: 'Healthy',    note: 'Strong MCP expansion signals' },
+      { csm: 'pam',    account: 'Microsoft',     health: 'Healthy',    note: 'Azure marketplace partnership in discussion' },
+      { csm: 'atisha', account: 'eHouse Studio', health: 'Concerning', note: 'Mitch Gilroy repeatedly declines calls; churn risk' },
+    ],
+  };
+}
+
+function dayData_2026_04_21() {
+  return {
+    calls: [
+      { ts: 'Apr 21 · 8:30 AM',  csm: 'riley',  account: 'Intuit Mailchimp',  note: 'Champion re-engaged · GEO early access',  mins: 30, health: 'Healthy' },
+      { ts: 'Apr 21 · 8:30 AM',  csm: 'divyam', account: 'Thomson Reuters',   note: 'Churn + Intent deep-dive',                mins: 30, health: 'Healthy' },
+      { ts: 'Apr 21 · 11:00 AM', csm: 'varun',  account: 'Datadog',           note: 'Cloud Dynamics · data trust concern',     mins: 45, health: 'Concerning' },
+      { ts: 'Apr 21 · 12:30 PM', csm: 'varun',  account: 'Datadog',           note: 'TR / ICP refinement · IDL expansion',     mins: 30, health: 'Healthy' },
+      { ts: 'Apr 21 · 11:00 AM', csm: 'divyam', account: 'Quadient Software', note: 'Review campaign · May Top Rated',         mins: 30, health: 'Healthy' },
+    ],
+    pulses: [
+      { csm: 'riley',  account: 'Intuit Mailchimp',  health: 'Healthy',    note: 'Bianca Gause re-engaged; GEO dashboard early access' },
+      { csm: 'riley',  account: 'Intuit Mailchimp',  health: 'Healthy',    note: 'Category Intent Data aligned with demand gen plans' },
+      { csm: 'riley',  account: 'Intuit Mailchimp',  health: 'Healthy',    note: 'GEO early access resets prior adoption-gap risk' },
+      { csm: 'varun',  account: 'Datadog',           health: 'Concerning', note: 'Reps pulling back SMB usage; data trust unresolved' },
+      { csm: 'varun',  account: 'Datadog',           health: 'Healthy',    note: 'Constructive ICP refinement; active IDL expansion' },
+      { csm: 'divyam', account: 'Quadient Software', health: 'Healthy',    note: 'Review campaign on track for May Top Rated' },
+      { csm: 'divyam', account: 'Quadient Software', health: 'Healthy',    note: 'IDL program advancing — SFDC + webhook in progress' },
+      { csm: 'divyam', account: 'Quadient Software', health: 'Healthy',    note: 'Ashlin coordinating review cadence for Top Rated' },
+      { csm: 'divyam', account: 'Quadient Software', health: 'Healthy',    note: 'DACH IDL onboarding — 70/30 targeting split finalizing' },
+    ],
+  };
+}
+
+function dayData_2026_04_22() {
+  return {
+    calls: [
+      { ts: 'Apr 22 · 2:30 AM',  csm: 'nick',  account: 'HCL SW',            note: 'MCP + Clay + LLM retention strategy',        mins: 45, health: 'Healthy' },
+      { ts: 'Apr 22 · 4:30 AM',  csm: 'varun', account: 'DXC Technology',    note: 'Intent data integration · AI agent',         mins: 30, health: 'Healthy' },
+      { ts: 'Apr 22 · 7:00 AM',  csm: 'rani',  account: 'Lenovo',            note: 'RGIP Platform overview · new stakeholder',   mins: 25, health: 'Healthy' },
+      { ts: 'Apr 22 · 8:00 AM',  csm: 'rani',  account: 'Elastic',           note: 'TAM/SAM alignment · category taxonomy',      mins: 30, health: 'Healthy' },
+      { ts: 'Apr 22 · 9:00 AM',  csm: 'rani',  account: 'Cloudflare',        note: 'May onsite prep · scoring model gaps',       mins: 30, health: 'Healthy' },
+      { ts: 'Apr 22 · 9:30 AM',  csm: 'varun', account: 'Zendesk',           note: 'TrustRadius CSM sync · Aug renewal planning', mins: 30, health: 'Healthy' },
+      { ts: 'Apr 22 · 11:00 AM', csm: 'pam',   account: 'Epicor Kinetic',    note: 'Product listings · Insights Nashville prep', mins: 30, health: 'Healthy' },
+      { ts: 'Apr 22 · 11:30 AM', csm: 'pam',   account: 'Epicor Eclipse',    note: 'Bundled campaign · P21 + lead gen API',      mins: 30, health: 'Healthy' },
+    ],
+    pulses: [
+      { csm: 'nick',  account: 'HCL SW',        health: 'Healthy', note: 'MCP + Clay + LLM stack; ZoomInfo data quality Q' },
+      { csm: 'varun', account: 'DXC Technology', health: 'Healthy', note: 'Buying intent into AI agent; AWS Marketplace path emerging' },
+      { csm: 'rani',  account: 'Lenovo',         health: 'Healthy', note: 'New stakeholder Kristen onboarded; follow-up booked' },
+      { csm: 'rani',  account: 'Elastic',        health: 'Healthy', note: 'IDC category bridge to HG taxonomy for TAM/SAM' },
+      { csm: 'rani',  account: 'Cloudflare',     health: 'Healthy', note: 'May onsite confirmed; APAC/Japan hierarchy gaps identified' },
+      { csm: 'varun', account: 'Zendesk',        health: 'Healthy', note: '6 April reviews added; Top Rated secured; Aug renewal planning' },
+      { csm: 'pam',   account: 'Epicor Kinetic', health: 'Healthy', note: 'Content refresh for Insights Nashville; booth logistics confirmed' },
+      { csm: 'pam',   account: 'Epicor Eclipse', health: 'Healthy', note: 'Bundled P21 + lead gen API scoping; meeting rescheduled' },
+    ],
+  };
+}
+
+function dayData_2026_04_23() {
+  return {
+    calls: [
+      { ts: 'Apr 23 · 1:00 PM',  csm: 'andy',   account: 'Colt Technology',    note: 'Bombora intent contract finalized',            mins: 30, health: 'Healthy' },
+      { ts: 'Apr 23 · 1:45 PM',  csm: 'riley',  account: 'BMC Software',       note: 'TrustRadius EBR deck review',                 mins: 15, health: 'Healthy' },
+      { ts: 'Apr 23 · 2:00 PM',  csm: 'varun',  account: 'DXC Technology',     note: 'Quarterly review · AWS QuickSight alignment', mins: 30, health: 'Concerning' },
+      { ts: 'Apr 23 · 2:00 PM',  csm: 'nick',   account: 'NTT Data',           note: 'POC discussion',                              mins: 30, health: 'Healthy' },
+      { ts: 'Apr 23 · 3:00 PM',  csm: 'rani',   account: 'Cloudflare',         note: 'Data hierarchy alignment · May NYC onsite',   mins: 30, health: 'Healthy' },
+      { ts: 'Apr 23 · 3:00 PM',  csm: 'atisha', account: 'Strada',             note: 'Post-renewal alignment',                     mins: 30, health: 'Healthy' },
+      { ts: 'Apr 23 · 3:00 PM',  csm: 'nick',   account: 'Check Point',        note: 'Platform onboarding',                        mins: 60, health: 'Healthy' },
+      { ts: 'Apr 23 · 4:00 PM',  csm: 'divyam', account: 'Dynatrace',          note: 'Datafeed upsell · new logo propensity',       mins: 30, health: 'Healthy' },
+      { ts: 'Apr 23 · 5:00 PM',  csm: 'varun',  account: 'Autodesk',           note: 'Whitespace file delivery',                   mins: 30, health: 'Healthy' },
+      { ts: 'Apr 23 · 5:00 PM',  csm: 'pam',    account: 'Microsoft',          note: 'Bi-weekly sync',                             mins: 60, health: 'Healthy' },
+      { ts: 'Apr 23 · 6:00 PM',  csm: 'atisha', account: 'TD Synnex',          note: 'Event planning & intent review · AM sync',   mins: 15, health: 'Concerning' },
+      { ts: 'Apr 23 · 7:00 PM',  csm: 'pam',    account: 'Cisco',              note: 'Market share intelligence',                  mins: 30, health: 'Healthy' },
+      { ts: 'Apr 23 · 8:30 PM',  csm: 'atisha', account: 'Palo Alto Networks', note: 'Chronosphere renewal alignment',             mins: 30, health: 'Healthy' },
+    ],
+    pulses: [],
+  };
+}
+
+function dayData_2026_04_24() {
+  return {
+    calls: [
+      { ts: 'Apr 24 · 6:30 AM',  csm: 'atisha', account: 'Salesforce ASEAN',   note: 'Credit & export resolution',           mins: 30, health: 'Healthy' },
+      { ts: 'Apr 24 · 3:30 PM',  csm: 'nick',   account: 'Intuit',             note: 'CSM handover Leo → Nick',              mins: 30, health: 'Healthy', xcov: 'atisha' },
+      { ts: 'Apr 24 · 4:00 PM',  csm: 'divyam', account: 'Lumen Technologies', note: 'Business review walkthrough',          mins: 30, health: 'Healthy' },
+      { ts: 'Apr 24 · 5:30 PM',  csm: 'atisha', account: 'Palo Alto Networks', note: 'FY26 strategic alignment',             mins: 30, health: 'Healthy' },
+      { ts: 'Apr 24 · 8:30 PM',  csm: 'atisha', account: 'Apple',              note: 'Customer sync',                        mins: 30, health: 'Healthy' },
+    ],
+    pulses: [
+      { csm: 'atisha', account: 'Salesforce ASEAN',   health: 'Healthy', note: 'Credit consumption resolved; ASEAN platform access confirmed' },
+      { csm: 'divyam', account: 'Lumen Technologies', health: 'Healthy', note: 'Business review completed; firmographics + spend walkthrough' },
+      { csm: 'nick',   account: 'Intuit',             health: 'Healthy', note: 'Handover call complete — Nick introduced as incoming CSM' },
+    ],
+  };
+}
+
+function dayData_2026_04_27() {
+  return {
+    calls: [
+      { ts: 'Apr 27 · 1:00 PM',  csm: 'nick',   account: 'Infor',        note: 'Data ingestion session',           mins: 30, health: 'Healthy' },
+      { ts: 'Apr 27 · 1:00 PM',  csm: 'atisha', account: 'TD Synnex',    note: 'Lisa & HGI strategy sync',         mins: 30, health: 'Healthy' },
+      { ts: 'Apr 27 · 3:00 PM',  csm: 'riley',  account: 'BMC Software', note: 'TrustRadius EBR walkthrough',      mins: 60, health: 'Healthy' },
+      { ts: 'Apr 27 · 4:00 PM',  csm: 'nick',   account: 'NTT Data',     note: 'Monthly session',                  mins: 30, health: 'Healthy' },
+      { ts: 'Apr 27 · 4:30 PM',  csm: 'varun',  account: 'BMC Software', note: 'HG Insights FY27 plan',            mins: 30, health: 'Healthy' },
+      { ts: 'Apr 27 · 5:30 PM',  csm: 'riley',  account: 'Intuit',       note: 'TrustRadius sync',                 mins: 30, health: 'Healthy' },
+      { ts: 'Apr 27 · 8:00 PM',  csm: 'rani',   account: 'NetApp',       note: 'HG Insights Connect',              mins: 30, health: 'Healthy' },
+    ],
+    pulses: [],
+  };
+}
+
+function dayData_2026_04_28() {
+  return {
+    calls: [
+      { ts: 'Apr 28 · 7:30 AM',  csm: 'pam',    account: 'Cisco',       note: 'CVP Media renewal · May 15 deadline',  mins: 30, health: 'Concerning' },
+      { ts: 'Apr 28 · 7:30 AM',  csm: 'nick',   account: 'Siemens AG',  note: 'Time series execution · MCP expansion', mins: 30, health: 'Healthy' },
+      { ts: 'Apr 28 · 8:30 AM',  csm: 'nick',   account: 'Korcomptenz', note: 'HubSpot connector & scoring setup',     mins: 30, health: 'Concerning' },
+      { ts: 'Apr 28 · 9:30 AM',  csm: 'rani',   account: 'NetApp',      note: 'HG Insights sync · exec sponsor TBD',  mins: 30, health: 'Concerning' },
+      { ts: 'Apr 28 · 10:00 AM', csm: 'nick',   account: 'Red Hat',     note: 'Spend roll-ups · V2 migration complete', mins: 45, health: 'Healthy' },
+      { ts: 'Apr 28 · 12:30 PM', csm: 'pam',    account: 'Cisco',       note: 'Splunk/IDL renewal · budget risk',      mins: 30, health: 'Concerning' },
+      { ts: 'Apr 28 · 1:30 PM',  csm: 'atisha', account: 'TD Synnex',   note: 'HGI strategy · IBM agent re-engage',   mins: 30, health: 'Concerning' },
+    ],
+    pulses: [
+      { csm: 'pam',    account: 'Cisco',       health: 'Concerning', note: 'CVP renewal May 15; Cisco AI Board approval required' },
+      { csm: 'pam',    account: 'Cisco',       health: 'Concerning', note: 'Splunk/IDL quarterly budget risk; no committed budget' },
+      { csm: 'rani',   account: 'NetApp',      health: 'Concerning', note: 'No confirmed exec sponsor; spend model disputes unresolved' },
+      { csm: 'nick',   account: 'Red Hat',     health: 'Healthy',    note: 'V2 migration complete; IBM renewal PO pending' },
+      { csm: 'nick',   account: 'Siemens AG',  health: 'Healthy',    note: 'Time series session; MCP/Agent $50K expansion opp active' },
+      { csm: 'nick',   account: 'Korcomptenz', health: 'Concerning', note: 'HubSpot connector setup; first documented Apr 2026 call' },
+      { csm: 'atisha', account: 'TD Synnex',   health: 'Concerning', note: 'Poor health post Dec 2025 RFP loss; IBM agent re-engagement' },
+    ],
+  };
+}
+
+function dayData_2026_04_29() {
+  return {
+    calls: [
+      { ts: 'Apr 29 · 7:05 AM',  csm: 'atisha', account: 'Intel',           note: 'Intel-side only · no HG speaker',         mins: 25, health: 'Healthy' },
+      { ts: 'Apr 29 · 9:00 AM',  csm: 'nick',   account: 'Accenture',       note: 'Regular cadence maintained',              mins: 30, health: 'Healthy' },
+      { ts: 'Apr 29 · 12:00 PM', csm: 'nick',   account: 'Veeam',           note: 'Active engagement; product value',        mins: 30, health: 'Healthy' },
+      { ts: 'Apr 29 · 12:30 PM', csm: 'atisha', account: 'Insight Direct',  note: 'RGIF pricing ~$40K · cross-cov Augie',    mins: 15, health: 'Healthy' },
+      { ts: 'Apr 29 · 2:00 PM',  csm: 'andy',   account: 'FactSet',         note: 'Renewal engagement · cross-cov Anderson', mins: 30, health: 'Healthy' },
+      { ts: 'Apr 29 · 3:00 PM',  csm: 'atisha', account: 'Deloitte',        note: 'Vendor consolidation risk · cross-cov',   mins: 30, health: 'Concerning' },
+      { ts: 'Apr 29 · 4:00 PM',  csm: 'nick',   account: 'Check Point',     note: 'Renewal tracking in progress',            mins: 30, health: 'Healthy' },
+      { ts: 'Apr 29 · 4:30 PM',  csm: 'varun',  account: 'zScaler',         note: 'Renewal tracking; active usage',          mins: 30, health: 'Healthy' },
+      { ts: 'Apr 29 · 6:00 PM',  csm: 'andy',   account: 'Cvent',           note: '30-day extension granted · cross-cov',    mins: 15, health: 'Healthy' },
+      { ts: 'Apr 29 · 6:00 PM',  csm: 'divyam', account: 'OpenAI',          note: 'Active account engagement',               mins: 30, health: 'Healthy' },
+      { ts: 'Apr 29 · 7:00 PM',  csm: 'varun',  account: 'Autodesk',        note: 'Account health stable; product engagement', mins: 30, health: 'Healthy' },
+      { ts: 'Apr 29 · 7:30 PM',  csm: 'atisha', account: 'Digital Realty',  note: 'Direct CSM engagement maintained',        mins: 30, health: 'Healthy' },
+    ],
+    pulses: [
+      { csm: 'nick',   account: 'Accenture',     health: 'Healthy',    note: 'Regular cadence; product engagement active' },
+      { csm: 'nick',   account: 'Check Point',   health: 'Healthy',    note: 'Ongoing account management; renewal tracking' },
+      { csm: 'nick',   account: 'Veeam',         health: 'Healthy',    note: 'Active engagement; product value discussion' },
+      { csm: 'varun',  account: 'Autodesk',      health: 'Healthy',    note: 'Account health stable; product engagement ongoing' },
+      { csm: 'varun',  account: 'zScaler',       health: 'Healthy',    note: 'Renewal tracking; active usage discussion' },
+      { csm: 'atisha', account: 'Digital Realty', health: 'Healthy',   note: 'Direct CSM engagement; account health maintained' },
+      { csm: 'atisha', account: 'Deloitte',      health: 'Concerning', note: 'Vendor consolidation push; renewal outcome uncertain' },
+      { csm: 'atisha', account: 'Insight Direct', health: 'Healthy',   note: '~$40K RGIF pricing negotiation; Atisha to follow up' },
+      { csm: 'atisha', account: 'Intel',         health: 'Healthy',    note: 'Intel-side participants confirmed; pulse from recording' },
+      { csm: 'divyam', account: 'OpenAI',        health: 'Healthy',    note: 'Active account engagement; product value ongoing' },
+      { csm: 'andy',   account: 'Cvent',         health: 'Healthy',    note: '30-day extension granted; renewal decision pending' },
+      { csm: 'andy',   account: 'FactSet',       health: 'Healthy',    note: 'AE-covered renewal engagement; CSM follow-up needed' },
+    ],
+  };
+}
+
+// ═══════════════════════════════════════════════════════════════
+// dayMeta_* FOR APR 19–29
+// Required for getDayData() auto-discovery (needs metaFn + ovFn)
+// ═══════════════════════════════════════════════════════════════
+
+function dayMeta_2026_04_19() {
+  return {
+    pills: [['dot-grey','0 Calls'],['dot-grey','Weekend']],
+    tabs:  ['Overview','Calls (0)','Notes (0)','Action Items (0)'],
+  };
+}
+function dayMeta_2026_04_20() {
+  return {
+    pills: [['dot-teal','3 Calls'],['dot-purple','4 Pulses'],['dot-red','1 At Risk']],
+    tabs:  ['Overview','Calls (3)','Notes (4)','Action Items (3)'],
+  };
+}
+function dayMeta_2026_04_21() {
+  return {
+    pills: [['dot-teal','5 Calls'],['dot-purple','9 Pulses'],['dot-yellow','1 Concerning']],
+    tabs:  ['Overview','Calls (5)','Notes (9)','Action Items (4)'],
+  };
+}
+function dayMeta_2026_04_22() {
+  return {
+    pills: [['dot-teal','8 Calls'],['dot-purple','8 Pulses']],
+    tabs:  ['Overview','Calls (8)','Notes (8)','Action Items (4)'],
+  };
+}
+function dayMeta_2026_04_23() {
+  return {
+    pills: [['dot-teal','13 Calls'],['dot-grey','0 Pulses']],
+    tabs:  ['Overview','Calls (13)','Notes (0)','Action Items (4)'],
+  };
+}
+function dayMeta_2026_04_24() {
+  return {
+    pills: [['dot-teal','5 Calls'],['dot-purple','3 Pulses']],
+    tabs:  ['Overview','Calls (5)','Notes (3)','Action Items (1)'],
+  };
+}
+function dayMeta_2026_04_27() {
+  return {
+    pills: [['dot-teal','7 Calls'],['dot-grey','0 Pulses']],
+    tabs:  ['Overview','Calls (7)','Notes (0)','Action Items (2)'],
+  };
+}
+function dayMeta_2026_04_28() {
+  return {
+    pills: [['dot-teal','7 Calls'],['dot-purple','7 Pulses'],['dot-red','2 Critical']],
+    tabs:  ['Overview','Calls (7)','Notes (7)','Action Items (3)'],
+  };
+}
+function dayMeta_2026_04_29() {
+  return {
+    pills: [['dot-teal','12 Calls'],['dot-purple','12 Pulses'],['dot-red','1 Critical']],
+    tabs:  ['Overview','Calls (12)','Notes (12)','Action Items (4)'],
+  };
+}
+
+// ═══════════════════════════════════════════════════════════════
+// WRAPPER FUNCTIONS — APR 19–22 (old format → new naming)
+// Required for auto-detection by core.js IIFE (scans for
+// dayOverviewHTML_YYYY_MM_DD pattern over last 180 days)
+// ═══════════════════════════════════════════════════════════════
+
+function dayOverviewHTML_2026_04_19() { return dayOverviewHTML_Apr20(); }
+function dayCallsHTML_2026_04_19()    { return dayCallsHTML_Apr20(); }
+function dayPulsesHTML_2026_04_19()   { return dayPulsesHTML_Apr20(); }
+function dayActionsHTML_2026_04_19()  { return dayActionsHTML_Apr20(); }
+
+function dayOverviewHTML_2026_04_20() { return dayOverviewHTML_Apr21(); }
+function dayCallsHTML_2026_04_20()    { return dayCallsHTML_Apr21(); }
+function dayPulsesHTML_2026_04_20()   { return dayPulsesHTML_Apr21(); }
+function dayActionsHTML_2026_04_20()  { return dayActionsHTML_Apr21(); }
+
+function dayOverviewHTML_2026_04_21() { return dayOverviewHTML(); }
+function dayCallsHTML_2026_04_21()    { return dayCallsHTML(); }
+function dayPulsesHTML_2026_04_21()   { return dayPulsesHTML(); }
+function dayActionsHTML_2026_04_21()  { return dayActionsHTML(); }
+
+function dayOverviewHTML_2026_04_22() { return dayOverviewHTML_Apr23(); }
+function dayCallsHTML_2026_04_22()    { return dayCallsHTML_Apr23(); }
+function dayPulsesHTML_2026_04_22()   { return dayPulsesHTML_Apr23(); }
+function dayActionsHTML_2026_04_22()  { return dayActionsHTML_Apr23(); }
