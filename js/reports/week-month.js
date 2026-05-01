@@ -33,14 +33,14 @@ function weekSummaryHTML() {
     <table class="hm-table">
       <thead><tr><th class="row-lbl">CSM</th><th>Mon Apr 20</th><th>Tue Apr 21</th><th>Wed Apr 22</th><th>Thu Apr 23</th><th>Fri Apr 24</th><th>Sat Apr 25</th><th>Sun Apr 26</th></tr></thead>
       <tbody>
-        <tr class="hm-csm-row" data-csm="riley"><td style="font-size:12px;font-weight:600;color:#2563eb;cursor:pointer">Riley Rogers</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-1">1</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td></tr>
+        <tr class="hm-csm-row" data-csm="riley"><td style="font-size:12px;font-weight:600;color:#2563eb;cursor:pointer">Riley Rogers</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-1">1</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-1">1</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td></tr>
         <tr class="hm-csm-row" data-csm="varun"><td style="font-size:12px;font-weight:600;color:#2563eb;cursor:pointer">Varun Tiwari</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-2">2</td><td class="hm-cell hm-2">2</td><td class="hm-cell hm-2">2</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td></tr>
-        <tr class="hm-csm-row" data-csm="divyam"><td style="font-size:12px;font-weight:600;color:#2563eb;cursor:pointer">Divyam Dewan</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-2">2</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-1">1</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td></tr>
-        <tr class="hm-csm-row" data-csm="nick"><td style="font-size:12px;font-weight:600;color:#2563eb;cursor:pointer">Nick Johnson</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-1">1</td><td class="hm-cell hm-1">1</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td></tr>
+        <tr class="hm-csm-row" data-csm="divyam"><td style="font-size:12px;font-weight:600;color:#2563eb;cursor:pointer">Divyam Dewan</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-2">2</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-1">1</td><td class="hm-cell hm-1">1</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td></tr>
+        <tr class="hm-csm-row" data-csm="nick"><td style="font-size:12px;font-weight:600;color:#2563eb;cursor:pointer">Nick Johnson</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-1">1</td><td class="hm-cell hm-2">2</td><td class="hm-cell hm-1">1</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td></tr>
         <tr class="hm-csm-row" data-csm="rani"><td style="font-size:12px;font-weight:600;color:#2563eb;cursor:pointer">Rani Guy</td><td class="hm-cell hm-1">1</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-3">3</td><td class="hm-cell hm-1">1</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td></tr>
         <tr class="hm-csm-row" data-csm="pam"><td style="font-size:12px;font-weight:600;color:#2563eb;cursor:pointer">Pam Huck</td><td class="hm-cell hm-2">2</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-2">2</td><td class="hm-cell hm-2">2</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td></tr>
-        <tr class="hm-csm-row" data-csm="atisha"><td style="font-size:12px;font-weight:600;color:#2563eb;cursor:pointer">Atisha Waghela</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-1">1</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td></tr>
-        <tr class="hm-csm-row" data-csm="andy"><td style="font-size:12px;font-weight:600;color:#2563eb;cursor:pointer">Andy Lim</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td></tr>
+        <tr class="hm-csm-row" data-csm="atisha"><td style="font-size:12px;font-weight:600;color:#2563eb;cursor:pointer">Atisha Waghela</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-3">3</td><td class="hm-cell hm-3">3</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td></tr>
+        <tr class="hm-csm-row" data-csm="andy"><td style="font-size:12px;font-weight:600;color:#2563eb;cursor:pointer">Andy Lim</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-1">1</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td><td class="hm-cell hm-0">—</td></tr>
       </tbody>
     </table>
   </div>
@@ -55,11 +55,11 @@ function weekSummaryHTML() {
     </div>
     <div class="health-bar-wrap">
       <div class="health-bar-title">Calls by Day</div>
-      <div class="health-bar-row"><div class="health-bar-label">Mon Apr 20</div><div class="health-bar-track"><div class="health-bar-fill hf-green" style="width:12.5%"></div></div><div class="health-bar-count">3</div></div>
-      <div class="health-bar-row"><div class="health-bar-label">Tue Apr 21</div><div class="health-bar-track"><div class="health-bar-fill hf-green" style="width:20.8%"></div></div><div class="health-bar-count">5</div></div>
-      <div class="health-bar-row"><div class="health-bar-label">Wed Apr 22</div><div class="health-bar-track"><div class="health-bar-fill hf-green" style="width:33.3%"></div></div><div class="health-bar-count">8</div></div>
-      <div class="health-bar-row"><div class="health-bar-label">Thu Apr 23</div><div class="health-bar-track"><div class="health-bar-fill hf-green" style="width:33.3%"></div></div><div class="health-bar-count">8</div></div>
-      <div class="health-bar-row"><div class="health-bar-label">Fri Apr 24</div><div class="health-bar-track"><div class="health-bar-fill hf-green" style="width:0%"></div></div><div class="health-bar-count">0</div></div>
+      <div class="health-bar-row"><div class="health-bar-label">Mon Apr 20</div><div class="health-bar-track"><div class="health-bar-fill hf-green" style="width:23%"></div></div><div class="health-bar-count">3</div></div>
+      <div class="health-bar-row"><div class="health-bar-label">Tue Apr 21</div><div class="health-bar-track"><div class="health-bar-fill hf-green" style="width:38%"></div></div><div class="health-bar-count">5</div></div>
+      <div class="health-bar-row"><div class="health-bar-label">Wed Apr 22</div><div class="health-bar-track"><div class="health-bar-fill hf-green" style="width:62%"></div></div><div class="health-bar-count">8</div></div>
+      <div class="health-bar-row"><div class="health-bar-label">Thu Apr 23</div><div class="health-bar-track"><div class="health-bar-fill hf-green" style="width:100%"></div></div><div class="health-bar-count">13</div></div>
+      <div class="health-bar-row"><div class="health-bar-label">Fri Apr 24</div><div class="health-bar-track"><div class="health-bar-fill hf-green" style="width:38%"></div></div><div class="health-bar-count">5</div></div>
       <div class="health-bar-row"><div class="health-bar-label">Sat Apr 25</div><div class="health-bar-track"><div class="health-bar-fill hf-green" style="width:0%"></div></div><div class="health-bar-count">0</div></div>
       <div class="health-bar-row"><div class="health-bar-label">Sun Apr 26</div><div class="health-bar-track"><div class="health-bar-fill hf-green" style="width:0%"></div></div><div class="health-bar-count">0</div></div>
     </div>
@@ -69,7 +69,7 @@ function weekSummaryHTML() {
 function weekCSMHTML() {
   return `<div class="section-label">CSM Contributions — Week of Apr 20–26</div>
   <div class="csm-leaderboard">
-    <div class="csm-row csm-total" data-csm="all"><div class="avatar">Σ</div><div style="flex:1"><div class="csm-row-name">Total — All CSMs</div><div class="csm-row-sub">8 Enterprise CSMs · 120 accounts · $47.3M ARR</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">16</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">21</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n" style="color:#d97706">3</div><div class="l">Risks</div></div><div class="row-stat"><div class="n" style="color:#7c3aed">120</div><div class="l">Accounts</div></div><div class="row-stat"><div class="n" style="color:#2563eb">240</div><div class="l">Opps</div></div></div></div>
+    <div class="csm-row csm-total" data-csm="all"><div class="avatar">Σ</div><div style="flex:1"><div class="csm-row-name">Total — All CSMs</div><div class="csm-row-sub">8 Enterprise CSMs · 120 accounts · $47.3M ARR</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">34</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">21</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n" style="color:#d97706">3</div><div class="l">Risks</div></div><div class="row-stat"><div class="n" style="color:#7c3aed">120</div><div class="l">Accounts</div></div><div class="row-stat"><div class="n" style="color:#2563eb">240</div><div class="l">Opps</div></div></div></div>
     <div class="csm-row" data-csm="varun"><div class="avatar av-varun">VT</div><div style="flex:1"><div class="csm-row-name">Varun Tiwari</div><div class="csm-row-sub">Datadog · DXC · Zendesk — Cloud Dynamics Concerning; others Healthy</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">4</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">4</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n" style="color:#d97706">1</div><div class="l">Risks</div></div><div class="row-stat"><div class="n" style="color:#7c3aed">21</div><div class="l">Accounts</div></div><div class="row-stat"><div class="n" style="color:#2563eb">30</div><div class="l">Opps</div></div></div></div>
     <div class="csm-row" data-csm="pam"><div class="avatar av-grey">PH</div><div style="flex:1"><div class="csm-row-name">Pam Huck</div><div class="csm-row-sub">Cisco · Microsoft · Epicor Kinetic · Epicor Eclipse — Cisco Concerning</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">4</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">4</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n" style="color:#d97706">1</div><div class="l">Risks</div></div><div class="row-stat"><div class="n" style="color:#7c3aed">7</div><div class="l">Accounts</div></div><div class="row-stat"><div class="n" style="color:#2563eb">19</div><div class="l">Opps</div></div></div></div>
     <div class="csm-row" data-csm="rani"><div class="avatar av-grey">RG</div><div style="flex:1"><div class="csm-row-name">Rani Guy</div><div class="csm-row-sub">Workday · Lenovo · Elastic · Cloudflare — all Healthy</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">4</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">4</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n cgr">0</div><div class="l">Risks</div></div><div class="row-stat"><div class="n" style="color:#7c3aed">10</div><div class="l">Accounts</div></div><div class="row-stat"><div class="n" style="color:#2563eb">25</div><div class="l">Opps</div></div></div></div>
@@ -104,15 +104,26 @@ function weekCallsHTML() {
       <tr data-csm="varun" onclick="openModal('call-zendesk-apr23')"><td style="color:#9ca3af;font-size:12px">Wed Apr 22 · 1:30 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-varun">VT</div>Varun Tiwari</div></td><td><strong>Zendesk</strong> <span style="font-size:11px;color:#9ca3af">Health Check</span></td><td>30 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
       <tr data-csm="pam" onclick="openModal('call-epicor-kinetic-apr23')"><td style="color:#9ca3af;font-size:12px">Wed Apr 22 · 2:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">PH</div>Pam Huck</div></td><td><strong>Epicor</strong> <span style="font-size:11px;color:#9ca3af">Kinetic</span></td><td>45 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
       <tr data-csm="pam" onclick="openModal('call-epicor-eclipse-apr23')"><td style="color:#9ca3af;font-size:12px">Wed Apr 22 · 3:30 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">PH</div>Pam Huck</div></td><td><strong>Epicor</strong> <span style="font-size:11px;color:#9ca3af">Eclipse</span></td><td>30 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
-      <tr style="background:#f8f9fc;pointer-events:none"><td colspan="5" style="font-size:11px;font-weight:700;color:#6b7280;text-transform:uppercase;letter-spacing:0.6px;padding:8px 12px">THURSDAY APR 23 — 8 CALLS</td></tr>
+      <tr style="background:#f8f9fc;pointer-events:none"><td colspan="5" style="font-size:11px;font-weight:700;color:#6b7280;text-transform:uppercase;letter-spacing:0.6px;padding:8px 12px">THURSDAY APR 23 — 13 CALLS</td></tr>
+      <tr data-csm="andy" onclick="openModal('call-colt-apr23')"><td style="color:#9ca3af;font-size:12px">Thu Apr 23 · 1:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">AL</div>Andy Lim</div></td><td><strong>Colt Technology Services</strong> <span style="font-size:11px;color:#9ca3af">Bombora Intent Contract</span></td><td>30 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
+      <tr data-csm="riley" onclick="openModal('call-bmc-apr23')"><td style="color:#9ca3af;font-size:12px">Thu Apr 23 · 1:45 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-riley">RR</div>Riley Rogers</div></td><td><strong>BMC Software</strong> <span style="font-size:11px;color:#9ca3af">TrustRadius EBR Review</span></td><td>15 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
       <tr data-csm="varun" onclick="openModal('call-dxc-apr23')"><td style="color:#9ca3af;font-size:12px">Thu Apr 23 · 2:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-varun">VT</div>Varun Tiwari</div></td><td><strong>DXC Technology</strong> <span style="font-size:11px;color:#9ca3af">Gabriella &amp; HG Quarterly</span></td><td>30 min</td><td><span class="badge badge-concerning">🟡 Concerning</span></td></tr>
       <tr data-csm="nick" onclick="openModal('call-ntt-apr23')"><td style="color:#9ca3af;font-size:12px">Thu Apr 23 · 2:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">NJ</div>Nick Johnson</div></td><td><strong>NTT Data</strong> <span style="font-size:11px;color:#9ca3af">POC Discussion</span></td><td>30 min</td><td><span style="font-size:11px;color:#9ca3af">— No transcript</span></td></tr>
       <tr data-csm="rani" onclick="openModal('call-cf-apr23')"><td style="color:#9ca3af;font-size:12px">Thu Apr 23 · 3:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">RG</div>Rani Guy</div></td><td><strong>Cloudflare</strong> <span style="font-size:11px;color:#9ca3af">Connect</span></td><td>30 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
       <tr data-csm="atisha" onclick="openModal('call-strada-apr23')"><td style="color:#9ca3af;font-size:12px">Thu Apr 23 · 3:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">AW</div>Atisha Waghela</div></td><td><strong>Strada</strong> <span style="font-size:11px;color:#9ca3af">Alignment Call</span></td><td>30 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
+      <tr data-csm="nick" onclick="openModal('call-checkpoint-apr23')"><td style="color:#9ca3af;font-size:12px">Thu Apr 23 · 3:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">NJ</div>Nick Johnson</div></td><td><strong>Check Point Software</strong> <span style="font-size:11px;color:#9ca3af">Platform Onboarding</span></td><td>60 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
       <tr data-csm="divyam" onclick="openModal('call-dynatrace-apr23')"><td style="color:#9ca3af;font-size:12px">Thu Apr 23 · 4:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-divyam">DD</div>Divyam Dewan</div></td><td><strong>Dynatrace</strong> <span style="font-size:11px;color:#9ca3af">Datafeed Collaboration</span></td><td>30 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
       <tr data-csm="varun" onclick="openModal('call-autodesk-apr23')"><td style="color:#9ca3af;font-size:12px">Thu Apr 23 · 5:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-varun">VT</div>Varun Tiwari</div></td><td><strong>Autodesk</strong> <span style="font-size:11px;color:#9ca3af">Whitespace File</span></td><td>30 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
       <tr data-csm="pam" onclick="openModal('call-msft-apr23')"><td style="color:#9ca3af;font-size:12px">Thu Apr 23 · 5:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">PH</div>Pam Huck</div></td><td><strong>Microsoft</strong> <span style="font-size:11px;color:#9ca3af">Bi-Weekly</span></td><td>60 min</td><td><span style="font-size:11px;color:#9ca3af">— No transcript</span></td></tr>
+      <tr data-csm="atisha" onclick="openModal('call-tds-apr23')"><td style="color:#9ca3af;font-size:12px">Thu Apr 23 · 6:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">AW</div>Atisha Waghela <span style="font-size:10px;background:#fff7ed;color:#9a3412;border:1px solid #fed7aa;border-radius:3px;padding:1px 5px;margin-left:4px;">AM</span></div></td><td><strong>TD Synnex</strong> <span style="font-size:11px;color:#9ca3af">Event Planning &amp; Intent Review</span></td><td>15 min</td><td><span class="badge badge-concerning">🟡 Concerning</span></td></tr>
       <tr data-csm="pam" onclick="openModal('call-cisco-apr23')"><td style="color:#9ca3af;font-size:12px">Thu Apr 23 · 7:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">PH</div>Pam Huck</div></td><td><strong>Cisco</strong> <span style="font-size:11px;color:#9ca3af">Connect</span></td><td>30 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
+      <tr data-csm="atisha" onclick="openModal('call-palo-apr23')"><td style="color:#9ca3af;font-size:12px">Thu Apr 23 · 8:30 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">AW</div>Atisha Waghela</div></td><td><strong>Palo Alto Networks</strong> <span style="font-size:11px;color:#9ca3af">Chronosphere Renewal</span></td><td>30 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
+      <tr style="background:#f8f9fc;pointer-events:none"><td colspan="5" style="font-size:11px;font-weight:700;color:#6b7280;text-transform:uppercase;letter-spacing:0.6px;padding:8px 12px">FRIDAY APR 24 — 5 CALLS</td></tr>
+      <tr data-csm="atisha"><td style="color:#9ca3af;font-size:12px">Fri Apr 24 · 6:30 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">AW</div>Atisha Waghela</div></td><td><strong>Salesforce Inc. (ASEAN)</strong> <span style="font-size:11px;color:#9ca3af">Credit &amp; Export Resolution</span></td><td>30 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
+      <tr data-csm="nick"><td style="color:#9ca3af;font-size:12px">Fri Apr 24 · 3:30 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">NJ</div>Nick Johnson <span style="font-size:10px;background:#fff7ed;color:#9a3412;border:1px solid #fed7aa;border-radius:3px;padding:1px 5px;margin-left:4px;">Cross</span></div></td><td><strong>Intuit</strong> <span style="font-size:11px;color:#9ca3af">CSM Handover (Leo &rarr; Nick)</span></td><td>30 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
+      <tr data-csm="divyam"><td style="color:#9ca3af;font-size:12px">Fri Apr 24 · 4:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-divyam">DD</div>Divyam Dewan</div></td><td><strong>Lumen Technologies</strong> <span style="font-size:11px;color:#9ca3af">Business Review</span></td><td>30 min</td><td><span class="badge badge-healthy">🟢 Healthy</span></td></tr>
+      <tr data-csm="atisha"><td style="color:#9ca3af;font-size:12px">Fri Apr 24 · 5:30 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">AW</div>Atisha Waghela</div></td><td><strong>Palo Alto Networks</strong> <span style="font-size:11px;color:#9ca3af">FY26 Strategic Alignment</span></td><td>30 min</td><td><span class="badge badge-pending">&#9898; Pending</span></td></tr>
+      <tr data-csm="atisha"><td style="color:#9ca3af;font-size:12px">Fri Apr 24 · 8:30 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">AW</div>Atisha Waghela</div></td><td><strong>Apple Inc.</strong> <span style="font-size:11px;color:#9ca3af">Customer Sync</span></td><td>30 min</td><td><span class="badge badge-pending">&#9898; Pending</span></td></tr>
     </tbody>
   </table></div>`;
 }
@@ -151,16 +162,59 @@ function applyWeekCSMFilter() {
 
 
 // ═══════════════════════════════════════════════════════════════
-// MONTH VIEW — HTML functions
+// MONTH VIEW — Dynamic generators (aggregate from dayData_* functions)
+// If no dayData_* functions exist for the month, falls back to static HTML.
 // ═══════════════════════════════════════════════════════════════
 
+function _healthBadge(h) {
+  return h === 'Healthy'
+    ? '<span class="badge badge-healthy">&#128994; Healthy</span>'
+    : h === 'Concerning'
+    ? '<span class="badge badge-concerning">&#128993; Concerning</span>'
+    : `<span class="badge">${h}</span>`;
+}
+
 function monthCallsHTML() {
-  // April 2026 MTD — all 24 calls live in Week 17 (Mon–Thu)
-  return weekCallsHTML().replace('Week 17','April 2026 · Month-to-Date');
+  const md = getMonthData(currentKey);
+  if (!md.hasData) return weekCallsHTML().replace('Week 17', isoToDate(currentKey+'-01').toLocaleDateString('en-US',{month:'long',year:'numeric'})+' · Month-to-Date');
+  const rows = md.calls.map(c => {
+    const csm = CSM_DISPLAY[c.csm] || { name: c.csm, initials: '?', cls: 'av-grey' };
+    const xcov = c.xcov ? ` <span style="font-size:11px">(X-cov for ${(CSM_DISPLAY[c.xcov]||{name:c.xcov}).name.split(' ')[0]})</span>` : '';
+    return `<tr data-csm="${c.csm}" data-health="${c.health}">
+      <td style="color:#9ca3af;font-size:12px">${c.ts}</td>
+      <td><div class="csm-chip-inline"><div class="mini-av ${csm.cls}">${csm.initials}</div>${csm.name}${xcov}</div></td>
+      <td><strong>${c.account}</strong> <span style="font-size:11px;color:#9ca3af">${c.note}</span></td>
+      <td>${c.mins} min</td>
+      <td>${_healthBadge(c.health)}</td>
+    </tr>`;
+  }).join('');
+  return `<div class="table-card"><table>
+    <thead><tr><th>Time (PT)</th><th>CSM</th><th>Account</th><th>Duration</th><th>Signal</th></tr></thead>
+    <tbody>${rows}</tbody>
+  </table>
+  <div class="empty-state" id="calls-empty" style="display:none"><div class="empty-icon">&#128269;</div>No calls match these filters.</div>
+  </div>`;
 }
+
 function monthPulsesHTML() {
-  return weekPulsesHTML();
+  const md = getMonthData(currentKey);
+  if (!md.hasData) return weekPulsesHTML();
+  const cards = md.pulses.map(p => {
+    const csm = CSM_DISPLAY[p.csm] || { name: p.csm, initials: '?', cls: 'av-grey' };
+    const hClass = p.health === 'Healthy' ? 'pulse-healthy' : 'pulse-concerning';
+    return `<div class="pulse-card ${hClass}" data-csm="${p.csm}" data-health="${p.health}">
+      <div class="pulse-header">
+        <div class="csm-chip-inline"><div class="mini-av ${csm.cls}">${csm.initials}</div>${csm.name}</div>
+        ${_healthBadge(p.health)}
+      </div>
+      <div class="pulse-account"><strong>${p.account}</strong></div>
+      <div class="pulse-note">${p.note}</div>
+    </div>`;
+  }).join('');
+  return `<div class="pulse-grid">${cards}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none"><div class="empty-icon">&#128269;</div>No pulses match these filters.</div>`;
 }
+
 function applyMonthCallFilters() {
   document.querySelectorAll('.table-card tbody tr[data-csm]').forEach(r=>{
     const okCsm = (activeCsm==='all' || r.dataset.csm===activeCsm);
@@ -170,6 +224,76 @@ function applyMonthCallFilters() {
 }
 
 function monthSummaryHTML() {
+  const md = getMonthData(currentKey);
+  const monthLabel = isoToDate(currentKey+'-01').toLocaleDateString('en-US',{month:'long',year:'numeric'});
+
+  if (md.hasData) {
+    const healthyPulses    = md.pulses.filter(p => p.health === 'Healthy').length;
+    const concerningPulses = md.pulses.filter(p => p.health === 'Concerning').length;
+    const activeCsms       = new Set(md.calls.map(c => c.csm)).size;
+    const healthPct        = md.pulses.length ? Math.round(healthyPulses / md.pulses.length * 100) : 0;
+    const concerningPct    = md.pulses.length ? Math.round(concerningPulses / md.pulses.length * 100) : 0;
+
+    // Per-day, per-CSM call counts for heatmap
+    const dayCallMap = {};
+    md.calls.forEach(c => {
+      dayCallMap[c.date] = dayCallMap[c.date] || {};
+      dayCallMap[c.date][c.csm] = (dayCallMap[c.date][c.csm] || 0) + 1;
+    });
+    const days = [...md.days].sort();
+
+    const heatmapHeaders = days.map(d => {
+      const dt = isoToDate(d);
+      return `<th>${dt.toLocaleDateString('en-US',{month:'short',day:'numeric'})}</th>`;
+    }).join('');
+
+    const heatmapRows = CSM_ORDER.map(id => {
+      const csm = CSM_DISPLAY[id];
+      const cells = days.map(d => {
+        const n = (dayCallMap[d]||{})[id] || 0;
+        const cls = n === 0 ? 'hm-0' : n === 1 ? 'hm-1' : n <= 2 ? 'hm-2' : 'hm-3';
+        return `<td class="hm-cell ${cls}">${n || '—'}</td>`;
+      }).join('');
+      return `<tr class="hm-csm-row" data-csm="${id}"><td style="font-size:12px;font-weight:600;color:#2563eb;cursor:pointer">${csm.name}</td>${cells}</tr>`;
+    }).join('');
+
+    const totalRow = days.map(d => {
+      const t = Object.values(dayCallMap[d]||{}).reduce((a,b)=>a+b,0);
+      const cls = t === 0 ? 'hm-0' : t <= 3 ? 'hm-1' : t <= 6 ? 'hm-2' : 'hm-3';
+      return `<td class="hm-cell ${cls}">${t}</td>`;
+    }).join('');
+
+    // Optional editorial content from monthEditorial_YYYY_MM() if provided
+    const editFn = window['monthEditorial_' + currentKey.replace('-','_')];
+    const editorial = editFn ? editFn() : '';
+
+    return `
+    <div class="section-label">${monthLabel} · Summary</div>
+    <div class="summary-cards">
+      <div class="sum-card c-teal"   onclick="jumpToTab('mcalls','all','all')"><div class="sum-val">${md.calls.length}</div><div class="sum-lbl">Calls Logged</div><div class="sum-sub">${days.length} day${days.length!==1?'s':''} with data · ${activeCsms} CSMs</div></div>
+      <div class="sum-card c-green"  onclick="jumpToTab('mpulses','all','all')"><div class="sum-val">${md.pulses.length}</div><div class="sum-lbl">Pulse Notes</div><div class="sum-sub">${healthyPulses} Healthy · ${concerningPulses} Concerning</div></div>
+      <div class="sum-card c-purple" onclick="jumpToTab('mcsm','all','all')"><div class="sum-val">${activeCsms}</div><div class="sum-lbl">Active CSMs</div><div class="sum-sub">of 8 on the team</div></div>
+      ${concerningPulses > 0 ? `<div class="sum-card c-amber" onclick="jumpToTab('mpulses','all','Concerning')"><div class="sum-val">${concerningPulses}</div><div class="sum-lbl">Concerning Signals</div><div class="sum-sub">Require follow-up</div></div>` : ''}
+    </div>
+    ${editorial}
+    <div class="section-label">Daily Call Activity — ${monthLabel}</div>
+    <div class="heatmap-card"><table class="hm-table">
+      <thead><tr><th class="row-lbl">CSM</th>${heatmapHeaders}</tr></thead>
+      <tbody>
+        ${heatmapRows}
+        <tr style="background:#f8f9fc;font-weight:700"><td style="font-size:12px;font-weight:700">Day total</td>${totalRow}</tr>
+      </tbody>
+    </table></div>
+    <div class="section-label">Health Distribution</div>
+    <div class="health-dist"><div class="health-bar-wrap">
+      <div class="health-bar-title">Pulse Notes by Signal (${md.pulses.length} total)</div>
+      <div class="health-bar-row"><div class="health-bar-label">🟢 Healthy</div><div class="health-bar-track"><div class="health-bar-fill hf-green" style="width:${healthPct}%"></div></div><div class="health-bar-count">${healthyPulses}</div></div>
+      <div class="health-bar-row"><div class="health-bar-label">🟡 Concerning</div><div class="health-bar-track"><div class="health-bar-fill hf-amber" style="width:${concerningPct}%"></div></div><div class="health-bar-count">${concerningPulses}</div></div>
+      <div class="health-bar-row"><div class="health-bar-label">🔴 Poor</div><div class="health-bar-track"><div class="health-bar-fill hf-red" style="width:0%"></div></div><div class="health-bar-count">0</div></div>
+    </div></div>`;
+  }
+
+  // ── Static fallback (months without dayData_* functions) ──────
   return `
   <div class="section-label">April 2026 · Month-to-Date Summary</div>
   <div class="summary-cards">
@@ -250,6 +374,65 @@ function monthSummaryHTML() {
 }
 
 function monthCSMHTML() {
+  const md = getMonthData(currentKey);
+  const monthLabel = isoToDate(currentKey+'-01').toLocaleDateString('en-US',{month:'long',year:'numeric'});
+
+  if (md.hasData) {
+    // Tally per-CSM
+    const stats = {};
+    CSM_ORDER.forEach(id => { stats[id] = { calls: 0, mins: 0, pulses: 0 }; });
+    md.calls.forEach(c => {
+      stats[c.csm] = stats[c.csm] || { calls:0, mins:0, pulses:0 };
+      stats[c.csm].calls++;
+      stats[c.csm].mins += (c.mins||0);
+    });
+    md.pulses.forEach(p => {
+      stats[p.csm] = stats[p.csm] || { calls:0, mins:0, pulses:0 };
+      stats[p.csm].pulses++;
+    });
+
+    const totalCalls  = md.calls.length;
+    const totalPulses = md.pulses.length;
+
+    const sorted = [...CSM_ORDER].sort((a,b) => (stats[b]?.calls||0) - (stats[a]?.calls||0));
+
+    const totalRow = `<div class="csm-row csm-total" data-csm="all">
+      <div class="avatar">Σ</div>
+      <div style="flex:1"><div class="csm-row-name">Total — All CSMs</div>
+      <div class="csm-row-sub">8 Enterprise CSMs · 120 accounts · $47.3M ARR</div></div>
+      <div class="csm-row-stats">
+        <div class="row-stat"><div class="n ct">${totalCalls}</div><div class="l">Calls</div></div>
+        <div class="row-stat"><div class="n" style="color:#059669">${totalPulses}</div><div class="l">Pulses</div></div>
+        <div class="row-stat"><div class="n" style="color:#7c3aed">120</div><div class="l">Accounts</div></div>
+        <div class="row-stat"><div class="n" style="color:#2563eb">240</div><div class="l">Opps</div></div>
+      </div>
+    </div>`;
+
+    const csmRows = sorted.map(id => {
+      const csm = CSM_DISPLAY[id];
+      const s   = stats[id] || { calls:0, mins:0, pulses:0 };
+      const inactive = s.calls === 0 && s.pulses === 0;
+      const hrs = s.mins >= 60 ? `${Math.round(s.mins/60*10)/10}h` : `${s.mins}m`;
+      return `<div class="csm-row${inactive?' inactive':''}" data-csm="${id}">
+        <div class="avatar ${csm.cls}">${csm.initials}</div>
+        <div style="flex:1">
+          <div class="csm-row-name">${csm.name}</div>
+          <div class="csm-row-sub">${inactive ? 'No activity logged' : `${s.calls} call${s.calls!==1?'s':''} · ${s.pulses} pulse${s.pulses!==1?'s':''} · ${hrs}`}</div>
+        </div>
+        <div class="csm-row-stats">
+          <div class="row-stat"><div class="n ${s.calls>0?'ct':'cgr'}">${s.calls}</div><div class="l">Calls</div></div>
+          <div class="row-stat"><div class="n" style="color:${s.pulses>0?'#059669':'#9ca3af'}">${s.pulses}</div><div class="l">Pulses</div></div>
+          <div class="row-stat"><div class="n" style="color:#7c3aed">${csm.accounts}</div><div class="l">Accounts</div></div>
+          <div class="row-stat"><div class="n" style="color:#2563eb">${csm.opps}</div><div class="l">Opps</div></div>
+        </div>
+      </div>`;
+    }).join('');
+
+    return `<div class="section-label">CSM Engagement — ${monthLabel}</div>
+    <div class="csm-leaderboard">${totalRow}${csmRows}</div>`;
+  }
+
+  // ── Static fallback ────────────────────────────────────────────
   return `<div class="section-label">CSM Engagement — April 2026</div>
   <div class="csm-leaderboard">
     <div class="csm-row csm-total" data-csm="all"><div class="avatar">Σ</div><div style="flex:1"><div class="csm-row-name">Total — All CSMs</div><div class="csm-row-sub">8 Enterprise CSMs · 120 accounts · $47.3M ARR</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">24</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">21</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n" style="color:#d97706">3</div><div class="l">Risks</div></div><div class="row-stat"><div class="n" style="color:#7c3aed">120</div><div class="l">Accounts</div></div><div class="row-stat"><div class="n" style="color:#2563eb">240</div><div class="l">Opps</div></div></div></div>
@@ -259,12 +442,45 @@ function monthCSMHTML() {
     <div class="csm-row" data-csm="divyam"><div class="avatar av-divyam">DD</div><div style="flex:1"><div class="csm-row-name">Divyam Dewan <span style="font-size:11px;color:#0ea5a0;font-weight:600">Most Pulses</span></div><div class="csm-row-sub">Thomson Reuters · Quadient · Dynatrace — IDL + review campaigns + datafeed upsell</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">3</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">4</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n cgr">0</div><div class="l">Risks</div></div><div class="row-stat"><div class="n" style="color:#7c3aed">21</div><div class="l">Accounts</div></div><div class="row-stat"><div class="n" style="color:#2563eb">29</div><div class="l">Opps</div></div></div></div>
     <div class="csm-row" data-csm="riley"><div class="avatar av-riley">RR</div><div style="flex:1"><div class="csm-row-name">Riley Rogers <span style="font-size:11px;color:#059669;font-weight:600">Pulse Upgrades</span></div><div class="csm-row-sub">Intuit Mailchimp · 3 opps upgraded Concerning→Healthy · champion re-engaged</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">1</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">3</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n cgr">0</div><div class="l">Risks</div></div><div class="row-stat"><div class="n" style="color:#7c3aed">6</div><div class="l">Accounts</div></div><div class="row-stat"><div class="n" style="color:#2563eb">12</div><div class="l">Opps</div></div></div></div>
     <div class="csm-row" data-csm="nick"><div class="avatar av-grey">NJ</div><div style="flex:1"><div class="csm-row-name">Nick Johnson</div><div class="csm-row-sub">HCL Software · NTT Data — usage deep-dive + POC scoping · 27 accounts in portfolio</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">2</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">1</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n cgr">0</div><div class="l">Risks</div></div><div class="row-stat"><div class="n" style="color:#7c3aed">27</div><div class="l">Accounts</div></div><div class="row-stat"><div class="n" style="color:#2563eb">83</div><div class="l">Opps</div></div></div></div>
-    <div class="csm-row" data-csm="atisha"><div class="avatar av-grey">AW</div><div style="flex:1"><div class="csm-row-name">Atisha Waghela <span style="font-size:11px;color:#d97706;font-weight:600">Monitor</span></div><div class="csm-row-sub">Strada — Apr 23 alignment call · eHouse Studio still no call · pulse Concerning</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">1</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#d97706">1</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n" style="color:#d97706">1</div><div class="l">Risks</div></div><div class="row-stat"><div class="n" style="color:#7c3aed">18</div><div class="l">Accounts</div></div><div class="row-stat"><div class="n" style="color:#2563eb">24</div><div class="l">Opps</div></div></div></div>
+    <div class="csm-row" data-csm="atisha"><div class="avatar av-grey">AW</div><div style="flex:1"><div class="csm-row-name">Atisha Waghela <span style="font-size:11px;color:#d97706;font-weight:600">Active</span></div><div class="csm-row-sub">Strada · Palo Alto · TD Synnex · Salesforce ASEAN · Apple — 6 calls Apr 23–24; Palo Alto renewal pending May 3</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">6</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#d97706">1</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n" style="color:#d97706">1</div><div class="l">Risks</div></div><div class="row-stat"><div class="n" style="color:#7c3aed">18</div><div class="l">Accounts</div></div><div class="row-stat"><div class="n" style="color:#2563eb">24</div><div class="l">Opps</div></div></div></div>
     <div class="csm-row inactive" data-csm="andy"><div class="avatar av-grey">AL</div><div style="flex:1"><div class="csm-row-name">Andy Lim</div><div class="csm-row-sub">No activity logged in April</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n cgr">0</div><div class="l">Calls</div></div><div class="row-stat"><div class="n cgr">0</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n cgr">0</div><div class="l">Risks</div></div><div class="row-stat"><div class="n" style="color:#7c3aed">10</div><div class="l">Accounts</div></div><div class="row-stat"><div class="n" style="color:#2563eb">18</div><div class="l">Opps</div></div></div></div>
   </div>`;
 }
 
 function monthHealthHTML() {
+  const md = getMonthData(currentKey);
+  const monthLabel = isoToDate(currentKey+'-01').toLocaleDateString('en-US',{month:'long',year:'numeric'});
+
+  if (md.hasData) {
+    const healthy    = md.pulses.filter(p => p.health === 'Healthy');
+    const concerning = md.pulses.filter(p => p.health === 'Concerning');
+    const fmt = arr => arr.map(p => {
+      const csm = CSM_DISPLAY[p.csm] || { name: p.csm };
+      return `• <strong>${p.account}</strong> (${csm.name}) — ${p.note}`;
+    }).join('<br>') || '—';
+
+    // Optional editorial action items from monthEditorial_YYYY_MM()
+    const editFn = window['monthEditorial_' + currentKey.replace('-','_')];
+    const editorial = editFn ? editFn() : '';
+
+    return `<div class="section-label">Pulse Health Deep Dive — ${monthLabel}</div>
+    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:16px;margin-bottom:20px;">
+      <div style="font-size:13px;font-weight:600;margin-bottom:14px;">Pulse Notes This Month (${md.pulses.length})</div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px;">
+        <div style="padding:12px;background:#f0fdf4;border-radius:8px;border-left:3px solid #059669">
+          <div style="font-size:11px;font-weight:700;color:#059669;text-transform:uppercase;margin-bottom:4px">🟢 Healthy (${healthy.length})</div>
+          <div style="font-size:12px;color:#374151;line-height:1.6">${fmt(healthy)}</div>
+        </div>
+        ${concerning.length > 0 ? `<div style="padding:12px;background:#fffbeb;border-radius:8px;border-left:3px solid #d97706">
+          <div style="font-size:11px;font-weight:700;color:#d97706;text-transform:uppercase;margin-bottom:4px">🟡 Concerning (${concerning.length})</div>
+          <div style="font-size:12px;color:#374151;line-height:1.6">${fmt(concerning)}</div>
+        </div>` : ''}
+      </div>
+    </div>
+    ${editorial}`;
+  }
+
+  // ── Static fallback ────────────────────────────────────────────
   return `<div class="section-label">Pulse Health Deep Dive — April 2026</div>
   <div style="background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:16px;margin-bottom:20px;">
     <div style="font-size:13px;font-weight:600;margin-bottom:14px;">Pulse Notes Created This Month (21)</div>
