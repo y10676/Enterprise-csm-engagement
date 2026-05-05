@@ -85,6 +85,25 @@ function dayActionsHTML_2026_05_01() {
 
 // ─── MAY 4, 2026 ───────────────────────────────────────────────
 
+function dayData_2026_05_04() {
+  return {
+    calls: [
+      { ts: 'May 4 · 6:30 AM',  csm: 'atisha', account: 'TD Synnex',  note: 'Customer T831833V flagged 44K credits consumed vs 11K expected · Atisha escalating', mins: 30, health: 'Concerning' },
+      { ts: 'May 4 · 8:30 AM',  csm: 'divyam', account: 'Blackbaud',  note: 'Cadence call · usage and adoption check-in', mins: 30, health: 'Healthy' },
+      { ts: 'May 4 · 11:00 AM', csm: 'divyam', account: 'Quadient',   note: 'IDL renewal cadence · success plan progress', mins: 30, health: 'Healthy' },
+      { ts: 'May 4 · 11:30 AM', csm: 'divyam', account: 'OpenAI',     note: 'Cadence call · data usage and expansion discussion', mins: 30, health: 'Healthy' },
+      { ts: 'May 4 · 10:00 AM', csm: 'riley',  account: 'Red Hat',    note: 'TR IDL program session · Riley running TR IDL on Nick\'s account', mins: 30, health: 'Healthy', xcov: 'nick' },
+    ],
+    pulses: [
+      { csm: 'atisha', account: 'TD Synnex',  health: 'Concerning', note: 'Customer T831833V flagged unexpected credit consumption: 44K credits used vs 11K expected. Atisha escalating internally. Root cause investigation in progress.' },
+      { csm: 'divyam', account: 'Blackbaud',  health: 'Healthy',    note: 'Cadence call completed. Usage and adoption check-in. Account in good standing.' },
+      { csm: 'divyam', account: 'Quadient',   health: 'Healthy',    note: 'IDL renewal cadence call. Success plan progress reviewed. Account healthy.' },
+      { csm: 'divyam', account: 'OpenAI',     health: 'Healthy',    note: 'Cadence call. Data usage and expansion discussed. Account healthy.' },
+      { csm: 'riley',  account: 'Red Hat',    health: 'Healthy',    note: 'Cross-coverage: Riley Rogers ran TR IDL program session on Nick Johnson\'s Red Hat account. IDL engagement healthy.' },
+    ],
+  };
+}
+
 function dayMeta_2026_05_04() {
   return {
     pills: [['dot-teal','5 Qualifying Calls'],['dot-green','5 Vitally Pulses'],['dot-amber','1 Cross-Coverage'],['dot-red','1 Concerning']],
