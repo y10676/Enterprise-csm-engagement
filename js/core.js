@@ -17,7 +17,7 @@ const REPORTS = {
 
 // ─── STATE ─────────────────────────────────────────────────────
 let gran = 'day';
-let currentKey = '2026-04-30';
+let currentKey = '2026-05-04';
 let activeTab = '';
 let activeCsm = 'all';
 let activeHealth = 'all';
@@ -61,7 +61,10 @@ function formatLabel(iso) {
 }
 
 function shiftPeriod(delta) {
-  const d = isoToDate(currentKey.length===10 ? currentKey : currentKey+'-01');
+  // Always use the date picker's ISO value as anchor — it stays valid for all gran modes
+  // (currentKey for week gran is '2026-W19' which can't be parsed directly as a date)
+  const anchor = document.getElementById('date-picker').value;
+  const d = isoToDate(anchor);
   if (gran==='day') d.setDate(d.getDate()+delta);
   else if (gran==='week') d.setDate(d.getDate()+delta*7);
   else d.setMonth(d.getMonth()+delta);
@@ -70,7 +73,7 @@ function shiftPeriod(delta) {
 function onPickerChange(val) { if(val) applyDate(val); }
 function applyDate(iso) {
   currentKey = gran==='day' ? iso : gran==='week' ? weekKey(iso) : monthKey(iso);
-  // keep picker aligned to a valid date within period
+  // keep picker aligned to a valid ISO date within period (picker never holds a week key)
   document.getElementById('date-picker').value = iso.length===10 ? iso : iso+'-01';
   document.getElementById('date-label').textContent = formatLabel(iso.length===10?iso:iso+'-01');
   render();
@@ -80,11 +83,8 @@ function applyDate(iso) {
 function setGran(g) {
   gran = g;
   document.querySelectorAll('.gran-btn').forEach(b=>b.classList.toggle('active',b.dataset.gran===g));
-  // Convert currentKey back to a day so we can recompute
-  let dayIso = currentKey.length===10 ? currentKey : (currentKey.length===7 ? currentKey+'-01' : '2026-04-24');
-  currentKey = currentPeriodKey(dayIso);
-  document.getElementById('date-label').textContent = formatLabel(dayIso);
-  render();
+  // Use the date picker's ISO value as anchor — always valid regardless of prior gran mode
+  applyDate(document.getElementById('date-picker').value);
 }
 
 // ─── RENDER ────────────────────────────────────────────────────
@@ -1443,9 +1443,10 @@ if (sessionStorage.getItem('hg-auth')) {
       REPORTS.day[iso] = true;
     }
   }
-  // Point currentKey at the most recent available report
+  // Point currentKey at the most recent available report and sync the UI
   const latest = Object.keys(REPORTS.day).sort().reverse()[0];
   if (latest) currentKey = latest;
 })();
 
-render();
+// applyDate syncs the date label + picker to currentKey, then calls render()
+applyDate(currentKey);
