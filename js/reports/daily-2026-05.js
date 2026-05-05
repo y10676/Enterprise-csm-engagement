@@ -82,3 +82,71 @@ function dayActionsHTML_2026_05_01() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none"><div class="empty-icon">&#128269;</div>No action items match these filters.</div>`;
 }
+
+// ─── MAY 4, 2026 ───────────────────────────────────────────────
+
+function dayMeta_2026_05_04() {
+  return {
+    pills: [['dot-teal','5 Qualifying Calls'],['dot-green','5 Vitally Pulses'],['dot-amber','1 Cross-Coverage'],['dot-red','1 Concerning']],
+    tabs:  ['Overview','Calls (5)','Pulses (5)','Action Items (3)'],
+  };
+}
+
+function dayOverviewHTML_2026_05_04() {
+  return `<div class="section-label">Team Activity &mdash; Monday May 4, 2026</div>
+  <div class="overview-grid">
+    <div class="csm-card has-calls" data-csm="atisha"><span class="call-badge">1 CALL</span><div class="csm-card-header"><div class="avatar av-grey">AW</div><div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div><div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">TD Synnex &middot; Customer flagged unexpected credit consumption &middot; 44K used vs 11K expected &middot; escalating</div></div>
+    <div class="csm-card has-calls" data-csm="divyam"><span class="call-badge">3 CALLS</span><div class="csm-card-header"><div class="avatar av-divyam">DD</div><div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">3</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">90m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">Blackbaud &middot; Quadient &middot; OpenAI &mdash; all Healthy</div></div>
+    <div class="csm-card has-calls" data-csm="riley"><span class="call-badge">1 CALL</span><div class="csm-card-header"><div class="avatar av-riley">RR</div><div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">Red Hat (X-cov for Nick Johnson) &middot; TR IDL program session &middot; Healthy</div></div>
+    <div class="csm-card no-calls" data-csm="nick"><div class="csm-card-header"><div class="avatar av-grey">NJ</div><div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">Red Hat covered by Riley Rogers on May 4</div></div>
+    <div class="csm-card no-calls" data-csm="rani"><div class="csm-card-header"><div class="avatar av-grey">RG</div><div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">Docusign recording found &mdash; Rani not a speaker (Ziad Amira + Rishabh Wadhwa)</div></div>
+    <div class="csm-card no-calls" data-csm="varun"><div class="csm-card-header"><div class="avatar av-varun">VT</div><div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">Open Text recording found &mdash; no transcript available, unable to verify</div></div>
+    <div class="csm-card no-calls" data-csm="pam"><div class="csm-card-header"><div class="avatar av-grey">PH</div><div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No calls logged this period</div></div>
+    <div class="csm-card no-calls" data-csm="andy"><div class="csm-card-header"><div class="avatar av-grey">AL</div><div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">Intuit recording found &mdash; Atisha not a speaker (sales/SE call)</div></div>
+  </div>`;
+}
+
+function dayCallsHTML_2026_05_04() {
+  return `<div class="table-card"><table>
+    <thead><tr><th>Time (PT)</th><th>CSM</th><th>Account</th><th>Duration</th><th>Signal</th></tr></thead>
+    <tbody>
+      <tr data-csm="atisha" data-health="Concerning"><td style="color:#9ca3af;font-size:12px">May 4 &middot; 6:30 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">AW</div>Atisha Waghela</div></td><td><strong>TD Synnex</strong> <span style="font-size:11px;color:#9ca3af">Customer T831833V flagged 44K credits consumed vs 11K expected &middot; Atisha escalating</span></td><td>30 min</td><td><span class="badge badge-concerning">&#128993; Concerning</span></td></tr>
+      <tr data-csm="divyam" data-health="Healthy"><td style="color:#9ca3af;font-size:12px">May 4 &middot; 8:30 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-divyam">DD</div>Divyam Dewan</div></td><td><strong>Blackbaud</strong> <span style="font-size:11px;color:#9ca3af">Cadence call &middot; usage and adoption check-in</span></td><td>30 min</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="divyam" data-health="Healthy"><td style="color:#9ca3af;font-size:12px">May 4 &middot; 11:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-divyam">DD</div>Divyam Dewan</div></td><td><strong>Quadient</strong> <span style="font-size:11px;color:#9ca3af">IDL renewal cadence &middot; success plan progress</span></td><td>30 min</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="divyam" data-health="Healthy"><td style="color:#9ca3af;font-size:12px">May 4 &middot; 11:30 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-divyam">DD</div>Divyam Dewan</div></td><td><strong>OpenAI</strong> <span style="font-size:11px;color:#9ca3af">Cadence call &middot; data usage and expansion discussion</span></td><td>30 min</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="riley" data-health="Healthy"><td style="color:#9ca3af;font-size:12px">May 4 &middot; 10:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-riley">RR</div>Riley Rogers <span style="font-size:11px">(X-cov for NJ)</span></div></td><td><strong>Red Hat</strong> <span style="font-size:11px;color:#9ca3af">TR IDL program session &middot; Riley running TR IDL on Nick&apos;s account</span></td><td>30 min</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+    </tbody>
+  </table></div>
+  <div style="background:#eff6ff;border:1px solid #bfdbfe;border-left:3px solid #3b82f6;border-radius:6px;padding:10px 14px;margin:10px 0;font-size:12px;color:#1e40af;">
+    &#x2139;&#xfe0f; <strong>1 cross-coverage call</strong>: Riley Rogers covered Red Hat (10:00 AM) for Nick Johnson (TR IDL session). &nbsp;|&nbsp; <strong>3 excluded</strong>: Intuit (CSM Atisha not a speaker &mdash; sales/SE call), Docusign (Rani Guy not a speaker &mdash; Ziad Amira + Rishabh Wadhwa), Open Text (has_transcript: false &mdash; unable to verify Varun Tiwari).
+  </div>
+  <div class="empty-state" id="calls-empty" style="display:none"><div class="empty-icon">&#128269;</div>No calls match these filters.</div>`;
+}
+
+function dayPulsesHTML_2026_05_04() {
+  const cards = [
+    { csm:'atisha', health:'Concerning', account:'TD Synnex',  opp:'Vitally Pulse &mdash; May 4 Call',  arr:'Enterprise &middot; Atisha Waghela',  excerpt:'Customer T831833V flagged unexpected credit consumption: 44K credits used vs 11K expected. Atisha escalating internally. Root cause investigation in progress. Weflow rec: a76RN0000002N29YAE', csmlbl:'Atisha Waghela', change:'New &middot; Pulse e2e0fc99' },
+    { csm:'divyam', health:'Healthy',    account:'Blackbaud',  opp:'Vitally Pulse &mdash; May 4 Call',  arr:'Enterprise &middot; Divyam Dewan',      excerpt:'Cadence call completed. Usage and adoption check-in. Account in good standing. Weflow rec: a76RN0000002MvhYAE', csmlbl:'Divyam Dewan', change:'Existing Pulse' },
+    { csm:'divyam', health:'Healthy',    account:'Quadient',   opp:'Vitally Pulse &mdash; May 4 Call',  arr:'Enterprise &middot; Divyam Dewan',      excerpt:'IDL renewal cadence call. Success plan progress reviewed. Account healthy. Weflow rec: a76RN0000002LRlYAM', csmlbl:'Divyam Dewan', change:'Existing Pulse' },
+    { csm:'divyam', health:'Healthy',    account:'OpenAI',     opp:'Vitally Pulse &mdash; May 4 Call',  arr:'Enterprise &middot; Divyam Dewan',      excerpt:'Cadence call. Data usage and expansion discussed. Account healthy. Weflow rec: a76RN0000002HmMYAU', csmlbl:'Divyam Dewan', change:'Existing Pulse' },
+    { csm:'riley',  health:'Healthy',    account:'Red Hat',    opp:'Vitally Pulse &mdash; May 4 X-cov', arr:'Enterprise &middot; Riley Rogers (covering Nick Johnson)', excerpt:'Cross-coverage: Riley Rogers ran TR IDL program session on Nick Johnson&apos;s Red Hat account. IDL engagement healthy. Weflow rec: a76RN0000002EoTYAU', csmlbl:'Riley Rogers', change:'New &middot; Pulse 83ae0251' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':'badge-concerning';
+  const bi = h => h==='Healthy'?'&#128994;':'&#128993;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top"><div><div class="pulse-account">${c.account}</div><div class="pulse-opp">${c.opp}</div><div class="pulse-arr">${c.arr}</div></div><span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span></div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none"><div class="empty-icon">&#128269;</div>No pulses match these filters.</div>`;
+}
+
+function dayActionsHTML_2026_05_04() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has(401)?'done':''}" data-csm="atisha" id="action-401"><div class="action-checkbox ${doneActions.has(401)?'checked':''}" onclick="toggleAction(401)"></div><div class="action-body"><div class="action-title">&#x26a0;&#xfe0f; TD Synnex &mdash; Credit consumption anomaly &middot; customer T831833V</div><div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Atisha Waghela &middot; Customer reported 44K credits consumed vs 11K expected. Atisha is escalating internally. Identify root cause (over-querying, misconfiguration, or billing error), communicate findings to customer, and resolve or credit. Time-sensitive for retention risk.</div></div></div>
+    <div class="action-item ${doneActions.has(402)?'done':''}" data-csm="varun" id="action-402"><div class="action-checkbox ${doneActions.has(402)?'checked':''}" onclick="toggleAction(402)"></div><div class="action-body"><div class="action-title">&#x23F3; Open Text transcript pending &mdash; Varun Tiwari</div><div class="action-meta"><span class="urgency-badge urgency-medium">FOLLOW-UP</span>Varun Tiwari &middot; Open Text recording (May 4, Weflow rec: a76RN0000002MndYAE) had has_transcript: false at scan time. Once transcript is available, verify Varun as active speaker and create Vitally pulse. "HGI + Open Text : Bi-Weekly Cadence" recording.</div></div></div>
+    <div class="action-item ${doneActions.has(403)?'done':''}" data-csm="riley" id="action-403"><div class="action-checkbox ${doneActions.has(403)?'checked':''}" onclick="toggleAction(403)"></div><div class="action-body"><div class="action-title">&#x1F4CB; Red Hat cross-coverage &mdash; sync with Nick Johnson</div><div class="action-meta"><span class="urgency-badge urgency-low">LOW</span>Riley Rogers covered Red Hat TR IDL session for Nick Johnson on May 4. Ensure Nick is aware of session outcomes and any follow-ups. Riley&apos;s pulse (83ae0251) logged with cross-coverage context.</div></div></div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none"><div class="empty-icon">&#128269;</div>No action items match these filters.</div>`;
+}
