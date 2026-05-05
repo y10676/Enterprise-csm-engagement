@@ -247,14 +247,14 @@ function renderDay(mc, tabsRow, statPills) {
 // Stable display metadata for all 8 Enterprise CSMs.
 // Update accounts/opps counts here if the book changes.
 const CSM_DISPLAY = {
-  atisha: { name: 'Atisha Waghela', initials: 'AW', cls: 'av-grey',   accounts: 18, opps: 24 },
-  nick:   { name: 'Nick Johnson',   initials: 'NJ', cls: 'av-grey',   accounts: 27, opps: 83 },
-  varun:  { name: 'Varun Tiwari',   initials: 'VT', cls: 'av-varun',  accounts: 21, opps: 30 },
-  pam:    { name: 'Pam Huck',       initials: 'PH', cls: 'av-grey',   accounts:  7, opps: 19 },
-  rani:   { name: 'Rani Guy',       initials: 'RG', cls: 'av-grey',   accounts: 10, opps: 25 },
-  riley:  { name: 'Riley Rogers',   initials: 'RR', cls: 'av-riley',  accounts:  6, opps: 12 },
-  andy:   { name: 'Andy Lim',       initials: 'AL', cls: 'av-grey',   accounts: 10, opps: 18 },
-  divyam: { name: 'Divyam Dewan',   initials: 'DD', cls: 'av-divyam', accounts: 21, opps: 29 },
+  atisha: { name: 'Atisha Waghela', initials: 'AW', cls: 'av-grey',   accounts: 18, opps: 22 },
+  nick:   { name: 'Nick Johnson',   initials: 'NJ', cls: 'av-grey',   accounts: 27, opps: 43 },
+  varun:  { name: 'Varun Tiwari',   initials: 'VT', cls: 'av-varun',  accounts: 21, opps: 26 },
+  pam:    { name: 'Pam Huck',       initials: 'PH', cls: 'av-grey',   accounts:  7, opps: 17 },
+  rani:   { name: 'Rani Guy',       initials: 'RG', cls: 'av-grey',   accounts: 10, opps: 27 },
+  riley:  { name: 'Riley Rogers',   initials: 'RR', cls: 'av-riley',  accounts:  6, opps: 59 },
+  andy:   { name: 'Andy Lim',       initials: 'AL', cls: 'av-grey',   accounts: 10, opps: 13 },
+  divyam: { name: 'Divyam Dewan',   initials: 'DD', cls: 'av-divyam', accounts: 21, opps: 28 },
 };
 const CSM_ORDER = ['varun','pam','rani','divyam','riley','nick','atisha','andy'];
 
@@ -568,6 +568,35 @@ function autoWeekCSMHTML(data) {
   return `<div class="section-label">CSM Contributions — ${label}</div><div class="csm-leaderboard">${rows}</div>`;
 }
 
+function showWeekConcerningModal() {
+  const data = getWeekData(currentKey);
+  const concerning = data.pulses.filter(p => p.health === 'Concerning');
+  const pickerVal = document.getElementById('date-picker')?.value || '';
+  document.getElementById('modal-title').textContent =
+    `Concerning Signals — ${concerning.length} Account${concerning.length !== 1 ? 's' : ''}`;
+  document.getElementById('modal-subtitle').textContent =
+    `Week of ${pickerVal ? formatLabel(pickerVal) : currentKey}`;
+  document.getElementById('modal-body').innerHTML = concerning.length === 0
+    ? '<div style="padding:24px;text-align:center;color:#6b7280;font-size:13px">No concerning signals this week.</div>'
+    : concerning.map(p => {
+        const csm = CSM_DISPLAY[p.csm] || { name: p.csm, initials: (p.csm||'?').slice(0,2).toUpperCase(), cls: 'av-grey' };
+        const dt = isoToDate(p.date);
+        const dateLabel = `${_DAY_NAMES[dt.getDay()]} ${_MON_NAMES[dt.getMonth()]} ${dt.getDate()}`;
+        return `<div style="border:1px solid #fde68a;border-left:3px solid #f59e0b;background:#fffbeb;border-radius:8px;padding:14px 16px;margin-bottom:12px">
+          <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
+            <div style="font-size:15px;font-weight:700;color:#111827">${p.account}</div>
+            <span class="badge badge-concerning">&#128993; Concerning</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px">
+            <div class="mini-av ${csm.cls}" style="width:20px;height:20px;font-size:9px;flex-shrink:0">${csm.initials}</div>
+            <span style="font-size:12px;color:#6b7280">${csm.name} &middot; ${dateLabel}</span>
+          </div>
+          <div style="font-size:13px;color:#374151;line-height:1.6">${p.note || 'No additional notes.'}</div>
+        </div>`;
+      }).join('');
+  document.getElementById('modal-overlay').classList.add('open');
+}
+
 function autoWeekSummaryHTML(data) {
   if (!data.hasData) return '<div style="padding:32px;text-align:center;color:#6b7280;font-size:14px">No daily data for this week. To enable auto-derivation, ensure each day\'s report includes a <code>dayData_YYYY_MM_DD()</code> function.</div>';
   const calls = data.calls;
@@ -610,7 +639,7 @@ function autoWeekSummaryHTML(data) {
     <div class="sum-card c-teal" onclick="jumpToTab('wcalls','all','all')"><div class="sum-val">${calls.length}</div><div class="sum-lbl">Calls w/ Transcripts</div><div class="sum-sub">${new Set(calls.map(c=>c.account)).size} accounts</div></div>
     <div class="sum-card c-green" onclick="jumpToTab('wpulses','all','all')"><div class="sum-val">${pulses.length}</div><div class="sum-lbl">Pulse Notes Created</div><div class="sum-sub">${healthy.length} Healthy · ${concerning.length} Concerning</div></div>
     <div class="sum-card c-purple" onclick="jumpToTab('wcsm','all','all')"><div class="sum-val">${activeCsms}</div><div class="sum-lbl">Active CSMs</div><div class="sum-sub">of 8 on the team</div></div>
-    <div class="sum-card c-amber" onclick="jumpToTab('wpulses','all','Concerning')"><div class="sum-val">${concerning.length}</div><div class="sum-lbl">Concerning Signals</div><div class="sum-sub">${concerning.length ? concerning.map(p=>p.account).join(' · ') : 'None this week'}</div></div>
+    <div class="sum-card c-amber" onclick="showWeekConcerningModal()" style="cursor:pointer"><div class="sum-val">${concerning.length}</div><div class="sum-lbl">Concerning Signals</div><div class="sum-sub">${concerning.length ? concerning.map(p=>p.account).join(' · ') : 'None this week'}</div></div>
   </div>
   <div class="section-label">Daily Call Activity</div>
   <div class="heatmap-card">
