@@ -382,52 +382,34 @@ function monthCSMHTML() {
   if (md.hasData) {
     // Tally per-CSM
     const stats = {};
-    CSM_ORDER.forEach(id => { stats[id] = { calls: 0, mins: 0, pulses: 0 }; });
+    CSM_ORDER.forEach(id => { stats[id] = { calls:0, pulses:0, concerning:0, accounts:new Set() }; });
     md.calls.forEach(c => {
-      stats[c.csm] = stats[c.csm] || { calls:0, mins:0, pulses:0 };
+      if (!stats[c.csm]) stats[c.csm] = { calls:0, pulses:0, concerning:0, accounts:new Set() };
       stats[c.csm].calls++;
-      stats[c.csm].mins += (c.mins||0);
+      stats[c.csm].accounts.add(c.account);
     });
     md.pulses.forEach(p => {
-      stats[p.csm] = stats[p.csm] || { calls:0, mins:0, pulses:0 };
+      if (!stats[p.csm]) stats[p.csm] = { calls:0, pulses:0, concerning:0, accounts:new Set() };
       stats[p.csm].pulses++;
+      if (p.health === 'Concerning') stats[p.csm].concerning++;
     });
 
-    const totalCalls  = md.calls.length;
-    const totalPulses = md.pulses.length;
+    const totalCalls      = md.calls.length;
+    const totalPulses     = md.pulses.length;
+    const totalConcerning = md.pulses.filter(p => p.health === 'Concerning').length;
+    const totalAccounts   = Object.values(CSM_DISPLAY).reduce((s,d) => s+(d.accounts||0), 0);
+    const totalOpps       = Object.values(CSM_DISPLAY).reduce((s,d) => s+(d.opps||0), 0);
 
     const sorted = [...CSM_ORDER].sort((a,b) => (stats[b]?.calls||0) - (stats[a]?.calls||0));
 
-    const totalRow = `<div class="csm-row csm-total" data-csm="all">
-      <div class="avatar">Σ</div>
-      <div style="flex:1"><div class="csm-row-name">Total — All CSMs</div>
-      <div class="csm-row-sub">8 Enterprise CSMs · 120 accounts · $47.3M ARR</div></div>
-      <div class="csm-row-stats">
-        <div class="row-stat"><div class="n ct">${totalCalls}</div><div class="l">Calls</div></div>
-        <div class="row-stat"><div class="n" style="color:#059669">${totalPulses}</div><div class="l">Pulses</div></div>
-        <div class="row-stat"><div class="n" style="color:#7c3aed">120</div><div class="l">Accounts</div></div>
-        <div class="row-stat"><div class="n" style="color:#2563eb">240</div><div class="l">Opps</div></div>
-      </div>
-    </div>`;
+    const totalRow = `<div class="csm-row csm-total" data-csm="all"><div class="avatar">Σ</div><div style="flex:1"><div class="csm-row-name">Total — All CSMs</div><div class="csm-row-sub">8 Enterprise CSMs · ${totalAccounts} accounts · $47.3M ARR</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">${totalCalls}</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">${totalPulses}</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n" style="color:#d97706">${totalConcerning}</div><div class="l">Risks</div></div><div class="row-stat"><div class="n" style="color:#7c3aed">${totalAccounts}</div><div class="l">Accounts</div></div><div class="row-stat"><div class="n" style="color:#2563eb">${totalOpps}</div><div class="l">Opps</div></div></div></div>`;
 
     const csmRows = sorted.map(id => {
       const csm = CSM_DISPLAY[id];
-      const s   = stats[id] || { calls:0, mins:0, pulses:0 };
-      const inactive = s.calls === 0 && s.pulses === 0;
-      const hrs = s.mins >= 60 ? `${Math.round(s.mins/60*10)/10}h` : `${s.mins}m`;
-      return `<div class="csm-row${inactive?' inactive':''}" data-csm="${id}">
-        <div class="avatar ${csm.cls}">${csm.initials}</div>
-        <div style="flex:1">
-          <div class="csm-row-name">${csm.name}</div>
-          <div class="csm-row-sub">${inactive ? 'No activity logged' : `${s.calls} call${s.calls!==1?'s':''} · ${s.pulses} pulse${s.pulses!==1?'s':''} · ${hrs}`}</div>
-        </div>
-        <div class="csm-row-stats">
-          <div class="row-stat"><div class="n ${s.calls>0?'ct':'cgr'}">${s.calls}</div><div class="l">Calls</div></div>
-          <div class="row-stat"><div class="n" style="color:${s.pulses>0?'#059669':'#9ca3af'}">${s.pulses}</div><div class="l">Pulses</div></div>
-          <div class="row-stat"><div class="n" style="color:#7c3aed">${csm.accounts}</div><div class="l">Accounts</div></div>
-          <div class="row-stat"><div class="n" style="color:#2563eb">${csm.opps}</div><div class="l">Opps</div></div>
-        </div>
-      </div>`;
+      const s   = stats[id] || { calls:0, pulses:0, concerning:0, accounts:new Set() };
+      const cls = s.calls === 0 && s.pulses === 0 ? ' inactive' : '';
+      const accountList = [...s.accounts].join(' · ') || 'No calls logged this month';
+      return `<div class="csm-row${cls}" data-csm="${id}"><div class="avatar ${csm.cls}">${csm.initials}</div><div style="flex:1"><div class="csm-row-name">${csm.name}</div><div class="csm-row-sub">${accountList}</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ${s.calls>0?'ct':'cgr'}">${s.calls}</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:${s.concerning?'#d97706':'#059669'}">${s.pulses}</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n" style="color:${s.concerning?'#d97706':'#6b7280'}">${s.concerning||0}</div><div class="l">Risks</div></div><div class="row-stat"><div class="n" style="color:#7c3aed">${csm.accounts}</div><div class="l">Accounts</div></div><div class="row-stat"><div class="n" style="color:#2563eb">${csm.opps}</div><div class="l">Opps</div></div></div></div>`;
     }).join('');
 
     return `<div class="section-label">CSM Engagement — ${monthLabel}</div>
