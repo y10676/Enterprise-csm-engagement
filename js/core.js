@@ -551,7 +551,9 @@ function autoWeekCSMHTML(data) {
   const totalCalls = data.calls.length;
   const totalPulses = data.pulses.length;
   const totalConcerning = data.pulses.filter(p=>p.health==='Concerning').length;
-  let rows = `<div class="csm-row csm-total" data-csm="all"><div class="avatar">Σ</div><div style="flex:1"><div class="csm-row-name">Total — All CSMs</div><div class="csm-row-sub">8 Enterprise CSMs · 120 accounts</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">${totalCalls}</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">${totalPulses}</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n" style="color:#d97706">${totalConcerning}</div><div class="l">Risks</div></div></div></div>`;
+  const totalAccounts = Object.values(CSM_DISPLAY).reduce((s,d)=>s+(d.accounts||0), 0);
+  const totalOpps     = Object.values(CSM_DISPLAY).reduce((s,d)=>s+(d.opps||0), 0);
+  let rows = `<div class="csm-row csm-total" data-csm="all"><div class="avatar">Σ</div><div style="flex:1"><div class="csm-row-name">Total — All CSMs</div><div class="csm-row-sub">8 Enterprise CSMs · ${totalAccounts} accounts · $47.3M ARR</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">${totalCalls}</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">${totalPulses}</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n" style="color:#d97706">${totalConcerning}</div><div class="l">Risks</div></div><div class="row-stat"><div class="n" style="color:#7c3aed">${totalAccounts}</div><div class="l">Accounts</div></div><div class="row-stat"><div class="n" style="color:#2563eb">${totalOpps}</div><div class="l">Opps</div></div></div></div>`;
   const sorted = CSM_ORDER.slice().sort((a,b) => (stats[b]?.calls||0) - (stats[a]?.calls||0));
   sorted.forEach(k => {
     const s = stats[k] || {calls:0, pulses:0, concerning:0, accounts:new Set()};
@@ -559,7 +561,7 @@ function autoWeekCSMHTML(data) {
     if (!d) return;
     const cls = s.calls > 0 ? '' : ' inactive';
     const accountList = [...s.accounts].join(' · ') || 'No calls logged this week';
-    rows += `<div class="csm-row${cls}" data-csm="${k}"><div class="avatar ${d.cls}">${d.initials}</div><div style="flex:1"><div class="csm-row-name">${d.name}</div><div class="csm-row-sub">${accountList}</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">${s.calls}</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:${s.concerning?'#d97706':'#059669'}">${s.pulses}</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n" style="color:${s.concerning?'#d97706':'#6b7280'}">${s.concerning||0}</div><div class="l">Risks</div></div></div></div>`;
+    rows += `<div class="csm-row${cls}" data-csm="${k}"><div class="avatar ${d.cls}">${d.initials}</div><div style="flex:1"><div class="csm-row-name">${d.name}</div><div class="csm-row-sub">${accountList}</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">${s.calls}</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:${s.concerning?'#d97706':'#059669'}">${s.pulses}</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n" style="color:${s.concerning?'#d97706':'#6b7280'}">${s.concerning||0}</div><div class="l">Risks</div></div><div class="row-stat"><div class="n" style="color:#7c3aed">${d.accounts}</div><div class="l">Accounts</div></div><div class="row-stat"><div class="n" style="color:#2563eb">${d.opps}</div><div class="l">Opps</div></div></div></div>`;
   });
   const pickerVal = document.getElementById('date-picker')?.value || '';
   const label = pickerVal ? formatLabel(pickerVal) : currentKey;
