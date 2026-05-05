@@ -11,7 +11,7 @@
 // ─── REPORT DATA ───────────────────────────────────────────────
 const REPORTS = {
   day: {},  // auto-populated at init by probing for dayOverviewHTML_* functions
-  week: { '2026-W17': true },   // W17 = Apr 20-26 · add new entries only when week HTML is written
+  week: { '2026-W17': true, '2026-W18': true },   // W17 = Apr 20-26 · W18 = Apr 27–May 3
   month: { '2026-04': true, '2026-05': true },
 };
 
@@ -280,6 +280,31 @@ function getMonthData(monthKey) {
   return out;
 }
 
+// ─── WEEK AGGREGATOR ──────────────────────────────────────────
+// Collects all dayData_YYYY_MM_DD() calls for the given ISO week key (e.g. '2026-W18').
+// Returns { hasData, days[], calls[], pulses[] }.
+// Uses the same UTC-based week arithmetic as weekKey() to avoid DST shifts.
+function getWeekData(wk) {
+  const [year, weekNum] = wk.split('-W').map(Number);
+  const jan4Day = new Date(year, 0, 4).getDay();
+  const startOfW1Ms = Date.UTC(year, 0, 4) - ((jan4Day + 6) % 7) * 86400000;
+  const weekStartMs = startOfW1Ms + (weekNum - 1) * 7 * 86400000;
+  const out = { hasData: false, days: [], calls: [], pulses: [] };
+  for (let d = 0; d < 7; d++) {
+    const dt = new Date(weekStartMs + d * 86400000);
+    const iso = `${dt.getUTCFullYear()}-${String(dt.getUTCMonth()+1).padStart(2,'0')}-${String(dt.getUTCDate()).padStart(2,'0')}`;
+    const fn = window['dayData_' + iso.replace(/-/g, '_')];
+    if (typeof fn === 'function') {
+      const day = fn();
+      out.hasData = true;
+      out.days.push(iso);
+      (day.calls  || []).forEach(c => out.calls.push({...c, date: iso}));
+      (day.pulses || []).forEach(p => out.pulses.push({...p, date: iso}));
+    }
+  }
+  return out;
+}
+
 function getDayData(key) {
   // Auto-discover: if dayMeta_ + dayOverviewHTML_ functions exist, use them directly
   const k = key.replace(/-/g, '_');
@@ -424,24 +449,240 @@ function toggleAction(n) {
 // ═══════════════════════════════════════════════════════════════
 // WEEK VIEW
 // ═══════════════════════════════════════════════════════════════
+// Returns week-specific function if one exists (e.g. weekSummaryHTML_2026_W18),
+// falling back to the baseline W17 function. Scales to any future week automatically.
+function getWeekFn(base) {
+  // First: week-specific function (e.g. weekSummaryHTML_2026_W18)
+  const specific = window[base + '_' + currentKey.replace(/-/g, '_')];
+  if (typeof specific === 'function') return specific;
+  // Second: fall back to base (W17) function ONLY when viewing W17
+  if (currentKey === '2026-W17') return window[base] || null;
+  // For all other weeks without a specific function → return null → caller uses auto-derivation
+  return null;
+}
+
+const WEEK_META = {
+  '2026-W17': {
+    pills: [['dot-teal','24 Calls'],['dot-green','21 Pulses'],['dot-purple','6 Active CSMs'],['dot-amber','4 Concerning']],
+    tabs:  ['Summary','CSM Breakdown','Call Log (24)','Pulse Log (21)','Pulse Coverage'],
+  },
+  '2026-W18': {
+    pills: [['dot-teal','36 Calls'],['dot-green','27 Pulses'],['dot-purple','8 Active CSMs'],['dot-amber','7 Concerning']],
+    tabs:  ['Summary','CSM Breakdown','Call Log (36)','Pulse Log (27)','Pulse Coverage'],
+  },
+};
+
+// ─── AUTO WEEK HTML ────────────────────────────────────────────
+// Generate week views from dayData_* structured data.
+// Used automatically for any week without hand-written weekXxxHTML_YYYY_Www functions.
+// Add dayData_YYYY_MM_DD() to each daily report to enable auto-derivation.
+
+const _DAY_NAMES  = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+const _MON_NAMES  = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+
+function autoWeekCallsHTML(data) {
+  if (!data.hasData) return '<div style="padding:32px;text-align:center;color:#6b7280;font-size:13px">No structured call data for this week. Add <code>dayData_YYYY_MM_DD()</code> functions to enable auto-derivation.</div>';
+  const byDay = {};
+  data.calls.forEach(c => { (byDay[c.date] = byDay[c.date] || []).push(c); });
+  let rows = '';
+  Object.keys(byDay).sort().forEach(date => {
+    const calls = byDay[date];
+    const dt = isoToDate(date);
+    const label = `${_DAY_NAMES[dt.getDay()].toUpperCase()} ${_MON_NAMES[dt.getMonth()].toUpperCase()} ${dt.getDate()} — ${calls.length} CALL${calls.length!==1?'S':''}`;
+    rows += `<tr style="background:#f8f9fc;pointer-events:none"><td colspan="5" style="font-size:11px;font-weight:700;color:#6b7280;text-transform:uppercase;letter-spacing:0.6px;padding:8px 12px">${label}</td></tr>`;
+    calls.forEach(c => {
+      const csm = CSM_DISPLAY[c.csm] || {name:c.csm, initials:(c.csm||'?').slice(0,2).toUpperCase(), cls:'av-grey'};
+      const xcovCsm = c.xcov && CSM_DISPLAY[c.xcov];
+      const xcovLabel = xcovCsm ? ` <span style="font-size:11px">(X-cov for ${xcovCsm.initials})</span>` : '';
+      const hBadge = c.health==='Healthy'
+        ? '<span class="badge badge-healthy">&#128994; Healthy</span>'
+        : c.health==='Concerning'
+        ? '<span class="badge badge-concerning">&#128993; Concerning</span>'
+        : `<span class="badge" style="background:#fef3c7;color:#92400e">&#128336; ${c.health||'—'}</span>`;
+      rows += `<tr data-csm="${c.csm}" data-health="${c.health||''}">
+        <td style="color:#9ca3af;font-size:12px">${c.ts||''}</td>
+        <td><div class="csm-chip-inline"><div class="mini-av ${csm.cls}">${csm.initials}</div>${csm.name}${xcovLabel}</div></td>
+        <td><strong>${c.account}</strong>${c.note?` <span style="font-size:11px;color:#9ca3af">${c.note}</span>`:''}</td>
+        <td>${c.mins||'—'} min</td>
+        <td>${hBadge}</td>
+      </tr>`;
+    });
+  });
+  return `<div class="table-card"><table>
+    <thead><tr><th>Time (PT)</th><th>CSM</th><th>Account</th><th>Duration</th><th>Signal</th></tr></thead>
+    <tbody>${rows}</tbody>
+  </table></div>
+  <div class="empty-state" id="calls-empty" style="display:none"><div class="empty-icon">&#128269;</div>No calls match these filters.</div>`;
+}
+
+function autoWeekPulsesHTML(data) {
+  if (!data.hasData) return '<div style="padding:32px;text-align:center;color:#6b7280">No pulse data for this week.</div>';
+  const sorted = [...data.pulses].sort((a,b) => a.health===b.health?0:a.health==='Concerning'?-1:1);
+  const cards = sorted.map(p => {
+    const csm = CSM_DISPLAY[p.csm] || {name:p.csm};
+    const dt = isoToDate(p.date);
+    const dateLabel = `${_DAY_NAMES[dt.getDay()]} ${_MON_NAMES[dt.getMonth()]} ${dt.getDate()}`;
+    const bc = p.health==='Healthy'?'badge-healthy':'badge-concerning';
+    const bi = p.health==='Healthy'?'&#128994;':'&#128993;';
+    return `<div class="pulse-card" data-csm="${p.csm}" data-health="${p.health}">
+      <div class="pulse-card-top"><div><div class="pulse-account">${p.account}</div><div class="pulse-opp">Vitally Pulse &mdash; ${dateLabel}</div><div class="pulse-arr">Enterprise &middot; ${csm.name}</div></div><span class="badge ${bc}">${bi} ${p.health}</span></div>
+      <div class="pulse-excerpt">${p.note||''}</div>
+      <div class="pulse-footer"><span>${csm.name}</span><span>Auto-derived</span></div>
+    </div>`;
+  }).join('');
+  return `<div class="pulse-grid">${cards}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none"><div class="empty-icon">&#128269;</div>No pulses match these filters.</div>`;
+}
+
+function autoWeekCSMHTML(data) {
+  if (!data.hasData) return '<div style="padding:32px;text-align:center;color:#6b7280">No data for this week.</div>';
+  const stats = {};
+  CSM_ORDER.forEach(k => { stats[k] = {calls:0, pulses:0, concerning:0, accounts:new Set()}; });
+  data.calls.forEach(c => {
+    if (!stats[c.csm]) stats[c.csm] = {calls:0, pulses:0, concerning:0, accounts:new Set()};
+    stats[c.csm].calls++;
+    stats[c.csm].accounts.add(c.account);
+  });
+  data.pulses.forEach(p => {
+    if (!stats[p.csm]) stats[p.csm] = {calls:0, pulses:0, concerning:0, accounts:new Set()};
+    stats[p.csm].pulses++;
+    if (p.health==='Concerning') stats[p.csm].concerning++;
+  });
+  const totalCalls = data.calls.length;
+  const totalPulses = data.pulses.length;
+  const totalConcerning = data.pulses.filter(p=>p.health==='Concerning').length;
+  let rows = `<div class="csm-row csm-total" data-csm="all"><div class="avatar">Σ</div><div style="flex:1"><div class="csm-row-name">Total — All CSMs</div><div class="csm-row-sub">8 Enterprise CSMs · 120 accounts</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">${totalCalls}</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">${totalPulses}</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n" style="color:#d97706">${totalConcerning}</div><div class="l">Risks</div></div></div></div>`;
+  const sorted = CSM_ORDER.slice().sort((a,b) => (stats[b]?.calls||0) - (stats[a]?.calls||0));
+  sorted.forEach(k => {
+    const s = stats[k] || {calls:0, pulses:0, concerning:0, accounts:new Set()};
+    const d = CSM_DISPLAY[k];
+    if (!d) return;
+    const cls = s.calls > 0 ? '' : ' inactive';
+    const accountList = [...s.accounts].join(' · ') || 'No calls logged this week';
+    rows += `<div class="csm-row${cls}" data-csm="${k}"><div class="avatar ${d.cls}">${d.initials}</div><div style="flex:1"><div class="csm-row-name">${d.name}</div><div class="csm-row-sub">${accountList}</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">${s.calls}</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:${s.concerning?'#d97706':'#059669'}">${s.pulses}</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n" style="color:${s.concerning?'#d97706':'#6b7280'}">${s.concerning||0}</div><div class="l">Risks</div></div></div></div>`;
+  });
+  const pickerVal = document.getElementById('date-picker')?.value || '';
+  const label = pickerVal ? formatLabel(pickerVal) : currentKey;
+  return `<div class="section-label">CSM Contributions — ${label}</div><div class="csm-leaderboard">${rows}</div>`;
+}
+
+function autoWeekSummaryHTML(data) {
+  if (!data.hasData) return '<div style="padding:32px;text-align:center;color:#6b7280;font-size:14px">No daily data for this week. To enable auto-derivation, ensure each day\'s report includes a <code>dayData_YYYY_MM_DD()</code> function.</div>';
+  const calls = data.calls;
+  const pulses = data.pulses;
+  const activeCsms = new Set(calls.map(c=>c.csm)).size;
+  const concerning = pulses.filter(p=>p.health==='Concerning');
+  const healthy = pulses.filter(p=>p.health==='Healthy');
+  // Build week date list using same UTC arithmetic as getWeekData
+  const [year, weekNum] = currentKey.split('-W').map(Number);
+  const jan4Day = new Date(year, 0, 4).getDay();
+  const startOfW1Ms = Date.UTC(year, 0, 4) - ((jan4Day + 6) % 7) * 86400000;
+  const weekStartMs = startOfW1Ms + (weekNum - 1) * 7 * 86400000;
+  const weekDates = [];
+  for (let d = 0; d < 7; d++) {
+    const dt = new Date(weekStartMs + d * 86400000);
+    weekDates.push(`${dt.getUTCFullYear()}-${String(dt.getUTCMonth()+1).padStart(2,'0')}-${String(dt.getUTCDate()).padStart(2,'0')}`);
+  }
+  const dateLabels = weekDates.map(iso => { const dt = isoToDate(iso); return `${_DAY_NAMES[dt.getDay()]} ${_MON_NAMES[dt.getMonth()]} ${dt.getDate()}`; });
+  // Heatmap data
+  const hmData = {};
+  CSM_ORDER.forEach(k => { hmData[k] = {}; weekDates.forEach(d => { hmData[k][d] = 0; }); });
+  calls.forEach(c => { if (hmData[c.csm]) hmData[c.csm][c.date] = (hmData[c.csm][c.date]||0)+1; });
+  const hmHeaders = dateLabels.map(l=>`<th>${l}</th>`).join('');
+  const hmRows = CSM_ORDER.map(k => {
+    const d = CSM_DISPLAY[k];
+    const cells = weekDates.map(date => {
+      const n = hmData[k]?.[date] || 0;
+      return `<td class="hm-cell hm-${Math.min(n,3)}">${n||'—'}</td>`;
+    }).join('');
+    return `<tr class="hm-csm-row" data-csm="${k}"><td style="font-size:12px;font-weight:600;color:#2563eb;cursor:pointer">${d?.name||k}</td>${cells}</tr>`;
+  }).join('');
+  // Day bars
+  const maxDay = Math.max(1, ...weekDates.map(d => calls.filter(c=>c.date===d).length));
+  const dayBars = weekDates.map((d,i) => {
+    const n = calls.filter(c=>c.date===d).length;
+    return `<div class="health-bar-row"><div class="health-bar-label">${dateLabels[i]}</div><div class="health-bar-track"><div class="health-bar-fill hf-green" style="width:${Math.round(n/maxDay*100)}%"></div></div><div class="health-bar-count">${n}</div></div>`;
+  }).join('');
+  return `
+  <div class="summary-cards">
+    <div class="sum-card c-teal" onclick="jumpToTab('wcalls','all','all')"><div class="sum-val">${calls.length}</div><div class="sum-lbl">Calls w/ Transcripts</div><div class="sum-sub">${new Set(calls.map(c=>c.account)).size} accounts</div></div>
+    <div class="sum-card c-green" onclick="jumpToTab('wpulses','all','all')"><div class="sum-val">${pulses.length}</div><div class="sum-lbl">Pulse Notes Created</div><div class="sum-sub">${healthy.length} Healthy · ${concerning.length} Concerning</div></div>
+    <div class="sum-card c-purple" onclick="jumpToTab('wcsm','all','all')"><div class="sum-val">${activeCsms}</div><div class="sum-lbl">Active CSMs</div><div class="sum-sub">of 8 on the team</div></div>
+    <div class="sum-card c-amber" onclick="jumpToTab('wpulses','all','Concerning')"><div class="sum-val">${concerning.length}</div><div class="sum-lbl">Concerning Signals</div><div class="sum-sub">${concerning.length ? concerning.map(p=>p.account).join(' · ') : 'None this week'}</div></div>
+  </div>
+  <div class="section-label">Daily Call Activity</div>
+  <div class="heatmap-card">
+    <table class="hm-table">
+      <thead><tr><th class="row-lbl">CSM</th>${hmHeaders}</tr></thead>
+      <tbody>${hmRows}</tbody>
+    </table>
+  </div>
+  <div class="section-label">Pulse Health Distribution</div>
+  <div class="health-dist">
+    <div class="health-bar-wrap">
+      <div class="health-bar-title">All Pulses (${pulses.length})</div>
+      <div class="health-bar-row"><div class="health-bar-label">&#128994; Healthy</div><div class="health-bar-track"><div class="health-bar-fill hf-green" style="width:${pulses.length?Math.round(healthy.length/pulses.length*100):0}%"></div></div><div class="health-bar-count">${healthy.length}</div></div>
+      <div class="health-bar-row"><div class="health-bar-label">&#128993; Concerning</div><div class="health-bar-track"><div class="health-bar-fill hf-amber" style="width:${pulses.length?Math.round(concerning.length/pulses.length*100):0}%"></div></div><div class="health-bar-count">${concerning.length}</div></div>
+    </div>
+    <div class="health-bar-wrap">
+      <div class="health-bar-title">Calls by Day</div>
+      ${dayBars}
+    </div>
+  </div>`;
+}
+
 function renderWeek(mc, tabsRow, statPills) {
-  setPills([['dot-teal','24 Calls'],['dot-green','21 Pulses'],['dot-purple','6 Active CSMs'],['dot-amber','4 Concerning']]);
-  const tabs = ['Summary','CSM Breakdown','Call Log (24)','Pulse Log (21)','Pulse Coverage'];
+  // Aggregate dayData_* for this week (used when no hand-written override exists)
+  const weekData = getWeekData(currentKey);
+
+  // Compute meta: prefer WEEK_META entry, fall back to auto-computed from data
+  let meta = WEEK_META[currentKey];
+  if (!meta && weekData.hasData) {
+    const activeCsms = new Set(weekData.calls.map(c=>c.csm)).size;
+    const concerning = weekData.pulses.filter(p=>p.health==='Concerning').length;
+    meta = {
+      pills: [
+        ['dot-teal',   `${weekData.calls.length} Calls`],
+        ['dot-green',  `${weekData.pulses.length} Pulses`],
+        ['dot-purple', `${activeCsms} Active CSMs`],
+        ['dot-amber',  `${concerning} Concerning`],
+      ],
+      tabs: [
+        'Summary',
+        'CSM Breakdown',
+        `Call Log (${weekData.calls.length})`,
+        `Pulse Log (${weekData.pulses.length})`,
+        'Pulse Coverage',
+      ],
+    };
+  }
+  meta = meta || { pills: [], tabs: ['Summary','CSM Breakdown','Call Log','Pulse Log','Pulse Coverage'] };
+
+  setPills(meta.pills);
   if (!activeTab || !['wsummary','wcsm','wcalls','wpulses','wcoverage'].includes(activeTab)) activeTab='wsummary';
   tabsRow.innerHTML = ['wsummary','wcsm','wcalls','wpulses','wcoverage'].map((k,i)=>
-    `<div class="tab ${activeTab===k?'active':''}" onclick="switchTab('${k}')">${tabs[i]}</div>`
+    `<div class="tab ${activeTab===k?'active':''}" onclick="switchTab('${k}')">${meta.tabs[i]}</div>`
   ).join('');
   ['h-all','h-healthy','h-concerning','health-divider','health-label'].forEach(id=>{
     const el=document.getElementById(id); if(el) el.style.display = activeTab==='wpulses'?'':'none';
   });
 
   let html = '<div class="content">';
-  if (activeTab==='wsummary') html += weekSummaryHTML();
-  else if (activeTab==='wcsm') html += weekCSMHTML();
-  else if (activeTab==='wcalls') html += weekCallsHTML();
-  else if (activeTab==='wcoverage') html += pulseCoverageHTML();
-  else if (activeTab==='wacct') html += accountsHTML();
-  else html += weekPulsesHTML();
+  if (activeTab==='wsummary') {
+    const fn = getWeekFn('weekSummaryHTML');
+    html += fn ? fn() : autoWeekSummaryHTML(weekData);
+  } else if (activeTab==='wcsm') {
+    const fn = getWeekFn('weekCSMHTML');
+    html += fn ? fn() : autoWeekCSMHTML(weekData);
+  } else if (activeTab==='wcalls') {
+    const fn = getWeekFn('weekCallsHTML');
+    html += fn ? fn() : autoWeekCallsHTML(weekData);
+  } else if (activeTab==='wcoverage') {
+    html += pulseCoverageHTML();
+  } else {
+    const fn = getWeekFn('weekPulsesHTML');
+    html += fn ? fn() : autoWeekPulsesHTML(weekData);
+  }
   html += '</div>';
   mc.innerHTML = html;
   if (activeTab==='wpulses') applyWeekPulseFilters();
@@ -1448,6 +1689,21 @@ if (sessionStorage.getItem('hg-auth')) {
   // Point currentKey at the most recent available report and sync the UI
   const latest = Object.keys(REPORTS.day).sort().reverse()[0];
   if (latest) currentKey = latest;
+})();
+
+// Auto-detect available week reports by scanning:
+// 1. weekSummaryHTML_YYYY_Www function names (hand-written weeks like W18)
+// 2. dayData_YYYY_MM_DD function names (auto-derived weeks like W19+)
+// W17 stays in REPORTS.week from its hardcoded init entry (uses un-suffixed base functions).
+(function detectWeekReports() {
+  Object.keys(window).forEach(k => {
+    // Suffixed hand-written week functions
+    let m = k.match(/^weekSummaryHTML_(\d{4})_(W\d{2})$/);
+    if (m) { REPORTS.week[`${m[1]}-${m[2]}`] = true; return; }
+    // Any day with structured data contributes to its week
+    m = k.match(/^dayData_(\d{4})_(\d{2})_(\d{2})$/);
+    if (m) REPORTS.week[weekKey(`${m[1]}-${m[2]}-${m[3]}`)] = true;
+  });
 })();
 
 // applyDate syncs the date label + picker to currentKey, then calls render()
