@@ -11,7 +11,7 @@
 // ─── REPORT DATA ───────────────────────────────────────────────
 const REPORTS = {
   day: {},  // auto-populated at init by probing for dayOverviewHTML_* functions
-  week: { '2026-W17': true, '2026-W18': true },   // W17 = Apr 20-26, W18 = Apr 27-May 3
+  week: { '2026-W17': true },   // W17 = Apr 20-26 · add new entries only when week HTML is written
   month: { '2026-04': true, '2026-05': true },
 };
 
@@ -28,13 +28,15 @@ let accountsSortDesc = true;
 // ─── PERIOD KEYS ───────────────────────────────────────────────
 function dayKey(iso) { return iso; }
 function weekKey(iso) {
-  const d = isoToDate(iso);
-  const jan4 = new Date(d.getFullYear(), 0, 4);
-  const startOfWeek = new Date(jan4);
-  startOfWeek.setDate(jan4.getDate() - ((jan4.getDay() + 6) % 7));
-  const diff = d - startOfWeek;
+  const [y, m, d] = iso.split('-').map(Number);
+  // Use UTC midnight for both dates so DST offset differences (e.g. EST vs EDT)
+  // don't corrupt the millisecond diff and cause off-by-one week numbers.
+  const target = Date.UTC(y, m - 1, d);
+  const jan4Day = new Date(y, 0, 4).getDay(); // local getDay() is fine for day-of-week
+  const startOfWeek = Date.UTC(y, 0, 4) - ((jan4Day + 6) % 7) * 86400000;
+  const diff = target - startOfWeek;
   const week = Math.floor(diff / 604800000) + 1;
-  return d.getFullYear() + '-W' + String(week).padStart(2,'0');
+  return y + '-W' + String(week).padStart(2, '0');
 }
 function monthKey(iso) { return iso.slice(0,7); }
 function currentPeriodKey(iso) {
