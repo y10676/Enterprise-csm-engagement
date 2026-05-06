@@ -83,6 +83,109 @@ function dayActionsHTML_2026_05_01() {
   <div class="empty-state" id="actions-empty" style="display:none"><div class="empty-icon">&#128269;</div>No action items match these filters.</div>`;
 }
 
+// ─── MAY 5, 2026 ───────────────────────────────────────────────
+
+function dayData_2026_05_05() {
+  return {
+    calls: [
+      { ts: 'May 5 · 4:30 AM',  csm: 'divyam', account: 'Adobe',        note: 'GTM Tool Review · data scoring discrepancies flagged by customer', mins: 45, health: 'Concerning' },
+      { ts: 'May 5 · 5:00 AM',  csm: 'varun',  account: 'BMC Software', note: 'Call review session · renewal alignment discussion', mins: 60, health: 'Concerning' },
+      { ts: 'May 5 · 7:30 AM',  csm: 'nick',   account: 'Intuit',       note: 'Data matching review + sales plays workshop · x-cov for Atisha', mins: 30, health: 'Healthy', xcov: 'atisha' },
+      { ts: 'May 5 · 8:00 AM',  csm: 'nick',   account: 'HCL America',  note: 'AI team presentation · MCP server + programmatic data access', mins: 60, health: 'Concerning' },
+      { ts: 'May 5 · 8:30 AM',  csm: 'divyam', account: 'Quadient',     note: 'TR product page localization query · international market use cases', mins: 30, health: 'Healthy' },
+      { ts: 'May 5 · 9:00 AM',  csm: 'pam',    account: 'Microsoft',    note: 'MACC model · Azure $5M commitment · joint GTM planning', mins: 30, health: 'Healthy' },
+      { ts: 'May 5 · 10:00 AM', csm: 'nick',   account: 'Siemens AG',   note: 'ICP fit scoring optimization · deterministic vs LLM approach', mins: 50, health: 'Healthy' },
+      { ts: 'May 5 · 11:00 AM', csm: 'varun',  account: 'Autodesk',     note: 'Operating hierarchy data walkthrough · org structure coverage review', mins: 45, health: 'Healthy' },
+      { ts: 'May 5 · 3:00 PM',  csm: 'pam',    account: 'Microsoft',    note: 'HG data into Dynamics Sales Agent/Copilot · Matt Berg alignment', mins: 30, health: 'Healthy' },
+    ],
+    pulses: [
+      { csm: 'divyam', account: 'Adobe',        health: 'Concerning', note: 'GTM Tool Review: data scoring discrepancies flagged. Follow-up investigation needed.' },
+      { csm: 'varun',  account: 'BMC Software', health: 'Concerning', note: 'Renewal alignment session. Account at risk — monitoring active. Pre-pulsed by Varun.' },
+      { csm: 'nick',   account: 'Intuit',       health: 'Healthy',    note: 'X-cov for Atisha: data matching + sales plays workshop. Strong engagement.' },
+      { csm: 'nick',   account: 'HCL America',  health: 'Concerning', note: 'MCP server deep dive — integration re-evaluation signals. Renewal risk monitoring.' },
+      { csm: 'divyam', account: 'Quadient',     health: 'Healthy',    note: 'TR localization query. New international use cases emerging. Healthy.' },
+      { csm: 'pam',    account: 'Microsoft',    health: 'Healthy',    note: 'MACC + Copilot sessions. Azure $5M alignment. HG data into Dynamics Sales Agent.' },
+      { csm: 'nick',   account: 'Siemens AG',   health: 'Healthy',    note: 'ICP fit scoring deep dive. Deterministic vs LLM methodology. Highly engaged.' },
+      { csm: 'varun',  account: 'Autodesk',     health: 'Healthy',    note: 'Operating hierarchy walkthrough. Org structure data quality review. Healthy.' },
+    ],
+  };
+}
+
+function dayMeta_2026_05_05() {
+  return {
+    pills: [['dot-teal','9 Calls'],['dot-green','9 Vitally Pulses'],['dot-amber','1 Cross-Coverage'],['dot-red','3 Concerning'],['dot-purple','1 Pending Transcript']],
+    tabs:  ['Overview','Calls (10)','Pulses (9)','Action Items (4)'],
+  };
+}
+
+function dayOverviewHTML_2026_05_05() {
+  return `<div class="section-label">Team Activity &mdash; Tuesday May 5, 2026</div>
+  <div class="overview-grid">
+    <div class="csm-card has-calls" data-csm="nick"><span class="call-badge">3 CALLS</span><div class="csm-card-header"><div class="avatar av-grey">NJ</div><div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">3</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div><div><div class="metric-num m-grey">140m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">Intuit (X-cov Atisha) &middot; HCL America &middot; Siemens AG &mdash; HCL concerning: MCP deep dive</div></div>
+    <div class="csm-card has-calls" data-csm="divyam"><span class="call-badge">2 CALLS</span><div class="csm-card-header"><div class="avatar av-divyam">DD</div><div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div><div><div class="metric-num m-grey">75m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">Adobe (concerning: scoring discrepancies) &middot; Quadient (healthy) &middot; Paychex transcript pending</div></div>
+    <div class="csm-card has-calls" data-csm="pam"><span class="call-badge">2 CALLS</span><div class="csm-card-header"><div class="avatar av-grey">PH</div><div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">Microsoft MACC (Azure $5M GTM) &middot; Microsoft Align. (Dynamics Sales Agent/Copilot)</div></div>
+    <div class="csm-card has-calls" data-csm="varun"><span class="call-badge">2 CALLS</span><div class="csm-card-header"><div class="avatar av-varun">VT</div><div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div><div><div class="metric-num m-grey">105m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">BMC Software (concerning: renewal risk) &middot; Autodesk (healthy: hierarchy data)</div></div>
+    <div class="csm-card no-calls" data-csm="atisha"><div class="csm-card-header"><div class="avatar av-grey">AW</div><div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">Intuit covered by Nick Johnson on May 5</div></div>
+    <div class="csm-card no-calls" data-csm="riley"><div class="csm-card-header"><div class="avatar av-riley">RR</div><div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No calls logged this period</div></div>
+    <div class="csm-card no-calls" data-csm="rani"><div class="csm-card-header"><div class="avatar av-grey">RG</div><div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No calls logged this period</div></div>
+    <div class="csm-card no-calls" data-csm="andy"><div class="csm-card-header"><div class="avatar av-grey">AL</div><div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No calls logged this period</div></div>
+  </div>`;
+}
+
+function dayCallsHTML_2026_05_05() {
+  return `<div class="table-card"><table>
+    <thead><tr><th>Time (PT)</th><th>CSM</th><th>Account</th><th>Duration</th><th>Signal</th></tr></thead>
+    <tbody>
+      <tr data-csm="divyam" data-health="Concerning"><td style="color:#9ca3af;font-size:12px">May 5 &middot; 4:30 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-divyam">DD</div>Divyam Dewan</div></td><td><strong>Adobe</strong> <span style="font-size:11px;color:#9ca3af">GTM Tool Review &middot; data scoring discrepancies flagged by customer</span></td><td>45 min</td><td><span class="badge badge-concerning">&#128993; Concerning</span></td></tr>
+      <tr data-csm="varun" data-health="Concerning"><td style="color:#9ca3af;font-size:12px">May 5 &middot; 5:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-varun">VT</div>Varun Tiwari</div></td><td><strong>BMC Software</strong> <span style="font-size:11px;color:#9ca3af">Call review session &middot; renewal alignment discussion</span></td><td>60 min</td><td><span class="badge badge-concerning">&#128993; Concerning</span></td></tr>
+      <tr data-csm="nick" data-health="Healthy"><td style="color:#9ca3af;font-size:12px">May 5 &middot; 7:30 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">NJ</div>Nick Johnson <span style="font-size:11px">(X-cov for AW)</span></div></td><td><strong>Intuit</strong> <span style="font-size:11px;color:#9ca3af">Data matching review + sales plays workshop &middot; covering for Atisha Waghela</span></td><td>30 min</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="nick" data-health="Concerning"><td style="color:#9ca3af;font-size:12px">May 5 &middot; 8:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">NJ</div>Nick Johnson</div></td><td><strong>HCL America</strong> <span style="font-size:11px;color:#9ca3af">AI team presentation &middot; MCP server + programmatic data access deep dive</span></td><td>60 min</td><td><span class="badge badge-concerning">&#128993; Concerning</span></td></tr>
+      <tr data-csm="divyam" data-health="Healthy"><td style="color:#9ca3af;font-size:12px">May 5 &middot; 8:30 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-divyam">DD</div>Divyam Dewan</div></td><td><strong>Quadient</strong> <span style="font-size:11px;color:#9ca3af">TR product page localization query &middot; international market use cases</span></td><td>30 min</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="pam" data-health="Healthy"><td style="color:#9ca3af;font-size:12px">May 5 &middot; 9:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">PH</div>Pam Huck</div></td><td><strong>Microsoft (MACC)</strong> <span style="font-size:11px;color:#9ca3af">MACC model &middot; Azure $5M commitment &middot; joint GTM planning</span></td><td>30 min</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="nick" data-health="Healthy"><td style="color:#9ca3af;font-size:12px">May 5 &middot; 10:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">NJ</div>Nick Johnson</div></td><td><strong>Siemens AG</strong> <span style="font-size:11px;color:#9ca3af">ICP fit scoring optimization &middot; deterministic vs LLM-based approach</span></td><td>50 min</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="divyam" data-health="Healthy"><td style="color:#9ca3af;font-size:12px">May 5 &middot; 10:30 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-divyam">DD</div>Divyam Dewan</div></td><td><strong>Paychex</strong> <span style="font-size:11px;color:#9ca3af">No transcript available &mdash; call detected but not counted</span></td><td>30 min</td><td><span class="badge" style="background:#fef3c7;color:#92400e">&#128336; Pending</span></td></tr>
+      <tr data-csm="varun" data-health="Healthy"><td style="color:#9ca3af;font-size:12px">May 5 &middot; 11:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-varun">VT</div>Varun Tiwari</div></td><td><strong>Autodesk</strong> <span style="font-size:11px;color:#9ca3af">Operating hierarchy data walkthrough &middot; org structure coverage review</span></td><td>45 min</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="pam" data-health="Healthy"><td style="color:#9ca3af;font-size:12px">May 5 &middot; 3:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">PH</div>Pam Huck</div></td><td><strong>Microsoft (Align.)</strong> <span style="font-size:11px;color:#9ca3af">HG data into Dynamics Sales Agent/Copilot &middot; Matt Berg alignment session</span></td><td>30 min</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+    </tbody>
+  </table></div>
+  <div style="background:#eff6ff;border:1px solid #bfdbfe;border-left:3px solid #3b82f6;border-radius:6px;padding:10px 14px;margin:10px 0;font-size:12px;color:#1e40af;">
+    &#x2139;&#xfe0f; <strong>1 cross-coverage call</strong>: Nick Johnson covered Intuit (7:30 AM) for Atisha Waghela. &nbsp;|&nbsp; <strong>1 pending transcript</strong>: Paychex (Divyam Dewan, 10:30 AM) &mdash; no transcript available at scan time, not counted. &nbsp;|&nbsp; <strong>BMC Software pulse pre-existing</strong>: Varun created pulse before daily scan.
+  </div>
+  <div class="empty-state" id="calls-empty" style="display:none"><div class="empty-icon">&#128269;</div>No calls match these filters.</div>`;
+}
+
+function dayPulsesHTML_2026_05_05() {
+  const cards = [
+    { csm:'divyam', health:'Concerning', account:'Adobe',        opp:'Vitally Pulse &mdash; May 5 Call',      arr:'Enterprise &middot; Divyam Dewan',                        excerpt:'GTM Tool Review session (45 min, Teams): customer raised concerns about data scoring discrepancies in firmographic signals. Follow-up investigation required. Weflow scan: May 5 scan.', csmlbl:'Divyam Dewan',   change:'New &middot; Pulse ba342efb' },
+    { csm:'varun',  health:'Concerning', account:'BMC Software', opp:'Vitally Pulse &mdash; May 5 Call',      arr:'Enterprise &middot; Varun Tiwari',                         excerpt:'Renewal alignment call (60 min, Zoom). Account at risk. Varun created pulse prior to daily scan. Monitoring active.', csmlbl:'Varun Tiwari',    change:'Pre-existing &middot; Pulse 48514384' },
+    { csm:'nick',   health:'Healthy',    account:'Intuit',       opp:'Vitally Pulse &mdash; May 5 X-cov',    arr:'Enterprise &middot; Nick Johnson (covering Atisha Waghela)', excerpt:'Cross-coverage: Nick Johnson covered Intuit (30 min, Zoom) for Atisha Waghela. Data matching review and sales plays workshop. Customer actively engaged in use case expansion.', csmlbl:'Nick Johnson',    change:'New &middot; Pulse 5d5c2ef8' },
+    { csm:'nick',   health:'Concerning', account:'HCL America',  opp:'Vitally Pulse &mdash; May 5 Call',      arr:'Enterprise &middot; Nick Johnson',                         excerpt:'AI team presentation (60 min, Zoom): MCP server and programmatic data access deep dive. Technical depth suggests internal re-evaluation of integration approach. Renewal risk monitoring active.', csmlbl:'Nick Johnson',    change:'New &middot; Pulse bfcaf3dc' },
+    { csm:'divyam', health:'Healthy',    account:'Quadient',     opp:'Vitally Pulse &mdash; May 5 Call',      arr:'Enterprise &middot; Divyam Dewan',                        excerpt:'TrustRadius product page localization query (30 min, Zoom). Customer exploring TR data for international markets. New use cases emerging. Positive engagement.', csmlbl:'Divyam Dewan',   change:'New &middot; Pulse c2731acd' },
+    { csm:'pam',    health:'Healthy',    account:'Microsoft',    opp:'Vitally Pulse &mdash; May 5 (MACC + Align.)', arr:'Enterprise &middot; Pam Huck',                    excerpt:'Two sessions: MACC model alignment &mdash; Azure $5M commitment and joint GTM (9 AM, 30 min). Dynamics Sales Agent/Copilot integration with Matt Berg (3 PM, 30 min). Strong strategic momentum on both opps.', csmlbl:'Pam Huck',        change:'New &middot; Pulses c0908ffc / d1b00584' },
+    { csm:'nick',   health:'Healthy',    account:'Siemens AG',   opp:'Vitally Pulse &mdash; May 5 Call',      arr:'Enterprise &middot; Nick Johnson',                         excerpt:'ICP fit scoring optimization (50 min, Teams). Deterministic vs LLM-based scoring deep dive. Customer highly engaged in refining their ICP methodology with HG data.', csmlbl:'Nick Johnson',    change:'New &middot; Pulse dbce1663' },
+    { csm:'varun',  health:'Healthy',    account:'Autodesk',     opp:'Vitally Pulse &mdash; May 5 Call',      arr:'Enterprise &middot; Varun Tiwari',                         excerpt:'Operating hierarchy data walkthrough (45 min, Zoom). Customer reviewing org structure data quality and coverage for analytics use case. Engaged and positive.', csmlbl:'Varun Tiwari',    change:'New &middot; Pulse 56493678' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':'badge-concerning';
+  const bi = h => h==='Healthy'?'&#128994;':'&#128993;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top"><div><div class="pulse-account">${c.account}</div><div class="pulse-opp">${c.opp}</div><div class="pulse-arr">${c.arr}</div></div><span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span></div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none"><div class="empty-icon">&#128269;</div>No pulses match these filters.</div>`;
+}
+
+function dayActionsHTML_2026_05_05() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has(501)?'done':''}" data-csm="divyam" id="action-501"><div class="action-checkbox ${doneActions.has(501)?'checked':''}" onclick="toggleAction(501)"></div><div class="action-body"><div class="action-title">&#x26a0;&#xfe0f; Adobe &mdash; Data scoring discrepancy investigation</div><div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Divyam Dewan &middot; Customer raised concerns about firmographic signal accuracy during GTM Tool Review (May 5, 45 min, Teams). Identify specific discrepancies, investigate root cause, and communicate findings with timeline. Retention risk if unresolved before renewal.</div></div></div>
+    <div class="action-item ${doneActions.has(502)?'done':''}" data-csm="nick" id="action-502"><div class="action-checkbox ${doneActions.has(502)?'checked':''}" onclick="toggleAction(502)"></div><div class="action-body"><div class="action-title">&#x26a0;&#xfe0f; HCL America &mdash; MCP integration risk assessment</div><div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Nick Johnson &middot; AI team requested deep dive on MCP server and programmatic data access (May 5, 60 min, Zoom). Technical depth suggests internal re-evaluation of integration approach. Clarify HCL&apos;s direction before renewal. Flag for CSM leadership if pattern continues.</div></div></div>
+    <div class="action-item ${doneActions.has(503)?'done':''}" data-csm="divyam" id="action-503"><div class="action-checkbox ${doneActions.has(503)?'checked':''}" onclick="toggleAction(503)"></div><div class="action-body"><div class="action-title">&#x23F3; Paychex transcript pending &mdash; Divyam Dewan</div><div class="action-meta"><span class="urgency-badge urgency-medium">FOLLOW-UP</span>Divyam Dewan &middot; Paychex recording (May 5, 10:30 AM, 30 min) had no transcript available at scan time. Check Weflow once transcript processes. If Divyam confirmed as active speaker, create Vitally pulse and count in next report.</div></div></div>
+    <div class="action-item ${doneActions.has(504)?'done':''}" data-csm="nick" id="action-504"><div class="action-checkbox ${doneActions.has(504)?'checked':''}" onclick="toggleAction(504)"></div><div class="action-body"><div class="action-title">&#x1F4CB; Intuit cross-coverage &mdash; sync with Atisha Waghela</div><div class="action-meta"><span class="urgency-badge urgency-low">LOW</span>Nick Johnson covered Intuit (7:30 AM, 30 min) for Atisha Waghela. Data matching review + sales plays workshop completed. Ensure Atisha is briefed on outcomes and any follow-ups from the session. Pulse 5d5c2ef8 logged with cross-coverage context.</div></div></div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none"><div class="empty-icon">&#128269;</div>No action items match these filters.</div>`;
+}
+
 // ─── MAY 4, 2026 ───────────────────────────────────────────────
 
 function dayData_2026_05_04() {
