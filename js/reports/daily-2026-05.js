@@ -272,3 +272,98 @@ function dayActionsHTML_2026_05_04() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none"><div class="empty-icon">&#128269;</div>No action items match these filters.</div>`;
 }
+
+// ─── MAY 6, 2026 ───────────────────────────────────────────────
+
+function dayData_2026_05_06() {
+  return {
+    calls: [
+      { ts: 'May 6 · 10:00 AM', csm: 'nick',   account: 'NTT Data Corporation',  note: 'Monthly cadence · HG speaker uncertain (David Garcia-Thomas AE in transcript)', mins: 30,  health: 'Healthy' },
+      { ts: 'May 6 · 1:35 PM',  csm: 'atisha', account: 'Intel Corporation',      note: 'Regular cadence · product engagement and data review',                          mins: 25,  health: 'Healthy' },
+      { ts: 'May 6 · 2:30 PM',  csm: 'divyam', account: 'Sage Global Services',   note: 'Cross-coverage for Andy Lim · cadence call',                                    mins: 30,  health: 'Concerning', xcov: 'andy' },
+      { ts: 'May 6 · 3:00 PM',  csm: 'nick',   account: 'Westcon',                note: 'Account cadence · product alignment and renewal discussion',                    mins: 30,  health: 'Healthy' },
+      { ts: 'May 6 · 4:30 PM',  csm: 'nick',   account: 'SAP Inc',                note: 'Extended strategic session · data use case alignment across products',          mins: 120, health: 'Healthy' },
+      { ts: 'May 6 · 5:30 PM',  csm: 'varun',  account: 'Pegasystems Inc',        note: 'Cadence call · renewal alignment · product value review',                       mins: 30,  health: 'Healthy' },
+      { ts: 'May 6 · 6:30 PM',  csm: 'varun',  account: 'Alight Solutions LLC',   note: 'Cadence call · renewal risk flagged · escalation discussion',                   mins: 30,  health: 'Concerning' },
+    ],
+    pulses: [
+      { csm: 'atisha', account: 'Intel Corporation',    health: 'Healthy',    note: 'Regular cadence call. Active product engagement and data review.' },
+      { csm: 'divyam', account: 'Sage Global Services', health: 'Concerning', note: 'X-cov for Andy Lim: cadence call. Concerning health noted; Andy to be briefed.' },
+      { csm: 'nick',   account: 'NTT Data Corporation', health: 'Healthy',    note: 'Monthly cadence. HG speaker uncertain — David Garcia-Thomas (AE) primary in transcript.' },
+      { csm: 'nick',   account: 'Westcon',              health: 'Healthy',    note: 'Account cadence. Product alignment and renewal discussion maintained.' },
+      { csm: 'nick',   account: 'SAP Inc',              health: 'Healthy',    note: 'Extended 120-min strategic session. Data use case alignment across SAP products.' },
+      { csm: 'varun',  account: 'Pegasystems Inc',      health: 'Healthy',    note: 'Cadence call. Renewal alignment and product value review.' },
+      { csm: 'varun',  account: 'Alight Solutions LLC', health: 'Concerning', note: 'Cadence call. Renewal risk flagged — escalation discussion initiated.' },
+    ],
+  };
+}
+
+function dayMeta_2026_05_06() {
+  return {
+    pills: [['dot-teal','7 Calls'],['dot-green','7 Vitally Pulses'],['dot-amber','1 Cross-Coverage'],['dot-red','2 Concerning'],['dot-yellow','1 Uncertain']],
+    tabs:  ['Overview','Calls (7)','Pulses (7)','Action Items (3)'],
+  };
+}
+
+function dayOverviewHTML_2026_05_06() {
+  return `<div class="section-label">Team Activity &mdash; Wednesday May 6, 2026</div>
+  <div class="overview-grid">
+    <div class="csm-card has-calls" data-csm="nick"><span class="call-badge">3 CALLS</span><div class="csm-card-header"><div class="avatar av-grey">NJ</div><div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">3</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">180m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">NTT Data (&#9888;&#65039; speaker uncertain) &middot; Westcon &middot; SAP Inc (2 hr strategic session)</div></div>
+    <div class="csm-card has-calls" data-csm="varun"><span class="call-badge">2 CALLS</span><div class="csm-card-header"><div class="avatar av-varun">VT</div><div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div><div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">Pegasystems Inc (healthy) &middot; Alight Solutions LLC (concerning: renewal risk flagged)</div></div>
+    <div class="csm-card has-calls" data-csm="atisha"><span class="call-badge">1 CALL</span><div class="csm-card-header"><div class="avatar av-grey">AW</div><div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">25m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">Intel Corporation &middot; Regular cadence &middot; product engagement and data review</div></div>
+    <div class="csm-card has-calls" data-csm="divyam"><span class="call-badge">1 CALL</span><div class="csm-card-header"><div class="avatar av-divyam">DD</div><div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div><div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">Sage Global Services (X-cov for Andy Lim) &middot; Concerning: cadence call, Andy to be briefed</div></div>
+    <div class="csm-card no-calls" data-csm="andy"><div class="csm-card-header"><div class="avatar av-grey">AL</div><div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">Sage Global Services covered by Divyam Dewan on May 6</div></div>
+    <div class="csm-card no-calls" data-csm="pam"><div class="csm-card-header"><div class="avatar av-grey">PH</div><div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No calls logged this period</div></div>
+    <div class="csm-card no-calls" data-csm="rani"><div class="csm-card-header"><div class="avatar av-grey">RG</div><div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No calls logged this period</div></div>
+    <div class="csm-card no-calls" data-csm="riley"><div class="csm-card-header"><div class="avatar av-riley">RR</div><div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No calls logged this period</div></div>
+  </div>`;
+}
+
+function dayCallsHTML_2026_05_06() {
+  return `<div class="table-card"><table>
+    <thead><tr><th>Time (PT)</th><th>CSM</th><th>Account</th><th>Duration</th><th>Signal</th></tr></thead>
+    <tbody>
+      <tr data-csm="nick" data-health="Healthy"><td style="color:#9ca3af;font-size:12px">May 6 &middot; 10:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">NJ</div>Nick Johnson</div></td><td><strong>NTT Data Corporation</strong> <span style="font-size:11px;color:#9ca3af">Monthly cadence &middot; HG speaker uncertain (David Garcia-Thomas AE in transcript)</span></td><td>30 min</td><td><span class="badge" style="background:#fef3c7;color:#92400e">&#9888;&#65039; Uncertain</span></td></tr>
+      <tr data-csm="atisha" data-health="Healthy"><td style="color:#9ca3af;font-size:12px">May 6 &middot; 1:35 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">AW</div>Atisha Waghela</div></td><td><strong>Intel Corporation</strong> <span style="font-size:11px;color:#9ca3af">Regular cadence &middot; product engagement and data review</span></td><td>25 min</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="divyam" data-health="Concerning"><td style="color:#9ca3af;font-size:12px">May 6 &middot; 2:30 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-divyam">DD</div>Divyam Dewan <span style="font-size:11px">(X-cov for AL)</span></div></td><td><strong>Sage Global Services</strong> <span style="font-size:11px;color:#9ca3af">Cross-coverage for Andy Lim &middot; cadence call &middot; concerning health</span></td><td>30 min</td><td><span class="badge badge-concerning">&#128993; Concerning</span></td></tr>
+      <tr data-csm="nick" data-health="Healthy"><td style="color:#9ca3af;font-size:12px">May 6 &middot; 3:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">NJ</div>Nick Johnson</div></td><td><strong>Westcon</strong> <span style="font-size:11px;color:#9ca3af">Account cadence &middot; product alignment and renewal discussion</span></td><td>30 min</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="nick" data-health="Healthy"><td style="color:#9ca3af;font-size:12px">May 6 &middot; 4:30 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">NJ</div>Nick Johnson</div></td><td><strong>SAP Inc</strong> <span style="font-size:11px;color:#9ca3af">Extended strategic session &middot; data use case alignment across products</span></td><td>120 min</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="varun" data-health="Healthy"><td style="color:#9ca3af;font-size:12px">May 6 &middot; 5:30 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-varun">VT</div>Varun Tiwari</div></td><td><strong>Pegasystems Inc</strong> <span style="font-size:11px;color:#9ca3af">Cadence call &middot; renewal alignment &middot; product value review</span></td><td>30 min</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="varun" data-health="Concerning"><td style="color:#9ca3af;font-size:12px">May 6 &middot; 6:30 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-varun">VT</div>Varun Tiwari</div></td><td><strong>Alight Solutions LLC</strong> <span style="font-size:11px;color:#9ca3af">Cadence call &middot; renewal risk flagged &middot; escalation discussion</span></td><td>30 min</td><td><span class="badge badge-concerning">&#128993; Concerning</span></td></tr>
+    </tbody>
+  </table></div>
+  <div style="background:#eff6ff;border:1px solid #bfdbfe;border-left:3px solid #3b82f6;border-radius:6px;padding:10px 14px;margin:10px 0;font-size:12px;color:#1e40af;">
+    &#x2139;&#xfe0f; <strong>1 cross-coverage call</strong>: Divyam Dewan covered Sage Global Services (2:30 PM) for Andy Lim. &nbsp;|&nbsp; <strong>1 uncertain</strong>: NTT Data (Nick Johnson, 10:00 AM) &mdash; David Garcia-Thomas (AE) appears as primary HG speaker in transcript; Nick&apos;s presence not confirmed. Pulse still logged against Nick&apos;s opportunity for tracking.
+  </div>
+  <div class="empty-state" id="calls-empty" style="display:none"><div class="empty-icon">&#128269;</div>No calls match these filters.</div>`;
+}
+
+function dayPulsesHTML_2026_05_06() {
+  const cards = [
+    { csm:'atisha', health:'Healthy',    account:'Intel Corporation',    opp:'Vitally Pulse &mdash; May 6 Call',      arr:'Enterprise &middot; Atisha Waghela',                        excerpt:'Regular cadence call (25 min, Teams). Product engagement and data review maintained. Account in good standing. Pulse f6af630f created via Weflow scan.', csmlbl:'Atisha Waghela', change:'New &middot; Pulse f6af630f' },
+    { csm:'divyam', health:'Concerning', account:'Sage Global Services', opp:'Vitally Pulse &mdash; May 6 X-cov',    arr:'Enterprise &middot; Divyam Dewan (covering Andy Lim)',        excerpt:'Cross-coverage: Divyam Dewan covered Sage Global Services (30 min, Zoom) for Andy Lim. Cadence call completed. Concerning health noted &mdash; Andy to be briefed on outcomes. Pulse 40ccdfc5 created.', csmlbl:'Divyam Dewan', change:'New &middot; Pulse 40ccdfc5' },
+    { csm:'nick',   health:'Healthy',    account:'NTT Data Corporation', opp:'Vitally Pulse &mdash; May 6 Call',      arr:'Enterprise &middot; Nick Johnson',                            excerpt:'Monthly cadence call (30 min, Zoom). Note: HG speaker uncertain &mdash; David Garcia-Thomas (AE) appeared as primary HG contact in transcript. Nick&apos;s presence not confirmed. Pulse logged for tracking; verify Nick&apos;s attendance. Pulse 0aaf0a1d created.', csmlbl:'Nick Johnson', change:'New &middot; Pulse 0aaf0a1d' },
+    { csm:'nick',   health:'Healthy',    account:'Westcon',              opp:'Vitally Pulse &mdash; May 6 Call',      arr:'Enterprise &middot; Nick Johnson',                            excerpt:'Account cadence call (30 min, Zoom). Product alignment and renewal discussion. Engagement maintained. Pulse 13c8c0bd created.', csmlbl:'Nick Johnson', change:'New &middot; Pulse 13c8c0bd' },
+    { csm:'nick',   health:'Healthy',    account:'SAP Inc',              opp:'Vitally Pulse &mdash; May 6 Call',      arr:'Enterprise &middot; Nick Johnson',                            excerpt:'Extended 120-minute strategic session (Zoom). Data use case alignment across SAP products including install, spend, and intent data. Strong engagement and strategic depth. Pulse 31367cf3 created.', csmlbl:'Nick Johnson', change:'New &middot; Pulse 31367cf3' },
+    { csm:'varun',  health:'Healthy',    account:'Pegasystems Inc',      opp:'Vitally Pulse &mdash; May 6 Call',      arr:'Enterprise &middot; Varun Tiwari',                            excerpt:'Cadence call (30 min, Zoom). Renewal alignment and product value review. Account health positive. Pulse 5ebbf0b5 created.', csmlbl:'Varun Tiwari', change:'New &middot; Pulse 5ebbf0b5' },
+    { csm:'varun',  health:'Concerning', account:'Alight Solutions LLC', opp:'Vitally Pulse &mdash; May 6 Call',      arr:'Enterprise &middot; Varun Tiwari',                            excerpt:'Cadence call (30 min, Teams). Renewal risk flagged &mdash; escalation discussion initiated. Monitor closely heading into renewal cycle. Pulse 7b6b12c4 created.', csmlbl:'Varun Tiwari', change:'New &middot; Pulse 7b6b12c4' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':'badge-concerning';
+  const bi = h => h==='Healthy'?'&#128994;':'&#128993;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top"><div><div class="pulse-account">${c.account}</div><div class="pulse-opp">${c.opp}</div><div class="pulse-arr">${c.arr}</div></div><span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span></div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none"><div class="empty-icon">&#128269;</div>No pulses match these filters.</div>`;
+}
+
+function dayActionsHTML_2026_05_06() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has(601)?'done':''}" data-csm="nick" id="action-601"><div class="action-checkbox ${doneActions.has(601)?'checked':''}" onclick="toggleAction(601)"></div><div class="action-body"><div class="action-title">&#9888;&#65039; NTT Data &mdash; Verify Nick Johnson&apos;s presence on May 6 call</div><div class="action-meta"><span class="urgency-badge urgency-medium">FOLLOW-UP</span>Nick Johnson &middot; Transcript for the 10:00 AM NTT Data call (30 min, Zoom) showed David Garcia-Thomas (AE) as the primary HG speaker. Nick&apos;s attendance was not confirmed. Verify with Nick whether he attended. If he did not, the Vitally pulse (0aaf0a1d) should be updated to reflect the correct HG contact and remove the CSM designation.</div></div></div>
+    <div class="action-item ${doneActions.has(602)?'done':''}" data-csm="divyam" id="action-602"><div class="action-checkbox ${doneActions.has(602)?'checked':''}" onclick="toggleAction(602)"></div><div class="action-body"><div class="action-title">&#x1F501; Sage Global Services cross-coverage &mdash; Brief Andy Lim</div><div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Divyam Dewan covered Sage Global Services (2:30 PM, 30 min, Zoom) for Andy Lim. Health flagged as Concerning (Pulse 40ccdfc5). Divyam should brief Andy on call outcomes, key discussion points, and any follow-ups. Andy to take next steps on account health remediation.</div></div></div>
+    <div class="action-item ${doneActions.has(603)?'done':''}" data-csm="varun" id="action-603"><div class="action-checkbox ${doneActions.has(603)?'checked':''}" onclick="toggleAction(603)"></div><div class="action-body"><div class="action-title">&#x26a0;&#xfe0f; Alight Solutions LLC &mdash; Renewal risk escalation</div><div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Varun Tiwari &middot; Renewal risk flagged on the 6:30 PM cadence call (30 min, Teams). Escalation discussion initiated. Varun to assess renewal timeline, identify key decision-makers, and determine if exec sponsorship or QBR is needed. Flag for CSM leadership if risk is material. Pulse 7b6b12c4 logged.</div></div></div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none"><div class="empty-icon">&#128269;</div>No action items match these filters.</div>`;
+}
