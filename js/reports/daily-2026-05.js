@@ -367,3 +367,91 @@ function dayActionsHTML_2026_05_06() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none"><div class="empty-icon">&#128269;</div>No action items match these filters.</div>`;
 }
+
+// ─── MAY 7, 2026 ───────────────────────────────────────────────
+
+function dayData_2026_05_07() {
+  return {
+    calls: [
+      { ts: 'May 7 · 12:00 PM', csm: 'varun', account: 'BMC Software', note: 'Platform walkthrough · David B & Lapp · AI-first GTM · deep-dive next week', mins: 30, health: 'Concerning' },
+      { ts: 'May 7 · 12:30 PM', csm: 'nick',  account: 'Check Point',  note: 'Credit reconciliation resolved · Snowflake renewal Nov 2026 · SixSense integration planned', mins: 30, health: 'Healthy' },
+      { ts: 'May 7 · 4:30 PM',  csm: 'nick',  account: 'Westcon',      note: 'Internal prep sync · Victoria no-show · SMB data accuracy discussion', mins: 45, health: 'Healthy' },
+      { ts: 'May 7 · 6:00 PM',  csm: 'varun', account: 'ServiceNow',   note: '473 products confirmed · EBR July 14–21 · custom spend category in dev', mins: 30, health: 'Healthy' },
+    ],
+    pulses: [
+      { csm: 'nick',  account: 'Check Point',  health: 'Healthy',    note: 'Credit reconciliation resolved · Snowflake/SixSense integration planned mid-May' },
+      { csm: 'nick',  account: 'Westcon',      health: 'Healthy',    note: 'Victoria no-show · SMB data accuracy discussion · MCP session pending' },
+      { csm: 'varun', account: 'BMC Software', health: 'Concerning', note: 'New stakeholders David B & Lapp · Julie departure gap · June data feed renewal at risk' },
+      { csm: 'varun', account: 'ServiceNow',   health: 'Healthy',    note: '473 products · 24-month lookback · EBR July 14–21 Palo Alto' },
+    ],
+  };
+}
+
+function dayMeta_2026_05_07() {
+  return {
+    pills: [['dot-teal','4 Calls'],['dot-green','5 Vitally Pulses'],['dot-amber','3 Cross-Coverage'],['dot-red','2 Pending Transcripts']],
+    tabs:  ['Overview','Calls (9)','Pulses (5)','Action Items (3)'],
+  };
+}
+
+function dayOverviewHTML_2026_05_07() {
+  return `<div class="section-label">Team Activity &mdash; Thursday May 7, 2026</div>
+  <div class="overview-grid">
+    <div class="csm-card has-calls" data-csm="nick"><span class="call-badge">2 CALLS</span><div class="csm-card-header"><div class="avatar av-grey">NJ</div><div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-amber">1</div><div class="metric-lbl">X-Cov</div></div></div><div class="csm-account-note">Check Point credit reconciliation + Westcon internal prep sync. IBM covered by Augie/Clayton.</div></div>
+    <div class="csm-card has-calls" data-csm="varun"><span class="call-badge">2 CALLS</span><div class="csm-card-header"><div class="avatar av-varun">VT</div><div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">0</div><div class="metric-lbl">X-Cov</div></div></div><div class="csm-account-note">BMC platform walkthrough with David B &amp; Lapp. ServiceNow data feed finalization &mdash; EBR July 14&ndash;21.</div></div>
+    <div class="csm-card no-calls" data-csm="atisha"><div class="csm-card-header"><div class="avatar av-grey">AW</div><div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-amber">1</div><div class="metric-lbl">X-Cov</div></div><div><div class="metric-num m-red">1</div><div class="metric-lbl">Pending</div></div></div><div class="csm-account-note">Intuit covered by Hayden Smith. PANW transcript pending.</div></div>
+    <div class="csm-card no-calls" data-csm="divyam"><div class="csm-card-header"><div class="avatar av-divyam">DD</div><div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-red">1</div><div class="metric-lbl">Pending</div></div></div><div class="csm-account-note">OpenAI &ldquo;Reconnect&rdquo; call &mdash; transcript still processing.</div></div>
+    <div class="csm-card no-calls" data-csm="pam"><div class="csm-card-header"><div class="avatar av-grey">PH</div><div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-amber">1</div><div class="metric-lbl">X-Cov</div></div></div><div class="csm-account-note">Microsoft covered by Mark Fell.</div></div>
+    <div class="csm-card no-calls" data-csm="rani"><div class="csm-card-header"><div class="avatar av-grey">RG</div><div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No calls logged this period</div></div>
+    <div class="csm-card no-calls" data-csm="riley"><div class="csm-card-header"><div class="avatar av-riley">RR</div><div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No calls logged this period</div></div>
+    <div class="csm-card no-calls" data-csm="andy"><div class="csm-card-header"><div class="avatar av-grey">AL</div><div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No calls logged this period</div></div>
+  </div>`;
+}
+
+function dayCallsHTML_2026_05_07() {
+  return `<div class="table-card"><table>
+    <thead><tr><th>Time (PT)</th><th>CSM</th><th>Account</th><th>Duration</th><th>Signal</th></tr></thead>
+    <tbody>
+      <tr data-csm="varun" data-health="Concerning"><td style="color:#9ca3af;font-size:12px">May 7 &middot; 12:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-varun">VT</div>Varun Tiwari</div></td><td><strong>BMC Software</strong> <span style="font-size:11px;color:#9ca3af">Platform walkthrough &middot; David B &amp; Lapp &middot; AI-first GTM &middot; deep-dive next week</span></td><td>30 min</td><td><span class="badge badge-concerning">&#128993; Concerning</span></td></tr>
+      <tr data-csm="nick" data-health="Healthy"><td style="color:#9ca3af;font-size:12px">May 7 &middot; 12:30 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">NJ</div>Nick Johnson</div></td><td><strong>Check Point</strong> <span style="font-size:11px;color:#9ca3af">Credit reconciliation resolved &middot; Snowflake renewal Nov 2026 &middot; SixSense integration planned</span></td><td>30 min</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="divyam" data-health=""><td style="color:#9ca3af;font-size:12px">May 7 &middot; 4:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-divyam">DD</div>Divyam Dewan</div></td><td><strong>OpenAI</strong> <span style="font-size:11px;color:#9ca3af">OpenAI/HGI Reconnect &mdash; transcript not yet available</span></td><td>&mdash;</td><td><span class="badge" style="background:#e0f2fe;color:#0369a1;border:1px solid #bae6fd">&#9203; Pending</span></td></tr>
+      <tr data-csm="nick" data-health="Healthy"><td style="color:#9ca3af;font-size:12px">May 7 &middot; 4:30 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">NJ</div>Nick Johnson</div></td><td><strong>Westcon</strong> <span style="font-size:11px;color:#9ca3af">Internal prep sync &middot; Victoria no-show &middot; SMB data accuracy discussion</span></td><td>45 min</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="varun" data-health="Healthy"><td style="color:#9ca3af;font-size:12px">May 7 &middot; 6:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-varun">VT</div>Varun Tiwari</div></td><td><strong>ServiceNow</strong> <span style="font-size:11px;color:#9ca3af">473 products confirmed &middot; EBR July 14&ndash;21 &middot; custom spend category in dev</span></td><td>30 min</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="atisha" data-health=""><td style="color:#9ca3af;font-size:12px">May 7 &middot; 7:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">AW</div>Atisha Waghela</div></td><td><strong>Palo Alto Networks</strong> <span style="font-size:11px;color:#9ca3af">HGI + PANW Monthly Sync &mdash; transcript not yet available</span></td><td>&mdash;</td><td><span class="badge" style="background:#e0f2fe;color:#0369a1;border:1px solid #bae6fd">&#9203; Pending</span></td></tr>
+      <tr data-csm="atisha" data-health=""><td style="color:#9ca3af;font-size:12px">May 7</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">AW</div>Atisha (acct) &mdash; Hayden Smith</div></td><td><strong>Intuit</strong> <span style="font-size:10px;background:#fef3c7;color:#92400e;border:1px solid #fde68a;border-radius:4px;padding:1px 5px;margin-left:2px;">X-COV</span></td><td>&mdash;</td><td><span class="badge" style="background:#fef3c7;color:#92400e;border:1px solid #fde68a">&#9888;&#65039; X-Coverage</span></td></tr>
+      <tr data-csm="nick" data-health=""><td style="color:#9ca3af;font-size:12px">May 7</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">NJ</div>Nick (acct) &mdash; Augie/Clayton</div></td><td><strong>IBM</strong> <span style="font-size:10px;background:#fef3c7;color:#92400e;border:1px solid #fde68a;border-radius:4px;padding:1px 5px;margin-left:2px;">X-COV</span></td><td>&mdash;</td><td><span class="badge" style="background:#fef3c7;color:#92400e;border:1px solid #fde68a">&#9888;&#65039; X-Coverage</span></td></tr>
+      <tr data-csm="pam" data-health=""><td style="color:#9ca3af;font-size:12px">May 7</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">PH</div>Pam (acct) &mdash; Mark Fell</div></td><td><strong>Microsoft</strong> <span style="font-size:10px;background:#fef3c7;color:#92400e;border:1px solid #fde68a;border-radius:4px;padding:1px 5px;margin-left:2px;">X-COV</span></td><td>&mdash;</td><td><span class="badge" style="background:#fef3c7;color:#92400e;border:1px solid #fde68a">&#9888;&#65039; X-Coverage</span></td></tr>
+    </tbody>
+  </table></div>
+  <div style="background:#eff6ff;border:1px solid #bfdbfe;border-left:3px solid #3b82f6;border-radius:6px;padding:10px 14px;margin:10px 0;font-size:12px;color:#1e40af;">
+    &#x2139;&#xfe0f; <strong>3 cross-coverage calls</strong>: Intuit (Hayden Smith for Atisha), IBM (Augie Buettner/Clayton Cutbush for Nick), Microsoft (Mark Fell for Pam). &nbsp;|&nbsp; <strong>2 pending transcripts</strong>: OpenAI (Divyam) &amp; PANW (Atisha) &mdash; re-check tomorrow. &nbsp;|&nbsp; <strong>1 excluded</strong>: BILL Operations recording was a Couchbase/MadKudu call (misassociated in SFDC).
+  </div>
+  <div class="empty-state" id="calls-empty" style="display:none"><div class="empty-icon">&#128269;</div>No calls match these filters.</div>`;
+}
+
+function dayPulsesHTML_2026_05_07() {
+  const cards = [
+    { csm:'nick',  health:'Healthy',    account:'Check Point Software', opp:'Vitally Pulse &mdash; May 7 Call',    arr:'Enterprise &middot; Nick Johnson',  excerpt:'Credit reconciliation resolved &mdash; 149K credits written off as goodwill. Snowflake renewal Nov 2026. Snowflake/SixSense integration call planned mid-May. Strong positive trajectory post-CRO-directed renewal ($150K, 24-month term).', csmlbl:'Nick Johnson', change:'New &middot; May 7, 2026' },
+    { csm:'nick',  health:'Healthy',    account:'Westcon',              opp:'Vitally Pulse &mdash; May 7 Call',    arr:'Enterprise &middot; Nick Johnson',  excerpt:'Internal HG prep sync (45 min, Teams). Victoria no-show. Nick &amp; Augie aligned on SMB spend data accuracy issues limiting expansion. Renewal secured (3-year, flat). MCP session pending.', csmlbl:'Nick Johnson &middot; Pre-existing', change:'Existing &middot; May 7, 2026' },
+    { csm:'varun', health:'Concerning', account:'BMC Software',         opp:'Vitally Pulse &mdash; May 7 (&times;2)', arr:'Enterprise &middot; Varun Tiwari', excerpt:'Platform walkthrough (30 min, Teams) with David Bartholomew &amp; David Lapp. AI-first GTM approach explored. Deep-dive next week. Risk: Julie Bolton departure gap + June data feed renewal + Salesforce connector &amp; MadKudu setup pending.', csmlbl:'Varun Tiwari &middot; 2 opps', change:'New &middot; May 7, 2026' },
+    { csm:'varun', health:'Healthy',    account:'ServiceNow',           opp:'Vitally Pulse &mdash; May 7 Call',    arr:'Enterprise &middot; Varun Tiwari', excerpt:'473 products confirmed for monthly refresh (May/June start). 24-month historical look-back included. Custom Risk &amp; Security spend category in development. EBR in Palo Alto confirmed July 14&ndash;21.', csmlbl:'Varun Tiwari', change:'New &middot; May 7, 2026' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':'badge-concerning';
+  const bi = h => h==='Healthy'?'&#128994;':'&#128993;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top"><div><div class="pulse-account">${c.account}</div><div class="pulse-opp">${c.opp}</div><div class="pulse-arr">${c.arr}</div></div><span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span></div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none"><div class="empty-icon">&#128269;</div>No pulses match these filters.</div>`;
+}
+
+function dayActionsHTML_2026_05_07() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has(701)?'done':''}" data-csm="varun" id="action-701"><div class="action-checkbox ${doneActions.has(701)?'checked':''}" onclick="toggleAction(701)"></div><div class="action-body"><div class="action-title">&#x26a0;&#xfe0f; BMC Software &mdash; Book deep-dive for week of May 11</div><div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Varun Tiwari &middot; Data feed expires end of June. Julie Bolton departure leaves a buyer gap. David Bartholomew and David Lapp need a deep-dive walkthrough next week to build momentum toward renewal. Varun committed to scheduling on the May 7 call. Also follow up on Salesforce connector and MadKudu setup.</div></div></div>
+    <div class="action-item ${doneActions.has(702)?'done':''}" data-csm="nick" id="action-702"><div class="action-checkbox ${doneActions.has(702)?'checked':''}" onclick="toggleAction(702)"></div><div class="action-body"><div class="action-title">&#x1F501; Westcon &mdash; Reschedule with Victoria + progress SMB data accuracy</div><div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Nick Johnson &middot; Victoria did not attend the May 7 sync. Nick and Augie aligned internally on SMB data taxonomy issues blocking Westcon&apos;s expansion. Nick to reschedule with Victoria and bring SMB data accuracy resolution update. MCP session still being planned.</div></div></div>
+    <div class="action-item ${doneActions.has(703)?'done':''}" data-csm="varun" id="action-703"><div class="action-checkbox ${doneActions.has(703)?'checked':''}" onclick="toggleAction(703)"></div><div class="action-body"><div class="action-title">&#x1F4CA; ServiceNow &mdash; Kick off Risk &amp; Security spend category + EBR prep</div><div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Varun Tiwari &middot; Custom Risk &amp; Security spend category request to be raised with HG product team. EBR confirmed in Palo Alto, July 14&ndash;21 &mdash; Varun to begin preparing the deck.</div></div></div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none"><div class="empty-icon">&#128269;</div>No action items match these filters.</div>`;
+}
