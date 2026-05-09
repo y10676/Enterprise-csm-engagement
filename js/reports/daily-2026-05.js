@@ -455,3 +455,76 @@ function dayActionsHTML_2026_05_07() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none"><div class="empty-icon">&#128269;</div>No action items match these filters.</div>`;
 }
+
+// ─── MAY 8, 2026 ───────────────────────────────────────────────
+
+function dayData_2026_05_08() {
+  return {
+    calls: [
+      { ts: 'May 8 · 12:00 PM', csm: 'nick', account: 'Infor', note: 'Snowflake integration session · N4 semantic layer + propensity model · Nicole Morgan', mins: 30, health: 'Healthy' },
+    ],
+    pulses: [
+      { csm: 'nick', account: 'Infor', health: 'Healthy', note: 'N4 Snowflake integration session (30 min, Teams). Nicole Morgan engaged. Snowflake production target end of June. Renewal Oct 2026.' },
+    ],
+  };
+}
+
+function dayMeta_2026_05_08() {
+  return {
+    pills: [['dot-teal','1 Qualifying Call'],['dot-green','1 Vitally Pulse'],['dot-red','3 Disqualified'],['dot-purple','Weekly Summary']],
+    tabs:  ['Overview','Calls (1)','Pulses (1)','Action Items (1)'],
+  };
+}
+
+function dayOverviewHTML_2026_05_08() {
+  return `<div class="section-label">Team Activity &mdash; Friday May 8, 2026</div>
+  <div style="background:#fef9c3;border:1px solid #fde047;border-left:3px solid #ca8a04;border-radius:6px;padding:10px 14px;margin:0 0 12px 0;font-size:12px;color:#713f12;">
+    &#x1F4C5; <strong>Weekly Summary (Mon&ndash;Fri, May 4&ndash;8)</strong> &mdash; 26 qualifying calls &middot; 27 Vitally pulses &middot; 6 active CSMs &middot; 6 concerning accounts flagged. See Action Items tab for weekly highlights.
+  </div>
+  <div class="overview-grid">
+    <div class="csm-card has-calls" data-csm="nick"><span class="call-badge">1 CALL</span><div class="csm-card-header"><div class="avatar av-grey">NJ</div><div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">Infor &middot; N4 Snowflake integration session &middot; Nicole Morgan engaged &middot; Healthy</div></div>
+    <div class="csm-card no-calls" data-csm="varun"><div class="csm-card-header"><div class="avatar av-varun">VT</div><div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">BMC recording found (11 AM) &mdash; Varun not a speaker; Augie Buettner &amp; David Crossman led. Disqualified.</div></div>
+    <div class="csm-card no-calls" data-csm="rani"><div class="csm-card-header"><div class="avatar av-grey">RG</div><div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">AWS recording (3 PM, 60 min) &mdash; Rani not a speaker; internal AWS call (Alex Skowronek + Bryce Bandish). Lenovo x2 &mdash; no transcript. All disqualified.</div></div>
+    <div class="csm-card no-calls" data-csm="atisha"><div class="csm-card-header"><div class="avatar av-grey">AW</div><div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No calls logged this period</div></div>
+    <div class="csm-card no-calls" data-csm="divyam"><div class="csm-card-header"><div class="avatar av-divyam">DD</div><div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No calls logged this period</div></div>
+    <div class="csm-card no-calls" data-csm="pam"><div class="csm-card-header"><div class="avatar av-grey">PH</div><div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No calls logged this period</div></div>
+    <div class="csm-card no-calls" data-csm="riley"><div class="csm-card-header"><div class="avatar av-riley">RR</div><div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No calls logged this period</div></div>
+    <div class="csm-card no-calls" data-csm="andy"><div class="csm-card-header"><div class="avatar av-grey">AL</div><div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No calls logged this period</div></div>
+  </div>`;
+}
+
+function dayCallsHTML_2026_05_08() {
+  return `<div class="table-card"><table>
+    <thead><tr><th>Time (PT)</th><th>CSM</th><th>Account</th><th>Duration</th><th>Signal</th></tr></thead>
+    <tbody>
+      <tr data-csm="nick" data-health="Healthy"><td style="color:#9ca3af;font-size:12px">May 8 &middot; 12:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">NJ</div>Nick Johnson</div></td><td><strong>Infor</strong> <span style="font-size:11px;color:#9ca3af">N4 Snowflake integration session &middot; semantic layer + propensity model &middot; Nicole Morgan</span></td><td>30 min</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+    </tbody>
+  </table></div>
+  <div style="background:#eff6ff;border:1px solid #bfdbfe;border-left:3px solid #3b82f6;border-radius:6px;padding:10px 14px;margin:10px 0;font-size:12px;color:#1e40af;">
+    &#x2139;&#xfe0f; <strong>3 recordings disqualified</strong>: BMC (11 AM, 60 min, Teams) &mdash; Varun Tiwari not a speaker; Augie Buettner &amp; David Crossman (Solutions) led the RGIP platform demo for David Bartholomew, Rob Morgan, Nagarajan Sampathkumar. &nbsp;|&nbsp; AWS (3 PM, 60 min, Zoom) &mdash; Rani Guy not a speaker; only Alex Skowronek &amp; Bryce Bandish (both AWS) in transcript. &nbsp;|&nbsp; Lenovo &times;2 (12 PM + 2 PM) &mdash; has_transcript: false on both recordings.
+  </div>
+  <div class="empty-state" id="calls-empty" style="display:none"><div class="empty-icon">&#128269;</div>No calls match these filters.</div>`;
+}
+
+function dayPulsesHTML_2026_05_08() {
+  const cards = [
+    { csm:'nick', health:'Healthy', account:'Infor', opp:'Vitally Pulse &mdash; May 8 Call', arr:'Enterprise &middot; Nick Johnson', excerpt:'N4 Snowflake integration session (30 min, Teams, 12:00 PM PT). Nick Johnson confirmed active speaker. Nicole Morgan (N4/Infor MoPs Mgr) joined with Augie Buettner &amp; Gavin Padden (HG). Topic: HG data into Snowflake for semantic layer + propensity model. Strong strategic engagement. Snowflake production target: end of June. Renewal: Oct 2026.', csmlbl:'Nick Johnson', change:'New &middot; Pulse c64d6985' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':'badge-concerning';
+  const bi = h => h==='Healthy'?'&#128994;':'&#128993;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top"><div><div class="pulse-account">${c.account}</div><div class="pulse-opp">${c.opp}</div><div class="pulse-arr">${c.arr}</div></div><span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span></div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none"><div class="empty-icon">&#128269;</div>No pulses match these filters.</div>`;
+}
+
+function dayActionsHTML_2026_05_08() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has(801)?'done':''}" data-csm="nick" id="action-801"><div class="action-checkbox ${doneActions.has(801)?'checked':''}" onclick="toggleAction(801)"></div><div class="action-body"><div class="action-title">&#x1F4CA; Infor &mdash; Advance Snowflake production timeline with Nicole Morgan</div><div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Nick Johnson &middot; Nicole Morgan is a strong new HG champion replacing the India-based POC team. Snowflake integration confirmed for semantic layer + propensity model. Target production end of June. DMF finalization underway. Nick to continue weekly syncs and ensure Snowflake + MCP pricing updates are communicated ahead of Oct 2026 renewal.</div></div></div>
+    <div class="action-item" data-csm="varun" style="background:#fef9f9;border:1px solid #fecaca;border-radius:6px;padding:10px 14px;margin:8px 0;font-size:12px;color:#7f1d1d;"><div class="action-body"><div class="action-title">&#x1F4CB; Weekly Summary &mdash; May 4&ndash;8, 2026</div><div class="action-meta" style="color:#7f1d1d"><strong>26 calls &middot; 27 pulses &middot; 6 active CSMs</strong><br>Nick Johnson led with 9 calls (Intuit x-cov, HCL, Siemens, NTT Data, Westcon x2, SAP, Check Point, Infor). Varun Tiwari: 6 calls (BMC x2, Autodesk, Pegasystems, Alight, ServiceNow). Divyam Dewan: 6 calls (Blackbaud, Quadient x2, OpenAI, Adobe, Sage x-cov). Atisha Waghela: 2 calls (TD Synnex, Intel). Pam Huck: 2 calls (Microsoft MACC + Align). Riley Rogers: 1 call (Red Hat x-cov). Andy Lim: 0. Rani Guy: 0.<br><br><strong>Open risks:</strong> BMC (Varun &mdash; June renewal, deep-dive needed), Alight Solutions (Varun &mdash; escalation discussion initiated), HCL America (Nick &mdash; MCP integration re-evaluation), Adobe (Divyam &mdash; scoring discrepancy open), TD Synnex (Atisha &mdash; 44K credit anomaly). OpenAI + PANW transcripts from May 7 remain pending.</div></div></div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none"><div class="empty-icon">&#128269;</div>No action items match these filters.</div>`;
+}
