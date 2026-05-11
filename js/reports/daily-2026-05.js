@@ -528,3 +528,75 @@ function dayActionsHTML_2026_05_08() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none"><div class="empty-icon">&#128269;</div>No action items match these filters.</div>`;
 }
+
+// ─── MAY 10, 2026 ──────────────────────────────────────────────
+
+function dayData_2026_05_10() {
+  return {
+    calls: [],
+    pulses: [
+      { csm: 'varun', account: 'MongoDB Inc', health: 'Healthy', note: 'VT May 9: Marketing enablement gap identified. Ale/Will sole data gatekeepers — 300-person marketing org cannot self-serve. Expansion opportunity: MCP agents, TrustRadius intent, read-only licenses. Ale has not yet shared MongoDB-specific use cases.' },
+    ],
+  };
+}
+
+function dayMeta_2026_05_10() {
+  return {
+    pills: [['dot-grey','Sunday — No Calls'],['dot-green','1 Vitally Pulse'],['dot-red','2 Pending Transcripts']],
+    tabs:  ['Overview','Calls (0)','Pulses (1)','Action Items (3)'],
+  };
+}
+
+function dayOverviewHTML_2026_05_10() {
+  return `<div class="section-label">Team Activity &mdash; Sunday May 10, 2026</div>
+  <div style="background:#f0fdf4;border:1px solid #bbf7d0;border-left:3px solid #16a34a;border-radius:6px;padding:10px 14px;margin:0 0 12px 0;font-size:12px;color:#14532d;">
+    &#x1F4C5; <strong>Weekend Day</strong> &mdash; No calls logged across all 120 accounts. 1 Vitally pulse updated (MongoDB / Varun, May 9). 2 May 7 transcripts remain pending: OpenAI (Divyam) &amp; PANW (Atisha).
+  </div>
+  <div class="overview-grid">
+    <div class="csm-card no-calls" data-csm="varun"><div class="csm-card-header"><div class="avatar av-varun">VT</div><div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div></div><div class="csm-account-note">MongoDB pulse updated May 9 &mdash; marketing enablement gap + expansion opportunity. Ale yet to share use cases.</div></div>
+    <div class="csm-card no-calls" data-csm="divyam"><div class="csm-card-header"><div class="avatar av-divyam">DD</div><div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-red">1</div><div class="metric-lbl">Pending</div></div></div><div class="csm-account-note">OpenAI &ldquo;Reconnect&rdquo; call (May 7) &mdash; transcript still not available.</div></div>
+    <div class="csm-card no-calls" data-csm="atisha"><div class="csm-card-header"><div class="avatar av-grey">AW</div><div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-red">1</div><div class="metric-lbl">Pending</div></div></div><div class="csm-account-note">PANW Monthly Sync (May 7) &mdash; transcript still not available.</div></div>
+    <div class="csm-card no-calls" data-csm="nick"><div class="csm-card-header"><div class="avatar av-grey">NJ</div><div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No calls logged this period</div></div>
+    <div class="csm-card no-calls" data-csm="riley"><div class="csm-card-header"><div class="avatar av-riley">RR</div><div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No calls logged this period</div></div>
+    <div class="csm-card no-calls" data-csm="rani"><div class="csm-card-header"><div class="avatar av-grey">RG</div><div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No calls logged this period</div></div>
+    <div class="csm-card no-calls" data-csm="pam"><div class="csm-card-header"><div class="avatar av-grey">PH</div><div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No calls logged this period</div></div>
+    <div class="csm-card no-calls" data-csm="andy"><div class="csm-card-header"><div class="avatar av-grey">AL</div><div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No calls logged this period</div></div>
+  </div>`;
+}
+
+function dayCallsHTML_2026_05_10() {
+  return `<div class="table-card"><table>
+    <thead><tr><th>Time (PT)</th><th>CSM</th><th>Account</th><th>Duration</th><th>Signal</th></tr></thead>
+    <tbody>
+      <tr><td colspan="5" style="text-align:center;color:#9ca3af;padding:20px;font-size:13px;">No calls recorded &mdash; Sunday, May 10</td></tr>
+    </tbody>
+  </table></div>
+  <div style="background:#eff6ff;border:1px solid #bfdbfe;border-left:3px solid #3b82f6;border-radius:6px;padding:10px 14px;margin:10px 0;font-size:12px;color:#1e40af;">
+    &#x2139;&#xfe0f; <strong>Weekend day.</strong> All 120 accounts scanned via Weflow &mdash; 0 calls found. &nbsp;|&nbsp; <strong>2 transcripts still pending from May 7</strong>: OpenAI/HGI Reconnect (Divyam &middot; 30 min, Zoom) &amp; PANW Monthly Sync (Atisha &middot; 45 min, Zoom). Both remain empty as of May 10 check.
+  </div>
+  <div class="empty-state" id="calls-empty" style="display:none"><div class="empty-icon">&#128269;</div>No calls match these filters.</div>`;
+}
+
+function dayPulsesHTML_2026_05_10() {
+  const cards = [
+    { csm:'varun', health:'Healthy', account:'MongoDB Inc', opp:'Vitally Pulse &mdash; May 9 Update', arr:'Enterprise &middot; Varun Tiwari', excerpt:'VT May 9 (bcc9b1ca): MongoDB marketing org (300 people) lacks visibility into HG data despite stable enrichment infrastructure built by Ale Dimitriu 2&ndash;3 years ago. Ale &amp; Will are sole data gatekeepers &mdash; non-technical marketers cannot self-serve. Primary risk: underutilization of existing HG investment. Expansion opportunity: MCP agents for marketer-friendly workflows, read-only license expansion, TrustRadius intent data. Next step: Ale to coordinate enablement sessions with marketing leadership (Ale has not yet shared MongoDB-specific use cases per follow-up note).', csmlbl:'Varun Tiwari', change:'Updated &middot; May 9, 2026 (prev: Apr 30)' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':'badge-concerning';
+  const bi = h => h==='Healthy'?'&#128994;':'&#128993;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top"><div><div class="pulse-account">${c.account}</div><div class="pulse-opp">${c.opp}</div><div class="pulse-arr">${c.arr}</div></div><span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span></div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none"><div class="empty-icon">&#128269;</div>No pulses match these filters.</div>`;
+}
+
+function dayActionsHTML_2026_05_10() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has(1001)?'done':''}" data-csm="varun" id="action-1001"><div class="action-checkbox ${doneActions.has(1001)?'checked':''}" onclick="toggleAction(1001)"></div><div class="action-body"><div class="action-title">&#x1F4C8; MongoDB &mdash; Follow up with Ale on use cases; schedule marketing enablement session</div><div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Varun Tiwari &middot; Per May 9 pulse: Ale Dimitriu has not yet shared MongoDB-specific use cases despite Varun&apos;s outreach. 300-person marketing org is underutilizing HG data due to lack of enablement. Varun to re-engage Ale, connect with the right marketing leadership POC, and confirm session format (MCP agents + TrustRadius intent as separate sessions). Goal: marketers gain immediate access and self-service workflows.</div></div></div>
+    <div class="action-item ${doneActions.has(1002)?'done':''}" data-csm="divyam" id="action-1002"><div class="action-checkbox ${doneActions.has(1002)?'checked':''}" onclick="toggleAction(1002)"></div><div class="action-body"><div class="action-title">&#x23F3; OpenAI &mdash; Re-check transcript for May 7 &ldquo;Reconnect&rdquo; call</div><div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Divyam Dewan &middot; The 30-min Zoom call &ldquo;OpenAI/HGI Reconnect&rdquo; (May 7, 4:00 PM) has no transcript as of May 10. Re-check Weflow on Monday. If still unavailable, review Zoom recording directly or follow up with Divyam for manual notes.</div></div></div>
+    <div class="action-item ${doneActions.has(1003)?'done':''}" data-csm="atisha" id="action-1003"><div class="action-checkbox ${doneActions.has(1003)?'checked':''}" onclick="toggleAction(1003)"></div><div class="action-body"><div class="action-title">&#x23F3; Palo Alto Networks &mdash; Re-check transcript for May 7 Monthly Sync</div><div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Atisha Waghela &middot; The 45-min Zoom &ldquo;HGI + PANW Monthly Sync&rdquo; (May 7, 7:00 PM) has no transcript as of May 10. Re-check Weflow on Monday. PANW is a strategic account &mdash; sync notes should be captured for pulse update if content is material.</div></div></div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none"><div class="empty-icon">&#128269;</div>No action items match these filters.</div>`;
+}
