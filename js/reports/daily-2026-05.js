@@ -600,3 +600,86 @@ function dayActionsHTML_2026_05_10() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none"><div class="empty-icon">&#128269;</div>No action items match these filters.</div>`;
 }
+
+// ─── MAY 11, 2026 (Sunday) ─────────────────────────────────────
+
+function dayData_2026_05_11() {
+  return {
+    calls: [
+      { ts: 'May 11 · 3:00 PM',  csm: 'pam',    account: 'ZoomInfo',   note: 'Profile consolidation to 5 products · July 1 renewal · downsize risk flagged', mins: 30, health: 'Concerning' },
+      { ts: 'May 11 · 3:30 PM',  csm: 'riley',  account: 'Intuit IES', note: 'TR Top Rated update · intent data strategy · Salesforce/ZI integration', mins: 30, health: 'Healthy', xcov: 'atisha' },
+      { ts: 'May 11 · 4:30 PM',  csm: 'divyam', account: 'Xero',       note: 'Customer no-show (Andrea) · pre-call: contract scope + CSM handover alignment', mins: 30, health: 'Healthy' },
+    ],
+    pulses: [
+      { csm: 'pam',    account: 'ZoomInfo',   health: 'Concerning', note: 'Profile consolidation → 5 products; Russell flagged downsize risk on July 1 renewal. Pulse already created by Pam Huck (5/11).' },
+      { csm: 'riley',  account: 'Intuit IES', health: 'Healthy',    note: 'X-cov for Atisha: TR Top Rated + intent data operationalization. Pulse 5b7c9eff.' },
+      { csm: 'divyam', account: 'Xero',       health: 'Healthy',    note: 'Customer no-show; internal pre-call with Angus. Dashboard training + Buyer\'s Choice next steps. Pulse f16c2506.' },
+    ],
+  };
+}
+
+function dayMeta_2026_05_11() {
+  return {
+    pills: [['dot-teal','3 Calls'],['dot-green','3 Vitally Pulses'],['dot-red','7 Pending Transcripts'],['dot-amber','1 Cross-Coverage'],['dot-grey','Sunday']],
+    tabs:  ['Overview','Calls (3)','Pulses (3)','Action Items (4)'],
+  };
+}
+
+function dayOverviewHTML_2026_05_11() {
+  return `<div class="section-label">Team Activity &mdash; Sunday May 11, 2026</div>
+  <div style="background:#fff7ed;border:1px solid #fed7aa;border-left:3px solid #f97316;border-radius:6px;padding:10px 14px;margin:0 0 12px 0;font-size:12px;color:#7c2d12;">
+    &#x1F4C5; <strong>Sunday</strong> &mdash; 3 confirmed calls across 120 accounts. 1 cross-coverage (Riley on Atisha&rsquo;s Intuit IES). 7 transcripts pending (5 Atisha accts, 2 Rani/AWS). &#x26A0;&#xFE0F; ZoomInfo renewal risk flagged: Russell Martin signaling profile consolidation &amp; potential ARR reduction on July 1 renewal.
+  </div>
+  <div class="overview-grid">
+    <div class="csm-card has-calls" data-csm="pam"><span class="call-badge">1 CALL</span><div class="csm-card-header"><div class="avatar av-grey">PH</div><div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">ZoomInfo &middot; Profile consolidation to 5 products &middot; &#x26A0; July 1 renewal downsize risk</div></div>
+    <div class="csm-card has-calls" data-csm="riley"><span class="call-badge">1 CALL</span><div class="csm-card-header"><div class="avatar av-riley">RR</div><div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-amber">1</div><div class="metric-lbl">X-Cov</div></div></div><div class="csm-account-note">Intuit IES (Atisha&rsquo;s acct) &middot; TR Top Rated &middot; intent data strategy</div></div>
+    <div class="csm-card has-calls" data-csm="divyam"><span class="call-badge">1 CALL</span><div class="csm-card-header"><div class="avatar av-divyam">DD</div><div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">Xero &middot; Customer no-show &middot; internal pre-call with Angus on contract &amp; handover</div></div>
+    <div class="csm-card no-calls" data-csm="atisha"><div class="csm-card-header"><div class="avatar av-grey">AW</div><div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-red">5</div><div class="metric-lbl">Pending</div></div></div><div class="csm-account-note">5 transcript-pending calls: Databricks &times;2, Deloitte &times;1, Insight Direct &times;2 &mdash; all ended late Sunday</div></div>
+    <div class="csm-card no-calls" data-csm="rani"><div class="csm-card-header"><div class="avatar av-grey">RG</div><div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-red">2</div><div class="metric-lbl">Pending</div></div></div><div class="csm-account-note">2 transcript-pending calls: AWS &times;2 &mdash; still processing at scan time</div></div>
+    <div class="csm-card no-calls" data-csm="nick"><div class="csm-card-header"><div class="avatar av-grey">NJ</div><div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No calls logged this period</div></div>
+    <div class="csm-card no-calls" data-csm="varun"><div class="csm-card-header"><div class="avatar av-varun">VT</div><div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No calls logged this period</div></div>
+    <div class="csm-card no-calls" data-csm="andy"><div class="csm-card-header"><div class="avatar av-grey">AL</div><div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No calls logged this period</div></div>
+  </div>`;
+}
+
+function dayCallsHTML_2026_05_11() {
+  return `<div class="table-card"><table>
+    <thead><tr><th>Time (PT)</th><th>CSM</th><th>Account</th><th>Duration</th><th>Signal</th></tr></thead>
+    <tbody>
+      <tr data-csm="pam" data-health="Concerning"><td style="color:#9ca3af;font-size:12px">May 11 &middot; 3:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">PH</div>Pam Huck</div></td><td><strong>ZoomInfo</strong> <span style="font-size:11px;color:#9ca3af">Profile consolidation to 5 products &middot; July 1 renewal &middot; downsize risk flagged by Russell Martin</span></td><td>30 min</td><td><span class="badge badge-concerning">&#128993; Concerning</span></td></tr>
+      <tr data-csm="riley" data-health="Healthy"><td style="color:#9ca3af;font-size:12px">May 11 &middot; 3:30 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-riley">RR</div>Riley Rogers <span style="font-size:11px">(X-cov for AW)</span></div></td><td><strong>Intuit IES</strong> <span style="font-size:11px;color:#9ca3af">TR Top Rated update &middot; intent data strategy &middot; Salesforce/ZoomInfo integration</span></td><td>30 min</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="divyam" data-health="Healthy"><td style="color:#9ca3af;font-size:12px">May 11 &middot; 4:30 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-divyam">DD</div>Divyam Dewan</div></td><td><strong>Xero</strong> <span style="font-size:11px;color:#9ca3af">Customer no-show (Andrea) &middot; internal pre-call: contract scope + CSM handover alignment</span></td><td>30 min</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+    </tbody>
+  </table></div>
+  <div style="background:#eff6ff;border:1px solid #bfdbfe;border-left:3px solid #3b82f6;border-radius:6px;padding:10px 14px;margin:10px 0;font-size:12px;color:#1e40af;">
+    &#x2139;&#xfe0f; <strong>1 cross-coverage</strong>: Riley Rogers covered Intuit IES (3:30 PM) for Atisha Waghela. &nbsp;|&nbsp; <strong>7 pending transcripts</strong>: Atisha &mdash; Databricks &times;2, Deloitte &times;1, Insight Direct &times;2; Rani &mdash; AWS &times;2. All ended late Sunday, transcripts still processing. &nbsp;|&nbsp; <strong>1 disqualified</strong>: Microsoft &ldquo;Business Case Working Session&rdquo; (5:30 PM) &mdash; no CSM in transcript (speakers: Mark Fell, Zach Jones, Mike Galyen).
+  </div>
+  <div class="empty-state" id="calls-empty" style="display:none"><div class="empty-icon">&#128269;</div>No calls match these filters.</div>`;
+}
+
+function dayPulsesHTML_2026_05_11() {
+  const cards = [
+    { csm:'pam',    health:'Concerning', account:'ZoomInfo',   opp:'Vitally Pulse &mdash; May 11 Call',         arr:'Enterprise &middot; Pam Huck',                         excerpt:'5/11/26 PH: Russell Martin confirmed ZoomInfo is consolidating product profiles across all review platforms. G2 going from 9 &rarr; 4 profiles; TrustRadius target is 5 products (GTM Studio, GTM Workspace, GTM AI, NeverBounce, ZI Talent). Current 4 CVP subscriptions being remapped. Russell wants July 1 renewal to reflect new structure &mdash; signals potential ARR reduction. Russell sending a proposed change summary to Pam and Anderson. GEO/LLM beta participation pushed to late July due to bandwidth from layoffs &amp; expanded role. Katie Mariano (CMO&rsquo;s Chief of Staff) absent &mdash; watch item. Weflow rec: a76RN0000001YFlYAM. Pulse 7309acfb (created by PH, already existed).', csmlbl:'Pam Huck', change:'Existing &middot; Pulse 7309acfb &middot; May 11' },
+    { csm:'riley',  health:'Healthy',    account:'Intuit IES', opp:'Vitally Pulse &mdash; May 11 X-cov Call',   arr:'Enterprise &middot; Riley Rogers (covering Atisha Waghela)', excerpt:'5/11/26 RR (x-cov for AW): TrustRadius Top Rated badge status update and review sourcing discussion. Intent data strategy: operationalizing HG signals through Salesforce and ZoomInfo integrations. Customer team engaged and receptive. Atisha not present. Weflow rec: a76RN0000002NJtYAM. Pulse 5b7c9eff (new).', csmlbl:'Riley Rogers', change:'New &middot; Pulse 5b7c9eff &middot; May 11' },
+    { csm:'divyam', health:'Healthy',    account:'Xero',       opp:'Vitally Pulse &mdash; May 11 Internal Pre-Call', arr:'Enterprise &middot; Divyam Dewan',                 excerpt:'5/11/26 DD: Andrea Gonzalez (champion) did not attend &mdash; customer no-show. Divyam and Angus Hyams (AE) used the 30-min block to align on: contract scope post $32.4K renewal (through May 2027), CSM handover status, and upcoming mid-year review campaign strategy. Buyer&rsquo;s Choice gap (8 reviews by September) and dashboard training remain top priorities. Weflow rec: a76RN0000002ZcnYAE. Pulse f16c2506 (new).', csmlbl:'Divyam Dewan', change:'New &middot; Pulse f16c2506 &middot; May 11' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top"><div><div class="pulse-account">${c.account}</div><div class="pulse-opp">${c.opp}</div><div class="pulse-arr">${c.arr}</div></div><span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span></div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none"><div class="empty-icon">&#128269;</div>No pulses match these filters.</div>`;
+}
+
+function dayActionsHTML_2026_05_11() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has(1101)?'done':''}" data-csm="pam" id="action-1101"><div class="action-checkbox ${doneActions.has(1101)?'checked':''}" onclick="toggleAction(1101)"></div><div class="action-body"><div class="action-title">&#x26A0;&#xFE0F; ZoomInfo &mdash; Respond to Russell Martin&rsquo;s consolidation summary + protect ARR</div><div class="action-meta"><span class="urgency-badge urgency-high">TIME-SENSITIVE</span>Pam Huck &middot; Russell Martin will send a proposed profile change summary. July 1 renewal is 7 weeks out. Consolidation plan targets 5 subscribed products (down from current 4 CVP + other subscriptions). Risk: ARR reduction. Next steps: (1) Review Russell&rsquo;s summary with Anderson Duncan, (2) Frame value for each retained product, (3) Explore whether GEO/LLM beta re-engagement can offset downsize pressure, (4) Get Katie Mariano back on the renewal discussion as CMO budget authority.</div></div></div>
+    <div class="action-item ${doneActions.has(1102)?'done':''}" data-csm="riley" id="action-1102"><div class="action-checkbox ${doneActions.has(1102)?'checked':''}" onclick="toggleAction(1102)"></div><div class="action-body"><div class="action-title">&#x1F4CB; Intuit IES &mdash; Brief Atisha on Riley&rsquo;s May 11 cross-coverage call</div><div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Riley Rogers &rarr; Atisha Waghela &middot; Riley covered Intuit IES while Atisha was unavailable. Topics: TR Top Rated badge status and review sourcing update; intent data operationalization via Salesforce/ZoomInfo integrations. Atisha should review the Weflow transcript (a76RN0000002NJtYAM) and Vitally pulse (5b7c9eff) to maintain continuity with the customer team.</div></div></div>
+    <div class="action-item ${doneActions.has(1103)?'done':''}" data-csm="atisha" id="action-1103"><div class="action-checkbox ${doneActions.has(1103)?'checked':''}" onclick="toggleAction(1103)"></div><div class="action-body"><div class="action-title">&#x23F3; Atisha accounts &mdash; Re-check 5 pending transcripts (Databricks &times;2, Deloitte, Insight Direct &times;2)</div><div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Atisha Waghela &middot; 5 Weflow recordings on May 11 had no transcript at scan time (calls ended late Sunday evening, ~30-min processing lag). Re-check Monday in Weflow. If transcripts are available, create Vitally pulses and count calls in next daily report. Priority accounts: Databricks (strategic, renewal upcoming), Deloitte, Insight Direct.</div></div></div>
+    <div class="action-item ${doneActions.has(1104)?'done':''}" data-csm="rani" id="action-1104"><div class="action-checkbox ${doneActions.has(1104)?'checked':''}" onclick="toggleAction(1104)"></div><div class="action-body"><div class="action-title">&#x23F3; Rani &mdash; Re-check 2 pending AWS transcripts</div><div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Rani Guy &middot; 2 AWS recordings on May 11 had no transcript at scan time. Re-check Monday in Weflow. If transcripts are available, create Vitally pulses and count calls. AWS is a strategic account; ensure any material content is captured.</div></div></div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none"><div class="empty-icon">&#128269;</div>No action items match these filters.</div>`;
+}
