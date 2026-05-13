@@ -1195,29 +1195,26 @@ function dayActionsHTML_2026_05_07() {
 function dayData_2026_05_08() {
   return {
     calls: [
-      { ts: 'May 8 · 5:00 AM', csm: 'nick', account: 'Infor',  note: 'HG data best practices in Snowflake · data pipeline deep dive', mins: 30, health: 'Healthy' },
-      { ts: 'May 8 · TBD',     csm: 'rani', account: 'Lenovo', note: 'No transcript — attributed to account CSM (call 1 of 2)', mins: 30, health: 'Healthy', noTranscript: true },
-      { ts: 'May 8 · TBD',     csm: 'rani', account: 'Lenovo', note: 'No transcript — attributed to account CSM (call 2 of 2)', mins: 30, health: 'Healthy', noTranscript: true },
+      { ts: 'May 8 · 5:00 AM', csm: 'nick', account: 'Infor', note: 'HG data best practices in Snowflake · data pipeline deep dive', mins: 30, health: 'Healthy' },
     ],
     pulses: [
-      { csm: 'nick', account: 'Infor',  health: 'Healthy', note: 'Snowflake data best practices session. Transcript confirmed.' },
-      { csm: 'rani', account: 'Lenovo', health: 'Healthy', note: 'Two Lenovo recordings found — no transcripts. Attributed to Rani Guy.' },
+      { csm: 'nick', account: 'Infor', health: 'Healthy', note: 'Snowflake data best practices session. Transcript confirmed. Nick confirmed as speaker.' },
     ],
   };
 }
 
 function dayMeta_2026_05_08() {
   return {
-    pills: [['dot-teal','3 Calls'],['dot-green','2 Vitally Pulses'],['dot-purple','2 No Transcript']],
-    tabs:  ['Overview','Calls (4)','Pulses (2)','Action Items (1)'],
+    pills: [['dot-teal','1 Call'],['dot-green','1 Vitally Pulse'],['dot-orange','2 Excluded']],
+    tabs:  ['Overview','Calls (1)','Pulses (1)','Action Items (0)'],
   };
 }
 
 function dayOverviewHTML_2026_05_08() {
   return `<div class="section-label">Team Activity &mdash; Friday May 8, 2026</div>
   <div class="overview-grid">
-    <div class="csm-card has-calls" data-csm="nick"><span class="call-badge">1 CALL</span><div class="csm-card-header"><div class="avatar av-grey">NJ</div><div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">Infor &middot; HG data best practices in Snowflake</div></div>
-    <div class="csm-card has-calls" data-csm="rani"><span class="call-badge">2 CALLS</span><div class="csm-card-header"><div class="avatar av-grey">RG</div><div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">Lenovo &times;2 &middot; Both recordings have no transcript</div></div>
+    <div class="csm-card has-calls" data-csm="nick"><span class="call-badge">1 CALL</span><div class="csm-card-header"><div class="avatar av-grey">NJ</div><div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">Infor &middot; HG data best practices in Snowflake &middot; Transcript confirmed</div></div>
+    <div class="csm-card no-calls" data-csm="rani"><div class="csm-card-header"><div class="avatar av-grey">RG</div><div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">Lenovo &times;2 recordings had TBD time &mdash; excluded (could not confirm calls occurred)</div></div>
     <div class="csm-card no-calls" data-csm="varun"><div class="csm-card-header"><div class="avatar av-varun">VT</div><div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">BMC recording found &mdash; Augie Buettner only, Varun not in transcript</div></div>
     <div class="csm-card no-calls" data-csm="pam"><div class="csm-card-header"><div class="avatar av-grey">PH</div><div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No calls logged this period</div></div>
     <div class="csm-card no-calls" data-csm="riley"><div class="csm-card-header"><div class="avatar av-riley">RR</div><div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No calls logged this period</div></div>
@@ -1232,22 +1229,19 @@ function dayCallsHTML_2026_05_08() {
     <thead><tr><th>Time (PT)</th><th>CSM</th><th>Account</th><th>Duration</th><th>Signal</th></tr></thead>
     <tbody>
       <tr data-csm="nick" data-health="Healthy"><td style="color:#9ca3af;font-size:12px">May 8 &middot; 5:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">NJ</div>Nick Johnson</div></td><td><strong>Infor</strong> <span style="font-size:11px;color:#9ca3af">HG data best practices in Snowflake &middot; data pipeline deep dive</span></td><td>30 min</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
-      <tr data-csm="rani" data-health="Healthy"><td style="color:#9ca3af;font-size:12px">May 8 &middot; TBD</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">RG</div>Rani Guy</div></td><td><strong>Lenovo</strong> <span style="font-size:11px;color:#9ca3af">Call 1 of 2 &mdash; No transcript available, attributed to account CSM</span></td><td>30 min</td><td><span class="badge" style="background:#ede9fe;color:#6d28d9">&#128336; No Transcript</span></td></tr>
-      <tr data-csm="rani" data-health="Healthy"><td style="color:#9ca3af;font-size:12px">May 8 &middot; TBD</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">RG</div>Rani Guy</div></td><td><strong>Lenovo</strong> <span style="font-size:11px;color:#9ca3af">Call 2 of 2 &mdash; No transcript available, attributed to account CSM</span></td><td>30 min</td><td><span class="badge" style="background:#ede9fe;color:#6d28d9">&#128336; No Transcript</span></td></tr>
       <tr data-csm="none" data-health="excluded"><td style="color:#9ca3af;font-size:12px">May 8 &middot; 4:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">--</div>No CSM</div></td><td><strong>BMC Software</strong> <span style="font-size:11px;color:#9ca3af">David B &mdash; HG platform walk through &middot; Augie Buettner only; Varun not in transcript</span></td><td>60 min</td><td><span class="badge" style="background:#f3f4f6;color:#6b7280">Excluded</span></td></tr>
-      <tr data-csm="none" data-health="excluded"><td style="color:#9ca3af;font-size:12px">May 8 &middot; AM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">--</div>No CSM</div></td><td><strong>AWS</strong> <span style="font-size:11px;color:#9ca3af">Alex Skowronek, Bryce Bandish &mdash; AWS-internal HG data discussion; Rani not present</span></td><td>--</td><td><span class="badge" style="background:#f3f4f6;color:#6b7280">Excluded</span></td></tr>
+      <tr data-csm="none" data-health="excluded"><td style="color:#9ca3af;font-size:12px">May 8 &middot; TBD</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">--</div>No CSM</div></td><td><strong>Lenovo &times;2</strong> <span style="font-size:11px;color:#9ca3af">Recordings show TBD time &mdash; could not confirm calls occurred; excluded per policy</span></td><td>--</td><td><span class="badge" style="background:#f3f4f6;color:#6b7280">Excluded</span></td></tr>
     </tbody>
   </table></div>
   <div style="background:#eff6ff;border:1px solid #bfdbfe;border-left:3px solid #3b82f6;border-radius:6px;padding:10px 14px;margin:10px 0;font-size:12px;color:#1e40af;">
-    &#x2139;&#xfe0f; <strong>2 no-transcript calls</strong>: Lenovo &times;2 (Rani Guy) &mdash; both recordings found, attributed to account CSM. &nbsp;|&nbsp; <strong>2 excluded</strong>: BMC Software (Augie Buettner only &mdash; Varun not confirmed in 60-min transcript) and AWS (internal HG data discussion, no Enterprise CSM present).
+    &#x2139;&#xfe0f; <strong>3 recordings excluded</strong>: BMC Software (Augie Buettner only &mdash; Varun not confirmed in transcript) &nbsp;|&nbsp; Lenovo &times;2 (recordings show TBD time with no transcript &mdash; cannot confirm these calls occurred; excluded per policy).
   </div>
   <div class="empty-state" id="calls-empty" style="display:none"><div class="empty-icon">&#128269;</div>No calls match these filters.</div>`;
 }
 
 function dayPulsesHTML_2026_05_08() {
   const cards = [
-    { csm:'nick', health:'Healthy', account:'Infor',  opp:'Vitally Pulse &mdash; May 8 Call',   arr:'Enterprise &middot; Nick Johnson', excerpt:'5/8 NJ: Infor &mdash; HG Insights &mdash; HG data best practices in Snowflake (5:00 AM PT, 30 min, Zoom). Nick confirmed in transcript. Snowflake data pipeline deep dive and best practices session. Weflow rec: a76RN0000002L6nYAE.', csmlbl:'Nick Johnson', change:'May 8 &middot; Transcript confirmed' },
-    { csm:'rani', health:'Healthy', account:'Lenovo', opp:'Vitally Pulse &mdash; May 8 Calls ×2', arr:'Enterprise &middot; Rani Guy', excerpt:'5/8 RG: Two Lenovo calls on May 8. No transcripts available for either recording at scan time. Attributed to account CSM Rani Guy. Weflow rec: 001d000000E7LnLAAV.', csmlbl:'Rani Guy', change:'May 8 &middot; No Transcript &times;2' },
+    { csm:'nick', health:'Healthy', account:'Infor', opp:'Vitally Pulse &mdash; May 8 Call', arr:'Enterprise &middot; Nick Johnson', excerpt:'5/8 NJ: Infor &mdash; HG Insights &mdash; HG data best practices in Snowflake (5:00 AM PT, 30 min, Zoom). Nick confirmed in transcript. Snowflake data pipeline best practices session. Data ingestion workflows, query optimization, and HG data integration reviewed. Weflow rec: a76RN0000002L6nYAE.', csmlbl:'Nick Johnson', change:'May 8 &middot; Transcript confirmed' },
   ];
   const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
   const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
@@ -1262,7 +1256,7 @@ function dayPulsesHTML_2026_05_08() {
 
 function dayActionsHTML_2026_05_08() {
   return `<div class="action-list">
-    <div class="action-item ${doneActions.has(801)?'done':''}" data-csm="rani" id="action-801"><div class="action-checkbox ${doneActions.has(801)?'checked':''}" onclick="toggleAction(801)"></div><div class="action-body"><div class="action-title">&#x1F4DD; Lenovo &mdash; Retrieve transcripts &amp; confirm call details</div><div class="action-meta"><span class="urgency-badge urgency-low">FOLLOW-UP</span>Rani Guy &middot; Two Lenovo recordings on May 8 had no transcripts at scan time. Once Weflow processes transcripts, confirm Rani as speaker and log detailed Vitally notes. Capture call topics and any follow-up commitments.</div></div></div>
+    <div class="empty-state"><div class="empty-icon">&#10003;</div>No open action items for May 8.</div>
   </div>
   <div class="empty-state" id="actions-empty" style="display:none"><div class="empty-icon">&#128269;</div>No action items match these filters.</div>`;
 }
