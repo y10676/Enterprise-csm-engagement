@@ -1260,3 +1260,205 @@ function dayActionsHTML_2026_05_08() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none"><div class="empty-icon">&#128269;</div>No action items match these filters.</div>`;
 }
+
+// ─── MAY 9, 2026 ───────────────────────────────────────────────
+
+function dayData_2026_05_09() {
+  return { calls: [], pulses: [] };
+}
+function dayMeta_2026_05_09() {
+  return {
+    pills: [['dot-grey','No Calls Scanned'],['dot-grey','Weekend']],
+    tabs:  ['Overview','Calls (0)','Pulses (0)','Action Items (0)'],
+  };
+}
+function dayOverviewHTML_2026_05_09() {
+  return `<div class="section-label">Team Activity &mdash; Saturday May 9, 2026</div>
+  <div style="background:#1f2937;border-radius:8px;padding:24px;text-align:center;color:#6b7280;margin:12px 0;">
+    <div style="font-size:24px;margin-bottom:8px">&#128197;</div>
+    <div style="font-size:14px;">Weekend &mdash; no calls scanned for this date.</div>
+  </div>`;
+}
+function dayCallsHTML_2026_05_09() {
+  return `<div class="empty-state"><div class="empty-icon">&#128197;</div>No calls scanned for May 9 (weekend).</div>`;
+}
+function dayPulsesHTML_2026_05_09() {
+  return `<div class="empty-state"><div class="empty-icon">&#128197;</div>No pulses for May 9.</div>`;
+}
+function dayActionsHTML_2026_05_09() {
+  return `<div class="empty-state"><div class="empty-icon">&#10003;</div>No action items.</div>`;
+}
+
+// ─── MAY 10, 2026 ───────────────────────────────────────────────
+
+function dayData_2026_05_10() {
+  return { calls: [], pulses: [] };
+}
+function dayMeta_2026_05_10() {
+  return {
+    pills: [['dot-grey','No Calls Scanned'],['dot-grey','Weekend']],
+    tabs:  ['Overview','Calls (0)','Pulses (0)','Action Items (0)'],
+  };
+}
+function dayOverviewHTML_2026_05_10() {
+  return `<div class="section-label">Team Activity &mdash; Sunday May 10, 2026</div>
+  <div style="background:#1f2937;border-radius:8px;padding:24px;text-align:center;color:#6b7280;margin:12px 0;">
+    <div style="font-size:24px;margin-bottom:8px">&#128197;</div>
+    <div style="font-size:14px;">Weekend &mdash; no calls scanned for this date.</div>
+  </div>`;
+}
+function dayCallsHTML_2026_05_10() {
+  return `<div class="empty-state"><div class="empty-icon">&#128197;</div>No calls scanned for May 10 (weekend).</div>`;
+}
+function dayPulsesHTML_2026_05_10() {
+  return `<div class="empty-state"><div class="empty-icon">&#128197;</div>No pulses for May 10.</div>`;
+}
+function dayActionsHTML_2026_05_10() {
+  return `<div class="empty-state"><div class="empty-icon">&#10003;</div>No action items.</div>`;
+}
+
+// ─── MAY 13, 2026 ───────────────────────────────────────────────
+
+function dayData_2026_05_13() {
+  return {
+    calls: [
+      { ts: 'May 13 · 7:15 AM',  csm: 'divyam', account: 'Xero',                         note: 'Regular sync · no transcript at scan time', mins: 30, health: 'Healthy' },
+      { ts: 'May 13 · 8:00 AM',  csm: 'nick',   account: 'NTT Data',                     note: 'France partnership · expansion strategy · Nick Johnson confirmed', mins: 60, health: 'Healthy' },
+      { ts: 'May 13 · 1:00 PM',  csm: 'atisha', account: 'Insight Direct USA',            note: 'CSV delimiter issue · data cleanup discussion · Teams call', mins: 30, health: 'Healthy' },
+      { ts: 'May 13 · 1:00 PM',  csm: 'nick',   account: 'Intuit',                       note: 'Nick Johnson on Atisha account · cross-coverage confirmed', mins: 30, health: 'Healthy', xcov: 'atisha' },
+      { ts: 'May 13 · 3:00 PM',  csm: 'divyam', account: 'Adobe (Monthly Strategic)',     note: 'India pilot update · Divyam Dewan confirmed in transcript', mins: 30, health: 'Healthy' },
+      { ts: 'May 13 · 3:00 PM',  csm: 'riley',  account: 'IBM (TrustRadius/Converseon)',  note: 'Riley Rogers confirmed · TrustRadius POC · cross-coverage on Nick account', mins: 30, health: 'Healthy', xcov: 'nick' },
+      { ts: 'May 13 · 3:15 PM',  csm: 'rani',   account: 'Hitachi Vantara (EBR)',         note: 'EBR/QBR session · Rani Guy confirmed · strong exec engagement', mins: 45, health: 'Healthy' },
+      { ts: 'May 13 · 3:30 PM',  csm: 'divyam', account: 'Thomson Reuters',               note: 'Regular sync · no transcript at scan time', mins: 30, health: 'Healthy' },
+      { ts: 'May 13 · 4:00 PM',  csm: 'rani',   account: 'Google (connect)',              note: 'Google contact sync · no transcript', mins: 30, health: 'Healthy' },
+      { ts: 'May 13 · 4:30 PM',  csm: 'varun',  account: 'Iron Mountain',                note: 'Intro meeting · no HG CSM in transcript · Varun default', mins: 60, health: 'Healthy' },
+      { ts: 'May 13 · 5:00 PM',  csm: 'atisha', account: 'Salesforce',                   note: 'MadKudu blocker discussion · integration friction flagged', mins: 30, health: 'Concerning' },
+      { ts: 'May 13 · 5:00 PM',  csm: 'riley',  account: 'Adobe (TrustRadius Success)',   note: 'Riley Rogers confirmed · TrustRadius success call · cross-coverage on Divyam account', mins: 30, health: 'Healthy', xcov: 'divyam' },
+      { ts: 'May 13 · 5:00 PM',  csm: 'varun',  account: 'zScaler',                      note: 'Regular sync · no transcript at scan time', mins: 30, health: 'Healthy' },
+      { ts: 'May 13 · 5:30 PM',  csm: 'pam',    account: 'F5',                           note: 'Regular sync · no transcript at scan time', mins: 30, health: 'Healthy' },
+      { ts: 'May 13 · 5:30 PM',  csm: 'rani',   account: 'Google (Responsive Connect)',  note: 'Google responsive connect · no transcript', mins: 30, health: 'Healthy' },
+      { ts: 'May 13 · 6:30 PM',  csm: 'rani',   account: 'Workday',                      note: 'GTM Companion & Agentforce · Rani Guy confirmed', mins: 30, health: 'Healthy' },
+      { ts: 'May 13 · 7:00 PM',  csm: 'rani',   account: 'Google (Weekly Sync)',          note: 'Weekly sync · Matt Harb on parental leave · Rani Guy confirmed', mins: 30, health: 'Healthy' },
+      { ts: 'May 13 · 7:00 PM',  csm: 'varun',  account: 'Autodesk',                     note: 'Regular sync · no transcript at scan time', mins: 30, health: 'Healthy' },
+      { ts: 'May 13 · 9:00 PM',  csm: 'rani',   account: 'Docusign',                     note: 'Regular sync · no transcript at scan time', mins: 30, health: 'Healthy' },
+    ],
+    pulses: [
+      { csm: 'divyam', account: 'Xero',                         health: 'Healthy',    note: 'Regular sync · no transcript at scan time' },
+      { csm: 'nick',   account: 'NTT Data',                     health: 'Healthy',    note: 'France partnership · expansion strategy · Nick confirmed' },
+      { csm: 'atisha', account: 'Insight Direct USA',            health: 'Healthy',    note: 'CSV delimiter issue · data cleanup discussion' },
+      { csm: 'nick',   account: 'Intuit',                       health: 'Healthy',    note: 'X-cov for Atisha · Nick Johnson confirmed on Intuit' },
+      { csm: 'divyam', account: 'Adobe (Monthly Strategic)',     health: 'Healthy',    note: 'India pilot update · Divyam confirmed' },
+      { csm: 'riley',  account: 'IBM (TrustRadius/Converseon)',  health: 'Healthy',    note: 'X-cov for Nick · Riley confirmed as TrustRadius contact' },
+      { csm: 'rani',   account: 'Hitachi Vantara (EBR)',         health: 'Healthy',    note: 'EBR session · Rani confirmed · strong exec engagement' },
+      { csm: 'divyam', account: 'Thomson Reuters',               health: 'Healthy',    note: 'Regular sync · no transcript at scan time' },
+      { csm: 'rani',   account: 'Google (connect)',              health: 'Healthy',    note: 'Contact sync · no transcript' },
+      { csm: 'varun',  account: 'Iron Mountain',                health: 'Healthy',    note: 'Intro meeting · Varun default (no transcript)' },
+      { csm: 'atisha', account: 'Salesforce',                   health: 'Concerning', note: 'MadKudu blocker flagged · integration friction · follow-up needed' },
+      { csm: 'riley',  account: 'Adobe (TrustRadius Success)',   health: 'Healthy',    note: 'X-cov for Divyam · Riley confirmed on TrustRadius success call' },
+      { csm: 'varun',  account: 'zScaler',                      health: 'Healthy',    note: 'Regular sync · no transcript at scan time' },
+      { csm: 'pam',    account: 'F5',                           health: 'Healthy',    note: 'Regular sync · no transcript at scan time' },
+      { csm: 'rani',   account: 'Google (Responsive Connect)',  health: 'Healthy',    note: 'Responsive connect · no transcript' },
+      { csm: 'rani',   account: 'Workday',                      health: 'Healthy',    note: 'GTM Companion & Agentforce · Rani confirmed' },
+      { csm: 'rani',   account: 'Google (Weekly Sync)',          health: 'Healthy',    note: 'Weekly sync · Matt Harb on parental leave · Rani confirmed' },
+      { csm: 'varun',  account: 'Autodesk',                     health: 'Healthy',    note: 'Regular sync · no transcript at scan time' },
+      { csm: 'rani',   account: 'Docusign',                     health: 'Healthy',    note: 'Regular sync · no transcript at scan time' },
+    ],
+  };
+}
+
+function dayMeta_2026_05_13() {
+  return {
+    pills: [['dot-teal','19 Calls'],['dot-green','19 Vitally Pulses'],['dot-amber','3 Cross-Coverage'],['dot-orange','1 Concerning']],
+    tabs:  ['Overview','Calls (19)','Pulses (19)','Action Items (3)'],
+  };
+}
+
+function dayOverviewHTML_2026_05_13() {
+  return `<div class="section-label">Team Activity &mdash; Tuesday May 13, 2026</div>
+  <div class="overview-grid">
+    <div class="csm-card has-calls" data-csm="rani"><span class="call-badge">6 CALLS</span><div class="csm-card-header"><div class="avatar av-grey">RG</div><div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">6</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">6</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">165m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">Hitachi EBR &middot; Google &times;3 &middot; Workday (Agentforce) &middot; Docusign</div></div>
+    <div class="csm-card has-calls" data-csm="divyam"><span class="call-badge">3 CALLS</span><div class="csm-card-header"><div class="avatar av-divyam">DD</div><div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">3</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">90m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">Adobe Monthly (India pilot) &middot; Thomson Reuters &middot; Xero</div></div>
+    <div class="csm-card has-calls" data-csm="varun"><span class="call-badge">3 CALLS</span><div class="csm-card-header"><div class="avatar av-varun">VT</div><div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">3</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">120m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">Iron Mountain (intro) &middot; zScaler &middot; Autodesk</div></div>
+    <div class="csm-card has-calls" data-csm="atisha"><span class="call-badge">2 CALLS</span><div class="csm-card-header"><div class="avatar av-grey">AW</div><div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">Insight Direct USA (CSV fix) &middot; Salesforce &#x26a0;&#xfe0f; (MadKudu blocker)</div></div>
+    <div class="csm-card has-calls" data-csm="nick"><span class="call-badge">2 CALLS</span><div class="csm-card-header"><div class="avatar av-grey">NJ</div><div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">90m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">NTT Data (France partnership) &middot; Intuit (X-cov for Atisha)</div></div>
+    <div class="csm-card has-calls" data-csm="riley"><span class="call-badge">2 CALLS</span><div class="csm-card-header"><div class="avatar av-riley">RR</div><div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">IBM (X-cov for Nick, TrustRadius/Converseon) &middot; Adobe TrustRadius (X-cov for Divyam)</div></div>
+    <div class="csm-card has-calls" data-csm="pam"><span class="call-badge">1 CALL</span><div class="csm-card-header"><div class="avatar av-grey">PH</div><div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">F5 &middot; Regular sync &middot; No transcript</div></div>
+    <div class="csm-card no-calls" data-csm="andy"><div class="csm-card-header"><div class="avatar av-grey">AL</div><div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No calls found in Weflow scan on May 13</div></div>
+  </div>
+  <div style="background:#1c2a1c;border:1px solid #16a34a;border-left:3px solid #16a34a;border-radius:6px;padding:10px 14px;margin:10px 0;font-size:12px;color:#86efac;">
+    &#x2728; <strong>19 calls confirmed</strong> across 17 accounts &middot; 7 of 8 CSMs active &middot; <strong>3 cross-coverage instances</strong>: Nick &rarr; Intuit (Atisha), Riley &rarr; IBM (Nick), Riley &rarr; Adobe TrustRadius (Divyam)
+  </div>`;
+}
+
+function dayCallsHTML_2026_05_13() {
+  return `<div class="table-card"><table>
+    <thead><tr><th>Time (PT)</th><th>CSM</th><th>Account</th><th>Duration</th><th>Signal</th></tr></thead>
+    <tbody>
+      <tr data-csm="divyam" data-health="Healthy"><td style="color:#9ca3af;font-size:12px">May 13 &middot; 7:15 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-divyam">DD</div>Divyam Dewan</div></td><td><strong>Xero</strong> <span style="font-size:11px;color:#9ca3af">Regular sync &middot; no transcript at scan time</span></td><td>30 min</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="nick" data-health="Healthy"><td style="color:#9ca3af;font-size:12px">May 13 &middot; 8:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">NJ</div>Nick Johnson</div></td><td><strong>NTT Data</strong> <span style="font-size:11px;color:#9ca3af">France partnership &middot; expansion strategy &middot; Nick confirmed</span></td><td>60 min</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="atisha" data-health="Healthy"><td style="color:#9ca3af;font-size:12px">May 13 &middot; 1:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">AW</div>Atisha Waghela</div></td><td><strong>Insight Direct USA</strong> <span style="font-size:11px;color:#9ca3af">CSV delimiter issue &middot; data cleanup &middot; Teams</span></td><td>30 min</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="nick" data-health="Healthy"><td style="color:#9ca3af;font-size:12px">May 13 &middot; 1:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">NJ</div>Nick Johnson <span style="font-size:11px">(X-cov for AW)</span></div></td><td><strong>Intuit</strong> <span style="font-size:11px;color:#9ca3af">Nick Johnson confirmed in transcript &middot; cross-coverage on Atisha account</span></td><td>30 min</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="divyam" data-health="Healthy"><td style="color:#9ca3af;font-size:12px">May 13 &middot; 3:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-divyam">DD</div>Divyam Dewan</div></td><td><strong>Adobe (Monthly Strategic)</strong> <span style="font-size:11px;color:#9ca3af">India pilot update &middot; Divyam confirmed</span></td><td>30 min</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="riley" data-health="Healthy"><td style="color:#9ca3af;font-size:12px">May 13 &middot; 3:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-riley">RR</div>Riley Rogers <span style="font-size:11px">(X-cov for NJ)</span></div></td><td><strong>IBM (TrustRadius/Converseon)</strong> <span style="font-size:11px;color:#9ca3af">Riley confirmed as TrustRadius contact &middot; cross-coverage</span></td><td>30 min</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="rani" data-health="Healthy"><td style="color:#9ca3af;font-size:12px">May 13 &middot; 3:15 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">RG</div>Rani Guy</div></td><td><strong>Hitachi Vantara (EBR)</strong> <span style="font-size:11px;color:#9ca3af">EBR/QBR session &middot; Rani confirmed &middot; executive engagement</span></td><td>45 min</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="divyam" data-health="Healthy"><td style="color:#9ca3af;font-size:12px">May 13 &middot; 3:30 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-divyam">DD</div>Divyam Dewan</div></td><td><strong>Thomson Reuters</strong> <span style="font-size:11px;color:#9ca3af">Regular sync &middot; no transcript at scan time</span></td><td>30 min</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="rani" data-health="Healthy"><td style="color:#9ca3af;font-size:12px">May 13 &middot; 4:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">RG</div>Rani Guy</div></td><td><strong>Google (connect)</strong> <span style="font-size:11px;color:#9ca3af">Google contact sync &middot; no transcript</span></td><td>30 min</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="varun" data-health="Healthy"><td style="color:#9ca3af;font-size:12px">May 13 &middot; 4:30 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-varun">VT</div>Varun Tiwari</div></td><td><strong>Iron Mountain</strong> <span style="font-size:11px;color:#9ca3af">Intro meeting &middot; no HG CSM in transcript &middot; Varun default</span></td><td>60 min</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="atisha" data-health="Concerning"><td style="color:#9ca3af;font-size:12px">May 13 &middot; 5:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">AW</div>Atisha Waghela</div></td><td><strong>Salesforce</strong> <span style="font-size:11px;color:#9ca3af">MadKudu blocker &middot; integration friction flagged &mdash; follow-up needed</span></td><td>30 min</td><td><span class="badge badge-concerning">&#128993; Concerning</span></td></tr>
+      <tr data-csm="riley" data-health="Healthy"><td style="color:#9ca3af;font-size:12px">May 13 &middot; 5:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-riley">RR</div>Riley Rogers <span style="font-size:11px">(X-cov for DD)</span></div></td><td><strong>Adobe (TrustRadius Success)</strong> <span style="font-size:11px;color:#9ca3af">Riley confirmed &middot; TrustRadius success call &middot; cross-coverage</span></td><td>30 min</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="varun" data-health="Healthy"><td style="color:#9ca3af;font-size:12px">May 13 &middot; 5:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-varun">VT</div>Varun Tiwari</div></td><td><strong>zScaler</strong> <span style="font-size:11px;color:#9ca3af">Regular sync &middot; no transcript at scan time</span></td><td>30 min</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="pam" data-health="Healthy"><td style="color:#9ca3af;font-size:12px">May 13 &middot; 5:30 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">PH</div>Pam Huck</div></td><td><strong>F5</strong> <span style="font-size:11px;color:#9ca3af">Regular sync &middot; no transcript at scan time</span></td><td>30 min</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="rani" data-health="Healthy"><td style="color:#9ca3af;font-size:12px">May 13 &middot; 5:30 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">RG</div>Rani Guy</div></td><td><strong>Google (Responsive Connect)</strong> <span style="font-size:11px;color:#9ca3af">Responsive connect &middot; no transcript</span></td><td>30 min</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="rani" data-health="Healthy"><td style="color:#9ca3af;font-size:12px">May 13 &middot; 6:30 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">RG</div>Rani Guy</div></td><td><strong>Workday</strong> <span style="font-size:11px;color:#9ca3af">GTM Companion &amp; Agentforce &middot; Rani confirmed</span></td><td>30 min</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="rani" data-health="Healthy"><td style="color:#9ca3af;font-size:12px">May 13 &middot; 7:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">RG</div>Rani Guy</div></td><td><strong>Google (Weekly Sync)</strong> <span style="font-size:11px;color:#9ca3af">Weekly sync &middot; Matt Harb on parental leave &middot; Rani confirmed</span></td><td>30 min</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="varun" data-health="Healthy"><td style="color:#9ca3af;font-size:12px">May 13 &middot; 7:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-varun">VT</div>Varun Tiwari</div></td><td><strong>Autodesk</strong> <span style="font-size:11px;color:#9ca3af">Regular sync &middot; no transcript at scan time</span></td><td>30 min</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="rani" data-health="Healthy"><td style="color:#9ca3af;font-size:12px">May 13 &middot; 9:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">RG</div>Rani Guy</div></td><td><strong>Docusign</strong> <span style="font-size:11px;color:#9ca3af">Regular sync &middot; no transcript at scan time</span></td><td>30 min</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+    </tbody>
+  </table></div>
+  <div style="background:#1c1f26;border:1px solid #3b82f6;border-left:3px solid #3b82f6;border-radius:6px;padding:10px 14px;margin:10px 0;font-size:12px;color:#93c5fd;">
+    &#x2139;&#xfe0f; <strong>3 cross-coverage calls</strong>: Nick Johnson &rarr; Intuit (1:00 PM, Atisha account) &nbsp;|&nbsp; Riley Rogers &rarr; IBM TrustRadius/Converseon (3:00 PM, Nick account) &nbsp;|&nbsp; Riley Rogers &rarr; Adobe TrustRadius Success (5:00 PM, Divyam account).
+  </div>
+  <div class="empty-state" id="calls-empty" style="display:none"><div class="empty-icon">&#128269;</div>No calls match these filters.</div>`;
+}
+
+function dayPulsesHTML_2026_05_13() {
+  const cards = [
+    { csm:'divyam', health:'Healthy',    account:'Xero',                        opp:'Vitally Pulse &mdash; May 13 Call', arr:'Enterprise &middot; Divyam Dewan',         excerpt:'5/13 DD: Xero regular sync (7:15 AM PT, 30 min, Zoom). No transcript available at scan time. Attributed to account CSM Divyam Dewan.', csmlbl:'Divyam Dewan', change:'May 13 &middot; No Transcript' },
+    { csm:'nick',   health:'Healthy',    account:'NTT Data',                    opp:'Vitally Pulse &mdash; May 13 Call', arr:'Enterprise &middot; Nick Johnson',         excerpt:'5/13 NJ: NTT Data France partnership sync (8:00 AM PT, 60 min, Zoom). Nick Johnson confirmed in transcript. France partnership expansion strategy discussed.', csmlbl:'Nick Johnson', change:'May 13 &middot; Transcript confirmed' },
+    { csm:'atisha', health:'Healthy',    account:'Insight Direct USA',           opp:'Vitally Pulse &mdash; May 13 Call', arr:'Enterprise &middot; Atisha Waghela',       excerpt:'5/13 AW: Insight Direct USA sync (1:00 PM PT, 30 min, Teams). Transcript confirmed. CSV delimiter issue and data cleanup discussion.', csmlbl:'Atisha Waghela', change:'May 13 &middot; Transcript confirmed' },
+    { csm:'nick',   health:'Healthy',    account:'Intuit',                      opp:'Vitally Pulse &mdash; May 13 X-cov', arr:'Enterprise &middot; Nick Johnson (X-cov for Atisha Waghela)', excerpt:'5/13 NJ: Intuit sync (1:00 PM PT, 30 min, Zoom). Nick Johnson confirmed as speaker on Atisha&apos;s account. Cross-coverage call.', csmlbl:'Nick Johnson', change:'May 13 &middot; Cross-Coverage confirmed' },
+    { csm:'divyam', health:'Healthy',    account:'Adobe (Monthly Strategic)',    opp:'Vitally Pulse &mdash; May 13 Call', arr:'Enterprise &middot; Divyam Dewan',         excerpt:'5/13 DD: Adobe Monthly Strategic Sync (3:00 PM PT, 30 min, Zoom). Divyam Dewan confirmed in transcript. India pilot program update discussed.', csmlbl:'Divyam Dewan', change:'May 13 &middot; Transcript confirmed' },
+    { csm:'riley',  health:'Healthy',    account:'IBM (TrustRadius/Converseon)', opp:'Vitally Pulse &mdash; May 13 X-cov', arr:'Enterprise &middot; Riley Rogers (X-cov for Nick Johnson)', excerpt:'5/13 RR: IBM TrustRadius/Converseon sync (3:00 PM PT, 30 min, Teams). Riley Rogers confirmed as TrustRadius contact in transcript. Cross-coverage on Nick&apos;s account.', csmlbl:'Riley Rogers', change:'May 13 &middot; Cross-Coverage confirmed' },
+    { csm:'rani',   health:'Healthy',    account:'Hitachi Vantara (EBR)',        opp:'Vitally Pulse &mdash; May 13 Call', arr:'Enterprise &middot; Rani Guy',             excerpt:'5/13 RG: Hitachi Vantara EBR/QBR session (3:15 PM PT, 45 min, Zoom). Rani Guy confirmed in transcript. Strong executive engagement. EBR session discussed at renewal and strategic roadmap level.', csmlbl:'Rani Guy', change:'May 13 &middot; Transcript confirmed' },
+    { csm:'divyam', health:'Healthy',    account:'Thomson Reuters',              opp:'Vitally Pulse &mdash; May 13 Call', arr:'Enterprise &middot; Divyam Dewan',         excerpt:'5/13 DD: Thomson Reuters regular sync (3:30 PM PT, 30 min, Zoom). No transcript available at scan time. Attributed to account CSM Divyam Dewan.', csmlbl:'Divyam Dewan', change:'May 13 &middot; No Transcript' },
+    { csm:'rani',   health:'Healthy',    account:'Google (connect)',             opp:'Vitally Pulse &mdash; May 13 Call', arr:'Enterprise &middot; Rani Guy',             excerpt:'5/13 RG: Google contact sync (4:00 PM PT, 30 min, Meet). No transcript available. Rani Guy attributed as account CSM.', csmlbl:'Rani Guy', change:'May 13 &middot; No Transcript' },
+    { csm:'varun',  health:'Healthy',    account:'Iron Mountain',               opp:'Vitally Pulse &mdash; May 13 Call', arr:'Enterprise &middot; Varun Tiwari',         excerpt:'5/13 VT: Iron Mountain intro meeting (4:30 PM PT, 60 min, Meet). Transcript available but no HG CSM identified in preview. Attributed to account CSM Varun Tiwari as default.', csmlbl:'Varun Tiwari', change:'May 13 &middot; Transcript (no HG CSM)' },
+    { csm:'atisha', health:'Concerning', account:'Salesforce',                  opp:'Vitally Pulse &mdash; May 13 Call', arr:'Enterprise &middot; Atisha Waghela',       excerpt:'5/13 AW: Salesforce sync (5:00 PM PT, 30 min, Zoom). Transcript confirmed. MadKudu blocker discussed &mdash; integration friction flagged. Follow-up action needed to resolve with product/support.', csmlbl:'Atisha Waghela', change:'May 13 &middot; Concerning &mdash; follow-up needed' },
+    { csm:'riley',  health:'Healthy',    account:'Adobe (TrustRadius Success)',  opp:'Vitally Pulse &mdash; May 13 X-cov', arr:'Enterprise &middot; Riley Rogers (X-cov for Divyam Dewan)', excerpt:'5/13 RR: Adobe TrustRadius Success Call (5:00 PM PT, 30 min, Zoom). Riley Rogers confirmed in transcript as TrustRadius contact. Cross-coverage on Divyam&apos;s account.', csmlbl:'Riley Rogers', change:'May 13 &middot; Cross-Coverage confirmed' },
+    { csm:'varun',  health:'Healthy',    account:'zScaler',                     opp:'Vitally Pulse &mdash; May 13 Call', arr:'Enterprise &middot; Varun Tiwari',         excerpt:'5/13 VT: zScaler regular sync (5:00 PM PT, 30 min, Zoom). No transcript available at scan time. Attributed to account CSM Varun Tiwari.', csmlbl:'Varun Tiwari', change:'May 13 &middot; No Transcript' },
+    { csm:'pam',    health:'Healthy',    account:'F5',                          opp:'Vitally Pulse &mdash; May 13 Call', arr:'Enterprise &middot; Pam Huck',             excerpt:'5/13 PH: F5 regular sync (5:30 PM PT, 30 min, Zoom). No transcript available at scan time. Attributed to account CSM Pam Huck.', csmlbl:'Pam Huck', change:'May 13 &middot; No Transcript' },
+    { csm:'rani',   health:'Healthy',    account:'Google (Responsive Connect)', opp:'Vitally Pulse &mdash; May 13 Call', arr:'Enterprise &middot; Rani Guy',             excerpt:'5/13 RG: Google Responsive Connect (5:30 PM PT, 30 min, Meet). No transcript. Rani Guy attributed as account CSM.', csmlbl:'Rani Guy', change:'May 13 &middot; No Transcript' },
+    { csm:'rani',   health:'Healthy',    account:'Workday',                     opp:'Vitally Pulse &mdash; May 13 Call', arr:'Enterprise &middot; Rani Guy',             excerpt:'5/13 RG: Workday sync (6:30 PM PT, 30 min, Zoom). Rani Guy confirmed in transcript. GTM Companion and Agentforce integration discussed.', csmlbl:'Rani Guy', change:'May 13 &middot; Transcript confirmed' },
+    { csm:'rani',   health:'Healthy',    account:'Google (Weekly Sync)',         opp:'Vitally Pulse &mdash; May 13 Call', arr:'Enterprise &middot; Rani Guy',             excerpt:'5/13 RG: Google Weekly Sync (7:00 PM PT, 30 min, Meet). Rani Guy confirmed in transcript. Note: Matt Harb is on parental leave.', csmlbl:'Rani Guy', change:'May 13 &middot; Transcript confirmed' },
+    { csm:'varun',  health:'Healthy',    account:'Autodesk',                    opp:'Vitally Pulse &mdash; May 13 Call', arr:'Enterprise &middot; Varun Tiwari',         excerpt:'5/13 VT: Autodesk regular sync (7:00 PM PT, 30 min, Zoom). No transcript available at scan time. Attributed to account CSM Varun Tiwari.', csmlbl:'Varun Tiwari', change:'May 13 &middot; No Transcript' },
+    { csm:'rani',   health:'Healthy',    account:'Docusign',                    opp:'Vitally Pulse &mdash; May 13 Call', arr:'Enterprise &middot; Rani Guy',             excerpt:'5/13 RG: Docusign regular sync (9:00 PM PT, 30 min, Zoom). No transcript available at scan time. Attributed to account CSM Rani Guy.', csmlbl:'Rani Guy', change:'May 13 &middot; No Transcript' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top"><div><div class="pulse-account">${c.account}</div><div class="pulse-opp">${c.opp}</div><div class="pulse-arr">${c.arr}</div></div><span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span></div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none"><div class="empty-icon">&#128269;</div>No pulses match these filters.</div>`;
+}
+
+function dayActionsHTML_2026_05_13() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has(1301)?'done':''}" data-csm="atisha" id="action-1301"><div class="action-checkbox ${doneActions.has(1301)?'checked':''}" onclick="toggleAction(1301)"></div><div class="action-body"><div class="action-title">&#x26a0;&#xfe0f; Salesforce / MadKudu &mdash; Resolve integration blocker</div><div class="action-meta"><span class="urgency-badge urgency-high">TIME-SENSITIVE</span>Atisha Waghela &middot; May 13 Salesforce call flagged MadKudu integration friction as a blocker. Atisha needs to loop in product or support to identify the root cause and provide a resolution path. Document in Vitally and send follow-up to Salesforce contact within 48 hrs.</div></div></div>
+    <div class="action-item ${doneActions.has(1302)?'done':''}" data-csm="rani" id="action-1302"><div class="action-checkbox ${doneActions.has(1302)?'checked':''}" onclick="toggleAction(1302)"></div><div class="action-body"><div class="action-title">&#x1F4CB; Hitachi Vantara EBR follow-up &mdash; Document outcomes &amp; next steps</div><div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Rani Guy &middot; Hitachi Vantara EBR/QBR completed May 13. Rani should document key outcomes and agreed next steps in Vitally. Flag any renewal or expansion signals surfaced during the session. This was the QBR prepped on the May 1 call (Hitachi call prep noted then).</div></div></div>
+    <div class="action-item ${doneActions.has(1303)?'done':''}" data-csm="varun" id="action-1303"><div class="action-checkbox ${doneActions.has(1303)?'checked':''}" onclick="toggleAction(1303)"></div><div class="action-body"><div class="action-title">&#x1F91D; Iron Mountain &mdash; Schedule next steps after intro meeting</div><div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Varun Tiwari &middot; Iron Mountain intro meeting completed (60 min). No HG CSM appeared in transcript preview, suggesting early-stage relationship building or external-facing call. Varun should confirm meeting outcomes and schedule a follow-up to progress the relationship. Log in Vitally.</div></div></div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none"><div class="empty-icon">&#128269;</div>No action items match these filters.</div>`;
+}
