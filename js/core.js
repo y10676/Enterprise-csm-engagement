@@ -17,7 +17,7 @@ const REPORTS = {
 
 // ─── STATE ─────────────────────────────────────────────────────
 let gran = 'day';
-let currentKey = '2026-05-04';
+let currentKey = '2026-05-12';
 let activeTab = '';
 let activeCsm = 'all';
 let activeHealth = 'all';
@@ -98,7 +98,7 @@ function render() {
   const mc = document.getElementById('main-content');
 
   // Global Accounts tab — always first, always visible
-  const acctTabHtml = `<div class="tab${activeTab==='accounts'?' active':''}" onclick="switchTab('accounts')">Accounts (120)</div>`;
+  const acctTabHtml = `<div class="tab${activeTab==='accounts'?' active':''}" onclick="switchTab('accounts')">Accounts (123)</div>`;
 
   // Build period tabs HTML without calling the full renderer (avoids activeTab side-effects)
   function periodTabsHtml() {
@@ -891,7 +891,7 @@ function accountsHTML() {
   }).join('');
 
   return `
-    <div class="section-label">Accounts · 120 Total · $47.2M ARR · 240 Opportunities</div>
+    <div class="section-label">Accounts · 123 Total · $47.2M ARR · 240 Opportunities</div>
     <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap">
       <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
         <div style="position:relative;display:flex;align-items:center">
@@ -900,10 +900,10 @@ function accountsHTML() {
         </div>
         <label for="accounts-csm-filter" style="font-size:11px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px;font-weight:600">CSM</label>
         <select id="accounts-csm-filter" onchange="window.filterAccountsByCsm(this.value)" style="font-size:12px;padding:4px 10px;border:1px solid #d1d5db;background:#fff;border-radius:6px;cursor:pointer;color:#374151;min-width:180px">
-          <option value="all">All CSMs (120)</option>
+          <option value="all">All CSMs (123)</option>
           <option value="riley">Riley Rogers (6)</option>
-          <option value="varun">Varun Tiwari (21)</option>
-          <option value="divyam">Divyam Dewan (21)</option>
+          <option value="varun">Varun Tiwari (22)</option>
+          <option value="divyam">Divyam Dewan (22)</option>
           <option value="nick">Nick Johnson (27)</option>
           <option value="rani">Rani Guy (10)</option>
           <option value="pam">Pam Huck (7)</option>

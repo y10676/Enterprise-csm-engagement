@@ -1,5 +1,5 @@
 ﻿// ─── CSM_ACCOUNTS ─────────────────────────────────────────────────────
-// Source: HG GTM Tools — snapshot Apr 25, 2026
+// Source: HG GTM Tools — snapshot Apr 25, 2026; AM/segment corrections May 14, 2026
 // DO NOT EDIT when adding new daily reports. Only update when account data changes.
 // ──────────────────────────────────────────────────────────────────────
 
@@ -4129,8 +4129,8 @@ const ACCOUNTS_DATA = [
     "accountName": "Strada U.S. Professional Services, LLC",
     "csm": "Atisha Waghela",
     "csmKey": "atisha",
-    "am": "Tyler Neubauer",
-    "segment": "Mid-Market",
+    "am": "Leo Zunz",
+    "segment": "Enterprise",
     "arr": 49350,
     "lastOutbound": "2026-04-23",
     "pulse": "Healthy",
@@ -4717,14 +4717,14 @@ const ACCOUNTS_DATA = [
     "accountName": "Paychex , Inc.",
     "csm": "Divyam Dewan",
     "csmKey": "divyam",
-    "am": "Anderson Duncan",
+    "am": "Ziad Amira",
     "segment": "Enterprise",
-    "arr": 22050,
+    "arr": 42000,
     "lastOutbound": "2026-04-24",
     "pulse": "Some Risk",
     "pulseNote": "",
     "pulseColor": "#d97706",
-    "renewalDate": "2026-04-29",
+    "renewalDate": "2027-04-29",
     "latestPulseDate": "",
     "opportunities": [
       {
@@ -4821,6 +4821,90 @@ const ACCOUNTS_DATA = [
         "pulse": "Concerning",
         "pulseNote": "27th Apr'26 : VT\n\nEngagement Update:  Received a response after multiple outreach attempts from Calum\nCurrent Status: Customer is largely self-sufficient with the platform\nUsage Trend: Lower platform usage/exports in March–April due to paternity leave\n\nNext Steps:\nAgreed to a monthly check-in cadence\nNext touchpoint to be scheduled post return (after 28th May)\n\nCustomer Interest Areas:\nWants better visibility into consumption metrics\nOpen to joining future product roadmap sessions if aligned with interests\n\nLargely, Ciena has been a low-touch customer and has remained unresponsive despite multiple outreach attempts. Their primary business is driven through partners, so their main need is exporting data to share with them. As a result, it’s been challenging to engage them in conversations around new capabilities.(I managed to retain this account in Dec 2025 after churn notice after agreeing to few changes in contract and down-sell)",
         "pulseDate": "2026-04-27"
+      }
+    ]
+  },
+  {
+    "accountId": "001d0000021yklFAAQ",
+    "accountName": "CBTS",
+    "csm": "Varun Tiwari",
+    "csmKey": "varun",
+    "am": "Ziad Amira",
+    "segment": "Enterprise",
+    "arr": 140004,
+    "lastOutbound": "2026-05-12",
+    "pulse": "Unknown",
+    "pulseNote": "",
+    "pulseColor": "#6b7280",
+    "renewalDate": "2029-04-14",
+    "latestPulseDate": "",
+    "opportunities": [
+      {
+        "opp_id": "006RN00000RaePDYAZ",
+        "csm": "Varun Tiwari",
+        "name": "CBTS",
+        "arr": 140004,
+        "contract_end": "2029-04-14",
+        "deal_type": "New Subscription",
+        "pulse": "Unknown",
+        "pulseNote": "",
+        "pulseDate": ""
+      }
+    ]
+  },
+  {
+    "accountId": "0013o00002dARmaAAG",
+    "accountName": "Okta Ventures",
+    "csm": "Divyam Dewan",
+    "csmKey": "divyam",
+    "am": "Ziad Amira",
+    "segment": "Enterprise",
+    "arr": 103900,
+    "lastOutbound": "2026-05-14",
+    "pulse": "Extremely Satisfied",
+    "pulseNote": "",
+    "pulseColor": "#059669",
+    "renewalDate": "2028-03-31",
+    "latestPulseDate": "",
+    "opportunities": [
+      {
+        "opp_id": "006RN00000Oq7bpYAB",
+        "csm": "",
+        "name": "TR - Okta - CVP  Buyer Intel x 6 - 04.01.2026",
+        "arr": 103900,
+        "contract_end": "2028-03-31",
+        "deal_type": "Renewal",
+        "pulse": "Extremely Satisfied",
+        "pulseNote": "",
+        "pulseDate": ""
+      }
+    ]
+  },
+  {
+    "accountId": "001d000001yQmH0AAK",
+    "accountName": "Ernst Young LLP",
+    "csm": "",
+    "csmKey": "",
+    "am": "David Garcia Thomas",
+    "segment": "Strategic",
+    "arr": 25000,
+    "lastOutbound": "2026-05-13",
+    "pulse": "High Risk",
+    "pulseNote": "",
+    "pulseColor": "#dc2626",
+    "renewalDate": "2026-10-31",
+    "latestPulseDate": "",
+    "opportunities": [
+      {
+        "opp_id": "006RN00000Pa2bBYAR",
+        "csm": "",
+        "name": "EY P- strategy and transactions - new batch",
+        "arr": 25000,
+        "contract_end": "2026-10-31",
+        "deal_type": "Expansion",
+        "pulse": "High Risk",
+        "pulseNote": "",
+        "pulseDate": ""
       }
     ]
   }
