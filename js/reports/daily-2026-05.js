@@ -1567,30 +1567,20 @@ function dayActionsHTML_2026_05_14() {
 
 // ═══════════════════════════════════════════════════════════════
 // MAY 15, 2026 — FRIDAY (W20)
-// Source: SFDC recording-first scan (43 recordings) + CSM calendar events.
-// 6 Weflow-confirmed calls + 8 SFDC-only enterprise events + 3 non-enterprise.
-// 12 Vitally pulses created (7 Healthy · 5 Concerning).
+// Source: Weflow recording-first scan (43 recordings scanned).
+// 6 Weflow-confirmed calls · 5 Vitally pulses created (3 Healthy · 2 Concerning).
+// SFDC-only calendar events excluded from this report (Weflow calls only).
 // ═══════════════════════════════════════════════════════════════
 
 function dayData_2026_05_15() {
   return {
     calls: [
-      // ── Weflow-recorded calls ──
       { ts: 'May 15 · 7:00 AM',  csm: 'rani',   account: 'AWS',             note: 'Manufacturing Execution System sync · no transcript · attributed to account CSM', mins: 45, health: 'Healthy' },
       { ts: 'May 15 · 7:30 AM',  csm: 'nick',   account: 'Red Hat',         note: 'Time series analysis & IBM POC progress · Augie Buettner present', mins: 30, health: 'Healthy' },
       { ts: 'May 15 · 8:00 AM',  csm: 'atisha', account: 'RSM US',          note: 'FY26/27 partnership planning · Leo Zunz (AM) present · HG strategy alignment', mins: 30, health: 'Healthy' },
       { ts: 'May 15 · 9:00 AM',  csm: 'rani',   account: 'AWS',             note: 'File review · cloud adoption metrics · data deliverables confirmed', mins: 30, health: 'Healthy' },
       { ts: 'May 15 · 9:30 AM',  csm: 'rani',   account: 'Hitachi Vantara', note: 'Marketing strategy · contact data concerns · Adrian Escobar (AM) present', mins: 30, health: 'Concerning' },
       { ts: 'May 15 · 10:30 AM', csm: 'divyam', account: 'BILL Operations', note: 'Handover brief · Jeremiah Clark departing · Salesforce integration disconnected', mins: 30, health: 'Concerning' },
-      // ── SFDC calendar events (enterprise book) — no Weflow recording ──
-      { ts: 'May 15 · 5:00 AM',  csm: 'nick',   account: 'Infor',           note: 'SFDC calendar event confirmed · no Weflow recording captured', mins: 30, health: 'Healthy' },
-      { ts: 'May 15 · 5:30 AM',  csm: 'atisha', account: 'Intel',           note: 'SFDC calendar event confirmed · no Weflow recording captured', mins: 30, health: 'Healthy' },
-      { ts: 'May 15 · 7:30 AM',  csm: 'divyam', account: 'Quadient',        note: 'SFDC calendar event confirmed · no Weflow recording captured', mins: 30, health: 'Healthy' },
-      { ts: 'May 15 · 8:30 AM',  csm: 'nick',   account: 'Korcomptenz',     note: 'SFDC calendar event confirmed · no Weflow recording captured', mins: 30, health: 'Concerning' },
-      { ts: 'May 15 · 9:00 AM',  csm: 'varun',  account: 'Zendesk',         note: 'SFDC calendar event confirmed · no Weflow recording captured', mins: 30, health: 'Concerning' },
-      { ts: 'May 15 · 10:00 AM', csm: 'divyam', account: 'Informatica',     note: 'SFDC calendar event confirmed · no Weflow recording captured', mins: 30, health: 'Concerning' },
-      { ts: 'May 15 · 11:00 AM', csm: 'atisha', account: 'Apple',           note: 'SFDC calendar event confirmed · no Weflow recording captured', mins: 30, health: 'Healthy' },
-      { ts: 'May 15 · 12:00 PM', csm: 'atisha', account: 'Apple',           note: 'SFDC calendar event confirmed (second session) · no Weflow recording', mins: 30, health: 'Healthy' },
     ],
     pulses: [
       { csm: 'rani',   account: 'AWS',             health: 'Healthy',    note: 'MES sync (no transcript) + file review confirmed · cloud adoption metrics deliverables in progress' },
@@ -1598,87 +1588,65 @@ function dayData_2026_05_15() {
       { csm: 'atisha', account: 'RSM US',          health: 'Healthy',    note: 'FY26/27 partnership planning · Leo Zunz (AM) present · strong strategic alignment' },
       { csm: 'rani',   account: 'Hitachi Vantara', health: 'Concerning', note: 'Marketing strategy & contact data concerns surfaced · Adrian present · follow-up required' },
       { csm: 'divyam', account: 'BILL Operations', health: 'Concerning', note: 'Jeremiah Clark departing · Salesforce integration disconnected · Monday handover meeting requested' },
-      { csm: 'nick',   account: 'Infor',           health: 'Healthy',    note: 'SFDC event confirmed · ongoing TAM modeling engagement · no recording captured' },
-      { csm: 'atisha', account: 'Intel',           health: 'Healthy',    note: 'SFDC event confirmed · strategic engagement maintained · no recording captured' },
-      { csm: 'divyam', account: 'Quadient',        health: 'Healthy',    note: 'SFDC event confirmed · TrustRadius program engagement ongoing · no recording captured' },
-      { csm: 'nick',   account: 'Korcomptenz',     health: 'Concerning', note: 'SFDC event confirmed · HubSpot connector setup still in progress · activation risk · no recording' },
-      { csm: 'varun',  account: 'Zendesk',         health: 'Concerning', note: 'SFDC event confirmed · renewal risk signals present · no recording captured' },
-      { csm: 'divyam', account: 'Informatica',     health: 'Concerning', note: 'SFDC event confirmed · account health risk flagged · no recording captured' },
-      { csm: 'atisha', account: 'Apple',           health: 'Healthy',    note: 'Two SFDC events confirmed (11 AM + 12 PM) · ongoing platform engagement · no recordings' },
     ],
   };
 }
 
 function dayMeta_2026_05_15() {
   return {
-    pills: [['dot-teal','6 Calls'],['dot-blue','8 SFDC Events'],['dot-green','12 Vitally Pulses'],['dot-amber','5 Concerning'],['dot-purple','Weekly Summary']],
-    tabs:  ['Overview','Calls (14)','Pulses (12)','Action Items (3)'],
+    pills: [['dot-teal','6 Weflow Calls'],['dot-green','5 Vitally Pulses'],['dot-amber','2 Concerning'],['dot-purple','Weekly Summary']],
+    tabs:  ['Overview','Calls (6)','Pulses (5)','Action Items (2)','Weekly Summary'],
   };
 }
 
 function dayOverviewHTML_2026_05_15() {
   return `<div class="section-label">Team Activity &mdash; Friday May 15, 2026</div>
   <div style="background:#1a1f2e;border:1px solid #7c3aed;border-left:3px solid #7c3aed;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#c4b5fd;">
-    &#x1F4C5; <strong>End-of-week Friday scan</strong> &mdash; SFDC recording-first method surfaced <strong>6 Weflow calls + 8 enterprise SFDC calendar events</strong> (+ 3 non-enterprise). 12 Vitally pulses created across 12 accounts. <strong>5 Concerning signals</strong>: BILL Operations, Hitachi Vantara, Korcomptenz, Zendesk, Informatica. See <strong>Weekly Summary</strong> tab for W20 full-week recap.
+    &#x1F4C5; <strong>End-of-week Friday scan</strong> &mdash; <strong>6 Weflow-recorded calls</strong> confirmed across 4 CSMs &middot; 5 accounts. 5 Vitally pulses created. <strong>2 Concerning signals</strong>: BILL Operations (Jeremiah Clark departure + Salesforce disconnected) and Hitachi Vantara (contact data &amp; marketing strategy concerns). See <strong>Weekly Summary</strong> tab for W20 full-week recap.
   </div>
   <div class="overview-grid">
     <div class="csm-card has-calls" data-csm="rani"><span class="call-badge">3 CALLS</span><div class="csm-card-header"><div class="avatar av-grey">RG</div><div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">3</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-amber">2</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">105m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">AWS (7 AM MES sync, 45 min &middot; no transcript) &middot; AWS (9 AM file review &middot; cloud metrics) &middot; Hitachi Vantara (&clubs; Concerning &middot; contact data &amp; marketing strategy)</div></div>
-    <div class="csm-card has-calls" data-csm="nick"><span class="call-badge">3 TOUCHPOINTS</span><div class="csm-card-header"><div class="avatar av-grey">NJ</div><div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">+2 SFDC</div><div class="metric-lbl">Events</div></div></div><div class="csm-account-note">Red Hat (7:30 AM &middot; time series &middot; Augie present) &middot; Infor (5 AM SFDC) &middot; Korcomptenz (8:30 AM SFDC &middot; &#x26A0; Concerning)</div></div>
-    <div class="csm-card has-calls" data-csm="atisha"><span class="call-badge">4 TOUCHPOINTS</span><div class="csm-card-header"><div class="avatar av-grey">AW</div><div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">+3 SFDC</div><div class="metric-lbl">Events</div></div></div><div class="csm-account-note">RSM US (8 AM &middot; FY26/27 partnership &middot; Leo Zunz) &middot; Intel (5:30 AM SFDC) &middot; Apple (11 AM + 12 PM SFDC)</div></div>
-    <div class="csm-card has-calls" data-csm="divyam"><span class="call-badge">3 TOUCHPOINTS</span><div class="csm-card-header"><div class="avatar av-divyam">DD</div><div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-amber">3</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">+2 SFDC</div><div class="metric-lbl">Events</div></div></div><div class="csm-account-note">BILL Operations (10:30 AM &middot; &#x26A0; Jeremiah departing &middot; SF disconnected) &middot; Quadient (7:30 AM SFDC) &middot; Informatica (10 AM SFDC &middot; &#x26A0; Concerning)</div></div>
-    <div class="csm-card has-calls" data-csm="varun"><span class="call-badge">1 SFDC EVENT</span><div class="csm-card-header"><div class="avatar av-varun">VT</div><div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-amber">1</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">1 SFDC</div><div class="metric-lbl">Event</div></div></div><div class="csm-account-note">Zendesk (9 AM SFDC &middot; &#x26A0; Concerning &middot; renewal risk)</div></div>
-    <div class="csm-card no-calls" data-csm="pam"><div class="csm-card-header"><div class="avatar av-grey">PH</div><div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">1 SFDC event: NiceJob / Paystone (8 AM) &mdash; not in enterprise account book &middot; no pulse created</div></div>
+    <div class="csm-card has-calls" data-csm="nick"><span class="call-badge">1 CALL</span><div class="csm-card-header"><div class="avatar av-grey">NJ</div><div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div></div><div class="csm-account-note">Red Hat (7:30 AM &middot; time series analysis &middot; IBM POC progress &middot; Augie Buettner present)</div></div>
+    <div class="csm-card has-calls" data-csm="atisha"><span class="call-badge">1 CALL</span><div class="csm-card-header"><div class="avatar av-grey">AW</div><div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div></div><div class="csm-account-note">RSM US (8 AM &middot; FY26/27 partnership planning &middot; Leo Zunz (AM) present)</div></div>
+    <div class="csm-card has-calls" data-csm="divyam"><span class="call-badge">1 CALL</span><div class="csm-card-header"><div class="avatar av-divyam">DD</div><div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-amber">1</div><div class="metric-lbl">Pulses</div></div></div><div class="csm-account-note">BILL Operations (10:30 AM &middot; &#x26A0; Jeremiah Clark departing &middot; Salesforce integration disconnected)</div></div>
+    <div class="csm-card no-calls" data-csm="varun"><div class="csm-card-header"><div class="avatar av-varun">VT</div><div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No Weflow calls recorded on May 15</div></div>
+    <div class="csm-card no-calls" data-csm="pam"><div class="csm-card-header"><div class="avatar av-grey">PH</div><div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No Weflow calls recorded on May 15</div></div>
     <div class="csm-card no-calls" data-csm="riley"><div class="csm-card-header"><div class="avatar av-riley">RR</div><div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No calls found in Weflow or SFDC calendar on May 15</div></div>
     <div class="csm-card no-calls" data-csm="andy"><div class="csm-card-header"><div class="avatar av-grey">AL</div><div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div></div><div class="csm-account-note">No calls found in Weflow or SFDC calendar on May 15</div></div>
   </div>
   <div style="background:#1c2a1c;border:1px solid #16a34a;border-left:3px solid #16a34a;border-radius:6px;padding:10px 14px;margin:10px 0;font-size:12px;color:#86efac;">
-    &#x2728; <strong>6 Weflow calls + 8 SFDC enterprise events = 14 confirmed enterprise touchpoints</strong> &middot; 6 of 8 CSMs active &middot; 12 Vitally pulses created &middot; <strong>Rani Guy led 3 Weflow calls</strong> (AWS x2 + Hitachi Vantara) &middot; <strong>3 additional non-enterprise SFDC events</strong>: Nick &rarr; Capgemini (3:30 AM) &middot; Nick &rarr; PTC (7 AM) &middot; Pam &rarr; NiceJob (8 AM) &mdash; no pulses created for these
+    &#x2728; <strong>6 Weflow calls confirmed</strong> &middot; 4 of 8 CSMs active &middot; 5 Vitally pulses created &middot; <strong>Rani Guy led 3 calls</strong> (AWS x2 + Hitachi Vantara) &middot; <strong>2 Concerning signals</strong>: BILL Operations (stakeholder departure) + Hitachi Vantara (contact data concerns)
   </div>`;
 }
 
 function dayCallsHTML_2026_05_15() {
   return `<div style="background:#1a1f2e;border:1px solid #3b82f6;border-left:3px solid #3b82f6;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#93c5fd;">
-    &#x2139;&#xfe0f; <strong>Source: SFDC recording-first scan</strong> &mdash; Weflow calls show transcripts; SFDC-only events have no recording. Rows marked &ldquo;SFDC&rdquo; are confirmed by SFDC calendar ownership but lack Weflow transcript confirmation.
+    &#x2139;&#xfe0f; <strong>Source: Weflow recording-first scan</strong> &mdash; 43 recordings scanned &middot; Weflow-confirmed calls only. SFDC-only calendar events (no Weflow recording) are excluded.
   </div>
   <div class="table-card"><table>
     <thead><tr><th>Time (PT)</th><th>CSM</th><th>Account</th><th>Duration</th><th>Signal</th></tr></thead>
     <tbody>
-      <tr data-csm="nick" data-health="Healthy"><td style="color:#9ca3af;font-size:12px">May 15 &middot; 5:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">NJ</div>Nick Johnson <span style="font-size:10px;color:#6b7280">[SFDC]</span></div></td><td><strong>Infor</strong> <span style="font-size:11px;color:#9ca3af">SFDC calendar event confirmed &middot; TAM modeling engagement &middot; no recording</span></td><td>30 min</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
-      <tr data-csm="atisha" data-health="Healthy"><td style="color:#9ca3af;font-size:12px">May 15 &middot; 5:30 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">AW</div>Atisha Waghela <span style="font-size:10px;color:#6b7280">[SFDC]</span></div></td><td><strong>Intel</strong> <span style="font-size:11px;color:#9ca3af">SFDC calendar event confirmed &middot; strategic engagement &middot; no recording</span></td><td>30 min</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
       <tr data-csm="rani" data-health="Healthy"><td style="color:#9ca3af;font-size:12px">May 15 &middot; 7:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">RG</div>Rani Guy</div></td><td><strong>AWS</strong> <span style="font-size:11px;color:#9ca3af">Manufacturing Execution System sync &middot; no transcript &middot; 45 min &middot; Zoom</span></td><td>45 min</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
       <tr data-csm="nick" data-health="Healthy"><td style="color:#9ca3af;font-size:12px">May 15 &middot; 7:30 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">NJ</div>Nick Johnson</div></td><td><strong>Red Hat</strong> <span style="font-size:11px;color:#9ca3af">Time series analysis &amp; IBM POC progress &middot; Augie Buettner present &middot; Teams</span></td><td>30 min</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
-      <tr data-csm="divyam" data-health="Healthy"><td style="color:#9ca3af;font-size:12px">May 15 &middot; 7:30 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-divyam">DD</div>Divyam Dewan <span style="font-size:10px;color:#6b7280">[SFDC]</span></div></td><td><strong>Quadient</strong> <span style="font-size:11px;color:#9ca3af">SFDC calendar event confirmed &middot; TrustRadius program engagement &middot; no recording</span></td><td>30 min</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
       <tr data-csm="atisha" data-health="Healthy"><td style="color:#9ca3af;font-size:12px">May 15 &middot; 8:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">AW</div>Atisha Waghela</div></td><td><strong>RSM US</strong> <span style="font-size:11px;color:#9ca3af">FY26/27 partnership planning &middot; Leo Zunz (AM) present &middot; HG strategy alignment &middot; Zoom</span></td><td>30 min</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
-      <tr data-csm="nick" data-health="Concerning"><td style="color:#9ca3af;font-size:12px">May 15 &middot; 8:30 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">NJ</div>Nick Johnson <span style="font-size:10px;color:#6b7280">[SFDC]</span></div></td><td><strong>Korcomptenz</strong> <span style="font-size:11px;color:#9ca3af">SFDC calendar event confirmed &middot; HubSpot connector setup in progress &middot; no recording</span></td><td>30 min</td><td><span class="badge badge-concerning">&#128993; Concerning</span></td></tr>
       <tr data-csm="rani" data-health="Healthy"><td style="color:#9ca3af;font-size:12px">May 15 &middot; 9:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">RG</div>Rani Guy</div></td><td><strong>AWS</strong> <span style="font-size:11px;color:#9ca3af">File review &middot; cloud adoption metrics &middot; data deliverables confirmed &middot; Zoom</span></td><td>30 min</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
-      <tr data-csm="varun" data-health="Concerning"><td style="color:#9ca3af;font-size:12px">May 15 &middot; 9:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-varun">VT</div>Varun Tiwari <span style="font-size:10px;color:#6b7280">[SFDC]</span></div></td><td><strong>Zendesk</strong> <span style="font-size:11px;color:#9ca3af">SFDC calendar event confirmed &middot; renewal risk signals present &middot; no recording</span></td><td>30 min</td><td><span class="badge badge-concerning">&#128993; Concerning</span></td></tr>
       <tr data-csm="rani" data-health="Concerning"><td style="color:#9ca3af;font-size:12px">May 15 &middot; 9:30 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">RG</div>Rani Guy</div></td><td><strong>Hitachi Vantara</strong> <span style="font-size:11px;color:#9ca3af">Marketing strategy &middot; contact data concerns &middot; Adrian Escobar (AM) present &middot; Zoom</span></td><td>30 min</td><td><span class="badge badge-concerning">&#128993; Concerning</span></td></tr>
-      <tr data-csm="divyam" data-health="Concerning"><td style="color:#9ca3af;font-size:12px">May 15 &middot; 10:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-divyam">DD</div>Divyam Dewan <span style="font-size:10px;color:#6b7280">[SFDC]</span></div></td><td><strong>Informatica</strong> <span style="font-size:11px;color:#9ca3af">SFDC calendar event confirmed &middot; account health risk flagged &middot; no recording</span></td><td>30 min</td><td><span class="badge badge-concerning">&#128993; Concerning</span></td></tr>
       <tr data-csm="divyam" data-health="Concerning"><td style="color:#9ca3af;font-size:12px">May 15 &middot; 10:30 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-divyam">DD</div>Divyam Dewan</div></td><td><strong>BILL Operations</strong> <span style="font-size:11px;color:#9ca3af">Handover brief &middot; Jeremiah Clark departing &middot; Salesforce integration disconnected &middot; Zoom</span></td><td>30 min</td><td><span class="badge badge-concerning">&#128993; Concerning</span></td></tr>
-      <tr data-csm="atisha" data-health="Healthy"><td style="color:#9ca3af;font-size:12px">May 15 &middot; 11:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">AW</div>Atisha Waghela <span style="font-size:10px;color:#6b7280">[SFDC]</span></div></td><td><strong>Apple</strong> <span style="font-size:11px;color:#9ca3af">SFDC calendar event confirmed &middot; platform engagement session 1 &middot; no recording</span></td><td>30 min</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
-      <tr data-csm="atisha" data-health="Healthy"><td style="color:#9ca3af;font-size:12px">May 15 &middot; 12:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">AW</div>Atisha Waghela <span style="font-size:10px;color:#6b7280">[SFDC]</span></div></td><td><strong>Apple</strong> <span style="font-size:11px;color:#9ca3af">SFDC calendar event confirmed &middot; platform engagement session 2 &middot; no recording</span></td><td>30 min</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
     </tbody>
   </table></div>
   <div style="background:#1c1f26;border:1px solid #3b82f6;border-left:3px solid #3b82f6;border-radius:6px;padding:10px 14px;margin:10px 0;font-size:12px;color:#93c5fd;">
-    &#x2139;&#xfe0f; <strong>[SFDC] rows</strong> = confirmed via SFDC calendar event (no Weflow recording). &nbsp;|&nbsp; <strong>1 no-transcript Weflow call</strong>: AWS 7:00 AM (45 min). &nbsp;|&nbsp; <strong>3 non-enterprise SFDC events excluded from table</strong>: Nick &rarr; Capgemini (3:30 AM), Nick &rarr; PTC (7 AM), Pam &rarr; NiceJob (8 AM).
+    &#x2139;&#xfe0f; <strong>1 no-transcript Weflow call</strong>: AWS 7:00 AM (Rani Guy, 45 min). &nbsp;|&nbsp; <strong>8 SFDC-only events excluded</strong>: Infor (Nick), Intel (Atisha), Quadient (Divyam), Korcomptenz (Nick), Zendesk (Varun), Informatica (Divyam), Apple x2 (Atisha).
   </div>
   <div class="empty-state" id="calls-empty" style="display:none"><div class="empty-icon">&#128269;</div>No calls match these filters.</div>`;
 }
 
 function dayPulsesHTML_2026_05_15() {
   const cards = [
-    { csm:'rani',   health:'Healthy',    account:'AWS',             opp:'Vitally Pulse &mdash; May 15 Calls (x2)', arr:'Enterprise &middot; Rani Guy',          excerpt:'5/15 RG: AWS dual-session day. 7 AM MES sync (45 min, no transcript). 9 AM file review &mdash; cloud adoption metrics confirmed, data deliverables in progress. Two separate SFDC events, both Weflow-confirmed. Pulse ID: 267c7e0b.' },
+    { csm:'rani',   health:'Healthy',    account:'AWS',             opp:'Vitally Pulse &mdash; May 15 Calls (x2)', arr:'Enterprise &middot; Rani Guy',          excerpt:'5/15 RG: AWS dual-session day. 7 AM MES sync (45 min, no transcript). 9 AM file review &mdash; cloud adoption metrics confirmed, data deliverables in progress. Two Weflow-confirmed calls. Pulse ID: 267c7e0b.' },
     { csm:'nick',   health:'Healthy',    account:'Red Hat',         opp:'Vitally Pulse &mdash; May 15 Call',      arr:'Enterprise &middot; Nick Johnson',       excerpt:'5/15 NJ: Red Hat time series analysis and IBM POC progress (7:30 AM, 30 min). Augie Buettner (AM) also present. Transcript confirmed. Delivery cadence maintained. Pulse ID: 68830aec.' },
     { csm:'atisha', health:'Healthy',    account:'RSM US',          opp:'Vitally Pulse &mdash; May 15 Call',      arr:'Enterprise &middot; Atisha Waghela',     excerpt:'5/15 AW: RSM US FY26/27 partnership planning (8 AM, 30 min). Leo Zunz (AM) present. Transcript confirmed. Strong strategic alignment for next fiscal year. Pulse ID: 6c8124e1.' },
     { csm:'rani',   health:'Concerning', account:'Hitachi Vantara', opp:'Vitally Pulse &mdash; May 15 Call',      arr:'Enterprise &middot; Rani Guy',          excerpt:'5/15 RG: Hitachi Vantara marketing strategy and contact data concerns (9:30 AM, 30 min). Adrian Escobar (AM) also present. Concerns surfaced around contact data quality and marketing strategy direction. Follow-up required. Pulse ID: 7913c8ab.' },
     { csm:'divyam', health:'Concerning', account:'BILL Operations', opp:'Vitally Pulse &mdash; May 15 Call',      arr:'Enterprise &middot; Divyam Dewan',       excerpt:'5/15 DD: BILL Operations handover brief (10:30 AM, 30 min). Jeremiah Clark departing the account. Salesforce integration currently disconnected. Monday meeting requested with Eric and Kristen. Action required immediately. Pulse ID: 934e5305.' },
-    { csm:'nick',   health:'Healthy',    account:'Infor',           opp:'Vitally Pulse &mdash; May 15 SFDC Event', arr:'Enterprise &middot; Nick Johnson',     excerpt:'5/15 NJ: Infor SFDC calendar event confirmed (5 AM). Ongoing TAM modeling engagement. No Weflow recording captured for this session. Pulse ID: 83f4d650.' },
-    { csm:'atisha', health:'Healthy',    account:'Intel',           opp:'Vitally Pulse &mdash; May 15 SFDC Event', arr:'Enterprise &middot; Atisha Waghela',   excerpt:'5/15 AW: Intel SFDC calendar event confirmed (5:30 AM). Strategic engagement maintained. No Weflow recording captured for this session. Pulse ID: fdb7fc1b.' },
-    { csm:'divyam', health:'Healthy',    account:'Quadient',        opp:'Vitally Pulse &mdash; May 15 SFDC Event', arr:'Enterprise &middot; Divyam Dewan',     excerpt:'5/15 DD: Quadient SFDC calendar event confirmed (7:30 AM). TrustRadius program engagement ongoing. No Weflow recording captured for this session. Pulse ID: d81337ad.' },
-    { csm:'nick',   health:'Concerning', account:'Korcomptenz',     opp:'Vitally Pulse &mdash; May 15 SFDC Event', arr:'Enterprise &middot; Nick Johnson',     excerpt:'5/15 NJ: Korcomptenz SFDC calendar event confirmed (8:30 AM). HubSpot connector setup still in progress; activation risk flagged. No Weflow recording captured. Pulse ID: 7174a1a8.' },
-    { csm:'varun',  health:'Concerning', account:'Zendesk',         opp:'Vitally Pulse &mdash; May 15 SFDC Event', arr:'Enterprise &middot; Varun Tiwari',     excerpt:'5/15 VT: Zendesk SFDC calendar event confirmed (9 AM). Renewal risk signals present. No Weflow recording captured for this session. Pulse ID: 9d6d0989.' },
-    { csm:'divyam', health:'Concerning', account:'Informatica',     opp:'Vitally Pulse &mdash; May 15 SFDC Event', arr:'Enterprise &middot; Divyam Dewan',     excerpt:'5/15 DD: Informatica SFDC calendar event confirmed (10 AM). Account health risk flagged. No Weflow recording captured for this session. Pulse ID: 66f96908.' },
-    { csm:'atisha', health:'Healthy',    account:'Apple',           opp:'Vitally Pulse &mdash; May 15 SFDC Events (x2)', arr:'Enterprise &middot; Atisha Waghela', excerpt:'5/15 AW: Two Apple SFDC calendar events confirmed (11 AM + 12 PM). Ongoing platform engagement sessions. No Weflow recordings captured for either session. Pulse ID: 9cc22bad.' },
   ];
   const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
   const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
@@ -1694,7 +1662,146 @@ function dayActionsHTML_2026_05_15() {
   return `<div class="action-list">
     <div class="action-item ${doneActions.has(1501)?'done':''}" data-csm="divyam" id="action-1501"><div class="action-checkbox ${doneActions.has(1501)?'checked':''}" onclick="toggleAction(1501)"></div><div class="action-body"><div class="action-title">&#x1F6A8; BILL Operations &mdash; Monday handover coordination · Jeremiah Clark departure</div><div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Divyam Dewan &middot; Jeremiah Clark is departing the BILL Operations account and the Salesforce integration is currently disconnected. Divyam needs to schedule a handover meeting with Eric and Kristen (Monday) to (1) identify new internal champions, (2) document current workflows, (3) plan Salesforce reconnection, and (4) assess renewal risk given the stakeholder change. Log outcome in Vitally within 24 hrs of the meeting.</div></div></div>
     <div class="action-item ${doneActions.has(1502)?'done':''}" data-csm="rani" id="action-1502"><div class="action-checkbox ${doneActions.has(1502)?'checked':''}" onclick="toggleAction(1502)"></div><div class="action-body"><div class="action-title">&#x1F4CB; Hitachi Vantara &mdash; Follow up on marketing strategy &amp; contact data concerns</div><div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Rani Guy &middot; May 15 call (9:30 AM, 30 min) surfaced concerns around marketing strategy direction and contact data quality. Adrian Escobar (AM) was present. Rani should follow up directly with the Hitachi Vantara team to clarify the specific contact data issues, assess whether HG product changes are needed, and align with Adrian on account strategy. Update Vitally pulse by EOD Monday.</div></div></div>
-    <div class="action-item ${doneActions.has(1503)?'done':''}" data-csm="varun" id="action-1503"><div class="action-checkbox ${doneActions.has(1503)?'checked':''}" onclick="toggleAction(1503)"></div><div class="action-body"><div class="action-title">&#x26A0;&#xFE0F; Zendesk &amp; Informatica &mdash; Confirm account health after SFDC-only events</div><div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Varun Tiwari (Zendesk) &middot; Divyam Dewan (Informatica) &middot; Both accounts had SFDC calendar events on May 15 but no Weflow recordings were captured, flagging renewal risk. Varun should confirm Zendesk account status and renewal timeline; Divyam should document the Informatica health situation. Both should create follow-up tasks in Vitally and align with their respective AMs on any near-term renewal risks before next week.</div></div></div>
   </div>
   <div class="empty-state" id="actions-empty" style="display:none"><div class="empty-icon">&#128269;</div>No action items match these filters.</div>`;
+}
+
+function weeklyOrMonthlyHTML_2026_05_15() {
+  return `<div class="weekly-summary">
+    <div class="weekly-header">
+      <div class="weekly-title">Week 20 Summary &mdash; May 11&ndash;15, 2026</div>
+      <div class="weekly-subtitle">Enterprise CSM Engagement &middot; 8 CSMs &middot; 54 Weflow calls</div>
+    </div>
+
+    <div class="weekly-kpi-row">
+      <div class="weekly-kpi"><div class="kpi-value">54</div><div class="kpi-label">Weflow Calls</div></div>
+      <div class="weekly-kpi"><div class="kpi-value">54</div><div class="kpi-label">Total Touchpoints</div></div>
+      <div class="weekly-kpi"><div class="kpi-value">7</div><div class="kpi-label">CSMs Active</div></div>
+      <div class="weekly-kpi kpi-warn"><div class="kpi-value">4</div><div class="kpi-label">Concerning Signals</div></div>
+    </div>
+
+    <div class="weekly-section-title">Daily Breakdown</div>
+    <table class="weekly-table">
+      <thead><tr><th>Day</th><th>Weflow Calls</th><th>Concerning</th><th>Top Contributors</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>Mon 5/11</strong></td>
+          <td>10</td>
+          <td>0</td>
+          <td>Atisha (5), Rani (2), Pam (1), Riley (1), Divyam (1)</td>
+        </tr>
+        <tr>
+          <td><strong>Tue 5/12</strong></td>
+          <td>11</td>
+          <td>0</td>
+          <td>Nick (3), Rani (2), Varun (2), Riley (2), Atisha (1), Divyam (1)</td>
+        </tr>
+        <tr>
+          <td><strong>Wed 5/13</strong></td>
+          <td>12</td>
+          <td>1</td>
+          <td>Rani (4), Nick (2), Atisha (2), Riley (2), Varun (1), Divyam (1)</td>
+        </tr>
+        <tr>
+          <td><strong>Thu 5/14</strong></td>
+          <td>15</td>
+          <td>0</td>
+          <td>Nick (4), Divyam (3), Atisha (2), Riley (2), Rani (2), Varun (1), Pam (1)</td>
+        </tr>
+        <tr class="row-warn">
+          <td><strong>Fri 5/15</strong></td>
+          <td>6</td>
+          <td>2</td>
+          <td>Rani (Hitachi, AWS x2), Atisha (RSM US), Nick (Red Hat), Divyam (BILL)</td>
+        </tr>
+        <tr class="row-total">
+          <td><strong>Week Total</strong></td>
+          <td><strong>54</strong></td>
+          <td><strong>4</strong></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="weekly-section-title">CSM Performance</div>
+    <table class="weekly-table">
+      <thead><tr><th>CSM</th><th>Calls (est.)</th><th>Key Accounts Touched</th><th>Notable</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span class="csm-dot dot-rani"></span><strong>Rani Guy</strong></td>
+          <td>~12</td>
+          <td>AWS, Workday, Hitachi Vantara, Google, Lenovo, Cloudflare</td>
+          <td>Highest volume week; Hitachi Vantara Concerning Fri</td>
+        </tr>
+        <tr>
+          <td><span class="csm-dot dot-atisha"></span><strong>Atisha Waghela</strong></td>
+          <td>~10</td>
+          <td>Insight Direct (x5 Mon), Databricks, Deloitte, Salesforce, Strada, Apple</td>
+          <td>Salesforce Concerning Wed; strong Mon coverage</td>
+        </tr>
+        <tr>
+          <td><span class="csm-dot dot-nick"></span><strong>Nick Johnson</strong></td>
+          <td>~10</td>
+          <td>NTT Data EMEA, HCL, Siemens AG, Accenture, IBM, Infor, UKG, Red Hat</td>
+          <td>Most diverse account set; 4 calls Thu</td>
+        </tr>
+        <tr>
+          <td><span class="csm-dot dot-riley"></span><strong>Riley Rogers</strong></td>
+          <td>~7</td>
+          <td>Intuit IES, BMC Software, TriNet, IBM (x-cov), Adobe (x-cov), ZScaler (x-cov), Paycom</td>
+          <td>3 cross-coverage calls this week</td>
+        </tr>
+        <tr>
+          <td><span class="csm-dot dot-divyam"></span><strong>Divyam Dewan</strong></td>
+          <td>~7</td>
+          <td>Xero, Omnissa, Adobe Monthly, Safaricom, Procore, Lumen, BILL Operations</td>
+          <td>BILL Operations Concerning &mdash; stakeholder departure, Salesforce disconnected</td>
+        </tr>
+        <tr>
+          <td><span class="csm-dot dot-varun"></span><strong>Varun Tiwari</strong></td>
+          <td>~5</td>
+          <td>Iron Mountain (x2), Five9, Capital One, RSM US</td>
+          <td>Steady week; 5 Weflow calls confirmed</td>
+        </tr>
+        <tr>
+          <td><span class="csm-dot dot-pam"></span><strong>Pam Huck</strong></td>
+          <td>2</td>
+          <td>ZoomInfo TR, Cisco</td>
+          <td>Light week; 2 confirmed calls</td>
+        </tr>
+        <tr class="row-warn">
+          <td><span class="csm-dot dot-andy"></span><strong>Andy Lim</strong></td>
+          <td>0</td>
+          <td>&mdash;</td>
+          <td>No calls recorded this week</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="weekly-section-title">Open Risks &amp; Follow-ups</div>
+    <div class="weekly-risks">
+      <div class="weekly-risk risk-high">
+        <div class="risk-label">HIGH &middot; Divyam Dewan</div>
+        <div class="risk-account">BILL Operations</div>
+        <div class="risk-desc">Jeremiah Clark departing; Salesforce integration disconnected. Handover meeting with Eric &amp; Kristen needed Monday. Renewal risk flagged. Pulse: Concerning.</div>
+      </div>
+      <div class="weekly-risk risk-medium">
+        <div class="risk-label">MEDIUM &middot; Rani Guy</div>
+        <div class="risk-account">Hitachi Vantara</div>
+        <div class="risk-desc">May 15 call surfaced marketing strategy concerns and contact data quality issues. AM (Adrian Escobar) present. Follow-up needed before Monday EOD. Pulse: Concerning.</div>
+      </div>
+      <div class="weekly-risk risk-medium">
+        <div class="risk-label">MEDIUM &middot; Atisha Waghela</div>
+        <div class="risk-account">Salesforce</div>
+        <div class="risk-desc">May 13 call flagged Concerning. Details from transcript pending review. Pulse logged.</div>
+      </div>
+      <div class="weekly-risk risk-low">
+        <div class="risk-label">WATCH &middot; Andy Lim</div>
+        <div class="risk-account">Full Book</div>
+        <div class="risk-desc">Zero calls recorded across all 5 business days (May 11&ndash;15). No Weflow activity detected. Visibility gap &mdash; confirm whether meetings are occurring off-platform.</div>
+      </div>
+    </div>
+
+    <div class="weekly-footer">Generated by Enterprise CSM Engagement &middot; W20 May 11&ndash;15, 2026 &middot; Data sources: Weflow, Vitally &middot; Weflow-confirmed calls only</div>
+  </div>`;
 }
