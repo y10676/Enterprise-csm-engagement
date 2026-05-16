@@ -727,8 +727,18 @@ function renderWeek(mc, tabsRow, statPills) {
 }
 
 function renderMonth(mc, tabsRow, statPills) {
-  setPills([['dot-teal','24 Calls'],['dot-green','21 Pulses'],['dot-purple','22 Accounts'],['dot-amber','4 Concerning']]);
-  const tabs = ['Summary','CSM Breakdown','Call Log (24)','Pulse Notes (21)','Pulse Health','Pulse Coverage'];
+  const md = getMonthData(currentKey);
+  const nCalls    = md.calls.length;
+  const nPulses   = md.pulses.length;
+  const nAccounts = new Set(md.calls.map(c => c.account)).size;
+  const nConcerning = md.pulses.filter(p => p.health === 'Concerning').length;
+  setPills([
+    ['dot-teal',  `${nCalls} Call${nCalls !== 1 ? 's' : ''}`],
+    ['dot-green', `${nPulses} Pulse${nPulses !== 1 ? 's' : ''}`],
+    ['dot-purple',`${nAccounts} Account${nAccounts !== 1 ? 's' : ''}`],
+    ['dot-amber', `${nConcerning} Concerning`],
+  ]);
+  const tabs = ['Summary','CSM Breakdown',`Call Log (${nCalls})`,`Pulse Notes (${nPulses})`,'Pulse Health','Pulse Coverage'];
   if (!activeTab || !['msummary','mcsm','mcalls','mpulses','mhealth','mcoverage'].includes(activeTab)) activeTab='msummary';
   tabsRow.innerHTML = ['msummary','mcsm','mcalls','mpulses','mhealth','mcoverage'].map((k,i)=>
     `<div class="tab ${activeTab===k?'active':''}" onclick="switchTab('${k}')">${tabs[i]}</div>`
