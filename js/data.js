@@ -144,6 +144,9 @@ const CSM_ACCOUNTS = {
   ]
 };
 const CSM_NAME_MAP = {riley:'Riley Rogers',varun:'Varun Tiwari',divyam:'Divyam Dewan',nick:'Nick Johnson',rani:'Rani Guy',pam:'Pam Huck',atisha:'Atisha Waghela',andy:'Andy Lim'};
+// INGESTION RULE: When rebuilding ACCOUNTS_DATA from Vitally or SFDC, exclude any opportunity
+// where arr is 0, null, or missing. Zero-ARR entries are cleanup/closed placeholders that skew
+// pulse rollups and latestPulseDate. Filter before writing: opps.filter(o => (o.arr || 0) > 0)
 const ACCOUNTS_DATA = [
   {
     "accountId": "001d000001uHkYwAAK",
@@ -392,17 +395,6 @@ const ACCOUNTS_DATA = [
         "csm": "Riley Rogers",
         "name": "TR - SAP Finance CVP x3 11.3.25 - 7.21.26",
         "arr": 86904.12,
-        "contract_end": "2026-07-21",
-        "deal_type": "Expansion",
-        "pulse": "Healthy",
-        "pulseNote": "### 🟡 SAP SuccessFactors\n\n**Contact:** Kristin Mestre\n\n-   **Review health:** Actively collecting — targeting HR Connect London (800 registered customers) as makeup event after NYC severely underperformed (only 3–4 reviews from 100+ attendees)\n    \n-   **SOWs in flight:** 4 active SOWs — Workday report (complete, invoice approved), install base cross-suite report (in procurement, May 11 meeting set), cloud migration report (processing), Corey Char report (submitted)\n    \n-   **Content:** IDP team requesting 5 reports (2 refreshes, 3 net new); big payroll announcement at Sapphire needs positive positioning content\n    \n-   **Risks:** Content team restructuring — budget shifted to content strategy teams; Sam Towardowski (new contact) responding with AI-generated replies, lacks HCM expertise . Intent lead program delays; SuccessFactors may break away for independent campaign Q2–Q3\n    \n-   **Badge issue:** Top Rated badge appeared prematurely due to new page layout — flagged and noted\n    \n\n---\n\n### 🟢 SAP BTP (Business Technology Platform)\n\n**Contact:** Chris Grundy\n\n-   **Review health:** Strong — 300+ reviews, 30x the Top Rated requirement\n    \n-   **Strategy:** Chris proposing centralized management model — acting as single POC for Integration Suite, SAP Build, and Customer Identity Management (CIM)\n    \n-   **Gap:** CIM has zero reviews; Chris exploring ~$25K investment to build profile\n    \n-   **Contract:** Enterprise Agreement in final stages with Alejandro Barahas — late July deadline, consolidating ~20 contracts\n    \n-   **Upcoming:** Post-Sapphire landing page updates; HG Insights data integration on product listings rolling out\n    \n\n---\n\n### 🟡 SAP Build\n\n**Contact:** Samuel Gorski\n\n-   **Structure change:** Build is part of BTP; moving from individual product calls to 12–13 monthly business unit calls covering 40+ products\n    \n-   **Risk:** Consolidation model risks reduced engagement — bi-weekly touchpoints currently drive renewals through personal relationships\n    \n-   **Lead quality concern:** Current lead conversion ~1 in 10; Demand Science offering competing lead products at lower cost/flexibility — HG+TR combined lead solution proposed Aug 2025 still not implemented\n    \n\n---\n\n### 🟡 SAP Business Network\n\n**Contact:** Kathryn Zwack\n\n-   **Review health:** 14 new reviews collected; previous market report expires July 2026\n    \n-   **Contract:** Bridge funding needed (~$7,400) to cover May 1–July 28 gap while consolidating under Alejandro's umbrella\n    \n-   **Decision pending:** Traditional market report (~$7,500) vs. AI-optimized version ($15,000)\n    \n-   **Risk:** Alejandro no-showed scheduled alignment meeting with Kathryn — follow-up needed\n    \n\n---\n\n### 🟢 SAP CX (Sales Cloud, Service Cloud, Commerce Cloud)\n\n**Contact:** Erica Vialardi (new CX solution lead)\n\n-   **Review health:** Sales Cloud 33, Service Cloud 31, Commerce Cloud 18 — all qualified for Top Rated\n    \n-   **Gap:** All products short of ~40-review target by 7–22 reviews; strategy relies heavily on global events\n    \n-   **Content:** Market reports completed Sept 2025 for all three products, available in multiple languages\n    \n-   **Next:** Binod joining May 12 call for full team alignment; Erica aligning internally with manager on responsibilities\n    \n\n---\n\n### 🔴 SAP Ariba + Fieldglass (Finance Products)\n\n**Contact:** Ashleigh Riehl\n\n-   **Review health:** Weak — new products added end of 2025 with limited review base. Last 60 days: Advanced Financial Closing (3 reviews), CPQ (4 reviews), Document Reporting Compliance (3 reviews), Treasury & Risk Mgmt (1 review), Subscription Billing (0)\n    \n-   **Target:** 15 reviews per product by end of July (prorated for 6-month bridge)\n    \n-   **Sapphire strategy:** TrustRadius booth presence with guided review collection; concern that finance products may get lost among 36+ SAP products on landing page\n    \n-   **Profile updates:** Ashleigh pulling content from SAP.com before Sapphire\n    \n\n---\n\n### 🔑 Account-Wide Themes\n\n-   **Contract consolidation:** ~20 separate contracts moving to single Enterprise Agreement under Alejandro Barahas; late July deadline\n    \n-   **CSM transition:** Riley taking over day-to-day from Cole across all products\n    \n-   **Sapphire (Orlando):** Key event for review collection and relationship building across multiple product lines\n    \n-   **HG Insights integration:** Install data now enhancing TrustRadius product pages across the account",
-        "pulseDate": "2026-05-06"
-      },
-      {
-        "opp_id": "006RN00000Pz9IJYAZ",
-        "csm": "Riley Rogers",
-        "name": "TR - SAP Joule for Consultants - Worked with LEO - Buyer Intent ONLY",
-        "arr": 0,
         "contract_end": "2026-07-21",
         "deal_type": "Expansion",
         "pulse": "Healthy",
@@ -754,7 +746,7 @@ const ACCOUNTS_DATA = [
     "pulseNote": "",
     "pulseColor": "#dc2626",
     "renewalDate": "2026-11-03",
-    "latestPulseDate": "2026-05-18",
+    "latestPulseDate": "2026-05-15",
     "opportunities": [
       {
         "opp_id": "006RN00000Oq1OTYAZ",
@@ -810,17 +802,6 @@ const ACCOUNTS_DATA = [
         "pulse": "Concerning",
         "pulseNote": "Apr 28, 2026 | PH — Cisco Media - TrustRadius Renewal Update (Matt Sallis)\n\nExecutive Summary:\nPam Huck held the Cisco Media - TrustRadius Renewal Update call with Matt Sallis on Apr 28. The discussion centered on the IDL program renewal status and the broader Cisco media budget landscape. Matt confirmed the media team remains engaged and values the TrustRadius partnership, citing measurable program performance. However, the media team is operating on quarterly budget cycles, making an annual IDL commitment structurally difficult. No hard budget has been committed for Q4 or FY27. Budget direction sits with Anna and Ben at the VP level.\n\nKey Activity:\n- Apr 28 (Call – Cisco Media - TrustRadius Renewal Update): Pam held renewal update call with Matt Sallis. Matt confirmed positive partnership sentiment and program value — team has seen an uptick in product research on TrustRadius when IDL campaigns are running. Budget structure remains a challenge: Cisco's media contracting has shifted to the field on a quarterly basis, making it harder to lock in annual commitments. Three possible renewal outcomes discussed: no activity, quarterly engagement, or annualized commitment — the latter requiring direction from Anna/Ben.\n\nCurrent Risks:\n- Quarterly budget cycle makes annual IDL commitment structurally difficult\n- No committed Q4 or FY27 budget from the media team\n- Annual vs. quarterly buy decision sits at VP level (Anna/Ben) — outside Matt's authority\n\nPositive Signals:\n- Matt Sallis remains engaged and supportive; partnership sentiment strong\n- IDL program delivering measurable results — uptick in TR product research confirmed during active campaigns\n- Program efficiency metrics remain strong: Effective CPL ~$77, 60K+ leads delivered since Apr '25, 18K accounts reached, 30K contacts, cost per new contact under $150\n\nNext Steps:\n1. Matt to provide update on Q4 budget direction from Anna/Ben\n2. Mardigan to continue building executive-level relationships with Anna and Ben\n3. Monitor whether Cisco commits to quarterly or annual IDL structure ahead of contract decision",
         "pulseDate": "2026-05-01"
-      },
-      {
-        "opp_id": "006RN00000Oq5RUYAZ",
-        "csm": "Pam Huck",
-        "name": "TR(Opportunity Cleanup) - Cisco - Q1 Additional(1750) - CLOSED IN TR",
-        "arr": 0,
-        "contract_end": "2026-10-05",
-        "deal_type": "Expansion",
-        "pulse": "Healthy",
-        "pulseNote": "clean up opp. no pulse to report",
-        "pulseDate": "2026-05-18"
       },
       {
         "opp_id": "006RN00000CIY9BYAX",
@@ -1573,17 +1554,6 @@ const ACCOUNTS_DATA = [
     "renewalDate": "2026-12-09",
     "latestPulseDate": "2026-05-13",
     "opportunities": [
-      {
-        "opp_id": "006RN00000UhOSSYA3",
-        "csm": "Riley Rogers",
-        "name": "TR - Adobe - Adobe Summit 2026",
-        "arr": 0,
-        "contract_end": "2026-04-30",
-        "deal_type": "Periodic",
-        "pulse": "",
-        "pulseNote": "",
-        "pulseDate": null
-      },
       {
         "opp_id": "006RN00000Opp6HYAR",
         "csm": "Riley Rogers",
@@ -2563,7 +2533,7 @@ const ACCOUNTS_DATA = [
     "pulseNote": "",
     "pulseColor": "#059669",
     "renewalDate": "2027-11-09",
-    "latestPulseDate": "2026-05-01",
+    "latestPulseDate": null,
     "opportunities": [
       {
         "opp_id": "006RN00000Af0b0YAB",
@@ -2920,7 +2890,7 @@ const ACCOUNTS_DATA = [
     "pulseNote": "",
     "pulseColor": "#059669",
     "renewalDate": "2026-12-31",
-    "latestPulseDate": "2026-04-27",
+    "latestPulseDate": null,
     "opportunities": [
       {
         "opp_id": "006RN00000FOYkmYAH",
@@ -3379,17 +3349,6 @@ const ACCOUNTS_DATA = [
         "pulse": "Concerning",
         "pulseNote": "IDL leads pilot deferred to H2 2026 due to customer-side budget constraints (confirmed by Ryan Oliver, 2/27). DIY threat via Demandbase flagged as active competitive risk. Riley not yet formally introduced to SAP stakeholders responsible for this engagement as of the 3/3 pulse. No new positive signals since last check. Next step: secure intro to SAP stakeholders and confirm H2 pilot timeline.",
         "pulseDate": "2026-04-07"
-      },
-      {
-        "opp_id": "006RN00000Oq7efYAB",
-        "csm": "Riley Rogers",
-        "name": "TR - Concur Tech, Inc. (SAP Concur) - Ultimate+, Mktg Report Bundle,  01.04.2026",
-        "arr": 0,
-        "contract_end": "2026-12-31",
-        "deal_type": "Renewal",
-        "pulse": "Concerning",
-        "pulseNote": "$0 ARR companion record tied to the SAP Concur engagement. Single-contact dependency risk mirrors the $105K IDL opp — same stakeholder pool, same H2 deferral and Demandbase competitive risk. No independent positive signals. Flagging Concerning in alignment with parent engagement. Will reassess once H2 pilot scope is confirmed.",
-        "pulseDate": "2026-04-07"
       }
     ]
   },
@@ -3765,9 +3724,9 @@ const ACCOUNTS_DATA = [
     "segment": "Enterprise",
     "arr": 73000,
     "lastOutbound": "2026-04-23",
-    "pulse": "Some Risk",
+    "pulse": "Unknown",
     "pulseNote": "",
-    "pulseColor": "#d97706",
+    "pulseColor": "#6b7280",
     "renewalDate": "2026-03-28",
     "latestPulseDate": null,
     "opportunities": []
