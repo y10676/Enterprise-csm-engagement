@@ -161,7 +161,7 @@ const ACCOUNTS_DATA = [
     "pulseNote": "",
     "pulseColor": "#059669",
     "renewalDate": "2027-06-30",
-    "latestPulseDate": "2026-05-16",
+    "latestPulseDate": "2026-05-15",
     "opportunities": [
       {
         "opp_id": "006RN00000I38zeYAB",
@@ -183,7 +183,7 @@ const ACCOUNTS_DATA = [
         "deal_type": "Expansion",
         "pulse": "Healthy",
         "pulseNote": "May 15, 2026 | RG — AWS: File Review & Cloud Adoption Metrics (Weflow confirmed + 2 no-transcript calls)\n\nRani Guy facilitated 3 calls with AWS on May 15:\n\n1. 9:00 AM PT — HG Insights / AWS file review (30 min, Zoom, transcript confirmed): Rishabh Wadhwa presented cloud adoption metrics analysis (AWS/Azure/GCP penetration rates, AI maturity scores, enterprise/SMB distributions) to Madhavi Mallajoshyula and Luis Garcia. Discussion on AI maturity score definitions and future propensity indicators.\n\n2. 7:00 AM PT — Re: Manufacturing Execution System (no transcript)\n3. 10:00 AM PT — Bryce / Nick (no transcript)\n\nAccount remains Healthy. High-frequency engagement continues — 3 AWS calls in one day. Data actively powering competitive intelligence and cloud adoption analysis across multiple AWS go-to-market teams.",
-        "pulseDate": "2026-05-16"
+        "pulseDate": "2026-05-15"
       }
     ]
   },
@@ -1051,7 +1051,7 @@ const ACCOUNTS_DATA = [
     "pulseNote": "5/8 NJ | N4 Snowflake integration session (30 min, Teams). Nicole Morgan engaged. Snowflake production target end of June. Renewal Oct 2026.",
     "pulseColor": "#059669",
     "renewalDate": "2027-11-06",
-    "latestPulseDate": "2026-05-16",
+    "latestPulseDate": "2026-05-15",
     "opportunities": [
       {
         "opp_id": "006RN000001HfpNYAS",
@@ -1062,7 +1062,7 @@ const ACCOUNTS_DATA = [
         "deal_type": "Amendment",
         "pulse": "Healthy",
         "pulseNote": "5/15 NJ: Infor — HG onsite debrief check-in (5:00 AM PT, 30 min). SFDC calendar event confirmed; no Weflow recording captured. Nick Johnson held an internal/onsite debrief session with the Infor team. Ongoing engagement following TAM modeling work and Snowflake integration progress. Account remains in an active, collaborative phase ahead of Oct 2026 renewal.",
-        "pulseDate": "2026-05-16"
+        "pulseDate": "2026-05-15"
       },
       {
         "opp_id": "006RN000004pPdEYAU",
@@ -1513,7 +1513,7 @@ const ACCOUNTS_DATA = [
     "pulseNote": "",
     "pulseColor": "#dc2626",
     "renewalDate": "2026-10-23",
-    "latestPulseDate": "2026-05-16",
+    "latestPulseDate": "2026-05-15",
     "opportunities": [
       {
         "opp_id": "006RN00000C6rifYAB",
@@ -1535,7 +1535,7 @@ const ACCOUNTS_DATA = [
         "deal_type": "Renewal",
         "pulse": "Concerning",
         "pulseNote": "May 15, 2026 | RG — Hitachi Vantara: Marketing Strategy & Contact Data (Weflow confirmed)\n\nRani Guy held a 30-min Zoom call at 9:30 AM PT with Miguel Ortega. Adrian Escobar (AM) also participated.\n\nKey topics:\n- Marketing strategy evolution toward account-based/buying group models\n- Discussion on HG contact data differentiation vs. competitors\n- Follow-up with Chloe (TR/IDL team) for contact data demo planned — potential expansion signal\n- Post-QBR (May 13) follow-up touchpoint; renewal alignment ongoing\n\nAccount remains Concerning. Two renewals in Sept/Oct 2026 require proactive consolidation. Positive signal: Miguel and team are exploring contact data expansion. QBR was held May 13; this call is a follow-up maintaining momentum into the renewal window.",
-        "pulseDate": "2026-05-16"
+        "pulseDate": "2026-05-15"
       }
     ]
   },
@@ -1775,7 +1775,7 @@ const ACCOUNTS_DATA = [
     "pulseNote": "",
     "pulseColor": "#059669",
     "renewalDate": "2028-11-29",
-    "latestPulseDate": "2026-05-16",
+    "latestPulseDate": "2026-05-15",
     "opportunities": [
       {
         "opp_id": "006RN00000Oq7elYAB",
@@ -1797,7 +1797,7 @@ const ACCOUNTS_DATA = [
         "deal_type": "Renewal",
         "pulse": "Healthy",
         "pulseNote": "May 15, 2026 | NJ — Red Hat Inc: Time Series & Cross-Sell Strategy (Weflow confirmed)\n\nNick Johnson held a 30-min Zoom call at 7:30 AM PT with Julia (Red Hat data science team). Augie Buettner (AM) also participated.\n\nKey topics:\n- Time series data use cases: approximating competitor renewal windows for OpenShift cross-sell motion\n- Churn prevention use cases for OpenShift leveraging install time series\n- HG spend data discussed as leading indicator for competitive displacement\n\nAccount remains Healthy. Biweekly cadence solid, Red Hat data science team actively developing new use cases with HG time series data. PO received in March, 3-year renewal secured. Strong strategic engagement continues.",
-        "pulseDate": "2026-05-16"
+        "pulseDate": "2026-05-15"
       }
     ]
   },
@@ -2076,7 +2076,7 @@ const ACCOUNTS_DATA = [
     "pulseNote": "",
     "pulseColor": "#059669",
     "renewalDate": "2027-07-31",
-    "latestPulseDate": "2026-05-16",
+    "latestPulseDate": "2026-05-15",
     "opportunities": [
       {
         "opp_id": "006RN00000BaG39YAF",
@@ -2087,7 +2087,7 @@ const ACCOUNTS_DATA = [
         "deal_type": "Renewal",
         "pulse": "Healthy",
         "pulseNote": "5/15 AW: Apple — Market Intelligence Training + Platform Training Team Call (11:00 AM PT + 12:00 PM PT). SFDC calendar events confirmed; no Weflow recordings captured. Atisha Waghela ran two sequential Apple training sessions: an MI platform walkthrough and a broader platform training for the Apple team. Multi-team engagement (Product Managers, Sales Ops, Strategy) ongoing. Account scoring, wallet share, and TAM sizing workstreams active. Strong strategic account health maintained.",
-        "pulseDate": "2026-05-16"
+        "pulseDate": "2026-05-15"
       }
     ]
   },
@@ -2221,7 +2221,7 @@ const ACCOUNTS_DATA = [
     "pulseNote": "",
     "pulseColor": "#059669",
     "renewalDate": "2027-04-20",
-    "latestPulseDate": "2026-05-16",
+    "latestPulseDate": "2026-05-15",
     "opportunities": [
       {
         "opp_id": "006RN00000Lm7BCYAZ",
@@ -2232,7 +2232,7 @@ const ACCOUNTS_DATA = [
         "deal_type": "New Subscription",
         "pulse": "Healthy",
         "pulseNote": "5/15 DD: Quadient — Bi-Weekly Sync (7:30 AM PT, 30 min). SFDC calendar event confirmed; no Weflow recording captured. Divyam Dewan held the regular bi-weekly sync with Quadient (Ashlin, Lia/Lauren, Melvin). Review campaigns and IDL programs actively in flight. Data feed/Salesforce/Snowflake integration scoping ongoing. Strong multi-stakeholder engagement maintained.",
-        "pulseDate": "2026-05-16"
+        "pulseDate": "2026-05-15"
       },
       {
         "opp_id": "006RN00000Oq4VOYAZ",
@@ -2477,7 +2477,7 @@ const ACCOUNTS_DATA = [
     "pulseNote": "",
     "pulseColor": "#dc2626",
     "renewalDate": "2026-08-07",
-    "latestPulseDate": "2026-05-16",
+    "latestPulseDate": "2026-05-15",
     "opportunities": [
       {
         "opp_id": "0063o000019lpEgAAI",
@@ -2488,7 +2488,7 @@ const ACCOUNTS_DATA = [
         "deal_type": "Renewal",
         "pulse": "Concerning",
         "pulseNote": "5/15 DD: Informatica — Weekly Partnership Sync (10:00 AM PT, 30 min). SFDC calendar event confirmed; no Weflow recording captured. Divyam Dewan held the weekly sync with Thomas Mirrione and team. Engagement cadence is strong but Aug 2026 renewal remains at risk — Salesforce acquisition driving supplier rationalization, no completed ROI study, Thomas cannot push renewal through alone. Working with Ravi on revised pricing model. Maintaining Concerning pulse until multi-stakeholder buy-in is secured and ROI proof is delivered.",
-        "pulseDate": "2026-05-16"
+        "pulseDate": "2026-05-15"
       }
     ]
   },
@@ -3259,7 +3259,7 @@ const ACCOUNTS_DATA = [
     "pulseNote": "",
     "pulseColor": "#dc2626",
     "renewalDate": "2026-12-30",
-    "latestPulseDate": "2026-05-16",
+    "latestPulseDate": "2026-05-15",
     "opportunities": [
       {
         "opp_id": "006RN00000NXwXpYAL",
@@ -3281,7 +3281,7 @@ const ACCOUNTS_DATA = [
         "deal_type": "New Subscription",
         "pulse": "Healthy",
         "pulseNote": "May 15, 2026 | AW — RSM US: FY26/27 Partnership Progress (Weflow confirmed)\n\nAtisha Waghela held a 30-min Zoom call at 8:00 AM PT with Kristin Lewis and the RSM team. Leo Zunz (AM) also participated.\n\nKey topics:\n- MCP program progress update: technographic rollout now live in RSM sales dashboards — milestone achieved\n- FY26/27 partnership planning for next steps and expanded use cases\n- September renewal window planning underway; Kristin engaged\n\nPulse upgraded to Healthy for this opportunity. Technographic data now in production in RSM sales dashboards marks a meaningful adoption milestone after prior slow-start concerns. Atisha booked follow-up for next Wednesday to continue momentum.",
-        "pulseDate": "2026-05-16"
+        "pulseDate": "2026-05-15"
       },
       {
         "opp_id": "006RN00000SlBmJYAV",
@@ -3393,7 +3393,7 @@ const ACCOUNTS_DATA = [
     "pulseNote": "",
     "pulseColor": "#dc2626",
     "renewalDate": "2027-02-01",
-    "latestPulseDate": "2026-05-16",
+    "latestPulseDate": "2026-05-15",
     "opportunities": [
       {
         "opp_id": "006RN00000SmRKNYA3",
@@ -3404,7 +3404,7 @@ const ACCOUNTS_DATA = [
         "deal_type": "New Subscription",
         "pulse": "Concerning",
         "pulseNote": "May 15, 2026 | DD — BILL Operations: MadKudu Handover & Implementation Status (Weflow confirmed)\n\nDivyam Dewan held a 30-min Zoom call at 10:30 AM PT with Jeremiah Clark (departing stakeholder from Smooth Operator). This is a handover call as Jeremiah is leaving.\n\nKey topics:\n- BuildCom account has Salesforce disconnected, causing Model 5 data issues — Divyam learning full account status\n- Monday meeting scheduled with Eric (GTM Ops) and Kristen Malkovich (exec sponsor) to review implementation state\n- Concurrent Marketo→Inflection migration remains ongoing\n\nAccount remains Concerning. Implementation is mid-flight with a key contact departing, Salesforce data issues blocking Model 5, and the aggressive FY27 launch timeline still in effect. Monday's call with Eric and Kristen is the critical next milestone.",
-        "pulseDate": "2026-05-16"
+        "pulseDate": "2026-05-15"
       }
     ]
   },
