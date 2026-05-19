@@ -83,7 +83,7 @@ function weekCSMHTML() {
 
 function weekCallsHTML() {
   return `<div class="table-card"><table>
-    <thead><tr><th>Date & Time</th><th class="sortable" data-sort-field="csm" onclick="sortCallTable(this)">CSM <span class="sort-arrow">⇅</span></th><th class="sortable" data-sort-field="account" onclick="sortCallTable(this)">Account <span class="sort-arrow">⇅</span></th><th>Duration</th><th class="sortable" data-sort-field="health" onclick="sortCallTable(this)">Signal <span class="sort-arrow">⇅</span></th></tr></thead>
+    <thead><tr><th>Date & Time</th><th class="sortable" data-sort-field="csm">CSM <span class="sort-arrow">⇅</span></th><th class="sortable" data-sort-field="account">Account <span class="sort-arrow">⇅</span></th><th>Duration</th><th class="sortable" data-sort-field="health">Signal <span class="sort-arrow">⇅</span></th></tr></thead>
     <tbody>
       <tr style="background:#f8f9fc;pointer-events:none"><td colspan="5" style="font-size:11px;font-weight:700;color:#6b7280;text-transform:uppercase;letter-spacing:0.6px;padding:8px 12px">MONDAY APR 20 — 3 CALLS</td></tr>
       <tr data-csm="pam" onclick="openModal('call-cisco-tr')"><td style="color:#9ca3af;font-size:12px">Mon Apr 20 · 9:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">PH</div>Pam Huck</div></td><td><strong>Cisco</strong> <span style="font-size:11px;color:#9ca3af">QBR Prep</span></td><td>45 min</td><td><span class="badge badge-concerning">🟡 Concerning</span></td></tr>
@@ -178,10 +178,10 @@ function monthCallsHTML() {
   const md = getMonthData(currentKey);
   if (!md.hasData) return weekCallsHTML().replace('Week 17', isoToDate(currentKey+'-01').toLocaleDateString('en-US',{month:'long',year:'numeric'})+' · Month-to-Date');
   const hasPurpose = md.calls.some(c => c.purpose || c.nature || c.initiator);
-  const purposeHeader = hasPurpose ? '<th class="sortable" data-sort-field="purpose" onclick="sortCallTable(this)">Purpose <span class="sort-arrow">⇅</span></th>' : '';
+  const purposeHeader = hasPurpose ? '<th class="sortable" data-sort-field="purpose">Purpose <span class="sort-arrow">⇅</span></th>' : '';
   const rows = _callTableRows(md.calls, hasPurpose);
   return `<div class="table-card"><table>
-    <thead><tr><th>Time (PT)</th><th class="sortable" data-sort-field="csm" onclick="sortCallTable(this)">CSM <span class="sort-arrow">⇅</span></th><th class="sortable" data-sort-field="account" onclick="sortCallTable(this)">Account <span class="sort-arrow">⇅</span></th><th>Duration</th><th class="sortable" data-sort-field="health" onclick="sortCallTable(this)">Signal <span class="sort-arrow">⇅</span></th>${purposeHeader}<th>Detail</th></tr></thead>
+    <thead><tr><th>Time (PT)</th><th class="sortable" data-sort-field="csm">CSM <span class="sort-arrow">⇅</span></th><th class="sortable" data-sort-field="account">Account <span class="sort-arrow">⇅</span></th><th>Duration</th><th class="sortable" data-sort-field="health">Signal <span class="sort-arrow">⇅</span></th>${purposeHeader}<th>Detail</th></tr></thead>
     <tbody>${rows}</tbody>
   </table>
   <div class="empty-state" id="calls-empty" style="display:none"><div class="empty-icon">&#128269;</div>No calls match these filters.</div>

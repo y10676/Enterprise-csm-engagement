@@ -240,6 +240,7 @@ function renderDay(mc, tabsRow, statPills) {
       ${dd.actionsHTML()}
     </div>
   </div>`;
+  _bindSortHeaders();
   applyDayFilters();
 }
 
@@ -797,6 +798,7 @@ function renderWeek(mc, tabsRow, statPills) {
   }
   html += '</div>';
   mc.innerHTML = html;
+  _bindSortHeaders();
   if (activeTab==='wpulses') applyWeekPulseFilters();
   else if (activeTab==='wsummary') {
     document.querySelectorAll('.hm-csm-row[data-csm]').forEach(row => {
@@ -839,6 +841,7 @@ function renderMonth(mc, tabsRow, statPills) {
   else html += monthHealthHTML();
   html += '</div>';
   mc.innerHTML = html;
+  _bindSortHeaders();
   if (activeTab==='mpulses') applyWeekPulseFilters();
   else if (activeTab==='mcalls') applyMonthCallFilters();
   else if (activeTab==='msummary') {
@@ -1773,6 +1776,18 @@ function closeModal() { document.getElementById('modal-overlay').classList.remov
 
 // ─── CALL TABLE SORTING ─────────────────────────────────────────
 let _sortField = null, _sortDir = 1;
+
+// Attaches click listeners to all .sortable th elements in the DOM.
+// Called after every mc.innerHTML write so listeners survive re-renders.
+function _bindSortHeaders() {
+  document.querySelectorAll('th.sortable').forEach(th => {
+    if (!th._sortBound) {
+      th._sortBound = true;
+      th.addEventListener('click', function() { sortCallTable(this); });
+    }
+  });
+}
+
 function sortCallTable(th) {
   const field = th.dataset.sortField;
   if (!field) return;
@@ -1794,11 +1809,7 @@ function sortCallTable(th) {
   rows.sort((a, b) => getVal(a).localeCompare(getVal(b)) * _sortDir);
   rows.forEach(r => tbody.appendChild(r));
 }
-// Event delegation — catches sortable header clicks on any dynamically-injected table
-document.addEventListener('click', e => {
-  const th = e.target.closest('th.sortable');
-  if (th) sortCallTable(th);
-});
+// Note: sorting uses directly on <th> elements.
 
 function showNoteModal(el) {
   const note = el.dataset.note || '';
