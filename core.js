@@ -543,7 +543,7 @@ function _callTableRows(calls, hasPurpose) {
     } else {
       detailCell = `<td style="vertical-align:middle;color:#d1d5db;font-size:12px">—</td>`;
     }
-    rows += `<tr data-csm="${c.csm}" data-health="${c.health||''}">
+    rows += `<tr data-csm="${c.csm}" data-health="${c.health||''}" data-sort-purpose="${(c.purpose||'').replace(/"/g,'&quot;')}">
       <td style="color:#9ca3af;font-size:12px">${c.ts||''}</td>
       <td><div class="csm-chip-inline"><div class="mini-av ${csm.cls}">${csm.initials}</div>${csm.name}${xcovLabel}</div></td>
       <td><strong>${c.account}</strong></td>
@@ -1770,6 +1770,28 @@ function openModal(key) {
   document.getElementById('modal-overlay').classList.add('open');
 }
 function closeModal() { document.getElementById('modal-overlay').classList.remove('open'); }
+
+// ─── CALL TABLE SORTING ─────────────────────────────────────────
+let _sortField = null, _sortDir = 1;
+function sortCallTable(field, th) {
+  _sortDir = (_sortField === field) ? _sortDir * -1 : 1;
+  _sortField = field;
+  // Reset all arrows, set active arrow
+  th.closest('table').querySelectorAll('th.sortable .sort-arrow').forEach(a => a.textContent = '⇅');
+  th.querySelector('.sort-arrow').textContent = _sortDir === 1 ? ' ▲' : ' ▼';
+  // Sort visible + hidden rows together (filter classes are preserved)
+  const tbody = th.closest('table').querySelector('tbody');
+  const rows = [...tbody.querySelectorAll('tr[data-csm]')];
+  rows.sort((a, b) => {
+    let av, bv;
+    if (field === 'csm')     { av = a.dataset.csm || '';    bv = b.dataset.csm || ''; }
+    else if (field === 'health') { av = a.dataset.health || ''; bv = b.dataset.health || ''; }
+    else                     { av = a.dataset.sortPurpose || ''; bv = b.dataset.sortPurpose || ''; }
+    return av.localeCompare(bv) * _sortDir;
+  });
+  rows.forEach(r => tbody.appendChild(r));
+}
+
 function showNoteModal(el) {
   const note = el.dataset.note || '';
   const account = el.dataset.account || 'Call Note';
