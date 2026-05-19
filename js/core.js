@@ -528,11 +528,26 @@ function _callTableRows(calls, hasPurpose) {
     const purposeCell = hasPurpose
       ? `<td style="vertical-align:top">${_callPurposeBadge(c.purpose, c.nature, c.initiator)}</td>`
       : '';
-    const colspan = hasPurpose ? 6 : 5;
+    const colspan = hasPurpose ? 7 : 6;
+    // Build notes cell — truncate at 80 chars with click-to-expand modal
+    let noteCell;
+    if (c.note) {
+      const safeNote    = c.note.replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+      const safeAccount = (c.account||'').replace(/&/g,'&amp;').replace(/"/g,'&quot;');
+      if (c.note.length > 80) {
+        const preview = c.note.slice(0, 80).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+        noteCell = `<td class="note-cell clickable" data-note="${safeNote}" data-account="${safeAccount}" onclick="showNoteModal(this)" title="Click to see full note">${preview}…</td>`;
+      } else {
+        noteCell = `<td class="note-cell">${safeNote}</td>`;
+      }
+    } else {
+      noteCell = `<td class="note-cell" style="color:#d1d5db">—</td>`;
+    }
     rows += `<tr data-csm="${c.csm}" data-health="${c.health||''}">
       <td style="color:#9ca3af;font-size:12px">${c.ts||''}</td>
       <td><div class="csm-chip-inline"><div class="mini-av ${csm.cls}">${csm.initials}</div>${csm.name}${xcovLabel}</div></td>
-      <td><strong>${c.account}</strong>${c.note?` <span style="font-size:11px;color:#9ca3af">${c.note}</span>`:''}</td>
+      <td style="white-space:nowrap"><strong>${c.account}</strong></td>
+      ${noteCell}
       <td>${c.mins||'—'} min</td>
       <td>${hBadge}</td>
       ${purposeCell}
@@ -558,7 +573,7 @@ function autoDayCallsHTML(key) {
   const purposeHeader = hasPurpose ? '<th>Purpose</th>' : '';
   const rows = _callTableRows(calls, hasPurpose);
   return `<div class="table-card"><table>
-    <thead><tr><th>Time (PT)</th><th>CSM</th><th>Account</th><th>Duration</th><th>Signal</th>${purposeHeader}</tr></thead>
+    <thead><tr><th>Time (PT)</th><th>CSM</th><th>Account</th><th>Notes</th><th>Duration</th><th>Signal</th>${purposeHeader}</tr></thead>
     <tbody>${rows}</tbody>
   </table></div>
   <div class="empty-state" id="calls-empty" style="display:none"><div class="empty-icon">&#128269;</div>No calls match these filters.</div>`;
@@ -575,12 +590,12 @@ function autoWeekCallsHTML(data) {
     const calls = byDay[date];
     const dt = isoToDate(date);
     const label = `${_DAY_NAMES[dt.getDay()].toUpperCase()} ${_MON_NAMES[dt.getMonth()].toUpperCase()} ${dt.getDate()} — ${calls.length} CALL${calls.length!==1?'S':''}`;
-    const colspan = hasPurpose ? 6 : 5;
+    const colspan = hasPurpose ? 7 : 6;
     rows += `<tr style="background:#f8f9fc;pointer-events:none"><td colspan="${colspan}" style="font-size:11px;font-weight:700;color:#6b7280;text-transform:uppercase;letter-spacing:0.6px;padding:8px 12px">${label}</td></tr>`;
     rows += _callTableRows(calls, hasPurpose);
   });
   return `<div class="table-card"><table>
-    <thead><tr><th>Time (PT)</th><th>CSM</th><th>Account</th><th>Duration</th><th>Signal</th>${purposeHeader}</tr></thead>
+    <thead><tr><th>Time (PT)</th><th>CSM</th><th>Account</th><th>Notes</th><th>Duration</th><th>Signal</th>${purposeHeader}</tr></thead>
     <tbody>${rows}</tbody>
   </table></div>
   <div class="empty-state" id="calls-empty" style="display:none"><div class="empty-icon">&#128269;</div>No calls match these filters.</div>`;
@@ -1760,6 +1775,14 @@ function openModal(key) {
   document.getElementById('modal-overlay').classList.add('open');
 }
 function closeModal() { document.getElementById('modal-overlay').classList.remove('open'); }
+function showNoteModal(el) {
+  const note = el.dataset.note || '';
+  const account = el.dataset.account || 'Call Note';
+  document.getElementById('modal-title').textContent = account;
+  document.getElementById('modal-subtitle').textContent = 'Call Note';
+  document.getElementById('modal-body').innerHTML = `<div class="modal-section"><div class="modal-section-body" style="white-space:pre-wrap;font-size:13px;color:#374151;line-height:1.7">${note}</div></div>`;
+  document.getElementById('modal-overlay').classList.add('open');
+}
 document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeModal(); });
 
 // ─── AUTH GATE ──────────────────────────────────────────────────
