@@ -240,6 +240,7 @@ function renderDay(mc, tabsRow, statPills) {
       ${dd.actionsHTML()}
     </div>
   </div>`;
+  _bindSortHeaders();
   applyDayFilters();
 }
 
@@ -528,21 +529,22 @@ function _callTableRows(calls, hasPurpose) {
     const purposeCell = hasPurpose
       ? `<td style="vertical-align:top">${_callPurposeBadge(c.purpose, c.nature, c.initiator)}</td>`
       : '';
-    // Build detail cell — truncate at 120 chars with click-to-expand modal
+    // Build detail cell — CSS line-clamp handles visual truncation; click opens modal for long text
     let detailCell;
     if (c.detail) {
       const safeDetail  = c.detail.replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
       const safeAccount = (c.account||'').replace(/&/g,'&amp;').replace(/"/g,'&quot;');
-      if (c.detail.length > 120) {
-        const preview = c.detail.slice(0, 120).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-        detailCell = `<td class="detail-cell clickable" data-note="${safeDetail}" data-account="${safeAccount}" onclick="showNoteModal(this)" title="Click to expand">${preview}…</td>`;
-      } else {
-        detailCell = `<td class="detail-cell">${safeDetail}</td>`;
-      }
+      const LIMIT = 120;
+      const preview = c.detail.length > LIMIT
+        ? c.detail.slice(0, LIMIT).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') + '…'
+        : safeDetail;
+      const isLong = c.detail.length > LIMIT;
+      const attrs = isLong ? ` data-note="${safeDetail}" data-account="${safeAccount}" onclick="showNoteModal(this)" title="Click to expand"` : '';
+      detailCell = `<td style="vertical-align:top"><div class="detail-cell${isLong?' clickable':''}"${attrs}>${preview}</div></td>`;
     } else {
-      detailCell = `<td class="detail-cell" style="color:#d1d5db">—</td>`;
+      detailCell = `<td style="vertical-align:middle;color:#d1d5db;font-size:12px">—</td>`;
     }
-    rows += `<tr data-csm="${c.csm}" data-health="${c.health||''}">
+    rows += `<tr data-csm="${c.csm}" data-health="${c.health||''}" data-sort-purpose="${(c.purpose||'').replace(/"/g,'&quot;')}" data-sort-account="${(c.account||'').replace(/"/g,'&quot;')}">
       <td style="color:#9ca3af;font-size:12px">${c.ts||''}</td>
       <td><div class="csm-chip-inline"><div class="mini-av ${csm.cls}">${csm.initials}</div>${csm.name}${xcovLabel}</div></td>
       <td><strong>${c.account}</strong></td>
@@ -564,10 +566,10 @@ function autoDayCallsHTML(key) {
   const calls = data.calls || [];
   if (!calls.length) return '<div style="padding:32px;text-align:center;color:#6b7280">No calls logged for this day.</div>';
   const hasPurpose = calls.some(c => c.purpose || c.nature || c.initiator);
-  const purposeHeader = hasPurpose ? '<th>Purpose</th>' : '';
+  const purposeHeader = hasPurpose ? '<th class="sortable" data-sort-field="purpose">Purpose <span class="sort-arrow">⇅</span></th>' : '';
   const rows = _callTableRows(calls, hasPurpose);
   return `<div class="table-card"><table>
-    <thead><tr><th>Time (PT)</th><th>CSM</th><th>Account</th><th>Duration</th><th>Signal</th>${purposeHeader}<th>Detail</th></tr></thead>
+    <thead><tr><th>Time (PT)</th><th class="sortable" data-sort-field="csm">CSM <span class="sort-arrow">⇅</span></th><th class="sortable" data-sort-field="account">Account <span class="sort-arrow">⇅</span></th><th>Duration</th><th class="sortable" data-sort-field="health">Signal <span class="sort-arrow">⇅</span></th>${purposeHeader}<th>Detail</th></tr></thead>
     <tbody>${rows}</tbody>
   </table></div>
   <div class="empty-state" id="calls-empty" style="display:none"><div class="empty-icon">&#128269;</div>No calls match these filters.</div>`;
@@ -576,7 +578,7 @@ function autoDayCallsHTML(key) {
 function autoWeekCallsHTML(data) {
   if (!data.hasData) return '<div style="padding:32px;text-align:center;color:#6b7280;font-size:13px">No structured call data for this week. Add <code>dayData_YYYY_MM_DD()</code> functions to enable auto-derivation.</div>';
   const hasPurpose = data.calls.some(c => c.purpose || c.nature || c.initiator);
-  const purposeHeader = hasPurpose ? '<th>Purpose</th>' : '';
+  const purposeHeader = hasPurpose ? '<th class="sortable" data-sort-field="purpose">Purpose <span class="sort-arrow">⇅</span></th>' : '';
   const byDay = {};
   data.calls.forEach(c => { (byDay[c.date] = byDay[c.date] || []).push(c); });
   let rows = '';
@@ -589,7 +591,7 @@ function autoWeekCallsHTML(data) {
     rows += _callTableRows(calls, hasPurpose);
   });
   return `<div class="table-card"><table>
-    <thead><tr><th>Time (PT)</th><th>CSM</th><th>Account</th><th>Duration</th><th>Signal</th>${purposeHeader}<th>Detail</th></tr></thead>
+    <thead><tr><th>Time (PT)</th><th class="sortable" data-sort-field="csm">CSM <span class="sort-arrow">⇅</span></th><th class="sortable" data-sort-field="account">Account <span class="sort-arrow">⇅</span></th><th>Duration</th><th class="sortable" data-sort-field="health">Signal <span class="sort-arrow">⇅</span></th>${purposeHeader}<th>Detail</th></tr></thead>
     <tbody>${rows}</tbody>
   </table></div>
   <div class="empty-state" id="calls-empty" style="display:none"><div class="empty-icon">&#128269;</div>No calls match these filters.</div>`;
@@ -796,6 +798,7 @@ function renderWeek(mc, tabsRow, statPills) {
   }
   html += '</div>';
   mc.innerHTML = html;
+  _bindSortHeaders();
   if (activeTab==='wpulses') applyWeekPulseFilters();
   else if (activeTab==='wsummary') {
     document.querySelectorAll('.hm-csm-row[data-csm]').forEach(row => {
@@ -838,6 +841,7 @@ function renderMonth(mc, tabsRow, statPills) {
   else html += monthHealthHTML();
   html += '</div>';
   mc.innerHTML = html;
+  _bindSortHeaders();
   if (activeTab==='mpulses') applyWeekPulseFilters();
   else if (activeTab==='mcalls') applyMonthCallFilters();
   else if (activeTab==='msummary') {
@@ -1769,6 +1773,41 @@ function openModal(key) {
   document.getElementById('modal-overlay').classList.add('open');
 }
 function closeModal() { document.getElementById('modal-overlay').classList.remove('open'); }
+
+// ─── CALL TABLE SORTING ─────────────────────────────────────────
+let _sortField = null, _sortDir = 1;
+
+// Attaches click listeners to all .sortable th elements in the DOM.
+// Called after every mc.innerHTML write so listeners survive re-renders.
+function _bindSortHeaders() {
+  document.querySelectorAll('th.sortable').forEach(function(th) {
+    th.onclick = function() { sortCallTable(th); };
+  });
+}
+
+function sortCallTable(th) {
+  const field = th.dataset.sortField;
+  if (!field) return;
+  _sortDir = (_sortField === field) ? _sortDir * -1 : 1;
+  _sortField = field;
+  // Reset all arrows in this table, set active arrow
+  th.closest('table').querySelectorAll('th.sortable .sort-arrow').forEach(a => a.textContent = '⇅');
+  th.querySelector('.sort-arrow').textContent = _sortDir === 1 ? ' ▲' : ' ▼';
+  // Value extractor — uses data attributes first, falls back to DOM for static rows
+  const getVal = r => {
+    if (field === 'csm')     return r.dataset.csm || '';
+    if (field === 'account') return r.dataset.sortAccount || r.querySelector('td:nth-child(3) strong')?.textContent || '';
+    if (field === 'health')  return r.dataset.health || (r.querySelector('.badge-healthy') ? 'Healthy' : r.querySelector('.badge-concerning') ? 'Concerning' : '');
+    if (field === 'purpose') return r.dataset.sortPurpose || '';
+    return '';
+  };
+  const tbody = th.closest('table').querySelector('tbody');
+  const rows = [...tbody.querySelectorAll('tr[data-csm]')];
+  rows.sort((a, b) => getVal(a).localeCompare(getVal(b)) * _sortDir);
+  rows.forEach(r => tbody.appendChild(r));
+}
+// Note: sorting uses directly on <th> elements.
+
 function showNoteModal(el) {
   const note = el.dataset.note || '';
   const account = el.dataset.account || 'Call Note';
