@@ -528,35 +528,29 @@ function _callTableRows(calls, hasPurpose) {
     const purposeCell = hasPurpose
       ? `<td style="vertical-align:top">${_callPurposeBadge(c.purpose, c.nature, c.initiator)}</td>`
       : '';
-    const colspan = hasPurpose ? 7 : 6;
-    // Build notes cell — truncate at 80 chars with click-to-expand modal
-    let noteCell;
-    if (c.note) {
-      const safeNote    = c.note.replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+    // Build detail cell — truncate at 120 chars with click-to-expand modal
+    let detailCell;
+    if (c.detail) {
+      const safeDetail  = c.detail.replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
       const safeAccount = (c.account||'').replace(/&/g,'&amp;').replace(/"/g,'&quot;');
-      if (c.note.length > 80) {
-        const preview = c.note.slice(0, 80).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-        noteCell = `<td class="note-cell clickable" data-note="${safeNote}" data-account="${safeAccount}" onclick="showNoteModal(this)" title="Click to see full note">${preview}…</td>`;
+      if (c.detail.length > 120) {
+        const preview = c.detail.slice(0, 120).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+        detailCell = `<td class="detail-cell clickable" data-note="${safeDetail}" data-account="${safeAccount}" onclick="showNoteModal(this)" title="Click to expand">${preview}…</td>`;
       } else {
-        noteCell = `<td class="note-cell">${safeNote}</td>`;
+        detailCell = `<td class="detail-cell">${safeDetail}</td>`;
       }
     } else {
-      noteCell = `<td class="note-cell" style="color:#d1d5db">—</td>`;
+      detailCell = `<td class="detail-cell" style="color:#d1d5db">—</td>`;
     }
     rows += `<tr data-csm="${c.csm}" data-health="${c.health||''}">
       <td style="color:#9ca3af;font-size:12px">${c.ts||''}</td>
       <td><div class="csm-chip-inline"><div class="mini-av ${csm.cls}">${csm.initials}</div>${csm.name}${xcovLabel}</div></td>
-      <td style="white-space:nowrap"><strong>${c.account}</strong></td>
-      ${noteCell}
+      <td><strong>${c.account}</strong></td>
       <td>${c.mins||'—'} min</td>
       <td>${hBadge}</td>
       ${purposeCell}
+      ${detailCell}
     </tr>`;
-    if (c.detail) {
-      rows += `<tr class="call-detail-row" data-csm="${c.csm}" data-health="${c.health||''}">
-        <td colspan="${colspan}"><div class="call-detail-body">${c.detail}</div></td>
-      </tr>`;
-    }
   });
   return rows;
 }
@@ -573,7 +567,7 @@ function autoDayCallsHTML(key) {
   const purposeHeader = hasPurpose ? '<th>Purpose</th>' : '';
   const rows = _callTableRows(calls, hasPurpose);
   return `<div class="table-card"><table>
-    <thead><tr><th>Time (PT)</th><th>CSM</th><th>Account</th><th>Notes</th><th>Duration</th><th>Signal</th>${purposeHeader}</tr></thead>
+    <thead><tr><th>Time (PT)</th><th>CSM</th><th>Account</th><th>Duration</th><th>Signal</th>${purposeHeader}<th>Detail</th></tr></thead>
     <tbody>${rows}</tbody>
   </table></div>
   <div class="empty-state" id="calls-empty" style="display:none"><div class="empty-icon">&#128269;</div>No calls match these filters.</div>`;
@@ -595,7 +589,7 @@ function autoWeekCallsHTML(data) {
     rows += _callTableRows(calls, hasPurpose);
   });
   return `<div class="table-card"><table>
-    <thead><tr><th>Time (PT)</th><th>CSM</th><th>Account</th><th>Notes</th><th>Duration</th><th>Signal</th>${purposeHeader}</tr></thead>
+    <thead><tr><th>Time (PT)</th><th>CSM</th><th>Account</th><th>Duration</th><th>Signal</th>${purposeHeader}<th>Detail</th></tr></thead>
     <tbody>${rows}</tbody>
   </table></div>
   <div class="empty-state" id="calls-empty" style="display:none"><div class="empty-icon">&#128269;</div>No calls match these filters.</div>`;
