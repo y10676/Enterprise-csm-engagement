@@ -312,11 +312,18 @@ function getDayData(key) {
   const ovFn   = window['dayOverviewHTML_' + k];
   if (metaFn && ovFn) {
     const meta = metaFn();
+    // Use autoDayCallsHTML when dayData_ has purpose fields (overrides manual dayCallsHTML_).
+    // Fall back to manual dayCallsHTML_ for backward compat, then auto as last resort.
+    const dataFn = window['dayData_' + k];
+    const hasPurposeInData = dataFn && (dataFn().calls || []).some(c => c.purpose || c.nature || c.initiator);
+    const callsHTML = hasPurposeInData
+      ? () => autoDayCallsHTML(key)
+      : (window['dayCallsHTML_' + k] || (() => autoDayCallsHTML(key)));
     return {
       pills:       meta.pills,
       tabs:        meta.tabs,
       overviewHTML: ovFn,
-      callsHTML:   window['dayCallsHTML_'   + k] || (() => ''),
+      callsHTML,
       pulsesHTML:  window['dayPulsesHTML_'  + k] || (() => ''),
       actionsHTML: window['dayActionsHTML_' + k] || (() => ''),
     };
@@ -480,8 +487,87 @@ const WEEK_META = {
 const _DAY_NAMES  = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
 const _MON_NAMES  = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 
+// ─── CALL PURPOSE HELPERS ──────────────────────────────────────
+// Renders purpose badge + nature/initiator micro-tags for a call.
+function _callPurposeBadge(purpose, nature, initiator) {
+  if (!purpose && !nature && !initiator) return '';
+  const clsMap = { Issue:'purpose-issue', 'Check-in':'purpose-checkin', Expansion:'purpose-expansion', Mixed:'purpose-mixed' };
+  const iconMap = { Issue:'&#x1F534;', 'Check-in':'&#x1F4CB;', Expansion:'&#x1F4C8;', Mixed:'&#x1F500;' };
+  let html = '';
+  if (purpose) {
+    const cls = clsMap[purpose] || 'purpose-checkin';
+    const icon = iconMap[purpose] || '';
+    html += `<span class="badge ${cls}" style="font-size:10px;padding:2px 7px">${icon} ${purpose}</span>`;
+  }
+  const tags = [];
+  if (nature) {
+    const nc = nature === 'Routine' ? 'nature-routine' : 'nature-adhoc';
+    tags.push(`<span class="call-meta-tag ${nc}">${nature}</span>`);
+  }
+  if (initiator) {
+    const ic = initiator === 'HG CS' ? 'init-hgcs' : initiator === 'Customer' ? 'init-customer' : 'init-unknown';
+    tags.push(`<span class="call-meta-tag ${ic}">${initiator}</span>`);
+  }
+  if (tags.length) html += `<div style="display:flex;gap:3px;flex-wrap:wrap;margin-top:3px">${tags.join('')}</div>`;
+  return html;
+}
+
+// Builds call table rows from an array of call objects.
+// hasPurpose: whether to render the Purpose column at all.
+function _callTableRows(calls, hasPurpose) {
+  let rows = '';
+  calls.forEach(c => {
+    const csm = CSM_DISPLAY[c.csm] || {name:c.csm, initials:(c.csm||'?').slice(0,2).toUpperCase(), cls:'av-grey'};
+    const xcovCsm = c.xcov && CSM_DISPLAY[c.xcov];
+    const xcovLabel = xcovCsm ? ` <span style="font-size:11px">(X-cov for ${xcovCsm.initials})</span>` : '';
+    const hBadge = c.health==='Healthy'
+      ? '<span class="badge badge-healthy">&#128994; Healthy</span>'
+      : c.health==='Concerning'
+      ? '<span class="badge badge-concerning">&#128993; Concerning</span>'
+      : `<span class="badge" style="background:#fef3c7;color:#92400e">&#128336; ${c.health||'—'}</span>`;
+    const purposeCell = hasPurpose
+      ? `<td style="vertical-align:top">${_callPurposeBadge(c.purpose, c.nature, c.initiator)}</td>`
+      : '';
+    const colspan = hasPurpose ? 6 : 5;
+    rows += `<tr data-csm="${c.csm}" data-health="${c.health||''}">
+      <td style="color:#9ca3af;font-size:12px">${c.ts||''}</td>
+      <td><div class="csm-chip-inline"><div class="mini-av ${csm.cls}">${csm.initials}</div>${csm.name}${xcovLabel}</div></td>
+      <td><strong>${c.account}</strong>${c.note?` <span style="font-size:11px;color:#9ca3af">${c.note}</span>`:''}</td>
+      <td>${c.mins||'—'} min</td>
+      <td>${hBadge}</td>
+      ${purposeCell}
+    </tr>`;
+    if (c.detail) {
+      rows += `<tr class="call-detail-row" data-csm="${c.csm}" data-health="${c.health||''}">
+        <td colspan="${colspan}"><div class="call-detail-body">${c.detail}</div></td>
+      </tr>`;
+    }
+  });
+  return rows;
+}
+
+// Renders the calls table from dayData_* structured data (used for day view).
+function autoDayCallsHTML(key) {
+  const k = key.replace(/-/g, '_');
+  const fn = window['dayData_' + k];
+  if (!fn) return '';
+  const data = fn();
+  const calls = data.calls || [];
+  if (!calls.length) return '<div style="padding:32px;text-align:center;color:#6b7280">No calls logged for this day.</div>';
+  const hasPurpose = calls.some(c => c.purpose || c.nature || c.initiator);
+  const purposeHeader = hasPurpose ? '<th>Purpose</th>' : '';
+  const rows = _callTableRows(calls, hasPurpose);
+  return `<div class="table-card"><table>
+    <thead><tr><th>Time (PT)</th><th>CSM</th><th>Account</th><th>Duration</th><th>Signal</th>${purposeHeader}</tr></thead>
+    <tbody>${rows}</tbody>
+  </table></div>
+  <div class="empty-state" id="calls-empty" style="display:none"><div class="empty-icon">&#128269;</div>No calls match these filters.</div>`;
+}
+
 function autoWeekCallsHTML(data) {
   if (!data.hasData) return '<div style="padding:32px;text-align:center;color:#6b7280;font-size:13px">No structured call data for this week. Add <code>dayData_YYYY_MM_DD()</code> functions to enable auto-derivation.</div>';
+  const hasPurpose = data.calls.some(c => c.purpose || c.nature || c.initiator);
+  const purposeHeader = hasPurpose ? '<th>Purpose</th>' : '';
   const byDay = {};
   data.calls.forEach(c => { (byDay[c.date] = byDay[c.date] || []).push(c); });
   let rows = '';
@@ -489,27 +575,12 @@ function autoWeekCallsHTML(data) {
     const calls = byDay[date];
     const dt = isoToDate(date);
     const label = `${_DAY_NAMES[dt.getDay()].toUpperCase()} ${_MON_NAMES[dt.getMonth()].toUpperCase()} ${dt.getDate()} — ${calls.length} CALL${calls.length!==1?'S':''}`;
-    rows += `<tr style="background:#f8f9fc;pointer-events:none"><td colspan="5" style="font-size:11px;font-weight:700;color:#6b7280;text-transform:uppercase;letter-spacing:0.6px;padding:8px 12px">${label}</td></tr>`;
-    calls.forEach(c => {
-      const csm = CSM_DISPLAY[c.csm] || {name:c.csm, initials:(c.csm||'?').slice(0,2).toUpperCase(), cls:'av-grey'};
-      const xcovCsm = c.xcov && CSM_DISPLAY[c.xcov];
-      const xcovLabel = xcovCsm ? ` <span style="font-size:11px">(X-cov for ${xcovCsm.initials})</span>` : '';
-      const hBadge = c.health==='Healthy'
-        ? '<span class="badge badge-healthy">&#128994; Healthy</span>'
-        : c.health==='Concerning'
-        ? '<span class="badge badge-concerning">&#128993; Concerning</span>'
-        : `<span class="badge" style="background:#fef3c7;color:#92400e">&#128336; ${c.health||'—'}</span>`;
-      rows += `<tr data-csm="${c.csm}" data-health="${c.health||''}">
-        <td style="color:#9ca3af;font-size:12px">${c.ts||''}</td>
-        <td><div class="csm-chip-inline"><div class="mini-av ${csm.cls}">${csm.initials}</div>${csm.name}${xcovLabel}</div></td>
-        <td><strong>${c.account}</strong>${c.note?` <span style="font-size:11px;color:#9ca3af">${c.note}</span>`:''}</td>
-        <td>${c.mins||'—'} min</td>
-        <td>${hBadge}</td>
-      </tr>`;
-    });
+    const colspan = hasPurpose ? 6 : 5;
+    rows += `<tr style="background:#f8f9fc;pointer-events:none"><td colspan="${colspan}" style="font-size:11px;font-weight:700;color:#6b7280;text-transform:uppercase;letter-spacing:0.6px;padding:8px 12px">${label}</td></tr>`;
+    rows += _callTableRows(calls, hasPurpose);
   });
   return `<div class="table-card"><table>
-    <thead><tr><th>Time (PT)</th><th>CSM</th><th>Account</th><th>Duration</th><th>Signal</th></tr></thead>
+    <thead><tr><th>Time (PT)</th><th>CSM</th><th>Account</th><th>Duration</th><th>Signal</th>${purposeHeader}</tr></thead>
     <tbody>${rows}</tbody>
   </table></div>
   <div class="empty-state" id="calls-empty" style="display:none"><div class="empty-icon">&#128269;</div>No calls match these filters.</div>`;
@@ -850,6 +921,24 @@ function accountsHTML() {
     if (!worst) return { pulse: null, color: null };
     return { pulse: worst, color: oppPulseColor(worst) };
   };
+  // Renders a pulse note cell with truncation + inline expand for long SFDC notes
+  const oppNoteUID = (() => { let n = 0; return () => 'opn' + (++n); })();
+  const oppNoteCell = (note) => {
+    if (!note) return `<td style="padding:4px 10px;font-size:11px;color:#9ca3af">—</td>`;
+    const LIMIT = 160;
+    const lines = note.replace(/\r/g,'').split('\n').filter(l => l.trim());
+    const firstLine = lines[0] || '';
+    const isLong = note.length > LIMIT || lines.length > 1;
+    if (!isLong) return `<td style="padding:4px 10px;font-size:11px;color:#6b7280;max-width:320px">${firstLine}</td>`;
+    const uid = oppNoteUID();
+    const preview = firstLine.length > LIMIT ? firstLine.slice(0, LIMIT) + '…' : firstLine;
+    const full = note.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\n/g,'<br>');
+    return `<td style="padding:4px 10px;font-size:11px;color:#6b7280;max-width:320px">
+      <span id="${uid}-short">${preview} <span onclick="document.getElementById('${uid}-short').style.display='none';document.getElementById('${uid}-full').style.display='block'" style="color:#2563eb;cursor:pointer;font-size:10px;white-space:nowrap">▼ more</span></span>
+      <span id="${uid}-full" style="display:none;white-space:pre-wrap;line-height:1.5">${full} <span onclick="document.getElementById('${uid}-full').style.display='none';document.getElementById('${uid}-short').style.display='block'" style="color:#2563eb;cursor:pointer;font-size:10px">▲ less</span></span>
+    </td>`;
+  };
+
   const tableRows = ACCOUNTS_DATA.map((acct, idx) => {
     const opps = acct.opportunities || [];
     const oppCount = opps.length;
@@ -870,7 +959,7 @@ function accountsHTML() {
         <td style="padding:4px 10px;font-size:11px;color:#9ca3af">—</td>
         <td style="padding:4px 10px;font-size:11px;color:#6b7280;font-variant-numeric:tabular-nums">${opp.pulseDate || '—'}</td>
         ${pulseCell}
-        <td style="padding:4px 10px;font-size:11px;color:#6b7280">${opp.pulseNote || '—'}</td>
+        ${oppNoteCell(opp.pulseNote)}
         <td style="padding:4px 10px;font-size:11px;color:#6b7280;font-variant-numeric:tabular-nums">${opp.contract_end || '—'}</td>
       </tr>
     `}).join('');

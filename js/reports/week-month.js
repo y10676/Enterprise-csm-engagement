@@ -177,19 +177,11 @@ function _healthBadge(h) {
 function monthCallsHTML() {
   const md = getMonthData(currentKey);
   if (!md.hasData) return weekCallsHTML().replace('Week 17', isoToDate(currentKey+'-01').toLocaleDateString('en-US',{month:'long',year:'numeric'})+' · Month-to-Date');
-  const rows = md.calls.map(c => {
-    const csm = CSM_DISPLAY[c.csm] || { name: c.csm, initials: '?', cls: 'av-grey' };
-    const xcov = c.xcov ? ` <span style="font-size:11px">(X-cov for ${(CSM_DISPLAY[c.xcov]||{name:c.xcov}).name.split(' ')[0]})</span>` : '';
-    return `<tr data-csm="${c.csm}" data-health="${c.health}">
-      <td style="color:#9ca3af;font-size:12px">${c.ts}</td>
-      <td><div class="csm-chip-inline"><div class="mini-av ${csm.cls}">${csm.initials}</div>${csm.name}${xcov}</div></td>
-      <td><strong>${c.account}</strong> <span style="font-size:11px;color:#9ca3af">${c.note}</span></td>
-      <td>${c.mins} min</td>
-      <td>${_healthBadge(c.health)}</td>
-    </tr>`;
-  }).join('');
+  const hasPurpose = md.calls.some(c => c.purpose || c.nature || c.initiator);
+  const purposeHeader = hasPurpose ? '<th>Purpose</th>' : '';
+  const rows = _callTableRows(md.calls, hasPurpose);
   return `<div class="table-card"><table>
-    <thead><tr><th>Time (PT)</th><th>CSM</th><th>Account</th><th>Duration</th><th>Signal</th></tr></thead>
+    <thead><tr><th>Time (PT)</th><th>CSM</th><th>Account</th><th>Duration</th><th>Signal</th>${purposeHeader}</tr></thead>
     <tbody>${rows}</tbody>
   </table>
   <div class="empty-state" id="calls-empty" style="display:none"><div class="empty-icon">&#128269;</div>No calls match these filters.</div>
