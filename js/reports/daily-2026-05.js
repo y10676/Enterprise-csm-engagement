@@ -1926,3 +1926,155 @@ function dayActionsHTML_2026_05_18() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none"><div class="empty-icon">&#128269;</div>No action items match these filters.</div>`;
 }
+
+// ─── 2026-05-19 ────────────────────────────────────────────────────────────
+
+function dayData_2026_05_19() {
+  return {
+    calls: [
+      { ts: 'May 19 · 3:45 AM',  csm: 'varun',   account: 'Exclusive Networks', note: 'Platform walkthrough for Robin Oakley (CrowdStrike EMEA) · manual-to-automated enrichment goal', mins: 45, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in (Platform Training)',
+        detail: 'Angus Hyams (EMEA AM) organized the call; Varun led the platform walkthrough. Robin Oakley (Exclusive Networks) manages CrowdStrike AWS EMEA business and enriches data manually with HG installs/intent. Call focused on improving efficiency for partner account manager GTM workflows.' },
+      { ts: 'May 19 · 6:00 AM',  csm: 'nick',    account: 'Chambers', note: 'Re-engagement after 3-year gap · platform update walkthrough · Bruno (Chambers) re-activated', mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in (Re-engagement)',
+        detail: 'Re-introduction call for Bruno at Chambers who last used HG ~3 years ago. Nick Johnson and Angus Hyams (EMEA AM) organized. Customer now has renewed platform access and needs to get up to speed on operationalization improvements and new data capabilities.' },
+      { ts: 'May 19 · 8:30 AM',  csm: 'riley',   account: 'Intuit Mailchimp', note: 'Bi-weekly TrustRadius success call · new reviews confirmed · geo dashboard · time-series data interest', mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Regular bi-weekly TrustRadius success call with Bianca Gause (Mailchimp) and Hayden Smith (HG). Riley reviewed recent TrustRadius review submissions, shared geo competitive intelligence dashboard, and discussed time-series market win/loss data with growing leadership interest.' },
+      { ts: 'May 19 · 9:30 AM',  csm: 'nick',    account: 'SAP Inc', note: 'Biweekly sync · vendor data walkthrough · MCP/Phoenix integration surfaced · Ian (Phoenix) introduced', mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in + Expansion',
+        detail: 'Recurring biweekly sync. Nick walked through a pre-shared vendor analysis file (Cornerstone Dayforce installs). Ian from the Phoenix/Solutions team joined to address SAP questions about MCP integration. Deep-dive scoping session to be scheduled separately.' },
+      { ts: 'May 19 · 10:00 AM', csm: 'riley',   account: 'Zoom Video Communications', note: 'Bi-weekly TrustRadius CSM sync · reviews across multiple Zoom products confirmed · geo dashboard shared', mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Regular bi-weekly sync with Camille Shortridge (Zoom). Riley tracked TrustRadius review submissions across Zoom Workplace, Contact Center, Phone, Events, Webinars, and Virtual Agent. Geo competitive dashboard shared; several reviews confirmed across product lines.' },
+      { ts: 'May 19 · 11:00 AM', csm: 'atisha',  account: 'RSM US', note: 'Data ingestion working session · 7K accounts filtered · match rate >90% confirmed · feed addition in progress', mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Check-in (Data Ingestion Setup)',
+        detail: 'Working session with Ellis Millwood (RSM US) to finalize account list for HG data feed addition. Ellis filtered ~7,000 US/Canada CRM accounts; HG match rate confirmed at >90% (~95%). Atisha reviewed results live. Data feed addition to proceed after list finalization.' },
+      { ts: 'May 19 · 11:00 AM', csm: 'divyam',  account: 'Dynatrace', note: 'Bulk data ingestion scoping · 25K export limit exceeded · API vs data feed evaluated · Omkar (Solutions) present', mins: 60, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Expansion (API/Data Feed)',
+        detail: 'Data ingestion strategy call with Roger Steffen, Jessica Lorenzo, and Raj Seenu (Dynatrace). Customer use case exceeds the 25K export limit; Divyam brought Omkar Hunuswadkar (Customer Solutions Engineer) to evaluate API vs. data feed delivery options. Strong expansion opportunity — scoping in progress.' },
+      { ts: 'May 19 · 11:30 AM', csm: 'varun',   account: 'CBTS', note: 'New customer onboarding kick-off · team introductions · $400 data list expansion discussed', mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in (Onboarding Kick-off)',
+        detail: 'Official kick-off call for new CBTS subscription. Varun and Ziad Amira (HG AM) made introductions with Mitchell VanderKam and Timothy Selaty (CBTS). Omkar (Solutions) also present. Minor expansion ($400 data list) already in discussion. Clean and positive onboarding start.' },
+    ],
+    pulses: [
+      { csm: 'varun',   account: 'Exclusive Networks',       health: 'Healthy',    note: 'Platform walkthrough for CrowdStrike EMEA GTM user · manual enrichment workflow to be improved · Angus Hyams (EMEA AM) on call' },
+      { csm: 'nick',    account: 'Chambers',                 health: 'Healthy',    note: 'Re-engagement after 3-year gap · Bruno re-activated · platform operationalization update provided' },
+      { csm: 'riley',   account: 'Intuit Mailchimp',         health: 'Healthy',    note: 'Bi-weekly TrustRadius sync · new reviews confirmed · geo + time-series data interest growing' },
+      { csm: 'nick',    account: 'SAP Inc',                  health: 'Healthy',    note: 'Biweekly sync · MCP/Phoenix integration interest surfaced · Ian (Phoenix) introduced · deep-dive to be scheduled' },
+      { csm: 'riley',   account: 'Zoom Video Communications',health: 'Healthy',    note: 'Bi-weekly TrustRadius sync · reviews across 6 Zoom products · geo dashboard shared · on track' },
+      { csm: 'atisha',  account: 'RSM US',                   health: 'Healthy',    note: 'Data feed working session · 7K accounts · match rate >90% · implementation underway' },
+      { csm: 'divyam',  account: 'Dynatrace',                health: 'Healthy',    note: 'Bulk ingestion scoping call · API/data feed options evaluated · Omkar (Solutions) involved · expansion opportunity' },
+      { csm: 'varun',   account: 'CBTS',                     health: 'Healthy',    note: 'New customer kick-off · team intro complete · $400 data list expansion in discussion · strong start' },
+    ],
+  };
+}
+
+function dayMeta_2026_05_19() {
+  return {
+    pills: [['dot-teal','8 Calls'],['dot-green','8 Vitally Pulses'],['dot-blue','2 Expansion Signals'],['dot-amber','1 Internal Flagged']],
+    tabs:  ['Overview','Calls (8)','Pulses (8)','Action Items (7)'],
+  };
+}
+
+function dayOverviewHTML_2026_05_19() {
+  return `<div class="section-label">Team Activity &mdash; Tuesday May 19, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Tue May 19 &mdash; 59 recordings scanned</strong> via SFDC SOQL &middot; <strong>8 confirmed customer calls</strong> across 5 CSMs &middot; 2 expansion signals (Dynatrace API/data feed &middot; SAP MCP) &middot; 1 new customer onboarding (CBTS) &middot; 1 internal flagged (Rani &rarr; Workday/TR &middot; all HG/TR speakers) &middot; 1 unconfirmed (Varun &rarr; Trellix &middot; no transcript)
+  </div>
+  <div class="overview-grid">
+    <div class="csm-card has-calls" data-csm="varun"><span class="call-badge">2 CALLS</span><div class="csm-card-header"><div class="avatar av-varun">VT</div><div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">75m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">Exclusive Networks (platform training &middot; EMEA CrowdStrike GTM) &middot; CBTS (new customer kick-off &#x1F680;)</div></div>
+    <div class="csm-card has-calls" data-csm="nick"><span class="call-badge">2 CALLS</span><div class="csm-card-header"><div class="avatar av-grey">NJ</div><div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">Chambers (re-engagement after 3yr) &middot; SAP (<span style="color:#0ea5e9">&#x1F4C8; MCP expansion signal</span>)</div></div>
+    <div class="csm-card has-calls" data-csm="riley"><span class="call-badge">2 CALLS</span><div class="csm-card-header"><div class="avatar av-grey">RR</div><div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">Intuit Mailchimp (bi-weekly TR success &middot; geo dashboard) &middot; Zoom Video (bi-weekly TR sync &middot; 6 products)</div></div>
+    <div class="csm-card has-calls" data-csm="atisha"><span class="call-badge">1 CALL</span><div class="csm-card-header"><div class="avatar av-grey">AW</div><div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">RSM US (data ingestion setup &middot; 7K accounts &middot; &gt;90% match)</div></div>
+    <div class="csm-card has-calls" data-csm="divyam"><span class="call-badge">1 CALL</span><div class="csm-card-header"><div class="avatar av-divyam">DD</div><div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">Dynatrace (<span style="color:#0ea5e9">&#x1F4C8; bulk data ingestion scoping &middot; API/feed expansion</span>)</div></div>
+    <div class="csm-card no-calls" data-csm="rani"><span class="no-call-badge">0 Calls</span><div class="csm-card-header"><div class="avatar av-grey">RG</div><div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Workday monthly (no recording) &middot; Lenovo sync (no recording) &middot; Workday/TR call flagged internal (all HG speakers)</div></div>
+    <div class="csm-card no-calls" data-csm="pam"><span class="no-call-badge">0 Calls</span><div class="csm-card-header"><div class="avatar av-grey">PH</div><div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 SFDC event (Team Sync &mdash; HG Insights internal) &middot; no customer recordings found</div></div>
+    <div class="csm-card no-calls" data-csm="andy"><span class="no-call-badge">0 Calls</span><div class="csm-card-header"><div class="avatar av-grey">AL</div><div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-account-note" style="color:#94a3b8;font-size:11px;">memoryBlue &amp; ConnectWise events had no Weflow recordings synced to SFDC</div></div>
+  </div>`;
+}
+
+function dayCallsHTML_2026_05_19() {
+  const rows = [
+    { time:'3:45 AM PT', csm:'varun',  csmLbl:'Varun Tiwari',   account:'Exclusive Networks',        mins:45, nature:'Ad-hoc',   init:'HG CS',   purpose:'Check-in (Platform Training)', health:'Healthy',   note:'Platform walkthrough for Robin Oakley (CrowdStrike EMEA AM). Manual HG enrichment workflow; goal is efficiency improvement for partner GTM.' },
+    { time:'6:00 AM PT', csm:'nick',   csmLbl:'Nick Johnson',   account:'Chambers',                  mins:30, nature:'Ad-hoc',   init:'HG CS',   purpose:'Check-in (Re-engagement)',     health:'Healthy',   note:'Re-intro call after 3-year gap. Bruno (Chambers) recently re-activated platform access. Update on operationalization improvements provided.' },
+    { time:'8:30 AM PT', csm:'riley',  csmLbl:'Riley Rogers',   account:'Intuit Mailchimp',          mins:30, nature:'Routine',  init:'HG CS',   purpose:'Check-in',                     health:'Healthy',   note:'Bi-weekly TrustRadius success call. New reviews confirmed. Geo dashboard + time-series market data discussed with Bianca Gause.' },
+    { time:'9:30 AM PT', csm:'nick',   csmLbl:'Nick Johnson',   account:'SAP Inc',                   mins:30, nature:'Routine',  init:'HG CS',   purpose:'Check-in + Expansion',         health:'Healthy',   note:'Biweekly sync. Vendor analysis file walkthrough. Ian (Phoenix) introduced for MCP integration scoping. Deep-dive session to be scheduled.' },
+    { time:'10:00 AM PT',csm:'riley',  csmLbl:'Riley Rogers',   account:'Zoom Video Communications', mins:30, nature:'Routine',  init:'HG CS',   purpose:'Check-in',                     health:'Healthy',   note:'Bi-weekly TrustRadius sync. Camille Shortridge (Zoom). Reviews across 6 products confirmed. Geo dashboard shared.' },
+    { time:'11:00 AM PT',csm:'atisha', csmLbl:'Atisha Waghela', account:'RSM US',                    mins:30, nature:'Ad-hoc',   init:'Customer','purpose':'Check-in (Data Ingestion Setup)',health:'Healthy',  note:'Working session to finalize account list for data feed addition. 7K US/Canada accounts. &gt;90% match rate confirmed. Feed addition initiated.' },
+    { time:'11:00 AM PT',csm:'divyam', csmLbl:'Divyam Dewan',   account:'Dynatrace',                 mins:60, nature:'Ad-hoc',   init:'Customer','purpose':'Expansion (API/Data Feed)',    health:'Healthy',   note:'Bulk data ingestion scoping with Roger Steffen + team. 25K export limit exceeded. Omkar (Solutions) evaluated API vs data feed delivery. Strong expansion signal &#x1F525;' },
+    { time:'11:30 AM PT',csm:'varun',  csmLbl:'Varun Tiwari',   account:'CBTS',                      mins:30, nature:'Ad-hoc',   init:'HG CS',   purpose:'Onboarding Kick-off',          health:'Healthy',   note:'New customer kick-off with Mitchell VanderKam &amp; Timothy Selaty. Varun + Ziad Amira (AM) + Omkar present. $400 data list expansion in discussion. &#x1F680;' },
+  ];
+  const chipColor = { varun:'#dbeafe;color:#1d4ed8', nick:'#f3e8ff;color:#7c3aed', riley:'#dcfce7;color:#166534', atisha:'#fef3c7;color:#92400e', divyam:'#ffe4e6;color:#be123c' };
+  const natColor  = n => n==='Routine'?'background:#f3f4f6;color:#374151':'background:#fef9c3;color:#713f12';
+  const rows_html = rows.map(r=>`<tr>
+    <td>${r.time}</td>
+    <td><span style="display:inline-flex;align-items:center;padding:3px 10px;border-radius:12px;font-size:11px;font-weight:600;background:${chipColor[r.csm]}">${r.csmLbl}</span></td>
+    <td>${r.account}</td>
+    <td>${r.mins} min</td>
+    <td><span style="display:inline-block;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;${natColor(r.nature)}">${r.nature}</span></td>
+    <td>${r.init}</td>
+    <td>${r.purpose}</td>
+    <td><span style="display:inline-block;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;background:#dcfce7;color:#166534">&#x2705; Healthy</span></td>
+    <td style="font-size:12px;color:#64748b;max-width:260px">${r.note}</td>
+  </tr>`).join('');
+  return `
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 12px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>2 Expansion signals today</strong> &mdash; Dynatrace (API/data feed bulk ingestion) &middot; SAP (MCP/Phoenix integration) &middot; 1 new customer onboarded: CBTS &#x1F680;
+  </div>
+  <div style="background:#1c1f26;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 12px 0;font-size:12px;color:#fcd34d;">
+    &#x26A0;&#xFE0F; <strong>1 Internal flagged:</strong> Rani Guy &rarr; Workday | TrustRadius (HGI Overview) &middot; 1:00 PM PT &middot; All speakers HG/TrustRadius staff (Cole Arutian, Mardigan Moffat) &middot; No customer voice detected &middot; Excluded from count. Also: <strong>1 Unconfirmed</strong> &mdash; Varun &rarr; Trellix (HGI/Trellix - Hierarchy Questions, 12:30 PM PT, no transcript).
+  </div>
+  <div style="overflow-x:auto">
+  <table style="width:100%;border-collapse:collapse;background:white;border-radius:10px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.08);font-size:13px">
+    <thead><tr style="background:#1e293b;color:white">
+      <th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px">Time (PT)</th>
+      <th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px">CSM</th>
+      <th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px">Account</th>
+      <th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px">Dur</th>
+      <th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px">Nature</th>
+      <th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px">Initiated By</th>
+      <th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px">Purpose</th>
+      <th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px">Signal</th>
+      <th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px">Notes</th>
+    </tr></thead>
+    <tbody>${rows_html}</tbody>
+  </table>
+  </div>
+  <div class="empty-state" id="calls-empty" style="display:none"><div class="empty-icon">&#128269;</div>No calls match these filters.</div>`;
+}
+
+function dayPulsesHTML_2026_05_19() {
+  const cards = [
+    { csm:'varun',  health:'Healthy', account:'Exclusive Networks', opp:'Vitally Pulse &mdash; May 19 Call', arr:'Enterprise &middot; Varun Tiwari',   excerpt:'5/19 VT: Exclusive Networks platform walkthrough (3:45 AM PT, 45 min). Robin Oakley (CrowdStrike EMEA AM) needs to automate HG data enrichment for partner GTM workflows. Varun and Angus Hyams (EMEA AM) ran the session. Next: confirm platform access setup and send automation resources.', csmlbl:'Varun Tiwari', change:'May 19 &middot; Platform training' },
+    { csm:'nick',   health:'Healthy', account:'Chambers',           opp:'Vitally Pulse &mdash; May 19 Call', arr:'Enterprise &middot; Nick Johnson',    excerpt:'5/19 NJ: Chambers re-engagement intro (6:00 AM PT, 30 min). Bruno re-activated after 3-year gap; just renewed platform access. Nick + Angus Hyams provided platform update. Next: send re-engagement follow-up with change summary and operationalization resources.', csmlbl:'Nick Johnson', change:'May 19 &middot; Re-engagement' },
+    { csm:'riley',  health:'Healthy', account:'Intuit Mailchimp',   opp:'Vitally Pulse &mdash; May 19 Call', arr:'Enterprise &middot; Riley Rogers',    excerpt:'5/19 RR: Mailchimp bi-weekly TrustRadius success call (8:30 AM PT, 30 min). Recent reviews confirmed. Geo competitive dashboard shared; leadership interested in time-series market win/loss data. Healthy cadence maintained.', csmlbl:'Riley Rogers', change:'May 19 &middot; Recurring · Healthy' },
+    { csm:'nick',   health:'Healthy', account:'SAP Inc',            opp:'Vitally Pulse &mdash; May 19 Call', arr:'Enterprise &middot; Nick Johnson',    excerpt:'5/19 NJ: SAP biweekly sync (9:30 AM PT, 30 min). Vendor analysis file walked through. Ian (Phoenix/MCP team) introduced &mdash; SAP team has MCP integration questions. Deep-dive scoping call to be scheduled. Expansion signal noted.', csmlbl:'Nick Johnson', change:'May 19 &middot; Expansion signal (MCP)' },
+    { csm:'riley',  health:'Healthy', account:'Zoom Video Communications', opp:'Vitally Pulse &mdash; May 19 Call', arr:'Enterprise &middot; Riley Rogers', excerpt:'5/19 RR: Zoom bi-weekly TrustRadius sync (10:00 AM PT, 30 min). Reviews tracked across Workplace, Contact Center, Phone, Events, Webinars, Virtual Agent. Geo dashboard shared with Camille Shortridge. On track.', csmlbl:'Riley Rogers', change:'May 19 &middot; Recurring · Healthy' },
+    { csm:'atisha', health:'Healthy', account:'RSM US',             opp:'Vitally Pulse &mdash; May 19 Call', arr:'Enterprise &middot; Atisha Waghela',  excerpt:'5/19 AW: RSM US data ingestion working session (11:00 AM PT, 30 min). Ellis Millwood (RSM US) brought 7K US/Canada target accounts for HG data feed addition. Match rate confirmed >90%. Atisha initiating feed addition process.', csmlbl:'Atisha Waghela', change:'May 19 &middot; Data feed setup' },
+    { csm:'divyam', health:'Healthy', account:'Dynatrace',          opp:'Vitally Pulse &mdash; May 19 Call', arr:'Enterprise &middot; Divyam Dewan',    excerpt:'5/19 DD: Dynatrace bulk data ingestion scoping (11:00 AM PT, 60 min). Roger Steffen led from Dynatrace; use case exceeds 25K export limit. Omkar (Solutions) evaluated API vs. data feed options. Strong expansion opportunity &mdash; follow-up scoping call needed urgently.', csmlbl:'Divyam Dewan', change:'May 19 &middot; Expansion signal 🔥' },
+    { csm:'varun',  health:'Healthy', account:'CBTS',               opp:'Vitally Pulse &mdash; May 19 Call', arr:'Enterprise &middot; Varun Tiwari',    excerpt:'5/19 VT: CBTS new customer kick-off (11:30 AM PT, 30 min). Varun + Ziad Amira (AM) + Omkar (Solutions) introduced the HG platform to Mitchell VanderKam and Timothy Selaty. $400 data list expansion in discussion. Clean onboarding start.', csmlbl:'Varun Tiwari', change:'May 19 &middot; New customer 🚀' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top"><div><div class="pulse-account">${c.account}</div><div class="pulse-opp">${c.opp}</div><div class="pulse-arr">${c.arr}</div></div><span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span></div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none"><div class="empty-icon">&#128269;</div>No pulses match these filters.</div>`;
+}
+
+function dayActionsHTML_2026_05_19() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has(1901)?'done':''}" data-csm="divyam" id="action-1901"><div class="action-checkbox ${doneActions.has(1901)?'checked':''}" onclick="toggleAction(1901)"></div><div class="action-body"><div class="action-title">&#x1F525; Dynatrace &mdash; Schedule API/data feed scoping call with Roger Steffen + Omkar (Phoenix)</div><div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Divyam Dewan &middot; Customer use case exceeds 25K export limit. Omkar pre-scoped on May 19 call. Divyam must: (1) confirm preferred delivery method (API vs. data feed) with Dynatrace, (2) get Phoenix/Solutions to provide pricing + delivery specs, (3) create Vitally expansion opportunity. Timeline: schedule scoping call this week.</div></div></div>
+    <div class="action-item ${doneActions.has(1902)?'done':''}" data-csm="nick" id="action-1902"><div class="action-checkbox ${doneActions.has(1902)?'checked':''}" onclick="toggleAction(1902)"></div><div class="action-body"><div class="action-title">&#x1F4C8; SAP &mdash; Schedule Phoenix/MCP deep-dive scoping call</div><div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Nick Johnson &middot; Ian (Phoenix) was introduced on May 19 SAP biweekly. MCP integration questions confirmed from Shiphra and the SAP team. Nick must: (1) coordinate with Ian to set a dedicated MCP/Phoenix scoping call with SAP, (2) capture the MCP opportunity in Vitally, (3) brief Ian on SAP account context before the call.</div></div></div>
+    <div class="action-item ${doneActions.has(1903)?'done':''}" data-csm="varun" id="action-1903"><div class="action-checkbox ${doneActions.has(1903)?'checked':''}" onclick="toggleAction(1903)"></div><div class="action-body"><div class="action-title">&#x1F680; CBTS &mdash; Send onboarding next steps + clarify $400 data list expansion path</div><div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Varun Tiwari &middot; Kick-off complete. Next steps: (1) send onboarding welcome email with platform resources, (2) confirm data list expansion path (PO vs. credit card) with Mitchell VanderKam, (3) set up recurring CSM cadence. Ziad Amira (AM) to stay looped in on expansion decision.</div></div></div>
+    <div class="action-item ${doneActions.has(1904)?'done':''}" data-csm="atisha" id="action-1904"><div class="action-checkbox ${doneActions.has(1904)?'checked':''}" onclick="toggleAction(1904)"></div><div class="action-body"><div class="action-title">&#x1F527; RSM US &mdash; Confirm final match results and initiate data feed addition</div><div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Atisha Waghela &middot; Working session complete. 7K accounts filtered, match rate &gt;90% confirmed. Atisha must: (1) confirm the final filtered account list with Ellis Millwood, (2) submit data feed addition request to the data team, (3) set a follow-up date to confirm delivery and validate the feed quality.</div></div></div>
+    <div class="action-item ${doneActions.has(1905)?'done':''}" data-csm="varun" id="action-1905"><div class="action-checkbox ${doneActions.has(1905)?'checked':''}" onclick="toggleAction(1905)"></div><div class="action-body"><div class="action-title">&#x1F310; Exclusive Networks &mdash; Send CrowdStrike EMEA platform automation resources to Robin Oakley</div><div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Varun Tiwari &middot; Robin Oakley (CrowdStrike EMEA) currently doing manual HG data enrichment. Varun (with Angus) should: (1) confirm Robin&apos;s platform access is properly configured, (2) send resources/documentation for automating HG data enrichment for partner GTM use cases, (3) schedule a follow-up check-in to verify workflow adoption.</div></div></div>
+    <div class="action-item ${doneActions.has(1906)?'done':''}" data-csm="riley" id="action-1906"><div class="action-checkbox ${doneActions.has(1906)?'checked':''}" onclick="toggleAction(1906)"></div><div class="action-body"><div class="action-title">&#x1F4CA; Intuit Mailchimp &mdash; Share geo dashboard + loop in leadership on time-series data</div><div class="action-meta"><span class="urgency-badge urgency-low">LOW</span>Riley Rogers &middot; Bianca Gause and Mailchimp leadership expressed interest in geo competitive intelligence and time-series market win/loss data on May 19 call. Riley should: (1) share the geo dashboard link with Bianca, (2) identify the leadership stakeholder and connect them to the time-series insights, (3) potentially set up a demo for the broader Mailchimp team.</div></div></div>
+    <div class="action-item ${doneActions.has(1907)?'done':''}" data-csm="nick" id="action-1907"><div class="action-checkbox ${doneActions.has(1907)?'checked':''}" onclick="toggleAction(1907)"></div><div class="action-body"><div class="action-title">&#x1F504; Chambers &mdash; Send re-engagement follow-up to Bruno with platform update summary</div><div class="action-meta"><span class="urgency-badge urgency-low">LOW</span>Nick Johnson &middot; Bruno re-activated at Chambers after 3-year gap. Nick should: (1) send a follow-up email summarizing key platform changes and operationalization improvements, (2) share relevant use-case resources for their industry, (3) set a follow-up check-in to ensure Bruno is actively using the platform within 2&ndash;3 weeks.</div></div></div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none"><div class="empty-icon">&#128269;</div>No action items match these filters.</div>`;
+}
