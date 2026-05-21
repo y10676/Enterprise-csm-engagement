@@ -2078,3 +2078,191 @@ function dayActionsHTML_2026_05_19() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none"><div class="empty-icon">&#128269;</div>No action items match these filters.</div>`;
 }
+
+// ─────────────────────────────────────────────────────────────────────────────
+// MAY 20, 2026
+// ─────────────────────────────────────────────────────────────────────────────
+
+function dayData_2026_05_20() {
+  return {
+    calls: [
+      { ts: 'May 20 · 5:00 AM',  csm: 'divyam',  account: 'Infinigate',     note: 'Bi-weekly sync · customer wants regional expansion · internal presentation materials requested', mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'Customer', purpose: 'Expansion',
+        detail: 'Abolfazl Akhondi (Infinigate) proactively raised plans to expand HG usage to other Infinigate regions and asked for help creating internal presentation materials. Divyam Dewan ran the call. Note: Nick Johnson co-owned the SFDC event but did not appear as a transcript speaker.' },
+      { ts: 'May 20 · 6:00 AM',  csm: 'varun',   account: 'Iron Mountain',  note: 'Intro call with new C&MI team (Peter Rush) taking over HG platform relationship · propensity-to-buy model evolution', mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Iron Mountain formed a new Customer and Market Intelligence team (Peter Rush) taking over the HG platform relationship from Deepti Gupta and Imran. Team building in Colombia (Juan Camilo Carreño). Planning a stakeholder listening tour before proposing a v2.0 propensity-to-buy approach for H2 2026 and 2027 GTM strategy.' },
+      { ts: 'May 20 · 7:00 AM',  csm: 'riley',   account: 'IBM',            note: 'TrustRadius biweekly · banner designs finalized · CTA updates for WatsonX · Buyer\'s Choice planning', mins: 45, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Regular biweekly TrustRadius sync with Janie Carothers, Cole Arutian, Michaela N (IBM). Riley confirmed banner designs (community tag links), updated CTA for WatsonX Orchestrate, and committed to creating an IBM-specific Buyer\'s Choice product subscribe document.' },
+      { ts: 'May 20 · 7:00 AM',  csm: 'atisha',  account: 'OPISystems',     note: 'Credits display bug resolved · trust rebuilt · budgeting calculator requested for rest of FY', mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'Customer', purpose: 'Issue (resolved) + Check-in',
+        detail: 'Lisa Fults (OPISystems) followed up on credits calculation bug — confirmed fixed. ~60K credits remain for rest of FY. Steve wants a calculator: avg cost per topic, cost to add ~100 new partner accounts. Atisha offered to help build this tool.' },
+      { ts: 'May 20 · 7:30 AM',  csm: 'rani',    account: 'Workday',        note: 'Multi-stakeholder call · MCP server integration discussion · Contact Data capabilities · expansion signal', mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Expansion',
+        detail: 'Patrycja Levey (Workday, Amsterdam) organized the call with Ravi Sharma, Javed Mohammed, Alan Murtagh. Discussion focused on MCP server and Contact Data capabilities. Linked to Market Analyzer 2-3 seats opportunity. Strong expansion signal with multi-stakeholder engagement.' },
+      { ts: 'May 20 · 8:30 AM',  csm: 'varun',   account: 'MongoDB',        note: 'Data methodology + FAI walkthrough · Will Bracken (MongoDB) · Tracy York (HG co-founder) present', mins: 45, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Varun + Ziad Amira + Tracy York (HG) presented data methodology and FAI capabilities to Will Bracken (MongoDB). Will had a C-suite fire drill and had to stop at the top of the hour but stayed engaged. Technical alignment progressing well.' },
+      { ts: 'May 20 · 9:00 AM',  csm: 'rani',    account: 'Cisco',          note: 'Pre-presentation prep · Chloe output visual review · Gavin Padden presenting tomorrow', mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Prep session for Cisco internal presentation the following day. Rani, Gavin Padden (HG SC) reviewed Chloe output with Adrian Escobar and Priten Gandecha. Team aligned on visual format and deck structure. Gavin to present to Cisco leadership tomorrow.' },
+      { ts: 'May 20 · 9:30 AM',  csm: 'varun',   account: 'Datadog',        note: 'Regular TrustRadius cadence · Caio Dicenzo + Scott Stater · program continuing on track', mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Regular TrustRadius program sync with Caio Dicenzo and Scott Stater (Datadog). Pam Huck co-owned event but Varun ran the call. Strong relationship maintained. Program continuing on track.' },
+      { ts: 'May 20 · 10:00 AM', csm: 'varun',   account: 'Autodesk',       note: 'CRM matching at scale (4M records) · customer-requested walkthrough · Gavin Padden SC present', mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Expansion',
+        detail: 'Jessica Hayek (Autodesk) requested Gavin Padden specifically for a matching analysis walkthrough. Customer wants to enrich/match their full CRM (~4M records) at scale. Gavin confirmed feasibility, explained data hygiene + matching process. AE loop-in needed for scoping and pricing.' },
+      { ts: 'May 20 · 10:30 AM', csm: 'varun',   account: 'Pegasystems',    note: 'Bi-weekly · license transitions confirmed · Himalee on mat leave July 1 · Taylor/Frank access confirmed', mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Recurring bi-weekly with Himalee and Frank. Himalee\'s maternity leave starts July 1st — Frank\'s license changed to read-only, Taylor got export license. Varun confirmed all access settings. Knowledge transfer needed before July 1st.' },
+      { ts: 'May 20 · 12:00 PM', csm: 'rani',    account: 'Lenovo',         note: 'Onboarding follow-up · tile overview doc owed (1-2 days) · Ryan + Don absent · webinar link shared', mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Brief onboarding follow-up with Kristen (Lenovo). Ryan and Don absent. Rani committed to deliver platform tile overview within 1-2 days. Kristen has no active questions. Webinar link to be shared. Call ended early.' },
+      { ts: 'May 20 · 12:00 PM', csm: 'riley',   account: 'Yubico',         note: '⚠️ LOW CONVERSION: 6 reviews from 5,000 contacts · campaign dates disputed · root cause TBD', mins: 30, health: 'Concerning',
+        nature: 'Routine', initiator: 'Customer', purpose: 'Issue',
+        detail: 'Yubico TrustRadius campaign performance alarm. 3,000 contacts in Feb + 2,000 in April = only 6 reviews total. Expected ~150 at 3% conversion. Riley flagged live. Campaign launch date disputed (Apr 17 vs May 12). Root cause analysis and escalation needed urgently.' },
+    ],
+    pulses: [
+      { csm: 'divyam',  account: 'Infinigate',    health: 'Healthy',    note: '5/20 DD: Bi-weekly sync (5:00 AM PT, 30 min). Customer proactively asking for regional expansion support and internal presentation materials. Divyam to prepare tailored deck.' },
+      { csm: 'varun',   account: 'Iron Mountain', health: 'Healthy',    note: '5/20 VT: Intro call with new C&MI team (6:00 AM PT, 30 min). Peter Rush\'s new team taking over HG platform relationship. Strong strategic intent for 2027 GTM. Knowledge transfer sessions to be planned.' },
+      { csm: 'riley',   account: 'IBM',           health: 'Healthy',    note: '5/20 RR: TrustRadius biweekly (7:00 AM PT, 45 min). Banner designs finalized, CTAs updated, Buyer\'s Choice subscribe doc to be created.' },
+      { csm: 'atisha',  account: 'OPISystems',    health: 'Healthy',    note: '5/20 AW: Credits bug resolved (7:00 AM PT, 30 min). Trust rebuilt. Atisha to build FY credit budgeting calculator for Steve (~60K credits remaining).' },
+      { csm: 'rani',    account: 'Workday',       health: 'Healthy',    note: '5/20 RG: MCP + Contact Data expansion call (7:30 AM PT, 30 min). Multi-stakeholder engagement. Linked to Market Analyzer seats opportunity.' },
+      { csm: 'varun',   account: 'MongoDB',       health: 'Healthy',    note: '5/20 VT: Data methodology + FAI walkthrough (8:30 AM PT, 45 min). C-suite-adjacent engagement (Will Bracken juggling fire drill). Technical alignment solid.' },
+      { csm: 'rani',    account: 'Cisco',         health: 'Healthy',    note: '5/20 RG: Pre-presentation prep (9:00 AM PT, 30 min). Chloe output reviewed. Gavin Padden presenting to Cisco leadership tomorrow.' },
+      { csm: 'varun',   account: 'Datadog',       health: 'Healthy',    note: '5/20 VT: TrustRadius program sync (9:30 AM PT, 30 min). Regular cadence maintained. Program on track.' },
+      { csm: 'varun',   account: 'Autodesk',      health: 'Healthy',    note: '5/20 VT: CRM matching at scale walkthrough (10:00 AM PT, 30 min). Customer wants 4M record enrichment. AE loop-in needed for scoping/pricing.' },
+      { csm: 'varun',   account: 'Pegasystems',   health: 'Healthy',    note: '5/20 VT: Bi-weekly (10:30 AM PT, 30 min). License transitions confirmed. Himalee mat leave July 1 — KT plan needed.' },
+      { csm: 'rani',    account: 'Lenovo',        health: 'Healthy',    note: '5/20 RG: Onboarding follow-up (12:00 PM PT, 30 min). Tile overview owed in 1-2 days. Ryan + Don absent. On track.' },
+      { csm: 'riley',   account: 'Yubico',        health: 'Concerning', note: '5/20 RR: Campaign alarm (12:00 PM PT, 30 min). 6 reviews from 5,000 contacts. Riley flagged live. Launch date disputed. Root cause TBD. URGENT.' },
+    ],
+  };
+}
+
+function dayMeta_2026_05_20() {
+  return {
+    pills: [['dot-teal','12 Calls'],['dot-red','1 Concerning'],['dot-amber','3 Expansion Signals'],['dot-green','12 Vitally Pulses']],
+    tabs:  ['Overview','Calls (12)','Pulses (12)','Action Items (8)'],
+  };
+}
+
+function dayOverviewHTML_2026_05_20() {
+  return `<div class="section-label">Team Activity &mdash; Wednesday May 20, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Wed May 20 &mdash; 150 recordings scanned</strong> via SFDC SOQL &middot; <strong>12 confirmed customer calls</strong> across 5 CSMs &middot; 3 expansion signals (Autodesk CRM 4M records &middot; Workday MCP &middot; Infinigate regional) &middot; 1 concerning (Yubico low campaign conversion) &middot; 2 unconfirmed no-transcript (EY, Westcon) &middot; 1 no-CSM-in-transcript (KPMG &mdash; Gavin Padden SC ran it)
+  </div>
+  <div style="background:#1c1f26;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x1F534; <strong>Yubico (Riley) &mdash; Campaign Alarm:</strong> Only 6 reviews from 5,000 contacts. Expected ~150 at 3% conversion. Launch date discrepancy (Apr 17 vs May 12). Root cause analysis needed urgently.
+  </div>
+  <div class="overview-grid">
+    <div class="csm-card has-calls" data-csm="varun"><span class="call-badge">5 CALLS</span><div class="csm-card-header"><div class="avatar av-varun">VT</div><div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">5</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">5</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">180m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">Iron Mountain (new team onboarding) &middot; MongoDB (data methodology) &middot; Datadog (TR sync) &middot; <span style="color:#f59e0b">&#x1F4C8; Autodesk (4M CRM matching)</span> &middot; Pegasystems (license/mat leave)</div></div>
+    <div class="csm-card has-calls" data-csm="rani"><span class="call-badge">3 CALLS</span><div class="csm-card-header"><div class="avatar av-grey">RG</div><div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">3</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">90m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note"><span style="color:#f59e0b">&#x1F4C8; Workday (MCP + Contact Data expansion)</span> &middot; Cisco (presentation prep) &middot; Lenovo (onboarding sync)</div></div>
+    <div class="csm-card has-calls" data-csm="riley"><span class="call-badge">2 CALLS</span><div class="csm-card-header"><div class="avatar av-grey">RR</div><div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div><div><div class="metric-num m-grey">75m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">IBM (TR biweekly &middot; Buyer&apos;s Choice planning) &middot; <span style="color:#ef4444">&#x1F534; Yubico (campaign alarm &mdash; 6/5K reviews)</span></div></div>
+    <div class="csm-card has-calls" data-csm="atisha"><span class="call-badge">1 CALL</span><div class="csm-card-header"><div class="avatar av-grey">AW</div><div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">OPISystems (credits bug resolved &middot; budgeting calculator next)</div></div>
+    <div class="csm-card has-calls" data-csm="divyam"><span class="call-badge">1 CALL</span><div class="csm-card-header"><div class="avatar av-divyam">DD</div><div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note"><span style="color:#f59e0b">&#x1F4C8; Infinigate (regional expansion interest)</span></div></div>
+    <div class="csm-card no-calls" data-csm="pam"><span class="no-call-badge">0 Calls</span><div class="csm-card-header"><div class="avatar av-grey">PH</div><div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Prophix + GoTo events had Weflow IDs but no recordings synced &middot; Datadog event co-owned (Varun ran the call)</div></div>
+    <div class="csm-card no-calls" data-csm="nick"><span class="no-call-badge">0 Confirmed</span><div class="csm-card-header"><div class="avatar av-grey">NJ</div><div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Westcon in-person meeting (3hr, no transcript) &middot; KPMG recording (Gavin Padden SC ran it, Nick not in transcript) &middot; Exclusive Networks/Infinigate events no recording</div></div>
+    <div class="csm-card no-calls" data-csm="andy"><span class="no-call-badge">0 Calls</span><div class="csm-card-header"><div class="avatar av-grey">AL</div><div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-account-note" style="color:#94a3b8;font-size:11px;">SAS Institute EMEA + Cockroach Labs events had Weflow IDs but no recordings synced to SFDC</div></div>
+  </div>`;
+}
+
+function dayCallsHTML_2026_05_20() {
+  const rows = [
+    { time:'5:00 AM PT',  csm:'divyam',  csmLbl:'Divyam Dewan',   account:'Infinigate',     mins:30, nature:'Routine', init:'Customer', purpose:'Expansion',                   health:'Healthy',    note:'Abolfazl Akhondi wants to expand HG to other Infinigate regions. Requested internal presentation materials. Nick Johnson co-owned event but not present in transcript.' },
+    { time:'6:00 AM PT',  csm:'varun',   csmLbl:'Varun Tiwari',   account:'Iron Mountain',  mins:30, nature:'Ad-hoc',  init:'HG CS',    purpose:'Check-in (New Team Onboarding)',health:'Healthy',   note:'New C&MI team (Peter Rush) taking over HG relationship. Propensity-to-buy model knowledge transfer. 2027 GTM strategy planning underway.' },
+    { time:'7:00 AM PT',  csm:'riley',   csmLbl:'Riley Rogers',   account:'IBM',            mins:45, nature:'Routine', init:'HG CS',    purpose:'Check-in',                    health:'Healthy',    note:'Banner designs finalized. WatsonX Orchestrate CTA updated. IBM Buyer&apos;s Choice subscribe doc to be created by Riley.' },
+    { time:'7:00 AM PT',  csm:'atisha',  csmLbl:'Atisha Waghela', account:'OPISystems',     mins:30, nature:'Routine', init:'Customer', purpose:'Issue (resolved) + Check-in', health:'Healthy',    note:'Credits display bug confirmed fixed. ~60K credits remain FY. Steve requests credits budgeting calculator. Atisha to build.' },
+    { time:'7:30 AM PT',  csm:'rani',    csmLbl:'Rani Guy',       account:'Workday',        mins:30, nature:'Ad-hoc',  init:'Customer', purpose:'Expansion',                   health:'Healthy',    note:'Multi-stakeholder call. MCP server + Contact Data discussion. Linked to Market Analyzer 2-3 seats opp. &#x1F4C8; Expansion signal.' },
+    { time:'8:30 AM PT',  csm:'varun',   csmLbl:'Varun Tiwari',   account:'MongoDB',        mins:45, nature:'Ad-hoc',  init:'HG CS',    purpose:'Check-in',                    health:'Healthy',    note:'Data methodology + FAI walkthrough. Tracy York (HG co-founder) present. Will Bracken (MongoDB) had C-suite fire drill but stayed engaged.' },
+    { time:'9:00 AM PT',  csm:'rani',    csmLbl:'Rani Guy',       account:'Cisco',          mins:30, nature:'Routine', init:'HG CS',    purpose:'Check-in (Presentation Prep)', health:'Healthy',   note:'Pre-presentation prep for Cisco internal meeting tomorrow. Chloe output reviewed. Gavin Padden (HG SC) presenting.' },
+    { time:'9:30 AM PT',  csm:'varun',   csmLbl:'Varun Tiwari',   account:'Datadog',        mins:30, nature:'Routine', init:'HG CS',    purpose:'Check-in',                    health:'Healthy',    note:'Regular TrustRadius sync with Caio Dicenzo + Scott Stater. Pam Huck co-owned event; Varun ran the call. Program on track.' },
+    { time:'10:00 AM PT', csm:'varun',   csmLbl:'Varun Tiwari',   account:'Autodesk',       mins:30, nature:'Ad-hoc',  init:'Customer', purpose:'Expansion (CRM Matching)',    health:'Healthy',    note:'Jessica Hayek wants 4M CRM records matched + enriched at scale. Gavin Padden confirmed feasibility. AE loop-in needed for pricing. &#x1F4C8;' },
+    { time:'10:30 AM PT', csm:'varun',   csmLbl:'Varun Tiwari',   account:'Pegasystems',    mins:30, nature:'Routine', init:'HG CS',    purpose:'Check-in',                    health:'Healthy',    note:'Himalee on mat leave July 1. License changes confirmed (Taylor=export, Frank=full). KT plan needed before July 1st.' },
+    { time:'12:00 PM PT', csm:'rani',    csmLbl:'Rani Guy',       account:'Lenovo',         mins:30, nature:'Routine', init:'HG CS',    purpose:'Check-in',                    health:'Healthy',    note:'Onboarding follow-up. Rani owes tile overview doc (1-2 days). Ryan + Don absent. Webinar link to be shared.' },
+    { time:'12:00 PM PT', csm:'riley',   csmLbl:'Riley Rogers',   account:'Yubico',         mins:30, nature:'Routine', init:'Customer', purpose:'Issue (Campaign Alarm)',       health:'Concerning', note:'&#x1F534; Only 6 reviews from 5,000 contacts. Expected ~150 at 3%. Launch date discrepancy. Root cause TBD. URGENT.' },
+  ];
+  const chipColor = { varun:'#dbeafe;color:#1d4ed8', rani:'#d1fae5;color:#065f46', riley:'#dcfce7;color:#166534', atisha:'#fef3c7;color:#92400e', divyam:'#ffe4e6;color:#be123c', pam:'#fce7f3;color:#9d174d', nick:'#f3e8ff;color:#7c3aed', andy:'#fff7ed;color:#9a3412' };
+  const natColor  = n => n==='Routine'?'background:#f3f4f6;color:#374151':'background:#fef9c3;color:#713f12';
+  const sigBadge  = h => h==='Concerning'
+    ? '<span style="display:inline-block;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;background:#fee2e2;color:#991b1b">&#x1F534; Concerning</span>'
+    : '<span style="display:inline-block;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;background:#dcfce7;color:#166534">&#x2705; Healthy</span>';
+  const rows_html = rows.map(r=>`<tr>
+    <td>${r.time}</td>
+    <td><span style="display:inline-flex;align-items:center;padding:3px 10px;border-radius:12px;font-size:11px;font-weight:600;background:${chipColor[r.csm]}">${r.csmLbl}</span></td>
+    <td>${r.account}</td>
+    <td>${r.mins} min</td>
+    <td><span style="display:inline-block;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;${natColor(r.nature)}">${r.nature}</span></td>
+    <td>${r.init}</td>
+    <td>${r.purpose}</td>
+    <td>${sigBadge(r.health)}</td>
+    <td style="font-size:12px;color:#64748b;max-width:260px">${r.note}</td>
+  </tr>`).join('');
+  return `
+  <div style="background:#1c1f26;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 12px 0;font-size:12px;color:#fca5a5;">
+    &#x1F534; <strong>Yubico campaign alarm:</strong> Riley Rogers &middot; 6 reviews from 5,000 contacts &middot; Expected ~150 at 3% &middot; Launch date disputed (Apr 17 vs May 12) &middot; Root cause analysis needed
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 12px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>3 Expansion signals today</strong> &mdash; Autodesk (4M CRM matching &middot; Varun) &middot; Workday (MCP + Contact Data &middot; Rani) &middot; Infinigate (regional expansion &middot; Divyam)
+  </div>
+  <div style="background:#1c1f26;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 12px 0;font-size:12px;color:#fcd34d;">
+    &#x26A0;&#xFE0F; <strong>2 Unconfirmed (no transcript):</strong> Atisha &rarr; EY Americas (6:30 AM PT) &middot; Nick &rarr; Westcon in-person meeting (11:00 AM PT, 3hr block) &mdash; inferred from CSM event ownership. Also: KPMG recording has transcript but no CSM speaker detected (Gavin Padden SC ran it).
+  </div>
+  <div style="overflow-x:auto">
+  <table style="width:100%;border-collapse:collapse;background:white;border-radius:10px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.08);font-size:13px">
+    <thead><tr style="background:#1e293b;color:white">
+      <th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px">Time (PT)</th>
+      <th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px">CSM</th>
+      <th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px">Account</th>
+      <th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px">Dur</th>
+      <th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px">Nature</th>
+      <th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px">Initiated By</th>
+      <th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px">Purpose</th>
+      <th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px">Signal</th>
+      <th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px">Notes</th>
+    </tr></thead>
+    <tbody>${rows_html}</tbody>
+  </table>
+  </div>
+  <div class="empty-state" id="calls-empty" style="display:none"><div class="empty-icon">&#128269;</div>No calls match these filters.</div>`;
+}
+
+function dayPulsesHTML_2026_05_20() {
+  const cards = [
+    { csm:'divyam',  health:'Healthy',    account:'Infinigate',    opp:'Vitally Pulse &mdash; May 20 Call', arr:'Enterprise &middot; Divyam Dewan',   excerpt:'5/20 DD: Infinigate bi-weekly (5:00 AM PT, 30 min). Abolfazl Akhondi wants to expand HG usage to other Infinigate regions. Needs internal presentation materials from Divyam to justify expansion. Strong expansion signal &mdash; Divyam to prepare deck.', csmlbl:'Divyam Dewan', change:'May 20 &middot; Expansion' },
+    { csm:'varun',   health:'Healthy',    account:'Iron Mountain', opp:'Vitally Pulse &mdash; May 20 Call', arr:'Enterprise &middot; Varun Tiwari',    excerpt:'5/20 VT: Iron Mountain new team intro (6:00 AM PT, 30 min). Peter Rush\'s new C&MI team taking ownership of HG relationship. Juan Camilo Carreño (Colombia) building out the team. Propensity-to-buy v2.0 planned for H2. KT sessions to be coordinated.', csmlbl:'Varun Tiwari', change:'May 20 &middot; New team onboarding' },
+    { csm:'riley',   health:'Healthy',    account:'IBM',           opp:'Vitally Pulse &mdash; May 20 Call', arr:'Enterprise &middot; Riley Rogers',    excerpt:'5/20 RR: IBM TrustRadius biweekly (7:00 AM PT, 45 min). Banner designs finalized with community tags. WatsonX Orchestrate CTA updated. Riley to create IBM product subscribe document for Buyer\'s Choice eligibility planning.', csmlbl:'Riley Rogers', change:'May 20 &middot; Campaign mgmt' },
+    { csm:'atisha',  health:'Healthy',    account:'OPISystems',    opp:'Vitally Pulse &mdash; May 20 Call', arr:'Enterprise &middot; Atisha Waghela',  excerpt:'5/20 AW: OPISystems syncup (7:00 AM PT, 30 min). Credits display bug confirmed fixed — customer trust rebuilt. ~60K credits remain for FY. Steve wants a credits budgeting calculator (avg cost per topic, cost of 100 new accounts). Atisha to deliver.', csmlbl:'Atisha Waghela', change:'May 20 &middot; Bug resolved' },
+    { csm:'rani',    health:'Healthy',    account:'Workday',       opp:'Vitally Pulse &mdash; May 20 Call', arr:'Enterprise &middot; Rani Guy',        excerpt:'5/20 RG: Workday MCP + Contact Data call (7:30 AM PT, 30 min). Multi-stakeholder engagement (Patrycja Levey, Ravi Sharma, Javed Mohammed). MCP server integration and Contact Data discussed. Linked to Market Analyzer 2-3 seats opportunity.', csmlbl:'Rani Guy', change:'May 20 &middot; Expansion signal 📈' },
+    { csm:'varun',   health:'Healthy',    account:'MongoDB',       opp:'Vitally Pulse &mdash; May 20 Call', arr:'Enterprise &middot; Varun Tiwari',    excerpt:'5/20 VT: MongoDB data methodology + FAI walkthrough (8:30 AM PT, 45 min). Will Bracken (MongoDB) engaged despite C-suite fire drill. Tracy York (HG co-founder) participated. Technical alignment progressing.', csmlbl:'Varun Tiwari', change:'May 20 &middot; Technical alignment' },
+    { csm:'rani',    health:'Healthy',    account:'Cisco',         opp:'Vitally Pulse &mdash; May 20 Call', arr:'Enterprise &middot; Rani Guy',        excerpt:'5/20 RG: Cisco pre-presentation prep (9:00 AM PT, 30 min). Rani + Gavin Padden (SC) reviewed Chloe output with Adrian Escobar and Priten Gandecha. Team aligned on visual format. Gavin to present to Cisco leadership next day.', csmlbl:'Rani Guy', change:'May 20 &middot; Presentation prep' },
+    { csm:'varun',   health:'Healthy',    account:'Datadog',       opp:'Vitally Pulse &mdash; May 20 Call', arr:'Enterprise &middot; Varun Tiwari',    excerpt:'5/20 VT: Datadog TrustRadius sync (9:30 AM PT, 30 min). Regular cadence with Caio Dicenzo + Scott Stater. Pam Huck co-owned event; Varun ran the call. Program on track — strong relationship.', csmlbl:'Varun Tiwari', change:'May 20 &middot; Recurring healthy' },
+    { csm:'varun',   health:'Healthy',    account:'Autodesk',      opp:'Vitally Pulse &mdash; May 20 Call', arr:'Enterprise &middot; Varun Tiwari',    excerpt:'5/20 VT: Autodesk CRM matching walkthrough (10:00 AM PT, 30 min). Jessica Hayek wants HG to enrich/match 4 million CRM records at scale. Gavin Padden confirmed feasibility. AE loop-in needed for scoping + pricing. Active expansion opportunity.', csmlbl:'Varun Tiwari', change:'May 20 &middot; Expansion signal 📈' },
+    { csm:'varun',   health:'Healthy',    account:'Pegasystems',   opp:'Vitally Pulse &mdash; May 20 Call', arr:'Enterprise &middot; Varun Tiwari',    excerpt:'5/20 VT: Pegasystems bi-weekly (10:30 AM PT, 30 min). Himalee maternity leave July 1st. Taylor has export license, Frank has full license — confirmed. Knowledge transfer session needed before July 1.', csmlbl:'Varun Tiwari', change:'May 20 &middot; License/succession' },
+    { csm:'rani',    health:'Healthy',    account:'Lenovo',        opp:'Vitally Pulse &mdash; May 20 Call', arr:'Enterprise &middot; Rani Guy',        excerpt:'5/20 RG: Lenovo onboarding follow-up (12:00 PM PT, 30 min). Rani owes tile overview document — committed to 1-2 days. Ryan + Don absent. Kristen has no active questions. Webinar link to be shared. Onboarding progressing.', csmlbl:'Rani Guy', change:'May 20 &middot; Onboarding' },
+    { csm:'riley',   health:'Concerning', account:'Yubico',        opp:'Vitally Pulse &mdash; May 20 Call', arr:'Enterprise &middot; Riley Rogers',    excerpt:'5/20 RR: Yubico TrustRadius sync (12:00 PM PT, 30 min). CAMPAIGN ALARM: 6 reviews from 5,000 contacts sent (3,000 Feb + 2,000 Apr). Expected ~150 at 3% conversion rate. Riley flagged live: "that\'s not good conversion." Launch date disputed (Apr 17 vs May 12). Root cause analysis and escalation needed urgently.', csmlbl:'Riley Rogers', change:'May 20 &middot; 🔴 Concerning' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top"><div><div class="pulse-account">${c.account}</div><div class="pulse-opp">${c.opp}</div><div class="pulse-arr">${c.arr}</div></div><span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span></div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none"><div class="empty-icon">&#128269;</div>No pulses match these filters.</div>`;
+}
+
+function dayActionsHTML_2026_05_20() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has(2001)?'done':''}" data-csm="riley" id="action-2001"><div class="action-checkbox ${doneActions.has(2001)?'checked':''}" onclick="toggleAction(2001)"></div><div class="action-body"><div class="action-title">&#x1F534; Yubico &mdash; Investigate low TrustRadius campaign conversion</div><div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Riley Rogers &middot; 6 reviews from 5,000 contacts vs. expected ~150 at 3%. Clarify launch date discrepancy (Apr 17 vs May 12), diagnose root cause (email deliverability? targeting quality?), and escalate to Pam Huck / TrustRadius ops if needed.</div></div></div>
+    <div class="action-item ${doneActions.has(2002)?'done':''}" data-csm="rani" id="action-2002"><div class="action-checkbox ${doneActions.has(2002)?'checked':''}" onclick="toggleAction(2002)"></div><div class="action-body"><div class="action-title">&#x1F4CB; Lenovo &mdash; Deliver platform tile overview document</div><div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy &middot; Committed on call to deliver within 1-2 days. Ryan and additional Lenovo teammates waiting before widening platform adoption. Time-sensitive commitment.</div></div></div>
+    <div class="action-item ${doneActions.has(2003)?'done':''}" data-csm="varun" id="action-2003"><div class="action-checkbox ${doneActions.has(2003)?'checked':''}" onclick="toggleAction(2003)"></div><div class="action-body"><div class="action-title">&#x1F4C8; Autodesk &mdash; Loop AE on CRM enrichment at scale opportunity</div><div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Varun Tiwari &middot; Customer wants 4M record CRM matching and enrichment. Gavin Padden confirmed feasibility on the call. AE needs to scope and price. Active customer engagement &mdash; time-sensitive.</div></div></div>
+    <div class="action-item ${doneActions.has(2004)?'done':''}" data-csm="atisha" id="action-2004"><div class="action-checkbox ${doneActions.has(2004)?'checked':''}" onclick="toggleAction(2004)"></div><div class="action-body"><div class="action-title">&#x1F9EE; OPISystems &mdash; Build credits budgeting calculator for Steve</div><div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Atisha Waghela &middot; Steve (via Lisa) wants: credits remaining (~60K), avg cost per topic, cost to add ~100 new partner accounts. Atisha offered on the call. Deliver before next sync.</div></div></div>
+    <div class="action-item ${doneActions.has(2005)?'done':''}" data-csm="riley" id="action-2005"><div class="action-checkbox ${doneActions.has(2005)?'checked':''}" onclick="toggleAction(2005)"></div><div class="action-body"><div class="action-title">&#x1F3C6; IBM &mdash; Create Buyer&apos;s Choice product subscribe document</div><div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Riley Rogers &middot; Committed on call to create IBM-specific doc showing which products need 10 more reviews for Buyer&apos;s Choice award eligibility. Send to Janie Carothers and Michaela.</div></div></div>
+    <div class="action-item ${doneActions.has(2006)?'done':''}" data-csm="varun" id="action-2006"><div class="action-checkbox ${doneActions.has(2006)?'checked':''}" onclick="toggleAction(2006)"></div><div class="action-body"><div class="action-title">&#x1F5FA;&#xFE0F; Iron Mountain &mdash; Plan knowledge transfer sessions for new C&amp;MI team</div><div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Varun Tiwari &middot; Peter Rush&apos;s new team is doing a stakeholder listening tour before proposing a v2.0 propensity model. Coordinate KT sessions to fully onboard new team before H2 2026.</div></div></div>
+    <div class="action-item ${doneActions.has(2007)?'done':''}" data-csm="varun" id="action-2007"><div class="action-checkbox ${doneActions.has(2007)?'checked':''}" onclick="toggleAction(2007)"></div><div class="action-body"><div class="action-title">&#x1F512; Pegasystems &mdash; KT plan before Himalee&apos;s mat leave (July 1)</div><div class="action-meta"><span class="urgency-badge urgency-low">LOW</span>Varun Tiwari &middot; Himalee due July 1. Taylor (export) + Frank (full) access confirmed. Schedule KT session and identify new primary contact at Pegasystems before she goes on leave.</div></div></div>
+    <div class="action-item ${doneActions.has(2008)?'done':''}" data-csm="divyam" id="action-2008"><div class="action-checkbox ${doneActions.has(2008)?'checked':''}" onclick="toggleAction(2008)"></div><div class="action-body"><div class="action-title">&#x1F30D; Infinigate &mdash; Prepare regional expansion presentation for Abolfazl</div><div class="action-meta"><span class="urgency-badge urgency-low">LOW</span>Divyam Dewan &middot; Abolfazl wants to present HG&apos;s value to other Infinigate regions. Divyam to prepare tailored deck covering data capabilities, use cases, and regional relevance.</div></div></div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none"><div class="empty-icon">&#128269;</div>No action items match these filters.</div>`;
+}
