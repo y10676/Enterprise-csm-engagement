@@ -2274,21 +2274,33 @@ function dayActionsHTML_2026_05_20() {
 function dayData_2026_05_21() {
   return {
     calls: [
-      { ts: '7:00 AM PT',  csm: 'varun',  account: 'Dayforce US, Inc.',             note: 'ROI/retention 2Q review; complementary POC offered. High Risk account.',               mins: 60, health: 'Concerning' },
-      { ts: '7:30 AM PT',  csm: 'nick',   account: 'Siemens AG',                    note: 'Biweekly sync. Pat launching ACP; HG supporting 3-yr account planning.',               mins: 30, health: 'Healthy'    },
-      { ts: '8:30 AM PT',  csm: 'divyam', account: 'Lumen Technologies',            note: 'BCG driving expansion — pricing discussion for full account universe upgrade.',         mins: 30, health: 'Expansion'  },
-      { ts: '9:30 AM PT',  csm: 'rani',   account: 'NetApp',                        note: 'Monthly sync. Wallet number data quality question raised by Doug. Tracker needed.',    mins: 30, health: 'Concerning' },
-      { ts: '11:00 AM PT', csm: 'pam',    account: 'Oracle (NetSuite)',              note: 'TrustRadius sync. 117 MQLs / 3 SQLs; Top Rated. Nia mat leave Jun 8; David K intro.', mins: 30, health: 'Healthy'    },
-      { ts: '2:00 PM PT',  csm: 'rani',   account: 'Cisco (Wallet Share — Priten)', note: 'Wallet share analysis proposal delivered to Priten. Post-Gartner momentum.',           mins: 30, health: 'Expansion'  }
+      { ts: 'May 21 · 7:00 AM',  csm: 'varun',  account: 'Dayforce US, Inc.',             note: 'ROI/retention 2Q review; complementary POC offered. High Risk account.', mins: 60, health: 'Concerning',
+        nature: 'Ad-hoc',  initiator: 'HG CS',    purpose: 'Check-in',
+        detail: 'Varun Tiwari + Augie Buettner (HG) held a retention-focused 2Q ROI review with Kory Himmer (Dayforce). HG offered a complementary POC for new data ingestion. Account is flagged High Risk — POC scope, timeline, and success criteria to be confirmed and documented urgently.' },
+      { ts: 'May 21 · 7:30 AM',  csm: 'nick',   account: 'Siemens AG',                    note: 'Biweekly sync. Pat Loftus launching ACP; HG supporting 3-yr account planning.', mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS',    purpose: 'Check-in',
+        detail: 'Regular biweekly with Pat Loftus (Siemens). Pat is launching the Siemens ACP initiative with HG data. Nick to prepare one-pagers and intent/competitive data for top-5 automotive reps. Rep meeting scheduled next week to present 3-year account planning materials.' },
+      { ts: 'May 21 · 8:30 AM',  csm: 'divyam', account: 'Lumen Technologies',            note: 'BCG consulting engagement driving expansion — pricing discussion for full account universe upgrade.', mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'Customer', purpose: 'Expansion',
+        detail: 'BCG modeling work is driving Lumen to expand HG data coverage from ~80K accounts (Neo) to full account universe. Need firmographic, technographic, cloud spend, and AI adoption scoring. Pricing scenarios in progress; Hayden Smith (AM) to be looped in.' },
+      { ts: 'May 21 · 9:30 AM',  csm: 'rani',   account: 'NetApp',                        note: 'Monthly sync. Wallet data quality question raised by Doug Oliver-Watts. Tracker needed.', mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS',    purpose: 'Check-in + Issue',
+        detail: 'Monthly sync with Doug Oliver-Watts (NetApp). Doug raised a wallet number methodology discrepancy — similar firmographic cohorts showing different wallet values. Rani to create shared action tracker and schedule a separate call with Tracy York (HG) for hierarchy and dedup work.' },
+      { ts: 'May 21 · 11:00 AM', csm: 'pam',    account: 'Oracle (NetSuite)',              note: 'TrustRadius IDL sync. 117 MQLs / 3 SQLs. Top Rated achieved. Nia mat leave Jun 8; David Kearney intro.', mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS',    purpose: 'Check-in',
+        detail: 'Regular TrustRadius IDL program sync. IDL performing strongly: 117 MQLs, 3 SQLs before campaign end. Top Rated badge achieved. Nia goes on mat leave June 8 — Scott will cover. New contact David Kearney (Durham/Raleigh) introduced; in-person meeting planned.' },
+      { ts: 'May 21 · 2:00 PM',  csm: 'rani',   account: 'Cisco (Wallet Share — Priten)', note: 'Wallet share analysis proposal delivered to Priten Gandecha. Post-Gartner momentum strong.', mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc',  initiator: 'HG CS',    purpose: 'Expansion',
+        detail: 'Rani + Adrian Escobar delivered a wallet share analysis proposal to Priten Gandecha. Adrian returned from Gartner with strong momentum and competitor positioning vs ZoomInfo/6Sense. Rory taken to dinner by Adrian. Awaiting Priten\'s response. Adam\'s team also showing interest.' },
     ],
     pulses: [
-      { csm: 'varun',  account: 'Dayforce US, Inc.',             health: 'Concerning', note: 'High Risk: ROI retention discussion; POC next steps TBD.'                         },
-      { csm: 'nick',   account: 'Siemens AG',                    health: 'Healthy',    note: 'Strong ACP engagement; one-pagers + intent data for top-5 automotive reps.'       },
-      { csm: 'divyam', account: 'Lumen Technologies',            health: 'Expansion',  note: 'BCG pressure driving full-universe expansion; pricing model in progress.'          },
-      { csm: 'rani',   account: 'NetApp',                        health: 'Concerning', note: 'Wallet methodology question; tracker + Tracy hierarchy call to be scheduled.'      },
-      { csm: 'pam',    account: 'Oracle (NetSuite)',              health: 'Healthy',    note: 'IDL: 117 MQLs/3 SQLs; Top Rated achieved. New contact David Kearney onboarded.'   },
-      { csm: 'rani',   account: 'Cisco (Wallet Share — Priten)', health: 'Expansion',  note: 'Proposal delivered; Adrian returned from Gartner with strong momentum.'            }
-    ]
+      { csm: 'varun',  account: 'Dayforce US, Inc.',             health: 'Concerning', date: '2026-05-21', note: '5/21 VT: ROI retention 2Q review (7:00 AM PT, 60 min). HG offered complementary POC. High Risk account — POC scope TBD with Kory Himmer. Urgently document commitments.' },
+      { csm: 'nick',   account: 'Siemens AG',                    health: 'Healthy',    date: '2026-05-21', note: '5/21 NJ: Biweekly sync (7:30 AM PT, 30 min). ACP initiative launching. Nick to prepare one-pagers + intent data for top-5 automotive reps. Rep meeting next week.' },
+      { csm: 'divyam', account: 'Lumen Technologies',            health: 'Healthy',    date: '2026-05-21', note: '5/21 DD: Biweekly sync (8:30 AM PT, 30 min). BCG driving expansion from 80K to full account universe. Pricing model in progress. Hayden Smith (AM) to be looped in.' },
+      { csm: 'rani',   account: 'NetApp',                        health: 'Concerning', date: '2026-05-21', note: '5/21 RG: Monthly sync (9:30 AM PT, 30 min). Doug raised wallet methodology discrepancy. Tracker + Tracy hierarchy call to be scheduled.' },
+      { csm: 'pam',    account: 'Oracle (NetSuite)',              health: 'Healthy',    date: '2026-05-21', note: '5/21 PH: TrustRadius IDL sync (11:00 AM PT, 30 min). 117 MQLs / 3 SQLs. Top Rated. Nia mat leave June 8; David Kearney intro. Scott covering IDL.' },
+      { csm: 'rani',   account: 'Cisco (Wallet Share — Priten)', health: 'Healthy',    date: '2026-05-21', note: '5/21 RG: Wallet share proposal delivered to Priten (2:00 PM PT, 30 min). Post-Gartner momentum. Awaiting response.' },
+    ],
   };
 }
 
@@ -2306,184 +2318,98 @@ function dayMeta_2026_05_21() {
 }
 
 function dayOverviewHTML_2026_05_21() {
-  return `
-  <div class="alert-banner alert-warning" style="margin-bottom:14px">
-    &#x26A0;&#xFE0F; <strong>Dayforce (High Risk):</strong> Varun + Augie held a retention-focused 2Q review with a complementary POC offer. Account flagged High Risk — confirm POC next steps urgently.
+  return `<div class="section-label">Team Activity &mdash; Thursday May 21, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Thu May 21 &mdash; 69 recordings scanned</strong> via SFDC SOQL &middot; <strong>6 confirmed customer calls</strong> across 5 CSMs &middot; 2 expansion signals (Lumen full-universe pricing &middot; Cisco wallet share proposal) &middot; 2 concerning (Dayforce High Risk POC &middot; NetApp wallet data quality) &middot; 3 unconfirmed no-transcript (Insight Direct / Atisha &middot; Microsoft / Pam+Rani &middot; Arcoro / Riley)
   </div>
-  <div class="alert-banner alert-expansion" style="margin-bottom:14px">
-    &#x1F7E2; <strong>Lumen Expansion:</strong> BCG is driving Lumen to expand HG usage from 80K accounts to full universe. Pricing discussion in progress. Potential significant ARR lift from current $60K.
+  <div style="background:#1c1f26;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x1F534; <strong>Dayforce (Varun) &mdash; High Risk Retention:</strong> 2Q ROI review with complementary POC offer. Confirm POC scope with Kory Himmer urgently &mdash; document all commitments within 24 hours.
   </div>
-  <div class="alert-banner alert-expansion" style="margin-bottom:14px">
-    &#x1F7E2; <strong>Cisco Wallet Share Proposal:</strong> Rani + Adrian delivered wallet share analysis proposal to Priten Gandecha. Strong post-Gartner momentum. Track response.
-  </div>
-  <div class="csm-grid">
-    <div class="csm-card has-calls">
-      <div class="csm-header"><span class="csm-name">Varun Tiwari</span><span class="call-count">1 CALL</span></div>
-      <div class="csm-accounts"><div class="account-row concerning">&#x26A0;&#xFE0F; Dayforce US (60 min) &mdash; ROI retention; POC offer; High Risk</div></div>
-    </div>
-    <div class="csm-card has-calls">
-      <div class="csm-header"><span class="csm-name">Nick Johnson</span><span class="call-count">1 CALL</span></div>
-      <div class="csm-accounts"><div class="account-row healthy">&#x2705; Siemens AG (30 min) &mdash; ACP launch; 3-yr account planning support</div></div>
-    </div>
-    <div class="csm-card has-calls">
-      <div class="csm-header"><span class="csm-name">Divyam Dewan</span><span class="call-count">1 CALL</span></div>
-      <div class="csm-accounts"><div class="account-row expansion">&#x1F7E2; Lumen Technologies (30 min) &mdash; BCG expansion; full-universe pricing discussion</div></div>
-    </div>
-    <div class="csm-card has-calls">
-      <div class="csm-header"><span class="csm-name">Rani Guy</span><span class="call-count">2 CALLS</span></div>
-      <div class="csm-accounts">
-        <div class="account-row concerning">&#x26A0;&#xFE0F; NetApp (30 min) &mdash; Wallet data quality issue; tracker needed</div>
-        <div class="account-row expansion">&#x1F7E2; Cisco / Priten (30 min) &mdash; Wallet share proposal delivered</div>
-      </div>
-    </div>
-    <div class="csm-card has-calls">
-      <div class="csm-header"><span class="csm-name">Pam Huck</span><span class="call-count">1 CALL</span></div>
-      <div class="csm-accounts"><div class="account-row healthy">&#x2705; Oracle NetSuite (30 min) &mdash; IDL 117 MQLs; Top Rated; David K intro</div></div>
-    </div>
-    <div class="csm-card no-calls">
-      <div class="csm-header"><span class="csm-name">Riley Rogers</span><span class="call-count no-calls-count">0 Direct</span></div>
-      <div class="csm-accounts"><div class="account-row muted">Arcoro unconfirmed (no transcript). Apptio + RingCentral: events, no recordings.</div></div>
-    </div>
-    <div class="csm-card no-calls">
-      <div class="csm-header"><span class="csm-name">Atisha Waghela</span><span class="call-count no-calls-count">0 Direct</span></div>
-      <div class="csm-accounts"><div class="account-row muted">Insight Direct unconfirmed. Kong / Apple / Saviynt / Versa: events, no recordings.</div></div>
-    </div>
-    <div class="csm-card no-calls">
-      <div class="csm-header"><span class="csm-name">Andy Lim</span><span class="call-count no-calls-count">0 Detected</span></div>
-      <div class="csm-accounts"><div class="account-row muted">No SFDC events or Weflow recordings detected for May 21.</div></div>
-    </div>
+  <div class="overview-grid">
+    <div class="csm-card has-calls" data-csm="varun"><span class="call-badge">1 CALL</span><div class="csm-card-header"><div class="avatar av-varun">VT</div><div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div><div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note"><span style="color:#ef4444">&#x1F534; Dayforce US (High Risk &mdash; 2Q ROI review &middot; POC offer)</span></div></div>
+    <div class="csm-card has-calls" data-csm="nick"><span class="call-badge">1 CALL</span><div class="csm-card-header"><div class="avatar av-grey">NJ</div><div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">Siemens AG (ACP launch &middot; 3-yr account planning &middot; one-pagers needed for rep meeting)</div></div>
+    <div class="csm-card has-calls" data-csm="divyam"><span class="call-badge">1 CALL</span><div class="csm-card-header"><div class="avatar av-divyam">DD</div><div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note"><span style="color:#f59e0b">&#x1F4C8; Lumen Technologies (BCG driving full-universe expansion &middot; pricing model in progress)</span></div></div>
+    <div class="csm-card has-calls" data-csm="rani"><span class="call-badge">2 CALLS</span><div class="csm-card-header"><div class="avatar av-grey">RG</div><div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note"><span style="color:#f59e0b">&#x26A0;&#xFE0F; NetApp (wallet data quality &middot; tracker needed)</span> &middot; <span style="color:#f59e0b">&#x1F4C8; Cisco Wallet Share (proposal to Priten &middot; post-Gartner)</span></div></div>
+    <div class="csm-card has-calls" data-csm="pam"><span class="call-badge">1 CALL</span><div class="csm-card-header"><div class="avatar av-grey">PH</div><div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">Oracle NetSuite (IDL: 117 MQLs / 3 SQLs &middot; Top Rated &middot; Nia mat leave Jun 8)</div></div>
+    <div class="csm-card no-calls" data-csm="riley"><span class="no-call-badge">0 Confirmed</span><div class="csm-card-header"><div class="avatar av-grey">RR</div><div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Arcoro unconfirmed (no transcript) &middot; Apptio + RingCentral: SFDC events, no recordings synced</div></div>
+    <div class="csm-card no-calls" data-csm="atisha"><span class="no-call-badge">0 Confirmed</span><div class="csm-card-header"><div class="avatar av-grey">AW</div><div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Insight Direct unconfirmed (recording exists, no transcript) &middot; Kong / Apple / Saviynt / Versa: SFDC events, no recordings found</div></div>
+    <div class="csm-card no-calls" data-csm="andy"><span class="no-call-badge">0 Detected</span><div class="csm-card-header"><div class="avatar av-grey">AL</div><div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No SFDC events or Weflow recordings detected for May 21.</div></div>
   </div>`;
 }
 
 function dayCallsHTML_2026_05_21() {
+  const rows = [
+    { time:'7:00 AM PT',  csm:'varun',  csmLbl:'Varun Tiwari',  account:'Dayforce US, Inc.',                  mins:60, nature:'Ad-hoc',  init:'HG CS',    purpose:'Check-in',         health:'Concerning', note:'2Q ROI review with Kory Himmer. HG offered complementary POC for new data ingestion. High Risk account &mdash; POC scope to be confirmed and documented urgently.' },
+    { time:'7:30 AM PT',  csm:'nick',   csmLbl:'Nick Johnson',  account:'Siemens AG',                         mins:30, nature:'Routine', init:'HG CS',    purpose:'Check-in',         health:'Healthy',    note:'Pat Loftus launching ACP. Nick to prepare one-pagers + intent/competitive data for top-5 automotive reps. Rep meeting next week for 3-yr account planning.' },
+    { time:'8:30 AM PT',  csm:'divyam', csmLbl:'Divyam Dewan',  account:'Lumen Technologies',                 mins:30, nature:'Routine', init:'Customer', purpose:'Expansion',        health:'Healthy',    note:'BCG driving expansion from ~80K accounts (Neo) to full universe. Pricing scenarios: firmographic/technographic vs. + AI adoption scoring. Hayden Smith (AM) to loop in. &#x1F4C8;' },
+    { time:'9:30 AM PT',  csm:'rani',   csmLbl:'Rani Guy',      account:'NetApp',                             mins:30, nature:'Routine', init:'HG CS',    purpose:'Check-in + Issue', health:'Concerning', note:'Doug Oliver-Watts raised wallet number methodology discrepancy &mdash; similar cohorts showing different wallet values. Shared tracker + Tracy York hierarchy call to be scheduled.' },
+    { time:'11:00 AM PT', csm:'pam',    csmLbl:'Pam Huck',      account:'Oracle (NetSuite)',                  mins:30, nature:'Routine', init:'HG CS',    purpose:'Check-in',         health:'Healthy',    note:'IDL: 117 MQLs / 3 SQLs. Top Rated achieved. Nia mat leave June 8 &mdash; Scott covering. David Kearney (Durham) introduced; in-person meeting planned.' },
+    { time:'2:00 PM PT',  csm:'rani',   csmLbl:'Rani Guy',      account:'Cisco (Wallet Share &mdash; Priten)',mins:30, nature:'Ad-hoc',  init:'HG CS',    purpose:'Expansion',        health:'Healthy',    note:'Wallet share analysis proposal delivered to Priten Gandecha. Adrian back from Gartner with strong momentum vs ZoomInfo/6Sense. Awaiting Priten response. &#x1F4C8;' },
+  ];
+  const chipColor = { varun:'#dbeafe;color:#1d4ed8', rani:'#d1fae5;color:#065f46', riley:'#dcfce7;color:#166534', atisha:'#fef3c7;color:#92400e', divyam:'#ffe4e6;color:#be123c', pam:'#fce7f3;color:#9d174d', nick:'#f3e8ff;color:#7c3aed', andy:'#fff7ed;color:#9a3412' };
+  const natColor  = n => n==='Routine'?'background:#f3f4f6;color:#374151':'background:#fef9c3;color:#713f12';
+  const sigBadge  = h => h==='Concerning'
+    ? '<span style="display:inline-block;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;background:#fee2e2;color:#991b1b">&#x1F534; Concerning</span>'
+    : h==='Expansion'
+    ? '<span style="display:inline-block;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;background:#dcfce7;color:#166534">&#x1F7E2; Expansion</span>'
+    : '<span style="display:inline-block;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;background:#dcfce7;color:#166534">&#x2705; Healthy</span>';
+  const rows_html = rows.map(r=>`<tr>
+    <td>${r.time}</td>
+    <td><span style="display:inline-flex;align-items:center;padding:3px 10px;border-radius:12px;font-size:11px;font-weight:600;background:${chipColor[r.csm]}">${r.csmLbl}</span></td>
+    <td>${r.account}</td>
+    <td>${r.mins} min</td>
+    <td><span style="display:inline-block;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;${natColor(r.nature)}">${r.nature}</span></td>
+    <td>${r.init}</td>
+    <td>${r.purpose}</td>
+    <td>${sigBadge(r.health)}</td>
+    <td style="font-size:12px;color:#64748b;max-width:260px">${r.note}</td>
+  </tr>`).join('');
   return `
-  <div class="callout-banner info" style="margin-bottom:12px">
-    &#x2139;&#xFE0F; <strong>3 unconfirmed calls</strong> (no transcript): Insight Direct / Atisha, Microsoft / Pam+Rani, Arcoro / Riley. Listed below table.
+  <div style="background:#1c1f26;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 12px 0;font-size:12px;color:#fca5a5;">
+    &#x1F534; <strong>Dayforce High Risk:</strong> Varun Tiwari &middot; 2Q retention-focused ROI review &middot; Complementary POC offered &middot; Confirm scope with Kory Himmer urgently
   </div>
-  <table class="calls-table">
-    <thead><tr><th>Time (PT)</th><th>CSM</th><th>Account</th><th>Duration</th><th>Nature</th><th>Initiated By</th><th>Purpose</th><th>Signal</th></tr></thead>
-    <tbody>
-      <tr>
-        <td>7:00 AM</td>
-        <td><span class="csm-chip chip-varun">Varun Tiwari</span></td>
-        <td>Dayforce US, Inc.</td>
-        <td>60 min</td>
-        <td>Ad-hoc</td>
-        <td>HG CS</td>
-        <td>Check-in + Expansion</td>
-        <td><span class="badge badge-concerning">&#x26A0;&#xFE0F; Concerning</span></td>
-      </tr>
-      <tr>
-        <td>7:30 AM</td>
-        <td><span class="csm-chip chip-nick">Nick Johnson</span></td>
-        <td>Siemens AG</td>
-        <td>30 min</td>
-        <td>Recurring</td>
-        <td>HG CS</td>
-        <td>Check-in</td>
-        <td><span class="badge badge-healthy">&#x2705; Healthy</span></td>
-      </tr>
-      <tr>
-        <td>8:30 AM</td>
-        <td><span class="csm-chip chip-divyam">Divyam Dewan</span></td>
-        <td>Lumen Technologies</td>
-        <td>30 min</td>
-        <td>Recurring</td>
-        <td>Customer-driven</td>
-        <td>Check-in + Expansion</td>
-        <td><span class="badge badge-expansion">&#x1F7E2; Expansion</span></td>
-      </tr>
-      <tr>
-        <td>9:30 AM</td>
-        <td><span class="csm-chip chip-rani">Rani Guy</span></td>
-        <td>NetApp</td>
-        <td>30 min</td>
-        <td>Recurring</td>
-        <td>HG CS</td>
-        <td>Check-in + Issue</td>
-        <td><span class="badge badge-concerning">&#x26A0;&#xFE0F; Data Quality</span></td>
-      </tr>
-      <tr>
-        <td>11:00 AM</td>
-        <td><span class="csm-chip chip-pam">Pam Huck</span></td>
-        <td>Oracle (NetSuite)</td>
-        <td>30 min</td>
-        <td>Recurring</td>
-        <td>HG CS</td>
-        <td>Check-in</td>
-        <td><span class="badge badge-healthy">&#x2705; Healthy</span></td>
-      </tr>
-      <tr>
-        <td>2:00 PM</td>
-        <td><span class="csm-chip chip-rani">Rani Guy</span></td>
-        <td>Cisco (Priten &mdash; Wallet Share)</td>
-        <td>30 min</td>
-        <td>Recurring</td>
-        <td>HG CS</td>
-        <td>Expansion</td>
-        <td><span class="badge badge-expansion">&#x1F7E2; Expansion</span></td>
-      </tr>
-    </tbody>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 12px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>2 Expansion signals today</strong> &mdash; Lumen (BCG full-universe pricing &middot; Divyam) &middot; Cisco Wallet Share (Priten proposal &middot; Rani)
+  </div>
+  <div style="background:#1c1f26;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 12px 0;font-size:12px;color:#fcd34d;">
+    &#x26A0;&#xFE0F; <strong>3 Unconfirmed (no transcript):</strong> Atisha &rarr; Insight Direct (4:30 AM PT, recording exists, no transcript) &middot; Pam + Rani &rarr; Microsoft Bi-Weekly (10:00 AM PT) &middot; Riley &rarr; Arcoro TrustRadius (11:30 AM PT) &mdash; inferred from CSM event ownership.
+  </div>
+  <div style="overflow-x:auto">
+  <table style="width:100%;border-collapse:collapse;background:white;border-radius:10px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.08);font-size:13px">
+    <thead><tr style="background:#1e293b;color:white">
+      <th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px">Time (PT)</th>
+      <th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px">CSM</th>
+      <th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px">Account</th>
+      <th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px">Dur</th>
+      <th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px">Nature</th>
+      <th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px">Initiated By</th>
+      <th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px">Purpose</th>
+      <th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px">Signal</th>
+      <th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px">Notes</th>
+    </tr></thead>
+    <tbody>${rows_html}</tbody>
   </table>
-  <div class="callout-banner warning" style="margin-top:16px">
-    &#x1F535; <strong>Unconfirmed (no transcript, inferred from SFDC event):</strong>
-    Atisha Waghela &rarr; Insight Direct USA Ltd (Rakesh Bi-weekly, 4:30 AM, 30 min) &bull;
-    Pam Huck / Rani Guy &rarr; Microsoft Bi-Weekly (10:00 AM, 60 min) &bull;
-    Riley Rogers &rarr; Arcoro TrustRadius Recurring (11:30 AM, 30 min)
-  </div>`;
+  </div>
+  <div class="empty-state" id="calls-empty" style="display:none"><div class="empty-icon">&#128269;</div>No calls match these filters.</div>`;
 }
 
 function dayPulsesHTML_2026_05_21() {
-  return `<div class="pulse-grid">
-    <div class="pulse-card concerning">
-      <div class="pulse-card-top">
-        <div><div class="pulse-account">Dayforce US, Inc.</div><div class="pulse-opp">ARR $136K &middot; High Risk</div></div>
-        <span class="badge badge-concerning">&#x26A0;&#xFE0F; Concerning</span>
-      </div>
-      <div class="pulse-excerpt">ROI retention 2Q review. HG offered complementary POC for new data ingestion. High Risk account — POC scope and timeline to be confirmed with Kory Himmer.</div>
-      <div class="pulse-footer"><span class="csm-chip chip-varun">Varun Tiwari</span><span>60 min &middot; 7:00 AM PT</span></div>
-    </div>
-    <div class="pulse-card healthy">
-      <div class="pulse-card-top">
-        <div><div class="pulse-account">Siemens AG</div><div class="pulse-opp">ARR $888K &middot; Healthy</div></div>
-        <span class="badge badge-healthy">&#x2705; Healthy</span>
-      </div>
-      <div class="pulse-excerpt">Pat Loftus launching ACP initiative at Siemens. HG supporting with one-pagers + intent/competitive data for top-5 automotive reps. Meeting next week. Positive ACP momentum.</div>
-      <div class="pulse-footer"><span class="csm-chip chip-nick">Nick Johnson</span><span>30 min &middot; 7:30 AM PT</span></div>
-    </div>
-    <div class="pulse-card expansion">
-      <div class="pulse-card-top">
-        <div><div class="pulse-account">Lumen Technologies</div><div class="pulse-opp">ARR $60K &middot; Expansion Opportunity</div></div>
-        <span class="badge badge-expansion">&#x1F7E2; Expansion</span>
-      </div>
-      <div class="pulse-excerpt">BCG modeling work driving Lumen to expand HG data from ~80K accounts (Neo) to full account universe. Firmographic, technographic, cloud, and AI adoption scoring needed. Pricing model in progress.</div>
-      <div class="pulse-footer"><span class="csm-chip chip-divyam">Divyam Dewan</span><span>30 min &middot; 8:30 AM PT</span></div>
-    </div>
-    <div class="pulse-card concerning">
-      <div class="pulse-card-top">
-        <div><div class="pulse-account">NetApp</div><div class="pulse-opp">ARR $841K &middot; Healthy (data Q raised)</div></div>
-        <span class="badge badge-concerning">&#x26A0;&#xFE0F; Data Quality</span>
-      </div>
-      <div class="pulse-excerpt">Doug Oliver-Watts raised wallet number methodology discrepancy — similar firmographic cohorts showing different wallet values. Rani to create shared tracker and schedule hierarchy/dedup call with Tracy.</div>
-      <div class="pulse-footer"><span class="csm-chip chip-rani">Rani Guy</span><span>30 min &middot; 9:30 AM PT</span></div>
-    </div>
-    <div class="pulse-card healthy">
-      <div class="pulse-card-top">
-        <div><div class="pulse-account">Oracle (NetSuite)</div><div class="pulse-opp">ARR $1M &middot; Healthy</div></div>
-        <span class="badge badge-healthy">&#x2705; Healthy</span>
-      </div>
-      <div class="pulse-excerpt">IDL performing strongly: 117 MQLs / 3 SQLs before campaign end vs 250 goal. Top Rated achieved. New contact David Kearney (Durham) introduced. Nia on mat leave June 8 &mdash; Scott covering IDL.</div>
-      <div class="pulse-footer"><span class="csm-chip chip-pam">Pam Huck</span><span>30 min &middot; 11:00 AM PT</span></div>
-    </div>
-    <div class="pulse-card expansion">
-      <div class="pulse-card-top">
-        <div><div class="pulse-account">Cisco &mdash; Wallet Share (Priten)</div><div class="pulse-opp">ARR $2.3M (main acct) &middot; Expansion opp</div></div>
-        <span class="badge badge-expansion">&#x1F7E2; Expansion</span>
-      </div>
-      <div class="pulse-excerpt">Wallet share analysis proposal delivered to Priten Gandecha. Adrian returned from Gartner with strong momentum and competitor positioning (vs. ZoomInfo/6Sense). Rory taken to dinner. Awaiting Priten's response.</div>
-      <div class="pulse-footer"><span class="csm-chip chip-rani">Rani Guy</span><span>30 min &middot; 2:00 PM PT</span></div>
-    </div>
-  </div>
+  const cards = [
+    { csm:'varun',  health:'Concerning', account:'Dayforce US, Inc.',                  opp:'Vitally Pulse &mdash; May 21 Call', arr:'Enterprise &middot; Varun Tiwari',  excerpt:'5/21 VT: Dayforce 2Q ROI retention review (7:00 AM PT, 60 min). HG offered complementary POC for new data ingestion project. Account flagged High Risk — Kory Himmer is the contact. POC scope, timeline, and success criteria to be confirmed and documented urgently.', csmlbl:'Varun Tiwari', change:'May 21 &middot; &#x1F534; High Risk retention' },
+    { csm:'nick',   health:'Healthy',    account:'Siemens AG',                         opp:'Vitally Pulse &mdash; May 21 Call', arr:'Enterprise &middot; Nick Johnson',   excerpt:'5/21 NJ: Siemens biweekly (7:30 AM PT, 30 min). Pat Loftus launching ACP initiative. Nick to prepare HG one-pagers and intent/competitive data for top-5 automotive reps. Rep meeting next week. Strong positive engagement for 3-year account planning.', csmlbl:'Nick Johnson', change:'May 21 &middot; ACP launch' },
+    { csm:'divyam', health:'Healthy',    account:'Lumen Technologies',                 opp:'Vitally Pulse &mdash; May 21 Call', arr:'Enterprise &middot; Divyam Dewan',   excerpt:'5/21 DD: Lumen biweekly (8:30 AM PT, 30 min). BCG consulting work driving Lumen to expand HG data from ~80K accounts (Neo) to full account universe. Scope: firmographic, technographic, cloud spend, AI adoption scoring. Pricing model in progress; Hayden Smith (AM) to be looped in.', csmlbl:'Divyam Dewan', change:'May 21 &middot; Expansion signal 📈' },
+    { csm:'rani',   health:'Concerning', account:'NetApp',                              opp:'Vitally Pulse &mdash; May 21 Call', arr:'Enterprise &middot; Rani Guy',        excerpt:'5/21 RG: NetApp monthly sync (9:30 AM PT, 30 min). Doug Oliver-Watts raised a wallet number methodology discrepancy — similar firmographic cohorts showing different wallet values. Rani to create shared action tracker and schedule Tracy York (HG) call for hierarchy and dedup work.', csmlbl:'Rani Guy', change:'May 21 &middot; &#x1F7E0; Data quality concern' },
+    { csm:'pam',    health:'Healthy',    account:'Oracle (NetSuite)',                   opp:'Vitally Pulse &mdash; May 21 Call', arr:'Enterprise &middot; Pam Huck',        excerpt:'5/21 PH: Oracle NetSuite TrustRadius IDL sync (11:00 AM PT, 30 min). IDL performing strongly: 117 MQLs, 3 SQLs before campaign end. Top Rated badge achieved. Nia on mat leave June 8 — Scott covering IDL program. New contact David Kearney (Durham/Raleigh) introduced; in-person meeting to be scheduled.', csmlbl:'Pam Huck', change:'May 21 &middot; IDL performance strong' },
+    { csm:'rani',   health:'Healthy',    account:'Cisco (Wallet Share &mdash; Priten)', opp:'Vitally Pulse &mdash; May 21 Call', arr:'Enterprise &middot; Rani Guy',        excerpt:'5/21 RG: Cisco wallet share proposal call (2:00 PM PT, 30 min). Rani + Adrian Escobar delivered wallet share analysis proposal to Priten Gandecha. Adrian returned from Gartner with strong competitive positioning vs ZoomInfo/6Sense. Rory taken to dinner. Awaiting Priten\'s response.', csmlbl:'Rani Guy', change:'May 21 &middot; Expansion signal 📈' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top"><div><div class="pulse-account">${c.account}</div><div class="pulse-opp">${c.opp}</div><div class="pulse-arr">${c.arr}</div></div><span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span></div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
   <div class="empty-state" id="pulses-empty" style="display:none"><div class="empty-icon">&#128269;</div>No pulses match these filters.</div>`;
 }
 
