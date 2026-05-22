@@ -2295,18 +2295,13 @@ function dayData_2026_05_21() {
 function dayMeta_2026_05_21() {
   return {
     pills: [
-      { label: '6 Confirmed Calls',         color: 'green'  },
-      { label: '2 Expansion Signals',       color: 'green'  },
-      { label: '2 Concerning Signals',      color: 'orange' },
-      { label: '5 CSMs Active',             color: 'blue'   },
-      { label: '3 No Confirmed Calls',      color: 'gray'   }
+      ['dot-teal',   '6 Confirmed Calls'],
+      ['dot-green',  '2 Expansion Signals'],
+      ['dot-amber',  '2 Concerning Signals'],
+      ['dot-purple', '5 CSMs Active'],
+      ['dot-grey',   '3 No Confirmed Calls'],
     ],
-    tabs: [
-      { id: 'overview', label: 'Overview'                   },
-      { id: 'calls',    label: 'Calls (6)'                  },
-      { id: 'pulses',   label: 'Pulses (6)'                 },
-      { id: 'actions',  label: 'Actions (7)'                }
-    ]
+    tabs: ['Overview', 'Calls (6)', 'Pulses (6)', 'Actions (7)'],
   };
 }
 
