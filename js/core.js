@@ -924,15 +924,15 @@ function accountsHTML() {
   };
   // Returns the worst pulse across all opps for an account (highest risk score).
   const worstOppPulse = opps => {
-    if (!opps || !opps.length) return { pulse: null, color: null };
-    let worst = null, worstScore = -1;
+    if (!opps || !opps.length) return { pulse: null, color: null, note: null };
+    let worst = null, worstScore = -1, worstNote = null;
     opps.forEach(o => {
       if (!o.pulse || o.pulse === '—') return;
       const score = pulseRiskScore(o.pulse);
-      if (score > worstScore) { worstScore = score; worst = o.pulse; }
+      if (score > worstScore) { worstScore = score; worst = o.pulse; worstNote = o.pulseNote || null; }
     });
-    if (!worst) return { pulse: null, color: null };
-    return { pulse: worst, color: oppPulseColor(worst) };
+    if (!worst) return { pulse: null, color: null, note: null };
+    return { pulse: worst, color: oppPulseColor(worst), note: worstNote };
   };
   // Renders a pulse note cell with truncation + inline expand for long SFDC notes
   const oppNoteUID = (() => { let n = 0; return () => 'opn' + (++n); })();
@@ -995,7 +995,7 @@ function accountsHTML() {
         <td style="padding:6px 10px;font-size:11px;color:#6b7280">${acct.lastOutbound ? isoToDate(acct.lastOutbound).toLocaleDateString('en-US', {month:'short', day:'numeric'}) : '—'}</td>
         <td style="padding:6px 10px;font-size:11px;color:#6b7280;font-variant-numeric:tabular-nums">${acct.latestPulseDate ? isoToDate(acct.latestPulseDate).toLocaleDateString('en-US', {month:'short', day:'numeric', year:'numeric'}) : '—'}</td>
         <td style="${wp.pulse && wp.color ? `padding:4px 10px;font-size:11px;background-color:${wp.color};color:white;border-radius:4px;text-align:center;font-weight:500` : 'padding:6px 10px;font-size:11px;color:#9ca3af'}">${wp.pulse || '—'}</td>
-        <td style="padding:6px 10px;font-size:11px;color:#6b7280">${acct.pulseNote || '—'}</td>
+        ${oppNoteCell(wp.note || acct.pulseNote)}
         <td style="padding:6px 10px;font-size:11px;color:#6b7280;font-variant-numeric:tabular-nums">${acct.renewalDate || '—'}</td>
       </tr>
       ${oppRows}
