@@ -918,8 +918,8 @@ function accountsHTML() {
     if (!p) return null;
     const lp = p.toLowerCase();
     if (lp === 'healthy' || lp.includes('very satisfied') || lp.includes('extremely')) return '#059669';
-    if (lp.includes('concerning') || lp.includes('some risk')) return '#d97706';
-    if (lp.includes('severe') || lp.includes('high risk') || lp.includes('at risk')) return '#dc2626';
+    if (lp === 'concerning' || lp.includes('concerning') || lp.includes('some risk')) return '#d97706';
+    if (lp === 'poor' || lp.includes('severe') || lp.includes('high risk') || lp.includes('at risk')) return '#dc2626';
     return '#6b7280';
   };
   // Returns the worst pulse across all opps for an account (highest risk score).
@@ -1218,11 +1218,11 @@ function pulseRiskScore(p) {
   // Higher = more at-risk. Default desc puts worst first.
   if (!p) return 2;
   const s = String(p).toLowerCase();
-  if (s.includes('severe')) return 5;
+  if (s === 'poor' || s.includes('severe')) return 5;
   if (s.includes('high risk')) return 4;
-  if (s.includes('some risk')) return 3;
+  if (s === 'concerning' || s.includes('some risk')) return 3;
   if (s.includes('extremely')) return 0;
-  if (s.includes('very satisfied') || s.includes('healthy')) return 1;
+  if (s === 'healthy' || s.includes('very satisfied') || s.includes('healthy')) return 1;
   return 2;
 }
 
@@ -1367,9 +1367,9 @@ function csmTotalAccounts() { return Object.values(CSM_ACCOUNTS).reduce((s,a)=>s
 function fmtArr(n) { return n>=1e6 ? '$'+(n/1e6).toFixed(1)+'M' : n>=1e3 ? '$'+Math.round(n/1e3)+'K' : '$'+n; }
 function pulseColor(p) {
   if (!p || p==='—') return '#9ca3af';
-  if (/Severe|High Risk/.test(p)) return '#dc2626';
-  if (/Some Risk/.test(p)) return '#d97706';
-  if (/Extremely|Very Satisfied/.test(p)) return '#059669';
+  if (/^Poor$|Severe|High Risk/.test(p)) return '#dc2626';
+  if (/^Concerning$|Some Risk/.test(p)) return '#d97706';
+  if (/^Healthy$|Extremely|Very Satisfied/.test(p)) return '#059669';
   return '#6b7280';
 }
 function openCsmAccounts(csm) {
