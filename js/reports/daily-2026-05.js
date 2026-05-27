@@ -2577,3 +2577,193 @@ function weeklyOrMonthlyHTML_2026_05_22() {
     <div style="background:rgba(255,255,255,0.03);border:1px solid #2a2d3e;border-radius:6px;padding:10px 12px;"><div style="font-size:22px;font-weight:700;color:#a855f7;">8</div><div style="font-size:11px;color:#64748b;">CSMs Active (all)</div></div>
   </div>`;
 }
+
+// ─── MAY 26, 2026 ──────────────────────────────────────────────
+
+function dayData_2026_05_26() {
+  return {
+    calls: [
+      { ts: 'May 26 · 6:30 AM',  csm: 'nick',   account: 'IBM',                note: 'Check-in · contact data gaps raised · expansion: contact intelligence', mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in + Expansion',
+        detail: 'Nick Johnson joined IBM\'s recurring biweekly call. Flagged contact data quality gaps in the current deliverable. Opened expansion discussion around contact intelligence products to fill identified coverage gaps. IBM team receptive.' },
+      { ts: 'May 26 · 7:00 AM',  csm: 'varun',  account: 'Exclusive Networks', note: 'Account scoring walkthrough · EMEA TAM strategy · platform orientation', mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Varun Tiwari led a walkthrough of account scoring methodology for Exclusive Networks\' EMEA targeting strategy. Covered how HG account intelligence supports TAM prioritization. Team engaged and asking clarifying questions.' },
+      { ts: 'May 26 · 8:00 AM',  csm: 'nick',   account: 'NTT Data',           note: 'License expansion request · 16–18 new hire seats · customer-initiated', mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Expansion',
+        detail: 'NTT Data proactively requested 16–18 new hire licenses. Nick Johnson discussed onboarding requirements, timeline, and contracting next steps. AE loop-in needed for formal expansion. Strong buy signal.' },
+      { ts: 'May 26 · 8:30 AM',  csm: 'riley',  account: 'SAP Inc',            note: 'Monthly check-in · platform usage review · SAP Sapphire preview', mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Riley Rogers led a regular monthly sync with SAP Inc covering platform usage metrics and upcoming milestones. Brief preview of SAP Sapphire conference agenda. Strong relationship maintained.' },
+      { ts: 'May 26 · 9:00 AM',  csm: 'nick',   account: 'NTT Data',           note: 'Monthly session (abbreviated) · limited attendees · agenda to reschedule', mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'The scheduled NTT Data monthly session was abbreviated due to limited customer attendance. Nick covered core agenda items. Key contacts absent; full walkthrough to be rescheduled.' },
+      { ts: 'May 26 · 10:00 AM', csm: 'divyam', account: 'Omnissa',            note: 'TrustRadius intro · review campaign expansion · Riley Rogers co-attended', mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Divyam Dewan and Riley Rogers jointly introduced the Omnissa team to TrustRadius review campaign capabilities. Riley walked through premium content bundle options. Omnissa expressed strong interest in launching a structured review campaign. Active expansion opportunity.' },
+      { ts: 'May 26 · 10:30 AM', csm: 'divyam', account: 'Genesys',            note: 'Top Rated award check-in · campaign progress · award resources to share', mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Divyam Dewan led a regular TrustRadius check-in with Genesys covering Top Rated award status and ongoing review campaign performance. Campaign on track. Award resources to be shared post-call.' },
+      { ts: 'May 26 · 11:00 AM', csm: 'rani',   account: 'Hitachi Vantara',    note: 'EBR follow-up · live platform demo · post-QBR use case alignment (Yuan Fang joined)', mins: 60, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Rani Guy conducted a 60-minute follow-up to the recent Hitachi Vantara EBR including a live platform demo and use case alignment session. Yuan Fang (HG VP CS) attended. Covered technographic data application for Hitachi GTM strategy. Strong post-QBR momentum.' },
+      { ts: 'May 26 · 11:30 AM', csm: 'riley',  account: 'SAP Inc',            note: 'SAP Sapphire event debrief · strategic priorities · Q3 content themes', mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Check-in',
+        detail: 'Riley Rogers debriefed the SAP Sapphire conference findings with SAP\'s TrustRadius team. Discussed competitive intelligence themes, key takeaways, and how Sapphire insights map to SAP\'s Q3 content priorities and review program strategy.' },
+      { ts: 'May 26 · 11:30 AM', csm: 'divyam', account: 'BILL',               note: '⚠️ MadKudu implementation gaps · June 15 go-live at risk · escalation needed', mins: 30, health: 'Concerning',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Issue',
+        detail: 'Divyam Dewan discovered significant MadKudu implementation gaps during this call. Customer has a hard June 15 go-live deadline that is now at risk. Current implementation state does not meet requirements. Urgency raised — escalation and immediate remediation plan required. Yuan Fang flagged.' },
+      { ts: 'May 26 · 1:00 PM',  csm: 'riley',  account: 'BMC Software',       note: 'Review moderation sync · TrustRadius content pipeline · campaign health', mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Riley Rogers led a regular TrustRadius review moderation session with BMC Software. Covered content pipeline, moderation queue, and campaign health. Team aligned. Program running smoothly.' },
+      { ts: 'May 26 · 1:30 PM',  csm: 'riley',  account: 'SAP BDC',            note: 'Premium content bundle expansion · budget discussion · Q3 proposal needed', mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Expansion',
+        detail: 'Riley Rogers met with the SAP BDC team to discuss a premium content bundle upgrade. Customer initiated the conversation about expanding their TrustRadius package. Riley to prepare a Q3 pricing proposal for review.' },
+    ],
+    pulses: [
+      { csm: 'nick',   account: 'IBM',                health: 'Healthy',    note: '5/26 NJ: Biweekly check-in (6:30 AM PT, 30 min). Contact data gaps identified in current deliverable. Expansion discussion opened around contact intelligence products to fill coverage holes.' },
+      { csm: 'varun',  account: 'Exclusive Networks', health: 'Healthy',    note: '5/26 VT: Account scoring walkthrough (7:00 AM PT, 30 min). EMEA TAM strategy session. Platform orientation progressing. Team engaged.' },
+      { csm: 'nick',   account: 'NTT Data',           health: 'Healthy',    note: '5/26 NJ: License expansion (8:00 AM PT, 30 min). Customer requesting 16–18 new hire seats — proactive buy signal. AE loop-in needed for contracting.' },
+      { csm: 'riley',  account: 'SAP Inc',            health: 'Healthy',    note: '5/26 RR: Monthly check-in (8:30 AM PT, 30 min). Usage review and Sapphire preview. Strong relationship maintained.' },
+      { csm: 'nick',   account: 'NTT Data',           health: 'Healthy',    note: '5/26 NJ: Monthly session abbreviated (9:00 AM PT, 30 min). Limited attendees — key contacts absent. Core topics covered. Full agenda walkthrough to reschedule.' },
+      { csm: 'divyam', account: 'Omnissa',            health: 'Healthy',    note: '5/26 DD + RR: TrustRadius intro (10:00 AM PT, 30 min). Riley co-attended. Omnissa interested in launching structured review campaign. Premium content bundle expansion opportunity confirmed.' },
+      { csm: 'divyam', account: 'Genesys',            health: 'Healthy',    note: '5/26 DD: Top Rated check-in (10:30 AM PT, 30 min). Campaign on track. Award resources to be shared. Healthy relationship.' },
+      { csm: 'rani',   account: 'Hitachi Vantara',    health: 'Healthy',    note: '5/26 RG: EBR follow-up + platform demo (11:00 AM PT, 60 min). Yuan Fang (HG VP CS) attended. Post-QBR momentum strong. Use case alignment advancing.' },
+      { csm: 'riley',  account: 'SAP Inc',            health: 'Healthy',    note: '5/26 RR: SAP Sapphire debrief (11:30 AM PT, 30 min). Competitive themes and Q3 content priorities discussed with SAP TrustRadius team.' },
+      { csm: 'divyam', account: 'BILL',               health: 'Concerning', note: '5/26 DD: MadKudu implementation sync (11:30 AM PT, 30 min). CONCERNING: Implementation gaps discovered. June 15 go-live deadline at risk. Escalation and remediation plan needed immediately. Yuan flagged.' },
+      { csm: 'riley',  account: 'BMC Software',       health: 'Healthy',    note: '5/26 RR: Review moderation sync (1:00 PM PT, 30 min). Content pipeline healthy. TrustRadius program on track.' },
+      { csm: 'riley',  account: 'SAP BDC',            health: 'Healthy',    note: '5/26 RR: Premium content bundle expansion (1:30 PM PT, 30 min). Customer-initiated upgrade discussion. Riley to prepare Q3 pricing proposal. Active expansion.' },
+    ],
+  };
+}
+
+function dayMeta_2026_05_26() {
+  return {
+    pills: [['dot-teal','12 Calls'],['dot-red','1 Concerning'],['dot-amber','4 Expansion Signals'],['dot-green','12 Vitally Pulses']],
+    tabs:  ['Overview','Calls (12)','Pulses (12)','Action Items (8)'],
+  };
+}
+
+function dayOverviewHTML_2026_05_26() {
+  return `<div class="section-label">Team Activity &mdash; Tuesday May 26, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Tue May 26 &mdash; 73 recordings scanned</strong> via SFDC SOQL &middot; <strong>12 confirmed customer calls</strong> across 5 CSMs &middot; 4 expansion signals &middot; 1 concerning (BILL/MadKudu) &middot; 1 internal call excluded (hiring interview) &middot; Yuan Fang attended Hitachi Vantara EBR follow-up
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x1F534; <strong>BILL (Divyam) &mdash; June 15 Deadline at Risk:</strong> MadKudu implementation gaps discovered on this call. Hard go-live deadline 19 days out. Escalation + remediation plan needed immediately.
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>4 Expansion signals:</strong> NTT Data (16–18 new hire licenses, customer-initiated &middot; Nick) &middot; Omnissa (TrustRadius review campaign &middot; Divyam + Riley) &middot; SAP BDC (premium content bundle &middot; Riley) &middot; IBM (contact intelligence gap &middot; Nick)
+  </div>
+  <div class="overview-grid">
+    <div class="csm-card has-calls" data-csm="riley"><span class="call-badge">5 CALLS</span><div class="csm-card-header"><div class="avatar av-riley">RR</div><div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">5</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">5</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">150m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">SAP Inc (monthly check-in) &middot; <span style="color:#f59e0b">&#x1F4C8; Omnissa (TrustRadius intro, joint w/ Divyam)</span> &middot; SAP Inc (Sapphire debrief) &middot; BMC Software (moderation sync) &middot; <span style="color:#f59e0b">&#x1F4C8; SAP BDC (premium bundle)</span></div></div>
+    <div class="csm-card has-calls" data-csm="nick"><span class="call-badge">3 CALLS</span><div class="csm-card-header"><div class="avatar av-grey">NJ</div><div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">3</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">90m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">IBM (check-in + contact gap) &middot; <span style="color:#f59e0b">&#x1F4C8; NTT Data (16–18 seat expansion)</span> &middot; NTT Data (abbreviated monthly)</div></div>
+    <div class="csm-card has-calls" data-csm="divyam"><span class="call-badge">3 CALLS</span><div class="csm-card-header"><div class="avatar av-divyam">DD</div><div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">3</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div><div><div class="metric-num m-grey">90m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note"><span style="color:#f59e0b">&#x1F4C8; Omnissa (TrustRadius intro, Riley co-attended)</span> &middot; Genesys (Top Rated check-in) &middot; <span style="color:#ef4444">&#x1F534; BILL (MadKudu gaps · June 15 risk)</span></div></div>
+    <div class="csm-card has-calls" data-csm="rani"><span class="call-badge">1 CALL</span><div class="csm-card-header"><div class="avatar av-grey">RG</div><div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">Hitachi Vantara (EBR follow-up + platform demo &middot; Yuan Fang attended)</div></div>
+    <div class="csm-card has-calls" data-csm="varun"><span class="call-badge">1 CALL</span><div class="csm-card-header"><div class="avatar av-varun">VT</div><div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">Exclusive Networks (account scoring walkthrough &middot; EMEA TAM strategy)</div></div>
+    <div class="csm-card no-calls" data-csm="pam"><span class="no-call-badge">0 Calls</span><div class="csm-card-header"><div class="avatar av-grey">PH</div><div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Co-attended internal hiring interview (Erica Yim &mdash; Sr Director CS) &mdash; excluded from customer count</div></div>
+    <div class="csm-card no-calls" data-csm="atisha"><span class="no-call-badge">0 Calls</span><div class="csm-card-header"><div class="avatar av-grey">AW</div><div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No confirmed calls this date</div></div>
+    <div class="csm-card no-calls" data-csm="andy"><span class="no-call-badge">0 Calls</span><div class="csm-card-header"><div class="avatar av-grey">AL</div><div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No confirmed calls this date</div></div>
+  </div>`;
+}
+
+function dayCallsHTML_2026_05_26() {
+  const rows = [
+    { time:'6:30 AM PT',  csm:'nick',   csmLbl:'Nick Johnson',   account:'IBM',                mins:30, nature:'Routine',  init:'HG CS',     purpose:'Check-in + Expansion',          health:'Healthy',    note:'Contact data quality gaps flagged. Expansion discussion opened around contact intelligence products. IBM team receptive.' },
+    { time:'7:00 AM PT',  csm:'varun',  csmLbl:'Varun Tiwari',   account:'Exclusive Networks', mins:30, nature:'Ad-hoc',   init:'HG CS',     purpose:'Check-in',                      health:'Healthy',    note:'Account scoring walkthrough for EMEA TAM targeting strategy. Platform orientation progressing.' },
+    { time:'8:00 AM PT',  csm:'nick',   csmLbl:'Nick Johnson',   account:'NTT Data',           mins:30, nature:'Ad-hoc',   init:'Customer',  purpose:'Expansion (License)',           health:'Healthy',    note:'&#x1F4C8; Customer proactively requesting 16–18 new hire seats. AE loop-in needed for contracting.' },
+    { time:'8:30 AM PT',  csm:'riley',  csmLbl:'Riley Rogers',   account:'SAP Inc',            mins:30, nature:'Routine',  init:'HG CS',     purpose:'Check-in',                      health:'Healthy',    note:'Monthly sync. Platform usage review. SAP Sapphire preview discussion. Strong relationship.' },
+    { time:'9:00 AM PT',  csm:'nick',   csmLbl:'Nick Johnson',   account:'NTT Data',           mins:30, nature:'Routine',  init:'HG CS',     purpose:'Check-in',                      health:'Healthy',    note:'Monthly session abbreviated — limited attendees. Core topics covered. Full agenda to reschedule.' },
+    { time:'10:00 AM PT', csm:'divyam', csmLbl:'Divyam Dewan + Riley Rogers', account:'Omnissa', mins:30, nature:'Ad-hoc', init:'HG CS',     purpose:'Expansion (TrustRadius)',       health:'Healthy',    note:'&#x1F4C8; Joint call. Riley introduced TrustRadius review campaign capabilities. Omnissa interested in premium content bundle. Campaign kickoff to be scheduled.' },
+    { time:'10:30 AM PT', csm:'divyam', csmLbl:'Divyam Dewan',   account:'Genesys',            mins:30, nature:'Routine',  init:'HG CS',     purpose:'Check-in',                      health:'Healthy',    note:'Top Rated award check-in. Campaign on track. Award resources to be shared post-call.' },
+    { time:'11:00 AM PT', csm:'rani',   csmLbl:'Rani Guy',       account:'Hitachi Vantara',    mins:60, nature:'Ad-hoc',   init:'HG CS',     purpose:'Check-in (EBR Follow-up)',      health:'Healthy',    note:'Post-QBR EBR follow-up with live platform demo. Yuan Fang (HG VP CS) attended. Use case alignment advancing.' },
+    { time:'11:30 AM PT', csm:'riley',  csmLbl:'Riley Rogers',   account:'SAP Inc',            mins:30, nature:'Ad-hoc',   init:'Customer',  purpose:'Check-in',                      health:'Healthy',    note:'SAP Sapphire event debrief. Customer-initiated. Key themes and Q3 content priorities discussed.' },
+    { time:'11:30 AM PT', csm:'divyam', csmLbl:'Divyam Dewan',   account:'BILL',               mins:30, nature:'Ad-hoc',   init:'Customer',  purpose:'Issue (Implementation Gaps)',   health:'Concerning', note:'&#x1F534; MadKudu implementation gaps discovered. June 15 go-live at risk. Escalation needed immediately.' },
+    { time:'1:00 PM PT',  csm:'riley',  csmLbl:'Riley Rogers',   account:'BMC Software',       mins:30, nature:'Routine',  init:'HG CS',     purpose:'Check-in (Review Moderation)',  health:'Healthy',    note:'TrustRadius review moderation sync. Content pipeline healthy. Program running smoothly.' },
+    { time:'1:30 PM PT',  csm:'riley',  csmLbl:'Riley Rogers',   account:'SAP BDC',            mins:30, nature:'Ad-hoc',   init:'Customer',  purpose:'Expansion (Premium Bundle)',    health:'Healthy',    note:'&#x1F4C8; Customer-initiated premium content bundle upgrade discussion. Q3 pricing proposal needed.' },
+  ];
+  const chipColor = { varun:'#dbeafe;color:#1d4ed8', rani:'#d1fae5;color:#065f46', riley:'#dcfce7;color:#166534', atisha:'#fef3c7;color:#92400e', divyam:'#ffe4e6;color:#be123c', pam:'#fce7f3;color:#9d174d', nick:'#f3e8ff;color:#7c3aed', andy:'#fff7ed;color:#9a3412' };
+  const natColor  = n => n==='Routine'?'background:#f3f4f6;color:#374151':'background:#fef9c3;color:#713f12';
+  const sigBadge  = h => h==='Concerning'
+    ? '<span style="display:inline-block;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;background:#fee2e2;color:#991b1b">&#x1F534; Concerning</span>'
+    : '<span style="display:inline-block;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;background:#dcfce7;color:#166534">&#x2705; Healthy</span>';
+  // determine chip color key (handle "divyam + riley" combined label)
+  const getChipKey = csm => csm.includes('divyam') ? 'divyam' : csm;
+  const rows_html = rows.map(r=>`<tr>
+    <td>${r.time}</td>
+    <td><span style="display:inline-flex;align-items:center;padding:3px 10px;border-radius:12px;font-size:11px;font-weight:600;background:${chipColor[getChipKey(r.csm)]}">${r.csmLbl}</span></td>
+    <td>${r.account}</td>
+    <td>${r.mins} min</td>
+    <td><span style="display:inline-block;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;${natColor(r.nature)}">${r.nature}</span></td>
+    <td>${r.init}</td>
+    <td>${r.purpose}</td>
+    <td>${sigBadge(r.health)}</td>
+    <td style="font-size:12px;color:#64748b;max-width:260px">${r.note}</td>
+  </tr>`).join('');
+  return `
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 12px 0;font-size:12px;color:#fca5a5;">
+    &#x1F534; <strong>BILL (Divyam) &mdash; June 15 Deadline at Risk:</strong> MadKudu implementation gaps found on this call &middot; Hard go-live 19 days out &middot; Remediation plan needed urgently
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 12px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>4 Expansion signals today:</strong> NTT Data (customer-initiated 16–18 licenses &middot; Nick) &middot; Omnissa (TrustRadius campaign &middot; Divyam + Riley) &middot; SAP BDC (premium bundle &middot; Riley) &middot; IBM (contact intelligence gap &middot; Nick)
+  </div>
+  <div style="background:#1c1f26;border:1px solid #64748b;border-left:3px solid #64748b;border-radius:6px;padding:8px 14px;margin:0 0 12px 0;font-size:12px;color:#cbd5e1;">
+    &#x26A0;&#xFE0F; <strong>1 Internal excluded:</strong> &ldquo;Interview Erica Yim&rdquo; (10:00 AM PT &middot; Nick Johnson + Pam Huck + Rani Guy) &mdash; hiring interview for Sr. Director CS &amp; Solutions role at Greenhouse Software &middot; not a customer call
+  </div>
+  <div style="overflow-x:auto">
+  <table style="width:100%;border-collapse:collapse;background:white;border-radius:10px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.08);font-size:13px">
+    <thead><tr style="background:#1e293b;color:white">
+      <th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px">Time (PT)</th>
+      <th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px">CSM</th>
+      <th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px">Account</th>
+      <th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px">Dur</th>
+      <th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px">Nature</th>
+      <th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px">Initiated By</th>
+      <th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px">Purpose</th>
+      <th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px">Signal</th>
+      <th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px">Notes</th>
+    </tr></thead>
+    <tbody>${rows_html}</tbody>
+  </table>
+  </div>
+  <div class="empty-state" id="calls-empty" style="display:none"><div class="empty-icon">&#128269;</div>No calls match these filters.</div>`;
+}
+
+function dayPulsesHTML_2026_05_26() {
+  const cards = [
+    { csm:'nick',   health:'Healthy',    account:'IBM',                opp:'Vitally Pulse &mdash; May 26 Call', arr:'Enterprise &middot; Nick Johnson',   excerpt:'5/26 NJ: IBM biweekly check-in (6:30 AM PT, 30 min). Contact data quality gaps identified in current deliverable. Expansion discussion opened around contact intelligence products to fill coverage holes. IBM team receptive.', csmlbl:'Nick Johnson', change:'May 26 &middot; Check-in + Expansion' },
+    { csm:'varun',  health:'Healthy',    account:'Exclusive Networks', opp:'Vitally Pulse &mdash; May 26 Call', arr:'Enterprise &middot; Varun Tiwari',    excerpt:'5/26 VT: Account scoring walkthrough (7:00 AM PT, 30 min). EMEA TAM targeting strategy session. Covered how HG account intelligence supports prioritization. Team engaged and asking clarifying questions.', csmlbl:'Varun Tiwari', change:'May 26 &middot; Platform orientation' },
+    { csm:'nick',   health:'Healthy',    account:'NTT Data',           opp:'Vitally Pulse &mdash; May 26 Call', arr:'Enterprise &middot; Nick Johnson',    excerpt:'5/26 NJ: License expansion (8:00 AM PT, 30 min). NTT Data proactively requested 16–18 new hire seats. Nick discussed onboarding requirements and contracting next steps. AE loop-in needed. Strong buy signal.', csmlbl:'Nick Johnson', change:'May 26 &middot; Expansion 📈' },
+    { csm:'riley',  health:'Healthy',    account:'SAP Inc',            opp:'Vitally Pulse &mdash; May 26 Call', arr:'Enterprise &middot; Riley Rogers',    excerpt:'5/26 RR: Monthly check-in (8:30 AM PT, 30 min). Platform usage review and Sapphire preview. SAP Sapphire debrief followed at 11:30 AM PT — competitive themes and Q3 content priorities discussed with TrustRadius team. Strong relationship.', csmlbl:'Riley Rogers', change:'May 26 &middot; Monthly sync (2 calls)' },
+    { csm:'nick',   health:'Healthy',    account:'NTT Data',           opp:'Vitally Pulse &mdash; May 26 Call', arr:'Enterprise &middot; Nick Johnson',    excerpt:'5/26 NJ: Monthly session abbreviated (9:00 AM PT, 30 min). Limited customer attendance — key contacts absent. Core priorities covered. Full agenda walkthrough to be rescheduled with full attendee list.', csmlbl:'Nick Johnson', change:'May 26 &middot; Abbreviated (reschedule)' },
+    { csm:'divyam', health:'Healthy',    account:'Omnissa',            opp:'Vitally Pulse &mdash; May 26 Call', arr:'Enterprise &middot; Divyam Dewan',    excerpt:'5/26 DD + RR: TrustRadius intro (10:00 AM PT, 30 min). Divyam Dewan and Riley Rogers jointly introduced review campaign capabilities. Riley walked through premium content bundle options. Omnissa expressed strong interest in launching a structured campaign. Kickoff to be scheduled.', csmlbl:'Divyam Dewan (Riley co-attended)', change:'May 26 &middot; Expansion 📈' },
+    { csm:'divyam', health:'Healthy',    account:'Genesys',            opp:'Vitally Pulse &mdash; May 26 Call', arr:'Enterprise &middot; Divyam Dewan',    excerpt:'5/26 DD: TrustRadius Top Rated check-in (10:30 AM PT, 30 min). Campaign on track. Award status reviewed. Divyam to share Top Rated award resources and materials post-call.', csmlbl:'Divyam Dewan', change:'May 26 &middot; Campaign healthy' },
+    { csm:'rani',   health:'Healthy',    account:'Hitachi Vantara',    opp:'Vitally Pulse &mdash; May 26 Call', arr:'Enterprise &middot; Rani Guy',        excerpt:'5/26 RG: EBR follow-up + live platform demo (11:00 AM PT, 60 min). Yuan Fang (HG VP CS) attended. Post-QBR alignment on technographic data application for Hitachi GTM strategy. Positive momentum post-EBR.', csmlbl:'Rani Guy', change:'May 26 &middot; EBR follow-up' },
+    { csm:'divyam', health:'Concerning', account:'BILL',               opp:'Vitally Pulse &mdash; May 26 Call', arr:'Enterprise &middot; Divyam Dewan',    excerpt:'5/26 DD: MadKudu implementation sync (11:30 AM PT, 30 min). CONCERNING: Significant implementation gaps discovered. Hard June 15 go-live deadline at risk. Current state does not meet requirements. Escalation and immediate remediation plan required. Yuan Fang flagged as stakeholder.', csmlbl:'Divyam Dewan', change:'May 26 &middot; 🔴 June 15 Risk' },
+    { csm:'riley',  health:'Healthy',    account:'BMC Software',       opp:'Vitally Pulse &mdash; May 26 Call', arr:'Enterprise &middot; Riley Rogers',    excerpt:'5/26 RR: Review moderation sync (1:00 PM PT, 30 min). TrustRadius content pipeline healthy. Moderation queue on track. Campaign health good. Program running smoothly.', csmlbl:'Riley Rogers', change:'May 26 &middot; Healthy cadence' },
+    { csm:'riley',  health:'Healthy',    account:'SAP BDC',            opp:'Vitally Pulse &mdash; May 26 Call', arr:'Enterprise &middot; Riley Rogers',    excerpt:'5/26 RR: Premium content bundle expansion (1:30 PM PT, 30 min). Customer-initiated upgrade discussion — strong buy signal. Riley to prepare Q3 pricing proposal for premium content bundle. Active expansion opportunity.', csmlbl:'Riley Rogers', change:'May 26 &middot; Expansion 📈' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top"><div><div class="pulse-account">${c.account}</div><div class="pulse-opp">${c.opp}</div><div class="pulse-arr">${c.arr}</div></div><span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span></div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none"><div class="empty-icon">&#128269;</div>No pulses match these filters.</div>`;
+}
+
+function dayActionsHTML_2026_05_26() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has(2601)?'done':''}" data-csm="divyam" id="action-2601"><div class="action-checkbox ${doneActions.has(2601)?'checked':''}" onclick="toggleAction(2601)"></div><div class="action-body"><div class="action-title">&#x1F534; BILL &mdash; Escalate MadKudu implementation gaps &middot; June 15 deadline</div><div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Divyam Dewan &middot; Implementation gaps discovered on this call &mdash; current state does not meet go-live requirements. June 15 is 19 days out. Schedule urgent remediation sync, document current gaps vs. requirements, and loop in Yuan Fang + engineering/support team immediately.</div></div></div>
+    <div class="action-item ${doneActions.has(2602)?'done':''}" data-csm="nick" id="action-2602"><div class="action-checkbox ${doneActions.has(2602)?'checked':''}" onclick="toggleAction(2602)"></div><div class="action-body"><div class="action-title">&#x1F4C8; NTT Data &mdash; Loop AE for 16&ndash;18 new hire license expansion</div><div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Nick Johnson &middot; Customer proactively requested expansion seats on this call. Strong buy signal — needs AE loop-in for formal scoping and contracting. Confirm timing, pricing, and onboarding plan while momentum is high.</div></div></div>
+    <div class="action-item ${doneActions.has(2603)?'done':''}" data-csm="riley" id="action-2603"><div class="action-checkbox ${doneActions.has(2603)?'checked':''}" onclick="toggleAction(2603)"></div><div class="action-body"><div class="action-title">&#x1F4CB; SAP BDC &mdash; Prepare premium content bundle pricing proposal (Q3)</div><div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Riley Rogers &middot; Customer initiated upgrade conversation. Riley to prepare a Q3 pricing proposal for the premium content bundle and send for internal review before presenting to SAP BDC team.</div></div></div>
+    <div class="action-item ${doneActions.has(2604)?'done':''}" data-csm="divyam" id="action-2604"><div class="action-checkbox ${doneActions.has(2604)?'checked':''}" onclick="toggleAction(2604)"></div><div class="action-body"><div class="action-title">&#x1F4C8; Omnissa &mdash; Schedule TrustRadius review campaign kickoff</div><div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Divyam Dewan + Riley Rogers &middot; Omnissa expressed strong interest in launching a structured review campaign after today&apos;s TrustRadius intro. Divyam to follow up with campaign proposal and coordinate with Riley on premium content bundle details. Schedule kickoff call.</div></div></div>
+    <div class="action-item ${doneActions.has(2605)?'done':''}" data-csm="nick" id="action-2605"><div class="action-checkbox ${doneActions.has(2605)?'checked':''}" onclick="toggleAction(2605)"></div><div class="action-body"><div class="action-title">&#x1F4CA; IBM &mdash; Document contact data coverage gaps and share recommendations</div><div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Nick Johnson &middot; Contact data quality gaps were flagged during today&apos;s biweekly. Nick to document specific coverage holes, assess contact intelligence product fit, and prepare a recommendation to share with IBM team to advance expansion discussion.</div></div></div>
+    <div class="action-item ${doneActions.has(2606)?'done':''}" data-csm="nick" id="action-2606"><div class="action-checkbox ${doneActions.has(2606)?'checked':''}" onclick="toggleAction(2606)"></div><div class="action-body"><div class="action-title">&#x1F4C5; NTT Data &mdash; Reschedule full monthly agenda (limited attendance)</div><div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Nick Johnson &middot; Monthly session was abbreviated due to key contacts being absent. Nick to reschedule with full attendee list to cover the complete agenda and ensure all NTT Data stakeholders are aligned.</div></div></div>
+    <div class="action-item ${doneActions.has(2607)?'done':''}" data-csm="divyam" id="action-2607"><div class="action-checkbox ${doneActions.has(2607)?'checked':''}" onclick="toggleAction(2607)"></div><div class="action-body"><div class="action-title">&#x1F3C6; Genesys &mdash; Share Top Rated award resources post-call</div><div class="action-meta"><span class="urgency-badge urgency-low">LOW</span>Divyam Dewan &middot; Committed on the call to share Top Rated award resources and campaign materials with the Genesys team. Send follow-up email with award badge assets, promotion toolkit, and next campaign milestone dates.</div></div></div>
+    <div class="action-item ${doneActions.has(2608)?'done':''}" data-csm="varun" id="action-2608"><div class="action-checkbox ${doneActions.has(2608)?'checked':''}" onclick="toggleAction(2608)"></div><div class="action-body"><div class="action-title">&#x1F310; Exclusive Networks &mdash; Follow up with EMEA TAM strategy materials</div><div class="action-meta"><span class="urgency-badge urgency-low">LOW</span>Varun Tiwari &middot; Account scoring walkthrough complete. Send follow-up with any requested EMEA targeting strategy resources, account lists, or HG data methodology documentation relevant to their expansion goals.</div></div></div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none"><div class="empty-icon">&#128269;</div>No action items match these filters.</div>`;
+}
