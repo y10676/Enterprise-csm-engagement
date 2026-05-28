@@ -2802,62 +2802,39 @@ function dayMeta_2026_05_27() {
 }
 
 function dayOverviewHTML_2026_05_27() {
-  const chipColor = { varun:'background:#dbeafe;color:#1d4ed8', rani:'background:#d1fae5;color:#065f46', riley:'background:#dcfce7;color:#166534', atisha:'background:#fef3c7;color:#92400e', divyam:'background:#ffe4e6;color:#be123c', pam:'background:#fce7f3;color:#9d174d', nick:'background:#f3e8ff;color:#7c3aed', andy:'background:#fff7ed;color:#9a3412' };
-  const hasCalls = [
-    { key:'divyam', name:'Divyam Dewan',  n:1, accounts:['Xero (TR)'], summary:'Account intro · APAC midnight call · Goals captured' },
-    { key:'riley',  name:'Riley Rogers',  n:1, accounts:['SAP SuccessFactors (TR)'], summary:'Top Rated milestone · CMO + CPO engaged' },
-    { key:'rani',   name:'Rani Guy',      n:2, accounts:['Lenovo','Workday'], summary:'2 confirmed calls · Weekly syncs · Healthy' },
-    { key:'pam',    name:'Pam Huck',      n:1, accounts:['Ivanti (TR)'], summary:'Review coaching · Customer list unblock needed' },
-  ];
-  const noCalls = [
-    { key:'varun',  name:'Varun Tiwari',  events:5, note:'ServiceNow, Five9, Informatica, Autodesk, Zendesk — no recordings' },
-    { key:'nick',   name:'Nick Johnson',  events:2, note:'Accenture, Veeam — no recordings' },
-    { key:'atisha', name:'Atisha Waghela',events:5, note:'Salesforce, Unily, EY, RELEX, Optiv — no recordings' },
-    { key:'andy',   name:'Andy Lim',      events:4, note:'SAS EMEA, Cockroach Labs, Infoblox, SAS Inst. — no recordings' },
-  ];
-  const hasCards = hasCalls.map(c => `
-    <div style="background:white;border:1px solid #e2e8f0;border-top:3px solid #22c55e;border-radius:10px;padding:14px 16px;min-width:200px;flex:1">
-      <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
-        <span style="display:inline-flex;align-items:center;padding:3px 10px;border-radius:12px;font-size:11px;font-weight:600;${chipColor[c.key]}">${c.name}</span>
-        <span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600">${c.n} CALL${c.n>1?'S':''}</span>
-      </div>
-      <div style="font-size:12px;font-weight:600;color:#1e293b;margin-bottom:4px">${c.accounts.join(' · ')}</div>
-      <div style="font-size:11px;color:#64748b">${c.summary}</div>
-    </div>`).join('');
-  const noCards = noCalls.map(c => `
-    <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:12px 14px;min-width:180px;flex:1;opacity:.85">
-      <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
-        <span style="display:inline-flex;align-items:center;padding:3px 10px;border-radius:12px;font-size:11px;font-weight:600;${chipColor[c.key]}">${c.name}</span>
-        <span style="background:#f1f5f9;color:#64748b;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600">0 Confirmed</span>
-      </div>
-      <div style="font-size:11px;color:#94a3b8">${c.events} event${c.events>1?'s':''} scheduled · ${c.note}</div>
-    </div>`).join('');
-  return `
-  <div style="background:#f0fdf4;border:1px solid #bbf7d0;border-left:3px solid #22c55e;border-radius:6px;padding:10px 16px;margin-bottom:16px;font-size:13px;color:#14532d">
-    ✅ <strong>5 confirmed customer calls · 4 CSMs active.</strong> Post-Memorial Day Wednesday. All confirmed calls are Healthy. No escalations or concerning signals. 4 CSMs had scheduled events with no matching recordings.
+  return `<div class="section-label">Team Activity &mdash; Wednesday May 27, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Wed May 27 &mdash; 199 recordings scanned</strong> via SFDC SOQL &middot; <strong>5 confirmed customer calls</strong> across 4 CSMs &middot; 0 expansion signals &middot; 0 concerning &middot; Post-Memorial Day return &middot; 24 CSM events with no matching recording
   </div>
-  <div style="margin-bottom:12px;font-size:12px;font-weight:600;color:#374151;text-transform:uppercase;letter-spacing:.5px">CSMs with Confirmed Calls</div>
-  <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:20px">${hasCards}</div>
-  <div style="margin-bottom:12px;font-size:12px;font-weight:600;color:#374151;text-transform:uppercase;letter-spacing:.5px">CSMs — No Confirmed Recording</div>
-  <div style="display:flex;gap:12px;flex-wrap:wrap">${noCards}</div>`;
+  <div class="overview-grid">
+    <div class="csm-card has-calls" data-csm="riley"><span class="call-badge">1 CALL</span><div class="csm-card-header"><div class="avatar av-riley">RR</div><div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">SAP SuccessFactors (TrustRadius) &middot; Top Rated milestone &middot; CMO + CPO excited</div></div>
+    <div class="csm-card has-calls" data-csm="rani"><span class="call-badge">2 CALLS</span><div class="csm-card-header"><div class="avatar av-grey">RG</div><div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">Lenovo (weekly sync &middot; post-holiday warm-up) &middot; Workday (multi-stakeholder standing sync)</div></div>
+    <div class="csm-card has-calls" data-csm="divyam"><span class="call-badge">1 CALL</span><div class="csm-card-header"><div class="avatar av-divyam">DD</div><div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">Xero (TrustRadius) &middot; Account handover intro &middot; APAC midnight call &middot; Goals captured</div></div>
+    <div class="csm-card has-calls" data-csm="pam"><span class="call-badge">1 CALL</span><div class="csm-card-header"><div class="avatar av-grey">PH</div><div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">Ivanti (TrustRadius) &middot; Review coaching &middot; Customer list creation stalled &mdash; follow-up needed</div></div>
+    <div class="csm-card no-calls" data-csm="varun"><span class="no-call-badge">0 Calls</span><div class="csm-card-header"><div class="avatar av-varun">VT</div><div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-account-note" style="color:#94a3b8;font-size:11px;">5 events scheduled &mdash; no recordings (ServiceNow, Five9, Informatica, Autodesk, Zendesk)</div></div>
+    <div class="csm-card no-calls" data-csm="nick"><span class="no-call-badge">0 Calls</span><div class="csm-card-header"><div class="avatar av-grey">NJ</div><div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 events scheduled &mdash; no recordings (Accenture, Veeam)</div></div>
+    <div class="csm-card no-calls" data-csm="atisha"><span class="no-call-badge">0 Calls</span><div class="csm-card-header"><div class="avatar av-grey">AW</div><div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-account-note" style="color:#94a3b8;font-size:11px;">5 events scheduled &mdash; no recordings (Salesforce, Unily, EY, RELEX, Optiv)</div></div>
+    <div class="csm-card no-calls" data-csm="andy"><span class="no-call-badge">0 Calls</span><div class="csm-card-header"><div class="avatar av-grey">AL</div><div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-account-note" style="color:#94a3b8;font-size:11px;">4 events scheduled &mdash; no recordings (SAS EMEA, Cockroach Labs, Infoblox, SAS Inst.)</div></div>
+  </div>`;
 }
 
 function dayCallsHTML_2026_05_27() {
   const rows = [
-    { time:'12:15 AM PT', csm:'divyam', csmLbl:'Divyam Dewan',  account:'Xero (TrustRadius)',          mins:30, nature:'Ad-hoc',  init:'HG CS',    purpose:'Check-in (Account Intro)',     health:'Healthy', note:'New account handover. AM Angus Hyams joined. Sydney contact Andrea Gonzalez. Goals & priorities for 2026 captured.' },
-    { time:'9:00 AM PT',  csm:'riley',  csmLbl:'Riley Rogers',   account:'SAP SuccessFactors (TrustRadius)', mins:30, nature:'Routine', init:'HG CS', purpose:'Check-in (Top Rated)',        health:'Healthy', note:'TrustRadius progress call. Riley confirmed Top Rated status shared. CMO and CPO very excited. Momentum strong.' },
-    { time:'12:00 PM PT', csm:'rani',   csmLbl:'Rani Guy',       account:'Lenovo',                      mins:30, nature:'Routine', init:'HG CS',    purpose:'Check-in',                     health:'Healthy', note:'Weekly sync. Contacts: Kristen, Ryan, Adrian Escobar. Post-holiday warm-up. Healthy cadence.' },
-    { time:'1:00 PM PT',  csm:'rani',   csmLbl:'Rani Guy',       account:'Workday',                     mins:30, nature:'Routine', init:'HG CS',    purpose:'Check-in',                     health:'Healthy', note:'Multi-stakeholder standing sync. Alexa Brown, Andrea Poljakovic, Kyle Hillstead, Mardigan Moffat attended.' },
-    { time:'1:00 PM PT',  csm:'pam',    csmLbl:'Pam Huck',       account:'Ivanti (TrustRadius)',         mins:30, nature:'Routine', init:'HG CS',    purpose:'Check-in (Review Coaching)',   health:'Healthy', note:'Review sourcing strategy coaching. Jenna Leonovich + Nandini Yamdagni. Customer list still stalled — follow-up needed.' },
+    { time:'12:15 AM PT', csm:'divyam', csmLbl:'Divyam Dewan',  account:'Xero (TrustRadius)',               mins:30, nature:'Ad-hoc',  init:'HG CS', purpose:'Check-in (Account Intro)',   health:'Healthy', note:'New account handover. AM Angus Hyams joined. Sydney contact Andrea Gonzalez. Goals &amp; priorities for 2026 captured.' },
+    { time:'9:00 AM PT',  csm:'riley',  csmLbl:'Riley Rogers',   account:'SAP SuccessFactors (TrustRadius)', mins:30, nature:'Routine', init:'HG CS', purpose:'Check-in (Top Rated)',       health:'Healthy', note:'TrustRadius progress call. Top Rated status confirmed shared. CMO and CPO very excited. Riley to send promotional toolkit.' },
+    { time:'12:00 PM PT', csm:'rani',   csmLbl:'Rani Guy',       account:'Lenovo',                           mins:30, nature:'Routine', init:'HG CS', purpose:'Check-in',                   health:'Healthy', note:'Weekly sync. Contacts: Kristen, Ryan, Adrian Escobar. Post-holiday warm-up. Healthy cadence.' },
+    { time:'1:00 PM PT',  csm:'rani',   csmLbl:'Rani Guy',       account:'Workday',                          mins:30, nature:'Routine', init:'HG CS', purpose:'Check-in',                   health:'Healthy', note:'Multi-stakeholder standing sync. Alexa Brown, Andrea Poljakovic, Kyle Hillstead, Mardigan Moffat attended. Healthy engagement.' },
+    { time:'1:00 PM PT',  csm:'pam',    csmLbl:'Pam Huck',       account:'Ivanti (TrustRadius)',              mins:30, nature:'Routine', init:'HG CS', purpose:'Check-in (Review Coaching)', health:'Healthy', note:'Review sourcing coaching. Jenna Leonovich + Nandini Yamdagni. Customer list still stalled on Ivanti side &mdash; follow-up needed.' },
   ];
   const chipColor = { varun:'#dbeafe;color:#1d4ed8', rani:'#d1fae5;color:#065f46', riley:'#dcfce7;color:#166534', atisha:'#fef3c7;color:#92400e', divyam:'#ffe4e6;color:#be123c', pam:'#fce7f3;color:#9d174d', nick:'#f3e8ff;color:#7c3aed', andy:'#fff7ed;color:#9a3412' };
-  const natColor = n => n==='Routine'?'background:#f3f4f6;color:#374151':'background:#fef9c3;color:#713f12';
-  const sigBadge = h => h==='Concerning'
+  const natColor  = n => n==='Routine'?'background:#f3f4f6;color:#374151':'background:#fef9c3;color:#713f12';
+  const sigBadge  = h => h==='Concerning'
     ? '<span style="display:inline-block;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;background:#fee2e2;color:#991b1b">&#x1F534; Concerning</span>'
     : '<span style="display:inline-block;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;background:#dcfce7;color:#166534">&#x2705; Healthy</span>';
+  const getChipKey = csm => csm.includes('divyam') ? 'divyam' : csm;
   const rows_html = rows.map(r=>`<tr>
     <td>${r.time}</td>
-    <td><span style="display:inline-flex;align-items:center;padding:3px 10px;border-radius:12px;font-size:11px;font-weight:600;background:${chipColor[r.csm]}">${r.csmLbl}</span></td>
+    <td><span style="display:inline-flex;align-items:center;padding:3px 10px;border-radius:12px;font-size:11px;font-weight:600;background:${chipColor[getChipKey(r.csm)]}">${r.csmLbl}</span></td>
     <td>${r.account}</td>
     <td>${r.mins} min</td>
     <td><span style="display:inline-block;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;${natColor(r.nature)}">${r.nature}</span></td>
@@ -2867,11 +2844,11 @@ function dayCallsHTML_2026_05_27() {
     <td style="font-size:12px;color:#64748b;max-width:260px">${r.note}</td>
   </tr>`).join('');
   return `
-  <div style="background:#f0fdf4;border:1px solid #bbf7d0;border-left:3px solid #22c55e;border-radius:6px;padding:8px 14px;margin:0 0 12px 0;font-size:12px;color:#14532d;">
-    &#x2705; <strong>All 5 confirmed calls: Healthy signals.</strong> Post-Memorial Day Wednesday. No escalations. 4 CSMs had scheduled events with no Weflow recordings.
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 12px 0;font-size:12px;color:#7dd3fc;">
+    &#x2705; <strong>All 5 confirmed calls: Healthy signals.</strong> Post-Memorial Day Wednesday &middot; No escalations or concerning signals &middot; All 4 CSMs actively engaged
   </div>
-  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-left:3px solid #94a3b8;border-radius:6px;padding:8px 14px;margin:0 0 12px 0;font-size:12px;color:#334155;">
-    &#x26A0;&#xFE0F; <strong>24 CSM events found with no matching Weflow recording</strong> — Varun (5), Atisha (5), Andy (4), Nick (2), Rani (3), Pam (2), Riley (1). Meetings may have occurred without being recorded.
+  <div style="background:#1c1f26;border:1px solid #64748b;border-left:3px solid #64748b;border-radius:6px;padding:8px 14px;margin:0 0 12px 0;font-size:12px;color:#cbd5e1;">
+    &#x26A0;&#xFE0F; <strong>24 CSM events with no matching Weflow recording</strong> &mdash; Varun (5), Atisha (5), Andy (4), Rani (3), Pam (2), Nick (2), Riley (1). Meetings may have occurred without being recorded.
   </div>
   <div style="overflow-x:auto">
   <table style="width:100%;border-collapse:collapse;background:white;border-radius:10px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.08);font-size:13px">
