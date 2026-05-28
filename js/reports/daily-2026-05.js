@@ -2767,3 +2767,161 @@ function dayActionsHTML_2026_05_26() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none"><div class="empty-icon">&#128269;</div>No action items match these filters.</div>`;
 }
+
+// ─── 2026-05-27 ────────────────────────────────────────────────────────────
+
+function dayData_2026_05_27() {
+  return {
+    calls: [
+      { ts:'12:15 AM PT', csm:'divyam', account:'Xero (TrustRadius)',       note:'Account handover intro meeting with AM Angus Hyams. Sydney-based contact Andrea Gonzalez. Goals & priorities for 2026 captured. First meeting since account transfer.', mins:30, health:'Healthy' },
+      { ts:'9:00 AM PT',  csm:'riley',  account:'SAP SuccessFactors (TrustRadius)', note:'TrustRadius progress call. Top Rated milestone confirmed and shared by CMO and CPO. Strong executive-level excitement.', mins:30, health:'Healthy' },
+      { ts:'12:00 PM PT', csm:'rani',   account:'Lenovo',                   note:'Weekly sync. Post-holiday warm-up. Contacts: Kristen, Ryan, Adrian Escobar. Healthy ongoing cadence.', mins:30, health:'Healthy' },
+      { ts:'1:00 PM PT',  csm:'rani',   account:'Workday',                  note:'Standing multi-stakeholder sync. Alexa Brown, Andrea Poljakovic, Kyle Hillstead, Mardigan Moffat attended. Healthy engagement.', mins:30, health:'Healthy' },
+      { ts:'1:00 PM PT',  csm:'pam',    account:'Ivanti (TrustRadius)',      note:'TrustRadius CSM sync. Pam coaching Jenna Leonovich on review sourcing strategy. Customer list creation stalled on Ivanti side — follow-up needed.', mins:30, health:'Healthy' },
+    ],
+    pulses: [
+      { csm:'divyam', account:'Xero',                   health:'Healthy',   note:'5/27 DD: Account intro (12:15 AM PT, 30 min, APAC). CSM handover complete. Goals & priorities captured. Positive start.' },
+      { csm:'riley',  account:'SAP SuccessFactors',      health:'Healthy',   note:'5/27 RR: Top Rated milestone (9:00 AM PT, 30 min). CMO + CPO both excited and engaged. Promotion toolkit to follow.' },
+      { csm:'rani',   account:'Lenovo',                  health:'Healthy',   note:'5/27 RG: Weekly sync (12:00 PM PT, 30 min). Post-holiday cadence. Contacts: Kristen, Ryan, Adrian Escobar.' },
+      { csm:'rani',   account:'Workday',                 health:'Healthy',   note:'5/27 RG: Multi-stakeholder sync (1:00 PM PT, 30 min). 4 Workday contacts. Healthy engagement.' },
+      { csm:'pam',    account:'Ivanti',                  health:'Healthy',   note:'5/27 PH: Review coaching sync (1:00 PM PT, 30 min). List creation stalled — monitor and unblock.' },
+    ]
+  };
+}
+
+function dayMeta_2026_05_27() {
+  return {
+    pills: [
+      { label:'5 Calls', color:'#16a34a' },
+      { label:'4 CSMs Active', color:'#2563eb' },
+      { label:'0 Concerning', color:'#64748b' },
+      { label:'Post-Memorial Day', color:'#7c3aed' },
+    ],
+    tabs: [
+      { id:'overview', label:'Overview' },
+      { id:'calls',    label:'Calls (5)' },
+      { id:'pulses',   label:'Pulses (5)' },
+      { id:'actions',  label:'Actions (4)' },
+    ]
+  };
+}
+
+function dayOverviewHTML_2026_05_27() {
+  const chipColor = { varun:'background:#dbeafe;color:#1d4ed8', rani:'background:#d1fae5;color:#065f46', riley:'background:#dcfce7;color:#166534', atisha:'background:#fef3c7;color:#92400e', divyam:'background:#ffe4e6;color:#be123c', pam:'background:#fce7f3;color:#9d174d', nick:'background:#f3e8ff;color:#7c3aed', andy:'background:#fff7ed;color:#9a3412' };
+  const hasCalls = [
+    { key:'divyam', name:'Divyam Dewan',  n:1, accounts:['Xero (TR)'], summary:'Account intro · APAC midnight call · Goals captured' },
+    { key:'riley',  name:'Riley Rogers',  n:1, accounts:['SAP SuccessFactors (TR)'], summary:'Top Rated milestone · CMO + CPO engaged' },
+    { key:'rani',   name:'Rani Guy',      n:2, accounts:['Lenovo','Workday'], summary:'2 confirmed calls · Weekly syncs · Healthy' },
+    { key:'pam',    name:'Pam Huck',      n:1, accounts:['Ivanti (TR)'], summary:'Review coaching · Customer list unblock needed' },
+  ];
+  const noCalls = [
+    { key:'varun',  name:'Varun Tiwari',  events:5, note:'ServiceNow, Five9, Informatica, Autodesk, Zendesk — no recordings' },
+    { key:'nick',   name:'Nick Johnson',  events:2, note:'Accenture, Veeam — no recordings' },
+    { key:'atisha', name:'Atisha Waghela',events:5, note:'Salesforce, Unily, EY, RELEX, Optiv — no recordings' },
+    { key:'andy',   name:'Andy Lim',      events:4, note:'SAS EMEA, Cockroach Labs, Infoblox, SAS Inst. — no recordings' },
+  ];
+  const hasCards = hasCalls.map(c => `
+    <div style="background:white;border:1px solid #e2e8f0;border-top:3px solid #22c55e;border-radius:10px;padding:14px 16px;min-width:200px;flex:1">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+        <span style="display:inline-flex;align-items:center;padding:3px 10px;border-radius:12px;font-size:11px;font-weight:600;${chipColor[c.key]}">${c.name}</span>
+        <span style="background:#dcfce7;color:#166534;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600">${c.n} CALL${c.n>1?'S':''}</span>
+      </div>
+      <div style="font-size:12px;font-weight:600;color:#1e293b;margin-bottom:4px">${c.accounts.join(' · ')}</div>
+      <div style="font-size:11px;color:#64748b">${c.summary}</div>
+    </div>`).join('');
+  const noCards = noCalls.map(c => `
+    <div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:12px 14px;min-width:180px;flex:1;opacity:.85">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+        <span style="display:inline-flex;align-items:center;padding:3px 10px;border-radius:12px;font-size:11px;font-weight:600;${chipColor[c.key]}">${c.name}</span>
+        <span style="background:#f1f5f9;color:#64748b;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600">0 Confirmed</span>
+      </div>
+      <div style="font-size:11px;color:#94a3b8">${c.events} event${c.events>1?'s':''} scheduled · ${c.note}</div>
+    </div>`).join('');
+  return `
+  <div style="background:#f0fdf4;border:1px solid #bbf7d0;border-left:3px solid #22c55e;border-radius:6px;padding:10px 16px;margin-bottom:16px;font-size:13px;color:#14532d">
+    ✅ <strong>5 confirmed customer calls · 4 CSMs active.</strong> Post-Memorial Day Wednesday. All confirmed calls are Healthy. No escalations or concerning signals. 4 CSMs had scheduled events with no matching recordings.
+  </div>
+  <div style="margin-bottom:12px;font-size:12px;font-weight:600;color:#374151;text-transform:uppercase;letter-spacing:.5px">CSMs with Confirmed Calls</div>
+  <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:20px">${hasCards}</div>
+  <div style="margin-bottom:12px;font-size:12px;font-weight:600;color:#374151;text-transform:uppercase;letter-spacing:.5px">CSMs — No Confirmed Recording</div>
+  <div style="display:flex;gap:12px;flex-wrap:wrap">${noCards}</div>`;
+}
+
+function dayCallsHTML_2026_05_27() {
+  const rows = [
+    { time:'12:15 AM PT', csm:'divyam', csmLbl:'Divyam Dewan',  account:'Xero (TrustRadius)',          mins:30, nature:'Ad-hoc',  init:'HG CS',    purpose:'Check-in (Account Intro)',     health:'Healthy', note:'New account handover. AM Angus Hyams joined. Sydney contact Andrea Gonzalez. Goals & priorities for 2026 captured.' },
+    { time:'9:00 AM PT',  csm:'riley',  csmLbl:'Riley Rogers',   account:'SAP SuccessFactors (TrustRadius)', mins:30, nature:'Routine', init:'HG CS', purpose:'Check-in (Top Rated)',        health:'Healthy', note:'TrustRadius progress call. Riley confirmed Top Rated status shared. CMO and CPO very excited. Momentum strong.' },
+    { time:'12:00 PM PT', csm:'rani',   csmLbl:'Rani Guy',       account:'Lenovo',                      mins:30, nature:'Routine', init:'HG CS',    purpose:'Check-in',                     health:'Healthy', note:'Weekly sync. Contacts: Kristen, Ryan, Adrian Escobar. Post-holiday warm-up. Healthy cadence.' },
+    { time:'1:00 PM PT',  csm:'rani',   csmLbl:'Rani Guy',       account:'Workday',                     mins:30, nature:'Routine', init:'HG CS',    purpose:'Check-in',                     health:'Healthy', note:'Multi-stakeholder standing sync. Alexa Brown, Andrea Poljakovic, Kyle Hillstead, Mardigan Moffat attended.' },
+    { time:'1:00 PM PT',  csm:'pam',    csmLbl:'Pam Huck',       account:'Ivanti (TrustRadius)',         mins:30, nature:'Routine', init:'HG CS',    purpose:'Check-in (Review Coaching)',   health:'Healthy', note:'Review sourcing strategy coaching. Jenna Leonovich + Nandini Yamdagni. Customer list still stalled — follow-up needed.' },
+  ];
+  const chipColor = { varun:'#dbeafe;color:#1d4ed8', rani:'#d1fae5;color:#065f46', riley:'#dcfce7;color:#166534', atisha:'#fef3c7;color:#92400e', divyam:'#ffe4e6;color:#be123c', pam:'#fce7f3;color:#9d174d', nick:'#f3e8ff;color:#7c3aed', andy:'#fff7ed;color:#9a3412' };
+  const natColor = n => n==='Routine'?'background:#f3f4f6;color:#374151':'background:#fef9c3;color:#713f12';
+  const sigBadge = h => h==='Concerning'
+    ? '<span style="display:inline-block;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;background:#fee2e2;color:#991b1b">&#x1F534; Concerning</span>'
+    : '<span style="display:inline-block;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;background:#dcfce7;color:#166534">&#x2705; Healthy</span>';
+  const rows_html = rows.map(r=>`<tr>
+    <td>${r.time}</td>
+    <td><span style="display:inline-flex;align-items:center;padding:3px 10px;border-radius:12px;font-size:11px;font-weight:600;background:${chipColor[r.csm]}">${r.csmLbl}</span></td>
+    <td>${r.account}</td>
+    <td>${r.mins} min</td>
+    <td><span style="display:inline-block;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;${natColor(r.nature)}">${r.nature}</span></td>
+    <td>${r.init}</td>
+    <td>${r.purpose}</td>
+    <td>${sigBadge(r.health)}</td>
+    <td style="font-size:12px;color:#64748b;max-width:260px">${r.note}</td>
+  </tr>`).join('');
+  return `
+  <div style="background:#f0fdf4;border:1px solid #bbf7d0;border-left:3px solid #22c55e;border-radius:6px;padding:8px 14px;margin:0 0 12px 0;font-size:12px;color:#14532d;">
+    &#x2705; <strong>All 5 confirmed calls: Healthy signals.</strong> Post-Memorial Day Wednesday. No escalations. 4 CSMs had scheduled events with no Weflow recordings.
+  </div>
+  <div style="background:#f8fafc;border:1px solid #e2e8f0;border-left:3px solid #94a3b8;border-radius:6px;padding:8px 14px;margin:0 0 12px 0;font-size:12px;color:#334155;">
+    &#x26A0;&#xFE0F; <strong>24 CSM events found with no matching Weflow recording</strong> — Varun (5), Atisha (5), Andy (4), Nick (2), Rani (3), Pam (2), Riley (1). Meetings may have occurred without being recorded.
+  </div>
+  <div style="overflow-x:auto">
+  <table style="width:100%;border-collapse:collapse;background:white;border-radius:10px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.08);font-size:13px">
+    <thead><tr style="background:#1e293b;color:white">
+      <th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px">Time (PT)</th>
+      <th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px">CSM</th>
+      <th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px">Account</th>
+      <th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px">Dur</th>
+      <th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px">Nature</th>
+      <th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px">Initiated By</th>
+      <th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px">Purpose</th>
+      <th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px">Signal</th>
+      <th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px">Notes</th>
+    </tr></thead>
+    <tbody>${rows_html}</tbody>
+  </table>
+  </div>
+  <div class="empty-state" id="calls-empty" style="display:none"><div class="empty-icon">&#128269;</div>No calls match these filters.</div>`;
+}
+
+function dayPulsesHTML_2026_05_27() {
+  const cards = [
+    { csm:'divyam', health:'Healthy',  account:'Xero',                opp:'Vitally Pulse &mdash; May 27 Call', arr:'Enterprise &middot; Divyam Dewan', csmlbl:'Divyam Dewan', change:'May 27 &middot; Account intro (APAC)', excerpt:'5/27 DD: Account handover intro (12:15 AM PT, 30 min, APAC). First meeting since Divyam took over Xero. Andrea Gonzalez (Sydney) attended with AM Angus Hyams. Goals & priorities for 2026 captured. Positive and constructive first contact.' },
+    { csm:'riley',  health:'Healthy',  account:'SAP SuccessFactors',   opp:'Vitally Pulse &mdash; May 27 Call', arr:'Enterprise &middot; Riley Rogers',  csmlbl:'Riley Rogers',  change:'May 27 &middot; Top Rated milestone', excerpt:'5/27 RR: TrustRadius progress call (9:00 AM PT, 30 min). Top Rated status confirmed delivered. Kristin Mestre confirmed she shared it with CMO and Chief Product Officer — both very excited. Riley to send promotional toolkit to enable external celebration.' },
+    { csm:'rani',   health:'Healthy',  account:'Lenovo',               opp:'Vitally Pulse &mdash; May 27 Call', arr:'Enterprise &middot; Rani Guy',       csmlbl:'Rani Guy',      change:'May 27 &middot; Weekly sync', excerpt:'5/27 RG: Weekly Lenovo sync (12:00 PM PT, 30 min). Contacts: Kristen, Ryan, Adrian Escobar. Post-Memorial Day warm-up. Healthy ongoing cadence with no escalations or issues noted.' },
+    { csm:'rani',   health:'Healthy',  account:'Workday',              opp:'Vitally Pulse &mdash; May 27 Call', arr:'Enterprise &middot; Rani Guy',       csmlbl:'Rani Guy',      change:'May 27 &middot; Multi-stakeholder sync', excerpt:'5/27 RG: Workday standing sync (1:00 PM PT, 30 min). 4 Workday attendees (Alexa Brown, Andrea Poljakovic, Kyle Hillstead, Mardigan Moffat) + HG colleague Cole Arutian. Strong multi-contact engagement. Relationship healthy.' },
+    { csm:'pam',    health:'Healthy',  account:'Ivanti',               opp:'Vitally Pulse &mdash; May 27 Call', arr:'Enterprise &middot; Pam Huck',       csmlbl:'Pam Huck',      change:'May 27 &middot; Review coaching · Monitor ⚠️', excerpt:'5/27 PH: TrustRadius CSM sync (1:00 PM PT, 30 min). Jenna Leonovich + Nandini Yamdagni. Pam coaching on review sourcing: renewed-customer lists, support ticket triggers, primer emails for security vertical. Customer list creation stalled on Ivanti side — follow-up needed to unblock campaign launch.' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top"><div><div class="pulse-account">${c.account}</div><div class="pulse-opp">${c.opp}</div><div class="pulse-arr">${c.arr}</div></div><span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span></div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none"><div class="empty-icon">&#128269;</div>No pulses match these filters.</div>`;
+}
+
+function dayActionsHTML_2026_05_27() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has(2701)?'done':''}" data-csm="divyam" id="action-2701"><div class="action-checkbox ${doneActions.has(2701)?'checked':''}" onclick="toggleAction(2701)"></div><div class="action-body"><div class="action-title">&#x1F4CB; Xero &mdash; Send post-intro summary: goals, priorities, and next steps to Andrea Gonzalez</div><div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Divyam Dewan &middot; First meeting complete with Andrea Gonzalez (Sydney). Follow-up email should summarize the 2026 goals and priorities discussed, confirm next steps for the subscription, and loop in AM Angus Hyams. Set up a recurring cadence.</div></div></div>
+    <div class="action-item ${doneActions.has(2702)?'done':''}" data-csm="riley" id="action-2702"><div class="action-checkbox ${doneActions.has(2702)?'checked':''}" onclick="toggleAction(2702)"></div><div class="action-body"><div class="action-title">&#x1F3C6; SAP SuccessFactors &mdash; Send Top Rated promotional toolkit to Kristin for CMO/CPO distribution</div><div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Riley Rogers &middot; CMO and Chief Product Officer are already engaged and excited. Riley to send the formal Top Rated award promotion package &mdash; badge assets, press kit, social content &mdash; to Kristin Mestre while momentum is high. Enable executive-level celebration.</div></div></div>
+    <div class="action-item ${doneActions.has(2703)?'done':''}" data-csm="pam" id="action-2703"><div class="action-checkbox ${doneActions.has(2703)?'checked':''}" onclick="toggleAction(2703)"></div><div class="action-body"><div class="action-title">&#x1F4AC; Ivanti &mdash; Follow up with Jenna Leonovich to unblock customer list creation for review campaign</div><div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Pam Huck &middot; Jenna acknowledged the customer list is &ldquo;still stalled&rdquo; on Ivanti&rsquo;s side. Pam to check in with a specific deadline and offer to help structure the list criteria. Without this list, the TrustRadius review sourcing campaign cannot launch.</div></div></div>
+    <div class="action-item ${doneActions.has(2704)?'done':''}" data-csm="rani" id="action-2704"><div class="action-checkbox ${doneActions.has(2704)?'checked':''}" onclick="toggleAction(2704)"></div><div class="action-body"><div class="action-title">&#x1F50D; Lenovo/OneSix Onboarding &mdash; Verify whether 9:30 AM PT sync ran (SFDC event found, no recording)</div><div class="action-meta"><span class="urgency-badge urgency-low">LOW</span>Rani Guy &middot; SFDC shows a &ldquo;HG Insights / Lenovo / OneSix Onboarding sync&rdquo; event at 9:30 AM PT with a Weflow EventId but no recording appeared in the day&rsquo;s scan. Confirm whether the meeting occurred and document any outcomes in Vitally.</div></div></div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none"><div class="empty-icon">&#128269;</div>No action items match these filters.</div>`;
+}
