@@ -2804,7 +2804,13 @@ function dayMeta_2026_05_27() {
 function dayOverviewHTML_2026_05_27() {
   return `<div class="section-label">Team Activity &mdash; Wednesday May 27, 2026</div>
   <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
-    &#x1F4C5; <strong>Wed May 27 &mdash; 199 recordings scanned</strong> via SFDC SOQL &middot; <strong>5 confirmed customer calls</strong> across 4 CSMs &middot; 0 expansion signals &middot; 0 concerning &middot; Post-Memorial Day return &middot; 24 CSM events with no matching recording
+    &#x1F4C5; <strong>Wed May 27 &mdash; 199 recordings scanned</strong> via SFDC SOQL &middot; <strong>5 confirmed customer calls</strong> across 4 CSMs &middot; Post-Memorial Day return &middot; 0 concerning &middot; 0 expansion signals
+  </div>
+  <div style="background:#0f2a1e;border:1px solid #22c55e;border-left:3px solid #22c55e;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#86efac;">
+    &#x2705; <strong>All 5 confirmed calls healthy</strong> &middot; Riley Rogers (SAP SuccessFactors &mdash; Top Rated milestone) &middot; Rani Guy (Lenovo + Workday) &middot; Divyam Dewan (Xero handover) &middot; Pam Huck (Ivanti review coaching)
+  </div>
+  <div style="background:#1c1f26;border:1px solid #64748b;border-left:3px solid #64748b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#cbd5e1;">
+    &#x26A0;&#xFE0F; <strong>24 CSM events with no matching Weflow recording</strong> &mdash; Varun (5: ServiceNow, Five9, Informatica, Autodesk, Zendesk) &middot; Atisha (5: Salesforce, Unily, EY, RELEX, Optiv) &middot; Andy (4: SAS EMEA, Cockroach Labs, Infoblox, SAS Inst.) &middot; Rani (3) &middot; Pam (2) &middot; Nick (2: Accenture, Veeam) &middot; Riley (1). Meetings may have occurred without being recorded.
   </div>
   <div class="overview-grid">
     <div class="csm-card has-calls" data-csm="riley"><span class="call-badge">1 CALL</span><div class="csm-card-header"><div class="avatar av-riley">RR</div><div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div></div><div class="csm-metrics"><div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div><div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div><div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div></div><div class="csm-account-note">SAP SuccessFactors (TrustRadius) &middot; Top Rated milestone &middot; CMO + CPO excited</div></div>
@@ -2822,8 +2828,8 @@ function dayCallsHTML_2026_05_27() {
   const rows = [
     { time:'12:15 AM PT', csm:'divyam', csmLbl:'Divyam Dewan',  account:'Xero (TrustRadius)',               mins:30, nature:'Ad-hoc',  init:'HG CS', purpose:'Check-in (Account Intro)',   health:'Healthy', note:'New account handover. AM Angus Hyams joined. Sydney contact Andrea Gonzalez. Goals &amp; priorities for 2026 captured.' },
     { time:'9:00 AM PT',  csm:'riley',  csmLbl:'Riley Rogers',   account:'SAP SuccessFactors (TrustRadius)', mins:30, nature:'Routine', init:'HG CS', purpose:'Check-in (Top Rated)',       health:'Healthy', note:'TrustRadius progress call. Top Rated status confirmed shared. CMO and CPO very excited. Riley to send promotional toolkit.' },
-    { time:'12:00 PM PT', csm:'rani',   csmLbl:'Rani Guy',       account:'Lenovo',                           mins:30, nature:'Routine', init:'HG CS', purpose:'Check-in',                   health:'Healthy', note:'Weekly sync. Contacts: Kristen, Ryan, Adrian Escobar. Post-holiday warm-up. Healthy cadence.' },
-    { time:'1:00 PM PT',  csm:'rani',   csmLbl:'Rani Guy',       account:'Workday',                          mins:30, nature:'Routine', init:'HG CS', purpose:'Check-in',                   health:'Healthy', note:'Multi-stakeholder standing sync. Alexa Brown, Andrea Poljakovic, Kyle Hillstead, Mardigan Moffat attended. Healthy engagement.' },
+    { time:'12:00 PM PT', csm:'rani',   csmLbl:'Rani Guy',       account:'Lenovo',                           mins:30, nature:'Routine', init:'HG CS', purpose:'Check-in (Weekly Sync)',      health:'Healthy', note:'Weekly sync. Contacts: Kristen, Ryan, Adrian Escobar. Post-holiday warm-up. Healthy cadence.' },
+    { time:'1:00 PM PT',  csm:'rani',   csmLbl:'Rani Guy',       account:'Workday',                          mins:30, nature:'Routine', init:'HG CS', purpose:'Check-in (Multi-stakeholder)', health:'Healthy', note:'Multi-stakeholder standing sync. Alexa Brown, Andrea Poljakovic, Kyle Hillstead, Mardigan Moffat attended. Healthy engagement.' },
     { time:'1:00 PM PT',  csm:'pam',    csmLbl:'Pam Huck',       account:'Ivanti (TrustRadius)',              mins:30, nature:'Routine', init:'HG CS', purpose:'Check-in (Review Coaching)', health:'Healthy', note:'Review sourcing coaching. Jenna Leonovich + Nandini Yamdagni. Customer list still stalled on Ivanti side &mdash; follow-up needed.' },
   ];
   const chipColor = { varun:'#dbeafe;color:#1d4ed8', rani:'#d1fae5;color:#065f46', riley:'#dcfce7;color:#166534', atisha:'#fef3c7;color:#92400e', divyam:'#ffe4e6;color:#be123c', pam:'#fce7f3;color:#9d174d', nick:'#f3e8ff;color:#7c3aed', andy:'#fff7ed;color:#9a3412' };
@@ -2838,19 +2844,11 @@ function dayCallsHTML_2026_05_27() {
     <td>${r.account}</td>
     <td>${r.mins} min</td>
     <td><span style="display:inline-block;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;${natColor(r.nature)}">${r.nature}</span></td>
-    <td>${r.init}</td>
     <td>${r.purpose}</td>
     <td>${sigBadge(r.health)}</td>
     <td style="font-size:12px;color:#64748b;max-width:260px">${r.note}</td>
   </tr>`).join('');
-  return `
-  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 12px 0;font-size:12px;color:#7dd3fc;">
-    &#x2705; <strong>All 5 confirmed calls: Healthy signals.</strong> Post-Memorial Day Wednesday &middot; No escalations or concerning signals &middot; All 4 CSMs actively engaged
-  </div>
-  <div style="background:#1c1f26;border:1px solid #64748b;border-left:3px solid #64748b;border-radius:6px;padding:8px 14px;margin:0 0 12px 0;font-size:12px;color:#cbd5e1;">
-    &#x26A0;&#xFE0F; <strong>24 CSM events with no matching Weflow recording</strong> &mdash; Varun (5), Atisha (5), Andy (4), Rani (3), Pam (2), Nick (2), Riley (1). Meetings may have occurred without being recorded.
-  </div>
-  <div style="overflow-x:auto">
+  return `<div style="overflow-x:auto">
   <table style="width:100%;border-collapse:collapse;background:white;border-radius:10px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.08);font-size:13px">
     <thead><tr style="background:#1e293b;color:white">
       <th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px">Time (PT)</th>
@@ -2858,7 +2856,6 @@ function dayCallsHTML_2026_05_27() {
       <th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px">Account</th>
       <th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px">Dur</th>
       <th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px">Nature</th>
-      <th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px">Initiated By</th>
       <th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px">Purpose</th>
       <th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px">Signal</th>
       <th style="padding:10px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.5px">Notes</th>
