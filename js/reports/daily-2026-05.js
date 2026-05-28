@@ -2792,17 +2792,12 @@ function dayData_2026_05_27() {
 function dayMeta_2026_05_27() {
   return {
     pills: [
-      { label:'5 Calls', color:'#16a34a' },
-      { label:'4 CSMs Active', color:'#2563eb' },
-      { label:'0 Concerning', color:'#64748b' },
-      { label:'Post-Memorial Day', color:'#7c3aed' },
+      ['dot-teal',   '5 Calls'],
+      ['dot-amber',  '4 CSMs Active'],
+      ['dot-grey',   '0 Concerning'],
+      ['dot-purple', 'Post-Memorial Day'],
     ],
-    tabs: [
-      { id:'overview', label:'Overview' },
-      { id:'calls',    label:'Calls (5)' },
-      { id:'pulses',   label:'Pulses (5)' },
-      { id:'actions',  label:'Actions (4)' },
-    ]
+    tabs: ['Overview', 'Calls (5)', 'Pulses (5)', 'Action Items (4)']
   };
 }
 
