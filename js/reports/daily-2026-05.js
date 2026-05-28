@@ -2773,11 +2773,21 @@ function dayActionsHTML_2026_05_26() {
 function dayData_2026_05_27() {
   return {
     calls: [
-      { ts:'12:15 AM PT', csm:'divyam', account:'Xero (TrustRadius)',       note:'Account handover intro meeting with AM Angus Hyams. Sydney-based contact Andrea Gonzalez. Goals & priorities for 2026 captured. First meeting since account transfer.', mins:30, health:'Healthy' },
-      { ts:'9:00 AM PT',  csm:'riley',  account:'SAP SuccessFactors (TrustRadius)', note:'TrustRadius progress call. Top Rated milestone confirmed and shared by CMO and CPO. Strong executive-level excitement.', mins:30, health:'Healthy' },
-      { ts:'12:00 PM PT', csm:'rani',   account:'Lenovo',                   note:'Weekly sync. Post-holiday warm-up. Contacts: Kristen, Ryan, Adrian Escobar. Healthy ongoing cadence.', mins:30, health:'Healthy' },
-      { ts:'1:00 PM PT',  csm:'rani',   account:'Workday',                  note:'Standing multi-stakeholder sync. Alexa Brown, Andrea Poljakovic, Kyle Hillstead, Mardigan Moffat attended. Healthy engagement.', mins:30, health:'Healthy' },
-      { ts:'1:00 PM PT',  csm:'pam',    account:'Ivanti (TrustRadius)',      note:'TrustRadius CSM sync. Pam coaching Jenna Leonovich on review sourcing strategy. Customer list creation stalled on Ivanti side — follow-up needed.', mins:30, health:'Healthy' },
+      { ts:'May 27 · 12:15 AM', csm:'divyam', account:'Xero (TrustRadius)',       note:'Account handover intro meeting with AM Angus Hyams. Sydney-based contact Andrea Gonzalez. Goals & priorities for 2026 captured. First meeting since account transfer.', mins:30, health:'Healthy',
+        nature:'Ad-hoc', initiator:'HG CS', purpose:'Check-in',
+        detail:'Account handover intro meeting. AM Angus Hyams joined. Sydney-based contact Andrea Gonzalez attended. Goals and priorities for 2026 captured. Positive first meeting since account transfer to Divyam.' },
+      { ts:'May 27 · 9:00 AM',  csm:'riley',  account:'SAP SuccessFactors (TrustRadius)', note:'TrustRadius progress call. Top Rated milestone confirmed and shared by CMO and CPO. Strong executive-level excitement.', mins:30, health:'Healthy',
+        nature:'Routine', initiator:'HG CS', purpose:'Check-in',
+        detail:'TrustRadius progress call. Top Rated milestone confirmed delivered. Kristin Mestre confirmed she shared it with CMO and Chief Product Officer — both very excited. Riley to send promotional toolkit to enable external celebration.' },
+      { ts:'May 27 · 12:00 PM', csm:'rani',   account:'Lenovo',                   note:'Weekly sync. Post-holiday warm-up. Contacts: Kristen, Ryan, Adrian Escobar. Healthy ongoing cadence.', mins:30, health:'Healthy',
+        nature:'Routine', initiator:'HG CS', purpose:'Check-in',
+        detail:'Weekly Lenovo sync. Post-Memorial Day warm-up call. Contacts: Kristen, Ryan, Adrian Escobar. Healthy ongoing cadence with no escalations or issues noted.' },
+      { ts:'May 27 · 1:00 PM',  csm:'rani',   account:'Workday',                  note:'Standing multi-stakeholder sync. Alexa Brown, Andrea Poljakovic, Kyle Hillstead, Mardigan Moffat attended. Healthy engagement.', mins:30, health:'Healthy',
+        nature:'Routine', initiator:'HG CS', purpose:'Check-in',
+        detail:'Standing multi-stakeholder sync. Alexa Brown, Andrea Poljakovic, Kyle Hillstead, Mardigan Moffat attended. Cole Arutian (HG) also joined. Strong multi-contact engagement. Relationship healthy.' },
+      { ts:'May 27 · 1:00 PM',  csm:'pam',    account:'Ivanti (TrustRadius)',      note:'TrustRadius CSM sync. Pam coaching Jenna Leonovich on review sourcing strategy. Customer list creation stalled on Ivanti side — follow-up needed.', mins:30, health:'Healthy',
+        nature:'Routine', initiator:'HG CS', purpose:'Check-in',
+        detail:'TrustRadius CSM sync. Pam coaching Jenna Leonovich and Nandini Yamdagni on review sourcing strategy: renewed-customer lists, support ticket triggers, primer emails for security vertical. Customer list creation stalled on Ivanti side — follow-up needed to unblock campaign launch.' },
     ],
     pulses: [
       { csm:'divyam', account:'Xero',                   health:'Healthy',   note:'5/27 DD: Account intro (12:15 AM PT, 30 min, APAC). CSM handover complete. Goals & priorities captured. Positive start.' },
