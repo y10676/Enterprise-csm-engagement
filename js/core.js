@@ -995,7 +995,7 @@ function accountsHTML() {
         <td style="padding:6px 10px;font-size:11px;color:#6b7280">${acct.lastOutbound ? isoToDate(acct.lastOutbound).toLocaleDateString('en-US', {month:'short', day:'numeric'}) : '—'}</td>
         <td style="padding:6px 10px;font-size:11px;color:#6b7280;font-variant-numeric:tabular-nums">${acct.latestPulseDate ? isoToDate(acct.latestPulseDate).toLocaleDateString('en-US', {month:'short', day:'numeric', year:'numeric'}) : '—'}</td>
         <td style="${wp.pulse && wp.color ? `padding:4px 10px;font-size:11px;background-color:${wp.color};color:white;border-radius:4px;text-align:center;font-weight:500` : 'padding:6px 10px;font-size:11px;color:#9ca3af'}">${wp.pulse || '—'}</td>
-        ${oppNoteCell(wp.note || acct.pulseNote)}
+        ${oppNoteCell(acct.pulseNote)}
         <td style="padding:6px 10px;font-size:11px;color:#6b7280;font-variant-numeric:tabular-nums">${acct.renewalDate || '—'}</td>
       </tr>
       ${oppRows}

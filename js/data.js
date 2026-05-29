@@ -160,7 +160,7 @@ const ACCOUNTS_DATA = [
     "pulse": "Healthy",
     "pulseNote": "",
     "pulseColor": "green",
-    "renewalDate": "2027-06-30",
+    "renewalDate": "2026-06-30",
     "latestPulseDate": "2026-05-21",
     "opportunities": [
       {
@@ -238,7 +238,7 @@ const ACCOUNTS_DATA = [
     "pulse": "Healthy",
     "pulseNote": "",
     "pulseColor": "green",
-    "renewalDate": "2028-11-29",
+    "renewalDate": "2026-12-31",
     "latestPulseDate": "2026-05-15",
     "opportunities": [
       {
@@ -288,7 +288,7 @@ const ACCOUNTS_DATA = [
     "pulse": "Healthy",
     "pulseNote": "",
     "pulseColor": "green",
-    "renewalDate": "2026-07-28",
+    "renewalDate": "2026-07-21",
     "latestPulseDate": "2026-05-26",
     "opportunities": [
       {
@@ -745,7 +745,7 @@ const ACCOUNTS_DATA = [
     "pulse": "Poor",
     "pulseNote": "",
     "pulseColor": "red",
-    "renewalDate": "2026-11-03",
+    "renewalDate": "2026-06-25",
     "latestPulseDate": "2026-05-29",
     "opportunities": [
       {
@@ -850,7 +850,7 @@ const ACCOUNTS_DATA = [
     "pulse": "Healthy",
     "pulseNote": "",
     "pulseColor": "green",
-    "renewalDate": "2027-03-31",
+    "renewalDate": "2026-06-30",
     "latestPulseDate": "2026-05-06",
     "opportunities": [
       {
@@ -911,7 +911,7 @@ const ACCOUNTS_DATA = [
     "pulse": "Concerning",
     "pulseNote": "",
     "pulseColor": "yellow",
-    "renewalDate": "2028-10-31",
+    "renewalDate": "2026-05-31",
     "latestPulseDate": "2026-05-21",
     "opportunities": [
       {
@@ -989,7 +989,7 @@ const ACCOUNTS_DATA = [
     "pulse": "Healthy",
     "pulseNote": "",
     "pulseColor": "green",
-    "renewalDate": "2026-12-30",
+    "renewalDate": "2026-09-09",
     "latestPulseDate": "2026-05-13",
     "opportunities": [
       {
@@ -1050,7 +1050,7 @@ const ACCOUNTS_DATA = [
     "pulse": "Healthy",
     "pulseNote": "",
     "pulseColor": "green",
-    "renewalDate": "2026-11-06",
+    "renewalDate": "2026-10-01",
     "latestPulseDate": "2026-05-23",
     "opportunities": [
       {
@@ -1150,7 +1150,7 @@ const ACCOUNTS_DATA = [
     "pulse": "Healthy",
     "pulseNote": "",
     "pulseColor": "green",
-    "renewalDate": "2027-12-31",
+    "renewalDate": "2026-09-10",
     "latestPulseDate": "2026-04-30",
     "opportunities": [
       {
@@ -1228,7 +1228,7 @@ const ACCOUNTS_DATA = [
     "pulse": "Healthy",
     "pulseNote": "",
     "pulseColor": "green",
-    "renewalDate": "2026-09-14",
+    "renewalDate": "2026-06-13",
     "latestPulseDate": "2026-05-21",
     "opportunities": [
       {
@@ -1334,7 +1334,7 @@ const ACCOUNTS_DATA = [
     "pulse": "Healthy",
     "pulseNote": "",
     "pulseColor": "green",
-    "renewalDate": "2028-08-30",
+    "renewalDate": "2026-06-09",
     "latestPulseDate": "2026-05-21",
     "opportunities": [
       {
@@ -1501,7 +1501,7 @@ const ACCOUNTS_DATA = [
     "pulse": "Healthy",
     "pulseNote": "",
     "pulseColor": "green",
-    "renewalDate": "2026-10-23",
+    "renewalDate": "2026-09-29",
     "latestPulseDate": "2026-05-21",
     "opportunities": [
       {
@@ -1540,7 +1540,7 @@ const ACCOUNTS_DATA = [
     "pulse": "Concerning",
     "pulseNote": "",
     "pulseColor": "yellow",
-    "renewalDate": "2026-12-09",
+    "renewalDate": "2026-07-31",
     "latestPulseDate": "2026-05-13",
     "opportunities": [
       {
@@ -1685,7 +1685,7 @@ const ACCOUNTS_DATA = [
     "pulse": "Healthy",
     "pulseNote": "",
     "pulseColor": "green",
-    "renewalDate": "2028-12-16",
+    "renewalDate": "2027-03-30",
     "latestPulseDate": "2026-05-12",
     "opportunities": [
       {
@@ -1763,7 +1763,7 @@ const ACCOUNTS_DATA = [
     "pulse": "Healthy",
     "pulseNote": "",
     "pulseColor": "green",
-    "renewalDate": "2028-11-29",
+    "renewalDate": "2026-12-31",
     "latestPulseDate": "2026-05-16",
     "opportunities": [
       {
@@ -1802,7 +1802,7 @@ const ACCOUNTS_DATA = [
     "pulse": "Healthy",
     "pulseNote": "",
     "pulseColor": "green",
-    "renewalDate": "2027-10-21",
+    "renewalDate": "2026-12-31",
     "latestPulseDate": "2026-05-15",
     "opportunities": [
       {
@@ -1891,7 +1891,7 @@ const ACCOUNTS_DATA = [
     "pulse": "Poor",
     "pulseNote": "",
     "pulseColor": "red",
-    "renewalDate": "2027-11-24",
+    "renewalDate": "2026-08-26",
     "latestPulseDate": "2026-05-16",
     "opportunities": [
       {
@@ -1969,7 +1969,7 @@ const ACCOUNTS_DATA = [
     "pulse": "Healthy",
     "pulseNote": "",
     "pulseColor": "green",
-    "renewalDate": "2027-09-07",
+    "renewalDate": "2027-01-31",
     "latestPulseDate": "2026-05-12",
     "opportunities": [
       {
@@ -2120,7 +2120,7 @@ const ACCOUNTS_DATA = [
     "pulse": "Healthy",
     "pulseNote": "",
     "pulseColor": "green",
-    "renewalDate": "2027-03-31",
+    "renewalDate": "2026-10-01",
     "latestPulseDate": "2026-05-21",
     "opportunities": [
       {
@@ -2337,7 +2337,7 @@ const ACCOUNTS_DATA = [
     "pulse": "Poor",
     "pulseNote": "",
     "pulseColor": "red",
-    "renewalDate": "2026-11-29",
+    "renewalDate": "2026-06-12",
     "latestPulseDate": "2026-05-23",
     "opportunities": [
       {
@@ -2426,7 +2426,7 @@ const ACCOUNTS_DATA = [
     "pulse": "Healthy",
     "pulseNote": "",
     "pulseColor": "green",
-    "renewalDate": "2027-03-04",
+    "renewalDate": "2026-11-30",
     "latestPulseDate": "2026-05-13",
     "opportunities": [
       {
@@ -2549,7 +2549,7 @@ const ACCOUNTS_DATA = [
     "pulse": "Healthy",
     "pulseNote": "",
     "pulseColor": "green",
-    "renewalDate": "2027-01-25",
+    "renewalDate": "2026-10-31",
     "latestPulseDate": "2026-05-12",
     "opportunities": [
       {
@@ -2599,7 +2599,7 @@ const ACCOUNTS_DATA = [
     "pulse": "Healthy",
     "pulseNote": "",
     "pulseColor": "green",
-    "renewalDate": "2027-03-22",
+    "renewalDate": "2026-06-10",
     "latestPulseDate": "2026-05-29",
     "opportunities": [
       {
@@ -2694,7 +2694,7 @@ const ACCOUNTS_DATA = [
     "pulse": "Poor",
     "pulseNote": "",
     "pulseColor": "red",
-    "renewalDate": "2027-01-05",
+    "renewalDate": "2026-12-31",
     "latestPulseDate": "2026-05-21",
     "opportunities": [
       {
@@ -2733,7 +2733,7 @@ const ACCOUNTS_DATA = [
     "pulse": "Healthy",
     "pulseNote": "",
     "pulseColor": "green",
-    "renewalDate": "2026-10-31",
+    "renewalDate": "2026-08-31",
     "latestPulseDate": "2026-05-21",
     "opportunities": [
       {
@@ -2800,7 +2800,7 @@ const ACCOUNTS_DATA = [
     "pulse": "Poor",
     "pulseNote": "",
     "pulseColor": "red",
-    "renewalDate": "2026-11-03",
+    "renewalDate": "2026-05-31",
     "latestPulseDate": "2026-05-23",
     "opportunities": [
       {
@@ -2962,7 +2962,7 @@ const ACCOUNTS_DATA = [
     "pulse": "Poor",
     "pulseNote": "",
     "pulseColor": "red",
-    "renewalDate": "2027-12-31",
+    "renewalDate": "2027-01-31",
     "latestPulseDate": "2026-05-05",
     "opportunities": [
       {
@@ -3001,7 +3001,7 @@ const ACCOUNTS_DATA = [
     "pulse": "Concerning",
     "pulseNote": "",
     "pulseColor": "yellow",
-    "renewalDate": "2026-12-04",
+    "renewalDate": "2026-10-20",
     "latestPulseDate": "2026-05-19",
     "opportunities": [
       {
@@ -3247,7 +3247,7 @@ const ACCOUNTS_DATA = [
     "pulse": "Poor",
     "pulseNote": "",
     "pulseColor": "red",
-    "renewalDate": "2026-12-30",
+    "renewalDate": "2026-09-07",
     "latestPulseDate": "2026-05-27",
     "opportunities": [
       {
@@ -3409,7 +3409,7 @@ const ACCOUNTS_DATA = [
     "pulse": "Concerning",
     "pulseNote": "",
     "pulseColor": "yellow",
-    "renewalDate": "2027-03-09",
+    "renewalDate": "2026-10-20",
     "latestPulseDate": "2026-05-19",
     "opportunities": [
       {
@@ -3503,7 +3503,7 @@ const ACCOUNTS_DATA = [
     "pulse": "Healthy",
     "pulseNote": "",
     "pulseColor": "green",
-    "renewalDate": "2027-03-30",
+    "renewalDate": "2026-07-07",
     "latestPulseDate": "2026-05-15",
     "opportunities": [
       {
@@ -3704,7 +3704,7 @@ const ACCOUNTS_DATA = [
     "pulse": "Healthy",
     "pulseNote": "",
     "pulseColor": "green",
-    "renewalDate": "2026-09-19",
+    "renewalDate": "2026-06-04",
     "latestPulseDate": "2026-05-15",
     "opportunities": [
       {
@@ -3826,7 +3826,7 @@ const ACCOUNTS_DATA = [
     "pulse": "Healthy",
     "pulseNote": "",
     "pulseColor": "green",
-    "renewalDate": "2027-01-23",
+    "renewalDate": "2026-07-07",
     "latestPulseDate": "2026-05-12",
     "opportunities": [
       {
@@ -3876,7 +3876,7 @@ const ACCOUNTS_DATA = [
     "pulse": "",
     "pulseNote": "",
     "pulseColor": "gray",
-    "renewalDate": "2027-03-31",
+    "renewalDate": "2026-07-28",
     "latestPulseDate": "",
     "opportunities": [
       {
@@ -3943,7 +3943,7 @@ const ACCOUNTS_DATA = [
     "pulse": "Poor",
     "pulseNote": "",
     "pulseColor": "red",
-    "renewalDate": "2026-08-11",
+    "renewalDate": "2026-06-30",
     "latestPulseDate": "2026-04-07",
     "opportunities": [
       {
@@ -4738,7 +4738,7 @@ const ACCOUNTS_DATA = [
     "pulse": "",
     "pulseNote": "",
     "pulseColor": "gray",
-    "renewalDate": "2027-04-29",
+    "renewalDate": "2026-04-29",
     "latestPulseDate": "",
     "opportunities": [
       {
