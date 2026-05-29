@@ -2904,3 +2904,246 @@ function dayActionsHTML_2026_05_27() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none"><div class="empty-icon">&#128269;</div>No action items match these filters.</div>`;
 }
+
+// ============================================================
+// 2026-05-28 — Thursday
+// ============================================================
+
+function dayData_2026_05_28() {
+  return {
+    calls: [
+      { ts: 'May 28 · 4:00 AM',  csm: 'divyam', account: 'Safaricom Limited',
+        note: 'Renewal planning; ROI doc to follow; next: start renewal discussion',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Renewal planning call with Angus Hyams; renewal due end of August. Divyam to draft ROI documentation this week; key stakeholder Kolu didn\'t join. Next goal: start renewal discussion next week.' },
+      { ts: 'May 28 · 7:00 AM',  csm: 'pam',    account: 'ADP, Inc (HRO)',
+        note: 'New ADP HRO unit exploring TR for first time; LLM peer reviews driving urgency (X-cov for Andy Lim)',
+        mins: 30, health: 'Expansion',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Expansion',
+        detail: 'New ADP HRO business unit (Christina) exploring TrustRadius for the first time. Currently only on G2/Capterra; wants to understand if TR fits their advocacy strategy as LLM peer reviews gain importance. (X-cov for Andy Lim)' },
+      { ts: 'May 28 · 8:00 AM',  csm: 'divyam', account: 'Sage Global Services',
+        note: 'Bi-weekly campaign sync; list delivery in progress; Sage Intact leads category (X-cov for Andy Lim)',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'Customer', purpose: 'Check-in',
+        detail: 'Bi-weekly review campaign sync with Brock; list delivery in progress (Intact NA received, 3 more coming). Divyam shared PDF analysis showing Sage Intact leads category but QuickBooks gets more category traffic. Edge Insider event invite extended. (X-cov for Andy Lim)' },
+      { ts: 'May 28 · 8:30 AM',  csm: 'divyam', account: 'Lumen Technologies',
+        note: 'RGIP platform upgrade pitch; 89k accounts matched; good/better/best pricing walked through',
+        mins: 30, health: 'Expansion',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'RGIP platform upgrade pitch with Nathan and Hayden Smith (HG AM). Lumen has 89k accounts, 79k matched, 68k unique entities. Divyam walked through good/better/best pricing tiers. RGIP has 37M entities vs 11M current platform.' },
+      { ts: 'May 28 · 8:30 AM',  csm: 'atisha', account: 'RSM US',
+        note: 'FY26/27 partnership review; all 10k entity limits exhausted; expansion need flagged with AE Leo Zunz',
+        mins: 30, health: 'Expansion',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'FY26/27 Partnership review with Leo Zunz (HG AE), Kristin Lewis and Kelsey (RSM Microsoft marketers). RSM has exhausted all 10k entity limits in data feed contract; Atisha flagged expansion need.' },
+      { ts: 'May 28 · 9:30 AM',  csm: 'atisha', account: 'RSM US',
+        note: 'Weekly sync; 6k accounts added to data feed June 1; Power BI migration ongoing; Ben promoted',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'Both', purpose: 'Check-in',
+        detail: 'Weekly sync with Ben Vollmer and Ellis Millwood. 6,000 accounts added to data feed, delivery June 1. Power BI migration ongoing; MCP data discussion. Ben shared promotion news (official Jan 2027).' },
+      { ts: 'May 28 · 9:30 AM',  csm: 'riley',  account: 'SAP Inc (Build)',
+        note: 'Monthly TR sync; renewal confirmed May 1; Awards window May–Sep 2026; IDL premium discussed (X-cov for Nick Johnson)',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Monthly TrustRadius sync; Cole Arutian (HG) leading. SAP Build renewal May 1 confirmed. Awards double-dipping window May–Sep 2026 for Top Rated 2027. IDL premium content and PO tracking discussed. (X-cov for Nick Johnson)' },
+      { ts: 'May 28 · 10:00 AM', csm: 'pam',    account: 'Oracle',
+        note: 'Listening tour; internal reorg causing data strategy uncertainty — “very dynamic” per Karin/Joe',
+        mins: 45, health: 'Concerning',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Monthly listening tour; Oracle experiencing internal reorganization. Karin Berlin (Dublin) and Joe Lampitt acknowledged uncertainty about data strategy: drafted internal memo but no clarity on path forward. "Please bear with us — it\'s still very dynamic."' },
+      { ts: 'May 28 · 11:00 AM', csm: 'riley',  account: 'SAP Inc (Ariba/Fieldglass)',
+        note: 'Monthly TR sync; PO tracking gaps; 30 reviews/year contract obligation; Awards 2027 strategy (X-cov for Nick Johnson)',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Monthly TrustRadius sync. Ashleigh Riehl (SAP) in office. PO tracking: some products missing (IBP, Build waiting). Review sourcing for contract obligations (30/year). Awards double-dipping strategy for Top Rated 2027. (X-cov for Nick Johnson)' },
+    ],
+    pulses: [
+      { csm: 'divyam', health: 'Healthy',    account: 'Safaricom Limited',          note: 'Renewal planning; ROI doc to follow' },
+      { csm: 'pam',    health: 'Healthy',    account: 'ADP, Inc (HRO)',              note: 'New HRO unit exploring TR — expansion opportunity' },
+      { csm: 'divyam', health: 'Healthy',    account: 'Sage Global Services',        note: 'Bi-weekly campaign sync; list delivery in progress' },
+      { csm: 'divyam', health: 'Healthy',    account: 'Lumen Technologies',          note: 'RGIP upgrade pitched; pricing tiers reviewed' },
+      { csm: 'atisha', health: 'Healthy',    account: 'RSM US',                      note: 'Entity limit exhausted; AE engaged on expansion' },
+      { csm: 'atisha', health: 'Healthy',    account: 'RSM US',                      note: 'Weekly sync; data delivery June 1; Ben promoted' },
+      { csm: 'riley',  health: 'Healthy',    account: 'SAP Inc (Build)',              note: 'TR renewal confirmed; Awards window active (X-cov)' },
+      { csm: 'pam',    health: 'Concerning', account: 'Oracle',                      note: 'Internal reorg causing data strategy uncertainty' },
+      { csm: 'riley',  health: 'Healthy',    account: 'SAP Inc (Ariba/Fieldglass)',   note: 'TR sync; PO tracking gaps; Awards 2027 (X-cov)' },
+    ],
+  };
+}
+
+function dayMeta_2026_05_28() {
+  return {
+    pills: [
+      ['dot-teal',  '9 Calls'],
+      ['dot-red',   '1 Concerning'],
+      ['dot-amber', '3 Expansion'],
+      ['dot-green', '9 Vitally Pulses'],
+      ['dot-grey',  '74 recordings scanned · 4 CSMs active'],
+    ],
+    tabs: ['Overview', 'Calls (9)', 'Pulses (9)', 'Action Items (4)']
+  };
+}
+
+function dayOverviewHTML_2026_05_28() {
+  return `<div class="section-label">Team Activity &mdash; Thursday May 28, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Thursday May 28 &mdash; 74 recordings scanned</strong> via SFDC SOQL &middot; <strong>9 confirmed calls</strong> across 4 CSMs &middot; 3 expansion signals &middot; 1 Oracle concern (reorg) &middot; heavy X-cov day (Riley covering SAP, Divyam/Pam covering Andy's accounts)
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x1F534; <strong>Oracle (Pam Huck)</strong> &mdash; Internal reorg causing data strategy uncertainty. Karin Berlin and Joe Lampitt: &ldquo;Please bear with us &mdash; it&rsquo;s still very dynamic.&rdquo; Monitor closely for churn risk.
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>3 Expansion Signals:</strong> Lumen Technologies (RGIP upgrade &middot; Divyam) &middot; ADP HRO new unit (TR exploration &middot; Pam) &middot; RSM US entity limit exhaustion (contract expansion needed &middot; Atisha + AE Leo Zunz)
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">SAP Inc Build (monthly TR &middot; renewal confirmed) &middot; SAP Inc Ariba/Fieldglass (TR sync &middot; PO gaps) &mdash; both X-cov for Nick Johnson</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">3 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">3</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">90m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Safaricom (renewal planning &middot; ROI doc) &middot; Lumen Technologies (RGIP upgrade pitch) &middot; Sage Global Services (campaign sync &middot; X-cov for Andy)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="pam">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">75m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Oracle (reorg uncertainty &middot; data strategy unclear &mdash; monitor) &middot; ADP HRO (new unit &middot; TR exploration &middot; X-cov for Andy)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">RSM US FY26/27 (entity limit exhausted &middot; expansion w/ AE) &middot; RSM US weekly (data delivery June 1 &middot; Ben promoted)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="nick">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">SAP Inc Build covered by Riley Rogers &middot; SAP Inc Ariba/Fieldglass covered by Riley Rogers &mdash; no direct recordings</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="rani">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No recordings found &mdash; Lenovo, Workday + portfolio</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="varun">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No recordings found &mdash; portfolio accounts</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Sage Global Services covered by Divyam Dewan &middot; ADP, Inc covered by Pam Huck (HRO) &mdash; no direct recordings</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_05_28() {
+  // core.js auto-table active — all calls in dayData_2026_05_28 have purpose/nature/initiator/detail
+  return `
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x1F534; <strong>Oracle (Pam Huck)</strong> &mdash; Internal reorg causing data strategy uncertainty. Karin Berlin and Joe Lampitt: &ldquo;Please bear with us &mdash; it&rsquo;s still very dynamic.&rdquo; Monitor closely.
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>3 Expansion Signals:</strong> Lumen Technologies (RGIP upgrade &middot; Divyam) &middot; ADP HRO new unit (TR exploration &middot; Pam) &middot; RSM US entity limit exhaustion (contract expansion &middot; Atisha + AE Leo Zunz)
+  </div>
+  <div class="empty-state" id="calls-empty" style="display:none"><div class="empty-icon">&#128269;</div>No calls match these filters.</div>`;
+}
+
+function dayPulsesHTML_2026_05_28() {
+  const cards = [
+    { csm:'divyam', health:'Healthy',    account:'Safaricom Limited',         opp:'Vitally Pulse &mdash; May 28 Call', arr:'Enterprise &middot; Divyam Dewan',  csmlbl:'Divyam Dewan',  change:'May 28 &middot; Renewal planning',
+      excerpt:'5/28 DD: Renewal planning (4:00 AM PT, 30 min). Angus Hyams joined; renewal due end of August. Divyam to draft ROI documentation this week. Key stakeholder Kolu did not join. Next step: start formal renewal discussion next week.' },
+    { csm:'pam',    health:'Healthy',    account:'ADP, Inc (HRO)',             opp:'Vitally Pulse &mdash; May 28 Call', arr:'Enterprise &middot; Pam Huck',      csmlbl:'Pam Huck',      change:'May 28 &middot; &#x1F4C8; Expansion &mdash; New unit',
+      excerpt:'5/28 PH: ADP HRO discovery call (7:00 AM PT, 30 min). New business unit (Christina) exploring TrustRadius for the first time — currently only on G2/Capterra. Expansion opportunity as LLM peer reviews gain importance in advocacy strategy. (X-cov for Andy Lim)' },
+    { csm:'divyam', health:'Healthy',    account:'Sage Global Services',       opp:'Vitally Pulse &mdash; May 28 Call', arr:'Enterprise &middot; Divyam Dewan',  csmlbl:'Divyam Dewan',  change:'May 28 &middot; Campaign sync',
+      excerpt:'5/28 DD: Bi-weekly review campaign sync with Brock (8:00 AM PT, 30 min). List delivery in progress — Intact NA received, 3 more coming. Sage Intact leads category but QuickBooks captures more traffic. Edge Insider event invite extended. (X-cov for Andy Lim)' },
+    { csm:'divyam', health:'Healthy',    account:'Lumen Technologies',         opp:'Vitally Pulse &mdash; May 28 Call', arr:'Enterprise &middot; Divyam Dewan',  csmlbl:'Divyam Dewan',  change:'May 28 &middot; &#x1F4C8; Expansion &mdash; RGIP pitch',
+      excerpt:'5/28 DD: RGIP platform upgrade pitch with Nathan and Hayden Smith (HG AM) (8:30 AM PT, 30 min). Lumen: 89k accounts, 79k matched, 68k unique entities. Good/better/best pricing tiers presented. RGIP: 37M entities vs. 11M on current platform.' },
+    { csm:'atisha', health:'Healthy',    account:'RSM US',                     opp:'Vitally Pulse &mdash; May 28 Call (FY26/27)', arr:'Enterprise &middot; Atisha Waghela', csmlbl:'Atisha Waghela', change:'May 28 &middot; &#x1F4C8; Expansion &mdash; Entity limit',
+      excerpt:'5/28 AW: FY26/27 Partnership review with Leo Zunz (HG AE), Kristin Lewis and Kelsey (RSM) (8:30 AM PT, 30 min). RSM has exhausted all 10k entity limits in data feed contract; Atisha flagged expansion need. AE engaged to drive contract expansion.' },
+    { csm:'atisha', health:'Healthy',    account:'RSM US',                     opp:'Vitally Pulse &mdash; May 28 Call (Weekly)', arr:'Enterprise &middot; Atisha Waghela', csmlbl:'Atisha Waghela', change:'May 28 &middot; Weekly sync',
+      excerpt:'5/28 AW: Weekly sync with Ben Vollmer and Ellis Millwood (9:30 AM PT, 30 min). 6,000 accounts added to data feed, delivery June 1. Power BI migration ongoing; MCP data discussion. Ben shared promotion news — official Jan 2027.' },
+    { csm:'riley',  health:'Healthy',    account:'SAP Inc (Build)',             opp:'Vitally Pulse &mdash; May 28 Call', arr:'Enterprise &middot; Riley Rogers',  csmlbl:'Riley Rogers',  change:'May 28 &middot; Monthly TR sync',
+      excerpt:'5/28 RR: Monthly TrustRadius sync — Cole Arutian (HG) leading (9:30 AM PT, 30 min). SAP Build renewal May 1 confirmed. Awards double-dipping window May–Sep 2026 for Top Rated 2027. IDL premium content and PO tracking discussed. (X-cov for Nick Johnson)' },
+    { csm:'pam',    health:'Concerning', account:'Oracle',                     opp:'Vitally Pulse &mdash; May 28 Call', arr:'Enterprise &middot; Pam Huck',      csmlbl:'Pam Huck',      change:'May 28 &middot; &#x1F534; Concerning &mdash; Reorg',
+      excerpt:'5/28 PH: Monthly listening tour (10:00 AM PT, 45 min). Oracle experiencing internal reorganization. Karin Berlin (Dublin) and Joe Lampitt acknowledged data strategy uncertainty: drafted internal memo but no clarity on path forward. "Please bear with us — it\'s still very dynamic."' },
+    { csm:'riley',  health:'Healthy',    account:'SAP Inc (Ariba/Fieldglass)', opp:'Vitally Pulse &mdash; May 28 Call', arr:'Enterprise &middot; Riley Rogers',  csmlbl:'Riley Rogers',  change:'May 28 &middot; Monthly TR sync',
+      excerpt:'5/28 RR: Monthly TrustRadius sync — Ashleigh Riehl (SAP) in office (11:00 AM PT, 30 min). PO tracking gaps: IBP and Build products missing. Review sourcing for 30/year contract obligation. Awards double-dipping strategy for Top Rated 2027. (X-cov for Nick Johnson)' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top"><div><div class="pulse-account">${c.account}</div><div class="pulse-opp">${c.opp}</div><div class="pulse-arr">${c.arr}</div></div><span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span></div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none"><div class="empty-icon">&#128269;</div>No pulses match these filters.</div>`;
+}
+
+function dayActionsHTML_2026_05_28() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has(2801)?'done':''}" data-csm="pam" id="action-2801"><div class="action-checkbox ${doneActions.has(2801)?'checked':''}" onclick="toggleAction(2801)"></div><div class="action-body"><div class="action-title">&#x1F534; Oracle &mdash; Follow up with Karin Berlin on reorg timeline and data strategy clarity</div><div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Pam Huck &middot; Karin and Joe Lampitt both acknowledged deep uncertainty &mdash; &ldquo;still very dynamic.&rdquo; Pam to send a brief check-in asking for an estimated decision window and whether the existing data partnership is at risk. Escalate to leadership if no clarity within 2 weeks.</div></div></div>
+    <div class="action-item ${doneActions.has(2802)?'done':''}" data-csm="atisha" id="action-2802"><div class="action-checkbox ${doneActions.has(2802)?'checked':''}" onclick="toggleAction(2802)"></div><div class="action-body"><div class="action-title">&#x1F4C8; RSM US &mdash; Coordinate with AE Leo Zunz on entity limit contract expansion</div><div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Atisha Waghela &middot; RSM has exhausted all 10k entity limits across their data feed contract. Leo Zunz (HG AE) is engaged. Atisha to align with Leo on pricing for expanded entity count and draft a proposal for Kristin Lewis and the RSM Microsoft marketing team. Time-sensitive given active data delivery.</div></div></div>
+    <div class="action-item ${doneActions.has(2803)?'done':''}" data-csm="divyam" id="action-2803"><div class="action-checkbox ${doneActions.has(2803)?'checked':''}" onclick="toggleAction(2803)"></div><div class="action-body"><div class="action-title">&#x1F4C8; Lumen Technologies &mdash; Send RGIP pricing proposal following upgrade pitch</div><div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Divyam Dewan &middot; Full good/better/best RGIP pricing presented to Nathan and Hayden Smith. Divyam to send a formal follow-up with the pricing deck, entity coverage comparison (37M vs 11M), and a suggested next step. Loop in HG AM Hayden Smith for deal support.</div></div></div>
+    <div class="action-item ${doneActions.has(2804)?'done':''}" data-csm="pam" id="action-2804"><div class="action-checkbox ${doneActions.has(2804)?'checked':''}" onclick="toggleAction(2804)"></div><div class="action-body"><div class="action-title">&#x1F4E4; ADP, Inc (HRO) &mdash; Send TrustRadius value prop and next steps to Christina</div><div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Pam Huck &middot; Christina (ADP HRO) is evaluating TR vs. G2/Capterra for their advocacy strategy, driven by LLM peer review visibility. Pam to send a targeted one-pager on TR&rsquo;s LLM/AI visibility advantage, review campaign approach, and proposed next steps for a formal evaluation. (X-cov for Andy Lim)</div></div></div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none"><div class="empty-icon">&#128269;</div>No action items match these filters.</div>`;
+}
