@@ -913,6 +913,37 @@ document.addEventListener('click', function(ev) {
   }
 });
 
+// ARR-weighted account-level pulse.
+// Single-opp accounts: use the opp's own pulse directly.
+// Multi-opp accounts: only opps that have a pulse contribute.
+//   healthyRatio = healthyARR / totalPulsedARR
+//   > 95% → Healthy | > 75% → Concerning | ≤ 75% → Poor
+// Falls back to count-based ratio when no opp carries an ARR value.
+function arrWeightedPulseLabel(opps) {
+  if (!opps || !opps.length) return null;
+  const valid = opps.filter(o => o.pulse && o.pulse !== '—');
+  if (!valid.length) return null;
+  // Single opp (or only one pulsed opp): use the opp's own pulse directly.
+  if (opps.length <= 1 || valid.length === 1) return valid[0].pulse;
+  const isHealthyPulse = p => {
+    const lp = p.toLowerCase();
+    return lp === 'healthy' || lp.includes('very satisfied') || lp.includes('extremely');
+  };
+  let healthyARR = 0, totalARR = 0;
+  valid.forEach(o => {
+    const arr = o.arr || 0;
+    totalARR += arr;
+    if (isHealthyPulse(o.pulse)) healthyARR += arr;
+  });
+  // No ARR data on any opp — fall back to count-based ratio.
+  const ratio = totalARR > 0
+    ? healthyARR / totalARR
+    : valid.filter(o => isHealthyPulse(o.pulse)).length / valid.length;
+  if (ratio > 0.95) return 'Healthy';
+  if (ratio > 0.75) return 'Concerning';
+  return 'Poor';
+}
+
 function accountsHTML() {
   const oppPulseColor = p => {
     if (!p) return null;
@@ -922,17 +953,19 @@ function accountsHTML() {
     if (lp === 'poor' || lp.includes('severe') || lp.includes('high risk') || lp.includes('at risk')) return '#dc2626';
     return '#6b7280';
   };
-  // Returns the worst pulse across all opps for an account (highest risk score).
+  // Returns ARR-weighted account pulse (multi-opp) or opp's own pulse (single-opp).
+  // > 95% healthy ARR → Healthy · > 75% → Concerning · ≤ 75% → Poor
   const worstOppPulse = opps => {
-    if (!opps || !opps.length) return { pulse: null, color: null, note: null };
-    let worst = null, worstScore = -1, worstNote = null;
-    opps.forEach(o => {
+    const label = arrWeightedPulseLabel(opps);
+    if (!label) return { pulse: null, color: null, note: null };
+    // Attach the note from the highest-risk opp for context.
+    let worstNote = null, worstScore = -1;
+    (opps || []).forEach(o => {
       if (!o.pulse || o.pulse === '—') return;
-      const score = pulseRiskScore(o.pulse);
-      if (score > worstScore) { worstScore = score; worst = o.pulse; worstNote = o.pulseNote || null; }
+      const s = pulseRiskScore(o.pulse);
+      if (s > worstScore) { worstScore = s; worstNote = o.pulseNote || null; }
     });
-    if (!worst) return { pulse: null, color: null, note: null };
-    return { pulse: worst, color: oppPulseColor(worst), note: worstNote };
+    return { pulse: label, color: oppPulseColor(label), note: worstNote };
   };
   // Renders a pulse note cell with truncation + inline expand for long SFDC notes
   const oppNoteUID = (() => { let n = 0; return () => 'opn' + (++n); })();
@@ -1303,16 +1336,7 @@ window.sortAccountsTable = function(col) {
         if (lp.includes('satisfied')) return 5;
         return 6;
       };
-      const worstPulse = acct => {
-        const opps = acct.opportunities || [];
-        let worst = null, worstScore = -1;
-        opps.forEach(o => {
-          if (!o.pulse || o.pulse === '—') return;
-          const s = pulseRiskScore(o.pulse);
-          if (s > worstScore) { worstScore = s; worst = o.pulse; }
-        });
-        return worst;
-      };
+      const worstPulse = acct => arrWeightedPulseLabel(acct.opportunities || []);
       valA = pulseRank(worstPulse(acctA)); valB = pulseRank(worstPulse(acctB));
     } else if (col === 'pulseNote') {
       valA = acctA.pulseNote || '';
