@@ -3147,3 +3147,338 @@ function dayActionsHTML_2026_05_28() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none"><div class="empty-icon">&#128269;</div>No action items match these filters.</div>`;
 }
+
+function dayData_2026_05_29() {
+  return {
+    calls: [
+      { ts: 'May 29 · 6:00 AM', csm: 'nick', account: 'Infor (US), LLC',
+        note: 'Platform data exercise for Zach — country geo mapping, custom views',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Check-in',
+        detail: 'Nicole Morgan and Anupam Anand walked through a country collection mapping exercise for a Bain-affiliated analysis. Nick demonstrated custom views in HG v2 platform for geo groupings (Europe Central, Americas, etc.) and provided workarounds for single-country collection limitations like Poland.' },
+      { ts: 'May 29 · 7:00 AM', csm: 'nick', account: 'Check Point Software',
+        note: 'Renewal & Snowflake data ingestion discussion ahead of June 1 contract milestone',
+        mins: 45, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Mixed',
+        detail: 'Dinese Christopher (Check Point) initiated call to get ahead of contract milestone and discuss data ingestion into Snowflake, pricing model, and login transitions. Nick and David Garcia Thomas (HG AE) covered direct-to-Snowflake delivery. Exec follow-up already scheduled for next Thursday 5 AM PT with Uri Nishri, Ariel, Asaf Cohen, and Dan Saranga.' },
+      { ts: 'May 29 · 8:00 AM', csm: 'varun', account: 'Iron Mountain Incorporated',
+        note: 'New user onboarding — first platform walkthrough for Juan Camilo (Brazil team)',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'First real platform interaction for Juan Camilo (Iron Mountain, São Paulo — just returned from work trip). Varun covered 37M entity database, corporate hierarchy, global ultimate vs. domestic parent vs. HG entity tiers using Walmart as an example. Varun\'s camera offline due to power outage.' },
+      { ts: 'May 29 · 8:00 AM', csm: 'nick', account: 'Intuit',
+        note: 'Data sample delivery follow-up — MailChimp org changes slowing ingestion timeline',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Check-in',
+        detail: 'Prabhas KC (Intuit/MailChimp) followed up on Monday workshop item: needs 100-account data sample to test AI agent reformatting pipeline after losing 2 data scientists. Nick confirmed sample data and data dictionary already shared in chat. No blocker on HG side; Prabhas to run reformatting test via AI agent and validate contact yield through ZoomInfo.' },
+      { ts: 'May 29 · 8:30 AM', csm: 'pam', account: 'ADP, Inc',
+        note: 'TrustRadius Top Rated win — Buyer\'s Choice planning and advocacy health score discussion',
+        mins: 30, health: 'Concerning',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Patrick Swisher (ADP Smart Compliance) confirmed Top Rated receipt and downloaded media kit. Pam (HG) and Brett Castonguay (TR CSM) discussed Buyer\'s Choice eligibility (fall, 10+ YTD reviews from Jan 1 — Patrick has 30+). Patrick building an advocacy health score (MPS-equivalent for Smart Compliance) and wants a new campaign list targeting fresh reviewers.' },
+      { ts: 'May 29 · 9:00 AM', csm: 'varun', account: 'Zendesk, Inc.',
+        note: 'MCP connector / AI account snapshot demo — expansion conversation for at-scale use',
+        mins: 30, health: 'Concerning',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Rodrigo Gomez (Zendesk) asked Varun about the account snapshot capability shown in a prior session. Varun demonstrated Claude Code MCP connector generating custom account snapshots and proposed a dedicated session with HG MCP experts. Zendesk wants to scale snapshot generation to thousands of accounts on demand — additional licensing required.' },
+      { ts: 'May 29 · 11:00 AM', csm: 'atisha', account: 'Apple Inc.',
+        note: 'Platform training — custom spend derivation, DUNs expansion request',
+        mins: 60, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Atisha led training with Aditi S, RJ, Esteban Uribe, and apareti (Apple). Aditi asked about custom spend column — Atisha confirmed it\'s derived (50% of Computing Device spend = laptop/desktop custom spend). Apple team also wants to expand the data feed account list; RJ and Aditi shared a new DUNs numbers list at global ultimate level for Atisha to process.' },
+      { ts: 'May 29 · 11:30 AM', csm: 'atisha', account: 'Equinix, Inc.',
+        note: 'Intro call with new Equinix contact Kim Seijo — relationship re-establishment',
+        mins: 30, health: 'Concerning',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Kim Seijo (Equinix, joined December 2025) is new to the account. Ravi Sharma (HG AE) and Atisha made introductions. Kim referenced prior contact "Ted Dangston" and is visiting Redwood City next week. Ravi proposed in-person coffee. Account carries Some Risk at $817K ARR — positive that new stakeholder relationship is being established proactively.' },
+    ],
+    pulses: [
+      { csm: 'nick',   account: 'Infor (US), LLC',         health: 'Healthy',    note: 'Country geo mapping exercise for Zach. Custom views built for Bain-affiliated analysis. No issues.' },
+      { csm: 'nick',   account: 'Check Point Software',    health: 'Healthy',    note: 'Customer-initiated renewal and Snowflake ingestion discussion. Exec follow-up with Uri Nishri scheduled.' },
+      { csm: 'varun',  account: 'Iron Mountain Incorporated', health: 'Healthy', note: 'New user Juan Camilo onboarded via platform walkthrough. First real platform interaction for Brazil team.' },
+      { csm: 'nick',   account: 'Intuit',                  health: 'Healthy',    note: 'MailChimp team lost 2 data scientists; using AI agent for reformatting. Sample data + data dictionary provided.' },
+      { csm: 'pam',    account: 'ADP, Inc',                health: 'Concerning', note: 'Top Rated win confirmed. Buyer\'s Choice prep underway. Patrick building advocacy health score for Smart Compliance.' },
+      { csm: 'varun',  account: 'Zendesk, Inc.',           health: 'Concerning', note: 'Expansion: MCP connector/AI account snapshot demo. Zendesk evaluating at-scale deployment — additional licensing.' },
+      { csm: 'atisha', account: 'Apple Inc.',              health: 'Healthy',    note: 'Training: custom spend derivation answered. Apple team expanding data feed — new DUNs numbers list shared.' },
+      { csm: 'atisha', account: 'Equinix, Inc.',           health: 'Concerning', note: 'New contact Kim Seijo (Dec 2025) intro call. Some Risk at $817K ARR. Ravi Sharma co-attended. In-person proposed.' },
+    ],
+  };
+}
+
+function dayMeta_2026_05_29() {
+  return {
+    pills: [
+      ['dot-teal',  '8 Calls'],
+      ['dot-red',   '3 Accounts at Risk'],
+      ['dot-amber', '2 Expansion Signals'],
+      ['dot-green', '8 Pulses'],
+      ['dot-grey',  'Fri May 29 · 50 recordings scanned'],
+    ],
+    tabs: ['Overview', 'Calls (8)', 'Pulses (8)', 'Action Items (5)'],
+  };
+}
+
+function dayOverviewHTML_2026_05_29() {
+  return `<div class="section-label">Team Activity &mdash; Friday May 29, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Friday May 29 &mdash; 50 recordings scanned</strong> via SFDC SOQL &middot; <strong>8 confirmed calls</strong> across 4 CSMs &middot; 2 expansion signals (Zendesk MCP, Check Point Snowflake) &middot; Memorial Day short week
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>2 Expansion Signals:</strong> Zendesk (MCP connector / AI account snapshot at scale &middot; Varun) &middot; Check Point (Snowflake data ingestion + exec meeting scheduled &middot; Nick)
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">3 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">3</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">105m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Infor (data exercise for Zach) &middot; Check Point (Snowflake renewal, exec mtg set) &middot; Intuit (data sample, AI agent reformatting)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">90m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Apple (training: custom spend + DUNs expansion) &middot; Equinix (intro call, new contact Kim Seijo, Some Risk $817K)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Iron Mountain (new user onboarding, Juan Camilo) &middot; Zendesk (MCP snapshot demo, expansion signal)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="pam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">ADP Smart Compliance (Top Rated win, Buyer&rsquo;s Choice planning, advocacy health score)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="riley">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No events scheduled &mdash; no recordings</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="divyam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event scheduled (Quadient bi-weekly) &mdash; no recording found</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="rani">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No events scheduled &mdash; no recordings</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No events scheduled &mdash; no recordings</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_05_29() {
+  return `
+  <div style="background:#1a2035;border:1px solid #334155;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#94a3b8;">
+    &#x26A0;&#xFE0F; <strong>Unconfirmed (no transcript, inferred from CSM event):</strong> Varun Tiwari &times; CIENA Corporation (6:00 AM PT, 30 min) &middot; Nick Johnson &times; Red Hat Inc (7:00 AM PT, 60 min)
+  </div>
+  <div class="empty-state" id="calls-empty" style="display:none"><div class="empty-icon">&#128269;</div>No calls match these filters.</div>`;
+}
+
+function dayPulsesHTML_2026_05_29() {
+  const cards = [
+    { csm:'nick',   health:'Healthy',    account:'Infor (US), LLC',
+      opp:'Vitally Pulse &mdash; May 29 Call', arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'May 29 &middot; Check-in',
+      excerpt:'5/29 NJ: Data exercise for Zach (6:00 AM PT, 30 min). Nicole Morgan and Anupam Anand led geo mapping exercise for Bain-affiliated analysis. Custom country collections built in v2 platform. Single-country workaround for Poland provided. No issues raised.' },
+    { csm:'nick',   health:'Healthy',    account:'Check Point Software',
+      opp:'Vitally Pulse &mdash; May 29 Call', arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'May 29 &middot; &#x1F4C8; Expansion &mdash; Snowflake data ingestion',
+      excerpt:'5/29 NJ: Renewal &amp; Snowflake ingestion discussion (7:00 AM PT, 45 min). Dinese Christopher (Check Point) proactively initiated ahead of June 1. Direct-to-Snowflake delivery options presented. Exec follow-up meeting with Uri Nishri, Ariel, Asaf Cohen, Dan Saranga — next Thursday 5 AM PT. HG AE David Garcia Thomas co-attended.' },
+    { csm:'varun',  health:'Healthy',    account:'Iron Mountain Incorporated',
+      opp:'Vitally Pulse &mdash; May 29 Call', arr:'Enterprise &middot; Varun Tiwari', csmlbl:'Varun Tiwari',
+      change:'May 29 &middot; Check-in',
+      excerpt:'5/29 VT: New user onboarding — first platform walkthrough for Juan Camilo (8:00 AM PT, 30 min). Covered 37M entity database, corporate hierarchy tiers, domestic parent vs. global ultimate. Juan returning from São Paulo work trip. Good engagement.' },
+    { csm:'nick',   health:'Healthy',    account:'Intuit',
+      opp:'Vitally Pulse &mdash; May 29 Call', arr:'Strategic &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'May 29 &middot; Check-in',
+      excerpt:'5/29 NJ: MailChimp data access follow-up (8:00 AM PT, 30 min). Prabhas KC updating on org changes — 2 data scientists departed, now using AI agent for account list reformatting. Needs 100-account sample to test pipeline. Sample data + data dictionary already provided by Nick. Hayden Smith (HG AE) co-attended.' },
+    { csm:'pam',    health:'Concerning', account:'ADP, Inc',
+      opp:'Vitally Pulse &mdash; May 29 Call', arr:'Strategic &middot; Pam Huck', csmlbl:'Pam Huck',
+      change:'May 29 &middot; Check-in',
+      excerpt:'5/29 PH: TrustRadius Top Rated win debrief with Patrick Swisher (8:30 AM PT, 30 min). Patrick confirmed media kit downloaded. Buyer\'s Choice eligibility confirmed (10+ reviews from Jan 1 — Patrick at 30+). New campaign request for fresh reviewer list. Patrick building advocacy health score for Smart Compliance product. Brett Castonguay (TR CSM) co-attended.' },
+    { csm:'varun',  health:'Concerning', account:'Zendesk, Inc.',
+      opp:'Vitally Pulse &mdash; May 29 Call', arr:'Enterprise &middot; Varun Tiwari', csmlbl:'Varun Tiwari',
+      change:'May 29 &middot; &#x1F4C8; Expansion &mdash; MCP connector',
+      excerpt:'5/29 VT: Bi-weekly sync &mdash; MCP connector expansion discussion (9:00 AM PT, 30 min). Rodrigo Gomez requested deep dive on AI account snapshot capability. Varun demonstrated Claude Code MCP connector generating custom account analysis. Zendesk wants to run thousands of accounts on demand. Additional licensing required. Expert session to be scheduled.' },
+    { csm:'atisha', health:'Healthy',    account:'Apple Inc.',
+      opp:'Vitally Pulse &mdash; May 29 Call', arr:'Strategic &middot; Atisha Waghela', csmlbl:'Atisha Waghela',
+      change:'May 29 &middot; Check-in',
+      excerpt:'5/29 AW: Platform training (11:00 AM PT, 60 min). Aditi S asked about custom spend column — confirmed as derived metric (50% of Computing Device spend). RJ provided DUNs numbers list at global ultimate level for data feed expansion. Esteban Uribe and apareti also attended. Next step: process DUNs expansion list and send custom spend logic.' },
+    { csm:'atisha', health:'Concerning', account:'Equinix, Inc.',
+      opp:'Vitally Pulse &mdash; May 29 Call', arr:'Enterprise &middot; Atisha Waghela', csmlbl:'Atisha Waghela',
+      change:'May 29 &middot; Check-in &mdash; New stakeholder',
+      excerpt:'5/29 AW: Intro call with Kim Seijo (Equinix, joined Dec 2025) (11:30 AM PT, 30 min). Kim new to account; referenced prior contact Ted Dangston. Ravi Sharma (HG AE) co-attended. Kim visiting Redwood City next week — in-person meeting proposed. Some Risk at $817K ARR; proactive stakeholder mapping is the right move.' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top"><div><div class="pulse-account">${c.account}</div><div class="pulse-opp">${c.opp}</div><div class="pulse-arr">${c.arr}</div></div><span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span></div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none"><div class="empty-icon">&#128269;</div>No pulses match these filters.</div>`;
+}
+
+function dayActionsHTML_2026_05_29() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has(2901)?'done':''}" data-csm="nick" id="action-2901"><div class="action-checkbox ${doneActions.has(2901)?'checked':''}" onclick="toggleAction(2901)"></div><div class="action-body"><div class="action-title">&#x1F4C8; Check Point Software &mdash; Confirm Thursday exec meeting prep and Snowflake ingestion brief</div><div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Nick Johnson &middot; Dinese Christopher scheduled an exec session next Thursday 5 AM PT with Uri Nishri, Ariel, Asaf Cohen, and Dan Saranga. Nick and David Garcia Thomas to prepare a concise brief covering direct-to-Snowflake delivery options, data dictionary, and recommended ingestion approach ahead of June 1 contract milestone.</div></div></div>
+    <div class="action-item ${doneActions.has(2902)?'done':''}" data-csm="varun" id="action-2902"><div class="action-checkbox ${doneActions.has(2902)?'checked':''}" onclick="toggleAction(2902)"></div><div class="action-body"><div class="action-title">&#x1F4C8; Zendesk &mdash; Schedule MCP connector expert session for Rodrigo Gomez</div><div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Varun Tiwari &middot; Rodrigo Gomez and Zendesk team want to evaluate at-scale AI account snapshot deployment for thousands of accounts. Varun to schedule a dedicated session with HG&rsquo;s MCP connector experts. Coordinate with HG AE on commercial terms for additional licensing. Expansion opportunity.</div></div></div>
+    <div class="action-item ${doneActions.has(2903)?'done':''}" data-csm="atisha" id="action-2903"><div class="action-checkbox ${doneActions.has(2903)?'checked':''}" onclick="toggleAction(2903)"></div><div class="action-body"><div class="action-title">&#x1F4E4; Equinix &mdash; Follow up with Kim Seijo and coordinate in-person meeting next week</div><div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Atisha Waghela &middot; Kim Seijo (Equinix, joined Dec 2025) is visiting Redwood City next week. Atisha and Ravi Sharma to confirm coffee / in-person meeting logistics. Send Kim a relationship summary, current account health context, and upcoming milestones ($817K ARR, renewal Dec 2026). Critical stakeholder onboarding on a Some Risk account.</div></div></div>
+    <div class="action-item ${doneActions.has(2904)?'done':''}" data-csm="atisha" id="action-2904"><div class="action-checkbox ${doneActions.has(2904)?'checked':''}" onclick="toggleAction(2904)"></div><div class="action-body"><div class="action-title">&#x1F4CB; Apple &mdash; Send custom spend derivation logic and process DUNs expansion list</div><div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Atisha Waghela &middot; Aditi S needs the custom spend column derivation doc (50% of Computing Device spend = laptop/desktop). RJ provided a DUNs numbers list at global ultimate level for data feed expansion. Atisha to forward the derivation logic and kick off the DUNs matching process to confirm match rate and coverage for the expanded list.</div></div></div>
+    <div class="action-item ${doneActions.has(2905)?'done':''}" data-csm="nick" id="action-2905"><div class="action-checkbox ${doneActions.has(2905)?'checked':''}" onclick="toggleAction(2905)"></div><div class="action-body"><div class="action-title">&#x1F4E6; Intuit &mdash; Monitor MailChimp AI agent reformatting test and confirm sample delivery</div><div class="action-meta"><span class="urgency-badge urgency-low">LOW</span>Nick Johnson &middot; Prabhas KC (MailChimp) is running the 100-account sample through their AI reformatting agent after losing 2 data scientists. Nick confirmed sample and data dictionary sent. Follow up Monday to check if agent test succeeded and unblock the full 3,000-account list ingestion. Track org stability risk given leadership changes.</div></div></div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none"><div class="empty-icon">&#128269;</div>No action items match these filters.</div>`;
+}
+
+function weeklyOrMonthlyHTML_2026_05_29() {
+  return `<div class="section-label">W22 Weekly Summary &mdash; May 25&ndash;29, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:10px 14px;margin:0 0 12px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Memorial Day short week (Tue&ndash;Fri active)</strong> &middot; <strong>37 confirmed calls</strong> across all 4 active days &middot; 4 expansion signals &middot; 1 escalation signal (Oracle reorg) &middot; 1 new CSM-initiated stakeholder (Equinix) &middot; Memorial Day May 25 excluded
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x1F534; <strong>Oracle (Pam Huck, Thu May 28)</strong> &mdash; Internal reorg causing data strategy uncertainty. Karin Berlin and Joe Lampitt: &ldquo;Please bear with us &mdash; it&rsquo;s still very dynamic.&rdquo; Monitor closely.
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 12px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>4 Expansion Signals this week:</strong> Zendesk (MCP connector at scale &middot; Varun &middot; Fri) &middot; Check Point (Snowflake ingestion, exec mtg set &middot; Nick &middot; Fri) &middot; RSM US (entity limit exhaustion, contract expansion &middot; Atisha &middot; Thu) &middot; Lumen Technologies (RGIP upgrade pitch &middot; Divyam &middot; Thu)
+  </div>
+  <table style="width:100%;border-collapse:collapse;font-size:12px;margin-bottom:14px;">
+    <thead><tr style="border-bottom:1px solid #334155;color:#64748b;">
+      <th style="padding:6px 10px;text-align:left;">Day</th>
+      <th style="padding:6px 10px;text-align:center;">Calls</th>
+      <th style="padding:6px 10px;text-align:left;">Active CSMs</th>
+      <th style="padding:6px 10px;text-align:left;">Key Signal</th>
+    </tr></thead>
+    <tbody>
+      <tr style="border-bottom:1px solid #1e2533;">
+        <td style="padding:6px 10px;color:#94a3b8;">Mon May 25</td>
+        <td style="padding:6px 10px;text-align:center;color:#475569;">&mdash;</td>
+        <td style="padding:6px 10px;color:#475569;">Memorial Day holiday</td>
+        <td style="padding:6px 10px;color:#475569;">&mdash;</td>
+      </tr>
+      <tr style="border-bottom:1px solid #1e2533;">
+        <td style="padding:6px 10px;color:#e2e8f0;">Tue May 26</td>
+        <td style="padding:6px 10px;text-align:center;color:#0ea5e9;font-weight:600;">12</td>
+        <td style="padding:6px 10px;color:#cbd5e1;">Nick, Varun, Divyam, Atisha, Pam, Riley</td>
+        <td style="padding:6px 10px;color:#cbd5e1;">Full team active post-holiday</td>
+      </tr>
+      <tr style="border-bottom:1px solid #1e2533;">
+        <td style="padding:6px 10px;color:#e2e8f0;">Wed May 27</td>
+        <td style="padding:6px 10px;text-align:center;color:#0ea5e9;font-weight:600;">8</td>
+        <td style="padding:6px 10px;color:#cbd5e1;">Nick, Varun, Divyam, Riley, Pam</td>
+        <td style="padding:6px 10px;color:#cbd5e1;">Midweek cadence calls</td>
+      </tr>
+      <tr style="border-bottom:1px solid #1e2533;">
+        <td style="padding:6px 10px;color:#e2e8f0;">Thu May 28</td>
+        <td style="padding:6px 10px;text-align:center;color:#0ea5e9;font-weight:600;">9</td>
+        <td style="padding:6px 10px;color:#cbd5e1;">Divyam, Pam, Atisha, Riley</td>
+        <td style="padding:6px 10px;color:#fca5a5;">&#x1F534; Oracle reorg &middot; &#x1F4C8; RSM entity expansion &middot; Lumen RGIP</td>
+      </tr>
+      <tr>
+        <td style="padding:6px 10px;color:#e2e8f0;">Fri May 29</td>
+        <td style="padding:6px 10px;text-align:center;color:#0ea5e9;font-weight:600;">8</td>
+        <td style="padding:6px 10px;color:#cbd5e1;">Nick, Varun, Pam, Atisha</td>
+        <td style="padding:6px 10px;color:#7dd3fc;">&#x1F4C8; Zendesk MCP &middot; Check Point Snowflake &middot; Equinix new stakeholder</td>
+      </tr>
+    </tbody>
+  </table>
+  <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:12px;">
+    <div style="background:#141820;border:1px solid #1e293b;border-radius:8px;padding:12px;">
+      <div style="color:#64748b;font-size:10px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px;">Calls by CSM (W22)</div>
+      <div style="font-size:12px;color:#cbd5e1;line-height:1.8;">
+        Nick Johnson: <strong style="color:#0ea5e9;">~10</strong><br>
+        Divyam Dewan: <strong style="color:#0ea5e9;">~8</strong><br>
+        Atisha Waghela: <strong style="color:#0ea5e9;">~8</strong><br>
+        Riley Rogers: <strong style="color:#0ea5e9;">~5</strong><br>
+        Varun Tiwari: <strong style="color:#0ea5e9;">~4</strong><br>
+        Pam Huck: <strong style="color:#0ea5e9;">~4</strong><br>
+        Rani Guy: <strong style="color:#475569;">0</strong><br>
+        Andy Lim: <strong style="color:#475569;">~2 (x-cov)</strong>
+      </div>
+    </div>
+    <div style="background:#141820;border:1px solid #1e293b;border-radius:8px;padding:12px;">
+      <div style="color:#64748b;font-size:10px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px;">Accounts Touched (W22)</div>
+      <div style="font-size:12px;color:#cbd5e1;line-height:1.8;">
+        IBM (Riley &middot; ongoing awards tracking)<br>
+        Oracle (Pam &middot; &#x1F534; reorg risk)<br>
+        RSM US (Atisha &middot; &#x1F4C8; entity expansion)<br>
+        Lumen (Divyam &middot; &#x1F4C8; RGIP pitch)<br>
+        Zendesk (Varun &middot; &#x1F4C8; MCP scale)<br>
+        Check Point (Nick &middot; &#x1F4C8; Snowflake renewal)<br>
+        SAP (Riley &middot; TR monthly sync)<br>
+        Apple / Equinix / Intuit / ADP / Iron Mountain
+      </div>
+    </div>
+  </div>
+  <div style="background:#141820;border:1px solid #1e293b;border-radius:8px;padding:12px;margin-bottom:8px;">
+    <div style="color:#64748b;font-size:10px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px;">Top Action Items Heading into W23</div>
+    <div style="font-size:12px;color:#cbd5e1;line-height:2;">
+      <span style="color:#ef4444;font-weight:600;">HIGH</span> &nbsp;Oracle &mdash; Pam to check in on reorg timeline and data strategy clarity (risk to renewal)<br>
+      <span style="color:#ef4444;font-weight:600;">HIGH</span> &nbsp;RSM US &mdash; Atisha + AE Leo Zunz to finalize entity expansion contract proposal<br>
+      <span style="color:#ef4444;font-weight:600;">HIGH</span> &nbsp;Check Point &mdash; Nick to prep Snowflake ingestion brief for Thursday exec meeting<br>
+      <span style="color:#ef4444;font-weight:600;">HIGH</span> &nbsp;Zendesk &mdash; Varun to schedule MCP connector expert session for at-scale evaluation<br>
+      <span style="color:#ef4444;font-weight:600;">HIGH</span> &nbsp;Equinix &mdash; Atisha to confirm in-person with Kim Seijo (Redwood City next week)<br>
+      <span style="color:#f59e0b;font-weight:600;">MED</span> &nbsp;&nbsp;Lumen &mdash; Divyam to send RGIP pricing proposal<br>
+      <span style="color:#f59e0b;font-weight:600;">MED</span> &nbsp;&nbsp;ADP HRO &mdash; Pam to send TR LLM/AI visibility one-pager to Christina<br>
+      <span style="color:#f59e0b;font-weight:600;">MED</span> &nbsp;&nbsp;Apple &mdash; Atisha to send custom spend derivation and process DUNs expansion list
+    </div>
+  </div>`;
+}
