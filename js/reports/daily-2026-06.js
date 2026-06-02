@@ -33,10 +33,10 @@ function dayData_2026_06_01() {
         nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
         detail: 'AM Hayden Smith organized meeting with Nick, Max Shaw, and Karin/KP Pindle (HG) to pitch account scoring and MCP credits to Lorena Fortuna (Intuit). Hayden prepared scores spreadsheet and pricing calculator. Goal: Lorena requests formal proposal. "Annabelle\'s gone" — prior champion left — creating re-entry window.' },
       { ts: 'Jun 1 · 10:30 AM', csm: 'varun', account: 'Autodesk Inc',
-        note: '⚠️ COVERAGE ALERT: Varun on 12-week paternity leave starting next week',
-        mins: 30, health: 'Concerning',
+        note: 'Recurring scoring sync — David Guo (Autodesk) going on 12-wk pat. leave Jun 9, introducing UK colleague to Varun',
+        mins: 30, health: 'Healthy',
         nature: 'Routine', initiator: 'Customer', purpose: 'Check-in',
-        detail: 'David Guo (Autodesk) confirmed MadKudu scoring running fine — leads flowing, no anomalies. CRITICAL: Varun announced 12-week paternity leave starting next week. Sending intro email to coverage team member this week. Instructions to Autodesk: BU only — no model training changes. Varun available by email for escalations.' },
+        detail: 'MadKudu scoring running fine — leads flowing, no major anomalies in months. David Guo (Autodesk's MadKudu owner) is going on 12-week paternity leave June 9 – August 31 (wife's maternity leave ends June 8). David introducing his UK-based colleague (Brazilian woman on the same team) to Varun before he leaves. Varun to build relationship with new Autodesk contact. Varun confirmed as ongoing point of contact.' },
       { ts: 'Jun 1 · 10:30 AM', csm: 'nick', account: 'Veeam Software AG',
         note: 'HG CEO + AI engineering — AI/agentic use case expansion, "next phase of partnership"',
         mins: 90, health: 'Healthy',
@@ -69,7 +69,7 @@ function dayData_2026_06_01() {
       { csm: 'rani',   account: 'Workday Inc',             health: 'Healthy',    note: 'Databricks migration: ML team needs HG data for AI agents. Snowflake/Fivetran delivery must stay intact. Awaiting Databricks credentials.' },
       { csm: 'atisha', account: 'TD Synnex',               health: 'Healthy',    note: 'Recurring Monday sync. Export limits confirmed not burning credits on re-downloads. Steve Markle engaged. Steady usage.' },
       { csm: 'nick',   account: 'Intuit',                  health: 'Healthy',    note: 'Expansion: Hayden Smith (AM) + Nick pitching account scoring + MCP credits to Lorena Fortuna. Annabelle\'s departure = re-entry window. Proposal next step.' },
-      { csm: 'varun',  account: 'Autodesk Inc',            health: 'Concerning', note: '⚠️ COVERAGE ALERT: Varun on 12-week paternity leave starting next week. MadKudu scoring fine. Intro email to coverage CSM being sent. Coverage CSM must be named NOW.' },
+      { csm: 'varun',  account: 'Autodesk Inc',            health: 'Healthy',    note: 'Recurring scoring sync. MadKudu running fine. David Guo (Autodesk) going on 12-wk paternity leave Jun 9–Aug 31. Introducing UK colleague to Varun before leaving. Varun to establish relationship with new contact.' },
       { csm: 'nick',   account: 'Veeam Software AG',       health: 'Healthy',    note: 'Expansion: HG CEO Francis Brero + CCO + AI engineering 90-min strategy session. AI/agentic GTM use cases for Veeam IQ products. "Next phase of partnership."' },
       { csm: 'riley',  account: 'SAP Inc',                 health: 'Healthy',    note: 'TR Premium Content Hosting pitched to Helya Barezani. AI discoverability + SEO + analytics. Helya evaluating with SAP team. Expansion opportunity.' },
       { csm: 'rani',   account: 'Amazon Web Services (AWS)', health: 'Healthy',  note: 'Project Rubicon support call. HG Quick Desktop demo by Mike Galyen. Mark Fell managing agenda. Francis not needed. $4.6M ARR strategic account healthy.' },
@@ -94,8 +94,8 @@ function dayMeta_2026_06_01() {
 
 function dayOverviewHTML_2026_06_01() {
   return `<div class="section-label">Team Activity &mdash; Monday June 1, 2026</div>
-  <div style="background:#1c1215;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
-    &#x26A0;&#xFE0F; <strong>VARUN TIWARI &mdash; 12-WEEK PATERNITY LEAVE starting next week.</strong> Autodesk (MadKudu) needs coverage CSM assigned immediately. Varun sending intro email to David Guo this week. Action required before EOW.
+  <div style="background:#1c1910;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fcd34d;">
+    &#x1F7E1; <strong>Autodesk — David Guo (customer) going on 12-week paternity leave Jun 9&ndash;Aug 31.</strong> David introducing his UK colleague to Varun before leaving. Action: Varun to get introduced and establish contact before Jun 9.
   </div>
   <div style="background:#0d1c14;border:1px solid #22c55e;border-left:3px solid #22c55e;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#86efac;">
     &#x1F4C8; <strong>5 Expansion Signals:</strong> Veeam (HG CEO + AI engineering &middot; 90 min &middot; Nick) &middot; IBM (GenAI walkthrough &middot; Nick) &middot; Intuit (account scoring + proposal &middot; Nick + Hayden) &middot; SAP TR Premium Content (Riley) &middot; SAP deal-book AI
@@ -151,7 +151,7 @@ function dayOverviewHTML_2026_06_01() {
     </div>
 
     <div class="csm-card has-calls" data-csm="varun">
-      <span class="call-badge" style="background:#7f1d1d;color:#fca5a5;">1 CALL ⚠️</span>
+      <span class="call-badge">1 CALL</span>
       <div class="csm-card-header">
         <div class="avatar av-grey">VT</div>
         <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
@@ -161,7 +161,7 @@ function dayOverviewHTML_2026_06_01() {
         <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
         <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
       </div>
-      <div class="csm-account-note" style="color:#fca5a5;">&#x26A0;&#xFE0F; Autodesk &mdash; announced 12-week paternity leave starting next week. Coverage CSM must be named.</div>
+      <div class="csm-account-note">Autodesk &mdash; recurring scoring sync. David Guo (Autodesk) going on pat. leave Jun 9&ndash;Aug 31. Introducing UK colleague to Varun. Account stable.</div>
     </div>
 
     <div class="csm-card has-calls" data-csm="riley">
@@ -279,13 +279,13 @@ function dayCallsHTML_2026_06_01() {
         <td style="padding:6px 10px;color:#94a3b8;">Expansion: account scoring + MCP pricing, proposal for Lorena</td>
         <td style="padding:6px 10px;color:#22c55e;">&#x1F4C8; Expansion</td>
       </tr>
-      <tr style="border-bottom:1px solid #1a2030;background:#1c1215;">
+      <tr style="border-bottom:1px solid #1a2030;">
         <td style="padding:6px 10px;color:#94a3b8;">10:30 AM</td>
         <td style="padding:6px 10px;"><span style="background:#3a1f1a;color:#fca5a5;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;">Varun</span></td>
-        <td style="padding:6px 10px;color:#fca5a5;">Autodesk Inc</td>
+        <td style="padding:6px 10px;color:#e2e8f0;">Autodesk Inc</td>
         <td style="padding:6px 10px;color:#64748b;">30m</td>
-        <td style="padding:6px 10px;color:#fca5a5;">&#x26A0;&#xFE0F; 12-wk paternity leave next week — coverage needed</td>
-        <td style="padding:6px 10px;color:#f59e0b;">&#x26A0; Coverage Alert</td>
+        <td style="padding:6px 10px;color:#94a3b8;">Recurring sync &mdash; David Guo (Autodesk) going on pat. leave Jun 9, new contact intro</td>
+        <td style="padding:6px 10px;color:#94a3b8;">&#x1F7E1; Watch</td>
       </tr>
       <tr style="border-bottom:1px solid #1a2030;">
         <td style="padding:6px 10px;color:#94a3b8;">10:30 AM</td>
@@ -358,10 +358,10 @@ function dayPulsesHTML_2026_06_01() {
       <div style="font-weight:700;color:#e2e8f0;margin-bottom:6px;">Intuit</div>
       <div style="font-size:12px;color:#94a3b8;line-height:1.5;">Expansion: Hayden Smith (AM) + Nick pitching account scoring + MCP credits to Lorena Fortuna. Annabelle's departure = re-entry window. Formal proposal next step.</div>
     </div>
-    <div class="pulse-card concerning">
-      <div style="font-size:10px;color:#64748b;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px;">Varun Tiwari &#x26A0;&#xFE0F;</div>
-      <div style="font-weight:700;color:#fca5a5;margin-bottom:6px;">Autodesk Inc</div>
-      <div style="font-size:12px;color:#94a3b8;line-height:1.5;">COVERAGE ALERT: 12-week paternity leave starting next week. MadKudu scoring fine. Intro email to coverage CSM being sent. Coverage CSM must be named NOW.</div>
+    <div class="pulse-card healthy">
+      <div style="font-size:10px;color:#64748b;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px;">Varun Tiwari</div>
+      <div style="font-weight:700;color:#e2e8f0;margin-bottom:6px;">Autodesk Inc</div>
+      <div style="font-size:12px;color:#94a3b8;line-height:1.5;">Recurring scoring sync. MadKudu running fine. David Guo (Autodesk) going on 12-wk pat. leave Jun 9&ndash;Aug 31. Introducing UK colleague to Varun. Action: Varun to establish relationship with new Autodesk contact.</div>
     </div>
     <div class="pulse-card healthy">
       <div style="font-size:10px;color:#64748b;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px;">Nick Johnson</div>
@@ -394,8 +394,8 @@ function dayPulsesHTML_2026_06_01() {
 function dayActionsHTML_2026_06_01() {
   return `<div style="display:flex;flex-direction:column;gap:8px;">
     <div style="display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px solid #1a2030;font-size:12px;">
-      <span style="background:#4a1010;color:#f87171;border:1px solid #ef4444;font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;white-space:nowrap;min-width:44px;text-align:center;">HIGH</span>
-      <span style="color:#cbd5e1;line-height:1.5;"><strong>[0101]</strong> Management / Varun &mdash; Name Autodesk (MadKudu) coverage CSM immediately. 12-week leave starts next week. $521K ARR at risk with no cover.</span>
+      <span style="background:#3a2a10;color:#fcd34d;border:1px solid #f59e0b;font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;white-space:nowrap;min-width:44px;text-align:center;">MED</span>
+      <span style="color:#cbd5e1;line-height:1.5;"><strong>[0101]</strong> Varun Tiwari &mdash; Get introduced to David Guo's UK colleague (new Autodesk MadKudu contact) before Jun 9. David sending intro. Build relationship with new contact before David returns Aug 31.</span>
     </div>
     <div style="display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px solid #1a2030;font-size:12px;">
       <span style="background:#4a1010;color:#f87171;border:1px solid #ef4444;font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;white-space:nowrap;min-width:44px;text-align:center;">HIGH</span>
@@ -468,7 +468,7 @@ function weeklyOrMonthlyHTML_2026_06_01() {
   <div style="background:#141820;border:1px solid #1e293b;border-radius:8px;padding:12px;margin-bottom:8px;">
     <div style="color:#64748b;font-size:10px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px;">Top Action Items Heading into June Week 1</div>
     <div style="font-size:12px;color:#cbd5e1;line-height:2;">
-      <span style="color:#ef4444;font-weight:600;">HIGH</span> &nbsp;Autodesk &mdash; Name coverage CSM before Varun's paternity leave starts next week<br>
+      <span style="color:#f59e0b;font-weight:600;">MED</span> &nbsp;&nbsp;Autodesk &mdash; Varun to get introduced to David Guo's UK colleague before Jun 9 (David on leave Jun 9&ndash;Aug 31)<br>
       <span style="color:#ef4444;font-weight:600;">HIGH</span> &nbsp;Intuit &mdash; Nick + Hayden to send formal proposal to Lorena Fortuna this week<br>
       <span style="color:#ef4444;font-weight:600;">HIGH</span> &nbsp;Cisco &mdash; Pam Huck to get briefed on Michael Xu match-rate findings (Rani covered)<br>
       <span style="color:#f59e0b;font-weight:600;">MED</span> &nbsp;&nbsp;Workday &mdash; Rani to set up Databricks delivery (keep Snowflake intact)<br>
