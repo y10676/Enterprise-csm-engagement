@@ -36,7 +36,7 @@ function dayData_2026_06_01() {
         note: 'Recurring scoring sync — David Guo (Autodesk) going on 12-wk pat. leave Jun 9, introducing UK colleague to Varun',
         mins: 30, health: 'Healthy',
         nature: 'Routine', initiator: 'Customer', purpose: 'Check-in',
-        detail: 'MadKudu scoring running fine — leads flowing, no major anomalies in months. David Guo (Autodesk's MadKudu owner) is going on 12-week paternity leave June 9 – August 31 (wife's maternity leave ends June 8). David introducing his UK-based colleague (Brazilian woman on the same team) to Varun before he leaves. Varun to build relationship with new Autodesk contact. Varun confirmed as ongoing point of contact.' },
+        detail: 'MadKudu scoring running fine — leads flowing, no major anomalies in months. David Guo (Autodesk MadKudu contact) is going on 12-week paternity leave June 9–August 31. His wife\'s maternity leave ends June 8. David introducing his UK-based colleague to Varun before leaving. Varun remains the HG point of contact for escalations.' },
       { ts: 'Jun 1 · 10:30 AM', csm: 'nick', account: 'Veeam Software AG',
         note: 'HG CEO + AI engineering — AI/agentic use case expansion, "next phase of partnership"',
         mins: 90, health: 'Healthy',
@@ -221,8 +221,8 @@ function dayOverviewHTML_2026_06_01() {
 }
 
 function dayCallsHTML_2026_06_01() {
-  return `<div style="background:#1c1215;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
-    &#x26A0;&#xFE0F; <strong>VARUN TIWARI &mdash; 12-WEEK PATERNITY LEAVE starting next week.</strong> Coverage CSM must be assigned for Autodesk before EOW.
+  return `<div style="background:#1c1910;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fcd34d;">
+    ⚠️ <strong>Autodesk &mdash; David Guo (customer) going on pat. leave Jun 9&ndash;Aug 31.</strong> David introducing UK colleague to Varun. Get intro before Jun 9.
   </div>
   <div style="background:#1c1910;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fcd34d;">
     &#x1F504; Cross-coverage: Rani Guy confirmed on Cisco sync (assigned CSM = Pam Huck). Pam to be briefed.
@@ -458,7 +458,7 @@ function weeklyOrMonthlyHTML_2026_06_01() {
         IBM (Nick &middot; &#x1F4C8; GenAI walkthrough)<br>
         Intuit (Nick &middot; &#x1F4C8; expansion proposal)<br>
         SAP (Riley &middot; &#x1F4C8; TR Premium Content)<br>
-        Autodesk (Varun &middot; &#x26A0;&#xFE0F; paternity leave)<br>
+        Autodesk (Varun &middot; &#x1F7E1; David Guo on leave Jun 9)<br>
         Workday (Rani &middot; &#x1F7E1; Databricks migration)<br>
         NetApp (Rani &middot; &#x1F7E1; matching issue)<br>
         AWS / Infor / TD Synnex / Cisco
