@@ -521,163 +521,222 @@ function dayMeta_2026_06_02() {
 }
 
 function dayOverviewHTML_2026_06_02() {
-  return `
-  <div style="background:#2d2008;border-left:3px solid #f59e0b;border-radius:6px;padding:9px 14px;margin-bottom:12px;font-size:12px;color:#fcd34d;">
-    &#x26A0;&#xFE0F; <strong>Platform Login Issue &mdash; Meraki (Cisco):</strong> Platform login not working at Rani Guy's onboarding call start. Engineering working on fix. Newly onboarded contacts affected. Confirm resolution today.
-    &nbsp;&nbsp;|&nbsp;&nbsp;
-    &#x26A0;&#xFE0F; <strong>Accenture Renewal Watch:</strong> Avanade expansion access flagged 24-month term concern. Contract in approvals. Kelly Gumber to revert.
+  return `<div class="section-label">Team Activity &mdash; Tuesday June 2, 2026</div>
+  <div style="background:#1c1910;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fcd34d;">
+    &#x26A0;&#xFE0F; <strong>Platform Login Issue &mdash; Meraki (Cisco):</strong> Adrian Escobar reported the platform login was not working at the start of Rani Guy&rsquo;s onboarding sync. Engineering working on fix. Newly onboarded contacts (Melanie, Rashad, Sijac) may be blocked. Confirm resolution today.
   </div>
-  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px;margin-bottom:12px;">
-    <div style="background:#1c1f26;border:1px solid #1e3a5f;border-top:3px solid #0ea5e9;border-radius:8px;padding:12px;">
-      <div style="font-size:10px;color:#64748b;text-transform:uppercase;margin-bottom:6px;">Nick Johnson &mdash; 4 Calls</div>
-      <div style="font-size:12px;color:#94a3b8;line-height:1.7;">
-        3:00 AM &middot; Accenture <span style="color:#f59e0b;font-size:10px;">&#x1F7E1; Watch</span><br>
-        7:30 AM &middot; IBM<br>
-        8:30 AM &middot; Veeam (TR event)<br>
-        9:30 AM &middot; SAP (biweekly)
+  <div style="background:#1c1910;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fcd34d;">
+    &#x26A0;&#xFE0F; <strong>Accenture Renewal Watch:</strong> Kelly Gumber flagged 24-month minimum term concern for Avanade expansion access (~$100K/annum additional). Contract in approvals. David Garcia Thomas (HG AM, London) presenting justification. Resolution TBD.
+  </div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Tue Jun 2 &mdash; 76 recordings scanned</strong> via SFDC SOQL &middot; <strong>8 confirmed calls</strong> across 4 CSMs &middot; 5 unconfirmed (no transcript) &middot; 1 internal HG meeting excluded
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">4 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
       </div>
-    </div>
-    <div style="background:#1c1f26;border:1px solid #3a1f1a;border-top:3px solid #fca5a5;border-radius:8px;padding:12px;">
-      <div style="font-size:10px;color:#64748b;text-transform:uppercase;margin-bottom:6px;">Varun Tiwari &mdash; 2 Calls</div>
-      <div style="font-size:12px;color:#94a3b8;line-height:1.7;">
-        6:00 AM &middot; Autodesk (data Q&amp;A)<br>
-        8:00 AM &middot; ServiceNow (spend category)
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">4</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">4</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">120m</div><div class="metric-lbl">Duration</div></div>
       </div>
+      <div class="csm-account-note">Accenture (renewal &middot; Avanade 24-month concern) &middot; IBM (HG contact intro &middot; DQ scoring) &middot; Veeam (TR event prep Jun 3) &middot; SAP (biweekly &middot; product mapping refresh)</div>
     </div>
-    <div style="background:#1c1f26;border:1px solid #1a3a1a;border-top:3px solid #86efac;border-radius:8px;padding:12px;">
-      <div style="font-size:10px;color:#64748b;text-transform:uppercase;margin-bottom:6px;">Rani Guy &mdash; 1 Call</div>
-      <div style="font-size:12px;color:#94a3b8;line-height:1.7;">
-        8:30 AM &middot; Meraki / Cisco <span style="color:#f59e0b;font-size:10px;">&#x1F7E1; Watch</span><br>
-        <span style="color:#64748b;font-size:10px;">(Platform issue at call start)</span>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
       </div>
-    </div>
-    <div style="background:#1c1f26;border:1px solid #2d1e4f;border-top:3px solid #c4b5fd;border-radius:8px;padding:12px;">
-      <div style="font-size:10px;color:#64748b;text-transform:uppercase;margin-bottom:6px;">Riley Rogers &mdash; 1 Call</div>
-      <div style="font-size:12px;color:#94a3b8;line-height:1.7;">
-        11:00 AM &middot; Paycom (CSM intro)<br>
-        <span style="color:#64748b;font-size:10px;">(Top Rated win; media kit follow-up)</span>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
       </div>
+      <div class="csm-account-note">Autodesk (data retrieval Q&amp;A &middot; new eng. contacts Matthew Ding + Mohammed Tanveer) &middot; ServiceNow (custom spend categories &middot; 4 products submitted)</div>
     </div>
-    <div style="background:#1c1f26;border:1px solid #1e293b;border-radius:8px;padding:12px;opacity:.7;">
-      <div style="font-size:10px;color:#64748b;text-transform:uppercase;margin-bottom:6px;">Divyam Dewan &mdash; 0</div>
-      <div style="font-size:12px;color:#475569;">2 Adobe events (no transcript)</div>
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Meraki / Cisco &mdash; onboarding sync. &#x26A0;&#xFE0F; Platform login issue at call start. AI account brief demo well-received by Melanie (new contact).</div>
     </div>
-    <div style="background:#1c1f26;border:1px solid #1e293b;border-radius:8px;padding:12px;opacity:.7;">
-      <div style="font-size:10px;color:#64748b;text-transform:uppercase;margin-bottom:6px;">Pam Huck &mdash; 0</div>
-      <div style="font-size:12px;color:#475569;">2 Cisco events (no transcript)</div>
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Paycom &mdash; CSM intro call (Riley replacing Sasha since Jan 2026). Top Rated win. Media kit follow-up needed for Katie Lenhart + Larisha Hunter.</div>
     </div>
-    <div style="background:#1c1f26;border:1px solid #1e293b;border-radius:8px;padding:12px;opacity:.7;">
-      <div style="font-size:10px;color:#64748b;text-transform:uppercase;margin-bottom:6px;">Atisha Waghela &mdash; 0</div>
-      <div style="font-size:12px;color:#475569;">3+ events incl APAC (no transcript)</div>
+
+    <div class="csm-card no-calls" data-csm="divyam">
+      <div class="csm-card-header">
+        <div class="avatar av-grey">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-grey">0</div><div class="metric-lbl">Direct</div></div>
+        <div><div class="metric-num m-grey">2</div><div class="metric-lbl">Events</div></div>
+        <div><div class="metric-num m-grey">0</div><div class="metric-lbl">Confirmed</div></div>
+      </div>
+      <div class="csm-account-note">2 Adobe SFDC events (GTM Tool Review + New Role Discussion) &mdash; no transcript on any recording. Calls may have occurred without Weflow transcript.</div>
     </div>
-    <div style="background:#1c1f26;border:1px solid #1e293b;border-radius:8px;padding:12px;opacity:.7;">
-      <div style="font-size:10px;color:#64748b;text-transform:uppercase;margin-bottom:6px;">Andy Lim &mdash; 0</div>
-      <div style="font-size:12px;color:#475569;">4+ events (no recordings/transcripts)</div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-grey">0</div><div class="metric-lbl">Direct</div></div>
+        <div><div class="metric-num m-grey">2</div><div class="metric-lbl">Events</div></div>
+        <div><div class="metric-num m-grey">0</div><div class="metric-lbl">Confirmed</div></div>
+      </div>
+      <div class="csm-account-note">2 Cisco SFDC events (TR Quick Sync 7AM + TR Logistics Sync 9AM) &mdash; no transcript on either recording. Calls likely held but unconfirmed.</div>
     </div>
+
+    <div class="csm-card no-calls" data-csm="atisha">
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-grey">0</div><div class="metric-lbl">Direct</div></div>
+        <div><div class="metric-num m-grey">4</div><div class="metric-lbl">Events</div></div>
+        <div><div class="metric-num m-grey">0</div><div class="metric-lbl">Confirmed</div></div>
+      </div>
+      <div class="csm-account-note">3+ SFDC events (Apple &times;2, Converge, SFDC ASEAN 11PM APAC) &mdash; none with transcripts. Highest unverified event count today.</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-grey">0</div><div class="metric-lbl">Direct</div></div>
+        <div><div class="metric-num m-grey">4</div><div class="metric-lbl">Events</div></div>
+        <div><div class="metric-num m-grey">0</div><div class="metric-lbl">Confirmed</div></div>
+      </div>
+      <div class="csm-account-note">4+ SFDC events (memoryBlue &times;2, ConnectWise, Toast, FactSet) &mdash; no recordings or transcripts linked. Highest unverified event count of the day.</div>
+    </div>
+
   </div>`;
 }
 
 function dayCallsHTML_2026_06_02() {
-  return `
-  <div style="background:#0c1e35;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin-bottom:10px;font-size:12px;color:#7dd3fc;">
-    &#x2139;&#xFE0F; <strong>1 internal HG meeting excluded:</strong> "Max w/ Brandon @ BMC" (Leo Zunz, Max Shaw, Varun Tiwari &mdash; all HG staff; no BMC customer detected).
+  return `<div style="background:#1c1910;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fcd34d;">
+    &#x26A0;&#xFE0F; <strong>Platform Login Issue &mdash; Meraki:</strong> Login not working at call start. Engineering working on fix. Confirm resolution for newly onboarded contacts.
   </div>
-  <table style="width:100%;border-collapse:collapse;background:#141820;border:1px solid #1e293b;border-radius:8px;overflow:hidden;font-size:12px;">
+  <div style="background:#1c1910;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fcd34d;">
+    &#x26A0;&#xFE0F; <strong>Accenture Renewal Watch:</strong> Avanade expansion (~$100K/annum) stalled on 24-month minimum term. Kelly Gumber to revert after internal check.
+  </div>
+  <table style="width:100%;border-collapse:collapse;font-size:12px;">
     <thead>
-      <tr style="background:#1a2030;">
-        <th style="padding:7px 10px;color:#64748b;font-size:10px;text-transform:uppercase;text-align:left;">Time (PT)</th>
-        <th style="padding:7px 10px;color:#64748b;font-size:10px;text-transform:uppercase;text-align:left;">CSM</th>
-        <th style="padding:7px 10px;color:#64748b;font-size:10px;text-transform:uppercase;text-align:left;">Account</th>
-        <th style="padding:7px 10px;color:#64748b;font-size:10px;text-transform:uppercase;text-align:left;">Dur</th>
-        <th style="padding:7px 10px;color:#64748b;font-size:10px;text-transform:uppercase;text-align:left;">Notes</th>
-        <th style="padding:7px 10px;color:#64748b;font-size:10px;text-transform:uppercase;text-align:left;">Signal</th>
+      <tr style="border-bottom:1px solid #1e2533;">
+        <th style="padding:6px 10px;color:#64748b;text-transform:uppercase;font-size:10px;letter-spacing:.07em;text-align:left;">Time (PT)</th>
+        <th style="padding:6px 10px;color:#64748b;text-transform:uppercase;font-size:10px;letter-spacing:.07em;text-align:left;">CSM</th>
+        <th style="padding:6px 10px;color:#64748b;text-transform:uppercase;font-size:10px;letter-spacing:.07em;text-align:left;">Account</th>
+        <th style="padding:6px 10px;color:#64748b;text-transform:uppercase;font-size:10px;letter-spacing:.07em;text-align:left;">Dur</th>
+        <th style="padding:6px 10px;color:#64748b;text-transform:uppercase;font-size:10px;letter-spacing:.07em;text-align:left;">Note</th>
+        <th style="padding:6px 10px;color:#64748b;text-transform:uppercase;font-size:10px;letter-spacing:.07em;text-align:left;">Signal</th>
       </tr>
     </thead>
     <tbody>
       <tr style="border-bottom:1px solid #1a2030;">
-        <td style="padding:7px 10px;color:#94a3b8;">3:00 AM</td>
-        <td style="padding:7px 10px;"><span style="background:#1e3a5f;color:#7dd3fc;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;">Nick</span></td>
-        <td style="padding:7px 10px;color:#e2e8f0;">Accenture</td>
-        <td style="padding:7px 10px;color:#64748b;">30m</td>
-        <td style="padding:7px 10px;color:#94a3b8;">Renewal — Avanade expansion; 24-month term concern. Kelly Gumber to revert on approval.</td>
-        <td style="padding:7px 10px;color:#f59e0b;">&#x1F7E1; Watch</td>
+        <td style="padding:6px 10px;color:#94a3b8;">3:00 AM</td>
+        <td style="padding:6px 10px;"><span style="background:#1e3a5f;color:#7dd3fc;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;">Nick</span></td>
+        <td style="padding:6px 10px;color:#e2e8f0;">Accenture</td>
+        <td style="padding:6px 10px;color:#64748b;">30m</td>
+        <td style="padding:6px 10px;color:#94a3b8;">Renewal &mdash; Avanade expansion access; Kelly Gumber flagged 24-month term concern</td>
+        <td style="padding:6px 10px;color:#f59e0b;">&#x1F7E1; Watch</td>
       </tr>
       <tr style="border-bottom:1px solid #1a2030;">
-        <td style="padding:7px 10px;color:#94a3b8;">6:00 AM</td>
-        <td style="padding:7px 10px;"><span style="background:#3a1f1a;color:#fca5a5;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;">Varun</span></td>
-        <td style="padding:7px 10px;color:#e2e8f0;">Autodesk Inc</td>
-        <td style="padding:7px 10px;color:#64748b;">30m</td>
-        <td style="padding:7px 10px;color:#94a3b8;">Data retrieval Q&amp;A; Snowflake/AWS marketplace; new eng. contacts Matthew Ding + Mohammed Tanveer.</td>
-        <td style="padding:7px 10px;color:#22c55e;">&#x1F7E2; Healthy</td>
+        <td style="padding:6px 10px;color:#94a3b8;">6:00 AM</td>
+        <td style="padding:6px 10px;"><span style="background:#3a1f1a;color:#fca5a5;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;">Varun</span></td>
+        <td style="padding:6px 10px;color:#e2e8f0;">Autodesk Inc</td>
+        <td style="padding:6px 10px;color:#64748b;">30m</td>
+        <td style="padding:6px 10px;color:#94a3b8;">Data retrieval Q&amp;A &mdash; Snowflake/AWS marketplace; new contacts Matthew Ding + Mohammed Tanveer</td>
+        <td style="padding:6px 10px;color:#22c55e;">&#x1F7E2; Healthy</td>
       </tr>
       <tr style="border-bottom:1px solid #1a2030;">
-        <td style="padding:7px 10px;color:#94a3b8;">7:30 AM</td>
-        <td style="padding:7px 10px;"><span style="background:#1e3a5f;color:#7dd3fc;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;">Nick</span></td>
-        <td style="padding:7px 10px;color:#e2e8f0;">IBM</td>
-        <td style="padding:7px 10px;color:#64748b;">30m</td>
-        <td style="padding:7px 10px;color:#94a3b8;">HG contact intro (Clayton Cutbush). DQ scoring update delivered to Peter Herr, Ishan Sharma.</td>
-        <td style="padding:7px 10px;color:#22c55e;">&#x1F7E2; Healthy</td>
+        <td style="padding:6px 10px;color:#94a3b8;">7:30 AM</td>
+        <td style="padding:6px 10px;"><span style="background:#1e3a5f;color:#7dd3fc;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;">Nick</span></td>
+        <td style="padding:6px 10px;color:#e2e8f0;">IBM</td>
+        <td style="padding:6px 10px;color:#64748b;">30m</td>
+        <td style="padding:6px 10px;color:#94a3b8;">HG contact intro &mdash; Clayton Cutbush introduced; DQ scoring update delivered to Peter Herr team</td>
+        <td style="padding:6px 10px;color:#22c55e;">&#x1F7E2; Healthy</td>
       </tr>
       <tr style="border-bottom:1px solid #1a2030;">
-        <td style="padding:7px 10px;color:#94a3b8;">8:00 AM</td>
-        <td style="padding:7px 10px;"><span style="background:#3a1f1a;color:#fca5a5;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;">Varun</span></td>
-        <td style="padding:7px 10px;color:#e2e8f0;">ServiceNow Inc</td>
-        <td style="padding:7px 10px;color:#64748b;">30m</td>
-        <td style="padding:7px 10px;color:#94a3b8;">Custom spend categories — 4 products submitted. Monthly cadence proposed. 30-day SLA explained.</td>
-        <td style="padding:7px 10px;color:#22c55e;">&#x1F7E2; Healthy</td>
+        <td style="padding:6px 10px;color:#94a3b8;">8:00 AM</td>
+        <td style="padding:6px 10px;"><span style="background:#3a1f1a;color:#fca5a5;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;">Varun</span></td>
+        <td style="padding:6px 10px;color:#e2e8f0;">ServiceNow Inc</td>
+        <td style="padding:6px 10px;color:#64748b;">30m</td>
+        <td style="padding:6px 10px;color:#94a3b8;">Custom spend categories &mdash; 4 new products submitted; monthly tracking cadence proposed</td>
+        <td style="padding:6px 10px;color:#22c55e;">&#x1F7E2; Healthy</td>
       </tr>
       <tr style="border-bottom:1px solid #1a2030;">
-        <td style="padding:7px 10px;color:#94a3b8;">8:30 AM</td>
-        <td style="padding:7px 10px;"><span style="background:#1e3a5f;color:#7dd3fc;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;">Nick</span></td>
-        <td style="padding:7px 10px;color:#e2e8f0;">Veeam Software AG</td>
-        <td style="padding:7px 10px;color:#64748b;">30m</td>
-        <td style="padding:7px 10px;color:#94a3b8;">TR event prep (Jun 3) — Nick + Angus + Cassidy attending. SecurityAI review Q answered. Last-minute ask from Abigail Fish. <em style="color:#64748b;">(No SFDC event link — transcript only)</em></td>
-        <td style="padding:7px 10px;color:#22c55e;">&#x1F7E2; Healthy</td>
+        <td style="padding:6px 10px;color:#94a3b8;">8:30 AM</td>
+        <td style="padding:6px 10px;"><span style="background:#1e3a5f;color:#7dd3fc;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;">Nick</span></td>
+        <td style="padding:6px 10px;color:#e2e8f0;">Veeam Software AG</td>
+        <td style="padding:6px 10px;color:#64748b;">30m</td>
+        <td style="padding:6px 10px;color:#94a3b8;">TR event prep (Jun 3) &mdash; SecurityAI review Q; last-minute ask from Abigail Fish</td>
+        <td style="padding:6px 10px;color:#22c55e;">&#x1F7E2; Healthy</td>
       </tr>
       <tr style="border-bottom:1px solid #1a2030;">
-        <td style="padding:7px 10px;color:#94a3b8;">8:30 AM</td>
-        <td style="padding:7px 10px;"><span style="background:#1a3a1a;color:#86efac;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;">Rani</span></td>
-        <td style="padding:7px 10px;color:#e2e8f0;">Meraki (Cisco)</td>
-        <td style="padding:7px 10px;color:#64748b;">30m</td>
-        <td style="padding:7px 10px;color:#94a3b8;">Onboarding sync. <span style="color:#fca5a5;">Platform login issue at call start.</span> Engineering working on fix. AI account brief demo excited Melanie.</td>
-        <td style="padding:7px 10px;color:#f59e0b;">&#x1F7E1; Watch</td>
+        <td style="padding:6px 10px;color:#94a3b8;">8:30 AM</td>
+        <td style="padding:6px 10px;"><span style="background:#1a3a1a;color:#86efac;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;">Rani</span></td>
+        <td style="padding:6px 10px;color:#e2e8f0;">Meraki (Cisco)</td>
+        <td style="padding:6px 10px;color:#64748b;">30m</td>
+        <td style="padding:6px 10px;color:#94a3b8;">Onboarding sync &mdash; &#x26A0;&#xFE0F; platform login issue at call start; AI account brief demo well-received</td>
+        <td style="padding:6px 10px;color:#f59e0b;">&#x1F7E1; Watch</td>
       </tr>
       <tr style="border-bottom:1px solid #1a2030;">
-        <td style="padding:7px 10px;color:#94a3b8;">9:30 AM</td>
-        <td style="padding:7px 10px;"><span style="background:#1e3a5f;color:#7dd3fc;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;">Nick</span></td>
-        <td style="padding:7px 10px;color:#e2e8f0;">SAP Inc</td>
-        <td style="padding:7px 10px;color:#64748b;">30m</td>
-        <td style="padding:7px 10px;color:#94a3b8;">Biweekly — product mapping refresh (RGIF counts). MCP testing update from Shipra Chaudhary. <em style="color:#64748b;">(No SFDC EventId — transcript only)</em></td>
-        <td style="padding:7px 10px;color:#22c55e;">&#x1F7E2; Healthy</td>
+        <td style="padding:6px 10px;color:#94a3b8;">9:30 AM</td>
+        <td style="padding:6px 10px;"><span style="background:#1e3a5f;color:#7dd3fc;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;">Nick</span></td>
+        <td style="padding:6px 10px;color:#e2e8f0;">SAP Inc</td>
+        <td style="padding:6px 10px;color:#64748b;">30m</td>
+        <td style="padding:6px 10px;color:#94a3b8;">Biweekly &mdash; product mapping refresh (RGIF updated counts); MCP testing update from Shipra</td>
+        <td style="padding:6px 10px;color:#22c55e;">&#x1F7E2; Healthy</td>
       </tr>
       <tr>
-        <td style="padding:7px 10px;color:#94a3b8;">11:00 AM</td>
-        <td style="padding:7px 10px;"><span style="background:#2d1e4f;color:#c4b5fd;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;">Riley</span></td>
-        <td style="padding:7px 10px;color:#e2e8f0;">Paycom Software Inc</td>
-        <td style="padding:7px 10px;color:#64748b;">30m</td>
-        <td style="padding:7px 10px;color:#94a3b8;">Intro call (Riley new CSM, replacing Sasha Jan 2026). Top Rated win. Media kit follow-up needed. TrustRadius webinar well-received.</td>
-        <td style="padding:7px 10px;color:#22c55e;">&#x1F7E2; Healthy</td>
+        <td style="padding:6px 10px;color:#94a3b8;">11:00 AM</td>
+        <td style="padding:6px 10px;"><span style="background:#2d1e4f;color:#c4b5fd;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;">Riley</span></td>
+        <td style="padding:6px 10px;color:#e2e8f0;">Paycom Software Inc</td>
+        <td style="padding:6px 10px;color:#64748b;">30m</td>
+        <td style="padding:6px 10px;color:#94a3b8;">CSM intro (replacing Sasha since Jan 2026) &mdash; Top Rated win; media kit follow-up needed</td>
+        <td style="padding:6px 10px;color:#22c55e;">&#x1F7E2; Healthy</td>
       </tr>
     </tbody>
-  </table>
-  <div style="background:#141820;border:1px solid #1e293b;border-radius:6px;padding:10px 14px;margin-top:8px;font-size:12px;">
-    <div style="color:#64748b;font-size:10px;text-transform:uppercase;margin-bottom:6px;">Unconfirmed &mdash; No Transcript (CSM inferred from event)</div>
-    <div style="color:#94a3b8;line-height:1.8;">
-      <span style="background:#1e3a3a;color:#67e8f9;padding:1px 6px;border-radius:8px;font-size:10px;font-weight:600;">Pam</span> &nbsp;7:00 AM &middot; Cisco &mdash; TrustRadius Quick Sync (no transcript) &nbsp;|&nbsp;
-      <span style="background:#1e3a3a;color:#67e8f9;padding:1px 6px;border-radius:8px;font-size:10px;font-weight:600;">Pam</span> &nbsp;9:00 AM &middot; Cisco &mdash; TR Logistics Sync (no transcript)<br>
-      <span style="background:#3a1a3a;color:#e879f9;padding:1px 6px;border-radius:8px;font-size:10px;font-weight:600;">Andy</span> &nbsp;8:00 AM &middot; Toast &mdash; HG / Toast Connect (no transcript) &nbsp;|&nbsp;
-      <span style="background:#2a3a1a;color:#a3e635;padding:1px 6px;border-radius:8px;font-size:10px;font-weight:600;">Divyam</span> &nbsp;8:45 AM &middot; Adobe &mdash; New Role Discussion (no transcript) &nbsp;|&nbsp;
-      <span style="background:#3a2a10;color:#fcd34d;padding:1px 6px;border-radius:8px;font-size:10px;font-weight:600;">Atisha</span> &nbsp;11:00 PM &middot; SFDC ASEAN (APAC, no transcript)
-    </div>
-  </div>`;
+  </table>`;
 }
 
 function dayPulsesHTML_2026_06_02() {
   return `<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px;">
-    <div class="pulse-card watch">
+    <div class="pulse-card concerning">
       <div style="font-size:10px;color:#64748b;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px;">Nick Johnson</div>
       <div style="font-weight:700;color:#e2e8f0;margin-bottom:6px;">Accenture</div>
-      <div style="font-size:12px;color:#94a3b8;line-height:1.5;">Renewal contract in approvals. Avanade access expansion (~$100K/annum) flagged 24-month term concern. Kelly Gumber to revert after internal check. Watch for renewal delay.</div>
+      <div style="font-size:12px;color:#94a3b8;line-height:1.5;">Renewal contract in approvals. Avanade access expansion (~$100K/annum) flagged 24-month term concern. Kelly Gumber to revert after internal check. Watch for renewal delay risk.</div>
     </div>
     <div class="pulse-card healthy">
       <div style="font-size:10px;color:#64748b;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px;">Varun Tiwari</div>
@@ -687,32 +746,32 @@ function dayPulsesHTML_2026_06_02() {
     <div class="pulse-card healthy">
       <div style="font-size:10px;color:#64748b;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px;">Nick Johnson</div>
       <div style="font-weight:700;color:#e2e8f0;margin-bottom:6px;">IBM</div>
-      <div style="font-size:12px;color:#94a3b8;line-height:1.5;">HG contact introduction. Clayton Cutbush introduced to IBM team (Peter Herr, Ishan Sharma, Kruti Desai). Updated DQ scoring delivered. Long-term rework pending with Karin Pindle.</div>
+      <div style="font-size:12px;color:#94a3b8;line-height:1.5;">HG contact introduction. Clayton Cutbush introduced to IBM team (Peter Herr, Ishan Sharma, Kruti Desai). Updated DQ scoring delivered. Long-term system rework pending.</div>
     </div>
     <div class="pulse-card healthy">
       <div style="font-size:10px;color:#64748b;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px;">Varun Tiwari</div>
-      <div style="font-weight:700;color:#e2e8f0;margin-bottom:6px;">ServiceNow Inc's</div>
-      <div style="font-size:12px;color:#94a3b8;line-height:1.5;">Custom spend category session. 4 new products submitted. Monthly tracking cadence proposed. 30-day SLA explained to Santhosh Ronanki. Engaged team of 4 on call.</div>
+      <div style="font-weight:700;color:#e2e8f0;margin-bottom:6px;">ServiceNow Inc&rsquo;s</div>
+      <div style="font-size:12px;color:#94a3b8;line-height:1.5;">Custom spend category session. 4 new products submitted. Monthly tracking cadence proposed. 30-day SLA explained to Santhosh Ronanki. Strong team engagement.</div>
     </div>
     <div class="pulse-card healthy">
       <div style="font-size:10px;color:#64748b;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px;">Nick Johnson</div>
       <div style="font-weight:700;color:#e2e8f0;margin-bottom:6px;">Veeam Software AG</div>
-      <div style="font-size:12px;color:#94a3b8;line-height:1.5;">TrustRadius review collection event (Jun 3). SecurityAI review eligibility confirmed under Veeam portfolio. HG team (Nick, Angus, Cassidy) attending. Strong TR partnership engagement.</div>
+      <div style="font-size:12px;color:#94a3b8;line-height:1.5;">TrustRadius event prep for Jun 3. HG team (Nick, Angus, Cassidy) attending review collection. SecurityAI review eligibility confirmed under Veeam portfolio. Abigail Fish engaged.</div>
     </div>
-    <div class="pulse-card watch">
+    <div class="pulse-card concerning">
       <div style="font-size:10px;color:#64748b;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px;">Rani Guy</div>
       <div style="font-weight:700;color:#e2e8f0;margin-bottom:6px;">Meraki (Cisco)</div>
-      <div style="font-size:12px;color:#94a3b8;line-height:1.5;">Onboarding sync. Platform login issue at call start — engineering working on fix. Melanie already in platform and engaged (AI account brief is top use case). Confirm fix resolved.</div>
+      <div style="font-size:12px;color:#94a3b8;line-height:1.5;">Onboarding sync. Platform login issue flagged at call start &mdash; engineering working on fix. Melanie already in platform. AI account brief demo well-received as top use case.</div>
     </div>
     <div class="pulse-card healthy">
       <div style="font-size:10px;color:#64748b;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px;">Nick Johnson</div>
       <div style="font-weight:700;color:#e2e8f0;margin-bottom:6px;">SAP Inc</div>
-      <div style="font-size:12px;color:#94a3b8;line-height:1.5;">Biweekly sync. Product mapping refresh delivered (updated RGIF counts). Shipra Chaudhary briefing MCP testing — early phase, next steps in progress. Rafiq absent. Steady cadence.</div>
+      <div style="font-size:12px;color:#94a3b8;line-height:1.5;">Biweekly sync. Product mapping refresh (RGIF updated counts) delivered. Shipra Chaudhary on MCP testing &mdash; early phase, next steps TBD. Rafiq absent. Steady cadence.</div>
     </div>
     <div class="pulse-card healthy">
       <div style="font-size:10px;color:#64748b;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px;">Riley Rogers</div>
       <div style="font-weight:700;color:#e2e8f0;margin-bottom:6px;">Paycom Software Inc</div>
-      <div style="font-size:12px;color:#94a3b8;line-height:1.5;">CSM intro call (Riley replacing Sasha since Jan 2026). Met Larisha Hunter for first time. Top Rated win confirmed. Media kit email follow-up needed for Katie Lenhart + Larisha.</div>
+      <div style="font-size:12px;color:#94a3b8;line-height:1.5;">CSM intro call. Met Larisha Hunter (new contact). Paycom won Top Rated &mdash; media kit follow-up needed for Katie Lenhart + Larisha. TrustRadius AI webinar well-received by Peyton.</div>
     </div>
   </div>`;
 }
@@ -721,31 +780,31 @@ function dayActionsHTML_2026_06_02() {
   return `<div style="display:flex;flex-direction:column;gap:8px;">
     <div style="display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px solid #1a2030;font-size:12px;">
       <span style="background:#4a1010;color:#f87171;border:1px solid #ef4444;font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;white-space:nowrap;min-width:44px;text-align:center;">HIGH</span>
-      <span style="color:#cbd5e1;line-height:1.5;"><strong>[0201]</strong> <strong>Rani Guy</strong> &mdash; Follow up on Meraki platform login issue. Confirm engineering fix deployed. Ensure Melanie and new Meraki contacts can log in successfully. Newly onboarded users are blocked.</span>
+      <span style="color:#cbd5e1;line-height:1.5;"><strong>[0201]</strong> Rani Guy &mdash; Confirm Meraki platform login fix is deployed. Ensure Melanie, Rashad, and Sijac can log in. Newly onboarded contacts are blocked on Day 1.</span>
     </div>
     <div style="display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px solid #1a2030;font-size:12px;">
       <span style="background:#4a1010;color:#f87171;border:1px solid #ef4444;font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;white-space:nowrap;min-width:44px;text-align:center;">HIGH</span>
-      <span style="color:#cbd5e1;line-height:1.5;"><strong>[0202]</strong> <strong>Riley Rogers</strong> &mdash; Send Paycom Top Rated media kit to Katie Lenhart and Larisha Hunter. Automated email not confirmed received. Confirm both contacts have it.</span>
+      <span style="color:#cbd5e1;line-height:1.5;"><strong>[0202]</strong> Riley Rogers &mdash; Send Paycom Top Rated media kit to Katie Lenhart + Larisha Hunter. Automated email not confirmed received. Confirm with both contacts today.</span>
     </div>
     <div style="display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px solid #1a2030;font-size:12px;">
       <span style="background:#3a2a10;color:#fcd34d;border:1px solid #f59e0b;font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;white-space:nowrap;min-width:44px;text-align:center;">MED</span>
-      <span style="color:#cbd5e1;line-height:1.5;"><strong>[0203]</strong> <strong>Nick Johnson / David Garcia Thomas</strong> &mdash; Follow up with Kelly Gumber (Accenture) on Avanade contract term. Clarify 24-month minimum applicability for net-new additional purchase. Keep renewal on track.</span>
+      <span style="color:#cbd5e1;line-height:1.5;"><strong>[0203]</strong> Nick Johnson / David Garcia Thomas &mdash; Follow up with Kelly Gumber (Accenture) on Avanade expansion contract term. Clarify 24-month minimum applicability for net-new purchase. Keep renewal on track.</span>
     </div>
     <div style="display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px solid #1a2030;font-size:12px;">
       <span style="background:#3a2a10;color:#fcd34d;border:1px solid #f59e0b;font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;white-space:nowrap;min-width:44px;text-align:center;">MED</span>
-      <span style="color:#cbd5e1;line-height:1.5;"><strong>[0204]</strong> <strong>Nick Johnson</strong> &mdash; Confirm Veeam TrustRadius June 3 event logistics with Angus and Cassidy. Ensure SecurityAI review guidance is clear for any attendees who ask.</span>
+      <span style="color:#cbd5e1;line-height:1.5;"><strong>[0204]</strong> Nick Johnson &mdash; Confirm Veeam TrustRadius Jun 3 event logistics with Angus and Cassidy. Ensure SecurityAI review guidance is ready for any attendees who raise it.</span>
     </div>
     <div style="display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px solid #1a2030;font-size:12px;">
       <span style="background:#3a2a10;color:#fcd34d;border:1px solid #f59e0b;font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;white-space:nowrap;min-width:44px;text-align:center;">MED</span>
-      <span style="color:#cbd5e1;line-height:1.5;"><strong>[0205]</strong> <strong>Varun Tiwari</strong> &mdash; Confirm 4 ServiceNow product tracking submissions are in system. Set up monthly check-in cadence with Santhosh Ronanki for ongoing product tracking requests.</span>
+      <span style="color:#cbd5e1;line-height:1.5;"><strong>[0205]</strong> Varun Tiwari &mdash; Confirm 4 ServiceNow product tracking submissions are in system. Set up monthly check-in cadence with Santhosh Ronanki for ongoing requests.</span>
     </div>
     <div style="display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px solid #1a2030;font-size:12px;">
       <span style="background:#1e293b;color:#94a3b8;border:1px solid #334155;font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;white-space:nowrap;min-width:44px;text-align:center;">LOW</span>
-      <span style="color:#cbd5e1;line-height:1.5;"><strong>[0206]</strong> <strong>Varun Tiwari</strong> &mdash; Send Autodesk (Matthew Ding) written summary of RGIP/RGIF differences and AWS marketplace delivery options discussed on call.</span>
+      <span style="color:#cbd5e1;line-height:1.5;"><strong>[0206]</strong> Varun Tiwari &mdash; Send Autodesk (Matthew Ding) written summary of RGIP/RGIF and AWS marketplace delivery options discussed on the call.</span>
     </div>
     <div style="display:flex;gap:10px;align-items:flex-start;padding:8px 0;font-size:12px;">
       <span style="background:#1e293b;color:#94a3b8;border:1px solid #334155;font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;white-space:nowrap;min-width:44px;text-align:center;">LOW</span>
-      <span style="color:#cbd5e1;line-height:1.5;"><strong>[0207]</strong> <strong>Nick Johnson</strong> &mdash; IBM: Coordinate with Clayton Cutbush on long-term scoring system rework discussed with Karin Pindle. Track as open action item.</span>
+      <span style="color:#cbd5e1;line-height:1.5;"><strong>[0207]</strong> Nick Johnson &mdash; IBM: Coordinate with Clayton Cutbush on long-term scoring system rework discussed with Karin Pindle. Track as open action item.</span>
     </div>
   </div>`;
 }
