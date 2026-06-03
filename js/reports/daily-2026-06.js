@@ -332,104 +332,76 @@ function dayCallsHTML_2026_06_01() {
 }
 
 function dayPulsesHTML_2026_06_01() {
-  return `<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px;">
-    <div class="pulse-card healthy">
-      <div style="font-size:10px;color:#64748b;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px;">Nick Johnson</div>
-      <div style="font-weight:700;color:#e2e8f0;margin-bottom:6px;">Infor (US), LLC</div>
-      <div style="font-size:12px;color:#94a3b8;line-height:1.5;">Debrief on urgent data support. Nicole Morgan preparing ELT presentation. Ankar building SF data pull to validate HG lift. BLT readout planned.</div>
-    </div>
-    <div class="pulse-card healthy">
-      <div style="font-size:10px;color:#64748b;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px;">Nick Johnson</div>
-      <div style="font-weight:700;color:#e2e8f0;margin-bottom:6px;">IBM</div>
-      <div style="font-size:12px;color:#94a3b8;line-height:1.5;">GenAI walkthrough with David Bush and IBM data team. Clayton Cutbush co-presenting. Expansion: new AI capabilities demo at $3.3M ARR.</div>
-    </div>
-    <div class="pulse-card healthy">
-      <div style="font-size:10px;color:#64748b;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px;">Rani Guy</div>
-      <div style="font-weight:700;color:#e2e8f0;margin-bottom:6px;">Workday Inc</div>
-      <div style="font-size:12px;color:#94a3b8;line-height:1.5;">Databricks migration: ML team needs HG data for AI agents. Snowflake/Fivetran delivery must stay intact. Awaiting Databricks credentials.</div>
-    </div>
-    <div class="pulse-card healthy">
-      <div style="font-size:10px;color:#64748b;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px;">Atisha Waghela</div>
-      <div style="font-weight:700;color:#e2e8f0;margin-bottom:6px;">TD Synnex</div>
-      <div style="font-size:12px;color:#94a3b8;line-height:1.5;">Recurring Monday sync. Export limits confirmed not burning credits on re-downloads. Steve Markle engaged. Steady platform usage.</div>
-    </div>
-    <div class="pulse-card healthy">
-      <div style="font-size:10px;color:#64748b;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px;">Nick Johnson</div>
-      <div style="font-weight:700;color:#e2e8f0;margin-bottom:6px;">Intuit</div>
-      <div style="font-size:12px;color:#94a3b8;line-height:1.5;">Expansion: Hayden Smith (AM) + Nick pitching account scoring + MCP credits to Lorena Fortuna. Annabelle's departure = re-entry window. Formal proposal next step.</div>
-    </div>
-    <div class="pulse-card healthy">
-      <div style="font-size:10px;color:#64748b;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px;">Varun Tiwari</div>
-      <div style="font-weight:700;color:#e2e8f0;margin-bottom:6px;">Autodesk Inc</div>
-      <div style="font-size:12px;color:#94a3b8;line-height:1.5;">Recurring scoring sync. MadKudu running fine. David Guo (Autodesk) going on 12-wk pat. leave Jun 9&ndash;Aug 31. Introducing UK colleague to Varun. Action: Varun to establish relationship with new Autodesk contact.</div>
-    </div>
-    <div class="pulse-card healthy">
-      <div style="font-size:10px;color:#64748b;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px;">Nick Johnson</div>
-      <div style="font-weight:700;color:#e2e8f0;margin-bottom:6px;">Veeam Software AG</div>
-      <div style="font-size:12px;color:#94a3b8;line-height:1.5;">Expansion: HG CEO + CCO + AI engineering 90-min strategy session. AI/agentic GTM use cases. "Next phase of partnership." Strong executive signal at $822K ARR.</div>
-    </div>
-    <div class="pulse-card healthy">
-      <div style="font-size:10px;color:#64748b;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px;">Riley Rogers</div>
-      <div style="font-weight:700;color:#e2e8f0;margin-bottom:6px;">SAP Inc</div>
-      <div style="font-size:12px;color:#94a3b8;line-height:1.5;">TR Premium Content Hosting pitched. AI discoverability + SEO + analytics. Helya Barezani evaluating with SAP team. Expansion opportunity in $3M ARR account.</div>
-    </div>
-    <div class="pulse-card healthy">
-      <div style="font-size:10px;color:#64748b;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px;">Rani Guy</div>
-      <div style="font-weight:700;color:#e2e8f0;margin-bottom:6px;">Amazon Web Services (AWS)</div>
-      <div style="font-size:12px;color:#94a3b8;line-height:1.5;">Project Rubicon support call. HG Quick Desktop demo by Mike Galyen. Mark Fell managing agenda. Francis not needed. $4.6M ARR strategic account healthy.</div>
-    </div>
-    <div class="pulse-card concerning">
-      <div style="font-size:10px;color:#64748b;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px;">Rani Guy</div>
-      <div style="font-weight:700;color:#e2e8f0;margin-bottom:6px;">NetApp</div>
-      <div style="font-size:12px;color:#94a3b8;line-height:1.5;">Data matching issue: company name only (no URLs/DUNS). FAI data ticket submitted. Adrian posting Slack update. Matching accuracy limited until FAI resolves.</div>
-    </div>
-    <div class="pulse-card healthy">
-      <div style="font-size:10px;color:#64748b;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px;">Rani Guy (X-cov · Pam Huck)</div>
-      <div style="font-weight:700;color:#e2e8f0;margin-bottom:6px;">Cisco</div>
-      <div style="font-size:12px;color:#94a3b8;line-height:1.5;">Data evaluation: Michael Xu reviewing HG account match rates. Cisco Live week. Rani covering. Pam to be briefed. Cisco pulse = Poor, $2.3M ARR.</div>
-    </div>
-  </div>`;
+  const cards = [
+    { csm:'nick',   health:'Healthy',    account:'Infor (US), LLC',
+      opp:'Vitally Pulse &mdash; Jun 1 Call', arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Jun 1 &middot; Check-in',
+      excerpt:'6/1 NJ: Data exercise debrief (5:00 AM PT, 30 min). Nicole Morgan preparing ELT presentation for board readout. Ankar building Salesforce data pull to validate HG lift metrics. BLT readout planned this week. No blockers raised.' },
+    { csm:'nick',   health:'Healthy',    account:'IBM',
+      opp:'Vitally Pulse &mdash; Jun 1 Call', arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Jun 1 &middot; &#x1F4C8; Expansion &mdash; GenAI capabilities',
+      excerpt:'6/1 NJ: GenAI capabilities walkthrough with David Bush and IBM data team (6:30 AM PT, 30 min). Clayton Cutbush (HG) co-presenting. New AI use cases demoed. Expansion signal at $3.3M ARR — IBM evaluating next steps for deeper GenAI integration.' },
+    { csm:'rani',   health:'Healthy',    account:'Workday Inc',
+      opp:'Vitally Pulse &mdash; Jun 1 Call', arr:'Enterprise &middot; Rani Guy', csmlbl:'Rani Guy',
+      change:'Jun 1 &middot; Check-in &mdash; Databricks migration',
+      excerpt:'6/1 RG: Databricks delivery migration request (8:00 AM PT, 30 min). Workday ML team (Kendall, Winston, Vivian) building AI agents and needs HG data in Databricks. Snowflake/Fivetran delivery must remain intact. Awaiting Databricks credentials from Workday team. Technical coordination underway.' },
+    { csm:'atisha', health:'Healthy',    account:'TD Synnex',
+      opp:'Vitally Pulse &mdash; Jun 1 Call', arr:'Enterprise &middot; Atisha Waghela', csmlbl:'Atisha Waghela',
+      change:'Jun 1 &middot; Check-in',
+      excerpt:'6/1 AW: Recurring Monday sync (8:00 AM PT, 30 min). Export limits confirmed not burning credits on re-downloads. Steve Markle actively engaged. Steady platform usage, no issues raised. Account healthy.' },
+    { csm:'nick',   health:'Healthy',    account:'Intuit',
+      opp:'Vitally Pulse &mdash; Jun 1 Call', arr:'Strategic &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Jun 1 &middot; &#x1F4C8; Expansion &mdash; Account scoring + MCP',
+      excerpt:'6/1 NJ: Expansion pitch — account scoring + MCP credits to Lorena Fortuna (8:30 AM PT, 30 min). Hayden Smith (HG AE) co-attended with pricing calculator. Annabelle\'s departure opened a re-entry window. Formal proposal next step this week.' },
+    { csm:'varun',  health:'Healthy',    account:'Autodesk Inc',
+      opp:'Vitally Pulse &mdash; Jun 1 Call', arr:'Enterprise &middot; Varun Tiwari', csmlbl:'Varun Tiwari',
+      change:'Jun 1 &middot; Check-in &mdash; Key contact on leave Jun 9',
+      excerpt:'6/1 VT: Recurring scoring sync (10:30 AM PT, 30 min). MadKudu running fine. David Guo (Autodesk) going on 12-week paternity leave Jun 9&ndash;Aug 31. Introducing his UK colleague to Varun before leaving. Action: Varun to build relationship with new contact before Jun 9.' },
+    { csm:'nick',   health:'Healthy',    account:'Veeam Software AG',
+      opp:'Vitally Pulse &mdash; Jun 1 Call', arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Jun 1 &middot; &#x1F4C8;&#x1F4C8; Strong Expansion &mdash; CEO + AI engineering',
+      excerpt:'6/1 NJ: 90-min strategy session with HG CEO, CCO, and Veeam AI engineering team (10:30 AM PT). AI/agentic GTM use cases discussed. "Next phase of partnership." Strong executive engagement signal at $822K ARR. Highest-priority expansion call of the day.' },
+    { csm:'riley',  health:'Healthy',    account:'SAP Inc',
+      opp:'Vitally Pulse &mdash; Jun 1 Call', arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Jun 1 &middot; &#x1F4C8; Expansion &mdash; TR Premium Content Hosting',
+      excerpt:'6/1 RR: TR Premium Content Hosting feature pitch (11:00 AM PT, 30 min). AI discoverability + SEO + analytics presented to Helya Barezani. She needs to consult SAP team; follow-up in ~1 week. Expansion opportunity in $3M ARR account.' },
+    { csm:'rani',   health:'Healthy',    account:'Amazon Web Services (AWS)',
+      opp:'Vitally Pulse &mdash; Jun 1 Call', arr:'Strategic &middot; Rani Guy', csmlbl:'Rani Guy',
+      change:'Jun 1 &middot; Check-in',
+      excerpt:'6/1 RG: Project Rubicon support call (11:30 AM PT, 30 min). HG Quick Desktop demo by Mike Galyen. Mark Fell managing agenda. Francis not needed. $4.6M ARR strategic account stable and healthy.' },
+    { csm:'rani',   health:'Concerning', account:'NetApp',
+      opp:'Vitally Pulse &mdash; Jun 1 Call', arr:'Enterprise &middot; Rani Guy', csmlbl:'Rani Guy',
+      change:'Jun 1 &middot; Check-in &mdash; Data matching issue',
+      excerpt:'6/1 RG: Data matching issue surfaced (1:00 PM PT, 25 min). NetApp company name only — no URLs or DUNS provided. FAI data ticket submitted. Adrian posting Slack update to v-boo and Yu. Matching accuracy limited until FAI resolves. Monitor closely.' },
+    { csm:'rani',   health:'Healthy',    account:'Cisco',
+      opp:'Vitally Pulse &mdash; Jun 1 Call (X-cov &middot; Pam Huck)', arr:'Enterprise &middot; Rani Guy (covering Pam Huck)', csmlbl:'Rani Guy (X-cov)',
+      change:'Jun 1 &middot; Check-in &mdash; Data file review',
+      excerpt:'6/1 RG (x-cov for Pam): Data file review with Michael Xu (2:00 PM PT, 30 min). HG account match rates under evaluation during Cisco Live week. Rani covering Pam. Pam to be briefed on findings. Cisco pulse = Poor, $2.3M ARR. Follow-up needed.' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top"><div><div class="pulse-account">${c.account}</div><div class="pulse-opp">${c.opp}</div><div class="pulse-arr">${c.arr}</div></div><span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span></div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none"><div class="empty-icon">&#128269;</div>No pulses match these filters.</div>`;
 }
 
 function dayActionsHTML_2026_06_01() {
-  return `<div style="display:flex;flex-direction:column;gap:8px;">
-    <div style="display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px solid #1a2030;font-size:12px;">
-      <span style="background:#3a2a10;color:#fcd34d;border:1px solid #f59e0b;font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;white-space:nowrap;min-width:44px;text-align:center;">MED</span>
-      <span style="color:#cbd5e1;line-height:1.5;"><strong>[0101]</strong> Varun Tiwari &mdash; Get introduced to David Guo's UK colleague (new Autodesk MadKudu contact) before Jun 9. David sending intro. Build relationship with new contact before David returns Aug 31.</span>
-    </div>
-    <div style="display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px solid #1a2030;font-size:12px;">
-      <span style="background:#4a1010;color:#f87171;border:1px solid #ef4444;font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;white-space:nowrap;min-width:44px;text-align:center;">HIGH</span>
-      <span style="color:#cbd5e1;line-height:1.5;"><strong>[0102]</strong> Nick Johnson &mdash; Send formal Intuit proposal this week. Hayden has pricing calculator. Lorena Fortuna is decision point. Annabelle's departure = window open now.</span>
-    </div>
-    <div style="display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px solid #1a2030;font-size:12px;">
-      <span style="background:#4a1010;color:#f87171;border:1px solid #ef4444;font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;white-space:nowrap;min-width:44px;text-align:center;">HIGH</span>
-      <span style="color:#cbd5e1;line-height:1.5;"><strong>[0103]</strong> Pam Huck &mdash; Get briefed by Rani/Adrian on Cisco data match-rate findings from Michael Xu. Cisco pulse = Poor, $2.3M ARR. Determine follow-up action this week.</span>
-    </div>
-    <div style="display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px solid #1a2030;font-size:12px;">
-      <span style="background:#3a2a10;color:#fcd34d;border:1px solid #f59e0b;font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;white-space:nowrap;min-width:44px;text-align:center;">MED</span>
-      <span style="color:#cbd5e1;line-height:1.5;"><strong>[0104]</strong> Varun Tiwari &mdash; Send Autodesk intro email (David Guo) before leave. CC named coverage CSM. Include escalation path and "no major changes" guidance.</span>
-    </div>
-    <div style="display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px solid #1a2030;font-size:12px;">
-      <span style="background:#3a2a10;color:#fcd34d;border:1px solid #f59e0b;font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;white-space:nowrap;min-width:44px;text-align:center;">MED</span>
-      <span style="color:#cbd5e1;line-height:1.5;"><strong>[0105]</strong> Rani Guy &mdash; Submit Databricks delivery config for Workday ML team. Keep Snowflake/Fivetran intact. Coordinate with Austin (HG data eng) who set up original Snowflake path.</span>
-    </div>
-    <div style="display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px solid #1a2030;font-size:12px;">
-      <span style="background:#3a2a10;color:#fcd34d;border:1px solid #f59e0b;font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;white-space:nowrap;min-width:44px;text-align:center;">MED</span>
-      <span style="color:#cbd5e1;line-height:1.5;"><strong>[0106]</strong> Rani Guy &mdash; Follow up on NetApp FAI data ticket. Confirm v-boo and Yu working it. Adrian posting Slack update. Matching limited until FAI data available.</span>
-    </div>
-    <div style="display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px solid #1a2030;font-size:12px;">
-      <span style="background:#3a2a10;color:#fcd34d;border:1px solid #f59e0b;font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;white-space:nowrap;min-width:44px;text-align:center;">MED</span>
-      <span style="color:#cbd5e1;line-height:1.5;"><strong>[0107]</strong> Nick Johnson &mdash; IBM GenAI follow-up with Clayton Cutbush. Share capabilities summary with David Bush and Arnav Singh. Identify next steps for IBM AI adoption.</span>
-    </div>
-    <div style="display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px solid #1a2030;font-size:12px;">
-      <span style="background:#1e293b;color:#94a3b8;border:1px solid #334155;font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;white-space:nowrap;min-width:44px;text-align:center;">LOW</span>
-      <span style="color:#cbd5e1;line-height:1.5;"><strong>[0108]</strong> Riley Rogers &mdash; Follow up with Helya Barezani (SAP) on TR Premium Content Hosting in ~1 week. She needs to consult team. Track as expansion opportunity.</span>
-    </div>
-    <div style="display:flex;gap:10px;align-items:flex-start;padding:8px 0;font-size:12px;">
-      <span style="background:#1e293b;color:#94a3b8;border:1px solid #334155;font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;white-space:nowrap;min-width:44px;text-align:center;">LOW</span>
-      <span style="color:#cbd5e1;line-height:1.5;"><strong>[0109]</strong> Nick Johnson &mdash; Infor: confirm Ankar's SF data pull is unblocked. Offer HG Solutions data pulls as needed for ELT readout. India team public holiday Wed.</span>
-    </div>
-  </div>`;
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has(102)?'done':''}" data-csm="nick" id="action-102"><div class="action-checkbox ${doneActions.has(102)?'checked':''}" onclick="toggleAction(102)"></div><div class="action-body"><div class="action-title">&#x1F4C8; Intuit &mdash; Send formal expansion proposal to Lorena Fortuna this week</div><div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Nick Johnson &middot; Hayden Smith (HG AE) has the pricing calculator ready. Annabelle\'s departure opened a re-entry window. Nick to finalize proposal covering account scoring + MCP credits and send to Lorena Fortuna. Window is open now — move this week.</div></div></div>
+    <div class="action-item ${doneActions.has(103)?'done':''}" data-csm="pam" id="action-103"><div class="action-checkbox ${doneActions.has(103)?'checked':''}" onclick="toggleAction(103)"></div><div class="action-body"><div class="action-title">&#x1F534; Cisco &mdash; Pam Huck to get briefed on Michael Xu match-rate findings</div><div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Pam Huck &middot; Rani Guy covered the Cisco sync and surfaced data match-rate concerns from Michael Xu. Cisco pulse = Poor, $2.3M ARR. Pam to be briefed on findings from Rani and Adrian and determine follow-up action this week. Critical account.</div></div></div>
+    <div class="action-item ${doneActions.has(101)?'done':''}" data-csm="varun" id="action-101"><div class="action-checkbox ${doneActions.has(101)?'checked':''}" onclick="toggleAction(101)"></div><div class="action-body"><div class="action-title">&#x1F4CB; Autodesk &mdash; Get introduced to David Guo's UK colleague before Jun 9</div><div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Varun Tiwari &middot; David Guo is sending an intro to his UK colleague who will be the Autodesk MadKudu contact during his 12-week paternity leave (Jun 9&ndash;Aug 31). Varun to accept intro, establish relationship, and get up to speed on account context before David leaves. Do not let this slip.</div></div></div>
+    <div class="action-item ${doneActions.has(104)?'done':''}" data-csm="varun" id="action-104"><div class="action-checkbox ${doneActions.has(104)?'checked':''}" onclick="toggleAction(104)"></div><div class="action-body"><div class="action-title">&#x1F4E4; Autodesk &mdash; Send coverage handoff email before David Guo's leave</div><div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Varun Tiwari &middot; Draft and send a handoff email to David Guo and his UK colleague. Include: escalation path, coverage CSM contact, guidance to flag any major changes, and "no significant changes planned" assurance. Deadline: before Jun 9.</div></div></div>
+    <div class="action-item ${doneActions.has(105)?'done':''}" data-csm="rani" id="action-105"><div class="action-checkbox ${doneActions.has(105)?'checked':''}" onclick="toggleAction(105)"></div><div class="action-body"><div class="action-title">&#x1F4E6; Workday &mdash; Submit Databricks delivery config; keep Snowflake intact</div><div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Rani Guy &middot; Workday ML team needs HG data in Databricks for AI agent pipeline. Rani to coordinate with Austin (HG data engineering) who set up the original Snowflake/Fivetran path, then submit Databricks delivery configuration. Snowflake pipeline must not be disrupted.</div></div></div>
+    <div class="action-item ${doneActions.has(106)?'done':''}" data-csm="rani" id="action-106"><div class="action-checkbox ${doneActions.has(106)?'checked':''}" onclick="toggleAction(106)"></div><div class="action-body"><div class="action-title">&#x1F4CB; NetApp &mdash; Follow up on FAI data ticket with v-boo and Yu</div><div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Rani Guy &middot; NetApp matching is limited to company name only — no URLs or DUNS. FAI data ticket submitted. Rani to confirm v-boo and Yu are working the ticket. Adrian posting Slack update. Matching accuracy will remain limited until FAI data is available.</div></div></div>
+    <div class="action-item ${doneActions.has(107)?'done':''}" data-csm="nick" id="action-107"><div class="action-checkbox ${doneActions.has(107)?'checked':''}" onclick="toggleAction(107)"></div><div class="action-body"><div class="action-title">&#x1F4C8; IBM &mdash; GenAI follow-up with Clayton Cutbush and David Bush team</div><div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Nick Johnson &middot; Share a capabilities summary with David Bush and Arnav Singh following the GenAI walkthrough. Clayton Cutbush to coordinate next steps internally. Identify concrete expansion use cases and track as active opportunity at $3.3M ARR.</div></div></div>
+    <div class="action-item ${doneActions.has(108)?'done':''}" data-csm="riley" id="action-108"><div class="action-checkbox ${doneActions.has(108)?'checked':''}" onclick="toggleAction(108)"></div><div class="action-body"><div class="action-title">&#x1F4CB; SAP &mdash; Follow up with Helya Barezani on TR Premium Content Hosting</div><div class="action-meta"><span class="urgency-badge urgency-low">LOW</span>Riley Rogers &middot; Helya Barezani needs to consult with the SAP team on TR Premium Content Hosting. Follow up in approximately one week. Track as expansion opportunity in the $3M ARR account.</div></div></div>
+    <div class="action-item ${doneActions.has(109)?'done':''}" data-csm="nick" id="action-109"><div class="action-checkbox ${doneActions.has(109)?'checked':''}" onclick="toggleAction(109)"></div><div class="action-body"><div class="action-title">&#x1F4CB; Infor &mdash; Confirm Ankar's Salesforce data pull is unblocked</div><div class="action-meta"><span class="urgency-badge urgency-low">LOW</span>Nick Johnson &middot; Ankar is building a Salesforce data pull to validate HG lift for Nicole Morgan's ELT presentation. Offer HG Solutions assistance if needed. India team public holiday Wednesday — plan timeline accordingly.</div></div></div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none"><div class="empty-icon">&#128269;</div>No action items match these filters.</div>`;
 }
 
 function weeklyOrMonthlyHTML_2026_06_01() {
@@ -772,79 +744,60 @@ function dayCallsHTML_2026_06_02() {
 }
 
 function dayPulsesHTML_2026_06_02() {
-  return `<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px;">
-    <div class="pulse-card concerning">
-      <div style="font-size:10px;color:#64748b;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px;">Nick Johnson</div>
-      <div style="font-weight:700;color:#e2e8f0;margin-bottom:6px;">Accenture</div>
-      <div style="font-size:12px;color:#94a3b8;line-height:1.5;">Renewal contract in approvals. Avanade access expansion (~$100K/annum) flagged 24-month term concern. Kelly Gumber to revert after internal check. Watch for renewal delay risk.</div>
-    </div>
-    <div class="pulse-card healthy">
-      <div style="font-size:10px;color:#64748b;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px;">Varun Tiwari</div>
-      <div style="font-weight:700;color:#e2e8f0;margin-bottom:6px;">Autodesk Inc</div>
-      <div style="font-size:12px;color:#94a3b8;line-height:1.5;">Data retrieval Q&amp;A with new data platform team (Matthew Ding, Mohammed Tanveer). Snowflake/AWS marketplace clarified. RGIP/RGIF introduced to engineering contacts.</div>
-    </div>
-    <div class="pulse-card healthy">
-      <div style="font-size:10px;color:#64748b;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px;">Nick Johnson</div>
-      <div style="font-weight:700;color:#e2e8f0;margin-bottom:6px;">IBM</div>
-      <div style="font-size:12px;color:#94a3b8;line-height:1.5;">HG contact introduction. Clayton Cutbush introduced to IBM team (Peter Herr, Ishan Sharma, Kruti Desai). Updated DQ scoring delivered. Long-term system rework pending.</div>
-    </div>
-    <div class="pulse-card healthy">
-      <div style="font-size:10px;color:#64748b;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px;">Varun Tiwari</div>
-      <div style="font-weight:700;color:#e2e8f0;margin-bottom:6px;">ServiceNow Inc&rsquo;s</div>
-      <div style="font-size:12px;color:#94a3b8;line-height:1.5;">Custom spend category session. 4 new products submitted. Monthly tracking cadence proposed. 30-day SLA explained to Santhosh Ronanki. Strong team engagement.</div>
-    </div>
-    <div class="pulse-card healthy">
-      <div style="font-size:10px;color:#64748b;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px;">Nick Johnson</div>
-      <div style="font-weight:700;color:#e2e8f0;margin-bottom:6px;">Veeam Software AG</div>
-      <div style="font-size:12px;color:#94a3b8;line-height:1.5;">TrustRadius event prep for Jun 3. HG team (Nick, Angus, Cassidy) attending review collection. SecurityAI review eligibility confirmed under Veeam portfolio. Abigail Fish engaged.</div>
-    </div>
-    <div class="pulse-card concerning">
-      <div style="font-size:10px;color:#64748b;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px;">Rani Guy</div>
-      <div style="font-weight:700;color:#e2e8f0;margin-bottom:6px;">Meraki (Cisco)</div>
-      <div style="font-size:12px;color:#94a3b8;line-height:1.5;">Onboarding sync. Platform login issue flagged at call start &mdash; engineering working on fix. Melanie already in platform. AI account brief demo well-received as top use case.</div>
-    </div>
-    <div class="pulse-card healthy">
-      <div style="font-size:10px;color:#64748b;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px;">Nick Johnson</div>
-      <div style="font-weight:700;color:#e2e8f0;margin-bottom:6px;">SAP Inc</div>
-      <div style="font-size:12px;color:#94a3b8;line-height:1.5;">Biweekly sync. Product mapping refresh (RGIF updated counts) delivered. Shipra Chaudhary on MCP testing &mdash; early phase, next steps TBD. Rafiq absent. Steady cadence.</div>
-    </div>
-    <div class="pulse-card healthy">
-      <div style="font-size:10px;color:#64748b;text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px;">Riley Rogers</div>
-      <div style="font-weight:700;color:#e2e8f0;margin-bottom:6px;">Paycom Software Inc</div>
-      <div style="font-size:12px;color:#94a3b8;line-height:1.5;">CSM intro call. Met Larisha Hunter (new contact). Paycom won Top Rated &mdash; media kit follow-up needed for Katie Lenhart + Larisha. TrustRadius AI webinar well-received by Peyton.</div>
-    </div>
-  </div>`;
+  const cards = [
+    { csm:'nick',   health:'Concerning', account:'Accenture',
+      opp:'Vitally Pulse &mdash; Jun 2 Call', arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Jun 2 &middot; Renewal Watch &mdash; 24-month term concern',
+      excerpt:'6/2 NJ: Renewal / Avanade expansion access call (3:00 AM PT, 30 min). Kelly Gumber (Accenture procurement) flagged that the 24-month minimum contract term may block the Avanade access expansion (~$100K/annum). Contract currently under approvals. Kelly to revert after internal check. David Garcia Thomas (HG AM London) co-attended.' },
+    { csm:'varun',  health:'Healthy',    account:'Autodesk Inc',
+      opp:'Vitally Pulse &mdash; Jun 2 Call', arr:'Enterprise &middot; Varun Tiwari', csmlbl:'Varun Tiwari',
+      change:'Jun 2 &middot; Check-in &mdash; New data platform contacts',
+      excerpt:'6/2 VT: Data retrieval Q&A with new Autodesk data platform team (6:00 AM PT, 30 min). Matthew Ding (Sr. Engineering Manager) and Mohammed Tanveer (Principal Engineer) introduced to HG. Clarified: only contextual intent on Snowflake; RGIP/RGIF available on AWS marketplace. Alexi Mouarkach (HG SE) co-attended.' },
+    { csm:'nick',   health:'Healthy',    account:'IBM',
+      opp:'Vitally Pulse &mdash; Jun 2 Call', arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Jun 2 &middot; Check-in &mdash; HG contact introduction',
+      excerpt:'6/2 NJ: HG contact introduction call (7:30 AM PT, 30 min). Clayton Cutbush (HG) introduced to IBM team — Peter Herr, Ishan Sharma, Kruti Desai, Nicole Jackson. Updated DQ scoring delivered: records now show "DQ" with hard disqualify criteria instead of blank fields. Long-term system rework still pending with Karin Pindle.' },
+    { csm:'varun',  health:'Healthy',    account:"ServiceNow Inc's",
+      opp:'Vitally Pulse &mdash; Jun 2 Call', arr:'Enterprise &middot; Varun Tiwari', csmlbl:'Varun Tiwari',
+      change:'Jun 2 &middot; Check-in &mdash; Custom spend categories',
+      excerpt:'6/2 VT: Custom spend category validation session (8:00 AM PT, 30 min). 4 new products submitted for tracking. Varun proposed monthly cadence for ongoing requests. SLA explained: submit before 15th, ~30-day publish cycle. Santhosh Ronanki, Ramya Dudala, Anwesha Basu, Ravi Sharma (ServiceNow) attended. Doug Oliver-Watts (HG) co-attended.' },
+    { csm:'nick',   health:'Healthy',    account:'Veeam Software AG',
+      opp:'Vitally Pulse &mdash; Jun 2 Call', arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Jun 2 &middot; Check-in &mdash; TrustRadius event prep',
+      excerpt:'6/2 NJ: TrustRadius event prep call (8:30 AM PT, 30 min). HG team (Nick, Angus, Cassidy) attending Veeam review collection event Jun 3. Last-minute ask from Abigail Fish (Veeam) turned around quickly. SecurityAI (Veeam acquisition) review eligibility confirmed — falls under Veeam portfolio.' },
+    { csm:'rani',   health:'Concerning', account:'Meraki (Cisco)',
+      opp:'Vitally Pulse &mdash; Jun 2 Call', arr:'Enterprise &middot; Rani Guy', csmlbl:'Rani Guy',
+      change:'Jun 2 &middot; Check-in &mdash; Platform login issue',
+      excerpt:'6/2 RG: Onboarding sync with new Meraki contacts (8:30 AM PT, 30 min). Platform login issue flagged at call start — engineering team working on fix. Melanie already in platform via welcome email. AI account brief demo was the customer\'s top interest and well-received. Adrian Escobar + Max Paulus (HG) co-attended.' },
+    { csm:'nick',   health:'Healthy',    account:'SAP Inc',
+      opp:'Vitally Pulse &mdash; Jun 2 Call', arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Jun 2 &middot; Check-in',
+      excerpt:'6/2 NJ: Biweekly sync (9:30 AM PT, 30 min). Product mapping refresh delivered — Column A updated to current data feed, counts refreshed from RGIF. Shipra Chaudhary briefed on MCP testing status: early phase, next steps TBD. Joaquin + Adriana Aguiar (SAP) attended. Rafiq absent.' },
+    { csm:'riley',  health:'Healthy',    account:'Paycom Software Inc',
+      opp:'Vitally Pulse &mdash; Jun 2 Call', arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Jun 2 &middot; Check-in &mdash; CSM intro + Top Rated',
+      excerpt:'6/2 RR: CSM intro call replacing Sasha (left Jan 2026) (11:00 AM PT, 30 min). Met Larisha Hunter (new Paycom contact) for the first time. Peyton VanCuren, Katie Lenhart, Alexis Correa also attended. Paycom won TrustRadius Top Rated — media kit follow-up needed for Katie + Larisha. TrustRadius AI webinar well-received by Peyton.' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top"><div><div class="pulse-account">${c.account}</div><div class="pulse-opp">${c.opp}</div><div class="pulse-arr">${c.arr}</div></div><span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span></div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none"><div class="empty-icon">&#128269;</div>No pulses match these filters.</div>`;
 }
 
 function dayActionsHTML_2026_06_02() {
-  return `<div style="display:flex;flex-direction:column;gap:8px;">
-    <div style="display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px solid #1a2030;font-size:12px;">
-      <span style="background:#4a1010;color:#f87171;border:1px solid #ef4444;font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;white-space:nowrap;min-width:44px;text-align:center;">HIGH</span>
-      <span style="color:#cbd5e1;line-height:1.5;"><strong>[0201]</strong> Rani Guy &mdash; Confirm Meraki platform login fix is deployed. Ensure Melanie, Rashad, and Sijac can log in. Newly onboarded contacts are blocked on Day 1.</span>
-    </div>
-    <div style="display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px solid #1a2030;font-size:12px;">
-      <span style="background:#4a1010;color:#f87171;border:1px solid #ef4444;font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;white-space:nowrap;min-width:44px;text-align:center;">HIGH</span>
-      <span style="color:#cbd5e1;line-height:1.5;"><strong>[0202]</strong> Riley Rogers &mdash; Send Paycom Top Rated media kit to Katie Lenhart + Larisha Hunter. Automated email not confirmed received. Confirm with both contacts today.</span>
-    </div>
-    <div style="display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px solid #1a2030;font-size:12px;">
-      <span style="background:#3a2a10;color:#fcd34d;border:1px solid #f59e0b;font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;white-space:nowrap;min-width:44px;text-align:center;">MED</span>
-      <span style="color:#cbd5e1;line-height:1.5;"><strong>[0203]</strong> Nick Johnson / David Garcia Thomas &mdash; Follow up with Kelly Gumber (Accenture) on Avanade expansion contract term. Clarify 24-month minimum applicability for net-new purchase. Keep renewal on track.</span>
-    </div>
-    <div style="display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px solid #1a2030;font-size:12px;">
-      <span style="background:#3a2a10;color:#fcd34d;border:1px solid #f59e0b;font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;white-space:nowrap;min-width:44px;text-align:center;">MED</span>
-      <span style="color:#cbd5e1;line-height:1.5;"><strong>[0204]</strong> Nick Johnson &mdash; Confirm Veeam TrustRadius Jun 3 event logistics with Angus and Cassidy. Ensure SecurityAI review guidance is ready for any attendees who raise it.</span>
-    </div>
-    <div style="display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px solid #1a2030;font-size:12px;">
-      <span style="background:#3a2a10;color:#fcd34d;border:1px solid #f59e0b;font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;white-space:nowrap;min-width:44px;text-align:center;">MED</span>
-      <span style="color:#cbd5e1;line-height:1.5;"><strong>[0205]</strong> Varun Tiwari &mdash; Confirm 4 ServiceNow product tracking submissions are in system. Set up monthly check-in cadence with Santhosh Ronanki for ongoing requests.</span>
-    </div>
-    <div style="display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px solid #1a2030;font-size:12px;">
-      <span style="background:#1e293b;color:#94a3b8;border:1px solid #334155;font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;white-space:nowrap;min-width:44px;text-align:center;">LOW</span>
-      <span style="color:#cbd5e1;line-height:1.5;"><strong>[0206]</strong> Varun Tiwari &mdash; Send Autodesk (Matthew Ding) written summary of RGIP/RGIF and AWS marketplace delivery options discussed on the call.</span>
-    </div>
-    <div style="display:flex;gap:10px;align-items:flex-start;padding:8px 0;font-size:12px;">
-      <span style="background:#1e293b;color:#94a3b8;border:1px solid #334155;font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;white-space:nowrap;min-width:44px;text-align:center;">LOW</span>
-      <span style="color:#cbd5e1;line-height:1.5;"><strong>[0207]</strong> Nick Johnson &mdash; IBM: Coordinate with Clayton Cutbush on long-term scoring system rework discussed with Karin Pindle. Track as open action item.</span>
-    </div>
-  </div>`;
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has(201)?'done':''}" data-csm="rani" id="action-201"><div class="action-checkbox ${doneActions.has(201)?'checked':''}" onclick="toggleAction(201)"></div><div class="action-body"><div class="action-title">&#x26A0;&#xFE0F; Meraki (Cisco) &mdash; Confirm platform login fix deployed for new onboarded contacts</div><div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy &middot; Platform login was not working at the start of today\'s onboarding call. Engineering team working on fix. Rani to confirm the fix is deployed and that Melanie, Rashad, and Sijac can all successfully log in. Newly onboarded contacts are blocked on Day 1.</div></div></div>
+    <div class="action-item ${doneActions.has(202)?'done':''}" data-csm="riley" id="action-202"><div class="action-checkbox ${doneActions.has(202)?'checked':''}" onclick="toggleAction(202)"></div><div class="action-body"><div class="action-title">&#x1F3C6; Paycom &mdash; Send Top Rated media kit to Katie Lenhart and Larisha Hunter</div><div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Riley Rogers &middot; Paycom won TrustRadius Top Rated. Automated media kit email was sent but neither Katie Lenhart nor Larisha Hunter confirmed receipt. Riley to send directly to both contacts today and confirm they have the media kit and badge assets.</div></div></div>
+    <div class="action-item ${doneActions.has(203)?'done':''}" data-csm="nick" id="action-203"><div class="action-checkbox ${doneActions.has(203)?'checked':''}" onclick="toggleAction(203)"></div><div class="action-body"><div class="action-title">&#x1F4CB; Accenture &mdash; Follow up with Kelly Gumber on Avanade 24-month contract term</div><div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Nick Johnson + David Garcia Thomas &middot; Kelly Gumber flagged that the 24-month minimum term may block the Avanade expansion (~$100K/annum additional). Kelly to check internally. Nick and David to follow up and ensure the renewal doesn\'t stall in approvals. Clarify whether a shorter initial term is feasible.</div></div></div>
+    <div class="action-item ${doneActions.has(204)?'done':''}" data-csm="nick" id="action-204"><div class="action-checkbox ${doneActions.has(204)?'checked':''}" onclick="toggleAction(204)"></div><div class="action-body"><div class="action-title">&#x1F4C5; Veeam &mdash; Confirm TrustRadius Jun 3 event logistics with Angus and Cassidy</div><div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Nick Johnson &middot; HG team (Nick, Angus, Cassidy) attending Veeam TrustRadius review collection event tomorrow June 3. Confirm all logistics are in place. SecurityAI review eligibility guidance ready for any attendees who ask.</div></div></div>
+    <div class="action-item ${doneActions.has(205)?'done':''}" data-csm="varun" id="action-205"><div class="action-checkbox ${doneActions.has(205)?'checked':''}" onclick="toggleAction(205)"></div><div class="action-body"><div class="action-title">&#x1F4CB; ServiceNow &mdash; Confirm 4 product submissions; establish monthly tracking cadence</div><div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Varun Tiwari &middot; Confirm the 4 new product tracking submissions are in the internal system. Set up a formal monthly check-in cadence with Santhosh Ronanki so ServiceNow can submit ongoing product tracking requests before the 15th of each month.</div></div></div>
+    <div class="action-item ${doneActions.has(206)?'done':''}" data-csm="varun" id="action-206"><div class="action-checkbox ${doneActions.has(206)?'checked':''}" onclick="toggleAction(206)"></div><div class="action-body"><div class="action-title">&#x1F4E4; Autodesk &mdash; Send written summary of RGIP/RGIF and AWS marketplace options</div><div class="action-meta"><span class="urgency-badge urgency-low">LOW</span>Varun Tiwari &middot; Matthew Ding (Autodesk) had questions about Snowflake vs. AWS marketplace data delivery. Send a written follow-up covering: contextual intent on Snowflake only, RGIP/RGIF availability on AWS, and recommended delivery path for Autodesk's use case.</div></div></div>
+    <div class="action-item ${doneActions.has(207)?'done':''}" data-csm="nick" id="action-207"><div class="action-checkbox ${doneActions.has(207)?'checked':''}" onclick="toggleAction(207)"></div><div class="action-body"><div class="action-title">&#x1F4CB; IBM &mdash; Coordinate with Clayton Cutbush on long-term scoring system rework</div><div class="action-meta"><span class="urgency-badge urgency-low">LOW</span>Nick Johnson &middot; Clayton Cutbush discussed a long-term system rework on the DQ scoring model with Karin Pindle. Nick to ensure this is tracked and coordinate next steps with Clayton. Do not let this fall through the cracks after the introduction call.</div></div></div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none"><div class="empty-icon">&#128269;</div>No action items match these filters.</div>`;
 }
