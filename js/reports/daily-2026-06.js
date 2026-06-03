@@ -486,24 +486,64 @@ function weeklyOrMonthlyHTML_2026_06_01() {
 function dayData_2026_06_02() {
   return {
     calls: [
-      { ts: '3:00 AM PT', csm: 'nick',  account: 'Accenture',           note: 'Renewal — Avanade expansion access; 24-month term concern flagged by Kelly Gumber', mins: 30, health: 'watch' },
-      { ts: '6:00 AM PT', csm: 'varun', account: 'Autodesk Inc',         note: 'Data retrieval Q&A — Snowflake/AWS marketplace; new data platform contacts Matthew Ding + Mohammed Tanveer', mins: 30, health: 'healthy' },
-      { ts: '7:30 AM PT', csm: 'nick',  account: 'IBM',                  note: 'HG contact intro — Clayton Cutbush introduced; DQ scoring update delivered', mins: 30, health: 'healthy' },
-      { ts: '8:00 AM PT', csm: 'varun', account: "ServiceNow Inc's",     note: 'Custom spend category — 4 new products submitted; monthly tracking cadence proposed', mins: 30, health: 'healthy' },
-      { ts: '8:30 AM PT', csm: 'nick',  account: 'Veeam Software AG',    note: 'TR event prep (June 3) — SecurityAI review eligibility Q; Angus + Cassidy attending', mins: 30, health: 'healthy' },
-      { ts: '8:30 AM PT', csm: 'rani',  account: 'Meraki (Cisco)',        note: 'Onboarding sync — platform login issue flagged; AI account brief demo well-received', mins: 30, health: 'watch' },
-      { ts: '9:30 AM PT', csm: 'nick',  account: 'SAP Inc',              note: 'Biweekly — product mapping refresh delivered; MCP testing update from Shipra Chaudhary', mins: 30, health: 'healthy' },
-      { ts: '11:00 AM PT',csm: 'riley', account: 'Paycom Software Inc',  note: 'CSM intro + TR sync — Riley new CSM; Top Rated win; media kit follow-up needed', mins: 30, health: 'healthy' },
+      {
+        ts: 'Jun 2 · 3:00 AM', csm: 'nick', account: 'Accenture',
+        note: 'Renewal — Avanade expansion access; 24-month minimum term concern flagged by Kelly Gumber',
+        mins: 30, health: 'Concerning', nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Check-in',
+        detail: 'Kelly Gumber (Accenture procurement) flagged that the required 24-month minimum contract term may be a blocker for the Avanade access expansion (~$100K/annum additional). Contract currently under approvals. David Garcia Thomas (HG AM, London) and Nick on the call. Kelly to revert internally.',
+      },
+      {
+        ts: 'Jun 2 · 6:00 AM', csm: 'varun', account: 'Autodesk Inc',
+        note: 'Data retrieval Q&A — Snowflake/AWS marketplace; new eng. contacts Matthew Ding + Mohammed Tanveer',
+        mins: 30, health: 'Healthy', nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Check-in',
+        detail: 'Varun + Alexi Mouarkach (HG SE) met with Matthew Ding (Sr. Engineering Manager, Autodesk data platform) and Mohammed Tanveer (Principal Engineer). Clarified: only contextual intent on Snowflake; RGIP/RGIF available on AWS marketplace. New data platform team introduced to HG.',
+      },
+      {
+        ts: 'Jun 2 · 7:30 AM', csm: 'nick', account: 'IBM',
+        note: 'HG contact introduction — Clayton Cutbush introduced; updated DQ scoring delivered to Peter Herr team',
+        mins: 30, health: 'Healthy', nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'HG team (Nick Johnson, Karin Pindle NY, Clayton Cutbush) introduced Clayton to IBM contacts (Peter Herr, Ishan Sharma, Kruti Desai, Nicole Jackson). Clayton shared updated DQ/disqualification scoring — records now show "DQ" with hard disqualify criteria. Long-term system rework still pending.',
+      },
+      {
+        ts: 'Jun 2 · 8:00 AM', csm: 'varun', account: "ServiceNow Inc's",
+        note: 'Custom spend categories — 4 new products submitted; monthly tracking cadence proposed',
+        mins: 30, health: 'Healthy', nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Varun + Doug Oliver-Watts (HG) with Santhosh Ronanki, Ramya Dudala, Anwesha Basu, Ravi Sharma (ServiceNow). 4 new products already submitted for tracking. Varun proposed monthly cadence for ongoing requests. SLA: submit before 15th of month, ~30-day publish cycle.',
+      },
+      {
+        ts: 'Jun 2 · 8:30 AM', csm: 'nick', account: 'Veeam Software AG',
+        note: 'TR event prep (Jun 3) — SecurityAI review eligibility Q; last-minute ask from Abigail Fish',
+        mins: 30, health: 'Healthy', nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Check-in',
+        detail: 'Nick + Angus (HG) attending Veeam TrustRadius review collection event June 3, alongside Cassidy (HG). Abigail Fish asked about SecurityAI (Veeam acquisition) — not a paid vendor yet but falls under Veeam portfolio for review purposes. Last-minute request turned around quickly.',
+      },
+      {
+        ts: 'Jun 2 · 8:30 AM', csm: 'rani', account: 'Meraki (Cisco)',
+        note: 'Onboarding sync — platform login issue at call start; AI account brief demo well-received by Melanie',
+        mins: 30, health: 'Concerning', nature: 'Routine', initiator: 'HG CS', purpose: 'Issue',
+        detail: 'Rani + Adrian Escobar + Max Paulus (HG) onboarding Meraki team (Melanie, Rashad, Sijac). Platform login issue flagged at call start — engineering working on fix. Melanie already in platform via welcome email. AI account brief demo was the customer\'s top ask and well-received.',
+      },
+      {
+        ts: 'Jun 2 · 9:30 AM', csm: 'nick', account: 'SAP Inc',
+        note: 'Biweekly — product mapping refresh (RGIF updated counts); MCP testing update from Shipra Chaudhary',
+        mins: 30, health: 'Healthy', nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Nick + Joaquin + Adriana Aguiar + Shipra Chaudhary (SAP co-host). Nick delivered product mapping refresh: Column A updated to current data feed, counts updated from RGIF. Shipra briefing on MCP testing — early phase, next steps TBD. Rafiq absent.',
+      },
+      {
+        ts: 'Jun 2 · 11:00 AM', csm: 'riley', account: 'Paycom Software Inc',
+        note: 'CSM intro (Riley replacing Sasha since Jan 2026) — Top Rated win; media kit follow-up needed',
+        mins: 30, health: 'Healthy', nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Riley\'s first meeting with Paycom team. Met Larisha Hunter (new contact), plus Peyton VanCuren, Katie Lenhart, Alexis Correa. Paycom won TrustRadius Top Rated — automated media kit email not confirmed received by Katie or Larisha. TrustRadius AI webinar well-received by Peyton.',
+      },
     ],
     pulses: [
-      { csm: 'nick',  account: 'Accenture',           health: 'watch',   note: 'Renewal contract in approvals. Avanade access expansion flagged 24-month term concern. Kelly Gumber to revert after internal check.' },
-      { csm: 'varun', account: 'Autodesk Inc',         health: 'healthy', note: 'Data retrieval Q&A with new data platform team. Snowflake/AWS marketplace clarified. RGIP/RGIF introduced to Matthew Ding + Mohammed Tanveer.' },
-      { csm: 'nick',  account: 'IBM',                  health: 'healthy', note: 'Contact intro call. Clayton Cutbush introduced to IBM team. Updated DQ scoring delivered. Long-term system rework pending.' },
-      { csm: 'varun', account: "ServiceNow Inc's",     health: 'healthy', note: 'Custom spend category session. 4 products submitted. Monthly tracking cadence proposed. 30-day SLA explained to Santhosh Ronanki.' },
-      { csm: 'nick',  account: 'Veeam Software AG',    health: 'healthy', note: 'TR review collection event prep for June 3. SecurityAI under Veeam portfolio confirmed. Abigail Fish engaged.' },
-      { csm: 'rani',  account: 'Meraki (Cisco)',        health: 'watch',   note: 'Onboarding sync. Platform login issue flagged — engineering working on fix. AI account brief demo well-received by Melanie.' },
-      { csm: 'nick',  account: 'SAP Inc',              health: 'healthy', note: 'Biweekly sync. Product mapping refresh (RGIF-updated counts) delivered. Shipra on MCP testing — early phase, next steps TBD.' },
-      { csm: 'riley', account: 'Paycom Software Inc',  health: 'healthy', note: 'Intro call. Met Larisha Hunter (new contact). Top Rated win confirmed. Media kit email follow-up pending for Katie + Larisha.' },
+      { csm: 'nick',  account: 'Accenture',           health: 'Concerning', note: 'Renewal contract in approvals. Avanade access expansion (~$100K/annum) flagged 24-month term concern. Kelly Gumber to revert after internal check. Watch for renewal delay risk.' },
+      { csm: 'varun', account: 'Autodesk Inc',         health: 'Healthy',    note: 'Data retrieval Q&A with new data platform team (Matthew Ding, Mohammed Tanveer). Snowflake/AWS marketplace clarified. RGIP/RGIF introduced to new engineering contacts.' },
+      { csm: 'nick',  account: 'IBM',                  health: 'Healthy',    note: 'HG contact introduction. Clayton Cutbush introduced to IBM team (Peter Herr, Ishan Sharma, Kruti Desai). Updated DQ scoring delivered. Long-term system rework pending.' },
+      { csm: 'varun', account: "ServiceNow Inc's",     health: 'Healthy',    note: 'Custom spend category session. 4 new products submitted. Monthly tracking cadence proposed. 30-day SLA explained to Santhosh Ronanki. Strong team engagement.' },
+      { csm: 'nick',  account: 'Veeam Software AG',    health: 'Healthy',    note: 'TrustRadius event prep for Jun 3. HG team (Nick, Angus, Cassidy) attending review collection. SecurityAI review eligibility confirmed under Veeam portfolio. Abigail Fish engaged.' },
+      { csm: 'rani',  account: 'Meraki (Cisco)',        health: 'Concerning', note: 'Onboarding sync. Platform login issue flagged at call start — engineering working on fix. Melanie already in platform. AI account brief demo well-received as top use case.' },
+      { csm: 'nick',  account: 'SAP Inc',              health: 'Healthy',    note: 'Biweekly sync. Product mapping refresh (RGIF updated counts) delivered. Shipra Chaudhary on MCP testing — early phase, next steps TBD. Rafiq absent. Steady cadence.' },
+      { csm: 'riley', account: 'Paycom Software Inc',  health: 'Healthy',    note: 'CSM intro call. Met Larisha Hunter (new contact). Paycom won Top Rated — media kit follow-up needed for Katie Lenhart + Larisha. TrustRadius AI webinar well-received by Peyton.' },
     ]
   };
 }
