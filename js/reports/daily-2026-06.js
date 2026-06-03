@@ -511,17 +511,12 @@ function dayData_2026_06_02() {
 function dayMeta_2026_06_02() {
   return {
     pills: [
-      { label: '8 CALLS', color: '#0ea5e9' },
-      { label: '4 ACTIVE CSMs', color: '#22c55e' },
-      { label: '2 WATCH', color: '#f59e0b' },
-      { label: 'PLATFORM ISSUE', color: '#ef4444' },
+      ['dot-teal',  '8 Calls'],
+      ['dot-amber', '⚠️ Platform Issue · Meraki login'],
+      ['dot-red',   '2 Watch Signals'],
+      ['dot-grey',  'Tue Jun 2 · 76 recordings scanned'],
     ],
-    tabs: [
-      { id: 'overview', label: 'Overview', count: 8 },
-      { id: 'calls',    label: 'Calls',    count: 8 },
-      { id: 'pulses',   label: 'Pulses',   count: 8 },
-      { id: 'actions',  label: 'Actions',  count: 7 },
-    ]
+    tabs: ['Overview', 'Calls (8)', 'Pulses (8)', 'Action Items (7)'],
   };
 }
 
