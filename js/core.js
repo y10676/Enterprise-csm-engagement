@@ -727,7 +727,7 @@ function autoWeekSummaryHTML(data) {
   <div class="heatmap-card">
     <table class="hm-table">
       <thead><tr><th class="row-lbl">CSM</th>${hmHeaders}</tr></thead>
-      <tbody>${hmRows}</tbody>
+      <tbody>${hmRows}<tr style="background:#f8f9fc;font-weight:700"><td style="font-size:12px;font-weight:700;color:#374151">Day total</td>${weekDates.map(date => { const t = CSM_ORDER.reduce((sum,k) => sum+(hmData[k]?.[date]||0),0); const cls=t===0?'hm-0':t<=3?'hm-1':t<=6?'hm-2':'hm-3'; return `<td class="hm-cell ${cls}" style="font-weight:700">${t||'—'}</td>`; }).join('')}</tr></tbody>
     </table>
   </div>
   <div class="section-label">Pulse Health Distribution</div>
