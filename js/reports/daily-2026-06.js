@@ -75,6 +75,7 @@ function dayData_2026_06_01() {
       { csm: 'rani',   account: 'Amazon Web Services (AWS)', health: 'Healthy',  note: 'Project Rubicon support call. HG Quick Desktop demo by Mike Galyen. Mark Fell managing agenda. Francis not needed. $4.6M ARR strategic account healthy.' },
       { csm: 'rani',   account: 'NetApp',                  health: 'Healthy',    note: 'Data matching issue: company name only (no URLs/DUNS). FAI data ticket submitted. Adrian posting Slack update. Matching accuracy limited until FAI resolves.' },
       { csm: 'rani',   account: 'Cisco',                   health: 'Healthy',    note: 'X-cov (Pam Huck\'s account): data evaluation with Michael Xu — account match rate analysis. Cisco Live week. Pam to be briefed. Cisco pulse=Poor, $2.3M ARR.' },
+      { csm: 'andy',  account: 'Ever Pure',                health: 'Healthy',    note: 'Biweekly sync (2:00 AM PT, 27 min, Four/Four). Charlie Morgans evaluating HG platform — install/spend data, Snowflake integration, product taxonomy. Missing cloud columns suspected ETL gap. Andy + Angus supporting full onboarding.' },
     ],
   };
 }
@@ -82,13 +83,13 @@ function dayData_2026_06_01() {
 function dayMeta_2026_06_01() {
   return {
     pills: [
-      ['dot-teal',  '11 Calls'],
+      ['dot-teal',  '12 Calls'],
       ['dot-red',   '⚠️ Varun Paternity Leave'],
       ['dot-green', '5 Expansion Signals'],
       ['dot-amber', 'X-Cov: Rani → Cisco'],
-      ['dot-grey',  'Mon Jun 1 · 49 recordings scanned'],
+      ['dot-grey',  'Mon Jun 1 · 49 Weflow + 1 Four/Four'],
     ],
-    tabs: ['Overview', 'Calls (11)', 'Pulses (11)', 'Action Items (9)'],
+    tabs: ['Overview', 'Calls (12)', 'Pulses (12)', 'Action Items (10)'],
   };
 }
 
@@ -104,7 +105,7 @@ function dayOverviewHTML_2026_06_01() {
     &#x1F504; <strong>Cross-Coverage:</strong> Rani Guy confirmed on Cisco sync (assigned CSM = Pam Huck &middot; pulse=Poor &middot; $2.3M ARR). Pam to be briefed on Michael Xu match-rate findings.
   </div>
   <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
-    &#x1F4C5; <strong>Mon Jun 1 &mdash; 49 recordings scanned</strong> via SFDC SOQL &middot; <strong>11 confirmed calls</strong> across 6 CSMs &middot; 1 contextual (Pam/F5) &middot; 3 unconfirmed &middot; First day of June 2026
+    &#x1F4C5; <strong>Mon Jun 1 &mdash; 49 Weflow recordings + 1 Four/Four call</strong> &middot; <strong>12 confirmed calls</strong> across 8 CSMs &middot; 1 contextual (Pam/F5) &middot; 3 unconfirmed &middot; First day of June 2026
   </div>
   <div class="overview-grid">
 
@@ -204,18 +205,20 @@ function dayOverviewHTML_2026_06_01() {
       <div class="csm-account-note">ADP: recording, no transcript (unconfirmed). F5/NGINX: speaker "Pam" in transcript — contextually confirmed. Cisco: covered by Rani (poor pulse).</div>
     </div>
 
-    <div class="csm-card no-calls" data-csm="andy">
+    <div class="csm-card has-calls" data-csm="andy">
+      <span class="call-badge">1 CALL</span>
       <div class="csm-card-header">
         <div class="avatar av-grey">AL</div>
         <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
       </div>
       <div class="csm-metrics">
-        <div><div class="metric-num m-grey">0</div><div class="metric-lbl">Direct</div></div>
-        <div><div class="metric-num m-grey">1</div><div class="metric-lbl">Events</div></div>
-        <div><div class="metric-num m-grey">0</div><div class="metric-lbl">Confirmed</div></div>
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">27m</div><div class="metric-lbl">Duration</div></div>
       </div>
-      <div class="csm-account-note">ADP: recording found, no transcript. Unconfirmed.</div>
+      <div class="csm-account-note">Ever Pure &mdash; biweekly sync (2:00 AM PT &middot; 27 min). Install/spend data, Snowflake integration, missing cloud columns flagged. <em style="color:#6366f1;font-size:11px;">[Four/Four only]</em></div>
     </div>
+
 
   </div>`;
 }
@@ -386,6 +389,11 @@ function dayPulsesHTML_2026_06_01() {
       <div class="pulse-excerpt">${c.excerpt}</div>
       <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
     </div>`).join('')}</div>
+  <div class="pulse-card" data-csm="andy" data-health="Healthy">
+    <div class="pulse-card-top"><div><div class="pulse-account">Ever Pure</div><div class="pulse-opp">Vitally Pulse &mdash; Jun 1 Call</div><div class="pulse-arr">Evaluation &middot; Andy Lim</div></div><span class="badge badge-healthy">&#128994; Healthy</span></div>
+    <div class="pulse-excerpt">6/1 AL: Biweekly sync (2:00 AM PT, 27 min, Source: Four/Four). Charlie Morgans (Ever Pure) evaluating HG platform. Reviewed install and spend data &mdash; cloud columns missing, suspected ETL/ingestion gap. Snowflake integration discussed for company-wide adoption. Product taxonomy catalog requested. Proactive customer; expanding use cases. Andy + Angus supporting.</div>
+    <div class="pulse-footer"><span>Andy Lim</span><span>Jun 1 &middot; Check-in &mdash; Platform evaluation sync</span></div>
+  </div>
   <div class="empty-state" id="pulses-empty" style="display:none"><div class="empty-icon">&#128269;</div>No pulses match these filters.</div>`;
 }
 
@@ -400,6 +408,8 @@ function dayActionsHTML_2026_06_01() {
     <div class="action-item ${doneActions.has(107)?'done':''}" data-csm="nick" id="action-107"><div class="action-checkbox ${doneActions.has(107)?'checked':''}" onclick="toggleAction(107)"></div><div class="action-body"><div class="action-title">&#x1F4C8; IBM &mdash; GenAI follow-up with Clayton Cutbush and David Bush team</div><div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Nick Johnson &middot; Share a capabilities summary with David Bush and Arnav Singh following the GenAI walkthrough. Clayton Cutbush to coordinate next steps internally. Identify concrete expansion use cases and track as active opportunity at $3.3M ARR.</div></div></div>
     <div class="action-item ${doneActions.has(108)?'done':''}" data-csm="riley" id="action-108"><div class="action-checkbox ${doneActions.has(108)?'checked':''}" onclick="toggleAction(108)"></div><div class="action-body"><div class="action-title">&#x1F4CB; SAP &mdash; Follow up with Helya Barezani on TR Premium Content Hosting</div><div class="action-meta"><span class="urgency-badge urgency-low">LOW</span>Riley Rogers &middot; Helya Barezani needs to consult with the SAP team on TR Premium Content Hosting. Follow up in approximately one week. Track as expansion opportunity in the $3M ARR account.</div></div></div>
     <div class="action-item ${doneActions.has(109)?'done':''}" data-csm="nick" id="action-109"><div class="action-checkbox ${doneActions.has(109)?'checked':''}" onclick="toggleAction(109)"></div><div class="action-body"><div class="action-title">&#x1F4CB; Infor &mdash; Confirm Ankar's Salesforce data pull is unblocked</div><div class="action-meta"><span class="urgency-badge urgency-low">LOW</span>Nick Johnson &middot; Ankar is building a Salesforce data pull to validate HG lift for Nicole Morgan's ELT presentation. Offer HG Solutions assistance if needed. India team public holiday Wednesday — plan timeline accordingly.</div></div></div>
+  </div>
+    <div class="action-item ${doneActions.has(110)?'done':''}" data-csm="andy" id="action-110"><div class="action-checkbox ${doneActions.has(110)?'checked':''}" onclick="toggleAction(110)"></div><div class="action-body"><div class="action-title">&#x1F4CB; Ever Pure &mdash; Fix missing cloud/spend columns + send taxonomy catalog</div><div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Andy Lim &middot; Charlie Morgans (Ever Pure) could not find cloud columns in the received data. Andy to: (1) raise a ticket to enable cloud and spend columns for Charlie\'s views, (2) send the product dimension/taxonomy catalog to help Charlie map HG products to their internal naming, (3) support Snowflake integration with Charlie\'s data team.</div></div></div>
   </div>
   <div class="empty-state" id="actions-empty" style="display:none"><div class="empty-icon">&#128269;</div>No action items match these filters.</div>`;
 }
