@@ -871,17 +871,12 @@ function dayData_2026_06_03() {
 function dayMeta_2026_06_03() {
   return {
     pills: [
-      { label: '9 Confirmed Calls', color: 'green' },
-      { label: '6 CSMs Active', color: 'blue' },
-      { label: '2 Issues', color: 'amber' },
-      { label: '3 Expansion', color: 'purple' }
+      ['dot-teal',   '9 Calls'],
+      ['dot-amber',  '⚠ CBTS · Quadient Issues'],
+      ['dot-purple', '3 Expansion Signals'],
+      ['dot-grey',   'Wed Jun 3 · 72 recordings scanned'],
     ],
-    tabs: [
-      { id: 'overview', label: 'Overview' },
-      { id: 'calls', label: 'Calls (9)' },
-      { id: 'pulses', label: 'Pulses (9)' },
-      { id: 'actions', label: 'Actions (5)' }
-    ]
+    tabs: ['Overview', 'Calls (9)', 'Pulses (9)', 'Action Items (5)'],
   };
 }
 
