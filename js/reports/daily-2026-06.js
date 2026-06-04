@@ -62,6 +62,11 @@ function dayData_2026_06_01() {
         mins: 30, health: 'Healthy',
         nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
         detail: 'Adrian Escobar (AM) + Gavin Padden with Michael Xu (Cisco) during Cisco Live week (Las Vegas). Michael reviewed HG data files, analyzing account match rates. Rani confirmed in transcript. Note: Cisco\'s assigned CSM is Pam Huck per data.js — Rani covering. Pam to be briefed on Michael Xu findings.' },
+      { ts: 'Jun 1 · 2:00 AM', csm: 'andy', account: 'Ever Pure',
+        note: 'Biweekly sync — install/spend data, Snowflake integration, missing cloud columns (Source: Four/Four)',
+        mins: 27, health: 'Healthy',
+        nature: 'Routine', initiator: 'Customer', purpose: 'Check-in',
+        detail: 'Andy Lim + Angus Hyams with Charlie Morgans (Ever Pure — evaluation customer). Biweekly cadence. Cloud columns missing from received data — ETL/ingestion gap suspected. Snowflake integration flagged for company-wide adoption. Product taxonomy catalog requested. Captured by Four/Four only — Weflow bot did not join this customer-hosted EMEA meeting.' },
     ],
     pulses: [
       { csm: 'nick',   account: 'Infor (US), LLC',         health: 'Healthy',    note: 'Customer debrief on urgent data support. Nicole Morgan preparing ELT presentation. Ankar building SF data pull to validate HG lift. BLT readout planned.' },
