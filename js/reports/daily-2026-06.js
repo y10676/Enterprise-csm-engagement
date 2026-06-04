@@ -801,3 +801,338 @@ function dayActionsHTML_2026_06_02() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none"><div class="empty-icon">&#128269;</div>No action items match these filters.</div>`;
 }
+
+
+// ---- June 3, 2026 ----
+
+function dayData_2026_06_03() {
+  return {
+    calls: [
+      { ts: 'Jun 3 · 6:00 AM', csm: 'andy', account: 'SAS Institute',
+        note: 'HG platform demo walkthrough for global SAS team (~25 attendees, UK to Asia-Pacific)',
+        mins: 60, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Andy Lim and Anna Fokina (Solutions) led recurring demo walkthrough for SAS Institute global team. ~25 attendees spanning UK, Japan, and US East Coast time zones. Multi-timezone scheduling accommodated range from "minus to plus eight London".' },
+      { ts: 'Jun 3 · 7:00 AM', csm: 'riley', account: 'IBM',
+        note: 'Biweekly TR sync — business cards shipped to IBM NA for events, Chaitali re-engaged',
+        mins: 45, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Riley Rogers biweekly TR sync with IBM team (Cole Arutian, Janie Carothers, MihaelaN from Romania, Chaitali re-engaging after missing several calls). Riley confirmed business cards shipped to IBM NA for event distribution. Address confirmed, cards arrived. Program on track.' },
+      { ts: 'Jun 3 · 7:30 AM', csm: 'varun', account: 'CBTS',
+        note: 'Data delivery ready except contacts — DPI/PII contract not yet signed, follow-up needed',
+        mins: 30, health: 'Some Risk',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Issue',
+        detail: 'Varun Tiwari bi-weekly with Mitchell VanderKam (CBTS) and Omkar Hunuswadkar (HG Customer Solutions Engineering). Data delivery complete except contact/PII fields — requires separate DPI contract. Mitchell unsure if CBTS signed; Varun to confirm and send via DZiat (returning next day). Contacts blocked pending signature.' },
+      { ts: 'Jun 3 · 8:00 AM', csm: 'nick', account: 'Westcon',
+        note: 'Monthly sync live from Veeam/TR London event — AccountIQ Tableau friction flagged',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Nick Johnson conducted monthly sync with Andre Armstrong (Westcon) while attending the Veeam/TrustRadius London event. Discussed Veeam\'s model built on HG data (AccountIQ in Tableau). Key friction: reps using AccountIQ must leave Salesforce to access Tableau — data gets forgotten. TR review gen activities also discussed.' },
+      { ts: 'Jun 3 · 9:00 AM', csm: 'varun', account: 'Exclusive Networks',
+        note: 'HG leadership approved forgoing 25K marketing exports — constraint removed ahead of renewal',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Varun Tiwari bi-weekly with M. Tinker and Angus Hyams (joining from live event). HG leadership approved forgoing 25K exports previously used by Exclusive Networks\' marketing team. Constraint removed ahead of year-end renewal. Customer expressed strong relief and appreciation. Varun and Angus noted limits will apply going forward; M. Tinker will inform the two team members who had export access.' },
+      { ts: 'Jun 3 · 9:00 AM', csm: 'pam', account: 'Epicor',
+        note: 'Post-Insights conference debrief — review gen blew out targets, Becky & Colby praised',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'Customer', purpose: 'Check-in',
+        detail: 'Pam Huck bi-weekly with Sam Malecek (Epicor). Post-Insights (Nashville) conference debrief. Review generation exceeded targets — TR event staff Becky and Colby praised highly. Sam walked 7 miles/day at the conference. Pam discusses "next steps" for review volume program. Strong account momentum post-event.' },
+      { ts: 'Jun 3 · 9:30 AM', csm: 'riley', account: 'Paylocity',
+        note: 'Top Rated announcement June 10 — renewal discussion ~$47.5K + $10K incentives',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Riley Rogers monthly sync with Matt Doyle (Paylocity). Ensured readiness for Top Rated announcement June 10 — badges ready, blog scheduled, business cards received in Chicago. Anderson (renewal decision-maker) not available today; to reschedule. Pre-renewal discussion: ~$47.5K + $10K incentive add-on; same structure as prior year expected.' },
+      { ts: 'Jun 3 · 10:30 AM', csm: 'varun', account: 'Pegasystems Inc',
+        note: 'Strategic expansion session — introducing KP (Solutions Engineering), new contact Taylor Crosby onboarded',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Varun Tiwari bi-weekly with Taylor Crosby (new Pega contact, joined 2 months ago — dual platform admin + data analytics role), Frank, Ishan Sharma, Leo Zunz. Varun introduced Karin/KP Pindle (HG Solutions Engineering) to ideate on broader strategic objectives. KP to partner on next expansion discussion. Frank invited but not confirmed present.' },
+      { ts: 'Jun 3 · 12:00 PM', csm: 'divyam', account: 'Quadient Software, Inc',
+        note: 'TrustQuotes API not yet implemented + Inspired document naming dispute',
+        mins: 30, health: 'Some Risk',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Issue',
+        detail: 'Divyam Dewan ad-hoc call with Ashlin Haley and Lia Holmes (Quadient). Two open items: (1) TrustQuotes JS/API integration not yet completed — Divyam walked through via email and live call. (2) Naming dispute: Quadient content team uses "customer stories" (long format); TR uses "customer use case" in Inspired documents. Lia to check with content team.' }
+    ],
+    pulses: [
+      { csm: 'Andy Lim', account: 'SAS Institute', health: 'Healthy', note: 'Global demo walkthrough delivered. ~25 attendees, multi-timezone.' },
+      { csm: 'Riley Rogers', account: 'IBM', health: 'Healthy', note: 'Biweekly TR sync. Business cards shipped to IBM NA. Chaitali re-engaged.' },
+      { csm: 'Varun Tiwari', account: 'CBTS', health: 'Some Risk', note: 'DPI/PII contract pending — contact delivery blocked. DZiat to follow up.' },
+      { csm: 'Nick Johnson', account: 'Westcon', health: 'Healthy', note: 'Monthly sync from London event. AccountIQ Tableau friction flagged.' },
+      { csm: 'Varun Tiwari', account: 'Exclusive Networks', health: 'Healthy', note: '25K export constraint resolved — leadership approved. Customer relieved ahead of renewal.' },
+      { csm: 'Pam Huck', account: 'Epicor', health: 'Healthy', note: 'Post-Insights review gen blew out targets. Strong post-event momentum.' },
+      { csm: 'Riley Rogers', account: 'Paylocity', health: 'Healthy', note: 'Top Rated June 10 announcement ready. Pre-renewal ~$47.5K + $10K incentives.' },
+      { csm: 'Varun Tiwari', account: 'Pegasystems Inc', health: 'Healthy', note: 'Strategic expansion session. KP (SE) introduced. New contact Taylor Crosby onboarded.' },
+      { csm: 'Divyam Dewan', account: 'Quadient Software, Inc', health: 'Some Risk', note: 'TrustQuotes API incomplete. Inspired document naming dispute with content team.' }
+    ]
+  };
+}
+
+function dayMeta_2026_06_03() {
+  return {
+    pills: [
+      { label: '9 Confirmed Calls', color: 'green' },
+      { label: '6 CSMs Active', color: 'blue' },
+      { label: '2 Issues', color: 'amber' },
+      { label: '3 Expansion', color: 'purple' }
+    ],
+    tabs: [
+      { id: 'overview', label: 'Overview' },
+      { id: 'calls', label: 'Calls (9)' },
+      { id: 'pulses', label: 'Pulses (9)' },
+      { id: 'actions', label: 'Actions (5)' }
+    ]
+  };
+}
+
+function dayOverviewHTML_2026_06_03() {
+  return `
+<div class="overview-grid">
+  <div class="csm-card has-calls">
+    <div class="csm-name">Andy Lim</div>
+    <div class="csm-stat">1 CALL</div>
+    <div class="csm-accounts">SAS Institute (Demo/Training)</div>
+  </div>
+  <div class="csm-card has-calls">
+    <div class="csm-name">Riley Rogers</div>
+    <div class="csm-stat">2 CALLS</div>
+    <div class="csm-accounts">IBM · Paylocity (📈 Renewal)</div>
+  </div>
+  <div class="csm-card has-calls risk">
+    <div class="csm-name">Varun Tiwari</div>
+    <div class="csm-stat">3 CALLS</div>
+    <div class="csm-accounts">CBTS (⚠ Issue) · Exclusive Networks (✅) · Pegasystems (📈)</div>
+  </div>
+  <div class="csm-card has-calls">
+    <div class="csm-name">Nick Johnson</div>
+    <div class="csm-stat">1 CALL</div>
+    <div class="csm-accounts">Westcon (live from London event)</div>
+  </div>
+  <div class="csm-card has-calls">
+    <div class="csm-name">Pam Huck</div>
+    <div class="csm-stat">1 CALL</div>
+    <div class="csm-accounts">Epicor (✅ Post-event win)</div>
+  </div>
+  <div class="csm-card has-calls risk">
+    <div class="csm-name">Divyam Dewan</div>
+    <div class="csm-stat">1 CALL</div>
+    <div class="csm-accounts">Quadient (⚠ TrustQuotes Issue)</div>
+  </div>
+  <div class="csm-card no-calls">
+    <div class="csm-name">Rani Guy</div>
+    <div class="csm-stat">0 Confirmed</div>
+    <div class="csm-accounts">Google, Cisco, Lenovo, Oracle, Juniper events — no recordings w/ transcripts</div>
+  </div>
+  <div class="csm-card no-calls">
+    <div class="csm-name">Atisha Waghela</div>
+    <div class="csm-stat">0 Confirmed</div>
+    <div class="csm-accounts">EY unconfirmed (no transcript) · Salesforce sync no recording</div>
+  </div>
+</div>
+<div class="summary-alert">
+  <strong>June 3 Highlights:</strong> 9 confirmed calls · 6/8 CSMs active · 
+  <span class="signal-warn">⚠ CBTS DPI contract pending</span> · 
+  <span class="signal-warn">⚠ Quadient TrustQuotes issue</span> · 
+  <span class="signal-good">✅ Exclusive Networks export constraint resolved</span> · 
+  <span class="signal-good">✅ Epicor post-event review gen success</span> · 
+  <span class="signal-expand">📈 Paylocity renewal (~$47.5K) · Pegasystems strategic expansion initiated</span>
+  <br>Note: 163 raw SFDC recording records deduped to 72 unique (80+ duplicates of "Weekly GTM Enablement Session")
+</div>`;
+}
+
+function dayCallsHTML_2026_06_03() {
+  return `
+<table class="calls-table">
+  <thead>
+    <tr><th>Time (PT)</th><th>CSM</th><th>Account</th><th>Duration</th><th>Nature</th><th>Initiator</th><th>Purpose</th><th>Signal</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>6:00 AM</td>
+      <td><span class="csm-chip">Andy Lim</span></td>
+      <td>SAS Institute</td>
+      <td>60 min</td>
+      <td>Recurring</td>
+      <td>HG CS</td>
+      <td>Check-in · Demo</td>
+      <td><span class="badge healthy">Healthy</span></td>
+    </tr>
+    <tr>
+      <td>7:00 AM</td>
+      <td><span class="csm-chip riley">Riley Rogers</span></td>
+      <td>IBM</td>
+      <td>45 min</td>
+      <td>Recurring</td>
+      <td>HG CS</td>
+      <td>Check-in</td>
+      <td><span class="badge healthy">Healthy</span></td>
+    </tr>
+    <tr>
+      <td>7:30 AM</td>
+      <td><span class="csm-chip varun">Varun Tiwari</span></td>
+      <td>CBTS</td>
+      <td>30 min</td>
+      <td>Recurring</td>
+      <td>HG CS</td>
+      <td>Check-in · Issue</td>
+      <td><span class="badge risk">⚠ Issue</span></td>
+    </tr>
+    <tr>
+      <td>8:00 AM</td>
+      <td><span class="csm-chip">Nick Johnson</span></td>
+      <td>Westcon</td>
+      <td>30 min</td>
+      <td>Recurring</td>
+      <td>HG CS</td>
+      <td>Check-in</td>
+      <td><span class="badge healthy">Healthy</span></td>
+    </tr>
+    <tr>
+      <td>9:00 AM</td>
+      <td><span class="csm-chip varun">Varun Tiwari</span></td>
+      <td>Exclusive Networks</td>
+      <td>30 min</td>
+      <td>Recurring</td>
+      <td>HG CS</td>
+      <td>Check-in</td>
+      <td><span class="badge healthy">✅ Positive</span></td>
+    </tr>
+    <tr>
+      <td>9:00 AM</td>
+      <td><span class="csm-chip pam">Pam Huck</span></td>
+      <td>Epicor</td>
+      <td>30 min</td>
+      <td>Recurring</td>
+      <td>Customer</td>
+      <td>Check-in · Expansion</td>
+      <td><span class="badge healthy">✅ Positive</span></td>
+    </tr>
+    <tr>
+      <td>9:30 AM</td>
+      <td><span class="csm-chip riley">Riley Rogers</span></td>
+      <td>Paylocity</td>
+      <td>30 min</td>
+      <td>Recurring</td>
+      <td>HG CS</td>
+      <td>Check-in · Expansion</td>
+      <td><span class="badge expansion">📈 Renewal</span></td>
+    </tr>
+    <tr>
+      <td>10:30 AM</td>
+      <td><span class="csm-chip varun">Varun Tiwari</span></td>
+      <td>Pegasystems</td>
+      <td>30 min</td>
+      <td>Recurring</td>
+      <td>HG CS</td>
+      <td>Check-in · Expansion</td>
+      <td><span class="badge expansion">📈 Expansion</span></td>
+    </tr>
+    <tr>
+      <td>12:00 PM</td>
+      <td><span class="csm-chip divyam">Divyam Dewan</span></td>
+      <td>Quadient</td>
+      <td>30 min</td>
+      <td>Ad-hoc</td>
+      <td>Customer</td>
+      <td>Issue</td>
+      <td><span class="badge risk">⚠ Issue</span></td>
+    </tr>
+  </tbody>
+</table>
+<div class="callout-banner unconfirmed">
+  <strong>Unconfirmed (no transcript, inferred from event):</strong>
+  Nick Johnson / Capgemini (1:00 AM) · Andy Lim / SAS Training (6:15 AM) · Atisha Waghela / EY (6:30 AM) · Varun Tiwari / Five9 (8:30 AM)
+</div>`;
+}
+
+function dayPulsesHTML_2026_06_03() {
+  return `
+<div class="pulse-grid">
+  <div class="pulse-card healthy">
+    <div class="pulse-account">SAS Institute</div>
+    <div class="pulse-meta">Andy Lim · 6:00 AM · 60 min</div>
+    <div class="pulse-note">Recurring global demo walkthrough. ~25 attendees from UK to Asia-Pacific. HG-led product walkthrough. Healthy engagement.</div>
+  </div>
+  <div class="pulse-card healthy">
+    <div class="pulse-account">IBM</div>
+    <div class="pulse-meta">Riley Rogers · 7:00 AM · 45 min</div>
+    <div class="pulse-note">Biweekly TR sync. Business cards shipped to IBM NA for events. Chaitali re-engaged after missing several calls. Program on track.</div>
+  </div>
+  <div class="pulse-card concerning">
+    <div class="pulse-account">CBTS</div>
+    <div class="pulse-meta">Varun Tiwari · 7:30 AM · 30 min</div>
+    <div class="pulse-note">Data delivery ready except contacts — DPI/PII contract not yet signed. DZiat to send contract (returns tomorrow). Block on contact data sharing.</div>
+  </div>
+  <div class="pulse-card healthy">
+    <div class="pulse-account">Westcon</div>
+    <div class="pulse-meta">Nick Johnson · 8:00 AM · 30 min</div>
+    <div class="pulse-note">Monthly sync live from Veeam/TR London event. AccountIQ Tableau friction flagged. Veeam building models on HG data. Strong relationship signal.</div>
+  </div>
+  <div class="pulse-card healthy">
+    <div class="pulse-account">Exclusive Networks</div>
+    <div class="pulse-meta">Varun Tiwari · 9:00 AM · 30 min</div>
+    <div class="pulse-note">HG leadership approved forgoing 25K marketing exports — constraint removed ahead of year-end renewal. Customer expressed strong appreciation.</div>
+  </div>
+  <div class="pulse-card healthy">
+    <div class="pulse-account">Epicor</div>
+    <div class="pulse-meta">Pam Huck · 9:00 AM · 30 min</div>
+    <div class="pulse-note">Post-Insights conference debrief. Review gen exceeded targets at Nashville event. Event staff (Colby & Becky) praised highly. Strong post-event momentum.</div>
+  </div>
+  <div class="pulse-card expansion">
+    <div class="pulse-account">Paylocity</div>
+    <div class="pulse-meta">Riley Rogers · 9:30 AM · 30 min</div>
+    <div class="pulse-note">Top Rated announcement June 10 — badges & blog ready. Pre-renewal ~$47.5K + $10K incentive add-on. Anderson to join separately for sign-off.</div>
+  </div>
+  <div class="pulse-card expansion">
+    <div class="pulse-account">Pegasystems</div>
+    <div class="pulse-meta">Varun Tiwari · 10:30 AM · 30 min</div>
+    <div class="pulse-note">Strategic expansion initiated — KP (Solutions Engineering) introduced for broader objectives. New contact Taylor Crosby onboarded (admin + data analytics).</div>
+  </div>
+  <div class="pulse-card concerning">
+    <div class="pulse-account">Quadient</div>
+    <div class="pulse-meta">Divyam Dewan · 12:00 PM · 30 min</div>
+    <div class="pulse-note">TrustQuotes API not yet implemented. Inspired document naming dispute ongoing — Lia to check with content team. Divyam following up via email.</div>
+  </div>
+</div>`;
+}
+
+function dayActionsHTML_2026_06_03() {
+  return `
+<ul class="action-list">
+  <li class="action-item high">
+    <span class="action-id">[0603-1]</span>
+    <span class="urgency-badge high">HIGH</span>
+    <div class="action-content">
+      <strong>Varun Tiwari / CBTS:</strong> Confirm DPI/PII contract sent to CBTS via DZiat — follow up June 4 to confirm receipt and signature timeline. Contact data delivery blocked until signed.
+    </div>
+  </li>
+  <li class="action-item medium">
+    <span class="action-id">[0603-2]</span>
+    <span class="urgency-badge medium">MED</span>
+    <div class="action-content">
+      <strong>Divyam Dewan / Quadient:</strong> Follow up with Lia Holmes on (1) TrustQuotes JS/API integration status and (2) Inspired document "customer use case" naming resolution from content team.
+    </div>
+  </li>
+  <li class="action-item medium">
+    <span class="action-id">[0603-3]</span>
+    <span class="urgency-badge medium">MED</span>
+    <div class="action-content">
+      <strong>Riley Rogers / Paylocity:</strong> Schedule Anderson join for renewal discussion (~$47.5K + $10K incentives). Confirm Top Rated announcement blog go-live June 10.
+    </div>
+  </li>
+  <li class="action-item medium">
+    <span class="action-id">[0603-4]</span>
+    <span class="urgency-badge medium">MED</span>
+    <div class="action-content">
+      <strong>Varun Tiwari / Pegasystems:</strong> Schedule strategic objectives session with KP (Solutions Engineering) and Frank — confirm KP availability and scope of expansion discussion.
+    </div>
+  </li>
+  <li class="action-item low">
+    <span class="action-id">[0603-5]</span>
+    <span class="urgency-badge low">LOW</span>
+    <div class="action-content">
+      <strong>Nick Johnson / Westcon:</strong> Share Veeam AccountIQ Tableau friction feedback with product/AM team — HG data being forgotten because it lives outside Salesforce workflow.
+    </div>
+  </li>
+</ul>`;
+}
