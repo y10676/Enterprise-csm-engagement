@@ -1186,3 +1186,283 @@ function dayActionsHTML_2026_06_03() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none"><div class="empty-icon">&#128269;</div>No action items match these filters.</div>`;
 }
+
+// ---- June 4, 2026 ----
+
+function dayData_2026_06_04() {
+  return {
+    calls: [
+      { ts: 'Jun 4 · 3:00 AM', csm: 'nick', account: 'Sopra Steria',
+        note: 'Customer asking about relative employees data by geography — v2 platform limitation flagged',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Issue',
+        detail: 'Ivy (Sopra Steria) requested session to understand relative employee data by country (e.g. HSBC UK employees). Nick explained current v2 platform does not support this easily — relative employees field available in newer platform and via MCP. Follow-up needed to provide access or workaround.' },
+      { ts: 'Jun 4 · 5:00 AM', csm: 'divyam', account: 'Infinigate',
+        note: 'Bi-weekly sync — Abolfazl questions on exported data field logic and column sources',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'Customer', purpose: 'Check-in',
+        detail: 'Routine bi-weekly with Abolfazl Akhondi (Infinigate). Strong rapport — Divyam working EST hours from India. Abolfazl shared screen with opportunity generator export and had questions about source and logic behind specific column values. Divyam walked through data methodology.' },
+      { ts: 'Jun 4 · 5:00 AM', csm: 'nick', account: 'Check Point Software',
+        note: 'Snowflake + 6Sense integration deep dive — multi-stakeholder first technical session',
+        mins: 45, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Multi-stakeholder technical call: Check Point RevOps (Ariel Keinan AI/tech lead, Uri Nishry, David Garcia Thomas PM, Hadas Arazi data mgmt). HG: Nick (CSM), David Garcia Thomas (AM), Gavin Padden (SE). First joint session — focus on Snowflake and 6Sense integrations to advance data infrastructure footprint within Check Point.' },
+      { ts: 'Jun 4 · 7:00 AM', csm: 'nick', account: 'Check Point Software',
+        note: 'SFDC selective enrichment upgrade — Thomas Capello working through sandbox configuration',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Issue',
+        detail: 'Thomas Capello (Check Point) following up on SFDC enrichment upgrade. Prior duplicate-data display bug resolved. Now advancing to selective enrichment — Thomas building Salesforce report to filter enrichment scope, working through sandbox first. Next step: move to production instance.' },
+      { ts: 'Jun 4 · 7:30 AM', csm: 'nick', account: 'HCL Technologies',
+        note: 'TrustRadius portal review — 50 IDL leads delivered, APAC/EMEA pivot, TechCares open',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Routine Q2-end cadence with Angus Hyams and Sai A (HCL). 50 IDL leads delivered in two batches. HCL pivoting campaign focus to APAC and EMEA. Nick shared TechCares awards calendar — now open for submission. Patrick at Smart Compliance may have already submitted. Lead conversion timeline: ~2–3 weeks to opportunity.' },
+      { ts: 'Jun 4 · 8:30 AM', csm: 'pam', account: 'ADP, Inc.',
+        note: 'Monthly success call — Top Rated confirmed received, TechCares award submission open',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Monthly TrustRadius success call with Jennifer (ADP). Pam confirmed ADP received Top Rated announcement from Grace (TR marketing). TechCares award submission opened — Pam shared awards calendar in chat. Andy Lim (UK) joined mid-call and was introduced to Jennifer. Patrick (Smart Compliance) may have already submitted TechCares.' },
+      { ts: 'Jun 4 · 8:30 AM', csm: 'andy', account: 'ADP, Inc.',
+        note: 'Monthly success call (co-attended with Pam Huck) — ADP Top Rated + TechCares',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Andy Lim joined the ADP monthly success call alongside Pam Huck. Introduced to Jennifer (ADP) for the first time. Andy based in UK. Pam covering TrustRadius awards updates. Both CSMs now connected to the ADP contact.' },
+      { ts: 'Jun 4 · 8:30 AM', csm: 'varun', account: 'Zscaler',
+        note: 'Opp Gen platform demo — 37M+ entity market analyzer, TAM/opp discovery walkthrough',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Varun ran live Market Analyzer demo for Jamie Cromer (Zscaler) to support opp gen use case. Key highlights: 37M+ entities now tracked (up from 16M in Q1 2026), projected to 100M by year-end. Covered global HQ hierarchies, entity discovery, permissions model. Jamie evaluating platform for opportunity generation. Varun preferred call over recording for live Q&A.' },
+      { ts: 'Jun 4 · 9:30 AM', csm: 'nick', account: 'Infor (US), LLC',
+        note: 'TAM model evaluation — Zachary assessing HG SMB data vs. Bain for next-gen taz model',
+        mins: 15, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Expansion',
+        detail: 'Short-notice call — Zachary Dunlevy (Infor) activated HG account 1 hour prior. Evaluating for next-gen TAM/taz model: 3 dimensions under consideration: (1) SMB segment addition, (2) additional geographies, (3) new product line. Assessing whether data gap is in HG or Bain. Nick walked through Market Analyzer live. Ranjit (HG) had set up the account.' },
+      { ts: 'Jun 4 · 11:30 AM', csm: 'divyam', account: 'BILL',
+        note: '🔴 RGIP-SFDC integration broken — MadKudu acquisition sunset connected app, needs reinstall',
+        mins: 30, health: 'Concerning',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Issue',
+        detail: 'Jaymee Parson (BILL) reported SFDC connected app no longer exists in their org. Root cause: MadKudu/HG acquisition sunset the old connected app. Rafa Mueller (HG eng) confirmed new "RGIP Platform" connected app now in HG SFDC instance. BILL Salesforce admin must install and authorize the new app — first login requires admin due to March 2026 Salesforce security change. Divyam to follow up with step-by-step.' },
+      { ts: 'Jun 4 · 11:30 AM', csm: 'riley', account: 'Zoom Video Communications',
+        note: 'Weekly TrustRadius CSM sync — strong rapport, casual cadence with Cole Arutian and Camille Shortridge',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Routine weekly CSM sync between Riley Rogers and Zoom TrustRadius contacts Cole Arutian and Camille Shortridge. Strong personal rapport — personal conversation (bathroom remodel, Wyoming wedding). Well-established relationship cadence. Business topics followed pleasantries.' },
+      { ts: 'Jun 4 · 4:30 PM', csm: 'rani', account: 'Workday Inc',
+        note: 'FAI data structure deep dive — Tracy York (co-founder) brought in to explain FAI methodology',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Issue',
+        detail: 'Workday team (Kendall Stauffer, Peng Qu) had specific questions about HG\'s Functional Area Intelligence (FAI) file structure. Questions complex enough that Rani brought in co-founder Tracy York to explain FAI methodology and data organization. International time zones involved — late PT slot. Rani coordinating across Workday contacts.' },
+    ],
+    pulses: [
+      { csm: 'nick',   account: 'Sopra Steria',           health: 'Healthy',    note: 'Customer asking about relative employees by country. v2 platform limitation. Nick referencing newer platform and MCP. Follow-up needed with solution.' },
+      { csm: 'divyam', account: 'Infinigate',             health: 'Healthy',    note: 'Bi-weekly sync. Abolfazl reviewing exported data column logic with Divyam. Strong rapport. Active usage of opportunity generator.' },
+      { csm: 'nick',   account: 'Check Point Software',   health: 'Healthy',    note: 'Snowflake + 6Sense integration deep dive with RevOps + data management leaders. First multi-stakeholder technical call. Next: integration design session.' },
+      { csm: 'nick',   account: 'Check Point Software',   health: 'Healthy',    note: 'SFDC selective enrichment in progress — sandbox testing complete. Thomas Capello moving to production next. Duplicate-data bug resolved.' },
+      { csm: 'nick',   account: 'HCL Technologies',       health: 'Healthy',    note: '50 IDL leads delivered in two batches. APAC/EMEA pivot confirmed. TechCares award calendar shared. Q2-end cadence strong.' },
+      { csm: 'pam',    account: 'ADP, Inc.',               health: 'Healthy',    note: 'Monthly success call. Top Rated announcement confirmed received. TechCares submission open. Andy Lim introduced to ADP contact Jennifer (UK-based intro).' },
+      { csm: 'andy',   account: 'ADP, Inc.',               health: 'Healthy',    note: 'Co-attended monthly success call with Pam Huck. Met Jennifer (ADP) for first time. Awards calendar and Top Rated updates shared.' },
+      { csm: 'varun',  account: 'Zscaler',                 health: 'Healthy',    note: 'Opp Gen platform demo — 37M+ entities (up from 16M Q1, proj. 100M YE). Jamie Cromer evaluating for TAM/opp discovery. Live Market Analyzer walkthrough.' },
+      { csm: 'nick',   account: 'Infor (US), LLC',         health: 'Healthy',    note: 'Zachary Dunlevy evaluating HG for next-gen TAM model — SMB + geo expansion + new product line. Short-notice activation. HG vs. Bain data gap assessment underway.' },
+      { csm: 'divyam', account: 'BILL',                    health: 'Concerning', note: '🔴 RGIP-SFDC connected app broken post MadKudu acquisition. HG eng (Rafa Mueller) on call. BILL Salesforce admin must install "RGIP Platform" app and re-authorize. Integration fully blocked.' },
+      { csm: 'riley',  account: 'Zoom Video Communications', health: 'Healthy',  note: 'Weekly TR CSM sync. Strong rapport with Cole Arutian + Camille Shortridge. Well-established relationship cadence.' },
+      { csm: 'rani',   account: 'Workday Inc',              health: 'Healthy',   note: 'FAI deep-dive — Workday questions on FAI file structure required co-founder Tracy York to explain. Kendall Stauffer + Peng Qu. Late PT slot (4:30 PM). Follow-up on outstanding FAI questions.' },
+    ],
+  };
+}
+
+function dayMeta_2026_06_04() {
+  return {
+    pills: [
+      ['dot-teal',  '11 Calls'],
+      ['dot-red',   '🔴 BILL SFDC Integration Down'],
+      ['dot-purple','3 Expansion Signals'],
+      ['dot-amber', '1 CSM — No Confirmed Calls'],
+      ['dot-grey',  'Thu Jun 4 · 71 Recordings Scanned'],
+    ],
+    tabs: ['Overview', 'Calls (11)', 'Pulses (12)', 'Action Items (7)'],
+  };
+}
+
+function dayOverviewHTML_2026_06_04() {
+  return `<div class="section-label">Team Activity &mdash; Thursday June 4, 2026</div>
+  <div style="background:#1c1010;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x1F534; <strong>BILL &mdash; RGIP-SFDC Integration Down:</strong> Divyam Dewan &mdash; BILL's Salesforce connected app was sunset during the MadKudu/HG acquisition. Jaymee Parson (BILL) + Rafa Mueller (HG eng) on call. BILL Salesforce admin must install "RGIP Platform" connected app and re-authorize. Integration completely blocked.
+  </div>
+  <div style="background:#1c1910;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fcd34d;">
+    &#x26A0;&#xFE0F; <strong>Check Point SFDC Enrichment (Nick):</strong> Thomas Capello working through selective enrichment configuration in sandbox. Moving to production next. Duplicate-data bug resolved.
+  </div>
+  <div style="background:#131a18;border:1px solid #10b981;border-left:3px solid #10b981;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#6ee7b7;">
+    &#x1F680; <strong>Expansion — Zscaler + Check Point + Infor:</strong> Varun demoed 37M+ entity platform for Zscaler opp gen. Nick ran multi-stakeholder Snowflake+6Sense technical session with Check Point. Zachary Dunlevy (Infor) evaluating HG for next-gen SMB TAM model.
+  </div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Thu Jun 4 &mdash; 71 recordings scanned</strong> via SFDC SOQL &middot; <strong>11 confirmed calls</strong> across 7 CSMs &middot; 4 unconfirmed (no transcript) &middot; internal/yoga/interview recordings excluded
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">5 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">5</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">5</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">150m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Sopra Steria (&#x26A0;&#xFE0F; relative employees data &middot; 3:00 AM) &middot; Check Point x2 (&#x1F680; Snowflake+6Sense + SFDC enrichment &middot; 5:00/7:00 AM) &middot; HCL TrustRadius (IDL leads review &middot; 7:30 AM) &middot; Infor (&#x1F4C8; TAM model eval &middot; 9:30 AM)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Infinigate (&#x2705; bi-weekly data walkthrough &middot; 5:00 AM) &middot; BILL (&#x1F534; SFDC integration broken &middot; 11:30 AM)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="pam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">ADP &mdash; monthly TrustRadius success call. Top Rated confirmed. TechCares awards open. Andy Lim joined &middot; 8:30 AM</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="andy">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">ADP &mdash; co-attended monthly success call with Pam Huck. Introduced to ADP contact Jennifer &middot; 8:30 AM</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Zscaler &mdash; &#x1F680; opp gen platform demo. 37M+ entities. Jamie Cromer evaluating for TAM discovery &middot; 8:30 AM</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Zoom &mdash; weekly TrustRadius CSM sync with Cole Arutian + Camille Shortridge. Strong rapport &middot; 11:30 AM</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Workday &mdash; &#x26A0;&#xFE0F; FAI deep-dive. Co-founder Tracy York brought in to explain FAI structure. Kendall Stauffer + Peng Qu &middot; 4:30 PM</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="atisha">
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-grey">0</div><div class="metric-lbl">Confirmed</div></div>
+        <div><div class="metric-num m-grey">4+</div><div class="metric-lbl">Events</div></div>
+        <div><div class="metric-num m-grey">2</div><div class="metric-lbl">Unconfirmed</div></div>
+      </div>
+      <div class="csm-account-note">Kyndryl (no transcript) &middot; RSM (no transcript) &middot; 6 CSM events with no recordings (Insight Direct, SysPro, Kong, Apple, Versa, more). Likely active but unconfirmed — Weflow coverage gap.</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_06_04() {
+  return `<div class="calls-table-wrap">
+  <div style="background:#1c1010;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">&#x1F534; <strong>BILL Integration Blocked:</strong> Divyam Dewan &mdash; RGIP-SFDC connected app broken post MadKudu acquisition. Salesforce admin action required at BILL to install new "RGIP Platform" app.</div>
+  <div style="background:#131a18;border:1px solid #10b981;border-left:3px solid #10b981;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#6ee7b7;">&#x1F680; <strong>Expansion Signals:</strong> Zscaler opp gen demo (Varun) &middot; Check Point Snowflake+6Sense (Nick) &middot; Infor next-gen TAM model (Nick)</div>
+  <div style="background:#1c1f26;border:1px solid #3b82f6;border-left:3px solid #3b82f6;border-radius:6px;padding:8px 14px;margin:0 0 12px 0;font-size:12px;color:#93c5fd;">&#x26A0;&#xFE0F; <strong>4 Unconfirmed (no transcript):</strong> Atisha Waghela &mdash; Kyndryl (5:30 AM) &middot; Atisha &mdash; RSM (9:00 AM) &middot; Pam+Rani &mdash; Microsoft (10:00 AM, 60 min) &middot; Varun &mdash; Zscaler dup recording (8:30 AM)</div>
+  <table class="calls-table">
+    <thead><tr><th>Time&nbsp;(PT)</th><th>CSM</th><th>Account</th><th>Dur</th><th>Nature</th><th>By</th><th>Purpose</th><th>Signal</th></tr></thead>
+    <tbody>
+      <tr><td>3:00 AM</td><td><span class="csm-chip csm-nick">Nick Johnson</span></td><td>Sopra Steria</td><td>30m</td><td><span class="badge-nature adhoc">Ad-hoc</span></td><td>Customer</td><td>Issue</td><td><span class="signal-badge signal-yellow">&#x26A0; Watch</span></td></tr>
+      <tr><td>5:00 AM</td><td><span class="csm-chip csm-divyam">Divyam Dewan</span></td><td>Infinigate</td><td>30m</td><td><span class="badge-nature recurring">Recurring</span></td><td>Customer</td><td>Check-in</td><td><span class="signal-badge signal-green">&#x2705; Healthy</span></td></tr>
+      <tr><td>5:00 AM</td><td><span class="csm-chip csm-nick">Nick Johnson</span></td><td>Check Point</td><td>45m</td><td><span class="badge-nature adhoc">Ad-hoc</span></td><td>HG CS</td><td>Expansion</td><td><span class="signal-badge signal-purple">&#x1F680; Expansion</span></td></tr>
+      <tr><td>7:00 AM</td><td><span class="csm-chip csm-nick">Nick Johnson</span></td><td>Check Point</td><td>30m</td><td><span class="badge-nature adhoc">Ad-hoc</span></td><td>Customer</td><td>Issue</td><td><span class="signal-badge signal-yellow">&#x26A0; Watch</span></td></tr>
+      <tr><td>7:30 AM</td><td><span class="csm-chip csm-nick">Nick Johnson</span></td><td>HCL Technologies</td><td>30m</td><td><span class="badge-nature recurring">Recurring</span></td><td>HG CS</td><td>Check-in</td><td><span class="signal-badge signal-green">&#x2705; Healthy</span></td></tr>
+      <tr><td>8:30 AM</td><td><span class="csm-chip csm-pam">Pam Huck</span> <span class="csm-chip csm-andy">Andy Lim</span></td><td>ADP, Inc.</td><td>30m</td><td><span class="badge-nature recurring">Recurring</span></td><td>HG CS</td><td>Check-in</td><td><span class="signal-badge signal-green">&#x2705; Healthy</span></td></tr>
+      <tr><td>8:30 AM</td><td><span class="csm-chip csm-varun">Varun Tiwari</span></td><td>Zscaler</td><td>30m</td><td><span class="badge-nature adhoc">Ad-hoc</span></td><td>HG CS</td><td>Expansion</td><td><span class="signal-badge signal-purple">&#x1F680; Expansion</span></td></tr>
+      <tr><td>9:30 AM</td><td><span class="csm-chip csm-nick">Nick Johnson</span></td><td>Infor (US), LLC</td><td>15m</td><td><span class="badge-nature adhoc">Ad-hoc</span></td><td>Customer</td><td>Expansion</td><td><span class="signal-badge signal-purple">&#x1F680; Expansion</span></td></tr>
+      <tr><td>11:30 AM</td><td><span class="csm-chip csm-divyam">Divyam Dewan</span></td><td>BILL</td><td>30m</td><td><span class="badge-nature adhoc">Ad-hoc</span></td><td>Customer</td><td>Issue</td><td><span class="signal-badge signal-red">&#x1F534; Concerning</span></td></tr>
+      <tr><td>11:30 AM</td><td><span class="csm-chip csm-riley">Riley Rogers</span></td><td>Zoom</td><td>30m</td><td><span class="badge-nature recurring">Recurring</span></td><td>HG CS</td><td>Check-in</td><td><span class="signal-badge signal-green">&#x2705; Healthy</span></td></tr>
+      <tr><td>4:30 PM</td><td><span class="csm-chip csm-rani">Rani Guy</span></td><td>Workday Inc.</td><td>30m</td><td><span class="badge-nature adhoc">Ad-hoc</span></td><td>Customer</td><td>Issue</td><td><span class="signal-badge signal-yellow">&#x26A0; Watch</span></td></tr>
+    </tbody>
+  </table>
+  </div>`;
+}
+
+function dayPulsesHTML_2026_06_04() {
+  const cards = dayData_2026_06_04().pulses;
+  const csmLabels = {nick:'Nick Johnson',divyam:'Divyam Dewan',pam:'Pam Huck',andy:'Andy Lim',varun:'Varun Tiwari',riley:'Riley Rogers',rani:'Rani Guy',atisha:'Atisha Waghela'};
+  const bc = h => h==='Healthy'?'signal-green':h==='Concerning'?'signal-red':'signal-yellow';
+  const bi = h => h==='Healthy'?'&#x2705;':h==='Concerning'?'&#x1F534;':'&#x26A0;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card ${c.health==='Concerning'?'pulse-concerning':''}" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div><div class="pulse-account">${c.account}</div></div>
+        <span class="signal-badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.note}</div>
+      <div class="pulse-footer"><span>${csmLabels[c.csm]||c.csm}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none"><div class="empty-icon">&#x1F50D;</div>No pulses match these filters.</div>`;
+}
+
+function dayActionsHTML_2026_06_04() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has(4041)?'done':''}" data-csm="divyam" id="action-4041"><div class="action-checkbox ${doneActions.has(4041)?'checked':''}" onclick="toggleAction(4041)"></div><div class="action-body"><div class="action-title">&#x1F534; BILL &mdash; Coordinate SFDC admin to install "RGIP Platform" connected app and re-authorize</div><div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Divyam Dewan &middot; Jaymee Parson (BILL) + Rafa Mueller (HG eng) confirmed root cause: old MadKudu connected app sunset during acquisition. New app named "RGIP Platform" in HG SFDC instance. BILL Salesforce admin must install it — first login must be admin-level (March 2026 Salesforce security change). Send Rafa's step-by-step to Jaymee. Confirm resolution ASAP.</div></div></div>
+    <div class="action-item ${doneActions.has(4042)?'done':''}" data-csm="nick" id="action-4042"><div class="action-checkbox ${doneActions.has(4042)?'checked':''}" onclick="toggleAction(4042)"></div><div class="action-body"><div class="action-title">&#x26A0;&#xFE0F; Check Point &mdash; Follow up with Thomas Capello on SFDC selective enrichment production rollout</div><div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Nick Johnson &middot; Thomas Capello is working through selective enrichment in sandbox. Duplicate-data bug is resolved. Next step: confirm sandbox results and provide production rollout guidance. Check on report-based account filter upload approach and any blockers.</div></div></div>
+    <div class="action-item ${doneActions.has(4043)?'done':''}" data-csm="nick" id="action-4043"><div class="action-checkbox ${doneActions.has(4043)?'checked':''}" onclick="toggleAction(4043)"></div><div class="action-body"><div class="action-title">&#x1F4CA; Sopra Steria &mdash; Provide relative employees data solution (new platform or MCP access)</div><div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Nick Johnson &middot; Ivy (Sopra Steria) struggling to get relative employee counts by country from v2 platform. Nick referenced newer platform and MCP as solutions. Follow up with access details or guide Sopra to the appropriate data endpoint for geographic employee breakdown (HSBC use case).</div></div></div>
+    <div class="action-item ${doneActions.has(4044)?'done':''}" data-csm="rani" id="action-4044"><div class="action-checkbox ${doneActions.has(4044)?'checked':''}" onclick="toggleAction(4044)"></div><div class="action-body"><div class="action-title">&#x1F4CB; Workday &mdash; Confirm FAI questions resolved after Tracy York session</div><div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Rani Guy &middot; Workday team (Kendall, Peng Qu) had deep enough FAI questions to require co-founder Tracy York. Rani to follow up and confirm all outstanding FAI file structure questions are answered. Consider documenting FAI FAQ for reuse with other accounts asking similar questions.</div></div></div>
+    <div class="action-item ${doneActions.has(4045)?'done':''}" data-csm="nick" id="action-4045"><div class="action-checkbox ${doneActions.has(4045)?'checked':''}" onclick="toggleAction(4045)"></div><div class="action-body"><div class="action-title">&#x1F4E4; Check Point &mdash; Send integration next steps for Snowflake + 6Sense to Uri Nishry + RevOps team</div><div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Nick Johnson &middot; First technical call with Check Point RevOps (Ariel, Uri, David, Hadas). Strong interest in Snowflake and 6Sense integrations. Follow up with technical requirements doc, proposed integration design session, and next steps timeline.</div></div></div>
+    <div class="action-item ${doneActions.has(4046)?'done':''}" data-csm="varun" id="action-4046"><div class="action-checkbox ${doneActions.has(4046)?'checked':''}" onclick="toggleAction(4046)"></div><div class="action-body"><div class="action-title">&#x1F4C8; Zscaler &mdash; Follow up with Jamie Cromer post platform demo</div><div class="action-meta"><span class="urgency-badge urgency-low">LOW</span>Varun Tiwari &middot; Jamie Cromer (Zscaler) saw live platform demo — 37M+ entity data, market analyzer, entity discovery. Confirm next steps for opp gen use case evaluation. Share entity data overview and TAM discovery methodology.</div></div></div>
+    <div class="action-item ${doneActions.has(4047)?'done':''}" data-csm="nick" id="action-4047"><div class="action-checkbox ${doneActions.has(4047)?'checked':''}" onclick="toggleAction(4047)"></div><div class="action-body"><div class="action-title">&#x1F4CA; Infor &mdash; Send SMB data coverage analysis for next-gen TAM model evaluation</div><div class="action-meta"><span class="urgency-badge urgency-low">LOW</span>Nick Johnson &middot; Zachary Dunlevy (Infor) evaluating HG vs. Bain for SMB + new geo + product line TAM model expansion. Send relevant SMB data coverage overview and geographic expansion details to inform the Bain vs. HG decision.</div></div></div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none"><div class="empty-icon">&#x1F50D;</div>No action items match these filters.</div>`;
+}
