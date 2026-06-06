@@ -1422,15 +1422,15 @@ function dayCallsHTML_2026_06_04() {
     <thead><tr><th>Time&nbsp;(PT)</th><th>CSM</th><th>Account</th><th>Dur</th><th>Nature</th><th>By</th><th>Purpose</th><th>Signal</th></tr></thead>
     <tbody>
       <tr><td>3:00 AM</td><td><span class="csm-chip csm-nick">Nick Johnson</span></td><td>Sopra Steria</td><td>30m</td><td><span class="badge-nature adhoc">Ad-hoc</span></td><td>Customer</td><td>Issue</td><td><span class="signal-badge signal-yellow">&#x26A0; Watch</span></td></tr>
-      <tr><td>5:00 AM</td><td><span class="csm-chip csm-divyam">Divyam Dewan</span></td><td>Infinigate</td><td>30m</td><td><span class="badge-nature recurring">Recurring</span></td><td>Customer</td><td>Check-in</td><td><span class="signal-badge signal-green">&#x2705; Healthy</span></td></tr>
-      <tr><td>5:00 AM</td><td><span class="csm-chip csm-nick">Nick Johnson</span></td><td>Check Point</td><td>45m</td><td><span class="badge-nature adhoc">Ad-hoc</span></td><td>HG CS</td><td>Expansion</td><td><span class="signal-badge signal-purple">&#x1F680; Expansion</span></td></tr>
+      <tr><td>5:00 AM</td><td><span class="csm-chip csm-divyam">Divyam Dewan</span></td><td>Infinigate</td><td>30m</td><td><span class="badge-nature recurring">Recurring</span></td><td>Customer</td><td>Check-in</td><td><span class="badge badge-healthy">&#x2705; Healthy</span></td></tr>
+      <tr><td>5:00 AM</td><td><span class="csm-chip csm-nick">Nick Johnson</span></td><td>Check Point</td><td>45m</td><td><span class="badge-nature adhoc">Ad-hoc</span></td><td>HG CS</td><td>Expansion</td><td><span class="badge" style="background:#ede9fe;color:#5b21b6;">&#x1F680; Expansion</span></td></tr>
       <tr><td>7:00 AM</td><td><span class="csm-chip csm-nick">Nick Johnson</span></td><td>Check Point</td><td>30m</td><td><span class="badge-nature adhoc">Ad-hoc</span></td><td>Customer</td><td>Issue</td><td><span class="signal-badge signal-yellow">&#x26A0; Watch</span></td></tr>
-      <tr><td>7:30 AM</td><td><span class="csm-chip csm-nick">Nick Johnson</span></td><td>HCL Technologies</td><td>30m</td><td><span class="badge-nature recurring">Recurring</span></td><td>HG CS</td><td>Check-in</td><td><span class="signal-badge signal-green">&#x2705; Healthy</span></td></tr>
-      <tr><td>8:30 AM</td><td><span class="csm-chip csm-pam">Pam Huck</span> <span class="csm-chip csm-andy">Andy Lim</span></td><td>ADP, Inc.</td><td>30m</td><td><span class="badge-nature recurring">Recurring</span></td><td>HG CS</td><td>Check-in</td><td><span class="signal-badge signal-green">&#x2705; Healthy</span></td></tr>
-      <tr><td>8:30 AM</td><td><span class="csm-chip csm-varun">Varun Tiwari</span></td><td>Zscaler</td><td>30m</td><td><span class="badge-nature adhoc">Ad-hoc</span></td><td>HG CS</td><td>Expansion</td><td><span class="signal-badge signal-purple">&#x1F680; Expansion</span></td></tr>
-      <tr><td>9:30 AM</td><td><span class="csm-chip csm-nick">Nick Johnson</span></td><td>Infor (US), LLC</td><td>15m</td><td><span class="badge-nature adhoc">Ad-hoc</span></td><td>Customer</td><td>Expansion</td><td><span class="signal-badge signal-purple">&#x1F680; Expansion</span></td></tr>
+      <tr><td>7:30 AM</td><td><span class="csm-chip csm-nick">Nick Johnson</span></td><td>HCL Technologies</td><td>30m</td><td><span class="badge-nature recurring">Recurring</span></td><td>HG CS</td><td>Check-in</td><td><span class="badge badge-healthy">&#x2705; Healthy</span></td></tr>
+      <tr><td>8:30 AM</td><td><span class="csm-chip csm-pam">Pam Huck</span> <span class="csm-chip csm-andy">Andy Lim</span></td><td>ADP, Inc.</td><td>30m</td><td><span class="badge-nature recurring">Recurring</span></td><td>HG CS</td><td>Check-in</td><td><span class="badge badge-healthy">&#x2705; Healthy</span></td></tr>
+      <tr><td>8:30 AM</td><td><span class="csm-chip csm-varun">Varun Tiwari</span></td><td>Zscaler</td><td>30m</td><td><span class="badge-nature adhoc">Ad-hoc</span></td><td>HG CS</td><td>Expansion</td><td><span class="badge" style="background:#ede9fe;color:#5b21b6;">&#x1F680; Expansion</span></td></tr>
+      <tr><td>9:30 AM</td><td><span class="csm-chip csm-nick">Nick Johnson</span></td><td>Infor (US), LLC</td><td>15m</td><td><span class="badge-nature adhoc">Ad-hoc</span></td><td>Customer</td><td>Expansion</td><td><span class="badge" style="background:#ede9fe;color:#5b21b6;">&#x1F680; Expansion</span></td></tr>
       <tr><td>11:30 AM</td><td><span class="csm-chip csm-divyam">Divyam Dewan</span></td><td>BILL</td><td>30m</td><td><span class="badge-nature adhoc">Ad-hoc</span></td><td>Customer</td><td>Issue</td><td><span class="signal-badge signal-red">&#x1F534; Concerning</span></td></tr>
-      <tr><td>11:30 AM</td><td><span class="csm-chip csm-riley">Riley Rogers</span></td><td>Zoom</td><td>30m</td><td><span class="badge-nature recurring">Recurring</span></td><td>HG CS</td><td>Check-in</td><td><span class="signal-badge signal-green">&#x2705; Healthy</span></td></tr>
+      <tr><td>11:30 AM</td><td><span class="csm-chip csm-riley">Riley Rogers</span></td><td>Zoom</td><td>30m</td><td><span class="badge-nature recurring">Recurring</span></td><td>HG CS</td><td>Check-in</td><td><span class="badge badge-healthy">&#x2705; Healthy</span></td></tr>
       <tr><td>4:30 PM</td><td><span class="csm-chip csm-rani">Rani Guy</span></td><td>Workday Inc.</td><td>30m</td><td><span class="badge-nature adhoc">Ad-hoc</span></td><td>Customer</td><td>Issue</td><td><span class="signal-badge signal-yellow">&#x26A0; Watch</span></td></tr>
     </tbody>
   </table>
@@ -1510,24 +1510,119 @@ function dayMeta_2026_06_05() {
 }
 
 function dayOverviewHTML_2026_06_05() {
-  return `
-    <div class="day-kpi-row">
-      <div class="day-kpi green"><div class="day-kpi-num">7</div><div class="day-kpi-lbl">Confirmed Calls</div></div>
-      <div class="day-kpi green"><div class="day-kpi-num">4</div><div class="day-kpi-lbl">CSMs Active</div></div>
-      <div class="day-kpi purple"><div class="day-kpi-num">3</div><div class="day-kpi-lbl">Expansion Signals</div></div>
-      <div class="day-kpi neutral"><div class="day-kpi-num">0</div><div class="day-kpi-lbl">Concerning</div></div>
+  return `<div class="section-label">Team Activity &mdash; Friday June 5, 2026</div>
+  <div style="background:#131a18;border:1px solid #10b981;border-left:3px solid #10b981;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#6ee7b7;">
+    &#x1F680; <strong>Expansion (3):</strong> Atisha/AMD &mdash; HG Customer Summit pitch (July, Palo Alto) &middot; Varun/Five9 &mdash; Entity status use case, VP Tracy York engaged &middot; Atisha/Apple &mdash; Child account expansion (6 parents) + net new discovery (August target)
+  </div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Fri Jun 5 &mdash; 7 confirmed calls</strong> across 4 CSMs &middot; 4 unconfirmed (no transcript / not speaker-detected) &middot; 8 unrecorded CSM events
+  </div>
+  <div style="background:#1c1910;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fcd34d;">
+    &#x26A0;&#xFE0F; <strong>4 CSMs with no confirmed calls:</strong> Riley Rogers &middot; Rani Guy (2 events, not speaker-detected) &middot; Nick Johnson (1 event, no recording) &middot; Andy Lim (Sage recording, not confirmed as speaker)
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="pam">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Cisco (TR) &mdash; Renewal sync, Top Rated badges delivered (40 wins) &middot; 8:00 AM &middot; ZoomInfo (TR) &mdash; Renewal + profile consolidation (9&rarr;5) &middot; 11:00 AM</div>
     </div>
-    <div class="alert-banner expansion">🚀 <strong>Expansion (3):</strong> Atisha/AMD — HG Customer Summit (July, Palo Alto) · Varun/Five9 — Entity status use case (VP-level) · Atisha/Apple — Child account expansion (6 parents) + net new discovery</div>
-    <div class="alert-banner info">ℹ️ <strong>4 CSMs with no confirmed calls:</strong> Riley Rogers · Rani Guy (2 events, no speaker) · Nick Johnson (1 event, no recording) · Andy Lim (Sage recording, not confirmed as speaker)</div>
-    <div class="alert-banner warn">⚠️ <strong>8 unrecorded CSM events:</strong> Intel Platform Training (Atisha 5:30 AM) · ADP Monthly Success Call (Andy+Pam 8 AM) · Google Platform Overview (Rani 8 AM) · Apple Bi-weekly (Atisha 8 AM) · Workday connect (Rani 11 AM) · Apple MI Training (Atisha 11 AM) · Apple Platform Training (Atisha 12 PM) · Infor Debrief (Nick 5 AM)</div>
-    <h3 style="margin:16px 0 8px;font-size:13px;color:var(--muted-text,#94a3b8);">Active CSMs</h3>
-    <div class="csm-activity-row">
-      <div class="csm-activity-card"><span class="csm-chip csm-pam">Pam Huck</span><div class="csm-call-count">2 calls</div><div class="csm-accounts">Cisco (TR) · ZoomInfo (TR)</div></div>
-      <div class="csm-activity-card"><span class="csm-chip csm-divyam">Divyam Dewan</span><div class="csm-call-count">2 calls</div><div class="csm-accounts">Informatica · Cotality (TR)</div></div>
-      <div class="csm-activity-card"><span class="csm-chip csm-atisha">Atisha Waghela</span><div class="csm-call-count">2 calls</div><div class="csm-accounts">AMD · Apple</div></div>
-      <div class="csm-activity-card"><span class="csm-chip csm-varun">Varun Tiwari</span><div class="csm-call-count">1 call</div><div class="csm-accounts">Five9</div></div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Informatica &mdash; &#x2705; Renewal reconnect, 81% match rate on 450K accounts &middot; 9:00 AM &middot; Cotality (TR) &mdash; Pre-kickoff intro, 6Sense integration &middot; 10:30 AM</div>
     </div>
-  `;
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">AMD &mdash; &#x1F680; Customer Summit pitch, new AM Ravi Sharma introduced &middot; 9:30 AM &middot; Apple &mdash; &#x1F680; Child account expansion (6 parents, Aug target) &middot; 11:00 AM</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Five9 &mdash; &#x1F680; Entity status use case for ~300 tech partners, VP Tracy York engaged &middot; 9:30 AM</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="riley">
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div>
+      </div>
+      <div class="csm-account-note">No confirmed calls on Jun 5</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="rani">
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div>
+      </div>
+      <div class="csm-account-note">2 events (Google 10:30 AM) &mdash; not speaker-detected in transcripts</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="nick">
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div>
+      </div>
+      <div class="csm-account-note">1 event (Infor 5:00 AM) &mdash; no recording synced</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div>
+      </div>
+      <div class="csm-account-note">Sage recording present but Andy not detected as transcript speaker</div>
+    </div>
+
+  </div>`;
 }
 
 function dayCallsHTML_2026_06_05() {
@@ -1541,7 +1636,7 @@ function dayCallsHTML_2026_06_05() {
           <td>Cisco (TrustRadius)</td><td>30m</td>
           <td><span class="badge-nature recurring">Recurring</span></td>
           <td>HG CS</td><td>Check-in</td>
-          <td><span class="signal-badge signal-green">✅ Healthy</span></td>
+          <td><span class="badge badge-healthy">✅ Healthy</span></td>
         </tr>
         <tr>
           <td>9:00 AM</td>
@@ -1549,7 +1644,7 @@ function dayCallsHTML_2026_06_05() {
           <td>Informatica</td><td>30m</td>
           <td><span class="badge-nature adhoc">Ad-hoc</span></td>
           <td>HG CS</td><td>Check-in + Expansion</td>
-          <td><span class="signal-badge signal-green">✅ Healthy</span></td>
+          <td><span class="badge badge-healthy">✅ Healthy</span></td>
         </tr>
         <tr>
           <td>9:30 AM</td>
@@ -1557,7 +1652,7 @@ function dayCallsHTML_2026_06_05() {
           <td>AMD</td><td>30m</td>
           <td><span class="badge-nature recurring">Recurring</span></td>
           <td>HG CS</td><td>Check-in + Expansion</td>
-          <td><span class="signal-badge signal-purple">🚀 Expansion</span></td>
+          <td><span class="badge" style="background:#ede9fe;color:#5b21b6;">🚀 Expansion</span></td>
         </tr>
         <tr>
           <td>9:30 AM</td>
@@ -1565,7 +1660,7 @@ function dayCallsHTML_2026_06_05() {
           <td>Five9</td><td>30m</td>
           <td><span class="badge-nature adhoc">Ad-hoc</span></td>
           <td>HG CS</td><td>Expansion</td>
-          <td><span class="signal-badge signal-purple">🚀 Expansion</span></td>
+          <td><span class="badge" style="background:#ede9fe;color:#5b21b6;">🚀 Expansion</span></td>
         </tr>
         <tr>
           <td>10:30 AM</td>
@@ -1573,7 +1668,7 @@ function dayCallsHTML_2026_06_05() {
           <td>Cotality (TR)</td><td>30m</td>
           <td><span class="badge-nature adhoc">Ad-hoc</span></td>
           <td>HG CS</td><td>Check-in (Onboarding)</td>
-          <td><span class="signal-badge signal-green">✅ Healthy</span></td>
+          <td><span class="badge badge-healthy">✅ Healthy</span></td>
         </tr>
         <tr>
           <td>11:00 AM</td>
@@ -1581,7 +1676,7 @@ function dayCallsHTML_2026_06_05() {
           <td>ZoomInfo (TrustRadius)</td><td>30m</td>
           <td><span class="badge-nature recurring">Recurring</span></td>
           <td>Customer</td><td>Check-in + Renewal</td>
-          <td><span class="signal-badge signal-green">✅ Healthy</span></td>
+          <td><span class="badge badge-healthy">✅ Healthy</span></td>
         </tr>
         <tr>
           <td>11:00 AM</td>
@@ -1589,7 +1684,7 @@ function dayCallsHTML_2026_06_05() {
           <td>Apple</td><td>30m</td>
           <td><span class="badge-nature recurring">Recurring</span></td>
           <td>HG CS</td><td>Expansion</td>
-          <td><span class="signal-badge signal-purple">🚀 Expansion</span></td>
+          <td><span class="badge" style="background:#ede9fe;color:#5b21b6;">🚀 Expansion</span></td>
         </tr>
       </tbody>
     </table>
@@ -1605,38 +1700,38 @@ function dayPulsesHTML_2026_06_05() {
   return `
     <div class="pulse-grid">
       <div class="pulse-card">
-        <div class="pulse-card-top"><div class="pulse-account">Cisco (TrustRadius)</div><span class="signal-badge signal-green">✅ Healthy</span></div>
-        <div class="pulse-note">Renewal Progress Sync. Cisco Live wrapped; Top Rated badges delivered (40 wins/80+ categories); SOW in approval queue. Renewal on track.</div>
+        <div class="pulse-card-top"><div class="pulse-account">Cisco (TrustRadius)</div><span class="badge badge-healthy">✅ Healthy</span></div>
+        <div class="pulse-excerpt">Renewal Progress Sync. Cisco Live wrapped; Top Rated badges delivered (40 wins/80+ categories); SOW in approval queue. Renewal on track.</div>
         <div class="pulse-footer">Pam Huck · 8:00 AM · 30 min</div>
       </div>
       <div class="pulse-card">
-        <div class="pulse-card-top"><div class="pulse-account">Informatica</div><span class="signal-badge signal-green">✅ Healthy</span></div>
-        <div class="pulse-note">Reconnect ahead of renewal. Informatica flexible on RGIF pricing transition (81% match rate on 450K accounts). David Connors (procurement) added. Renewal expected to close in good shape.</div>
+        <div class="pulse-card-top"><div class="pulse-account">Informatica</div><span class="badge badge-healthy">✅ Healthy</span></div>
+        <div class="pulse-excerpt">Reconnect ahead of renewal. Informatica flexible on RGIF pricing transition (81% match rate on 450K accounts). David Connors (procurement) added. Renewal expected to close in good shape.</div>
         <div class="pulse-footer">Divyam Dewan · 9:00 AM · 30 min</div>
       </div>
       <div class="pulse-card">
-        <div class="pulse-card-top"><div class="pulse-account">AMD</div><span class="signal-badge signal-purple">🚀 Expansion</span></div>
-        <div class="pulse-note">Bi-weekly touchpoint. HG Customer Summit (July, Palo Alto) pitched — David Rockwell open pending dates. New AM Ravi Sharma introduced. Account briefs under review end of next week.</div>
+        <div class="pulse-card-top"><div class="pulse-account">AMD</div><span class="badge" style="background:#ede9fe;color:#5b21b6;">🚀 Expansion</span></div>
+        <div class="pulse-excerpt">Bi-weekly touchpoint. HG Customer Summit (July, Palo Alto) pitched — David Rockwell open pending dates. New AM Ravi Sharma introduced. Account briefs under review end of next week.</div>
         <div class="pulse-footer">Atisha Waghela · 9:30 AM · 30 min</div>
       </div>
       <div class="pulse-card">
-        <div class="pulse-card-top"><div class="pulse-account">Five9</div><span class="signal-badge signal-purple">🚀 Expansion</span></div>
-        <div class="pulse-note">New use case walkthrough: entity status/active-inactive checks for ~300 technology partners. VP Tracy York engaged. HG active/inactive product flag on roadmap. Strong expansion signal.</div>
+        <div class="pulse-card-top"><div class="pulse-account">Five9</div><span class="badge" style="background:#ede9fe;color:#5b21b6;">🚀 Expansion</span></div>
+        <div class="pulse-excerpt">New use case walkthrough: entity status/active-inactive checks for ~300 technology partners. VP Tracy York engaged. HG active/inactive product flag on roadmap. Strong expansion signal.</div>
         <div class="pulse-footer">Varun Tiwari · 9:30 AM · 30 min</div>
       </div>
       <div class="pulse-card">
-        <div class="pulse-card-top"><div class="pulse-account">Cotality (TrustRadius)</div><span class="signal-badge signal-green">✅ Healthy</span></div>
-        <div class="pulse-note">Pre-kickoff intro call. Divyam introduced as CSM. Shannon (Cotality) engaged. Formal kickoff scheduled with Jolene added for 6Sense integration.</div>
+        <div class="pulse-card-top"><div class="pulse-account">Cotality (TrustRadius)</div><span class="badge badge-healthy">✅ Healthy</span></div>
+        <div class="pulse-excerpt">Pre-kickoff intro call. Divyam introduced as CSM. Shannon (Cotality) engaged. Formal kickoff scheduled with Jolene added for 6Sense integration.</div>
         <div class="pulse-footer">Divyam Dewan · 10:30 AM · 30 min</div>
       </div>
       <div class="pulse-card">
-        <div class="pulse-card-top"><div class="pulse-account">ZoomInfo (TrustRadius)</div><span class="signal-badge signal-green">✅ Healthy</span></div>
-        <div class="pulse-note">Renewal sync. Top Rated 2026 badges confirmed; TechCares award form to be sent (5 min). ZoomInfo consolidating profiles 9→5 (GTM Workspace/Studio/AI + 2). Renewal in progress with Russell Martin.</div>
+        <div class="pulse-card-top"><div class="pulse-account">ZoomInfo (TrustRadius)</div><span class="badge badge-healthy">✅ Healthy</span></div>
+        <div class="pulse-excerpt">Renewal sync. Top Rated 2026 badges confirmed; TechCares award form to be sent (5 min). ZoomInfo consolidating profiles 9→5 (GTM Workspace/Studio/AI + 2). Renewal in progress with Russell Martin.</div>
         <div class="pulse-footer">Pam Huck · 11:00 AM · 30 min</div>
       </div>
       <div class="pulse-card">
-        <div class="pulse-card-top"><div class="pulse-account">Apple</div><span class="signal-badge signal-purple">🚀 Expansion</span></div>
-        <div class="pulse-note">Weekly syncup. Active expansion: 6 parent accounts adding child companies (Blackstone, UnitedHealth, HCA, Platinum Equity, Vista Equity, Berkshire). Net new account discovery planning — August target. ~14K+ current accounts.</div>
+        <div class="pulse-card-top"><div class="pulse-account">Apple</div><span class="badge" style="background:#ede9fe;color:#5b21b6;">🚀 Expansion</span></div>
+        <div class="pulse-excerpt">Weekly syncup. Active expansion: 6 parent accounts adding child companies (Blackstone, UnitedHealth, HCA, Platinum Equity, Vista Equity, Berkshire). Net new account discovery planning — August target. ~14K+ current accounts.</div>
         <div class="pulse-footer">Atisha Waghela · 11:00 AM · 30 min</div>
       </div>
     </div>
