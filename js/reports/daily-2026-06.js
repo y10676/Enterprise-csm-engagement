@@ -1466,3 +1466,233 @@ function dayActionsHTML_2026_06_04() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none"><div class="empty-icon">&#x1F50D;</div>No action items match these filters.</div>`;
 }
+
+// ============================================================
+// June 5, 2026
+// 7 confirmed calls: Pam x Cisco, Divyam x Informatica,
+// Atisha x AMD, Varun x Five9, Divyam x Cotality,
+// Pam x ZoomInfo, Atisha x Apple
+// ============================================================
+
+function dayData_2026_06_05() {
+  return {
+    calls: [
+      { csm: 'pam',    account: 'Cisco (TrustRadius)',     time: '8:00 AM',  duration: 30, nature: 'recurring', initiator: 'hg',       purpose: 'check-in',              signal: 'green'  },
+      { csm: 'divyam', account: 'Informatica',             time: '9:00 AM',  duration: 30, nature: 'adhoc',     initiator: 'hg',       purpose: 'check-in + expansion',  signal: 'green'  },
+      { csm: 'atisha', account: 'AMD',                     time: '9:30 AM',  duration: 30, nature: 'recurring', initiator: 'hg',       purpose: 'check-in + expansion',  signal: 'purple' },
+      { csm: 'varun',  account: 'Five9',                   time: '9:30 AM',  duration: 30, nature: 'adhoc',     initiator: 'hg',       purpose: 'expansion',             signal: 'purple' },
+      { csm: 'divyam', account: 'Cotality (TR)',            time: '10:30 AM', duration: 30, nature: 'adhoc',     initiator: 'hg',       purpose: 'check-in (onboarding)', signal: 'green'  },
+      { csm: 'pam',    account: 'ZoomInfo (TrustRadius)',  time: '11:00 AM', duration: 30, nature: 'recurring', initiator: 'customer', purpose: 'check-in + renewal',    signal: 'green'  },
+      { csm: 'atisha', account: 'Apple',                   time: '11:00 AM', duration: 30, nature: 'recurring', initiator: 'hg',       purpose: 'expansion',             signal: 'purple' },
+    ],
+    pulses: [
+      { account: 'Cisco (TrustRadius)',    signal: 'green',  csm: 'pam',    note: 'Renewal Progress Sync. Cisco Live wrapped; Top Rated badges delivered (40 wins/80+ categories); SOW in approval queue. On track.' },
+      { account: 'Informatica',           signal: 'green',  csm: 'divyam', note: 'Reconnect ahead of renewal. Informatica flexible on RGIF pricing; 81% match rate on 450K accounts. Procurement contact added. Renewal expected to close in good shape.' },
+      { account: 'AMD',                   signal: 'purple', csm: 'atisha', note: 'Bi-weekly touchpoint. HG Customer Summit (July, Palo Alto) pitched — David Rockwell open pending dates. New AM Ravi Sharma introduced.' },
+      { account: 'Five9',                 signal: 'purple', csm: 'varun',  note: 'New use case: entity status/active-inactive checks for ~300 tech partners. VP Tracy York engaged. HG active/inactive flag confirmed on roadmap.' },
+      { account: 'Cotality (TrustRadius)', signal: 'green',  csm: 'divyam', note: 'Pre-kickoff intro. Divyam introduced as CSM. Shannon engaged. Formal kickoff scheduled with Jolene for 6Sense integration.' },
+      { account: 'ZoomInfo (TrustRadius)', signal: 'green',  csm: 'pam',    note: 'Renewal sync. Top Rated badges confirmed; TechCares award form to be sent. ZoomInfo consolidating profiles 9→5.' },
+      { account: 'Apple',                 signal: 'purple', csm: 'atisha', note: 'Weekly syncup. Expanding child accounts under 6 parent companies (Blackstone, UnitedHealth, HCA, Platinum Equity, Vista Equity, Berkshire). Net new account discovery planning — August target.' },
+    ]
+  };
+}
+
+function dayMeta_2026_06_05() {
+  return {
+    pills: [
+      { label: '7 Calls', type: 'green' },
+      { label: '4 CSMs Active', type: 'green' },
+      { label: '3 Expansion', type: 'purple' },
+      { label: '0 Concerning', type: 'neutral' },
+    ],
+    tabs: ['Overview', 'Calls', 'Pulses', 'Actions']
+  };
+}
+
+function dayOverviewHTML_2026_06_05() {
+  return `
+    <div class="day-kpi-row">
+      <div class="day-kpi green"><div class="day-kpi-num">7</div><div class="day-kpi-lbl">Confirmed Calls</div></div>
+      <div class="day-kpi green"><div class="day-kpi-num">4</div><div class="day-kpi-lbl">CSMs Active</div></div>
+      <div class="day-kpi purple"><div class="day-kpi-num">3</div><div class="day-kpi-lbl">Expansion Signals</div></div>
+      <div class="day-kpi neutral"><div class="day-kpi-num">0</div><div class="day-kpi-lbl">Concerning</div></div>
+    </div>
+    <div class="alert-banner expansion">🚀 <strong>Expansion (3):</strong> Atisha/AMD — HG Customer Summit (July, Palo Alto) · Varun/Five9 — Entity status use case (VP-level) · Atisha/Apple — Child account expansion (6 parents) + net new discovery</div>
+    <div class="alert-banner info">ℹ️ <strong>4 CSMs with no confirmed calls:</strong> Riley Rogers · Rani Guy (2 events, no speaker) · Nick Johnson (1 event, no recording) · Andy Lim (Sage recording, not confirmed as speaker)</div>
+    <div class="alert-banner warn">⚠️ <strong>8 unrecorded CSM events:</strong> Intel Platform Training (Atisha 5:30 AM) · ADP Monthly Success Call (Andy+Pam 8 AM) · Google Platform Overview (Rani 8 AM) · Apple Bi-weekly (Atisha 8 AM) · Workday connect (Rani 11 AM) · Apple MI Training (Atisha 11 AM) · Apple Platform Training (Atisha 12 PM) · Infor Debrief (Nick 5 AM)</div>
+    <h3 style="margin:16px 0 8px;font-size:13px;color:var(--muted-text,#94a3b8);">Active CSMs</h3>
+    <div class="csm-activity-row">
+      <div class="csm-activity-card"><span class="csm-chip csm-pam">Pam Huck</span><div class="csm-call-count">2 calls</div><div class="csm-accounts">Cisco (TR) · ZoomInfo (TR)</div></div>
+      <div class="csm-activity-card"><span class="csm-chip csm-divyam">Divyam Dewan</span><div class="csm-call-count">2 calls</div><div class="csm-accounts">Informatica · Cotality (TR)</div></div>
+      <div class="csm-activity-card"><span class="csm-chip csm-atisha">Atisha Waghela</span><div class="csm-call-count">2 calls</div><div class="csm-accounts">AMD · Apple</div></div>
+      <div class="csm-activity-card"><span class="csm-chip csm-varun">Varun Tiwari</span><div class="csm-call-count">1 call</div><div class="csm-accounts">Five9</div></div>
+    </div>
+  `;
+}
+
+function dayCallsHTML_2026_06_05() {
+  return `
+    <table class="calls-table">
+      <thead><tr><th>Time</th><th>CSM</th><th>Account</th><th>Dur</th><th>Nature</th><th>Initiated By</th><th>Purpose</th><th>Signal</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>8:00 AM</td>
+          <td><span class="csm-chip csm-pam">Pam Huck</span></td>
+          <td>Cisco (TrustRadius)</td><td>30m</td>
+          <td><span class="badge-nature recurring">Recurring</span></td>
+          <td>HG CS</td><td>Check-in</td>
+          <td><span class="signal-badge signal-green">✅ Healthy</span></td>
+        </tr>
+        <tr>
+          <td>9:00 AM</td>
+          <td><span class="csm-chip csm-divyam">Divyam Dewan</span></td>
+          <td>Informatica</td><td>30m</td>
+          <td><span class="badge-nature adhoc">Ad-hoc</span></td>
+          <td>HG CS</td><td>Check-in + Expansion</td>
+          <td><span class="signal-badge signal-green">✅ Healthy</span></td>
+        </tr>
+        <tr>
+          <td>9:30 AM</td>
+          <td><span class="csm-chip csm-atisha">Atisha Waghela</span></td>
+          <td>AMD</td><td>30m</td>
+          <td><span class="badge-nature recurring">Recurring</span></td>
+          <td>HG CS</td><td>Check-in + Expansion</td>
+          <td><span class="signal-badge signal-purple">🚀 Expansion</span></td>
+        </tr>
+        <tr>
+          <td>9:30 AM</td>
+          <td><span class="csm-chip csm-varun">Varun Tiwari</span></td>
+          <td>Five9</td><td>30m</td>
+          <td><span class="badge-nature adhoc">Ad-hoc</span></td>
+          <td>HG CS</td><td>Expansion</td>
+          <td><span class="signal-badge signal-purple">🚀 Expansion</span></td>
+        </tr>
+        <tr>
+          <td>10:30 AM</td>
+          <td><span class="csm-chip csm-divyam">Divyam Dewan</span></td>
+          <td>Cotality (TR)</td><td>30m</td>
+          <td><span class="badge-nature adhoc">Ad-hoc</span></td>
+          <td>HG CS</td><td>Check-in (Onboarding)</td>
+          <td><span class="signal-badge signal-green">✅ Healthy</span></td>
+        </tr>
+        <tr>
+          <td>11:00 AM</td>
+          <td><span class="csm-chip csm-pam">Pam Huck</span></td>
+          <td>ZoomInfo (TrustRadius)</td><td>30m</td>
+          <td><span class="badge-nature recurring">Recurring</span></td>
+          <td>Customer</td><td>Check-in + Renewal</td>
+          <td><span class="signal-badge signal-green">✅ Healthy</span></td>
+        </tr>
+        <tr>
+          <td>11:00 AM</td>
+          <td><span class="csm-chip csm-atisha">Atisha Waghela</span></td>
+          <td>Apple</td><td>30m</td>
+          <td><span class="badge-nature recurring">Recurring</span></td>
+          <td>HG CS</td><td>Expansion</td>
+          <td><span class="signal-badge signal-purple">🚀 Expansion</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <h3 style="margin:16px 0 8px;font-size:12px;color:var(--muted-text,#94a3b8);">Unconfirmed — No CSM Speaker Detected</h3>
+    <div class="unconfirmed-item">Andy Lim × Sage Global Services — 6:30 AM · 60 min · Transcript present; Andy not detected as speaker (mentioned as expected but not confirmed)</div>
+    <div class="unconfirmed-item">Varun Tiwari × Iron Mountain — 7:00 AM · 30 min · No transcript; attributed via SFDC Event ownership only</div>
+    <div class="unconfirmed-item">Rani Guy × Google — 10:30 AM · 25 min · Transcript has Mark Fell/Ravi Sharma only; Rani owns SFDC Event but not in transcript</div>
+    <div class="unconfirmed-item">Rani Guy × [account "E"] — 10:30 AM · 30 min · No transcript; attributed via SFDC Event ownership only</div>
+  `;
+}
+
+function dayPulsesHTML_2026_06_05() {
+  return `
+    <div class="pulse-grid">
+      <div class="pulse-card">
+        <div class="pulse-card-top"><div class="pulse-account">Cisco (TrustRadius)</div><span class="signal-badge signal-green">✅ Healthy</span></div>
+        <div class="pulse-note">Renewal Progress Sync. Cisco Live wrapped; Top Rated badges delivered (40 wins/80+ categories); SOW in approval queue. Renewal on track.</div>
+        <div class="pulse-footer">Pam Huck · 8:00 AM · 30 min</div>
+      </div>
+      <div class="pulse-card">
+        <div class="pulse-card-top"><div class="pulse-account">Informatica</div><span class="signal-badge signal-green">✅ Healthy</span></div>
+        <div class="pulse-note">Reconnect ahead of renewal. Informatica flexible on RGIF pricing transition (81% match rate on 450K accounts). David Connors (procurement) added. Renewal expected to close in good shape.</div>
+        <div class="pulse-footer">Divyam Dewan · 9:00 AM · 30 min</div>
+      </div>
+      <div class="pulse-card">
+        <div class="pulse-card-top"><div class="pulse-account">AMD</div><span class="signal-badge signal-purple">🚀 Expansion</span></div>
+        <div class="pulse-note">Bi-weekly touchpoint. HG Customer Summit (July, Palo Alto) pitched — David Rockwell open pending dates. New AM Ravi Sharma introduced. Account briefs under review end of next week.</div>
+        <div class="pulse-footer">Atisha Waghela · 9:30 AM · 30 min</div>
+      </div>
+      <div class="pulse-card">
+        <div class="pulse-card-top"><div class="pulse-account">Five9</div><span class="signal-badge signal-purple">🚀 Expansion</span></div>
+        <div class="pulse-note">New use case walkthrough: entity status/active-inactive checks for ~300 technology partners. VP Tracy York engaged. HG active/inactive product flag on roadmap. Strong expansion signal.</div>
+        <div class="pulse-footer">Varun Tiwari · 9:30 AM · 30 min</div>
+      </div>
+      <div class="pulse-card">
+        <div class="pulse-card-top"><div class="pulse-account">Cotality (TrustRadius)</div><span class="signal-badge signal-green">✅ Healthy</span></div>
+        <div class="pulse-note">Pre-kickoff intro call. Divyam introduced as CSM. Shannon (Cotality) engaged. Formal kickoff scheduled with Jolene added for 6Sense integration.</div>
+        <div class="pulse-footer">Divyam Dewan · 10:30 AM · 30 min</div>
+      </div>
+      <div class="pulse-card">
+        <div class="pulse-card-top"><div class="pulse-account">ZoomInfo (TrustRadius)</div><span class="signal-badge signal-green">✅ Healthy</span></div>
+        <div class="pulse-note">Renewal sync. Top Rated 2026 badges confirmed; TechCares award form to be sent (5 min). ZoomInfo consolidating profiles 9→5 (GTM Workspace/Studio/AI + 2). Renewal in progress with Russell Martin.</div>
+        <div class="pulse-footer">Pam Huck · 11:00 AM · 30 min</div>
+      </div>
+      <div class="pulse-card">
+        <div class="pulse-card-top"><div class="pulse-account">Apple</div><span class="signal-badge signal-purple">🚀 Expansion</span></div>
+        <div class="pulse-note">Weekly syncup. Active expansion: 6 parent accounts adding child companies (Blackstone, UnitedHealth, HCA, Platinum Equity, Vista Equity, Berkshire). Net new account discovery planning — August target. ~14K+ current accounts.</div>
+        <div class="pulse-footer">Atisha Waghela · 11:00 AM · 30 min</div>
+      </div>
+    </div>
+  `;
+}
+
+function dayActionsHTML_2026_06_05() {
+  return `
+    <div class="action-item">
+      <div class="action-body">
+        <div class="action-id">[0605-1]</div>
+        <div class="action-title">🚀 Five9 — Follow up on entity status/partner active-inactive use case</div>
+        <div class="action-meta"><span class="urgency urgency-high">HIGH</span> Varun Tiwari · Send Five9 a proposal with current domain status capabilities + roadmap timeline for active/inactive flags. VP Tracy York engaged. Act before interest cools.</div>
+      </div>
+    </div>
+    <div class="action-item">
+      <div class="action-body">
+        <div class="action-id">[0605-2]</div>
+        <div class="action-title">🏢 Apple — Receive + process expanded child account list from Simone Amorim</div>
+        <div class="action-meta"><span class="urgency urgency-high">HIGH</span> Atisha Waghela · Simone sending spreadsheet with child company names for 6 parent accounts. Run matching → report back match rate. August target for net new discovery setup.</div>
+      </div>
+    </div>
+    <div class="action-item">
+      <div class="action-body">
+        <div class="action-id">[0605-3]</div>
+        <div class="action-title">📋 Informatica — Track procurement + RGIF paperwork to close</div>
+        <div class="action-meta"><span class="urgency urgency-high">HIGH</span> Divyam Dewan · Ensure SOW/contract sent to David Connors (procurement). No implementation changes for RGIF per Alexi. Set timeline expectation with Tom Mirrione. Close before end of month.</div>
+      </div>
+    </div>
+    <div class="action-item">
+      <div class="action-body">
+        <div class="action-id">[0605-4]</div>
+        <div class="action-title">📅 AMD — Send HG Customer Summit details (July, Palo Alto) to David Rockwell</div>
+        <div class="action-meta"><span class="urgency urgency-medium">MEDIUM</span> Atisha Waghela · HG covering lodging. Send dates when marketing finalizes (Ravi Sharma has details). Confirm attendees from AMD.</div>
+      </div>
+    </div>
+    <div class="action-item">
+      <div class="action-body">
+        <div class="action-id">[0605-5]</div>
+        <div class="action-title">🏆 ZoomInfo — Send TechCares award form + coordinate product profile consolidation</div>
+        <div class="action-meta"><span class="urgency urgency-medium">MEDIUM</span> Pam Huck · TechCares form — 5 min fill, send to Russell Martin today. Coordinate with TR taxonomy team on 9→5 profile consolidation.</div>
+      </div>
+    </div>
+    <div class="action-item">
+      <div class="action-body">
+        <div class="action-id">[0605-6]</div>
+        <div class="action-title">📞 Cotality — Schedule formal kickoff with Jolene for 6Sense integration</div>
+        <div class="action-meta"><span class="urgency urgency-medium">MEDIUM</span> Divyam Dewan · Shannon confirmed Jolene needs to be on the formal kickoff. Samuel Vargas to coordinate calendar.</div>
+      </div>
+    </div>
+    <div class="action-item">
+      <div class="action-body">
+        <div class="action-id">[0605-7]</div>
+        <div class="action-title">📋 AMD — Account brief follow-up with David Rockwell (end of next week)</div>
+        <div class="action-meta"><span class="urgency urgency-low">LOW</span> Atisha Waghela · David confirmed he'll review end of next week. Check in at next bi-weekly.</div>
+      </div>
+    </div>
+  `;
+}
