@@ -1477,13 +1477,13 @@ function dayActionsHTML_2026_06_04() {
 function dayData_2026_06_05() {
   return {
     calls: [
-      { csm: 'pam',    account: 'Cisco (TrustRadius)',     time: '8:00 AM',  duration: 30, nature: 'recurring', initiator: 'hg',       purpose: 'check-in',              signal: 'green'  },
-      { csm: 'divyam', account: 'Informatica',             time: '9:00 AM',  duration: 30, nature: 'adhoc',     initiator: 'hg',       purpose: 'check-in + expansion',  signal: 'green'  },
-      { csm: 'atisha', account: 'AMD',                     time: '9:30 AM',  duration: 30, nature: 'recurring', initiator: 'hg',       purpose: 'check-in + expansion',  signal: 'purple' },
-      { csm: 'varun',  account: 'Five9',                   time: '9:30 AM',  duration: 30, nature: 'adhoc',     initiator: 'hg',       purpose: 'expansion',             signal: 'purple' },
-      { csm: 'divyam', account: 'Cotality (TR)',            time: '10:30 AM', duration: 30, nature: 'adhoc',     initiator: 'hg',       purpose: 'check-in (onboarding)', signal: 'green'  },
-      { csm: 'pam',    account: 'ZoomInfo (TrustRadius)',  time: '11:00 AM', duration: 30, nature: 'recurring', initiator: 'customer', purpose: 'check-in + renewal',    signal: 'green'  },
-      { csm: 'atisha', account: 'Apple',                   time: '11:00 AM', duration: 30, nature: 'recurring', initiator: 'hg',       purpose: 'expansion',             signal: 'purple' },
+      { ts: 'Jun 5 · 8:00 AM',  csm: 'pam',    account: 'Cisco (TrustRadius)',    note: 'Renewal sync — Top Rated badges delivered (40 wins/80+ cats); SOW in approval queue',                                              mins: 30, health: 'Healthy',    nature: 'Routine', initiator: 'HG CS',     purpose: 'Check-in', detail: 'Renewal Progress Sync. Cisco Live wrapped; Top Rated badges delivered across 40 wins and 80+ categories. SOW in approval queue. Renewal on track.' },
+      { ts: 'Jun 5 · 9:00 AM',  csm: 'divyam', account: 'Informatica',            note: 'Reconnect ahead of renewal — 81% match rate on 450K accounts, procurement added',                                                   mins: 30, health: 'Healthy',    nature: 'Ad-hoc',  initiator: 'HG CS',     purpose: 'Mixed',    detail: 'Reconnect ahead of renewal. Informatica flexible on RGIF pricing. 81% match rate on 450K accounts. David Connors (procurement) added to deal. Renewal expected to close in good shape.' },
+      { ts: 'Jun 5 · 9:30 AM',  csm: 'atisha', account: 'AMD',                    note: 'Bi-weekly touchpoint — HG Customer Summit pitched, new AM Ravi Sharma introduced',                                                  mins: 30, health: 'Healthy',    nature: 'Routine', initiator: 'HG CS',     purpose: 'Expansion', detail: 'Bi-weekly sync. HG Customer Summit (July, Palo Alto) pitched to David Rockwell — open pending dates. New AM Ravi Sharma introduced. Account briefs under review end of next week.' },
+      { ts: 'Jun 5 · 9:30 AM',  csm: 'varun',  account: 'Five9',                  note: 'New use case — entity status checks for ~300 tech partners, VP Tracy York engaged',                                                  mins: 30, health: 'Healthy',    nature: 'Ad-hoc',  initiator: 'HG CS',     purpose: 'Expansion', detail: 'New use case walkthrough: entity status/active-inactive checks for ~300 technology partners. VP Tracy York engaged. HG active/inactive product flag confirmed on roadmap. Strong expansion signal.' },
+      { ts: 'Jun 5 · 10:30 AM', csm: 'divyam', account: 'Cotality (TrustRadius)', note: 'Pre-kickoff intro — Divyam introduced as CSM, formal kickoff w/ Jolene for 6Sense integration',                                   mins: 30, health: 'Healthy',    nature: 'Ad-hoc',  initiator: 'HG CS',     purpose: 'Check-in', detail: 'Pre-kickoff intro call. Divyam introduced as new CSM. Shannon (Cotality) engaged. Formal kickoff scheduled with Jolene for 6Sense integration.' },
+      { ts: 'Jun 5 · 11:00 AM', csm: 'pam',    account: 'ZoomInfo (TrustRadius)', note: 'Renewal sync — Top Rated badges confirmed, TechCares award form to send, profile consolidation 9→5',                               mins: 30, health: 'Healthy',    nature: 'Routine', initiator: 'Customer',  purpose: 'Mixed',    detail: 'Renewal sync. Top Rated badges confirmed. TechCares award form to be sent. ZoomInfo consolidating vendor profiles from 9 down to 5. Renewal conversation healthy.' },
+      { ts: 'Jun 5 · 11:00 AM', csm: 'atisha', account: 'Apple',                  note: 'Weekly sync — expanding child accounts under 6 parents, net new account discovery targeting August',                                 mins: 30, health: 'Healthy',    nature: 'Routine', initiator: 'HG CS',     purpose: 'Expansion', detail: 'Weekly syncup. Expanding child accounts under 6 parent companies: Blackstone, UnitedHealth, HCA, Platinum Equity, Vista Equity, Berkshire. Net new account discovery planning — August target.' },
     ],
     pulses: [
       { account: 'Cisco (TrustRadius)',    signal: 'green',  csm: 'pam',    note: 'Renewal Progress Sync. Cisco Live wrapped; Top Rated badges delivered (40 wins/80+ categories); SOW in approval queue. On track.' },
@@ -1500,12 +1500,12 @@ function dayData_2026_06_05() {
 function dayMeta_2026_06_05() {
   return {
     pills: [
-      { label: '7 Calls', type: 'green' },
-      { label: '4 CSMs Active', type: 'green' },
-      { label: '3 Expansion', type: 'purple' },
-      { label: '0 Concerning', type: 'neutral' },
+      ['dot-teal',   '7 Calls'],
+      ['dot-purple', '3 Expansion'],
+      ['dot-green',  '7 Vitally Pulses'],
+      ['dot-grey',   'Fri Jun 5'],
     ],
-    tabs: ['Overview', 'Calls', 'Pulses', 'Actions']
+    tabs: ['Overview', 'Calls (7)', 'Pulses (7)', 'Action Items (7)'],
   };
 }
 
@@ -1697,46 +1697,29 @@ function dayCallsHTML_2026_06_05() {
 }
 
 function dayPulsesHTML_2026_06_05() {
-  return `
-    <div class="pulse-grid">
-      <div class="pulse-card">
-        <div class="pulse-card-top"><div class="pulse-account">Cisco (TrustRadius)</div><span class="badge badge-healthy">✅ Healthy</span></div>
-        <div class="pulse-excerpt">Renewal Progress Sync. Cisco Live wrapped; Top Rated badges delivered (40 wins/80+ categories); SOW in approval queue. Renewal on track.</div>
-        <div class="pulse-footer">Pam Huck · 8:00 AM · 30 min</div>
+  const cards = [
+    { csm:'pam',    health:'Healthy', account:'Cisco (TrustRadius)',    opp:'Vitally Pulse &mdash; Jun 5 Call',        arr:'Enterprise &middot; Pam Huck',    csmlbl:'Pam Huck',    change:'Jun 5 &middot; Renewal sync',    excerpt:'PH: Renewal Progress Sync. Cisco Live wrapped; Top Rated badges delivered (40 wins/80+ cats); SOW in approval queue. On track (8:00 AM, 30 min).' },
+    { csm:'divyam', health:'Healthy', account:'Informatica',            opp:'Vitally Pulse &mdash; Jun 5 Call',        arr:'Enterprise &middot; Divyam Dewan', csmlbl:'Divyam Dewan', change:'Jun 5 &middot; Renewal reconnect', excerpt:'DD: Reconnect ahead of renewal. RGIF pricing flexible; 81% match rate on 450K accounts. David Connors (procurement) added. Renewal expected to close well (9:00 AM, 30 min).' },
+    { csm:'atisha', health:'Healthy', account:'AMD',                    opp:'Vitally Pulse &mdash; Jun 5 Call',        arr:'Enterprise &middot; Atisha Waghela', csmlbl:'Atisha Waghela', change:'Jun 5 &middot; Expansion signal', excerpt:'AW: Bi-weekly touchpoint. HG Customer Summit (July, Palo Alto) pitched — David Rockwell open pending dates. New AM Ravi Sharma introduced (9:30 AM, 30 min).' },
+    { csm:'varun',  health:'Healthy', account:'Five9',                  opp:'Vitally Pulse &mdash; Jun 5 Call',        arr:'Enterprise &middot; Varun Tiwari',  csmlbl:'Varun Tiwari',  change:'Jun 5 &middot; Expansion signal', excerpt:'VT: New use case: entity status/active-inactive checks for ~300 tech partners. VP Tracy York engaged. Active/inactive flag on roadmap (9:30 AM, 30 min).' },
+    { csm:'divyam', health:'Healthy', account:'Cotality (TrustRadius)', opp:'Vitally Pulse &mdash; Jun 5 Call',        arr:'Enterprise &middot; Divyam Dewan', csmlbl:'Divyam Dewan', change:'Jun 5 &middot; Pre-kickoff',      excerpt:'DD: Pre-kickoff intro. Divyam introduced as CSM. Shannon engaged. Formal kickoff w/ Jolene scheduled for 6Sense integration (10:30 AM, 30 min).' },
+    { csm:'pam',    health:'Healthy', account:'ZoomInfo (TrustRadius)', opp:'Vitally Pulse &mdash; Jun 5 Call',        arr:'Enterprise &middot; Pam Huck',    csmlbl:'Pam Huck',    change:'Jun 5 &middot; Renewal sync',    excerpt:'PH: Renewal sync. Top Rated badges confirmed. TechCares award form to send. ZoomInfo consolidating profiles 9&rarr;5 (11:00 AM, 30 min).' },
+    { csm:'atisha', health:'Healthy', account:'Apple',                  opp:'Vitally Pulse &mdash; Jun 5 Call',        arr:'Enterprise &middot; Atisha Waghela', csmlbl:'Atisha Waghela', change:'Jun 5 &middot; Expansion signal', excerpt:'AW: Weekly sync. Expanding child accounts under 6 parent companies (Blackstone, UnitedHealth, HCA, Platinum Equity, Vista Equity, Berkshire). Net new discovery — August target (11:00 AM, 30 min).' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div><div class="pulse-account">${c.account}</div><div class="pulse-opp">${c.opp}</div><div class="pulse-arr">${c.arr}</div></div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
       </div>
-      <div class="pulse-card">
-        <div class="pulse-card-top"><div class="pulse-account">Informatica</div><span class="badge badge-healthy">✅ Healthy</span></div>
-        <div class="pulse-excerpt">Reconnect ahead of renewal. Informatica flexible on RGIF pricing transition (81% match rate on 450K accounts). David Connors (procurement) added. Renewal expected to close in good shape.</div>
-        <div class="pulse-footer">Divyam Dewan · 9:00 AM · 30 min</div>
-      </div>
-      <div class="pulse-card">
-        <div class="pulse-card-top"><div class="pulse-account">AMD</div><span class="badge" style="background:#ede9fe;color:#5b21b6;">🚀 Expansion</span></div>
-        <div class="pulse-excerpt">Bi-weekly touchpoint. HG Customer Summit (July, Palo Alto) pitched — David Rockwell open pending dates. New AM Ravi Sharma introduced. Account briefs under review end of next week.</div>
-        <div class="pulse-footer">Atisha Waghela · 9:30 AM · 30 min</div>
-      </div>
-      <div class="pulse-card">
-        <div class="pulse-card-top"><div class="pulse-account">Five9</div><span class="badge" style="background:#ede9fe;color:#5b21b6;">🚀 Expansion</span></div>
-        <div class="pulse-excerpt">New use case walkthrough: entity status/active-inactive checks for ~300 technology partners. VP Tracy York engaged. HG active/inactive product flag on roadmap. Strong expansion signal.</div>
-        <div class="pulse-footer">Varun Tiwari · 9:30 AM · 30 min</div>
-      </div>
-      <div class="pulse-card">
-        <div class="pulse-card-top"><div class="pulse-account">Cotality (TrustRadius)</div><span class="badge badge-healthy">✅ Healthy</span></div>
-        <div class="pulse-excerpt">Pre-kickoff intro call. Divyam introduced as CSM. Shannon (Cotality) engaged. Formal kickoff scheduled with Jolene added for 6Sense integration.</div>
-        <div class="pulse-footer">Divyam Dewan · 10:30 AM · 30 min</div>
-      </div>
-      <div class="pulse-card">
-        <div class="pulse-card-top"><div class="pulse-account">ZoomInfo (TrustRadius)</div><span class="badge badge-healthy">✅ Healthy</span></div>
-        <div class="pulse-excerpt">Renewal sync. Top Rated 2026 badges confirmed; TechCares award form to be sent (5 min). ZoomInfo consolidating profiles 9→5 (GTM Workspace/Studio/AI + 2). Renewal in progress with Russell Martin.</div>
-        <div class="pulse-footer">Pam Huck · 11:00 AM · 30 min</div>
-      </div>
-      <div class="pulse-card">
-        <div class="pulse-card-top"><div class="pulse-account">Apple</div><span class="badge" style="background:#ede9fe;color:#5b21b6;">🚀 Expansion</span></div>
-        <div class="pulse-excerpt">Weekly syncup. Active expansion: 6 parent accounts adding child companies (Blackstone, UnitedHealth, HCA, Platinum Equity, Vista Equity, Berkshire). Net new account discovery planning — August target. ~14K+ current accounts.</div>
-        <div class="pulse-footer">Atisha Waghela · 11:00 AM · 30 min</div>
-      </div>
-    </div>
-  `;
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none"><div class="empty-icon">💓</div>No pulses match the current filter.</div>`;
 }
+
 
 function dayActionsHTML_2026_06_05() {
   return `
