@@ -1036,6 +1036,7 @@ function accountsHTML() {
   }).join('');
 
   return `
+    <style id="acct-search-style">tr.acct-row.srch-hidden{display:none!important}</style>
     <div class="section-label">Accounts · 123 Total · $47.2M ARR · 240 Opportunities</div>
     <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap">
       <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
@@ -1118,6 +1119,7 @@ window.filterByCsmName = function(csmName) {
     const hasMatch = matchingOpps.length > 0;
 
     r.style.display = hasMatch ? '' : 'none';
+    r.classList.toggle('srch-hidden', !hasMatch);
     if (hasMatch) { acctCount++; oppCount += matchingOpps.length; }
 
     // Show/hide opp rows: expand the account and show only matching opp rows
@@ -1147,6 +1149,7 @@ window.clearCsmNameFilter = function() {
   // Restore all accounts and their opp rows to natural state
   document.querySelectorAll('tr.acct-row').forEach(r => {
     r.style.display = '';
+    r.classList.remove('srch-hidden');
     const idx = r.dataset.accountIdx;
     const expanded = r.dataset.expanded === 'true';
     document.querySelectorAll(`tr.opp-row[data-account-idx="${idx}"]`).forEach(or => {
@@ -1181,6 +1184,7 @@ window.searchAccounts = function(query) {
 
     const show = csmPass && searchPass;
     r.style.display = show ? '' : 'none';
+    r.classList.toggle('srch-hidden', !show);
     if (show) visible++;
   });
 
