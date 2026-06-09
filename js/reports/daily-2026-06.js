@@ -1865,158 +1865,248 @@ function dayMeta_2026_06_08() {
 }
 
 function dayOverviewHTML_2026_06_08() {
-  return `
-    <div class="overview-header">
-      <h2>Monday, June 8, 2026</h2>
-      <p class="overview-subtitle">6 confirmed CSM calls · 4 active CSMs · 3 expansion signals · NetApp renewal at risk (Aug 2026)</p>
-    </div>
-    <div class="kpi-row">
-      <div class="kpi-card"><div class="kpi-val">6</div><div class="kpi-label">Confirmed Calls</div></div>
-      <div class="kpi-card"><div class="kpi-val">4</div><div class="kpi-label">CSMs Active</div></div>
-      <div class="kpi-card green"><div class="kpi-val">3</div><div class="kpi-label">Expansion Signals</div></div>
-      <div class="kpi-card yellow"><div class="kpi-val">2</div><div class="kpi-label">At-Risk Signals</div></div>
-    </div>
-    <div class="alert-list">
-      <div class="alert expansion">🚀 <strong>NTT Data (Nick):</strong> Boris Bohn re-engaging lapsed contract — credit-based model proposed. Strong expansion opportunity.</div>
-      <div class="alert expansion">💰 <strong>Softcat (Nick):</strong> Multi-million dollar Americas + Europe data expansion. Nick + AE David building pricing ticket.</div>
-      <div class="alert expansion">🤖 <strong>NetApp AI Spend (Rani):</strong> Adding AI spend layer + SMB spend to improve match rate 51%→65%+. 2nd NetApp call today.</div>
-      <div class="alert concerning">⚠️ <strong>NetApp Renewal (Rani):</strong> Match rate 51% vs 80% target. $840K renewal due Aug 2026. Active remediation underway.</div>
-      <div class="alert concerning">⏰ <strong>BILL MadKudu (Divyam):</strong> Simulation results due today; customer has 1-week window to push to SFDC (Jun 15–17).</div>
-      <div class="alert info">📋 <strong>Intuit Top Rated (Riley):</strong> June 10 announcement on track. Coordinating contact changes after Intuit layoffs (Annabelle out).</div>
-    </div>
-    <div class="no-calls-section">
-      <h3>CSMs with no confirmed calls</h3>
-      <div class="no-calls-chips">
-        <span class="no-calls-chip">Varun Tiwari</span>
-        <span class="no-calls-chip">Pam Huck</span>
-        <span class="no-calls-chip">Andy Lim</span>
-        <span class="no-calls-chip">Atisha Waghela</span>
+  return `<div class="section-label">Team Activity &mdash; Monday June 8, 2026</div>
+  <div style="background:#131a18;border:1px solid #10b981;border-left:3px solid #10b981;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#6ee7b7;">
+    &#x1F680; <strong>Expansion (3):</strong> Nick/NTT Data &mdash; Boris Bohn re-engaging lapsed contract, credit-based model proposed &middot; Nick/Softcat &mdash; Americas+Europe data expansion (~$6M/yr, pricing ticket in progress) &middot; Rani/NetApp &mdash; AI+SMB spend layer to push match rate 51%&rarr;65%+
+  </div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Mon Jun 8 &mdash; 6 confirmed calls</strong> across 4 CSMs &middot; 3 unconfirmed (no transcript / not speaker-detected)
+  </div>
+  <div style="background:#1c1910;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fcd34d;">
+    &#x26A0;&#xFE0F; <strong>NetApp renewal at risk:</strong> Match rate 51% vs 80% target &middot; $840K renewal due Aug 2026 &middot; <strong>BILL deadline:</strong> MadKudu simulation due today, SFDC push Jun 15&ndash;17
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
       </div>
-    </div>`;
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">NTT Data &mdash; &#x1F680; Boris Bohn re-engaging lapsed contract, credit-based model &middot; 1:30 AM &middot; Softcat &mdash; &#x1F680; Americas+Europe expansion, pricing ticket in progress &middot; 6:30 AM</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">85m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">NetApp &mdash; &#x26A0;&#xFE0F; Matching deep dive, 51% rate vs 80% target, $840K Aug renewal &middot; 9:00 AM &middot; NetApp &mdash; &#x1F680; Post-debrief, AI+SMB spend expansion plan &middot; 1:00 PM</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Intuit (TrustRadius) &mdash; June 10 Top Rated on track; updating contacts post-Intuit layoffs &middot; 9:30 AM</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">BILL &mdash; &#x23F0; MadKudu simulation due today; SFDC push deadline Jun 15&ndash;17 &middot; 10:00 AM</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="varun">
+      <div class="csm-card-header">
+        <div class="avatar av-riley">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div>
+      </div>
+      <div class="csm-account-note">No confirmed calls on Jun 8</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div>
+      </div>
+      <div class="csm-account-note">No confirmed calls on Jun 8</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="atisha">
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div>
+      </div>
+      <div class="csm-account-note">Intel Weekly Sync (7:00 AM) &mdash; no transcript, not speaker-verified</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-grey">0</div><div class="metric-lbl">Calls</div></div>
+      </div>
+      <div class="csm-account-note">No confirmed calls on Jun 8</div>
+    </div>
+
+  </div>`;
 }
 
 function dayCallsHTML_2026_06_08() {
   return `
     <table class="calls-table">
-      <thead>
-        <tr>
-          <th>Time (PT)</th><th>CSM</th><th>Account</th><th>Dur</th>
-          <th>Nature</th><th>Initiated By</th><th>Purpose</th><th>Signal</th>
-        </tr>
-      </thead>
+      <thead><tr><th>Time</th><th>CSM</th><th>Account</th><th>Dur</th><th>Nature</th><th>Initiated By</th><th>Purpose</th><th>Signal</th></tr></thead>
       <tbody>
         <tr>
           <td>1:30 AM</td>
-          <td><span class="csm-chip nick">Nick Johnson</span></td>
-          <td>NTT Data</td><td>30m</td><td>Ad-hoc</td><td>Customer</td><td>Expansion</td>
-          <td><span class="signal expansion">Expansion 🟢</span></td>
+          <td><span class="csm-chip csm-nick">Nick Johnson</span></td>
+          <td>NTT Data</td><td>30m</td>
+          <td><span class="badge-nature adhoc">Ad-hoc</span></td>
+          <td>Customer</td><td>Expansion</td>
+          <td><span class="badge" style="background:#ede9fe;color:#5b21b6;">&#x1F680; Expansion</span></td>
         </tr>
         <tr>
           <td>6:30 AM</td>
-          <td><span class="csm-chip nick">Nick Johnson</span></td>
-          <td>Softcat</td><td>30m</td><td>Recurring</td><td>HG CS</td><td>Expansion</td>
-          <td><span class="signal expansion">Expansion 🟢</span></td>
+          <td><span class="csm-chip csm-nick">Nick Johnson</span></td>
+          <td>Softcat</td><td>30m</td>
+          <td><span class="badge-nature recurring">Recurring</span></td>
+          <td>HG CS</td><td>Expansion</td>
+          <td><span class="badge" style="background:#ede9fe;color:#5b21b6;">&#x1F680; Expansion</span></td>
         </tr>
         <tr>
           <td>9:00 AM</td>
-          <td><span class="csm-chip rani">Rani Guy</span></td>
-          <td>NetApp</td><td>60m</td><td>Ad-hoc</td><td>HG CS</td><td>Check-in</td>
-          <td><span class="signal concerning">At Risk ⚠️</span></td>
+          <td><span class="csm-chip csm-rani">Rani Guy</span></td>
+          <td>NetApp</td><td>60m</td>
+          <td><span class="badge-nature adhoc">Ad-hoc</span></td>
+          <td>HG CS</td><td>Check-in</td>
+          <td><span class="badge" style="background:#fef3c7;color:#92400e;">&#x26A0;&#xFE0F; Some Risk</span></td>
         </tr>
         <tr>
           <td>9:30 AM</td>
-          <td><span class="csm-chip riley">Riley Rogers</span></td>
-          <td>Intuit (TR)</td><td>30m</td><td>Recurring</td><td>HG CS</td><td>Check-in</td>
-          <td><span class="signal check-in">Check-in 🔵</span></td>
+          <td><span class="csm-chip csm-riley">Riley Rogers</span></td>
+          <td>Intuit (TrustRadius)</td><td>30m</td>
+          <td><span class="badge-nature recurring">Recurring</span></td>
+          <td>HG CS</td><td>Check-in</td>
+          <td><span class="badge badge-healthy">&#x2705; Healthy</span></td>
         </tr>
         <tr>
           <td>10:00 AM</td>
-          <td><span class="csm-chip divyam">Divyam Dewan</span></td>
-          <td>BILL</td><td>30m</td><td>Recurring</td><td>Customer</td><td>Issue</td>
-          <td><span class="signal issue">Issue ⏰</span></td>
+          <td><span class="csm-chip csm-divyam">Divyam Dewan</span></td>
+          <td>BILL</td><td>30m</td>
+          <td><span class="badge-nature recurring">Recurring</span></td>
+          <td>Customer</td><td>Issue</td>
+          <td><span class="badge" style="background:#fef3c7;color:#92400e;">&#x26A0;&#xFE0F; Some Risk</span></td>
         </tr>
         <tr>
           <td>1:00 PM</td>
-          <td><span class="csm-chip rani">Rani Guy</span></td>
-          <td>NetApp</td><td>25m</td><td>Recurring</td><td>HG CS</td><td>Check-in + Expansion</td>
-          <td><span class="signal expansion">Expansion 🟢</span></td>
+          <td><span class="csm-chip csm-rani">Rani Guy</span></td>
+          <td>NetApp</td><td>25m</td>
+          <td><span class="badge-nature recurring">Recurring</span></td>
+          <td>HG CS</td><td>Check-in + Expansion</td>
+          <td><span class="badge" style="background:#ede9fe;color:#5b21b6;">&#x1F680; Expansion</span></td>
         </tr>
       </tbody>
     </table>
-    <h3 style="margin-top:24px;">Unconfirmed — No Transcript</h3>
-    <table class="calls-table" style="margin-top:8px;">
-      <thead><tr><th>CSM</th><th>Account / Meeting</th><th>Time (PT)</th><th>Note</th></tr></thead>
-      <tbody>
-        <tr><td><span class="csm-chip nick">Nick Johnson</span></td><td>HG onsite debrief check ins</td><td>5:00 AM</td><td>No transcript — internal debrief</td></tr>
-        <tr><td><span class="csm-chip atisha">Atisha W.</span></td><td>Intel Weekly Sync</td><td>7:00 AM</td><td>No transcript — CSM event owner, not speaker-verified</td></tr>
-        <tr><td><span class="csm-chip riley">Riley Rogers</span></td><td>Hayden/Max w/ Marisol @Intuit</td><td>12:30 PM</td><td>No transcript — AM-led, Riley event owner</td></tr>
-      </tbody>
-    </table>`;
+    <h3 style="margin:16px 0 8px;font-size:12px;color:var(--muted-text,#94a3b8);">Unconfirmed &mdash; No CSM Speaker Detected</h3>
+    <div class="unconfirmed-item">Nick Johnson &times; HG Onsite Debrief &mdash; 5:00 AM &middot; Internal debrief; no external account transcript</div>
+    <div class="unconfirmed-item">Atisha Waghela &times; Intel Weekly Sync &mdash; 7:00 AM &middot; No transcript; attributed via SFDC Event ownership only</div>
+    <div class="unconfirmed-item">Riley Rogers &times; Intuit (Hayden/Max w/ Marisol) &mdash; 12:30 PM &middot; AM-led meeting; Riley event owner but not confirmed as speaker</div>
+  `;
 }
 
 function dayPulsesHTML_2026_06_08() {
-  return `
-    <div class="pulse-grid">
-      <div class="pulse-card expansion">
-        <div class="pulse-header"><span class="pulse-account">NTT Data</span><span class="signal expansion">Expansion</span></div>
-        <div class="pulse-csm">Nick Johnson · 1:30 AM PT</div>
-        <div class="pulse-note">Boris Bohn (new Head of GTM, DACH) reached out to re-engage a lapsed HG data contract. HG proposing credit-based consumption model for Modelizer ABM platform. Strong re-engagement opportunity — follow-up to scope exact data needs and pricing.</div>
+  const cards = [
+    { csm:'nick',   health:'Healthy',   account:'NTT Data',             opp:'Vitally Pulse &mdash; Jun 8 Call',  arr:'Enterprise &middot; Nick Johnson',  csmlbl:'Nick Johnson',  change:'Jun 8 &middot; Expansion signal',  excerpt:'NJ: Boris Bohn (new Head of GTM, DACH) re-engaging lapsed HG data contract. HG proposing credit-based consumption model for Modelizer ABM platform. Follow-up to scope data needs and pricing (1:30 AM, 30 min).' },
+    { csm:'nick',   health:'Healthy',   account:'Softcat',              opp:'Vitally Pulse &mdash; Jun 8 Call',  arr:'Enterprise &middot; Nick Johnson',  csmlbl:'Nick Johnson',  change:'Jun 8 &middot; Expansion signal',  excerpt:'NJ: Biweekly sync. Softcat evaluating Americas + Europe data expansion. Full-dataset multi-year deal at ~$6M/yr discussed. Nick + AE David Garcia Thomas building pricing ticket (6:30 AM, 30 min).' },
+    { csm:'rani',   health:'Some Risk', account:'NetApp',               opp:'Vitally Pulse &mdash; Jun 8 Call',  arr:'Enterprise &middot; Rani Guy',     csmlbl:'Rani Guy',     change:'Jun 8 &middot; At risk',           excerpt:'RG: Two calls. Morning: 5-layer matching deep dive, rate 51% (up from 30%) vs 80% target. Aug 2026 renewal ($840K) in focus. Afternoon: planning AI spend + SMB data addition to push rate to 65%+. Data file to follow (9:00 AM + 1:00 PM).' },
+    { csm:'riley',  health:'Healthy',   account:'Intuit (TrustRadius)', opp:'Vitally Pulse &mdash; Jun 8 Call',  arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers', change:'Jun 8 &middot; Check-in',          excerpt:'RR: IES CSM Sync with Natalie Pratt. June 10 Top Rated announcement on track. Intuit layoffs: Annabelle out, Spencer Adkins picking up MailChimp. Building unified contacts list (9:30 AM, 30 min).' },
+    { csm:'divyam', health:'Some Risk', account:'BILL',                 opp:'Vitally Pulse &mdash; Jun 8 Call',  arr:'Enterprise &middot; Divyam Dewan', csmlbl:'Divyam Dewan', change:'Jun 8 &middot; Deadline risk',     excerpt:'DD: Weekly sync. MadKudu simulation expected Jun 8; SFDC push by Jun 15&ndash;17. Eric Nguyen needs rollout best-practices guide. Divyam following up with Peter on timeline (10:00 AM, 30 min).' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128308;':'&#128993;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div><div class="pulse-account">${c.account}</div><div class="pulse-opp">${c.opp}</div><div class="pulse-arr">${c.arr}</div></div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
       </div>
-      <div class="pulse-card expansion">
-        <div class="pulse-header"><span class="pulse-account">Softcat</span><span class="signal expansion">Expansion</span></div>
-        <div class="pulse-csm">Nick Johnson · 6:30 AM PT</div>
-        <div class="pulse-note">Softcat evaluating Americas + Europe data expansion. Nick + AE David Garcia Thomas building pricing ticket with full dataset breakdown. Multi-year deal in scope (~$6M/yr discussed). James to receive pricing once complete.</div>
-      </div>
-      <div class="pulse-card concerning">
-        <div class="pulse-header"><span class="pulse-account">NetApp</span><span class="signal concerning">At Risk</span></div>
-        <div class="pulse-csm">Rani Guy · 9:00 AM + 1:00 PM PT</div>
-        <div class="pulse-note">Two calls today. Morning: deep dive on 5-layer matching, current rate 51% vs 80% target. Afternoon: debrief + expansion plan (AI spend + SMB data). Aug 2026 renewal ($840K) in focus. Rani sending follow-up file with firmographic + SMB + AI spend data this week.</div>
-      </div>
-      <div class="pulse-card healthy">
-        <div class="pulse-header"><span class="pulse-account">Intuit (TrustRadius)</span><span class="signal check-in">Check-in</span></div>
-        <div class="pulse-csm">Riley Rogers · 9:30 AM PT</div>
-        <div class="pulse-note">June 10 Top Rated announcement on track. Intuit layoffs affected contacts (Annabelle out); Spencer Adkins picking up MailChimp. Riley + Natalie Pratt building unified contacts list. Marisol posted early — Riley updating process.</div>
-      </div>
-      <div class="pulse-card concerning">
-        <div class="pulse-header"><span class="pulse-account">BILL</span><span class="signal issue">Issue</span></div>
-        <div class="pulse-csm">Divyam Dewan · 10:00 AM PT</div>
-        <div class="pulse-note">MadKudu model simulation expected today (Jun 8). Customer has 1-week deadline to push to Salesforce (Jun 15–17). Eric Nguyen needs rollout best-practices guide. Divyam following up with Peter on simulation timeline and data flow duration.</div>
-      </div>
-    </div>`;
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none"><div class="empty-icon">&#x1F493;</div>No pulses match the current filter.</div>`;
 }
 
 function dayActionsHTML_2026_06_08() {
   return `
-    <div class="action-list">
-      <div class="action-item high">
-        <div class="action-meta"><span class="urgency high">HIGH</span> <span class="action-owner">Divyam Dewan</span> · BILL</div>
-        <div class="action-title">Follow up with Peter on MadKudu simulation results + share rollout best-practices guide with Eric</div>
-        <div class="action-detail">Simulation results expected Jun 8; SFDC push must happen by Jun 15–17. Eric needs best-practices guide for rollout and documentation lead time. Confirm timeline with Peter today.</div>
+    <div class="action-item">
+      <div class="action-body">
+        <div class="action-id">[0608-1]</div>
+        <div class="action-title">&#x23F0; BILL &mdash; Follow up with Peter on MadKudu simulation results + send rollout best-practices guide to Eric Nguyen</div>
+        <div class="action-meta"><span class="urgency urgency-high">HIGH</span> Divyam Dewan &middot; Simulation results expected Jun 8; SFDC push deadline Jun 15&ndash;17. Eric needs best-practices doc for rollout. Confirm timeline with Peter today.</div>
       </div>
-      <div class="action-item high">
-        <div class="action-meta"><span class="urgency high">HIGH</span> <span class="action-owner">Rani Guy</span> · NetApp</div>
-        <div class="action-title">Send firmographic + SMB spend + AI spend data matching file to NetApp (Elise / Vibhu)</div>
-        <div class="action-detail">Per commitment on 1:00 PM call. Provide base firmographic file + SMB spend + regular spend. AI spend model updating end of June — include timeline. Goal: push match rate from 51% to 65%+.</div>
+    </div>
+    <div class="action-item">
+      <div class="action-body">
+        <div class="action-id">[0608-2]</div>
+        <div class="action-title">&#x26A0;&#xFE0F; NetApp &mdash; Send firmographic + SMB spend + AI spend data file to Elise / Vibhu</div>
+        <div class="action-meta"><span class="urgency urgency-high">HIGH</span> Rani Guy &middot; Per commitment on 1:00 PM call. Provide base firmographic file + SMB spend + regular spend. AI spend model updating end of June &mdash; include timeline. Goal: push match rate 51%&rarr;65%+.</div>
       </div>
-      <div class="action-item high">
-        <div class="action-meta"><span class="urgency high">HIGH</span> <span class="action-owner">Nick Johnson</span> · NTT Data</div>
-        <div class="action-title">Schedule follow-up with Boris Bohn to scope data needs and credit-based pricing for Modelizer</div>
-        <div class="action-detail">Boris is new Head of GTM (DACH), ready to re-engage on lapsed contract. Co-own with AE David Garcia Thomas. Define specific data points needed, run pricing through consumption model.</div>
+    </div>
+    <div class="action-item">
+      <div class="action-body">
+        <div class="action-id">[0608-3]</div>
+        <div class="action-title">&#x1F680; NTT Data &mdash; Schedule follow-up with Boris Bohn to scope data needs + credit-based pricing for Modelizer</div>
+        <div class="action-meta"><span class="urgency urgency-high">HIGH</span> Nick Johnson &middot; Boris is new Head of GTM (DACH), ready to re-engage on lapsed contract. Co-own with AE David Garcia Thomas. Define data points needed, run pricing through consumption model.</div>
       </div>
-      <div class="action-item medium">
-        <div class="action-meta"><span class="urgency medium">MEDIUM</span> <span class="action-owner">Nick Johnson + David Garcia Thomas</span> · Softcat</div>
-        <div class="action-title">Complete data pricing ticket — Americas + Europe breakdown (companies, installs, SMB spend by country)</div>
-        <div class="action-detail">Full dataset multi-year deal in scope. David finalizing ticket; Nick to present to James at Softcat. Key input for multi-million dollar expansion decision.</div>
+    </div>
+    <div class="action-item">
+      <div class="action-body">
+        <div class="action-id">[0608-4]</div>
+        <div class="action-title">&#x1F680; Softcat &mdash; Complete data pricing ticket (Americas + Europe breakdown) for James</div>
+        <div class="action-meta"><span class="urgency urgency-medium">MEDIUM</span> Nick Johnson + David Garcia Thomas &middot; Full-dataset multi-year deal in scope. David finalizing pricing ticket; Nick to present to James at Softcat. Key input for multi-million dollar expansion decision.</div>
       </div>
-      <div class="action-item medium">
-        <div class="action-meta"><span class="urgency medium">MEDIUM</span> <span class="action-owner">Riley Rogers</span> · Intuit</div>
-        <div class="action-title">Confirm June 10 Top Rated announcement materials reach Spencer Adkins (MailChimp) + correct contacts</div>
-        <div class="action-detail">Annabelle out due to layoffs. Spencer Adkins picking up MailChimp. Riley + Natalie Pratt building unified Intuit contacts list (IES + MailChimp).</div>
+    </div>
+    <div class="action-item">
+      <div class="action-body">
+        <div class="action-id">[0608-5]</div>
+        <div class="action-title">&#x1F3C6; Intuit &mdash; Confirm June 10 Top Rated materials reach Spencer Adkins (MailChimp) + correct contacts</div>
+        <div class="action-meta"><span class="urgency urgency-medium">MEDIUM</span> Riley Rogers &middot; Annabelle out due to layoffs; Spencer Adkins picking up MailChimp. Riley + Natalie Pratt building unified Intuit contacts list (IES + MailChimp).</div>
       </div>
-      <div class="action-item medium">
-        <div class="action-meta"><span class="urgency medium">MEDIUM</span> <span class="action-owner">Rani Guy</span> · NetApp</div>
-        <div class="action-title">Review Vibhu's matching logic once shared; validate against HG unmatched/matched files from Ryan Maas</div>
-        <div class="action-detail">Vibhu committed to sharing his matching logic post-call. Compare to HG Layer 3/4 approach. Identify which additional variables (domain, subsidiary, alias) can move rate 51%→65%.</div>
+    </div>
+    <div class="action-item">
+      <div class="action-body">
+        <div class="action-id">[0608-6]</div>
+        <div class="action-title">&#x26A0;&#xFE0F; NetApp &mdash; Review Vibhu&apos;s matching logic + validate against HG unmatched/matched files from Ryan Maas</div>
+        <div class="action-meta"><span class="urgency urgency-medium">MEDIUM</span> Rani Guy &middot; Vibhu to share matching logic post-call. Compare to HG Layer 3/4 approach. Identify which variables (domain, subsidiary, alias) can move match rate 51%&rarr;65%.</div>
       </div>
-    </div>`;
+    </div>
+  `;
 }
