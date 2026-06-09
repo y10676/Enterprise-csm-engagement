@@ -32,6 +32,10 @@ function dayData_2026_06_01() {
         mins: 30, health: 'Healthy',
         nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
         detail: 'AM Hayden Smith organized meeting with Nick, Max Shaw, and Karin/KP Pindle (HG) to pitch account scoring and MCP credits to Lorena Fortuna (Intuit). Hayden prepared scores spreadsheet and pricing calculator. Goal: Lorena requests formal proposal. "Annabelle\'s gone" — prior champion left — creating re-entry window.' },
+      { ts: 'Jun 1 · 10:00 AM', csm: 'pam', account: 'F5 (NGINX)',
+        note: 'NGINX profile fix — reviews going to generic Nginx instead of subscribed Nginx One; Pam to merge + rename',
+        mins: 30, health: 'Healthy', nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Issue',
+        detail: 'Sherry Arnold (F5) convened call with Karthik Krishnaswamy (F5 NGINX product expert). Pam to merge generic Nginx profile into Nginx One and rename. Sherry drafting updated product copy.' },
       { ts: 'Jun 1 · 10:30 AM', csm: 'varun', account: 'Autodesk Inc',
         note: 'Recurring scoring sync — David Guo (Autodesk) going on 12-wk pat. leave Jun 9, introducing UK colleague to Varun',
         mins: 30, health: 'Healthy',
@@ -80,6 +84,7 @@ function dayData_2026_06_01() {
       { csm: 'rani',   account: 'Amazon Web Services (AWS)', health: 'Healthy',  note: 'Project Rubicon support call. HG Quick Desktop demo by Mike Galyen. Mark Fell managing agenda. Francis not needed. $4.6M ARR strategic account healthy.' },
       { csm: 'rani',   account: 'NetApp',                  health: 'Healthy',    note: 'Data matching issue: company name only (no URLs/DUNS). FAI data ticket submitted. Adrian posting Slack update. Matching accuracy limited until FAI resolves.' },
       { csm: 'rani',   account: 'Cisco',                   health: 'Healthy',    note: 'X-cov (Pam Huck\'s account): data evaluation with Michael Xu — account match rate analysis. Cisco Live week. Pam to be briefed. Cisco pulse=Poor, $2.3M ARR.' },
+      { csm: 'pam',   account: 'F5 (NGINX)',              health: 'Healthy',    note: 'Profile attribution fix confirmed — reviews going to generic Nginx vs Nginx One. Pam to merge + rename; Sherry Arnold drafting updated copy.' },
       { csm: 'andy',  account: 'Ever Pure',                health: 'Healthy',    note: 'Biweekly sync (2:00 AM PT, 27 min, Four/Four). Charlie Morgans evaluating HG platform — install/spend data, Snowflake integration, product taxonomy. Missing cloud columns suspected ETL gap. Andy + Angus supporting full onboarding.' },
     ],
   };
@@ -88,13 +93,13 @@ function dayData_2026_06_01() {
 function dayMeta_2026_06_01() {
   return {
     pills: [
-      ['dot-teal',  '12 Calls'],
+      ['dot-teal',  '13 Calls'],
       ['dot-red',   '⚠️ Varun Paternity Leave'],
       ['dot-green', '5 Expansion Signals'],
       ['dot-amber', 'X-Cov: Rani → Cisco'],
       ['dot-grey',  'Mon Jun 1 · 49 Weflow + 1 Four/Four'],
     ],
-    tabs: ['Overview', 'Calls (12)', 'Pulses (12)', 'Action Items (10)'],
+    tabs: ['Overview', 'Calls (13)', 'Pulses (13)', 'Action Items (10)'],
   };
 }
 
@@ -110,7 +115,7 @@ function dayOverviewHTML_2026_06_01() {
     &#x1F504; <strong>Cross-Coverage:</strong> Rani Guy confirmed on Cisco sync (assigned CSM = Pam Huck &middot; pulse=Poor &middot; $2.3M ARR). Pam to be briefed on Michael Xu match-rate findings.
   </div>
   <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
-    &#x1F4C5; <strong>Mon Jun 1 &mdash; 49 Weflow recordings + 1 Four/Four call</strong> &middot; <strong>12 confirmed calls</strong> across 8 CSMs &middot; 1 contextual (Pam/F5) &middot; 3 unconfirmed &middot; First day of June 2026
+    &#x1F4C5; <strong>Mon Jun 1 &mdash; 49 Weflow recordings + 1 Four/Four call</strong> &middot; <strong>13 confirmed calls</strong> across 8 CSMs &middot; 3 unconfirmed &middot; First day of June 2026
   </div>
   <div class="overview-grid">
 
@@ -289,6 +294,14 @@ function dayCallsHTML_2026_06_01() {
         <td style="padding:6px 10px;color:#22c55e;">&#x1F4C8; Expansion</td>
       </tr>
       <tr style="border-bottom:1px solid #1a2030;">
+        <td style="padding:6px 10px;color:#94a3b8;">10:00 AM</td>
+        <td style="padding:6px 10px;"><span style="background:#4a1942;color:#f9a8d4;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;">Pam</span></td>
+        <td style="padding:6px 10px;color:#e2e8f0;">F5 (NGINX)</td>
+        <td style="padding:6px 10px;color:#64748b;">30m</td>
+        <td style="padding:6px 10px;color:#94a3b8;">NGINX profile fix — reviews going to generic Nginx instead of Nginx One; Pam to merge + rename</td>
+        <td style="padding:6px 10px;color:#22c55e;">&#x1F7E2; Healthy</td>
+      </tr>
+      <tr style="border-bottom:1px solid #1a2030;">
         <td style="padding:6px 10px;color:#94a3b8;">10:30 AM</td>
         <td style="padding:6px 10px;"><span style="background:#3a1f1a;color:#fca5a5;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;">Varun</span></td>
         <td style="padding:6px 10px;color:#e2e8f0;">Autodesk Inc</td>
@@ -386,6 +399,10 @@ function dayPulsesHTML_2026_06_01() {
       opp:'Vitally Pulse &mdash; Jun 1 Call (X-cov &middot; Pam Huck)', arr:'Enterprise &middot; Rani Guy (covering Pam Huck)', csmlbl:'Rani Guy (X-cov)',
       change:'Jun 1 &middot; Check-in &mdash; Data file review',
       excerpt:'6/1 RG (x-cov for Pam): Data file review with Michael Xu (2:00 PM PT, 30 min). HG account match rates under evaluation during Cisco Live week. Rani covering Pam. Pam to be briefed on findings. Cisco pulse = Poor, $2.3M ARR. Follow-up needed.' },
+    { csm:'pam',    health:'Healthy',    account:'F5 (NGINX)',
+      opp:'Vitally Pulse — Jun 1 Call', arr:'Enterprise · Pam Huck', csmlbl:'Pam Huck',
+      change:'Jun 1 · Issue — NGINX profile attribution',
+      excerpt:'6/1 PH: NGINX profile fix call (10:00 AM PT, 30 min). Reviews going to generic Nginx product instead of subscribed Nginx One. Sherry Arnold (F5) + Karthik Krishnaswamy on call. Pam to merge + rename. Sherry drafting updated copy.' },
   ];
   const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
   const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
@@ -434,7 +451,7 @@ function weeklyOrMonthlyHTML_2026_06_01() {
         Atisha Waghela: <strong style="color:#0ea5e9;">1</strong><br>
         Varun Tiwari: <strong style="color:#0ea5e9;">1</strong><br>
         Riley Rogers: <strong style="color:#0ea5e9;">1</strong><br>
-        Pam Huck: <strong style="color:#64748b;">1 (contextual)</strong><br>
+        Pam Huck: <strong style="color:#0ea5e9;">3</strong><br>
         Divyam Dewan: <strong style="color:#475569;">0</strong><br>
         Andy Lim: <strong style="color:#475569;">0</strong>
       </div>
@@ -522,6 +539,14 @@ function dayData_2026_06_02() {
         mins: 30, health: 'Healthy', nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
         detail: 'Riley\'s first meeting with Paycom team. Met Larisha Hunter (new contact), plus Peyton VanCuren, Katie Lenhart, Alexis Correa. Paycom won TrustRadius Top Rated — automated media kit email not confirmed received by Katie or Larisha. TrustRadius AI webinar well-received by Peyton.',
       },
+      { ts: 'Jun 2 · 7:00 AM', csm: 'pam', account: 'Cisco',
+        note: 'FY27 planning sync — Cisco not renewing 2-yr contract; wants quarterly extension through Jul 25; $200K bridge ARR secured',
+        mins: 30, health: 'Concerning', nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Check-in',
+        detail: 'Pam Huck met with Matthew Sallis + Romana Klinger (Cisco) for FY27 planning. Cisco will not renew 2-year deal; requesting quarterly extension through July 2025. $200K bridge ARR confirmed. Renewal risk flagged.' },
+      { ts: 'Jun 2 · 9:00 AM', csm: 'pam', account: 'Cisco',
+        note: 'Cisco Live Day 1 update — 100+ reviews milestone; IDL/data strategy with Matt Sallis & Romana Klinger',
+        mins: 21, health: 'Healthy', nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Pam Huck ran Cisco Live Day 1 debrief. 100+ reviews hit during conference. IDL data strategy and tech spend categories discussed. Positive momentum.' },
     ],
     pulses: [
       { csm: 'nick',  account: 'Accenture',           health: 'Concerning', note: 'Renewal contract in approvals. Avanade access expansion (~$100K/annum) flagged 24-month term concern. Kelly Gumber to revert after internal check. Watch for renewal delay risk.' },
@@ -532,6 +557,8 @@ function dayData_2026_06_02() {
       { csm: 'rani',  account: 'Meraki (Cisco)',        health: 'Concerning', note: 'Onboarding sync. Platform login issue flagged at call start — engineering working on fix. Melanie already in platform. AI account brief demo well-received as top use case.' },
       { csm: 'nick',  account: 'SAP Inc',              health: 'Healthy',    note: 'Biweekly sync. Product mapping refresh (RGIF updated counts) delivered. Shipra Chaudhary on MCP testing — early phase, next steps TBD. Rafiq absent. Steady cadence.' },
       { csm: 'riley', account: 'Paycom Software Inc',  health: 'Healthy',    note: 'CSM intro call. Met Larisha Hunter (new contact). Paycom won Top Rated — media kit follow-up needed for Katie Lenhart + Larisha. TrustRadius AI webinar well-received by Peyton.' },
+      { csm: 'pam',  account: 'Cisco',                  health: 'Concerning', note: 'FY27 planning sync — Cisco not renewing 2-yr; quarterly extension through Jul 25 secured. $200K bridge ARR. Renewal risk active.' },
+      { csm: 'pam',  account: 'Cisco',                  health: 'Healthy',    note: 'Cisco Live Day 1 debrief — 100+ reviews hit. IDL/data strategy reviewed with Matt Sallis + Romana Klinger. Positive momentum.' },
     ]
   };
 }
@@ -539,12 +566,12 @@ function dayData_2026_06_02() {
 function dayMeta_2026_06_02() {
   return {
     pills: [
-      ['dot-teal',  '8 Calls'],
+      ['dot-teal',  '10 Calls'],
       ['dot-amber', '⚠️ Platform Issue · Meraki login'],
       ['dot-red',   '2 Watch Signals'],
       ['dot-grey',  'Tue Jun 2 · 76 recordings scanned'],
     ],
-    tabs: ['Overview', 'Calls (8)', 'Pulses (8)', 'Action Items (7)'],
+    tabs: ['Overview', 'Calls (10)', 'Pulses (10)', 'Action Items (7)'],
   };
 }
 
@@ -557,7 +584,7 @@ function dayOverviewHTML_2026_06_02() {
     &#x26A0;&#xFE0F; <strong>Accenture Renewal Watch:</strong> Kelly Gumber flagged 24-month minimum term concern for Avanade expansion access (~$100K/annum additional). Contract in approvals. David Garcia Thomas (HG AM, London) presenting justification. Resolution TBD.
   </div>
   <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
-    &#x1F4C5; <strong>Tue Jun 2 &mdash; 76 recordings scanned</strong> via SFDC SOQL &middot; <strong>8 confirmed calls</strong> across 4 CSMs &middot; 5 unconfirmed (no transcript) &middot; 1 internal HG meeting excluded
+    &#x1F4C5; <strong>Tue Jun 2 &mdash; 76 recordings scanned</strong> via SFDC SOQL &middot; <strong>10 confirmed calls</strong> across 5 CSMs &middot; 3 unconfirmed (no transcript) &middot; 1 internal HG meeting excluded
   </div>
   <div class="overview-grid">
 
@@ -630,17 +657,18 @@ function dayOverviewHTML_2026_06_02() {
       <div class="csm-account-note">2 Adobe SFDC events (GTM Tool Review + New Role Discussion) &mdash; no transcript on any recording. Calls may have occurred without Weflow transcript.</div>
     </div>
 
-    <div class="csm-card no-calls" data-csm="pam">
+    <div class="csm-card has-calls" data-csm="pam">
+      <span class="call-badge">2 CALLS</span>
       <div class="csm-card-header">
-        <div class="avatar av-grey">PH</div>
+        <div class="avatar" style="background:#4a1942;color:#f9a8d4;">PH</div>
         <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
       </div>
       <div class="csm-metrics">
-        <div><div class="metric-num m-grey">0</div><div class="metric-lbl">Direct</div></div>
+        <div><div class="metric-num" style="color:#f9a8d4;">2</div><div class="metric-lbl">Direct</div></div>
         <div><div class="metric-num m-grey">2</div><div class="metric-lbl">Events</div></div>
-        <div><div class="metric-num m-grey">0</div><div class="metric-lbl">Confirmed</div></div>
+        <div><div class="metric-num" style="color:#f9a8d4;">2</div><div class="metric-lbl">Confirmed</div></div>
       </div>
-      <div class="csm-account-note">2 Cisco SFDC events (TR Quick Sync 7AM + TR Logistics Sync 9AM) &mdash; no transcript on either recording. Calls likely held but unconfirmed.</div>
+      <div class="csm-account-note">Cisco: 2 confirmed calls (7:00 AM FY27 planning — bridge ARR secured; 9:00 AM Cisco Live Day 1 — 100+ reviews). Transcript-confirmed via Weflow.</div>
     </div>
 
     <div class="csm-card no-calls" data-csm="atisha">
@@ -708,6 +736,14 @@ function dayCallsHTML_2026_06_02() {
         <td style="padding:6px 10px;color:#22c55e;">&#x1F7E2; Healthy</td>
       </tr>
       <tr style="border-bottom:1px solid #1a2030;">
+        <td style="padding:6px 10px;color:#94a3b8;">7:00 AM</td>
+        <td style="padding:6px 10px;"><span style="background:#4a1942;color:#f9a8d4;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;">Pam</span></td>
+        <td style="padding:6px 10px;color:#e2e8f0;">Cisco</td>
+        <td style="padding:6px 10px;color:#64748b;">30m</td>
+        <td style="padding:6px 10px;color:#94a3b8;">FY27 planning — Cisco not renewing 2-yr; quarterly extension through Jul 25; $200K bridge ARR secured</td>
+        <td style="padding:6px 10px;color:#f59e0b;">&#x1F7E1; Watch</td>
+      </tr>
+      <tr style="border-bottom:1px solid #1a2030;">
         <td style="padding:6px 10px;color:#94a3b8;">7:30 AM</td>
         <td style="padding:6px 10px;"><span style="background:#1e3a5f;color:#7dd3fc;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;">Nick</span></td>
         <td style="padding:6px 10px;color:#e2e8f0;">IBM</td>
@@ -738,6 +774,14 @@ function dayCallsHTML_2026_06_02() {
         <td style="padding:6px 10px;color:#64748b;">30m</td>
         <td style="padding:6px 10px;color:#94a3b8;">Onboarding sync &mdash; &#x26A0;&#xFE0F; platform login issue at call start; AI account brief demo well-received</td>
         <td style="padding:6px 10px;color:#f59e0b;">&#x1F7E1; Watch</td>
+      </tr>
+      <tr style="border-bottom:1px solid #1a2030;">
+        <td style="padding:6px 10px;color:#94a3b8;">9:00 AM</td>
+        <td style="padding:6px 10px;"><span style="background:#4a1942;color:#f9a8d4;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;">Pam</span></td>
+        <td style="padding:6px 10px;color:#e2e8f0;">Cisco</td>
+        <td style="padding:6px 10px;color:#64748b;">21m</td>
+        <td style="padding:6px 10px;color:#94a3b8;">Cisco Live Day 1 update — 100+ reviews milestone; IDL/data strategy with Matt Sallis & Romana Klinger</td>
+        <td style="padding:6px 10px;color:#22c55e;">&#x1F7E2; Healthy</td>
       </tr>
       <tr style="border-bottom:1px solid #1a2030;">
         <td style="padding:6px 10px;color:#94a3b8;">9:30 AM</td>
@@ -793,6 +837,14 @@ function dayPulsesHTML_2026_06_02() {
       opp:'Vitally Pulse &mdash; Jun 2 Call', arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
       change:'Jun 2 &middot; Check-in &mdash; CSM intro + Top Rated',
       excerpt:'6/2 RR: CSM intro call replacing Sasha (left Jan 2026) (11:00 AM PT, 30 min). Met Larisha Hunter (new Paycom contact) for the first time. Peyton VanCuren, Katie Lenhart, Alexis Correa also attended. Paycom won TrustRadius Top Rated — media kit follow-up needed for Katie + Larisha. TrustRadius AI webinar well-received by Peyton.' },
+    { csm:'pam',    health:'Concerning', account:'Cisco',
+      opp:'Vitally Pulse — Jun 2 FY27 Sync', arr:'Enterprise · Pam Huck', csmlbl:'Pam Huck',
+      change:'Jun 2 · Check-in — FY27 renewal risk',
+      excerpt:'6/2 PH: FY27 planning sync (7:00 AM PT, 30 min). Cisco not renewing 2-year deal. Requesting quarterly extension through Jul 2025. $200K bridge ARR secured. Matthew Sallis + Romana Klinger on call. Renewal risk flagged.' },
+    { csm:'pam',    health:'Healthy',    account:'Cisco',
+      opp:'Vitally Pulse — Jun 2 Cisco Live', arr:'Enterprise · Pam Huck', csmlbl:'Pam Huck',
+      change:'Jun 2 · Check-in — Cisco Live Day 1',
+      excerpt:'6/2 PH: Cisco Live Day 1 debrief (9:00 AM PT, 21 min). 100+ reviews hit during conference. IDL data strategy and tech spend categories reviewed with Matt Sallis + Romana Klinger. Positive momentum.' },
   ];
   const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
   const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
