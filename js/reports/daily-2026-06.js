@@ -1835,19 +1835,19 @@ function dayActionsHTML_2026_06_05() {
 function dayData_2026_06_08() {
   return {
     calls: [
-      { csm: 'Nick Johnson',   account: 'NTT Data',   time: '1:30 AM',  duration: '30m', nature: 'ad-hoc',    initiator: 'customer', purpose: 'expansion' },
-      { csm: 'Nick Johnson',   account: 'Softcat',    time: '6:30 AM',  duration: '30m', nature: 'recurring', initiator: 'hg-cs',    purpose: 'expansion' },
-      { csm: 'Rani Guy',       account: 'NetApp',     time: '9:00 AM',  duration: '60m', nature: 'ad-hoc',    initiator: 'hg-cs',    purpose: 'check-in' },
-      { csm: 'Riley Rogers',   account: 'Intuit',     time: '9:30 AM',  duration: '30m', nature: 'recurring', initiator: 'hg-cs',    purpose: 'check-in' },
-      { csm: 'Divyam Dewan',   account: 'BILL',       time: '10:00 AM', duration: '30m', nature: 'recurring', initiator: 'customer', purpose: 'issue' },
-      { csm: 'Rani Guy',       account: 'NetApp',     time: '1:00 PM',  duration: '25m', nature: 'recurring', initiator: 'hg-cs',    purpose: 'expansion' }
+      { csm: 'nick',   account: 'NTT Data',   ts: 'Jun 8 · 1:30 AM',  mins: 30, health: 'Healthy',    nature: 'Ad-hoc',    initiator: 'Customer', purpose: 'Expansion',  detail: 'Boris Bohn (new Head of GTM, DACH) re-engaging lapsed HG data contract. HG proposed credit-based consumption model for Modelizer ABM platform. Follow-up needed to scope exact data needs.' },
+      { csm: 'nick',   account: 'Softcat',    ts: 'Jun 8 · 6:30 AM',  mins: 30, health: 'Healthy',    nature: 'Recurring', initiator: 'HG CS',    purpose: 'Expansion',  detail: 'Biweekly sync. Softcat evaluating Americas + Europe data expansion. Full-dataset multi-year deal at ~$6M/yr discussed. Nick + AE David Garcia Thomas building pricing ticket.' },
+      { csm: 'rani',   account: 'NetApp',     ts: 'Jun 8 · 9:00 AM',  mins: 60, health: 'Some Risk',  nature: 'Ad-hoc',    initiator: 'HG CS',    purpose: 'Check-in',   detail: 'Deep dive on 5-layer matching methodology. Current rate 51% (up from 30%), target 80%. HG data files shared by Ryan Maas. Rani to send firmographic data format follow-up. Aug 2026 renewal ($840K) at risk.' },
+      { csm: 'riley',  account: 'Intuit',     ts: 'Jun 8 · 9:30 AM',  mins: 30, health: 'Healthy',    nature: 'Recurring', initiator: 'HG CS',    purpose: 'Check-in',   detail: 'TrustRadius IES CSM Sync. June 10 Top Rated announcement on track. Intuit layoffs affected contacts (Annabelle out, Spencer Adkins picking up MailChimp). Natalie building unified contacts list.' },
+      { csm: 'divyam', account: 'BILL',       ts: 'Jun 8 · 10:00 AM', mins: 30, health: 'Some Risk',  nature: 'Recurring', initiator: 'Customer', purpose: 'Issue',      detail: 'Weekly sync. MadKudu model simulation expected today. Customer has 1-week window to push to Salesforce (Jun 15-17). Eric Nguyen needs rollout best-practices guide. Divyam following up with Peter.' },
+      { csm: 'rani',   account: 'NetApp',     ts: 'Jun 8 · 1:00 PM',  mins: 25, health: 'Healthy',    nature: 'Recurring', initiator: 'HG CS',    purpose: 'Expansion',  detail: 'Weekly sync / post-morning debrief. Planning AI spend + SMB spend data addition to push match rate 51% to 65%+. AI spend model updating end of June. Rani sending follow-up data file.' }
     ],
     pulses: [
-      { account: 'NTT Data',  csm: 'Nick Johnson',  signal: 'expansion',  note: 'Boris Bohn re-engaging lapsed contract; credit-based model proposed' },
-      { account: 'Softcat',   csm: 'Nick Johnson',  signal: 'expansion',  note: 'Multi-million dollar Americas+Europe data expansion in scope' },
-      { account: 'NetApp',    csm: 'Rani Guy',      signal: 'concerning', note: 'Match rate 51% vs 80% target; Aug 2026 renewal ($840K) at risk; AI+SMB spend being added' },
-      { account: 'Intuit',    csm: 'Riley Rogers',  signal: 'healthy',    note: 'Top Rated June 10 on track; updating contact list post-Intuit layoffs' },
-      { account: 'BILL',      csm: 'Divyam Dewan',  signal: 'concerning', note: 'MadKudu simulation due today; 1-week deadline to push to SFDC' }
+      { account: 'NTT Data',  csm: 'nick',   health: 'Healthy',    note: 'Boris Bohn re-engaging lapsed contract; credit-based model proposed for Modelizer' },
+      { account: 'Softcat',   csm: 'nick',   health: 'Healthy',    note: 'Multi-million dollar Americas+Europe data expansion in scope; pricing ticket in progress' },
+      { account: 'NetApp',    csm: 'rani',   health: 'Some Risk',  note: 'Match rate 51% vs 80% target; Aug 2026 renewal ($840K) active; AI+SMB spend data being added' },
+      { account: 'Intuit',    csm: 'riley',  health: 'Healthy',    note: 'Top Rated June 10 on track; updating contact list post-Intuit layoffs (Spencer Adkins picking up)' },
+      { account: 'BILL',      csm: 'divyam', health: 'Some Risk',  note: 'MadKudu simulation expected Jun 8; 1-week SFDC push deadline (Jun 15-17)' }
     ]
   };
 }
@@ -1855,12 +1855,12 @@ function dayData_2026_06_08() {
 function dayMeta_2026_06_08() {
   return {
     pills: [
-      { label: '6 Confirmed Calls', type: 'confirmed' },
-      { label: '4 CSMs Active', type: 'info' },
-      { label: '3 Expansion Signals', type: 'expansion' },
-      { label: '3 Unconfirmed', type: 'unconfirmed' }
+      ['dot-teal',   '6 Calls'],
+      ['dot-purple', '3 Expansion'],
+      ['dot-yellow', '2 At Risk'],
+      ['dot-grey',   'Mon Jun 8'],
     ],
-    tabs: ['overview', 'calls', 'pulses', 'actions']
+    tabs: ['Overview', 'Calls (6)', 'Pulses (5)', 'Action Items (6)'],
   };
 }
 
