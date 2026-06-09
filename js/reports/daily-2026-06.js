@@ -1827,3 +1827,196 @@ function dayActionsHTML_2026_06_05() {
     </div>
   `;
 }
+
+// ============================================================
+// June 8, 2026
+// ============================================================
+
+function dayData_2026_06_08() {
+  return {
+    calls: [
+      { csm: 'Nick Johnson',   account: 'NTT Data',   time: '1:30 AM',  duration: '30m', nature: 'ad-hoc',    initiator: 'customer', purpose: 'expansion' },
+      { csm: 'Nick Johnson',   account: 'Softcat',    time: '6:30 AM',  duration: '30m', nature: 'recurring', initiator: 'hg-cs',    purpose: 'expansion' },
+      { csm: 'Rani Guy',       account: 'NetApp',     time: '9:00 AM',  duration: '60m', nature: 'ad-hoc',    initiator: 'hg-cs',    purpose: 'check-in' },
+      { csm: 'Riley Rogers',   account: 'Intuit',     time: '9:30 AM',  duration: '30m', nature: 'recurring', initiator: 'hg-cs',    purpose: 'check-in' },
+      { csm: 'Divyam Dewan',   account: 'BILL',       time: '10:00 AM', duration: '30m', nature: 'recurring', initiator: 'customer', purpose: 'issue' },
+      { csm: 'Rani Guy',       account: 'NetApp',     time: '1:00 PM',  duration: '25m', nature: 'recurring', initiator: 'hg-cs',    purpose: 'expansion' }
+    ],
+    pulses: [
+      { account: 'NTT Data',  csm: 'Nick Johnson',  signal: 'expansion',  note: 'Boris Bohn re-engaging lapsed contract; credit-based model proposed' },
+      { account: 'Softcat',   csm: 'Nick Johnson',  signal: 'expansion',  note: 'Multi-million dollar Americas+Europe data expansion in scope' },
+      { account: 'NetApp',    csm: 'Rani Guy',      signal: 'concerning', note: 'Match rate 51% vs 80% target; Aug 2026 renewal ($840K) at risk; AI+SMB spend being added' },
+      { account: 'Intuit',    csm: 'Riley Rogers',  signal: 'healthy',    note: 'Top Rated June 10 on track; updating contact list post-Intuit layoffs' },
+      { account: 'BILL',      csm: 'Divyam Dewan',  signal: 'concerning', note: 'MadKudu simulation due today; 1-week deadline to push to SFDC' }
+    ]
+  };
+}
+
+function dayMeta_2026_06_08() {
+  return {
+    pills: [
+      { label: '6 Confirmed Calls', type: 'confirmed' },
+      { label: '4 CSMs Active', type: 'info' },
+      { label: '3 Expansion Signals', type: 'expansion' },
+      { label: '3 Unconfirmed', type: 'unconfirmed' }
+    ],
+    tabs: ['overview', 'calls', 'pulses', 'actions']
+  };
+}
+
+function dayOverviewHTML_2026_06_08() {
+  return `
+    <div class="overview-header">
+      <h2>Monday, June 8, 2026</h2>
+      <p class="overview-subtitle">6 confirmed CSM calls · 4 active CSMs · 3 expansion signals · NetApp renewal at risk (Aug 2026)</p>
+    </div>
+    <div class="kpi-row">
+      <div class="kpi-card"><div class="kpi-val">6</div><div class="kpi-label">Confirmed Calls</div></div>
+      <div class="kpi-card"><div class="kpi-val">4</div><div class="kpi-label">CSMs Active</div></div>
+      <div class="kpi-card green"><div class="kpi-val">3</div><div class="kpi-label">Expansion Signals</div></div>
+      <div class="kpi-card yellow"><div class="kpi-val">2</div><div class="kpi-label">At-Risk Signals</div></div>
+    </div>
+    <div class="alert-list">
+      <div class="alert expansion">🚀 <strong>NTT Data (Nick):</strong> Boris Bohn re-engaging lapsed contract — credit-based model proposed. Strong expansion opportunity.</div>
+      <div class="alert expansion">💰 <strong>Softcat (Nick):</strong> Multi-million dollar Americas + Europe data expansion. Nick + AE David building pricing ticket.</div>
+      <div class="alert expansion">🤖 <strong>NetApp AI Spend (Rani):</strong> Adding AI spend layer + SMB spend to improve match rate 51%→65%+. 2nd NetApp call today.</div>
+      <div class="alert concerning">⚠️ <strong>NetApp Renewal (Rani):</strong> Match rate 51% vs 80% target. $840K renewal due Aug 2026. Active remediation underway.</div>
+      <div class="alert concerning">⏰ <strong>BILL MadKudu (Divyam):</strong> Simulation results due today; customer has 1-week window to push to SFDC (Jun 15–17).</div>
+      <div class="alert info">📋 <strong>Intuit Top Rated (Riley):</strong> June 10 announcement on track. Coordinating contact changes after Intuit layoffs (Annabelle out).</div>
+    </div>
+    <div class="no-calls-section">
+      <h3>CSMs with no confirmed calls</h3>
+      <div class="no-calls-chips">
+        <span class="no-calls-chip">Varun Tiwari</span>
+        <span class="no-calls-chip">Pam Huck</span>
+        <span class="no-calls-chip">Andy Lim</span>
+        <span class="no-calls-chip">Atisha Waghela</span>
+      </div>
+    </div>`;
+}
+
+function dayCallsHTML_2026_06_08() {
+  return `
+    <table class="calls-table">
+      <thead>
+        <tr>
+          <th>Time (PT)</th><th>CSM</th><th>Account</th><th>Dur</th>
+          <th>Nature</th><th>Initiated By</th><th>Purpose</th><th>Signal</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1:30 AM</td>
+          <td><span class="csm-chip nick">Nick Johnson</span></td>
+          <td>NTT Data</td><td>30m</td><td>Ad-hoc</td><td>Customer</td><td>Expansion</td>
+          <td><span class="signal expansion">Expansion 🟢</span></td>
+        </tr>
+        <tr>
+          <td>6:30 AM</td>
+          <td><span class="csm-chip nick">Nick Johnson</span></td>
+          <td>Softcat</td><td>30m</td><td>Recurring</td><td>HG CS</td><td>Expansion</td>
+          <td><span class="signal expansion">Expansion 🟢</span></td>
+        </tr>
+        <tr>
+          <td>9:00 AM</td>
+          <td><span class="csm-chip rani">Rani Guy</span></td>
+          <td>NetApp</td><td>60m</td><td>Ad-hoc</td><td>HG CS</td><td>Check-in</td>
+          <td><span class="signal concerning">At Risk ⚠️</span></td>
+        </tr>
+        <tr>
+          <td>9:30 AM</td>
+          <td><span class="csm-chip riley">Riley Rogers</span></td>
+          <td>Intuit (TR)</td><td>30m</td><td>Recurring</td><td>HG CS</td><td>Check-in</td>
+          <td><span class="signal check-in">Check-in 🔵</span></td>
+        </tr>
+        <tr>
+          <td>10:00 AM</td>
+          <td><span class="csm-chip divyam">Divyam Dewan</span></td>
+          <td>BILL</td><td>30m</td><td>Recurring</td><td>Customer</td><td>Issue</td>
+          <td><span class="signal issue">Issue ⏰</span></td>
+        </tr>
+        <tr>
+          <td>1:00 PM</td>
+          <td><span class="csm-chip rani">Rani Guy</span></td>
+          <td>NetApp</td><td>25m</td><td>Recurring</td><td>HG CS</td><td>Check-in + Expansion</td>
+          <td><span class="signal expansion">Expansion 🟢</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <h3 style="margin-top:24px;">Unconfirmed — No Transcript</h3>
+    <table class="calls-table" style="margin-top:8px;">
+      <thead><tr><th>CSM</th><th>Account / Meeting</th><th>Time (PT)</th><th>Note</th></tr></thead>
+      <tbody>
+        <tr><td><span class="csm-chip nick">Nick Johnson</span></td><td>HG onsite debrief check ins</td><td>5:00 AM</td><td>No transcript — internal debrief</td></tr>
+        <tr><td><span class="csm-chip atisha">Atisha W.</span></td><td>Intel Weekly Sync</td><td>7:00 AM</td><td>No transcript — CSM event owner, not speaker-verified</td></tr>
+        <tr><td><span class="csm-chip riley">Riley Rogers</span></td><td>Hayden/Max w/ Marisol @Intuit</td><td>12:30 PM</td><td>No transcript — AM-led, Riley event owner</td></tr>
+      </tbody>
+    </table>`;
+}
+
+function dayPulsesHTML_2026_06_08() {
+  return `
+    <div class="pulse-grid">
+      <div class="pulse-card expansion">
+        <div class="pulse-header"><span class="pulse-account">NTT Data</span><span class="signal expansion">Expansion</span></div>
+        <div class="pulse-csm">Nick Johnson · 1:30 AM PT</div>
+        <div class="pulse-note">Boris Bohn (new Head of GTM, DACH) reached out to re-engage a lapsed HG data contract. HG proposing credit-based consumption model for Modelizer ABM platform. Strong re-engagement opportunity — follow-up to scope exact data needs and pricing.</div>
+      </div>
+      <div class="pulse-card expansion">
+        <div class="pulse-header"><span class="pulse-account">Softcat</span><span class="signal expansion">Expansion</span></div>
+        <div class="pulse-csm">Nick Johnson · 6:30 AM PT</div>
+        <div class="pulse-note">Softcat evaluating Americas + Europe data expansion. Nick + AE David Garcia Thomas building pricing ticket with full dataset breakdown. Multi-year deal in scope (~$6M/yr discussed). James to receive pricing once complete.</div>
+      </div>
+      <div class="pulse-card concerning">
+        <div class="pulse-header"><span class="pulse-account">NetApp</span><span class="signal concerning">At Risk</span></div>
+        <div class="pulse-csm">Rani Guy · 9:00 AM + 1:00 PM PT</div>
+        <div class="pulse-note">Two calls today. Morning: deep dive on 5-layer matching, current rate 51% vs 80% target. Afternoon: debrief + expansion plan (AI spend + SMB data). Aug 2026 renewal ($840K) in focus. Rani sending follow-up file with firmographic + SMB + AI spend data this week.</div>
+      </div>
+      <div class="pulse-card healthy">
+        <div class="pulse-header"><span class="pulse-account">Intuit (TrustRadius)</span><span class="signal check-in">Check-in</span></div>
+        <div class="pulse-csm">Riley Rogers · 9:30 AM PT</div>
+        <div class="pulse-note">June 10 Top Rated announcement on track. Intuit layoffs affected contacts (Annabelle out); Spencer Adkins picking up MailChimp. Riley + Natalie Pratt building unified contacts list. Marisol posted early — Riley updating process.</div>
+      </div>
+      <div class="pulse-card concerning">
+        <div class="pulse-header"><span class="pulse-account">BILL</span><span class="signal issue">Issue</span></div>
+        <div class="pulse-csm">Divyam Dewan · 10:00 AM PT</div>
+        <div class="pulse-note">MadKudu model simulation expected today (Jun 8). Customer has 1-week deadline to push to Salesforce (Jun 15–17). Eric Nguyen needs rollout best-practices guide. Divyam following up with Peter on simulation timeline and data flow duration.</div>
+      </div>
+    </div>`;
+}
+
+function dayActionsHTML_2026_06_08() {
+  return `
+    <div class="action-list">
+      <div class="action-item high">
+        <div class="action-meta"><span class="urgency high">HIGH</span> <span class="action-owner">Divyam Dewan</span> · BILL</div>
+        <div class="action-title">Follow up with Peter on MadKudu simulation results + share rollout best-practices guide with Eric</div>
+        <div class="action-detail">Simulation results expected Jun 8; SFDC push must happen by Jun 15–17. Eric needs best-practices guide for rollout and documentation lead time. Confirm timeline with Peter today.</div>
+      </div>
+      <div class="action-item high">
+        <div class="action-meta"><span class="urgency high">HIGH</span> <span class="action-owner">Rani Guy</span> · NetApp</div>
+        <div class="action-title">Send firmographic + SMB spend + AI spend data matching file to NetApp (Elise / Vibhu)</div>
+        <div class="action-detail">Per commitment on 1:00 PM call. Provide base firmographic file + SMB spend + regular spend. AI spend model updating end of June — include timeline. Goal: push match rate from 51% to 65%+.</div>
+      </div>
+      <div class="action-item high">
+        <div class="action-meta"><span class="urgency high">HIGH</span> <span class="action-owner">Nick Johnson</span> · NTT Data</div>
+        <div class="action-title">Schedule follow-up with Boris Bohn to scope data needs and credit-based pricing for Modelizer</div>
+        <div class="action-detail">Boris is new Head of GTM (DACH), ready to re-engage on lapsed contract. Co-own with AE David Garcia Thomas. Define specific data points needed, run pricing through consumption model.</div>
+      </div>
+      <div class="action-item medium">
+        <div class="action-meta"><span class="urgency medium">MEDIUM</span> <span class="action-owner">Nick Johnson + David Garcia Thomas</span> · Softcat</div>
+        <div class="action-title">Complete data pricing ticket — Americas + Europe breakdown (companies, installs, SMB spend by country)</div>
+        <div class="action-detail">Full dataset multi-year deal in scope. David finalizing ticket; Nick to present to James at Softcat. Key input for multi-million dollar expansion decision.</div>
+      </div>
+      <div class="action-item medium">
+        <div class="action-meta"><span class="urgency medium">MEDIUM</span> <span class="action-owner">Riley Rogers</span> · Intuit</div>
+        <div class="action-title">Confirm June 10 Top Rated announcement materials reach Spencer Adkins (MailChimp) + correct contacts</div>
+        <div class="action-detail">Annabelle out due to layoffs. Spencer Adkins picking up MailChimp. Riley + Natalie Pratt building unified Intuit contacts list (IES + MailChimp).</div>
+      </div>
+      <div class="action-item medium">
+        <div class="action-meta"><span class="urgency medium">MEDIUM</span> <span class="action-owner">Rani Guy</span> · NetApp</div>
+        <div class="action-title">Review Vibhu's matching logic once shared; validate against HG unmatched/matched files from Ryan Maas</div>
+        <div class="action-detail">Vibhu committed to sharing his matching logic post-call. Compare to HG Layer 3/4 approach. Identify which additional variables (domain, subsidiary, alias) can move rate 51%→65%.</div>
+      </div>
+    </div>`;
+}
