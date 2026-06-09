@@ -197,17 +197,18 @@ function dayOverviewHTML_2026_06_01() {
       <div class="csm-account-note">4 SFDC events (Blackbaud, Okta, BILL, Dynatrace) &mdash; 0 transcript-confirmed. BILL: recording, no transcript. Blackbaud: no Divyam in speakers. Dynatrace: no recording found.</div>
     </div>
 
-    <div class="csm-card no-calls" data-csm="pam">
+    <div class="csm-card has-calls" data-csm="pam">
+      <span class="call-badge">1 CALL</span>
       <div class="csm-card-header">
-        <div class="avatar av-grey">PH</div>
+        <div class="avatar" style="background:#4a1942;color:#f9a8d4;">PH</div>
         <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
       </div>
       <div class="csm-metrics">
-        <div><div class="metric-num m-grey">0</div><div class="metric-lbl">Direct</div></div>
+        <div><div class="metric-num" style="color:#f9a8d4;">1</div><div class="metric-lbl">Direct</div></div>
         <div><div class="metric-num m-grey">2</div><div class="metric-lbl">Events</div></div>
-        <div><div class="metric-num m-grey">1*</div><div class="metric-lbl">Contextual</div></div>
+        <div><div class="metric-num m-grey">1</div><div class="metric-lbl">Contextual</div></div>
       </div>
-      <div class="csm-account-note">ADP: recording, no transcript (unconfirmed). F5/NGINX: speaker "Pam" in transcript — contextually confirmed. Cisco: covered by Rani (poor pulse).</div>
+      <div class="csm-account-note">F5/NGINX: confirmed call (10:00 AM, 30 min) — profile attribution fix. ADP: recording, no transcript (unconfirmed). Cisco: covered by Rani (poor pulse).</div>
     </div>
 
     <div class="csm-card has-calls" data-csm="andy">
