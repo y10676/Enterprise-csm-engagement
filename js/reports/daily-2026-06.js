@@ -2110,3 +2110,351 @@ function dayActionsHTML_2026_06_08() {
     </div>
   `;
 }
+
+// ============================================================
+// June 9, 2026
+// 62 recordings scanned · 10 confirmed CSM calls · 5 CSMs active
+// ============================================================
+
+function dayData_2026_06_09() {
+  return {
+    calls: [
+      { ts: 'Jun 9 · 3:30 AM', csm: 'nick', account: 'SAP',
+        note: 'Data upload format issue — CSV encoding troubleshooting',
+        mins: 25, health: 'Concerning',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Issue',
+        detail: 'Customer Adriana Aguiar reached out to Nick Johnson for help with a recurring data upload format issue. The file was not in the correct UTF-8 CSV structure for the HG platform upload tool. Nick walked her through reformatting it live during the session.' },
+      { ts: 'Jun 9 · 7:00 AM', csm: 'divyam', account: 'Paychex / Paycor',
+        note: 'Post-merger account alignment — TrustRadius IDL contract scope',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Divyam Dewan led a monthly sync to align Paychex and Paycor teams following the Paycor acquisition of Paychex. Discussed merged contract status, IDL scope for the combined entity, and introduced the teams to one another. Follow-up call with Scott scheduled to finalize IDL contract scope.' },
+      { ts: 'Jun 9 · 8:00 AM', csm: 'atisha', account: 'RSM US',
+        note: 'Key contact Ben no-show; rescheduled via Ellis for Wed 10:30 AM ET',
+        mins: 30, health: 'Concerning',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Atisha Waghela organized a recurring sync with RSM US but key contact Ben did not attend and had not responded to the email invite. Atisha and Ellis Millwood (RSM) coordinated to reschedule to Wednesday 10:30 AM Eastern. Short call; engagement risk flagged.' },
+      { ts: 'Jun 9 · 9:00 AM', csm: 'divyam', account: 'Adobe',
+        note: 'PE Portfolio data expansion — MCP vs. full data set pricing',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Divyam Dewan joined Mark Fell and Rob Nute (HG) for a working session with the Adobe Private Capital team on PE portfolio data use cases. Discussed MCP capabilities vs. full data set pricing, vendor momentum scores, and constructive metrics. Current contract ~$150K; full data set would run $500K–$1M. Next step: assess whether MCP path meets their needs before scoping a full-data proposal.' },
+      { ts: 'Jun 9 · 9:00 AM', csm: 'nick', account: 'IBM',
+        note: 'Pricing request for GenAI / AI Spend data — market demand gen focus',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Expansion',
+        detail: 'Nick Johnson presented a pricing breakdown for Generative AI and AI Spend data products to David Bush and Leo Zunz (IBM), requested for IBM\'s Select Territory market demand gen program. IBM is evaluating cost for a potential new subscription. Leo ill; Nick to follow up via email with full pricing detail.' },
+      { ts: 'Jun 9 · 11:00 AM', csm: 'riley', account: 'SAP Business Network',
+        note: 'TrustRadius biweekly — POs received, Top Rated prep, market report kickoff',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Riley Rogers held a biweekly TrustRadius sync with SAP Business Network. POs for both the market report and subscription renewal have been received. Team is preparing a blog post for the Top Rated award announcement. Riley confirmed Buyer\'s Choice qualification for fall (11 reviews in 2026 already). Discussed product page updates and plan to drive more reviews for next year\'s Top Rated cycle.' },
+      { ts: 'Jun 9 · 11:30 AM', csm: 'atisha', account: 'Cognizant',
+        note: 'AE-led expansion scoping — churn analytics and buyer propensity modeling',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Atisha Waghela joined Max Shaw (AE) in an exploratory call with Akash Pratap Singh and Sandhya Gangadharan (Cognizant) to scope new HG use cases. Akash\'s manager wants to understand specific use cases: buyer propensity to buy and churn analytics. Existing contract currently in redlining; Atisha supporting to validate value ahead of close. Next step: send scoping materials.' },
+      { ts: 'Jun 9 · 12:30 PM', csm: 'riley', account: 'TriNet',
+        note: 'TrustRadius monthly sync — Top Rated announcement, Buyer\'s Choice status',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Riley Rogers held a monthly TrustRadius sync with TriNet (K. Maxwell and Ashley). TriNet is excited about the upcoming Top Rated announcement (already has a quote ready). Riley confirmed Buyer\'s Choice qualification for fall with 11 reviews in 2026. Discussed planning for next year\'s review campaign to maintain Top Rated status.' },
+      { ts: 'Jun 9 · 12:30 PM', csm: 'atisha', account: 'Treasure AI',
+        note: 'Renewal sync after ~1-year gap — renewal scope + intent/product data use cases',
+        mins: 30, health: 'Concerning',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Atisha Waghela joined Nandini Yamdagni (HG) for a renewal sync with James Weinberg (Treasure AI Senior Director, GTM Systems). James noted it had been about a year since last HG contact. Two topics: upcoming renewal and a new potential data use case (intent categories and product data). Atisha flagged this as a high-value account worth focused re-engagement. Renewal timeline and scope TBD.' },
+      { ts: 'Jun 9 · 2:15 PM', csm: 'rani', account: 'Cisco (Isovalent)',
+        note: 'Onboarding call — introductions post-Cisco Live, team off-site next week',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Rani Guy led an onboarding session with the Cisco Isovalent team (Adrian Escobar and melmoff). Most of the Isovalent team is headed to a Canada off-site next week. Call focused on introductions and relationship-building. Strong rapport established in the opening session.' },
+    ],
+    pulses: [
+      { csm: 'nick', account: 'SAP', health: 'Concerning',
+        note: 'Customer encountered recurring CSV upload format error; Nick walked through UTF-8 encoding fix during session.' },
+      { csm: 'divyam', account: 'Paychex / Paycor', health: 'Healthy',
+        note: 'Monthly merger-alignment sync. IDL contract scope follow-up scheduled with Scott.' },
+      { csm: 'atisha', account: 'RSM US', health: 'Concerning',
+        note: 'Key contact Ben no-show; rescheduled to Wednesday 10:30 AM ET via Ellis Millwood.' },
+      { csm: 'divyam', account: 'Adobe', health: 'Healthy',
+        note: 'Expansion: Adobe Private Capital exploring PE portfolio data. MCP vs. full-data ($500K–$1M) in scope.' },
+      { csm: 'nick', account: 'IBM', health: 'Healthy',
+        note: 'Expansion: IBM evaluating GenAI/AI Spend data pricing for Select Territory market demand gen program.' },
+      { csm: 'riley', account: 'SAP Business Network', health: 'Healthy',
+        note: 'POs received for renewal + market report. Buyer\'s Choice qualified for fall (11 reviews in 2026).' },
+      { csm: 'atisha', account: 'Cognizant', health: 'Healthy',
+        note: 'Expansion: churn analytics and buyer propensity scoping with AE Max Shaw. Contract in redlining.' },
+      { csm: 'riley', account: 'TriNet', health: 'Healthy',
+        note: 'Monthly TR sync — Top Rated announcement imminent. Buyer\'s Choice qualified for fall 2026.' },
+      { csm: 'atisha', account: 'Treasure AI', health: 'Concerning',
+        note: 'Renewal sync after ~1-year gap. First re-engagement; renewal + intent/product data scope TBD.' },
+      { csm: 'rani', account: 'Cisco (Isovalent)', health: 'Healthy',
+        note: 'Onboarding call post-Cisco Live. Strong start; team off-site next week in Canada.' },
+    ],
+  };
+}
+
+function dayMeta_2026_06_09() {
+  return {
+    pills: [
+      ['dot-teal',  '10 Calls'],
+      ['dot-red',   '3 Concerning'],
+      ['dot-amber', '3 Expansion'],
+      ['dot-green', '10 Pulses'],
+      ['dot-grey',  'Tue Jun 9 · 62 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (10)', 'Pulses (10)', 'Action Items (7)'],
+  };
+}
+
+function dayOverviewHTML_2026_06_09() {
+  return `<div class="section-label">Team Activity &mdash; Tuesday June 9, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Tuesday June 9 &mdash; 62 recordings scanned</strong> via SFDC SOQL &middot; <strong>10 confirmed calls</strong> across 5 CSMs &middot; 3 expansion signals (Adobe APC, IBM, Cognizant) &middot; 3 concerning (SAP upload issue, RSM no-show, Treasure AI renewal after ~1-year gap)
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>Expansion signals:</strong> Adobe Private Capital exploring PE portfolio data ($500K–$1M full-data vs. MCP path) &middot; IBM evaluating GenAI/AI Spend pricing for Select Territory demand gen &middot; Cognizant scoping churn analytics + propensity modeling (contract in redlining)
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 14px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>Attention:</strong> Treasure AI renewal sync after ~1-year engagement gap &mdash; James Weinberg noted it&apos;s been about a year since last HG contact; renewal scope and pricing TBD &middot; RSM key contact Ben no-show on scheduled sync; rescheduled to Wed 10:30 AM ET
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">SAP Business Network (TrustRadius biweekly, POs received) &middot; TriNet (Top Rated announcement, Buyer&apos;s Choice qualified)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">55m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">SAP (upload format issue &#x1F534;) &middot; IBM (GenAI/AI Spend pricing expansion &#x1F4C8;)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Paychex/Paycor (merger alignment monthly) &middot; Adobe Private Capital (PE data expansion &#x1F4C8;)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Cisco Isovalent (onboarding call post-Cisco Live)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">3 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">3</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">2</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">90m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">RSM US (key contact no-show &#x1F534;) &middot; Cognizant (expansion scoping &#x1F4C8;) &middot; Treasure AI (renewal after ~1-yr gap &#x1F534;)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="varun">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 events scheduled &mdash; no recordings (Unum biweekly, MongoDB recurring sync)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 internal team sync (HG Insights / Mark Fell Ops) &mdash; excluded as internal</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">3 events scheduled &mdash; no confirmed recordings (memoryBlue office hours, Veracode, SAS Institute Agentic Demo)</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_06_09() {
+  return `
+  <div style="background:#1c1f26;border:1px solid #334155;border-radius:6px;padding:8px 14px;margin:0 0 12px 0;font-size:12px;color:#94a3b8;">
+    &#x1F4CB; 10 confirmed calls &middot; Table auto-generated from <code>dayData</code> &middot; Sortable by CSM, Account, Signal, Purpose
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>Unconfirmed / No Transcript:</strong> Softcat (Nick, 1:30 AM PT &mdash; no transcript); memoryBlue Office Hours (Andy, 6:00 AM PT &mdash; no transcript); HG Insights &amp; Apple: Strategy &amp; Planning (Atisha, 8:30 AM PT &mdash; no transcript, linked SFDC event). SAS Institute Agentic Demo (Andy &mdash; recording present, transcript shows only Anna Fokina &amp; Steven, no CSM detected).
+  </div>
+  <div style="background:#1c2333;border:1px solid #334155;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#94a3b8;">
+    &#x1F4CC; <strong>No recordings found for:</strong> Varun Tiwari &mdash; Unum biweekly (7:30 AM PT), MongoDB recurring (8:00 AM PT); Nick Johnson &mdash; Visionet biweekly (3:00 AM PT), Siemens monthly (5:00 AM PT), Hyland monthly (7:00 AM PT); Atisha Waghela &mdash; Apple sessions (8:30 AM, 9:00 AM), Converge Tech Solutions (12:00 PM PT); Andy Lim &mdash; Veracode (8:30 AM PT); Divyam Dewan &mdash; Adobe GTM Tool Review (4:30 AM PT), DynaTrace Query (12:30 PM PT); Riley Rogers &mdash; Insperity TR sync (12:30 PM PT; recording found for TriNet at same time slot). Internal excluded: Pam Huck &mdash; Team Sync Mark Fell Ops (HG Insights account).
+  </div>`;
+}
+
+function dayPulsesHTML_2026_06_09() {
+  const cards = [
+    { csm:'nick', health:'Concerning', account:'SAP',
+      opp:'Vitally Pulse &mdash; Jun 9 Call',
+      arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Jun 9 &middot; Upload Issue',
+      excerpt:'NJ/Jun 9: Adriana Aguiar (SAP) could not upload data file due to incorrect CSV encoding format. Nick walked through UTF-8 reformatting live (3:30 AM PT, 25 min). Issue addressed in session; follow up to confirm fully resolved.' },
+    { csm:'divyam', health:'Healthy', account:'Paychex / Paycor',
+      opp:'Vitally Pulse &mdash; Jun 9 Call',
+      arr:'Enterprise &middot; Divyam Dewan', csmlbl:'Divyam Dewan',
+      change:'Jun 9 &middot; Monthly Sync',
+      excerpt:'DD/Jun 9: Monthly post-merger alignment sync for Paychex/Paycor teams. IDL contract scope to be finalized with Scott. Paycor side fully engaged; Paychex contacts partially attending. Follow-up call scheduled (7:00 AM PT, 30 min).' },
+    { csm:'atisha', health:'Concerning', account:'RSM US',
+      opp:'Vitally Pulse &mdash; Jun 9 Call',
+      arr:'Enterprise &middot; Atisha Waghela', csmlbl:'Atisha Waghela',
+      change:'Jun 9 &middot; No-Show',
+      excerpt:'AW/Jun 9: Scheduled recurring sync; key contact Ben did not attend and had not responded to email invite. Atisha and Ellis Millwood rescheduled to Wednesday 10:30 AM ET. Engagement gap flagged (8:00 AM PT, 30 min).' },
+    { csm:'divyam', health:'Healthy', account:'Adobe',
+      opp:'Vitally Pulse &mdash; Jun 9 Call',
+      arr:'Enterprise &middot; Divyam Dewan', csmlbl:'Divyam Dewan',
+      change:'Jun 9 &middot; Expansion',
+      excerpt:'DD/Jun 9: Adobe Private Capital team exploring PE portfolio data use cases. MCP vs. full data set ($500K&ndash;$1M vs. current ~$150K contract) in scope. Vendor momentum scores and constructive metrics discussed. Next step: validate MCP path (9:00 AM PT, 30 min).' },
+    { csm:'nick', health:'Healthy', account:'IBM',
+      opp:'Vitally Pulse &mdash; Jun 9 Call',
+      arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Jun 9 &middot; Expansion',
+      excerpt:'NJ/Jun 9: David Bush (IBM) requested GenAI and AI Spend data pricing for Select Territory market demand gen program. Nick presented pricing breakdown; Leo Zunz (IBM East) also on call. Follow-up pricing detail to be sent via email (9:00 AM PT, 30 min).' },
+    { csm:'riley', health:'Healthy', account:'SAP Business Network',
+      opp:'Vitally Pulse &mdash; Jun 9 Call',
+      arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Jun 9 &middot; Biweekly Sync',
+      excerpt:'RR/Jun 9: POs received for subscription renewal and market report. Top Rated announcement imminent; SAP BN preparing blog post and quote. Buyer\'s Choice qualified for fall (11 reviews in 2026). Product page updates sent (11:00 AM PT, 30 min).' },
+    { csm:'atisha', health:'Healthy', account:'Cognizant',
+      opp:'Vitally Pulse &mdash; Jun 9 Call',
+      arr:'Enterprise &middot; Atisha Waghela', csmlbl:'Atisha Waghela',
+      change:'Jun 9 &middot; Expansion',
+      excerpt:'AW/Jun 9: Exploratory call with Akash (Cognizant) and Max Shaw (AE). Manager wants specific use cases: buyer propensity and churn analytics. Existing contract in redlining. Atisha to send scoping materials to support deal close (11:30 AM PT, 30 min).' },
+    { csm:'riley', health:'Healthy', account:'TriNet',
+      opp:'Vitally Pulse &mdash; Jun 9 Call',
+      arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Jun 9 &middot; Monthly Sync',
+      excerpt:'RR/Jun 9: Monthly TR sync with K. Maxwell and Ashley (TriNet). Excited for Top Rated announcement tomorrow; quote ready. Buyer\'s Choice qualified for fall 2026 (11 reviews in 2026). Planning next year review campaign (12:30 PM PT, 30 min).' },
+    { csm:'atisha', health:'Concerning', account:'Treasure AI',
+      opp:'Vitally Pulse &mdash; Jun 9 Call',
+      arr:'Enterprise &middot; Atisha Waghela', csmlbl:'Atisha Waghela',
+      change:'Jun 9 &middot; Renewal Risk',
+      excerpt:'AW/Jun 9: Renewal sync with James Weinberg (Sr. Dir. GTM Systems, Treasure AI) after ~1-year gap. James noted it had been ~1 year since last HG contact. Renewal and intent/product data expansion both on table. Atisha flagged as high-value re-engagement priority (12:30 PM PT, 30 min).' },
+    { csm:'rani', health:'Healthy', account:'Cisco (Isovalent)',
+      opp:'Vitally Pulse &mdash; Jun 9 Call',
+      arr:'Enterprise &middot; Rani Guy', csmlbl:'Rani Guy',
+      change:'Jun 9 &middot; Onboarding',
+      excerpt:'RG/Jun 9: Onboarding call with Cisco Isovalent team (Adrian Escobar, melmoff). Team returning from Cisco Live; off-site in Canada next week. Strong rapport and intro established. No blockers noted (2:15 PM PT, 30 min).' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div><strong>${c.account}</strong><div style="font-size:11px;color:#94a3b8;margin-top:2px;">${c.opp}</div></div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none"><div class="empty-icon">&#x1F493;</div>No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_06_09() {
+  return `
+  <div class="action-list">
+    <div class="action-item" data-csm="atisha" id="action-0609-1">
+      <div class="action-body">
+        <div class="action-id">[0609-1]</div>
+        <div class="action-title">&#x1F534; RSM US &mdash; Reschedule Ben for Wednesday 10:30 AM ET</div>
+        <div class="action-meta"><span class="urgency urgency-high">HIGH</span> Atisha Waghela &middot; Ben did not attend today&apos;s recurring sync and had not responded to email. Ellis Millwood has confirmed the Wednesday 10:30&ndash;11:30 AM ET window. Send calendar invite to Ben today and ping Ellis to confirm.</div>
+      </div>
+    </div>
+    <div class="action-item" data-csm="atisha" id="action-0609-2">
+      <div class="action-body">
+        <div class="action-id">[0609-2]</div>
+        <div class="action-title">&#x26A0;&#xFE0F; Treasure AI &mdash; Send renewal proposal and intent/product data scope brief</div>
+        <div class="action-meta"><span class="urgency urgency-high">HIGH</span> Atisha Waghela + Nandini Yamdagni &middot; James Weinberg flagged ~1-year engagement gap. Renewal timing TBD; intent and product data categories identified as expansion use case. Draft proposal and scope summary to send within 48 hours. Coordinate with Nandini on pricing.</div>
+      </div>
+    </div>
+    <div class="action-item" data-csm="nick" id="action-0609-3">
+      <div class="action-body">
+        <div class="action-id">[0609-3]</div>
+        <div class="action-title">&#x1F4C8; IBM &mdash; Send full GenAI / AI Spend pricing breakdown to David Bush</div>
+        <div class="action-meta"><span class="urgency urgency-high">HIGH</span> Nick Johnson (+ Leo Zunz to CC) &middot; David Bush requested detailed pricing for Generative AI and AI Spend data for Select Territory market demand gen. Leo was ill on the call. Send pricing email today; CC Leo Zunz. IBM can move quickly once pricing looks right.</div>
+      </div>
+    </div>
+    <div class="action-item" data-csm="divyam" id="action-0609-4">
+      <div class="action-body">
+        <div class="action-id">[0609-4]</div>
+        <div class="action-title">&#x1F4C8; Adobe Private Capital &mdash; Assess MCP vs. full-data path for APC team + send next steps</div>
+        <div class="action-meta"><span class="urgency urgency-high">HIGH</span> Divyam Dewan + Mark Fell + Rob Nute &middot; APC team currently on ~$150K contract; full data set would be $500K&ndash;$1M. Per Rob: first determine if MCP meets their needs before scoping full-data proposal. Divyam to follow up with vendor momentum score assets and next-step framing.</div>
+      </div>
+    </div>
+    <div class="action-item" data-csm="nick" id="action-0609-5">
+      <div class="action-body">
+        <div class="action-id">[0609-5]</div>
+        <div class="action-title">&#x1F527; SAP &mdash; Confirm upload issue resolved; send formatted CSV guide</div>
+        <div class="action-meta"><span class="urgency urgency-medium">MEDIUM</span> Nick Johnson &middot; Adriana Aguiar was working through upload formatting live on the call. Confirm via follow-up that the reformatted file uploaded successfully. Send a short CSV formatting guide (UTF-8, correct delimiters) to prevent recurrence.</div>
+      </div>
+    </div>
+    <div class="action-item" data-csm="atisha" id="action-0609-6">
+      <div class="action-body">
+        <div class="action-id">[0609-6]</div>
+        <div class="action-title">&#x1F4C8; Cognizant &mdash; Send expansion use case scoping deck to Akash for manager review</div>
+        <div class="action-meta"><span class="urgency urgency-medium">MEDIUM</span> Atisha Waghela + Max Shaw &middot; Akash&apos;s reporting manager wants documented use cases: buyer propensity and churn analytics. Contract is in redlining. Atisha to coordinate with Max on sending a scoping deck that Akash can share with his manager to unblock the deal.</div>
+      </div>
+    </div>
+    <div class="action-item" data-csm="riley" id="action-0609-7">
+      <div class="action-body">
+        <div class="action-id">[0609-7]</div>
+        <div class="action-title">&#x1F3C6; SAP Business Network &mdash; Confirm market report kickoff timeline with Cole / Catherine</div>
+        <div class="action-meta"><span class="urgency urgency-low">LOW</span> Riley Rogers &middot; PO received; market report subscription renewed. Catherine mentioned the report kickoff should start soon and they have some bandwidth now post-Sapphire. Riley to confirm timeline and kick off data pull process. Also ensure product page geo-content update is coordinated with Alejandro.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none"><div class="empty-icon">&#x2705;</div>All action items completed.</div>`;
+}
