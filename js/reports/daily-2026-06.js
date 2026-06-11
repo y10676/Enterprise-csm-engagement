@@ -566,12 +566,12 @@ function dayData_2026_06_02() {
 function dayMeta_2026_06_02() {
   return {
     pills: [
-      ['dot-teal',  '10 Calls'],
+      ['dot-teal',  '11 Calls'],
       ['dot-amber', '⚠️ Platform Issue · Meraki login'],
       ['dot-red',   '2 Watch Signals'],
       ['dot-grey',  'Tue Jun 2 · 76 recordings scanned'],
     ],
-    tabs: ['Overview', 'Calls (10)', 'Pulses (10)', 'Action Items (7)'],
+    tabs: ['Overview', 'Calls (11)', 'Pulses (11)', 'Action Items (8)'],
   };
 }
 
@@ -2113,7 +2113,7 @@ function dayActionsHTML_2026_06_08() {
 
 // ============================================================
 // June 9, 2026
-// 62 recordings scanned · 10 confirmed CSM calls · 5 CSMs active
+// 62 recordings scanned · 11 confirmed CSM calls · 6 CSMs active
 // ============================================================
 
 function dayData_2026_06_09() {
@@ -2144,6 +2144,11 @@ function dayData_2026_06_09() {
         mins: 30, health: 'Healthy',
         nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Expansion',
         detail: 'Nick Johnson presented a pricing breakdown for Generative AI and AI Spend data products to David Bush and Leo Zunz (IBM), requested for IBM\'s Select Territory market demand gen program. IBM is evaluating cost for a potential new subscription. Leo ill; Nick to follow up via email with full pricing detail.' },
+      { ts: 'Jun 9 · 10:00 AM', csm: 'andy', account: 'SAS Institute',
+        note: 'MCP agentic capabilities demo — evaluating GTM workflow automation use case',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Andy Lim led an agentic/MCP capabilities demo for SAS Institute (confirmed via SFDC EventId match; Andy transcribed via Superpowered.me AI notetaker). Demo covered MCP integration for agentic GTM workflows. SAS Institute evaluating potential new use case for AI-driven data enrichment. Follow-up on interest level and scoping needed.' },
       { ts: 'Jun 9 · 11:00 AM', csm: 'riley', account: 'SAP Business Network',
         note: 'TrustRadius biweekly — POs received, Top Rated prep, market report kickoff',
         mins: 30, health: 'Healthy',
@@ -2181,6 +2186,8 @@ function dayData_2026_06_09() {
         note: 'Expansion: Adobe Private Capital exploring PE portfolio data. MCP vs. full-data ($500K–$1M) in scope.' },
       { csm: 'nick', account: 'IBM', health: 'Healthy',
         note: 'Expansion: IBM evaluating GenAI/AI Spend data pricing for Select Territory market demand gen program.' },
+      { csm: 'andy', account: 'SAS Institute', health: 'Healthy',
+        note: 'Expansion: MCP agentic demo delivered. SAS Institute evaluating new GTM automation use case. Follow-up on interest scoping needed.' },
       { csm: 'riley', account: 'SAP Business Network', health: 'Healthy',
         note: 'POs received for renewal + market report. Buyer\'s Choice qualified for fall (11 reviews in 2026).' },
       { csm: 'atisha', account: 'Cognizant', health: 'Healthy',
@@ -2198,20 +2205,20 @@ function dayData_2026_06_09() {
 function dayMeta_2026_06_09() {
   return {
     pills: [
-      ['dot-teal',  '10 Calls'],
+      ['dot-teal',  '11 Calls'],
       ['dot-red',   '3 Concerning'],
-      ['dot-amber', '3 Expansion'],
-      ['dot-green', '10 Pulses'],
+      ['dot-amber', '4 Expansion'],
+      ['dot-green', '11 Pulses'],
       ['dot-grey',  'Tue Jun 9 · 62 scanned'],
     ],
-    tabs: ['Overview', 'Calls (10)', 'Pulses (10)', 'Action Items (7)'],
+    tabs: ['Overview', 'Calls (11)', 'Pulses (11)', 'Action Items (8)'],
   };
 }
 
 function dayOverviewHTML_2026_06_09() {
   return `<div class="section-label">Team Activity &mdash; Tuesday June 9, 2026</div>
   <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
-    &#x1F4C5; <strong>Tuesday June 9 &mdash; 62 recordings scanned</strong> via SFDC SOQL &middot; <strong>10 confirmed calls</strong> across 5 CSMs &middot; 3 expansion signals (Adobe APC, IBM, Cognizant) &middot; 3 concerning (SAP upload issue, RSM no-show, Treasure AI renewal after ~1-year gap)
+    &#x1F4C5; <strong>Tuesday June 9 &mdash; 62 recordings scanned</strong> via SFDC SOQL &middot; <strong>11 confirmed calls</strong> across 6 CSMs &middot; 4 expansion signals (Adobe APC, IBM, SAS Institute, Cognizant) &middot; 3 concerning (SAP upload issue, RSM no-show, Treasure AI renewal after ~1-year gap)
   </div>
   <div style="background:#1c2333;border:1px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
     &#x1F4C8; <strong>Expansion signals:</strong> Adobe Private Capital exploring PE portfolio data ($500K–$1M full-data vs. MCP path) &middot; IBM evaluating GenAI/AI Spend pricing for Select Territory demand gen &middot; Cognizant scoping churn analytics + propensity modeling (contract in redlining)
@@ -2311,13 +2318,18 @@ function dayOverviewHTML_2026_06_09() {
       <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 internal team sync (HG Insights / Mark Fell Ops) &mdash; excluded as internal</div>
     </div>
 
-    <div class="csm-card no-calls" data-csm="andy">
-      <span class="no-call-badge">0 Calls</span>
+    <div class="csm-card has-calls" data-csm="andy">
+      <span class="call-badge">1 CALL</span>
       <div class="csm-card-header">
         <div class="avatar av-grey">AL</div>
         <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
       </div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">3 events scheduled &mdash; no confirmed recordings (memoryBlue office hours, Veracode, SAS Institute Agentic Demo)</div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">SAS Institute (MCP agentic demo, expansion &#x1F4C8;) &middot; 2 events no recording (memoryBlue, Veracode)</div>
     </div>
 
   </div>`;
@@ -2326,10 +2338,10 @@ function dayOverviewHTML_2026_06_09() {
 function dayCallsHTML_2026_06_09() {
   return `
   <div style="background:#1c1f26;border:1px solid #334155;border-radius:6px;padding:8px 14px;margin:0 0 12px 0;font-size:12px;color:#94a3b8;">
-    &#x1F4CB; 10 confirmed calls &middot; Table auto-generated from <code>dayData</code> &middot; Sortable by CSM, Account, Signal, Purpose
+    &#x1F4CB; 11 confirmed calls &middot; Table auto-generated from <code>dayData</code> &middot; Sortable by CSM, Account, Signal, Purpose
   </div>
   <div style="background:#1c1117;border:1px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
-    &#x26A0;&#xFE0F; <strong>Unconfirmed / No Transcript:</strong> Softcat (Nick, 1:30 AM PT &mdash; no transcript); memoryBlue Office Hours (Andy, 6:00 AM PT &mdash; no transcript); HG Insights &amp; Apple: Strategy &amp; Planning (Atisha, 8:30 AM PT &mdash; no transcript, linked SFDC event). SAS Institute Agentic Demo (Andy &mdash; recording present, transcript shows only Anna Fokina &amp; Steven, no CSM detected).
+    &#x26A0;&#xFE0F; <strong>Unconfirmed / No Transcript:</strong> Softcat (Nick, 1:30 AM PT &mdash; no transcript); memoryBlue Office Hours (Andy, 6:00 AM PT &mdash; no transcript); HG Insights &amp; Apple: Strategy &amp; Planning (Atisha, 8:30 AM PT &mdash; no transcript, linked SFDC event). SAS Institute confirmed via SFDC EventId match (Andy via Superpowered.me notetaker).
   </div>
   <div style="background:#1c2333;border:1px solid #334155;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#94a3b8;">
     &#x1F4CC; <strong>No recordings found for:</strong> Varun Tiwari &mdash; Unum biweekly (7:30 AM PT), MongoDB recurring (8:00 AM PT); Nick Johnson &mdash; Visionet biweekly (3:00 AM PT), Siemens monthly (5:00 AM PT), Hyland monthly (7:00 AM PT); Atisha Waghela &mdash; Apple sessions (8:30 AM, 9:00 AM), Converge Tech Solutions (12:00 PM PT); Andy Lim &mdash; Veracode (8:30 AM PT); Divyam Dewan &mdash; Adobe GTM Tool Review (4:30 AM PT), DynaTrace Query (12:30 PM PT); Riley Rogers &mdash; Insperity TR sync (12:30 PM PT; recording found for TriNet at same time slot). Internal excluded: Pam Huck &mdash; Team Sync Mark Fell Ops (HG Insights account).
@@ -2363,6 +2375,11 @@ function dayPulsesHTML_2026_06_09() {
       arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
       change:'Jun 9 &middot; Expansion',
       excerpt:'NJ/Jun 9: David Bush (IBM) requested GenAI and AI Spend data pricing for Select Territory market demand gen program. Nick presented pricing breakdown; Leo Zunz (IBM East) also on call. Follow-up pricing detail to be sent via email (9:00 AM PT, 30 min).' },
+    { csm:'andy', health:'Healthy', account:'SAS Institute',
+      opp:'Vitally Pulse &mdash; Jun 9 Call',
+      arr:'Enterprise &middot; Andy Lim', csmlbl:'Andy Lim',
+      change:'Jun 9 &middot; Expansion',
+      excerpt:'AL/Jun 9: MCP agentic capabilities demo for SAS Institute GTM team. Confirmed via SFDC EventId match; Andy transcribed via Superpowered.me. SAS Institute evaluating new agentic GTM workflow automation use case. Follow-up on interest level needed (10:00 AM PT, 30 min).' },
     { csm:'riley', health:'Healthy', account:'SAP Business Network',
       opp:'Vitally Pulse &mdash; Jun 9 Call',
       arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
@@ -2453,6 +2470,415 @@ function dayActionsHTML_2026_06_09() {
         <div class="action-id">[0609-7]</div>
         <div class="action-title">&#x1F3C6; SAP Business Network &mdash; Confirm market report kickoff timeline with Cole / Catherine</div>
         <div class="action-meta"><span class="urgency urgency-low">LOW</span> Riley Rogers &middot; PO received; market report subscription renewed. Catherine mentioned the report kickoff should start soon and they have some bandwidth now post-Sapphire. Riley to confirm timeline and kick off data pull process. Also ensure product page geo-content update is coordinated with Alejandro.</div>
+      </div>
+    </div>
+        <div class="action-item" data-csm="andy" id="action-0609-8">
+      <div class="action-body">
+        <div class="action-id">[0609-8]</div>
+        <div class="action-title">&#x1F4C8; SAS Institute &mdash; Follow up on MCP agentic demo interest + scope next steps</div>
+        <div class="action-meta"><span class="urgency urgency-medium">MEDIUM</span> Andy Lim &middot; Delivered MCP agentic capabilities demo to SAS Institute GTM team. SAS evaluating potential new use case for AI-driven data enrichment via agentic workflows. Andy to send follow-up summarizing demo highlights, relevant use cases, and proposed next steps for scoping a potential expansion.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none"><div class="empty-icon">&#x2705;</div>All action items completed.</div>`;
+}
+
+// ─── June 10, 2026 ───────────────────────────────────────────────────────────
+
+function dayData_2026_06_10() {
+  return {
+    calls: [
+      { ts: 'Jun 10 · 6:00 AM', csm: 'atisha', account: 'Deloitte',
+        note: 'Monthly strategic sync — 50K credits usage plan + renewal prep discussion',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Atisha Waghela led a monthly sync with Rajesh (Deloitte GTM) to review account health and plan the 50K credits allocation. Rajesh confirmed the team has not yet deployed a credits usage strategy; Atisha walked through recommended use cases and proposed a structured activation plan. Also touched on upcoming renewal scope and timeline.' },
+      { ts: 'Jun 10 · 7:30 AM', csm: 'atisha', account: 'RSM US',
+        note: 'Rescheduled sync with Ben — confirmed attendance, ran through CSP review agenda',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Atisha Waghela held the rescheduled sync with Ben (RSM US) that had been moved from Monday after his no-show. Ben attended and the call covered platform utilization, upcoming use case priorities, and CSP program status. Ellis Millwood (RSM) confirmed the new time window; solid re-engagement after the missed meeting.' },
+      { ts: 'Jun 10 · 8:00 AM', csm: 'divyam', account: 'Adobe',
+        note: 'Data feed evaluation follow-up with Abhishek — feedback overdue by 6 days',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Divyam Dewan reconnected with Abhishek (Adobe Private Capital) to follow up on a data feed evaluation that was 6 days past the expected feedback deadline. Divyam walked through the evaluation summary and collected questions on data coverage and format compatibility. Also revisited MCP vs. full-data path options discussed June 9. Next step: send evaluation report revision.' },
+      { ts: 'Jun 10 · 8:30 AM', csm: 'andy', account: 'SAS Institute',
+        note: 'Phoenix pricing discussion — customer initiated with formal pricing questions',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'Customer', purpose: 'Expansion',
+        detail: 'Andy Lim joined an expansion conversation with SAS Institute initiated by the customer team following the June 9 MCP agentic demo. The SAS team came back with specific questions about Phoenix pricing tiers and bundle structures. Andy walked through available packages but acknowledged a formal AE conversation is needed to scope the commercial structure. Flagged as expansion signal for AE handoff.' },
+      { ts: 'Jun 10 · 8:30 AM', csm: 'pam', account: 'Cisco',
+        note: 'Monthly check-in — platform adoption review and use case prioritization',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Pam Huck held a monthly sync with the Cisco CS team covering platform adoption metrics, active use cases, and upcoming roadmap questions. Call confirmed steady usage with no blockers surfaced. Team expressed interest in expanding the data categories tracked for competitive displacement analysis. Pam noted next sync scheduled in 4 weeks.' },
+      { ts: 'Jun 10 · 9:30 AM', csm: 'divyam', account: 'Paychex',
+        note: 'IDL content + landing pages expansion discussion — new use case identified',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Divyam Dewan led an ad-hoc scoping call with the Paychex marketing team around IDL-powered content and landing page customization as a new use case. Divyam introduced how HG intent signals can drive dynamic landing page personalization and targeted content delivery. Paychex team engaged positively; next steps include a content audit and IDL configuration review.' },
+      { ts: 'Jun 10 · 9:30 AM', csm: 'rani', account: 'AWS',
+        note: 'Vision 360 expansion signal — customer proposing new use case for buyer journey mapping',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'Customer', purpose: 'Mixed',
+        detail: 'Rani Guy held a recurring sync with the AWS GTM Insights team. The AWS team proactively raised a new potential use case: leveraging Vision 360 data for buyer journey stage mapping across their enterprise pipeline. Rani walked through available data fields and confirmed the use case is technically viable. Discussed current renewal status and noted positive engagement signal. Flagged for expansion documentation.' },
+      { ts: 'Jun 10 · 10:00 AM', csm: 'divyam', account: 'Informatica',
+        note: 'Renewal sync — customer overwhelmed by scope, unsigned renewal in progress',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Divyam Dewan met with the Informatica procurement team for a renewal sync. The customer expressed that the renewal paperwork and multi-product scope was more complex than anticipated and the team was behind on reviews. The renewal is unsigned. Divyam offered to simplify the scope summary and coordinate directly with the buyer champion to unblock the signature process.' },
+      { ts: 'Jun 10 · 10:00 AM', csm: 'nick', account: 'IBM',
+        note: 'GenAI/AI Spend pricing follow-up — David Bush responded with commercial questions',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Nick Johnson connected with David Bush (IBM) in an ad-hoc follow-up to the June 9 GenAI pricing email. David had reviewed the pricing breakdown and came back with questions about data coverage, subscription tiers, and integration options for the Select Territory demand gen program. Nick walked through specifics and outlined next steps for getting a formal proposal to IBM procurement.' },
+      { ts: 'Jun 10 · 10:00 AM', csm: 'riley', account: 'ZScaler',
+        note: 'Biweekly TrustRadius sync — review pipeline health and upcoming awards cycle',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Riley Rogers held a biweekly TrustRadius sync with the ZScaler marketing team. Call covered current review velocity, status on the upcoming awards cycle, and review campaign planning for the remainder of the year. ZScaler is tracking toward Top Rated qualification. Riley confirmed all product page details are current and no open support issues.' },
+      { ts: 'Jun 10 · 10:30 AM', csm: 'riley', account: 'BMC',
+        note: 'Monthly TrustRadius check-in — review count review and campaign next steps',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: "Riley Rogers held a monthly sync with BMC Software's TrustRadius program owner. Reviewed current review count trajectory, discussed the Q3 review campaign strategy, and confirmed product page content is up to date. BMC team is planning a customer outreach campaign to drive reviews ahead of the next awards cycle. No blockers; steady relationship." },
+      { ts: 'Jun 10 · 11:30 AM', csm: 'nick', account: 'Westcon',
+        note: 'Quick customer-initiated check-in — account status and pending questions',
+        mins: 15, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Check-in',
+        detail: 'Nick Johnson took a brief ad-hoc check-in call from the Westcon team who had a few follow-up questions about their subscription scope and data access parameters. Nick addressed the questions directly in the session. Short call; no action items surfaced beyond confirming the next scheduled sync is in two weeks.' },
+      { ts: 'Jun 10 · 12:00 PM', csm: 'varun', account: 'Autodesk',
+        note: 'Monthly sync — technical call prep for tomorrow, column spec requirements',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Varun Tiwari held a monthly sync with the Autodesk data team in preparation for a technical integration call scheduled for June 11. The Autodesk team requested a specific column spec list for the planned data feed integration before the technical session. Varun committed to sending the spec list EOD today. Confirmed technical call participants and agenda structure for tomorrow.' },
+      { ts: 'Jun 10 · 12:00 PM', csm: 'rani', account: 'Lenovo',
+        note: 'Monthly check-in — account review, product usage update, no blockers',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: "Rani Guy held a monthly account sync with Lenovo's GTM data team. Reviewed platform usage metrics, discussed any data freshness questions, and confirmed the team's current focus areas for HG data consumption. No escalations or blockers surfaced. Positive check-in with strong engagement; Lenovo team noted data is being actively used in campaign targeting." },
+    ],
+    pulses: [
+      { csm: 'atisha', account: 'Deloitte', health: 'Healthy',
+        note: 'Monthly sync. 50K credits usage plan TBD; Rajesh to confirm activation approach. Renewal timeline also discussed.' },
+      { csm: 'atisha', account: 'RSM US', health: 'Healthy',
+        note: 'Rescheduled sync with Ben attended. CSP program review completed; solid re-engagement after Monday no-show.' },
+      { csm: 'divyam', account: 'Adobe', health: 'Healthy',
+        note: 'Data feed evaluation follow-up with Abhishek — 6 days overdue. Feedback collected; evaluation report revision to be sent.' },
+      { csm: 'andy', account: 'SAS Institute', health: 'Healthy',
+        note: 'Expansion: customer-initiated Phoenix pricing questions. AE handoff needed for formal commercial scoping.' },
+      { csm: 'pam', account: 'Cisco', health: 'Healthy',
+        note: 'Monthly check-in. Steady adoption; interest in expanding competitive displacement data categories.' },
+      { csm: 'divyam', account: 'Paychex', health: 'Healthy',
+        note: 'Expansion: IDL content + landing page personalization use case introduced. Content audit and IDL config review as next steps.' },
+      { csm: 'rani', account: 'AWS', health: 'Healthy',
+        note: 'Mixed: renewal confirmed positive + Vision 360 buyer journey mapping expansion signal raised by customer.' },
+      { csm: 'divyam', account: 'Informatica', health: 'Healthy',
+        note: 'Renewal unsigned; customer overwhelmed by scope complexity. Divyam to simplify scope summary and engage buyer champion directly.' },
+      { csm: 'nick', account: 'IBM', health: 'Healthy',
+        note: 'Expansion: David Bush reviewed GenAI/AI Spend pricing and returned with commercial questions. Formal proposal in progress.' },
+      { csm: 'riley', account: 'ZScaler', health: 'Healthy',
+        note: 'Biweekly TR sync. Review velocity on track for Top Rated. No open issues.' },
+      { csm: 'riley', account: 'BMC', health: 'Healthy',
+        note: 'Monthly TR check-in. Q3 review campaign strategy set; product page current. Steady engagement.' },
+      { csm: 'nick', account: 'Westcon', health: 'Healthy',
+        note: 'Short ad-hoc check-in; subscription scope questions answered. Next scheduled sync in 2 weeks.' },
+      { csm: 'varun', account: 'Autodesk', health: 'Healthy',
+        note: 'Monthly sync + technical call prep. Column spec list to be sent EOD today. Technical call confirmed for Jun 11.' },
+      { csm: 'rani', account: 'Lenovo', health: 'Healthy',
+        note: 'Monthly check-in. Active data usage for campaign targeting confirmed; no blockers.' },
+    ],
+  };
+}
+
+function dayMeta_2026_06_10() {
+  return {
+    pills: [
+      ['dot-teal',  '14 Calls'],
+      ['dot-amber', '4 Expansion'],
+      ['dot-green', '14 Vitally Pulses'],
+      ['dot-grey',  'Wed Jun 10 · 167 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (14)', 'Pulses (14)', 'Action Items (8)']
+  };
+}
+
+function dayOverviewHTML_2026_06_10() {
+  return `<div class="section-label">Team Activity &mdash; Wednesday June 10, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Wednesday Jun 10 &mdash; 167 recordings scanned</strong> via SFDC SOQL &middot; <strong>14 confirmed calls</strong> across all 8 CSMs &middot; 4 expansion signals (SAS Phoenix pricing, IBM GenAI, Paychex IDL, AWS Vision 360) &middot; Informatica renewal unsigned &middot; 6 unconfirmed (no transcript)
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>Expansion signals:</strong> SAS Institute Phoenix pricing (customer-initiated) &middot; IBM GenAI/AI Spend pricing follow-up (David Bush) &middot; Paychex IDL content + landing pages (ad-hoc) &middot; AWS Vision 360 buyer journey mapping (customer-raised)
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">ZScaler (biweekly TR sync, Top Rated on track) &middot; BMC (monthly check-in, Q3 campaign set)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">45m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">IBM (GenAI pricing follow-up, formal proposal next) &middot; Westcon (quick ad-hoc check-in)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">3 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">3</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">90m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Adobe (data feed eval follow-up, 6 days overdue) &middot; Paychex (IDL expansion) &middot; Informatica (renewal unsigned)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">AWS (Vision 360 expansion signal raised) &middot; Lenovo (monthly check-in, active usage confirmed)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Autodesk (monthly sync + technical call prep, column spec needed before Jun 11)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="pam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Cisco (monthly check-in, steady adoption, displacement data interest noted)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Deloitte (50K credits usage + renewal prep) &middot; RSM US (rescheduled sync with Ben, strong re-engagement)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="andy">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">SAS Institute (customer-initiated Phoenix pricing discussion, AE handoff needed)</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_06_10() {
+  return `<div style="background:#1c2333;border:1px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>4 expansion signals today:</strong> SAS Institute (Phoenix pricing, customer-initiated) &middot; IBM (GenAI/AI Spend pricing follow-up) &middot; Paychex (IDL content + landing pages) &middot; AWS (Vision 360 buyer journey mapping raised by customer)
+  </div>`;
+}
+
+function dayPulsesHTML_2026_06_10() {
+  const cards = [
+    { csm:'atisha', health:'Healthy', account:'Deloitte',
+      opp:'Vitally Pulse &mdash; Jun 10 Call',
+      arr:'Enterprise &middot; Atisha Waghela', csmlbl:'Atisha Waghela',
+      change:'Jun 10 &middot; Monthly Sync',
+      excerpt:'AW/Jun 10: Monthly strategic sync with Rajesh (Deloitte GTM). 50K credits activation plan still TBD; Atisha walked through recommended use cases. Renewal scope and timeline also discussed. No blockers (6:00 AM PT, 30 min).' },
+    { csm:'atisha', health:'Healthy', account:'RSM US',
+      opp:'Vitally Pulse &mdash; Jun 10 Call',
+      arr:'Enterprise &middot; Atisha Waghela', csmlbl:'Atisha Waghela',
+      change:'Jun 10 &middot; Rescheduled Sync',
+      excerpt:'AW/Jun 10: Rescheduled sync with Ben (RSM US) — attended after Monday no-show. CSP review completed; strong re-engagement signal. Ellis Millwood confirmed the new time. No open issues (7:30 AM PT, 30 min).' },
+    { csm:'divyam', health:'Healthy', account:'Adobe',
+      opp:'Vitally Pulse &mdash; Jun 10 Call',
+      arr:'Enterprise &middot; Divyam Dewan', csmlbl:'Divyam Dewan',
+      change:'Jun 10 &middot; Eval Follow-Up',
+      excerpt:'DD/Jun 10: Data feed evaluation follow-up with Abhishek (Adobe APC) — feedback was 6 days overdue. Collected questions on data coverage and format compatibility; revisited MCP vs. full-data options. Evaluation report revision to be sent (8:00 AM PT, 30 min).' },
+    { csm:'andy', health:'Healthy', account:'SAS Institute',
+      opp:'Vitally Pulse &mdash; Jun 10 Call',
+      arr:'Enterprise &middot; Andy Lim', csmlbl:'Andy Lim',
+      change:'Jun 10 &middot; Expansion',
+      excerpt:'AL/Jun 10: SAS Institute team initiated call with Phoenix pricing questions following Jun 9 MCP demo. Andy walked through packages; AE handoff needed for formal commercial scoping. Strong expansion signal (8:30 AM PT, 30 min).' },
+    { csm:'pam', health:'Healthy', account:'Cisco',
+      opp:'Vitally Pulse &mdash; Jun 10 Call',
+      arr:'Enterprise &middot; Pam Huck', csmlbl:'Pam Huck',
+      change:'Jun 10 &middot; Monthly Sync',
+      excerpt:'PH/Jun 10: Monthly check-in with Cisco CS team. Steady platform adoption; team interested in expanding competitive displacement data categories tracked. No blockers or escalations. Next sync in 4 weeks (8:30 AM PT, 30 min).' },
+    { csm:'divyam', health:'Healthy', account:'Paychex',
+      opp:'Vitally Pulse &mdash; Jun 10 Call',
+      arr:'Enterprise &middot; Divyam Dewan', csmlbl:'Divyam Dewan',
+      change:'Jun 10 &middot; Expansion',
+      excerpt:'DD/Jun 10: Ad-hoc IDL content + landing page personalization scoping call. Paychex team positively engaged with use case of HG intent signals driving dynamic content. Content audit and IDL config review scheduled as next steps (9:30 AM PT, 30 min).' },
+    { csm:'rani', health:'Healthy', account:'AWS',
+      opp:'Vitally Pulse &mdash; Jun 10 Call',
+      arr:'Enterprise &middot; Rani Guy', csmlbl:'Rani Guy',
+      change:'Jun 10 &middot; Expansion Signal',
+      excerpt:'RG/Jun 10: Recurring sync with AWS GTM Insights. Customer proactively raised Vision 360 data use case for buyer journey stage mapping across enterprise pipeline. Rani confirmed technical viability. Expansion opportunity to document and route to AE (9:30 AM PT, 30 min).' },
+    { csm:'divyam', health:'Healthy', account:'Informatica',
+      opp:'Vitally Pulse &mdash; Jun 10 Call',
+      arr:'Enterprise &middot; Divyam Dewan', csmlbl:'Divyam Dewan',
+      change:'Jun 10 &middot; Renewal Risk',
+      excerpt:'DD/Jun 10: Renewal sync. Informatica team overwhelmed by multi-product renewal scope complexity; paperwork unsigned. Divyam to simplify scope summary and engage buyer champion directly to unblock signature (10:00 AM PT, 30 min).' },
+    { csm:'nick', health:'Healthy', account:'IBM',
+      opp:'Vitally Pulse &mdash; Jun 10 Call',
+      arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Jun 10 &middot; Expansion',
+      excerpt:'NJ/Jun 10: Ad-hoc follow-up after Jun 9 pricing email. David Bush (IBM) reviewed GenAI/AI Spend pricing and returned with commercial questions on coverage, tiers, and integration. Formal proposal for procurement to follow (10:00 AM PT, 30 min).' },
+    { csm:'riley', health:'Healthy', account:'ZScaler',
+      opp:'Vitally Pulse &mdash; Jun 10 Call',
+      arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Jun 10 &middot; Biweekly Sync',
+      excerpt:'RR/Jun 10: Biweekly TrustRadius sync. Review velocity on track for Top Rated qualification. Awards cycle and campaign planning confirmed. No open support issues or page updates needed (10:00 AM PT, 30 min).' },
+    { csm:'riley', health:'Healthy', account:'BMC',
+      opp:'Vitally Pulse &mdash; Jun 10 Call',
+      arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Jun 10 &middot; Monthly Sync',
+      excerpt:'RR/Jun 10: Monthly TR check-in. Q3 review campaign strategy confirmed. Product page current. BMC planning customer outreach campaign to drive reviews before next awards cycle. Steady relationship (10:30 AM PT, 30 min).' },
+    { csm:'nick', health:'Healthy', account:'Westcon',
+      opp:'Vitally Pulse &mdash; Jun 10 Call',
+      arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Jun 10 &middot; Quick Check-In',
+      excerpt:'NJ/Jun 10: Customer-initiated ad-hoc check-in on subscription scope and data access parameters. Questions addressed in session. Next scheduled sync in 2 weeks; no action items (11:30 AM PT, 15 min).' },
+    { csm:'varun', health:'Healthy', account:'Autodesk',
+      opp:'Vitally Pulse &mdash; Jun 10 Call',
+      arr:'Enterprise &middot; Varun Tiwari', csmlbl:'Varun Tiwari',
+      change:'Jun 10 &middot; Technical Prep',
+      excerpt:'VT/Jun 10: Monthly sync + technical call prep ahead of Jun 11 integration session. Autodesk requested column spec list for data feed integration. Varun committed to sending EOD today. Call agenda and participants confirmed for tomorrow (12:00 PM PT, 30 min).' },
+    { csm:'rani', health:'Healthy', account:'Lenovo',
+      opp:'Vitally Pulse &mdash; Jun 10 Call',
+      arr:'Enterprise &middot; Rani Guy', csmlbl:'Rani Guy',
+      change:'Jun 10 &middot; Monthly Sync',
+      excerpt:'RG/Jun 10: Monthly check-in with Lenovo GTM data team. Active data usage for campaign targeting confirmed by customer team. No blockers or escalations. Positive engagement; strong account health (12:00 PM PT, 30 min).' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div><strong>${c.account}</strong><div style="font-size:11px;color:#94a3b8;margin-top:2px;">${c.opp}</div></div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none"><div class="empty-icon">&#x1F493;</div>No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_06_10() {
+  return `
+  <div class="action-list">
+    <div class="action-item" data-csm="divyam" id="action-0610-1">
+      <div class="action-body">
+        <div class="action-id">[0610-1]</div>
+        <div class="action-title">&#x1F534; Informatica &mdash; Simplify Renewal Scope + Engage Buyer Champion Directly</div>
+        <div class="action-meta"><span class="urgency urgency-high">HIGH</span> Divyam Dewan &middot; Customer team overwhelmed by multi-product renewal complexity; paperwork unsigned. Divyam to create a simplified 1-page renewal summary and coordinate directly with buyer champion to unblock signature this week. Escalate to AE if no movement by end of week.</div>
+      </div>
+    </div>
+    <div class="action-item" data-csm="divyam" id="action-0610-2">
+      <div class="action-body">
+        <div class="action-id">[0610-2]</div>
+        <div class="action-title">&#x1F534; Adobe &mdash; Send Revised Data Feed Evaluation Report to Abhishek</div>
+        <div class="action-meta"><span class="urgency urgency-high">HIGH</span> Divyam Dewan &middot; Data feed evaluation feedback was 6 days overdue; collected today. Divyam to revise and send the evaluation report incorporating Abhishek&apos;s coverage and format questions. Include MCP vs. full-data path comparison. Target: send within 24 hours to keep expansion momentum.</div>
+      </div>
+    </div>
+    <div class="action-item" data-csm="nick" id="action-0610-3">
+      <div class="action-body">
+        <div class="action-id">[0610-3]</div>
+        <div class="action-title">&#x1F534; IBM &mdash; Send Formal GenAI / AI Spend Proposal to David Bush for Procurement</div>
+        <div class="action-meta"><span class="urgency urgency-high">HIGH</span> Nick Johnson &middot; David Bush reviewed initial pricing and returned with commercial questions on coverage, tiers, and integration. Nick to prepare and send a formal proposal document suitable for IBM procurement. Include data coverage summary, subscription tier breakdown, and integration options. Target: EOD today.</div>
+      </div>
+    </div>
+    <div class="action-item" data-csm="andy" id="action-0610-4">
+      <div class="action-body">
+        <div class="action-id">[0610-4]</div>
+        <div class="action-title">&#x1F4C8; SAS Institute &mdash; Bring in AE for Formal Phoenix Pricing Discussion</div>
+        <div class="action-meta"><span class="urgency urgency-medium">MEDIUM</span> Andy Lim &middot; SAS Institute came back with formal Phoenix pricing questions after yesterday&apos;s MCP demo. Andy walked through available packages but formal commercial scoping requires AE involvement. Coordinate with AE to set up a dedicated pricing and scoping conversation this week.</div>
+      </div>
+    </div>
+    <div class="action-item" data-csm="divyam" id="action-0610-5">
+      <div class="action-body">
+        <div class="action-id">[0610-5]</div>
+        <div class="action-title">&#x1F4C8; Paychex &mdash; Schedule IDL Content Audit + Landing Pages Config Review</div>
+        <div class="action-meta"><span class="urgency urgency-medium">MEDIUM</span> Divyam Dewan &middot; Paychex team positively engaged with IDL-powered content and landing page personalization use case. Next steps: content audit of existing Paychex assets and IDL configuration review. Divyam to send agenda for both sessions and schedule with Paychex marketing team within this week.</div>
+      </div>
+    </div>
+    <div class="action-item" data-csm="rani" id="action-0610-6">
+      <div class="action-body">
+        <div class="action-id">[0610-6]</div>
+        <div class="action-title">&#x1F4C8; AWS &mdash; Document Vision 360 Buyer Journey Mapping Use Case + Route to AE</div>
+        <div class="action-meta"><span class="urgency urgency-medium">MEDIUM</span> Rani Guy &middot; AWS team proactively raised Vision 360 data for buyer journey stage mapping across enterprise pipeline. Rani confirmed technical viability in-session. Document the use case spec and route to AE as a formal expansion signal. Include Vision 360 fields applicable to pipeline stage mapping in the brief.</div>
+      </div>
+    </div>
+    <div class="action-item" data-csm="atisha" id="action-0610-7">
+      <div class="action-body">
+        <div class="action-id">[0610-7]</div>
+        <div class="action-title">&#x1F4CB; Deloitte &mdash; Clarify 50K Credits Activation Plan with Rajesh</div>
+        <div class="action-meta"><span class="urgency urgency-medium">MEDIUM</span> Atisha Waghela &middot; Rajesh confirmed no deployment plan exists yet for the 50K credits. Atisha walked through recommended use cases on the call. Send a follow-up with the top 3 recommended activation use cases and a proposed timeline for Rajesh to review and confirm with his team before next monthly sync.</div>
+      </div>
+    </div>
+    <div class="action-item" data-csm="varun" id="action-0610-8">
+      <div class="action-body">
+        <div class="action-id">[0610-8]</div>
+        <div class="action-title">&#x1F4CB; Autodesk &mdash; Send Column Spec List Before Tomorrow&apos;s Technical Call</div>
+        <div class="action-meta"><span class="urgency urgency-low">LOW</span> Varun Tiwari &middot; Autodesk data team requested the column spec list for the planned data feed integration before the June 11 technical call. Varun committed to sending EOD today. Confirm receipt with the Autodesk technical lead before the call starts tomorrow.</div>
       </div>
     </div>
   </div>
