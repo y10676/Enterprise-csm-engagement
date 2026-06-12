@@ -2884,3 +2884,317 @@ function dayActionsHTML_2026_06_10() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none"><div class="empty-icon">&#x2705;</div>All action items completed.</div>`;
 }
+
+// ─── June 11, 2026 ────────────────────────────────────────────────────────────
+
+function dayData_2026_06_11() {
+  return {
+    calls: [
+      { ts: 'Jun 11 · 7:30 AM', csm: 'varun', account: 'Autodesk Inc',
+        note: 'V2 data feed migration & account matching discussion',
+        mins: 30, health: 'Concerning',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Issue',
+        detail: 'V2 data feed migration timeline and account matching process reviewed. Autodesk wants product count specs before cutover. Solution team to confirm migration timeline; Varun to send column spec list.' },
+      { ts: 'Jun 11 · 7:35 AM', csm: 'atisha', account: 'Intel Corporation',
+        note: 'Customer flagging IT spend data gaps vs. PitchBook',
+        mins: 25, health: 'Concerning',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Issue',
+        detail: 'Fernanda Oliveira raised missing IT/AI spend data for major enterprise accounts that PitchBook covers. Customer questioning HG data comprehensiveness for prospecting targets with no HG IT spend signal.' },
+      { ts: 'Jun 11 · 8:00 AM', csm: 'divyam', account: 'Sage Global Services',
+        note: 'Bi-weekly sync: all 4 campaigns live, AI crawler recap',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'All 4 Sage campaigns confirmed live. AI crawler session with TrustRadius recapped. Cross-data insights shared. Strong engagement and positive momentum across active campaign portfolio.' },
+      { ts: 'Jun 11 · 8:00 AM', csm: 'varun', account: 'MongoDB Inc',
+        note: 'New digital ops & acquisition stakeholders introduced to HG data',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Recurring sync with new MongoDB contacts from digital ops and digital acquisition teams. AE Ziad Amira led introductions. New stakeholders exploring ABM and pipeline telemetry use cases — strong expansion signal.' },
+      { ts: 'Jun 11 · 8:30 AM', csm: 'pam', account: 'ZoomInfo',
+        note: 'TR renewal sync with Sylvia Livingston and Anderson',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'TrustRadius renewal sync. First meeting between Pam and Anderson. Sylvia Livingston joined. Renewal terms reviewed and expansion scope discussed. Positive tone; renewal on track.' },
+      { ts: 'Jun 11 · 9:00 AM', csm: 'atisha', account: 'RSM US',
+        note: 'HG connector blocked by RSM DLP policy — security doc request',
+        mins: 30, health: 'Concerning',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Issue',
+        detail: 'RSM\'s Data Loss Prevention (DLP) policy is blocking the HG connector. Ellis (RSM) needs HG security documentation to route through IT/security approval. Adoption completely blocked until unresolved.' },
+      { ts: 'Jun 11 · 9:30 AM', csm: 'riley', account: 'SAP Inc',
+        note: 'SAP SuccessFactors TR progress: summer cadence + SAP Connect',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'SAP SuccessFactors TrustRadius progress review. Summer review cadence confirmed. SAP Connect event upcoming — customer engagement plans discussed. Steady relationship; no blockers.' },
+      { ts: 'Jun 11 · 11:00 AM', csm: 'riley', account: 'SAP Inc',
+        note: 'SAP Ariba + Fieldglass: 1,000+ leads identified with new sourcing process',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'SAP Ariba and Fieldglass review sourcing progress reviewed. New dedicated resource confirmed; automated tactics yielding 1,000+ net new leads identified. Executive alignment in place on review sourcing strategy.' },
+      { ts: 'Jun 11 · 12:30 PM', csm: 'pam', account: 'ADP, Inc',
+        note: 'ADP expansion: adding products + LLM/GEO optimization demo',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Pam led expansion conversation with ADP HRO team — actively exploring adding additional ADP products to TR subscription. Tanner (HG product) presented GEO and LLM optimization capabilities for ADP review profiles.' },
+    ],
+    pulses: [
+      { csm: 'varun',  account: 'Autodesk Inc',        health: 'Concerning' },
+      { csm: 'atisha', account: 'Intel Corporation',    health: 'Concerning' },
+      { csm: 'divyam', account: 'Sage Global Services', health: 'Healthy'   },
+      { csm: 'varun',  account: 'MongoDB Inc',          health: 'Healthy'   },
+      { csm: 'pam',    account: 'ZoomInfo',             health: 'Healthy'   },
+      { csm: 'atisha', account: 'RSM US',               health: 'Concerning' },
+      { csm: 'riley',  account: 'SAP Inc',              health: 'Healthy'   },
+      { csm: 'riley',  account: 'SAP Inc',              health: 'Healthy'   },
+      { csm: 'pam',    account: 'ADP, Inc',             health: 'Healthy'   },
+    ],
+  };
+}
+
+function dayMeta_2026_06_11() {
+  return {
+    pills: [
+      ['dot-teal',  '9 Calls'],
+      ['dot-red',   '3 Concerning'],
+      ['dot-amber', '3 Expansion'],
+      ['dot-green', '9 Vitally Pulses'],
+      ['dot-grey',  'Thu Jun 11 · 62 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (9)', 'Pulses (9)', 'Action Items (6)'],
+  };
+}
+
+function dayOverviewHTML_2026_06_11() {
+  return `<div class="section-label">Team Activity &mdash; Thursday June 11, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Thursday Jun 11 &mdash; 62 recordings scanned</strong> via SFDC SOQL &middot; <strong>9 confirmed calls</strong> across 5 CSMs &middot; 3 concerning (Autodesk V2 migration, Intel data gaps, RSM DLP blocker) &middot; 3 expansion signals (MongoDB new stakeholders, ZoomInfo renewal, ADP product add)
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>RSM US &mdash; Connector Blocked:</strong> HG connector blocked by RSM DLP policy. Atisha needs to send HG security documentation to Ellis for IT approval. Adoption at risk until resolved.
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 14px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>Expansion Activity:</strong> MongoDB (new digital ops / acquisition stakeholders engaged) &middot; ZoomInfo (TR renewal + expansion scope) &middot; ADP (product add-on discussion + LLM/GEO demo)
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">SAP SuccessFactors (summer cadence, SAP Connect) &middot; SAP Ariba+Fieldglass (1,000+ leads with new sourcing process)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Sage Global Services (all 4 campaigns live, AI crawler recap)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Autodesk (V2 migration timeline &amp; account matching &#x26A0;) &middot; MongoDB (new stakeholders from digital ops + acquisition)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="pam">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">ZoomInfo (TR renewal sync, expansion discussed) &middot; ADP (product add-on + LLM/GEO demo)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">2</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">55m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Intel (data gaps vs. PitchBook &#x26A0;) &middot; RSM US (HG connector blocked by DLP &#x1F534;)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="nick">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Events scheduled &mdash; no recordings confirmed (Infinigate, GTM Fabric, Sage biweekly, RevOps Speed Demo)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="rani">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Events scheduled &mdash; no recordings confirmed (Lenovo, Adobe biweekly, Adobe weekly, PANW Cloud Dynamics)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Events scheduled &mdash; no recordings confirmed (Sage biweekly, ADP — TR side covered by Pam Huck)</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_06_11() {
+  // Auto-table rendered by core.js via dayData fields. Banners only.
+  return `<div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x1F534; <strong>RSM US:</strong> HG connector completely blocked by DLP policy. Atisha to send security docs to Ellis for IT approval — adoption at risk.
+  </div>
+  <div style="background:#1c1f26;border:1px solid #6b7280;border-left:3px solid #6b7280;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#9ca3af;">
+    &#x26A0;&#xFE0F; <strong>Note:</strong> SAP Ariba + Fieldglass call (11:00 AM) detected via transcript only — no linked SFDC event found. Attributed to Riley Rogers by speaker label.
+  </div>`;
+}
+
+function dayPulsesHTML_2026_06_11() {
+  const cards = [
+    { csm:'varun', health:'Concerning', account:'Autodesk Inc',
+      opp:'Vitally Pulse &mdash; Jun 11 V2 Migration Call',
+      arr:'Enterprise &middot; Varun Tiwari', csmlbl:'Varun Tiwari',
+      change:'Jun 11 &middot; Ad-hoc Technical',
+      excerpt:'VT/Jun 11: Ad-hoc call on V2 data feed migration. Autodesk requesting column specs and product count clarity before cutover. Account matching process walkthrough completed; solution team to confirm migration timeline. Varun to send column spec list (7:30 AM PT, 30 min).' },
+    { csm:'atisha', health:'Concerning', account:'Intel Corporation',
+      opp:'Vitally Pulse &mdash; Jun 11 Data Quality Call',
+      arr:'Enterprise &middot; Atisha Waghela', csmlbl:'Atisha Waghela',
+      change:'Jun 11 &middot; Customer-Initiated',
+      excerpt:'AW/Jun 11: Fernanda Oliveira (Intel) flagging IT/AI spend data gaps — major enterprise names missing from HG where PitchBook has coverage. Customer questioning data comprehensiveness for prospecting. Atisha to investigate data coverage gaps and prepare response (7:35 AM PT, 25 min).' },
+    { csm:'divyam', health:'Healthy', account:'Sage Global Services',
+      opp:'Vitally Pulse &mdash; Jun 11 Bi-Weekly',
+      arr:'Enterprise &middot; Divyam Dewan', csmlbl:'Divyam Dewan',
+      change:'Jun 11 &middot; Bi-Weekly Sync',
+      excerpt:'DD/Jun 11: All 4 Sage campaigns confirmed live. AI crawler session with TrustRadius recapped. Cross-data insights shared. Positive engagement and strong campaign momentum across all active programs (8:00 AM PT, 30 min).' },
+    { csm:'varun', health:'Healthy', account:'MongoDB Inc',
+      opp:'Vitally Pulse &mdash; Jun 11 Expansion Sync',
+      arr:'Enterprise &middot; Varun Tiwari', csmlbl:'Varun Tiwari',
+      change:'Jun 11 &middot; Expansion Signal',
+      excerpt:'VT/Jun 11: Recurring sync with new MongoDB stakeholders from digital ops and digital acquisition teams. AE Ziad Amira led introductions. New contacts exploring ABM and pipeline telemetry use cases — strong expansion signal for HG data (8:00 AM PT, 30 min).' },
+    { csm:'pam', health:'Healthy', account:'ZoomInfo',
+      opp:'Vitally Pulse &mdash; Jun 11 Renewal Sync',
+      arr:'Enterprise &middot; Pam Huck', csmlbl:'Pam Huck',
+      change:'Jun 11 &middot; Renewal / Expansion',
+      excerpt:'PH/Jun 11: TR renewal sync with Sylvia Livingston and Anderson (ZoomInfo). First meeting between Pam and Anderson. Renewal terms and expansion scope reviewed. Positive tone; renewal on track (8:30 AM PT, 30 min).' },
+    { csm:'atisha', health:'Concerning', account:'RSM US',
+      opp:'Vitally Pulse &mdash; Jun 11 Weekly Sync',
+      arr:'Enterprise &middot; Atisha Waghela', csmlbl:'Atisha Waghela',
+      change:'Jun 11 &middot; Blocker &mdash; DLP',
+      excerpt:'AW/Jun 11: HG connector blocked by RSM DLP (Data Loss Prevention) policy. Ellis confirmed cannot use the HG connector in current state. Atisha to send HG security documentation for RSM IT/security approval process. Adoption completely blocked (9:00 AM PT, 30 min).' },
+    { csm:'riley', health:'Healthy', account:'SAP Inc',
+      opp:'Vitally Pulse &mdash; Jun 11 SuccessFactors Call',
+      arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Jun 11 &middot; SAP SuccessFactors',
+      excerpt:'RR/Jun 11: SAP SuccessFactors TR progress call. Summer review cadence confirmed. SAP Connect event upcoming — customer engagement plans discussed. Cole Arutian joined. Steady relationship; no blockers (9:30 AM PT, 30 min).' },
+    { csm:'riley', health:'Healthy', account:'SAP Inc',
+      opp:'Vitally Pulse &mdash; Jun 11 Ariba + Fieldglass Call',
+      arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Jun 11 &middot; SAP Ariba + Fieldglass',
+      excerpt:'RR/Jun 11: SAP Ariba + Fieldglass review sourcing progress. New dedicated resource confirmed with automated tactics — 1,000+ net new leads identified. Executive alignment on review sourcing strategy in place. Detected via transcript; no linked SFDC event (11:00 AM PT, 30 min).' },
+    { csm:'pam', health:'Healthy', account:'ADP, Inc',
+      opp:'Vitally Pulse &mdash; Jun 11 Expansion Call',
+      arr:'Enterprise &middot; Pam Huck', csmlbl:'Pam Huck',
+      change:'Jun 11 &middot; Expansion Signal',
+      excerpt:'PH/Jun 11: Pam led expansion discussion with ADP HRO team — exploring adding additional ADP products to TR subscription. Tanner (HG product) presented GEO and LLM optimization capabilities. Active expansion conversation in progress (12:30 PM PT, 30 min).' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div><strong>${c.account}</strong><div style="font-size:11px;color:#94a3b8;margin-top:2px;">${c.opp}</div></div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none"><div class="empty-icon">&#x1F493;</div>No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_06_11() {
+  return `
+  <div class="action-list">
+    <div class="action-item ${doneActions.has('0611-1')?'done':''}" data-csm="atisha" id="action-0611-1">
+      <div class="action-body">
+        <div class="action-id">[0611-1]</div>
+        <div class="action-title">&#x1F534; RSM US &mdash; Send HG Security Documentation to Unblock DLP</div>
+        <div class="action-meta"><span class="urgency urgency-high">HIGH</span> Atisha Waghela &middot; HG connector blocked by RSM DLP policy. Ellis needs HG security docs to route through RSM IT/security approval. Send security documentation package to Ellis today; follow up on IT ticket status by EOW. Adoption is completely blocked until resolved.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0611-2')?'done':''}" data-csm="varun" id="action-0611-2">
+      <div class="action-body">
+        <div class="action-id">[0611-2]</div>
+        <div class="action-title">&#x1F534; Autodesk &mdash; Confirm V2 Migration Timeline with Solution Team</div>
+        <div class="action-meta"><span class="urgency urgency-high">HIGH</span> Varun Tiwari &middot; Autodesk needs product count specs and migration timeline confirmation before V2 cutover. Varun to coordinate with solution team for timeline sign-off and send the complete column spec list to Autodesk technical lead. Confirm with customer within 24 hours.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0611-3')?'done':''}" data-csm="atisha" id="action-0611-3">
+      <div class="action-body">
+        <div class="action-id">[0611-3]</div>
+        <div class="action-title">&#x26A0;&#xFE0F; Intel &mdash; Investigate IT/AI Spend Data Coverage Gaps vs. PitchBook</div>
+        <div class="action-meta"><span class="urgency urgency-high">HIGH</span> Atisha Waghela &middot; Fernanda Oliveira (Intel) flagged major enterprise names missing IT spend in HG where PitchBook has coverage. Atisha to run a spot-check of the flagged companies, understand the data gap, and prepare a written response explaining HG coverage methodology and any known gaps. Send to Fernanda within 48 hours.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0611-4')?'done':''}" data-csm="pam" id="action-0611-4">
+      <div class="action-body">
+        <div class="action-id">[0611-4]</div>
+        <div class="action-title">&#x1F4C8; ADP &mdash; Send LLM/GEO Optimization Summary + Product Add-On Proposal</div>
+        <div class="action-meta"><span class="urgency urgency-medium">MEDIUM</span> Pam Huck &middot; ADP HRO team engaged on expansion — adding products and exploring LLM/GEO optimization. Pam to send a follow-up summary of Tanner&apos;s LLM/GEO overview and a product add-on proposal outlining pricing and next steps. Target: within this week.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0611-5')?'done':''}" data-csm="varun" id="action-0611-5">
+      <div class="action-body">
+        <div class="action-id">[0611-5]</div>
+        <div class="action-title">&#x1F4C8; MongoDB &mdash; Follow Up with New Digital Ops + Acquisition Stakeholders</div>
+        <div class="action-meta"><span class="urgency urgency-medium">MEDIUM</span> Varun Tiwari &middot; New MongoDB stakeholders from digital ops and digital acquisition teams were introduced to HG data today. Varun to send personalized follow-up to each new contact with relevant use cases (ABM targeting, pipeline telemetry) and schedule individual discovery sessions with Ziad (AE).</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0611-6')?'done':''}" data-csm="riley" id="action-0611-6">
+      <div class="action-body">
+        <div class="action-id">[0611-6]</div>
+        <div class="action-title">&#x1F4CB; SAP Ariba &mdash; Confirm Dedicated Resource &amp; Lead Activation Plan with SAP Team</div>
+        <div class="action-meta"><span class="urgency urgency-medium">MEDIUM</span> Riley Rogers &middot; New dedicated SAP review sourcing resource and 1,000+ net new leads identified. Riley to send SAP Ariba team a written summary of the new process, resource assignment, and activation timeline for the identified leads. Confirm next review milestone date.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none"><div class="empty-icon">&#x2705;</div>All action items completed.</div>`;
+}
