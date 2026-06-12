@@ -836,7 +836,10 @@ function renderMonth(mc, tabsRow, statPills) {
   else if (activeTab==='mcsm') html += monthCSMHTML();
   else if (activeTab==='mcalls') html += monthCallsHTML();
   else if (activeTab==='mpulses') html += monthPulsesHTML();
-  else if (activeTab==='mcoverage') html += pulseCoverageHTML();
+  else if (activeTab==='mcoverage') {
+    const snapFn = window['monthCoverageHTML_' + currentKey.replace('-', '_')];
+    html += snapFn ? snapFn() : pulseCoverageHTML();
+  }
   else if (activeTab==='macct') html += accountsHTML();
   else html += monthHealthHTML();
   html += '</div>';
