@@ -3198,3 +3198,397 @@ function dayActionsHTML_2026_06_11() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none"><div class="empty-icon">&#x2705;</div>All action items completed.</div>`;
 }
+
+// ============================================================
+// June 12, 2026  (Friday)
+// 51 recordings scanned · 6 confirmed CSM calls · 3 CSMs active
+// Nick(3) · Atisha(2) · Divyam(1) · 3 Expansion Signals
+// ============================================================
+
+function dayData_2026_06_12() {
+  return {
+    calls: [
+      { ts: 'Jun 12 · 2:30 AM', csm: 'nick', account: 'Softcat Ltd',
+        note: 'Nick presented RGIF data expansion to Softcat — UK data set growth and new categories in scope.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Nick Johnson presented RGIF data expansion opportunities to Softcat, focused on the UK data set growth and new data categories available for a potential multi-region deal expansion.' },
+      { ts: 'Jun 12 · 3:00 AM', csm: 'nick', account: 'Veeam Software',
+        note: 'Brief check-in with Cliff Wright; notetaker removed early, limited transcript.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Unknown', purpose: 'Check-in',
+        detail: 'Brief call between Nick Johnson and Cliff Wright (Veeam). The meeting notetaker was removed early in the recording so the transcript is minimal; specific topics discussed are unclear.' },
+      { ts: 'Jun 12 · 8:30 AM', csm: 'nick', account: 'Intuit IES',
+        note: 'CSM introduction call with Suja Unnikrishnan — onboarding Nick as new CSM.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Nick Johnson introduced himself to Suja Unnikrishnan (Intuit IES) as their new CSM. Introductory onboarding discussion covering platform orientation and upcoming CSM priorities.' },
+      { ts: 'Jun 12 · 8:30 AM', csm: 'atisha', account: 'Apple Inc',
+        note: 'Bi-weekly sync; July EBR invitation extended and account expansion discussed.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Apple bi-weekly check-in with Atisha Waghela. July EBR invitation extended to Apple contacts. Account expansion opportunities discussed alongside standard cadence topics.' },
+      { ts: 'Jun 12 · 9:30 AM', csm: 'divyam', account: 'Lumen Technologies',
+        note: '$175k 1-year renewal discussion; contact enrichment interest flagged as expansion.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'Customer', purpose: 'Expansion',
+        detail: 'Divyam Dewan\'s recurring sync with Lumen Technologies. $175k 1-year contract renewal terms reviewed. Customer flagged interest in contact enrichment capabilities as a potential expansion area.' },
+      { ts: 'Jun 12 · 10:30 AM', csm: 'atisha', account: 'DRT',
+        note: 'Follow-up on hierarchy data delivery progress; BCG project timeline reviewed.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Atisha Waghela followed up with Amanda and Stuart at DRT on hierarchy data processing progress. BCG project context reviewed; data is still being processed on the DRT side with no blockers flagged.' },
+    ],
+    pulses: [
+      { csm: 'nick', account: 'Softcat Ltd', health: 'Healthy' },
+      { csm: 'nick', account: 'Veeam Software', health: 'Healthy' },
+      { csm: 'nick', account: 'Intuit IES', health: 'Healthy' },
+      { csm: 'atisha', account: 'Apple Inc', health: 'Healthy' },
+      { csm: 'divyam', account: 'Lumen Technologies', health: 'Healthy' },
+      { csm: 'atisha', account: 'DRT', health: 'Healthy' },
+    ],
+  };
+}
+
+function dayMeta_2026_06_12() {
+  return {
+    pills: [
+      ['dot-teal',  '6 Calls'],
+      ['dot-amber', '3 Expansion Signals'],
+      ['dot-green', '6 Vitally Pulses'],
+      ['dot-grey',  'Fri Jun 12 · 51 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (6)', 'Pulses (6)', 'Action Items (6)']
+  };
+}
+
+function dayOverviewHTML_2026_06_12() {
+  return `<div class="section-label">Team Activity &mdash; Friday June 12, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Friday Jun 12 &mdash; 51 recordings scanned</strong> via SFDC SOQL &middot; <strong>6 confirmed calls</strong> across 3 CSMs &middot; 3 expansion signals &middot; 0 concerning
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>Expansion signals:</strong> Softcat (RGIF multi-region data expansion &middot; Nick) &middot; Apple (July EBR invitation, account expansion &middot; Atisha) &middot; Lumen ($175k renewal + contact enrichment interest &middot; Divyam)
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">3 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">3</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">90m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Softcat (RGIF expansion &#x1F4C8;) &middot; Veeam (check-in) &middot; Intuit IES (CSM intro / onboarding)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Lumen Technologies ($175k renewal &#x1F4C8; + contact enrichment interest)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Apple (bi-weekly, July EBR &#x1F4C8;) &middot; DRT (hierarchy data follow-up)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="riley">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No recorded activity on Jun 12</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="rani">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No recorded activity on Jun 12</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="varun">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No recorded activity on Jun 12</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No recorded activity on Jun 12</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No recorded activity on Jun 12</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_06_12() {
+  return `
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 12px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>3 Expansion signals on Fri Jun 12:</strong> Softcat (RGIF multi-region data) &middot; Apple (July EBR + expansion) &middot; Lumen ($175k renewal + contact enrichment)
+  </div>
+  <div style="color:#64748b;font-size:11px;margin-bottom:8px;">Call table auto-rendered by core.js &mdash; sorted by time PT.</div>`;
+}
+
+function dayPulsesHTML_2026_06_12() {
+  const cards = [
+    { csm: 'nick', health: 'Healthy', account: 'Softcat Ltd',
+      opp: 'Vitally Pulse — Jun 12 Expansion Call',
+      arr: 'Enterprise · Nick Johnson', csmlbl: 'Nick Johnson',
+      change: 'Jun 12 · Expansion Signal',
+      excerpt: 'NJ/Jun 12: Nick presented RGIF data expansion to Softcat. UK data set growth and new data categories in scope for a potential multi-region deal. Strong expansion conversation; James (Softcat) engaged on pricing and scope (2:30 AM PT, 30 min).' },
+    { csm: 'nick', health: 'Healthy', account: 'Veeam Software',
+      opp: 'Vitally Pulse — Jun 12 Check-in',
+      arr: 'Enterprise · Nick Johnson', csmlbl: 'Nick Johnson',
+      change: 'Jun 12 · Check-in',
+      excerpt: 'NJ/Jun 12: Brief call with Cliff Wright (Veeam). Notetaker was removed early; limited transcript. Specific topics unclear from available recording. No blockers or concerns surfaced (3:00 AM PT, 30 min).' },
+    { csm: 'nick', health: 'Healthy', account: 'Intuit IES',
+      opp: 'Vitally Pulse — Jun 12 CSM Intro',
+      arr: 'Enterprise · Nick Johnson', csmlbl: 'Nick Johnson',
+      change: 'Jun 12 · CSM Introduction',
+      excerpt: 'NJ/Jun 12: Nick introduced himself to Suja Unnikrishnan (Intuit IES) as their new CSM. Introductory onboarding discussion covering platform orientation. Healthy start to the relationship; no blockers (8:30 AM PT, 30 min).' },
+    { csm: 'atisha', health: 'Healthy', account: 'Apple Inc',
+      opp: 'Vitally Pulse — Jun 12 Bi-Weekly Sync',
+      arr: 'Enterprise · Atisha Waghela', csmlbl: 'Atisha Waghela',
+      change: 'Jun 12 · Bi-Weekly + Expansion',
+      excerpt: 'AW/Jun 12: Apple bi-weekly check-in. Atisha extended July EBR invitation to Apple contacts. Account expansion opportunities discussed. Strong relationship; customer engaged on EBR planning (8:30 AM PT, 30 min).' },
+    { csm: 'divyam', health: 'Healthy', account: 'Lumen Technologies',
+      opp: 'Vitally Pulse — Jun 12 Renewal Sync',
+      arr: 'Enterprise · Divyam Dewan', csmlbl: 'Divyam Dewan',
+      change: 'Jun 12 · Renewal + Expansion Signal',
+      excerpt: 'DD/Jun 12: Recurring sync with Lumen. $175k 1-year renewal terms reviewed. Customer flagged interest in contact enrichment as expansion. Positive tone; renewal on track (9:30 AM PT, 30 min).' },
+    { csm: 'atisha', health: 'Healthy', account: 'DRT',
+      opp: 'Vitally Pulse — Jun 12 Data Follow-up',
+      arr: 'Enterprise · Atisha Waghela', csmlbl: 'Atisha Waghela',
+      change: 'Jun 12 · Data Follow-up',
+      excerpt: 'AW/Jun 12: Atisha followed up with Amanda and Stuart (DRT) on hierarchy data processing progress tied to BCG project. Data still being processed on DRT side; no blockers flagged. Steady progress (10:30 AM PT, 30 min).' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div><strong>${c.account}</strong><div style="font-size:11px;color:#94a3b8;margin-top:2px;">${c.opp}</div></div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none"><div class="empty-icon">&#x1F493;</div>No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_06_12() {
+  return `
+  <div class="action-list">
+    <div class="action-item ${doneActions.has('0612-1')?'done':''}" data-csm="divyam" id="action-0612-1">
+      <div class="action-body">
+        <div class="action-id">[0612-1]</div>
+        <div class="action-title">&#x1F4C8; Lumen Technologies &mdash; Confirm $175k Renewal Terms with Hayden Smith</div>
+        <div class="action-meta"><span class="urgency urgency-high">HIGH</span> Divyam Dewan &middot; Renewal discussed in today&apos;s sync. $175k 1-year contract terms need formal confirmation. Divyam to follow up with Hayden Smith (HG AE) to align on final terms, contract timeline, and next steps. Do not let this drift past end of June.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0612-2')?'done':''}" data-csm="atisha" id="action-0612-2">
+      <div class="action-body">
+        <div class="action-id">[0612-2]</div>
+        <div class="action-title">&#x1F4C5; Apple &mdash; Send July EBR Invitation and Confirm Agenda with Apple Contacts</div>
+        <div class="action-meta"><span class="urgency urgency-high">HIGH</span> Atisha Waghela &middot; July EBR invitation verbally extended during today&apos;s bi-weekly. Atisha to send a formal calendar invite to Apple contacts with a proposed agenda covering account expansion, platform usage, and strategic roadmap alignment. Confirm attendance this week.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0612-3')?'done':''}" data-csm="nick" id="action-0612-3">
+      <div class="action-body">
+        <div class="action-id">[0612-3]</div>
+        <div class="action-title">&#x1F680; Softcat &mdash; Follow Up on RGIF Multi-Region Data Expansion with James</div>
+        <div class="action-meta"><span class="urgency urgency-medium">MEDIUM</span> Nick Johnson &middot; RGIF data expansion presentation completed today. James (Softcat) is engaged on UK data set scope and pricing. Nick to send a follow-up summary of the data categories discussed and coordinate with David Garcia Thomas (AE) on commercial terms. Target: book a strategic session this week.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0612-4')?'done':''}" data-csm="nick" id="action-0612-4">
+      <div class="action-body">
+        <div class="action-id">[0612-4]</div>
+        <div class="action-title">&#x1F4CB; Intuit IES &mdash; Continue Onboarding Suja Unnikrishnan; Share Platform Resources</div>
+        <div class="action-meta"><span class="urgency urgency-medium">MEDIUM</span> Nick Johnson &middot; Introductory call with Suja Unnikrishnan completed. Send platform onboarding resources, key use-case guides, and a proposed check-in cadence for the next 30 days. Set Suja up for early success as the HG relationship continues under Nick&apos;s ownership.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0612-5')?'done':''}" data-csm="atisha" id="action-0612-5">
+      <div class="action-body">
+        <div class="action-id">[0612-5]</div>
+        <div class="action-title">&#x1F4E6; DRT &mdash; Follow Up with Amanda &amp; Stuart on Hierarchy Data Processing Progress</div>
+        <div class="action-meta"><span class="urgency urgency-medium">MEDIUM</span> Atisha Waghela &middot; BCG project timeline depends on hierarchy data delivery. Atisha to check in with Amanda and Stuart next week on processing status and confirm whether DRT&apos;s internal processing steps are on track. Escalate if there&apos;s a blockers on the DRT side.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0612-6')?'done':''}" data-csm="nick" id="action-0612-6">
+      <div class="action-body">
+        <div class="action-id">[0612-6]</div>
+        <div class="action-title">&#x1F4CB; Veeam &mdash; Follow Up with Cliff Wright on Call Topics</div>
+        <div class="action-meta"><span class="urgency urgency-low">LOW</span> Nick Johnson &middot; Notetaker was removed early from today&apos;s call; transcript is minimal. Nick to send a brief follow-up to Cliff Wright to confirm any action items or next steps from the call. Keep the relationship warm and ensure nothing was missed.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none"><div class="empty-icon">&#x2705;</div>All action items completed.</div>`;
+}
+
+function weeklyOrMonthlyHTML_2026_06_12() {
+  return `<div class="weekly-summary">
+    <div class="weekly-header">
+      <div class="weekly-title">Week 2 Summary &mdash; June 8&ndash;12, 2026</div>
+      <div class="weekly-subtitle">Enterprise CSM Engagement &middot; 8 CSMs &middot; 46 confirmed calls</div>
+    </div>
+
+    <div class="weekly-kpi-row">
+      <div class="weekly-kpi"><div class="kpi-value">46</div><div class="kpi-label">Confirmed Calls</div></div>
+      <div class="weekly-kpi"><div class="kpi-value">8</div><div class="kpi-label">CSMs Active</div></div>
+      <div class="weekly-kpi kpi-good"><div class="kpi-value">0</div><div class="kpi-label">Concerning Signals</div></div>
+      <div class="weekly-kpi kpi-expand"><div class="kpi-value">14</div><div class="kpi-label">Expansion Signals</div></div>
+    </div>
+
+    <div class="weekly-section-title">Daily Breakdown</div>
+    <table class="weekly-table">
+      <thead><tr><th>Day</th><th>Calls</th><th>Concerning</th><th>Active CSMs</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>Mon 6/8</strong></td>
+          <td>6</td>
+          <td>0</td>
+          <td>Nick (2), Rani (2), Riley (1), Divyam (1)</td>
+        </tr>
+        <tr>
+          <td><strong>Tue 6/9</strong></td>
+          <td>11</td>
+          <td>0</td>
+          <td>Atisha (3), Nick (2), Riley (2), Divyam (2), Rani (1), Andy (1)</td>
+        </tr>
+        <tr>
+          <td><strong>Wed 6/10</strong></td>
+          <td>14</td>
+          <td>0</td>
+          <td>Divyam (3), Rani (2), Nick (2), Riley (2), Atisha (2), Varun (1), Pam (1), Andy (1)</td>
+        </tr>
+        <tr>
+          <td><strong>Thu 6/11</strong></td>
+          <td>9</td>
+          <td>0</td>
+          <td>Varun (2), Atisha (2), Pam (2), Riley (2), Divyam (1)</td>
+        </tr>
+        <tr>
+          <td><strong>Fri 6/12</strong></td>
+          <td>6</td>
+          <td>0</td>
+          <td>Nick (3), Atisha (2), Divyam (1)</td>
+        </tr>
+        <tr class="row-total">
+          <td><strong>Week Total</strong></td>
+          <td><strong>46</strong></td>
+          <td><strong>0</strong></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="weekly-section-title">CSM Performance &mdash; W2</div>
+    <table class="weekly-table">
+      <thead><tr><th>CSM</th><th>Calls</th><th>Key Accounts Touched</th><th>Notable</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><strong>Nick Johnson</strong></td>
+          <td>9</td>
+          <td>Softcat, Veeam, Intuit IES, NTT Data, IBM, Infor</td>
+          <td>RGIF expansion (Softcat), NTT re-engagement, Intuit IES onboarding</td>
+        </tr>
+        <tr>
+          <td><strong>Atisha Waghela</strong></td>
+          <td>9</td>
+          <td>Apple, DRT, RSM US, Intel, Cognizant</td>
+          <td>Apple July EBR, Cognizant expansion; RSM DLP blocker ongoing</td>
+        </tr>
+        <tr>
+          <td><strong>Divyam Dewan</strong></td>
+          <td>8</td>
+          <td>Lumen, Sage, Adobe, SAS Institute, BILL</td>
+          <td>Lumen $175k renewal on track, SAS expansion signal</td>
+        </tr>
+        <tr>
+          <td><strong>Riley Rogers</strong></td>
+          <td>7</td>
+          <td>SAP (SuccessFactors, Ariba, Fieldglass), Paycom, Intuit MailChimp</td>
+          <td>SAP Ariba 1,000+ net new leads; new dedicated resource confirmed</td>
+        </tr>
+        <tr>
+          <td><strong>Rani Guy</strong></td>
+          <td>5</td>
+          <td>NetApp, Workday, AWS, Cloudflare</td>
+          <td>NetApp match-rate follow-up; Workday Databricks delivery</td>
+        </tr>
+        <tr>
+          <td><strong>Pam Huck</strong></td>
+          <td>3</td>
+          <td>ZoomInfo, ADP</td>
+          <td>ZoomInfo renewal on track; ADP expansion discussion active</td>
+        </tr>
+        <tr>
+          <td><strong>Varun Tiwari</strong></td>
+          <td>3</td>
+          <td>MongoDB, Autodesk, ServiceNow</td>
+          <td>MongoDB new stakeholders &mdash; expansion signal; Autodesk V2 migration</td>
+        </tr>
+        <tr>
+          <td><strong>Andy Lim</strong></td>
+          <td>2</td>
+          <td>Ever Pure, Booz Allen</td>
+          <td>Ever Pure cloud/spend column fix in progress</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="weekly-section-title">W2 Top Signals &amp; Heading into W3</div>
+    <div style="background:#141820;border:1px solid #1e293b;border-radius:8px;padding:12px;margin-bottom:8px;">
+      <div style="font-size:12px;color:#cbd5e1;line-height:2;">
+        <span style="color:#ef4444;font-weight:600;">HIGH</span> &nbsp;&nbsp;Lumen &mdash; Divyam to confirm $175k renewal terms with Hayden Smith before EOM<br>
+        <span style="color:#ef4444;font-weight:600;">HIGH</span> &nbsp;&nbsp;Apple &mdash; Atisha to send July EBR formal invite + agenda to Apple contacts this week<br>
+        <span style="color:#ef4444;font-weight:600;">HIGH</span> &nbsp;&nbsp;RSM US &mdash; Atisha to confirm HG security doc sent to Ellis; DLP blocker unresolved<br>
+        <span style="color:#f59e0b;font-weight:600;">MED</span> &nbsp;&nbsp;Softcat &mdash; Nick to follow up on RGIF multi-region expansion scope and pricing<br>
+        <span style="color:#f59e0b;font-weight:600;">MED</span> &nbsp;&nbsp;Autodesk &mdash; Varun to confirm V2 migration timeline with solution team<br>
+        <span style="color:#f59e0b;font-weight:600;">MED</span> &nbsp;&nbsp;MongoDB &mdash; Varun to send personalized follow-up to new digital ops stakeholders<br>
+        <span style="color:#f59e0b;font-weight:600;">MED</span> &nbsp;&nbsp;Intel &mdash; Atisha to prepare data coverage gap response (vs. PitchBook) for Fernanda
+      </div>
+    </div>
+  </div>`;
+}
