@@ -827,3 +827,278 @@ function weekCallsHTML_2026_W20() {
   </div>
   <div class="empty-state" id="calls-empty" style="display:none"><div class="empty-icon">&#128269;</div>No calls match these filters.</div>`;
 }
+
+// ═══════════════════════════════════════════════════════════════
+// W21 — Week of May 18–24, 2026
+// ═══════════════════════════════════════════════════════════════
+
+function weekSummaryHTML_2026_W21() {
+  return `
+  <div class="section-label">Week of May 18&ndash;24, 2026 &middot; Overview (W21)</div>
+  <div class="summary-cards">
+    <div class="sum-card c-teal" onclick="jumpToTab('wcalls','all','all')"><div class="sum-val">36</div><div class="sum-lbl">Weflow Calls</div><div class="sum-sub">Mon&ndash;Fri &middot; 7 CSMs active</div></div>
+    <div class="sum-card c-green" onclick="jumpToTab('wpulses','all','all')"><div class="sum-val">36</div><div class="sum-lbl">Pulse Notes Created</div><div class="sum-sub">29 Healthy &middot; 7 Concerning</div></div>
+    <div class="sum-card c-purple" onclick="jumpToTab('wcsm','all','all')"><div class="sum-val">7</div><div class="sum-lbl">Active CSMs</div><div class="sum-sub">Andy Lim = 0 calls all week</div></div>
+    <div class="sum-card c-amber" onclick="jumpToTab('wpulses','all','Concerning')"><div class="sum-val">7</div><div class="sum-lbl">Concerning Signals</div><div class="sum-sub">Elastic &times;2 &middot; Splunk &middot; NetApp &middot; Dayforce &middot; Blackbaud &middot; Yubico</div></div>
+    <div class="sum-card c-red"><div class="sum-val">1</div><div class="sum-lbl">High-Risk Account</div><div class="sum-sub">Dayforce US &mdash; POC offer extended</div></div>
+    <div class="sum-card c-green" onclick="jumpToTab('wcalls','nick','all')"><div class="sum-val">$780K</div><div class="sum-lbl">Expansion Proposal</div><div class="sum-sub">HCLSoftware &mdash; Nick Johnson</div></div>
+  </div>
+
+  <div class="section-label">Key Accounts This Week</div>
+  <div class="account-highlights">
+    <div class="acct-card ac-amber"><div class="acct-name">Dayforce US</div><div class="acct-csm">CSM: Varun Tiwari</div><div class="acct-stats"><div class="acct-stat"><div class="n ct">1</div><div class="l">Calls</div></div><div class="acct-stat"><div class="n" style="color:#ef4444">!</div><div class="l">High Risk</div></div><div class="acct-stat"><div class="n" style="color:#d97706">&#x26A0;</div><div class="l">POC Offer</div></div></div><div class="acct-note">2Q ROI review with Kory Himmer (Thu May 21, 60 min). High Risk &mdash; POC offer extended to retain account. Varun flagged Concerning; outcome of POC decision TBD. Close monitoring required through Q3.</div></div>
+    <div class="acct-card ac-amber"><div class="acct-name">Elastic Portfolio</div><div class="acct-csm">CSM: Rani Guy</div><div class="acct-stats"><div class="acct-stat"><div class="n ct">3</div><div class="l">Calls</div></div><div class="acct-stat"><div class="n" style="color:#d97706">2</div><div class="l">Concerning</div></div><div class="acct-stat"><div class="n" style="color:#d97706">&#x26A0;</div><div class="l">Data Issues</div></div></div><div class="acct-note">Two Concerning calls on Fri May 22: custom spend data (David Adamson team) and account matching (Sriraman Narayanan). Mon healthy spend call preceded these. Rani needs to resolve data quality concerns with SE support before Q3 renewal.</div></div>
+    <div class="acct-card"><div class="acct-name">HCLSoftware</div><div class="acct-csm">CSM: Nick Johnson</div><div class="acct-stats"><div class="acct-stat"><div class="n ct">1</div><div class="l">Calls</div></div><div class="acct-stat"><div class="n cg">1</div><div class="l">Pulse</div></div><div class="acct-stat"><div class="n" style="color:#059669">$780K</div><div class="l">Proposal</div></div></div><div class="acct-note">Fri May 22 &mdash; $780K proposal review for data feed + MCP package. 5 HCL teams (Poonam Fotedar, Alex Knaani, Harry Pandarathil, Abeer Sharma + others). Decision target: first week of June. Angus Hyams (AE) led; Nick in CSM support.</div></div>
+    <div class="acct-card"><div class="acct-name">Autodesk</div><div class="acct-csm">CSM: Varun Tiwari</div><div class="acct-stats"><div class="acct-stat"><div class="n ct">1</div><div class="l">Calls</div></div><div class="acct-stat"><div class="n cg">1</div><div class="l">Pulse</div></div><div class="acct-stat"><div class="n" style="color:#059669">4M</div><div class="l">Records</div></div></div><div class="acct-note">Wed May 20 &mdash; 4M CRM records matching + enrichment discussion with Jessica Hayek. Expansion-scale data engagement confirmed. Healthy signal; strategic account with significant data volume upside.</div></div>
+    <div class="acct-card ac-amber"><div class="acct-name">Blackbaud</div><div class="acct-csm">CSM: Divyam Dewan</div><div class="acct-stats"><div class="acct-stat"><div class="n ct">1</div><div class="l">Calls</div></div><div class="acct-stat"><div class="n" style="color:#d97706">1</div><div class="l">Concerning</div></div><div class="acct-stat"><div class="n" style="color:#d97706">41d</div><div class="l">Renewal</div></div></div><div class="acct-note">Mon May 18 &mdash; Renewal in 41 days, IDL campaign paused. Concerning flag. Divyam needs to accelerate renewal conversation and reactivate IDL engagement before contract expires.</div></div>
+  </div>
+
+  <div class="section-label">Daily Weflow Call Activity &mdash; Week of May 18&ndash;24</div>
+  <div class="heatmap-card">
+    <table class="hm-table">
+      <thead><tr><th class="row-lbl">CSM</th><th>Mon May 18</th><th>Tue May 19</th><th>Wed May 20</th><th>Thu May 21</th><th>Fri May 22</th><th>Sat May 23</th><th>Sun May 24</th></tr></thead>
+      <tbody>
+        <tr class="hm-csm-row" data-csm="varun"><td style="font-size:12px;font-weight:600;color:#2563eb;cursor:pointer">Varun Tiwari</td><td class="hm-cell hm-1">1</td><td class="hm-cell hm-2">2</td><td class="hm-cell hm-3">5</td><td class="hm-cell hm-1">1</td><td class="hm-cell hm-0">&mdash;</td><td class="hm-cell hm-0">&mdash;</td><td class="hm-cell hm-0">&mdash;</td></tr>
+        <tr class="hm-csm-row" data-csm="rani"><td style="font-size:12px;font-weight:600;color:#2563eb;cursor:pointer">Rani Guy</td><td class="hm-cell hm-1">1</td><td class="hm-cell hm-0">&mdash;</td><td class="hm-cell hm-3">3</td><td class="hm-cell hm-2">2</td><td class="hm-cell hm-3">3</td><td class="hm-cell hm-0">&mdash;</td><td class="hm-cell hm-0">&mdash;</td></tr>
+        <tr class="hm-csm-row" data-csm="divyam"><td style="font-size:12px;font-weight:600;color:#2563eb;cursor:pointer">Divyam Dewan</td><td class="hm-cell hm-1">1</td><td class="hm-cell hm-1">1</td><td class="hm-cell hm-1">1</td><td class="hm-cell hm-1">1</td><td class="hm-cell hm-2">2</td><td class="hm-cell hm-0">&mdash;</td><td class="hm-cell hm-0">&mdash;</td></tr>
+        <tr class="hm-csm-row" data-csm="nick"><td style="font-size:12px;font-weight:600;color:#2563eb;cursor:pointer">Nick Johnson</td><td class="hm-cell hm-0">&mdash;</td><td class="hm-cell hm-2">2</td><td class="hm-cell hm-0">&mdash;</td><td class="hm-cell hm-1">1</td><td class="hm-cell hm-1">1</td><td class="hm-cell hm-0">&mdash;</td><td class="hm-cell hm-0">&mdash;</td></tr>
+        <tr class="hm-csm-row" data-csm="riley"><td style="font-size:12px;font-weight:600;color:#2563eb;cursor:pointer">Riley Rogers</td><td class="hm-cell hm-0">&mdash;</td><td class="hm-cell hm-2">2</td><td class="hm-cell hm-2">2</td><td class="hm-cell hm-0">&mdash;</td><td class="hm-cell hm-0">&mdash;</td><td class="hm-cell hm-0">&mdash;</td><td class="hm-cell hm-0">&mdash;</td></tr>
+        <tr class="hm-csm-row" data-csm="atisha"><td style="font-size:12px;font-weight:600;color:#2563eb;cursor:pointer">Atisha Waghela</td><td class="hm-cell hm-1">1</td><td class="hm-cell hm-1">1</td><td class="hm-cell hm-1">1</td><td class="hm-cell hm-0">&mdash;</td><td class="hm-cell hm-0">&mdash;</td><td class="hm-cell hm-0">&mdash;</td><td class="hm-cell hm-0">&mdash;</td></tr>
+        <tr class="hm-csm-row" data-csm="pam"><td style="font-size:12px;font-weight:600;color:#2563eb;cursor:pointer">Pam Huck</td><td class="hm-cell hm-0">&mdash;</td><td class="hm-cell hm-0">&mdash;</td><td class="hm-cell hm-0">&mdash;</td><td class="hm-cell hm-1">1</td><td class="hm-cell hm-0">&mdash;</td><td class="hm-cell hm-0">&mdash;</td><td class="hm-cell hm-0">&mdash;</td></tr>
+        <tr class="hm-csm-row" data-csm="andy"><td style="font-size:12px;font-weight:600;color:#2563eb;cursor:pointer">Andy Lim</td><td class="hm-cell hm-0">&mdash;</td><td class="hm-cell hm-0">&mdash;</td><td class="hm-cell hm-0">&mdash;</td><td class="hm-cell hm-0">&mdash;</td><td class="hm-cell hm-0">&mdash;</td><td class="hm-cell hm-0">&mdash;</td><td class="hm-cell hm-0">&mdash;</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section-label">Pulse Health Distribution</div>
+  <div class="health-dist">
+    <div class="health-bar-wrap">
+      <div class="health-bar-title">All Pulses Created This Week (36)</div>
+      <div class="health-bar-row"><div class="health-bar-label">&#128994; Healthy</div><div class="health-bar-track"><div class="health-bar-fill hf-green" style="width:81%"></div></div><div class="health-bar-count">29</div></div>
+      <div class="health-bar-row"><div class="health-bar-label">&#128993; Concerning</div><div class="health-bar-track"><div class="health-bar-fill hf-amber" style="width:19%"></div></div><div class="health-bar-count">7</div></div>
+      <div class="health-bar-row"><div class="health-bar-label">&#128308; Poor</div><div class="health-bar-track"><div class="health-bar-fill hf-red" style="width:0%"></div></div><div class="health-bar-count">0</div></div>
+    </div>
+    <div class="health-bar-wrap">
+      <div class="health-bar-title">Calls by Day (Weflow)</div>
+      <div class="health-bar-row"><div class="health-bar-label">Mon May 18</div><div class="health-bar-track"><div class="health-bar-fill hf-green" style="width:33%"></div></div><div class="health-bar-count">4</div></div>
+      <div class="health-bar-row"><div class="health-bar-label">Tue May 19</div><div class="health-bar-track"><div class="health-bar-fill hf-green" style="width:67%"></div></div><div class="health-bar-count">8</div></div>
+      <div class="health-bar-row"><div class="health-bar-label">Wed May 20</div><div class="health-bar-track"><div class="health-bar-fill hf-green" style="width:100%"></div></div><div class="health-bar-count">12</div></div>
+      <div class="health-bar-row"><div class="health-bar-label">Thu May 21</div><div class="health-bar-track"><div class="health-bar-fill hf-green" style="width:50%"></div></div><div class="health-bar-count">6</div></div>
+      <div class="health-bar-row"><div class="health-bar-label">Fri May 22</div><div class="health-bar-track"><div class="health-bar-fill hf-green" style="width:50%"></div></div><div class="health-bar-count">6</div></div>
+    </div>
+  </div>`;
+}
+
+function weekCSMHTML_2026_W21() {
+  return `<div class="section-label">CSM Contributions &mdash; Week of May 18&ndash;24, 2026 (W21)</div>
+  <div class="csm-leaderboard">
+    <div class="csm-row csm-total" data-csm="all"><div class="avatar">&Sigma;</div><div style="flex:1"><div class="csm-row-name">Total &mdash; All CSMs</div><div class="csm-row-sub">7 of 8 Enterprise CSMs active &middot; 120 accounts &middot; 36 Weflow calls (confirmed)</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">36</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">36</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n" style="color:#d97706">7</div><div class="l">Concerning</div></div><div class="row-stat"><div class="n" style="color:#7c3aed">120</div><div class="l">Accounts</div></div><div class="row-stat"><div class="n" style="color:#2563eb">240</div><div class="l">Opps</div></div></div></div>
+    <div class="csm-row" data-csm="varun"><div class="avatar av-varun">VT</div><div style="flex:1"><div class="csm-row-name">Varun Tiwari <span style="font-size:11px;color:#d97706;font-weight:600">High-Risk Flagged</span></div><div class="csm-row-sub">OpenText &middot; Exclusive Networks &middot; Iron Mountain &middot; MongoDB &middot; Datadog &middot; Autodesk &middot; Pegasystems &middot; CBTS &middot; Dayforce US (&#x26A0; POC offer)</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">9</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">9</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n" style="color:#d97706">1</div><div class="l">Concerning</div></div><div class="row-stat"><div class="n" style="color:#7c3aed">21</div><div class="l">Accounts</div></div><div class="row-stat"><div class="n" style="color:#2563eb">26</div><div class="l">Opps</div></div></div></div>
+    <div class="csm-row" data-csm="rani"><div class="avatar av-grey">RG</div><div style="flex:1"><div class="csm-row-name">Rani Guy <span style="font-size:11px;color:#d97706;font-weight:600">3 Concerning Fri</span></div><div class="csm-row-sub">Elastic (Mon healthy) &middot; Workday &middot; Cisco (x2) &middot; Lenovo &middot; NetApp (&#x26A0;) &middot; Splunk (&#x26A0;) &middot; Elastic Custom Spend (&#x26A0;) &middot; Elastic Acct Matching (&#x26A0;)</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">9</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#d97706">9</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n" style="color:#d97706">4</div><div class="l">Concerning</div></div><div class="row-stat"><div class="n" style="color:#7c3aed">10</div><div class="l">Accounts</div></div><div class="row-stat"><div class="n" style="color:#2563eb">27</div><div class="l">Opps</div></div></div></div>
+    <div class="csm-row" data-csm="divyam"><div class="avatar av-divyam">DD</div><div style="flex:1"><div class="csm-row-name">Divyam Dewan <span style="font-size:11px;color:#d97706;font-weight:600">Renewal Risk</span></div><div class="csm-row-sub">Blackbaud (&#x26A0; 41d renewal) &middot; Dynatrace &middot; Infinigate &middot; Lumen Technologies &middot; TrustRadius &middot; Informatica</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">6</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#d97706">6</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n" style="color:#d97706">1</div><div class="l">Concerning</div></div><div class="row-stat"><div class="n" style="color:#7c3aed">21</div><div class="l">Accounts</div></div><div class="row-stat"><div class="n" style="color:#2563eb">28</div><div class="l">Opps</div></div></div></div>
+    <div class="csm-row" data-csm="nick"><div class="avatar av-grey">NJ</div><div style="flex:1"><div class="csm-row-name">Nick Johnson <span style="font-size:11px;color:#059669;font-weight:600">$780K Proposal</span></div><div class="csm-row-sub">Chambers &middot; SAP Inc (MCP) &middot; Siemens AG (ACP launch) &middot; HCLSoftware ($780K proposal &middot; Poonam Fotedar)</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">4</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">4</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n cgr">0</div><div class="l">Concerning</div></div><div class="row-stat"><div class="n" style="color:#7c3aed">27</div><div class="l">Accounts</div></div><div class="row-stat"><div class="n" style="color:#2563eb">43</div><div class="l">Opps</div></div></div></div>
+    <div class="csm-row" data-csm="riley"><div class="avatar av-riley">RR</div><div style="flex:1"><div class="csm-row-name">Riley Rogers</div><div class="csm-row-sub">Intuit Mailchimp (TR bi-weekly) &middot; Zoom Video (TR) &middot; IBM (WatsonX Orchestrate banners) &middot; Yubico (&#x26A0; 6 reviews / 5K contacts)</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">4</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#d97706">4</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n" style="color:#d97706">1</div><div class="l">Concerning</div></div><div class="row-stat"><div class="n" style="color:#7c3aed">6</div><div class="l">Accounts</div></div><div class="row-stat"><div class="n" style="color:#2563eb">59</div><div class="l">Opps</div></div></div></div>
+    <div class="csm-row" data-csm="atisha"><div class="avatar av-grey">AW</div><div style="flex:1"><div class="csm-row-name">Atisha Waghela</div><div class="csm-row-sub">Kyndryl (RGIP India training) &middot; RSM US (7K account list) &middot; OPISystems (credits bug resolved)</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">3</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">3</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n cgr">0</div><div class="l">Concerning</div></div><div class="row-stat"><div class="n" style="color:#7c3aed">18</div><div class="l">Accounts</div></div><div class="row-stat"><div class="n" style="color:#2563eb">22</div><div class="l">Opps</div></div></div></div>
+    <div class="csm-row" data-csm="pam"><div class="avatar av-grey">PH</div><div style="flex:1"><div class="csm-row-name">Pam Huck</div><div class="csm-row-sub">Oracle NetSuite (IDL 117 MQLs &middot; 3 SQLs &middot; Top Rated on track)</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">1</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">1</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n cgr">0</div><div class="l">Concerning</div></div><div class="row-stat"><div class="n" style="color:#7c3aed">7</div><div class="l">Accounts</div></div><div class="row-stat"><div class="n" style="color:#2563eb">17</div><div class="l">Opps</div></div></div></div>
+    <div class="csm-row inactive" data-csm="andy"><div class="avatar av-grey">AL</div><div style="flex:1"><div class="csm-row-name">Andy Lim</div><div class="csm-row-sub">No calls logged this week</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n cgr">0</div><div class="l">Calls</div></div><div class="row-stat"><div class="n cgr">0</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n cgr">0</div><div class="l">Concerning</div></div><div class="row-stat"><div class="n" style="color:#7c3aed">10</div><div class="l">Accounts</div></div><div class="row-stat"><div class="n" style="color:#2563eb">13</div><div class="l">Opps</div></div></div></div>
+  </div>`;
+}
+
+function weekCallsHTML_2026_W21() {
+  return `<div class="table-card"><table>
+    <thead><tr><th>Day</th><th>Time (PT)</th><th>CSM</th><th>Account</th><th>Min</th><th>Signal</th></tr></thead>
+    <tbody>
+      <tr data-csm="varun" data-health="Healthy"><td style="color:#9ca3af;font-size:11px">Mon</td><td style="color:#9ca3af;font-size:12px">May 18 &middot; 3:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-varun">VT</div>Varun Tiwari</div></td><td><strong>OpenText</strong> <span style="font-size:11px;color:#9ca3af">Data file update &middot; renewal planning</span></td><td>30</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="atisha" data-health="Healthy"><td style="color:#9ca3af;font-size:11px">Mon</td><td style="color:#9ca3af;font-size:12px">May 18 &middot; 6:30 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">AW</div>Atisha Waghela</div></td><td><strong>Kyndryl</strong> <span style="font-size:11px;color:#9ca3af">RGIP India team training scheduling</span></td><td>30</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="divyam" data-health="Concerning"><td style="color:#9ca3af;font-size:11px">Mon</td><td style="color:#9ca3af;font-size:12px">May 18 &middot; 8:30 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-divyam">DD</div>Divyam Dewan</div></td><td><strong>Blackbaud</strong> <span style="font-size:11px;color:#9ca3af">Renewal in 41 days &middot; IDL paused</span></td><td>30</td><td><span class="badge badge-concerning">&#128993; Concerning</span></td></tr>
+      <tr data-csm="rani" data-health="Healthy"><td style="color:#9ca3af;font-size:11px">Mon</td><td style="color:#9ca3af;font-size:12px">May 18 &middot; 9:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">RG</div>Rani Guy</div></td><td><strong>Elastic</strong> <span style="font-size:11px;color:#9ca3af">Custom spend data request &middot; David Adamson + Adrian</span></td><td>30</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="varun" data-health="Healthy"><td style="color:#9ca3af;font-size:11px">Tue</td><td style="color:#9ca3af;font-size:12px">May 19 &middot; 3:45 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-varun">VT</div>Varun Tiwari</div></td><td><strong>Exclusive Networks</strong> <span style="font-size:11px;color:#9ca3af">Platform walkthrough &middot; Robin Oakley</span></td><td>45</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="nick" data-health="Healthy"><td style="color:#9ca3af;font-size:11px">Tue</td><td style="color:#9ca3af;font-size:12px">May 19 &middot; 6:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">NJ</div>Nick Johnson</div></td><td><strong>Chambers</strong> <span style="font-size:11px;color:#9ca3af">Re-intro after 3-year gap &middot; Bruno</span></td><td>30</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="riley" data-health="Healthy"><td style="color:#9ca3af;font-size:11px">Tue</td><td style="color:#9ca3af;font-size:12px">May 19 &middot; 8:30 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-riley">RR</div>Riley Rogers</div></td><td><strong>Intuit Mailchimp</strong> <span style="font-size:11px;color:#9ca3af">TrustRadius bi-weekly</span></td><td>30</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="nick" data-health="Healthy"><td style="color:#9ca3af;font-size:11px">Tue</td><td style="color:#9ca3af;font-size:12px">May 19 &middot; 9:30 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">NJ</div>Nick Johnson</div></td><td><strong>SAP Inc</strong> <span style="font-size:11px;color:#9ca3af">Bi-weekly sync &middot; Ian Phoenix MCP</span></td><td>30</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="riley" data-health="Healthy"><td style="color:#9ca3af;font-size:11px">Tue</td><td style="color:#9ca3af;font-size:12px">May 19 &middot; 10:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-riley">RR</div>Riley Rogers</div></td><td><strong>Zoom Video</strong> <span style="font-size:11px;color:#9ca3af">Bi-weekly TrustRadius &middot; Camille Shortridge</span></td><td>30</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="atisha" data-health="Healthy"><td style="color:#9ca3af;font-size:11px">Tue</td><td style="color:#9ca3af;font-size:12px">May 19 &middot; 11:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">AW</div>Atisha Waghela</div></td><td><strong>RSM US</strong> <span style="font-size:11px;color:#9ca3af">Account list finalization &middot; 7K US &amp; Canada</span></td><td>30</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="divyam" data-health="Healthy"><td style="color:#9ca3af;font-size:11px">Tue</td><td style="color:#9ca3af;font-size:12px">May 19 &middot; 11:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-divyam">DD</div>Divyam Dewan</div></td><td><strong>Dynatrace</strong> <span style="font-size:11px;color:#9ca3af">Bulk data ingestion scoping &middot; Roger Steffen</span></td><td>60</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="varun" data-health="Healthy"><td style="color:#9ca3af;font-size:11px">Tue</td><td style="color:#9ca3af;font-size:12px">May 19 &middot; 11:30 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-varun">VT</div>Varun Tiwari</div></td><td><strong>CBTS</strong> <span style="font-size:11px;color:#9ca3af">New customer kick-off &middot; Mitchell VanderKam + Timothy Selaty</span></td><td>30</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="divyam" data-health="Healthy"><td style="color:#9ca3af;font-size:11px">Wed</td><td style="color:#9ca3af;font-size:12px">May 20 &middot; 5:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-divyam">DD</div>Divyam Dewan</div></td><td><strong>Infinigate</strong> <span style="font-size:11px;color:#9ca3af">Expansion to other regions &middot; Abolfazl Akhondi</span></td><td>30</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="varun" data-health="Healthy"><td style="color:#9ca3af;font-size:11px">Wed</td><td style="color:#9ca3af;font-size:12px">May 20 &middot; 6:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-varun">VT</div>Varun Tiwari</div></td><td><strong>Iron Mountain</strong> <span style="font-size:11px;color:#9ca3af">New C&amp;MI team &middot; Peter Rush &middot; propensity-to-buy</span></td><td>30</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="riley" data-health="Healthy"><td style="color:#9ca3af;font-size:11px">Wed</td><td style="color:#9ca3af;font-size:12px">May 20 &middot; 7:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-riley">RR</div>Riley Rogers</div></td><td><strong>IBM</strong> <span style="font-size:11px;color:#9ca3af">Banner designs finalized &middot; WatsonX Orchestrate</span></td><td>45</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="atisha" data-health="Healthy"><td style="color:#9ca3af;font-size:11px">Wed</td><td style="color:#9ca3af;font-size:12px">May 20 &middot; 7:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">AW</div>Atisha Waghela</div></td><td><strong>OPISystems</strong> <span style="font-size:11px;color:#9ca3af">Credits display bug fixed &middot; ~60K credits remain</span></td><td>30</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="rani" data-health="Healthy"><td style="color:#9ca3af;font-size:11px">Wed</td><td style="color:#9ca3af;font-size:12px">May 20 &middot; 7:30 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">RG</div>Rani Guy</div></td><td><strong>Workday</strong> <span style="font-size:11px;color:#9ca3af">MCP server + Contact Data &middot; Market Analyzer</span></td><td>30</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="varun" data-health="Healthy"><td style="color:#9ca3af;font-size:11px">Wed</td><td style="color:#9ca3af;font-size:12px">May 20 &middot; 8:30 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-varun">VT</div>Varun Tiwari</div></td><td><strong>MongoDB</strong> <span style="font-size:11px;color:#9ca3af">Data methodology + FAI walkthrough &middot; Tracy York present</span></td><td>45</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="rani" data-health="Healthy"><td style="color:#9ca3af;font-size:11px">Wed</td><td style="color:#9ca3af;font-size:12px">May 20 &middot; 9:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">RG</div>Rani Guy</div></td><td><strong>Cisco</strong> <span style="font-size:11px;color:#9ca3af">Pre-presentation prep &middot; internal meeting</span></td><td>30</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="varun" data-health="Healthy"><td style="color:#9ca3af;font-size:11px">Wed</td><td style="color:#9ca3af;font-size:12px">May 20 &middot; 9:30 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-varun">VT</div>Varun Tiwari</div></td><td><strong>Datadog</strong> <span style="font-size:11px;color:#9ca3af">TrustRadius sync &middot; Caio Dicenzo + Scott Stater</span></td><td>30</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="varun" data-health="Healthy"><td style="color:#9ca3af;font-size:11px">Wed</td><td style="color:#9ca3af;font-size:12px">May 20 &middot; 10:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-varun">VT</div>Varun Tiwari</div></td><td><strong>Autodesk</strong> <span style="font-size:11px;color:#9ca3af">4M CRM records matching + enrichment &middot; Jessica Hayek</span></td><td>30</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="varun" data-health="Healthy"><td style="color:#9ca3af;font-size:11px">Wed</td><td style="color:#9ca3af;font-size:12px">May 20 &middot; 10:30 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-varun">VT</div>Varun Tiwari</div></td><td><strong>Pegasystems</strong> <span style="font-size:11px;color:#9ca3af">Himalee mat leave Jul 1 &middot; license changes</span></td><td>30</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="rani" data-health="Healthy"><td style="color:#9ca3af;font-size:11px">Wed</td><td style="color:#9ca3af;font-size:12px">May 20 &middot; 12:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">RG</div>Rani Guy</div></td><td><strong>Lenovo</strong> <span style="font-size:11px;color:#9ca3af">Onboarding follow-up &middot; tile overview doc owed</span></td><td>30</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="riley" data-health="Concerning"><td style="color:#9ca3af;font-size:11px">Wed</td><td style="color:#9ca3af;font-size:12px">May 20 &middot; 12:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-riley">RR</div>Riley Rogers</div></td><td><strong>Yubico</strong> <span style="font-size:11px;color:#9ca3af">Only 6 reviews from 5K contacts &middot; launch date delayed</span></td><td>30</td><td><span class="badge badge-concerning">&#128993; Concerning</span></td></tr>
+      <tr data-csm="varun" data-health="Concerning"><td style="color:#9ca3af;font-size:11px">Thu</td><td style="color:#9ca3af;font-size:12px">May 21 &middot; 7:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-varun">VT</div>Varun Tiwari</div></td><td><strong>Dayforce US</strong> <span style="font-size:11px;color:#9ca3af">2Q ROI review &middot; Kory Himmer &middot; High Risk &middot; POC offer extended</span></td><td>60</td><td><span class="badge badge-concerning">&#128993; Concerning</span></td></tr>
+      <tr data-csm="nick" data-health="Healthy"><td style="color:#9ca3af;font-size:11px">Thu</td><td style="color:#9ca3af;font-size:12px">May 21 &middot; 7:30 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">NJ</div>Nick Johnson</div></td><td><strong>Siemens AG</strong> <span style="font-size:11px;color:#9ca3af">ACP launch &middot; Pat Loftus &middot; one-pagers needed</span></td><td>30</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="divyam" data-health="Healthy"><td style="color:#9ca3af;font-size:11px">Thu</td><td style="color:#9ca3af;font-size:12px">May 21 &middot; 8:30 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-divyam">DD</div>Divyam Dewan</div></td><td><strong>Lumen Technologies</strong> <span style="font-size:11px;color:#9ca3af">BCG driving expansion &middot; full universe &middot; pricing discussion</span></td><td>30</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="rani" data-health="Concerning"><td style="color:#9ca3af;font-size:11px">Thu</td><td style="color:#9ca3af;font-size:12px">May 21 &middot; 9:30 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">RG</div>Rani Guy</div></td><td><strong>NetApp</strong> <span style="font-size:11px;color:#9ca3af">Wallet number methodology discrepancy &middot; Doug Oliver-Watts</span></td><td>30</td><td><span class="badge badge-concerning">&#128993; Concerning</span></td></tr>
+      <tr data-csm="pam" data-health="Healthy"><td style="color:#9ca3af;font-size:11px">Thu</td><td style="color:#9ca3af;font-size:12px">May 21 &middot; 11:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">PH</div>Pam Huck</div></td><td><strong>Oracle NetSuite</strong> <span style="font-size:11px;color:#9ca3af">IDL 117 MQLs &middot; 3 SQLs &middot; Top Rated on track &middot; Nia mat leave</span></td><td>30</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="rani" data-health="Healthy"><td style="color:#9ca3af;font-size:11px">Thu</td><td style="color:#9ca3af;font-size:12px">May 21 &middot; 2:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">RG</div>Rani Guy</div></td><td><strong>Cisco</strong> <span style="font-size:11px;color:#9ca3af">Wallet share proposal &middot; Priten Gandecha</span></td><td>30</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="divyam" data-health="Healthy"><td style="color:#9ca3af;font-size:11px">Fri</td><td style="color:#9ca3af;font-size:12px">May 22 &middot; 6:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-divyam">DD</div>Divyam Dewan</div></td><td><strong>TrustRadius</strong> <span style="font-size:11px;color:#9ca3af">Joan Fabregat + Abdur check-in</span></td><td>30</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="rani" data-health="Concerning"><td style="color:#9ca3af;font-size:11px">Fri</td><td style="color:#9ca3af;font-size:12px">May 22 &middot; 8:15 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">RG</div>Rani Guy</div></td><td><strong>Splunk</strong> <span style="font-size:11px;color:#9ca3af">SIEM worksheet issue &middot; Vince Vasquez &middot; sponsor tentative</span></td><td>45</td><td><span class="badge badge-concerning">&#128993; Concerning</span></td></tr>
+      <tr data-csm="rani" data-health="Concerning"><td style="color:#9ca3af;font-size:11px">Fri</td><td style="color:#9ca3af;font-size:12px">May 22 &middot; 9:30 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">RG</div>Rani Guy</div></td><td><strong>Elastic</strong> <span style="font-size:11px;color:#9ca3af">Custom spend data &middot; David Adamson + team</span></td><td>30</td><td><span class="badge badge-concerning">&#128993; Concerning</span></td></tr>
+      <tr data-csm="divyam" data-health="Healthy"><td style="color:#9ca3af;font-size:11px">Fri</td><td style="color:#9ca3af;font-size:12px">May 22 &middot; 11:00 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-divyam">DD</div>Divyam Dewan</div></td><td><strong>Informatica</strong> <span style="font-size:11px;color:#9ca3af">Expansion reconnect &middot; Heather Quesnel</span></td><td>45</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+      <tr data-csm="rani" data-health="Concerning"><td style="color:#9ca3af;font-size:11px">Fri</td><td style="color:#9ca3af;font-size:12px">May 22 &middot; 11:30 AM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">RG</div>Rani Guy</div></td><td><strong>Elastic</strong> <span style="font-size:11px;color:#9ca3af">Account matching &middot; Sriraman Narayanan</span></td><td>30</td><td><span class="badge badge-concerning">&#128993; Concerning</span></td></tr>
+      <tr data-csm="nick" data-health="Healthy"><td style="color:#9ca3af;font-size:11px">Fri</td><td style="color:#9ca3af;font-size:12px">May 22 &middot; 4:00 PM</td><td><div class="csm-chip-inline"><div class="mini-av av-grey">NJ</div>Nick Johnson</div></td><td><strong>HCLSoftware</strong> <span style="font-size:11px;color:#9ca3af">$780K proposal review &middot; Poonam Fotedar + 5 HCL teams &middot; Angus Hyams (AE) led</span></td><td>30</td><td><span class="badge badge-healthy">&#128994; Healthy</span></td></tr>
+    </tbody>
+  </table></div>
+  <div style="background:#1c1f26;border:1px solid #3b82f6;border-left:3px solid #3b82f6;border-radius:6px;padding:10px 14px;margin:10px 0;font-size:12px;color:#93c5fd;">
+    &#x2139;&#xfe0f; <strong>Table shows Weflow-confirmed calls only.</strong> SFDC-only calendar events (no Weflow recording) are excluded from all counts. &nbsp;|&nbsp; <strong>W21 note:</strong> Varun busiest Wed (5 calls) &middot; Rani had 3 Concerning calls on Fri May 22 &middot; Nick $780K proposal HCL Fri.
+  </div>
+  <div class="empty-state" id="calls-empty" style="display:none"><div class="empty-icon">&#128269;</div>No calls match these filters.</div>`;
+}
+
+// ─── Pulse Coverage Snapshots ─────────────────────────────────────────────────
+// Each monthCoverageHTML_YYYY_MM() freezes coverage at the end of that month's
+// /update-enterprise-opportunity-pulse run. core.js checks for this hook before
+// falling back to the live pulseCoverageHTML(). Add a new function here after
+// each monthly pulse refresh.
+
+function _renderCoverageTable(stats, snapshotLabel) {
+  const totalOpps = stats.reduce((s, r) => s + r.total, 0);
+  const totalBoth = stats.reduce((s, r) => s + r.both, 0);
+  const teamPct   = totalOpps > 0 ? Math.round(totalBoth / totalOpps * 100) : 0;
+  const barColor  = p => p >= 80 ? '#059669' : p >= 50 ? '#d97706' : '#dc2626';
+  const textColor = p => p >= 80 ? '#059669' : p >= 50 ? '#d97706' : '#dc2626';
+  const rows = stats.map(({ csm, name, total, both, pulseOnly, noteOnly, neither, pct }) => {
+    const bar = `<div style="background:#e5e7eb;border-radius:4px;height:8px;width:110px;display:inline-block;vertical-align:middle"><div style="background:${barColor(pct)};height:8px;border-radius:4px;width:${pct}%"></div></div>`;
+    const missingAny = total - both;
+    const missingChip = missingAny > 0
+      ? `<span onclick="window.openMissingOpps('${csm}')" style="cursor:pointer;background:#fee2e2;color:#dc2626;padding:2px 10px;border-radius:12px;font-size:11px;font-weight:600">${missingAny} missing →</span>`
+      : `<span style="background:#dcfce7;color:#059669;padding:2px 10px;border-radius:12px;font-size:11px;font-weight:600">✓ Complete</span>`;
+    return `<tr style="border-bottom:1px solid #f3f4f6">
+      <td style="padding:10px 16px;font-size:13px;font-weight:600;color:#1f2937">${name}</td>
+      <td style="padding:10px 16px"><div style="display:flex;align-items:center;gap:8px">${bar}<span style="font-size:13px;font-weight:700;color:${textColor(pct)}">${pct}%</span></div></td>
+      <td style="padding:10px 16px;font-size:12px;text-align:center;color:#1f2937;font-weight:600">${both} / ${total}</td>
+      <td style="padding:10px 16px;font-size:12px;text-align:center;color:#6b7280">${pulseOnly}</td>
+      <td style="padding:10px 16px;font-size:12px;text-align:center;color:#6b7280">${noteOnly}</td>
+      <td style="padding:10px 16px">${missingChip}</td>
+    </tr>`;
+  }).join('');
+  const snapshotBadge = snapshotLabel
+    ? `<span style="display:inline-block;background:#eff6ff;color:#2563eb;border:1px solid #bfdbfe;border-radius:4px;padding:2px 10px;font-size:11px;font-weight:600;margin-left:10px;">📸 Snapshot: ${snapshotLabel}</span>`
+    : '';
+  return `
+  <div class="section-label">Pulse Coverage — Opportunity Tracking Quality ${snapshotBadge}</div>
+  <div style="display:flex;gap:16px;margin-bottom:20px;flex-wrap:wrap">
+    <div style="background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;padding:12px 20px;min-width:130px">
+      <div style="font-size:22px;font-weight:700;color:${textColor(teamPct)}">${teamPct}%</div>
+      <div style="font-size:11px;color:#6b7280;margin-top:2px;text-transform:uppercase;letter-spacing:.5px">Team Coverage</div>
+    </div>
+    <div style="background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;padding:12px 20px;min-width:160px">
+      <div style="font-size:22px;font-weight:700;color:#1f2937">${totalBoth} / ${totalOpps}</div>
+      <div style="font-size:11px;color:#6b7280;margin-top:2px;text-transform:uppercase;letter-spacing:.5px">Opps with Pulse + Note</div>
+    </div>
+    <div style="background:#f8fafc;border:1px solid #e5e7eb;border-radius:8px;padding:12px 20px;min-width:160px">
+      <div style="font-size:22px;font-weight:700;color:#dc2626">${totalOpps - totalBoth}</div>
+      <div style="font-size:11px;color:#6b7280;margin-top:2px;text-transform:uppercase;letter-spacing:.5px">Missing Coverage</div>
+    </div>
+  </div>
+  <div style="border:1px solid #e5e7eb;border-radius:8px;overflow:hidden;margin-bottom:10px">
+    <table style="width:100%;border-collapse:collapse">
+      <thead style="background:#f9fafb;border-bottom:1px solid #e5e7eb">
+        <tr>
+          <th style="padding:10px 16px;text-align:left;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px">CSM</th>
+          <th style="padding:10px 16px;text-align:left;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px">Coverage</th>
+          <th style="padding:10px 16px;text-align:center;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px">Full (Pulse + Note)</th>
+          <th style="padding:10px 16px;text-align:center;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px">Pulse Only</th>
+          <th style="padding:10px 16px;text-align:center;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px">Note Only</th>
+          <th style="padding:10px 16px;text-align:left;font-size:10px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px">Neither</th>
+        </tr>
+      </thead>
+      <tbody>${rows}</tbody>
+    </table>
+  </div>
+  <div style="font-size:11px;color:#9ca3af">Full coverage = opportunity has both a pulse status and a pulse note. Click "N missing →" to review which opportunities need attention.</div>`;
+}
+
+// June 2026 -- snapshot from Jun 12, 2026 Vitally refresh
+function monthCoverageHTML_2026_06() {
+  const stats = [
+  {
+    "csm": "riley",
+    "name": "Riley Rogers",
+    "total": 60,
+    "both": 40,
+    "pulseOnly": 2,
+    "noteOnly": 2,
+    "neither": 16,
+    "pct": 67
+  },
+  {
+    "csm": "varun",
+    "name": "Varun Tiwari",
+    "total": 27,
+    "both": 27,
+    "pulseOnly": 0,
+    "noteOnly": 0,
+    "neither": 0,
+    "pct": 100
+  },
+  {
+    "csm": "divyam",
+    "name": "Divyam Dewan",
+    "total": 29,
+    "both": 21,
+    "pulseOnly": 3,
+    "noteOnly": 0,
+    "neither": 5,
+    "pct": 72
+  },
+  {
+    "csm": "nick",
+    "name": "Nick Johnson",
+    "total": 43,
+    "both": 27,
+    "pulseOnly": 0,
+    "noteOnly": 0,
+    "neither": 16,
+    "pct": 63
+  },
+  {
+    "csm": "rani",
+    "name": "Rani Guy",
+    "total": 27,
+    "both": 25,
+    "pulseOnly": 0,
+    "noteOnly": 0,
+    "neither": 2,
+    "pct": 93
+  },
+  {
+    "csm": "pam",
+    "name": "Pam Huck",
+    "total": 17,
+    "both": 17,
+    "pulseOnly": 0,
+    "noteOnly": 0,
+    "neither": 0,
+    "pct": 100
+  },
+  {
+    "csm": "atisha",
+    "name": "Atisha Waghela",
+    "total": 26,
+    "both": 21,
+    "pulseOnly": 0,
+    "noteOnly": 0,
+    "neither": 5,
+    "pct": 81
+  },
+  {
+    "csm": "andy",
+    "name": "Andy Lim",
+    "total": 14,
+    "both": 13,
+    "pulseOnly": 0,
+    "noteOnly": 0,
+    "neither": 1,
+    "pct": 93
+  }
+];
+  return _renderCoverageTable(stats, 'Jun 12, 2026');
+}
