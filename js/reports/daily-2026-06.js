@@ -3796,7 +3796,7 @@ function dayPulsesHTML_2026_06_15() {
   return `<div class="pulse-grid">${cards.map(c=>`
     <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
       <div class="pulse-card-top">
-        <div style="font-weight:600;font-size:13px;color:#e2e8f0;">${c.account}</div>
+        <div><strong>${c.account}</strong></div>
         <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
       </div>
       <div class="pulse-excerpt">${c.excerpt}</div>
