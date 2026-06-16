@@ -3592,3 +3592,263 @@ function weeklyOrMonthlyHTML_2026_06_12() {
     </div>
   </div>`;
 }
+
+// ─── June 15, 2026 ───────────────────────────────────────────────────────────
+
+function dayData_2026_06_15() {
+  return {
+    calls: [
+      { ts: 'Jun 15 · 1:30 AM', csm: 'nick', account: 'Accenture',
+        note: 'Order form and renewal options reviewed with Kelly Gumber (Accenture)',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Mixed',
+        detail: 'Order form review with Accenture contact Kelly Gumber; contract paperwork, renewal options, and platform capabilities discussed alongside the HG account team.' },
+      { ts: 'Jun 15 · 3:00 AM', csm: 'varun', account: 'OpenText',
+        note: 'Bi-weekly cadence with Sujay Kodagali (OpenText): API integration, dashboard, and Year 2 renewal',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Bi-weekly cadence with OpenText (Sujay Kodagali). Covered API integration status, dashboard reporting, and Year 2 renewal progress.' },
+      { ts: 'Jun 15 · 5:00 AM', csm: 'nick', account: 'Infor',
+        note: 'Post-onsite debrief with Nicole Morgan (Infor): Oct 2026 renewal options and Snowflake integration',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Mixed',
+        detail: "Post-onsite debrief with Infor's Nicole Morgan and AE Augie Buettner. Oct 1, 2026 renewal options presented; Snowflake semantic view integration and DMF next steps discussed." },
+      { ts: 'Jun 15 · 8:00 AM', csm: 'riley', account: 'SAP',
+        note: 'TrustRadius Leads program sync with Alejandro Barajas and Scott Stater (SAP)',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Mixed',
+        detail: "Regular TrustRadius leads program sync with SAP's Alejandro Barajas and Scott Stater. Integration status, leads pipeline, and delivery cadence reviewed." },
+      { ts: 'Jun 15 · 9:30 AM', csm: 'rani', account: 'Workday',
+        note: 'Customer-initiated ad-hoc TrustRadius discussion with Workday team; issue flagged',
+        mins: 30, health: 'Concerning',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Issue',
+        detail: 'Ad-hoc TrustRadius platform discussion with Workday contacts Rashmi Datta, Mardigan Moffat, and Cole Arutian. Customer initiated to flag a platform or reporting concern; resolution follow-up required.' },
+      { ts: 'Jun 15 · 1:00 PM', csm: 'riley', account: 'SAP',
+        note: 'SAP campaign execution sync: TrustRadius performance, reporting, and renewal alignment',
+        mins: 60, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Mixed',
+        detail: "Campaign execution sync with SAP's Alejandro Barajas, Mardigan Moffat, and Cole Arutian. TrustRadius campaign performance, reporting cadence, and renewal alignment discussed." },
+    ],
+    pulses: [
+      { csm: 'nick', account: 'Accenture', health: 'Healthy',
+        note: 'Order form and renewal discussion. Customer engaged on contract options.' },
+      { csm: 'varun', account: 'OpenText', health: 'Healthy',
+        note: 'Bi-weekly cadence. API integration and Year 2 renewal on track.' },
+      { csm: 'nick', account: 'Infor', health: 'Healthy',
+        note: 'Post-onsite debrief. Oct 2026 renewal options shared; Snowflake integration in progress.' },
+      { csm: 'riley', account: 'SAP', health: 'Healthy',
+        note: 'TrustRadius leads program sync. Integration active; pipeline healthy.' },
+      { csm: 'rani', account: 'Workday', health: 'Concerning',
+        note: 'Customer-initiated issue discussion. TrustRadius concern flagged; follow-up needed.' },
+      { csm: 'riley', account: 'SAP', health: 'Healthy',
+        note: 'Campaign execution sync. TR performance strong; renewal alignment ongoing.' },
+    ],
+  };
+}
+
+function dayMeta_2026_06_15() {
+  return {
+    pills: [
+      ['dot-teal',  '6 Calls'],
+      ['dot-red',   '1 Concerning'],
+      ['dot-green', '6 Pulses'],
+      ['dot-grey',  'Mon Jun 15 · 46 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (6)', 'Pulses (6)', 'Action Items (6)'],
+  };
+}
+
+function dayOverviewHTML_2026_06_15() {
+  return `<div class="section-label">Team Activity &mdash; Monday June 15, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Monday Jun 15 &mdash; 46 recordings scanned</strong> via SFDC SOQL &middot; <strong>6 confirmed calls</strong> across 4 CSMs &middot; 1 Concerning (Workday) &middot; 4 unconfirmed (no transcript)
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>Workday (Rani Guy)</strong> &mdash; Customer initiated ad-hoc call to flag a TrustRadius concern. Follow-up required to resolve and document.
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">90m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">SAP (Leads program sync, 8:00 AM) &middot; SAP (Campaign execution sync, 1:00 PM)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Accenture (order form review, 1:30 AM) &middot; Infor (post-onsite debrief + Oct renewal, 5:00 AM)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Workday (customer-initiated issue, 9:30 AM) &middot; NetApp (unconfirmed, 1:00 PM)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">OpenText (bi-weekly cadence + Year 2 renewal, 3:00 AM)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="divyam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 unconfirmed &mdash; BILL (no transcript, 10:00 AM)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No events scheduled</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="atisha">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Intel unconfirmed (no transcript, 7:00 AM) &middot; Airtel no recording</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No events scheduled</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_06_15() {
+  return `<div style="background:#141820;border:1px solid #1e293b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#94a3b8;">
+    &#x26A0;&#xFE0F; <strong>4 unconfirmed calls (no transcript):</strong> Atisha &rarr; Intel (7:00 AM) &middot; Nick &rarr; Westcon (8:00 AM) &middot; Divyam &rarr; BILL (10:00 AM) &middot; Rani &rarr; NetApp (1:00 PM). Inferred from SFDC event ownership only &mdash; not speaker-verified.
+  </div>`;
+}
+
+function dayPulsesHTML_2026_06_15() {
+  const cards = [
+    { csm: 'nick', health: 'Healthy', account: 'Accenture',
+      csmlbl: 'Nick Johnson', change: 'Jun 15 · Ad-hoc',
+      excerpt: 'NJ/Jun 15: Order form review with Kelly Gumber (Accenture). Contract paperwork and renewal options reviewed (1:30 AM PT, 30 min). Customer engaged and responding.' },
+    { csm: 'varun', health: 'Healthy', account: 'OpenText',
+      csmlbl: 'Varun Tiwari', change: 'Jun 15 · Recurring',
+      excerpt: 'VT/Jun 15: Bi-weekly cadence with Sujay Kodagali (OpenText). API integration and Year 2 renewal update; on track (3:00 AM PT, 30 min).' },
+    { csm: 'nick', health: 'Healthy', account: 'Infor',
+      csmlbl: 'Nick Johnson', change: 'Jun 15 · Ad-hoc',
+      excerpt: 'NJ/Jun 15: Post-onsite debrief with Nicole Morgan (Infor) and AE Augie Buettner. Oct 2026 renewal options and Snowflake integration next steps (5:00 AM PT, 30 min).' },
+    { csm: 'riley', health: 'Healthy', account: 'SAP',
+      csmlbl: 'Riley Rogers', change: 'Jun 15 · Recurring',
+      excerpt: 'RR/Jun 15: TrustRadius leads program sync with Alejandro Barajas and Scott Stater (SAP). Integration active; pipeline healthy (8:00 AM PT, 30 min).' },
+    { csm: 'rani', health: 'Concerning', account: 'Workday',
+      csmlbl: 'Rani Guy', change: 'Jun 15 · Ad-hoc',
+      excerpt: 'RG/Jun 15: Customer-initiated TrustRadius issue discussion with Rashmi Datta, Mardigan Moffat, Cole Arutian (Workday). Concern flagged; follow-up required (9:30 AM PT, 30 min).' },
+    { csm: 'riley', health: 'Healthy', account: 'SAP',
+      csmlbl: 'Riley Rogers', change: 'Jun 15 · Recurring',
+      excerpt: 'RR/Jun 15: SAP campaign execution sync with Alejandro Barajas, Mardigan Moffat, Cole Arutian. TR campaign performance strong; renewal alignment ongoing (1:00 PM PT, 60 min).' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div style="font-weight:600;font-size:13px;color:#e2e8f0;">${c.account}</div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_06_15() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('0615-1')?'done':''}" data-csm="rani" id="action-0615-1">
+      <div class="action-checkbox ${doneActions.has('0615-1')?'checked':''}" onclick="toggleAction('0615-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; Workday &mdash; Follow up on TrustRadius issue flagged by customer</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy &middot; Customer (Rashmi Datta) initiated ad-hoc call to flag a TrustRadius concern. Identify the issue and send a written resolution or timeline to Workday within 24 hours.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0615-2')?'done':''}" data-csm="nick" id="action-0615-2">
+      <div class="action-checkbox ${doneActions.has('0615-2')?'checked':''}" onclick="toggleAction('0615-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Infor &mdash; Send Oct 2026 renewal options summary to Nicole Morgan</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Nick Johnson &middot; Post-onsite debrief covered renewal options (Oct 1, 2026 expiry). Send formal renewal options doc with Snowflake integration roadmap and DMF pricing to Nicole Morgan and Augie Buettner.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0615-3')?'done':''}" data-csm="nick" id="action-0615-3">
+      <div class="action-checkbox ${doneActions.has('0615-3')?'checked':''}" onclick="toggleAction('0615-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4DD; Accenture &mdash; Send order form and contract summary to Kelly Gumber</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Nick Johnson &middot; Order form review call completed. Send written summary of contract options and renewal terms; confirm next steps on signature and approval.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0615-4')?'done':''}" data-csm="riley" id="action-0615-4">
+      <div class="action-checkbox ${doneActions.has('0615-4')?'checked':''}" onclick="toggleAction('0615-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CA; SAP &mdash; Send leads program recap and track integration progress</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Riley Rogers &middot; TrustRadius leads program sync completed. Send session recap with integration status and open items to Alejandro Barajas and Scott Stater (SAP).</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0615-5')?'done':''}" data-csm="varun" id="action-0615-5">
+      <div class="action-checkbox ${doneActions.has('0615-5')?'checked':''}" onclick="toggleAction('0615-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C5; OpenText &mdash; Send bi-weekly follow-up notes; confirm Year 2 renewal timeline</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Varun Tiwari &middot; Bi-weekly cadence with Sujay Kodagali completed. Send call notes covering API integration status and Year 2 renewal next steps to OpenText.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0615-6')?'done':''}" data-csm="atisha" id="action-0615-6">
+      <div class="action-checkbox ${doneActions.has('0615-6')?'checked':''}" onclick="toggleAction('0615-6')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F50D; Intel &mdash; Confirm transcript; verify weekly sync topics covered</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW</span>Atisha Waghela &middot; Intel weekly sync had no transcript captured. Check if recording synced to Weflow; note topics from memory or follow up with Intel contact if key items were missed.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No actions match the current filter.</div>`;
+}
