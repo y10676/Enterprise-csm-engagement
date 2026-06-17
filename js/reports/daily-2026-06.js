@@ -3852,3 +3852,341 @@ function dayActionsHTML_2026_06_15() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No actions match the current filter.</div>`;
 }
+
+// ─── 2026-06-16 (Tuesday) ──────────────────────────────────────────────────
+
+function dayData_2026_06_16() {
+  return {
+    calls: [
+      { ts: 'Jun 16 · 7:30 AM', csm: 'riley', account: 'SAP Inc',
+        note: 'TrustRadius CX Sync — Top Rated award promotions, LinkedIn campaign, blog strategy.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Riley discussed the recent SAP CX Top Rated award announcement and reviewed SAP\'s in-progress promotion plan — blog in editing phase, social cards in progress, LinkedIn media campaign planned.' },
+      { ts: 'Jun 16 · 8:00 AM', csm: 'riley', account: 'UKG (Ultimate Kronos Group)',
+        note: 'TR CSM Sync — manager ask for G2 vs TrustRadius ROI comparison; dashboard access still pending.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'Customer', purpose: 'Mixed',
+        detail: 'UKG manager asked to compare TrustRadius ROI and insights data against G2 — specifically around pipeline influence and attribution. Riley walked through TR metrics. Customer still lacks dashboard access (Salesforce requests pending).' },
+      { ts: 'Jun 16 · 8:00 AM', csm: 'nick', account: 'Siemens AG',
+        note: 'Bi-weekly HG sync — Phoenix team RGI adoption, customer summit planning (Sep 1–3).',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Nick reviewed Phoenix team progress on RGI platform adoption and discussed the upcoming Siemens customer summit (Sep 1–3). Jeff Wymer confirmed 12–14 attendees expected.' },
+      { ts: 'Jun 16 · 8:30 AM', csm: 'nick', account: 'Intuit Mailchimp',
+        note: 'New CSM intro call — Hayden Smith (AM) introduced Nick as dedicated CSM to Mailchimp team.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Account Manager Hayden Smith facilitated an introduction call bringing Nick Johnson on as the dedicated Enterprise CSM for Intuit Mailchimp BU, meeting Tyler Frazer and Lindsay Gerardy.' },
+      { ts: 'Jun 16 · 8:30 AM', csm: 'riley', account: 'Intuit Mailchimp',
+        note: 'TR Bi-Weekly Success Call — new stakeholder Spencer Adkins (first time), TR program overview.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Riley and Mardigan Moffat onboarded new Mailchimp marketing stakeholder Spencer Adkins, who is picking up the TrustRadius program ownership. Reviewed program value, partnership support model, and how TrustRadius can help through the transition.' },
+      { ts: 'Jun 16 · 9:30 AM', csm: 'nick', account: 'SAP Inc',
+        note: 'HG biweekly sync — Phoenix AI tool updates, Siemens customer summit tie-in, Chloé keynote at AWS conference.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Nick and Chloé Portier (SAP) covered Phoenix AI tool developments, linked to Siemens Jeff Wymer\'s upcoming summit, and discussed competitive intelligence workflows. Chloé mentioned her upcoming keynote at an AWS women-in-AI conference in SF.' },
+      { ts: 'Jun 16 · 10:00 AM', csm: 'rani', account: 'Cisco',
+        note: 'Cisco Isovalent onboarding — customer (Tu-Anh) has integration questions; Rani scheduled PM/engineer follow-up for Jun 17.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Issue',
+        detail: 'Tu-Anh (Cisco/Isovalent) started integration based on documentation and needed technical validation from Rani\'s PM and engineer. Rani scheduled a deeper follow-up call for Jun 17 at 12:30 PM PT. Customer traveling after Thursday.' },
+      { ts: 'Jun 16 · 11:30 AM', csm: 'riley', account: 'Red Hat Inc',
+        note: 'TR biweekly — MDR email template review, market report CTAs for Ansible/RHEL/OpenShift, July 1 launch target.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Brianna Gault shared the MDR (Market Development Rep) email template for Red Hat\'s content strategist team targeting July 1 launch. Riley advised leading with customer need rather than TR/Red Hat branding. Market report CTA status: Ansible in editing, RHEL under review, OpenShift nearly done.' },
+      { ts: 'Jun 16 · 11:30 AM', csm: 'varun', account: 'Alight Solutions LLC',
+        note: 'Platform walkthrough + competitor category alignment for new stakeholder Lisa Spence (Sales Ops).',
+        mins: 45, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Varun and Augie Buettner (AM) introduced Lisa Spence to the HG Insights platform. Lisa (20-year Alight veteran, recently moved to Sales Ops) is focused on competitor takeout campaigns and identifying white space in their client base — key expansion use case for HG data.' },
+      { ts: 'Jun 16 · 12:00 PM', csm: 'riley', account: 'Adobe Systems Incorporated',
+        note: 'TR GEO Updates — dashboard nearly live for Adobe reps, waiting on internal Tanner green-light.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Riley, Mardigan Moffat, Todd Detmold, and Adobe\'s Giacomo Pesaresi reviewed the TR GEO dashboard rollout. Dashboard is built and ready but awaiting internal activation. Todd flagged that the dashboard should go live "any day now."' },
+      { ts: 'Jun 16 · 2:00 PM', csm: 'riley', account: 'Zoom Video Communications',
+        note: 'TR CSM Sync — post-conference catch-up; in-person meeting planned June 29.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Riley and Mardigan Moffat held their regular Zoom TR CSM sync with Camille Shortridge. Recapped the recent conference (sloth plushie moment). Upcoming in-person meeting scheduled for June 29 with planned dinner.' },
+    ],
+    pulses: [
+      { csm: 'riley', account: 'SAP Inc', health: 'Healthy',
+        note: 'Jun 16 TR CX Sync — Top Rated award announcement synced. SAP promoting via blog + LinkedIn campaign.' },
+      { csm: 'riley', account: 'UKG (Ultimate Kronos Group)', health: 'Healthy',
+        note: 'Jun 16 TR Sync — Manager-driven ask to compare TR ROI vs G2. Dashboard access still pending in Salesforce.' },
+      { csm: 'nick', account: 'Siemens AG', health: 'Healthy',
+        note: 'Jun 16 bi-weekly — Phoenix team progressing on RGI. Customer summit Sep 1–3 confirmed, 12–14 attendees.' },
+      { csm: 'nick', account: 'Intuit Mailchimp', health: 'Healthy',
+        note: 'Jun 16 CSM intro — Nick introduced as dedicated CSM to Tyler Frazer and Lindsay Gerardy.' },
+      { csm: 'riley', account: 'Intuit Mailchimp', health: 'Healthy',
+        note: 'Jun 16 TR Bi-weekly — Spencer Adkins (new stakeholder) onboarded to TR program for first time.' },
+      { csm: 'nick', account: 'SAP Inc', health: 'Healthy',
+        note: 'Jun 16 HG biweekly — Phoenix AI tool updates, Siemens summit tie-in, Chloé AWS keynote upcoming.' },
+      { csm: 'rani', account: 'Cisco', health: 'Healthy',
+        note: 'Jun 16 Isovalent onboarding — Tu-Anh has integration Q\'s. Follow-up with PM/engineer booked for Jun 17 12:30 PM PT.' },
+      { csm: 'riley', account: 'Red Hat Inc', health: 'Healthy',
+        note: 'Jun 16 TR biweekly — MDR email templates in review, July 1 launch target. CTA progress on 3 market reports.' },
+      { csm: 'varun', account: 'Alight Solutions LLC', health: 'Healthy',
+        note: 'Jun 16 platform walkthrough — New stakeholder Lisa Spence introduced; competitor takeout use case confirmed.' },
+      { csm: 'riley', account: 'Adobe Systems Incorporated', health: 'Healthy',
+        note: 'Jun 16 TR GEO — Dashboard ready, pending internal activation by Tanner. Should go live imminently.' },
+      { csm: 'riley', account: 'Zoom Video Communications', health: 'Healthy',
+        note: 'Jun 16 TR Sync — Post-conference catch-up. In-person meeting June 29 confirmed with dinner plans.' },
+    ],
+  };
+}
+
+function dayMeta_2026_06_16() {
+  return {
+    pills: [
+      ['dot-teal',   '11 Calls'],
+      ['dot-amber',  '2 Expansion'],
+      ['dot-green',  '11 Pulses'],
+      ['dot-grey',   'Tue Jun 16 · 71 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (11)', 'Pulses (11)', 'Action Items (6)']
+  };
+}
+
+function dayOverviewHTML_2026_06_16() {
+  return `<div class="section-label">Team Activity &mdash; Tuesday June 16, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Tuesday Jun 16 &mdash; 71 recordings scanned</strong> via SFDC SOQL &middot; <strong>11 confirmed calls</strong> across 4 CSMs &middot; 2 expansion signals (Alight new stakeholder, Red Hat MDR launch) &middot; Cisco Isovalent onboarding follow-up booked for Jun 17
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;color:#7dd3fc;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;">
+    &#x1F4C8; <strong>Expansion:</strong> Varun &mdash; Alight Solutions new stakeholder (Lisa Spence, Sales Ops) onboarded for competitor intelligence use case &middot; Riley &mdash; Red Hat MDR email launch targeting Jul 1 with 3 market report CTAs in progress
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">6 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">6</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">6</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">180m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">SAP (Top Rated promo) &middot; UKG (G2 ROI compare ask) &middot; Mailchimp x2 (HG + TR) &middot; Red Hat (MDR launch) &middot; Adobe (GEO dashboard) &middot; Zoom (post-conf sync)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">3 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">3</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">90m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Siemens (summit + Phoenix) &middot; Intuit Mailchimp (CSM intro) &middot; SAP (HG biweekly)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">45m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Alight Solutions (new stakeholder Lisa Spence; competitor takeout use case)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Cisco/Isovalent (onboarding — integration Q&amp;A; PM follow-up booked Jun 17)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="divyam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No confirmed call recordings on Jun 16 (Adobe GTM Tool Review had no transcript)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No confirmed call recordings on Jun 16</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="atisha">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No confirmed call recordings on Jun 16</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No confirmed call recordings on Jun 16</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_06_16() {
+  return `<div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x26A0;&#xFE0F; <strong>Note:</strong> Cisco/Isovalent account (a76RN0000005PdhYAE) attributed to Rani Guy by transcript speaker detection — account in data.js assigned to Pam Huck. Possible x-cov or separate Isovalent product ownership.
+  </div>
+  <div style="background:#1c1f26;border:1px solid #64748b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#94a3b8;">
+    &#x1F4CB; <strong>No-transcript recordings (26):</strong> Includes Adobe x HG GTM Tool Review (no transcript), Apple Strategy &amp; Planning (no transcript), Trellix monthly sync (no transcript), Saviynt renewal check-in (no transcript), LogicGate use case sync (no transcript) — cannot confirm CSM participation without speaker data.
+  </div>
+  <div class="calls-table"></div>`;
+}
+
+function dayPulsesHTML_2026_06_16() {
+  const cards = [
+    { csm:'riley', health:'Healthy', account:'SAP Inc',
+      opp:'Vitally Pulse &mdash; Jun 16 TR CX Sync',
+      arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Jun 16 &middot; Check-in',
+      excerpt:'6/16 RR: Top Rated award promotions reviewed (7:30 AM PT, 30 min). SAP promoting via blog + LinkedIn campaign. All materials confirmed received.' },
+    { csm:'riley', health:'Healthy', account:'UKG (Ultimate Kronos Group)',
+      opp:'Vitally Pulse &mdash; Jun 16 TR ROI Sync',
+      arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Jun 16 &middot; Mixed',
+      excerpt:'6/16 RR: TR CSM Sync (8:00 AM PT, 30 min). Manager-driven ask to compare TR ROI data vs G2 — pipeline influence and attribution. Dashboard access still pending in Salesforce (3–4 requests unfulfilled).' },
+    { csm:'nick', health:'Healthy', account:'Siemens AG',
+      opp:'Vitally Pulse &mdash; Jun 16 Bi-weekly',
+      arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Jun 16 &middot; Check-in',
+      excerpt:'6/16 NJ: Bi-weekly HG sync (8:00 AM PT, 30 min). Phoenix team RGI adoption in progress. Customer summit Sep 1–3 confirmed; Jeff Wymer expecting ~12–14 attendees.' },
+    { csm:'nick', health:'Healthy', account:'Intuit Mailchimp',
+      opp:'Vitally Pulse &mdash; Jun 16 CSM Intro',
+      arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Jun 16 &middot; Check-in',
+      excerpt:'6/16 NJ: New CSM introduction (8:30 AM PT, 30 min). Hayden Smith (AM) introduced Nick as dedicated CSM to Tyler Frazer and Lindsay Gerardy. First formal HG CSM touchpoint.' },
+    { csm:'riley', health:'Healthy', account:'Intuit Mailchimp',
+      opp:'Vitally Pulse &mdash; Jun 16 TR Bi-Weekly',
+      arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Jun 16 &middot; Check-in',
+      excerpt:'6/16 RR: TR Bi-Weekly (8:30 AM PT, 30 min). New stakeholder Spencer Adkins attending TR program call for first time — picking up from Bianca. TR partnership value and support model reviewed.' },
+    { csm:'nick', health:'Healthy', account:'SAP Inc',
+      opp:'Vitally Pulse &mdash; Jun 16 HG Biweekly',
+      arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Jun 16 &middot; Check-in',
+      excerpt:'6/16 NJ: HG biweekly sync (9:30 AM PT, 30 min). Phoenix AI tool updates; Siemens summit tie-in; Chloé Portier keynoting AWS women-in-AI conference in SF next week.' },
+    { csm:'rani', health:'Healthy', account:'Cisco',
+      opp:'Vitally Pulse &mdash; Jun 16 Isovalent Onboarding',
+      arr:'Enterprise &middot; Rani Guy', csmlbl:'Rani Guy',
+      change:'Jun 16 &middot; Issue',
+      excerpt:'6/16 RG: Cisco Isovalent onboarding (10:00 AM PT, 30 min). Tu-Anh started integration from docs, needs PM + engineer technical validation. Follow-up booked Jun 17 12:30 PM PT.' },
+    { csm:'riley', health:'Healthy', account:'Red Hat Inc',
+      opp:'Vitally Pulse &mdash; Jun 16 TR Biweekly',
+      arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Jun 16 &middot; Mixed',
+      excerpt:'6/16 RR: TR biweekly (11:30 AM PT, 30 min). MDR email template review for July 1 launch. CTAs: Ansible editing, RHEL under review, OpenShift almost done. Riley advised lead-with-need messaging approach.' },
+    { csm:'varun', health:'Healthy', account:'Alight Solutions LLC',
+      opp:'Vitally Pulse &mdash; Jun 16 Platform Walkthrough',
+      arr:'Enterprise &middot; Varun Tiwari', csmlbl:'Varun Tiwari',
+      change:'Jun 16 &middot; Expansion',
+      excerpt:'6/16 VT: Platform walkthrough (11:30 AM PT, 45 min). New stakeholder Lisa Spence (Sales Ops, 20 yrs at Alight) onboarded for competitor takeout and white-space identification use case. High engagement.' },
+    { csm:'riley', health:'Healthy', account:'Adobe Systems Incorporated',
+      opp:'Vitally Pulse &mdash; Jun 16 TR GEO Updates',
+      arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Jun 16 &middot; Check-in',
+      excerpt:'6/16 RR: TR GEO Updates (12:00 PM PT, 30 min). GEO dashboard built and ready; awaiting Tanner\'s internal activation. Todd Detmold expecting it to go live "any day now."' },
+    { csm:'riley', health:'Healthy', account:'Zoom Video Communications',
+      opp:'Vitally Pulse &mdash; Jun 16 TR CSM Sync',
+      arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Jun 16 &middot; Check-in',
+      excerpt:'6/16 RR: TR CSM Sync (2:00 PM PT, 30 min). Post-conference catch-up with Camille Shortridge. In-person meeting confirmed June 29 with dinner. Positive relationship, strong rapport.' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div style="font-weight:600;font-size:13px;color:#f1f5f9;">${c.account}</div>
+          <div style="font-size:11px;color:#64748b;margin-top:2px;">${c.opp}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_06_16() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('0616-1')?'done':''}" data-csm="riley" id="action-0616-1">
+      <div class="action-checkbox ${doneActions.has('0616-1')?'checked':''}" onclick="toggleAction('0616-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CA; UKG &mdash; Send TR ROI metrics pack and respond to G2 comparison ask</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Riley Rogers &middot; UKG manager asked to compare TrustRadius ROI vs G2 (pipeline influence, attribution). Send TR metrics dashboard summary and escalate Salesforce dashboard access blockers (3–4 requests pending). Address before next sync.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0616-2')?'done':''}" data-csm="rani" id="action-0616-2">
+      <div class="action-checkbox ${doneActions.has('0616-2')?'checked':''}" onclick="toggleAction('0616-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F527; Cisco/Isovalent &mdash; Run PM + engineer technical onboarding call (Jun 17, 12:30 PM PT)</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy &middot; Tu-Anh (Cisco/Isovalent) started integration from documentation and needs PM + engineer validation. Follow-up call already booked for Jun 17. Ensure PM and engineer are briefed and join. Customer traveling after Thursday — this is the only window.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0616-3')?'done':''}" data-csm="riley" id="action-0616-3">
+      <div class="action-checkbox ${doneActions.has('0616-3')?'checked':''}" onclick="toggleAction('0616-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4E7; Red Hat &mdash; Review MDR email template draft and share best-practice feedback to Brianna</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Riley Rogers &middot; Brianna Gault shared MDR email template targeting July 1 launch. Riley advised leading with customer need over TR/Red Hat branding. Send written feedback on the draft copy to Brianna Gault and the content strategist team.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0616-4')?'done':''}" data-csm="varun" id="action-0616-4">
+      <div class="action-checkbox ${doneActions.has('0616-4')?'checked':''}" onclick="toggleAction('0616-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F30D; Alight &mdash; Send Lisa Spence platform setup guide and narrowed competitor category list</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Varun Tiwari &middot; Lisa Spence (new Alight Sales Ops stakeholder) was introduced to the HG platform for competitor takeout use case. Send her login instructions, benefits administration competitor category list, and schedule a follow-up use case deep dive.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0616-5')?'done':''}" data-csm="riley" id="action-0616-5">
+      <div class="action-checkbox ${doneActions.has('0616-5')?'checked':''}" onclick="toggleAction('0616-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F3C6; SAP &mdash; Confirm receipt of Top Rated media kit and support LinkedIn campaign launch</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Riley Rogers &middot; SAP CX confirmed Top Rated promotion plan (blog, social cards, LinkedIn). Follow up to confirm media kit was received and offer support on the LinkedIn campaign assets. Connect Binod Negi with any additional materials needed.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0616-6')?'done':''}" data-csm="riley" id="action-0616-6">
+      <div class="action-checkbox ${doneActions.has('0616-6')?'checked':''}" onclick="toggleAction('0616-6')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Mailchimp &mdash; Send TR program overview doc to Spencer Adkins</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW</span>Riley Rogers &middot; Spencer Adkins (new Mailchimp marketing stakeholder) attended his first TR program call. Send him the TR program overview, partnership support model summary, and contact info to get him fully onboarded to the account.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No actions match the current filter.</div>`;
+}
