@@ -4190,3 +4190,358 @@ function dayActionsHTML_2026_06_16() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No actions match the current filter.</div>`;
 }
+
+// ─────────────────────────────────────────────
+// June 17, 2026 — Wednesday
+// 10 confirmed CSM calls · 8/8 CSMs active
+// 182 recordings scanned via SFDC SOQL
+// ─────────────────────────────────────────────
+
+function dayData_2026_06_17() {
+  return {
+    calls: [
+      { ts: 'Jun 17 · 6:00 AM', csm: 'atisha', account: 'Deloitte',
+        note: 'Data quality anomalies flagged: wrong category mappings (Amazon S3, ADP HCM, SPC for Excel). Rajesh reviewing HG categorization logic.',
+        mins: 30, health: 'Concerning',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Issue',
+        detail: 'Rajesh Shetty (Deloitte) flagged multiple HG data categorization errors during the weekly sync: Amazon S3 labeled as OS, ADP HCM miscategorized, SPC for Excel appearing as web conferencing. HG CS had asked Rajesh to review specific logic; he returned with documented anomalies requiring engineering investigation.' },
+      { ts: 'Jun 17 · 6:00 AM', csm: 'nick', account: 'Check Point',
+        note: 'Presented sample match results for 11K records. Expansion to 100K file dataset scoped — costs and next steps discussed.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'David Garcia-Thomas and Gavin Padden (HG) presented sample matching results for 11,000 organizations from Check Point\'s data file. Call focused on reviewing match quality and scoping expansion to the full 100K-record dataset, including potential costs and timeline. Check Point stakeholders Ariel Keinan and Assaf Cohen participated.' },
+      { ts: 'Jun 17 · 7:00 AM', csm: 'riley', account: 'IBM',
+        note: 'Biweekly TR sync — YTD review count discrepancy (130 vs 122), regional breakdown report shared, conversion campaign paused.',
+        mins: 45, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Riley shared a regional breakdown report for IBM\'s TrustRadius reviews. Discrepancy identified: 130 reviews in TR system vs 122 confirmed YTD. Conversion campaign is on pause. Riley confirmed the regional report met the team\'s needs. Ongoing relationship maintenance with follow-up on conversion status pending.' },
+      { ts: 'Jun 17 · 7:30 AM', csm: 'varun', account: 'CBTS',
+        note: 'Engineering resolved FAI negative values bug and EDG group ID binary format issue. CBTS updated; data feed refresh coordinated.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Issue',
+        detail: 'Varun Tiwari confirmed to CBTS (Mitchell VanderKam, Timothy Selaty) that HG engineering resolved two previously reported data issues: (1) FAI values ranging from positive to negative, and (2) EDG group IDs stored in binary format. Data feed refresh coordinated. Both bugs confirmed fixed in the bi-weekly sync.' },
+      { ts: 'Jun 17 · 8:30 AM', csm: 'andy', account: 'SAS Institute',
+        note: 'MCP pilot intro — HG MCP capabilities demo for SAS CI product launch. SAS has in-house tool; exploring synergies.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Andy Lim presented HG\'s Model Context Protocol (MCP) capabilities to SAS Institute in support of their CI product launch. Jesper Bank Jorgensen was impressed but noted SAS already developed an in-house tool using their own data. Conversation shifted to exploring how HG MCP could complement SAS\'s existing tooling as a pilot expansion use case.' },
+      { ts: 'Jun 17 · 9:00 AM', csm: 'divyam', account: 'Cotality',
+        note: 'TrustRadius kick-off with Shannon Farrer\'s team — insurance and mortgage stakeholders onboarded, program overview delivered.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Divyam Dewan led a TrustRadius kick-off for Cotality. Shannon Farrer introduced insurance and mortgage stakeholders including Jolene Melancon and Micah Zeuch. TR program overview delivered; first formal touchpoint establishing the TR engagement model for this account.' },
+      { ts: 'Jun 17 · 10:30 AM', csm: 'varun', account: 'Pegasystems',
+        note: 'Frank introduced new GenAI product owner Matt and Director Andrew; HG forward-deployed AI team presented capabilities to Pega leadership.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Frank (Pega) brought in two new team members — Matt (GenAI product owner, 1 month in) and Andrew (Director of Product Management) — to explore HG AI capabilities. KP Pindle and Chloe Portier (HG forward-deployed AI engineering lead) presented. Strong potential for expanded AI engagement; follow-up to define specific GenAI use cases.' },
+      { ts: 'Jun 17 · 11:00 AM', csm: 'pam', account: 'Epicor',
+        note: 'Catch-up after rescheduled call — in-person business review planned week of July 6th at Epicor\'s office.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Pam Huck and Anderson caught up after last week\'s missed call. Triassi (Epicor) requested an in-person business review for FY planning; Pam proposed she and Anderson visit Epicor\'s office during the week of July 6th. Confirmed pending final calendar alignment.' },
+      { ts: 'Jun 17 · 12:00 PM', csm: 'rani', account: 'Lenovo',
+        note: 'Weekly sync — Ryan Warren departing for 2-week Montana vacation; next 2 calls cancelled. Adrian in Mexico for World Cup.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Rani Guy held the weekly sync with Ryan Warren (Lenovo). Ryan is leaving for a 2-week Montana vacation; the next two standing calls will be cancelled. Adrian is in Mexico for the World Cup. Light agenda — relationship maintenance and calendar coordination.' },
+      { ts: 'Jun 17 · 12:30 PM', csm: 'rani', account: 'Cisco (Isovalent)',
+        note: 'RGIP/MadKudu onboarding — Rohit Saraf and Tu-Anh verified HubSpot integration, field mapping, and RGIP platform access.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Rani Guy led an RGIP onboarding session for Cisco\'s Isovalent team. Rohit Saraf (PM) and Tu-Anh reviewed HubSpot integration setup, field mapping correctness, and RGIP platform access. Tu-Anh had scoring configuration questions from another stakeholder (2M). Follow-up from the Jun 16 initial onboarding touchpoint.' },
+    ],
+    pulses: [
+      { csm: 'atisha', health: 'Concerning', account: 'Deloitte',
+        excerpt: '6/17 AW: Weekly sync (6:00 AM PT, 30 min). Rajesh Shetty flagged multiple HG data categorization anomalies: Amazon S3 labeled as OS, ADP HCM miscategorized, SPC for Excel appearing as web conferencing. AW to coordinate engineering review.' },
+      { csm: 'nick', health: 'Healthy', account: 'Check Point Software',
+        excerpt: '6/17 NJ: Sample match results review (6:00 AM PT, 30 min). HG presented 11K-record match results to Ariel Keinan + Assaf Cohen. Check Point evaluating expansion to 100K file dataset. Cost discussion and next steps initiated.' },
+      { csm: 'riley', health: 'Healthy', account: 'IBM',
+        excerpt: '6/17 RR: Biweekly TR sync (7:00 AM PT, 45 min). Review count discrepancy: 130 in system vs 122 YTD confirmed. Regional breakdown report delivered. Conversion paused. Healthy relationship; conversion follow-up pending.' },
+      { csm: 'varun', health: 'Healthy', account: 'CBTS',
+        excerpt: '6/17 VT: Bi-weekly sync (7:30 AM PT, 30 min). Engineering confirmed fix for FAI negative values and EDG group ID binary format issues. Data feed refresh coordinated with Mitchell VanderKam + Timothy Selaty.' },
+      { csm: 'andy', health: 'Healthy', account: 'SAS Institute',
+        excerpt: '6/17 AL: MCP pilot touchpoint (8:30 AM PT, 30 min). HG MCP demo impressed Jesper Bank Jorgensen. SAS has in-house tooling built on own data. Synergy exploration initiated for CI product launch — expansion opportunity.' },
+      { csm: 'divyam', health: 'Healthy', account: 'Cotality',
+        excerpt: '6/17 DD: TrustRadius kick-off (9:00 AM PT, 30 min). Shannon Farrer onboarded insurance and mortgage stakeholders (Jolene Melancon, Micah Zeuch). TR program overview delivered. Strong first impression.' },
+      { csm: 'varun', health: 'Healthy', account: 'Pegasystems',
+        excerpt: '6/17 VT: Bi-weekly sync (10:30 AM PT, 30 min). Frank introduced Matt (GenAI PM) + Andrew (Dir Product Mgmt). Chloe Portier + KP Pindle presented HG AI capabilities. High expansion potential for GenAI use case.' },
+      { csm: 'pam', health: 'Healthy', account: 'Epicor',
+        excerpt: '6/17 PH: TR bi-weekly (11:00 AM PT, 30 min). In-person business review planned week of July 6th at Epicor\'s office. Triassi coordinating; Pam + Anderson traveling. Catch-up after rescheduled call.' },
+      { csm: 'rani', health: 'Healthy', account: 'Lenovo',
+        excerpt: '6/17 RG: Weekly sync (12:00 PM PT, 30 min). Ryan Warren on 2-week Montana vacation; next 2 calls cancelled. Adrian at World Cup in Mexico. Calendar coordination completed.' },
+      { csm: 'rani', health: 'Healthy', account: 'Cisco (Isovalent)',
+        excerpt: '6/17 RG: RGIP onboarding follow-up (12:30 PM PT, 30 min). Rohit Saraf + Tu-Anh verified HubSpot integration and field mapping. Scoring config from 2M pending. Continuation from Jun 16 onboarding.' },
+    ],
+  };
+}
+
+function dayMeta_2026_06_17() {
+  return {
+    pills: [
+      ['dot-teal',  '10 Calls'],
+      ['dot-red',   '1 Concerning'],
+      ['dot-amber', '3 Expansion'],
+      ['dot-green', '10 Vitally Pulses'],
+      ['dot-grey',  'Wed Jun 17 · 182 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (10)', 'Pulses (10)', 'Action Items (6)'],
+  };
+}
+
+function dayOverviewHTML_2026_06_17() {
+  return `<div class="section-label">Team Activity &mdash; Wednesday June 17, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+  2 &#x1F4C5; <strong>Wednesday Jun 17 &mdash; 182 recordings scanned</strong> via SFDC SOQL &middot; <strong>10 confirmed calls</strong> across all 8 CSMs &middot; 3 expansion signals (Check Point, SAS, Pegasystems) &middot; 1 data quality flag (Deloitte)
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>Deloitte &mdash; Data categorization anomalies flagged:</strong> Rajesh Shetty identified HG errors (Amazon S3 labeled as OS, ADP HCM miscategorized, SPC for Excel as web conferencing). Engineering review required.
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>3 Expansion signals:</strong> Check Point (100K dataset POC → next steps), SAS Institute (MCP pilot for CI launch), Pegasystems (GenAI AI capabilities with new product leadership).
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">45m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">IBM (biweekly TR sync &middot; regional report delivered &middot; conversion paused)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Check Point (11K sample match results &middot; 100K expansion in scope)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Cotality (TrustRadius kick-off &middot; Shannon Farrer&rsquo;s team onboarded)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Lenovo (weekly sync &middot; Ryan out 2 wks) &middot; Cisco Isovalent (RGIP onboarding follow-up)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">CBTS (data bugs resolved) &middot; Pegasystems (GenAI expansion &middot; new product leadership)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="pam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Epicor (bi-weekly &middot; in-person business review Jul 6 planned)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Deloitte (data categorization anomalies flagged by Rajesh &middot; engineering review needed)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="andy">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">SAS Institute (MCP pilot intro &middot; in-house tool noted &middot; synergy exploration)</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_06_17() {
+  return `<div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>Deloitte &mdash; Data quality flag:</strong> Rajesh Shetty identified HG categorization errors (Amazon S3 labeled as OS, ADP HCM miscategorized, SPC for Excel as web conferencing). Engineering review required. Atisha to follow up.
+  </div>
+  <div style="background:#1c1f26;border:1px solid #64748b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#94a3b8;">
+    &#x1F4CB; <strong>Unconfirmed &mdash; no transcript:</strong> Nick/Accenture (3:30 AM PT), Andy/SAS Catchup (2:00 AM PT), Andy/Cockroach Labs (7:30 AM PT), Varun/Informatica (9:00 AM PT) &mdash; recording exists, CSM participation not speaker-verified. Rani had 5 additional events (Google Weekly, AWS bi-weekly, Lenovo Onboarding, Cisco GRO, Juniper) with no recordings found in SFDC scan.
+  </div>
+  <div class="calls-table"></div>`;
+}
+
+function dayPulsesHTML_2026_06_17() {
+  const cards = [
+    { csm: 'atisha', health: 'Concerning', account: 'Deloitte',
+      opp: 'Vitally Pulse &mdash; Jun 17 Weekly Syncup',
+      arr: 'Enterprise &middot; Atisha Waghela', csmlbl: 'Atisha Waghela',
+      change: 'Jun 17 &middot; Issue',
+      excerpt: '6/17 AW: Weekly sync (6:00 AM PT, 30 min). Rajesh Shetty flagged multiple HG data categorization anomalies &mdash; Amazon S3 labeled as OS, ADP HCM miscategorized, SPC for Excel showing as web conferencing. AW to open engineering ticket and confirm ETA back to Deloitte.' },
+    { csm: 'nick', health: 'Healthy', account: 'Check Point Software',
+      opp: 'Vitally Pulse &mdash; Jun 17 Sample Match Results',
+      arr: 'Enterprise &middot; Nick Johnson', csmlbl: 'Nick Johnson',
+      change: 'Jun 17 &middot; Expansion',
+      excerpt: '6/17 NJ: Sample match results review (6:00 AM PT, 30 min). HG presented 11K-record match results to Ariel Keinan + Assaf Cohen. Check Point evaluating expansion to 100K file dataset. Cost discussion and next steps initiated.' },
+    { csm: 'riley', health: 'Healthy', account: 'IBM',
+      opp: 'Vitally Pulse &mdash; Jun 17 Biweekly TR Sync',
+      arr: 'Enterprise &middot; Riley Rogers', csmlbl: 'Riley Rogers',
+      change: 'Jun 17 &middot; Mixed',
+      excerpt: '6/17 RR: Biweekly TR sync (7:00 AM PT, 45 min). Review count discrepancy: 130 in system vs 122 YTD. Regional breakdown report delivered. Conversion paused. Healthy relationship; conversion follow-up pending.' },
+    { csm: 'varun', health: 'Healthy', account: 'CBTS',
+      opp: 'Vitally Pulse &mdash; Jun 17 Bi-Weekly Sync',
+      arr: 'Enterprise &middot; Varun Tiwari', csmlbl: 'Varun Tiwari',
+      change: 'Jun 17 &middot; Issue (Resolved)',
+      excerpt: '6/17 VT: Bi-weekly sync (7:30 AM PT, 30 min). Engineering confirmed fix for FAI negative values + EDG group ID binary format. Data feed refresh coordinated with Mitchell VanderKam + Timothy Selaty.' },
+    { csm: 'andy', health: 'Healthy', account: 'SAS Institute',
+      opp: 'Vitally Pulse &mdash; Jun 17 MCP Pilot Touchpoint',
+      arr: 'Enterprise &middot; Andy Lim', csmlbl: 'Andy Lim',
+      change: 'Jun 17 &middot; Expansion',
+      excerpt: '6/17 AL: MCP pilot intro (8:30 AM PT, 30 min). HG MCP demo impressed Jesper Bank Jorgensen. SAS has in-house tooling; synergy exploration initiated for CI product launch use case. Expansion opportunity.' },
+    { csm: 'divyam', health: 'Healthy', account: 'Cotality',
+      opp: 'Vitally Pulse &mdash; Jun 17 TrustRadius Kick-off',
+      arr: 'Enterprise &middot; Divyam Dewan', csmlbl: 'Divyam Dewan',
+      change: 'Jun 17 &middot; Check-in',
+      excerpt: '6/17 DD: TR kick-off (9:00 AM PT, 30 min). Shannon Farrer\'s team onboarded &mdash; insurance and mortgage stakeholders (Jolene Melancon, Micah Zeuch) included. TR program overview delivered. Strong first impression.' },
+    { csm: 'varun', health: 'Healthy', account: 'Pegasystems',
+      opp: 'Vitally Pulse &mdash; Jun 17 Bi-Weekly Sync',
+      arr: 'Enterprise &middot; Varun Tiwari', csmlbl: 'Varun Tiwari',
+      change: 'Jun 17 &middot; Expansion',
+      excerpt: '6/17 VT: Bi-weekly sync (10:30 AM PT, 30 min). Frank introduced Matt (GenAI PM) + Andrew (Dir Product Mgmt). Chloe Portier + KP Pindle presented HG AI capabilities. High expansion potential for GenAI use case.' },
+    { csm: 'pam', health: 'Healthy', account: 'Epicor',
+      opp: 'Vitally Pulse &mdash; Jun 17 TR Bi-Weekly',
+      arr: 'Enterprise &middot; Pam Huck', csmlbl: 'Pam Huck',
+      change: 'Jun 17 &middot; Check-in',
+      excerpt: '6/17 PH: TR bi-weekly (11:00 AM PT, 30 min). In-person business review planned week of July 6th at Epicor&rsquo;s office. Triassi coordinating; Pam + Anderson traveling. Catch-up after rescheduled call.' },
+    { csm: 'rani', health: 'Healthy', account: 'Lenovo',
+      opp: 'Vitally Pulse &mdash; Jun 17 Weekly Sync',
+      arr: 'Enterprise &middot; Rani Guy', csmlbl: 'Rani Guy',
+      change: 'Jun 17 &middot; Check-in',
+      excerpt: '6/17 RG: Weekly sync (12:00 PM PT, 30 min). Ryan Warren on 2-week Montana vacation; next 2 calls cancelled. Adrian at World Cup in Mexico. Calendar coordination completed.' },
+    { csm: 'rani', health: 'Healthy', account: 'Cisco (Isovalent)',
+      opp: 'Vitally Pulse &mdash; Jun 17 RGIP Onboarding',
+      arr: 'Enterprise &middot; Rani Guy', csmlbl: 'Rani Guy',
+      change: 'Jun 17 &middot; Check-in',
+      excerpt: '6/17 RG: RGIP onboarding follow-up (12:30 PM PT, 30 min). Rohit Saraf + Tu-Anh verified HubSpot integration and field mapping. Scoring config from 2M pending. Continuation from Jun 16 onboarding.' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+  2   <div class="pulse-card-top">
+        <div>
+          <div style="font-weight:600;font-size:13px;color:#f1f5f9;">${c.account}</div>
+          <div style="font-size:11px;color:#64748b;margin-top:2px;">${c.opp}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_06_17() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('0617-1')?'done':''}" data-csm="atisha" id="action-0617-1">
+      <div class="action-checkbox ${doneActions.has('0617-1')?'checked':''}" onclick="toggleAction('0617-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; Deloitte &mdash; Escalate data categorization anomalies to engineering for investigation</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Atisha Waghela &middot; Rajesh Shetty documented 3+ HG categorization errors: Amazon S3 labeled as OS, ADP HCM miscategorized, SPC for Excel appearing as web conferencing. Open an engineering ticket, share Rajesh&rsquo;s specific examples, and confirm ETA back to Deloitte before the next weekly sync.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0617-2')?'done':''}" data-csm="nick" id="action-0617-2">
+      <div class="action-checkbox ${doneActions.has('0617-2')?'checked':''}" onclick="toggleAction('0617-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Check Point &mdash; Send cost estimate and SOW for 100K dataset expansion</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Nick Johnson &middot; 11K sample match results confirmed strong data quality. Check Point (Ariel Keinan, Assaf Cohen) is evaluating the full 100K-record dataset expansion. Send pricing estimate, scope of work, and proposed timeline to move from POC to a full data partnership agreement.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0617-3')?'done':''}" data-csm="varun" id="action-0617-3">
+      <div class="action-checkbox ${doneActions.has('0617-3')?'checked':''}" onclick="toggleAction('0617-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F916; Pegasystems &mdash; Schedule dedicated GenAI capabilities deep dive with Matt and Andrew</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Varun Tiwari &middot; Frank introduced new GenAI product owner Matt and Director Andrew to HG AI capabilities. Chloe Portier and KP Pindle made a strong impression. Book a follow-up session to define specific use cases for Matt&rsquo;s GenAI product roadmap and formalize the expanded AI engagement with Pega.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0617-4')?'done':''}" data-csm="rani" id="action-0617-4">
+      <div class="action-checkbox ${doneActions.has('0617-4')?'checked':''}" onclick="toggleAction('0617-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F527; Cisco (Isovalent) &mdash; Resolve RGIP scoring config with 2M and confirm platform setup complete</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Rani Guy &middot; Tu-Anh raised scoring configuration questions from another stakeholder (2M) during onboarding. Coordinate with 2M contact to address scoring questions and confirm HubSpot integration + field mapping are fully validated before marking onboarding complete.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0617-5')?'done':''}" data-csm="andy" id="action-0617-5">
+      <div class="action-checkbox ${doneActions.has('0617-5')?'checked':''}" onclick="toggleAction('0617-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F9E0; SAS Institute &mdash; Document MCP pilot use case and schedule synergy review session</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Andy Lim &middot; Jesper Bank Jorgensen was impressed by the HG MCP demo but noted SAS has an in-house tool. Prepare a brief document contrasting HG MCP capabilities vs SAS in-house tooling, highlighting incremental value. Schedule a follow-up to define a concrete pilot use case for the CI product launch.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0617-6')?'done':''}" data-csm="pam" id="action-0617-6">
+      <div class="action-checkbox ${doneActions.has('0617-6')?'checked':''}" onclick="toggleAction('0617-6')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F3E2; Epicor &mdash; Confirm July 6th in-person business review logistics with Triassi</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW</span>Pam Huck &middot; In-person business review confirmed in principle for week of July 6th. Pam and Anderson traveling to Epicor&rsquo;s office. Follow up with Triassi to confirm the specific date, agenda, and attendee list so travel can be booked in time.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No actions match the current filter.</div>`;
+}
