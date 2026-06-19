@@ -4292,7 +4292,7 @@ function dayMeta_2026_06_17() {
 function dayOverviewHTML_2026_06_17() {
   return `<div class="section-label">Team Activity &mdash; Wednesday June 17, 2026</div>
   <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
-  2 &#x1F4C5; <strong>Wednesday Jun 17 &mdash; 182 recordings scanned</strong> via SFDC SOQL &middot; <strong>10 confirmed calls</strong> across all 8 CSMs &middot; 3 expansion signals (Check Point, SAS, Pegasystems) &middot; 1 data quality flag (Deloitte)
+    &#x1F4C5; <strong>Wednesday Jun 17 &mdash; 182 recordings scanned</strong> via SFDC SOQL &middot; <strong>10 confirmed calls</strong> across all 8 CSMs &middot; 3 expansion signals (Check Point, SAS, Pegasystems) &middot; 1 data quality flag (Deloitte)
   </div>
   <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
     &#x26A0;&#xFE0F; <strong>Deloitte &mdash; Data categorization anomalies flagged:</strong> Rajesh Shetty identified HG errors (Amazon S3 labeled as OS, ADP HCM miscategorized, SPC for Excel as web conferencing). Engineering review required.
@@ -4485,7 +4485,7 @@ function dayPulsesHTML_2026_06_17() {
   const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
   return `<div class="pulse-grid">${cards.map(c=>`
     <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
-  2   <div class="pulse-card-top">
+      <div class="pulse-card-top">
         <div>
           <div style="font-weight:600;font-size:13px;color:#f1f5f9;">${c.account}</div>
           <div style="font-size:11px;color:#64748b;margin-top:2px;">${c.opp}</div>
@@ -4540,6 +4540,305 @@ function dayActionsHTML_2026_06_17() {
       <div class="action-body">
         <div class="action-title">&#x1F3E2; Epicor &mdash; Confirm July 6th in-person business review logistics with Triassi</div>
         <div class="action-meta"><span class="urgency-badge urgency-low">LOW</span>Pam Huck &middot; In-person business review confirmed in principle for week of July 6th. Pam and Anderson traveling to Epicor&rsquo;s office. Follow up with Triassi to confirm the specific date, agenda, and attendee list so travel can be booked in time.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No actions match the current filter.</div>`;
+}
+
+// ─── 2026-06-18 ────────────────────────────────────────────────────────────
+
+function dayData_2026_06_18() {
+  return {
+    calls: [
+      { ts: 'Jun 18 · 4:30 AM', csm: 'atisha', account: 'Insight Direct',
+        note: 'Bi-weekly sync. VMware campaign using HG data reviewed. Contacts add-on pitched — not in current contract but available on newer platform. Migration to new version flagged.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Atisha drove the agenda. VMware campaign use of HG data reviewed. Contacts add-on discussed — not in current contract but available on the newer platform version. Platform migration flagged as next step.' },
+      { ts: 'Jun 18 · 5:00 AM', csm: 'divyam', account: 'Infinigate',
+        note: 'Bi-weekly sync. Abolfazl led with questions on company spend estimation vs. revenue. Divyam walked through HG\'s data methodology and estimation model.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'Customer', purpose: 'Check-in',
+        detail: 'Abolfazl Akhondi (customer) led with data methodology questions — specifically how HG derives company spend estimates vs. reported revenue. Divyam walked through the estimation formula and interpretation guidance.' },
+      { ts: 'Jun 18 · 7:30 AM', csm: 'riley', account: 'SAP',
+        note: 'Ad-hoc strategy call. SAP presented AI SEO content strategy built on TrustRadius partnership — premium content bundle. In-person CMI workshop already held in Palo Alto.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Expansion',
+        detail: 'SAP (Alejandro) presented their AI SEO strategy built around the TrustRadius partnership. SAP already held an in-person 3-hour workshop with CMI in Palo Alto to define the AI SEO roadmap. Premium content bundle is the proposed expansion vehicle.' },
+      { ts: 'Jun 18 · 9:00 AM', csm: 'atisha', account: 'RSM US',
+        note: 'Weekly sync. Atisha pursuing intro to Aaron (RSM top sales rep, former Microsoft video sales enablement lead). Contacts add-on discussed as expansion vehicle for broader outreach.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Atisha is working to get in front of Aaron, RSM\'s top sales rep who previously ran video-based sales enablement at Microsoft. Contacts add-on discussed as expansion opportunity to support RSM\'s broader sales outreach pipeline.' },
+      { ts: 'Jun 18 · 9:30 AM', csm: 'divyam', account: 'HubSpot',
+        note: 'Monthly sync. Product listing descriptions, AI visibility report status, taxonomy update process, and review cadence reviewed.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Divyam led review of HubSpot product listing descriptions, AI visibility report status, and the taxonomy update process (changes are suggestions routed to the taxonomy team). Review cadence and next steps confirmed.' },
+      { ts: 'Jun 18 · 9:30 AM', csm: 'rani', account: 'NetApp',
+        note: 'Monthly sync. Ryan Maas flagged data coverage gap — believes HG is missing full universe of companies (~40M record discrepancy). Caught Rani off guard. Renewal risk.',
+        mins: 30, health: 'Concerning',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Ryan Maas surfaced a significant concern mid-call: NetApp believes HG is not providing the full universe of companies, citing a ~40M record discrepancy. Rani was not expecting this — engineering/data team escalation needed before renewal discussions proceed.' },
+      { ts: 'Jun 18 · 11:00 AM', csm: 'rani', account: 'AWS',
+        note: 'Project Rubicon weekly. HG Insights announced as native MCP connector in Amazon Q at AWS NY Summit (Jun 16-17). Major visibility win. Expansion discussion ongoing.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'HG Insights featured as a native MCP connector in Amazon Q, announced at the AWS NY Summit (June 16-17). Chloe led the integration work. Rani reviewed the milestone with the AWS team. Strong expansion signal for deeper product integration and co-marketing.' },
+      { ts: 'Jun 18 · 12:30 PM', csm: 'riley', account: 'SAP Concur',
+        note: 'Recurring sync. Top Rated dashboard access and IDL lead delivery status reviewed. Only HG staff detected in transcript — customer may not have joined.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Riley and Mardigan reviewed SAP Concur\'s Top Rated dashboard access and IDL lead delivery. Only HG staff speakers detected in transcript — possible internal prep call or customer did not attend.' },
+    ],
+    pulses: [
+      { csm: 'atisha', account: 'Insight Direct', health: 'Healthy' },
+      { csm: 'divyam', account: 'Infinigate', health: 'Healthy' },
+      { csm: 'riley', account: 'SAP', health: 'Healthy' },
+      { csm: 'atisha', account: 'RSM US', health: 'Healthy' },
+      { csm: 'divyam', account: 'HubSpot', health: 'Healthy' },
+      { csm: 'rani', account: 'NetApp', health: 'Concerning' },
+      { csm: 'rani', account: 'AWS', health: 'Healthy' },
+      { csm: 'riley', account: 'SAP Concur', health: 'Healthy' },
+    ],
+  };
+}
+
+function dayMeta_2026_06_18() {
+  return {
+    pills: [
+      ['dot-teal',  '8 Calls'],
+      ['dot-red',   '1 Concerning'],
+      ['dot-amber', '3 Expansion'],
+      ['dot-green', '8 Pulses'],
+      ['dot-grey',  'Thu Jun 18 · 69 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (8)', 'Pulses (8)', 'Action Items (6)'],
+  };
+}
+
+function dayOverviewHTML_2026_06_18() {
+  return `<div class="section-label">Team Activity &mdash; Thursday June 18, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Thursday Jun 18 &mdash; 69 recordings scanned</strong> via SFDC SOQL &middot; <strong>8 confirmed calls</strong> across 4 CSMs &middot; 2 unconfirmed (no transcript: SAP CIAM, Arcoro) &middot; 3 expansion signals, 1 concerning
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>NetApp &mdash; Data Coverage Concern:</strong> Ryan Maas flagged a ~40M record discrepancy mid-call, claiming HG is not providing the full universe of companies. Caught Rani off guard. Engineering/data team escalation required before renewal discussions.
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F680; <strong>AWS &mdash; HG Native MCP Connector Launch:</strong> HG Insights announced as a native MCP connector in Amazon Q at the AWS NY Summit (Jun 16-17). Major co-marketing milestone with strong expansion potential.
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">SAP (AI SEO content strategy expansion) &middot; SAP Concur (Top Rated + IDL status) &middot; 2 unconfirmed: SAP CIAM &amp; Arcoro</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Infinigate (data methodology Q&amp;A) &middot; HubSpot (product listings, AI visibility, taxonomy)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">&#x26A0; NetApp (data coverage gap, renewal risk) &middot; &#x1F680; AWS (HG MCP connector at NY Summit)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Insight Direct (contacts add-on pitch) &middot; RSM US (Aaron intro for video sales enablement expansion)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="nick">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 events scheduled &mdash; no confirmed recordings (Infinigate: Divyam confirmed, Nick not in transcript; Siemens biweekly: recording, no transcript)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="varun">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 events scheduled &mdash; no recordings found (Equinix biweekly, HG &amp; Insight sync)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No events or recordings identified for this date</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 recording excluded &mdash; FactSet (AI bot note only, no CSM presence confirmed)</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_06_18() {
+  return `
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>NetApp &mdash; Data Coverage Escalation Needed:</strong> Ryan Maas flagged a ~40M record discrepancy mid-call. Engineering or data team review required before renewal.
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F680; <strong>AWS &mdash; MCP Connector Launch at NY Summit:</strong> HG featured as native connector in Amazon Q (Jun 16-17). Major expansion and co-marketing milestone.
+  </div>`;
+}
+
+function dayPulsesHTML_2026_06_18() {
+  const cards = [
+    { csm: 'atisha', health: 'Healthy', account: 'Insight Direct',
+      opp: 'Vitally Pulse &mdash; Jun 18 Bi-Weekly Sync',
+      arr: 'Enterprise &middot; Atisha Waghela', csmlbl: 'Atisha Waghela',
+      change: 'Jun 18 &middot; Mixed',
+      excerpt: '6/18 AW: Bi-weekly sync (4:30 AM PT, 30 min). VMware campaign use of HG data reviewed. Contacts add-on pitched &mdash; not in current contract but available on new platform. Platform migration to newer version flagged.' },
+    { csm: 'divyam', health: 'Healthy', account: 'Infinigate',
+      opp: 'Vitally Pulse &mdash; Jun 18 Bi-Weekly Sync',
+      arr: 'Enterprise &middot; Divyam Dewan', csmlbl: 'Divyam Dewan',
+      change: 'Jun 18 &middot; Check-in',
+      excerpt: '6/18 DD: Bi-weekly sync (5:00 AM PT, 30 min). Abolfazl Akhondi led with data methodology questions &mdash; HG company spend estimation formula vs. revenue. Divyam walked through model and interpretation guidance.' },
+    { csm: 'riley', health: 'Healthy', account: 'SAP',
+      opp: 'Vitally Pulse &mdash; Jun 18 AI SEO Strategy Session',
+      arr: 'Enterprise &middot; Riley Rogers', csmlbl: 'Riley Rogers',
+      change: 'Jun 18 &middot; Expansion',
+      excerpt: '6/18 RR: Ad-hoc strategy call (7:30 AM PT, 30 min). SAP presented AI SEO content strategy built on TrustRadius partnership. In-person 3-hour CMI workshop already completed in Palo Alto. Premium content bundle under discussion.' },
+    { csm: 'atisha', health: 'Healthy', account: 'RSM US',
+      opp: 'Vitally Pulse &mdash; Jun 18 Weekly Sync',
+      arr: 'Enterprise &middot; Atisha Waghela', csmlbl: 'Atisha Waghela',
+      change: 'Jun 18 &middot; Mixed',
+      excerpt: '6/18 AW: Weekly sync (9:00 AM PT, 30 min). Atisha pursuing intro to Aaron &mdash; RSM&rsquo;s top sales rep, former Microsoft video sales enablement lead. Contacts add-on discussed as expansion vehicle for RSM&rsquo;s broader sales outreach.' },
+    { csm: 'divyam', health: 'Healthy', account: 'HubSpot',
+      opp: 'Vitally Pulse &mdash; Jun 18 Monthly Sync',
+      arr: 'Enterprise &middot; Divyam Dewan', csmlbl: 'Divyam Dewan',
+      change: 'Jun 18 &middot; Check-in',
+      excerpt: '6/18 DD: Monthly sync (9:30 AM PT, 30 min). Product listing descriptions reviewed. AI visibility report status confirmed. Taxonomy update process clarified (suggestions routed to taxonomy team). Review cadence set.' },
+    { csm: 'rani', health: 'Concerning', account: 'NetApp',
+      opp: 'Vitally Pulse &mdash; Jun 18 Monthly Sync',
+      arr: 'Enterprise &middot; Rani Guy', csmlbl: 'Rani Guy',
+      change: 'Jun 18 &middot; Issue',
+      excerpt: '6/18 RG: Monthly sync (9:30 AM PT, 30 min). Ryan Maas flagged data coverage gap mid-call &mdash; believes HG is missing ~40M companies from the full universe. Caught Rani off guard. Engineering escalation required before renewal.' },
+    { csm: 'rani', health: 'Healthy', account: 'AWS',
+      opp: 'Vitally Pulse &mdash; Jun 18 Project Rubicon Weekly',
+      arr: 'Enterprise &middot; Rani Guy', csmlbl: 'Rani Guy',
+      change: 'Jun 18 &middot; Expansion',
+      excerpt: '6/18 RG: Project Rubicon weekly (11:00 AM PT, 30 min). HG Insights announced as native MCP connector in Amazon Q at AWS NY Summit (Jun 16-17). Chloe led integration; Rani reviewed milestone with AWS team. Strong expansion signal.' },
+    { csm: 'riley', health: 'Healthy', account: 'SAP Concur',
+      opp: 'Vitally Pulse &mdash; Jun 18 Recurring Sync',
+      arr: 'Enterprise &middot; Riley Rogers', csmlbl: 'Riley Rogers',
+      change: 'Jun 18 &middot; Check-in',
+      excerpt: '6/18 RR: Recurring sync (12:30 PM PT, 30 min). Top Rated dashboard access and IDL lead delivery reviewed. Only HG staff detected in transcript &mdash; possible internal prep or customer did not join.' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div style="font-weight:600;font-size:13px;color:#f1f5f9;">${c.account}</div>
+          <div style="font-size:11px;color:#64748b;margin-top:2px;">${c.opp}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_06_18() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('0618-1')?'done':''}" data-csm="rani" id="action-0618-1">
+      <div class="action-checkbox ${doneActions.has('0618-1')?'checked':''}" onclick="toggleAction('0618-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; NetApp &mdash; Escalate data coverage gap to engineering before renewal</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy &middot; Ryan Maas flagged a ~40M record discrepancy mid-call, claiming HG is missing the full universe of companies. Open an engineering or data team ticket, investigate the discrepancy, and return a documented response to NetApp before any renewal conversation proceeds.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0618-2')?'done':''}" data-csm="rani" id="action-0618-2">
+      <div class="action-checkbox ${doneActions.has('0618-2')?'checked':''}" onclick="toggleAction('0618-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F680; AWS &mdash; Package MCP connector launch for co-marketing and expansion pipeline</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy &middot; HG announced as a native MCP connector in Amazon Q at the AWS NY Summit (Jun 16-17). Coordinate with Chloe Portier and the AWS team to package this milestone for co-marketing assets and define the next expansion phase of Project Rubicon.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0618-3')?'done':''}" data-csm="riley" id="action-0618-3">
+      <div class="action-checkbox ${doneActions.has('0618-3')?'checked':''}" onclick="toggleAction('0618-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; SAP &mdash; Advance premium content bundle as part of AI SEO partnership</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Riley Rogers &middot; SAP (Alejandro) presented a well-developed AI SEO strategy built on the TrustRadius partnership, including an in-person 3-hour CMI workshop already completed in Palo Alto. Define next steps for the premium content bundle, involve the TR product team, and schedule a follow-up to formalize the expanded partnership scope.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0618-4')?'done':''}" data-csm="atisha" id="action-0618-4">
+      <div class="action-checkbox ${doneActions.has('0618-4')?'checked':''}" onclick="toggleAction('0618-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F3A5; RSM US &mdash; Facilitate introduction to Aaron for video sales enablement use case</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Atisha Waghela &middot; Aaron is RSM&rsquo;s top sales rep and former Microsoft video sales enablement lead. Arrange the intro and pitch the contacts add-on as the expansion vehicle for RSM&rsquo;s broader sales outreach.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0618-5')?'done':''}" data-csm="atisha" id="action-0618-5">
+      <div class="action-checkbox ${doneActions.has('0618-5')?'checked':''}" onclick="toggleAction('0618-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Insight Direct &mdash; Send contacts add-on proposal before platform migration</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Atisha Waghela &middot; Contacts add-on was discussed but is not in Insight Direct&rsquo;s current contract. It is available on the newer platform version and a migration is pending. Send a formal proposal before the migration to capture the upsell opportunity while the upgrade is top of mind.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0618-6')?'done':''}" data-csm="divyam" id="action-0618-6">
+      <div class="action-checkbox ${doneActions.has('0618-6')?'checked':''}" onclick="toggleAction('0618-6')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CA; HubSpot &mdash; Confirm taxonomy suggestion submitted and AI visibility report timeline</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW</span>Divyam Dewan &middot; HubSpot requested taxonomy changes that are routed as suggestions to the taxonomy team. Confirm the suggestion was submitted and communicate the ETA. Also confirm the AI visibility report timeline so HubSpot knows when to expect updated results.</div>
       </div>
     </div>
   </div>
