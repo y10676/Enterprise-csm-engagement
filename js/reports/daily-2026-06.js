@@ -4844,3 +4844,327 @@ function dayActionsHTML_2026_06_18() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No actions match the current filter.</div>`;
 }
+
+// ============================================================
+// June 19, 2026 (Friday) — 0 confirmed calls, 21 recordings scanned
+// ============================================================
+
+function dayData_2026_06_19() {
+  return {
+    calls: [],
+    pulses: [],
+  };
+}
+
+function dayMeta_2026_06_19() {
+  return {
+    pills: [
+      ['dot-teal',  '0 Confirmed Calls'],
+      ['dot-amber', '2 Unconfirmed'],
+      ['dot-grey',  'Fri Jun 19 · 21 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (0)', 'Pulses (0)', 'Action Items (5)'],
+  };
+}
+
+function dayOverviewHTML_2026_06_19() {
+  return `<div class="section-label">Team Activity &mdash; Friday June 19, 2026</div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Friday Jun 19 &mdash; 21 recordings scanned</strong> via SFDC SOQL &middot; <strong>0 confirmed CSM customer calls</strong> (no CSM speaker labels detected in any transcript) &middot; 2 unconfirmed (Andy/Zycus + Atisha/Apple) &middot; 8+ CSM events had no recordings
+  </div>
+  <div style="background:#1c1a0f;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fcd34d;">
+    &#x26A0;&#xFE0F; <strong>Atisha Waghela</strong> had 4&ndash;5 Apple events scheduled (Platform Training, MI Training, Weekly Syncup, Bi-weekly Sync). Only the Weekly Syncup has a recording &mdash; no transcript. None confirmed. &middot; <strong>Andy Lim</strong>: Zycus onboarding call transcript has no CSM speaker label &mdash; verify attendance.
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card no-calls" data-csm="atisha">
+      <span class="no-call-badge">0 Direct</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">0</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-amber">1</div><div class="metric-lbl">Unconfirmed</div></div>
+        <div><div class="metric-num m-grey">0m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Apple Inc. (Weekly Syncup &mdash; recording, no transcript) &middot; Intel (Platform Training &mdash; no recording)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Direct</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">0</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-amber">1</div><div class="metric-lbl">Unconfirmed</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Recorded</div></div>
+      </div>
+      <div class="csm-account-note">Zycus Inc. (Onboarding Call 1 &mdash; transcript has no CSM label; verify attendance)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="nick">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 events &mdash; no recordings (Capgemini monthly sync, Infor onsite debrief)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="varun">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event &mdash; no recording (Zendesk bi-weekly sync)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="riley">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No events or recordings identified for this date</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="rani">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No events or recordings identified for this date</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="divyam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No events or recordings identified for this date</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No events or recordings identified for this date</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_06_19() {
+  return `
+  <div style="background:#1c2333;border:1px solid #475569;border-left:3px solid #475569;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#cbd5e1;">
+    &#x1F4CB; <strong>No confirmed CSM customer calls on June 19, 2026.</strong> 21 recordings scanned via SFDC SOQL &mdash; no CSM speaker labels detected in any transcript. See unconfirmed calls below.
+  </div>
+  <div style="background:#1c1a0f;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fcd34d;">
+    &#x26A0;&#xFE0F; <strong>Unconfirmed: Andy Lim / Zycus</strong> &mdash; Recording matched Andy's SFDC event (2:00 AM PT, 30 min). Transcript speakers: David Garcia-Thomas, Puneet Singh, Sutithi Das. Andy not in speaker labels. Verify attendance and log pulse if confirmed.
+  </div>
+  <div style="background:#1c1a0f;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fcd34d;">
+    &#x26A0;&#xFE0F; <strong>Unconfirmed: Atisha Waghela / Apple Inc.</strong> &mdash; Recording "HGI &amp; Apple: Weekly Syncup" matched Atisha's SFDC event (11:00 AM PT, 30 min). No transcript. Inferred from event ownership only.
+  </div>`;
+}
+
+function dayPulsesHTML_2026_06_19() {
+  const cards = [];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top"><span class="pulse-account">${c.account}</span><span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span></div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:${cards.length?'none':'block'}">No Vitally pulses logged for June 19 &mdash; no confirmed CSM customer calls.</div>`;
+}
+
+function dayActionsHTML_2026_06_19() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('0619-1')?'done':''}" data-csm="andy" id="action-0619-1">
+      <div class="action-checkbox ${doneActions.has('0619-1')?'checked':''}" onclick="toggleAction('0619-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F50D; Andy Lim &mdash; Verify Zycus Onboarding Call Attendance</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Andy Lim &middot; Zycus transcript has no CSM label. Confirm Andy was present and log Vitally pulse for Onboarding Call 1 if confirmed.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0619-2')?'done':''}" data-csm="atisha" id="action-0619-2">
+      <div class="action-checkbox ${doneActions.has('0619-2')?'checked':''}" onclick="toggleAction('0619-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F34E; Atisha Waghela &mdash; Reconcile 4+ Apple Events (No Transcripts)</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Atisha Waghela &middot; 4&ndash;5 Apple events on Jun 19. Only Weekly Syncup has recording (no transcript). Confirm which sessions occurred and log Vitally notes for each.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0619-3')?'done':''}" data-csm="nick" id="action-0619-3">
+      <div class="action-checkbox ${doneActions.has('0619-3')?'checked':''}" onclick="toggleAction('0619-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Nick Johnson &mdash; Confirm Capgemini Monthly Sync</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Nick Johnson &middot; SFDC event (3:30 AM PT) found, no Weflow recording. Confirm call occurred and log pulse in Vitally.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0619-4')?'done':''}" data-csm="nick" id="action-0619-4">
+      <div class="action-checkbox ${doneActions.has('0619-4')?'checked':''}" onclick="toggleAction('0619-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Nick Johnson &mdash; Log Infor Onsite Debrief Outcomes</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Nick Johnson &middot; "HG onsite debrief check ins" with Infor (5:00 AM PT). No recording. Capture post-onsite outcomes in Vitally.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0619-5')?'done':''}" data-csm="varun" id="action-0619-5">
+      <div class="action-checkbox ${doneActions.has('0619-5')?'checked':''}" onclick="toggleAction('0619-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Varun Tiwari &mdash; Confirm Zendesk Bi-Weekly Sync</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW</span>Varun Tiwari &middot; SFDC event found, no recording. Confirm if call occurred and log note if so.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items.</div>`;
+}
+
+// ============================================================
+// Weekly Summary — Week 25 · June 15–19, 2026
+// ============================================================
+
+function weeklyOrMonthlyHTML_2026_06_19() {
+  return `<div class="section-label">Weekly Summary &mdash; W25 · June 15&ndash;19, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 12px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Week 25 Summary:</strong> <strong>35 confirmed customer calls</strong> Mon&ndash;Thu + 0 confirmed Friday = <strong>35 total</strong> &middot; 8 CSMs active &middot; 5 expansion signals &middot; 5 issue/concerning signals &middot; Friday was a quiet close with no confirmed calls
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px;margin-bottom:14px;">
+    <div style="background:#151820;border:1px solid #2d3748;border-radius:6px;padding:10px;text-align:center;">
+      <div style="font-size:24px;font-weight:700;color:#2dd4bf;">35</div>
+      <div style="font-size:11px;color:#94a3b8;">Total Confirmed Calls</div>
+    </div>
+    <div style="background:#151820;border:1px solid #2d3748;border-radius:6px;padding:10px;text-align:center;">
+      <div style="font-size:24px;font-weight:700;color:#a5b4fc;">8</div>
+      <div style="font-size:11px;color:#94a3b8;">CSMs Active</div>
+    </div>
+    <div style="background:#151820;border:1px solid #2d3748;border-radius:6px;padding:10px;text-align:center;">
+      <div style="font-size:24px;font-weight:700;color:#22c55e;">5</div>
+      <div style="font-size:11px;color:#94a3b8;">Expansion Signals</div>
+    </div>
+    <div style="background:#151820;border:1px solid #2d3748;border-radius:6px;padding:10px;text-align:center;">
+      <div style="font-size:24px;font-weight:700;color:#ef4444;">5</div>
+      <div style="font-size:11px;color:#94a3b8;">Issue/Concerning</div>
+    </div>
+    <div style="background:#151820;border:1px solid #2d3748;border-radius:6px;padding:10px;text-align:center;">
+      <div style="font-size:24px;font-weight:700;color:#94a3b8;">0</div>
+      <div style="font-size:11px;color:#94a3b8;">Confirmed Friday</div>
+    </div>
+  </div>
+
+  <div style="font-size:12px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px;">Daily Breakdown</div>
+  <table style="width:100%;border-collapse:collapse;font-size:12px;">
+    <thead>
+      <tr>
+        <th style="text-align:left;padding:6px 10px;font-size:11px;text-transform:uppercase;color:#64748b;border-bottom:1px solid #2d3748;">Day</th>
+        <th style="text-align:center;padding:6px 10px;font-size:11px;text-transform:uppercase;color:#64748b;border-bottom:1px solid #2d3748;">Calls</th>
+        <th style="text-align:left;padding:6px 10px;font-size:11px;text-transform:uppercase;color:#64748b;border-bottom:1px solid #2d3748;">Active CSMs</th>
+        <th style="text-align:left;padding:6px 10px;font-size:11px;text-transform:uppercase;color:#64748b;border-bottom:1px solid #2d3748;">Highlights</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding:7px 10px;border-bottom:1px solid #1e2433;">Mon Jun 15</td>
+        <td style="padding:7px 10px;border-bottom:1px solid #1e2433;text-align:center;color:#2dd4bf;font-weight:600;">6</td>
+        <td style="padding:7px 10px;border-bottom:1px solid #1e2433;">Nick, Varun, Riley, Rani</td>
+        <td style="padding:7px 10px;border-bottom:1px solid #1e2433;">Riley: SAP (2 calls) &middot; Rani/Workday: Issue &#x1F534; &middot; Nick/Accenture+Infor</td>
+      </tr>
+      <tr>
+        <td style="padding:7px 10px;border-bottom:1px solid #1e2433;">Tue Jun 16</td>
+        <td style="padding:7px 10px;border-bottom:1px solid #1e2433;text-align:center;color:#2dd4bf;font-weight:600;">11</td>
+        <td style="padding:7px 10px;border-bottom:1px solid #1e2433;">Riley, Nick, Rani, Varun</td>
+        <td style="padding:7px 10px;border-bottom:1px solid #1e2433;">&#x1F4C8; Varun/Alight: Expansion &middot; &#x1F534; Rani/Cisco: Issue &middot; Riley: 6 calls (SAP, UKG, Intuit, Red Hat, Adobe, Zoom)</td>
+      </tr>
+      <tr>
+        <td style="padding:7px 10px;border-bottom:1px solid #1e2433;">Wed Jun 17</td>
+        <td style="padding:7px 10px;border-bottom:1px solid #1e2433;text-align:center;color:#2dd4bf;font-weight:600;">10</td>
+        <td style="padding:7px 10px;border-bottom:1px solid #1e2433;">Atisha, Nick, Riley, Varun, Andy, Divyam, Pam, Rani</td>
+        <td style="padding:7px 10px;border-bottom:1px solid #1e2433;">&#x1F534; Atisha/Deloitte: Issue &middot; &#x1F534; Varun/CBTS: Issue &middot; &#x1F4C8; Nick/Check Point: Expansion &middot; &#x1F4C8; Varun/Pegasystems: Expansion &middot; &#x1F4C8; Andy/SAS: Expansion</td>
+      </tr>
+      <tr>
+        <td style="padding:7px 10px;border-bottom:1px solid #1e2433;">Thu Jun 18</td>
+        <td style="padding:7px 10px;border-bottom:1px solid #1e2433;text-align:center;color:#2dd4bf;font-weight:600;">8</td>
+        <td style="padding:7px 10px;border-bottom:1px solid #1e2433;">Atisha, Divyam, Riley, Rani</td>
+        <td style="padding:7px 10px;border-bottom:1px solid #1e2433;">&#x26A0; Rani/NetApp: Data coverage escalation (40M record gap) &middot; &#x1F680; Rani/AWS: HG MCP at NY Summit &middot; &#x1F4C8; Riley/SAP: Expansion</td>
+      </tr>
+      <tr>
+        <td style="padding:7px 10px;">Fri Jun 19</td>
+        <td style="padding:7px 10px;text-align:center;color:#94a3b8;font-weight:600;">0*</td>
+        <td style="padding:7px 10px;color:#94a3b8;">None confirmed</td>
+        <td style="padding:7px 10px;color:#94a3b8;">*2 unconfirmed (Andy/Zycus, Atisha/Apple) &middot; Multiple events with no recordings</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div style="font-size:12px;font-weight:600;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin:14px 0 8px 0;">Per-CSM Week Totals</div>
+  <table style="width:100%;border-collapse:collapse;font-size:12px;">
+    <thead>
+      <tr>
+        <th style="text-align:left;padding:6px 10px;font-size:11px;text-transform:uppercase;color:#64748b;border-bottom:1px solid #2d3748;">CSM</th>
+        <th style="text-align:center;padding:6px 10px;font-size:11px;text-transform:uppercase;color:#64748b;border-bottom:1px solid #2d3748;">Calls</th>
+        <th style="text-align:left;padding:6px 10px;font-size:11px;text-transform:uppercase;color:#64748b;border-bottom:1px solid #2d3748;">Accounts</th>
+        <th style="text-align:left;padding:6px 10px;font-size:11px;text-transform:uppercase;color:#64748b;border-bottom:1px solid #2d3748;">Signals</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding:7px 10px;border-bottom:1px solid #1e2433;"><span style="background:#1e1b4b;color:#a5b4fc;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;">Riley Rogers</span></td>
+        <td style="padding:7px 10px;border-bottom:1px solid #1e2433;text-align:center;color:#2dd4bf;font-weight:600;">11</td>
+        <td style="padding:7px 10px;border-bottom:1px solid #1e2433;">SAP (×3+), UKG, Intuit, Red Hat, Adobe, Zoom, IBM, SAP Concur</td>
+        <td style="padding:7px 10px;border-bottom:1px solid #1e2433;">&#x1F4C8; SAP expansion (Jun 18)</td>
+      </tr>
+      <tr>
+        <td style="padding:7px 10px;border-bottom:1px solid #1e2433;"><span style="background:#1a2e1a;color:#86efac;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;">Nick Johnson</span></td>
+        <td style="padding:7px 10px;border-bottom:1px solid #1e2433;text-align:center;color:#2dd4bf;font-weight:600;">6</td>
+        <td style="padding:7px 10px;border-bottom:1px solid #1e2433;">Accenture, Infor, Siemens, Intuit Mailchimp, SAP Inc, Check Point</td>
+        <td style="padding:7px 10px;border-bottom:1px solid #1e2433;">&#x1F4C8; Check Point expansion (Jun 17)</td>
+      </tr>
+      <tr>
+        <td style="padding:7px 10px;border-bottom:1px solid #1e2433;"><span style="background:#1c1b14;color:#fde68a;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;">Rani Guy</span></td>
+        <td style="padding:7px 10px;border-bottom:1px solid #1e2433;text-align:center;color:#2dd4bf;font-weight:600;">6</td>
+        <td style="padding:7px 10px;border-bottom:1px solid #1e2433;">Workday, Cisco, Lenovo, Cisco (Isovalent), NetApp, AWS</td>
+        <td style="padding:7px 10px;border-bottom:1px solid #1e2433;">&#x26A0; NetApp escalation &middot; &#x1F534; Workday issue &middot; &#x1F534; Cisco issue &middot; &#x1F4C8; AWS MCP expansion</td>
+      </tr>
+      <tr>
+        <td style="padding:7px 10px;border-bottom:1px solid #1e2433;"><span style="background:#1c1517;color:#f9a8d4;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;">Varun Tiwari</span></td>
+        <td style="padding:7px 10px;border-bottom:1px solid #1e2433;text-align:center;color:#2dd4bf;font-weight:600;">4</td>
+        <td style="padding:7px 10px;border-bottom:1px solid #1e2433;">OpenText, Alight Solutions, CBTS, Pegasystems</td>
+        <td style="padding:7px 10px;border-bottom:1px solid #1e2433;">&#x1F4C8; Alight expansion &middot; &#x1F4C8; Pegasystems expansion &middot; &#x1F534; CBTS issue</td>
+      </tr>
+      <tr>
+        <td style="padding:7px 10px;border-bottom:1px solid #1e2433;"><span style="background:#1a1f2e;color:#93c5fd;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;">Atisha Waghela</span></td>
+        <td style="padding:7px 10px;border-bottom:1px solid #1e2433;text-align:center;color:#2dd4bf;font-weight:600;">3</td>
+        <td style="padding:7px 10px;border-bottom:1px solid #1e2433;">Deloitte, Insight Direct, RSM US</td>
+        <td style="padding:7px 10px;border-bottom:1px solid #1e2433;">&#x1F534; Deloitte issue (Jun 17) &middot; Multiple Apple events Fri (unconfirmed)</td>
+      </tr>
+      <tr>
+        <td style="padding:7px 10px;border-bottom:1px solid #1e2433;"><span style="background:#1a2520;color:#6ee7b7;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;">Divyam Dewan</span></td>
+        <td style="padding:7px 10px;border-bottom:1px solid #1e2433;text-align:center;color:#2dd4bf;font-weight:600;">3</td>
+        <td style="padding:7px 10px;border-bottom:1px solid #1e2433;">Cotality, Infinigate, HubSpot</td>
+        <td style="padding:7px 10px;border-bottom:1px solid #1e2433;">Routine check-ins</td>
+      </tr>
+      <tr>
+        <td style="padding:7px 10px;border-bottom:1px solid #1e2433;"><span style="background:#211a23;color:#d8b4fe;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;">Andy Lim</span></td>
+        <td style="padding:7px 10px;border-bottom:1px solid #1e2433;text-align:center;color:#2dd4bf;font-weight:600;">1</td>
+        <td style="padding:7px 10px;border-bottom:1px solid #1e2433;">SAS Institute</td>
+        <td style="padding:7px 10px;border-bottom:1px solid #1e2433;">&#x1F4C8; SAS expansion (Jun 17) &middot; Zycus onboarding Fri (unconfirmed)</td>
+      </tr>
+      <tr>
+        <td style="padding:7px 10px;"><span style="background:#1c1a14;color:#fbbf24;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:600;">Pam Huck</span></td>
+        <td style="padding:7px 10px;text-align:center;color:#2dd4bf;font-weight:600;">1</td>
+        <td style="padding:7px 10px;">Epicor</td>
+        <td style="padding:7px 10px;">Routine check-in (Jun 17)</td>
+      </tr>
+    </tbody>
+  </table>`;
+}
