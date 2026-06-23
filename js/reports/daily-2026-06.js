@@ -5168,3 +5168,342 @@ function weeklyOrMonthlyHTML_2026_06_19() {
     </tbody>
   </table>`;
 }
+
+// ─── June 22, 2026 ──────────────────────────────────────────────
+function dayData_2026_06_22() {
+  return {
+    calls: [
+      { ts: 'Jun 22 · 5:00 AM', csm: 'nick', account: 'Infor (US), LLC',
+        note: 'Debrief check-in re: upcoming June 30 scope alignment call. Nicole (Infor) flagged big renewal and potential product expansion.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Mixed',
+        detail: 'Infor contact Nicole Morgan joined briefly (15-min hard stop) to align on June 30 planning call. She and Ben need clarity from Zach on data feed scope. Augie flagged Oracle ERP Cloud is missing from current feed — expansion opportunity to increase product count for the renewal.' },
+      { ts: 'Jun 22 · 6:30 AM', csm: 'nick', account: 'Softcat Ltd',
+        note: 'QBR — reviewed international data capabilities and SMB spend data. Established relationship, Tracy and James attended.',
+        mins: 60, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Quarterly Business Review with Softcat. Nick walked through new data points including SMB spend and international data coverage. James Wingham (Softcat) noted a team member on parental leave returning Wednesday. Established rapport — Tracy and James are long-term attendees.' },
+      { ts: 'Jun 22 · 8:30 AM', csm: 'andy', account: 'EverPure',
+        note: 'Value check-in; Charlie mentions busy weeks, new use cases around account benchmarking emerging.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Angus (HG AM) led check-in with Charlie Morgans (EverPure). Charlie admitted analysis has taken a back seat due to team architecture work, but identified new use cases — account benchmarking to map where accounts exist in their ecosystem using HG data. HG team offered to help scale the analysis.' },
+      { ts: 'Jun 22 · 8:30 AM', csm: 'nick', account: 'Intuit IES',
+        note: 'Onboarding part 2 — Suja confirmed she received deliverables, asked about downloading >25k records (ERP filter yields 36k).',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Hayden Smith (HG) ran onboarding follow-up with Suja Unnikrishnan (Intuit IES). Suja confirmed the full data delivery met their needs. Open question: best practice for downloading more than 25,000 records when filtering ERP data yields ~36k records. Nick provided guidance on working backwards from lead requirements.' },
+      { ts: 'Jun 22 · 9:00 AM', csm: 'rani', account: 'Amazon Web Services (AWS)',
+        note: 'AWS migration discussion — engineering team was laid off in Oct 2025, now rehiring. Data feed format change (5→4 files) still blocked.',
+        mins: 30, health: 'Concerning',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Issue',
+        detail: 'David Larson (AWS) initiated to revisit a long-delayed data feed migration. AWS\'s entire engineering team was let go in Oct 2025 as part of Amazon cuts; they are now slowly rehiring. The PM overseeing the project is on vacation for two weeks. Migration from 5-file to 4-file feed format is still on their roadmap but has no confirmed quarter. David wants to document requirements to minimize disruption when work resumes.' },
+      { ts: 'Jun 22 · 10:00 AM', csm: 'divyam', account: 'BILL Operations, LLC',
+        note: 'Eric (Bill) sharing SFDC Customer Fit metrics — large portion of unscored records; asked about email filter requirements for scoring.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'Customer', purpose: 'Check-in',
+        detail: 'Eric Nguyen (Bill) joined from his car to share Salesforce Customer Fit and Likelihood to Buy metrics from RGIP. Significant movement seen in scored records all-time, but a large chunk remain unscored. Divyam explained that a valid email address is required for leads/contacts to be scored, and an email ≠ blank filter was applied. Open question on whether non-scored records improve over time or require attention.' },
+      { ts: 'Jun 22 · 11:00 AM', csm: 'riley', account: 'SAP Inc',
+        note: 'TrustRadius success call — SAP Ariba + Fieldglass. 29 reviews driven across new products. 3 more product profiles pending PM updates.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Riley and Mardigan (HG TrustRadius) checked in with Ashleigh Riehl (SAP) on product profile updates for Ariba and Fieldglass. 29 reviews driven across new products. Three additional product profiles still awaiting PM input from SAP side. Review campaigns for Global Trade Services yielded 1 new review. Riley also announced expecting in December.' },
+      { ts: 'Jun 22 · 11:30 AM', csm: 'riley', account: 'Concur',
+        note: 'TrustRadius recurring success call with Stephanie Mair (SAP Concur, Seattle). Standard cadence — personal rapport, business update.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Recurring TrustRadius success call with Stephanie Mair at SAP Concur. Established personal rapport (bathroom renovation discussion). Business topics covered in the second half. Stephanie is based in the greater Seattle area. Juneteenth holiday discussed — both parties had Friday off.' },
+      { ts: 'Jun 22 · 1:00 PM', csm: 'rani', account: 'NetApp',
+        note: 'Weekly sync — Elise (NetApp) sent follow-up emails; discussed GU-to-GHQ hierarchy matching analysis with 40M record view context.',
+        mins: 25, health: 'Healthy',
+        nature: 'Routine', initiator: 'Mixed', purpose: 'Check-in',
+        detail: 'Rani covered standing agenda with Adrian Escobar and Elise McMorrow (NetApp). Elise sent emails with updates; Rani will follow up on action threads. Core discussion: matching GUs to GHQs for a 40M record hierarchy view. Tracy (HG) flagged that multiple GUs per hierarchy is a challenge. Ryan is working on the data mid-week. Next step: deliver GU-to-GHQ match analysis and coverage report.' },
+    ],
+    pulses: [
+      { csm: 'nick', account: 'Infor (US), LLC', health: 'Healthy',
+        note: 'Jun 22 debrief — Nicole aligned on June 30 scope planning call; product expansion under discussion for upcoming renewal.' },
+      { csm: 'nick', account: 'Softcat Ltd', health: 'Healthy',
+        note: 'Jun 22 QBR — international data + SMB spend reviewed. Established quarterly cadence, key stakeholders engaged.' },
+      { csm: 'andy', account: 'EverPure', health: 'Healthy',
+        note: 'Jun 22 check-in — data analysis paused due to team architecture build; new use case: account benchmarking identified.' },
+      { csm: 'nick', account: 'Intuit IES', health: 'Healthy',
+        note: 'Jun 22 onboarding pt.2 — deliverables confirmed received; bulk download guidance provided (36k ERP records).' },
+      { csm: 'rani', account: 'Amazon Web Services (AWS)', health: 'Concerning',
+        note: 'Jun 22 migration call — AWS engineering team laid off Oct 2025 (Amazon cuts), slowly rehiring; data feed migration still blocked with no confirmed timeline.' },
+      { csm: 'divyam', account: 'BILL Operations, LLC', health: 'Healthy',
+        note: 'Jun 22 weekly — Eric reviewing Customer Fit metrics in Salesforce; large unscored records cohort being investigated (email filter applied).' },
+      { csm: 'riley', account: 'SAP Inc', health: 'Healthy',
+        note: 'Jun 22 TrustRadius call — 29 reviews driven across new SAP products (Ariba/Fieldglass); 3 product profiles pending PM updates.' },
+      { csm: 'riley', account: 'Concur', health: 'Healthy',
+        note: 'Jun 22 TrustRadius recurring — SAP Concur cadence with Stephanie Mair; strong personal relationship; business update covered.' },
+      { csm: 'rani', account: 'NetApp', health: 'Healthy',
+        note: 'Jun 22 weekly — GU-to-GHQ hierarchy matching in progress; 40M record view; Ryan delivering data analysis mid-week.' },
+    ],
+  };
+}
+
+function dayMeta_2026_06_22() {
+  return {
+    pills: [
+      ['dot-teal',   '9 Calls'],
+      ['dot-red',    '1 Concerning'],
+      ['dot-amber',  '1 Expansion Signal'],
+      ['dot-green',  '9 Pulses'],
+      ['dot-grey',   'Mon Jun 22 · 49 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (9)', 'Pulses (9)', 'Action Items (8)'],
+  };
+}
+
+function dayOverviewHTML_2026_06_22() {
+  return `<div class="section-label">Team Activity &mdash; Monday June 22, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Monday Jun 22 &mdash; 49 recordings scanned</strong> via SFDC SOQL &middot; <strong>9 confirmed calls</strong> across 5 CSMs &middot; 1 concerning (AWS migration blocked) &middot; 1 expansion signal (Infor scope discussion)
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0; <strong>AWS (Rani) &mdash; Migration Blocked:</strong> Engineering team laid off Oct 2025 as part of Amazon cuts. Data feed format migration (5&rarr;4 files) has no confirmed timeline. PM on vacation 2 weeks. Rani to follow up when PM returns.
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>Infor (Nick) &mdash; Expansion Signal:</strong> Nicole Morgan flagged Oracle ERP Cloud not in current data feed; June 30 call to align senior stakeholders on expanded scope for upcoming renewal.
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">3 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">3</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">120m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Infor (expansion scope debrief) &middot; Softcat (QBR) &middot; Intuit IES (onboarding)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">55m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">AWS (migration blocked &#x26A0;) &middot; NetApp (GHQ matching)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">SAP Ariba+Fieldglass (TrustRadius, 29 reviews) &middot; SAP Concur (recurring)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="andy">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">EverPure (value check-in, account benchmarking use case)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">BILL Operations (Customer Fit scoring review)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="varun">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No CSM events detected on Jun 22</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Epicor (no transcript) &middot; ADP (no recording) &mdash; 2 events, no confirmed calls</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="atisha">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Intel, DRT (no transcript) &middot; Airtel, KPMG (no recording) &mdash; 4 events, 0 confirmed</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_06_22() {
+  return `<div class="calls-table">
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0; <strong>AWS Migration Blocked</strong> &mdash; Engineering team let go Oct 2025 (Amazon cuts). Rani in contact with David Larson. PM back in ~2 weeks. Follow up week of July 6.
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>Infor Expansion Signal</strong> &mdash; Oracle ERP Cloud not in current data feed. June 30 call to align scope with senior stakeholders ahead of renewal.
+  </div>
+  <p style="color:#94a3b8;font-size:12px;margin-bottom:8px;">&#x2139; Table auto-generated from dayData. 9 confirmed calls &middot; 49 total recordings scanned via SFDC SOQL.</p>
+  </div>`;
+}
+
+function dayPulsesHTML_2026_06_22() {
+  const cards = [
+    { csm:'nick', health:'Healthy', account:'Infor (US), LLC', opp:'Vitally Pulse &mdash; Jun 22 Debrief Call',
+      arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Jun 22 &middot; Mixed',
+      excerpt:'6/22 NJ: Infor debrief check-in (5:00 AM, 30 min). Nicole Morgan (Infor) aligned on June 30 scope planning call. Product expansion under discussion &mdash; Oracle ERP Cloud missing from current feed flagged as gap for upcoming renewal.' },
+    { csm:'nick', health:'Healthy', account:'Softcat Ltd', opp:'Vitally Pulse &mdash; Jun 22 QBR',
+      arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Jun 22 &middot; Check-in',
+      excerpt:'6/22 NJ: Softcat QBR (6:30 AM, 60 min). Reviewed international data capabilities and SMB spend with James Wingham and Tracy York. Established quarterly cadence. Strong relationship.' },
+    { csm:'andy', health:'Healthy', account:'EverPure', opp:'Vitally Pulse &mdash; Jun 22 Check-in',
+      arr:'Enterprise &middot; Andy Lim', csmlbl:'Andy Lim',
+      change:'Jun 22 &middot; Check-in',
+      excerpt:'6/22 AL: EverPure value check-in (8:30 AM, 30 min). Charlie Morgans noted analysis on back-burner due to team architecture work. New use case identified: account benchmarking to map ecosystem positions.' },
+    { csm:'nick', health:'Healthy', account:'Intuit IES', opp:'Vitally Pulse &mdash; Jun 22 Onboarding',
+      arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Jun 22 &middot; Check-in',
+      excerpt:'6/22 NJ: Intuit IES onboarding pt.2 (8:30 AM, 30 min). Suja confirmed deliverables received. Question on downloading >25k records (ERP filter = 36k); Nick provided guidance on scoping by use case.' },
+    { csm:'rani', health:'Concerning', account:'Amazon Web Services (AWS)', opp:'Vitally Pulse &mdash; Jun 22 Migration Call',
+      arr:'Strategic &middot; Rani Guy', csmlbl:'Rani Guy',
+      change:'Jun 22 &middot; Issue',
+      excerpt:'6/22 RG: AWS migration discussion (9:00 AM, 30 min). David Larson (AWS) initiated. Engineering team laid off Oct 2025 (Amazon cuts); slowly rehiring. Data feed format migration (5→4 files) still blocked. PM on vacation 2 weeks. No confirmed timeline.' },
+    { csm:'divyam', health:'Healthy', account:'BILL Operations, LLC', opp:'Vitally Pulse &mdash; Jun 22 Weekly Sync',
+      arr:'Enterprise &middot; Divyam Dewan', csmlbl:'Divyam Dewan',
+      change:'Jun 22 &middot; Check-in',
+      excerpt:'6/22 DD: BILL weekly sync (10:00 AM, 30 min). Eric Nguyen reviewing SFDC Customer Fit metrics. Large unscored records cohort investigated &mdash; email ≠ blank filter applied. Progress seen in all-time scored records.' },
+    { csm:'riley', health:'Healthy', account:'SAP Inc', opp:'Vitally Pulse &mdash; Jun 22 TrustRadius Call',
+      arr:'Strategic &middot; Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Jun 22 &middot; Check-in',
+      excerpt:'6/22 RR: SAP Ariba+Fieldglass TrustRadius call (11:00 AM, 30 min). 29 reviews driven across new products. 3 product profiles pending PM updates from Ashleigh. GTS yielded 1 new review. Riley announced expecting in December.' },
+    { csm:'riley', health:'Healthy', account:'Concur', opp:'Vitally Pulse &mdash; Jun 22 TrustRadius Recurring',
+      arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Jun 22 &middot; Check-in',
+      excerpt:'6/22 RR: SAP Concur TrustRadius recurring call (11:30 AM, 30 min). Strong relationship with Stephanie Mair (Seattle). Juneteenth holiday discussion, bathroom renovation chat, then business update.' },
+    { csm:'rani', health:'Healthy', account:'NetApp', opp:'Vitally Pulse &mdash; Jun 22 Weekly Sync',
+      arr:'Enterprise &middot; Rani Guy', csmlbl:'Rani Guy',
+      change:'Jun 22 &middot; Check-in',
+      excerpt:'6/22 RG: NetApp weekly sync (1:00 PM, 25 min). GU-to-GHQ hierarchy matching in progress for 40M record view. Ryan delivering data analysis mid-week. Elise sent follow-up emails; Rani to complete action threads.' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div style="font-weight:600;font-size:13px;">${c.account}</div>
+          <div style="font-size:11px;color:#94a3b8;">${c.opp}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_06_22() {
+  return `<div class="action-list">
+
+    <div class="action-item ${doneActions.has('0622-1')?'done':''}" data-csm="rani" id="action-0622-1">
+      <div class="action-checkbox ${doneActions.has('0622-1')?'checked':''}" onclick="toggleAction('0622-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0; AWS &mdash; Re-engage After PM Returns (Week of Jul 6)</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy &middot; AWS PM on vacation 2 weeks. Engineering rehiring underway. Schedule follow-up week of Jul 6 to confirm migration timeline and document requirements before dev resources are reallocated.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0622-2')?'done':''}" data-csm="nick" id="action-0622-2">
+      <div class="action-checkbox ${doneActions.has('0622-2')?'checked':''}" onclick="toggleAction('0622-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Infor &mdash; Prep June 30 Scope Alignment Call</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Nick Johnson &middot; Nicole (Infor) scheduled Jun 30 call with Travis, Zach, and Ben. Prep data showing Oracle ERP Cloud gap in current feed and use case argument for expansion scope. Augie to correct Wednesday email error beforehand.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0622-3')?'done':''}" data-csm="rani" id="action-0622-3">
+      <div class="action-checkbox ${doneActions.has('0622-3')?'checked':''}" onclick="toggleAction('0622-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CA; NetApp &mdash; Deliver GU-to-GHQ Matching Analysis</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Rani Guy &middot; Ryan to have GU-to-GHQ hierarchy matching data by mid-week. Rani to deliver match analysis + coverage report addressing 40M record view. Clarify whether child records should be included.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0622-4')?'done':''}" data-csm="nick" id="action-0622-4">
+      <div class="action-checkbox ${doneActions.has('0622-4')?'checked':''}" onclick="toggleAction('0622-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Intuit IES &mdash; Send Bulk Download Best Practice Guide</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Nick Johnson &middot; Suja asked about downloading >25k records for ERP filter (yields 36k). Send written guidance on scoping lead volume by use case, conversion rate math, and download segmentation approach.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0622-5')?'done':''}" data-csm="riley" id="action-0622-5">
+      <div class="action-checkbox ${doneActions.has('0622-5')?'checked':''}" onclick="toggleAction('0622-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C4; SAP Ariba/Fieldglass &mdash; Track Down 3 Pending Product Profiles</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Riley Rogers &middot; Ashleigh waiting on 3 product profiles from SAP PMs. Riley to follow up with Ashleigh once PMs deliver. Review campaigns continuing &mdash; track GTS review count weekly.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0622-6')?'done':''}" data-csm="divyam" id="action-0622-6">
+      <div class="action-checkbox ${doneActions.has('0622-6')?'checked':''}" onclick="toggleAction('0622-6')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F50D; BILL &mdash; Investigate Unscored Records Issue</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Divyam Dewan &middot; Large cohort of unscored leads/contacts in Salesforce. Email ≠ blank filter applied but question remains whether records improve over time or need explicit remediation. Advise Eric on next diagnostic step.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0622-7')?'done':''}" data-csm="nick" id="action-0622-7">
+      <div class="action-checkbox ${doneActions.has('0622-7')?'checked':''}" onclick="toggleAction('0622-7')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4E6; Softcat &mdash; Share SMB Spend + International Data Analysis</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Nick Johnson &middot; QBR covered new SMB spend data and international coverage. Share written summary/analysis with James Wingham and Tracy York post-call. Team member returning from parental leave Wednesday &mdash; loop in when back.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0622-8')?'done':''}" data-csm="andy" id="action-0622-8">
+      <div class="action-checkbox ${doneActions.has('0622-8')?'checked':''}" onclick="toggleAction('0622-8')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F5FA; EverPure &mdash; Provide Account Benchmarking Methodology</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Andy Lim &middot; Charlie identified account benchmarking as a new use case (map where accounts exist in ecosystem using HG data). Send methodology doc or example analysis. Team returns to HG analysis in 1&ndash;2 weeks.</div>
+      </div>
+    </div>
+
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
