@@ -5507,3 +5507,343 @@ function dayActionsHTML_2026_06_22() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
 }
+
+// ============================================================
+// June 23, 2026
+// ============================================================
+
+function dayData_2026_06_23() {
+  return {
+    calls: [
+      { ts: 'Jun 23 · 1:30 AM', csm: 'nick', account: 'Check Point',
+        note: 'Platform training: license setup, product catalog walkthrough for Check Point team (5 users + Salesforce-connected).',
+        mins: 45, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Nick reviewed the license/access overview (2 platform users with export, 5 read-only, 1 Salesforce-connected) and walked the Check Point team through HG data fabric, 26,000+ tracked products, and HG ID linking. Attendees: Hadas Arazi, Assaf Cohen, Idan Saranga, Uri Nishry.' },
+      { ts: 'Jun 23 · 3:30 AM', csm: 'nick', account: 'SAP',
+        note: 'Intro with Viktor Mach (SAP EMEA GTM Director) on Clay + HG data alignment. Expansion conversation.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'David Garcia-Thomas (HG EMEA Strategic Client Director) introduced Viktor Mach (SAP EMEA Director of GTM, heavy Clay user) to Nick. Discussion focused on aligning HG Insights data with Viktor\'s GTM use cases via Clay. Early-stage partnership/expansion exploration.' },
+      { ts: 'Jun 23 · 6:00 AM', csm: 'nick', account: 'LTI (SAP Partner Cohort)',
+        note: 'New users Rakesh (replacing Rajan) and Apeksha onboarded to HG platform — SAP partner cohort model.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Nick onboarded Rakesh (new LTI SAP Alliance GTM contact, replacing Rajan) and Apeksha (corporate marketing, SAP MDF/PDF campaigns and TAL creation). LTI is in the ~13-member SAP partner cohort with discounted access. Apeksha had access but never logged in. Rakesh already activated.' },
+      { ts: 'Jun 23 · 6:30 AM', csm: 'nick', account: 'IBM',
+        note: 'Monthly sync: DPA unsigned blocking contact quality review. TrustRadius + competitive data ingestion running smoothly.',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'Unknown', purpose: 'Mixed',
+        detail: 'Kruti (IBM) reviewed contact data coverage — good coverage but quality assessment blocked by unsigned DPA. Nick to contact Brian Bortnick (IBM CDO) to unblock. Confidence score feature (3-of-5 scoring) not yet available per product team. JJ confirmed TR data and competitive install ingestion running smoothly. Customer advisory council signal from Carl and Karen McCoy relayed.' },
+      { ts: 'Jun 23 · 8:00 AM', csm: 'atisha', account: 'Databricks',
+        note: 'New CSM intro with Ryan Comstock. Expansion: 3 new products for custom spend model + AI Spend out of contract.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Atisha introduced herself as new Databricks CSM to Ryan Comstock (Go-to-Market Strategy, 5 years at Databricks). Ryan needs TAM/customer segmentation. Expansion discussion: adding SIEM/cybersecurity (Panther acquisition), Customer Lake (CDP), and Databricks Apps to custom spend model. AI Spend not in current contract (like-for-like January renewal). Atisha previewed July AI Spend model update with AI infrastructure/storage subdivisions and credit-based pricing.' },
+      { ts: 'Jun 23 · 9:00 AM', csm: 'rani', account: 'Workday',
+        note: 'Monthly sync: Alexa Brown data request process clarified. CMO departed; Andrea\'s team moved to Sales org.',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Patrycja Levey (Workday) returned from Greece PTO. Alexa Brown (Workday field marketing) had reached out to Rani for list enrichment while Patrycja was out — Rani pulled directly, causing confusion as the team needs to transform/load data into Salesforce. Patrycja will provide internal process contacts going forward. Note: Workday\'s CMO departed; Andrea\'s marketing team now reports into Sales org under Robert Alistein.' },
+      { ts: 'Jun 23 · 11:00 AM', csm: 'divyam', account: 'Omnissa',
+        note: 'ICP regression analysis delivered to KKR (PE owner) for Horizon + Workspace One new logo targeting strategy.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Divyam and Ziad Amira (AE) presented ICP regression analysis to Julian Ashworth (KKR) and Dana Margolis. ~700 of ~1000 L1 accounts matched using account names. Key finding: Horizon and Workspace One have distinct ICPs; SAP-dominant accounts are a reliable loss signal for Workspace One. Analysis designed to inform KKR\'s new logo acquisition acceleration strategy.' },
+      { ts: 'Jun 23 · 11:00 AM', csm: 'riley', account: 'SAP Business Network',
+        note: 'Invoice vendor name mismatch (PO: TrustRadius vs HG Insights) blocking payment. TrustRadius portal tutorial delivered.',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'Customer', purpose: 'Mixed',
+        detail: 'Riley and Mardigan Moffat (HG) met with Kathryn Zwack (SAP Business Network). SAP\'s procurement system blocked invoice because PO vendor (TrustRadius) doesn\'t match invoice entity (HG Insights). Options: SAP updates PO or HG resends under TrustRadius. Riley also walked through the TrustRadius vendor portal review workflow: pending/tagged/ignored states, quote extraction via Trust Quotes widget, Chrome extension, and promote/ignore approval flow.' },
+      { ts: 'Jun 23 · 11:30 AM', csm: 'atisha', account: 'TD Synnex',
+        note: 'PRODUCT GAP: Platform shows gross credit estimate without deducting prior downloads. Exec burn plan required for 16K IBM accounts.',
+        mins: 30, health: 'Concerning',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Issue',
+        detail: 'Lisa (TD Synnex) cannot predict credit consumption before exporting — HG platform shows full gross credit estimate without deducting previously-downloaded firmographic/install data. Example: file shows "6,000 credits" but actual deduction would be near-zero if previously downloaded. Lisa needs a 6-month credit burn plan for ~16,000 IBM accounts refreshed monthly to present to executives. Augie Buettner and Gavin Padden (HG SE) acknowledged this as a product gap. SharePoint delivery for ongoing intent data also discussed.' },
+      { ts: 'Jun 23 · 2:00 PM', csm: 'rani', account: 'Cisco (Isovalent)',
+        note: 'Onboarding session: SSO, user access, HubSpot connector, market analyzer, and 135+ spend categories overview for Amy.',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Rani impersonated Isovalent\'s HubSpot-connected instance to walk Amy through platform configuration: SSO setup, user access (Amy + Tuan as admins), analysis settings (buying personas, target industries, countries, company sizes, exclusions, product/competitor stack). Data Studio not included. Rani previewed HubSpot connector deck, market analyzer for TAM/SAM/SON, 135+ spend categories, and promised to connect Amy with product team for account brief feedback.' },
+    ],
+    pulses: [
+      { csm: 'nick',    account: 'Check Point',        health: 'Healthy',    note: 'Platform training session completed — 5 users oriented on license access and HG data catalog.' },
+      { csm: 'nick',    account: 'SAP',                health: 'Healthy',    note: 'Intro with SAP EMEA GTM Director Viktor Mach — Clay/HG alignment exploration, expansion opportunity.' },
+      { csm: 'nick',    account: 'LTI',                health: 'Healthy',    note: 'New users Rakesh + Apeksha onboarded. Apeksha has access but never logged in — follow up needed.' },
+      { csm: 'nick',    account: 'IBM',                health: 'Healthy',    note: 'Monthly sync: DPA unsigned blocking contact quality review. TR + competitive ingestion running.' },
+      { csm: 'atisha',  account: 'Databricks',         health: 'Healthy',    note: 'New CSM intro. Expansion: 3 new products + AI Spend out of contract. July model update previewed.' },
+      { csm: 'rani',    account: 'Workday',            health: 'Healthy',    note: 'Monthly sync: CMO departure; Andrea\'s team moved to Sales org. Data request process clarified.' },
+      { csm: 'divyam',  account: 'Omnissa',            health: 'Healthy',    note: 'ICP analysis delivered to KKR. Horizon and Workspace One have distinct ICPs — new logo strategy.' },
+      { csm: 'riley',   account: 'SAP Business Network', health: 'Healthy',  note: 'Invoice vendor mismatch blocking payment. TR portal review workflow tutorial delivered.' },
+      { csm: 'atisha',  account: 'TD Synnex',          health: 'Concerning', note: 'PRODUCT GAP: credit consumption visibility. Exec burn plan required for 16K IBM accounts.' },
+      { csm: 'rani',    account: 'Cisco (Isovalent)',  health: 'Healthy',    note: 'Onboarding: SSO, HubSpot connector, market analyzer, spend categories walkthrough for Amy.' },
+    ],
+  };
+}
+
+function dayMeta_2026_06_23() {
+  return {
+    pills: [
+      ['dot-teal',   '10 Calls'],
+      ['dot-red',    '1 Concerning'],
+      ['dot-amber',  '3 Expansion'],
+      ['dot-green',  '10 Pulses'],
+      ['dot-grey',   'Tue Jun 23 · 52 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (10)', 'Pulses (10)', 'Action Items (8)']
+  };
+}
+
+function dayOverviewHTML_2026_06_23() {
+  return `<div class="section-label">Team Activity &mdash; Tuesday June 23, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Tuesday Jun 23 &mdash; 52 recordings scanned</strong> via SFDC SOQL &middot; <strong>10 confirmed calls</strong> across 5 CSMs &middot; 3 expansion signals &middot; 1 concerning (TD Synnex product gap)
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>TD Synnex &mdash; Credit Visibility Product Gap:</strong> Platform shows gross credit estimate without deducting prior downloads. Lisa needs a 6-month exec burn plan for 16,000 IBM accounts. Augie + Gavin acknowledged gap &mdash; product ticket needed.
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>Expansion signals:</strong> Databricks (AI Spend + 3 new products out of contract &mdash; Atisha) &middot; Omnissa ICP analysis delivered to KKR PE owner for new logo strategy (Divyam) &middot; SAP EMEA GTM Director Viktor Mach intro via Clay (Nick)
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">4 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">4</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">4</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">135m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Check Point (training) &middot; SAP (partnership intro) &middot; LTI (new users) &middot; IBM (monthly sync)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Databricks (new CSM intro + expansion) &middot; TD Synnex (credit visibility issue &#x26A0;)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Workday (monthly sync) &middot; Cisco/Isovalent (onboarding)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Omnissa (ICP analysis delivered to KKR &mdash; expansion)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">SAP Business Network (invoice fix + TR portal tutorial)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="varun">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 events scheduled &mdash; no recordings found (Unum biweekly, MongoDB sync)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 internal HG team sync &mdash; no customer calls recorded</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">3 events (Memoryblue no transcript, Zycus no recording, Veracode no recording)</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_06_23() {
+  return `<div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>TD Synnex (Atisha) &mdash; Concerning:</strong> Product gap: credit consumption visibility. Lisa cannot predict export cost before downloading. 6-month exec burn plan required for ~16,000 IBM accounts. Product ticket needed urgently.
+  </div>
+  <div style="background:#161c2d;border:1px solid #6366f1;border-left:3px solid #6366f1;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#a5b4fc;">
+    &#x1F4CB; <strong>Unconfirmed (no transcript):</strong> Memoryblue Office Hours (Andy Lim, 6:00 AM PT) &middot; Apple Strategy &amp; Planning (Atisha, 8:30 AM PT) &middot; Quadient Monthly Sync (Divyam, 12:00 PM PT) &mdash; inferred from CSM event ownership, not speaker-verified.
+  </div>
+  <div style="background:#1c1f26;border:1px solid #334155;border-left:3px solid #334155;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#94a3b8;">
+    &#x1F6AB; <strong>Excluded (internal):</strong> Team Sync &mdash; Mark Fell Ops (8:00 AM PT, 60 min) &mdash; What.Name = HG Insights; Rani Guy + Pam Huck both had this event &mdash; not a customer call.
+  </div>`;
+}
+
+function dayPulsesHTML_2026_06_23() {
+  const cards = [
+    { csm:'nick',   health:'Healthy',    account:'Check Point',
+      opp:'Vitally Pulse &mdash; Jun 23 Call', arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Jun 23 &middot; Platform Training',
+      excerpt:'6/23 NJ: Check Point platform training (1:30 AM PT, 45 min). Walked Hadas Arazi, Assaf Cohen, Idan Saranga, Uri Nishry through license access (2 export, 5 read-only, 1 Salesforce) and HG data catalog/product fabric.' },
+    { csm:'nick',   health:'Healthy',    account:'SAP (EMEA GTM)',
+      opp:'Vitally Pulse &mdash; Jun 23 Call', arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Jun 23 &middot; Partnership Intro',
+      excerpt:'6/23 NJ: Intro with Viktor Mach (SAP EMEA GTM Director, heavy Clay user) via David Garcia-Thomas (3:30 AM PT, 30 min). Exploring Clay + HG data alignment for EMEA GTM use cases. Early-stage expansion discussion.' },
+    { csm:'nick',   health:'Healthy',    account:'LTI (SAP Partner Cohort)',
+      opp:'Vitally Pulse &mdash; Jun 23 Call', arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Jun 23 &middot; New User Onboarding',
+      excerpt:'6/23 NJ: Onboarded Rakesh (replacing Rajan, SAP Alliance GTM) and Apeksha (marketing, SAP campaigns) to HG platform (6:00 AM PT, 30 min). Apeksha had access but never logged in. SAP partner cohort discounted model.' },
+    { csm:'nick',   health:'Healthy',    account:'IBM',
+      opp:'Vitally Pulse &mdash; Jun 23 Call', arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Jun 23 &middot; Monthly Sync',
+      excerpt:'6/23 NJ: IBM monthly sync (6:30 AM PT, 30 min). DPA unsigned blocking contact quality assessment (contact Brian Bortnick, IBM CDO). Confidence scores not yet available. TR + competitive install ingestion running smoothly.' },
+    { csm:'atisha', health:'Healthy',    account:'Databricks',
+      opp:'Vitally Pulse &mdash; Jun 23 Call', arr:'Enterprise &middot; Atisha Waghela', csmlbl:'Atisha Waghela',
+      change:'Jun 23 &middot; New CSM Intro + Expansion',
+      excerpt:'6/23 AW: New CSM intro with Ryan Comstock, Go-to-Market Strategy (8:00 AM PT, 30 min). Expansion: SIEM/cybersecurity (Panther acq), Customer Lake (CDP), Databricks Apps to custom spend model. AI Spend not in contract — July model update previewed.' },
+    { csm:'rani',   health:'Healthy',    account:'Workday',
+      opp:'Vitally Pulse &mdash; Jun 23 Call', arr:'Enterprise &middot; Rani Guy', csmlbl:'Rani Guy',
+      change:'Jun 23 &middot; Monthly Sync',
+      excerpt:'6/23 RG: Workday monthly sync (9:00 AM PT, 30 min) with Patrycja Levey returning from PTO. CMO departed; Andrea\'s marketing team moved to Sales org under Robert Alistein. Data request process being clarified after Alexa Brown bypass.' },
+    { csm:'divyam', health:'Healthy',    account:'Omnissa',
+      opp:'Vitally Pulse &mdash; Jun 23 Call', arr:'Enterprise &middot; Divyam Dewan', csmlbl:'Divyam Dewan',
+      change:'Jun 23 &middot; Expansion — ICP Delivery',
+      excerpt:'6/23 DD: ICP regression analysis delivered to Julian Ashworth (KKR PE) and Dana Margolis (11:00 AM PT, 30 min). Horizon and Workspace One have distinct ICPs; SAP-dominant accounts are a loss signal for Workspace One. Informs new logo acquisition strategy.' },
+    { csm:'riley',  health:'Healthy',    account:'SAP Business Network',
+      opp:'Vitally Pulse &mdash; Jun 23 Call', arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Jun 23 &middot; Issue + Check-in',
+      excerpt:'6/23 RR: Invoice vendor mismatch call with Kathryn Zwack (SAP) (11:00 AM PT, 30 min). PO (TrustRadius) ≠ invoice entity (HG Insights) blocked payment. Resolution options discussed. TrustRadius review portal tutorial delivered (tagging, Trust Quotes widget, Chrome extension).' },
+    { csm:'atisha', health:'Concerning', account:'TD Synnex',
+      opp:'Vitally Pulse &mdash; Jun 23 Call', arr:'Enterprise &middot; Atisha Waghela', csmlbl:'Atisha Waghela',
+      change:'Jun 23 &middot; Issue — Product Gap',
+      excerpt:'6/23 AW: TD Synnex credit visibility issue (11:30 AM PT, 30 min). Platform shows gross credit estimate without deducting prior downloads. Lisa needs 6-month exec burn plan for 16K IBM accounts. Augie + Gavin (SE) acknowledged product gap. Product ticket needed.' },
+    { csm:'rani',   health:'Healthy',    account:'Cisco (Isovalent)',
+      opp:'Vitally Pulse &mdash; Jun 23 Call', arr:'Enterprise &middot; Rani Guy', csmlbl:'Rani Guy',
+      change:'Jun 23 &middot; Onboarding',
+      excerpt:'6/23 RG: Cisco/Isovalent onboarding with Amy (2:00 PM PT, 30 min). Reviewed SSO, user access, analysis settings, HubSpot connector, market analyzer, 135+ spend categories. Data Studio not in contract. Amy to provide account brief feedback to product team.' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div><strong>${c.account}</strong><br><span style="font-size:11px;color:#94a3b8;">${c.opp}</span></div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_06_23() {
+  return `<div class="action-list">
+
+    <div class="action-item ${doneActions.has('0623-1')?'done':''}" data-csm="atisha" id="action-0623-1">
+      <div class="action-checkbox ${doneActions.has('0623-1')?'checked':''}" onclick="toggleAction('0623-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; TD Synnex &mdash; File Product Ticket for Credit Visibility Gap</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Atisha Waghela &middot; Platform shows gross credit estimate without deducting prior downloads. Lisa needs 6-month exec burn plan for ~16,000 IBM accounts refreshed monthly. File product ticket immediately; document exec burn plan requirement for Gavin/Augie follow-up.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0623-2')?'done':''}" data-csm="nick" id="action-0623-2">
+      <div class="action-checkbox ${doneActions.has('0623-2')?'checked':''}" onclick="toggleAction('0623-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; IBM &mdash; Contact Brian Bortnick to Unblock DPA Signature</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Nick Johnson &middot; IBM contact quality assessment is blocked by unsigned DPA. Nick to reach out to Brian Bortnick at IBM CDO to move the DPA signature forward. Without it, Kruti cannot assess contact data quality.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0623-3')?'done':''}" data-csm="riley" id="action-0623-3">
+      <div class="action-checkbox ${doneActions.has('0623-3')?'checked':''}" onclick="toggleAction('0623-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4B3; SAP Business Network &mdash; Resolve Invoice Vendor Mismatch</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Riley Rogers &middot; SAP procurement blocked invoice because PO vendor (TrustRadius) &ne; invoice entity (HG Insights). Coordinate with HG finance: either resend invoice under TrustRadius entity OR get Kathryn to update PO vendor name. Resolve before next billing cycle.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0623-4')?'done':''}" data-csm="atisha" id="action-0623-4">
+      <div class="action-checkbox ${doneActions.has('0623-4')?'checked':''}" onclick="toggleAction('0623-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Databricks &mdash; Send July AI Spend Model Update + Expansion Brief</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Atisha Waghela &middot; Follow up with Ryan Comstock on AI Spend expansion (not in current contract). Send brief on July AI Spend model update (AI infrastructure/storage subdivisions, credit-based pricing). Also send product spec briefs for SIEM/cybersecurity (Panther), Customer Lake, and Databricks Apps.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0623-5')?'done':''}" data-csm="divyam" id="action-0623-5">
+      <div class="action-checkbox ${doneActions.has('0623-5')?'checked':''}" onclick="toggleAction('0623-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F50D; Omnissa &mdash; Send ICP Analysis Deck to KKR + Propose Next Steps</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Divyam Dewan &middot; Send ICP regression analysis deck to Julian Ashworth (KKR) and Dana Margolis with annotated findings: Horizon vs Workspace One distinct ICPs, SAP-dominant accounts as Workspace One loss signal. Propose next steps for domain-matching improvement and new logo targeting integration.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0623-6')?'done':''}" data-csm="nick" id="action-0623-6">
+      <div class="action-checkbox ${doneActions.has('0623-6')?'checked':''}" onclick="toggleAction('0623-6')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F91D; SAP &mdash; Follow Up with Viktor Mach on Clay/HG Alignment</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Nick Johnson &middot; Follow up with Viktor Mach (SAP EMEA GTM Director) on specific use cases for HG Insights data + Clay integration. Coordinate with David Garcia-Thomas. Viktor mentioned interest in GTM use cases &mdash; define 2&ndash;3 concrete pilot scenarios before next touchpoint.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0623-7')?'done':''}" data-csm="nick" id="action-0623-7">
+      <div class="action-checkbox ${doneActions.has('0623-7')?'checked':''}" onclick="toggleAction('0623-7')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4BB; LTI &mdash; Activate Apeksha + Map SAP Campaign Use Cases</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Nick Johnson &middot; Apeksha has platform access but has never logged in. Schedule a 30-min session with her to walk through TAL creation and MDF/PDF campaign targeting use cases relevant to her SAP marketing work. Rakesh is already activated.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0623-8')?'done':''}" data-csm="rani" id="action-0623-8">
+      <div class="action-checkbox ${doneActions.has('0623-8')?'checked':''}" onclick="toggleAction('0623-8')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F517; Cisco/Isovalent &mdash; Send HubSpot Deck + Schedule Product Feedback Session</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Rani Guy &middot; Send HubSpot connector deck to Amy. Schedule a 30-min session with HG product team for Amy\'s account brief feedback. Confirm Tuan\'s admin access is active and both users are ready for next onboarding milestone.</div>
+      </div>
+    </div>
+
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
