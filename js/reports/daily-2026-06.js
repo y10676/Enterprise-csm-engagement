@@ -5847,3 +5847,339 @@ function dayActionsHTML_2026_06_23() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
 }
+// =============================================================
+// Jun 24, 2026
+// =============================================================
+
+function dayData_2026_06_24() {
+  return {
+    calls: [
+      { ts: 'Jun 24 · 1:30 AM', csm: 'nick', account: 'Softcat Ltd',
+        note: 'Entity matching test — 390/412 Birmingham trading accounts matched via CSV upload.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'Customer', purpose: 'Check-in',
+        detail: 'Bethany Mann (Softcat) walked Nick through her entity matching test: filtered Birmingham trading accounts, exported 390/412 to CSV, uploaded to HG Insights, reviewed match results. Discussed refining matching logic and next steps for broader deployment across additional regions.' },
+      { ts: 'Jun 24 · 3:00 AM', csm: 'andy', account: 'Zycus',
+        note: 'HGi/Zycus Onboarding Call 2 — market analyzer walkthrough, MCP green light, Clay integration preview.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Andy ran second onboarding session for Zycus: market analyzer walkthrough, intent data exploration, and preview of upcoming API/MCP integration. Confirmed green light for MCP setup; planning to organize a follow-on session to demonstrate Clay connector capabilities and enrichment workflows.' },
+      { ts: 'Jun 24 · 6:00 AM', csm: 'andy', account: 'SAS Institute',
+        note: 'HG Demo follow-up — viewer license assigned, export limitations reviewed, ICP templates and scoring profiles.',
+        mins: 60, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Andy confirmed viewer license now assigned for SAS team members. Deep dive into export functionality and row count limitations. Reviewed existing scoring profiles and ICP templates. Discussed how to leverage HG data for TAM analysis and account prioritization within SAS\'s go-to-market motion.' },
+      { ts: 'Jun 24 · 7:00 AM', csm: 'riley', account: 'IBM',
+        note: 'TrustRadius / IBM Biweekly Sync — dashboard review, priority products, webinar invitation.',
+        mins: 45, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Riley reviewed the TrustRadius monitoring dashboard with IBM team (Rebecca and Shyali). Confirmed they received the dashboard email. Discussed IBM priority product categories to track. Shared webinar invitation and reviewed engagement data across IBM\'s TrustRadius product portfolio.' },
+      { ts: 'Jun 24 · 7:30 AM', csm: 'andy', account: 'Zycus',
+        note: 'HGi API in Clay intro — 50 test credits allocated, Clay enrichment workflow expansion confirmed.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Andy introduced the HG Insights API integration via Clay for Zycus. Discussed credit allocation strategy: Zycus has 10,000 total credits; Andy proposed starting with 50 credits for testing. Zycus spends $20K with HG — API access opens expansion into Clay-based enrichment workflows.' },
+      { ts: 'Jun 24 · 7:30 AM', csm: 'varun', account: 'ServiceNow',
+        note: 'HG Insights / ServiceNow Monthly Sync — spend categories revision flagged, follow-up call tomorrow.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Varun and ServiceNow (Anvesh) discussed spend category revision: customer wants to revise definitions rather than just validate them, as category meanings have shifted. Follow-up call scheduled for Jun 25 with Anvesh and team to work through specific updates.' },
+      { ts: 'Jun 24 · 9:00 AM', csm: 'riley', account: 'SAP Inc',
+        note: 'SAP SuccessFactors TrustRadius Progress Call — routine review cadence, program status.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Riley and SAP SuccessFactors ran through TrustRadius progress review. Routine cadence call covering program status, upcoming calendar, and general relationship maintenance for TrustRadius review collection program.' },
+      { ts: 'Jun 24 · 9:30 AM', csm: 'riley', account: 'Paylocity',
+        note: 'Paylocity monthly TrustRadius sync — renewal order form requested; budget confirmed.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Riley\'s monthly Paylocity sync surfaced a renewal discussion: customer confirmed budget is approved and asked for the order form ("it\'s in our budget — sooner I get it in the faster things move"). Riley to send order form ASAP to capture renewal before procurement window closes.' },
+      { ts: 'Jun 24 · 10:00 AM', csm: 'varun', account: 'Autodesk',
+        note: 'HGI + Autodesk Bi-Weekly Sync — phased implementation approach, Ola praised Varun for patience.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Varun and Autodesk (Ola) aligned on implementation approach. Autodesk team emphasized need for careful, phased configuration to avoid downstream issues. Ola thanked Varun for patience and responsiveness. Team agreed to proceed methodically rather than rush integration setup.' },
+      { ts: 'Jun 24 · 10:00 AM', csm: 'divyam', account: 'Informatica',
+        note: 'Informatica Weekly Partnership Sync — renewal IT processing challenges, EBR confirmed July 20–21.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Divyam reviewed renewal order form submission with Informatica — hitting IT system challenges processing the next renewal step. EBRs confirmed for July 20–21; Divyam sent invites. Partnership health remains strong despite administrative friction in renewal processing.' },
+      { ts: 'Jun 24 · 11:30 AM', csm: 'rani', account: 'Lenovo',
+        note: 'CONCERNING: Lenovo not using HG Insights data as planned — pivoting to in-house propensity model.',
+        mins: 30, health: 'Concerning',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Issue',
+        detail: 'Yan Li (Lenovo) disclosed the team is NOT leveraging HG Insights data as originally planned. Lenovo is designing an in-house propensity model and finds HG "fit" and intent attributes are not tied to clear need signals for their use case. Significant churn risk — Rani must escalate and schedule a discovery call to understand Lenovo\'s actual data requirements.' },
+    ],
+    pulses: [
+      { csm: 'nick',   account: 'Softcat Ltd',   health: 'Healthy',    note: '6/24 NJ: Entity matching test review with Bethany Mann (Softcat) (1:30 AM PT, 30 min). 390/412 Birmingham trading accounts matched via CSV upload. Next: refine matching logic, broader regional deployment.' },
+      { csm: 'andy',   account: 'Zycus',          health: 'Healthy',    note: '6/24 AL: Onboarding Call 2 — Zycus (3:00 AM PT, 30 min). Market analyzer walkthrough, intent exploration, MCP green light. Clay integration demo to be scheduled.' },
+      { csm: 'andy',   account: 'SAS Institute',  health: 'Healthy',    note: '6/24 AL: HG Demo follow-up with SAS Institute (6:00 AM PT, 60 min). Viewer license assigned, export limits reviewed. ICP templates and scoring profiles walkthrough completed.' },
+      { csm: 'riley',  account: 'IBM',             health: 'Healthy',    note: '6/24 RR: TrustRadius / IBM Biweekly Sync (7:00 AM PT, 45 min). Dashboard review with Rebecca and Shyali. Webinar invited, priority products monitoring aligned.' },
+      { csm: 'andy',   account: 'Zycus',          health: 'Healthy',    note: '6/24 AL: HGi API in Clay intro — Zycus (7:30 AM PT, 30 min). 50 test credits from 10K pool. API expansion via Clay enrichment confirmed as next use case.' },
+      { csm: 'varun',  account: 'ServiceNow',     health: 'Healthy',    note: '6/24 VT: ServiceNow Monthly Sync (7:30 AM PT, 30 min). Spend categories revision flagged (not just validation). Follow-up call with Anvesh scheduled Jun 25.' },
+      { csm: 'riley',  account: 'SAP Inc',        health: 'Healthy',    note: '6/24 RR: SAP SuccessFactors TrustRadius Progress call (9:00 AM PT, 30 min). Routine cadence review. Program status and upcoming calendar discussed.' },
+      { csm: 'riley',  account: 'Paylocity',      health: 'Healthy',    note: '6/24 RR: Paylocity monthly sync (9:30 AM PT, 30 min). Renewal discussion: budget confirmed, customer requesting order form. Riley to send ASAP.' },
+      { csm: 'varun',  account: 'Autodesk',       health: 'Healthy',    note: '6/24 VT: Autodesk Bi-Weekly Sync (10:00 AM PT, 30 min). Phased implementation approach confirmed. Varun praised for patience; team proceeding carefully to avoid config issues.' },
+      { csm: 'divyam', account: 'Informatica',    health: 'Healthy',    note: '6/24 DD: Informatica Weekly Partnership Sync (10:00 AM PT, 30 min). Renewal order form submitted; IT processing challenges delaying next step. EBR confirmed July 20–21.' },
+      { csm: 'rani',   account: 'Lenovo',         health: 'Concerning', note: '6/24 RG: Lenovo sync (11:30 AM PT, 30 min). Yan Li: NOT using HG Insights data as planned. Building in-house propensity model — HG attributes not tied to "clear need" signals. Churn risk escalation needed.' },
+    ],
+  };
+}
+
+function dayMeta_2026_06_24() {
+  return {
+    pills: [
+      ['dot-teal',  '11 Calls'],
+      ['dot-red',   '1 Concerning'],
+      ['dot-amber', '1 Expansion'],
+      ['dot-green', '11 Pulses'],
+      ['dot-grey',  'Wed Jun 24 · 123 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (11)', 'Pulses (11)', 'Action Items (6)']
+  };
+}
+
+function dayOverviewHTML_2026_06_24() {
+  return `<div class="section-label">Team Activity &mdash; Wednesday June 24, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Wednesday Jun 24 &mdash; 123 recordings scanned</strong> via SFDC SOQL &middot; <strong>11 confirmed calls</strong> across 6 CSMs &middot; 1 expansion signal (Zycus API/Clay) &middot; 1 concerning signal (Lenovo product-fit gap)
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>Lenovo (Rani Guy)</strong> &mdash; Yan Li disclosed they are NOT using HG Insights data as originally planned. Lenovo is building an in-house propensity model; HG attributes not tied to &ldquo;clear need&rdquo; signals. Churn risk &mdash; escalation required.
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 16px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>Zycus (Andy Lim)</strong> &mdash; HGi API in Clay expansion: 50 test credits allocated from 10K pool. Zycus ($20K ACV) moving into Clay-based enrichment workflows via HG API.
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">3 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">3</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">105m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">IBM (TrustRadius biweekly) &middot; SAP Inc (TrustRadius progress) &middot; Paylocity (renewal order form)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Softcat Ltd (entity matching test &mdash; 390/412 accounts matched)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Informatica (renewal processing challenges, EBR July 20&ndash;21)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Lenovo &#x26A0;&#xFE0F; (not using HG data as planned &mdash; in-house propensity model pivot)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">ServiceNow (spend categories revision) &middot; Autodesk (phased implementation sync)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="andy">
+      <span class="call-badge">3 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">3</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">120m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Zycus (onboarding + API expansion &#x1F4C8;) &middot; SAS Institute (viewer license + enablement)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No recorded calls on Jun 24</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="atisha">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No recorded calls on Jun 24</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_06_24() {
+  return `
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>Lenovo (Rani Guy, 11:30 AM PT)</strong> &mdash; Yan Li confirmed Lenovo is NOT using HG Insights data as planned. Building in-house propensity model. HG attributes not tied to &ldquo;clear need&rdquo; signals. Churn risk &mdash; escalation required.
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>Zycus (Andy Lim, 7:30 AM PT)</strong> &mdash; HGi API in Clay expansion: 50 test credits allocated from 10K pool. API-based enrichment workflow use case confirmed.
+  </div>`;
+}
+
+function dayPulsesHTML_2026_06_24() {
+  const cards = [
+    { csm:'nick',   health:'Healthy',    account:'Softcat Ltd',
+      opp:'Vitally Pulse &mdash; Jun 24 Call', arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Jun 24 &middot; Check-in',
+      excerpt:'6/24 NJ: Entity matching test review with Bethany Mann (Softcat) (1:30 AM PT, 30 min). 390/412 Birmingham trading accounts matched via CSV upload. Refining match logic; next step is broader regional deployment.' },
+    { csm:'andy',   health:'Healthy',    account:'Zycus',
+      opp:'Vitally Pulse &mdash; Jun 24 Call', arr:'Enterprise &middot; Andy Lim', csmlbl:'Andy Lim',
+      change:'Jun 24 &middot; Onboarding',
+      excerpt:'6/24 AL: Onboarding Call 2 with Zycus (3:00 AM PT, 30 min). Market analyzer walkthrough, intent exploration, MCP green light confirmed. Clay integration demo to be scheduled as next step.' },
+    { csm:'andy',   health:'Healthy',    account:'SAS Institute',
+      opp:'Vitally Pulse &mdash; Jun 24 Call', arr:'Enterprise &middot; Andy Lim', csmlbl:'Andy Lim',
+      change:'Jun 24 &middot; Check-in',
+      excerpt:'6/24 AL: HG Demo follow-up with SAS Institute (6:00 AM PT, 60 min). Viewer license now assigned. Export functionality and row limitations reviewed. ICP templates and scoring profiles walkthrough completed.' },
+    { csm:'riley',  health:'Healthy',    account:'IBM',
+      opp:'Vitally Pulse &mdash; Jun 24 Call', arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Jun 24 &middot; Check-in',
+      excerpt:'6/24 RR: TrustRadius / IBM Biweekly Sync (7:00 AM PT, 45 min). Dashboard review with Rebecca and Shyali. Webinar invitation sent, priority product monitoring topics aligned.' },
+    { csm:'andy',   health:'Healthy',    account:'Zycus',
+      opp:'Vitally Pulse &mdash; Jun 24 Call (API)', arr:'Enterprise &middot; Andy Lim', csmlbl:'Andy Lim',
+      change:'Jun 24 &middot; Expansion &mdash; HGi API',
+      excerpt:'6/24 AL: HGi API in Clay intro with Zycus (7:30 AM PT, 30 min). 50 test credits allocated from 10K pool. Zycus ($20K ACV) confirmed API-based Clay enrichment as next expansion use case.' },
+    { csm:'varun',  health:'Healthy',    account:'ServiceNow',
+      opp:'Vitally Pulse &mdash; Jun 24 Call', arr:'Enterprise &middot; Varun Tiwari', csmlbl:'Varun Tiwari',
+      change:'Jun 24 &middot; Check-in',
+      excerpt:'6/24 VT: ServiceNow Monthly Sync (7:30 AM PT, 30 min). Spend categories revision flagged (not just validation &mdash; definitions have shifted). Follow-up call with Anvesh scheduled Jun 25.' },
+    { csm:'riley',  health:'Healthy',    account:'SAP Inc',
+      opp:'Vitally Pulse &mdash; Jun 24 Call', arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Jun 24 &middot; Check-in',
+      excerpt:'6/24 RR: SAP SuccessFactors TrustRadius Progress call (9:00 AM PT, 30 min). Routine cadence review. Program status and upcoming calendar discussed; relationship in good standing.' },
+    { csm:'riley',  health:'Healthy',    account:'Paylocity',
+      opp:'Vitally Pulse &mdash; Jun 24 Call', arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Jun 24 &middot; Renewal + Check-in',
+      excerpt:'6/24 RR: Paylocity monthly TrustRadius sync (9:30 AM PT, 30 min). Customer confirmed budget approved and requested order form. Riley to send renewal order form ASAP to capture before procurement window closes.' },
+    { csm:'varun',  health:'Healthy',    account:'Autodesk',
+      opp:'Vitally Pulse &mdash; Jun 24 Call', arr:'Enterprise &middot; Varun Tiwari', csmlbl:'Varun Tiwari',
+      change:'Jun 24 &middot; Check-in',
+      excerpt:'6/24 VT: Autodesk Bi-Weekly Sync (10:00 AM PT, 30 min). Phased implementation approach confirmed; Ola thanked Varun for patience and responsiveness. Proceeding methodically to avoid downstream config issues.' },
+    { csm:'divyam', health:'Healthy',    account:'Informatica',
+      opp:'Vitally Pulse &mdash; Jun 24 Call', arr:'Enterprise &middot; Divyam Dewan', csmlbl:'Divyam Dewan',
+      change:'Jun 24 &middot; Renewal + Check-in',
+      excerpt:'6/24 DD: Informatica Weekly Partnership Sync (10:00 AM PT, 30 min). Renewal order form submitted but hitting IT system challenges. EBR confirmed July 20&ndash;21; invites sent. Partnership health remains strong.' },
+    { csm:'rani',   health:'Concerning', account:'Lenovo',
+      opp:'Vitally Pulse &mdash; Jun 24 Call', arr:'Enterprise &middot; Rani Guy', csmlbl:'Rani Guy',
+      change:'Jun 24 &middot; Issue &mdash; Product Fit Gap',
+      excerpt:'6/24 RG: Lenovo sync (11:30 AM PT, 30 min). Yan Li confirmed NOT using HG Insights data as originally planned. Lenovo building in-house propensity model; HG &ldquo;fit&rdquo; and intent attributes not tied to clear need signals. Churn risk &mdash; escalation needed.' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div><strong>${c.account}</strong><br><span style="font-size:11px;color:#94a3b8;">${c.opp}</span></div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_06_24() {
+  return `<div class="action-list">
+
+    <div class="action-item ${doneActions.has('0624-1')?'done':''}" data-csm="rani" id="action-0624-1">
+      <div class="action-checkbox ${doneActions.has('0624-1')?'checked':''}" onclick="toggleAction('0624-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; Lenovo &mdash; Escalate Product-Fit Gap &amp; Schedule Discovery Call</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy &middot; Yan Li (Lenovo) disclosed they are NOT using HG Insights data as originally planned &mdash; building in-house propensity model instead. HG attributes not tied to &ldquo;clear need&rdquo; signals per their model requirements. Escalate to leadership immediately and schedule a discovery call to understand what Lenovo actually needs from HG data to prevent churn.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0624-2')?'done':''}" data-csm="riley" id="action-0624-2">
+      <div class="action-checkbox ${doneActions.has('0624-2')?'checked':''}" onclick="toggleAction('0624-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4DD; Paylocity &mdash; Send Renewal Order Form ASAP</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Riley Rogers &middot; Customer confirmed budget is approved ("it&rsquo;s in our budget &mdash; sooner I get it in the faster things move") and explicitly asked for the order form. Send order form immediately to capture renewal before procurement window closes. Every day of delay risks the budget.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0624-3')?'done':''}" data-csm="andy" id="action-0624-3">
+      <div class="action-checkbox ${doneActions.has('0624-3')?'checked':''}" onclick="toggleAction('0624-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F517; Zycus &mdash; Confirm API Credit Allocation &amp; Schedule Clay Integration Demo</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Andy Lim &middot; Zycus has 10K total API credits; Andy proposed 50 credits for initial Clay enrichment testing. Confirm the credit allocation in writing, provision API access, and schedule the Clay integration demo. Zycus at $20K ACV &mdash; API adoption represents a meaningful expansion and retention signal.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0624-4')?'done':''}" data-csm="varun" id="action-0624-4">
+      <div class="action-checkbox ${doneActions.has('0624-4')?'checked':''}" onclick="toggleAction('0624-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CA; ServiceNow &mdash; Prep Spend Categories Revision for Jun 25 Call</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Varun Tiwari &middot; ServiceNow (Anvesh) flagged they want to REVISE spend category definitions (not just validate them) &mdash; definitions have shifted. Follow-up call scheduled for Jun 25. Varun to prepare current category definitions and proposed revision list before the call.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0624-5')?'done':''}" data-csm="divyam" id="action-0624-5">
+      <div class="action-checkbox ${doneActions.has('0624-5')?'checked':''}" onclick="toggleAction('0624-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F504; Informatica &mdash; Unblock Renewal IT Processing &amp; Confirm EBR Logistics</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Divyam Dewan &middot; Renewal order form submitted but hitting IT system challenges at Informatica. Follow up with procurement/IT contact to identify the specific blocker and offer assistance. Confirm EBR calendar invites for July 20&ndash;21 were received by all key stakeholders.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0624-6')?'done':''}" data-csm="andy" id="action-0624-6">
+      <div class="action-checkbox ${doneActions.has('0624-6')?'checked':''}" onclick="toggleAction('0624-6')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F9ED; SAS Institute &mdash; Document Export Limits &amp; Schedule Next Enablement Session</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Andy Lim &middot; Export row limitations were a key discussion point during the SAS follow-up session. Document the specific row count limits for SAS&rsquo;s contract tier and provide a workaround guide for common use cases. Schedule next enablement session to continue ICP template buildout and scoring profile refinement.</div>
+      </div>
+    </div>
+
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
