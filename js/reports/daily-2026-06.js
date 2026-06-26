@@ -6183,3 +6183,295 @@ function dayActionsHTML_2026_06_24() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
 }
+
+// ─────────────────────────────────────────────────────────────────────────────
+// June 25, 2026
+// 75 recordings scanned · 44 with transcripts · 13 confirmed CSM calls
+// ─────────────────────────────────────────────────────────────────────────────
+
+function dayData_2026_06_25() {
+  return {
+    calls: [
+      { ts:'Jun 25 · 7:00 AM', csm:'rani', account:'Lenovo', note:'EOQ deal closure; legal/privacy bottlenecks; customer stakeholder flagged urgency via email', mins:30, health:'Concerning', nature:'Routine', initiator:'HG CS', purpose:'Mixed', detail:'End-of-quarter deal closure push with Lenovo. Customer stakeholder flagged urgency via email; legal review on data privacy scope is creating delays in contract finalization. HG needs to resolve legal bottleneck before EOQ.' },
+      { ts:'Jun 25 · 7:00 AM', csm:'atisha', account:'Insight', note:'Bi-weekly with Shahbaz; BCG competitive AI tool raised as alternative to HG Insights', mins:30, health:'Concerning', nature:'Routine', initiator:'Unknown', purpose:'Mixed', detail:'Bi-weekly sync with Shahbaz at Insight (Atisha covering this account). Customer raised BCG\'s new AI-driven competitive intelligence tool as a potential alternative to HG Insights. Competitive positioning follow-up required.' },
+      { ts:'Jun 25 · 7:30 AM', csm:'nick', account:'Check Point', note:'Ad-hoc data quality review; customer flagged employee/revenue discrepancies vs internal benchmarks', mins:30, health:'Concerning', nature:'Ad-hoc', initiator:'Customer', purpose:'Issue', detail:'Ad-hoc data quality feedback session. Check Point flagged specific discrepancies between HG Insights employee count and revenue figures versus their internal benchmarks. Field-level mismatches documented. Nick to open a data quality ticket and set a response timeline.' },
+      { ts:'Jun 25 · 8:00 AM', csm:'varun', account:'MongoDB', note:'Recurring sync; very thin transcript — possible connection drop or brief call', mins:30, health:'Healthy', nature:'Routine', initiator:'Unknown', purpose:'Check-in', detail:'Monthly recurring sync with MongoDB. Transcript was extremely thin (just a few syllables), indicating a dropped or very brief connection. Unclear whether the meeting took place. Varun to confirm with MongoDB contact and reschedule if needed.' },
+      { ts:'Jun 25 · 8:30 AM', csm:'divyam', account:'Lumen', note:'Weekly renewal sync; $175K budget at risk; Julie (budget owner) in deal hub; internal buy-in challenge', mins:30, health:'Concerning', nature:'Routine', initiator:'HG CS', purpose:'Mixed', detail:'Weekly Lumen renewal sync. The $175K upfront cost for the HG Insights platform is facing internal Lumen budget resistance — Julie (budget owner) has entered the deal hub. Internal buy-in not yet secured. Divyam to prepare ROI case and escalate to HG leadership for executive alignment.' },
+      { ts:'Jun 25 · 9:30 AM', csm:'varun', account:'ServiceNow', note:'Expansion product coverage add-on; TAM refinement for ITAM/ITSM; category overlap discussion', mins:30, health:'Healthy', nature:'Ad-hoc', initiator:'HG CS', purpose:'Expansion', detail:'HGI Spend Data session with ServiceNow (Expansion Product Coverage Add On opportunity). Discussed TAM calculation refinement and product coverage expansion, specifically ITAM/ITSM category overlap and taxonomy alignment with external standards. Active expansion in progress.' },
+      { ts:'Jun 25 · 9:30 AM', csm:'rani', account:'DocuSign', note:'New stakeholder (Bianca Ferri) intro; use case: enriching Q-sales-play accounts with HG competitive/LOB data', mins:30, health:'Healthy', nature:'Ad-hoc', initiator:'Customer', purpose:'Expansion', detail:'Introduction call with Bianca Ferri, new DocuSign stakeholder. She wants to use HG data to enrich quarterly sales play target accounts with competitive and line-of-business intelligence. Clear expansion use case. Rani to follow up with onboarding materials and confirm data access scope.' },
+      { ts:'Jun 25 · 10:00 AM', csm:'divyam', account:'Dynatrace', note:'Bi-weekly; Augie back from leave; customer requesting granular DevOps headcount data; custom pilot being scoped', mins:45, health:'Healthy', nature:'Routine', initiator:'Customer', purpose:'Expansion', detail:'Bi-weekly sync with Dynatrace — Augie Buettner returned from parental leave. Customer requested more granular DevOps role/headcount data beyond general IT headcount totals. A custom data pilot is being scoped internally to address the specific need. Good expansion signal.' },
+      { ts:'Jun 25 · 11:00 AM', csm:'divyam', account:'TR Vendor', note:'SixSense integration activation; TrustRadius profile optimization; intent data use for sales motions', mins:45, health:'Healthy', nature:'Ad-hoc', initiator:'Unknown', purpose:'Mixed', detail:'Multi-stakeholder call (Christopher, Micah, Elaine) on activating SixSense integration for intent data, optimizing the TrustRadius "Totality" product profile, gathering customer reviews, and applying intent signals to sales motions. Account name unresolved from recording — Divyam confirmed as speaker.' },
+      { ts:'Jun 25 · 11:30 AM', csm:'atisha', account:'Databricks', note:'Delta share migration; S3 → delta share for firmographic + tech install data; expected ready next day', mins:30, health:'Healthy', nature:'Ad-hoc', initiator:'HG CS', purpose:'Issue', detail:'Technical implementation call with Databricks and Rishab (customer solutions). Migrating data delivery from S3 bucket to delta share for firmographic and tech install datasets. Delta share expected ready the following day. Atisha to confirm delivery and validate data completeness.' },
+      { ts:'Jun 25 · 11:45 AM', csm:'rani', account:'Elastic', note:'35K accounts missing Duns causing large matching delta; Elastic layoffs add renewal risk context', mins:25, health:'Concerning', nature:'Routine', initiator:'Customer', purpose:'Issue', detail:'Recurring sync with Elastic. Customer flagged a data matching problem: 35,000 Salesforce accounts lack Duns numbers, creating a large delta in HG Insights match results. Immediate fix: process existing Duns. Elastic layoffs were also mentioned — this adds renewal risk context that needs monitoring.' },
+      { ts:'Jun 25 · 12:00 PM', csm:'atisha', account:'Equinix', note:'Cloud Dynamics walkthrough for new stakeholder Amit Duvedi; ROI calculator build for customer business cases', mins:30, health:'Healthy', nature:'Ad-hoc', initiator:'HG CS', purpose:'Expansion', detail:'Platform walkthrough for new Equinix stakeholder Amit Duvedi. Objective is to build ROI calculators and customer-facing business cases using HG\'s Cloud Dynamics feature. Strong expansion signal — new internal champion being activated. Atisha to share Cloud Dynamics templates and schedule follow-up.' },
+      { ts:'Jun 25 · 12:30 PM', csm:'divyam', account:'Omnissa', note:'Account re-match + Cloud Centricity roadmap; L3→L2 hierarchy shift driving data feed migration discussion', mins:30, health:'Healthy', nature:'Ad-hoc', initiator:'Customer', purpose:'Mixed', detail:'Account re-match and Cloud Centricity roadmap session with Omnissa (Srini, Raymond). The L3→L2 data hierarchy shift has triggered a desire for more continuously enriched data via a feed rather than platform access. Cost discussion ongoing — potential upsell to the data feed product.' },
+    ],
+    pulses: [
+      { csm:'rani',   account:'Lenovo',     health:'Concerning', note:'EOQ deal closure blocked by legal/privacy review. Stakeholder urgency flagged in email.' },
+      { csm:'atisha', account:'Insight',    health:'Concerning', note:'BCG competitive AI tool raised as HG alternative. Competitive positioning follow-up required.' },
+      { csm:'nick',   account:'Check Point',health:'Concerning', note:'Data quality: employee/revenue discrepancies vs internal benchmarks. Data quality ticket needed.' },
+      { csm:'varun',  account:'MongoDB',    health:'Healthy',    note:'Recurring sync — thin transcript, possible connection drop. Varun to confirm call outcome.' },
+      { csm:'divyam', account:'Lumen',      health:'Concerning', note:'$175K renewal at risk. Internal budget resistance; Julie (budget owner) in deal hub.' },
+      { csm:'varun',  account:'ServiceNow', health:'Healthy',    note:'ITAM/ITSM product coverage expansion add-on active. TAM refinement in progress.' },
+      { csm:'rani',   account:'DocuSign',   health:'Healthy',    note:'New stakeholder (Bianca Ferri) intro. Expansion: enriching sales play accounts with HG data.' },
+      { csm:'divyam', account:'Dynatrace',  health:'Healthy',    note:'Custom DevOps granular headcount data pilot being scoped. Augie returned from leave.' },
+      { csm:'divyam', account:'TR Vendor',  health:'Healthy',    note:'SixSense + TrustRadius integration activation. Multi-stakeholder onboarding call.' },
+      { csm:'atisha', account:'Databricks', health:'Healthy',    note:'S3 → delta share migration. Delivery expected next day. Atisha to confirm data completeness.' },
+      { csm:'rani',   account:'Elastic',    health:'Concerning', note:'35K accounts missing Duns; large matching delta. Layoffs add renewal risk.' },
+      { csm:'atisha', account:'Equinix',    health:'Healthy',    note:'Cloud Dynamics activation with new champion Amit Duvedi. ROI calculator build started.' },
+      { csm:'divyam', account:'Omnissa',    health:'Healthy',    note:'L3→L2 hierarchy shift driving data feed migration/upsell discussion.' },
+    ],
+  };
+}
+
+function dayMeta_2026_06_25() {
+  return {
+    pills: [
+      ['dot-teal',  '13 Calls'],
+      ['dot-red',   '5 Concerning'],
+      ['dot-amber', '5 Expansion'],
+      ['dot-green', '13 Pulses'],
+      ['dot-grey',  'Thu Jun 25 · 75 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (13)', 'Pulses (13)', 'Action Items (9)'],
+  };
+}
+
+function dayOverviewHTML_2026_06_25() {
+  return `<div class="section-label">Team Activity &mdash; Thursday June 25, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Thursday Jun 25 &mdash; 75 recordings scanned</strong> via SFDC SOQL &middot; <strong>13 confirmed calls</strong> across 5 CSMs &middot; 5 Concerning signals (Lenovo EOQ risk, Lumen budget, Elastic layoffs, Check Point data quality, Insight competitive threat) &middot; 5 Expansion signals
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>5 Concerning Accounts:</strong> Lenovo (EOQ legal block) &middot; Lumen ($175K budget at risk) &middot; Elastic (35K matching delta + layoffs) &middot; Check Point (data quality issue) &middot; Insight (BCG competitive threat)
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>5 Expansion Signals:</strong> ServiceNow (ITAM/ITSM coverage add-on) &middot; DocuSign (new stakeholder, sales play use case) &middot; Dynatrace (custom DevOps data pilot) &middot; Equinix (Cloud Dynamics new champion) &middot; Omnissa (data feed migration/upsell)
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">4 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">4</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">4</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">150m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Lumen (budget at risk &#x26A0;) &middot; Dynatrace (custom data pilot) &middot; Omnissa (feed migration) &middot; TR Vendor (6Sense activation)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">3 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">3</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">2</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">85m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Lenovo (EOQ legal block &#x26A0;) &middot; Elastic (layoffs + matching &#x26A0;) &middot; DocuSign (new stakeholder expansion)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">3 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">3</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">90m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Insight (BCG threat &#x26A0;) &middot; Equinix (Cloud Dynamics champion) &middot; Databricks (delta share setup)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">ServiceNow (expansion add-on) &middot; MongoDB (thin transcript)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Check Point (data quality issue &#x26A0;) &middot; 3 events unconfirmed (KPMG, Sage, Thomson Reuters)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="riley">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 events scheduled &mdash; no recordings (TeamViewer x TR, Jama Software x TR)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No events or recordings detected for Jun 25</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event scheduled &mdash; no recording (Sage biweekly)</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_06_25() {
+  return `
+  <div style="background:#1a1f2e;border:1px solid #334155;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#94a3b8;">
+    &#x1F4CB; <strong>Note:</strong> Lumen had 2 duplicate Weflow recordings of the same call (both ID'd Divyam) &mdash; counted as 1 call. MongoDB transcript was near-empty (possible connection drop). "TR Vendor" account unresolved &mdash; recording link query unavailable.
+  </div>
+  <div style="background:#1a1f14;border:1px solid #a3e635;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#d9f99d;">
+    &#x1F4CC; <strong>Unconfirmed (no transcript, CSM event link):</strong> Nick / KPMG (7:00 AM PT, 30min) &middot; Divyam / Sage Global Services (8:00 AM PT, 30min) &middot; Varun / IFS (8:00 AM PT, 60min) &middot; Atisha / Saviynt (10:00 AM PT, 30min)
+  </div>`;
+}
+
+function dayPulsesHTML_2026_06_25() {
+  const cards = [
+    { csm:'rani',   health:'Concerning', account:'Lenovo',      opp:'Vitally Pulse &mdash; Jun 25 Call', arr:'Enterprise &middot; Rani Guy',   csmlbl:'Rani Guy',    change:'Jun 25 &middot; Concerning', excerpt:'Jun 25 RG: EOQ deal closure at risk — legal/data privacy review blocking contract finalization. Customer stakeholder flagged urgency via email. (7:00 AM PT, 30 min).' },
+    { csm:'atisha', health:'Concerning', account:'Insight',     opp:'Vitally Pulse &mdash; Jun 25 Call', arr:'Enterprise &middot; Atisha Waghela', csmlbl:'Atisha Waghela', change:'Jun 25 &middot; Concerning', excerpt:'Jun 25 AW: Shahbaz raised BCG\'s new AI-driven competitive intelligence tool as alternative to HG Insights. Competitive positioning follow-up required. (7:00 AM PT, 30 min).' },
+    { csm:'nick',   health:'Concerning', account:'Check Point', opp:'Vitally Pulse &mdash; Jun 25 Call', arr:'Enterprise &middot; Nick Johnson',  csmlbl:'Nick Johnson', change:'Jun 25 &middot; Concerning', excerpt:'Jun 25 NJ: Customer flagged data quality discrepancies — employee/revenue figures don\'t match internal benchmarks. Data quality ticket to be opened. (7:30 AM PT, 30 min).' },
+    { csm:'varun',  health:'Healthy',    account:'MongoDB',     opp:'Vitally Pulse &mdash; Jun 25 Call', arr:'Enterprise &middot; Varun Tiwari',  csmlbl:'Varun Tiwari', change:'Jun 25 &middot; Healthy',    excerpt:'Jun 25 VT: Recurring sync — transcript near-empty, possible connection drop. Varun to confirm whether meeting took place effectively. (8:00 AM PT, 30 min).' },
+    { csm:'divyam', health:'Concerning', account:'Lumen',       opp:'Vitally Pulse &mdash; Jun 25 Call', arr:'Enterprise &middot; Divyam Dewan',  csmlbl:'Divyam Dewan', change:'Jun 25 &middot; Concerning', excerpt:'Jun 25 DD: $175K renewal budget at risk — internal Lumen resistance, Julie (budget owner) in deal hub. ROI case and executive alignment needed urgently. (8:30 AM PT, 30 min).' },
+    { csm:'varun',  health:'Healthy',    account:'ServiceNow',  opp:'Vitally Pulse &mdash; Jun 25 Call', arr:'Enterprise &middot; Varun Tiwari',  csmlbl:'Varun Tiwari', change:'Jun 25 &middot; Healthy',    excerpt:'Jun 25 VT: ITAM/ITSM product coverage expansion add-on active. TAM refinement and category taxonomy alignment in progress for Expansion Product Coverage Add On opp. (9:30 AM PT, 30 min).' },
+    { csm:'rani',   health:'Healthy',    account:'DocuSign',    opp:'Vitally Pulse &mdash; Jun 25 Call', arr:'Enterprise &middot; Rani Guy',       csmlbl:'Rani Guy',    change:'Jun 25 &middot; Healthy',    excerpt:'Jun 25 RG: New stakeholder Bianca Ferri — wants HG data to enrich Q-sales-play target accounts with competitive/LOB intel. Strong expansion use case. Onboarding next. (9:30 AM PT, 30 min).' },
+    { csm:'divyam', health:'Healthy',    account:'Dynatrace',   opp:'Vitally Pulse &mdash; Jun 25 Call', arr:'Enterprise &middot; Divyam Dewan',  csmlbl:'Divyam Dewan', change:'Jun 25 &middot; Healthy',    excerpt:'Jun 25 DD: Augie back from parental leave. Customer requesting more granular DevOps role/headcount data — custom pilot being scoped internally. (10:00 AM PT, 45 min).' },
+    { csm:'divyam', health:'Healthy',    account:'TR Vendor',   opp:'Vitally Pulse &mdash; Jun 25 Call', arr:'Enterprise &middot; Divyam Dewan',  csmlbl:'Divyam Dewan', change:'Jun 25 &middot; Healthy',    excerpt:'Jun 25 DD: Multi-stakeholder call (Christopher, Micah, Elaine) activating SixSense intent integration and TrustRadius "Totality" profile optimization. Account TBD. (11:00 AM PT, 45 min).' },
+    { csm:'atisha', health:'Healthy',    account:'Databricks',  opp:'Vitally Pulse &mdash; Jun 25 Call', arr:'Enterprise &middot; Atisha Waghela', csmlbl:'Atisha Waghela', change:'Jun 25 &middot; Healthy', excerpt:'Jun 25 AW: S3 → delta share migration for firmographic + tech install data. Rishab from customer solutions on call. Delta share expected ready next day. (11:30 AM PT, 30 min).' },
+    { csm:'rani',   health:'Concerning', account:'Elastic',     opp:'Vitally Pulse &mdash; Jun 25 Call', arr:'Enterprise &middot; Rani Guy',       csmlbl:'Rani Guy',    change:'Jun 25 &middot; Concerning', excerpt:'Jun 25 RG: 35K accounts missing Duns causing large matching delta. Fix in progress. Elastic layoffs were also mentioned — dual risk (data quality + retention). (11:45 AM PT, 25 min).' },
+    { csm:'atisha', health:'Healthy',    account:'Equinix',     opp:'Vitally Pulse &mdash; Jun 25 Call', arr:'Enterprise &middot; Atisha Waghela', csmlbl:'Atisha Waghela', change:'Jun 25 &middot; Healthy', excerpt:'Jun 25 AW: New champion Amit Duvedi onboarded to Cloud Dynamics. Goal: build ROI calculators for customer business cases. Strong expansion signal. (12:00 PM PT, 30 min).' },
+    { csm:'divyam', health:'Healthy',    account:'Omnissa',     opp:'Vitally Pulse &mdash; Jun 25 Call', arr:'Enterprise &middot; Divyam Dewan',  csmlbl:'Divyam Dewan', change:'Jun 25 &middot; Healthy',    excerpt:'Jun 25 DD: L3→L2 hierarchy shift driving data feed migration/upsell. Srini & Raymond on call. Cost discussion ongoing for feed product upgrade. (12:30 PM PT, 30 min).' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div style="font-weight:600;font-size:13px;color:#f1f5f9;">${c.account}</div>
+          <div style="font-size:11px;color:#64748b;">${c.opp}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulse records match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_06_25() {
+  return `<div class="action-list">
+
+    <div class="action-item ${doneActions.has('0625-1')?'done':''}" data-csm="rani" id="action-0625-1">
+      <div class="action-checkbox ${doneActions.has('0625-1')?'checked':''}" onclick="toggleAction('0625-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; Lenovo &mdash; Unblock Legal Review Before EOQ</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy &middot; Legal/data privacy review is blocking contract finalization at end of quarter. Rani to identify the Lenovo legal reviewer, set up a targeted legal review call, and escalate to HG legal team if needed to meet EOQ deadline.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0625-2')?'done':''}" data-csm="divyam" id="action-0625-2">
+      <div class="action-checkbox ${doneActions.has('0625-2')?'checked':''}" onclick="toggleAction('0625-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4B0; Lumen &mdash; Prepare ROI Case &amp; Escalate for Executive Alignment</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Divyam Dewan &middot; $175K renewal at risk due to internal Lumen budget resistance. Divyam to prepare a clear ROI case quantifying platform value for Julie (budget owner) and loop in HG leadership for executive-to-executive alignment before renewal deadline.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0625-3')?'done':''}" data-csm="nick" id="action-0625-3">
+      <div class="action-checkbox ${doneActions.has('0625-3')?'checked':''}" onclick="toggleAction('0625-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F50D; Check Point &mdash; Open Data Quality Ticket &amp; Set Response Timeline</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Nick Johnson &middot; Customer flagged specific discrepancies in employee/revenue data vs internal benchmarks. Nick to document the field-level mismatches, open a formal data quality ticket, communicate an investigation timeline to the customer, and follow up within 3 business days.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0625-4')?'done':''}" data-csm="rani" id="action-0625-4">
+      <div class="action-checkbox ${doneActions.has('0625-4')?'checked':''}" onclick="toggleAction('0625-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A1; Elastic &mdash; Send Duns Fix Timeline &amp; Monitor Renewal Risk</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy &middot; 35K accounts missing Duns numbers causing a large matching delta. Send Elastic a clear resolution timeline for the Duns processing fix. Additionally, monitor the layoffs situation and flag renewal risk to leadership if Elastic contact changes or engagement drops.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0625-5')?'done':''}" data-csm="atisha" id="action-0625-5">
+      <div class="action-checkbox ${doneActions.has('0625-5')?'checked':''}" onclick="toggleAction('0625-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F6E1;&#xFE0F; Insight &mdash; Competitive Response to BCG AI Tool</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Atisha Waghela &middot; Shahbaz raised BCG&rsquo;s new AI-driven competitive intelligence tool as a potential HG alternative. Atisha to share HG differentiation materials (unique data coverage, install data, spend signals) and competitive positioning content that BCG cannot replicate.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0625-6')?'done':''}" data-csm="rani" id="action-0625-6">
+      <div class="action-checkbox ${doneActions.has('0625-6')?'checked':''}" onclick="toggleAction('0625-6')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F680; DocuSign &mdash; Onboard Bianca Ferri &amp; Define Sales Play Use Case</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Rani Guy &middot; New stakeholder Bianca Ferri is ready to leverage HG data for quarterly sales play target account enrichment. Rani to send onboarding materials, confirm data access scope for competitive/LOB enrichment, and schedule a follow-up working session to build the first sales play template.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0625-7')?'done':''}" data-csm="divyam" id="action-0625-7">
+      <div class="action-checkbox ${doneActions.has('0625-7')?'checked':''}" onclick="toggleAction('0625-7')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CA; Dynatrace &mdash; Scope Custom DevOps Headcount Data Pilot</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Divyam Dewan &middot; Dynatrace (Augie Buettner) is requesting granular DevOps role/headcount data beyond general IT headcount. Divyam to work with HG product/data team to define pilot scope, data availability, and delivery format. Share scoping doc with Augie for review.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0625-8')?'done':''}" data-csm="atisha" id="action-0625-8">
+      <div class="action-checkbox ${doneActions.has('0625-8')?'checked':''}" onclick="toggleAction('0625-8')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Databricks &mdash; Confirm Delta Share Delivery &amp; Validate Data</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Atisha Waghela &middot; S3 → delta share migration for Databricks was in progress; delivery expected next day. Atisha to confirm with Databricks/Rishab that the delta share is live and validate firmographic + tech install data completeness before closing the migration ticket.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0625-9')?'done':''}" data-csm="divyam" id="action-0625-9">
+      <div class="action-checkbox ${doneActions.has('0625-9')?'checked':''}" onclick="toggleAction('0625-9')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F504; Omnissa &mdash; Prepare Data Feed Cost Proposal</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Divyam Dewan &middot; Omnissa (Srini, Raymond) are interested in migrating to a data feed product following the L3→L2 hierarchy shift. Divyam to prepare a cost proposal for the data feed solution, quantifying the value of continuous enrichment vs current platform access.</div>
+      </div>
+    </div>
+
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
