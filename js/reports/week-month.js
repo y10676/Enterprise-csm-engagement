@@ -17,6 +17,7 @@ function weekSummaryHTML() {
     <div class="sum-card c-amber" onclick="jumpToTab('wpulses','all','Concerning')"><div class="sum-val">4</div><div class="sum-lbl">Concerning Signals</div><div class="sum-sub">Cisco · Datadog CD · eHouse · DXC</div></div>
     <div class="sum-card c-red" onclick="jumpToTab('wpulses','atisha','Concerning')"><div class="sum-val">1</div><div class="sum-lbl">Churn Risk Escalated</div><div class="sum-sub">eHouse Studio — no engagement</div></div>
     <div class="sum-card c-green" onclick="jumpToTab('wpulses','riley','Healthy')"><div class="sum-val">3</div><div class="sum-lbl">Pulse Upgrades</div><div class="sum-sub">Intuit: Concerning→Healthy</div></div>
+    <div class="sum-card c-blue" onclick="jumpToTab('wcalls','all','all')"><div class="sum-val">3</div><div class="sum-lbl">Expansion Signals</div><div class="sum-sub">Workday MCP &middot; Lenovo &middot; Cloudflare onsite</div></div>
   </div>
 
   <div class="section-label">Active Accounts This Week</div>
@@ -223,6 +224,7 @@ function monthSummaryHTML() {
     const healthyPulses    = md.pulses.filter(p => p.health === 'Healthy').length;
     const concerningPulses = md.pulses.filter(p => p.health === 'Concerning').length;
     const activeCsms       = new Set(md.calls.map(c => c.csm)).size;
+    const expansionCalls   = md.calls.filter(c => c.purpose === 'Expansion').length;
     const healthPct        = md.pulses.length ? Math.round(healthyPulses / md.pulses.length * 100) : 0;
     const concerningPct    = md.pulses.length ? Math.round(concerningPulses / md.pulses.length * 100) : 0;
 
@@ -266,6 +268,7 @@ function monthSummaryHTML() {
       <div class="sum-card c-green"  onclick="jumpToTab('mpulses','all','all')"><div class="sum-val">${md.pulses.length}</div><div class="sum-lbl">Pulse Notes</div><div class="sum-sub">${healthyPulses} Healthy · ${concerningPulses} Concerning</div></div>
       <div class="sum-card c-purple" onclick="jumpToTab('mcsm','all','all')"><div class="sum-val">${activeCsms}</div><div class="sum-lbl">Active CSMs</div><div class="sum-sub">of 8 on the team</div></div>
       ${concerningPulses > 0 ? `<div class="sum-card c-amber" onclick="jumpToTab('mpulses','all','Concerning')"><div class="sum-val">${concerningPulses}</div><div class="sum-lbl">Concerning Signals</div><div class="sum-sub">Require follow-up</div></div>` : ''}
+      ${expansionCalls > 0 ? `<div class="sum-card c-blue" onclick="jumpToTab('mcalls','all','all')"><div class="sum-val">${expansionCalls}</div><div class="sum-lbl">Expansion Signals</div><div class="sum-sub">Calls with expansion intent</div></div>` : ''}
     </div>
     ${editorial}
     <div class="section-label">Daily Call Activity — ${monthLabel}</div>
@@ -536,6 +539,7 @@ function weekSummaryHTML_2026_W18() {
     <div class="sum-card c-amber" onclick="jumpToTab('wpulses','all','Concerning')"><div class="sum-val">7</div><div class="sum-lbl">Concerning Signals</div><div class="sum-sub">Cisco &middot; NetApp &middot; TD Synnex &middot; +4</div></div>
     <div class="sum-card c-red" onclick="jumpToTab('wpulses','pam','Concerning')"><div class="sum-val">1</div><div class="sum-lbl">Renewal Deadline</div><div class="sum-sub">Cisco CVP &mdash; May 15</div></div>
     <div class="sum-card c-green" onclick="jumpToTab('wcalls','nick','all')"><div class="sum-val">10</div><div class="sum-lbl">Nick Johnson Calls</div><div class="sum-sub">Most active CSM this week</div></div>
+    <div class="sum-card c-blue" onclick="jumpToTab('wcalls','all','all')"><div class="sum-val">4</div><div class="sum-lbl">Expansion Signals</div><div class="sum-sub">Workday &middot; Elastic TAM &middot; Cloudflare &middot; HCLSoftware</div></div>
   </div>
 
   <div class="section-label">Active Accounts This Week</div>
@@ -707,6 +711,7 @@ function weekSummaryHTML_2026_W20() {
     <div class="sum-card c-purple" onclick="jumpToTab('wcsm','all','all')"><div class="sum-val">7</div><div class="sum-lbl">Active CSMs</div><div class="sum-sub">Andy Lim = 0 calls all week</div></div>
     <div class="sum-card c-amber" onclick="jumpToTab('wpulses','all','Concerning')"><div class="sum-val">4</div><div class="sum-lbl">Concerning Signals</div><div class="sum-sub">BILL &middot; Hitachi &middot; Salesforce &middot; ZoomInfo</div></div>
     <div class="sum-card c-red"><div class="sum-val">1</div><div class="sum-lbl">Churn-Risk Departure</div><div class="sum-sub">BILL Operations &mdash; Jeremiah Clark out</div></div>
+    <div class="sum-card c-blue" onclick="jumpToTab('wcalls','all','all')"><div class="sum-val">5</div><div class="sum-lbl">Expansion Signals</div><div class="sum-sub">HCLSoftware &middot; Zendesk &middot; Dynatrace &middot; +2</div></div>
   </div>
 
   <div class="section-label">Key Accounts This Week</div>
@@ -841,7 +846,7 @@ function weekSummaryHTML_2026_W21() {
     <div class="sum-card c-purple" onclick="jumpToTab('wcsm','all','all')"><div class="sum-val">7</div><div class="sum-lbl">Active CSMs</div><div class="sum-sub">Andy Lim = 0 calls all week</div></div>
     <div class="sum-card c-amber" onclick="jumpToTab('wpulses','all','Concerning')"><div class="sum-val">7</div><div class="sum-lbl">Concerning Signals</div><div class="sum-sub">Elastic &times;2 &middot; Splunk &middot; NetApp &middot; Dayforce &middot; Blackbaud &middot; Yubico</div></div>
     <div class="sum-card c-red"><div class="sum-val">1</div><div class="sum-lbl">High-Risk Account</div><div class="sum-sub">Dayforce US &mdash; POC offer extended</div></div>
-    <div class="sum-card c-green" onclick="jumpToTab('wcalls','nick','all')"><div class="sum-val">$780K</div><div class="sum-lbl">Expansion Proposal</div><div class="sum-sub">HCLSoftware &mdash; Nick Johnson</div></div>
+    <div class="sum-card c-blue" onclick="jumpToTab('wcalls','all','all')"><div class="sum-val">4</div><div class="sum-lbl">Expansion Signals</div><div class="sum-sub">HCLSoftware $780K &middot; Elastic TAM &middot; Dynatrace &middot; Zendesk</div></div>
   </div>
 
   <div class="section-label">Key Accounts This Week</div>
