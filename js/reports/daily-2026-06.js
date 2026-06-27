@@ -6475,3 +6475,247 @@ function dayActionsHTML_2026_06_25() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
 }
+
+// ---- June 26, 2026 ----
+
+function dayData_2026_06_26() {
+  return {
+    calls: [
+      { ts: 'Jun 26 · 9:30 AM', csm: 'atisha', account: 'AMD',
+        note: 'Weekly sync — platform migration v1→v2 Sept deadline, v3 credit model pitched, team change (Ravi→James)',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Atisha notified AMD (David Rockwell) that Ravi departed; James (London) now the HG contact. Introduced platform migration timeline: v1 must move to v2 by September. Pitched v3 credit-based model as expansion opportunity. Solutions team offered for scoping. David acknowledged being time-constrained on HG work this week.' },
+      { ts: 'Jun 26 · 10:00 AM', csm: 'rani', account: 'Google',
+        note: 'Contact data pilot check-in with Marianna Prodan — awaiting pilot decisions; Cloudflare positive signal',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Rani Guy and KP Pindle (HG Sales) met with Marianna Prodan (Google) to review contact data pilot progress and outstanding questions (~3 weeks since last meeting). Positive sidebar: Cloudflare\'s Robert responded positively. Casual relationship-maintenance tone.' },
+      { ts: 'Jun 26 · 2:00 PM', csm: 'atisha', account: 'Palo Alto Networks',
+        note: 'Re-engagement with new contact Rachna Agrawal post-turnover — MCP re-activation and Sales Workbench use case',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Atisha and Tyler Neubauer (HG) reconnected with Rachna Agrawal (new PANW point person) and Sweta Vyas after Prasana\'s departure. Covered 5-year partnership history and current data fabric contract. MCP scoping was paused for renewal — confirmed to re-activate. Sweta identified Sales Workbench as primary use case for HG Edge Insights.' },
+    ],
+    pulses: [
+      { csm: 'atisha', account: 'AMD', health: 'Healthy',
+        note: 'Jun 26 · Weekly sync: platform migration v1→v2 (Sept deadline), v3 expansion pitch, team change (Ravi→James). David engaged but time-constrained.' },
+      { csm: 'rani', account: 'Google', health: 'Healthy',
+        note: 'Jun 26 · Contact data pilot check-in with Marianna Prodan. Awaiting pilot decisions. Cloudflare (Robert) positive signal.' },
+      { csm: 'atisha', account: 'Palo Alto Networks', health: 'Healthy',
+        note: 'Jun 26 · Re-engagement: new contact Rachna Agrawal. MCP re-activation confirmed. Sales Workbench primary use case. QBR cadence to restore.' },
+    ],
+  };
+}
+
+function dayMeta_2026_06_26() {
+  return {
+    pills: [
+      ['dot-teal',  '3 Calls'],
+      ['dot-amber', '2 Expansion Signals'],
+      ['dot-green', '3 Vitally Pulses'],
+      ['dot-grey',  'Fri Jun 26 · 43 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (3)', 'Pulses (3)', 'Action Items (7)']
+  };
+}
+
+function dayOverviewHTML_2026_06_26() {
+  return `<div class="section-label">Team Activity &mdash; Friday June 26, 2026</div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Friday Jun 26 &mdash; 43 recordings scanned</strong> via SFDC SOQL &middot; <strong>3 confirmed customer calls</strong> (Atisha &times;2, Rani &times;1) &middot; 1 flagged (Nick &mdash; account unknown) &middot; Expansion: AMD v3 credit model + PANW MCP re-activation
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#128260; <strong>Expansion signals:</strong> Atisha pitched AMD on v3 credit model (Sept v1&rarr;v2 deadline drives urgency) &middot; PANW MCP scoping confirmed to re-activate with new contact Rachna Agrawal
+  </div>
+  <div style="background:#1c1f18;border:1px solid #fbbf24;border-left:3px solid #fbbf24;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fde68a;">
+    &#x26A0; <strong>Atisha Waghela</strong>: 3 Apple SFDC events (Market Intelligence Training, Platform Training Team Call, Weekly Syncup) with no recordings. Follow up to confirm outcomes.
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Google (contact data pilot check-in, Cloudflare positive signal)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">AMD (v3 expansion pitch, v1→v2 migration) &middot; Palo Alto Networks (re-engagement, MCP re-activation)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="riley">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">0 events scheduled &mdash; no calls detected</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="nick">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 flagged (Nick&ndash;Anupam HGI, account unknown, possibly internal) &middot; 1 unconfirmed (Intuit, no transcript)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="divyam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event scheduled (Quadient Bi-Weekly) &mdash; no recording found</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="varun">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 events scheduled (AMD Bi-weekly, Zendesk) &mdash; no recordings found</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event scheduled (ADP Smart Compliance) &mdash; no recording found</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 recording (SAS EMEA) &mdash; no transcript, unconfirmed</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_06_26() {
+  return `<div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 12px 0;font-size:12px;color:#7dd3fc;">
+    &#128260; <strong>Expansion signals:</strong> AMD — Atisha pitched v3 credit-based model; v1&rarr;v2 migration (Sept deadline) creates urgency for solutions scoping call &middot; PANW — MCP scoping confirmed to re-activate with Rachna Agrawal; Sales Workbench as primary use case
+  </div>
+  <div style="background:#1c1f18;border:1px solid #fb923c;border-left:3px solid #fb923c;border-radius:6px;padding:8px 14px;margin:0 0 12px 0;font-size:12px;color:#fcd9bd;">
+    &#128681; <strong>Flagged:</strong> Nick Johnson &mdash; "Nick - Anupam HGI" recording at midnight PT (7:00 AM UTC). Nick confirmed as speaker but account is unknown (junction table query failed). "HGI" in title suggests possible internal session. Confirm with Nick whether Anupam Anand is a customer or HG staff.
+  </div>`;
+}
+
+function dayPulsesHTML_2026_06_26() {
+  const cards = [
+    { csm: 'atisha', health: 'Healthy', account: 'AMD',
+      opp: 'Vitally Pulse &mdash; Jun 26 Weekly Sync',
+      arr: 'Enterprise &middot; Atisha Waghela',
+      csmlbl: 'Atisha Waghela',
+      change: 'Jun 26 &middot; Routine &middot; Expansion signal',
+      excerpt: 'Jun 26 AW: Weekly sync (9:30 AM PT, 30 min). Platform migration v1&rarr;v2 Sept deadline; v3 credit model expansion pitch. Team change: Ravi departed, James (London) now contact. David engaged but time-constrained on HG work this week.' },
+    { csm: 'rani', health: 'Healthy', account: 'Google',
+      opp: 'Vitally Pulse &mdash; Jun 26 Pilot Check-in',
+      arr: 'Enterprise &middot; Rani Guy',
+      csmlbl: 'Rani Guy',
+      change: 'Jun 26 &middot; Ad-hoc &middot; Check-in',
+      excerpt: 'Jun 26 RG: Contact data pilot check-in with Marianna Prodan (10:00 AM PT, 30 min). Awaiting pilot decisions. ~3 weeks since last meeting. Cloudflare (Robert) positive signal noted in conversation.' },
+    { csm: 'atisha', health: 'Healthy', account: 'Palo Alto Networks',
+      opp: 'Vitally Pulse &mdash; Jun 26 Re-engagement',
+      arr: 'Enterprise &middot; Atisha Waghela',
+      csmlbl: 'Atisha Waghela',
+      change: 'Jun 26 &middot; Ad-hoc &middot; Expansion signal',
+      excerpt: 'Jun 26 AW: Re-engagement call (2:00 PM PT, 30 min). New contact Rachna Agrawal introduced post-Prasana departure. MCP re-activation confirmed. Sales Workbench primary use case for Edge Insights. QBR cadence to restore with business stakeholders.' },
+  ];
+  const bc = h => h === 'Healthy' ? 'badge-healthy' : h === 'Concerning' ? 'badge-concerning' : 'badge-poor';
+  const bi = h => h === 'Healthy' ? '&#128994;' : h === 'Concerning' ? '&#128993;' : '&#128308;';
+  return `<div class="pulse-grid">${cards.map(c => `
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div style="font-size:13px;font-weight:600;color:#e2e8f0;">${c.account}</div>
+          <div style="font-size:11px;color:#64748b;">${c.arr}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_06_26() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('0626-1') ? 'done' : ''}" data-csm="atisha" id="action-0626-1">
+      <div class="action-checkbox ${doneActions.has('0626-1') ? 'checked' : ''}" onclick="toggleAction('0626-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#128260; AMD &mdash; Schedule v3 migration scoping call with Solutions team</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Atisha Waghela &middot; David asked clarifying questions on v2 vs v3. Schedule Solutions scoping call before end of July to maintain Sept migration deadline.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0626-2') ? 'done' : ''}" data-csm="atisha" id="action-0626-2">
+      <div class="action-checkbox ${doneActions.has('0626-2') ? 'checked' : ''}" onclick="toggleAction('0626-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#128203; AMD &mdash; Send v1&rarr;v2 migration documentation to David Rockwell</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Atisha Waghela &middot; Atisha committed to provide docs on "what changes you will have to do at your end." Send this week.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0626-3') ? 'done' : ''}" data-csm="atisha" id="action-0626-3">
+      <div class="action-checkbox ${doneActions.has('0626-3') ? 'checked' : ''}" onclick="toggleAction('0626-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#128200; PANW &mdash; Re-activate MCP scoping with Rachna Agrawal</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Atisha Waghela &middot; MCP paused for renewal, now confirmed to re-activate. Rachna is new point person. Establish next steps and timeline with Sweta Vyas.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0626-4') ? 'done' : ''}" data-csm="atisha" id="action-0626-4">
+      <div class="action-checkbox ${doneActions.has('0626-4') ? 'checked' : ''}" onclick="toggleAction('0626-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#128101; PANW &mdash; Restore QBR cadence with expanded business stakeholder group</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Atisha Waghela &middot; Sweta confirmed netsec GTM and ops teams should join QBR. Rachna to coordinate invites. Target: within 30 days.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0626-5') ? 'done' : ''}" data-csm="rani" id="action-0626-5">
+      <div class="action-checkbox ${doneActions.has('0626-5') ? 'checked' : ''}" onclick="toggleAction('0626-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#128203; Google &mdash; Follow up on contact data pilot decisions with Marianna Prodan</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Rani Guy &middot; Outstanding pilot questions remain after Jun 26 check-in. Keep momentum &mdash; risk of stalling again (~3 weeks between meetings).</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0626-6') ? 'done' : ''}" data-csm="nick" id="action-0626-6">
+      <div class="action-checkbox ${doneActions.has('0626-6') ? 'checked' : ''}" onclick="toggleAction('0626-6')"></div>
+      <div class="action-body">
+        <div class="action-title">&#10067; Clarify "Nick - Anupam HGI" recording account</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW</span>Nick Johnson &middot; Confirm whether Anupam Anand is a customer or HG internal staff. If customer, identify account and log Vitally pulse.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0626-7') ? 'done' : ''}" data-csm="atisha" id="action-0626-7">
+      <div class="action-checkbox ${doneActions.has('0626-7') ? 'checked' : ''}" onclick="toggleAction('0626-7')"></div>
+      <div class="action-body">
+        <div class="action-title">&#128203; Apple &mdash; Confirm 3 unrecorded event outcomes (Atisha)</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW</span>Atisha Waghela &middot; Market Intelligence Training, Platform Training Team Call, Weekly Syncup had no recordings. Confirm whether calls occurred and log Vitally notes.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No actions match the current filter.</div>`;
+}
