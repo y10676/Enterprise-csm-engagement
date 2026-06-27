@@ -200,7 +200,7 @@ const ACCOUNTS_DATA = [
     "pulseNote": "",
     "pulseColor": "green",
     "renewalDate": "2026-12-31",
-    "latestPulseDate": "2026-06-02",
+    "latestPulseDate": "2026-06-27",
     "opportunities": [
       {
         "opp_id": "006RN00000FrQRzYAN",
@@ -210,8 +210,8 @@ const ACCOUNTS_DATA = [
         "contract_end": "2026-12-31",
         "deal_type": "Renewal",
         "pulse": "Healthy",
-        "pulseNote": "FAI is being used by Noah in the account plans he is building. Still need visibility on GenAI Navigator. We have a weekly meeting scheduled with Laurence who is the first sign off on the renewal. He will be our POC until Matt gets back from Paternity leave or they find a replacement. Focus is credit pricing migration, identifying the right marketing person for TR, and meeting scheduled with Marianna who is the person RevOp busy contact data for to have her part of early conversations around mapping contact data and FAI data. Meeting scheduled for Friday with me and Tracy.",
-        "pulseDate": "2026-06-02"
+        "pulseNote": "We are Google's largest 3rd part vendor investment. They are adamant that they have no interest in credit pricing. Laurence gave a verbal that they will not renew GenAI or FAI. GenAI has not been improved from a product perspective and my understanding will no longer be sold as a stand alone product. Last year Google had to cut costs by 20% and Laurence fears this could still be the case. If Noah R. leverages the FAI data in the Account plans that he will start focusing on again in Q3 we are building a strong use case to keep FAI. We are also working two pilots, one for Contacts, and the other for Intent with the right person who RevX busy this for. ",
+        "pulseDate": "2026-06-27"
       },
       {
         "opp_id": "0063o000019kQBgAAM",
@@ -239,7 +239,7 @@ const ACCOUNTS_DATA = [
     "pulseNote": "",
     "pulseColor": "green",
     "renewalDate": "2026-12-31",
-    "latestPulseDate": "2026-06-15",
+    "latestPulseDate": "2026-06-25",
     "opportunities": [
       {
         "opp_id": "006RN00000WORccYAH",
@@ -260,8 +260,8 @@ const ACCOUNTS_DATA = [
         "contract_end": "2027-12-31",
         "deal_type": "Renewal",
         "pulse": "Healthy",
-        "pulseNote": "May 6 RR - -   **Dashboard integration moving forward:** IBM shared the Conversion dashboard requirements for category/product performance, competitor comparisons, sentiment, feature-level analysis, and reviewer demographics. TrustRadius can support with review content via email automation or web scraping, but category traffic still requires a manual or CSV-based workflow. Next step is a technical working session with Conversion, Mihaela, and Aidan to finalize the integration path.\n    \n-   **Review volume is the main risk:** IBM is at **117 reviews against a 762 annual target** and called out the need to increase pace materially. They noted **18 priority products qualified** while **8 did not**, and highlighted **Bob** in particular as a concern with only **3 reviews** so far.\n    \n-   **Awards reset creates an immediate opportunity:** With the May 1 cutoff passed, the team is now focused on building toward next year’s Top Rated and this fall’s Buyer’s Choice. Products already over 10 YTD reviews are in a good position for Buyer’s Choice, while products below that threshold need immediate attention.\n    \n-   **Event-driven review generation is the biggest near-term experiment:** The team aligned on testing a **business card + QR code motion** for field events, starting with **500 cards**, distributed through Chaitali and the Americas events team, using a **$25 incentive** and a trackable event-specific link.\n    \n-   **Other pipeline levers are being layered in:** IBM also wants to test **GPI follow-up campaigns**, continue planned activities around **Tech Exchange / Champions Lounge**, and use **IBM Communities** more intentionally to drive review volume.\n    \n-   **Support / follow-up from TrustRadius:** Riley to finish and send pending reports, order the event business cards, create a business-card-specific tracking link, and coordinate follow-up discussions on both event strategy and dashboard integration.\n\nApr 17 NJ | HG platform sync. Export license block preventing IBM Infra team from accessing contracted data including intent data — adoption risk across this renewal. License reallocation in progress (NJ + Augie Buettner). CDO office introduction required to align enterprise-level data access strategy and prevent further siloing. Risk: if license issue not resolved before next review cycle, intent data utilization metrics will decline and weaken renewal justification. Next steps: Resolve license reallocation as P0; engage CDO office (Bill O'Nesty, Peter Her, Ed Lovely); set firm timeline for adoption review with Riley Rogers.",
-        "pulseDate": "2026-04-17"
+        "pulseNote": "RR - June 25, 2026 **Review Performance**\n\n-   Annual target: 762 reviews; currently tracking well behind pace — 16% of target at the halfway mark\n    \n-   Priority gap products: Terraform (0 reviews), Vault (0), Storage (2 vs. target 35), Verify (5 vs. target 25)\n    \n-   Buyer's Choice goal: 10 reviews per product by Sept 26; all current products healthy on score (>7.5)\n    \n\n**Active Initiatives**\n\n-   Business card + QR code campaign underway for events (500 cards, $25 incentive)\n    \n-   Converseon dashboard in progress — automated pull of TrustRadius reviews into Meltwater for competitive tracking\n    \n-   Vendor portal monitoring dashboard expected live within weeks; demo planned at next call\n    \n\n**Key Open Item**\n\n-   Apptio/IBM vendor portal merge on hold — Riley confirming with Cole and tech team that widget won't break on Apptio.com (must stay live through Q1 2027)",
+        "pulseDate": "2026-06-25"
       },
       {
         "opp_id": "006RN00000OTEkvYAH",
@@ -289,7 +289,7 @@ const ACCOUNTS_DATA = [
     "pulseNote": "",
     "pulseColor": "green",
     "renewalDate": "2026-07-21",
-    "latestPulseDate": "2026-05-26",
+    "latestPulseDate": "2026-06-25",
     "opportunities": [
       {
         "opp_id": "006RN00000Opul9YAB",
@@ -376,8 +376,8 @@ const ACCOUNTS_DATA = [
         "contract_end": "2026-05-14",
         "deal_type": "Expansion",
         "pulse": "Healthy",
-        "pulseNote": "### 🟡 SAP SuccessFactors\n\n**Contact:** Kristin Mestre\n\n-   **Review health:** Actively collecting — targeting HR Connect London (800 registered customers) as makeup event after NYC severely underperformed (only 3–4 reviews from 100+ attendees)\n    \n-   **SOWs in flight:** 4 active SOWs — Workday report (complete, invoice approved), install base cross-suite report (in procurement, May 11 meeting set), cloud migration report (processing), Corey Char report (submitted)\n    \n-   **Content:** IDP team requesting 5 reports (2 refreshes, 3 net new); big payroll announcement at Sapphire needs positive positioning content\n    \n-   **Risks:** Content team restructuring — budget shifted to content strategy teams; Sam Towardowski (new contact) responding with AI-generated replies, lacks HCM expertise . Intent lead program delays; SuccessFactors may break away for independent campaign Q2–Q3\n    \n-   **Badge issue:** Top Rated badge appeared prematurely due to new page layout — flagged and noted\n    \n\n---\n\n### 🟢 SAP BTP (Business Technology Platform)\n\n**Contact:** Chris Grundy\n\n-   **Review health:** Strong — 300+ reviews, 30x the Top Rated requirement\n    \n-   **Strategy:** Chris proposing centralized management model — acting as single POC for Integration Suite, SAP Build, and Customer Identity Management (CIM)\n    \n-   **Gap:** CIM has zero reviews; Chris exploring ~$25K investment to build profile\n    \n-   **Contract:** Enterprise Agreement in final stages with Alejandro Barahas — late July deadline, consolidating ~20 contracts\n    \n-   **Upcoming:** Post-Sapphire landing page updates; HG Insights data integration on product listings rolling out\n    \n\n---\n\n### 🟡 SAP Build\n\n**Contact:** Samuel Gorski\n\n-   **Structure change:** Build is part of BTP; moving from individual product calls to 12–13 monthly business unit calls covering 40+ products\n    \n-   **Risk:** Consolidation model risks reduced engagement — bi-weekly touchpoints currently drive renewals through personal relationships\n    \n-   **Lead quality concern:** Current lead conversion ~1 in 10; Demand Science offering competing lead products at lower cost/flexibility — HG+TR combined lead solution proposed Aug 2025 still not implemented\n    \n\n---\n\n### 🟡 SAP Business Network\n\n**Contact:** Kathryn Zwack\n\n-   **Review health:** 14 new reviews collected; previous market report expires July 2026\n    \n-   **Contract:** Bridge funding needed (~$7,400) to cover May 1–July 28 gap while consolidating under Alejandro's umbrella\n    \n-   **Decision pending:** Traditional market report (~$7,500) vs. AI-optimized version ($15,000)\n    \n-   **Risk:** Alejandro no-showed scheduled alignment meeting with Kathryn — follow-up needed\n    \n\n---\n\n### 🟢 SAP CX (Sales Cloud, Service Cloud, Commerce Cloud)\n\n**Contact:** Erica Vialardi (new CX solution lead)\n\n-   **Review health:** Sales Cloud 33, Service Cloud 31, Commerce Cloud 18 — all qualified for Top Rated\n    \n-   **Gap:** All products short of ~40-review target by 7–22 reviews; strategy relies heavily on global events\n    \n-   **Content:** Market reports completed Sept 2025 for all three products, available in multiple languages\n    \n-   **Next:** Binod joining May 12 call for full team alignment; Erica aligning internally with manager on responsibilities\n    \n\n---\n\n### 🔴 SAP Ariba + Fieldglass (Finance Products)\n\n**Contact:** Ashleigh Riehl\n\n-   **Review health:** Weak — new products added end of 2025 with limited review base. Last 60 days: Advanced Financial Closing (3 reviews), CPQ (4 reviews), Document Reporting Compliance (3 reviews), Treasury & Risk Mgmt (1 review), Subscription Billing (0)\n    \n-   **Target:** 15 reviews per product by end of July (prorated for 6-month bridge)\n    \n-   **Sapphire strategy:** TrustRadius booth presence with guided review collection; concern that finance products may get lost among 36+ SAP products on landing page\n    \n-   **Profile updates:** Ashleigh pulling content from SAP.com before Sapphire\n    \n\n---\n\n### 🔑 Account-Wide Themes\n\n-   **Contract consolidation:** ~20 separate contracts moving to single Enterprise Agreement under Alejandro Barahas; late July deadline\n    \n-   **CSM transition:** Riley taking over day-to-day from Cole across all products\n    \n-   **Sapphire (Orlando):** Key event for review collection and relationship building across multiple product lines\n    \n-   **HG Insights integration:** Install data now enhancing TrustRadius product pages across the account",
-        "pulseDate": "2026-05-06"
+        "pulseNote": "-   **Awards + promotion:** SAP won **Top Rated**. Promotion is already in motion with a blog in editing, social cards being built, and a LinkedIn/media push planned. Erica said she already has what she needs to execute the plan.\n    \n-   **Review generation:** Reviews collected from **May–September** will count toward both **Top Rated** and **Buyer’s Choice**, so there is urgency to drive new review volume now.\n    \n-   **Event performance:** Sapphire Orlando drove **5 Commerce Cloud submissions, 2 Sales Cloud submissions, and 1 Service Cloud submission**. Riley also shared that Madrid produced **1 Sales Cloud review submission**.\n    \n-   **AI analytics interest:** Erica and Binod were engaged on the new **Crawl Analytics** dashboard. Binod said AI and answer engine optimization are top of mind, and Erica wants to start using this data internally once it matures. Grounding was called out as the most relevant metric for awareness and searchability.\n    \n-   **Product issue / admin support:** Erica reported a **PDF export issue** on the Sales Cloud 180-day dashboard. Riley was able to complete a download after waiting, but will still flag it to the backend team. Riley also updated Erica’s portal permissions for **Commerce Cloud, Sales Cloud, and Service Cloud** during the call.\n    \n-   **Expansion opportunity:** Binod asked for a campaign targeting customers who reviewed other SAP products but not CX products. SAP will work on identifying the highest-overlap products and buyer personas, and Hg Insights will build the outreach once that input is shared.",
+        "pulseDate": "2026-06-25"
       },
       {
         "opp_id": "006RN00000Opp6aYAB",
@@ -474,9 +474,9 @@ const ACCOUNTS_DATA = [
         "arr": 28000,
         "contract_end": "2026-07-30",
         "deal_type": "Renewal",
-        "pulse": "Healthy",
-        "pulseNote": "### 🟡 SAP SuccessFactors\n\n**Contact:** Kristin Mestre\n\n-   **Review health:** Actively collecting — targeting HR Connect London (800 registered customers) as makeup event after NYC severely underperformed (only 3–4 reviews from 100+ attendees)\n    \n-   **SOWs in flight:** 4 active SOWs — Workday report (complete, invoice approved), install base cross-suite report (in procurement, May 11 meeting set), cloud migration report (processing), Corey Char report (submitted)\n    \n-   **Content:** IDP team requesting 5 reports (2 refreshes, 3 net new); big payroll announcement at Sapphire needs positive positioning content\n    \n-   **Risks:** Content team restructuring — budget shifted to content strategy teams; Sam Towardowski (new contact) responding with AI-generated replies, lacks HCM expertise . Intent lead program delays; SuccessFactors may break away for independent campaign Q2–Q3\n    \n-   **Badge issue:** Top Rated badge appeared prematurely due to new page layout — flagged and noted\n    \n\n---\n\n### 🟢 SAP BTP (Business Technology Platform)\n\n**Contact:** Chris Grundy\n\n-   **Review health:** Strong — 300+ reviews, 30x the Top Rated requirement\n    \n-   **Strategy:** Chris proposing centralized management model — acting as single POC for Integration Suite, SAP Build, and Customer Identity Management (CIM)\n    \n-   **Gap:** CIM has zero reviews; Chris exploring ~$25K investment to build profile\n    \n-   **Contract:** Enterprise Agreement in final stages with Alejandro Barahas — late July deadline, consolidating ~20 contracts\n    \n-   **Upcoming:** Post-Sapphire landing page updates; HG Insights data integration on product listings rolling out\n    \n\n---\n\n### 🟡 SAP Build\n\n**Contact:** Samuel Gorski\n\n-   **Structure change:** Build is part of BTP; moving from individual product calls to 12–13 monthly business unit calls covering 40+ products\n    \n-   **Risk:** Consolidation model risks reduced engagement — bi-weekly touchpoints currently drive renewals through personal relationships\n    \n-   **Lead quality concern:** Current lead conversion ~1 in 10; Demand Science offering competing lead products at lower cost/flexibility — HG+TR combined lead solution proposed Aug 2025 still not implemented\n    \n\n---\n\n### 🟡 SAP Business Network\n\n**Contact:** Kathryn Zwack\n\n-   **Review health:** 14 new reviews collected; previous market report expires July 2026\n    \n-   **Contract:** Bridge funding needed (~$7,400) to cover May 1–July 28 gap while consolidating under Alejandro's umbrella\n    \n-   **Decision pending:** Traditional market report (~$7,500) vs. AI-optimized version ($15,000)\n    \n-   **Risk:** Alejandro no-showed scheduled alignment meeting with Kathryn — follow-up needed\n    \n\n---\n\n### 🟢 SAP CX (Sales Cloud, Service Cloud, Commerce Cloud)\n\n**Contact:** Erica Vialardi (new CX solution lead)\n\n-   **Review health:** Sales Cloud 33, Service Cloud 31, Commerce Cloud 18 — all qualified for Top Rated\n    \n-   **Gap:** All products short of ~40-review target by 7–22 reviews; strategy relies heavily on global events\n    \n-   **Content:** Market reports completed Sept 2025 for all three products, available in multiple languages\n    \n-   **Next:** Binod joining May 12 call for full team alignment; Erica aligning internally with manager on responsibilities\n    \n\n---\n\n### 🔴 SAP Ariba + Fieldglass (Finance Products)\n\n**Contact:** Ashleigh Riehl\n\n-   **Review health:** Weak — new products added end of 2025 with limited review base. Last 60 days: Advanced Financial Closing (3 reviews), CPQ (4 reviews), Document Reporting Compliance (3 reviews), Treasury & Risk Mgmt (1 review), Subscription Billing (0)\n    \n-   **Target:** 15 reviews per product by end of July (prorated for 6-month bridge)\n    \n-   **Sapphire strategy:** TrustRadius booth presence with guided review collection; concern that finance products may get lost among 36+ SAP products on landing page\n    \n-   **Profile updates:** Ashleigh pulling content from SAP.com before Sapphire\n    \n\n---\n\n### 🔑 Account-Wide Themes\n\n-   **Contract consolidation:** ~20 separate contracts moving to single Enterprise Agreement under Alejandro Barahas; late July deadline\n    \n-   **CSM transition:** Riley taking over day-to-day from Cole across all products\n    \n-   **Sapphire (Orlando):** Key event for review collection and relationship building across multiple product lines\n    \n-   **HG Insights integration:** Install data now enhancing TrustRadius product pages across the account",
-        "pulseDate": "2026-05-06"
+        "pulse": "Concerning",
+        "pulseNote": "### Overall\n\n-   **Moderately healthy, with execution still in progress.**\n\n### What looks good\n\n-   Product profile updates are moving: Ashleigh already sent completed updates, with three more still in progress.\n    \n-   Review generation is producing results: **29 reviews** have been driven across new products since the program started.\n    \n-   The team is actively pushing additional review volume, including a review generation workshop over the next two days.\n    \n-   Ashleigh appears engaged and informed across both review generation and amplification efforts.\n    \n\n### Watchouts\n\n-   Three product profiles are still pending because Ashleigh is waiting to track down product managers.\n    \n-   Global Trade Services has only added **one review** since new leads were introduced, so progress is uneven across products.\n    \n-   Renewal timing is slowed by SAP’s 2027 budget planning process not being open yet.\n    \n\n### Risk level\n\n-   **Yellow**\n    \n    -   Engagement is solid.\n        \n    -   Delivery is moving.\n        \n    -   A few operational blockers remain around pending profiles and renewal structure.",
+        "pulseDate": "2026-06-25"
       },
       {
         "opp_id": "006RN00000OpukKYAR",
@@ -640,8 +640,8 @@ const ACCOUNTS_DATA = [
         "contract_end": "2026-10-26",
         "deal_type": "Expansion",
         "pulse": "Healthy",
-        "pulseNote": "### 🟡 SAP SuccessFactors\n\n**Contact:** Kristin Mestre\n\n-   **Review health:** Actively collecting — targeting HR Connect London (800 registered customers) as makeup event after NYC severely underperformed (only 3–4 reviews from 100+ attendees)\n    \n-   **SOWs in flight:** 4 active SOWs — Workday report (complete, invoice approved), install base cross-suite report (in procurement, May 11 meeting set), cloud migration report (processing), Corey Char report (submitted)\n    \n-   **Content:** IDP team requesting 5 reports (2 refreshes, 3 net new); big payroll announcement at Sapphire needs positive positioning content\n    \n-   **Risks:** Content team restructuring — budget shifted to content strategy teams; Sam Towardowski (new contact) responding with AI-generated replies, lacks HCM expertise . Intent lead program delays; SuccessFactors may break away for independent campaign Q2–Q3\n    \n-   **Badge issue:** Top Rated badge appeared prematurely due to new page layout — flagged and noted\n    \n\n---\n\n### 🟢 SAP BTP (Business Technology Platform)\n\n**Contact:** Chris Grundy\n\n-   **Review health:** Strong — 300+ reviews, 30x the Top Rated requirement\n    \n-   **Strategy:** Chris proposing centralized management model — acting as single POC for Integration Suite, SAP Build, and Customer Identity Management (CIM)\n    \n-   **Gap:** CIM has zero reviews; Chris exploring ~$25K investment to build profile\n    \n-   **Contract:** Enterprise Agreement in final stages with Alejandro Barahas — late July deadline, consolidating ~20 contracts\n    \n-   **Upcoming:** Post-Sapphire landing page updates; HG Insights data integration on product listings rolling out\n    \n\n---\n\n### 🟡 SAP Build\n\n**Contact:** Samuel Gorski\n\n-   **Structure change:** Build is part of BTP; moving from individual product calls to 12–13 monthly business unit calls covering 40+ products\n    \n-   **Risk:** Consolidation model risks reduced engagement — bi-weekly touchpoints currently drive renewals through personal relationships\n    \n-   **Lead quality concern:** Current lead conversion ~1 in 10; Demand Science offering competing lead products at lower cost/flexibility — HG+TR combined lead solution proposed Aug 2025 still not implemented\n    \n\n---\n\n### 🟡 SAP Business Network\n\n**Contact:** Kathryn Zwack\n\n-   **Review health:** 14 new reviews collected; previous market report expires July 2026\n    \n-   **Contract:** Bridge funding needed (~$7,400) to cover May 1–July 28 gap while consolidating under Alejandro's umbrella\n    \n-   **Decision pending:** Traditional market report (~$7,500) vs. AI-optimized version ($15,000)\n    \n-   **Risk:** Alejandro no-showed scheduled alignment meeting with Kathryn — follow-up needed\n    \n\n---\n\n### 🟢 SAP CX (Sales Cloud, Service Cloud, Commerce Cloud)\n\n**Contact:** Erica Vialardi (new CX solution lead)\n\n-   **Review health:** Sales Cloud 33, Service Cloud 31, Commerce Cloud 18 — all qualified for Top Rated\n    \n-   **Gap:** All products short of ~40-review target by 7–22 reviews; strategy relies heavily on global events\n    \n-   **Content:** Market reports completed Sept 2025 for all three products, available in multiple languages\n    \n-   **Next:** Binod joining May 12 call for full team alignment; Erica aligning internally with manager on responsibilities\n    \n\n---\n\n### 🔴 SAP Ariba + Fieldglass (Finance Products)\n\n**Contact:** Ashleigh Riehl\n\n-   **Review health:** Weak — new products added end of 2025 with limited review base. Last 60 days: Advanced Financial Closing (3 reviews), CPQ (4 reviews), Document Reporting Compliance (3 reviews), Treasury & Risk Mgmt (1 review), Subscription Billing (0)\n    \n-   **Target:** 15 reviews per product by end of July (prorated for 6-month bridge)\n    \n-   **Sapphire strategy:** TrustRadius booth presence with guided review collection; concern that finance products may get lost among 36+ SAP products on landing page\n    \n-   **Profile updates:** Ashleigh pulling content from SAP.com before Sapphire\n    \n\n---\n\n### 🔑 Account-Wide Themes\n\n-   **Contract consolidation:** ~20 separate contracts moving to single Enterprise Agreement under Alejandro Barahas; late July deadline\n    \n-   **CSM transition:** Riley taking over day-to-day from Cole across all products\n    \n-   **Sapphire (Orlando):** Key event for review collection and relationship building across multiple product lines\n    \n-   **HG Insights integration:** Install data now enhancing TrustRadius product pages across the account",
-        "pulseDate": "2026-05-06"
+        "pulseNote": "## SAP Concur Pulse Check\n\n### Overall\n\n-   Relationship appears healthy and engaged.\n    \n-   Stephanie was receptive, conversational, and interested in upcoming reporting enhancements.\n    \n-   No escalations or urgent risks surfaced in this call.\n    \n\n### What’s going well\n\n-   **AI visibility / GEO dashboard interest:** Stephanie engaged on the upcoming dashboard and connected it to internal SEO/AI reporting work.\n    \n-   **Pricing transparency progress:** She shared that SAP Concur finally published pricing publicly and updated view-site listings with specific dollar amounts.\n    \n-   **Campaign traction:** She said the current campaign is too early to judge, but they saw a “chunk of pipeline” from Q4 campaigns, which was encouraging.\n    \n-   **Operational expansion:** A new team member, Ella, is starting and will help with reporting, which creates an opportunity to deepen adoption of TrustRadius reporting workflows.\n    \n\n### Risks / watchouts\n\n-   **Access timing:** The new dashboard is not live yet, so value is still being shown through a Looker preview rather than in-platform access.\n    \n-   **Call logistics:** This meeting had invite/link confusion at the start, which could create a poor customer experience if it repeats.\n    \n-   **Internal readiness:** The team noted they have not been consistently doing pre-call prep, despite multiple SAP-related customer calls in a day.\n    \n\n### Customer priorities / signals\n\n-   **AI and LLM performance:** Stephanie is paying attention to branded/category search behavior across tools like ChatGPT and Gemini, including geographic differences.\n    \n-   **Measurement and reporting:** She wants stronger reporting around review-site performance and AI-related changes, and Ella will likely own part of that moving forward.\n    \n-   **Lead quality / ROI:** She was interested in improving the HG Insights program toward more qualified, contextualized lead delivery rather than raw lead flow.\n    \n\n### Suggested account sentiment\n\n-   **Status:** Green\n    \n-   **Reason:** Positive engagement, strategic interest, no active dissatisfaction, and concrete future enablement opportunities.\n    \n\n### Recommended follow-up\n\n-   Add Ella to future calls and train her on vendor portal reporting once the dashboard is live.\n    \n-   Reconfirm the July rollout timing and use the July meeting to onboard SAP Concur to the new dashboard/report scheduling flow.\n    \n",
+        "pulseDate": "2026-06-25"
       },
       {
         "opp_id": "006RN00000R6s7qYAB",
@@ -746,7 +746,7 @@ const ACCOUNTS_DATA = [
     "pulseNote": "",
     "pulseColor": "red",
     "renewalDate": "2026-06-25",
-    "latestPulseDate": "2026-06-12",
+    "latestPulseDate": "2026-06-27",
     "opportunities": [
       {
         "opp_id": "006RN00000Oq1OTYAZ",
@@ -811,8 +811,8 @@ const ACCOUNTS_DATA = [
         "contract_end": "2026-10-06",
         "deal_type": "Renewal",
         "pulse": "Healthy",
-        "pulseNote": "Meeting Stef at Cisco live tomorrow. Also going to meet with Angela from the TrustRadius partnership. This is the end of Cisco's fiscal year so budgets are still unclear and everyone is settling after the layoffs. Meeting with Stef will provide more clarity and the opportunity to talk about what the upcoming renewal and possible expansion will be.",
-        "pulseDate": "2026-06-02"
+        "pulseNote": "We met with Roy on Wednesday. He is going to talk to Stef about the renewal so they can navigate the challenging procurement person on their end and get an update on how Stef's pitch for a Enterprise wide license with HG landed with John Wunders. Engaged users and the Account snapshots remain their strongest use case.",
+        "pulseDate": "2026-06-27"
       },
       {
         "opp_id": "006RN000001rwLRYAY",
@@ -958,11 +958,11 @@ const ACCOUNTS_DATA = [
     "segment": "Strategic",
     "arr": 1000000,
     "lastOutbound": "2026-04-23",
-    "pulse": "Healthy",
+    "pulse": "Poor",
     "pulseNote": "",
-    "pulseColor": "green",
+    "pulseColor": "red",
     "renewalDate": "2026-11-30",
-    "latestPulseDate": "2026-05-29",
+    "latestPulseDate": "2026-06-26",
     "opportunities": [
       {
         "opp_id": "0063o000019RefTAAS",
@@ -971,9 +971,9 @@ const ACCOUNTS_DATA = [
         "arr": 1000000,
         "contract_end": "2026-11-30",
         "deal_type": "Renewal",
-        "pulse": "Healthy",
-        "pulseNote": "May 29, 2026 | PH — Oracle Renewal Update\n\nExecutive Summary:\nProductive May sync with Karin and Joe — strategy unchanged (OCI, on-prem-to-cloud, GTM analytics) but Oracle still working through post-layoff org churn, and internal vendor ownership of external data. Karin/Joe have a value drivers + investment recommendations memo sent internally and are strong sponsors of HG. Karin requested a QBR within the next month (reuse Dec framework + additional value add convo on contact data and TAM/relative IT spend),  Karin will circulate the July 20 Bay Area EBR to the right Oracle execs. Paulette approved V2 migration; she wants to understand file structure before Gaurav builds consumption architecture, Pam to coordinate planning call. Unity conversations continue — Mark shared the Anthropic/OpenAI marketplace launches (~1k signups in 72 hrs on Anthropic). ",
-        "pulseDate": "2026-05-29"
+        "pulse": "Concerning",
+        "pulseNote": "June 25, 2026 | PH — Oracle monthly sync. Downgrading from Healthy (last pulse May 29) to Concerning. The Nov 30 renewal is in a holding pattern with no clear owner. Karin Berlin — the strategic lead who owned the renewal/contract — is moving into a new EMEA-aligned role and is actively trying to hand off ownership before she transitions; Naveen has left Oracle and Laura's scope has changed (disengaged). Joe Lampitt confirmed \"we're kind of in a holding pattern right now... as soon as we get more direction on our end, things will move faster.\" Offsetting positives: Joe's team is leaning heavily on HG data for FY27 planning, HG's TAM model was validated against Setu's team (built credibility), they want to add competitive installs, and V2 migration (Paulette) and Unity integration are still progressing. Renewal still flagged internally as high priority but has stalled in Discovery with a hard Nov 30 deadline ~5 months out. This is a change from the May 29 Healthy pulse — the deterioration is org-driven (champion/owner loss), not product or value. Next sync moved to July 16; goal is to identify the new renewal owner and re-engage.",
+        "pulseDate": "2026-06-26"
       }
     ]
   },
@@ -1123,7 +1123,7 @@ const ACCOUNTS_DATA = [
     "pulseNote": "",
     "pulseColor": "green",
     "renewalDate": "2026-08-31",
-    "latestPulseDate": "2026-06-02",
+    "latestPulseDate": "2026-06-27",
     "opportunities": [
       {
         "opp_id": "0063o000019kdvRAAQ",
@@ -1133,8 +1133,8 @@ const ACCOUNTS_DATA = [
         "contract_end": "2026-08-31",
         "deal_type": "Renewal",
         "pulse": "Healthy",
-        "pulseNote": "NetApp is engaged. They have been heads down with planning to get accounts assigned to sellers. List of accounts not matched and matched shared by Ryan and team. Ticket submitted and Tracy, Yuan and Vibhu all tagged on ticket and in slack channel for help. Methodology shared. Once we determine how we can improve matching from 30% to 50% and ideal match is 80% we can then move to wallet share and 15K account list match improvements",
-        "pulseDate": "2026-06-02"
+        "pulseNote": "Interest in adding Relative Spend back and testing our contact data. Should have the feedback from Ryan's team early next week on the improvement of account matching with the expanded data set. Then we will be in a position for Rohini to re-engage if the results on their end show the same level of improvement. We will also need to see the coverage of spend across all matched accounts with this work which will solve another problem for Elise which is share of wallet.",
+        "pulseDate": "2026-06-27"
       }
     ]
   },
@@ -1229,7 +1229,7 @@ const ACCOUNTS_DATA = [
     "pulseNote": "",
     "pulseColor": "green",
     "renewalDate": "2026-06-13",
-    "latestPulseDate": "2026-06-02",
+    "latestPulseDate": "2026-06-27",
     "opportunities": [
       {
         "opp_id": "006RN00000OpukRYAR",
@@ -1261,8 +1261,8 @@ const ACCOUNTS_DATA = [
         "contract_end": "2026-09-14",
         "deal_type": "Renewal",
         "pulse": "Healthy",
-        "pulseNote": "Good momentum across Workday. FAI sample file is being considered to include to improve the ML models for the team that sits under Winston. ED&A team are engaged and leveraging the data from the platform and the Snowflake delivery of the data. Also identified the right person to buy contacts. Engaged with a new part of the org. Sales\nAndrea Poljakovic-Rozran, Senior Manager, North America Medium Enterprise & Strategic Demand Operations\nAlexa Brown, Senior Regional Manager\nCaitlin Taylor Wolfenden, Principal Regional Marketing Manager\nKyle Hillstead, Director, Regional Marketing. Databricks data feed delivery currently being scoped with solutions and Engineering team from Workday and HG Insights. Next step, schedule call with Tracy and Workday to answer their technical questions around the FAI data set.",
-        "pulseDate": "2026-06-02"
+        "pulseNote": "Alexandra from Procurement is working with the Workday team on the scope of the renewal. Verbal confirmation that they want to add FAI, and strong interest in AI spend if they have budget. Rana is set to attend EBR and he is one of the main stakeholders along with Joe who is the other budget holder beside Winston Wu. I am working to try to get the AI security paperwork done so they have a path to accessing MCP or the API, but the team is pushing back. Once I talk to the main decision makers I will be positioning a 3 year contract. We are now very much integrated into serious use cases and the AI agents that they are building internally.",
+        "pulseDate": "2026-06-27"
       }
     ]
   },
@@ -1331,11 +1331,11 @@ const ACCOUNTS_DATA = [
     "segment": "Enterprise",
     "arr": 697317.96,
     "lastOutbound": "2026-04-23",
-    "pulse": "Poor",
+    "pulse": "Healthy",
     "pulseNote": "",
-    "pulseColor": "red",
+    "pulseColor": "green",
     "renewalDate": "2026-06-09",
-    "latestPulseDate": "2026-06-15",
+    "latestPulseDate": "2026-06-27",
     "opportunities": [
       {
         "opp_id": "006RN00000OpukjYAB",
@@ -1355,9 +1355,9 @@ const ACCOUNTS_DATA = [
         "arr": 286405.47,
         "contract_end": "2026-07-13",
         "deal_type": "Renewal",
-        "pulse": "Concerning",
-        "pulseNote": "Robert has ghosted me since the RIF in May. I sent message after message. Engage with Rhajat to reach out to his contact at Cloudflare. Message all my other stakeholders and finally got a response from Chandra that he will speak to Robert this week in Austin about the Cloud Dynamics renewal. I have also engaged with Webapp users for statements of ROI/value. 3 response after 75+ emails sent. I have the draft for the renewal ready and prepared to discuss adding additional credits if they are ready to have that expansion discussion.",
-        "pulseDate": "2026-06-15"
+        "pulse": "Healthy",
+        "pulseNote": "Finally got a note back from Robert \"Its on my docket and will get something out next week on this. the Procurement team is gone and we are scrambling for these renewals.\" Renewal will come in but will likely be late due to recent RIF and the absence of a procurement team",
+        "pulseDate": "2026-06-27"
       },
       {
         "opp_id": "006RN000006KvOTYA0",
@@ -1381,11 +1381,11 @@ const ACCOUNTS_DATA = [
     "segment": "Strategic",
     "arr": 695733.34,
     "lastOutbound": "2026-04-24",
-    "pulse": "Healthy",
+    "pulse": "Poor",
     "pulseNote": "",
-    "pulseColor": "green",
+    "pulseColor": "red",
     "renewalDate": "2026-12-29",
-    "latestPulseDate": "2026-06-02",
+    "latestPulseDate": "2026-06-27",
     "opportunities": [
       {
         "opp_id": "006RN00000OF76fYAD",
@@ -1394,9 +1394,9 @@ const ACCOUNTS_DATA = [
         "arr": 120000,
         "contract_end": "2026-12-29",
         "deal_type": "Expansion",
-        "pulse": "Healthy",
-        "pulseNote": "Liam from solutions did not set up their data feed before he left. Luckily I reached out to check in with them and they flagged this to me. We have their feed up and running and are now back on track. Next step is to schedule a check in QBR at the end of July to get an update from the OneSix team working on the scoring model. ",
-        "pulseDate": "2026-06-02"
+        "pulse": "Poor",
+        "pulseNote": "Met with the Lenovo team. The core challenge is that the HG data in your current scope sits at the fit layer — useful for understanding a company's technology environment but not generating the in-cycle, actionable signals your sales team wants to act on.  Here's what I'll follow up on from our side:\nI'll work with our solutions team to pull together a set of recommended signal combinations based on the data dictionary — specifically patterns we've seen work for other tech-sector clients that map to buying behavior. I'll anchor it to the three example aggregations you shared in chat so you can see how they'd translate into patterns your model could use. I'll also include a separate section on signals outside your current scope — intent, hiring signals, champion tracking — so you have a full picture of what's available if you want to explore expanding. I am meeting with DC and Rishab on Monday to see what we can offer as guidance based on their current investment and what would drive value that they currently do not license. This renewal is at high risk. But with the larger Lenovo deal it would likely have churned because of it. Still trying to save it. ",
+        "pulseDate": "2026-06-27"
       },
       {
         "opp_id": "006RN00000IwXShYAN",
@@ -1498,11 +1498,11 @@ const ACCOUNTS_DATA = [
     "segment": "Enterprise",
     "arr": 622400,
     "lastOutbound": "2026-04-24",
-    "pulse": "Healthy",
+    "pulse": "Poor",
     "pulseNote": "",
-    "pulseColor": "green",
+    "pulseColor": "red",
     "renewalDate": "2026-09-29",
-    "latestPulseDate": "2026-06-02",
+    "latestPulseDate": "2026-06-27",
     "opportunities": [
       {
         "opp_id": "006RN00000C6rifYAB",
@@ -1511,9 +1511,9 @@ const ACCOUNTS_DATA = [
         "arr": 122400,
         "contract_end": "2026-09-29",
         "deal_type": "Renewal",
-        "pulse": "Healthy",
-        "pulseNote": "Good EBR with Anders but we need more engagement across Hitachi. Shared an overview of RGIP so that Anders will share with Nathan who is in Sales and the right persona for the RGIP Copilot. Will follow up with Anders on the feedback from Nathan and ask for intro on Friday. Still challenges around the V3 intent file with Alexi from solutions is involved in helping solve the issues.",
-        "pulseDate": "2026-06-02"
+        "pulse": "Concerning",
+        "pulseNote": "After months of trying to migrate Hitachi to our V3 intent data we are a month away from accomplishing this. They had layoffs and very short staffed. RGIF pricing ticket complete and will work with Adrian to start the conversation early with Anders to combine both renewal and ideally bring it in before any other changes happen that could impact the renewal. Adrian will reach out next week to connect with Anders and start the commercial conversations.",
+        "pulseDate": "2026-06-27"
       },
       {
         "opp_id": "0063o000019Sj7OAAS",
@@ -1522,9 +1522,9 @@ const ACCOUNTS_DATA = [
         "arr": 500000,
         "contract_end": "2026-10-23",
         "deal_type": "Renewal",
-        "pulse": "Healthy",
-        "pulseNote": "Good EBR with Anders but we need more engagement across Hitachi. Shared an overview of RGIP so that Anders will share with Nathan who is in Sales and the right persona for the RGIP Copilot. Will follow up with Anders on the feedback from Nathan and ask for intro on Friday. Still challenges around the V3 intent file with Alexi from solutions is involved in helping solve the issues.",
-        "pulseDate": "2026-06-02"
+        "pulse": "Concerning",
+        "pulseNote": "They had layoffs and very short staffed. RGIF pricing ticket complete and will work with Adrian to start the conversation early with Anders to combine both renewal and ideally bring it in before any other changes happen that could impact the renewal. Adrian will reach out next week to connect with Anders and start the commercial conversations.",
+        "pulseDate": "2026-06-27"
       }
     ]
   },
@@ -1541,7 +1541,7 @@ const ACCOUNTS_DATA = [
     "pulseNote": "",
     "pulseColor": "green",
     "renewalDate": "2026-07-31",
-    "latestPulseDate": "2026-06-08",
+    "latestPulseDate": "2026-06-25",
     "opportunities": [
       {
         "opp_id": "006RN00000Opp6HYAR",
@@ -1573,8 +1573,8 @@ const ACCOUNTS_DATA = [
         "contract_end": "2026-12-09",
         "deal_type": "Renewal",
         "pulse": "Healthy",
-        "pulseNote": "-   Awards work is on track. Top Rated badges should be ready to send in 1–2 weeks, with June 10 as the announcement prep deadline. Most products were described as being in a good spot after Adobe Summit.\n    \n-   Adobe is deprioritizing review-driving for now because Alyson’s team is focused on campaign execution across LinkedIn, Meta, and Google Ads. Review work is staying in maintenance mode unless resourcing changes.\n    \n-   Adobe Experience Manager analysis is still in progress on Riley’s side, with a plan to discuss it in two weeks.\n    \n-   A new internal contact, Garrett Ruiz, is taking over content updates at Adobe and already has access to what he needs.\n    \n-   Overall pulse: stable account, positive on awards, but limited near-term capacity for new review initiatives.\n    \n\nSay more",
-        "pulseDate": "2026-05-13"
+        "pulseNote": "## Pulse update\n\nAdobe reacted positively to the GEO update and engaged deeply on measurement. In the walkthrough, TrustRadius showed two upcoming dashboard views: crawler analytics and prompt-based GEO monitoring. Giacomo focused most of the discussion on how Adobe can use the data operationally, especially around raw citation visibility, prompt selection quality, and automated access to reporting. He also shared that Adobe is moving off Profound toward Semrush and internal tooling, and offered to connect TrustRadius with the Semrush team. The team also reviewed new GEO-oriented product profile enhancements designed to make TrustRadius content easier for LLMs to parse and cite.\n\n**What matters most**\n\n-   Adobe wants measurement that goes beyond prompt-based reporting and is pushing for **raw citation volume** as a directional benchmark.\n    \n-   Giacomo is thinking strategically about **automation and system integration**, asking about MCP-style delivery and broader reporting ingestion into Adobe systems.\n    \n-   Adobe appears bought into GEO as a real evaluation area internally, with investment decisions increasingly tied to **citation impact and GEO performance**.\n    \n-   TrustRadius positioned its GEO value around **structured, crawlable content** on live pages rather than gated assets, which landed as relevant to Adobe’s goals.\n    \n\n**Risks / watchouts**\n\n-   Adobe is calibrating TrustRadius against other vendors and tools, especially around how GEO metrics are defined, which means reporting methodology will be scrutinized closely.\n    \n-   Giacomo explicitly noted that the current prompt set may miss what buyers are actually searching, so Adobe may see prompt-based reporting as incomplete unless broader citation visibility is added.\n    \n\n**Next moves**\n\n-   Follow up with Giacomo on **MCP / automated data delivery** options.\n    \n-   Expect scheduling on the **Megan meeting / exec-level strategic session** after **July 7, 2026**, due to Giacomo being out next week and Adobe’s shutdown period.\n    \n-   Continue framing GEO value in Adobe terms: **measurement rigor, workflow integration, and optimization impact by product**.",
+        "pulseDate": "2026-06-25"
       }
     ]
   },
@@ -1764,7 +1764,7 @@ const ACCOUNTS_DATA = [
     "pulseNote": "",
     "pulseColor": "green",
     "renewalDate": "2026-12-31",
-    "latestPulseDate": "2026-06-15",
+    "latestPulseDate": "2026-06-25",
     "opportunities": [
       {
         "opp_id": "006RN00000Oq7elYAB",
@@ -1774,8 +1774,8 @@ const ACCOUNTS_DATA = [
         "contract_end": "2026-12-31",
         "deal_type": "Renewal",
         "pulse": "Healthy",
-        "pulseNote": "-   **Summit is the immediate priority.** Link delivery is still pending; Riley committed to get Brianna what she needs by **end of day tomorrow**. Brianna said they need the link before pre-Summit web pages and email nurtures go out.\n    \n-   **Buyer’s Choice tracking is in motion.** Brianna confirmed the team is focused on four products only, and Summit should drive a meaningful batch of reviews. Current timing is favorable since new reviews can support both **Buyer’s Choice 2026** and **Top Rated 2027**.\n    \n-   **OpenShift Virt is unlikely to qualify this cycle, but positioning is manageable.** Brianna said the team had pushed hard because she wanted to avoid “all but one” messaging in announcements, but they can work around it this year and package it more cleanly next year.\n    \n-   **Lead gen looks unblocked.** Brianna said Red Hat approved use of the PAI account list after earlier overlap concerns with other teams, which she sees as a big factor for moving the program forward.\n    \n-   **Campaign sequencing is becoming clearer.** Brianna said Ansible is furthest along, and the working approach is to launch there first, then roll OpenShift and RHEL out as those reports are completed.\n    \n-   **Near-term risk is mostly timing, not strategy.** Summit prep is slowing feedback and approvals, but Brianna sounded aligned on the plan and expects momentum to pick up once Summit is behind them.",
-        "pulseDate": "2026-05-06"
+        "pulseNote": "-   **Launch timing remains on track.** Red Hat is still aiming for a **July 1 start date** for the MDR campaign, with Ansible finalized, RHEL under review, and OpenShift close to done. Setup should take **2–3 business days** once assets are in place.\n    \n-   **Main campaign adjustment:** Brianna raised concern that saying prospects “recently engaged with Red Hat content through TrustRadius” feels too direct. The recommendation was to **lead with the business need instead of naming TrustRadius or the specific touchpoint**.\n    \n-   **Optimization approach:** Saikiran recommended **A/B testing** both the email sequencing and landing page creative. For technical audiences, later-touch proof points or data snippets may perform better than a sequence that is purely call-booking focused.\n    \n-   **Landing page direction is mostly settled.** Standard form fields plus a possible custom question on purchase timing were discussed, with a warning to keep the form short. The preferred visual is currently a **snapshot of the market report cover page**.\n    \n-   **Top Rated / Summit promotion is expanding.** Brianna said the **“Overheard at Summit” OpenShift post** is expected later that week and TrustRadius will be tagged. Red Hat also secured placement for the **Top Rated announcement** in its internal update, plus sales/newsletter/social distribution.",
+        "pulseDate": "2026-06-25"
       },
       {
         "opp_id": "006RN00000G26uZYAR",
@@ -1803,7 +1803,7 @@ const ACCOUNTS_DATA = [
     "pulseNote": "",
     "pulseColor": "red",
     "renewalDate": "2026-12-31",
-    "latestPulseDate": "2026-06-15",
+    "latestPulseDate": "2026-06-25",
     "opportunities": [
       {
         "opp_id": "006RN00000Be9O1YAJ",
@@ -1835,8 +1835,8 @@ const ACCOUNTS_DATA = [
         "contract_end": "2027-10-21",
         "deal_type": "Renewal",
         "pulse": "Healthy",
-        "pulseNote": "",
-        "pulseDate": "2026-04-23"
+        "pulseNote": "-   UKG is evaluating how TrustRadius insights can be compared side-by-side with G2, especially around pipeline influence and attribution.\n    \n-   Litz is drafting an internal summary of TrustRadius ROI/reporting capabilities for the broader team.\n    \n-   Key takeaway: the **Box folder intent data** is more useful than vendor portal data for comparison work because it includes broader category-level activity and competitor research, not just visits to UKG product pages.\n    \n-   Riley shared Box folder access during the call and walked through the major dashboards: multi-product, competitor, and feature scorecards.\n    \n-   A new GEO dashboard is expected around **July 15, 2026**, giving UKG visibility into AI/LLM crawl activity on TrustRadius pages.\n    \n-   Review generation remains in focus: UKG Pro needs **9** more reviews and UKG Ready needs **8** by **September 26, 2026**. Litz expects to launch a review push in the next 2–3 weeks.\n    \n-   No direct Pendo integration exists today, but Riley can create a labeled TrustRadius review link for use in a Pendo flow.",
+        "pulseDate": "2026-06-25"
       }
     ]
   },
@@ -1853,7 +1853,7 @@ const ACCOUNTS_DATA = [
     "pulseNote": "",
     "pulseColor": "green",
     "renewalDate": "2026-07-31",
-    "latestPulseDate": "2026-06-16",
+    "latestPulseDate": "2026-06-25",
     "opportunities": [
       {
         "opp_id": "006RN00000OpukJYAR",
@@ -1862,9 +1862,9 @@ const ACCOUNTS_DATA = [
         "arr": 300000,
         "contract_end": "2026-07-31",
         "deal_type": "Renewal",
-        "pulse": "",
-        "pulseNote": "-   **New owner / transition:** Riley is taking over the Intuit QB Desktop Enterprise relationship from Heidi. Andrew Lum is the main contact and owns Desktop Enterprise, while also helping move suitable customers into IES and QBO Advanced.\n    \n-   **What Andrew cares about:** His goals are customer retention, new customer acquisition, and migration of desktop customers to online products. He does **not** have direct KPI targets tied to review volume or sentiment.\n    \n-   **Award / review status:** Desktop Enterprise qualified for the 2026 Top Rated award with 19 reviews by the April 26 cutoff. Next milestone is **10 new reviews by September 26** for Buyer’s Choice eligibility. May–September is the key window because reviews count toward both programs.\n    \n-   **Campaign readiness:** There is at least **$500** in review campaign budget available, though Riley should confirm whether the renewal reset restored it closer to **$1,000**. Standard campaign flow is a 3-email sequence using a customer list and typical incentives of **$25 / $25 / $50**.\n    \n-   **Risk / hesitation:** Andrew is cautious about launching a campaign immediately because Intuit customers have recently received heavy communications, including pricing increases. His concern is message fatigue and negative reaction to more outreach.\n    \n-   **Best near-term path:** Revisit campaign timing in **mid-summer**, when current communication pressure may ease. If they move forward, likely targeting options are recent onboarding cohorts, specific industries, or lookalike audiences from adjacent Intuit products.\n    \n-   **Scale / feasibility:** Andrew said the Desktop Enterprise base is **200,000+ active customers**, so sourcing enough contacts should not be the issue. Using the rough **3% response rate**, the review goal appears achievable with a well-targeted sample.\n    \n-   **Operating cadence:** They set a **bimonthly sync**, with the next meeting scheduled for **July 8 at 9:30 AM PT / 12:30 PM ET**.\n    \n-   **Forward-looking value:** Riley previewed upcoming **AEO/GEO-style citation tracking** capabilities, which Andrew was interested in as a way to understand how review content is being surfaced and cited.\n    \n\nSay more",
-        "pulseDate": "2026-05-13"
+        "pulse": "Healthy",
+        "pulseNote": "**Zscaler / TrustRadius sync — key takeaways**\n\n-   Zenith Live review collection is progressing well, with ~140 reviews submitted across five products. ZIA and ZPA are already in strong shape, while Zero Trust Cloud, Zero Trust Branch, and Data Security still need additional focus to hit award thresholds.\n    \n-   Zscaler shared that there is **$45k in incremental budget** available, to be split across **ZDX and Data Security**. Final lead allocation is pending CPL confirmation, and the SOW will likely reflect the total amount first with the split finalized after.\n    \n-   For **Top Rated promotions**, Zscaler plans to activate internal comms, sales enablement, and badge/signature usage, with Christian helping cover while Sarah is out. Messaging will stay high level and point back to the blog and press release.\n    \n-   Zscaler also announced a new **AI product** at Zenith Live and wants a TrustRadius profile page created. Riley confirmed this can likely be stood up quickly, potentially as a free page until renewal.\n    \n\n**Next moves**\n\n-   Push final-day review collection toward Zero Trust Cloud, Zero Trust Branch, and Data Security.\n    \n-   Finalize CPL, SOW, and lead split for the incremental budget.\n    \n-   Get AI product page inputs from Zscaler and prepare follow-up.\n    \n-   Annual review / renewal call is being lined up for **June 26 at 12 PM ET** with Anderson leading.",
+        "pulseDate": "2026-06-25"
       },
       {
         "opp_id": "006RN00000CGRF5YAP",
@@ -1892,7 +1892,7 @@ const ACCOUNTS_DATA = [
     "pulseNote": "",
     "pulseColor": "red",
     "renewalDate": "2026-08-26",
-    "latestPulseDate": "2026-06-18",
+    "latestPulseDate": "2026-06-24",
     "opportunities": [
       {
         "opp_id": "006RN000008eV3hYAE",
@@ -1912,9 +1912,9 @@ const ACCOUNTS_DATA = [
         "arr": 30000,
         "contract_end": "2026-08-27",
         "deal_type": "Renewal",
-        "pulse": "Healthy",
-        "pulseNote": "23rd Ap'26 : VT\n\nExecutive Summary\n\nDiscussion focused on enabling Forethought profile access, and preparing for the August renewal cycle. Review momentum from recent HGI outreach campaigns was noted, supporting eligibility for Top Rated and Buyer’s Choice awards. \nAgreed to align early on Forethought positioning (integrated vs. standalone) and involve the new Account Manager and leadership ahead of renewal planning.\n\nKey Highlights\n-Joyce requested access to the Forethought profile; Riley to enable access. (Done)\n\n-Zendesk currently eligible for Top Rated & needs 3 more reviews before Sep '26 to become eligible for Buyer’s Choice awards\n\nHGI Recent outreach campaign activity driving incremental reviews(6)\n\nAugust renewal approaching; early alignment needed on services scope.\n\n\nNext Steps:\n-Provide Forethought profile access to Joyce(Done)\n -Coordinate early access discussion for geo-tracking feature (Q2 launch). Varun to check internally at HGI\nVarun Tiwari: Invite James (VP) and new Account Manager to upcoming renewal alignment call.\nJoyce: Confirm Forethought positioning (Zendesk-integrated vs standalone) before June.\nVarun Tiwari: Present renewal options + roadmap discussion ahead of renewal conversation.\nJoyce: Check with community team on outreach program relaunch timing (suggested to launch after May 1).",
-        "pulseDate": "2026-04-23"
+        "pulse": "Concerning",
+        "pulseNote": "24th June'26 : VT\n\nHad a call with Joyce today. Key takeaways and immediate action items:\n\nJoyce shared that the team's focus has shifted from brand awareness to pipeline generation and measurable business outcomes.\nThey would like to better understand the impact of AI on TrustRadius traffic and any available metrics demonstrating business value and ROI.\nWhile the previous IDL pilot did not meet expectations, they are open to revisiting it and would like to understand what improvements have been made and what is planned on the roadmap.\nTheir renewal is due at the end of August, and they would like to reassess the overall value proposition before making a decision on renewal and potential expansion.\n\nNext steps :\n-Share Geo LLM collateral.\n-Provide pipeline generation/IDL materials\n-Schedule an IDL and product roadmap discussion. -Mid July ",
+        "pulseDate": "2026-06-24"
       },
       {
         "opp_id": "006RN00000EMx2zYAD",
@@ -2338,7 +2338,7 @@ const ACCOUNTS_DATA = [
     "pulseNote": "",
     "pulseColor": "red",
     "renewalDate": "2026-06-12",
-    "latestPulseDate": "2026-06-16",
+    "latestPulseDate": "2026-06-25",
     "opportunities": [
       {
         "opp_id": "006RN00000Opp6OYAR",
@@ -2381,8 +2381,8 @@ const ACCOUNTS_DATA = [
         "contract_end": "2026-11-29",
         "deal_type": "New Subscription",
         "pulse": "Concerning",
-        "pulseNote": "BMC’s main blocker is still review generation volume, not award eligibility visibility.\n\n-   **Buyer’s Choice status:** Ctrl M already qualifies, while other BMC products still need more reviews to reach the 10-review threshold before **September 26**. Reviews submitted after **May 1** also count toward next year’s Top Rated program.\n    \n-   **Primary challenge:** Claire said BMC has trouble identifying actual users for outreach because many products are on-premise, so they lack login and usage visibility. They often know business owners, but not end users.\n    \n-   **Partner friction:** BMC’s partner ecosystem is also limiting access to customer information. Claire said partners such as Vodafone, Infosys, and Accenture can sit between BMC and the customer, making direct outreach harder.\n    \n-   **Plan in motion:** Claire is meeting with the partner team later this month to explore both direct partner reviews and having partners help generate reviews on BMC’s behalf. Partner reviews are considered usable here.\n    \n-   **Support from TR/HG:** Riley offered to keep updating Buyer’s Choice tracking and help supplement outreach with customer data. Claire is reviewing Augie’s account list and filtering likely non-customers.\n    \n-   **Next checkpoint:** Riley, Augie, Claire, and Katie Marino are set to meet **May 22 at 10:00 AM** to discuss review quality standards, upcoming changes, and Augie’s list.",
-        "pulseDate": "2026-05-13"
+        "pulseNote": "-   **Top Rated launched:** BMC announced today, with external promotion scheduled for Friday. Internal teams are already aligned, with executive social posts expected next week. Slides and email signatures have also been updated for rollout.\n    \n-   **Review generation:** BMC is now at 5 reviews for Buyer’s Choice. Claire said they’re still interested in a partner campaign, pending internal coordination.\n    \n-   **Campaign support needed:** Claire flagged that prior multi-product links were returning 404s and asked for a refreshed landing page covering all four products. They aligned on a $50 incentive, labeled **FY27**, with a **3/31/27** expiration.\n    \n-   **AI prompt follow-up:** Claire said she had not seen a follow-up from last week’s Leslie conversation. Riley confirmed no follow-up had gone out and committed to sending the slides and recording so Claire can review examples and prioritize prompts against current review coverage.\n    \n-   **Immediate next steps:** Riley to send the refreshed multi-product page by early next week, plus the Leslie call slides and recording. Claire noted she would be away from **June 21 to July 1**.",
+        "pulseDate": "2026-06-25"
       }
     ]
   },
@@ -2518,11 +2518,11 @@ const ACCOUNTS_DATA = [
     "segment": "Enterprise",
     "arr": 225000,
     "lastOutbound": "2026-04-24",
-    "pulse": "Healthy",
+    "pulse": "",
     "pulseNote": "",
-    "pulseColor": "green",
+    "pulseColor": "gray",
     "renewalDate": "2027-11-09",
-    "latestPulseDate": "2026-06-10",
+    "latestPulseDate": "",
     "opportunities": [
       {
         "opp_id": "006RN00000Af0b0YAB",
@@ -2531,9 +2531,9 @@ const ACCOUNTS_DATA = [
         "arr": 225000,
         "contract_end": "2027-11-09",
         "deal_type": "Renewal",
-        "pulse": "Healthy",
-        "pulseNote": "Strong senior engagement reinforced by the April 30 Nobu London dinner with Ian Rutherford, Jack Morris, and senior HG attendees. Snowflake data feed for Strategic Pursuits live since Jan 27 and being used in sales proposals as of late March. New analyst Charlie Morgans onboarded mid-April with May 14 Data Review scheduled — signals continuity through the Everpure rebrand. Bank of America case study established as ROI reference. 28,289 of 50,000 entities consumed indicates healthy platform engagement. Confirming Healthy.",
-        "pulseDate": "2026-06-10"
+        "pulse": "",
+        "pulseNote": "**Pure Storage Pulse**\n\nAccount benchmarking is emerging as a key use case for Pure Storage. The focus is on mapping accounts within their ecosystem against relevant industry, geolocation, and account-level factors to create a more compelling narrative for internal stakeholders.\n\nI believe **Cloud Maturity** could be a particularly useful metric to add into this benchmarking view, as it would help Pure better understand where accounts sit in their cloud journey and strengthen the story around prioritisation, opportunity sizing, and account segmentation.\n\nI have prepared a solution to add Cloud Maturity into their feed. Before progressing, I will confirm with Charlie, our main stakeholder at Pure Storage, that they are comfortable with this addition and that it will not break or disrupt their existing ETL process.\n\nOnce Charlie has confirmed, we can look to get this moving and build momentum around the broader benchmarking use case.\n",
+        "pulseDate": "2026-06-23"
       }
     ]
   },
@@ -2695,7 +2695,7 @@ const ACCOUNTS_DATA = [
     "pulseNote": "",
     "pulseColor": "red",
     "renewalDate": "2026-12-31",
-    "latestPulseDate": "2026-06-02",
+    "latestPulseDate": "2026-06-27",
     "opportunities": [
       {
         "opp_id": "006RN00000DvmjaYAB",
@@ -2705,8 +2705,8 @@ const ACCOUNTS_DATA = [
         "contract_end": "2026-12-31",
         "deal_type": "Renewal",
         "pulse": "Healthy",
-        "pulseNote": "Nate Moya and Andrew and champions of HG. Ziad and I need to connect with Keith Hamrick so we can start discussing the changes to the pricing at HG and the move to a credit model. Andrew is on vacation and invite to Nate for EBR in SF was sent last week. The use case for this contract is very different that the use case that the contract with Sapna is solving for.",
-        "pulseDate": "2026-06-02"
+        "pulseNote": "Team is very independent, knows the data, see's the value. Ziad and I need to introduce RGIP to get them migrated. I will meet with Andrew and start laying the foundation for the larger conversation with Keith who is the budget holder. I am checking with Jodi to see if the new advancements we are making to track new products will improve our coverage of the list share late last year to drive a value add conversation. Will continue to share HG Insider webinar to get them excited about the migration",
+        "pulseDate": "2026-06-27"
       },
       {
         "opp_id": "006RN00000RnzXSYAZ",
@@ -2998,11 +2998,11 @@ const ACCOUNTS_DATA = [
     "segment": "Enterprise",
     "arr": 145000,
     "lastOutbound": "2026-04-22",
-    "pulse": "Concerning",
+    "pulse": "Healthy",
     "pulseNote": "",
-    "pulseColor": "yellow",
+    "pulseColor": "green",
     "renewalDate": "2026-10-20",
-    "latestPulseDate": "2026-05-19",
+    "latestPulseDate": "2026-06-25",
     "opportunities": [
       {
         "opp_id": "006RN00000Oq5ykYAB",
@@ -3023,8 +3023,8 @@ const ACCOUNTS_DATA = [
         "contract_end": "2026-10-23",
         "deal_type": "Renewal",
         "pulse": "Healthy",
-        "pulseNote": "Apr 21 call with Riley Rogers: Bianca Gause engaged and excited about GEO dashboard early access, signaling active product adoption across the Intuit Mailchimp account. Category Intent Data component is aligned with in-flight demand gen plans. Expansion trajectory intact; downgrading from Concerning to Healthy based on today's champion re-engagement and product adoption signals.",
-        "pulseDate": "2026-04-22"
+        "pulseNote": "-   Intuit is managing **award announcement coordination** ahead of the June 10 launch, with Natalie trying to tighten internal distribution after an early badge post.\n    \n-   There is still **ownership flux across Mailchimp and adjacent teams** following layoffs. Spencer is picking up Mailchimp work, Annabelle was impacted, and Probas is currently a useful bridge between Mailchimp and IES.\n    \n-   Natalie is trying to **centralize review-related contacts across Intuit**, which should make future coordination easier once the contact map is in place.\n    \n-   A **QuickBooks Online Advanced campaign** is moving forward through TrustRadius, pending confirmation on invoice status and Natalie sending the customer email list for execution.\n    \n-   A separate **Sydney-led campaign** tied to Omnicom/MBWW appears to be **running about a week behind** its stated timeline, and Hayden is waiting on follow-up to keep launch planning on track.\n    \n-   Intuit is also still working through **intent data / Demandbase + data lake planning**, but details are not yet settled.",
+        "pulseDate": "2026-06-25"
       },
       {
         "opp_id": "006RN00000Oq7ewYAB",
@@ -3033,9 +3033,9 @@ const ACCOUNTS_DATA = [
         "arr": 45000,
         "contract_end": "2026-12-04",
         "deal_type": "Renewal",
-        "pulse": "Concerning",
-        "pulseNote": "**Customer goal**\n\n-   Mailchimp is using TrustRadius to increase AI/LLM citations for key category terms like email marketing, marketing automation, and SMS. They are focused on maintaining fresh, high-quality reviews to improve how AI references the brand.\n\n**Current status**\n\n-   Bianca flagged a major drop in May page views and share of primary category traffic, with views falling from roughly 67,000 to around 1,000. This is a clear concern because Mailchimp tracks this weekly for leadership reporting.\n    \n-   The new AI crawler dashboard is built and available in the backend, but not yet live in the vendor portal. Rollout is expected before the end of May.\n    \n\n**Business context**\n\n-   Mailchimp is reporting internally on review quality, recency, third-party site performance, and AI citation trends. Klaviyo is the main competitor they are trying to outperform in AI references.\n\n**Risks / concerns**\n\n-   Sudden traffic decline may undermine confidence in program ROI and review-site visibility. Cause is still unknown.\n    \n-   Billing visibility is still slightly unsettled: Mailchimp sees the January payment as paid, but Riley still needs internal confirmation.\n    \n\n**Next steps**\n\n-   Riley to send Bianca downloadable AI crawler dashboard data today.\n    \n-   Riley to investigate the page-view drop with the technical team and follow up.\n    \n-   Riley to verify payment status with Mardigan.\n    \n-   Bianca to send the next campaign list for review outreach, targeting launch next week.",
-        "pulseDate": "2026-05-19"
+        "pulse": "Healthy",
+        "pulseNote": "-   Spencer Adkins has taken over Bianca’s TrustRadius work after the reorg and is still getting up to speed. His immediate priority is maintaining the existing program before shifting into more strategic work.\n    \n-   TrustRadius walked Spencer through the key reporting surfaces, especially the GEO dashboard, competitor dashboard, share of voice, and custom review questions. Comparison pages were highlighted as the strongest GEO signal, with 3,818 crawler hits in the period shown.\n    \n-   Review generation is in a solid position. Mailchimp has 36 reviews in 2026, already enough to secure Buyer’s Choice eligibility ahead of the September 26 deadline, and only needs 9 more reviews by end of April 2027 for next year’s Top Rated award.\n    \n-   Monthly review campaigns paused after May and now need Spencer to resume the email-list handoff. There is $525 left in incentive budget, which gives decent runway for additional review collection.\n    \n-   Next step is to help Spencer stay operational: share GEO insights with his leadership, confirm budget/process ownership, and restart monthly review campaigns. The next sync was moved to **Thursday, July 30 at 11:00 AM**.",
+        "pulseDate": "2026-06-25"
       }
     ]
   },
@@ -3052,7 +3052,7 @@ const ACCOUNTS_DATA = [
     "pulseNote": "",
     "pulseColor": "green",
     "renewalDate": "2026-09-30",
-    "latestPulseDate": "2026-05-29",
+    "latestPulseDate": "2026-06-26",
     "opportunities": [
       {
         "opp_id": "006RN00000Oq7fkYAB",
@@ -3062,8 +3062,8 @@ const ACCOUNTS_DATA = [
         "contract_end": "2026-09-30",
         "deal_type": "Renewal",
         "pulse": "Healthy",
-        "pulseNote": "May 29, 2026 | PH — Confirming Healthy. Renewal is closed won (Stage 7 - Invoiced Won, contract through Sep 30, 2026). Sherry Arnold remains highly engaged across the AppWorld roadshow series — Singapore (May 20) delivered 35 reviews and 13 advocates per the May 27 sync. HG Insider Program invites sent to F5 contacts on May 29.\n\nWatch items (not risk-grade): (1) TR widget embed code blocker raised by Laura Santoki on May 26 — escalated, awaiting resolution; (2) three stale Vitally tasks open on this org (Events Team Sync, Multi-Product Link, March Reporting) need triage.\n\nNext milestones: NGINX listing meeting June 1, LATAM roadshow June 3–4, AppWorld Seoul June 24.",
-        "pulseDate": "2026-05-29"
+        "pulseNote": "Strong presence at events in Cancun and Singapore. Working to schedule meeting with VP. ",
+        "pulseDate": "2026-06-26"
       }
     ]
   },
@@ -3294,11 +3294,11 @@ const ACCOUNTS_DATA = [
     "segment": "Enterprise",
     "arr": 114000,
     "lastOutbound": "2026-04-08",
-    "pulse": "Poor",
+    "pulse": "Healthy",
     "pulseNote": "",
-    "pulseColor": "red",
+    "pulseColor": "green",
     "renewalDate": "2026-06-30",
-    "latestPulseDate": "2026-06-09",
+    "latestPulseDate": "2026-06-26",
     "opportunities": [
       {
         "opp_id": "006RN00000OpukoYAB",
@@ -3307,9 +3307,9 @@ const ACCOUNTS_DATA = [
         "arr": 114000,
         "contract_end": "2026-06-30",
         "deal_type": "Renewal",
-        "pulse": "Concerning",
-        "pulseNote": "6/9/26 PH — Confirming Concerning from 5/11. Renewal is actively progressing toward the 7/1 deadline. On the 6/5 call, Russell Martin confirmed the profile consolidation (ZoomInfo Sales→GTM Workspace, Marketing renamed, Operations + Chorus merged into new GTM Studio; Engage reviews to migrate; Chat, Comparably, NeverBounce to be discontinued) and confirmed openness to a multi-year deal. Downsize is now confirmed: dropping from 4 CVPs to 3. Anderson sent options 6/8 — 1-yr at $90K ($30K/pkg) or 3-yr at $75K/yr ($25K/pkg). Russell looped in procurement (Sylvia Livingston) to finalize (positive buying signal) and moved himself to BCC. Procurement sync being scheduled this week. No churn risk — engagement strong and champion intact — but pulse stays Concerning given confirmed ARR contraction (~$114K→$90K on a 1-yr) and an unsigned deal against a tight 7/1 deadline with a new procurement stakeholder now involved. Taxonomy team being prepped to execute profile changes on signature; Tech Cares award info sent to Russell.",
-        "pulseDate": "2026-06-09"
+        "pulse": "Healthy",
+        "pulseNote": "ZI procurement has agreed to a 2 year $80K ACV renewal for 3 products (down from 4 so a $34K down sell). Paperwork and PO are being processed.",
+        "pulseDate": "2026-06-26"
       }
     ]
   },
@@ -3410,7 +3410,7 @@ const ACCOUNTS_DATA = [
     "pulseNote": "",
     "pulseColor": "yellow",
     "renewalDate": "2026-10-20",
-    "latestPulseDate": "2026-05-19",
+    "latestPulseDate": "2026-06-25",
     "opportunities": [
       {
         "opp_id": "006RN00000N6ndVYAR",
@@ -3453,8 +3453,8 @@ const ACCOUNTS_DATA = [
         "contract_end": "2026-10-23",
         "deal_type": "Renewal",
         "pulse": "Healthy",
-        "pulseNote": "Apr 21 call with Riley Rogers: Bianca Gause engaged and excited about GEO dashboard early access, signaling active product adoption across the Intuit Mailchimp account. Category Intent Data component is aligned with in-flight demand gen plans. Expansion trajectory intact; downgrading from Concerning to Healthy based on today's champion re-engagement and product adoption signals.",
-        "pulseDate": "2026-04-22"
+        "pulseNote": "-   Intuit is managing **award announcement coordination** ahead of the June 10 launch, with Natalie trying to tighten internal distribution after an early badge post.\n    \n-   There is still **ownership flux across Mailchimp and adjacent teams** following layoffs. Spencer is picking up Mailchimp work, Annabelle was impacted, and Probas is currently a useful bridge between Mailchimp and IES.\n    \n-   Natalie is trying to **centralize review-related contacts across Intuit**, which should make future coordination easier once the contact map is in place.\n    \n-   A **QuickBooks Online Advanced campaign** is moving forward through TrustRadius, pending confirmation on invoice status and Natalie sending the customer email list for execution.\n    \n-   A separate **Sydney-led campaign** tied to Omnicom/MBWW appears to be **running about a week behind** its stated timeline, and Hayden is waiting on follow-up to keep launch planning on track.\n    \n-   Intuit is also still working through **intent data / Demandbase + data lake planning**, but details are not yet settled.",
+        "pulseDate": "2026-06-25"
       },
       {
         "opp_id": "006RN00000Oq5ykYAB",
@@ -3474,9 +3474,9 @@ const ACCOUNTS_DATA = [
         "arr": 45000,
         "contract_end": "2026-12-04",
         "deal_type": "Renewal",
-        "pulse": "Concerning",
-        "pulseNote": "**Customer goal**\n\n-   Mailchimp is using TrustRadius to increase AI/LLM citations for key category terms like email marketing, marketing automation, and SMS. They are focused on maintaining fresh, high-quality reviews to improve how AI references the brand.\n\n**Current status**\n\n-   Bianca flagged a major drop in May page views and share of primary category traffic, with views falling from roughly 67,000 to around 1,000. This is a clear concern because Mailchimp tracks this weekly for leadership reporting.\n    \n-   The new AI crawler dashboard is built and available in the backend, but not yet live in the vendor portal. Rollout is expected before the end of May.\n    \n\n**Business context**\n\n-   Mailchimp is reporting internally on review quality, recency, third-party site performance, and AI citation trends. Klaviyo is the main competitor they are trying to outperform in AI references.\n\n**Risks / concerns**\n\n-   Sudden traffic decline may undermine confidence in program ROI and review-site visibility. Cause is still unknown.\n    \n-   Billing visibility is still slightly unsettled: Mailchimp sees the January payment as paid, but Riley still needs internal confirmation.\n    \n\n**Next steps**\n\n-   Riley to send Bianca downloadable AI crawler dashboard data today.\n    \n-   Riley to investigate the page-view drop with the technical team and follow up.\n    \n-   Riley to verify payment status with Mardigan.\n    \n-   Bianca to send the next campaign list for review outreach, targeting launch next week.",
-        "pulseDate": "2026-05-19"
+        "pulse": "Healthy",
+        "pulseNote": "-   Spencer Adkins has taken over Bianca’s TrustRadius work after the reorg and is still getting up to speed. His immediate priority is maintaining the existing program before shifting into more strategic work.\n    \n-   TrustRadius walked Spencer through the key reporting surfaces, especially the GEO dashboard, competitor dashboard, share of voice, and custom review questions. Comparison pages were highlighted as the strongest GEO signal, with 3,818 crawler hits in the period shown.\n    \n-   Review generation is in a solid position. Mailchimp has 36 reviews in 2026, already enough to secure Buyer’s Choice eligibility ahead of the September 26 deadline, and only needs 9 more reviews by end of April 2027 for next year’s Top Rated award.\n    \n-   Monthly review campaigns paused after May and now need Spencer to resume the email-list handoff. There is $525 left in incentive budget, which gives decent runway for additional review collection.\n    \n-   Next step is to help Spencer stay operational: share GEO insights with his leadership, confirm budget/process ownership, and restart monthly review campaigns. The next sync was moved to **Thursday, July 30 at 11:00 AM**.",
+        "pulseDate": "2026-06-25"
       },
       {
         "opp_id": "006RN00000Oq7dvYAB",
@@ -3677,7 +3677,7 @@ const ACCOUNTS_DATA = [
     "pulseNote": "",
     "pulseColor": "green",
     "renewalDate": "2027-01-19",
-    "latestPulseDate": "2026-05-13",
+    "latestPulseDate": "2026-06-25",
     "opportunities": [
       {
         "opp_id": "006RN00000Oq1KEYAZ",
@@ -3687,8 +3687,8 @@ const ACCOUNTS_DATA = [
         "contract_end": "2027-01-19",
         "deal_type": "Renewal",
         "pulse": "Healthy",
-        "pulseNote": "May 12 '26 · RR — Customer call logged (no transcript available). Riley engaged with TriNet on TrustRadius opportunity. Cadence maintained.",
-        "pulseDate": "2026-05-13"
+        "pulseNote": "-   **Top Rated momentum is strong:** TriNet’s announcement goes live **June 10**, and they are already qualified for **Buyer’s Choice (fall)** with **11 reviews in 2026**.\n    \n-   **Review generation is active:** Ashley shared that TriNet is running a **TrustRadius campaign at SHRM next week** to drive additional review volume.\n    \n-   **AI/search positioning landed well:** TrustRadius previewed the new **AI-optimized public profile** and upcoming **GEO dashboard**. Ashley said TriNet has already been doing **LLM tracking internally** and is excited to get direct TrustRadius insight into which queries are pulling TrustRadius content.\n    \n-   **Expansion opportunity:** Riley showed the new **review questions UI** and refresh campaign option. TriNet asked specifically whether outreach can be restricted by **review age**, and confirmed interest after hearing refreshed reviews can count toward **Top Rated**.\n    \n-   **Tech Cares is in motion:** The nomination form is expected **end of July**, and Ashley said she already has the submission on her list to start.\n    \n\n**Next steps**\n\n-   Riley to send the **Tech Cares nomination link** once live.\n    \n-   Ashley to complete the **Tech Cares submission**.",
+        "pulseDate": "2026-06-25"
       }
     ]
   },
@@ -3827,7 +3827,7 @@ const ACCOUNTS_DATA = [
     "pulseNote": "",
     "pulseColor": "green",
     "renewalDate": "2026-07-07",
-    "latestPulseDate": "2026-06-10",
+    "latestPulseDate": "2026-06-25",
     "opportunities": [
       {
         "opp_id": "006RN00000OpukNYAR",
@@ -3859,8 +3859,8 @@ const ACCOUNTS_DATA = [
         "contract_end": "2027-01-23",
         "deal_type": "Renewal",
         "pulse": "Healthy",
-        "pulseNote": "Written renewal executed Jan 24, 2026. Camille (Zoom POC) described as positive and collaborative — extra 2,500 credits already approved with intent to add more, Buyer's Choice qualified across Workplace, Contact Center, and Revenue Accelerator. Camille proactively invited an in-person QBR/working session in Denver, signaling openness to deeper partnership. Confirming Healthy.",
-        "pulseDate": "2026-06-10"
+        "pulseNote": "-   **Top Rated:** Camille confirmed she received the manual Top Rated email, but no automated TrustRadius notification came through. Some emails may still be routing to her personal inbox instead of Zoom. Award date is **June 10**.\n    \n-   **June 30 QBR / onsite:** Zoom wants the session centered on how TrustRadius can support their new pod structure, especially beyond Tier 1 where their team has limited capacity. Requested topics were lead gen, pod-specific support, content packages for customer stories, snackable video content, review management services, and the AI Companion rebrand to **Zoom Mate**.\n    \n-   **Expansion signals:** Camille framed clear whitespace across Tier 2/3 pods and said there is interest in scalable, self-serve programs if budget is available. She specifically called out customer story creation, video, review automation, and broader profile/subscription coverage as relevant opportunities.\n    \n-   **Event strategy:** Zoomtopia is still in play, though their immediate review priority is Gartner Peer Insights. Event support and possible video capture were discussed as future options.\n    \n-   **Next steps:** Camille will send pod structure materials, Denver Tech Center location details, and Zoom Mate rebrand info so the team can tailor slides and update the profile.",
+        "pulseDate": "2026-06-25"
       }
     ]
   },
@@ -3944,7 +3944,7 @@ const ACCOUNTS_DATA = [
     "pulseNote": "",
     "pulseColor": "red",
     "renewalDate": "2026-06-30",
-    "latestPulseDate": "2026-04-07",
+    "latestPulseDate": "2026-06-25",
     "opportunities": [
       {
         "opp_id": "006RN000009Ay4AYAS",
@@ -3964,9 +3964,9 @@ const ACCOUNTS_DATA = [
         "arr": 37500,
         "contract_end": "2026-08-11",
         "deal_type": "Renewal",
-        "pulse": "Concerning",
-        "pulseNote": "FY27 HG platform expansion explicitly declined by Luke Riegert on 2/9 — a clear contraction signal. Platform usage metrics at zero indicating no active engagement with TrustRadius tools. Three account manager transitions in the past 6 months have created relationship continuity risk. Downgrading from Very Satisfied. Recovery requires reestablishing stakeholder relationships post-transition and demonstrating ROI before the August renewal.",
-        "pulseDate": "2026-04-07"
+        "pulse": "Healthy",
+        "pulseNote": "Verbally confirmed renewal\n\n-   **Top Rated launch is on track.** Matt said they’re ready for the June 10 announcement, with the blog in progress, badges downloaded, and business cards already in the Chicago office.\n    \n-   **Renewal looks low-risk.** The expectation is a similar structure to last year: roughly $37.5K base plus a $10K incentives add-on, with current base pricing looking closer to ~$39K and no major increase expected.\n    \n-   **Main open item is renewal coordination.** Anderson still needs to join the renewal conversation, and the sync moved from July 1 to **June 24**.\n    \n-   **Review generation should pick up soon.** Matt said they’ve fallen behind on review campaigns and plans to restart one so reviews should trickle in through June and July.\n    \n\n### Watchouts\n\n-   Incentive funds are currently sitting unused, so renewal packaging may matter more than net-new spend.\n    \n-   Final renewal number still depends on whether additional incentive dollars are added.",
+        "pulseDate": "2026-06-25"
       }
     ]
   },
@@ -4263,7 +4263,7 @@ const ACCOUNTS_DATA = [
     "pulseNote": "",
     "pulseColor": "green",
     "renewalDate": "2026-09-30",
-    "latestPulseDate": "2026-05-29",
+    "latestPulseDate": "2026-06-26",
     "opportunities": [
       {
         "opp_id": "006RN00000Oq7fjYAB",
@@ -4273,8 +4273,8 @@ const ACCOUNTS_DATA = [
         "contract_end": "2026-09-30",
         "deal_type": "Renewal",
         "pulse": "Healthy",
-        "pulseNote": "May 29, 2026 | PH — Confirming Healthy pulse following first sync with David Kearney (Sr. Demand Gen, NetSuite) on May 21. Relationship is strong: warm, easy rapport, monthly cadence locked in (3rd Thursday), and we're planning an in-person Durham meetup. David clearly stated intent to continue the CVP/IDL program at current levels.\n\nCustomer sentiment is positive on TrustRadius value — Top Rated 2025 announcement landed well, ~7 LLM crawler hits in last 30 days resonated, and David is actively interested in the LLM/GEO dashboards landing in 4-6 weeks. He acknowledged IDL demand-gen performance is \"not that strong\" (3 SQLs from 255 leads) but framed TrustRadius as a brand/reviews play, not a pipeline driver — no churn signal. SFDC Pulse remains \"Extremely Satisfied\" and this is the 4th consecutive year at $35K ARR.\n\nWatch items (not yet risk-level): (1) $35K invoice #104470 stuck in Oracle supplier portal — Sanjeev working the supplier support desk workaround as of 5/27, need to confirm resolution; (2) Renewal opp still Stage 2 with Sept 30 close — Mardigan needs to advance; (3) Lauren Dattilo and Danielle (NetSuite reviews leads) not yet engaged on Top Rated promotion; (4) Nia out on mat leave ~June 8 — Scott Stater not yet introduced to David; (5) Oracle \"better together\" HG+TR data story warm but needs Mark Fell to drive.\n\nNote: Vitally automated health score is 10/100, which contradicts the manual Healthy categorization and SFDC \"Extremely Satisfied\" — flagging separately for ops review; not driving pulse.",
-        "pulseDate": "2026-05-29"
+        "pulseNote": "Engaged client. Working to fan out and across the organization to become more multi-threaded.",
+        "pulseDate": "2026-06-26"
       }
     ]
   },
