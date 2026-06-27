@@ -686,6 +686,7 @@ function autoWeekSummaryHTML(data) {
   const activeCsms = new Set(calls.map(c=>c.csm)).size;
   const concerning = pulses.filter(p=>p.health==='Concerning');
   const healthy = pulses.filter(p=>p.health==='Healthy');
+  const expansion = calls.filter(c => c.purpose === 'Expansion');
   // Build week date list using same UTC arithmetic as getWeekData
   const [year, weekNum] = currentKey.split('-W').map(Number);
   const jan4Day = new Date(year, 0, 4).getDay();
@@ -722,6 +723,7 @@ function autoWeekSummaryHTML(data) {
     <div class="sum-card c-green" onclick="jumpToTab('wpulses','all','all')"><div class="sum-val">${pulses.length}</div><div class="sum-lbl">Pulse Notes Created</div><div class="sum-sub">${healthy.length} Healthy · ${concerning.length} Concerning</div></div>
     <div class="sum-card c-purple" onclick="jumpToTab('wcsm','all','all')"><div class="sum-val">${activeCsms}</div><div class="sum-lbl">Active CSMs</div><div class="sum-sub">of 8 on the team</div></div>
     <div class="sum-card c-amber" onclick="showWeekConcerningModal()" style="cursor:pointer"><div class="sum-val">${concerning.length}</div><div class="sum-lbl">Concerning Signals</div><div class="sum-sub">${concerning.length ? concerning.map(p=>p.account).join(' · ') : 'None this week'}</div></div>
+    ${expansion.length > 0 ? `<div class="sum-card c-blue" onclick="jumpToTab('wcalls','all','all')"><div class="sum-val">${expansion.length}</div><div class="sum-lbl">Expansion Signals</div><div class="sum-sub">${[...new Set(expansion.map(c=>c.account))].slice(0,3).join(' · ')}${expansion.length > 3 ? ' · +more' : ''}</div></div>` : ''}
   </div>
   <div class="section-label">Daily Call Activity</div>
   <div class="heatmap-card">
