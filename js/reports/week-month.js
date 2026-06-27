@@ -1021,18 +1021,18 @@ function _renderCoverageTable(stats, snapshotLabel) {
   <div style="font-size:11px;color:#9ca3af">Full coverage = opportunity has both a pulse status and a pulse note. Click "N missing →" to review which opportunities need attention.</div>`;
 }
 
-// June 2026 -- snapshot from Jun 19, 2026 Vitally refresh
+// June 2026 -- snapshot from Jun 27, 2026 Vitally refresh
 function monthCoverageHTML_2026_06() {
   const stats = [
   {
     "csm": "riley",
     "name": "Riley Rogers",
     "total": 60,
-    "both": 40,
-    "pulseOnly": 2,
-    "noteOnly": 2,
+    "both": 42,
+    "pulseOnly": 1,
+    "noteOnly": 1,
     "neither": 16,
-    "pct": 67
+    "pct": 70
   },
   {
     "csm": "varun",
@@ -1098,12 +1098,12 @@ function monthCoverageHTML_2026_06() {
     "csm": "andy",
     "name": "Andy Lim",
     "total": 14,
-    "both": 12,
+    "both": 11,
     "pulseOnly": 0,
-    "noteOnly": 1,
+    "noteOnly": 2,
     "neither": 1,
-    "pct": 86
+    "pct": 79
   }
 ];
-  return _renderCoverageTable(stats, 'Jun 19, 2026');
+  return _renderCoverageTable(stats, 'Jun 27, 2026');
 }
