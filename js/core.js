@@ -1503,13 +1503,15 @@ function pulseCoverageHTML() {
   const csmKeys = ['riley','varun','divyam','nick','rani','pam','atisha','andy'];
   const hasPulse = o => !!(o.pulse && o.pulse !== '—');
   const hasNote  = o => !!(o.pulseNote && o.pulseNote !== '—');
+  // Valid current CSM display names — opps with a stale/former CSM name fall back to account CSM
+  const validCsmNames = new Set(Object.values(CSM_NAME_MAP));
 
   const stats = csmKeys.map(csm => {
     const opps = [];
     const csmName = CSM_NAME_MAP[csm];
     ACCOUNTS_DATA.forEach(a => {
       (a.opportunities || []).forEach(o => {
-        const oppOwner = o.csm || a.csm;
+        const oppOwner = (o.csm && validCsmNames.has(o.csm)) ? o.csm : a.csm;
         if (oppOwner === csmName) opps.push({ ...o, accountName: a.accountName });
       });
     });
@@ -1585,9 +1587,10 @@ window.openMissingOpps = function(csmKey) {
   const name = CSM_NAME_MAP[csmKey] || csmKey;
   const opps = [];
   const csmName = CSM_NAME_MAP[csmKey] || csmKey;
+  const validCsmNames2 = new Set(Object.values(CSM_NAME_MAP));
   ACCOUNTS_DATA.forEach(acct => {
     (acct.opportunities || []).forEach(opp => {
-      const oppOwner = opp.csm || acct.csm;
+      const oppOwner = (opp.csm && validCsmNames2.has(opp.csm)) ? opp.csm : acct.csm;
       if (oppOwner !== csmName) return;
       const hp = !!(opp.pulse && opp.pulse !== '—');
       const hn = !!(opp.pulseNote && opp.pulseNote !== '—');
