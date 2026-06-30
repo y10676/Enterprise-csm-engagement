@@ -6719,3 +6719,354 @@ function dayActionsHTML_2026_06_26() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No actions match the current filter.</div>`;
 }
+
+// ============================================================
+// June 29, 2026 — Monday
+// 51 recordings scanned · 11 confirmed calls · 6 CSMs active
+// ============================================================
+
+function dayData_2026_06_29() {
+  return {
+    calls: [
+      { ts: 'Jun 29 · 5:00 AM', csm: 'varun', account: 'DXC Technology',
+        note: 'Renewal discussion initiated by customer; DXC using HG data for AI agents and account planning. Preeti wants to review usage vs. licensed capacity before contract renewal.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'Customer', purpose: 'Mixed',
+        detail: 'Customer-initiated renewal conversation. Preeti confirmed extensive usage for AI agents and account planning. Wants consumption review, feature utilization analysis, and multi-iteration renewal negotiation. Varun committed to pulling usage report.' },
+      { ts: 'Jun 29 · 6:00 AM', csm: 'varun', account: 'Ciena',
+        note: 'Monthly check-in; Varun flagged login reactivation issue — profile error detected after reactivation. Calum to add new team member in coming weeks.',
+        mins: 30, health: 'Concerning',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Monthly cadence. Varun initiated to check in on platform support. Calum confirmed only he is the active user (per prior request) and will add a new hire soon. Active issue: login reactivation went wrong — Varun to escalate to IT team internally.' },
+      { ts: 'Jun 29 · 6:00 AM', csm: 'divyam', account: 'Safaricom',
+        note: 'Bi-weekly sync; Kgolo finally joined after weeks of non-response. Renewal at risk — heavy reliance on Kgolo who has been absent. Anthony onboarded on v2 platform.',
+        mins: 30, health: 'Concerning',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Bi-weekly cadence. Kgolo returned after extended absence (busy with year-end + travel for funeral). Platform onboarding of Anthony completed across 3-4 sessions. Renewal discussion urgently needed as reliance on single champion (Kgolo) poses risk. Angus and Divyam co-facilitated.' },
+      { ts: 'Jun 29 · 7:00 AM', csm: 'riley', account: 'Paylocity',
+        note: 'Monthly TrustRadius sync; renewal order form under review — Matt requesting +$10K incentive line item to reach ~$50K total. Anderson recovering from root canal.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Renewal order form sent last week. Matt confirmed it\'s with procurement team. Requesting an added $10K incentive line (from ~$7K remaining). Riley to update order form and send via Anderson. Also created new SHRM review links: 50-invite FY27 link + 25-invite link starting July 1.' },
+      { ts: 'Jun 29 · 8:00 AM', csm: 'rani', account: 'Lenovo',
+        note: 'Data partnership onboarding call; Lenovo engineering team reviewing sample data structure and building downstream architecture. HG provided data dictionary.',
+        mins: 45, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Check-in',
+        detail: 'New data partnership onboarding session. Lenovo\'s data engineering team (Antaleena, Niranjan) walked through questions on sample data files — data types, field structures, file consistency, and date formats. Gavin Padden committed to sharing a data dictionary. Rani introduced herself as ongoing CSM point of contact.' },
+      { ts: 'Jun 29 · 8:30 AM', csm: 'nick', account: 'Intuit IES',
+        note: 'Weekly platform session; Suja requesting dataset of multi-entity US firms (>$25M revenue) not on Intuit ecosystem. Nick building query in platform live.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'Customer', purpose: 'Mixed',
+        detail: 'Customer-led working session. Suja wants to identify mid-market ICP: multi-entity US firms above $25M revenue + single-entity above $10M, not currently on Intuit ecosystem. Nick walked through the platform query live — initial pull yielded 47M companies, then narrowed criteria. Hayden Smith also present.' },
+      { ts: 'Jun 29 · 9:00 AM', csm: 'nick', account: 'NTT',
+        note: 'Monthly session; Jonathan Cyr surfaced Grant\'s departure and initiated license expansion discussion — 22 new seats requested, likely rounding to 25-seat bundle.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'Customer', purpose: 'Expansion',
+        detail: 'Key contact update: Grant has left NTT — bounce-backs confirmed. New primary contacts: Jonathan Cyr and Ryan. License expansion discussion: Jonathan reconciled the seat list and requested 22 new seats plus buffer, aligning to a 25-seat bundle ($5 per bundle increment). David Garcia Thomas also present from HG side.' },
+      { ts: 'Jun 29 · 9:00 AM', csm: 'rani', account: 'Cisco',
+        note: 'Account matching methodology walkthrough; Michael Xu wanted to understand how HG improved match rates for Cisco\'s file without URLs.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Check-in',
+        detail: 'Michael Xu (Cisco Marketing Org) requested walkthrough of how Gavin achieved improved match rates when Cisco\'s data lacked usable URLs. Gavin explained the novel matching approach developed specifically for this file. Rani discussed how the customer intelligence team mapped products to HG spend categories. Ongoing coordination with Cisco\'s internal teams referenced.' },
+      { ts: 'Jun 29 · 10:00 AM', csm: 'atisha', account: 'RSM US',
+        note: 'MCP walkthrough with Ben Vollmer and RSM sales rep Aaron; positioning HG data for AI agent builds — expansion opportunity.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Atisha hosted MCP walkthrough with Francis Brero and Chloe Portier (HG MCP/Forward Deployed Engineering) for Ben Vollmer and Aaron (RSM sales rep, dialing in from Seattle). Goal: build HG-data-powered AI agents for RSM\'s sales team. Alice (prior contact) has left the firm; Duke Devan being onboarded. Strong expansion signal for deeper platform/MCP adoption.' },
+      { ts: 'Jun 29 · 11:00 AM', csm: 'varun', account: 'Zscaler',
+        note: 'Account matching review; Manoj walking through DUNS-based fallback matching criteria for Zscaler\'s account list.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Check-in',
+        detail: 'Customer-led technical session. Manoj (Zscaler) reviewing the breakdown of HG\'s account matching fallback logic — specifically how DUNS, URL, and name matching interact when DUNS is unavailable. Varun walked through the methodology. Zscaler is in SKO planning mode this week. Varun calling in from Bangalore.' },
+      { ts: 'Jun 29 · 1:00 PM', csm: 'rani', account: 'NetApp',
+        note: 'Weekly sync; first call with new contact Bini Valsala (data engineering, 10+ years NetApp). Elise McMorrow on leave. Discussed HG data\'s role in NetApp\'s wallet-size calculations.',
+        mins: 25, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Weekly cadence. New contact Bini Valsala (San Jose, analytics background, moved to data team) joined for first time. Elise McMorrow out and will miss next call. Bini confirmed HG\'s wallet-size data is foundational to NetApp\'s internal analytics pipeline. Positive relationship foundation established. Adrian Escobar also on HG side.' },
+    ],
+    pulses: [
+      { csm: 'varun', account: 'DXC Technology', health: 'Healthy',
+        note: 'Renewal discussion initiated. Customer confirms strong AI/account planning usage; wants consumption review before multi-iteration renewal negotiation.' },
+      { csm: 'varun', account: 'Ciena', health: 'Concerning',
+        note: 'Login reactivation issue flagged — profile error to be escalated to IT. Single active user (Calum Walsh); new hire expected in coming weeks.' },
+      { csm: 'divyam', account: 'Safaricom', health: 'Concerning',
+        note: 'Kgolo Kgololosego re-engaged after weeks absent. Renewal discussion urgently needed; platform adoption limited beyond Anthony (onboarded on v2).' },
+      { csm: 'riley', account: 'Paylocity', health: 'Healthy',
+        note: 'Renewal order form with procurement. +$10K incentive line item requested. New FY27 SHRM review links created (50-invite + 25-invite).' },
+      { csm: 'rani', account: 'Lenovo', health: 'Healthy',
+        note: 'Data partnership onboarding session. Sample data reviewed by Lenovo engineering team; Gavin committed to data dictionary delivery.' },
+      { csm: 'nick', account: 'Intuit IES', health: 'Healthy',
+        note: 'Weekly platform working session. Suja requesting mid-market ICP dataset — multi-entity US firms >$25M not on Intuit ecosystem.' },
+      { csm: 'nick', account: 'NTT', health: 'Healthy',
+        note: 'Grant has left NTT. New contacts: Jonathan Cyr + Ryan. License expansion: 22 new seats requested (~25-bundle). Order form being updated.' },
+      { csm: 'rani', account: 'Cisco', health: 'Healthy',
+        note: 'Account matching methodology walkthrough for Michael Xu. HG developed novel URL-free matching approach; ongoing product alignment discussion.' },
+      { csm: 'atisha', account: 'RSM US', health: 'Healthy',
+        note: 'MCP walkthrough with Ben Vollmer + Aaron (RSM sales rep). Exploring HG-data AI agents for sales team. Alice departed firm; Duke Devan joining team.' },
+      { csm: 'varun', account: 'Zscaler', health: 'Healthy',
+        note: 'Account matching review: DUNS fallback criteria walkthrough. Manoj engaged. Zscaler in SKO planning mode this week.' },
+      { csm: 'rani', account: 'NetApp', health: 'Healthy',
+        note: 'New contact Bini Valsala onboarded (data engineering). HG wallet-size data confirmed as foundational to NetApp analytics pipeline. Elise McMorrow on leave.' },
+    ],
+  };
+}
+
+function dayMeta_2026_06_29() {
+  return {
+    pills: [
+      ['dot-teal',   '11 Calls'],
+      ['dot-amber',  '3 Expansion'],
+      ['dot-red',    '2 Concerning'],
+      ['dot-green',  '11 Pulses'],
+      ['dot-grey',   'Mon Jun 29 · 51 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (11)', 'Pulses (11)', 'Action Items (7)']
+  };
+}
+
+function dayOverviewHTML_2026_06_29() {
+  return `<div class="section-label">Team Activity &mdash; Monday June 29, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Monday Jun 29 &mdash; 51 recordings scanned</strong> via SFDC SOQL &middot; <strong>11 confirmed calls</strong> across 6 CSMs &middot; 3 expansion signals (NTT seats, RSM MCP, Paylocity renewal) &middot; 2 concerning (Ciena login issue, Safaricom renewal risk)
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>Expansion signals:</strong> NTT expanding to 22+ new seats (Nick) &middot; RSM MCP/AI-agent walkthrough underway (Atisha) &middot; Paylocity renewal +$10K incentive advancing (Riley)
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">3 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">3</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">100m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Lenovo (data onboarding, 45 min) &middot; Cisco (account matching) &middot; NetApp (new contact Bini)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">3 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">3</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">90m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">DXC (renewal discussion) &middot; Ciena (login issue &#x26A0;) &middot; Zscaler (account matching)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Intuit IES (ICP dataset request) &middot; NTT (22 new seats expansion &#x1F4C8;)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Safaricom (Kgolo returned; renewal risk &#x26A0;)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Paylocity (renewal advancing, +$10K incentive &#x1F4C8;)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">RSM (MCP/AI-agent walkthrough &#x1F4C8;)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event scheduled (Splunk TrustRadius Sync) &mdash; no recording found</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 events (ADP Run, ADP Smart Compliance) &mdash; recordings exist but no transcripts</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_06_29() {
+  return `<div class="calls-table">
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x26A0;&#xFE0F; <strong>Unconfirmed (no transcript):</strong> Varun &times; OpenText (3 AM PT, 30 min) &middot; Atisha &times; Intel (7 AM PT, 30 min) &middot; Andy &times; ADP Run (6-7 AM PT, 30 min) &mdash; recordings exist but transcripts not synced to SFDC.
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x1F534; <strong>No recordings found:</strong> Pam &times; Splunk TrustRadius &middot; Divyam &times; DynaTrace &middot; Divyam &times; Blackbaud &middot; Varun &times; Capital One &middot; Varun &times; MadKudu/Autodesk &middot; Nick &times; HCL TrustRadius &middot; Rani &times; Juniper &middot; Atisha &times; Airtel &middot; Andy &times; ADP Smart Compliance &middot; Riley &times; SAP Joule (recording exists, Riley not detected as speaker)
+  </div>
+  </div>`;
+}
+
+function dayPulsesHTML_2026_06_29() {
+  const cards = [
+    { csm:'varun', health:'Healthy', account:'DXC Technology',
+      opp:'Vitally Pulse &mdash; Jun 29 Call', arr:'Enterprise &middot; Varun Tiwari', csmlbl:'Varun Tiwari',
+      change:'Jun 29 &middot; Renewal Discussion',
+      excerpt:'VT/Jun 29: Customer initiated renewal discussion (5:00 AM, 30 min). Preeti confirmed extensive AI-agent and account planning usage; wants consumption vs. licensed capacity review. Multi-iteration renewal expected.' },
+    { csm:'varun', health:'Concerning', account:'Ciena',
+      opp:'Vitally Pulse &mdash; Jun 29 Call', arr:'Enterprise &middot; Varun Tiwari', csmlbl:'Varun Tiwari',
+      change:'Jun 29 &middot; Login Issue',
+      excerpt:'VT/Jun 29: Monthly check-in (6:00 AM, 30 min). Login reactivation issue detected — Varun to escalate to IT internally. Calum is sole active user; expects to add new hire in coming weeks.' },
+    { csm:'divyam', health:'Concerning', account:'Safaricom',
+      opp:'Vitally Pulse &mdash; Jun 29 Call', arr:'Enterprise &middot; Divyam Dewan', csmlbl:'Divyam Dewan',
+      change:'Jun 29 &middot; Renewal Risk',
+      excerpt:'DD/Jun 29: Bi-weekly sync (6:00 AM, 30 min). Kgolo Kgololosego rejoined after extended absence. Renewal urgency flagged — over-reliance on single champion. Anthony onboarded on v2 (3-4 sessions completed).' },
+    { csm:'riley', health:'Healthy', account:'Paylocity',
+      opp:'Vitally Pulse &mdash; Jun 29 Call', arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Jun 29 &middot; Renewal Advancing',
+      excerpt:'RR/Jun 29: Monthly TrustRadius sync (7:00 AM, 30 min). Renewal order form with procurement; Matt requesting +$10K incentive to reach ~$50K total. FY27 SHRM review links created (50 + 25 invite).' },
+    { csm:'rani', health:'Healthy', account:'Lenovo',
+      opp:'Vitally Pulse &mdash; Jun 29 Call', arr:'Enterprise &middot; Rani Guy', csmlbl:'Rani Guy',
+      change:'Jun 29 &middot; Data Onboarding',
+      excerpt:'RG/Jun 29: Data partnership onboarding (8:00 AM, 45 min). Lenovo engineering team reviewed sample data structure. Gavin committed to data dictionary delivery. Rani established as CSM point of contact.' },
+    { csm:'nick', health:'Healthy', account:'Intuit IES',
+      opp:'Vitally Pulse &mdash; Jun 29 Call', arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Jun 29 &middot; ICP Dataset Request',
+      excerpt:'NJ/Jun 29: Weekly platform session (8:30 AM, 30 min). Suja requesting multi-entity US firms >$25M not on Intuit ecosystem (ICP definition). Nick walked through live platform query — initial pull ~47M companies.' },
+    { csm:'nick', health:'Healthy', account:'NTT',
+      opp:'Vitally Pulse &mdash; Jun 29 Call', arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Jun 29 &middot; Seat Expansion',
+      excerpt:'NJ/Jun 29: Monthly session (9:00 AM, 30 min). Grant departed — new contacts Jonathan Cyr + Ryan. License expansion: 22 new seats requested; likely 25-seat bundle. Order form being updated by David Garcia Thomas.' },
+    { csm:'rani', health:'Healthy', account:'Cisco',
+      opp:'Vitally Pulse &mdash; Jun 29 Call', arr:'Enterprise &middot; Rani Guy', csmlbl:'Rani Guy',
+      change:'Jun 29 &middot; Matching Walkthrough',
+      excerpt:'RG/Jun 29: Account matching session (9:00 AM, 30 min). Michael Xu reviewed how HG achieved improved match rates without URLs. Rani discussed product-to-spend-category mapping with Cisco intelligence team.' },
+    { csm:'atisha', health:'Healthy', account:'RSM US',
+      opp:'Vitally Pulse &mdash; Jun 29 Call', arr:'Enterprise &middot; Atisha Waghela', csmlbl:'Atisha Waghela',
+      change:'Jun 29 &middot; MCP Expansion',
+      excerpt:'AW/Jun 29: MCP walkthrough (10:00 AM, 30 min). Ben Vollmer + Aaron (RSM sales rep) introduced to HG MCP/AI-agent capabilities. Francis Brero + Chloe Portier demonstrated. Alice departed; Duke Devan joining team.' },
+    { csm:'varun', health:'Healthy', account:'Zscaler',
+      opp:'Vitally Pulse &mdash; Jun 29 Call', arr:'Enterprise &middot; Varun Tiwari', csmlbl:'Varun Tiwari',
+      change:'Jun 29 &middot; Account Matching',
+      excerpt:'VT/Jun 29: Account matching review (11:00 AM, 30 min). Manoj reviewed DUNS-based fallback matching criteria. Zscaler team is in SKO prep mode. Methodology walkthrough completed successfully.' },
+    { csm:'rani', health:'Healthy', account:'NetApp',
+      opp:'Vitally Pulse &mdash; Jun 29 Call', arr:'Enterprise &middot; Rani Guy', csmlbl:'Rani Guy',
+      change:'Jun 29 &middot; New Contact',
+      excerpt:'RG/Jun 29: Weekly sync (1:00 PM, 25 min). New contact Bini Valsala (data engineering, San Jose) joined for first time. HG wallet-size data confirmed as foundational to NetApp analytics. Elise on leave next week.' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div style="font-weight:600;font-size:13px;color:#f1f5f9;">${c.account}</div>
+          <div style="font-size:11px;color:#94a3b8;">${c.opp}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_06_29() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('0629-1') ? 'done' : ''}" data-csm="varun" id="action-0629-1">
+      <div class="action-checkbox ${doneActions.has('0629-1') ? 'checked' : ''}" onclick="toggleAction('0629-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; Ciena &mdash; Escalate Login Reactivation Issue to IT</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Varun Tiwari &middot; Profile reactivation went wrong &mdash; escalate to HG IT team, confirm Calum Walsh can log in successfully, and update Vitally.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0629-2') ? 'done' : ''}" data-csm="varun" id="action-0629-2">
+      <div class="action-checkbox ${doneActions.has('0629-2') ? 'checked' : ''}" onclick="toggleAction('0629-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F504; DXC Technology &mdash; Pull Usage Report and Share with Preeti</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Varun Tiwari &middot; Preeti requested consumption review (usage vs. licensed capacity, feature utilization) before renewal negotiation. Pull RGIP usage report and schedule renewal conversation.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0629-3') ? 'done' : ''}" data-csm="nick" id="action-0629-3">
+      <div class="action-checkbox ${doneActions.has('0629-3') ? 'checked' : ''}" onclick="toggleAction('0629-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; NTT &mdash; Update Order Form for 25-Seat Expansion</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Nick Johnson / David Garcia Thomas &middot; Jonathan requested 22 new seats + buffer = 25-seat bundle. Update and send order form. Forward all future emails to Jonathan Cyr and Ryan (Grant has departed).</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0629-4') ? 'done' : ''}" data-csm="riley" id="action-0629-4">
+      <div class="action-checkbox ${doneActions.has('0629-4') ? 'checked' : ''}" onclick="toggleAction('0629-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C4; Paylocity &mdash; Send Updated Order Form with +$10K Incentive Line</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Riley Rogers (via Anderson) &middot; Matt confirmed order form is fine; needs +$10K incentive line added (~$50K total). Anderson to send updated form. FY27 SHRM review links already created (50+25).</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0629-5') ? 'done' : ''}" data-csm="divyam" id="action-0629-5">
+      <div class="action-checkbox ${doneActions.has('0629-5') ? 'checked' : ''}" onclick="toggleAction('0629-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; Safaricom &mdash; Drive Renewal Conversation with Kgolo</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Divyam Dewan &middot; Kgolo returned from absence &mdash; use this momentum to schedule a formal renewal discussion ASAP. Reduce reliance on single champion; engage Anthony as backup champion.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0629-6') ? 'done' : ''}" data-csm="rani" id="action-0629-6">
+      <div class="action-checkbox ${doneActions.has('0629-6') ? 'checked' : ''}" onclick="toggleAction('0629-6')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4DA; Lenovo &mdash; Deliver Data Dictionary (Gavin)</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Rani Guy / Gavin Padden &middot; Gavin committed to sharing data dictionary with Lenovo engineering team (Antaleena, Niranjan). Confirm delivery and check if downstream architecture questions arise.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0629-7') ? 'done' : ''}" data-csm="atisha" id="action-0629-7">
+      <div class="action-checkbox ${doneActions.has('0629-7') ? 'checked' : ''}" onclick="toggleAction('0629-7')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F916; RSM &mdash; Follow Up on MCP Agent Build Next Steps</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW</span>Atisha Waghela &middot; MCP walkthrough completed with Ben Vollmer and Aaron. Schedule follow-up with Duke Devan (new team member) and Kristen. Confirm RSM's intended use case and agent build timeline.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No actions match the current filter.</div>`;
+}
