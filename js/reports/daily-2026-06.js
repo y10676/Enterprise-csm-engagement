@@ -4132,7 +4132,7 @@ function dayPulsesHTML_2026_06_16() {
     <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
       <div class="pulse-card-top">
         <div>
-          <div style="font-weight:600;font-size:13px;color:#f1f5f9;">${c.account}</div>
+          <div class="pulse-account">${c.account}</div>
           <div style="font-size:11px;color:#64748b;margin-top:2px;">${c.opp}</div>
         </div>
         <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
@@ -4487,7 +4487,7 @@ function dayPulsesHTML_2026_06_17() {
     <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
       <div class="pulse-card-top">
         <div>
-          <div style="font-weight:600;font-size:13px;color:#f1f5f9;">${c.account}</div>
+          <div class="pulse-account">${c.account}</div>
           <div style="font-size:11px;color:#64748b;margin-top:2px;">${c.opp}</div>
         </div>
         <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
@@ -4786,7 +4786,7 @@ function dayPulsesHTML_2026_06_18() {
     <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
       <div class="pulse-card-top">
         <div>
-          <div style="font-weight:600;font-size:13px;color:#f1f5f9;">${c.account}</div>
+          <div class="pulse-account">${c.account}</div>
           <div style="font-size:11px;color:#64748b;margin-top:2px;">${c.opp}</div>
         </div>
         <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
@@ -6386,7 +6386,7 @@ function dayPulsesHTML_2026_06_25() {
     <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
       <div class="pulse-card-top">
         <div>
-          <div style="font-weight:600;font-size:13px;color:#f1f5f9;">${c.account}</div>
+          <div class="pulse-account">${c.account}</div>
           <div style="font-size:11px;color:#64748b;">${c.opp}</div>
         </div>
         <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
@@ -7005,7 +7005,7 @@ function dayPulsesHTML_2026_06_29() {
     <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
       <div class="pulse-card-top">
         <div>
-          <div style="font-weight:600;font-size:13px;color:#f1f5f9;">${c.account}</div>
+          <div class="pulse-account">${c.account}</div>
           <div style="font-size:11px;color:#94a3b8;">${c.opp}</div>
         </div>
         <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
