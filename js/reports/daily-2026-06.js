@@ -7099,3 +7099,249 @@ function dayActionsHTML_2026_06_29() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No actions match the current filter.</div>`;
 }
+
+function dayData_2026_06_30() {
+  return {
+    calls: [
+      { ts: 'Jun 30 · 6:00 AM', csm: 'andy', account: 'SAS Institute',
+        note: 'Intent analysis deliverable review; matched 595 unique accounts against 516 intent topics. Team refining toward a top-250 predictive topic set.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Andy walked SAS (Adrian Carr, Anna, Omkar Hunuswadkar, Steven) through the intent analysis file: 690 of 751 provided accounts matched (595 unique), 516 of ~535 topics showed detections. Discussed the 6-week lookback window, intent-score methodology, and the difference between low/medium/high signal strength. Adrian requested a refreshed high-signal-only file and confirmed the next step is narrowing to ~250 topics that best predict new logos, expansion, and churn/risk KPIs. A follow-up MCP technical session is planned for next week.' },
+      { ts: 'Jun 30 · 8:30 AM', csm: 'divyam', account: 'Sage Global Services',
+        note: 'Bi-weekly TR performance sync; Sage Intacct holding 86 TR Score vs. Sage Accounting at 75 (right at Top Rated threshold). GenAI beta discussed as future expansion.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Bi-weekly rescheduled sync. Divyam walked Brock through the TR score comparison (Sage Intacct 86 TR Score / ~3,000 reviews vs. Sage Accounting 75 TR Score / 239 reviews, just at the Top Rated benchmark ahead of next April\'s cutoff), category coverage, and the AI-crawler traffic report (ChatGPT and Googlebot dominate comparison-page traffic; pricing pages over-indexed for Sage Accounting). Brock requested AP/AR automation category additions for both products — pending his confirmation. Divyam also previewed the upcoming GenAI feature on the vendor portal (early access ~July 15, full rollout July 29), which Brock can review live at the July 7 Edge Insider session — a potential expansion play (CVP-included baseline tier + a paid add-on tier).' },
+      { ts: 'Jun 30 · 9:00 AM', csm: 'rani', account: 'Amazon Web Services (AWS)',
+        note: 'Data migration packet walkthrough; AWS reviewing whether continued internal usage justifies the contract given a rip-and-replace file-format change ahead of next year\'s renewal decision.',
+        mins: 30, health: 'Concerning',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Mixed',
+        detail: 'David Larson (AWS) came prepared with field-mapping questions on the new install/spend file schema (url&rarr;domain_name_normalized, HG_CompanyId, deprecated fields, case-sensitivity). Alexi walked through the full data dictionary and agreed to flag which fields actually changed vs. cosmetic capitalization to minimize AWS engineering rework. More significantly, David was candid that AWS\'s internal teams use the HG data "in a very limited way" and that the current contract runs through this year — AWS will decide next year whether to continue based on whether they can show real value/growth from the data. Rani flagged the new Amazon Q internal-query integration as a lower-lift alternative to the flat-file pipeline and offered exec-level support to drive internal adoption before the renewal decision.' },
+      { ts: 'Jun 30 · 10:00 AM', csm: 'divyam', account: 'BILL Operations',
+        note: 'Weekly sync; lead/contact scoring coverage now above 99% (from ~80% unscored), but account-level engagement scoring still shows a data gap ahead of Monday\'s sales rollout.',
+        mins: 30, health: 'Concerning',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Weekly cadence. Eric confirmed lead/contact/account fit scoring is now under 1% unscored (up from ~80% unscored as of June 22), driven by an SFDC backfill fix. Remaining gap: account-level engagement scoring shows inconsistent coverage (dashboard shows ~74% but drills into ~42% on hover) — likely tied to a Salesforce validation rule blocking MadKudu writes, being worked by Clare and Ishaan. Eric pushed the sales-team rollout from this Monday to July 6 (post-July 4th holiday, and following recent layoffs) to allow time to close the gap. Divyam offered training materials and a one-pager/slide deck to support the rollout.' },
+    ],
+    pulses: [
+      { csm: 'andy', account: 'SAS Institute', health: 'Healthy',
+        note: 'Intent analysis file reviewed — 595 accounts matched, 516 topics with detections. Team narrowing to a top-250 predictive topic set; refreshed high-signal file requested.' },
+      { csm: 'divyam', account: 'Sage Global Services', health: 'Healthy',
+        note: 'Sage Intacct holding 86 TR Score (Top Rated pace); Sage Accounting at 75, right at threshold. AP/AR category additions requested. GenAI beta previewed as expansion play (July 15/29).' },
+      { csm: 'rani', account: 'Amazon Web Services (AWS)', health: 'Concerning',
+        note: 'AWS confirmed limited internal usage of HG data today; contract renewal decision next year contingent on demonstrated value. Amazon Q integration flagged as lower-lift alternative.' },
+      { csm: 'divyam', account: 'BILL Operations', health: 'Concerning',
+        note: 'Scoring coverage above 99% for lead/contact/account fit. Account engagement scoring gap persists (SFDC validation rule) ahead of July 6 sales rollout (delayed one week).' },
+    ],
+  };
+}
+
+function dayMeta_2026_06_30() {
+  return {
+    pills: [
+      ['dot-teal',   '4 Calls'],
+      ['dot-red',    '2 Concerning'],
+      ['dot-amber',  '1 Expansion'],
+      ['dot-green',  '4 Pulses'],
+      ['dot-grey',   'Tue Jun 30 · 77 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (4)', 'Pulses (4)', 'Action Items (5)']
+  };
+}
+
+function dayOverviewHTML_2026_06_30() {
+  return `<div class="section-label">Team Activity &mdash; Tuesday June 30, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Tuesday Jun 30 &mdash; 77 recordings scanned</strong> via SFDC SOQL &middot; <strong>4 confirmed calls</strong> across 3 CSMs &middot; 1 expansion signal (Sage GenAI beta) &middot; 2 concerning (AWS usage/renewal risk, BILL scoring gap)
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>Concerning:</strong> AWS ($4.6M ARR) confirmed limited internal usage of HG data &mdash; contract continuation next year contingent on demonstrated value (Rani) &middot; BILL account-engagement scoring gap unresolved ahead of July 6 sales rollout (Divyam)
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>Expansion signal:</strong> Sage Global Services previewed GenAI feature beta (early access July 15, full rollout July 29) as a potential paid add-on (Divyam)
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Sage Global Services (TR score review, GenAI expansion &#x1F4C8;) &middot; BILL Operations (scoring gap &#x26A0;)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">AWS (migration packet walkthrough; usage/renewal risk &#x26A0;)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="andy">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">SAS Institute (intent analysis review)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="riley">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">3 events scheduled (Red Hat TrustRadius, Zoom Denver onsite, Zoom QBR Denver) &mdash; no transcript synced</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="nick">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event scheduled (SAP biweekly sync) &mdash; recording likely exists but no transcript synced</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="varun">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 events scheduled (Unum bi-weekly, HG &amp; Insight sync) &mdash; no transcript / no recording found</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="atisha">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">3 events scheduled (Apple Strategy &amp; Planning, Apple Data Training, Converge Tech) &mdash; no transcript / no recording found</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 internal event only (Team Sync &mdash; Mark Fell Ops) &mdash; no customer calls today</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_06_30() {
+  return `<div class="calls-table">
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x26A0;&#xFE0F; <strong>Unconfirmed (no transcript, attributed via CSM event ownership):</strong> Varun &times; Unum (7:30 AM PT, 30 min) &middot; Atisha &times; Apple Strategy &amp; Planning (8:30 AM PT, 30 min) &middot; Nick &times; SAP biweekly sync (9:30 AM PT, 30 min) &middot; Riley &times; TrustRadius &lt;&gt; Zoom On-Site Denver (1:00 PM PT, 90 min) &middot; Riley &times; TrustRadius &lt;&gt; Zoom QBR Denver (2:30 PM PT, 60 min) &mdash; SFDC events confirmed, recordings not synced with transcripts.
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x1F534; <strong>No CSM detected on calendar-linked recording:</strong> Zycus (Andy Lim's event; call attended by HG Solutions team only &mdash; David Garcia-Thomas, Chlo&eacute; Portier &mdash; Andy not on transcript) &middot; "HG &amp; BMC in Palo Alto" (matches timing of Varun's "HG &amp; Insight sync" event but transcript shows Augie Buettner, an Account Manager, not Varun).
+  </div>
+  <div style="background:#1c1f26;border:1px solid #374151;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#94a3b8;">
+    <strong>No recording found for CSM event:</strong> Divyam &times; Adobe (GTM Tool Review) &middot; Andy &times; memoryBlue (Office Hours) &middot; Andy &times; ConnectWise (Bi-weekly) &middot; Atisha &times; Apple (Data Training Session &mdash; likely duplicate of Strategy &amp; Planning) &middot; Atisha &times; Converge Tech Solutions &middot; Rani &times; NetApp (Weekly Sync) &middot; Riley &times; Red Hat (TrustRadius biweekly)
+  </div>
+  </div>`;
+}
+
+function dayPulsesHTML_2026_06_30() {
+  const cards = [
+    { csm:'andy', health:'Healthy', account:'SAS Institute',
+      opp:'Vitally Pulse &mdash; Jun 30 Call', arr:'Enterprise &middot; Andy Lim', csmlbl:'Andy Lim',
+      change:'Jun 30 &middot; Intent Analysis Review',
+      excerpt:'AL/Jun 30: Intent analysis deliverable review (6:00 AM, 30 min). 595 unique accounts matched against 516 intent topics with detections. Team narrowing to a top-250 predictive topic set; refreshed high-signal file requested.' },
+    { csm:'divyam', health:'Healthy', account:'Sage Global Services',
+      opp:'Vitally Pulse &mdash; Jun 30 Call', arr:'Enterprise &middot; Divyam Dewan', csmlbl:'Divyam Dewan',
+      change:'Jun 30 &middot; TR Score Review + Expansion',
+      excerpt:'DD/Jun 30: Bi-weekly TR sync (8:30 AM, 30 min). Sage Intacct holding 86 TR Score (Top Rated pace); Sage Accounting at 75, right at threshold. AP/AR category additions requested. GenAI beta previewed as expansion play (July 15/29).' },
+    { csm:'rani', health:'Concerning', account:'Amazon Web Services (AWS)',
+      opp:'Vitally Pulse &mdash; Jun 30 Call', arr:'Enterprise &middot; Rani Guy', csmlbl:'Rani Guy',
+      change:'Jun 30 &middot; Usage/Renewal Risk',
+      excerpt:'RG/Jun 30: Data migration packet walkthrough (9:00 AM, 30 min). David confirmed limited internal usage of HG data; contract continuation next year contingent on demonstrated value. Amazon Q integration flagged as lower-lift alternative.' },
+    { csm:'divyam', health:'Concerning', account:'BILL Operations',
+      opp:'Vitally Pulse &mdash; Jun 30 Call', arr:'Enterprise &middot; Divyam Dewan', csmlbl:'Divyam Dewan',
+      change:'Jun 30 &middot; Scoring Gap',
+      excerpt:'DD/Jun 30: Weekly sync (10:00 AM, 30 min). Lead/contact/account fit scoring above 99% (from ~80% unscored). Account-engagement scoring gap persists (SFDC validation rule) ahead of July 6 sales rollout (delayed one week).' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div class="pulse-account">${c.account}</div>
+          <div style="font-size:11px;color:#94a3b8;">${c.opp}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_06_30() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('0630-1') ? 'done' : ''}" data-csm="rani" id="action-0630-1">
+      <div class="action-checkbox ${doneActions.has('0630-1') ? 'checked' : ''}" onclick="toggleAction('0630-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; AWS &mdash; Address Usage/Renewal Risk Before Next Year's Decision</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy &middot; David confirmed AWS's internal use of HG data is limited today; contract continuation next year hinges on demonstrated value. Drive internal adoption conversations and pursue the Amazon Q integration as a lower-lift path to broader usage.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0630-2') ? 'done' : ''}" data-csm="divyam" id="action-0630-2">
+      <div class="action-checkbox ${doneActions.has('0630-2') ? 'checked' : ''}" onclick="toggleAction('0630-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F534; BILL Operations &mdash; Close Account-Engagement Scoring Gap Before July 6 Rollout</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Divyam Dewan &middot; Account-level engagement scoring still shows a coverage gap tied to a Salesforce validation rule blocking MadKudu writes. Follow up with Clare and Ishaan for resolution and confirm before Eric's July 6 sales-team rollout.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0630-3') ? 'done' : ''}" data-csm="divyam" id="action-0630-3">
+      <div class="action-checkbox ${doneActions.has('0630-3') ? 'checked' : ''}" onclick="toggleAction('0630-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Sage Global Services &mdash; Follow Up on GenAI Beta Expansion Interest</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Divyam Dewan &middot; Sage previewed the GenAI vendor-portal feature (early access July 15, full rollout July 29). Confirm Brock's attendance at the July 7 Edge Insider session and gauge interest in the paid add-on tier post-beta.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0630-4') ? 'done' : ''}" data-csm="andy" id="action-0630-4">
+      <div class="action-checkbox ${doneActions.has('0630-4') ? 'checked' : ''}" onclick="toggleAction('0630-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CA; SAS Institute &mdash; Send Refreshed High-Signal Intent Topic File</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Andy Lim &middot; Adrian requested an updated file restricted to medium/high intent-signal strength. Omkar to refresh with current-week data; finalize toward the ~250 predictive topic set tied to new-logo, expansion, and churn KPIs.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0630-5') ? 'done' : ''}" data-csm="riley" id="action-0630-5">
+      <div class="action-checkbox ${doneActions.has('0630-5') ? 'checked' : ''}" onclick="toggleAction('0630-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4DD; Zoom / TrustRadius &mdash; Capture Denver Onsite Notes</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW</span>Riley Rogers &middot; Two Denver on-site meetings (customer visit + QBR) did not sync transcripts. Log notes manually in Vitally once Riley is back from travel.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No actions match the current filter.</div>`;
+}
