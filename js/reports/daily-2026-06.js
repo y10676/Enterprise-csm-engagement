@@ -5565,6 +5565,16 @@ function dayData_2026_06_23() {
         mins: 30, health: 'Healthy',
         nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
         detail: 'Rani impersonated Isovalent\'s HubSpot-connected instance to walk Amy through platform configuration: SSO setup, user access (Amy + Tuan as admins), analysis settings (buying personas, target industries, countries, company sizes, exclusions, product/competitor stack). Data Studio not included. Rani previewed HubSpot connector deck, market analyzer for TAM/SAM/SON, 135+ spend categories, and promised to connect Amy with product team for account brief feedback.' },
+      { ts: 'Jun 23 · 6:00 AM', csm: 'andy', account: 'memoryBlue',
+        note: 'Memoryblue Office Hours — Andy hosted open Q&A for mB SDR team. Recording exists; no transcript.',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Recurring weekly office hours Andy hosts for the Memoryblue SDR team. Weflow recording confirmed (a76RN0000004c1tYAA) but no transcript synced. Verified by Andy as one of 7 calls for the week.' },
+      { ts: 'Jun 23 · 8:00 AM', csm: 'andy', account: 'memoryBlue',
+        note: 'Memoryblue Weekly Sync — SDR team progress check-in. Recording exists; no transcript.',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Recurring weekly sync between Andy and Memoryblue Enterprise team. Weflow recording confirmed (a76RN0000003XM1YAM) but no transcript synced. Verified by Andy as one of 7 calls for the week.' },
     ],
     pulses: [
       { csm: 'nick',    account: 'Check Point',        health: 'Healthy',    note: 'Platform training session completed — 5 users oriented on license access and HG data catalog.' },
@@ -5577,6 +5587,8 @@ function dayData_2026_06_23() {
       { csm: 'riley',   account: 'SAP Business Network', health: 'Healthy',  note: 'Invoice vendor mismatch blocking payment. TR portal review workflow tutorial delivered.' },
       { csm: 'atisha',  account: 'TD Synnex',          health: 'Concerning', note: 'PRODUCT GAP: credit consumption visibility. Exec burn plan required for 16K IBM accounts.' },
       { csm: 'rani',    account: 'Cisco (Isovalent)',  health: 'Healthy',    note: 'Onboarding: SSO, HubSpot connector, market analyzer, spend categories walkthrough for Amy.' },
+      { csm: 'andy',    account: 'memoryBlue',          health: 'Healthy',    note: 'Jun 23 · Office Hours (6:00 AM PT, 30 min). Recording confirmed in Weflow — no transcript. Verified by Andy.' },
+      { csm: 'andy',    account: 'memoryBlue',          health: 'Healthy',    note: 'Jun 23 · Weekly Sync (8:00 AM PT, 30 min). Recording confirmed in Weflow — no transcript. Verified by Andy.' },
     ],
   };
 }
@@ -5584,20 +5596,20 @@ function dayData_2026_06_23() {
 function dayMeta_2026_06_23() {
   return {
     pills: [
-      ['dot-teal',   '10 Calls'],
+      ['dot-teal',   '12 Calls'],
       ['dot-red',    '1 Concerning'],
       ['dot-amber',  '3 Expansion'],
-      ['dot-green',  '10 Pulses'],
+      ['dot-green',  '12 Pulses'],
       ['dot-grey',   'Tue Jun 23 · 52 scanned'],
     ],
-    tabs: ['Overview', 'Calls (10)', 'Pulses (10)', 'Action Items (8)']
+    tabs: ['Overview', 'Calls (12)', 'Pulses (12)', 'Action Items (8)']
   };
 }
 
 function dayOverviewHTML_2026_06_23() {
   return `<div class="section-label">Team Activity &mdash; Tuesday June 23, 2026</div>
   <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
-    &#x1F4C5; <strong>Tuesday Jun 23 &mdash; 52 recordings scanned</strong> via SFDC SOQL &middot; <strong>10 confirmed calls</strong> across 5 CSMs &middot; 3 expansion signals &middot; 1 concerning (TD Synnex product gap)
+    &#x1F4C5; <strong>Tuesday Jun 23 &mdash; 52 recordings scanned</strong> via SFDC SOQL &middot; <strong>12 confirmed calls</strong> across 6 CSMs &middot; 3 expansion signals &middot; 1 concerning (TD Synnex product gap)
   </div>
   <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
     &#x26A0;&#xFE0F; <strong>TD Synnex &mdash; Credit Visibility Product Gap:</strong> Platform shows gross credit estimate without deducting prior downloads. Lisa needs a 6-month exec burn plan for 16,000 IBM accounts. Augie + Gavin acknowledged gap &mdash; product ticket needed.
@@ -5696,13 +5708,18 @@ function dayOverviewHTML_2026_06_23() {
       <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 internal HG team sync &mdash; no customer calls recorded</div>
     </div>
 
-    <div class="csm-card no-calls" data-csm="andy">
-      <span class="no-call-badge">0 Calls</span>
+    <div class="csm-card has-calls" data-csm="andy">
+      <span class="call-badge">2 CALLS</span>
       <div class="csm-card-header">
         <div class="avatar av-grey">AL</div>
         <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
       </div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">3 events (Memoryblue no transcript, Zycus no recording, Veracode no recording)</div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">memoryBlue Office Hours (6:00 AM) &middot; memoryBlue Weekly Sync (8:00 AM) &mdash; recordings confirmed, no transcript</div>
     </div>
 
   </div>`;
@@ -5713,7 +5730,7 @@ function dayCallsHTML_2026_06_23() {
     &#x26A0;&#xFE0F; <strong>TD Synnex (Atisha) &mdash; Concerning:</strong> Product gap: credit consumption visibility. Lisa cannot predict export cost before downloading. 6-month exec burn plan required for ~16,000 IBM accounts. Product ticket needed urgently.
   </div>
   <div style="background:#161c2d;border:1px solid #6366f1;border-left:3px solid #6366f1;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#a5b4fc;">
-    &#x1F4CB; <strong>Unconfirmed (no transcript):</strong> Memoryblue Office Hours (Andy Lim, 6:00 AM PT) &middot; Apple Strategy &amp; Planning (Atisha, 8:30 AM PT) &middot; Quadient Monthly Sync (Divyam, 12:00 PM PT) &mdash; inferred from CSM event ownership, not speaker-verified.
+    &#x1F4CB; <strong>Unconfirmed (no transcript):</strong> Apple Strategy &amp; Planning (Atisha, 8:30 AM PT) &middot; Quadient Monthly Sync (Divyam, 12:00 PM PT) &mdash; inferred from CSM event ownership, not speaker-verified. <em>Memoryblue Office Hours + Weekly Sync promoted to confirmed per Andy&rsquo;s own verification (recordings exist in Weflow).</em>
   </div>
   <div style="background:#1c1f26;border:1px solid #334155;border-left:3px solid #334155;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#94a3b8;">
     &#x1F6AB; <strong>Excluded (internal):</strong> Team Sync &mdash; Mark Fell Ops (8:00 AM PT, 60 min) &mdash; What.Name = HG Insights; Rani Guy + Pam Huck both had this event &mdash; not a customer call.
@@ -6496,6 +6513,11 @@ function dayData_2026_06_26() {
         mins: 30, health: 'Healthy',
         nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Mixed',
         detail: 'Atisha and Tyler Neubauer (HG) reconnected with Rachna Agrawal (new PANW point person) and Sweta Vyas after Prasana\'s departure. Covered 5-year partnership history and current data fabric contract. MCP scoping was paused for renewal — confirmed to re-activate. Sweta identified Sales Workbench as primary use case for HG Edge Insights.' },
+      { ts: 'Jun 26 · 6:00 AM', csm: 'andy', account: 'SAS Institute',
+        note: 'SAS Institute EMEA / HG Insights Weekly Sync. Recording exists; no transcript.',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Recurring weekly sync between Andy and SAS Institute EMEA team. Weflow recording confirmed (a76RN0000007RczYAE) but no transcript synced. Verified by Andy as one of 7 calls for the week.' },
     ],
     pulses: [
       { csm: 'atisha', account: 'AMD', health: 'Healthy',
@@ -6504,6 +6526,8 @@ function dayData_2026_06_26() {
         note: 'Jun 26 · Contact data pilot check-in with Marianna Prodan. Awaiting pilot decisions. Cloudflare (Robert) positive signal.' },
       { csm: 'atisha', account: 'Palo Alto Networks', health: 'Healthy',
         note: 'Jun 26 · Re-engagement: new contact Rachna Agrawal. MCP re-activation confirmed. Sales Workbench primary use case. QBR cadence to restore.' },
+      { csm: 'andy', account: 'SAS Institute (EMEA)', health: 'Healthy',
+        note: 'Jun 26 · EMEA Weekly Sync (6:00 AM PT, 30 min). Recording confirmed in Weflow — no transcript. Verified by Andy.' },
     ],
   };
 }
@@ -6511,19 +6535,19 @@ function dayData_2026_06_26() {
 function dayMeta_2026_06_26() {
   return {
     pills: [
-      ['dot-teal',  '3 Calls'],
+      ['dot-teal',  '4 Calls'],
       ['dot-amber', '2 Expansion Signals'],
-      ['dot-green', '3 Vitally Pulses'],
+      ['dot-green', '4 Pulses'],
       ['dot-grey',  'Fri Jun 26 · 43 scanned'],
     ],
-    tabs: ['Overview', 'Calls (3)', 'Pulses (3)', 'Action Items (7)']
+    tabs: ['Overview', 'Calls (4)', 'Pulses (4)', 'Action Items (7)']
   };
 }
 
 function dayOverviewHTML_2026_06_26() {
   return `<div class="section-label">Team Activity &mdash; Friday June 26, 2026</div>
   <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
-    &#x1F4C5; <strong>Friday Jun 26 &mdash; 43 recordings scanned</strong> via SFDC SOQL &middot; <strong>3 confirmed customer calls</strong> (Atisha &times;2, Rani &times;1) &middot; 1 flagged (Nick &mdash; account unknown) &middot; Expansion: AMD v3 credit model + PANW MCP re-activation
+    &#x1F4C5; <strong>Friday Jun 26 &mdash; 43 recordings scanned</strong> via SFDC SOQL &middot; <strong>4 confirmed customer calls</strong> (Atisha &times;2, Rani &times;1, Andy &times;1) &middot; 1 flagged (Nick &mdash; account unknown) &middot; Expansion: AMD v3 credit model + PANW MCP re-activation
   </div>
   <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
     &#128260; <strong>Expansion signals:</strong> Atisha pitched AMD on v3 credit model (Sept v1&rarr;v2 deadline drives urgency) &middot; PANW MCP scoping confirmed to re-activate with new contact Rachna Agrawal
@@ -6606,13 +6630,18 @@ function dayOverviewHTML_2026_06_26() {
       <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event scheduled (ADP Smart Compliance) &mdash; no recording found</div>
     </div>
 
-    <div class="csm-card no-calls" data-csm="andy">
-      <span class="no-call-badge">0 Calls</span>
+    <div class="csm-card has-calls" data-csm="andy">
+      <span class="call-badge">1 CALL</span>
       <div class="csm-card-header">
         <div class="avatar av-grey">AL</div>
         <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
       </div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 recording (SAS EMEA) &mdash; no transcript, unconfirmed</div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">SAS Institute EMEA Weekly Sync (6:00 AM PT) &mdash; recording confirmed, no transcript</div>
     </div>
 
   </div>`;
