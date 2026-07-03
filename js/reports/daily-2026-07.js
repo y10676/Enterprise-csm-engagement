@@ -280,3 +280,335 @@ function dayActionsHTML_2026_07_01() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No actions match the current filter.</div>`;
 }
+
+// ============================================================
+// Jul 2, 2026
+// ============================================================
+
+function dayData_2026_07_02() {
+  return {
+    calls: [
+      { ts: 'Jul 2 · 4:30 AM', csm: 'atisha', account: 'Insight Direct USA Ltd',
+        note: 'Recurring biweekly sync — ZoomInfo vs. HG data-gap discussion; interest in a sample dataset to evaluate expanding HG\'s role in contact enrichment.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Recurring biweekly sync between HG (Atisha Waghela, Augie Buettner) and Insight Direct\'s Rakesh Pathak. Discussion covered ZoomInfo vs. HG data gaps for contact data, an internal AI sales-coach initiative pulling HG data, and interest in a sample dataset for ~100 accounts to evaluate expanding HG\'s role in contact enrichment.' },
+      { ts: 'Jul 2 · 5:30 AM', csm: 'atisha', account: 'Kyndryl',
+        note: 'Monthly sync surfaced an ownership gap — primary contact moved teams two months ago with no successor named in the account stream.',
+        mins: 30, health: 'Concerning',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Monthly Kyndryl sync where Atisha learned the primary account contact (Louise) has moved teams and no successor has been named on the customer\'s account stream, creating an ownership gap. Atisha worked to re-establish who owns the relationship and how the marketing dashboard is being used.' },
+      { ts: 'Jul 2 · 6:00 AM', csm: 'nick', account: 'Softcat Ltd',
+        note: 'Presented an expanded UK dataset (26M companies) plus SMB spend/install data points ahead of a potential upsell.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'HG team (Nick Johnson, Rishabh, David Garcia Thomas) presented Softcat an expanded UK dataset (26M companies) plus additional SMB spend/install data points, walking through feed growth options and recommendations ahead of a potential upsell.' },
+      { ts: 'Jul 2 · 7:00 AM', csm: 'riley', account: 'Red Hat Inc',
+        note: 'Recurring TrustRadius check-in — landing-page write-ups, tracking-fix delay, and reusing customer collateral in nurture campaigns.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Recurring biweekly TrustRadius check-in with Red Hat (Brianna Gault, Sai A). Reviewed outstanding landing page write-ups for RHEL/OpenShift/Ansible, an integrate.com tracking fix delay, and how customer story/quote collateral can be reused in nurture campaigns.' },
+      { ts: 'Jul 2 · 7:30 AM', csm: 'nick', account: 'Siemens AG',
+        note: 'Positive feedback on Account Compass one-pagers; discussed expanding the strategic-land pilot to more accounts.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Recurring biweekly Siemens sync (Nick Johnson, David Garcia-Thomas with Pat Loftus, Kaden). Positive feedback on Account Compass-generated one-pagers for the strategic land initiative; team discussed identifying more AOs/accounts to expand the pilot and enhancing rep-facing opportunity justification.' },
+      { ts: 'Jul 2 · 8:00 AM', csm: 'varun', account: 'Exclusive Networks',
+        note: 'Customer flagged their manual data-request process as suboptimal and asked about a self-serve API/credit model ahead of renewal.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Mixed',
+        detail: 'Exclusive Networks (Ben Abraham) raised that their current manual data-request process is suboptimal and asked about a self-serve API/credit-based model ahead of renewal; Angus Hyams and Varun Tiwari discussed legacy-platform API limitations, sandbox testing, and how platform migration would change credit consumption.' },
+      { ts: 'Jul 2 · 9:00 AM', csm: 'nick', account: 'Veeam',
+        note: 'Propensity-model working session — scoring accounts not currently in the feed for the contract-renewal proposal.',
+        mins: 45, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Recurring propensity-model working session for Veeam (Nick Johnson, Angus Hyams, Sid Subramany, Brandon Cosley) covering new technology additions, account scoring not currently in the customer\'s feed for the contract renewal proposal, and refining technographic intensity-signal granularity.' },
+      { ts: 'Jul 2 · 11:30 AM', csm: 'riley', account: 'zScaler',
+        note: 'Review-generation sync — tracking product-line review counts ahead of the Sept 26 Buyer\'s Choice deadline; ~$900 incentive surplus.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Recurring TrustRadius review-generation sync with Zscaler (Vivian Chan). Reviewed review counts by product line ahead of the Sept. 26 Buyer\'s Choice deadline, remaining incentive budget by product (~$900 surplus), and campaign ideas (webinars, review-recovery outreach) to lift lagging product lines.' },
+      { ts: 'Jul 2 · 1:00 PM', csm: 'rani', account: 'Hewlett Packard Enterprise Co',
+        note: 'Resolved contract-language questions on SLAs/data-consumption terms; confirmed HG delivering ~3x contracted value. Legal sign-off in motion.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'HPE sync (Rani Guy, Adrian Escobar with Tracy York, Evan Miller) to resolve contract-language questions on SLAs and data-consumption terms (identity resolution / HG company ID), noting HG is delivering roughly 3x the contracted value; concluded with legal sign-off and signature routing steps.' },
+    ],
+    pulses: [
+      { csm: 'atisha', account: 'Insight Direct USA Ltd', health: 'Healthy',
+        note: 'ZoomInfo vs. HG data-gap discussion; sample dataset requested to evaluate expanded contact-enrichment role.' },
+      { csm: 'atisha', account: 'Kyndryl', health: 'Concerning',
+        note: 'Primary contact moved off the account with no successor named — ownership gap. Atisha re-establishing relationship owner.' },
+      { csm: 'nick', account: 'Softcat Ltd', health: 'Healthy',
+        note: 'Expanded UK dataset (26M companies) proposal presented for upsell.' },
+      { csm: 'riley', account: 'Red Hat Inc', health: 'Healthy',
+        note: 'Landing-page write-ups and tracking-fix follow-ups on track.' },
+      { csm: 'nick', account: 'Siemens AG', health: 'Healthy',
+        note: 'Account Compass one-pagers well received; expanding the strategic-land pilot.' },
+      { csm: 'varun', account: 'Exclusive Networks', health: 'Healthy',
+        note: 'Self-serve API/credit model requested ahead of renewal; sandbox testing discussed.' },
+      { csm: 'nick', account: 'Veeam', health: 'Healthy',
+        note: 'Propensity-model scoring session for contract-renewal proposal.' },
+      { csm: 'riley', account: 'zScaler', health: 'Healthy',
+        note: 'Review-generation push ahead of Sept 26 Buyer\'s Choice deadline; ~$900 incentive budget surplus.' },
+      { csm: 'rani', account: 'Hewlett Packard Enterprise Co', health: 'Healthy',
+        note: 'Contract-language questions resolved; HG confirmed delivering ~3x contracted value. Legal sign-off in motion.' },
+    ],
+  };
+}
+
+function dayMeta_2026_07_02() {
+  return {
+    pills: [
+      ['dot-teal',   '9 Calls'],
+      ['dot-red',    '1 Concerning'],
+      ['dot-amber',  '6 Expansion'],
+      ['dot-green',  '9 Pulses'],
+      ['dot-grey',   'Thu Jul 2 · 53 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (9)', 'Pulses (9)', 'Action Items (8)']
+  };
+}
+
+function dayOverviewHTML_2026_07_02() {
+  return `<div class="section-label">Team Activity &mdash; Thursday July 2, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Thursday Jul 2 &mdash; 53 recordings scanned</strong> via SFDC SOQL &middot; <strong>9 confirmed calls</strong> across 5 CSMs &middot; 6 expansion signals &middot; 1 concerning (Kyndryl ownership gap)
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>Concerning:</strong> Kyndryl's primary contact (Louise) moved teams two months ago with no successor named — an ownership gap Atisha is working to close.
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>Expansion signals:</strong> Insight Direct (contact-enrichment sample dataset) &middot; Softcat (expanded UK dataset, 26M companies) &middot; Siemens (Account Compass pilot expansion) &middot; Exclusive Networks (self-serve API/credit model) &middot; Veeam (propensity-model scoring for renewal) &middot; HPE (confirmed ~3x contracted value delivered)
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Red Hat Inc (check-in) &middot; zScaler (review-generation push)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">3 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">3</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">105m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Softcat Ltd (expanded UK dataset &#x1F4C8;) &middot; Siemens AG (Account Compass pilot &#x1F4C8;) &middot; Veeam (propensity-model scoring &#x1F4C8;)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Hewlett Packard Enterprise Co (contract questions resolved, ~3x value confirmed)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Exclusive Networks (self-serve API/credit model &#x1F4C8;) &middot; zScaler (Varun/Manoj sync — no transcript, unconfirmed)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Insight Direct USA Ltd (contact-enrichment expansion &#x1F4C8;) &middot; Kyndryl (ownership gap &#x26A0;) &middot; RSM (no transcript, unconfirmed)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="divyam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">5 events scheduled (delaware Netherlands, Sage, Lumen Weekly x2, OpenAI Weekly) &mdash; OpenAI matched a recording but no transcript synced (unconfirmed); other 4 have no recording found</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No CSM-owned events in SFDC for this date</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 duplicate NetApp calendar entries (Monthly Sync) &mdash; neither has a matching recording</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_07_02() {
+  return `<div class="calls-table">
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x2139;&#xFE0F; <strong>Unconfirmed (no transcript, attributed via CSM event ownership):</strong> Atisha &times; RSM (9:00 AM PT, 30 min) &middot; Divyam &times; OpenAI (10:30 AM PT, 30 min) &middot; Varun &times; zScaler / Varun-Manoj Sync (11:15 AM PT, 30 min) &mdash; SFDC events matched recordings by EventId, but no transcript synced to confirm CSM presence.
+  </div>
+  <div style="background:#1c1f26;border:1px solid #374151;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#94a3b8;">
+    <strong>CSM events with no recording:</strong> Nick &times; PTC (2:00 AM PT) &middot; Varun &times; Insight (5:02 AM PT) &middot; Atisha &times; Kong (7:30 AM PT) &middot; Atisha &times; Apple (9:00 AM PT) &middot; Atisha &times; Versa (10:30 AM PT) &middot; Riley &times; Apptio (10:00 AM PT) &middot; Divyam &times; delaware Netherlands / Sage / Lumen Weekly / Lumen Weekly 2.0 &middot; Andy &times; NetApp (9:00 AM PT, 2 duplicate entries).
+  </div>
+  </div>`;
+}
+
+function dayPulsesHTML_2026_07_02() {
+  const cards = [
+    { csm:'atisha', health:'Healthy', account:'Insight Direct USA Ltd',
+      opp:'Vitally Pulse &mdash; Jul 2 Call', arr:'Enterprise &middot; Atisha Waghela', csmlbl:'Atisha Waghela',
+      change:'Jul 2 &middot; Contact Enrichment',
+      excerpt:'AW/Jul 2: Recurring biweekly sync (4:30 AM, 30 min). ZoomInfo vs. HG data-gap discussion; sample dataset requested to evaluate expanded contact-enrichment role.' },
+    { csm:'atisha', health:'Concerning', account:'Kyndryl',
+      opp:'Vitally Pulse &mdash; Jul 2 Call', arr:'Enterprise &middot; Atisha Waghela', csmlbl:'Atisha Waghela',
+      change:'Jul 2 &middot; Ownership Gap',
+      excerpt:'AW/Jul 2: Monthly sync (5:30 AM, 30 min). Primary contact moved off the account two months ago with no successor named. Atisha re-establishing relationship owner.' },
+    { csm:'nick', health:'Healthy', account:'Softcat Ltd',
+      opp:'Vitally Pulse &mdash; Jul 2 Call', arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Jul 2 &middot; Expanded Dataset Pitch',
+      excerpt:'NJ/Jul 2: Recurring sync (6:00 AM, 30 min). Expanded UK dataset (26M companies) plus SMB spend/install data points presented ahead of upsell.' },
+    { csm:'riley', health:'Healthy', account:'Red Hat Inc',
+      opp:'Vitally Pulse &mdash; Jul 2 Call', arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Jul 2 &middot; TrustRadius Check-in',
+      excerpt:'RR/Jul 2: Recurring biweekly check-in (7:00 AM, 30 min). Landing-page write-ups (RHEL/OpenShift/Ansible) and tracking-fix follow-ups on track.' },
+    { csm:'nick', health:'Healthy', account:'Siemens AG',
+      opp:'Vitally Pulse &mdash; Jul 2 Call', arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Jul 2 &middot; Pilot Expansion',
+      excerpt:'NJ/Jul 2: Recurring biweekly sync (7:30 AM, 30 min). Account Compass one-pagers well received; expanding the strategic-land pilot to more accounts.' },
+    { csm:'varun', health:'Healthy', account:'Exclusive Networks',
+      opp:'Vitally Pulse &mdash; Jul 2 Call', arr:'Enterprise &middot; Varun Tiwari', csmlbl:'Varun Tiwari',
+      change:'Jul 2 &middot; Self-Serve Model',
+      excerpt:'VT/Jul 2: Ad-hoc, customer-initiated (8:00 AM, 30 min). Requested a self-serve API/credit model ahead of renewal; sandbox testing and platform migration credit-usage discussed.' },
+    { csm:'nick', health:'Healthy', account:'Veeam',
+      opp:'Vitally Pulse &mdash; Jul 2 Call', arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Jul 2 &middot; Propensity Model',
+      excerpt:'NJ/Jul 2: Recurring working session (9:00 AM, 45 min). Scoring accounts not currently in the feed for the contract-renewal proposal; refining technographic signal granularity.' },
+    { csm:'riley', health:'Healthy', account:'zScaler',
+      opp:'Vitally Pulse &mdash; Jul 2 Call', arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Jul 2 &middot; Review Generation',
+      excerpt:'RR/Jul 2: Recurring sync (11:30 AM, 30 min). Review counts tracked ahead of Sept 26 Buyer\'s Choice deadline; ~$900 incentive surplus; campaign ideas for lagging product lines.' },
+    { csm:'rani', health:'Healthy', account:'Hewlett Packard Enterprise Co',
+      opp:'Vitally Pulse &mdash; Jul 2 Call', arr:'Enterprise &middot; Rani Guy', csmlbl:'Rani Guy',
+      change:'Jul 2 &middot; Contract Resolution',
+      excerpt:'RG/Jul 2: Recurring sync (1:00 PM, 30 min). Contract-language questions on SLAs/data-consumption resolved; HG confirmed delivering ~3x contracted value. Legal sign-off in motion.' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div class="pulse-account">${c.account}</div>
+          <div style="font-size:11px;color:#94a3b8;">${c.opp}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_07_02() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('0702-1') ? 'done' : ''}" data-csm="atisha" id="action-0702-1">
+      <div class="action-checkbox ${doneActions.has('0702-1') ? 'checked' : ''}" onclick="toggleAction('0702-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; Kyndryl &mdash; Re-establish Account Ownership</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Atisha Waghela &middot; Primary contact moved teams two months ago with no successor named in the account stream. Identify the new point of contact before the relationship goes dark.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0702-2') ? 'done' : ''}" data-csm="nick" id="action-0702-2">
+      <div class="action-checkbox ${doneActions.has('0702-2') ? 'checked' : ''}" onclick="toggleAction('0702-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Softcat &mdash; Follow Up on Expanded UK Dataset Proposal</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Nick Johnson &middot; Expanded UK dataset (26M companies) plus SMB spend/install data points was presented — move the upsell forward.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0702-3') ? 'done' : ''}" data-csm="nick" id="action-0702-3">
+      <div class="action-checkbox ${doneActions.has('0702-3') ? 'checked' : ''}" onclick="toggleAction('0702-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Siemens &mdash; Identify Accounts to Expand Account Compass Pilot</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Nick Johnson &middot; Account Compass one-pagers well received; identify more AOs/accounts to expand the strategic-land pilot.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0702-4') ? 'done' : ''}" data-csm="varun" id="action-0702-4">
+      <div class="action-checkbox ${doneActions.has('0702-4') ? 'checked' : ''}" onclick="toggleAction('0702-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Exclusive Networks &mdash; Advance Self-Serve API/Credit Model Discussion</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Varun Tiwari &middot; Customer requested a self-serve model ahead of renewal. Progress sandbox testing and clarify credit consumption under platform migration.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0702-5') ? 'done' : ''}" data-csm="nick" id="action-0702-5">
+      <div class="action-checkbox ${doneActions.has('0702-5') ? 'checked' : ''}" onclick="toggleAction('0702-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Veeam &mdash; Finalize Propensity-Model Scoring for Renewal Proposal</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Nick Johnson &middot; Complete scoring of accounts not currently in the feed to support the contract-renewal proposal.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0702-6') ? 'done' : ''}" data-csm="rani" id="action-0702-6">
+      <div class="action-checkbox ${doneActions.has('0702-6') ? 'checked' : ''}" onclick="toggleAction('0702-6')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4DD; HPE &mdash; Complete Legal Sign-Off and Signature Routing</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Rani Guy &middot; Contract-language questions resolved; HG confirmed delivering ~3x contracted value. Route for signature.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0702-7') ? 'done' : ''}" data-csm="riley" id="action-0702-7">
+      <div class="action-checkbox ${doneActions.has('0702-7') ? 'checked' : ''}" onclick="toggleAction('0702-7')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4DA; zScaler &mdash; Support Review-Generation Push</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW</span>Riley Rogers &middot; Coordinate webinars and review-recovery outreach for lagging product lines ahead of the Sept 26 Buyer's Choice deadline.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0702-8') ? 'done' : ''}" data-csm="atisha" id="action-0702-8">
+      <div class="action-checkbox ${doneActions.has('0702-8') ? 'checked' : ''}" onclick="toggleAction('0702-8')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4DD; RSM, OpenAI, zScaler (Varun-Manoj) &mdash; Log Manual Vitally Notes</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW</span>Atisha Waghela, Divyam Dewan, Varun Tiwari &middot; All 3 calls matched a CSM event by EventId but no transcript synced, so CSM presence is unconfirmed. Log manual notes to keep the account record current.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No actions match the current filter.</div>`;
+}
