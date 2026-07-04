@@ -612,3 +612,200 @@ function dayActionsHTML_2026_07_02() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No actions match the current filter.</div>`;
 }
+
+// ============================================================
+// July 3, 2026 — Pre-holiday Friday (no confirmed calls)
+// 7 recordings scanned · 0 transcripts · 0 confirmed CSM calls
+// 3 unconfirmed (recording + CSM event link, no transcript)
+// 7 CSM events with no matching recording (Atisha heavy day)
+// ============================================================
+
+function dayData_2026_07_03() {
+  return {
+    calls: [],
+    pulses: [],
+  };
+}
+
+function dayMeta_2026_07_03() {
+  return {
+    pills: [
+      ['dot-teal',  '0 Confirmed Calls'],
+      ['dot-amber', '3 Unconfirmed'],
+      ['dot-grey',  'Fri Jul 3 · 7 scanned · Pre-holiday'],
+    ],
+    tabs: ['Overview', 'Calls (0)', 'Pulses (0)', 'Action Items (4)']
+  };
+}
+
+function dayOverviewHTML_2026_07_03() {
+  return `<div class="section-label">Team Activity &mdash; Friday July 3, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Friday Jul 3 &mdash; 7 recordings scanned</strong> via SFDC SOQL &middot; <strong>0 confirmed calls</strong> (no transcripts synced on any recording) &middot; Pre-July&nbsp;4 holiday &mdash; reduced team activity expected
+  </div>
+  <div style="background:#1e1a0e;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fcd34d;">
+    &#x26A0;&#xFE0F; <strong>3 unconfirmed calls</strong> (recording matched CSM event via EventId, no transcript synced): Atisha&nbsp;Waghela / Salesforce&nbsp;ASEAN (1:30&nbsp;AM&nbsp;PT &middot; 30&nbsp;min) &middot; Andy&nbsp;Lim / ADP (8:00&nbsp;AM&nbsp;PT &middot; 30&nbsp;min) &middot; Pam&nbsp;Huck / ADP cross-coverage (same recording). Manual Vitally notes recommended.
+  </div>
+  <div style="background:#1c1f26;border:1px solid #64748b;border-left:3px solid #64748b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#94a3b8;">
+    &#x1F4CB; <strong>Atisha Waghela had 7 CSM events scheduled</strong> (Salesforce, Intel, Apple &times;4, AMD) but only 1 matched a recording and none had transcripts. Weflow coverage gap likely due to non-Zoom/Meet sessions or recording not enabled.
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card no-calls" data-csm="riley">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No CSM events or recordings &mdash; pre-holiday</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="nick">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event scheduled &mdash; Infor onsite debrief (5:00&nbsp;AM&nbsp;PT) &mdash; no recording found</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="divyam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No CSM events or recordings &mdash; pre-holiday</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="rani">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No CSM events or recordings &mdash; pre-holiday</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="varun">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No CSM events or recordings &mdash; pre-holiday</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">ADP Workforce &lt;&gt; TrustRadius call (8:00&nbsp;AM&nbsp;PT) &mdash; recording exists, no transcript &mdash; unconfirmed cross-coverage of Andy's ADP account</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="atisha">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">7 events scheduled (Salesforce, Intel, Apple &times;4, AMD) &mdash; 1 recording matched (Salesforce ASEAN), no transcripts synced. &#x26A0;&#xFE0F; Apple renewal due Jul&nbsp;22.</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">ADP Workforce &lt;&gt; TrustRadius call (8:00&nbsp;AM&nbsp;PT) &mdash; recording exists, no transcript &mdash; unconfirmed</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_07_03() {
+  return `<div class="calls-table">
+  <div style="background:#1e1a0e;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:10px 14px;margin:0 0 12px 0;font-size:12px;color:#fcd34d;">
+    &#x26A0;&#xFE0F; <strong>0 confirmed calls on Jul 3</strong> &mdash; no transcripts synced across all 7 recordings. 3 calls are unconfirmed (recording + CSM event matched by EventId, no speaker verification possible):
+    <ul style="margin:6px 0 0 16px;padding:0;line-height:1.8;">
+      <li><strong>Atisha Waghela / Salesforce Inc (ASEAN)</strong> &mdash; 1:30&nbsp;AM&nbsp;PT &middot; 30&nbsp;min &middot; "HG Insights Zendesk connect" &middot; EventId match confirmed</li>
+      <li><strong>Andy Lim / ADP, Inc</strong> &mdash; 8:00&nbsp;AM&nbsp;PT &middot; 30&nbsp;min &middot; "ADP Workforce &lt;&gt; TrustRadius: Monthly Success Call" &middot; EventId match confirmed</li>
+      <li><strong>Pam Huck / ADP, Inc (cross-coverage)</strong> &mdash; 8:00&nbsp;AM&nbsp;PT &middot; 30&nbsp;min &middot; Same recording &middot; EventId match confirmed</li>
+    </ul>
+  </div>
+  <div style="background:#1c1f26;border:1px solid #64748b;border-left:3px solid #64748b;border-radius:6px;padding:10px 14px;margin:0 0 12px 0;font-size:12px;color:#94a3b8;">
+    &#x1F4CB; <strong>CSM events with no recording (7)</strong> &mdash; Atisha Waghela:
+    Intel &amp; HGI Platform Training (5:30&nbsp;AM&nbsp;PT) &middot;
+    Apple Bi-weekly Sync (8:00&nbsp;AM&nbsp;PT) &middot;
+    Apple Bi-weekly Sync (9:00&nbsp;AM&nbsp;PT) &middot;
+    AMD Bi-weekly Touchpoint (9:30&nbsp;AM&nbsp;PT) &middot;
+    Apple Market Intelligence Training (11:00&nbsp;AM&nbsp;PT) &middot;
+    Apple Platform Training Team Call (12:00&nbsp;PM&nbsp;PT) &middot;
+    Nick Johnson: Infor Onsite Debrief (5:00&nbsp;AM&nbsp;PT)
+  </div>
+  <div style="background:#1c1f26;border:1px solid #334155;border-radius:6px;padding:10px 14px;font-size:12px;color:#64748b;">
+    &#x1F512; <strong>Internal / non-enterprise recordings excluded (5)</strong>:
+    "tORS Friday schedule block" (675&nbsp;min, operational block) &middot;
+    "Jayesh / Ted &mdash; Forecast Review" (internal HG exec) &middot;
+    "Weekly learning series" (internal training) &middot;
+    "ARB" (Architecture Review Board) &middot;
+    "HG Insights / Telefonica Enablement Sync" (Telefonica not in enterprise book &mdash; non-CSM team)
+  </div>
+  </div>`;
+}
+
+function dayPulsesHTML_2026_07_03() {
+  const cards = [];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div class="pulse-account">${c.account}</div>
+          <div style="font-size:11px;color:#94a3b8;">${c.opp}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_07_03() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('0703-1') ? 'done' : ''}" data-csm="atisha" id="action-0703-1">
+      <div class="action-checkbox ${doneActions.has('0703-1') ? 'checked' : ''}" onclick="toggleAction('0703-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F34E; Apple &mdash; Log Pre-Holiday Touchpoints Before Jul&nbsp;22 Renewal</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Atisha Waghela &middot; Apple renewal is due Jul 22 (19 days). Four Apple events on Jul&nbsp;3 had no recordings. Manually log Vitally notes for each touchpoint (Bi-weekly Sync, Market Intel Training, Platform Training Team Call) so engagement history is current ahead of the renewal conversation.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0703-2') ? 'done' : ''}" data-csm="atisha" id="action-0703-2">
+      <div class="action-checkbox ${doneActions.has('0703-2') ? 'checked' : ''}" onclick="toggleAction('0703-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4DD; Salesforce ASEAN &amp; Intel &mdash; Log Vitally Notes for Unrecorded Calls</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Atisha Waghela &middot; "HG Insights Zendesk connect" (Salesforce ASEAN, 1:30&nbsp;AM) had a recording but no transcript. Intel Platform Training (5:30&nbsp;AM) had no recording at all. Log manual Vitally notes for both to maintain account record continuity.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0703-3') ? 'done' : ''}" data-csm="andy" id="action-0703-3">
+      <div class="action-checkbox ${doneActions.has('0703-3') ? 'checked' : ''}" onclick="toggleAction('0703-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4DD; ADP &mdash; Log Manual Vitally Note for Monthly Success Call</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Andy Lim (+ Pam Huck cross-coverage) &middot; "ADP Workforce &lt;&gt; TrustRadius: Monthly Success Call" (8:00&nbsp;AM) recording matched by EventId but transcript did not sync. Log a manual note in Vitally with call date, attendees, and key discussion points.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0703-4') ? 'done' : ''}" data-csm="nick" id="action-0703-4">
+      <div class="action-checkbox ${doneActions.has('0703-4') ? 'checked' : ''}" onclick="toggleAction('0703-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Infor &mdash; Log Onsite Debrief Note</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW</span>Nick Johnson &middot; "HG onsite debrief check ins" for Infor (5:00&nbsp;AM&nbsp;PT) had no Weflow recording. If an onsite visit occurred, log debrief notes in Vitally to keep the $850K account record current.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No actions match the current filter.</div>`;
+}

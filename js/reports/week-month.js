@@ -1107,3 +1107,90 @@ function monthCoverageHTML_2026_06() {
 ];
   return _renderCoverageTable(stats, 'Jun 27, 2026');
 }
+
+// July 2026 -- snapshot from Jul 4, 2026 Vitally refresh
+function monthCoverageHTML_2026_07() {
+  const stats = [
+  {
+    "csm": "riley",
+    "name": "Riley Rogers",
+    "total": 60,
+    "both": 42,
+    "pulseOnly": 1,
+    "noteOnly": 1,
+    "neither": 16,
+    "pct": 70
+  },
+  {
+    "csm": "varun",
+    "name": "Varun Tiwari",
+    "total": 27,
+    "both": 27,
+    "pulseOnly": 0,
+    "noteOnly": 0,
+    "neither": 0,
+    "pct": 100
+  },
+  {
+    "csm": "divyam",
+    "name": "Divyam Dewan",
+    "total": 29,
+    "both": 20,
+    "pulseOnly": 4,
+    "noteOnly": 0,
+    "neither": 5,
+    "pct": 69
+  },
+  {
+    "csm": "nick",
+    "name": "Nick Johnson",
+    "total": 43,
+    "both": 38,
+    "pulseOnly": 0,
+    "noteOnly": 0,
+    "neither": 5,
+    "pct": 88
+  },
+  {
+    "csm": "rani",
+    "name": "Rani Guy",
+    "total": 27,
+    "both": 24,
+    "pulseOnly": 0,
+    "noteOnly": 1,
+    "neither": 2,
+    "pct": 89
+  },
+  {
+    "csm": "pam",
+    "name": "Pam Huck",
+    "total": 17,
+    "both": 17,
+    "pulseOnly": 0,
+    "noteOnly": 0,
+    "neither": 0,
+    "pct": 100
+  },
+  {
+    "csm": "atisha",
+    "name": "Atisha Waghela",
+    "total": 26,
+    "both": 22,
+    "pulseOnly": 0,
+    "noteOnly": 0,
+    "neither": 4,
+    "pct": 85
+  },
+  {
+    "csm": "andy",
+    "name": "Andy Lim",
+    "total": 14,
+    "both": 11,
+    "pulseOnly": 0,
+    "noteOnly": 2,
+    "neither": 1,
+    "pct": 79
+  }
+];
+  return _renderCoverageTable(stats, 'Jul 4, 2026');
+}
