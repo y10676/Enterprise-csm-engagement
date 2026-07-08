@@ -809,3 +809,233 @@ function dayActionsHTML_2026_07_03() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No actions match the current filter.</div>`;
 }
+
+// ─────────────────────────────────────────────────────────────────────────────
+// 2026-07-06 (Monday) — 41 recordings scanned · 3 confirmed · Nick on PTO
+// ─────────────────────────────────────────────────────────────────────────────
+
+function dayData_2026_07_06() {
+  return {
+    calls: [
+      { ts: 'Jul 06 · 7:00 AM', csm: 'varun', account: 'DXC Technology',
+        note: 'Invoice not properly processed in DXC system — Gabriella working with finance to resolve cross-charge.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Weekly sync with DXC contact Gabriella Aston (AM Augie Buettner joined). Outstanding invoice was not associated correctly with Gabriella\'s license due to a DXC system integration gap; she is working with finance to get approval for cross-charge resolution. Also discussed upcoming renewal model and World Cup.' },
+      { ts: 'Jul 06 · 8:00 AM', csm: 'riley', account: 'Intuit',
+        note: 'New Mailchimp contact Spencer Adkins onboarded; 38 reviews YTD qualifies for Buyer\'s Choice Award.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Bi-weekly TrustRadius success call. Spencer Adkins is the new Mailchimp/Intuit point of contact replacing Bianca. 38 reviews YTD — Buyer\'s Choice Award in the fall is already confirmed. Discussed monthly review campaigns for 2027 Top Rated; Riley introduced Spencer to Natalie Pratt from Intuit Enterprise Suite. Potential future in-person visit to Intuit ATL office.' },
+      { ts: 'Jul 06 · 9:00 AM', csm: 'divyam', account: 'Lumen Technologies',
+        note: 'Post-renewal RGIP onboarding — PO received July 1; Nathan being provisioned on new platform with 175k credits.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Weekly sync following Lumen renewal close (PO received July 1). Divyam provisioning Nathan\'s RGIP access today — 175k credits allocated, migrating from legacy platform. New platform unlocks 35M company records (vs ~12M before), user management, and usage tracking. Nathan had session-expiry issues on old platform; full RGIP onboarding session to be scheduled this week.' },
+    ],
+    pulses: [
+      { csm: 'varun', account: 'DXC Technology', health: 'Healthy',
+        note: 'Weekly sync — invoice resolution in progress with DXC finance; renewal model discussion.' },
+      { csm: 'riley', account: 'Intuit', health: 'Healthy',
+        note: 'Bi-weekly TrustRadius call — Buyer\'s Choice Award qualified (38 reviews YTD); new contact Spencer Adkins onboarded.' },
+      { csm: 'divyam', account: 'Lumen Technologies', health: 'Healthy',
+        note: 'Post-renewal RGIP onboarding — 175k credits, 35M company database; full onboarding session to be scheduled.' },
+    ],
+  };
+}
+
+function dayMeta_2026_07_06() {
+  return {
+    pills: [
+      ['dot-teal',   '3 Calls'],
+      ['dot-amber',  '1 Expansion'],
+      ['dot-grey',   'Mon Jul 6 · 41 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (3)', 'Pulses (3)', 'Action Items (5)']
+  };
+}
+
+function dayOverviewHTML_2026_07_06() {
+  return `<div class="section-label">Team Activity &mdash; Monday July 6, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Monday Jul 6 &mdash; 41 recordings scanned</strong> via SFDC SOQL &middot; <strong>3 confirmed calls</strong> across 3 CSMs &middot; 1 expansion signal (Lumen renewal + RGIP onboarding) &middot; Nick Johnson on PTO
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>Expansion Signal:</strong> Divyam Dewan &mdash; Lumen Technologies renewal closed (PO July 1). RGIP access provisioning underway &mdash; 175k credits, 35M company database unlocked.
+  </div>
+  <div style="background:#1c1a17;border:1px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fcd34d;">
+    &#x1F3D5;&#xFE0F; <strong>Nick Johnson on PTO</strong> &mdash; Confirmed by Softcat transcript: "nick's on pto he's out camping up in the lakes." Softcat biweekly call proceeded with AM David Garcia Thomas. KPMG event was covered by Atisha Waghela.
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Intuit (Mailchimp bi-weekly &mdash; new contact Spencer Adkins; Buyer&rsquo;s Choice Award qualified)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">DXC Technology (weekly sync &mdash; invoice processing issue; finance team resolving)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Lumen Technologies (post-renewal RGIP onboarding &mdash; 175k credits, 35M records unlocked)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="nick">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#fcd34d;font-size:11px;">&#x1F3D5;&#xFE0F; ON PTO &mdash; Confirmed by Softcat transcript. KPMG event covered by Atisha Waghela. Softcat biweekly and NICE biweekly had no CSM present.</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="rani">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event scheduled &mdash; no recording (NetApp weekly sync at 1:00 PM PT)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No CSM-owned events or recordings found</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="atisha">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">3 events scheduled &mdash; Intel (recording, no transcript &mdash; unconfirmed), Airtel Africa (no recording), KPMG (covering Nick on PTO, no recording)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No CSM-owned events or recordings found</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_07_06() {
+  return `<div style="background:#1c1a17;border:1px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fcd34d;">
+    &#x1F3D5;&#xFE0F; <strong>Nick Johnson on PTO</strong> &mdash; Softcat biweekly (6:30 AM PT) proceeded without Nick; AM David Garcia Thomas ran the call. Transcript confirms: &ldquo;nick&rsquo;s on pto he&rsquo;s out camping up in the lakes.&rdquo;
+  </div>
+  <div style="background:#1e1e2e;border:1px solid #6366f1;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#a5b4fc;">
+    &#x26A0;&#xFE0F; <strong>Atisha Waghela &mdash; Intel call unconfirmed</strong> &mdash; Recording found (Intel &lt;&gt; HGI: Weekly Sync, 7:00 AM PT, 30 min) but transcript did not sync. Inferred from CSM event ownership only.
+  </div>`;
+}
+
+function dayPulsesHTML_2026_07_06() {
+  const cards = [
+    { csm:'varun', health:'Healthy', account:'DXC Technology',
+      opp:'Vitally Pulse &mdash; Jul 6 Call', arr:'Strategic &middot; Varun Tiwari', csmlbl:'Varun Tiwari',
+      change:'Jul 6 &middot; Check-in + Issue',
+      excerpt:'VT/Jul 6: Weekly sync with Gabriella Aston; AM Augie Buettner joined. Invoice not correctly processed in DXC system &mdash; Gabriella coordinating with finance for cross-charge approval. Renewal model discussion (7:00 AM PT, 30 min).' },
+    { csm:'riley', health:'Healthy', account:'Intuit',
+      opp:'Vitally Pulse &mdash; Jul 6 Call', arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Jul 6 &middot; Check-in',
+      excerpt:'RR/Jul 6: Bi-weekly TrustRadius success call. Spencer Adkins is new Mailchimp/Intuit contact (replacing Bianca). 38 reviews YTD &mdash; Buyer\'s Choice Award qualified for fall. Monthly review campaigns for 2027 Top Rated planned. Natalie Pratt (Intuit Enterprise Suite) intro facilitated (8:00 AM PT, 30 min).' },
+    { csm:'divyam', health:'Healthy', account:'Lumen Technologies',
+      opp:'Vitally Pulse &mdash; Jul 6 Call', arr:'Strategic &middot; Divyam Dewan', csmlbl:'Divyam Dewan',
+      change:'Jul 6 &middot; Check-in + Expansion',
+      excerpt:'DD/Jul 6: Post-renewal weekly sync. PO received July 1. RGIP new platform access being provisioned today &mdash; 175k credits, 35M company records, user management, usage tracking unlocked. Full onboarding session to be scheduled this week (9:00 AM PT, 30 min).' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div class="pulse-account">${c.account}</div>
+          <div style="font-size:11px;color:#94a3b8;">${c.opp}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_07_06() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('0706-1') ? 'done' : ''}" data-csm="divyam" id="action-0706-1">
+      <div class="action-checkbox ${doneActions.has('0706-1') ? 'checked' : ''}" onclick="toggleAction('0706-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4E6; Lumen Technologies &mdash; Provision RGIP Access for Nathan Today</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH</span>Divyam Dewan &middot; Divyam committed on the call to provisioning Nathan&rsquo;s RGIP access before EOD July 6. Confirm access was granted and send Nathan a confirmation with login instructions.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0706-2') ? 'done' : ''}" data-csm="divyam" id="action-0706-2">
+      <div class="action-checkbox ${doneActions.has('0706-2') ? 'checked' : ''}" onclick="toggleAction('0706-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Lumen Technologies &mdash; Schedule RGIP Onboarding Session with Nathan</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH</span>Divyam Dewan &middot; Promised Nathan a dedicated onboarding session to cover the new RGIP UI, credit calculator, user management, and usage tracking. Schedule this week to capitalize on post-renewal momentum.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0706-3') ? 'done' : ''}" data-csm="varun" id="action-0706-3">
+      <div class="action-checkbox ${doneActions.has('0706-3') ? 'checked' : ''}" onclick="toggleAction('0706-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4B3; DXC Technology &mdash; Follow Up on Invoice Resolution</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Varun Tiwari &middot; Gabriella Aston confirmed the invoice is being handled by DXC finance; she needs her manager&rsquo;s approval before cross-charging. Follow up this week to confirm the invoice has been approved and processed.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0706-4') ? 'done' : ''}" data-csm="riley" id="action-0706-4">
+      <div class="action-checkbox ${doneActions.has('0706-4') ? 'checked' : ''}" onclick="toggleAction('0706-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C5; Intuit &mdash; Share 2027 Top Rated Campaign Plan with Spencer Adkins</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Riley Rogers &middot; Spencer Adkins is new to the account (replacing Bianca). Send a campaign plan for monthly review requests to build toward 2027 Top Rated qualification. Also connect Spencer with Natalie Pratt (Intuit Enterprise Suite).</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0706-5') ? 'done' : ''}" data-csm="atisha" id="action-0706-5">
+      <div class="action-checkbox ${doneActions.has('0706-5') ? 'checked' : ''}" onclick="toggleAction('0706-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4DD; Intel &mdash; Log Manual Vitally Note (Unconfirmed Call)</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW</span>Atisha Waghela &middot; Intel &lt;&gt; HGI Weekly Sync recording found (7:00 AM PT, 30 min) but transcript did not sync &mdash; CSM presence unconfirmed. If the call occurred, log a manual Vitally note with discussion points to maintain account record continuity.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No actions match the current filter.</div>`;
+}
