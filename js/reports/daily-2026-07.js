@@ -1039,3 +1039,390 @@ function dayActionsHTML_2026_07_06() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No actions match the current filter.</div>`;
 }
+
+// ─────────────────────────────────────────────────────────────────────────────
+// July 7, 2026 — 14 confirmed calls · 3 unconfirmed · 67 recordings scanned
+// ─────────────────────────────────────────────────────────────────────────────
+
+function dayData_2026_07_07() {
+  return {
+    calls: [
+      { ts: 'Jul 7 · 6:00 AM', csm: 'andy', account: 'SAS Institute',
+        note: 'Phoenix MCP 404 errors on cloud_spend and FAI tools; customer testing API directly.',
+        mins: 60, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Issue',
+        detail: 'Customer Mike testing Phoenix MCP via Python hit 404 errors on company_cloud_spend and company_fai endpoints. HG (Chloé Portier) confirmed a key-rotation issue caused 403/404s the prior week and committed to fix the same day. Customer also troubleshooting screen-share in Zoom.' },
+
+      { ts: 'Jul 7 · 6:30 AM', csm: 'varun', account: 'Zscaler',
+        note: 'Account list data-matching working session — 122k of 125k accounts matched.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Issue',
+        detail: 'Manoj Parameswara (Zscaler) and Varun worked through Google Sheet showing blank/zero records on account data. 122k of 125k accounts matched but some GID-to-account-ID VLOOKUP issues remain. Varun suggested appending GID to disambiguate multi-GID accounts.' },
+
+      { ts: 'Jul 7 · 6:30 AM', csm: 'riley', account: 'SAP (CIAM)',
+        note: 'Peer review lead pilot end-of-contract — uploading 2700+ leads to Marketo via MSights.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'Customer', purpose: 'Mixed',
+        detail: 'SAP CIAM pilot at contract end. ~2700 leads collected via TrustRadius and waiting to upload to Marketo through MSights for nurture. Test upload this week before bulk transfer. Alejandro Barajas (SAP) driving discussion; Riley and Scott (TR) providing status. Expansion signal: renewal and second phase of the program are the next milestone.' },
+
+      { ts: 'Jul 7 · 7:00 AM', csm: 'atisha', account: 'TD Synnex',
+        note: 'Intent topic recommendation walkthrough — reduced from 500 to priority topics only.',
+        mins: 60, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Atisha led a walkthrough of the intent topic recommendation file built by Clayton Cutbush (HG Customer Solutions). TD Synnex had 500 intent topics selected; file was rebuilt to reduce noise and surface only high-priority topics aligned to their product use cases. Lisa Fults (TD Synnex) had set up the pipeline to receive intent files but had not yet downloaded the recommendation file — Atisha to reshare.' },
+
+      { ts: 'Jul 7 · 8:00 AM', csm: 'riley', account: 'SAP (S/4HANA)',
+        note: 'Monthly sync — most SAP team no-showed; renewal timing discussion with Cole.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'S/4HANA monthly cadence meeting. SAP team (Melanie, Eric) largely did not attend. Riley and Cole Arutian (TR AM) discussed bridge agreement renewals expiring after 7/27, CX reports coming up for renewal, and a potential 17-month renewal extension. Riley noted she had not yet discussed CX renewal with margin and planned to do so the following week.' },
+
+      { ts: 'Jul 7 · 10:00 AM', csm: 'riley', account: 'SAP (Joule)',
+        note: 'Monthly sync — introduced new stakeholder Lerato Manatsa from SAP Joule.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Monthly Joule TrustRadius sync. New SAP contact Lerato Manatsa joined for the first time. Cole Arutian and Mardigan Moffat (TR) made introductions; Riley shared her role. Discussed how Lerato interfaces with other SAP stakeholders working on the Joule solution. SAP has been a TrustRadius partner for ~8 years across multiple business units.' },
+
+      { ts: 'Jul 7 · 10:00 AM', csm: 'rani', account: 'Cisco (Isovalent)',
+        note: 'Onboarding follow-up — HubSpot integration confirmed as personal-level scoring only.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Issue',
+        detail: 'Rani followed up with Tu-Anh (Cisco Isovalent) on outstanding technical questions about HubSpot integration. Key finding: HG does not push account scores to HubSpot — only personal-level scoring is available. HG engineering team is still investigating additional integration questions raised by Tu-Anh. Rani to follow up with engineering lead once full answers are ready.' },
+
+      { ts: 'Jul 7 · 10:00 AM', csm: 'divyam', account: 'BILL',
+        note: 'Weekly sync — documentation walkthrough for BILL sales team on MadKudu customer fit model.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Divyam walked Eric Nguyen (BILL) through HG/MadKudu help center articles covering the Customer Fit model, Likelihood to Buy, and Lead Grade. Eric\'s goal is to help BILL\'s sales team understand scoring outputs. Divyam noted MadKudu has the most comprehensive documentation of the three platforms (HG, TR, MK). Articles shared in chat.' },
+
+      { ts: 'Jul 7 · 10:30 AM', csm: 'varun', account: 'Zscaler',
+        note: 'Pre-renewal data audit — Zscaler wants to expand product data before contract renewal.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Expansion',
+        detail: 'Manoj Parameswara (Zscaler RevOps) is building a summary document for Dennis before their contract renewal. Currently contracted for 50 products, HG ships data for ~55. Manoj wants to understand current spend data consumption across teams (Anurag, Parvinder) and make the case for additional product data sets. Varun to help scope the full product data offering.' },
+
+      { ts: 'Jul 7 · 11:00 AM', csm: 'riley', account: 'SAP (Business Network)',
+        note: 'Biweekly sync — Kathryn Zwack had Zoom audio issues; vacation coverage coordination.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Biweekly SAP Business Network TrustRadius sync. Customer Kathryn Zwack had repeated Zoom connectivity issues (firewall + Zoom update). Riley coordinated with Cole Arutian on vacation coverage for end-of-July — Thursday sync with Mardigan to determine which SAP calls to keep, reschedule, or reassign (Riley out Wed–Wed end of month).' },
+
+      { ts: 'Jul 7 · 11:00 AM', csm: 'pam', account: 'Microsoft',
+        note: 'Black Hat conference logistics — TrustRadius content booth planning with Microsoft.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Pam Huck and Mardigan Moffat (TR) met with Maryann (Microsoft) and Mark Barrera (TR events team) to finalize TrustRadius booth logistics for Black Hat. Discussed video vs. audio-only format (RSA precedent used as reference), laptop accessibility in-booth, and event setup. Pam joining from her mother\'s rehab facility. All parties confirmed green light on execution.' },
+
+      { ts: 'Jul 7 · 12:00 PM', csm: 'rani', account: 'Cloudflare',
+        note: 'Renewal at risk — 60% ops resource loss, build-vs-buy evaluation required.',
+        mins: 30, health: 'Concerning',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Robert Goldfarb (Cloudflare) detailed significant internal disruption: operations lost 60% of resources, bringing forward planning from September to now. Cloudflare\'s procurement process now requires a formal build-vs-buy evaluation for all renewals with a 1-year contract limit. Robert acknowledged being behind on this renewal and said it will take multiple internal cycles. Rani and James Tudway (HG VP) are managing this renewal. Concerning signal: internal instability + delayed evaluation process = renewal risk.' },
+
+      { ts: 'Jul 7 · 1:30 PM', csm: 'rani', account: 'Workday',
+        note: 'Renewal scope discussion — new procurement contact, potential expansion of scope.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Rani met with Alexandra Wilson (Senior Sourcing Manager, Workday) and David Crossman (HG SE) + James Tudway (HG VP). Alexandra is the new procurement contact taking over from prior renewal owner. Workday has had reorganizations and a change in business ownership. Alexandra wants to understand current scope and explore potential expansion. James Tudway noted long-term relationship across multiple Workday orgs (Kelly de Courti history).' },
+
+      { ts: 'Jul 7 · 2:30 PM', csm: 'atisha', account: 'Databricks',
+        note: 'Custom spend model update — HTTP delta delivery confirmed; AI Summit context discussed.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Atisha met with Tyler Neubauer and Eva Li (Databricks) along with Charles Hawkins and Ryan Comstock (HG). Eva shared context from Databricks AI Summit (30K attendees — approaching Dreamforce scale). Tyler confirmed HG is delivering the custom spend model in HTTP delta format. Meeting covered model update status and next steps for the Databricks custom data configuration.' },
+    ],
+    pulses: [
+      { csm: 'andy',   health: 'Healthy',    account: 'SAS Institute',        note: 'Phoenix MCP API issue (404 on cloud_spend/FAI) — HG committed to fix same day.' },
+      { csm: 'varun',  health: 'Healthy',    account: 'Zscaler',              note: 'Account list data-matching session — 122k/125k matched; GID VLOOKUP issue being resolved.' },
+      { csm: 'riley',  health: 'Healthy',    account: 'SAP (CIAM)',           note: 'Peer review pilot end-of-contract; 2700+ leads uploading to Marketo via MSights this week.' },
+      { csm: 'atisha', health: 'Healthy',    account: 'TD Synnex',            note: 'Intent topic walkthrough — file rebuilt from 500 topics to priority set; Atisha to reshare file.' },
+      { csm: 'riley',  health: 'Healthy',    account: 'SAP (S/4HANA)',        note: 'Monthly cadence — mostly no-show; bridge renewals post-7/27 and CX reports renewal under review.' },
+      { csm: 'riley',  health: 'Healthy',    account: 'SAP (Joule)',          note: 'Monthly sync — new stakeholder Lerato Manatsa introduced; relationship building underway.' },
+      { csm: 'rani',   health: 'Healthy',    account: 'Cisco (Isovalent)',     note: 'HubSpot integration clarified (no account score push); engineering addressing remaining questions.' },
+      { csm: 'divyam', health: 'Healthy',    account: 'BILL',                 note: 'Weekly sync — MadKudu customer fit model docs shared for BILL sales team enablement.' },
+      { csm: 'varun',  health: 'Healthy',    account: 'Zscaler',              note: 'Pre-renewal expansion discussion — Manoj building summary doc for additional product data sets.' },
+      { csm: 'riley',  health: 'Healthy',    account: 'SAP (Business Network)', note: 'Biweekly — vacation coverage coordination; Zoom audio issues with Catherine Zwack.' },
+      { csm: 'pam',    health: 'Healthy',    account: 'Microsoft',            note: 'Black Hat booth logistics finalized with Microsoft and TR events team.' },
+      { csm: 'rani',   health: 'Concerning', account: 'Cloudflare',           note: 'Renewal at risk — 60% ops loss, build-vs-buy evaluation required, behind schedule.' },
+      { csm: 'rani',   health: 'Healthy',    account: 'Workday',              note: 'New procurement contact engaged; renewal scope + expansion discussion initiated.' },
+      { csm: 'atisha', health: 'Healthy',    account: 'Databricks',           note: 'Custom spend model update — HTTP delta delivery confirmed; AI Summit context.' },
+    ],
+  };
+}
+
+function dayMeta_2026_07_07() {
+  return {
+    pills: [
+      ['dot-teal',   '14 Calls'],
+      ['dot-red',    '1 Concerning'],
+      ['dot-amber',  '3 Expansion'],
+      ['dot-green',  '14 Pulses'],
+      ['dot-grey',   'Tue Jul 7 · 67 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (14)', 'Pulses (14)', 'Action Items (7)'],
+  };
+}
+
+function dayOverviewHTML_2026_07_07() {
+  return `<div class="section-label">Team Activity &mdash; Tuesday July 7, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 8px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Tuesday July 7 &mdash; 67 recordings scanned</strong> via SFDC SOQL &middot; <strong>14 confirmed CSM calls</strong> across 7 CSMs &middot; 1 Concerning (Cloudflare renewal at risk) &middot; 3 Expansion signals (Zscaler, Workday, Microsoft/Black Hat)
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 8px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>Cloudflare &mdash; Renewal Risk (Rani Guy):</strong> Robert Goldfarb disclosed 60% ops resource loss and a mandatory build-vs-buy procurement evaluation for all renewals. He acknowledged being behind on this renewal. James Tudway (HG VP) is aligned. Escalation path and timeline needed urgently.
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">4 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">4</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">4</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">120m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">SAP CIAM (pilot end-of-contract) &middot; SAP S/4HANA (monthly, renewal timing) &middot; SAP Joule (new stakeholder) &middot; SAP Biz Network (biweekly)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">3 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">3</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">90m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">&#x26A0;&#xFE0F; Cloudflare (renewal at risk) &middot; &#x1F4C8; Workday (expansion) &middot; Cisco Isovalent (onboarding issue)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">90m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">TD Synnex (intent topic walkthrough) &middot; Databricks (custom spend model update)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">&#x1F4C8; Zscaler &times;2 (data issue + pre-renewal expansion discussion)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">BILL (weekly sync, MadKudu docs walkthrough)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="pam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">&#x1F4C8; Microsoft (Black Hat conference expansion)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="andy">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">SAS Institute (Phoenix MCP API 404 issue)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="nick">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">5 events scheduled &mdash; no CSM speaker label detected in any transcript (Siemens, NTT transcripts had non-CSM speakers only; KPMG had no recording; Visionet and Intuit IES had no recording/transcript)</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_07_07() {
+  return `<div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 8px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>Cloudflare &mdash; CONCERNING:</strong> Robert Goldfarb disclosed 60% ops team resource reduction and a mandatory build-vs-buy procurement evaluation for all renewals (1-year contract cap). Renewal is behind schedule. Immediate risk management required. James Tudway aligned.
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 8px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>Expansion signals:</strong> Zscaler (Varun/Manoj pre-renewal data expansion, 10:30 AM) &middot; Workday (Alexandra Wilson new procurement, scope expansion, 1:30 PM) &middot; Microsoft (Black Hat conference expansion, 11:00 AM)
+  </div>
+  <div style="background:#111827;border:1px solid #374151;border-radius:6px;padding:8px 14px;margin:0 0 8px 0;font-size:12px;color:#9ca3af;">
+    &#x1F4CB; <strong>Unconfirmed (no transcript):</strong> Andy Lim / Toast (8:00 AM, 30 min) &middot; Atisha Waghela / Apple Inc. (8:30 AM, 30 min) &middot; Nick Johnson / Intuit IES (8:30 AM, 30 min) &mdash; inferred from CSM event ownership only
+  </div>`;
+}
+
+function dayPulsesHTML_2026_07_07() {
+  const cards = [
+    { csm:'andy',   health:'Healthy',    account:'SAS Institute',          opp:'Vitally Pulse &mdash; Jul 7 Call',
+      arr:'Enterprise &middot; Andy Lim', csmlbl:'Andy Lim',
+      change:'Jul 7 &middot; Issue',
+      excerpt:'7/7 AL: Phoenix MCP API 404 errors on company_cloud_spend and company_fai (6:00 AM PT, 60 min). Customer Mike testing MCP via Python; key-rotation issue confirmed by HG — fix committed same day.' },
+    { csm:'varun',  health:'Healthy',    account:'Zscaler',                opp:'Vitally Pulse &mdash; Jul 7 Call (Data Matching)',
+      arr:'Enterprise &middot; Varun Tiwari', csmlbl:'Varun Tiwari',
+      change:'Jul 7 &middot; Issue',
+      excerpt:'7/7 VT: Account list data-matching session (6:30 AM PT, 30 min). 122k/125k accounts matched; GID VLOOKUP issue being resolved. Manoj driving; Varun to help disambiguate multi-GID accounts.' },
+    { csm:'riley',  health:'Healthy',    account:'SAP (CIAM)',             opp:'Vitally Pulse &mdash; Jul 7 Call',
+      arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Jul 7 &middot; Mixed',
+      excerpt:'7/7 RR: SAP CIAM peer review lead pilot end-of-contract (6:30 AM PT, 30 min). 2700+ leads uploading to Marketo via MSights. Test run this week. Alejandro Barajas driving; renewal and Phase 2 expansion next.' },
+    { csm:'atisha', health:'Healthy',    account:'TD Synnex',              opp:'Vitally Pulse &mdash; Jul 7 Call',
+      arr:'Enterprise &middot; Atisha Waghela', csmlbl:'Atisha Waghela',
+      change:'Jul 7 &middot; Check-in',
+      excerpt:'7/7 AW: Intent topic recommendation walkthrough (7:00 AM PT, 60 min). Clayton Cutbush rebuilt file from 500 to priority topics. Lisa Fults (TD Synnex) had set up pipeline but had not received file yet — Atisha to reshare.' },
+    { csm:'riley',  health:'Healthy',    account:'SAP (S/4HANA)',          opp:'Vitally Pulse &mdash; Jul 7 Call',
+      arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Jul 7 &middot; Mixed',
+      excerpt:'7/7 RR: S/4HANA monthly (8:00 AM PT, 30 min). SAP team mostly no-showed. Bridge renewal timing post-7/27 discussed with Cole Arutian; CX reports renewal and potential 17-month extension flagged.' },
+    { csm:'riley',  health:'Healthy',    account:'SAP (Joule)',            opp:'Vitally Pulse &mdash; Jul 7 Call',
+      arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Jul 7 &middot; Check-in',
+      excerpt:'7/7 RR: Joule monthly (10:00 AM PT, 30 min). New SAP stakeholder Lerato Manatsa introduced to TR/HG team. Cole Arutian and Mardigan Moffat led intros. SAP/TR 8-year partnership.' },
+    { csm:'rani',   health:'Healthy',    account:'Cisco (Isovalent)',       opp:'Vitally Pulse &mdash; Jul 7 Call',
+      arr:'Enterprise &middot; Rani Guy', csmlbl:'Rani Guy',
+      change:'Jul 7 &middot; Issue',
+      excerpt:'7/7 RG: Cisco Isovalent onboarding follow-up (10:00 AM PT, 30 min). Confirmed: HG does not push account scores to HubSpot (personal-level only). Additional integration questions still under HG engineering review.' },
+    { csm:'divyam', health:'Healthy',    account:'BILL',                   opp:'Vitally Pulse &mdash; Jul 7 Call',
+      arr:'Enterprise &middot; Divyam Dewan', csmlbl:'Divyam Dewan',
+      change:'Jul 7 &middot; Check-in',
+      excerpt:'7/7 DD: BILL weekly sync (10:00 AM PT, 30 min). Divyam walked Eric Nguyen through MadKudu Customer Fit model and Lead Grade documentation for BILL sales team enablement.' },
+    { csm:'varun',  health:'Healthy',    account:'Zscaler',                opp:'Vitally Pulse &mdash; Jul 7 Call (Expansion)',
+      arr:'Enterprise &middot; Varun Tiwari', csmlbl:'Varun Tiwari',
+      change:'Jul 7 &middot; Expansion',
+      excerpt:'7/7 VT: Zscaler pre-renewal expansion (10:30 AM PT, 30 min). Manoj building summary doc for Dennis. Currently 50 products contracted; wants additional product data sets. Varun to scope full offering.' },
+    { csm:'riley',  health:'Healthy',    account:'SAP (Business Network)',  opp:'Vitally Pulse &mdash; Jul 7 Call',
+      arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Jul 7 &middot; Check-in',
+      excerpt:'7/7 RR: SAP Business Network biweekly (11:00 AM PT, 30 min). Customer Kathryn Zwack had Zoom audio issues. Riley coordinating vacation coverage (end-of-July, Wed–Wed) with Cole and Mardigan.' },
+    { csm:'pam',    health:'Healthy',    account:'Microsoft',              opp:'Vitally Pulse &mdash; Jul 7 Call',
+      arr:'Enterprise &middot; Pam Huck', csmlbl:'Pam Huck',
+      change:'Jul 7 &middot; Expansion',
+      excerpt:'7/7 PH: Microsoft Black Hat planning (11:00 AM PT, 30 min). TrustRadius booth at Black Hat confirmed. Format: video or audio. Mark Barrera (TR events) + Maryann (Microsoft) aligned. Green light on execution.' },
+    { csm:'rani',   health:'Concerning', account:'Cloudflare',             opp:'Vitally Pulse &mdash; Jul 7 Call',
+      arr:'Enterprise &middot; Rani Guy', csmlbl:'Rani Guy',
+      change:'Jul 7 &middot; Concerning',
+      excerpt:'7/7 RG: Cloudflare renewal discussion (12:00 PM PT, 30 min). Robert Goldfarb: 60% ops resource loss, mandatory build-vs-buy eval, 1-year contract cap, behind on renewal. James Tudway on call. Escalation path needed.' },
+    { csm:'rani',   health:'Healthy',    account:'Workday',                opp:'Vitally Pulse &mdash; Jul 7 Call',
+      arr:'Enterprise &middot; Rani Guy', csmlbl:'Rani Guy',
+      change:'Jul 7 &middot; Expansion',
+      excerpt:'7/7 RG: Workday renewal scope discussion (1:30 PM PT, 30 min). Alexandra Wilson (new Senior Sourcing Manager) aligned on scope. Potential expansion of contract. James Tudway and David Crossman (HG SE) on call.' },
+    { csm:'atisha', health:'Healthy',    account:'Databricks',             opp:'Vitally Pulse &mdash; Jul 7 Call',
+      arr:'Enterprise &middot; Atisha Waghela', csmlbl:'Atisha Waghela',
+      change:'Jul 7 &middot; Check-in',
+      excerpt:'7/7 AW: Databricks custom spend model update (2:30 PM PT, 30 min). HTTP delta delivery confirmed. Eva Li shared AI Summit context (30K attendees). Tyler Neubauer + Ryan Comstock on call.' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div style="font-weight:600;font-size:13px;">${c.account}</div>
+          <div style="font-size:11px;color:#94a3b8;">${c.opp}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_07_07() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('0707-1') ? 'done' : ''}" data-csm="rani" id="action-0707-1">
+      <div class="action-checkbox ${doneActions.has('0707-1') ? 'checked' : ''}" onclick="toggleAction('0707-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; Cloudflare &mdash; Initiate Formal Renewal Risk Plan with James Tudway</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH</span>Rani Guy &middot; Robert Goldfarb disclosed 60% ops resource loss and a mandatory build-vs-buy evaluation. Renewal is already behind. Rani and James Tudway should align on a 2-week action plan: prepare HG's ROI brief, identify Cloudflare exec sponsor, and set a hard renewal deadline before build-vs-buy window closes.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0707-2') ? 'done' : ''}" data-csm="rani" id="action-0707-2">
+      <div class="action-checkbox ${doneActions.has('0707-2') ? 'checked' : ''}" onclick="toggleAction('0707-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Workday &mdash; Send Renewal Scope Summary to Alexandra Wilson</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH</span>Rani Guy &middot; Alexandra Wilson is the new procurement contact and wants to understand current scope + potential expansion. Send a 1-pager on current contract scope, usage highlights, and expansion options before their next conversation to keep momentum on the renewal.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0707-3') ? 'done' : ''}" data-csm="andy" id="action-0707-3">
+      <div class="action-checkbox ${doneActions.has('0707-3') ? 'checked' : ''}" onclick="toggleAction('0707-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F527; SAS Institute &mdash; Confirm Phoenix MCP API Fix Applied</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH</span>Andy Lim &middot; Chloé Portier committed to fixing the 404 errors on company_cloud_spend and company_fai same day (July 7). Follow up with the SAS team (Mike) to confirm the fix is live and they can resume testing the MCP without errors.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0707-4') ? 'done' : ''}" data-csm="varun" id="action-0707-4">
+      <div class="action-checkbox ${doneActions.has('0707-4') ? 'checked' : ''}" onclick="toggleAction('0707-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Zscaler &mdash; Send Expanded Product Data Scope to Manoj for Pre-Renewal Review</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Varun Tiwari &middot; Manoj is building a summary doc for Dennis before renewal. Varun to send a breakdown of all available product data sets beyond the current 50 contracted — include spend data, technographic categories, and additional product coverage — so Manoj can make the case internally for expanded data access.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0707-5') ? 'done' : ''}" data-csm="atisha" id="action-0707-5">
+      <div class="action-checkbox ${doneActions.has('0707-5') ? 'checked' : ''}" onclick="toggleAction('0707-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C4; TD Synnex &mdash; Reshare Intent Topic Recommendation File with Lisa Fults</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Atisha Waghela &middot; Lisa Fults confirmed the pipeline to receive intent files is set up, but she had not yet received or opened the recommendation file. Atisha committed on the call to resharing. Do this today and confirm receipt.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0707-6') ? 'done' : ''}" data-csm="rani" id="action-0707-6">
+      <div class="action-checkbox ${doneActions.has('0707-6') ? 'checked' : ''}" onclick="toggleAction('0707-6')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4AC; Cisco (Isovalent) &mdash; Follow Up on Engineering Questions from Tu-Anh</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Rani Guy &middot; HG engineering is investigating additional integration questions raised by Tu-Anh (beyond HubSpot account scores). Rani committed to sending a follow-up once engineering responds. Check in with engineering lead and send Tu-Anh a status update this week.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0707-7') ? 'done' : ''}" data-csm="riley" id="action-0707-7">
+      <div class="action-checkbox ${doneActions.has('0707-7') ? 'checked' : ''}" onclick="toggleAction('0707-7')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C5; SAP (S/4HANA) &mdash; Discuss CX Reports Renewal with Margin Before End of Week</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Riley Rogers &middot; Riley noted on the call that margin told her the CX reports are up for renewal, but she hadn&rsquo;t yet discussed it. Cole Arutian confirmed these are funded separately by BU content strategists. Riley to connect with margin this week to understand the CX report renewal scope before the 7/27 bridge agreement deadline.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No actions match the current filter.</div>`;
+}
