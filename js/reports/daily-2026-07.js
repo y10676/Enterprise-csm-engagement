@@ -1426,3 +1426,338 @@ function dayActionsHTML_2026_07_07() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No actions match the current filter.</div>`;
 }
+
+// ============================================================
+// July 8, 2026 — Wednesday
+// 12 confirmed calls · 5 CSMs active · 1 Concerning · 3 Expansion
+// ============================================================
+
+function dayData_2026_07_08() {
+  return {
+    calls: [
+      { ts: 'Jul 8 · 5:30 AM', csm: 'atisha', account: 'IBM (TDS EMEA)',
+        note: 'Intent data EMEA coverage issue — near-zero European signals when filtering by location',
+        mins: 30, health: 'Concerning',
+        nature: 'Routine', initiator: 'Customer', purpose: 'Issue',
+        detail: 'Montse (IBM) raised an ongoing issue with intent data showing near-zero results for European countries when filtered by location. She is using HG Insights to help IBM resellers identify companies with complementary or competitor products, but EMEA intent signals are insufficient. Atisha offered to walk through the intent location filter and share a workaround for EMEA coverage gaps.' },
+      { ts: 'Jul 8 · 6:00 AM', csm: 'atisha', account: 'Deloitte',
+        note: 'Weekly Data Studio product exclusion review — filtering vendor list to clean products for model',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Atisha and Omkar Hunuswadkar joined Rajesh Shetty (Deloitte) to review the product exclusion list for Deloitte\'s HG Data Studio configuration. Rajesh reviewed the exclusion list and confirmed application development tools (Python, TypeScript) should remain as clean products. SPC for Excel was flagged as miscategorized under web conferencing and needs remapping.' },
+      { ts: 'Jul 8 · 7:30 AM', csm: 'riley', account: 'Adobe (TrustRadius)',
+        note: 'Geo dashboard rollout demo — Adobe is early access; next phase may include additional product profiles',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Riley showed Allyson (Adobe) the updated geo dashboard — Adobe has early access before the July 15 general rollout. Current initiative phase is wrapping up; customer mentioned the next phase may include additional product profile copy for new products. Riley demoed new GEO dashboard features and confirmed Allyson was invited to the HG Insider event.' },
+      { ts: 'Jul 8 · 8:30 AM', csm: 'andy', account: 'SAS Institute',
+        note: 'Weekly EMEA sync — customer asked about M&A tracking and company hierarchy update capabilities',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'Customer', purpose: 'Check-in',
+        detail: 'Andy joined the weekly SAS Institute EMEA sync (Steven, Adrian Carr, Richard in San Francisco). The main business question from the customer was about M&A tracking — whether HG can surface new subsidiary acquisitions and roll them up to global accounts. Andy explained HG\'s hierarchy maintenance process and that customers can flag new acquisitions to the research team for updates.' },
+      { ts: 'Jul 8 · 9:30 AM', csm: 'atisha', account: 'Strada Global',
+        note: 'Expansion call — data feed (S3) integration back on the table following renewal; data scientist Nyla driving ask',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Atisha briefed Augie Buettner before Pedro Crespo (Strada Global, Spain) joined. Internal briefing covered that Nyla (Strada data scientist) had previously used HG data via S3 buckets at a prior company and initiated the data feed conversation. The expansion was deferred from the last renewal — now being pushed forward to move Strada to the data feed delivery model. Arben Morina also joining from Strada.' },
+      { ts: 'Jul 8 · 9:30 AM', csm: 'riley', account: 'Intuit (TrustRadius)',
+        note: 'Regular TrustRadius CSM sync with Andrew Lum — established relationship cadence',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Riley met with Andrew Lum (Intuit) for their regular TrustRadius CSM sync. Established relationship maintained through consistent cadence. Post-4th of July check-in before getting into business updates.' },
+      { ts: 'Jul 8 · 10:00 AM', csm: 'riley', account: 'ZScaler (TrustRadius)',
+        note: 'Monthly TrustRadius sync with Vivian Chan and team — post-holiday relationship check-in',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Riley joined Vivian Chan, Josh Mercer, Scott Stater, Andrea Fong, Sarah Gamino, and Tiffani Nichols for the ZScaler TrustRadius CSM sync. Post-4th of July relationship catch-up before reviewing program status.' },
+      { ts: 'Jul 8 · 10:00 AM', csm: 'varun', account: 'Autodesk',
+        note: 'Bi-weekly sync — Varun presented product catalog matching analysis showing 90% match rate on 11k products',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Varun presented a product mapping analysis against Autodesk\'s wishlist of 1,228 products. 11,000 matched with 90% match rate using exact and fuzzy matching. Varun included rebrand tracking (e.g., Agisoft PhotoScan). Trishna Patel asked about 4 specific unmatched products including Bexel added by the India team. Varun to do final validation and share the analysis file.' },
+      { ts: 'Jul 8 · 10:30 AM', csm: 'riley', account: 'BMC (TrustRadius)',
+        note: 'Monthly TrustRadius sync — review submission status (mostly rejected), geo dashboard review',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Riley, Augie Buettner, and Katie Allison (BMC) joined Claire Murphy for the monthly TrustRadius sync. Riley walked through recent review submissions — most were rejected in the latest incentive cycle. Geo dashboard update shared. Riley confirmed two were added.' },
+      { ts: 'Jul 8 · 11:00 AM', csm: 'riley', account: 'SAP SuccessFactors (TrustRadius)',
+        note: 'Progress call — addressed event support email; review reports (SuccessFactors/Workday) in progress with formatting fixes',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Riley joined Kristin, Cole Arutian, and Mardigan Moffat for the SAP SuccessFactors TrustRadius progress call. Riley addressed an event support email from the prior day. Kristin confirmed two reports are complete; the SuccessFactors/Workday report is being updated with formatting feedback. CX reports renewal came up — funded separately by BU content strategists.' },
+      { ts: 'Jul 8 · 12:00 PM', csm: 'rani', account: 'Lenovo',
+        note: 'Regular Lenovo HG sync — relationship check-in with Adrian Escobar and Ryan',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Rani joined Adrian Escobar and Ryan for the regular Lenovo HG sync. Call opened with relationship catch-up (Ryan\'s Montana trip) before transitioning to business updates.' },
+      { ts: 'Jul 8 · 1:30 PM', csm: 'riley', account: 'Paylocity (TrustRadius)',
+        note: 'TrustRadius orientation for Olivia McFadden — new client advocacy hire (week 2), focused on reviews and case studies',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Check-in',
+        detail: 'Riley gave a TrustRadius platform overview to Olivia McFadden (Paylocity client advocacy team, week 2). Matt Doyle also joined. Olivia\'s role focuses on case study work and review solicitation. Riley walked through TrustRadius capabilities and the partnership history since 2022.' },
+    ],
+    pulses: [
+      { csm: 'atisha', account: 'IBM (TDS EMEA)', health: 'Concerning' },
+      { csm: 'atisha', account: 'Deloitte', health: 'Healthy' },
+      { csm: 'riley', account: 'Adobe (TrustRadius)', health: 'Healthy' },
+      { csm: 'andy', account: 'SAS Institute', health: 'Healthy' },
+      { csm: 'atisha', account: 'Strada Global', health: 'Healthy' },
+      { csm: 'riley', account: 'Intuit (TrustRadius)', health: 'Healthy' },
+      { csm: 'riley', account: 'ZScaler (TrustRadius)', health: 'Healthy' },
+      { csm: 'varun', account: 'Autodesk', health: 'Healthy' },
+      { csm: 'riley', account: 'BMC (TrustRadius)', health: 'Healthy' },
+      { csm: 'riley', account: 'SAP SuccessFactors (TrustRadius)', health: 'Healthy' },
+      { csm: 'rani', account: 'Lenovo', health: 'Healthy' },
+      { csm: 'riley', account: 'Paylocity (TrustRadius)', health: 'Healthy' },
+    ],
+  };
+}
+
+function dayMeta_2026_07_08() {
+  return {
+    pills: [
+      ['dot-teal',  '12 Calls'],
+      ['dot-red',   '1 Concerning'],
+      ['dot-amber', '3 Expansion'],
+      ['dot-green', '12 Pulses'],
+      ['dot-grey',  'Wed Jul 8 · 89 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (12)', 'Pulses (12)', 'Action Items (6)'],
+  };
+}
+
+function dayOverviewHTML_2026_07_08() {
+  return `<div class="section-label">Team Activity &mdash; Wednesday July 8, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 8px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Wednesday Jul 8 &mdash; 89 recordings scanned</strong> via SFDC SOQL &middot; <strong>12 confirmed calls</strong> across 5 CSMs &middot; 3 expansion signals (Adobe geo dashboard, Strada Global data feed, Autodesk product catalog) &middot; 1 concerning (IBM EMEA intent coverage)
+  </div>
+  <div style="background:#1c1117;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fcd34d;">
+    &#x26A0;&#xFE0F; <strong>IBM (TDS EMEA) &mdash; Concerning:</strong> Montse (IBM) reports near-zero intent signals for European countries when filtering by location. Customer is using HG data for reseller campaign targeting and EMEA coverage is insufficient. Atisha to follow up with workaround guidance.
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">6 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">6</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">6</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">180m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Adobe (geo dashboard early access + expansion) &middot; Intuit (regular sync) &middot; ZScaler (monthly) &middot; BMC (review status) &middot; SAP SF (progress) &middot; Paylocity (new hire intro)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">3 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">3</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">90m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">IBM/TDS EMEA &#128308; (EMEA intent issue) &middot; Deloitte (Data Studio config) &middot; Strada Global &#128994; (data feed expansion)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="andy">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">SAS Institute EMEA (weekly sync, M&amp;A tracking Q)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Lenovo (regular HG sync)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Autodesk (product catalog matching analysis, 90% match rate)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="nick">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">3 events scheduled &mdash; Veeam recording found but no transcript; Capgemini and Accenture events had no recordings</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="divyam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event scheduled &mdash; Adobe Monthly Strategic Sync recording found, no transcript synced</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 events scheduled (Datadog, F5) &mdash; F5 recording found but no transcript</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_07_08() {
+  return `<div style="background:#1c1117;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fcd34d;">
+    &#x26A0;&#xFE0F; <strong>Concerning &mdash; IBM (TDS EMEA):</strong> Atisha Waghela at 5:30 AM PT. EMEA intent data coverage gap flagged by customer.
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>Expansion signals:</strong> Adobe geo dashboard early access + potential new product profiles (Riley) &middot; Strada Global data feed/S3 expansion (Atisha) &middot; Autodesk product catalog analysis 90% match rate (Varun)
+  </div>
+  <div style="background:#1a2133;border:1px solid #334155;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#94a3b8;">
+    <strong>Unconfirmed (no transcript):</strong> Veeam &mdash; Nick Johnson &middot; Adobe Monthly Strategic Sync &mdash; Divyam Dewan &middot; F5 &mdash; Pam Huck
+  </div>`;
+}
+
+function dayPulsesHTML_2026_07_08() {
+  const cards = [
+    { csm:'atisha', health:'Concerning', account:'IBM (TDS EMEA)', opp:'Vitally Pulse &mdash; Jul 8 Call',
+      arr:'Enterprise &middot; Atisha Waghela', csmlbl:'Atisha Waghela',
+      change:'Jul 8 &middot; Issue',
+      excerpt:'7/8 AW: IBM TDS EMEA customer (Montse) raised EMEA intent coverage issue (5:30 AM PT, 30 min). Near-zero intent results for European countries when filtering by location. Customer using HG data for IBM reseller campaign targeting. Atisha offered workaround guidance for EMEA intent location filter.' },
+    { csm:'atisha', health:'Healthy', account:'Deloitte', opp:'Vitally Pulse &mdash; Jul 8 Call',
+      arr:'Enterprise &middot; Atisha Waghela', csmlbl:'Atisha Waghela',
+      change:'Jul 8 &middot; Check-in',
+      excerpt:'7/8 AW: Weekly Deloitte Data Studio sync (6:00 AM PT, 30 min). Reviewed product exclusion list with Rajesh Shetty — application dev tools (Python, TypeScript) confirmed as clean products. SPC for Excel miscategorization flagged for remapping.' },
+    { csm:'riley', health:'Healthy', account:'Adobe (TrustRadius)', opp:'Vitally Pulse &mdash; Jul 8 Call',
+      arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Jul 8 &middot; Mixed',
+      excerpt:'7/8 RR: TrustRadius Adobe success call (7:30 AM PT, 30 min). Demoed geo dashboard early access (general rollout Jul 15). Customer wrapping current initiative phase; next phase may include additional product profiles. Expansion opportunity flagged.' },
+    { csm:'andy', health:'Healthy', account:'SAS Institute', opp:'Vitally Pulse &mdash; Jul 8 Call',
+      arr:'Enterprise &middot; Andy Lim', csmlbl:'Andy Lim',
+      change:'Jul 8 &middot; Check-in',
+      excerpt:'7/8 AL: SAS Institute EMEA weekly sync (8:30 AM PT, 30 min). Customer raised M&A tracking question — whether HG can surface new acquisitions rolled up to global accounts. Andy explained hierarchy maintenance process and customer flagging workflow.' },
+    { csm:'atisha', health:'Healthy', account:'Strada Global', opp:'Vitally Pulse &mdash; Jul 8 Call',
+      arr:'Enterprise &middot; Atisha Waghela', csmlbl:'Atisha Waghela',
+      change:'Jul 8 &middot; Expansion',
+      excerpt:'7/8 AW: Strada Global expansion discussion (9:30 AM PT, 30 min). Data feed (S3) integration back on table — data scientist Nyla used HG via S3 at prior company and initiated ask. Deferred from last renewal; now moving forward to migrate Strada to data feed delivery model.' },
+    { csm:'riley', health:'Healthy', account:'Intuit (TrustRadius)', opp:'Vitally Pulse &mdash; Jul 8 Call',
+      arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Jul 8 &middot; Check-in',
+      excerpt:'7/8 RR: Regular Intuit TrustRadius CSM sync with Andrew Lum (9:30 AM PT, 30 min). Established relationship cadence maintained. Post-4th of July check-in.' },
+    { csm:'riley', health:'Healthy', account:'ZScaler (TrustRadius)', opp:'Vitally Pulse &mdash; Jul 8 Call',
+      arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Jul 8 &middot; Check-in',
+      excerpt:'7/8 RR: ZScaler TrustRadius monthly sync (10:00 AM PT, 30 min). Full team present — Vivian Chan, Josh Mercer, Scott Stater, Andrea Fong, Sarah Gamino, Tiffani Nichols. Post-holiday relationship check-in.' },
+    { csm:'varun', health:'Healthy', account:'Autodesk', opp:'Vitally Pulse &mdash; Jul 8 Call',
+      arr:'Enterprise &middot; Varun Tiwari', csmlbl:'Varun Tiwari',
+      change:'Jul 8 &middot; Expansion',
+      excerpt:'7/8 VT: Autodesk bi-weekly sync (10:00 AM PT, 30 min). Varun presented product catalog matching analysis — 90% match rate on 11k products with exact+fuzzy matching and rebrand tracking. Trishna asked about 4 unmatched products (incl. Bexel). Varun to validate and share file.' },
+    { csm:'riley', health:'Healthy', account:'BMC (TrustRadius)', opp:'Vitally Pulse &mdash; Jul 8 Call',
+      arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Jul 8 &middot; Check-in',
+      excerpt:'7/8 RR: BMC TrustRadius monthly sync (10:30 AM PT, 30 min). Review submission status reviewed — most recent rejections noted. Geo dashboard update shared with Katie Allison and Claire Murphy. Two new reviews confirmed added.' },
+    { csm:'riley', health:'Healthy', account:'SAP SuccessFactors (TrustRadius)', opp:'Vitally Pulse &mdash; Jul 8 Call',
+      arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Jul 8 &middot; Check-in',
+      excerpt:'7/8 RR: SAP SuccessFactors TrustRadius progress call (11:00 AM PT, 30 min). Event support email addressed with Kristin and Cole Arutian. Review reports in progress — SuccessFactors/Workday report getting formatting fixes. CX reports renewal noted.' },
+    { csm:'rani', health:'Healthy', account:'Lenovo', opp:'Vitally Pulse &mdash; Jul 8 Call',
+      arr:'Enterprise &middot; Rani Guy', csmlbl:'Rani Guy',
+      change:'Jul 8 &middot; Check-in',
+      excerpt:'7/8 RG: Regular Lenovo HG sync with Adrian Escobar and Ryan (12:00 PM PT, 30 min). Relationship-first cadence with business review. Montana trip discussion noted.' },
+    { csm:'riley', health:'Healthy', account:'Paylocity (TrustRadius)', opp:'Vitally Pulse &mdash; Jul 8 Call',
+      arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Jul 8 &middot; Check-in',
+      excerpt:'7/8 RR: TrustRadius platform overview for Olivia McFadden — new Paylocity client advocacy hire (week 2) (1:30 PM PT, 30 min). Matt Doyle also present. Olivia\'s role: case study and review solicitation. Platform capabilities and partnership history (since 2022) covered.' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div><div style="font-weight:600;font-size:13px;">${c.account}</div><div style="font-size:11px;color:#94a3b8;">${c.opp}</div></div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_07_08() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('0708-1') ? 'done' : ''}" data-csm="atisha" id="action-0708-1">
+      <div class="action-checkbox ${doneActions.has('0708-1') ? 'checked' : ''}" onclick="toggleAction('0708-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; IBM (TDS EMEA) &mdash; Address EMEA Intent Coverage Gap with Montse</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH</span>Atisha Waghela &middot; Montse reported near-zero intent signals for European countries. Atisha committed to sharing a workaround for the intent location filter. Follow up with specific EMEA coverage guidance and confirm whether the customer&#39;s target countries (Spain, Europe) are supported at the resolution needed for their reseller campaign use case.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0708-2') ? 'done' : ''}" data-csm="atisha" id="action-0708-2">
+      <div class="action-checkbox ${doneActions.has('0708-2') ? 'checked' : ''}" onclick="toggleAction('0708-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Strada Global &mdash; Advance Data Feed (S3) Expansion Conversation</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH</span>Atisha Waghela &middot; Data feed expansion was deferred from the last renewal and is now active. Nyla (data scientist) is the technical champion. Connect Nyla and Dominic with the HG data delivery team to scope the S3 migration, establish a timeline, and confirm whether this expands the contract value ahead of the 2027 renewal.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0708-3') ? 'done' : ''}" data-csm="varun" id="action-0708-3">
+      <div class="action-checkbox ${doneActions.has('0708-3') ? 'checked' : ''}" onclick="toggleAction('0708-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CA; Autodesk &mdash; Share Product Catalog Matching Analysis with Trishna Patel</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH</span>Varun Tiwari &middot; Varun presented the 90% match rate analysis on the call and committed to sharing the file after final validation. Validate the 4 unmatched products (Bexel + 3 from India team), add them to the sheet, and send to Trishna and Ola today.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0708-4') ? 'done' : ''}" data-csm="riley" id="action-0708-4">
+      <div class="action-checkbox ${doneActions.has('0708-4') ? 'checked' : ''}" onclick="toggleAction('0708-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Adobe (TrustRadius) &mdash; Follow Up on Next Phase Additional Product Profiles</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Riley Rogers &middot; Allyson mentioned the team is working on a next phase that may include additional product profiles/copy on TrustRadius. Now that the geo dashboard has been demoed (early access), send Allyson a note to confirm when the next phase product additions will be scoped so TrustRadius can plan for the profile updates.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0708-5') ? 'done' : ''}" data-csm="riley" id="action-0708-5">
+      <div class="action-checkbox ${doneActions.has('0708-5') ? 'checked' : ''}" onclick="toggleAction('0708-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4E7; SAP SuccessFactors &mdash; Respond to Event Support Email and Clarify CX Reports Renewal</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Riley Rogers &middot; Riley acknowledged the event support email on the call. Send a formal response addressing the event support request. Separately, connect with Kristin and Cole to understand the CX reports renewal scope (noted as funded by BU content strategists) before it overlaps with the 7/27 bridge deadline.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0708-6') ? 'done' : ''}" data-csm="riley" id="action-0708-6">
+      <div class="action-checkbox ${doneActions.has('0708-6') ? 'checked' : ''}" onclick="toggleAction('0708-6')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F44B; Paylocity &mdash; Send Olivia McFadden Post-Call TrustRadius Resource Packet</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW</span>Riley Rogers &middot; Olivia is new (week 2) and getting up to speed on TrustRadius. Send a brief follow-up email with links to TrustRadius review management resources, the review campaign playbook, and the case study submission process so she has reference materials as she ramps up.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No actions match the current filter.</div>`;
+}
