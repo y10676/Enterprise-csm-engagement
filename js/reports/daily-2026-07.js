@@ -1761,3 +1761,286 @@ function dayActionsHTML_2026_07_08() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No actions match the current filter.</div>`;
 }
+
+// ============================================================
+// July 9, 2026
+// ============================================================
+
+function dayData_2026_07_09() {
+  return {
+    calls: [
+      { ts: 'Jul 9 · 7:30 AM', csm: 'varun', account: 'MongoDB',
+        note: 'Credit pool exceeded — MongoDB at 315K+ credits vs 300K limit (since May). Two options proposed (early renewal or freeze installs). Decision deferred to Ziad (PTO until mid-Aug); renewal October.',
+        mins: 30, health: 'Concerning',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Issue',
+        detail: 'MongoDB has exceeded its 300K credit pool (now 315K+, overrun since May). Varun walked Will Bracken through the overrun and proposed two options: (a) early renewal, or (b) freeze incremental installs. Key stakeholder Ziad is on PTO until mid-August; October renewal deadline creates urgency.' },
+      { ts: 'Jul 9 · 8:00 AM', csm: 'divyam', account: 'Sage',
+        note: 'Recurring cadence sync — reviewed June AI Geo Report and TrustRadius campaign performance. Cadence moving to monthly at customer request. Next meeting August 13.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Divyam reviewed the June AI Geo Report results with Brock (Sage) and discussed TrustRadius campaign performance. Sage requested reducing cadence from bi-weekly to monthly. Next meeting August 13.' },
+      { ts: 'Jul 9 · 9:00 AM', csm: 'atisha', account: 'RSM US',
+        note: 'Weekly sync — MCP adoption pending (Aaron not onboarded); J&J account brief in progress; dashboard fixes needed (Duke taking over).',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Atisha reviewed RSM MCP adoption status (Aaron not started), J&J account brief progress, dashboard fixes (predecessor-built, Duke taking over). Atisha asked Ben to push Aaron for account list; Christian out all week.' },
+      { ts: 'Jul 9 · 11:00 AM', csm: 'riley', account: 'SAP (Ariba+Fieldglass)',
+        note: 'TrustRadius Geo Dashboard walkthrough (AI visibility). SAP 2027 renewal progressing through budget reorg; 3 profile updates pending; Ashleigh inherited 3 more.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Riley walked Ashleigh Riehl through TrustRadius Geo Dashboard (AI visibility: TR mentions, citation rates, sentiment scores). SAP 2027 renewal progressing through Alejandro amid internal budget reorg. 3 profile updates pending + 3 inherited.' },
+      { ts: 'Jul 9 · 1:00 PM', csm: 'rani', account: 'Workday',
+        note: 'Renewal discussion — primary contact Alexandra absent. Brief call with Cole Arutian and Mardigan Moffat; renewal follow-up email needed.',
+        mins: 45, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Mixed',
+        detail: 'Rani met with Cole Arutian and Mardigan Moffat (Workday) for renewal discussion, but primary contact Alexandra did not join. Cole and Rani planned follow-up note. SKO venue (Santa Barbara Hilton) briefly mentioned. Rani removed automatic notetaker.' },
+      { ts: 'Jul 9 · 1:30 PM', csm: 'rani', account: 'GTM Fabric',
+        note: 'CONCERNING: Steve (NetApp champion) leaving July 18. Budget cuts eliminated propensity analytics at NetApp. Opt-out clause in deal tied to coverage thresholds. Account at risk.',
+        mins: 30, health: 'Concerning',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Issue',
+        detail: 'Steve revealed he is leaving NetApp on July 18. New CCO leadership cut propensity data/analytics budget, eliminating Steve\'s function. Work transitions to Gabriel (Sales Ops) and Buren\'s team. Deal contains opt-out clause tied to coverage thresholds — flagged as risk by Rani. Steve exploring GTMFabric/independent opportunities.' },
+    ],
+    pulses: [
+      { csm: 'rani', account: 'GTM Fabric', health: 'Concerning',
+        note: 'Key champion Steve leaving July 18. NetApp budget cuts eliminated propensity analytics function. Opt-out clause risk flagged. Immediate escalation needed.' },
+      { csm: 'varun', account: 'MongoDB', health: 'Concerning',
+        note: 'Credit pool exceeded (315K+ vs 300K). Two resolution options tabled. Decision deferred to Ziad (back mid-Aug). October renewal window at risk.' },
+      { csm: 'divyam', account: 'Sage', health: 'Healthy',
+        note: 'June AI Geo Report reviewed. Cadence moving to monthly. TrustRadius campaign performing well. Next meeting August 13.' },
+      { csm: 'atisha', account: 'RSM US', health: 'Healthy',
+        note: 'MCP adoption pending for Aaron. Dashboard fixes underway (Duke). J&J account brief in progress.' },
+      { csm: 'riley', account: 'SAP (Ariba+Fieldglass)', health: 'Healthy',
+        note: 'Geo Dashboard walkthrough completed. Renewal progressing through SAP budget reorg. 3 profile updates pending + 3 inherited.' },
+      { csm: 'rani', account: 'Workday', health: 'Healthy',
+        note: 'Renewal discussion — Alexandra absent. Follow-up email needed to Cole/Mardigan.' },
+    ],
+  };
+}
+
+function dayMeta_2026_07_09() {
+  return {
+    pills: [
+      ['dot-teal', '6 Calls'],
+      ['dot-red',  '2 Concerning'],
+      ['dot-green','6 Pulses'],
+      ['dot-grey', 'Wed Jul 9 · 60 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (6)', 'Pulses (6)', 'Action Items (6)'],
+  };
+}
+
+function dayOverviewHTML_2026_07_09() {
+  return `<div class="section-label">Team Activity &mdash; Wednesday July 9, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #334155;border-left:3px solid #334155;border-radius:6px;padding:8px 14px;margin:0 0 8px 0;font-size:12px;color:#94a3b8;">
+    &#x1F4C5; <strong>Wednesday Jul 9 &mdash; 60 recordings scanned</strong> via SFDC SOQL &middot; <strong>6 confirmed calls</strong> across 5 CSMs &middot; 2 concerning signals (GTM Fabric champion departure, MongoDB credit overrun)
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 8px 0;font-size:12px;color:#fca5a5;">
+    &#x1F6A8; <strong>GTM Fabric (Rani Guy) &mdash; URGENT:</strong> Steve (NetApp champion via GTM Fabric) confirmed departing July 18. New CCO budget cuts eliminated propensity analytics function. Deal has opt-out clause tied to coverage thresholds. Escalate to leadership before July 18.
+  </div>
+  <div style="background:#1c1117;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fcd34d;">
+    &#x26A0;&#xFE0F; <strong>MongoDB (Varun Tiwari) &mdash; Concerning:</strong> 315K+ credits consumed vs 300K pool (overrun since May). Key decision-maker Ziad on PTO until mid-August. October renewal at risk without early alignment on resolution path.
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">SAP (Ariba+Fieldglass) &mdash; Geo Dashboard walkthrough; 2027 renewal in progress</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Sage &mdash; AI Geo Report reviewed; cadence to monthly; next Aug 13</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">75m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">GTM Fabric &#128308; (Steve departure, opt-out risk) &middot; Workday &#128994; (renewal, Alexandra absent)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">MongoDB &#128308; (315K+ credits vs 300K pool; Ziad on PTO; Oct renewal)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">RSM US &mdash; weekly sync; MCP adoption pending; J&amp;J brief in progress</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="nick">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 events scheduled &mdash; Infinigate (no recording found); Sage biweekly (no confirmed recording with transcript)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event scheduled &mdash; Oracle NetSuite TrustRadius Sync (no confirmed transcript)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 events scheduled &mdash; Evapure (recording exists, no transcript &mdash; unconfirmed); Sage biweekly (no recording found)</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_07_09() {
+  return `<div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x1F6A8; <strong>URGENT &mdash; GTM Fabric (Rani Guy):</strong> Steve (NetApp champion) leaving July 18. Opt-out clause risk. Escalate immediately.
+  </div>
+  <div style="background:#1c1117;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fcd34d;">
+    &#x26A0;&#xFE0F; <strong>MongoDB (Varun Tiwari) &mdash; Concerning:</strong> 315K+ credits vs 300K pool. Ziad on PTO until mid-August. October renewal at risk.
+  </div>
+  <div style="background:#1a2133;border:1px solid #334155;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#94a3b8;">
+    <strong>Internal (excluded):</strong> Safaricom &mdash; Divyam Dewan + AM Angus Hyams only (customer no-show) &nbsp;|&nbsp; <strong>Unconfirmed (no transcript):</strong> Evapure &mdash; Andy Lim
+  </div>`;
+}
+
+function dayPulsesHTML_2026_07_09() {
+  const cards = [
+    { csm:'rani', health:'Concerning', account:'GTM Fabric', opp:'Vitally Pulse &mdash; Jul 9 Call',
+      arr:'Enterprise &middot; Rani Guy', csmlbl:'Rani Guy',
+      change:'Jul 9 &middot; Issue',
+      excerpt:'7/9 RG: Steve (NetApp/GTMFabric champion) departing July 18 (1:30 PM PT, 30 min). New CCO cut propensity analytics budget at NetApp. Work transitions to Gabriel/Buren\'s team. Deal opt-out clause tied to coverage thresholds. Escalation required before July 18.' },
+    { csm:'varun', health:'Concerning', account:'MongoDB', opp:'Vitally Pulse &mdash; Jul 9 Call',
+      arr:'Enterprise &middot; Varun Tiwari', csmlbl:'Varun Tiwari',
+      change:'Jul 9 &middot; Issue',
+      excerpt:'7/9 VT: Credit pool exceeded &mdash; 315K+ vs 300K limit (7:30 AM PT, 30 min). Overrun since May. Early renewal or freeze installs proposed to Will Bracken. Ziad on PTO until mid-August. October renewal at risk without early alignment.' },
+    { csm:'divyam', health:'Healthy', account:'Sage', opp:'Vitally Pulse &mdash; Jul 9 Call',
+      arr:'Enterprise &middot; Divyam Dewan', csmlbl:'Divyam Dewan',
+      change:'Jul 9 &middot; Check-in',
+      excerpt:'7/9 DD: June AI Geo Report reviewed with Brock (8:00 AM PT, 30 min). Sage requested monthly cadence (from bi-weekly). TrustRadius campaign performing well; new list deployed. Next sync August 13.' },
+    { csm:'atisha', health:'Healthy', account:'RSM US', opp:'Vitally Pulse &mdash; Jul 9 Call',
+      arr:'Enterprise &middot; Atisha Waghela', csmlbl:'Atisha Waghela',
+      change:'Jul 9 &middot; Check-in',
+      excerpt:'7/9 AW: Weekly RSM sync (9:00 AM PT, 30 min). MCP adoption pending for Aaron &mdash; Ben to nudge for account list. J&J account brief in progress. Dashboard fixes: Duke taking over from predecessor. Christian out all week.' },
+    { csm:'riley', health:'Healthy', account:'SAP (Ariba+Fieldglass)', opp:'Vitally Pulse &mdash; Jul 9 Call',
+      arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Jul 9 &middot; Check-in',
+      excerpt:'7/9 RR: Geo Dashboard walkthrough with Ashleigh Riehl (11:00 AM PT, 30 min). AI visibility metrics: TR mentions, citation rates, sentiment by region. 2027 renewal progressing through Alejandro amid SAP budget reorg. 3 profile updates pending + 3 inherited.' },
+    { csm:'rani', health:'Healthy', account:'Workday', opp:'Vitally Pulse &mdash; Jul 9 Call',
+      arr:'Enterprise &middot; Rani Guy', csmlbl:'Rani Guy',
+      change:'Jul 9 &middot; Mixed',
+      excerpt:'7/9 RG: Renewal call with Cole Arutian and Mardigan Moffat (1:00 PM PT, 45 min). Primary contact Alexandra Wilson absent. Rani and Cole to send Alexandra follow-up note on renewal next steps.' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div><div style="font-weight:600;font-size:13px;">${c.account}</div><div style="font-size:11px;color:#94a3b8;">${c.opp}</div></div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_07_09() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('0709-1') ? 'done' : ''}" data-csm="rani" id="action-0709-1">
+      <div class="action-checkbox ${doneActions.has('0709-1') ? 'checked' : ''}" onclick="toggleAction('0709-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F6A8; GTM Fabric &mdash; Escalate Steve departure &amp; opt-out clause risk to leadership</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH</span>Rani Guy &middot; Steve leaves NetApp July 18. Review the opt-out clause; identify successors (Gabriel &mdash; Sales Ops, Buren&apos;s team). Flag to VP CS before Steve&apos;s last day. Confirm whether coverage thresholds are at risk and what remediation options exist.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0709-2') ? 'done' : ''}" data-csm="varun" id="action-0709-2">
+      <div class="action-checkbox ${doneActions.has('0709-2') ? 'checked' : ''}" onclick="toggleAction('0709-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; MongoDB &mdash; Prepare credit resolution brief; align with Ziad before October renewal</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH</span>Varun Tiwari &middot; 315K+ vs 300K credit pool (overrun since May). Ziad on PTO until mid-August. Draft options brief (early renewal vs freeze installs) with finance/PM input now &mdash; don&apos;t wait until August.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0709-3') ? 'done' : ''}" data-csm="rani" id="action-0709-3">
+      <div class="action-checkbox ${doneActions.has('0709-3') ? 'checked' : ''}" onclick="toggleAction('0709-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4E7; Workday &mdash; Send renewal follow-up to Alexandra Wilson</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Rani Guy &middot; Alexandra did not attend the July 9 renewal call. Send her a summary note (Cole Arutian and Mardigan Moffat in CC) covering what was discussed and the renewal next steps.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0709-4') ? 'done' : ''}" data-csm="atisha" id="action-0709-4">
+      <div class="action-checkbox ${doneActions.has('0709-4') ? 'checked' : ''}" onclick="toggleAction('0709-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4BB; RSM &mdash; Push MCP adoption for Aaron; reconnect with Christian next week</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Atisha Waghela &middot; Confirm Ben nudged Aaron on account list and MCP setup. Christian returns next week &mdash; reconnect to check dashboard fixes (Duke) and J&amp;J account brief progress.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0709-5') ? 'done' : ''}" data-csm="riley" id="action-0709-5">
+      <div class="action-checkbox ${doneActions.has('0709-5') ? 'checked' : ''}" onclick="toggleAction('0709-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; SAP (Ariba+Fieldglass) &mdash; Send 3+3 pending profile updates; follow up with Alejandro on 2027 renewal</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Riley Rogers &middot; 3 original profile updates pending + 3 inherited by Ashleigh. Complete and send. Loop in Alejandro on 2027 renewal approval progress through SAP&apos;s internal budget reorg.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0709-6') ? 'done' : ''}" data-csm="divyam" id="action-0709-6">
+      <div class="action-checkbox ${doneActions.has('0709-6') ? 'checked' : ''}" onclick="toggleAction('0709-6')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C5; Sage &mdash; Confirm August 13 meeting; share June AI Geo Report summary</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW</span>Divyam Dewan &middot; Send calendar invite for August 13 monthly sync and share the June AI Geo Report + TrustRadius campaign summary to Brock ahead of the meeting.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No actions match the current filter.</div>`;
+}
