@@ -2044,3 +2044,273 @@ function dayActionsHTML_2026_07_09() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No actions match the current filter.</div>`;
 }
+
+// ============================================================
+// July 10, 2026
+// ============================================================
+
+function dayData_2026_07_10() {
+  return {
+    calls: [
+      { ts: 'Jul 10 · 4:00 AM', csm: 'andy', account: 'SAS Institute',
+        note: 'Commercial discussion on upcoming December renewal — customer exploring trade-off of read-only licenses for access licenses; senior-level visibility confirmed by Jasper.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Andy and Augie met with the SAS customer to map the commercial path for the December renewal. The customer wants to trade off ~90 read-only licenses for access licenses, citing low field uptake on current seats. Senior stakeholders (Jasper, Mike Turner) are enthusiastic about HG content for segmentation and AE prospecting. Andy probing on whether a partial trade-off is viable; usage data pull needed.' },
+      { ts: 'Jul 10 · 7:30 AM', csm: 'rani', account: 'Hewlett Packard Enterprise',
+        note: 'ERD data walk-through and V2 migration planning — HPE Databricks team introduced; Rani and Alexi coordinating on migration strategy.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Rani orchestrated a dual-agenda session with HPE: (1) ERD data walk-through led by Alexi Mouarkach for the HPE data team including new Databricks contact Maximiliano Fonseca, who ingests HG data into HPE\'s Databricks environment; (2) laying groundwork for V2 migration, with Tracy York handling the commercial/migration conversation separately. HG is strategizing on how to guide HPE toward V2 without an abrupt pitch.' },
+      { ts: 'Jul 10 · 9:00 AM', csm: 'varun', account: 'Zendesk',
+        note: 'Bi-weekly sync — new AM Charles Hawkins (ex-MadKudu) introduced; MCP trial access pitched; Zendesk\'s field account-snapshot automation shown.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Varun introduced Charles Hawkins (replacing Ravi, came from MadKudu acquisition) to Rodrigo Gomez and Stephen Micek. Varun offered MCP trial enrollment and demoed a retail industry landscape report built with MCP. Stephen asked about future cost; Varun clarified it is not in the current order form but positioned the trial as a value demonstration. Rodrigo shared progress on an account-snapshot automation project using HG Insights data.' },
+      { ts: 'Jul 10 · 9:30 AM', csm: 'rani', account: 'Hitachi',
+        note: 'Recurring sync — renewal alignment: intent (end of Sept) + core (mid-Oct); 3-year partnership proposal in development; FAI+contact data positioned as future expansion.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Rani and Adrian Escobar synced with Miguel Ortega on Hitachi\'s upcoming dual renewal: intent module (end of September) and core (mid-October). Anders returns next week and Adrian will discuss renewal alignment. Rani is working toward a 3-year partnership proposal. Sales Copilot enablement sessions had mixed energy. FAI + contact data positioned as future expansion anchor once generally available.' },
+      { ts: 'Jul 10 · 10:30 AM', csm: 'atisha', account: 'Intel',
+        note: 'Stakeholder transition — Ryan Melton introduced as new primary Intel contact for ongoing AI agents project; platform training for Ryan planned.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Atisha brought in the full HG team (Adrian Escobar, Fernanda Oliveira) to introduce Ryan Melton as Intel\'s new primary stakeholder. Fernanda explained the ongoing AI agents project that relies on HG IT spending data. Ryan needs platform training from Atisha. Fernanda requested switching recurring meetings to Teams for easier transcript access on Intel\'s end.' },
+    ],
+    pulses: [
+      { csm: 'andy', account: 'SAS Institute', health: 'Healthy',
+        note: 'December renewal commercial scoping — customer wants to trade read-only seats for access licenses; senior visibility confirmed. Andy to share usage data and explore partial trade-off structure.' },
+      { csm: 'rani', account: 'Hewlett Packard Enterprise', health: 'Healthy',
+        note: 'ERD data walk-through completed with Databricks team; V2 migration strategy being developed in parallel. Tracy York leading commercial track.' },
+      { csm: 'varun', account: 'Zendesk', health: 'Healthy',
+        note: 'MCP trial access pitched and welcomed; Zendesk is building field account-snapshot automation using HG Insights data. New AM Charles Hawkins (ex-MadKudu) onboarded.' },
+      { csm: 'rani', account: 'Hitachi', health: 'Healthy',
+        note: 'Intent renewal (Sept) + core renewal (Oct) alignment discussion initiated; 3-year partnership proposal in development. FAI + contact data positioned as future expansion.' },
+      { csm: 'atisha', account: 'Intel', health: 'Healthy',
+        note: 'Ryan Melton introduced as new primary Intel contact; platform training scheduled. AI agents project ongoing, dependent on HG IT spending data downloads.' },
+    ],
+  };
+}
+
+function dayMeta_2026_07_10() {
+  return {
+    pills: [
+      ['dot-teal',   '5 Calls'],
+      ['dot-amber',  '3 Expansion'],
+      ['dot-green',  '5 Pulses'],
+      ['dot-grey',   'Fri Jul 10 · 41 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (5)', 'Pulses (5)', 'Action Items (7)'],
+  };
+}
+
+function dayOverviewHTML_2026_07_10() {
+  return `<div class="section-label">Team Activity &mdash; Friday July 10, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Friday Jul 10 &mdash; 41 recordings scanned</strong> via SFDC SOQL &middot; <strong>5 confirmed calls</strong> across 4 CSMs &middot; 3 expansion signals (SAS renewal, HPE V2, Zendesk MCP) &middot; Hitachi dual renewal (Sept intent + Oct core) in active discussion
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">55m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">HPE (ERD + V2 migration strategy) &middot; Hitachi (dual renewal alignment Sept/Oct)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Intel (stakeholder transition &mdash; Ryan Melton introduced as new primary contact)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Zendesk (bi-weekly sync &mdash; MCP trial pitched, new AM Charles Hawkins onboarded)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="andy">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">SAS Institute (commercial discussion &mdash; Dec renewal license trade-off)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="riley">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No events or recordings detected for this date</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="nick">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 events (Infor debrief, Intuit contacts+scoring) &mdash; no CSM speaker confirmed in transcripts</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="divyam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 events (Thomson Reuters no transcript, Quadient no recording) &mdash; unconfirmed</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event (TrustRadius: Cisco renewal sync) &mdash; no matching recording found</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_07_10() {
+  return `<div style="background:#1c2333;border:1px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 12px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4CA; Call data is auto-rendered from dayData. 4 unconfirmed (no transcript): Thomson Reuters (Divyam 8 AM), Google (Rani 10 AM), Apple Weekly Syncup (Atisha 11 AM), Workday renewal (Rani 12 PM).
+  </div>`;
+}
+
+function dayPulsesHTML_2026_07_10() {
+  const cards = [
+    { csm: 'andy', health: 'Healthy', account: 'SAS Institute',
+      opp: 'Vitally Pulse &mdash; Jul 10 Call',
+      arr: 'Enterprise &middot; Andy Lim',
+      csmlbl: 'Andy Lim',
+      change: 'Jul 10 &middot; Commercial sync',
+      excerpt: 'Jul 10 AL: December renewal scoping (4:00 AM PT, 30 min). Customer wants to trade ~90 read-only licenses for access licenses; senior visibility confirmed (Jasper, Mike Turner). Andy to pull usage data and explore partial trade-off structure.' },
+    { csm: 'rani', health: 'Healthy', account: 'Hewlett Packard Enterprise',
+      opp: 'Vitally Pulse &mdash; Jul 10 Call',
+      arr: 'Enterprise &middot; Rani Guy',
+      csmlbl: 'Rani Guy',
+      change: 'Jul 10 &middot; ERD + V2 strategy',
+      excerpt: 'Jul 10 RG: ERD data walkthrough + V2 migration planning (7:30 AM PT, 30 min). Databricks contact Max Fonseca introduced. Tracy York handling commercial/migration track separately. Phased V2 pitch strategy being developed.' },
+    { csm: 'varun', health: 'Healthy', account: 'Zendesk',
+      opp: 'Vitally Pulse &mdash; Jul 10 Call',
+      arr: 'Enterprise &middot; Varun Tiwari',
+      csmlbl: 'Varun Tiwari',
+      change: 'Jul 10 &middot; Bi-weekly sync',
+      excerpt: 'Jul 10 VT: Bi-weekly sync (9:00 AM PT, 30 min). New AM Charles Hawkins (ex-MadKudu) introduced. MCP trial pitched; Rodrigo building account-snapshot automation with HG data. Stephen asked about future MCP cost.' },
+    { csm: 'rani', health: 'Healthy', account: 'Hitachi',
+      opp: 'Vitally Pulse &mdash; Jul 10 Call',
+      arr: 'Enterprise &middot; Rani Guy',
+      csmlbl: 'Rani Guy',
+      change: 'Jul 10 &middot; Renewal alignment',
+      excerpt: 'Jul 10 RG: Recurring sync (9:30 AM PT, 30 min). Intent renewal end-Sept + core mid-Oct. Anders returns next week. 3-year partnership proposal in development. FAI + contact data as future expansion anchor once GA.' },
+    { csm: 'atisha', health: 'Healthy', account: 'Intel',
+      opp: 'Vitally Pulse &mdash; Jul 10 Call',
+      arr: 'Enterprise &middot; Atisha Waghela',
+      csmlbl: 'Atisha Waghela',
+      change: 'Jul 10 &middot; Stakeholder intro',
+      excerpt: 'Jul 10 AW: Stakeholder transition (10:30 AM PT, 30 min). Ryan Melton introduced as new primary Intel contact for AI agents project. Platform training needed. Recurring sync to move to Teams per Fernanda Oliveira.' },
+  ];
+  const bc = h => h === 'Healthy' ? 'badge-healthy' : h === 'Concerning' ? 'badge-concerning' : 'badge-poor';
+  const bi = h => h === 'Healthy' ? '&#128994;' : h === 'Concerning' ? '&#128993;' : '&#128308;';
+  return `<div class="pulse-grid">${cards.map(c => `
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div><div class="pulse-account">${c.account}</div><div class="pulse-opp">${c.opp}</div></div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_07_10() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('0710-1') ? 'done' : ''}" data-csm="andy" id="action-0710-1">
+      <div class="action-checkbox ${doneActions.has('0710-1') ? 'checked' : ''}" onclick="toggleAction('0710-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4B0; SAS Institute &mdash; Pull license usage data; prepare trade-off proposal for December renewal</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH</span>Andy Lim &middot; Customer wants to trade ~90 read-only licenses for access licenses. Pull current usage stats. Draft partial trade-off options with commercial framing to share ahead of the Dec renewal negotiation. Confirm senior stakeholder names (Jasper, Mike Turner) in SFDC.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0710-2') ? 'done' : ''}" data-csm="rani" id="action-0710-2">
+      <div class="action-checkbox ${doneActions.has('0710-2') ? 'checked' : ''}" onclick="toggleAction('0710-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F504; HPE &mdash; Align Alexi and Tracy York on phased V2 migration pitch strategy</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH</span>Rani Guy &middot; ERD walkthrough completed. Now coordinate with Alexi Mouarkach and Tracy York on the V2 migration approach for HPE. Build the case by exploring their current pain points first. Set agenda for next HPE sync. Max Fonseca (Databricks) is the key technical contact.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0710-3') ? 'done' : ''}" data-csm="rani" id="action-0710-3">
+      <div class="action-checkbox ${doneActions.has('0710-3') ? 'checked' : ''}" onclick="toggleAction('0710-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C5; Hitachi &mdash; Schedule Anders renewal discussion to align Sept intent + Oct core into 3-year proposal</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH</span>Rani Guy / Adrian Escobar &middot; Anders returns next week. Schedule meeting to discuss aligning intent (end-Sept) and core (mid-Oct) renewals. Prepare the 3-year partnership proposal. FAI + contact data as future expansion pitch once GA. Renew context before pitch.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0710-4') ? 'done' : ''}" data-csm="varun" id="action-0710-4">
+      <div class="action-checkbox ${doneActions.has('0710-4') ? 'checked' : ''}" onclick="toggleAction('0710-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F916; Zendesk &mdash; Send MCP trial enrollment links and retail landscape report</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Varun Tiwari &middot; Follow through on MCP trial offer — send enrollment links and the retail industry landscape report to Rodrigo Gomez and Stephen Micek. Address Stephen's cost question proactively. Confirm trial duration and define success metrics for the trial period.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0710-5') ? 'done' : ''}" data-csm="atisha" id="action-0710-5">
+      <div class="action-checkbox ${doneActions.has('0710-5') ? 'checked' : ''}" onclick="toggleAction('0710-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4BB; Intel &mdash; Set up Teams recurring invite for Ryan Melton; schedule platform training</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Atisha Waghela &middot; Ryan Melton is the new primary Intel stakeholder for the AI agents project. Switch recurring sync to Teams (Fernanda Oliveira's request for transcript access). Schedule a dedicated HG platform training session for Ryan covering IT spending data, filters, and AI spend categories.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0710-6') ? 'done' : ''}" data-csm="divyam" id="action-0710-6">
+      <div class="action-checkbox ${doneActions.has('0710-6') ? 'checked' : ''}" onclick="toggleAction('0710-6')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Divyam &mdash; Verify Thomson Reuters + Quadient meetings; capture notes in Vitally</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Divyam Dewan &middot; Thomson Reuters Partnership Review (8 AM PT) had a recording but no transcript synced — flag Weflow sync issue. Quadient Bi-Weekly Sync had an SFDC event but no recording. Confirm both meetings occurred and log outcomes in Vitally. Report any blockers to Yuan.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0710-7') ? 'done' : ''}" data-csm="nick" id="action-0710-7">
+      <div class="action-checkbox ${doneActions.has('0710-7') ? 'checked' : ''}" onclick="toggleAction('0710-7')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x2753; Nick Johnson &mdash; Clarify Intuit call attendance; verify Infor debrief outcomes</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW</span>Nick Johnson &middot; Intuit recording (8:30 AM) shows Hayden Smith (HG Insights) led the session — confirm whether Nick attended or Hayden covered. Capture Intuit session outcomes in SFDC/Vitally. Also verify Infor debrief (5 AM PT) — CSM event existed but no recording matched.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No actions match the current filter.</div>`;
+}
