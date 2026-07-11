@@ -2116,7 +2116,10 @@ function dayMeta_2026_07_10() {
 function dayOverviewHTML_2026_07_10() {
   return `<div class="section-label">Team Activity &mdash; Friday July 10, 2026</div>
   <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
-    &#x1F4C5; <strong>Friday Jul 10 &mdash; 41 recordings scanned</strong> via SFDC SOQL &middot; <strong>5 confirmed calls</strong> across 4 CSMs &middot; 3 expansion signals (SAS renewal, HPE V2, Zendesk MCP) &middot; Hitachi dual renewal (Sept intent + Oct core) in active discussion
+    &#x1F4C5; <strong>Friday Jul 10 &mdash; 41 recordings scanned</strong> via SFDC SOQL &middot; <strong>6 confirmed calls</strong> across 5 CSMs &middot; 3 expansion signals (SAS renewal, HPE V2, Zendesk MCP) &middot; Hitachi dual renewal (Sept intent + Oct core) in active discussion
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x1F6A8; <strong>Cisco (Pam Huck) &mdash; URGENT:</strong> Mellissa Jensen confirmed FY27 VoC budget cut (millions &rarr; ~$800K). Cisco consolidating TrustRadius into PureSpot via Splunk/Security. Mardigan to prepare reduced-scope counter-proposal (7&ndash;10 core products) before Jul 17. Escalate churn risk to leadership.
   </div>
   <div class="overview-grid">
 
@@ -2203,13 +2206,19 @@ function dayOverviewHTML_2026_07_10() {
       <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 events (Thomson Reuters no transcript, Quadient no recording) &mdash; unconfirmed</div>
     </div>
 
-    <div class="csm-card no-calls" data-csm="pam">
-      <span class="no-call-badge">0 Calls</span>
+    <div class="csm-card has-calls" data-csm="pam">
+      <span class="call-badge" style="background:#dc2626;">1 CALL</span>
       <div class="csm-card-header">
         <div class="avatar av-grey">PH</div>
         <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
       </div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event (TrustRadius: Cisco renewal sync) &mdash; no matching recording found</div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">40m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">&#128308; Cisco &mdash; FY27 VoC budget cut (millions &rarr; ~$800K); consolidating TR into PureSpot; Jul 17 counter-proposal deadline</div>
     </div>
 
   </div>`;
