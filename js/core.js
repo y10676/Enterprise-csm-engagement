@@ -1190,7 +1190,14 @@ window.searchAccounts = function(query) {
     const show = csmPass && searchPass;
     r.style.display = show ? '' : 'none';
     r.classList.toggle('srch-hidden', !show);
-    if (show) visible++;
+    if (show) {
+      visible++;
+    } else {
+      // Also hide child opp-rows so they don't float without their parent
+      document.querySelectorAll(`tr.opp-row[data-account-idx="${idx}"]`).forEach(or => {
+        or.style.display = 'none';
+      });
+    }
   });
 
   // Update counter
