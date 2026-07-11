@@ -1108,89 +1108,89 @@ function monthCoverageHTML_2026_06() {
   return _renderCoverageTable(stats, 'Jun 27, 2026');
 }
 
-// July 2026 -- snapshot from Jul 4, 2026 Vitally refresh
+// July 2026 -- snapshot from Jul 11, 2026 Vitally refresh
 function monthCoverageHTML_2026_07() {
   const stats = [
   {
     "csm": "riley",
     "name": "Riley Rogers",
-    "total": 60,
-    "both": 42,
-    "pulseOnly": 1,
+    "total": 63,
+    "both": 35,
+    "pulseOnly": 2,
     "noteOnly": 1,
-    "neither": 16,
-    "pct": 70
+    "neither": 25,
+    "pct": 56
   },
   {
     "csm": "varun",
     "name": "Varun Tiwari",
-    "total": 27,
+    "total": 29,
     "both": 27,
     "pulseOnly": 0,
     "noteOnly": 0,
-    "neither": 0,
-    "pct": 100
+    "neither": 2,
+    "pct": 93
   },
   {
     "csm": "divyam",
     "name": "Divyam Dewan",
-    "total": 29,
-    "both": 20,
-    "pulseOnly": 4,
+    "total": 27,
+    "both": 2,
+    "pulseOnly": 22,
     "noteOnly": 0,
-    "neither": 5,
-    "pct": 69
+    "neither": 3,
+    "pct": 7
   },
   {
     "csm": "nick",
     "name": "Nick Johnson",
-    "total": 43,
-    "both": 38,
+    "total": 38,
+    "both": 35,
     "pulseOnly": 0,
     "noteOnly": 0,
-    "neither": 5,
-    "pct": 88
+    "neither": 3,
+    "pct": 92
   },
   {
     "csm": "rani",
     "name": "Rani Guy",
-    "total": 27,
-    "both": 24,
+    "total": 24,
+    "both": 19,
     "pulseOnly": 0,
-    "noteOnly": 1,
-    "neither": 2,
-    "pct": 89
+    "noteOnly": 0,
+    "neither": 5,
+    "pct": 79
   },
   {
     "csm": "pam",
     "name": "Pam Huck",
-    "total": 17,
-    "both": 17,
+    "total": 14,
+    "both": 13,
     "pulseOnly": 0,
     "noteOnly": 0,
-    "neither": 0,
-    "pct": 100
+    "neither": 1,
+    "pct": 93
   },
   {
     "csm": "atisha",
     "name": "Atisha Waghela",
-    "total": 26,
-    "both": 22,
+    "total": 28,
+    "both": 20,
     "pulseOnly": 0,
     "noteOnly": 0,
-    "neither": 4,
-    "pct": 85
+    "neither": 8,
+    "pct": 71
   },
   {
     "csm": "andy",
     "name": "Andy Lim",
     "total": 14,
-    "both": 11,
+    "both": 13,
     "pulseOnly": 0,
-    "noteOnly": 2,
+    "noteOnly": 0,
     "neither": 1,
-    "pct": 79
+    "pct": 93
   }
 ];
-  return _renderCoverageTable(stats, 'Jul 4, 2026');
+  return _renderCoverageTable(stats, 'Jul 11, 2026');
 }

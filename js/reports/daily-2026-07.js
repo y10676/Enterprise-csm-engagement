@@ -2062,6 +2062,11 @@ function dayData_2026_07_10() {
         mins: 30, health: 'Healthy',
         nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Mixed',
         detail: 'Rani orchestrated a dual-agenda session with HPE: (1) ERD data walk-through led by Alexi Mouarkach for the HPE data team including new Databricks contact Maximiliano Fonseca, who ingests HG data into HPE\'s Databricks environment; (2) laying groundwork for V2 migration, with Tracy York handling the commercial/migration conversation separately. HG is strategizing on how to guide HPE toward V2 without an abrupt pitch.' },
+      { ts: 'Jul 10 · 8:00 AM', csm: 'pam', account: 'Cisco',
+        note: 'TrustRadius renewal sync — Cisco cutting FY27 VoC budget (millions → ~$800K) and consolidating TR contract into PureSpot via Splunk/Security. Mardigan to prepare reduced-scope counter-proposal (7–10 core products) for Jul 17.',
+        mins: 40, health: 'Concerning',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Mellissa Jensen disclosed FY27 budget reduction: VoC spend dropping from millions to ~$800K (not yet confirmed). Cisco is consolidating review contracts with Splunk/Security into PureSpot, which offers long-form conversational interview reviews and built-in AI content repurposing. Mardigan challenged the switch (crawl data value, trusted reviews, 500 event reviews at Cisco Live). James Tudway explored a separate HG intent/technographic data opportunity with Venkat. Mardigan to prepare reduced-scope proposal (7–10 core products) by Jul 17 call. Pam was present in a supportive role.' },
       { ts: 'Jul 10 · 9:00 AM', csm: 'varun', account: 'Zendesk',
         note: 'Bi-weekly sync — new AM Charles Hawkins (ex-MadKudu) introduced; MCP trial access pitched; Zendesk\'s field account-snapshot automation shown.',
         mins: 30, health: 'Healthy',
@@ -2083,6 +2088,8 @@ function dayData_2026_07_10() {
         note: 'December renewal commercial scoping — customer wants to trade read-only seats for access licenses; senior visibility confirmed. Andy to share usage data and explore partial trade-off structure.' },
       { csm: 'rani', account: 'Hewlett Packard Enterprise', health: 'Healthy',
         note: 'ERD data walk-through completed with Databricks team; V2 migration strategy being developed in parallel. Tracy York leading commercial track.' },
+      { csm: 'pam', account: 'Cisco', health: 'Concerning',
+        note: 'FY27 VoC budget cut (millions → ~$800K) driving Cisco to consolidate TrustRadius contract into PureSpot via Splunk/Security. Mardigan preparing reduced-scope counter-proposal (7–10 core products) for Jul 17 call. Churn risk — needs escalation.' },
       { csm: 'varun', account: 'Zendesk', health: 'Healthy',
         note: 'MCP trial access pitched and welcomed; Zendesk is building field account-snapshot automation using HG Insights data. New AM Charles Hawkins (ex-MadKudu) onboarded.' },
       { csm: 'rani', account: 'Hitachi', health: 'Healthy',
@@ -2096,12 +2103,13 @@ function dayData_2026_07_10() {
 function dayMeta_2026_07_10() {
   return {
     pills: [
-      ['dot-teal',   '5 Calls'],
+      ['dot-teal',   '6 Calls'],
+      ['dot-red',    '1 Concerning'],
       ['dot-amber',  '3 Expansion'],
-      ['dot-green',  '5 Pulses'],
+      ['dot-green',  '6 Pulses'],
       ['dot-grey',   'Fri Jul 10 · 41 scanned'],
     ],
-    tabs: ['Overview', 'Calls (5)', 'Pulses (5)', 'Action Items (7)'],
+    tabs: ['Overview', 'Calls (6)', 'Pulses (6)', 'Action Items (8)'],
   };
 }
 
@@ -2215,6 +2223,12 @@ function dayCallsHTML_2026_07_10() {
 
 function dayPulsesHTML_2026_07_10() {
   const cards = [
+    { csm: 'pam', health: 'Concerning', account: 'Cisco',
+      opp: 'Vitally Pulse &mdash; Jul 10 Call &#x1F534;',
+      arr: 'Enterprise &middot; Pam Huck',
+      csmlbl: 'Pam Huck',
+      change: 'Jul 10 &middot; TR renewal risk',
+      excerpt: 'Jul 10 PH: TrustRadius renewal sync (8:00 AM PT, 40 min). Mellissa Jensen: FY27 VoC budget cut millions → ~$800K. Consolidating TR contract into PureSpot via Splunk/Security org. Mardigan preparing reduced-scope counter-proposal (7–10 core products) for Jul 17. Churn risk — escalate.' },
     { csm: 'andy', health: 'Healthy', account: 'SAS Institute',
       opp: 'Vitally Pulse &mdash; Jul 10 Call',
       arr: 'Enterprise &middot; Andy Lim',
@@ -2309,6 +2323,13 @@ function dayActionsHTML_2026_07_10() {
       <div class="action-body">
         <div class="action-title">&#x2753; Nick Johnson &mdash; Clarify Intuit call attendance; verify Infor debrief outcomes</div>
         <div class="action-meta"><span class="urgency-badge urgency-low">LOW</span>Nick Johnson &middot; Intuit recording (8:30 AM) shows Hayden Smith (HG Insights) led the session — confirm whether Nick attended or Hayden covered. Capture Intuit session outcomes in SFDC/Vitally. Also verify Infor debrief (5 AM PT) — CSM event existed but no recording matched.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0710-8') ? 'done' : ''}" data-csm="pam" id="action-0710-8">
+      <div class="action-checkbox ${doneActions.has('0710-8') ? 'checked' : ''}" onclick="toggleAction('0710-8')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F534; Cisco (Pam Huck) &mdash; URGENT: Prepare reduced-scope TR counter-proposal for Jul 17; flag churn risk to leadership</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH</span>Pam Huck / Mardigan Moffat / James Tudway &middot; Mellissa Jensen confirmed FY27 VoC budget cut (millions &rarr; ~$800K) and intent to consolidate TrustRadius into PureSpot via Splunk/Security contract. Mardigan to prepare reduced-scope proposal (7&ndash;10 core products) prioritizing crawl data value, trusted reviews, and event review collection. Separately, James Tudway to advance intent data discussion with Venkat. Deadline: before Jul 17 budget meeting. Escalate to leadership.</div>
       </div>
     </div>
   </div>
