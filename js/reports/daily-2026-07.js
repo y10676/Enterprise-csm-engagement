@@ -2344,3 +2344,368 @@ function dayActionsHTML_2026_07_10() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No actions match the current filter.</div>`;
 }
+
+// ─── July 13, 2026 ───────────────────────────────────────────────────────────
+
+function dayData_2026_07_13() {
+  return {
+    calls: [
+      { ts: 'Jul 13 · 2:00 AM', csm: 'nick', account: 'Check Point',
+        note: 'Data quality gaps in 2,000-company dataset: 104 missing employee counts, 102 flagged across revenue/IT budget. HG updated 51 of 102. Hadas Arazi drove call with summary table.',
+        mins: 60, health: 'Concerning',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Issue',
+        detail: 'Hadas Arazi (Check Point) drove a data quality review against HG\'s 2,000-company enrichment dataset. 104 companies had missing employee counts; 102 were flagged across revenue and IT budget fields. HG has remediated 51 of the 102 flagged records. Check Point presented a summary table and is tracking the remaining gaps. Nick to confirm resolution timeline and escalate any systematic data coverage issues.' },
+      { ts: 'Jul 13 · 6:30 AM', csm: 'pam', account: 'ADP',
+        note: 'Monthly Success Call: TechCares nomination submitted for Karena McKenzie (ADP-wide); TR score campaign link strategy discussed.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Pam led the Monthly Success Call with ADP. TechCares nomination submitted for Karena McKenzie covering ADP\'s global organization. The team discussed TR score campaign link strategy — comparing webinar vs. client advisory board vs. a new approach for driving review generation. Pam to follow up on preferred channel and next campaign timing.' },
+      { ts: 'Jul 13 · 6:30 AM', csm: 'riley', account: 'SAP CIAM',
+        note: 'Webhook/API rejecting leads in SAP CIAM campaign. Manual upload test showed first row rejection. Second webhook with same endpoint may be conflicting across campaigns.',
+        mins: 30, health: 'Concerning',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Issue',
+        detail: 'SAP CIAM campaign leads are being rejected at the webhook/API level. Manual upload test confirmed the first row is rejected on submission. A second webhook sharing the same endpoint may be creating a conflict across campaigns. Riley to investigate the conflicting webhook configuration, isolate the failing campaign, and test a clean submission. Urgent — lead delivery is blocked.' },
+      { ts: 'Jul 13 · 7:30 AM', csm: 'riley', account: 'SAP Cloud ERP',
+        note: 'Premium content bundle concall — final call with all teams. 2027 planning starts end-August/early-September. Alejandro Barajas raised new AI SEO opportunity: Conductor integration for LLM citation analysis.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Final concall for the SAP Cloud ERP premium content bundle with all stakeholder teams. 2027 planning is set to kick off end-August/early-September. Alejandro Barajas (SAP) raised a new expansion opportunity: integrating Conductor with HG data for LLM citation analysis by product — enabling SAP to track which products appear in AI-generated answers. Riley to capture this as a formal expansion signal and surface it to HG leadership.' },
+      { ts: 'Jul 13 · 8:00 AM', csm: 'rani', account: 'Cloudflare',
+        note: 'Renewal procurement update: Chandra back from PTO Wednesday to complete BI use case for procurement packet. Security requirements attached; hoping to piggyback on existing HG/TR approvals.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Rani updated the Cloudflare team on renewal procurement status. Chandra returns from PTO on Wednesday and will complete the BI use case documentation needed for the procurement packet. Security requirements have been attached to the submission. Cloudflare is hoping to leverage existing HG and TrustRadius security approvals to streamline the vendor approval process. Rani to follow up Wednesday once Chandra is back.' },
+      { ts: 'Jul 13 · 8:00 AM', csm: 'andy', account: 'Toast',
+        note: 'Model review team introduction: Andy introduced Claire Renaud (MadKudu) to Dan Pacifico. Kavin Regu (MadKudu, Mumbai) shadowing.',
+        mins: 45, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Andy facilitated a team introduction call for Toast\'s model review engagement. Claire Renaud (MadKudu), who previously worked on Toast\'s inbound lead scoring model, was introduced to Dan Pacifico (Toast). Kavin Regu (MadKudu, Mumbai) joined to shadow and is being onboarded to the project. Andy to ensure Claire and Dan align on scope and timeline for the model review work.' },
+      { ts: 'Jul 13 · 8:30 AM', csm: 'divyam', account: 'Blackbaud',
+        note: 'Biweekly sync: renewal past due, approver expected back Tuesday July 14. New contact Annie Baierl joining to own review generation (previously Christine Newman\'s team).',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Divyam led the biweekly Blackbaud sync. Renewal is past due — the approver is expected back on Tuesday July 14 and renewal completion is expected shortly after. Annie Baierl is being introduced as the new primary contact for review generation, taking over from Christine Newman\'s team under Blackbaud Customer Advocacy. Divyam to confirm renewal signature on Wednesday and schedule an onboarding call with Annie.' },
+      { ts: 'Jul 13 · 8:30 AM', csm: 'riley', account: 'Intuit IES',
+        note: 'Review campaign status: IES campaign started July 7; QuickBooks Online Advanced also running. Riley to confirm active campaigns and report back.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Riley checked in on Intuit IES\'s review campaign status. The IES campaign launched July 7 and is running alongside a QuickBooks Online Advanced campaign. Riley to confirm which campaigns are currently active, verify lead flow and review generation rates, and report back to the Intuit team with a status summary.' },
+      { ts: 'Jul 13 · 9:00 AM', csm: 'pam', account: 'Oracle NetSuite',
+        note: 'NetSuite API use case scoping session: Oracle team (Ranga Bodla, Drew Broussard, Tom Germack) + HG (KP Pindle SE ex-Oracle, Noah Alford, Mark Fell). Strong new expansion opportunity.',
+        mins: 45, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Pam led a dedicated API use case scoping session for Oracle NetSuite. The Oracle side included Ranga Bodla, Drew Broussard, and Tom Germack. HG brought KP Pindle (SE, ex-Oracle, added for domain credibility), Noah Alford, and Mark Fell. The session explored how NetSuite could consume HG data via API to enrich their CRM and targeting workflows. This is a strong new expansion opportunity — Pam and the team to document use case requirements and draft a technical proposal.' },
+      { ts: 'Jul 13 · 9:00 AM', csm: 'nick', account: 'Infor',
+        note: 'H1 QBR results shared (positive), H2 pipeline strong. Nick shared TrustRadius AI/LLM optimization work; nominated Infor for early access AI visibility impact report.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Nick led a recurring sync with Infor sharing H1 QBR results — positive outcomes across key metrics and a strong H2 pipeline. Nick introduced TrustRadius AI/LLM optimization work and nominated Infor for early access to the AI visibility impact report. The nomination is a proactive expansion signal — Infor is an engaged account with leadership visibility.' },
+      { ts: 'Jul 13 · 12:00 PM', csm: 'rani', account: 'AWS',
+        note: 'AWS (Luis Garcia, Madhavi Mallajoshyula, Mike Galyen) asked how to license HG MCP after seeing it on Anthropic marketplace at NY Summit. Qwik is primary use case. Key H2 expansion signal.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Expansion',
+        detail: 'AWS reached out after seeing the HG MCP server on the Anthropic marketplace at the New York AI Summit. Luis Garcia, Madhavi Mallajoshyula, and Mike Galyen asked how to license and deploy HG MCP for their Qwik use case. This is a significant H2 expansion signal — AWS discovered HG organically through the Anthropic channel and is ready to explore a licensing conversation. Rani to loop in sales/leadership and set up a formal scoping call.' },
+    ],
+    pulses: [
+      { csm: 'nick', account: 'Check Point', health: 'Concerning',
+        note: 'Data quality issue: 104 missing employee counts, 102 revenue/IT budget flags in 2,000-company dataset. HG remediated 51/102. Remaining gap open — Nick to confirm resolution timeline.' },
+      { csm: 'pam', account: 'ADP', health: 'Healthy',
+        note: 'Monthly Success Call complete. TechCares nomination submitted for Karena McKenzie. TR score campaign link strategy in discussion — evaluating webinar vs. client advisory vs. new approach.' },
+      { csm: 'riley', account: 'SAP CIAM', health: 'Concerning',
+        note: 'Webhook/API blocking lead delivery — first row rejected on manual test. Second webhook with shared endpoint may be conflicting. Riley investigating conflicting webhook configuration.' },
+      { csm: 'riley', account: 'SAP Cloud ERP', health: 'Healthy',
+        note: 'Premium content bundle final concall complete. 2027 planning Q4. New AI SEO/Conductor expansion opportunity surfaced by Alejandro Barajas — LLM citation analysis by product.' },
+      { csm: 'rani', account: 'Cloudflare', health: 'Healthy',
+        note: 'Renewal procurement in progress. Chandra back Wednesday to complete BI use case doc. Leveraging existing HG/TR security approvals to accelerate vendor approval.' },
+      { csm: 'andy', account: 'Toast', health: 'Healthy',
+        note: 'MadKudu model review team intro complete — Claire Renaud introduced to Dan Pacifico. Kavin Regu (Mumbai) shadowing. Model review engagement initiated.' },
+      { csm: 'divyam', account: 'Blackbaud', health: 'Healthy',
+        note: 'Renewal past due — approver back Tue Jul 14; expected to sign shortly. Annie Baierl onboarding as new primary review generation contact (replacing Christine Newman\'s team).' },
+      { csm: 'riley', account: 'Intuit IES', health: 'Healthy',
+        note: 'IES review campaign active since Jul 7; QuickBooks Online Advanced also running. Riley to confirm campaign status and report back to Intuit team.' },
+      { csm: 'pam', account: 'Oracle NetSuite', health: 'Healthy',
+        note: 'API use case scoping session complete with Oracle (Ranga Bodla, Drew Broussard, Tom Germack) and HG (KP Pindle, Noah Alford, Mark Fell). Strong expansion opportunity — documenting requirements for technical proposal.' },
+      { csm: 'nick', account: 'Infor', health: 'Healthy',
+        note: 'H1 QBR: positive results, strong H2 pipeline. Infor nominated for early access to AI visibility impact report. TrustRadius AI/LLM optimization work shared with account.' },
+      { csm: 'rani', account: 'AWS', health: 'Healthy',
+        note: 'AWS discovered HG MCP on Anthropic marketplace at NY Summit. Luis Garcia + team asking how to license HG MCP for Qwik use case. Key H2 expansion — loop in sales/leadership for scoping call.' },
+    ],
+  };
+}
+
+function dayMeta_2026_07_13() {
+  return {
+    pills: [
+      ['dot-teal',   '11 Calls'],
+      ['dot-red',    '2 Concerning'],
+      ['dot-amber',  '3 Expansion'],
+      ['dot-green',  '11 Pulses'],
+      ['dot-grey',   'Mon Jul 13 · 50 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (11)', 'Pulses (11)', 'Action Items (7)'],
+  };
+}
+
+function dayOverviewHTML_2026_07_13() {
+  return `<div class="section-label">Team Activity &mdash; Monday July 13, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Monday Jul 13 &mdash; 50 recordings scanned</strong> via SFDC SOQL &middot; <strong>11 confirmed calls</strong> across 6 CSMs &middot; 3 expansion signals (SAP Cloud ERP AI SEO, Oracle NetSuite API, AWS MCP licensing) &middot; 2 concerning signals (Check Point data quality, SAP CIAM webhook)
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x1F6A8; <strong>SAP CIAM (Riley Rogers) &mdash; URGENT:</strong> Webhook/API rejecting leads — manual upload test shows first row rejection. Second webhook sharing same endpoint may be conflicting across campaigns. Lead delivery blocked.
+  </div>
+  <div style="background:#1c1f26;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fcd34d;">
+    &#x1F4E1; <strong>AWS (Rani Guy) &mdash; H2 Expansion Signal:</strong> AWS discovered HG MCP on Anthropic marketplace at NY Summit. Luis Garcia + team asking how to license HG MCP for Qwik use case. Loop in sales/leadership immediately.
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge" style="background:#dc2626;">3 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">3</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">90m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">&#128308; SAP CIAM (webhook lead rejection &mdash; urgent) &middot; SAP Cloud ERP (AI SEO expansion, 2027 planning) &middot; Intuit IES (campaign status check)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge" style="background:#dc2626;">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">90m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">&#128308; Check Point (data quality &mdash; 51 of 102 flags remediated, gap open) &middot; Infor (H1 QBR positive, AI visibility report nomination)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Blackbaud (biweekly &mdash; renewal past due, approver back Tue; Annie Baierl onboarding as review contact)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Cloudflare (renewal procurement &mdash; Chandra back Wed) &middot; &#x1F4E1; AWS (MCP licensing inquiry from Anthropic marketplace)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="varun">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No confirmed recordings detected for this date</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="pam">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">75m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">ADP (Monthly Success Call &mdash; TechCares nomination, TR campaign strategy) &middot; Oracle NetSuite (API scoping &mdash; strong expansion)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="atisha">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Intel recording found but no transcript synced &mdash; unconfirmed</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="andy">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">45m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Toast (model review intro &mdash; Claire Renaud/MadKudu introduced to Dan Pacifico)</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_07_13() {
+  return `<div style="background:#1c2333;border:1px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 12px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4CA; Call data is auto-rendered from dayData. 2 unconfirmed (no transcript): Intel Weekly Sync (Atisha, ~8 AM), Bill Weekly Sync (Divyam, ~9 AM).
+  </div>`;
+}
+
+function dayPulsesHTML_2026_07_13() {
+  const cards = [
+    { csm: 'nick', health: 'Concerning', account: 'Check Point',
+      opp: 'Vitally Pulse &mdash; Jul 13 Call &#x1F534;',
+      arr: 'Enterprise &middot; Nick Johnson',
+      csmlbl: 'Nick Johnson',
+      change: 'Jul 13 &middot; Data quality issue',
+      excerpt: 'Jul 13 NJ: Data quality review call (2:00 AM PT, 60 min). 2,000-company dataset: 104 missing employee counts, 102 flagged revenue/IT budget records. HG remediated 51 of 102. Remaining 51 open. Hadas Arazi driving. Nick to confirm resolution timeline.' },
+    { csm: 'pam', health: 'Healthy', account: 'ADP',
+      opp: 'Vitally Pulse &mdash; Jul 13 Call',
+      arr: 'Enterprise &middot; Pam Huck',
+      csmlbl: 'Pam Huck',
+      change: 'Jul 13 &middot; Monthly Success Call',
+      excerpt: 'Jul 13 PH: Monthly Success Call (6:30 AM PT, 30 min). TechCares nomination submitted for Karena McKenzie (ADP-wide). TR score campaign link strategy discussed: webinar vs. client advisory vs. new approach under evaluation.' },
+    { csm: 'riley', health: 'Concerning', account: 'SAP CIAM',
+      opp: 'Vitally Pulse &mdash; Jul 13 Call &#x1F534;',
+      arr: 'Enterprise &middot; Riley Rogers',
+      csmlbl: 'Riley Rogers',
+      change: 'Jul 13 &middot; Webhook issue',
+      excerpt: 'Jul 13 RR: SAP CIAM webhook/API issue (6:30 AM PT, 30 min). Leads rejected at API — first row fails on manual upload test. Second webhook sharing same endpoint may be conflicting across campaigns. Lead delivery blocked. Riley to investigate and fix.' },
+    { csm: 'riley', health: 'Healthy', account: 'SAP Cloud ERP',
+      opp: 'Vitally Pulse &mdash; Jul 13 Call',
+      arr: 'Enterprise &middot; Riley Rogers',
+      csmlbl: 'Riley Rogers',
+      change: 'Jul 13 &middot; Expansion signal',
+      excerpt: 'Jul 13 RR: Premium content bundle final concall (7:30 AM PT, 30 min). 2027 planning starts end-Aug/early-Sep. Alejandro Barajas raised AI SEO opportunity: Conductor + HG data for LLM citation analysis by product. Significant new expansion signal.' },
+    { csm: 'rani', health: 'Healthy', account: 'Cloudflare',
+      opp: 'Vitally Pulse &mdash; Jul 13 Call',
+      arr: 'Enterprise &middot; Rani Guy',
+      csmlbl: 'Rani Guy',
+      change: 'Jul 13 &middot; Renewal update',
+      excerpt: 'Jul 13 RG: Renewal procurement update (8:00 AM PT, 30 min). Chandra back from PTO Wednesday to complete BI use case doc for procurement packet. Leveraging existing HG/TR security approvals to accelerate vendor process.' },
+    { csm: 'andy', health: 'Healthy', account: 'Toast',
+      opp: 'Vitally Pulse &mdash; Jul 13 Call',
+      arr: 'Enterprise &middot; Andy Lim',
+      csmlbl: 'Andy Lim',
+      change: 'Jul 13 &middot; Model review intro',
+      excerpt: 'Jul 13 AL: Model review team intro (8:00 AM PT, 45 min). Claire Renaud (MadKudu, prior Toast inbound model) introduced to Dan Pacifico. Kavin Regu (Mumbai) shadowing. MadKudu model review engagement initiated.' },
+    { csm: 'divyam', health: 'Healthy', account: 'Blackbaud',
+      opp: 'Vitally Pulse &mdash; Jul 13 Call',
+      arr: 'Enterprise &middot; Divyam Dewan',
+      csmlbl: 'Divyam Dewan',
+      change: 'Jul 13 &middot; Biweekly sync',
+      excerpt: 'Jul 13 DD: Biweekly sync (8:30 AM PT, 30 min). Renewal past due — approver back Tue Jul 14. Annie Baierl onboarding as new primary review generation contact (replacing Christine Newman\'s team under Blackbaud Customer Advocacy).' },
+    { csm: 'riley', health: 'Healthy', account: 'Intuit IES',
+      opp: 'Vitally Pulse &mdash; Jul 13 Call',
+      arr: 'Enterprise &middot; Riley Rogers',
+      csmlbl: 'Riley Rogers',
+      change: 'Jul 13 &middot; Campaign check-in',
+      excerpt: 'Jul 13 RR: Review campaign status check (8:30 AM PT, 30 min). IES campaign active since Jul 7; QuickBooks Online Advanced also running. Riley to confirm which campaigns are active and report back to Intuit team.' },
+    { csm: 'pam', health: 'Healthy', account: 'Oracle NetSuite',
+      opp: 'Vitally Pulse &mdash; Jul 13 Call',
+      arr: 'Enterprise &middot; Pam Huck',
+      csmlbl: 'Pam Huck',
+      change: 'Jul 13 &middot; API expansion scoping',
+      excerpt: 'Jul 13 PH: NetSuite API use case scoping (9:00 AM PT, 45 min). Oracle: Ranga Bodla, Drew Broussard, Tom Germack. HG: KP Pindle (SE, ex-Oracle), Noah Alford, Mark Fell. Strong new expansion opportunity. Documenting requirements for technical proposal.' },
+    { csm: 'nick', health: 'Healthy', account: 'Infor',
+      opp: 'Vitally Pulse &mdash; Jul 13 Call',
+      arr: 'Enterprise &middot; Nick Johnson',
+      csmlbl: 'Nick Johnson',
+      change: 'Jul 13 &middot; H1 QBR + expansion',
+      excerpt: 'Jul 13 NJ: Recurring sync (9:00 AM PT, 30 min). H1 QBR: positive results, strong H2 pipeline. TrustRadius AI/LLM optimization work shared. Infor nominated for early access to AI visibility impact report.' },
+    { csm: 'rani', health: 'Healthy', account: 'AWS',
+      opp: 'Vitally Pulse &mdash; Jul 13 Call',
+      arr: 'Enterprise &middot; Rani Guy',
+      csmlbl: 'Rani Guy',
+      change: 'Jul 13 &middot; MCP expansion signal',
+      excerpt: 'Jul 13 RG: AWS inbound (12:00 PM PT, 30 min). Luis Garcia, Madhavi Mallajoshyula, Mike Galyen discovered HG MCP on Anthropic marketplace at NY Summit. Asking how to license for Qwik use case. Key H2 expansion — loop in sales/leadership.' },
+  ];
+  const bc = h => h === 'Healthy' ? 'badge-healthy' : h === 'Concerning' ? 'badge-concerning' : 'badge-poor';
+  const bi = h => h === 'Healthy' ? '&#128994;' : h === 'Concerning' ? '&#128993;' : '&#128308;';
+  return `<div class="pulse-grid">${cards.map(c => `
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div><div class="pulse-account">${c.account}</div><div class="pulse-opp">${c.opp}</div></div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_07_13() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('0713-1') ? 'done' : ''}" data-csm="riley" id="action-0713-1">
+      <div class="action-checkbox ${doneActions.has('0713-1') ? 'checked' : ''}" onclick="toggleAction('0713-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F534; SAP CIAM &mdash; URGENT: Investigate conflicting webhooks; restore lead delivery</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH</span>Riley Rogers &middot; Leads are being rejected at the webhook/API level — first row fails on manual upload test. A second webhook sharing the same endpoint may be conflicting across campaigns. Isolate the failing campaign, audit both webhook configurations, deconflict the endpoints, and test a clean submission. Lead delivery is blocked — resolve before next campaign send.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0713-2') ? 'done' : ''}" data-csm="rani" id="action-0713-2">
+      <div class="action-checkbox ${doneActions.has('0713-2') ? 'checked' : ''}" onclick="toggleAction('0713-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4E1; AWS &mdash; Loop in sales/leadership on HG MCP licensing inquiry; set up formal scoping call</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH</span>Rani Guy &middot; AWS (Luis Garcia, Madhavi Mallajoshyula, Mike Galyen) discovered HG MCP on the Anthropic marketplace at the NY AI Summit and asked how to license it for their Qwik use case. This is an organic, high-intent H2 expansion signal. Loop in sales and leadership immediately. Schedule a formal scoping call to define use case, licensing model, and commercial terms.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0713-3') ? 'done' : ''}" data-csm="pam" id="action-0713-3">
+      <div class="action-checkbox ${doneActions.has('0713-3') ? 'checked' : ''}" onclick="toggleAction('0713-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4BB; Oracle NetSuite &mdash; Document API use case requirements; draft technical scoping proposal</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH</span>Pam Huck / Noah Alford / KP Pindle &middot; Scoping session with Ranga Bodla, Drew Broussard, and Tom Germack surfaced a strong new API expansion opportunity. Capture and document the NetSuite use case requirements from today's session. Draft a technical proposal outlining how HG data can be consumed via API to enrich CRM and targeting workflows. Share with Oracle team within the week.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0713-4') ? 'done' : ''}" data-csm="riley" id="action-0713-4">
+      <div class="action-checkbox ${doneActions.has('0713-4') ? 'checked' : ''}" onclick="toggleAction('0713-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F916; SAP Cloud ERP &mdash; Capture AI SEO/Conductor expansion signal; advance to 2027 planning</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH</span>Riley Rogers &middot; Alejandro Barajas raised a new opportunity: integrating Conductor with HG data for LLM citation analysis by product — enabling SAP to track which products appear in AI-generated answers. Log this as a formal expansion signal in SFDC/Vitally. Surface to HG product and sales leadership. Confirm SAP's 2027 planning timeline (end-Aug/early-Sep) and schedule an advance planning call.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0713-5') ? 'done' : ''}" data-csm="nick" id="action-0713-5">
+      <div class="action-checkbox ${doneActions.has('0713-5') ? 'checked' : ''}" onclick="toggleAction('0713-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; Check Point &mdash; Confirm data quality remediation timeline for remaining 51 flagged records</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Nick Johnson &middot; HG remediated 51 of 102 flagged records in the 2,000-company dataset. Remaining 51 records (revenue/IT budget gaps) are still open. Confirm resolution timeline with the data team. Communicate a clear ETA to Hadas Arazi at Check Point. If a systematic coverage issue exists, escalate to data ops.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0713-6') ? 'done' : ''}" data-csm="divyam" id="action-0713-6">
+      <div class="action-checkbox ${doneActions.has('0713-6') ? 'checked' : ''}" onclick="toggleAction('0713-6')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Blackbaud &mdash; Confirm renewal signature Wed Jul 16; onboard Annie Baierl for review generation</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Divyam Dewan &middot; Renewal approver returns Tuesday Jul 14. Follow up Wednesday to confirm signature. Once renewal is closed, schedule an onboarding session with Annie Baierl as the new primary review generation contact (replacing Christine Newman&rsquo;s team under Blackbaud Customer Advocacy). Log renewal closure in SFDC/Vitally.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0713-7') ? 'done' : ''}" data-csm="atisha" id="action-0713-7">
+      <div class="action-checkbox ${doneActions.has('0713-7') ? 'checked' : ''}" onclick="toggleAction('0713-7')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x2753; Atisha + Divyam &mdash; Flag Intel and Bill recordings with no transcript; verify calls occurred</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW</span>Atisha Waghela / Divyam Dewan &middot; Intel Weekly Sync and Bill Weekly Sync recordings were found in SFDC but no transcripts synced. Confirm whether both calls occurred. If yes, manually log outcomes in Vitally. If Weflow failed to transcribe, flag the sync issue to Yuan so the integration can be investigated.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No actions match the current filter.</div>`;
+}
