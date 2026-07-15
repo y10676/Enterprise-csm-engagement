@@ -2709,3 +2709,388 @@ function dayActionsHTML_2026_07_13() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No actions match the current filter.</div>`;
 }
+
+// ─── July 14, 2026 ────────────────────────────────────────────────────────────
+
+function dayData_2026_07_14() {
+  return {
+    calls: [
+      { ts: 'Jul 14 · 2:00 AM', csm: 'varun', account: 'OpenText',
+        note: 'Bi-weekly cadence; OpenText GTM regional kickoffs (Berlin EMEA, Canada); new FY July 15.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Varun and Sujay (OpenText) bi-weekly sync. OpenText running regional GTM kickoffs — Sujay heading to Berlin EMEA event, David to Canada. New financial year begins July 15. Company pivoting to intimate regional settings (300 AEs + managers) over large US all-hands.' },
+      { ts: 'Jul 14 · 4:30 AM', csm: 'divyam', account: 'Adobe',
+        note: 'India pilot expansion discussion; Adobe asking to grow beyond 1,500-license pilot scope.',
+        mins: 45, health: 'Healthy',
+        nature: 'Routine', initiator: 'Customer', purpose: 'Expansion',
+        detail: 'Abhishek Srivastava (Adobe India) reported: 1,500-license pilot feedback was positive — sales ops team using the data. India team is now pushing to expand the license; Abhishek went back to Jill and Sumit internally with the expansion ask. Leadership changes and travel delays slowed progress but expansion signal is confirmed. Divyam joined solo to capture feedback for Mark (David canceled).' },
+      { ts: 'Jul 14 · 6:30 AM', csm: 'riley', account: 'SAP',
+        note: 'Technical session: manually uploading test leads (CSV) for SAP CX product lines to TrustRadius.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Issue',
+        detail: 'Working session with Riley, Abhilasha Poliwal (MSIGHTS), Alex Soh (SAP), Scott Stater, Alejandro Barajas. Goal: upload SAP test leads via CSV for Commerce Cloud, Sales Cloud, Service Cloud. Manual upload chosen over API for this batch. CSV format validated; Alex Soh to send remaining offer codes tomorrow after today\'s test. Data importer workflow confirmed working.' },
+      { ts: 'Jul 14 · 7:00 AM', csm: 'divyam', account: 'Paychex/Paycor',
+        note: 'Monthly sync; new contacts Taylor Lohmann + Nick Berta joining after Eli and Alyssa departed.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Divyam met new Paychex/Paycor contacts: Taylor Lohmann (Corporate Brand Strategist, 3 weeks in, representing both brands) and Nick Berta (stepping in for Eli short-term). Both Eli and Alyssa left the company. Divyam re-introduced CVP + IDL subscription and re-established monthly cadence (second Tuesday). Full re-onboarding required given significant contact churn.' },
+      { ts: 'Jul 14 · 7:30 AM', csm: 'nick', account: 'Veeam',
+        note: 'HCL expansion update; CRO intro via Rahul in progress; AI spend data Q from Sid Subramany.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'Customer', purpose: 'Mixed',
+        detail: 'Angus Hyams (Veeam) updated: HCL centralized alignment failed (Poonam pushback), now pivoting to individual product lines. CRO Rahul intro arranged via Kk chain; email to William Alessi active. Sid Subramany asked clarifying questions about AI spend data — whether it represents deployment intent or a budget approximation. Angus sharing the AI spend document with Sid and Michael Ries for team review.' },
+      { ts: 'Jul 14 · 7:30 AM', csm: 'riley', account: 'SAP',
+        note: 'CX sync: newsletter embed links for SAP Commerce Cloud + Sales/Service newsletter campaigns.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Binod Negi (SAP) requested two separate TrustRadius review newsletter links: one for Commerce Cloud and one for Sales+Service Cloud (multi-product selection). Content deadline: Tuesday July 21. Riley committed to deliver the Commerce Cloud link immediately post-call and the multi-product Sales/Service link by end of week. Cole Arutian (HG AM) confirmed the team may turn it around same-day.' },
+      { ts: 'Jul 14 · 8:00 AM', csm: 'rani', account: 'Workday',
+        note: 'Databricks migration technical session; 6+ Workday DevOps engineers scoping legacy→Databricks feed.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Issue',
+        detail: 'Workday DevOps team (Tiago Corcelli, Lucas Grigolon Varela, Ravi Jumle, Shubhang Srivastava, Aniruddha Vishnupurikar, Siva Inapakolla + Alexi Mouarkach from HG) joined for Databricks migration scoping. Multiple new technical contacts — Rani facilitated introductions. Malika Pothukuchi (usual contact) joined late. HG engineering present to support. Migration scope and timeline being established.' },
+      { ts: 'Jul 14 · 8:30 AM', csm: 'nick', account: 'Intuit',
+        note: 'Transition call: Hayden Smith departing HG; Augie Buettner + Max taking over Intuit IES account.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Account handoff for Intuit IES. Hayden Smith (departing) introduced Augie Buettner (5+ yrs HG) and Max as new AM contacts. Nick Johnson and Karin/KP Pindle (HG NY) also on call. Britton Farrelly, Suja Unnikrishnan, Ravi Teja Allaparthi from Intuit. Agenda: transition overview, contacts data update, scoring model deep-dive. Smooth handoff focus confirmed.' },
+      { ts: 'Jul 14 · 10:00 AM', csm: 'riley', account: 'Zoom',
+        note: 'Expansion: Zoom interested in review management services + Discuss product; Travis wants pricing.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Camille Shortridge and Mardigan Moffat (Zoom) confirmed strong interest following recent in-person meeting: review management services and expanding footprint to the Discuss product. Travis (not on call) requested an itemized pricing breakdown per expansion line item. Riley\'s follow-up presentation includes pricing but it\'s not prominently surfaced. Expansion proposal needs a cleaner pricing section before Travis review.' },
+      { ts: 'Jul 14 · 10:00 AM', csm: 'rani', account: 'Cisco',
+        note: 'Cisco (Isovalent) onboarding: Market Analyzer, TAM/SAM, white space analysis walkthrough.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Rani ran platform onboarding for Cisco (Isovalent) with Tu-Anh. Outstanding engineering issue (data export capability) still being investigated — no update yet from HG engineering team. Platform walkthrough covered: Market Analyzer (TAM/SAM), white space analysis, account segmentation, campaign targeting. Cisco is grandfathered into multiple modules. Melanie joined late. Strong engagement from Tu-Anh.' },
+      { ts: 'Jul 14 · 11:00 AM', csm: 'riley', account: 'TriNet',
+        note: 'Regular CSM sync; met new contact Ashley; standard check-in, no issues raised.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Riley met with kmaxwell and new contact Ashley (TriNet) for the regular TrustRadius CSM sync. Relationship rapport maintained; Ashley joined as new stakeholder. No product issues or escalations raised. Standard cadence call with personal rapport-building.' },
+      { ts: 'Jul 14 · 11:30 AM', csm: 'riley', account: 'Red Hat',
+        note: 'PaaS taxonomy update in progress; CVP lead campaign scoped at 160 accounts (~70–80 leads).',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Riley updated Brianna Gault and Sai A (Red Hat) on PaaS taxonomy changes for OpenChef market report — taxonomy team reviewing new categories, no ETA yet. CVP lead campaign scoped: 160 target accounts, max 10 leads/company, ~10% response rate = 70–80 leads (~30% of quota). Red Hat team aligned. Campaign will begin once taxonomy updates are confirmed.' },
+      { ts: 'Jul 14 · 12:30 PM', csm: 'rani', account: 'NetApp',
+        note: '⚠️ Key contact Elise McMorrow leaving NetApp in a few weeks — succession plan needed.',
+        mins: 25, health: 'Concerning',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Elise McMorrow announced she is leaving NetApp within the next few weeks. She is working to identify a successor for the HG relationship. Tracy York (also present) is getting married this Saturday — last call before time off. Adrian Escobar attending. Megan could not join. The departure of Elise, a long-standing relationship champion, creates immediate continuity and renewal risk.' },
+    ],
+    pulses: [
+      { csm: 'varun', health: 'Healthy', account: 'OpenText',
+        opp: 'Vitally Pulse &mdash; Jul 14 Call', arr: 'Enterprise &middot; Varun Tiwari',
+        csmlbl: 'Varun Tiwari', change: 'Jul 14 &middot; Bi-weekly cadence',
+        excerpt: 'Jul 14 VT: Bi-weekly sync (2:00 AM PT, 30 min). OpenText running regional GTM kickoffs — Berlin (Sujay) and Canada (David). New financial year begins July 15. Pivot to intimate 300-person regional settings vs. large US all-hands.' },
+      { csm: 'divyam', health: 'Healthy', account: 'Adobe',
+        opp: 'Vitally Pulse &mdash; Jul 14 Call', arr: 'Enterprise &middot; Divyam Dewan',
+        csmlbl: 'Divyam Dewan', change: 'Jul 14 &middot; Expansion signal',
+        excerpt: 'Jul 14 DD: Adobe India expansion discussion (4:30 AM PT, 45 min). 1,500-license pilot feedback positive — sales ops team using data. India org pushing to expand license with Jill/Sumit. Expansion ask confirmed; formal proposal next step.' },
+      { csm: 'riley', health: 'Healthy', account: 'SAP',
+        opp: 'Vitally Pulse &mdash; Jul 14 Test Leads', arr: 'Enterprise &middot; Riley Rogers',
+        csmlbl: 'Riley Rogers', change: 'Jul 14 &middot; Technical session',
+        excerpt: 'Jul 14 RR: SAP test lead CSV upload session (6:30 AM PT, 30 min). Products: Commerce Cloud, Sales Cloud, Service Cloud. Manual upload workflow validated. Alex Soh sending remaining offer codes tomorrow.' },
+      { csm: 'divyam', health: 'Healthy', account: 'Paychex/Paycor',
+        opp: 'Vitally Pulse &mdash; Jul 14 Call', arr: 'Enterprise &middot; Divyam Dewan',
+        csmlbl: 'Divyam Dewan', change: 'Jul 14 &middot; New contacts onboarded',
+        excerpt: 'Jul 14 DD: Paychex/Paycor monthly sync (7:00 AM PT, 30 min). Eli and Alyssa left; Taylor Lohmann and Nick Berta joining. CVP + IDL subscription re-onboarded with new stakeholders. Monthly cadence re-confirmed (2nd Tuesday).' },
+      { csm: 'nick', health: 'Healthy', account: 'Veeam',
+        opp: 'Vitally Pulse &mdash; Jul 14 Call', arr: 'Enterprise &middot; Nick Johnson',
+        csmlbl: 'Nick Johnson', change: 'Jul 14 &middot; HCL expansion + AI data Q',
+        excerpt: 'Jul 14 NJ: Veeam recurring sync (7:30 AM PT, 30 min). HCL centralized alignment stalled; pivoting to product lines. CRO Rahul/William Alessi intro in progress. Sid asked AI spend data clarifying questions (budget proxy vs. intent). Expansion momentum maintained.' },
+      { csm: 'riley', health: 'Healthy', account: 'SAP',
+        opp: 'Vitally Pulse &mdash; Jul 14 CX Sync', arr: 'Enterprise &middot; Riley Rogers',
+        csmlbl: 'Riley Rogers', change: 'Jul 14 &middot; Newsletter links',
+        excerpt: 'Jul 14 RR: SAP CX sync (7:30 AM PT, 30 min). Binod Negi requested two review newsletter links — Commerce Cloud + Sales/Service. Content deadline Jul 21. Commerce Cloud link delivered same-day; multi-product link by end of week.' },
+      { csm: 'rani', health: 'Healthy', account: 'Workday',
+        opp: 'Vitally Pulse &mdash; Jul 14 Call', arr: 'Enterprise &middot; Rani Guy',
+        csmlbl: 'Rani Guy', change: 'Jul 14 &middot; Databricks migration',
+        excerpt: 'Jul 14 RG: Workday Databricks migration session (8:00 AM PT, 30 min). 6+ Workday DevOps engineers scoping legacy feed → Databricks migration. Multiple new technical contacts on both sides. HG engineering present. Scope and timeline being established.' },
+      { csm: 'nick', health: 'Healthy', account: 'Intuit',
+        opp: 'Vitally Pulse &mdash; Jul 14 Call', arr: 'Enterprise &middot; Nick Johnson',
+        csmlbl: 'Nick Johnson', change: 'Jul 14 &middot; Account transition',
+        excerpt: 'Jul 14 NJ: Intuit IES transition call (8:30 AM PT, 30 min). Hayden Smith departing; Augie Buettner + Max taking over. Britton Farrelly and Suja Unnikrishnan from Intuit. Contacts + scoring review on agenda. Smooth handoff in progress.' },
+      { csm: 'riley', health: 'Healthy', account: 'Zoom',
+        opp: 'Vitally Pulse &mdash; Jul 14 Call', arr: 'Enterprise &middot; Riley Rogers',
+        csmlbl: 'Riley Rogers', change: 'Jul 14 &middot; Expansion signal',
+        excerpt: 'Jul 14 RR: Zoom expansion sync (10:00 AM PT, 30 min). Camille Shortridge and Mardigan Moffat confirmed interest in review management + Discuss product expansion. Travis needs clearer itemized pricing. Expansion proposal in motion.' },
+      { csm: 'rani', health: 'Healthy', account: 'Cisco',
+        opp: 'Vitally Pulse &mdash; Jul 14 Onboarding', arr: 'Enterprise &middot; Rani Guy',
+        csmlbl: 'Rani Guy', change: 'Jul 14 &middot; Platform onboarding',
+        excerpt: 'Jul 14 RG: Cisco (Isovalent) onboarding (10:00 AM PT, 30 min). Walked Tu-Anh through Market Analyzer, TAM/SAM, white space analysis, segmentation. One open engineering issue (data export). Strong onboarding engagement.' },
+      { csm: 'riley', health: 'Healthy', account: 'TriNet',
+        opp: 'Vitally Pulse &mdash; Jul 14 Call', arr: 'Enterprise &middot; Riley Rogers',
+        csmlbl: 'Riley Rogers', change: 'Jul 14 &middot; Monthly cadence',
+        excerpt: 'Jul 14 RR: TriNet monthly sync (11:00 AM PT, 30 min). Met new contact Ashley. Standard cadence maintained. No issues raised. Relationship in good standing.' },
+      { csm: 'riley', health: 'Healthy', account: 'Red Hat',
+        opp: 'Vitally Pulse &mdash; Jul 14 Call', arr: 'Enterprise &middot; Riley Rogers',
+        csmlbl: 'Riley Rogers', change: 'Jul 14 &middot; Biweekly check-in',
+        excerpt: 'Jul 14 RR: Red Hat biweekly (11:30 AM PT, 30 min). PaaS taxonomy update in progress. CVP lead campaign: 160 target accounts, projected 70–80 leads (~30% of quota). Red Hat aligned; campaign pending taxonomy confirmation.' },
+      { csm: 'rani', health: 'Concerning', account: 'NetApp',
+        opp: 'Vitally Pulse &mdash; Jul 14 Call', arr: 'Enterprise &middot; Rani Guy',
+        csmlbl: 'Rani Guy', change: 'Jul 14 &middot; Key contact departing',
+        excerpt: 'Jul 14 RG: NetApp weekly sync (12:30 PM PT, 25 min). ⚠️ Elise McMorrow announced departure from NetApp in a few weeks. Working on succession plan. Tracy York on wedding leave starting this week. Relationship continuity risk — identify successor immediately.' },
+    ],
+  };
+}
+
+function dayMeta_2026_07_14() {
+  return {
+    pills: [
+      ['dot-teal',  '13 Calls'],
+      ['dot-red',   '1 Concerning'],
+      ['dot-amber', '3 Expansion'],
+      ['dot-green', '13 Pulses'],
+      ['dot-grey',  'Tue Jul 14 · 76 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (13)', 'Pulses (13)', 'Action Items (6)'],
+  };
+}
+
+function dayOverviewHTML_2026_07_14() {
+  return `<div class="section-label">Team Activity &mdash; Tuesday July 14, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Tuesday Jul 14 &mdash; 76 recordings scanned</strong> via SFDC SOQL &middot; <strong>13 confirmed calls</strong> across 5 CSMs &middot; 1 Concerning (NetApp) &middot; 3 Expansion signals (Adobe, Veeam, Zoom)
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>NetApp &mdash; Key contact departing:</strong> Elise McMorrow announced she is leaving NetApp in a few weeks. Succession planning underway. Rani must identify and engage a new champion before Elise's last day.
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>Expansion signals:</strong> Adobe India pilot confirmed positive &mdash; Abhishek advancing license expansion ask internally &middot; Veeam HCL product-line expansion in motion &middot; Zoom interested in review management + Discuss product expansion
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">5 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">5</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">5</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">150m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">SAP test leads (ad-hoc issue) &middot; SAP CX Sync (newsletter links) &middot; Zoom (expansion) &middot; TriNet (check-in) &middot; Red Hat (biweekly)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">3 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">3</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">85m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Workday (Databricks migration) &middot; Cisco onboarding &middot; &#x26A0;&#xFE0F; NetApp (Elise departing)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Veeam (HCL expansion + AI data Q) &middot; Intuit IES (account transition, Hayden departing)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">75m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Adobe (&#x1F4C8; pilot expansion) &middot; Paychex/Paycor (new contacts onboarded)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">OpenText bi-weekly &middot; 2 events unrecorded (OpenText SFDC event missing Weflow ID)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event &mdash; Team Sync / Mark Fell Ops (internal, HG Insights account, no transcript)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="atisha">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">3 Apple events + Converge Tech Solutions &mdash; 1 unconfirmed (Apple Strategy, no transcript); 2 events with no recording</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event &mdash; ConnectWise/HGI Bi-weekly (no recording found)</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_07_14() {
+  return `
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>NetApp &mdash; Key contact departing:</strong> Elise McMorrow leaving in a few weeks. Rani must identify and engage successor before departure.
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>Expansion signals on 3 calls:</strong> Adobe (India pilot expansion) &middot; Veeam (HCL product-line + AI spend interest) &middot; Zoom (review management + Discuss product)
+  </div>
+  <div style="background:#1a1f2e;border:1px solid #4b5563;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#94a3b8;">
+    &#x1F5D2;&#xFE0F; <strong>Unconfirmed (no transcript):</strong> Atisha &mdash; Apple Strategy &amp; Planning (8:30 AM PT, recording exists, no transcript) &middot; Nick &mdash; Siemens, Hyland (events with no recording) &middot; Andy &mdash; ConnectWise (no recording)
+  </div>`;
+}
+
+function dayPulsesHTML_2026_07_14() {
+  const cards = [
+    { csm: 'varun', health: 'Healthy', account: 'OpenText',
+      opp: 'Vitally Pulse &mdash; Jul 14 Call', arr: 'Enterprise &middot; Varun Tiwari',
+      csmlbl: 'Varun Tiwari', change: 'Jul 14 &middot; Bi-weekly cadence',
+      excerpt: 'Jul 14 VT: Bi-weekly sync (2:00 AM PT, 30 min). OpenText running regional GTM kickoffs &mdash; Berlin (Sujay) and Canada (David). New FY begins July 15. Company pivoting to intimate 300-person regional events.' },
+    { csm: 'divyam', health: 'Healthy', account: 'Adobe',
+      opp: 'Vitally Pulse &mdash; Jul 14 Call', arr: 'Enterprise &middot; Divyam Dewan',
+      csmlbl: 'Divyam Dewan', change: 'Jul 14 &middot; Expansion signal',
+      excerpt: 'Jul 14 DD: Adobe India expansion discussion (4:30 AM PT, 45 min). 1,500-license pilot feedback positive. India org pushing to expand license scope with Jill/Sumit. Expansion ask confirmed; formal proposal is next step.' },
+    { csm: 'riley', health: 'Healthy', account: 'SAP',
+      opp: 'Vitally Pulse &mdash; Jul 14 Test Leads', arr: 'Enterprise &middot; Riley Rogers',
+      csmlbl: 'Riley Rogers', change: 'Jul 14 &middot; Technical session',
+      excerpt: 'Jul 14 RR: SAP test lead CSV upload session (6:30 AM PT, 30 min). Products: Commerce Cloud, Sales Cloud, Service Cloud. Manual upload workflow validated. Alex Soh to send remaining offer codes tomorrow.' },
+    { csm: 'divyam', health: 'Healthy', account: 'Paychex/Paycor',
+      opp: 'Vitally Pulse &mdash; Jul 14 Call', arr: 'Enterprise &middot; Divyam Dewan',
+      csmlbl: 'Divyam Dewan', change: 'Jul 14 &middot; New contacts onboarded',
+      excerpt: 'Jul 14 DD: Paychex/Paycor monthly sync (7:00 AM PT, 30 min). Eli and Alyssa left; Taylor Lohmann + Nick Berta joining. CVP + IDL subscription re-onboarded. Monthly cadence confirmed (2nd Tuesday).' },
+    { csm: 'nick', health: 'Healthy', account: 'Veeam',
+      opp: 'Vitally Pulse &mdash; Jul 14 Call', arr: 'Enterprise &middot; Nick Johnson',
+      csmlbl: 'Nick Johnson', change: 'Jul 14 &middot; HCL expansion + AI Q',
+      excerpt: 'Jul 14 NJ: Veeam sync (7:30 AM PT, 30 min). HCL centralized alignment failed; pivoting to product lines. CRO William Alessi intro via Rahul in progress. Sid asked AI spend data questions (budget vs. intent). Expansion momentum maintained.' },
+    { csm: 'riley', health: 'Healthy', account: 'SAP',
+      opp: 'Vitally Pulse &mdash; Jul 14 CX Sync', arr: 'Enterprise &middot; Riley Rogers',
+      csmlbl: 'Riley Rogers', change: 'Jul 14 &middot; Newsletter links',
+      excerpt: 'Jul 14 RR: SAP CX sync (7:30 AM PT, 30 min). Binod Negi requested two newsletter embed links &mdash; Commerce Cloud + Sales/Service. Deadline Jul 21. Commerce Cloud link same-day; multi-product link by end of week.' },
+    { csm: 'rani', health: 'Healthy', account: 'Workday',
+      opp: 'Vitally Pulse &mdash; Jul 14 Call', arr: 'Enterprise &middot; Rani Guy',
+      csmlbl: 'Rani Guy', change: 'Jul 14 &middot; Databricks migration',
+      excerpt: 'Jul 14 RG: Workday Databricks migration session (8:00 AM PT, 30 min). 6+ Workday DevOps engineers scoping legacy feed &rarr; Databricks. Multiple new technical contacts. HG engineering present. Scope and timeline being established.' },
+    { csm: 'nick', health: 'Healthy', account: 'Intuit',
+      opp: 'Vitally Pulse &mdash; Jul 14 Call', arr: 'Enterprise &middot; Nick Johnson',
+      csmlbl: 'Nick Johnson', change: 'Jul 14 &middot; Account transition',
+      excerpt: 'Jul 14 NJ: Intuit IES transition call (8:30 AM PT, 30 min). Hayden Smith departing HG; Augie Buettner + Max taking over. Britton Farrelly and Suja Unnikrishnan from Intuit. Contacts + scoring review on agenda.' },
+    { csm: 'riley', health: 'Healthy', account: 'Zoom',
+      opp: 'Vitally Pulse &mdash; Jul 14 Call', arr: 'Enterprise &middot; Riley Rogers',
+      csmlbl: 'Riley Rogers', change: 'Jul 14 &middot; Expansion signal',
+      excerpt: 'Jul 14 RR: Zoom expansion sync (10:00 AM PT, 30 min). Camille Shortridge + Mardigan Moffat confirmed interest in review management + Discuss product. Travis needs clearer itemized pricing. Expansion proposal in motion.' },
+    { csm: 'rani', health: 'Healthy', account: 'Cisco',
+      opp: 'Vitally Pulse &mdash; Jul 14 Onboarding', arr: 'Enterprise &middot; Rani Guy',
+      csmlbl: 'Rani Guy', change: 'Jul 14 &middot; Platform onboarding',
+      excerpt: 'Jul 14 RG: Cisco (Isovalent) onboarding (10:00 AM PT, 30 min). Walked Tu-Anh through Market Analyzer, TAM/SAM, white space, segmentation. One open engineering issue (data export). Strong onboarding engagement.' },
+    { csm: 'riley', health: 'Healthy', account: 'TriNet',
+      opp: 'Vitally Pulse &mdash; Jul 14 Call', arr: 'Enterprise &middot; Riley Rogers',
+      csmlbl: 'Riley Rogers', change: 'Jul 14 &middot; Monthly cadence',
+      excerpt: 'Jul 14 RR: TriNet monthly sync (11:00 AM PT, 30 min). Met new contact Ashley. Standard cadence maintained. No issues raised. Relationship in good standing.' },
+    { csm: 'riley', health: 'Healthy', account: 'Red Hat',
+      opp: 'Vitally Pulse &mdash; Jul 14 Call', arr: 'Enterprise &middot; Riley Rogers',
+      csmlbl: 'Riley Rogers', change: 'Jul 14 &middot; Biweekly check-in',
+      excerpt: 'Jul 14 RR: Red Hat biweekly (11:30 AM PT, 30 min). PaaS taxonomy update in progress (no ETA). CVP lead campaign: 160 target accounts, projected 70–80 leads (~30% of quota). Red Hat aligned; campaign pending taxonomy confirmation.' },
+    { csm: 'rani', health: 'Concerning', account: 'NetApp',
+      opp: 'Vitally Pulse &mdash; Jul 14 Call', arr: 'Enterprise &middot; Rani Guy',
+      csmlbl: 'Rani Guy', change: 'Jul 14 &middot; Key contact departing',
+      excerpt: 'Jul 14 RG: NetApp weekly sync (12:30 PM PT, 25 min). ⚠️ Elise McMorrow announced departure in a few weeks. Succession plan underway. Tracy York on wedding leave. Identify and engage successor immediately to protect renewal.' },
+  ];
+  const bc = h => h === 'Healthy' ? 'badge-healthy' : h === 'Concerning' ? 'badge-concerning' : 'badge-poor';
+  const bi = h => h === 'Healthy' ? '&#128994;' : h === 'Concerning' ? '&#128993;' : '&#128308;';
+  return `<div class="pulse-grid">${cards.map(c => `
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div><div class="pulse-account">${c.account}</div><div class="pulse-opp">${c.opp}</div></div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_07_14() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('0714-1') ? 'done' : ''}" data-csm="rani" id="action-0714-1">
+      <div class="action-checkbox ${doneActions.has('0714-1') ? 'checked' : ''}" onclick="toggleAction('0714-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; NetApp &mdash; URGENT: Identify successor for Elise McMorrow before her departure</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH</span>Rani Guy &middot; Elise McMorrow announced she is leaving NetApp within the next few weeks. She is the primary HG relationship champion. Rani must identify who will own the HG relationship going forward (likely Megan or another team member), meet with Elise to get a warm introduction to the successor, and ensure the renewal process is not interrupted by the transition. Log risk in Vitally immediately.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0714-2') ? 'done' : ''}" data-csm="riley" id="action-0714-2">
+      <div class="action-checkbox ${doneActions.has('0714-2') ? 'checked' : ''}" onclick="toggleAction('0714-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Zoom &mdash; Resend expansion proposal with itemized pricing for Travis review</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH</span>Riley Rogers &middot; Travis (Zoom) requested a clear line-item pricing breakdown for the expansion: review management services + Discuss product addition. The pricing is buried in the current follow-up presentation. Create a dedicated pricing summary page (or separate one-pager) showing each expansion component and its cost. Resend to Camille and Mardigan for Travis&rsquo;s review. Expansion is warm and moving — don&rsquo;t let friction slow it down.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0714-3') ? 'done' : ''}" data-csm="divyam" id="action-0714-3">
+      <div class="action-checkbox ${doneActions.has('0714-3') ? 'checked' : ''}" onclick="toggleAction('0714-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Adobe &mdash; Respond to India team expansion ask with formal proposal</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH</span>Divyam Dewan &middot; Adobe India (Abhishek Srivastava, Sumit, Jill) has confirmed the 1,500-license pilot was successful and is now pushing internally to expand. Divyam should work with Mark to prepare a formal expansion proposal: define the expanded scope, pricing for additional licenses, and implementation pathway. Respond to Abhishek this week while the internal momentum is active.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0714-4') ? 'done' : ''}" data-csm="rani" id="action-0714-4">
+      <div class="action-checkbox ${doneActions.has('0714-4') ? 'checked' : ''}" onclick="toggleAction('0714-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F527; Workday &mdash; Share Databricks migration plan and timeline from HG engineering team</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Rani Guy &middot; The Workday DevOps team joined today to scope the migration from the legacy data feed to Databricks. Follow up with HG&rsquo;s data engineering team (Alexi Mouarkach) to get a clear migration plan and timeline. Share with Workday&rsquo;s new technical contacts (Tiago Corcelli, Ravi Jumle, Malika Pothukuchi). Ensure Malika receives the plan even though she joined late today.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0714-5') ? 'done' : ''}" data-csm="riley" id="action-0714-5">
+      <div class="action-checkbox ${doneActions.has('0714-5') ? 'checked' : ''}" onclick="toggleAction('0714-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; SAP &mdash; Confirm test lead upload success; coordinate remaining batch with Alex Soh</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Riley Rogers &middot; Today&rsquo;s manual CSV upload session tested one batch of leads for Commerce Cloud, Sales Cloud, Service Cloud. Alex Soh (SAP) will send subsequent offer codes tomorrow. Riley should confirm the first batch processed successfully in the data importer, then coordinate with Alex and Abhilasha to receive and upload the remaining lead batches. Confirm all product lines are covered before closing out the task.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0714-6') ? 'done' : ''}" data-csm="nick" id="action-0714-6">
+      <div class="action-checkbox ${doneActions.has('0714-6') ? 'checked' : ''}" onclick="toggleAction('0714-6')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F91D; Veeam &mdash; Follow up on HCL CRO introduction with William Alessi; confirm product-line approach</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Nick Johnson &middot; HCL centralized alignment fell through (Poonam&rsquo;s pushback); the team is now pursuing individual product lines. Angus Hyams has email in flight to William Alessi (CRO) via the Rahul/Kk chain. Nick should follow up with Angus to confirm when the CRO intro materializes and align on the product-line targeting strategy. Also: ensure Sid Subramany&rsquo;s AI spend data question is answered with clear documentation of what the metric represents.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No actions match the current filter.</div>`;
+}
