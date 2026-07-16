@@ -3094,3 +3094,329 @@ function dayActionsHTML_2026_07_14() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No actions match the current filter.</div>`;
 }
+
+// ─────────────────────────────────────────────────────────────
+// JULY 15, 2026
+// 87 recordings scanned · 10 confirmed CSM calls · 6 CSMs active
+// Concerning: Accenture (Nick), Databricks (Atisha), Zscaler (Riley)
+// Expansion: AWS AI portfolio gap (Rani), Zendesk renewal (Varun)
+// ─────────────────────────────────────────────────────────────
+
+function dayData_2026_07_15() {
+  return {
+    calls: [
+      { ts: 'Jul 15 · 4:30 AM', csm: 'nick', account: 'Accenture',
+        note: 'Procurement renewal docs stuck; Accenture leadership raised signature questions.',
+        mins: 30, health: 'Concerning',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Issue',
+        detail: 'Accenture leadership (Nitin Kapoor) escalated that three renewal docs — Accenture order form, Avanade order form, and affiliate addendum — are pending signature but held up by leadership questions. Accenture research team (Praveen Kumar) present to discuss data impact reporting for their user base.' },
+      { ts: 'Jul 15 · 7:00 AM', csm: 'riley', account: 'IBM',
+        note: 'Biweekly TR sync: campaigns launched, review counts, Buyer\'s Choice pipeline.',
+        mins: 45, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Reviewed persona targeting and product overlap campaigns launched end of June; current review counts by product (Cognos, SPSS, Storage Flash System, Verify, Watson X Data/Governance); Buyer\'s Choice eligibility across IBM portfolio. Mihala back from vacation. Riley confirmed all model reports delivered.' },
+      { ts: 'Jul 15 · 7:30 AM', csm: 'atisha', account: 'Databricks Inc.',
+        note: 'Data delivery S3 endpoint issue — Databricks wants previous data share format restored.',
+        mins: 30, health: 'Concerning',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Issue',
+        detail: 'Petar Zoric (Databricks) does not want to use the current S3 endpoint HG delivers; he wants the previous data share format. Atisha and Rishabh Wadhwa (Customer Solutions) investigating discrepancy. Rachna from Databricks data team had prior discussions about this two weeks ago — follow-up needed to resolve the correct endpoint configuration.' },
+      { ts: 'Jul 15 · 7:30 AM', csm: 'varun', account: 'CBTS',
+        note: 'Bi-weekly sync: contact data delivery feedback positive after 2 months.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Varun gathered contact data quality feedback from Mitchell VanderKam and Timothy Selaty (CBTS) after two months of delivery. Mitchell: no negative feedback, data looks good, already activated some contacts. HG contact specialist Ishan also joined. Discussed AI-driven workload increases at CBTS (Timothy now managing 12–16 critical tasks daily).' },
+      { ts: 'Jul 15 · 9:00 AM', csm: 'rani', account: 'Amazon Web Services',
+        note: 'Bi-weekly cadence: renewal mid-July, TR review gap for AWS AI portfolio flagged.',
+        mins: 45, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Renewal contract timing confirmed for mid-July (50% per Rani, full details with Luis/Madavi). Critical finding: only 2 reviews across AWS\'s entire AI portfolio in TrustRadius in 2026 — a major gap vs. competitors. Case study pipeline (Swenson/Qwik) in progress; Mark Fell to provide updates. Rani flagged limited visibility into case study progress due to communication gaps.' },
+      { ts: 'Jul 15 · 9:00 AM', csm: 'varun', account: 'Zendesk',
+        note: 'Renewal discussion and strategic alignment; Riley Rogers and new AM Charles Hawkins co-hosted.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Joint call with Joyce Chang (Zendesk) — Varun Tiwari, Riley Rogers, new AM Charles Hawkins attended. Discussed renewal terms, product updates on HG and TrustRadius sides, and strategic alignment following Zendesk internal changes. Varun asked about Zendesk receipt of additional HG data feeds. Tiana DeNeen also joined. Riley Rogers co-hosted as TR CSM.' },
+      { ts: 'Jul 15 · 10:00 AM', csm: 'riley', account: 'zScaler',
+        note: 'Renewal call partially aborted — key stakeholders (Vivian, Max) absent; reschedule required.',
+        mins: 30, health: 'Concerning',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Scheduled renewal discussion but key decision-makers Vivian and Max from Zscaler were absent. Sarah Gamino confirmed the meeting needs rescheduling with the full stakeholder set (Vivian + Max required). Riley also noted a $45K commission discrepancy on this account that needs finance resolution. Anderson (AM) attended.' },
+      { ts: 'Jul 15 · 10:30 AM', csm: 'riley', account: 'Paylocity',
+        note: 'Part 2 TR platform overview: walked through Matt\'s open items list with Olivia McFadden.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Second session of TrustRadius platform overview with Olivia McFadden. Riley worked through open items provided by Matt (internal Paylocity stakeholder). Olivia explored the platform after Part 1 with no major blockers. Session part of ongoing onboarding progression for Paylocity\'s TR subscription.' },
+      { ts: 'Jul 15 · 11:00 AM', csm: 'pam', account: 'Epicor',
+        note: 'Bi-weekly: TrustQuotes widget setup walkthrough and review response guidance.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'Customer', purpose: 'Check-in',
+        detail: 'Sam Malecek (Epicor) asked about the TrustQuotes widget. Pam walked through Reviews → Quotes → Trust Quotes for Web → widget builder → JS code snippet for the web design team. Also covered review response best practices via previously sent email. Sam still needs to review that email and implement the widget.' },
+      { ts: 'Jul 15 · 11:45 AM', csm: 'pam', account: 'Microsoft',
+        note: 'Black Hat VIP mixer event logistics — case studies confirmed OK; video placement TBD.',
+        mins: 15, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Check-in',
+        detail: 'Event planning call with Maryann Okonkwo (MSFT SCI) and Dynamic Events (Caitlin, Hannah) for TrustRadius participation in the Black Hat VIP mixer. Case studies confirmed approved (Elliot). Screen placement for video content still TBD — Dynamic Events to confirm. Pam had mic issues at start but participated throughout.' },
+    ],
+    pulses: [
+      { csm: 'nick',   account: 'Accenture',          health: 'Concerning', note: 'Procurement renewal stuck — 3 docs pending signature, Accenture leadership questions unresolved.' },
+      { csm: 'riley',  account: 'IBM',                 health: 'Healthy',   note: 'Biweekly TR sync — campaigns running, review counts healthy, Buyer\'s Choice pipeline active.' },
+      { csm: 'atisha', account: 'Databricks Inc.',     health: 'Concerning', note: 'Data S3 endpoint issue — Petar wants previous data share format; Atisha + Rishabh investigating.' },
+      { csm: 'varun',  account: 'CBTS',                health: 'Healthy',   note: 'Contact data feedback positive after 2 months; Mitchell activated data; no issues reported.' },
+      { csm: 'rani',   account: 'Amazon Web Services', health: 'Healthy',   note: 'Bi-weekly — renewal mid-July; AWS AI portfolio has near-zero TR reviews (expansion gap flagged).' },
+      { csm: 'varun',  account: 'Zendesk',             health: 'Healthy',   note: 'Renewal discussion with Joyce Chang; joint call with Riley + AM Charles Hawkins; strategic alignment.' },
+      { csm: 'riley',  account: 'zScaler',             health: 'Concerning', note: 'Renewal call failed to include key stakeholders — reschedule required with Vivian + Max.' },
+      { csm: 'riley',  account: 'Paylocity',           health: 'Healthy',   note: 'Part 2 TR platform overview complete; Olivia McFadden progressing onboarding smoothly.' },
+      { csm: 'pam',    account: 'Epicor',              health: 'Healthy',   note: 'Bi-weekly — TrustQuotes widget JS snippet shared; review response guidance sent to Sam.' },
+      { csm: 'pam',    account: 'Microsoft',           health: 'Healthy',   note: 'Black Hat VIP mixer planning — case studies approved; video screen placement to confirm.' },
+    ],
+  };
+}
+
+function dayMeta_2026_07_15() {
+  return {
+    pills: [
+      ['dot-teal',  '10 Calls'],
+      ['dot-red',   '3 Concerning'],
+      ['dot-amber', '2 Expansion'],
+      ['dot-green', '10 Pulses'],
+      ['dot-grey',  'Wed Jul 15 · 87 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (10)', 'Pulses (10)', 'Action Items (6)'],
+  };
+}
+
+function dayOverviewHTML_2026_07_15() {
+  return `<div class="section-label">Team Activity &mdash; Wednesday July 15, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Wednesday Jul 15 &mdash; 87 recordings scanned</strong> via SFDC SOQL &middot; <strong>10 confirmed calls</strong> across 6 CSMs &middot; 3 Concerning signals &middot; 2 Expansion opportunities
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>3 Concerning:</strong> Accenture &mdash; procurement renewal docs stalled with signature gap &middot; Databricks &mdash; S3 data delivery endpoint mismatch &middot; Zscaler &mdash; renewal call missing key decision-makers
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>2 Expansion signals:</strong> AWS &mdash; near-zero TR reviews across AI portfolio (2 reviews in all of 2026) &middot; Zendesk &mdash; renewal + strategic alignment discussion with new AM
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">3 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">3</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">105m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">IBM (biweekly TR sync, campaigns) &middot; Zscaler (renewal call aborted &mdash; reschedule) &middot; Paylocity (Part 2 TR overview)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">CBTS (contact data feedback positive) &middot; Zendesk (renewal + strategic alignment, joint w/ Riley)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="pam">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">45m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Epicor (TrustQuotes widget walkthrough) &middot; Microsoft (Black Hat VIP mixer planning)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Accenture (procurement renewal docs stalled &mdash; 4:30 AM APAC call)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">45m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">AWS (biweekly cadence &mdash; renewal mid-Jul, TR review gap in AI portfolio)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Databricks (S3 data endpoint mismatch &mdash; Petar wants previous data share format)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="divyam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 events scheduled &mdash; no recordings with transcript (Informatica Weekly &#215;2)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 events matched recordings &mdash; SAS Institute (no transcript) &middot; Cockroach Labs (speaker label mismatch: &ldquo;Andy via superpowered.me&rdquo;)</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_07_15() {
+  return `<div class="calls-table">
+  <div style="background:#1c1f26;border:1px solid #334155;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#94a3b8;">
+    &#x1F4CB; <strong>10 confirmed calls</strong> &middot; 87 recordings scanned via SFDC SOQL &middot; 42 with transcripts, 45 without &middot; <strong>3 Concerning</strong> &middot; <strong>2 Expansion</strong>
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 8px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>Unconfirmed calls:</strong> Andy Lim / Cockroach Labs &mdash; transcript shows &ldquo;Andy (via superpowered.me)&rdquo; — not formally confirmed by speaker label &middot; Andy Lim / SAS Institute &mdash; recording matched, no transcript &middot; Atisha Waghela / Deloitte &mdash; recording matched, no transcript &middot; Pam Huck / Datadog &mdash; recording matched, no transcript
+  </div>
+  </div>`;
+}
+
+function dayPulsesHTML_2026_07_15() {
+  const cards = [
+    { csm: 'nick',   health: 'Concerning', account: 'Accenture',          opp: 'Vitally Pulse &mdash; Jul 15 Call',
+      arr: 'Enterprise &middot; Nick Johnson', csmlbl: 'Nick Johnson',
+      change: 'Jul 15 &middot; Ad-hoc',
+      excerpt: 'Jul 15 NJ: Accenture procurement renewal stalled (4:30 AM PT, 30 min). Three renewal docs (Accenture, Avanade, affiliate addendum) pending signature. Accenture leadership raised questions; Nitin Kapoor escalated. Praveen Kumar (research team) present.' },
+    { csm: 'riley',  health: 'Healthy',    account: 'IBM',                 opp: 'Vitally Pulse &mdash; Jul 15 Call',
+      arr: 'Enterprise &middot; Riley Rogers', csmlbl: 'Riley Rogers',
+      change: 'Jul 15 &middot; Recurring',
+      excerpt: 'Jul 15 RR: IBM biweekly TR sync (7:00 AM PT, 45 min). Persona targeting + product overlap campaigns launched end of June. Buyer\'s Choice pipeline review: Cognos, SPSS, Storage Flash, Verify, Watson X products. Mihala back from vacation; all model reports delivered.' },
+    { csm: 'atisha', health: 'Concerning', account: 'Databricks Inc.',     opp: 'Vitally Pulse &mdash; Jul 15 Call',
+      arr: 'Enterprise &middot; Atisha Waghela', csmlbl: 'Atisha Waghela',
+      change: 'Jul 15 &middot; Ad-hoc',
+      excerpt: 'Jul 15 AW: Databricks data delivery issue (7:30 AM PT, 30 min). Petar Zoric does not want current S3 endpoint; wants previous data share format. Atisha + Rishabh Wadhwa (Customer Solutions) investigating. Rachna from Databricks data team had prior discussions ~2 weeks ago.' },
+    { csm: 'varun',  health: 'Healthy',    account: 'CBTS',                opp: 'Vitally Pulse &mdash; Jul 15 Call',
+      arr: 'Enterprise &middot; Varun Tiwari', csmlbl: 'Varun Tiwari',
+      change: 'Jul 15 &middot; Recurring',
+      excerpt: 'Jul 15 VT: CBTS bi-weekly sync (7:30 AM PT, 30 min). Contact data feedback positive after 2 months of delivery. Mitchell VanderKam: no issues, already activated data. Timothy Selaty managing significantly increased AI workload. Ishan (contact specialist) joined.' },
+    { csm: 'rani',   health: 'Healthy',    account: 'Amazon Web Services', opp: 'Vitally Pulse &mdash; Jul 15 Call',
+      arr: 'Enterprise &middot; Rani Guy', csmlbl: 'Rani Guy',
+      change: 'Jul 15 &middot; Recurring',
+      excerpt: 'Jul 15 RG: AWS bi-weekly cadence (9:00 AM PT, 45 min). Renewal timing: mid-July (contract ~50% per Rani). Critical gap: only 2 TR reviews across AWS entire AI portfolio in 2026. Case study pipeline (Swenson/Qwik) in progress. Outreach to Luis + Madavi for multi-threading.' },
+    { csm: 'varun',  health: 'Healthy',    account: 'Zendesk',             opp: 'Vitally Pulse &mdash; Jul 15 Call',
+      arr: 'Enterprise &middot; Varun Tiwari', csmlbl: 'Varun Tiwari',
+      change: 'Jul 15 &middot; Ad-hoc',
+      excerpt: 'Jul 15 VT: Zendesk renewal + strategic alignment (9:00 AM PT, 30 min). Joint call with Riley Rogers + new AM Charles Hawkins. Joyce Chang (Zendesk) + Tiana DeNeen attended. Discussed renewal terms, HG/TR product updates, and strategic alignment post-Zendesk internal changes.' },
+    { csm: 'riley',  health: 'Concerning', account: 'zScaler',             opp: 'Vitally Pulse &mdash; Jul 15 Call',
+      arr: 'Enterprise &middot; Riley Rogers', csmlbl: 'Riley Rogers',
+      change: 'Jul 15 &middot; Ad-hoc',
+      excerpt: 'Jul 15 RR: Zscaler renewal call (10:00 AM PT, 30 min). Key decision-makers Vivian and Max absent. Sarah Gamino confirmed reschedule required. Riley + Anderson (AM) present. $45K commission discrepancy on this account also flagged for finance resolution.' },
+    { csm: 'riley',  health: 'Healthy',    account: 'Paylocity',           opp: 'Vitally Pulse &mdash; Jul 15 Call',
+      arr: 'Enterprise &middot; Riley Rogers', csmlbl: 'Riley Rogers',
+      change: 'Jul 15 &middot; Ad-hoc',
+      excerpt: 'Jul 15 RR: Paylocity Part 2 TR platform overview (10:30 AM PT, 30 min). Walked through Matt\'s open items list with Olivia McFadden. No major blockers; onboarding progressing. Part of ongoing TR subscription onboarding sequence.' },
+    { csm: 'pam',    health: 'Healthy',    account: 'Epicor',              opp: 'Vitally Pulse &mdash; Jul 15 Call',
+      arr: 'Enterprise &middot; Pam Huck', csmlbl: 'Pam Huck',
+      change: 'Jul 15 &middot; Recurring',
+      excerpt: 'Jul 15 PH: Epicor bi-weekly TR sync (11:00 AM PT, 30 min). Sam Malecek asked about TrustQuotes widget. Pam walked through JS code snippet for web design team. Review response guidance email sent; Sam to read and implement. Good engagement.' },
+    { csm: 'pam',    health: 'Healthy',    account: 'Microsoft',           opp: 'Vitally Pulse &mdash; Jul 15 Call',
+      arr: 'Enterprise &middot; Pam Huck', csmlbl: 'Pam Huck',
+      change: 'Jul 15 &middot; Ad-hoc',
+      excerpt: 'Jul 15 PH: MSFT Black Hat VIP mixer planning (11:45 AM PT, 15 min). Case studies approved by Elliot. Video screen placement at venue TBD — Dynamic Events to confirm. Pam joining as TR partner at the event.' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div><strong>${c.account}</strong><span style="color:#94a3b8;font-size:11px;margin-left:8px;">${c.opp}</span></div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_07_15() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('0715-1') ? 'done' : ''}" data-csm="nick" id="action-0715-1">
+      <div class="action-checkbox ${doneActions.has('0715-1') ? 'checked' : ''}" onclick="toggleAction('0715-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; Accenture &mdash; Unblock procurement renewal signature logjam</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH</span>Nick Johnson &middot; Three renewal docs (Accenture order form, Avanade order form, affiliate addendum) are pending signatures but held up by Accenture leadership questions. Nick should identify the specific objections from Nitin Kapoor&rsquo;s leadership, work with the HG legal/sales team to provide clarifying answers, and re-engage Kelly Gumber and Praveen Kumar to unblock signature. Escalate to HG leadership if needed given the dollar size.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0715-2') ? 'done' : ''}" data-csm="riley" id="action-0715-2">
+      <div class="action-checkbox ${doneActions.has('0715-2') ? 'checked' : ''}" onclick="toggleAction('0715-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F501; Zscaler &mdash; Reschedule renewal call with complete stakeholder set</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH</span>Riley Rogers &middot; Today&rsquo;s renewal call was aborted due to absence of key decision-makers Vivian and Max. Sarah Gamino confirmed reschedule is needed. Riley and Anderson (AM) should coordinate a new meeting date that includes Vivian, Max, and Christian from Zscaler. Also: resolve the $45K commission discrepancy with finance (appears it was logged under Varun from last month).</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0715-3') ? 'done' : ''}" data-csm="atisha" id="action-0715-3">
+      <div class="action-checkbox ${doneActions.has('0715-3') ? 'checked' : ''}" onclick="toggleAction('0715-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F527; Databricks &mdash; Resolve S3 data delivery endpoint with Petar and Rachna</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH</span>Atisha Waghela &middot; Petar Zoric wants to revert to the previous data share format instead of the current S3 endpoint. Atisha and Rishabh Wadhwa need to reconnect with Rachna from the Databricks data team (who had discussed this ~2 weeks ago) to determine the correct S3 endpoint configuration, document what changed, and confirm the fix before next delivery cycle. Keep Petar updated with a clear ETA.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0715-4') ? 'done' : ''}" data-csm="rani" id="action-0715-4">
+      <div class="action-checkbox ${doneActions.has('0715-4') ? 'checked' : ''}" onclick="toggleAction('0715-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; AWS &mdash; Build TR review campaign for AI portfolio (near-zero coverage gap)</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Rani Guy &middot; AWS has only 2 TrustRadius reviews across its entire AI portfolio in 2026 &mdash; a significant gap versus competitors who are actively collecting reviews. Rani should work with Mark Fell and the AWS product teams to design a targeted review collection campaign for the AI product portfolio (Amazon Bedrock, SageMaker, etc.). Also: confirm renewal contract terms with Luis and Madavi this week (mid-July timing).</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0715-5') ? 'done' : ''}" data-csm="varun" id="action-0715-5">
+      <div class="action-checkbox ${doneActions.has('0715-5') ? 'checked' : ''}" onclick="toggleAction('0715-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F91D; Zendesk &mdash; Follow up on renewal terms and HG data feed confirmation</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM</span>Varun Tiwari &middot; After today&rsquo;s renewal discussion with Joyce Chang, Varun should send a follow-up email confirming the HG data feed question (what additional data Zendesk is currently receiving from HG) and any specific renewal terms discussed. Loop in Riley Rogers and new AM Charles Hawkins on the follow-up. Confirm Tiana DeNeen&rsquo;s role in the renewal process.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0715-6') ? 'done' : ''}" data-csm="andy" id="action-0715-6">
+      <div class="action-checkbox ${doneActions.has('0715-6') ? 'checked' : ''}" onclick="toggleAction('0715-6')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4AC; Cockroach Labs &mdash; Confirm Vishnu provisioning access and fix speaker label issue</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW</span>Andy Lim &middot; Today&rsquo;s Cockroach Labs call (confirmed by Tracie Hart: &ldquo;Andy from HG is resending the invite&rdquo;) focused on resending provisioning access for Vishnu. Andy should confirm Vishnu received and accepted the new invite. Note: Andy&rsquo;s Weflow speaker label shows as &ldquo;Andy (via superpowered.me)&rdquo; &mdash; flag to IT to update Zoom display name so future calls are auto-confirmed by transcript detection.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No actions match the current filter.</div>`;
+}
