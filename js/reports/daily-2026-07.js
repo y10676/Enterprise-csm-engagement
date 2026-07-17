@@ -3420,3 +3420,394 @@ function dayActionsHTML_2026_07_15() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No actions match the current filter.</div>`;
 }
+
+// ─── July 16, 2026 ───────────────────────────────────────────────────────────
+
+function dayData_2026_07_16() {
+  return {
+    calls: [
+      { ts: 'Jul 16 · 7:30 AM', csm: 'nick', account: 'Siemens',
+        note: 'Biweekly sync — Siemens reorg, HG Contacts pitch',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Checked in on Siemens restructuring and reorg impact on SDR team activity. Q4 is slow for outbound. Nick introduced HG Contacts as an alternative to ZoomInfo — real-time validated emails and phone numbers at the point of delivery vs. static database approach.' },
+      { ts: 'Jul 16 · 7:30 AM', csm: 'riley', account: 'Intuit',
+        note: 'TR renewal + premium content upsell discussion',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Renewal discussion for two TrustRadius agreements renewing in October. Riley also raised premium content offering and geo optimization options. Natalie Pratt noted Intuit FY is ending this month and finance decisions are still in flight.' },
+      { ts: 'Jul 16 · 8:00 AM', csm: 'nick', account: 'UKG',
+        note: 'Project Nova AI enrichment — HG scope discussion',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Expansion',
+        detail: 'Gautam Gupta (UKG) shared Project Nova AI EP initiative. Augie confirmed HG delivers on the enrichment layer but not CRM deduplication/orchestration. Gautam evaluating Clay and Traction Complete as complementary tools alongside HG.' },
+      { ts: 'Jul 16 · 8:00 AM', csm: 'rani', account: 'Lenovo',
+        note: 'Monthly sync — RGIP new platform adoption, Nidhi re-engaged',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Monthly sync to drive RGIP new platform adoption for Nidhi\'s Lenovo APAC team. Nidhi rejoined after a busy stretch; Adrian and Rani confirmed platform parity and encouraged migration. Nidhi also raised a question about Fiona O\'Brien from a separate team.' },
+      { ts: 'Jul 16 · 8:00 AM', csm: 'rani', account: 'Amazon Business',
+        note: 'V2 migration schema — 5→4 file format review',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Issue',
+        detail: 'Amazon reviewing V2 data delivery schema: currently receives 5 files (URL, spend, install, IV, URL map), moving to 4 in V2. David Larson asked about IV/URL overlap. Rani had a double-booking and handed off to Alexi Mouarkach (HG SE) partway through.' },
+      { ts: 'Jul 16 · 9:00 AM', csm: 'pam', account: 'Oracle',
+        note: 'Monthly sync — major Oracle team reorg still settling',
+        mins: 45, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Oracle team in flux: Karen moved to EMEA-specific group, Laura transitioned out of vendor management roles entirely. Joe Lampitt back from PTO Tuesday and now reports to John Malone (recently returned). Joe hasn\'t spoken with John yet — team structure still unsettled.' },
+      { ts: 'Jul 16 · 9:00 AM', csm: 'varun', account: 'OpenText',
+        note: 'Intro call — competitor install data validation',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Intro call with Kirk Koskey (OpenText OEM Sales) to validate HG competitor install data. Kirk pushed back before the pitch, wanting to set context about OpenText\'s 25K-person, 40-product-group structure. Strong interest in embedded threat intel feeds; outcome: discovery mode.' },
+      { ts: 'Jul 16 · 9:30 AM', csm: 'rani', account: 'NetApp',
+        note: 'Monthly sync — FY end wrap, Bay Area event preview',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'NetApp end-of-fiscal-year wrap with Ross Ackerman. HG discussed upcoming Bay Area customer event planned for September (similar to prior year Palo Alto event). Relationship strong; Ross open to attending.' },
+      { ts: 'Jul 16 · 10:00 AM', csm: 'rani', account: 'Hitachi Vantara',
+        note: 'Renewal at risk — budget cuts, new-logo focus shift',
+        mins: 30, health: 'Concerning',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Hitachi shifting marketing focus to new logo acquisition with a specific numerical target for the first time. Budget cuts across the industry noted. Adrian and Rani presenting renewal options and new TR products (Contacts, MCP) at flexible pricing to avoid downsell. Rani later revealed on Cloudflare call: ~$500K downsell expected.' },
+      { ts: 'Jul 16 · 10:30 AM', csm: 'rani', account: 'Cloudflare',
+        note: 'Post-Hitachi debrief + Cloudflare renewal prep',
+        mins: 30, health: 'Concerning',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Post-Hitachi debrief: Rani flagged ~$500K downsell risk. Pivoted to Cloudflare renewal planning with Mardigan (TrustRadius) — goal to establish cadence with Brooke Leslie, discuss geo/SEO value, and navigate on-prem product deprecation (customers consolidating to cloud). Cisco situation also flagged as at risk.' },
+      { ts: 'Jul 16 · 11:00 AM', csm: 'rani', account: 'Workday',
+        note: 'TR renewal contract review — new Workday procurement contact',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'TrustRadius renewal discussion: two agreements (one auto-renew, one not), reviewed master agreement from Dec 2019. Andrea Poljakovic is new to the account — previous contact Jason left without full knowledge transfer. Ron from procurement reviewed contract terms. Mardigan working to reset and requalify value delivery.' },
+      { ts: 'Jul 16 · 11:00 AM', csm: 'pam', account: 'Oracle NetSuite',
+        note: 'TR sync — intent data walkthrough, AI dashboard preview',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Pam shared 90-day TrustRadius data: 10K+ page views, 865 companies showing intent — zero CTA clicks noted by David Kearney as a gap. Pam introduced AI dashboard (LLM citation/sentiment tracking) and Geo dashboard at no additional cost. Invited David to buyer disconnect report event July 21.' },
+      { ts: 'Jul 16 · 12:00 PM', csm: 'rani', account: 'Cloudflare',
+        note: 'Renewal at risk — ROI gap, BDR-heavy usage base',
+        mins: 30, health: 'Concerning',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Robert Goldfarb (Cloudflare) flagged ROI justification gap: 70-80% of users are BDRs, hard to show pipeline attribution to pass procurement approval. Robert exploring expanding API-side product coverage. Renewal requires a demonstrable ROI story or procurement will not approve.' },
+      { ts: 'Jul 16 · 12:00 PM', csm: 'riley', account: 'SAP Concur',
+        note: 'Recurring cadence — Ella Teets new contact onboarding',
+        mins: 60, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Recurring TrustRadius cadence call. Riley welcomed Ella Teets as a new SAP Concur contact joining Stephanie Mair. Ella will onboard to the TrustRadius partnership and has questions forthcoming. World Cup discussion opened the call (Argentina win in Atlanta).' },
+    ],
+    pulses: [
+      { csm: 'nick', account: 'Siemens', health: 'Healthy', note: 'Biweekly sync — Siemens reorg underway, Q4 slow for outbound. Nick pitched HG Contacts as ZoomInfo alternative (validated at point of delivery).' },
+      { csm: 'riley', account: 'Intuit', health: 'Healthy', note: 'TR renewal discussion — October renewals flagged, premium content and geo optimization options raised. Intuit FY ending this month.' },
+      { csm: 'nick', account: 'UKG', health: 'Healthy', note: 'Project Nova AI enrichment scope call — HG confirmed on enrichment layer; Gautam evaluating Clay and Traction Complete alongside HG.' },
+      { csm: 'rani', account: 'Lenovo', health: 'Healthy', note: 'Monthly sync — Nidhi re-engaged after busy period. RGIP new platform adoption discussion; parity confirmed. Nidhi raises Fiona O\'Brien cross-team question.' },
+      { csm: 'rani', account: 'Amazon Business', health: 'Healthy', note: 'V2 schema review — Amazon mapping from 5 to 4 files. Rani handed off to Alexi Mouarkach (HG SE) mid-call due to double-booking.' },
+      { csm: 'pam', account: 'Oracle', health: 'Healthy', note: 'Monthly sync — Karen and Laura both transitioned out. Joe Lampitt now reports to John Malone. Team structure still unsettled.' },
+      { csm: 'varun', account: 'OpenText', health: 'Healthy', note: 'Intro call — Kirk Koskey (OEM Sales) engaged on competitor install data. Discovery mode; Kirk set context before pitch. Strong potential.' },
+      { csm: 'rani', account: 'NetApp', health: 'Healthy', note: 'Monthly sync — FY end wrap with Ross Ackerman. Bay Area customer event planned for September. Relationship strong.' },
+      { csm: 'rani', account: 'Hitachi Vantara', health: 'Concerning', note: 'Renewal risk — Hitachi shifting to new-logo focus, budget cuts across industry. ~$500K downsell expected. Adrian/Rani presenting flexible renewal options.' },
+      { csm: 'rani', account: 'Cloudflare', health: 'Concerning', note: 'Pre-call debrief with Mardigan — post-Hitachi debrief, Cloudflare renewal planning. On-prem product deprecation complicating consolidation.' },
+      { csm: 'rani', account: 'Workday', health: 'Healthy', note: 'TR renewal contract review — Andrea Poljakovic new to account (Jason left). Ron from procurement reviewed master agreement. Reset in progress.' },
+      { csm: 'pam', account: 'Oracle NetSuite', health: 'Healthy', note: 'TR sync — 10K+ page views, 865 intent companies in 90 days, zero CTA clicks. AI + Geo dashboard introduced at no additional cost. Buyer disconnect event July 21.' },
+      { csm: 'rani', account: 'Cloudflare', health: 'Concerning', note: 'Renewal at risk — 70-80% BDR usage, ROI gap flagged by Robert Goldfarb. Procurement approval blocked without ROI proof. API expansion being explored.' },
+      { csm: 'riley', account: 'SAP Concur', health: 'Healthy', note: 'Recurring cadence — Ella Teets onboarding as new contact alongside Stephanie Mair. Riley managing relationship, questions forthcoming.' },
+    ],
+  };
+}
+
+function dayMeta_2026_07_16() {
+  return {
+    pills: [
+      ['dot-teal',  '14 Calls'],
+      ['dot-red',   '3 Concerning'],
+      ['dot-amber', '3 Expansion'],
+      ['dot-green', '14 Pulses'],
+      ['dot-grey',  'Thu Jul 16 · 81 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (14)', 'Pulses (14)', 'Action Items (6)'],
+  };
+}
+
+function dayOverviewHTML_2026_07_16() {
+  return `<div class="section-label">Team Activity &mdash; Thursday July 16, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Thursday Jul 16 &mdash; 81 recordings scanned</strong> via SFDC SOQL &middot; <strong>14 confirmed calls</strong> across 5 CSMs &middot; 3 concerning signals &middot; 3 expansion signals
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>Hitachi Vantara</strong> renewal at risk &mdash; ~$500K downsell expected; budget cuts, new-logo focus shift &middot; <strong>Cloudflare</strong> ROI gap flagged by Robert Goldfarb; BDR-heavy usage, procurement approval blocked &middot; Both accounts need urgent action plans this week
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>Expansion signals:</strong> UKG/Gautam (Project Nova AI enrichment) &middot; OpenText (Kirk Koskey intro, competitor install data validation) &middot; Oracle NetSuite (AI + Geo dashboard upsell by Pam)
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">7 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">7</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">7</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">3</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">210m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Hitachi (renewal risk, $500K downsell) &middot; Cloudflare x2 (ROI gap, BDR usage) &middot; Lenovo (RGIP adoption) &middot; Amazon Business (V2 schema) &middot; NetApp (FY wrap) &middot; Workday (TR renewal reset)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Siemens (biweekly, Contacts pitch) &middot; UKG/Gautam (Project Nova AI enrichment, expansion signal)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">90m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Intuit (TR renewal + premium content) &middot; SAP Concur (recurring, Ella Teets onboarding)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="pam">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">75m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Oracle (monthly sync, team reorg) &middot; Oracle NetSuite (TR sync, AI dashboard upsell)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">OpenText (intro call, Kirk Koskey, competitor install data validation)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="divyam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">6 events scheduled &mdash; OpenAI recording found (no transcript) &mdash; Sage, Lumen, Lumen 2.0, Paycor, delaware Netherlands: no recording matched</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="atisha">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">6 events scheduled &mdash; Insight Direct recording (4:30 AM PDT, no transcript) &mdash; SysPro, Kong, Apple, Saviynt, Versa: no matching recording</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event scheduled &mdash; Pipeline Group recording found, no CSM speaker detected in transcript</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_07_16() {
+  return `<div style="background:#1c1117;border:1px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>Hitachi Vantara &amp; Cloudflare</strong> — 3 concerning signals today. Hitachi: ~$500K downsell expected (budget cuts, new-logo pivot). Cloudflare: ROI gap flagged by Robert Goldfarb; BDR-heavy usage base cannot demonstrate pipeline attribution.
+  </div>
+  <div style="background:#162032;border:1px solid #475569;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#94a3b8;">
+    &#x26A0; <strong>Unconfirmed (no transcript):</strong> Atisha / Insight Direct (4:30 AM PT early call) &middot; Riley / Arcoro (11:30 AM PT) &middot; Divyam / OpenAI Weekly (10:30 AM PT)
+  </div>
+  <div class="calls-table"></div>`;
+}
+
+function dayPulsesHTML_2026_07_16() {
+  const cards = [
+    { csm:'nick', health:'Healthy', account:'Siemens',
+      opp:'Vitally Pulse &mdash; Jul 16 Call',
+      arr:'Enterprise &middot; Nick Johnson',
+      csmlbl:'Nick Johnson',
+      change:'Jul 16 &middot; Biweekly Sync',
+      excerpt:'7/16 NJ: Biweekly sync (7:30 AM, 30 min). Siemens reorg ongoing — Q4 slow for outbound. Nick introduced HG Contacts as ZoomInfo alternative with real-time validated data.' },
+    { csm:'riley', health:'Healthy', account:'Intuit',
+      opp:'Vitally Pulse &mdash; Jul 16 Call',
+      arr:'Enterprise &middot; Riley Rogers',
+      csmlbl:'Riley Rogers',
+      change:'Jul 16 &middot; TR Renewal Discussion',
+      excerpt:'7/16 RR: TR renewal discussion (7:30 AM, 30 min). Two October renewals flagged. Premium content offering and geo optimization raised. Intuit FY ending this month — finance decisions pending.' },
+    { csm:'nick', health:'Healthy', account:'UKG',
+      opp:'Vitally Pulse &mdash; Jul 16 Call',
+      arr:'Enterprise &middot; Nick Johnson',
+      csmlbl:'Nick Johnson',
+      change:'Jul 16 &middot; Quick Sync (Expansion)',
+      excerpt:'7/16 NJ: Project Nova AI enrichment scope call (8:00 AM, 30 min). Gautam confirmed HG for enrichment layer; not CRM dedup/orchestration. Gautam evaluating Clay and Traction Complete alongside HG.' },
+    { csm:'rani', health:'Healthy', account:'Lenovo',
+      opp:'Vitally Pulse &mdash; Jul 16 Call',
+      arr:'Enterprise &middot; Rani Guy',
+      csmlbl:'Rani Guy',
+      change:'Jul 16 &middot; Monthly Sync',
+      excerpt:'7/16 RG: Monthly sync (8:00 AM, 30 min). Nidhi re-engaged from Lenovo APAC. RGIP new platform adoption discussed — parity confirmed. Fiona O\'Brien cross-team query raised.' },
+    { csm:'rani', health:'Healthy', account:'Amazon Business',
+      opp:'Vitally Pulse &mdash; Jul 16 Call',
+      arr:'Enterprise &middot; Rani Guy',
+      csmlbl:'Rani Guy',
+      change:'Jul 16 &middot; V2 Schema Review',
+      excerpt:'7/16 RG: V2 migration schema review (8:00 AM, 30 min). Amazon mapping 5→4 files in V2. Rani handed off to HG SE Alexi Mouarkach due to double-booking. Customer-initiated technical session.' },
+    { csm:'pam', health:'Healthy', account:'Oracle',
+      opp:'Vitally Pulse &mdash; Jul 16 Call',
+      arr:'Enterprise &middot; Pam Huck',
+      csmlbl:'Pam Huck',
+      change:'Jul 16 &middot; Monthly Sync',
+      excerpt:'7/16 PH: Monthly sync (9:00 AM, 45 min). Major Oracle team reorg: Karen → EMEA, Laura → out of vendor roles. Joe Lampitt now reports to John Malone. Team structure still unsettled.' },
+    { csm:'varun', health:'Healthy', account:'OpenText',
+      opp:'Vitally Pulse &mdash; Jul 16 Call',
+      arr:'Enterprise &middot; Varun Tiwari',
+      csmlbl:'Varun Tiwari',
+      change:'Jul 16 &middot; Intro (Expansion)',
+      excerpt:'7/16 VT: Intro call with Kirk Koskey (OpenText OEM Sales, 9:00 AM, 30 min). Competitor install data validation focus. Kirk set context on OpenText\'s scope before pitch — discovery mode. Strong potential.' },
+    { csm:'rani', health:'Healthy', account:'NetApp',
+      opp:'Vitally Pulse &mdash; Jul 16 Call',
+      arr:'Enterprise &middot; Rani Guy',
+      csmlbl:'Rani Guy',
+      change:'Jul 16 &middot; Monthly Sync',
+      excerpt:'7/16 RG: Monthly sync (9:30 AM, 30 min). FY end wrap with Ross Ackerman. Upcoming Bay Area customer event discussed for September. Relationship strong; Ross open to attending.' },
+    { csm:'rani', health:'Concerning', account:'Hitachi Vantara',
+      opp:'Vitally Pulse &mdash; Jul 16 Call',
+      arr:'Enterprise &middot; Rani Guy',
+      csmlbl:'Rani Guy',
+      change:'Jul 16 &middot; Renewal Risk',
+      excerpt:'7/16 RG: Renewal sync (10:00 AM, 30 min). Hitachi pivoting to new-logo focus with first-ever numerical target. Budget cuts. ~$500K downsell expected. Rani/Adrian presenting flexible renewal options and new TR products.' },
+    { csm:'rani', health:'Concerning', account:'Cloudflare',
+      opp:'Vitally Pulse &mdash; Jul 16 Call (connect)',
+      arr:'Enterprise &middot; Rani Guy',
+      csmlbl:'Rani Guy',
+      change:'Jul 16 &middot; Connect + Renewal Prep',
+      excerpt:'7/16 RG: Pre-call debrief (10:30 AM, 30 min). Post-Hitachi: $500K downsell. Cloudflare renewal planning with Mardigan — on-prem product deprecation complicating consolidation. Cisco also flagged as at risk.' },
+    { csm:'rani', health:'Healthy', account:'Workday',
+      opp:'Vitally Pulse &mdash; Jul 16 Call',
+      arr:'Enterprise &middot; Rani Guy',
+      csmlbl:'Rani Guy',
+      change:'Jul 16 &middot; TR Renewal Reset',
+      excerpt:'7/16 RG: TR renewal contract review (11:00 AM, 30 min). Andrea Poljakovic new to account (Jason left). Ron from procurement reviewed master agreement (Dec 2019). Reset and requalification in progress.' },
+    { csm:'pam', health:'Healthy', account:'Oracle NetSuite',
+      opp:'Vitally Pulse &mdash; Jul 16 Call',
+      arr:'Enterprise &middot; Pam Huck',
+      csmlbl:'Pam Huck',
+      change:'Jul 16 &middot; TR Sync',
+      excerpt:'7/16 PH: TR sync (11:00 AM, 30 min). 10K+ page views, 865 intent companies in 90 days, zero CTA clicks. AI + Geo dashboard introduced at no cost. Buyer disconnect event July 21 shared.' },
+    { csm:'rani', health:'Concerning', account:'Cloudflare',
+      opp:'Vitally Pulse &mdash; Jul 16 Call (renewal)',
+      arr:'Enterprise &middot; Rani Guy',
+      csmlbl:'Rani Guy',
+      change:'Jul 16 &middot; Renewal At Risk',
+      excerpt:'7/16 RG: Cloudflare renewal discussion (12:00 PM, 30 min). Robert Goldfarb: 70-80% BDR usage, ROI gap, procurement won\'t approve without attribution proof. Exploring API-side expansion to build ROI case.' },
+    { csm:'riley', health:'Healthy', account:'SAP Concur',
+      opp:'Vitally Pulse &mdash; Jul 16 Call',
+      arr:'Enterprise &middot; Riley Rogers',
+      csmlbl:'Riley Rogers',
+      change:'Jul 16 &middot; Recurring Cadence',
+      excerpt:'7/16 RR: Recurring TR cadence (12:00 PM, 60 min). Ella Teets onboarding as new SAP Concur contact alongside Stephanie Mair. Riley managing relationship. Ella has questions forthcoming.' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div style="font-weight:600;font-size:13px;">${c.account}</div>
+          <div style="font-size:11px;color:#94a3b8;">${c.opp}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_07_16() {
+  return `<div class="action-list">
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0716-1')?'done':''}" data-csm="rani" id="action-0716-1">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0716-1')?'checked':''}" onclick="toggleAction('0716-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; Hitachi Vantara &mdash; Build renewal retention plan to prevent $500K downsell</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy &middot; Hitachi shifting to new-logo focus with budget cuts. Present creative bundle with TR Contacts/MCP at flat or minimal pricing. Loop in Adrian Escobar. Target: proposal by Jul 18.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0716-2')?'done':''}" data-csm="rani" id="action-0716-2">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0716-2')?'checked':''}" onclick="toggleAction('0716-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F6A8; Cloudflare &mdash; Develop ROI proof case to unblock procurement approval</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy &middot; Robert Goldfarb flagged: 70-80% BDR users, no pipeline attribution story. Work with Mardigan to build ROI narrative (API usage + BDR pipeline impact). Explore product coverage expansion. Target: ROI deck by Jul 21.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0716-3')?'done':''}" data-csm="varun" id="action-0716-3">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0716-3')?'checked':''}" onclick="toggleAction('0716-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; OpenText &mdash; Send tailored follow-up for Kirk Koskey post-intro</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Varun Tiwari &middot; Kirk set context on OpenText OEM Sales scope before letting the pitch proceed. Send materials tailored to embedded threat intel use case and competitor install data validation for 25K+ employee, 40-product-group structure.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0716-4')?'done':''}" data-csm="pam" id="action-0716-4">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0716-4')?'checked':''}" onclick="toggleAction('0716-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F3DB; Oracle &mdash; Monitor team reorg and re-establish stakeholder map</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Pam Huck &middot; Karen and Laura both transitioned out; Joe Lampitt now reports to John Malone (recently returned). Joe hasn't spoken with John yet. Ensure new stakeholder contacts are mapped and onboarded before next sync.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0716-5')?'done':''}" data-csm="nick" id="action-0716-5">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0716-5')?'checked':''}" onclick="toggleAction('0716-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Siemens &mdash; Schedule HG Contacts demo while team is in slow Q4 period</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Nick Johnson &middot; Kaden confirmed Q4 is slow at Siemens (reorg, admin focus, minimal outbound). Good window to get a Contacts demo on the calendar. Kaden uses ZoomInfo for US; Lucia for LATAM/EMEA — HG Contacts can be differentiated as real-time-validated alternative.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0716-6')?'done':''}" data-csm="rani" id="action-0716-6">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0716-6')?'checked':''}" onclick="toggleAction('0716-6')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C4; Workday &mdash; Complete contract audit and confirm auto-renew terms with Andrea</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Rani Guy + Mardigan &middot; Two TR agreements: one auto-renews, one does not. Andrea Poljakovic is new to account — Jason left without knowledge transfer. Confirm which agreement auto-renews, align on value delivery, and schedule follow-up with Andrea to requalify.</div>
+      </div>
+    </div>
+
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No actions match the current filter.</div>`;
+}
