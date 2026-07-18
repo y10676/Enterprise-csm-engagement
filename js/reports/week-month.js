@@ -1117,8 +1117,8 @@ function monthCoverageHTML_2026_07() {
     "total": 63,
     "both": 35,
     "pulseOnly": 1,
-    "noteOnly": 3,
-    "neither": 24,
+    "noteOnly": 0,
+    "neither": 27,
     "pct": 56
   },
   {
@@ -1177,8 +1177,8 @@ function monthCoverageHTML_2026_07() {
     "total": 28,
     "both": 19,
     "pulseOnly": 0,
-    "noteOnly": 1,
-    "neither": 8,
+    "noteOnly": 0,
+    "neither": 9,
     "pct": 68
   },
   {
