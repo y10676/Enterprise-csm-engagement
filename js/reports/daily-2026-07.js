@@ -3811,3 +3811,238 @@ function dayActionsHTML_2026_07_16() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No actions match the current filter.</div>`;
 }
+
+// ─── 2026-07-17 ──────────────────────────────────────────────────────────────
+
+function dayData_2026_07_17() {
+  return {
+    calls: [
+      { ts: 'Jul 17 · 7:30 AM', csm: 'atisha', account: 'Insight',
+        note: 'Walked Insight France team through custom HG platform guide for Microsoft opp identification and ABM/sales planning workflows.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Atisha led Insight France team through a step-by-step HG platform guide to identify Microsoft opportunities and implement HG data into ABM/sales planning workflows. France team had a complex cross-regional use case; Atisha pre-built the guide before the call.' },
+      { ts: 'Jul 17 · 9:00 AM', csm: 'atisha', account: 'Apple Inc.',
+        note: 'Bi-weekly cadence: AI outreach follow-up (Francis→Juan), HG leadership summit update, early September event planning.',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Standing bi-weekly sync. HG AI head Francis reached out to Juan (Apple) after Austin meeting—awaiting response. HG leadership summit coming up (enterprise customers invited, Atisha not attending). Early-stage planning for September HG event—no confirmed logistics yet.' },
+      { ts: 'Jul 17 · 9:30 AM', csm: 'rani', account: 'Hitachi Vantara',
+        note: 'Hitachi disclosed full contract budget reduction. Team pivoting to champion-expansion strategy to recover lost value.',
+        mins: 30, health: 'Concerning',
+        nature: 'Recurring', initiator: 'Customer', purpose: 'Issue',
+        detail: 'Hitachi (Miguel Ortega) disclosed significant companywide budget cuts and delivered an unexpected full contract reduction request. Adrian Escobar (HG) surprised by the magnitude. Team is pivoting to an internal champion-expansion play: identify Hitachi employees who consume HG data but are not on the current contract, then get in front of them to rebuild contract value.' },
+    ],
+    pulses: [
+      { csm: 'atisha', account: 'Insight', health: 'Healthy',
+        note: 'Value-demo session: HG Microsoft-opp identification guide delivered to France team.' },
+      { csm: 'atisha', account: 'Apple Inc.', health: 'Healthy',
+        note: 'Bi-weekly sync: AI outreach, leadership summit, September event in early planning.' },
+      { csm: 'rani', account: 'Hitachi Vantara', health: 'Concerning',
+        note: 'Full contract reduction requested. Budget cuts companywide. Champion expansion strategy initiated.' },
+    ],
+  };
+}
+
+function dayMeta_2026_07_17() {
+  return {
+    pills: [
+      ['dot-teal',  '3 Calls'],
+      ['dot-red',   '1 Concerning'],
+      ['dot-green', '3 Pulses'],
+      ['dot-grey',  'Fri Jul 17 · 46 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (3)', 'Pulses (3)', 'Action Items (5)'],
+  };
+}
+
+function dayOverviewHTML_2026_07_17() {
+  return `<div class="section-label">Team Activity &mdash; Friday July 17, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Friday Jul 17 &mdash; 46 recordings scanned</strong> via SFDC SOQL &middot; <strong>3 confirmed calls</strong> across 2 CSMs &middot; 1 Concerning (Hitachi Vantara) &middot; 1 unconfirmed no-transcript (Westcon &times; Nick)
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>Hitachi Vantara (Rani Guy) &mdash; Full contract reduction requested.</strong> Miguel Ortega cited companywide budget cuts; full downsell now confirmed. Team pivoting to champion-expansion play to recover value. Immediate executive attention may be needed.
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Hitachi Vantara (full contract reduction, budget cuts &mdash; CRITICAL)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Insight (Microsoft-opp guide, ABM planning) &middot; Apple Inc. (bi-weekly, AI outreach, Sep event)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="riley">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event scheduled &mdash; no recording (SAP/MSIGHTS 6:30 AM PT)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="nick">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">3 events + 1 unconfirmed &mdash; no transcripts (Capgemini 3:30 AM, Infor 5:00 AM, Westcon 8:00 AM)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="divyam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">0 CSM events scheduled</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="varun">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">0 CSM events scheduled</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event scheduled &mdash; no recording (Cisco Renewal Sync 8:00 AM PT)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">0 CSM events scheduled</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_07_17() {
+  return `
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>Hitachi Vantara (Concerning):</strong> Full contract budget reduction confirmed. Miguel Ortega cited companywide cuts. Adrian Escobar surprised by magnitude. Champion-expansion strategy initiated.
+  </div>
+  <div style="background:#1c2333;border:1px solid #64748b;border-left:3px solid #64748b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#94a3b8;">
+    &#x1F4DE; <strong>Unconfirmed (no transcript):</strong> Westcon &times; Nick Johnson (8:00 AM PT, 30 min) &mdash; Recording exists but no transcript synced. Attributed to Nick via SFDC event ownership.
+  </div>`;
+}
+
+function dayPulsesHTML_2026_07_17() {
+  const cards = [
+    { csm:'rani', health:'Concerning', account:'Hitachi Vantara',
+      opp:'Vitally Pulse &mdash; Jul 17 Call',
+      arr:'Enterprise &middot; Rani Guy',
+      csmlbl:'Rani Guy',
+      change:'Jul 17 &middot; Contract Reduction',
+      excerpt:'7/17 RG: Hitachi sync (9:30 AM, 30 min). Miguel Ortega confirmed companywide budget cuts + full contract reduction request. Adrian Escobar surprised by magnitude. Strategy: identify internal HG data consumers not on contract; champion expansion play to recover value. Critical renewal risk.' },
+    { csm:'atisha', health:'Healthy', account:'Insight',
+      opp:'Vitally Pulse &mdash; Jul 17 Call',
+      arr:'Enterprise &middot; Atisha Waghela',
+      csmlbl:'Atisha Waghela',
+      change:'Jul 17 &middot; Value Demo',
+      excerpt:'7/17 AW: Ad-hoc platform session (7:30 AM, 30 min). Insight France team requested complex ABM + sales planning workflow for Microsoft opp identification. Atisha pre-built step-by-step HG platform guide. Strong value demonstration ahead of renewal.' },
+    { csm:'atisha', health:'Healthy', account:'Apple Inc.',
+      opp:'Vitally Pulse &mdash; Jul 17 Call',
+      arr:'Enterprise &middot; Atisha Waghela',
+      csmlbl:'Atisha Waghela',
+      change:'Jul 17 &middot; Bi-weekly Cadence',
+      excerpt:'7/17 AW: Apple bi-weekly sync (9:00 AM, 30 min). Francis (HG AI head) reached out to Juan post-Austin — awaiting response. HG leadership summit update (enterprise customers invited). Early planning for September HG event — logistics TBD.' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div style="font-weight:600;font-size:13px;">${c.account}</div>
+          <div style="font-size:11px;color:#94a3b8;">${c.opp}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_07_17() {
+  return `<div class="action-list">
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0717-1')?'done':''}" data-csm="rani" id="action-0717-1">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0717-1')?'checked':''}" onclick="toggleAction('0717-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F6A8; Hitachi Vantara &mdash; Escalate full contract reduction — initiate champion expansion play</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy + Adrian Escobar &middot; Miguel Ortega confirmed full reduction. Immediately identify Hitachi employees consuming HG data who are NOT on current contract. Build list and get in front of those champions (referencing "Anders" idea from call). Loop in leadership given magnitude of downsell risk.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0717-2')?'done':''}" data-csm="atisha" id="action-0717-2">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0717-2')?'checked':''}" onclick="toggleAction('0717-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Insight &mdash; Follow up to confirm France team can execute the Microsoft-opp workflow</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Atisha Waghela &middot; Custom step-by-step HG platform guide delivered in today's call. Send the guide doc as a follow-up email and ask Shahbaz to confirm the France team ran a test. Timely follow-up reinforces value before renewal conversation.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0717-3')?'done':''}" data-csm="atisha" id="action-0717-3">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0717-3')?'checked':''}" onclick="toggleAction('0717-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F34E; Apple &mdash; Monitor Francis/Juan AI outreach response and September event logistics</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Atisha Waghela &middot; Francis (HG AI head) reached out to Juan post-Austin meeting — no response yet. Flag if no reply within a week. Also track September event planning: Atisha not attending the leadership summit but should have visibility once logistics are confirmed.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0717-4')?'done':''}" data-csm="nick" id="action-0717-4">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0717-4')?'checked':''}" onclick="toggleAction('0717-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4DE; Westcon &mdash; Confirm outcome of company-counts call (no transcript synced)</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Nick Johnson &middot; Recording exists for Westcon call (8:00 AM PT, 30 min) but transcript did not sync to SFDC. Log call notes in Vitally — confirm what was discussed regarding company counts and any follow-on actions. Also check Capgemini and Infor calls (no recordings found for either).</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0717-5')?'done':''}" data-csm="pam" id="action-0717-5">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0717-5')?'checked':''}" onclick="toggleAction('0717-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Cisco &mdash; Confirm Renewal Progress Sync occurred and log outcome</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Pam Huck &middot; SFDC event "TrustRadius: Renewal Progress Sync - Cisco" was scheduled for 8:00 AM PT but no recording was found in today's scan. Confirm whether call happened, log notes in Vitally, and ensure renewal progress is documented.</div>
+      </div>
+    </div>
+
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No actions match the current filter.</div>`;
+}
