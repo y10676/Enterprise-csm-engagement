@@ -4046,3 +4046,279 @@ function dayActionsHTML_2026_07_17() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No actions match the current filter.</div>`;
 }
+
+// ─── 2026-07-20 (Monday) ───────────────────────────────────────────────────
+
+function dayData_2026_07_20() {
+  return {
+    calls: [
+      { ts: 'Jul 20 · 4:00 AM', csm: 'varun', account: 'Exclusive Networks',
+        note: 'CSV format issue resolved — column headers (Company Name, URL) fixed for partner data upload',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Issue',
+        detail: 'Robin Oakley reached out for urgent help formatting a CSV file before a partner meeting. Column headers were wrong — Varun guided him through renaming to Company Name, URL, and encoding as CSV UTF-8. Issue resolved live on call.' },
+      { ts: 'Jul 20 · 8:30 AM', csm: 'rani', account: 'Lenovo Group Ltd.',
+        note: 'RGIP platform migration — scope confirmed to Market Analyzer + Segments only; data studio blocked',
+        mins: 25, health: 'Concerning',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Issue',
+        detail: 'Platform migration discussion with Adrian Escobar and Shante (Lenovo). Rani confirmed migration scope: Market Analyzer and Segments only — Data Studio excluded due to integration blockers. High Risk account ($695K ARR): model currently not using HG data, renewal Dec 2026.' },
+      { ts: 'Jul 20 · 10:00 AM', csm: 'divyam', account: 'BILL Operations, LLC',
+        note: 'API quota issue persists post-backfill — scoring scope or MadKudu allocation decision needed',
+        mins: 30, health: 'Concerning',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Issue',
+        detail: 'Weekly sync. Backfill completed and confirmed by Thomas Greshi. API quota issue unresolved: every future model update triggers a full score recalculation, hitting MadKudu API limits. Decision needed: reduce scoring scope OR increase MadKudu allocation in SFDC. Eric to align with Ishaan on path forward.' },
+      { ts: 'Jul 20 · 11:00 AM', csm: 'varun', account: 'Alight Solutions LLC',
+        note: 'Competitor mapping refined — 44 unique products across 6 benefit categories; Salesforce connector next',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Varun reviewed competitor product mapping with Betsy Turnbaugh and Carolyn Marshall. Mapped 44 unique products from 169 vendors across 6 benefit admin subcategories (benefits admin, DC/DB admin, leave management, healthcare nav). Salesforce connector discussion deferred. Follow-up sync scheduled for next week.' },
+      { ts: 'Jul 20 · 1:00 PM', csm: 'rani', account: 'NetApp',
+        note: 'Weekly sync — new contact Megan Santiago-Gould introduced; renewal Aug 31 approaching',
+        mins: 25, health: 'Concerning',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Weekly check-in with growing NetApp stakeholder group. Megan Santiago-Gould (sales compensation and planning lead) introduced herself — growing team breadth is a positive signal. Ryan Maas also attended. Renewal due August 31 — value demonstration urgency remains high at $840K ARR.' },
+    ],
+    pulses: [
+      { csm: 'varun', account: 'Exclusive Networks', health: 'Healthy',
+        note: 'Jul 20 · VT: CSV format issue resolved live on call — Robin ready for partner meeting. No open blockers.' },
+      { csm: 'rani', account: 'Lenovo Group Ltd.', health: 'Concerning',
+        note: 'Jul 20 · RG: RGIP migration scoped to Market Analyzer + Segments. Data Studio blocked. Model not using HG data — High Risk.' },
+      { csm: 'divyam', account: 'BILL Operations, LLC', health: 'Concerning',
+        note: 'Jul 20 · DD: Backfill complete but API quota issue unresolved. Scoring scope or allocation decision needed from customer.' },
+      { csm: 'varun', account: 'Alight Solutions LLC', health: 'Healthy',
+        note: 'Jul 20 · VT: Competitor product mapping refined — 44 products across 6 subcategories. Expansion momentum building.' },
+      { csm: 'rani', account: 'NetApp', health: 'Concerning',
+        note: 'Jul 20 · RG: Weekly sync with growing stakeholder group. New contact Megan joined. Renewal Aug 31 — high urgency.' },
+    ],
+  };
+}
+
+function dayMeta_2026_07_20() {
+  return {
+    pills: [
+      ['dot-teal',   '5 Calls'],
+      ['dot-red',    '1 Concerning'],
+      ['dot-amber',  '1 Expansion'],
+      ['dot-green',  '5 Vitally Pulses'],
+      ['dot-grey',   'Mon Jul 20 · 38 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (5)', 'Pulses (5)', 'Action Items (6)'],
+  };
+}
+
+function dayOverviewHTML_2026_07_20() {
+  return `<div class="section-label">Team Activity &mdash; Monday July 20, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Monday July 20 &mdash; 38 recordings scanned</strong> via SFDC SOQL &middot; <strong>5 confirmed calls</strong> across 3 CSMs (Varun &times;2, Rani &times;2, Divyam &times;1) &middot; 1 expansion (Alight) &middot; Lenovo concerning (High Risk, platform migration)
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>Lenovo (High Risk)</strong> &mdash; RGIP platform migration blocked. Data Studio integration issue preventing full activation. Model currently not using HG data. Renewal December 2026 &mdash; $695K ARR at risk.
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>Expansion signal &mdash; Alight</strong> &mdash; Competitor product mapping refined to 44 unique products across 6 benefit admin subcategories. Salesforce connector conversation in progress. Strong use-case momentum.
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">BILL Operations (API quota issue — scoring scope decision needed)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">2</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">50m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Lenovo (High Risk, migration blocked) &middot; NetApp (renewal Aug 31)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Exclusive Networks (CSV fix, healthy) &middot; Alight (expansion, competitor mapping)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="riley">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">0 events scheduled &mdash; no recordings</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="nick">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">3 events &mdash; recordings found (Softcat, HCL) but no transcripts synced &middot; NICE: no recording</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">0 events scheduled &mdash; no recordings</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="atisha">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 events (Airtel Africa 3:00 AM PT, KPMG 10:00 AM PT) &mdash; no recordings found</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event (SlashExperts 8:30 AM PT) &mdash; recording found, no transcript synced</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_07_20() {
+  return `<div style="background:#1a1f2e;border:1px solid #334155;border-radius:6px;padding:10px 14px;margin:0 0 10px 0;font-size:12px;color:#94a3b8;">
+    <strong>&#x26A0;&#xFE0F; Unconfirmed calls (no transcript synced):</strong>
+    Nick Johnson &mdash; Softcat biweekly (6:30 AM PT, 30 min) &middot; HCL TrustRadius (7:30 AM PT, 30 min) &middot; NICE biweekly had no recording.
+    Andy Lim &mdash; SlashExperts (8:30 AM PT, 25 min) &mdash; recording exists, no transcript.
+    Atisha Waghela &mdash; Airtel Africa (3:00 AM PT) &middot; KPMG (10:00 AM PT) &mdash; no recordings found.
+  </div>`;
+}
+
+function dayPulsesHTML_2026_07_20() {
+  const cards = [
+    { csm:'varun', health:'Healthy', account:'Exclusive Networks',
+      opp:'Vitally Pulse &mdash; Jul 20 Call',
+      arr:'Enterprise &middot; Varun Tiwari',
+      csmlbl:'Varun Tiwari',
+      change:'Jul 20 &middot; Issue resolved',
+      excerpt:'Jul 20 · VT: Robin needed urgent help formatting a CSV for partner meeting — column headers wrong. Varun guided through Company Name/URL format and CSV UTF-8 encoding. Issue resolved live (4:00 AM PT, 30 min). No open blockers.' },
+    { csm:'rani', health:'Concerning', account:'Lenovo Group Ltd.',
+      opp:'Vitally Pulse &mdash; Jul 20 Call',
+      arr:'Strategic &middot; Rani Guy',
+      csmlbl:'Rani Guy',
+      change:'Jul 20 &middot; High Risk',
+      excerpt:'Jul 20 · RG: RGIP platform migration scoped to Market Analyzer + Segments only. Data Studio integration blocked — cannot integrate into customer systems. Model not using HG data. Shante joined. Renewal Dec 2026, $695K ARR (8:30 AM PT, 25 min).' },
+    { csm:'divyam', health:'Concerning', account:'BILL Operations, LLC',
+      opp:'Vitally Pulse &mdash; Jul 20 Call',
+      arr:'Enterprise &middot; Divyam Dewan',
+      csmlbl:'Divyam Dewan',
+      change:'Jul 20 &middot; Issue open',
+      excerpt:'Jul 20 · DD: Weekly sync. Backfill confirmed complete by Thomas Greshi. API quota issue persists — future model updates trigger full score recalculation hitting MadKudu limits. Decision needed: reduce scoring scope or increase allocation. Eric to align with Ishaan (10:00 AM PT, 30 min).' },
+    { csm:'varun', health:'Healthy', account:'Alight Solutions LLC',
+      opp:'Vitally Pulse &mdash; Jul 20 Call',
+      arr:'Enterprise &middot; Varun Tiwari',
+      csmlbl:'Varun Tiwari',
+      change:'Jul 20 &middot; Expansion',
+      excerpt:'Jul 20 · VT: Competitor mapping refined — 44 unique products from 169 vendors across 6 benefit subcategories (benefits admin, DC/DB, leave mgmt, healthcare nav). Salesforce connector deferred. Follow-up sync next week with Lisa, Carolyn, Augie (11:00 AM PT, 30 min).' },
+    { csm:'rani', health:'Concerning', account:'NetApp',
+      opp:'Vitally Pulse &mdash; Jul 20 Call',
+      arr:'Enterprise &middot; Rani Guy',
+      csmlbl:'Rani Guy',
+      change:'Jul 20 &middot; Some Risk',
+      excerpt:'Jul 20 · RG: Weekly sync. Megan Santiago-Gould (sales comp & planning) introduced. Ryan Maas attended. Growing stakeholder breadth is positive. Renewal Aug 31, $840K ARR — urgency high (1:00 PM PT, 25 min).' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div style="font-weight:600;font-size:13px;color:#f1f5f9;">${c.account}</div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div style="font-size:11px;color:#64748b;margin:2px 0 6px;">${c.opp}</div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_07_20() {
+  return `<div class="action-list">
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0720-1')?'done':''}" data-csm="rani" id="action-0720-1">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0720-1')?'checked':''}" onclick="toggleAction('0720-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F6A8; Lenovo &mdash; Escalate platform migration blocker and confirm market analyzer activation path</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy &middot; Data Studio integration blocked — scope narrowed to Market Analyzer + Segments. Model not using HG data ($695K ARR, renewal Dec 2026). Confirm activation timeline with Shante and Adrian. Loop in technical team on Data Studio blocker. Get clear milestone dates before next sync.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0720-2')?'done':''}" data-csm="rani" id="action-0720-2">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0720-2')?'checked':''}" onclick="toggleAction('0720-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C5; NetApp &mdash; Accelerate value story ahead of August 31 renewal</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy &middot; Renewal Aug 31, $840K ARR. Megan Santiago-Gould (new contact, sales comp/planning) joined today — build a tailored value story for her team's use case. Confirm platform usage data to share with Ryan Maas and Megan. Renewal conversation needs to start immediately.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0720-3')?'done':''}" data-csm="divyam" id="action-0720-3">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0720-3')?'checked':''}" onclick="toggleAction('0720-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F527; BILL Operations &mdash; Drive scoring scope decision with Eric and Ishaan</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Divyam Dewan &middot; Backfill complete but API quota issue will recur on every future model update. Two options: reduce scoring scope OR increase MadKudu allocation in SFDC. Eric to align with Ishaan. Divyam to document recommendation and get decision confirmed before next model update cycle.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0720-4')?'done':''}" data-csm="varun" id="action-0720-4">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0720-4')?'checked':''}" onclick="toggleAction('0720-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Alight &mdash; Share refined competitor mapping list and schedule Salesforce connector discussion</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Varun Tiwari &middot; Send finalized 44-product competitor mapping list to Lisa and Betsy by end of week. Schedule follow-up sync (next week, 3 PM Central) with Lisa, Carolyn, Augie. Put Salesforce connector back on the agenda — this was deferred from today's call.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0720-5')?'done':''}" data-csm="nick" id="action-0720-5">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0720-5')?'checked':''}" onclick="toggleAction('0720-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4DE; Nick Johnson &mdash; Log Softcat, HCL, NICE call outcomes (transcripts missing)</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Nick Johnson &middot; Softcat biweekly (6:30 AM) and HCL TrustRadius (7:30 AM) both had recordings but no transcripts synced. NICE biweekly had no recording at all. Log call outcomes in Vitally for all three accounts. Confirm NICE call occurred or reschedule.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0720-6')?'done':''}" data-csm="varun" id="action-0720-6">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0720-6')?'checked':''}" onclick="toggleAction('0720-6')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x2705; Exclusive Networks &mdash; Confirm Robin successfully uploaded corrected CSV</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Varun Tiwari &middot; Robin was in a rush for a partner meeting — send a quick follow-up to confirm the CSV uploaded correctly and the partner presentation went smoothly. Relationship touchpoint for a healthy, high-ARR account ($125K).</div>
+      </div>
+    </div>
+
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No actions match the current filter.</div>`;
+}
