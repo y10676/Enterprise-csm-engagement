@@ -1047,6 +1047,11 @@ function dayActionsHTML_2026_07_06() {
 function dayData_2026_07_07() {
   return {
     calls: [
+      { ts: 'Jul 7 · 5:15 AM', csm: 'andy', account: 'Zycus',
+        note: 'SF connector onboarding — segment creation demo, CRM enrichment config. Platform upload bug escalated; managed package install pending.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Andy walked Puneet Singh and Ishwarya (SF admin) through segment creation via CSV upload and CRM enrichment configuration (products, IT spend). A platform upload bug was escalated to support. Managed package (HG Salesforce object) install pending before next session.' },
       { ts: 'Jul 7 · 6:00 AM', csm: 'andy', account: 'SAS Institute',
         note: 'Phoenix MCP 404 errors on cloud_spend and FAI tools; customer testing API directly.',
         mins: 60, health: 'Healthy',
@@ -1153,7 +1158,7 @@ function dayData_2026_07_07() {
 function dayMeta_2026_07_07() {
   return {
     pills: [
-      ['dot-teal',   '14 Calls'],
+      ['dot-teal',   '15 Calls'],
       ['dot-red',    '1 Concerning'],
       ['dot-amber',  '3 Expansion'],
       ['dot-green',  '14 Pulses'],
@@ -1259,7 +1264,7 @@ function dayOverviewHTML_2026_07_07() {
     </div>
 
     <div class="csm-card has-calls" data-csm="andy">
-      <span class="call-badge">1 CALL</span>
+      <span class="call-badge">2 CALLS</span>
       <div class="csm-card-header">
         <div class="avatar av-grey">AL</div>
         <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
@@ -1445,6 +1450,11 @@ function dayData_2026_07_08() {
         mins: 30, health: 'Healthy',
         nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
         detail: 'Atisha and Omkar Hunuswadkar joined Rajesh Shetty (Deloitte) to review the product exclusion list for Deloitte\'s HG Data Studio configuration. Rajesh reviewed the exclusion list and confirmed application development tools (Python, TypeScript) should remain as clean products. SPC for Excel was flagged as miscategorized under web conferencing and needs remapping.' },
+      { ts: 'Jul 8 · 7:30 AM', csm: 'andy', account: 'Cockroach Labs',
+        note: 'Regular sync — no transcript. Recording exists in Weflow but speaker not verified.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Unknown', purpose: 'Check-in',
+        detail: 'No transcript synced — Andy Lim speaker presence cannot be confirmed. Inferred from Weflow recording linked to CSM calendar event.' },
       { ts: 'Jul 8 · 7:30 AM', csm: 'riley', account: 'Adobe (TrustRadius)',
         note: 'Geo dashboard rollout demo — Adobe is early access; next phase may include additional product profiles',
         mins: 30, health: 'Healthy',
@@ -1516,7 +1526,7 @@ function dayData_2026_07_08() {
 function dayMeta_2026_07_08() {
   return {
     pills: [
-      ['dot-teal',  '12 Calls'],
+      ['dot-teal',  '13 Calls'],
       ['dot-red',   '1 Concerning'],
       ['dot-amber', '3 Expansion'],
       ['dot-green', '12 Pulses'],
@@ -1566,7 +1576,7 @@ function dayOverviewHTML_2026_07_08() {
     </div>
 
     <div class="csm-card has-calls" data-csm="andy">
-      <span class="call-badge">1 CALL</span>
+      <span class="call-badge">2 CALLS</span>
       <div class="csm-card-header">
         <div class="avatar av-grey">AL</div>
         <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
@@ -1769,6 +1779,11 @@ function dayActionsHTML_2026_07_08() {
 function dayData_2026_07_09() {
   return {
     calls: [
+      { ts: 'Jul 9 · 4:30 AM', csm: 'andy', account: 'Evapure',
+        note: 'Bi-weekly sync — no transcript. Recording exists in Weflow but speaker not verified.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Unknown', purpose: 'Check-in',
+        detail: 'No transcript synced — Andy Lim speaker presence cannot be confirmed. Inferred from Weflow recording linked to CSM calendar event.' },
       { ts: 'Jul 9 · 7:30 AM', csm: 'varun', account: 'MongoDB',
         note: 'Credit pool exceeded — MongoDB at 315K+ credits vs 300K limit (since May). Two options proposed (early renewal or freeze installs). Decision deferred to Ziad (PTO until mid-Aug); renewal October.',
         mins: 30, health: 'Concerning',
@@ -1820,7 +1835,7 @@ function dayData_2026_07_09() {
 function dayMeta_2026_07_09() {
   return {
     pills: [
-      ['dot-teal', '6 Calls'],
+      ['dot-teal', '7 Calls'],
       ['dot-red',  '2 Concerning'],
       ['dot-green','6 Pulses'],
       ['dot-grey', 'Wed Jul 9 · 60 scanned'],
@@ -1933,7 +1948,7 @@ function dayOverviewHTML_2026_07_09() {
     </div>
 
     <div class="csm-card no-calls" data-csm="andy">
-      <span class="no-call-badge">0 Calls</span>
+      <span class="call-badge">1 CALL</span>
       <div class="csm-card-header">
         <div class="avatar av-grey">AL</div>
         <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
