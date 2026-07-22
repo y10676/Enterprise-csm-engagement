@@ -4322,3 +4322,404 @@ function dayActionsHTML_2026_07_20() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No actions match the current filter.</div>`;
 }
+
+// ─── 2026-07-21 ───────────────────────────────────────────────────────────────
+
+function dayData_2026_07_21() {
+  return {
+    calls: [
+      { ts: 'Jul 21 · 7:00 AM', csm: 'nick', account: 'hibob',
+        note: 'Contact Adi raised $100K ROI concerns; considering Clay alternative — churn risk',
+        mins: 15, health: 'Concerning',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Nick called to request a CheckPoint customer reference from Adi. The call shifted when Adi flagged leadership concerns about the $100K data feed ROI and an incoming Clay integration project as a potential alternative for install data. Renewal November 2026 — churn risk elevated.' },
+
+      { ts: 'Jul 21 · 8:00 AM', csm: 'nick', account: 'OPISystems',
+        note: 'SAP/Microsoft partnership strategy session with external advisor Neil Holloway',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'David Garcia-Thomas (HG) and Nick connected with Neil Holloway (external advisor with SAP executive relationships) to explore HG partnerships in the SAP and Microsoft hyperscaler ecosystem. Discussion covered joint go-to-market angles and warm introductions to SAP and Google stakeholders.' },
+
+      { ts: 'Jul 21 · 8:30 AM', csm: 'rani', account: 'Workday',
+        note: 'Monthly sync — renewal credit model and data feed pricing with Patrycja Levey',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'Customer', purpose: 'Check-in',
+        detail: 'Recurring monthly sync with Patrycja Levey (Workday). Patrycja raised questions about platform credit allocation and data feed pricing tiers ahead of renewal. Topics: credit usage model, flat file delivery options, renewal scope. No red flags — standard renewal prep discussion.' },
+
+      { ts: 'Jul 21 · 9:00 AM', csm: 'rani', account: 'Workday',
+        note: 'EBR — AI strategy with Vibhu Pratap + Susan Torrey; Yuan Fang as exec sponsor',
+        mins: 150, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Full 2.5-hour Executive Business Review with Workday leadership (Vibhu Pratap, Susan Torrey). Francis Brero (HG) opened with HG agentic AI roadmap. Key themes: Workday AI adoption maturity, Sana AI deployment, and how HG technographic data supports Workday AI strategy. Yuan Fang attended as executive sponsor. EBR action items to be logged.' },
+
+      { ts: 'Jul 21 · 9:30 AM', csm: 'pam', account: 'ADP',
+        note: 'TrustRadius GEO product walkthrough — base vs premium features, upsell opportunity',
+        mins: 45, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Pam led an educational session on TrustRadius GEO (Generative Engine Optimization) for ADP. Reviewed base GEO features in ADP\'s current plan and premium GEO add-on options. ROI framework for AI-search visibility discussed. ADP is a strong candidate for premium GEO upsell — follow-up proposal recommended.' },
+
+      { ts: 'Jul 21 · 10:00 AM', csm: 'varun', account: 'Dayforce',
+        note: 'Monthly connect — right-to-win analysis + demand intelligence expansion discussion',
+        mins: 50, health: 'Healthy',
+        nature: 'Routine', initiator: 'Customer', purpose: 'Mixed',
+        detail: 'Kory Himmer (Dayforce) opened with two items: (1) right-to-win analysis with HG data — strong fit but data gaps noted for smaller vendors; (2) demand intelligence expansion — using HG intent signals to prioritize Dayforce enterprise sales outreach. Varun and Karin Pindle (HG) co-presented the expansion framework.' },
+
+      { ts: 'Jul 21 · 11:00 AM', csm: 'riley', account: 'SAP Business Network',
+        note: 'Biweekly TrustRadius sync — Katherine transitioning teams, new contacts introduced',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'Customer', purpose: 'Check-in',
+        detail: 'Katherine is moving internally at SAP Business Network and introduced Adrian Sirolli and Stephanie as new TrustRadius relationship contacts. Invoice status reviewed (pending with GPO). Market report update discussed. Contact transition risk — Riley to onboard Adrian and Stephanie promptly to maintain engagement continuity.' },
+
+      { ts: 'Jul 21 · 11:00 AM', csm: 'varun', account: 'Zendesk',
+        note: 'Account Snapshot Intelligence demo — key contact Rodrigo Stefan absent',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Varun presented the Account Snapshot Intelligence use case to Zendesk contacts (Chloe Portier, Charles Hawkins, Leopold). Key stakeholder Rodrigo Stefan did not accept the invite and was absent. Partial demo delivered to available attendees. Full presentation with Rodrigo required to advance adoption.' },
+
+      { ts: 'Jul 21 · 11:30 AM', csm: 'atisha', account: 'Kyndryl',
+        note: 'MCP office hours — Project Phoenix: customer intelligence brief agent using HG MCP',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'First HG MCP office hours with Kyndryl Consult. Augie Buettner (HG) hosted; Atisha attended as CSM. Kyndryl is building "Project Phoenix" — a customer intelligence brief agent ingesting CRM data, external news, and telemetry via HG MCP. Strong production adoption signal. Follow-up session to be scheduled.' },
+
+      { ts: 'Jul 21 · 12:00 PM', csm: 'divyam', account: 'Quadient',
+        note: 'Monthly sync — IDL lead delivery alignment, nurture email review, TrustRadius widget',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Divyam opened with IDL campaign status. Topics: lead delivery alignment (progressing), nurture email content review pending approval, TrustRadius review widget embed on Quadient website, and upcoming brand campaign timeline. No blockers — steady IDL program progress.' },
+    ],
+
+    pulses: [
+      { csm: 'nick', health: 'Concerning', account: 'hibob',
+        opp: 'Vitally Pulse — Jul 21 Call',
+        arr: 'Enterprise · Nick Johnson', csmlbl: 'Nick Johnson',
+        change: 'Jul 21 · Concerning',
+        excerpt: 'Jul 21 NJ: Contact Adi raised $100K ROI concerns during reference call — leadership questioning HG data feed value vs. Clay alternative. Churn risk elevated. Renewal Nov 2026. Immediate value conversation + executive alignment needed (7:00 AM, 15 min).' },
+
+      { csm: 'nick', health: 'Healthy', account: 'OPISystems',
+        opp: 'Vitally Pulse — Jul 21 Call',
+        arr: 'Enterprise · Nick Johnson', csmlbl: 'Nick Johnson',
+        change: 'Jul 21 · Healthy',
+        excerpt: 'Jul 21 NJ: SAP partnership strategy call with advisor Neil Holloway. Exploring HG joint GTM in SAP/Microsoft ecosystem. Expansion opportunity identified (8:00 AM, 30 min).' },
+
+      { csm: 'rani', health: 'Healthy', account: 'Workday',
+        opp: 'Vitally Pulse — Jul 21 Call',
+        arr: 'Enterprise · Rani Guy', csmlbl: 'Rani Guy',
+        change: 'Jul 21 · Healthy',
+        excerpt: 'Jul 21 RG: Monthly sync (8:30 AM, 30 min) — renewal credit model discussion with Patrycja Levey. EBR (9:00 AM, 150 min) — executive review with Vibhu Pratap + Susan Torrey; HG AI roadmap presented; Yuan Fang as exec sponsor.' },
+
+      { csm: 'pam', health: 'Healthy', account: 'ADP',
+        opp: 'Vitally Pulse — Jul 21 Call',
+        arr: 'Enterprise · Pam Huck', csmlbl: 'Pam Huck',
+        change: 'Jul 21 · Healthy',
+        excerpt: 'Jul 21 PH: TrustRadius GEO product walkthrough (9:30 AM, 45 min). Base vs. premium GEO reviewed. ADP strong upsell candidate for premium GEO tier — follow-up proposal recommended.' },
+
+      { csm: 'varun', health: 'Healthy', account: 'Dayforce',
+        opp: 'Vitally Pulse — Jul 21 Call',
+        arr: 'Enterprise · Varun Tiwari', csmlbl: 'Varun Tiwari',
+        change: 'Jul 21 · Healthy',
+        excerpt: 'Jul 21 VT: Monthly connect (10:00 AM, 50 min). Right-to-win analysis (data gaps for smaller vendors) + demand intelligence expansion use case presented. Karin Pindle co-presented. Follow-up on data gaps + use case proposal needed.' },
+
+      { csm: 'riley', health: 'Healthy', account: 'SAP Business Network',
+        opp: 'Vitally Pulse — Jul 21 Call',
+        arr: 'Enterprise · Riley Rogers', csmlbl: 'Riley Rogers',
+        change: 'Jul 21 · Healthy',
+        excerpt: 'Jul 21 RR: Biweekly TrustRadius sync (11:00 AM, 30 min). Katherine transitioning internally — introduced Adrian Sirolli + Stephanie as new contacts. Invoice pending GPO. Riley to onboard new contacts to maintain engagement continuity.' },
+
+      { csm: 'varun', health: 'Healthy', account: 'Zendesk',
+        opp: 'Vitally Pulse — Jul 21 Call',
+        arr: 'Enterprise · Varun Tiwari', csmlbl: 'Varun Tiwari',
+        change: 'Jul 21 · Healthy',
+        excerpt: 'Jul 21 VT: Account Snapshot Intelligence demo (11:00 AM, 30 min). Key contact Rodrigo Stefan absent. Partial demo with Chloe Portier + Charles Hawkins. Follow-up with Rodrigo required to advance use case adoption.' },
+
+      { csm: 'atisha', health: 'Healthy', account: 'Kyndryl',
+        opp: 'Vitally Pulse — Jul 21 Call',
+        arr: 'Enterprise · Atisha Waghela', csmlbl: 'Atisha Waghela',
+        change: 'Jul 21 · Healthy',
+        excerpt: 'Jul 21 AW: MCP office hours (11:30 AM, 30 min). Kyndryl Consult building "Project Phoenix" — customer intelligence agent via HG MCP. Strong production adoption signal. First of ongoing sessions.' },
+
+      { csm: 'divyam', health: 'Healthy', account: 'Quadient',
+        opp: 'Vitally Pulse — Jul 21 Call',
+        arr: 'Enterprise · Divyam Dewan', csmlbl: 'Divyam Dewan',
+        change: 'Jul 21 · Healthy',
+        excerpt: 'Jul 21 DD: Monthly sync (12:00 PM, 30 min). IDL lead delivery progressing; nurture email pending approval; TrustRadius widget embed + brand campaign update discussed. No blockers.' },
+    ],
+  };
+}
+
+function dayMeta_2026_07_21() {
+  return {
+    pills: [
+      ['dot-teal',  '10 Calls'],
+      ['dot-red',   '1 Concerning'],
+      ['dot-amber', '3 Expansion'],
+      ['dot-green', '9 Vitally Pulses'],
+      ['dot-grey',  'Tue Jul 21 · 67 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (10)', 'Pulses (9)', 'Action Items (6)']
+  };
+}
+
+function dayOverviewHTML_2026_07_21() {
+  return `<div class="section-label">Team Activity &mdash; Tuesday July 21, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Tuesday Jul 21 &mdash; 67 recordings scanned</strong> via SFDC SOQL &middot; <strong>10 confirmed calls</strong> across 7 CSMs &middot; 1 Concerning (hibob churn risk) &middot; 3 Expansion signals (Kyndryl MCP, ADP GEO, Dayforce demand intelligence)
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>hibob (Nick Johnson) &mdash; Churn Risk:</strong> Contact Adi raised concerns about $100K data feed ROI — leadership questioning value vs. Clay as an alternative install data source. Renewal November 2026. Immediate executive alignment and ROI conversation required.
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>Expansion signals:</strong> Kyndryl (Project Phoenix — production HG MCP agent under development) &middot; ADP (premium GEO upsell opportunity surfaced) &middot; Dayforce (demand intelligence use case expansion discussion)
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">SAP Business Network (contact transition — Katherine moving teams, new contacts introduced)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">45m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">hibob (&#x26A0;&#xFE0F; churn risk — $100K ROI concern, Clay alternative) &middot; OPISystems (SAP partnership expansion)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Quadient (IDL campaign sync — lead delivery progressing, nurture email pending)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">180m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Workday Monthly Sync (renewal credit model) &middot; Workday EBR (2.5hr executive review, Yuan Fang present)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">80m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Dayforce (demand intelligence expansion) &middot; Zendesk (Account Snapshot demo, Rodrigo absent)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="pam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">45m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">ADP (TrustRadius GEO walkthrough — premium GEO upsell opportunity)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Kyndryl (MCP office hours — Project Phoenix agent build, strong expansion signal)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event scheduled &mdash; no recording synced (Veracode biweekly)</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_07_21() {
+  return `<div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>hibob (Nick Johnson) &mdash; Churn Risk:</strong> Contact Adi flagged $100K data feed ROI concerns and leadership interest in Clay as an alternative for install data. Renewal November 2026 — proactive executive escalation required.
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>Expansion (3):</strong> Kyndryl &mdash; Project Phoenix HG MCP agent in active development (Atisha) &middot; ADP &mdash; premium GEO upsell opportunity identified (Pam) &middot; Dayforce &mdash; demand intelligence use case expansion in scope (Varun)
+  </div>
+  <div style="background:#111827;border:1px solid #374151;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#94a3b8;">
+    &#x1F4CB; <strong>Unconfirmed (3, no transcript):</strong> Varun &times; Absolute Industrial Supplies (6:30 AM, Kickstart the Day, 15 min) &middot; Varun &times; Iron Mountain (8:30 AM, Fortnightly Sync, 30 min) &middot; Atisha &times; Apple (8:30 AM, Strategy &amp; Planning, 30 min)
+  </div>`;
+}
+
+function dayPulsesHTML_2026_07_21() {
+  const cards = [
+    { csm: 'nick', health: 'Concerning', account: 'hibob',
+      opp: 'Vitally Pulse &mdash; Jul 21 Call',
+      arr: 'Enterprise &middot; Nick Johnson', csmlbl: 'Nick Johnson',
+      change: 'Jul 21 &middot; Concerning',
+      excerpt: 'Jul 21 NJ: Contact Adi raised $100K ROI concerns during reference call &mdash; leadership questioning HG data feed value vs. Clay alternative. Churn risk elevated. Renewal Nov 2026. Immediate value conversation + exec alignment needed (7:00 AM, 15 min).' },
+
+    { csm: 'nick', health: 'Healthy', account: 'OPISystems',
+      opp: 'Vitally Pulse &mdash; Jul 21 Call',
+      arr: 'Enterprise &middot; Nick Johnson', csmlbl: 'Nick Johnson',
+      change: 'Jul 21 &middot; Healthy',
+      excerpt: 'Jul 21 NJ: SAP partnership strategy call with advisor Neil Holloway. Exploring HG joint GTM in SAP/Microsoft ecosystem. Expansion opportunity identified (8:00 AM, 30 min).' },
+
+    { csm: 'rani', health: 'Healthy', account: 'Workday',
+      opp: 'Vitally Pulse &mdash; Jul 21 Call',
+      arr: 'Enterprise &middot; Rani Guy', csmlbl: 'Rani Guy',
+      change: 'Jul 21 &middot; Healthy',
+      excerpt: 'Jul 21 RG: Monthly sync (8:30 AM, 30 min) &mdash; renewal credit model discussion with Patrycja Levey. EBR (9:00 AM, 150 min) &mdash; executive review with Vibhu Pratap + Susan Torrey; HG AI roadmap presented; Yuan Fang as exec sponsor.' },
+
+    { csm: 'pam', health: 'Healthy', account: 'ADP',
+      opp: 'Vitally Pulse &mdash; Jul 21 Call',
+      arr: 'Enterprise &middot; Pam Huck', csmlbl: 'Pam Huck',
+      change: 'Jul 21 &middot; Healthy',
+      excerpt: 'Jul 21 PH: TrustRadius GEO product walkthrough (9:30 AM, 45 min). Base vs. premium GEO reviewed. ADP strong candidate for premium GEO upsell &mdash; follow-up proposal recommended.' },
+
+    { csm: 'varun', health: 'Healthy', account: 'Dayforce',
+      opp: 'Vitally Pulse &mdash; Jul 21 Call',
+      arr: 'Enterprise &middot; Varun Tiwari', csmlbl: 'Varun Tiwari',
+      change: 'Jul 21 &middot; Healthy',
+      excerpt: 'Jul 21 VT: Monthly connect (10:00 AM, 50 min). Right-to-win analysis (data gaps for smaller vendors) + demand intelligence expansion use case. Karin Pindle co-presented. Follow-up on gaps + proposal needed.' },
+
+    { csm: 'riley', health: 'Healthy', account: 'SAP Business Network',
+      opp: 'Vitally Pulse &mdash; Jul 21 Call',
+      arr: 'Enterprise &middot; Riley Rogers', csmlbl: 'Riley Rogers',
+      change: 'Jul 21 &middot; Healthy',
+      excerpt: 'Jul 21 RR: Biweekly TrustRadius sync (11:00 AM, 30 min). Katherine transitioning &mdash; introduced Adrian Sirolli + Stephanie as new contacts. Invoice pending GPO. Riley to onboard new contacts promptly to maintain continuity.' },
+
+    { csm: 'varun', health: 'Healthy', account: 'Zendesk',
+      opp: 'Vitally Pulse &mdash; Jul 21 Call',
+      arr: 'Enterprise &middot; Varun Tiwari', csmlbl: 'Varun Tiwari',
+      change: 'Jul 21 &middot; Healthy',
+      excerpt: 'Jul 21 VT: Account Snapshot Intelligence demo (11:00 AM, 30 min). Key contact Rodrigo Stefan absent. Partial demo with Chloe Portier + Charles Hawkins. Follow-up with Rodrigo needed to advance adoption.' },
+
+    { csm: 'atisha', health: 'Healthy', account: 'Kyndryl',
+      opp: 'Vitally Pulse &mdash; Jul 21 Call',
+      arr: 'Enterprise &middot; Atisha Waghela', csmlbl: 'Atisha Waghela',
+      change: 'Jul 21 &middot; Healthy',
+      excerpt: 'Jul 21 AW: MCP office hours (11:30 AM, 30 min). Kyndryl Consult building "Project Phoenix" &mdash; customer intelligence agent via HG MCP. Strong production adoption signal. First of ongoing sessions.' },
+
+    { csm: 'divyam', health: 'Healthy', account: 'Quadient',
+      opp: 'Vitally Pulse &mdash; Jul 21 Call',
+      arr: 'Enterprise &middot; Divyam Dewan', csmlbl: 'Divyam Dewan',
+      change: 'Jul 21 &middot; Healthy',
+      excerpt: 'Jul 21 DD: Monthly sync (12:00 PM, 30 min). IDL lead delivery progressing; nurture email pending approval; TrustRadius widget embed + brand campaign update discussed. No blockers.' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div class="pulse-account">${c.account}</div>
+          <div style="font-size:11px;color:#94a3b8;">${c.opp}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_07_21() {
+  return `<div class="action-list">
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0721-1')?'done':''}" data-csm="nick" id="action-0721-1">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0721-1')?'checked':''}" onclick="toggleAction('0721-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F6A8; hibob &mdash; Initiate executive ROI conversation and renewal risk mitigation plan</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Nick Johnson &middot; Contact Adi raised $100K data feed ROI concerns and flagged Clay as an alternative. Renewal November 2026. Build a concrete ROI story using hibob's actual platform outcomes. Loop in leadership if needed. Do not let this sit — churn risk is real.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0721-2')?'done':''}" data-csm="rani" id="action-0721-2">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0721-2')?'checked':''}" onclick="toggleAction('0721-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Workday EBR &mdash; Log action items and send follow-up summary to Vibhu Pratap + Susan Torrey</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy &middot; 2.5-hour EBR concluded with exec team. Log all action items in Vitally and send a structured follow-up email summarizing HG AI roadmap commitments and agreed next steps. Yuan Fang was present as exec sponsor &mdash; coordinate on any executive-level commitments made.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0721-3')?'done':''}" data-csm="riley" id="action-0721-3">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0721-3')?'checked':''}" onclick="toggleAction('0721-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F91D; SAP Business Network &mdash; Formally onboard Adrian Sirolli + Stephanie as new TrustRadius contacts</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Riley Rogers &middot; Katherine is transitioning internally &mdash; introduced Adrian Sirolli and Stephanie in today's biweekly. Send a formal welcome email to both new contacts with TrustRadius program overview, GPO invoice status, and market report update. Ensure continuity before Katherine fully steps away.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0721-4')?'done':''}" data-csm="varun" id="action-0721-4">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0721-4')?'checked':''}" onclick="toggleAction('0721-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CA; Dayforce &mdash; Resolve right-to-win data gaps and deliver demand intelligence use case proposal</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Varun Tiwari &middot; Kory flagged data gaps for smaller vendors in the right-to-win analysis. Diagnose gaps and provide a resolution timeline. Separately, formalize the demand intelligence use case proposal (HG intent signals for Dayforce's enterprise sales team prioritization). Coordinate with Karin Pindle on next steps.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0721-5')?'done':''}" data-csm="atisha" id="action-0721-5">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0721-5')?'checked':''}" onclick="toggleAction('0721-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F916; Kyndryl &mdash; Schedule Project Phoenix follow-up and document MCP use case</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Atisha Waghela &middot; First HG MCP office hours session complete. Kyndryl Consult is actively building Project Phoenix (customer intelligence brief agent). Schedule the next session with Augie Buettner. Document the use case in Vitally as an expansion signal &mdash; this is a strong reference candidate if successful.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0721-6')?'done':''}" data-csm="pam" id="action-0721-6">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0721-6')?'checked':''}" onclick="toggleAction('0721-6')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; ADP &mdash; Send premium GEO feature summary and upsell proposal</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Pam Huck &middot; GEO walkthrough completed today. ADP is a strong premium GEO candidate. Send a written summary of premium GEO features reviewed, ROI framework for AI-search visibility, and proposed next steps for upsell conversation. Include case studies or reference examples if available.</div>
+      </div>
+    </div>
+
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No actions match the current filter.</div>`;
+}
