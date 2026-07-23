@@ -4738,3 +4738,387 @@ function dayActionsHTML_2026_07_21() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No actions match the current filter.</div>`;
 }
+
+// ─────────────────────────────────────────────────────────────────────────────
+// 2026-07-22  Wednesday  |  80 recordings scanned  |  14 confirmed calls
+// ─────────────────────────────────────────────────────────────────────────────
+
+function dayData_2026_07_22() {
+  return {
+    calls: [
+      { ts: 'Jul 22 · 1:00 AM', csm: 'nick', account: 'Softcat',
+        note: 'SMB strategy session — Nick facilitates with Sara Ewen, David Garcia Thomas, Jade Parry.',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Nick facilitates Softcat SMB strategy session with Sara Ewen, David Garcia Thomas, and Jade Parry. Topics covered SMB go-to-market approach and account planning.' },
+      { ts: 'Jul 22 · 5:00 AM', csm: 'andy', account: 'SAS Institute',
+        note: 'New HG UI overview for Steven White — expanding platform use cases to new departments.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Andy Lim and Augie Buettner walked Steven White (SAS) through the new HG platform UI. Steven is a heavy user doing account planning and is exploring expansion to new use cases and departments (new go-to-market team under Neil).' },
+      { ts: 'Jul 22 · 6:00 AM', csm: 'atisha', account: 'Deloitte',
+        note: 'Data quality review — Deloitte leadership requesting stats on noise removal for internal reporting.',
+        mins: 25, health: 'Concerning',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Issue',
+        detail: 'Atisha shares child account data file to S3 data feed; Rajesh Shetty (Deloitte US, Mumbai) reviews Excel showing clean vs dirty data sets and asks for quantified stats on noise removed. Leadership needs these metrics for internal justification — stats not yet prepared.' },
+      { ts: 'Jul 22 · 7:00 AM', csm: 'riley', account: 'IBM',
+        note: 'Biweekly TR sync — Buyer\'s Choice gift card campaign, multi-product review links.',
+        mins: 45, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Riley creates multi-product review links for IBM. IBM running $50 gift card referral campaign via client voice team colleagues to qualify for Buyer\'s Choice; deadline Sept 10. Call includes Ruxandra Marin and MihaelaN (IBM Romania).' },
+      { ts: 'Jul 22 · 7:30 AM', csm: 'nick', account: 'Westcon',
+        note: 'Company counts discussion — Victoria Thoman (Westcon) and Augie Buettner on the call.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Check-in',
+        detail: 'Nick Johnson joins with Augie Buettner and Victoria Thoman (Westcon) to discuss company count data. Opening involved personal conversation; business topics focused on specific account universe and company count accuracy.' },
+      { ts: 'Jul 22 · 8:30 AM', csm: 'andy', account: 'SAS Institute',
+        note: 'EMEA weekly sync — second Andy call with Steven today; RGIP platform discussion for separate budget.',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Andy\'s second call with Steven White (SAS) today. Anna (going on maternity leave Aug 7) also present. Andy notes Steven is exploring RGIP platform as a separate budget/license expansion beyond the existing HG data subscription. Andy to facilitate RGIP access for Steven.' },
+      { ts: 'Jul 22 · 9:00 AM', csm: 'divyam', account: 'Thomson Reuters',
+        note: 'Renewal confirmed — Joan (TR procurement) confirms 2-year renewal, no change in scope.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Check-in',
+        detail: 'Joan (Thomson Reuters procurement) confirms TR intends to renew for 2 years with no change in scope. Joan was not previously looped in on Divyam as the new account contact (replacing Arun Jam). Augie Buettner and Max Shaw also present. Divyam to follow up with Ziad on final terms.' },
+      { ts: 'Jul 22 · 9:00 AM', csm: 'riley', account: 'SAP SuccessFactors',
+        note: 'Progress call — events discussion, review video campaign, Riley introduces new events manager Angel Carvalho.',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Riley introduces Angel Carvalho as new events manager. Discussion covers SuccessFactors review video email campaign (Rajiv, Todd, marketing controller DeepD) and preparation for an upcoming SAP event. SOW submitted for MAX support at Adobe MAX in November.' },
+      { ts: 'Jul 22 · 9:30 AM', csm: 'riley', account: 'Paylocity',
+        note: 'Monthly TR sync — vendor portal follow-up with Olivia, TechCares reminder, GeoDashboard registration.',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Riley monthly sync with Matt Doyle and Olivia (Paylocity). Vendor portal follow-up — Olivia is now up to speed. TechCares reminder sent. GeoDashboard registration confirmed. Riley\'s wife expecting first baby girl Dec 13.' },
+      { ts: 'Jul 22 · 10:00 AM', csm: 'atisha', account: 'Apple',
+        note: 'Data delivery confusion — Simone waiting on S3 data feed; test file date dispute (2025 vs 2026 delivery).',
+        mins: 30, health: 'Concerning',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Issue',
+        detail: 'Simone Amorim (Apple) and Adi join to resolve confusion over child account data delivery to S3. Adi raises email exchange with Giuseppe about test file dates — 2025 test file vs expected 2026 monthly delivery. Atisha offers SharePoint link as alternative access point.' },
+      { ts: 'Jul 22 · 10:00 AM', csm: 'divyam', account: 'Informatica',
+        note: 'Weekly sync — MSA red-line status, renewal early August, ad-hoc data re-feed completed.',
+        mins: 30, health: 'Concerning',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Heather Quesnel (Informatica) asks about MSA red-line status — Informatica procurement expects same T&Cs as January (no red lines), but legal review still pending. Renewal date is early August. Divyam confirms July ad-hoc data re-feed for Hemra\'s updated account list is complete.' },
+      { ts: 'Jul 22 · 10:00 AM', csm: 'riley', account: 'Adobe',
+        note: 'Success call — Buyer\'s Choice tracker for 3 products, TechCares nomination done, SOW for Adobe MAX.',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Buyer\'s Choice tracker: 3 Adobe products need support (Real-Time CDP, FrameIO, Adobe Commerce — need 4/4/2 more reviews; deadline Sept 26). TechCares nomination completed. SOW submitted for MAX support at Adobe MAX November. GEO custom questions update discussed with Alyson.' },
+      { ts: 'Jul 22 · 10:30 AM', csm: 'pam', account: 'F5',
+        note: 'Bi-weekly TR sync — Top Rated post, TechCares renewal, budget season calendar coordination.',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Pam syncs with Sherry (F5) on Top Rated post (live and performing well) and TechCares renewal (Pam to resubmit). Budget season prep — Pam chasing Pascal to get access to Sarah\'s calendar. Sherry managing family situation (mother\'s shoulder injury).' },
+      { ts: 'Jul 22 · 10:30 AM', csm: 'varun', account: 'Datadog',
+        note: 'TR sync — GeoDashboard early access registered for Datadog, market report survey deadline.',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Varun introduces GeoDashboard (LLM crawl analytics and TrustRadius AI citations) to Caio Dicenzo (Datadog). Datadog registered for early access at no additional cost. Caio owes market report survey (agreed 7-day deadline). Scott (TR) on PTO — leads summary to follow.' },
+    ],
+    pulses: [
+      { csm: 'nick',   account: 'Softcat',          health: 'Healthy',    note: 'SMB strategy session — go-to-market planning with Sara Ewen, David Garcia Thomas, Jade Parry.' },
+      { csm: 'andy',   account: 'SAS Institute',     health: 'Healthy',    note: 'New HG UI overview — Steven White exploring expansion to new departments; RGIP platform also discussed.' },
+      { csm: 'atisha', account: 'Deloitte',           health: 'Concerning', note: 'Data quality review — Deloitte leadership needs quantified noise-removal stats for internal reporting.' },
+      { csm: 'riley',  account: 'IBM',               health: 'Healthy',    note: 'Biweekly TR sync — Buyer\'s Choice gift card campaign active, multi-product review links created.' },
+      { csm: 'nick',   account: 'Westcon',            health: 'Healthy',    note: 'Company counts discussion — Victoria Thoman present; specific account universe data requested.' },
+      { csm: 'andy',   account: 'SAS Institute',     health: 'Healthy',    note: 'EMEA weekly sync — RGIP platform expansion discussed as separate budget/license for Steven White.' },
+      { csm: 'divyam', account: 'Thomson Reuters',   health: 'Healthy',    note: 'Renewal confirmed — Joan (procurement) confirms 2-year renewal, no change in scope; Divyam introduced as new contact.' },
+      { csm: 'riley',  account: 'SAP SuccessFactors',health: 'Healthy',    note: 'Progress call — event prep, review video campaign, new events manager Angel Carvalho introduced.' },
+      { csm: 'riley',  account: 'Paylocity',          health: 'Healthy',    note: 'Monthly TR sync — vendor portal, TechCares, GeoDashboard registration confirmed.' },
+      { csm: 'atisha', account: 'Apple',              health: 'Concerning', note: 'Data delivery issue — S3 data feed confusion, test file date dispute (2025 vs 2026 delivery).' },
+      { csm: 'divyam', account: 'Informatica',        health: 'Concerning', note: 'Weekly sync — MSA legal review pending, renewal early August; re-feed for Hemra\'s accounts complete.' },
+      { csm: 'riley',  account: 'Adobe',              health: 'Healthy',    note: 'Success call — Buyer\'s Choice tracker, TechCares done, Adobe MAX SOW submitted.' },
+      { csm: 'pam',    account: 'F5',                 health: 'Healthy',    note: 'Bi-weekly TR sync — Top Rated live, TechCares to resubmit, budget season calendar coordination.' },
+      { csm: 'varun',  account: 'Datadog',            health: 'Healthy',    note: 'TR sync — GeoDashboard early access registered for Datadog at no cost; market report survey agreed.' },
+    ],
+  };
+}
+
+function dayMeta_2026_07_22() {
+  return {
+    pills: [
+      ['dot-teal',  '14 Calls'],
+      ['dot-red',   '3 Concerning'],
+      ['dot-amber', '4 Expansion'],
+      ['dot-green', '14 Pulses'],
+      ['dot-grey',  'Wed Jul 22 · 80 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (14)', 'Pulses (14)', 'Action Items (7)'],
+  };
+}
+
+function dayOverviewHTML_2026_07_22() {
+  return `<div class="section-label">Team Activity &mdash; Wednesday July 22, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Wednesday July 22 &mdash; 80 recordings scanned</strong> via SFDC SOQL &middot; <strong>14 confirmed calls</strong> across 7 CSMs &middot; 3 Concerning &middot; 4 Expansion signals &middot; Thomson Reuters 2-yr renewal confirmed
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>3 Concerning signals:</strong> <strong>Informatica</strong> — MSA legal review pending, renewal early August &middot; <strong>Deloitte</strong> — leadership needs data quality stats not yet prepared &middot; <strong>Apple</strong> — S3 data delivery date confusion (2025 test vs 2026 delivery)
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>4 Expansion signals:</strong> <strong>SAS Institute ×2</strong> (Andy — new UI overview + RGIP as separate budget) &middot; <strong>Adobe</strong> (Riley — Buyer's Choice momentum + Adobe MAX SOW) &middot; <strong>Datadog</strong> (Varun — GeoDashboard early access)
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">4 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">4</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">4</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">135m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">IBM (biweekly TR, Buyer's Choice) &middot; SAP SuccessFactors (event prep) &middot; Paylocity (monthly) &middot; Adobe (Buyer's Choice + MAX SOW)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Softcat (SMB strategy session 1am PT) &middot; Westcon (company counts)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Thomson Reuters (2-yr renewal confirmed) &middot; Informatica (MSA legal pending &#x26A0;)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Datadog (GeoDashboard early access registered)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="pam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">F5 (bi-weekly TR, Top Rated live, TechCares resubmit)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">2</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">55m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Deloitte (data quality stats needed &#x26A0;) &middot; Apple (S3 delivery confusion &#x26A0;)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="andy">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">SAS Institute (new UI overview, RGIP expansion) &middot; SAS Institute EMEA (weekly sync)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="rani">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">6 events scheduled &mdash; no recordings with transcripts (ServiceNow, Google ×2, Lenovo ×2, Cisco, Workday — all unconfirmed)</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_07_22() {
+  return `<div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>Informatica</strong> — MSA legal review still pending; renewal date is early August. Escalate timeline urgently.
+  </div>
+  <div style="background:#1c1117;border:1px solid #f97316;border-left:3px solid #f97316;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fdba74;">
+    &#x26A0;&#xFE0F; <strong>7 unconfirmed calls</strong> (no transcript): Xero/Divyam &middot; Zendesk/Varun &middot; Autodesk/Varun &middot; Cockroach Labs/Andy (recording failed) &middot; F5 Sync/Pam &middot; Optiv/Atisha &middot; Lenovo/Rani
+  </div>
+  <div class="calls-table"><!-- auto-table rendered by core.js from dayData --></div>`;
+}
+
+function dayPulsesHTML_2026_07_22() {
+  const cards = [
+    { csm:'riley',  health:'Healthy',    account:'IBM',               opp:'Vitally Pulse — Jul 22 Call',
+      arr:'Enterprise · Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Jul 22 · Biweekly TR Sync',
+      excerpt:'RR: IBM biweekly sync (Jul 22, 7:00 AM, 45 min). Buyer\'s Choice gift card campaign active — $50 gift cards via client voice team, deadline Sept 10. Multi-product review links created for IBM.' },
+    { csm:'riley',  health:'Healthy',    account:'SAP SuccessFactors', opp:'Vitally Pulse — Jul 22 Call',
+      arr:'Enterprise · Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Jul 22 · Progress Call',
+      excerpt:'RR: SAP SuccessFactors progress call (Jul 22, 9:00 AM, 30 min). Events discussion, review video campaign with Rajiv/Todd/DeepD. Angel Carvalho introduced as new events manager. SOW submitted for Adobe MAX November support.' },
+    { csm:'riley',  health:'Healthy',    account:'Paylocity',          opp:'Vitally Pulse — Jul 22 Call',
+      arr:'Enterprise · Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Jul 22 · Monthly TR Sync',
+      excerpt:'RR: Paylocity monthly TR sync (Jul 22, 9:30 AM, 30 min). Vendor portal updated — Olivia is up to speed. TechCares reminder sent. GeoDashboard registration confirmed.' },
+    { csm:'riley',  health:'Healthy',    account:'Adobe',              opp:'Vitally Pulse — Jul 22 Call',
+      arr:'Enterprise · Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Jul 22 · Success Call',
+      excerpt:'RR: Adobe success call (Jul 22, 10:00 AM, 30 min). Buyer\'s Choice: 3 products need reviews (Real-Time CDP, FrameIO, Commerce — deadline Sept 26). TechCares nomination done. Adobe MAX SOW submitted.' },
+    { csm:'nick',   health:'Healthy',    account:'Softcat',            opp:'Vitally Pulse — Jul 22 Call',
+      arr:'Enterprise · Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Jul 22 · SMB Strategy',
+      excerpt:'NJ: Softcat SMB strategy session (Jul 22, 1:00 AM, 30 min). Nick facilitates with Sara Ewen, David Garcia Thomas (unwell, Nick driving), and Jade Parry. SMB go-to-market planning.' },
+    { csm:'nick',   health:'Healthy',    account:'Westcon',            opp:'Vitally Pulse — Jul 22 Call',
+      arr:'Enterprise · Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Jul 22 · Company Counts',
+      excerpt:'NJ: Westcon company counts discussion (Jul 22, 7:30 AM, 30 min). Victoria Thoman (Westcon) and Augie Buettner on call. Customer-initiated — specific account universe data requested.' },
+    { csm:'divyam', health:'Healthy',    account:'Thomson Reuters',    opp:'Vitally Pulse — Jul 22 Call',
+      arr:'Enterprise · Divyam Dewan', csmlbl:'Divyam Dewan',
+      change:'Jul 22 · Renewal Confirmed',
+      excerpt:'DD: Thomson Reuters renewal confirmed (Jul 22, 9:00 AM, 30 min). Joan (procurement) confirms 2-year renewal, no change in scope. Reconnecting after Arun Jam departure; Divyam introduced as new contact to Joan.' },
+    { csm:'divyam', health:'Concerning', account:'Informatica',        opp:'Vitally Pulse — Jul 22 Call',
+      arr:'Enterprise · Divyam Dewan', csmlbl:'Divyam Dewan',
+      change:'Jul 22 · Weekly Sync',
+      excerpt:'DD: Informatica weekly sync (Jul 22, 10:00 AM, 30 min). MSA legal review still pending — renewal date early August. Informatica procurement expects no red lines but legal not signed. Ad-hoc data re-feed for Hemra\'s accounts complete.' },
+    { csm:'atisha', health:'Concerning', account:'Deloitte',           opp:'Vitally Pulse — Jul 22 Call',
+      arr:'Enterprise · Atisha Waghela', csmlbl:'Atisha Waghela',
+      change:'Jul 22 · Data Quality Review',
+      excerpt:'AW: Deloitte connect (Jul 22, 6:00 AM, 25 min). Rajesh Shetty (Deloitte US) reviewing clean vs dirty data sets in Excel. Needs quantified noise-removal stats for leadership internal reporting — stats not yet prepared.' },
+    { csm:'atisha', health:'Concerning', account:'Apple',              opp:'Vitally Pulse — Jul 22 Call',
+      arr:'Enterprise · Atisha Waghela', csmlbl:'Atisha Waghela',
+      change:'Jul 22 · Data Delivery Issue',
+      excerpt:'AW: Apple data delivery call (Jul 22, 10:00 AM, 30 min). Simone Amorim and Adi raise S3 data feed confusion — dispute over test file date (2025 test vs 2026 delivery). Atisha offered SharePoint as alternative access point pending resolution.' },
+    { csm:'pam',    health:'Healthy',    account:'F5',                 opp:'Vitally Pulse — Jul 22 Call',
+      arr:'Enterprise · Pam Huck', csmlbl:'Pam Huck',
+      change:'Jul 22 · Bi-Weekly TR',
+      excerpt:'PH: F5 bi-weekly TR sync (Jul 22, 10:30 AM, 30 min). Top Rated post live and performing well. TechCares renewal — Pam to resubmit. Chasing Pascal for Sarah\'s calendar access for budget season prep.' },
+    { csm:'varun',  health:'Healthy',    account:'Datadog',            opp:'Vitally Pulse — Jul 22 Call',
+      arr:'Enterprise · Varun Tiwari', csmlbl:'Varun Tiwari',
+      change:'Jul 22 · TR Sync',
+      excerpt:'VT: Datadog TR sync (Jul 22, 10:30 AM, 30 min). Varun introduces GeoDashboard (LLM crawl analytics, TrustRadius AI citations) — Datadog registered for early access at no cost. Market report survey: Caio to complete in 7 days.' },
+    { csm:'andy',   health:'Healthy',    account:'SAS Institute',      opp:'Vitally Pulse — Jul 22 Call',
+      arr:'Enterprise · Andy Lim', csmlbl:'Andy Lim',
+      change:'Jul 22 · New UI Overview',
+      excerpt:'AL: SAS new HG UI overview (Jul 22, 5:00 AM, 30 min). Andy + Augie Buettner demo new platform to Steven White (SAS). Steven exploring expansion to new departments (new GTM team under Neil). RGIP platform also surfaced as separate license opportunity.' },
+    { csm:'andy',   health:'Healthy',    account:'SAS Institute',      opp:'Vitally Pulse — Jul 22 Call',
+      arr:'Enterprise · Andy Lim', csmlbl:'Andy Lim',
+      change:'Jul 22 · EMEA Weekly Sync',
+      excerpt:'AL: SAS EMEA weekly sync (Jul 22, 8:30 AM, 30 min). Second call with Steven White today. Anna (going on mat leave Aug 7) present. Andy confirms RGIP platform is a separate budget/license — facilitating access for Steven to expand use cases.' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div style="font-weight:600;font-size:13px;">${c.account}</div>
+          <div style="color:#94a3b8;font-size:11px;">${c.arr}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_07_22() {
+  return `<div class="action-list">
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0722-1')?'done':''}" data-csm="divyam" id="action-0722-1">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0722-1')?'checked':''}" onclick="toggleAction('0722-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; Informatica &mdash; Escalate MSA legal review and confirm renewal by Aug deadline</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Divyam Dewan &middot; MSA red-line is in legal review; Informatica procurement expects same T&Cs as January. Renewal date is early August. Confirm legal sign-off status with Heather Quesnel and escalate internally if stalled. Loop in Ziad (returning from OOO) immediately.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0722-2')?'done':''}" data-csm="atisha" id="action-0722-2">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0722-2')?'checked':''}" onclick="toggleAction('0722-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4E6; Apple &mdash; Resolve S3 data delivery date confusion with Giuseppe and Adi</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Atisha Waghela &middot; Simone and Adi are confused about whether the test file date was 2025 or 2026 delivery. Atisha offered SharePoint as interim access. Follow up on Giuseppe's email thread with Adi to clarify delivery date expectations and confirm next monthly delivery is on schedule.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0722-3')?'done':''}" data-csm="atisha" id="action-0722-3">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0722-3')?'checked':''}" onclick="toggleAction('0722-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CA; Deloitte &mdash; Prepare data quality noise-removal stats for Rajesh's leadership report</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Atisha Waghela &middot; Rajesh Shetty needs quantified stats on how much noise was removed from the dataset (clean vs dirty data comparison) for a Deloitte leadership report. These stats were not available on the call. Prepare and send within 48h.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0722-4')?'done':''}" data-csm="andy" id="action-0722-4">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0722-4')?'checked':''}" onclick="toggleAction('0722-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F680; SAS Institute &mdash; Facilitate RGIP platform access for Steven White and scope expansion</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Andy Lim &middot; Steven White (SAS, new GTM team under Neil) is interested in RGIP as a separate budget/license. Andy confirmed this is a distinct product line. Coordinate with Augie Buettner and the RGIP team to get Steven a proper demo and scoping call. Document as an expansion opportunity in Vitally.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0722-5')?'done':''}" data-csm="divyam" id="action-0722-5">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0722-5')?'checked':''}" onclick="toggleAction('0722-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F91D; Thomson Reuters &mdash; Confirm 2-year renewal terms and document Divyam as primary contact</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Divyam Dewan &middot; Joan (TR procurement) verbally confirmed 2-year renewal, no change in scope. Follow up in writing to formalize renewal terms. Ensure Joan has Divyam's contact info and introduce him properly to all TR stakeholders who previously worked with Arun Jam.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0722-6')?'done':''}" data-csm="nick" id="action-0722-6">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0722-6')?'checked':''}" onclick="toggleAction('0722-6')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; IBM &mdash; Confirm DPA signature for HG Contacts pilot with Anita/Kruti</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Nick Johnson &middot; IBM's contact data pilot (Kruti Desai) requires a DPA signature before real data can be shared (currently only dummy data). Anita is handling the DPA. Follow up on signature timeline; pilot spec calls for 1K accounts across geos, emails + phone required. Note: Nick was not on this call — Augie Buettner and Karin Pindle represented HG.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0722-7')?'done':''}" data-csm="rani" id="action-0722-7">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0722-7')?'checked':''}" onclick="toggleAction('0722-7')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F50D; Rani Guy &mdash; Verify 0 confirmed calls and check if Lenovo/ServiceNow/Google recordings were captured</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Rani Guy &middot; Rani had 6+ events scheduled (ServiceNow, Google ×2, Lenovo ×2 incl. Onboarding, Cisco, Workday) with no confirmed call recordings. Verify with Rani whether calls occurred, and if so why Weflow recordings did not sync. Lenovo ($695K ARR, renewal Dec 2026) and ServiceNow should not go unmonitored.</div>
+      </div>
+    </div>
+
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No actions match the current filter.</div>`;
+}
