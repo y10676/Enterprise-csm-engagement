@@ -5122,3 +5122,370 @@ function dayActionsHTML_2026_07_22() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No actions match the current filter.</div>`;
 }
+
+// ─────────────────────────────────────────────────────────────────────────────
+// 2026-07-23  Thursday  |  71 recordings scanned  |  11 confirmed calls
+// ─────────────────────────────────────────────────────────────────────────────
+
+function dayData_2026_07_23() {
+  return {
+    calls: [
+      { ts: 'Jul 23 · 4:30 AM', csm: 'andy', account: 'Pure Storage',
+        note: 'Bi-weekly sync with Evapure UK team — new accounts to onboard (Charlie Morgans), Andy on holiday soon.',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Bi-weekly sync with Charlie Morgans (Evapure UK team within Pure Storage). Charlie flagged new accounts recently acquired and will send list via email for HG data onboarding by end of month. Andy confirmed availability post-holiday return.' },
+      { ts: 'Jul 23 · 7:00 AM', csm: 'andy', account: 'Zycus',
+        note: 'Ad-hoc Salesforce enrichment troubleshoot — 3 issues raised. HG VP Support Matthieu Courtin present to unblock.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Issue',
+        detail: 'Customer-initiated troubleshoot for Zycus CRM/Salesforce enrichment integration. Puneet (Zycus Salesforce admin) and Ishwarya raised three issues: (1) feature request with existing workaround, (2) configuration fix needed, (3) Excel file upload question. HG VP Support Matthieu Courtin joined to unblock directly.' },
+      { ts: 'Jul 23 · 8:00 AM', csm: 'nick', account: 'UKG',
+        note: 'HG recommendations session — Max Shaw (HCM background) introduced as new dedicated resource to Gautam Gupta and Barbie Espinosa.',
+        mins: 60, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'HG strategy and recommendations session with UKG. Nick and Augie Buettner introduced Max Shaw — a new dedicated HG resource with HCM domain background added specifically for UKG. HG stated "we\'ve made an effort to add more resources to our enterprise clientele." Recommendations deck to be shared post-call.' },
+      { ts: 'Jul 23 · 8:00 AM', csm: 'varun', account: 'MongoDB',
+        note: 'Recurring sync — team still running campaigns from ZoomInfo primarily; HG POC stalled by resource and complexity concerns.',
+        mins: 30, health: 'Concerning',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Recurring sync with Ale Dimitriu (MongoDB, Germany) and Ziad Amira. MongoDB marketing team runs technographic data campaigns primarily from ZoomInfo. HG POC stalled — Ale cites resource constraints and perceived data complexity as blockers. Varun to simplify POC proposal and lower onboarding friction.' },
+      { ts: 'Jul 23 · 8:30 AM', csm: 'divyam', account: 'Lumen',
+        note: 'Weekly sync — AM transition: Hayden left HG (joined Clay), Augie Buettner taking over. Nathan briefed.',
+        mins: 28, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Weekly sync with Nathan (Lumen). Divyam disclosed that Hayden Anderson left HG and joined Clay. New AM is Augie Buettner, who has more HG tenure. Divyam remains CS contact. Nathan receptive — Augie to be added to the recurring series and formally introduced.' },
+      { ts: 'Jul 23 · 9:00 AM', csm: 'nick', account: 'UKG',
+        note: 'Market Analyzer check-in — Greg Pridgeon active, Dan Pasch not yet engaged. Users want raw data export capability.',
+        mins: 30, health: 'Warn',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Market Analyzer adoption check-in with Greg Pridgeon (Atlanta) and Dan Pasch (New York). Greg has logged in and is active; Dan has not yet engaged. Users flagged a core platform gap: "what we need is all this data so we can manipulate it on the back end" — raw data export request logged for product team.' },
+      { ts: 'Jul 23 · 9:30 AM', csm: 'divyam', account: 'HubSpot',
+        note: 'Monthly TR sync with Jordan Montgomery — AI crawl data walkthrough, Inbound event (Sep) as next review gen window.',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'TrustRadius monthly sync with Jordan Montgomery (HubSpot). Divyam presented updated TrustRadius performance deck including AI crawl data and ratings overview. Jordan has no active campaigns running. Inbound event (mid-to-late September) identified as best upcoming window for review generation outreach.' },
+      { ts: 'Jul 23 · 10:00 AM', csm: 'pam', account: 'Epicor',
+        note: 'EBR with new DG leader Anthea Louie at 90-day mark. HG East Coast ops Leo Zunz present.',
+        mins: 60, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Executive Business Review (EBR) with Epicor stakeholders. Key participants: Anthea Louie (new DG leader, just hit 90-day mark) and Rohini Kasturi. HG East Coast operations lead Leo Zunz joined. Anthea\'s first EBR as DG leader — session covered program performance, H2 planning, and alignment with new leadership.' },
+      { ts: 'Jul 23 · 11:00 AM', csm: 'divyam', account: 'Workhuman',
+        note: 'First meeting with Ethan Bukowiec — budget uncertainty for H2 review gen. AI crawl dashboards introduced.',
+        mins: 60, health: 'Warn',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'First formal meeting with Ethan Bukowiec (Workhuman, Framingham MA). Divyam presented TrustRadius AI crawl dashboards and proposed H2 review generation plan. Ethan raised a key gap: "do we have a budget with you for review generation?" — unclear whether contract includes review gen budget. Must resolve before H2 campaigns launch.' },
+      { ts: 'Jul 23 · 11:00 AM', csm: 'riley', account: 'SAP (Ariba)',
+        note: 'Monthly TR sync — Fieldglass >10 reviews, Subscription Billing momentum, HG overlap campaign strategy discussed.',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Monthly TrustRadius sync with Ashleigh (SAP, calling from car). Fieldglass exceeded 10 reviews in the past year. Subscription Billing received 4 reviews at Sapphire + 3 more since. One AI-written Treasury & Risk Management review was rejected. Riley proposed overlap campaign analysis using HG-powered targeting tool; will prepare slides for Alejandro.' },
+      { ts: 'Jul 23 · 12:30 PM', csm: 'atisha', account: 'Apple',
+        note: 'ML Model data mapping with Aditi Saluja. CRITICAL: Atisha\'s emails not reaching Apple — Rishabh Wadhwa stepping in.',
+        mins: 30, health: 'Warn',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Issue',
+        detail: 'Data mapping session for Apple\'s ML model with Aditi Saluja and Rishabh Wadhwa (HG customer solutions). Critical issue: Atisha\'s emails are not being delivered to Aditi or Simone Amorim at Apple (likely spam filter or security block). Rishabh to send emails as workaround. Session mapped HG data fields (revenue, employee size, industry) to Apple ML model requirements.' },
+    ],
+    pulses: [
+      { csm: 'andy',   account: 'Pure Storage',  health: 'Healthy',    note: 'Bi-weekly sync (Evapure UK team, Charlie Morgans). New accounts to onboard by month-end; Andy on holiday shortly.' },
+      { csm: 'andy',   account: 'Zycus',          health: 'Healthy',    note: 'Ad-hoc Salesforce enrichment troubleshoot. 3 issues raised; HG VP Support Matthieu Courtin joined to unblock Puneet.' },
+      { csm: 'nick',   account: 'UKG',            health: 'Healthy',    note: 'Recommendations session — Max Shaw introduced as new dedicated HG resource with HCM background to Gautam Gupta.' },
+      { csm: 'varun',  account: 'MongoDB',        health: 'Concerning', note: 'Still using ZoomInfo as primary technographic source. HG POC stalled — resource constraints and complexity cited as blockers.' },
+      { csm: 'divyam', account: 'Lumen',          health: 'Healthy',    note: 'AM transition: Hayden left for Clay, Augie Buettner taking over. Nathan briefed; Augie to be added to recurring series.' },
+      { csm: 'nick',   account: 'UKG',            health: 'Warn',       note: 'Market Analyzer: Greg active, Dan not yet logged in. Raw data export request flagged for product team.' },
+      { csm: 'divyam', account: 'HubSpot',        health: 'Healthy',    note: 'Monthly TR sync with Jordan. AI crawl overview delivered. Inbound event (Sep) targeted as next review gen window.' },
+      { csm: 'pam',    account: 'Epicor',         health: 'Healthy',    note: 'EBR with new DG leader Anthea Louie (90-day mark). Leo Zunz present. H2 planning and program health reviewed.' },
+      { csm: 'divyam', account: 'Workhuman',      health: 'Warn',       note: 'First meeting with Ethan Bukowiec. Review gen budget unclear — must confirm contract scope before H2 campaigns launch.' },
+      { csm: 'riley',  account: 'SAP (Ariba)',    health: 'Healthy',    note: 'Monthly TR sync. Fieldglass >10 reviews. HG overlap campaign analysis to be shared with Alejandro.' },
+      { csm: 'atisha', account: 'Apple',          health: 'Warn',       note: 'ML model mapping session. CRITICAL: Atisha emails not reaching Apple — Rishabh Wadhwa stepping in as workaround.' },
+    ],
+  };
+}
+
+function dayMeta_2026_07_23() {
+  return {
+    pills: [
+      ['dot-teal',  '11 Calls'],
+      ['dot-red',   '1 Concerning'],
+      ['dot-amber', '1 Expansion'],
+      ['dot-green', '11 Pulses'],
+      ['dot-grey',  'Thu Jul 23 · 71 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (11)', 'Pulses (11)', 'Action Items (8)'],
+  };
+}
+
+function dayOverviewHTML_2026_07_23() {
+  return `<div class="section-label">Team Activity &mdash; Thursday July 23, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Thursday July 23 &mdash; 71 recordings scanned</strong> via SFDC SOQL &middot; <strong>11 confirmed calls</strong> across 7 of 8 CSMs &middot; 1 Concerning (MongoDB) &middot; 1 Expansion (UKG) &middot; 3 Warn signals &middot; Rani: 2 Adobe events, no recordings found
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>MongoDB (Varun) &mdash; Concerning:</strong> Marketing team runs campaigns from ZoomInfo as primary technographic source. HG POC blocked by resource constraints and data complexity. Risk of abandonment if onboarding friction isn&rsquo;t reduced urgently.
+  </div>
+  <div style="background:#1c2022;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fcd34d;">
+    &#x26A0;&#xFE0F; <strong>3 Warn signals:</strong> <strong>Apple</strong> (Atisha &mdash; emails not reaching Apple team, Rishabh as workaround) &middot; <strong>Workhuman</strong> (Divyam &mdash; Ethan unsure if review gen budget exists) &middot; <strong>UKG Market Analyzer</strong> (Nick &mdash; Dan Pasch not yet engaged, raw data export gap)
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>Expansion:</strong> <strong>UKG</strong> (Nick &mdash; Max Shaw introduced as dedicated HG resource with HCM expertise) &middot; 1 internal call excluded (&ldquo;Rohit and HG intros&rdquo; &mdash; Nick + Augie only, no customer)
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">SAP (Ariba + Fieldglass) &mdash; monthly TR sync; Fieldglass &gt;10 reviews; overlap campaign analysis to follow</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">90m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">UKG Recommendations (Max Shaw intro, 60m) &middot; UKG Market Analyzer (Dan not engaged, raw data request &#x26A0;, 30m)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">3 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">3</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">118m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Lumen (AM transition: Augie replacing Hayden) &middot; HubSpot (monthly TR) &middot; Workhuman (budget unclear &#x26A0;)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">MongoDB &mdash; ZoomInfo still primary; HG POC blocked by resource constraints &#x26A0;&#xFE0F;</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="pam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Epicor Software Corp &mdash; EBR with new DG leader Anthea Louie (90-day mark); Leo Zunz (HG East) present</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Apple &mdash; ML model data mapping; emails from Atisha not reaching Apple team &#x26A0;</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="andy">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Pure Storage (Evapure UK bi-weekly, new accounts to onboard) &middot; Zycus (Salesforce enrichment troubleshoot, Matthieu Courtin present)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="rani">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 Adobe events scheduled (bi-weekly 9:00 AM &amp; weekly 9:30 AM) &mdash; no recordings found in Weflow</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_07_23() {
+  return `<div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>MongoDB (Varun) &mdash; Concerning:</strong> Team runs campaigns from ZoomInfo as primary technographic source. HG POC stalled &mdash; Ale Dimitriu cites resource constraints and data complexity. Risk of POC abandonment without a simplified onboarding path.
+  </div>
+  <div style="background:#1c2022;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fcd34d;">
+    &#x26A0;&#xFE0F; <strong>Apple email deliverability (Atisha):</strong> Atisha&rsquo;s emails not reaching Aditi Saluja or Simone Amorim at Apple. Rishabh Wadhwa stepping in as workaround. Deliverability issue must be escalated to restore direct CSM-to-customer communication.
+  </div>
+  <div style="background:#111827;border:1px solid #374151;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#94a3b8;">
+    &#x1F512; <strong>1 internal call excluded:</strong> &ldquo;Rohit and HG intros&rdquo; (Nick Johnson + Augie Buettner only, no customer present) &middot; <strong>Unconfirmed (no transcript):</strong> Divyam &times; Safaricom (4:00 AM, 30 min) &middot; Divyam &times; OpenAI (10:30 AM, 30 min) &middot; Andy &times; Sage Global Services (8:00 AM, 22 min)
+  </div>
+  <div class="calls-table"><!-- auto-table rendered by core.js from dayData --></div>`;
+}
+
+function dayPulsesHTML_2026_07_23() {
+  const cards = [
+    { csm:'andy',   health:'Healthy',    account:'Pure Storage',
+      arr:'Enterprise · Andy Lim', csmlbl:'Andy Lim',
+      change:'Jul 23 · Bi-Weekly Sync',
+      excerpt:'AL: Pure Storage bi-weekly sync (Jul 23, 4:30 AM, 30 min). Evapure UK team (Charlie Morgans). Charlie to send list of newly acquired accounts for HG data onboarding by month-end. Andy on holiday shortly — confirmed post-return availability.' },
+    { csm:'andy',   health:'Healthy',    account:'Zycus',
+      arr:'Enterprise · Andy Lim', csmlbl:'Andy Lim',
+      change:'Jul 23 · Enrichment Troubleshoot',
+      excerpt:'AL: Zycus Salesforce enrichment troubleshoot (Jul 23, 7:00 AM, 30 min). Customer-initiated — Puneet and Ishwarya raised 3 issues (feature request workaround, config fix, Excel upload question). HG VP Support Matthieu Courtin joined to unblock directly.' },
+    { csm:'nick',   health:'Healthy',    account:'UKG',
+      arr:'Enterprise · Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Jul 23 · Recommendations Session',
+      excerpt:'NJ: UKG HG recommendations session (Jul 23, 8:00 AM, 60 min). Nick and Augie Buettner introduced Max Shaw — new dedicated HG resource with HCM domain background — to Gautam Gupta and Barbie Espinosa. Recommendations deck to follow.' },
+    { csm:'varun',  health:'Concerning', account:'MongoDB',
+      arr:'Enterprise · Varun Tiwari', csmlbl:'Varun Tiwari',
+      change:'Jul 23 · Concerning',
+      excerpt:'VT: MongoDB recurring sync (Jul 23, 8:00 AM, 30 min). Ale Dimitriu (Germany) and Ziad Amira. Marketing team still running technographic campaigns from ZoomInfo as primary source. HG POC stalled — resource constraints and data complexity cited. Varun to simplify POC proposal.' },
+    { csm:'divyam', health:'Healthy',    account:'Lumen',
+      arr:'Enterprise · Divyam Dewan', csmlbl:'Divyam Dewan',
+      change:'Jul 23 · Weekly Sync',
+      excerpt:'DD: Lumen weekly sync (Jul 23, 8:30 AM, 28 min). Divyam disclosed Hayden Anderson left HG and joined Clay; new AM Augie Buettner taking over. Nathan receptive to transition — Augie to be added to recurring series and formally introduced.' },
+    { csm:'nick',   health:'Warn',       account:'UKG',
+      arr:'Enterprise · Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Jul 23 · Market Analyzer Check-in',
+      excerpt:'NJ: UKG Market Analyzer check-in (Jul 23, 9:00 AM, 30 min). Greg Pridgeon active; Dan Pasch not yet logged in. Users flagged platform gap: want raw data access beyond the UI for back-end manipulation. Product feedback logged.' },
+    { csm:'divyam', health:'Healthy',    account:'HubSpot',
+      arr:'Enterprise · Divyam Dewan', csmlbl:'Divyam Dewan',
+      change:'Jul 23 · Monthly TR Sync',
+      excerpt:'DD: HubSpot monthly TR sync (Jul 23, 9:30 AM, 30 min). Jordan Montgomery. AI crawl data and ratings overview presented. No active campaigns. Inbound event (mid-late September) identified as next review generation window.' },
+    { csm:'pam',    health:'Healthy',    account:'Epicor',
+      arr:'Enterprise · Pam Huck', csmlbl:'Pam Huck',
+      change:'Jul 23 · EBR',
+      excerpt:'PH: Epicor EBR (Jul 23, 10:00 AM, 60 min). New DG leader Anthea Louie at 90-day mark — first EBR. Leo Zunz (HG East Coast ops) present. Session covered program performance, H2 planning, and alignment with new DG leadership team.' },
+    { csm:'divyam', health:'Warn',       account:'Workhuman',
+      arr:'Enterprise · Divyam Dewan', csmlbl:'Divyam Dewan',
+      change:'Jul 23 · First Meeting',
+      excerpt:'DD: Workhuman first formal meeting (Jul 23, 11:00 AM, 60 min). Ethan Bukowiec (Framingham MA). Divyam presented AI crawl dashboards and H2 review gen plan. Ethan raised budget uncertainty: "do we have a budget with you for review generation?" — must confirm contract scope before H2 campaigns launch.' },
+    { csm:'riley',  health:'Healthy',    account:'SAP (Ariba)',
+      arr:'Enterprise · Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Jul 23 · Monthly TR Sync',
+      excerpt:'RR: SAP monthly TR sync (Jul 23, 11:00 AM, 30 min). Ashleigh (in car). Fieldglass exceeded 10 reviews past year. Subscription Billing: 4 at Sapphire + 3 since. 1 AI-written Treasury & Risk review rejected. Riley to send HG overlap campaign analysis slides to Alejandro.' },
+    { csm:'atisha', health:'Warn',       account:'Apple',
+      arr:'Enterprise · Atisha Waghela', csmlbl:'Atisha Waghela',
+      change:'Jul 23 · ML Model Mapping',
+      excerpt:'AW: Apple ML model data mapping (Jul 23, 12:30 PM, 30 min). Aditi Saluja + Rishabh Wadhwa. CRITICAL: Atisha\'s emails not being delivered to Aditi or Simone Amorim at Apple. Rishabh sending workaround emails. HG data fields (revenue, employee size, industry) mapped to Apple ML model requirements.' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div style="font-weight:600;font-size:13px;">${c.account}</div>
+          <div style="color:#94a3b8;font-size:11px;">${c.arr}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_07_23() {
+  return `<div class="action-list">
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0723-1')?'done':''}" data-csm="atisha" id="action-0723-1">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0723-1')?'checked':''}" onclick="toggleAction('0723-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F6A8; Apple &mdash; Resolve email deliverability issue blocking Atisha&rsquo;s communication</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Atisha Waghela &middot; Atisha&rsquo;s emails are not being delivered to Aditi Saluja or Simone Amorim at Apple &mdash; suspected spam filter or IT security block. Rishabh Wadhwa is covering as a workaround but this cannot be a long-term fix. Escalate to IT/email admin, identify the block, and restore direct CSM-to-customer communication immediately.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0723-2')?'done':''}" data-csm="varun" id="action-0723-2">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0723-2')?'checked':''}" onclick="toggleAction('0723-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CA; MongoDB &mdash; Redesign HG POC to reduce complexity and schedule dedicated kickoff</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Varun Tiwari &middot; MongoDB team is still running campaigns from ZoomInfo as primary technographic source. HG POC blocked by resource constraints and perceived complexity. Build a simplified onboarding path &mdash; reduce required steps, provide pre-built templates, and schedule a dedicated POC kickoff call with Ale Dimitriu and Ziad Amira. Without action this POC risks abandonment.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0723-3')?'done':''}" data-csm="andy" id="action-0723-3">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0723-3')?'checked':''}" onclick="toggleAction('0723-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x2705; Zycus &mdash; Confirm all 3 enrichment issues resolved and send session summary</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Andy Lim &middot; Puneet and Ishwarya raised three Salesforce enrichment issues on today&rsquo;s ad-hoc call: (1) feature request &mdash; confirm workaround documented and sent, (2) configuration fix &mdash; confirm applied, (3) Excel upload question &mdash; confirm resolved. Send a written summary of all three issues and resolutions to Puneet. CC Matthieu Courtin.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0723-4')?'done':''}" data-csm="nick" id="action-0723-4">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0723-4')?'checked':''}" onclick="toggleAction('0723-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F91D; UKG &mdash; Share recommendations deck and formalize Max Shaw introduction</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Nick Johnson &middot; Max Shaw was verbally introduced to Gautam Gupta and Barbie Espinosa on today&rsquo;s call. Send a formal follow-up email from Max introducing himself, share the HG recommendations deck reviewed on the call, and set expectations for Max&rsquo;s ongoing role as dedicated HG resource for UKG. Formalizes the expansion investment HG made in this account.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0723-5')?'done':''}" data-csm="divyam" id="action-0723-5">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0723-5')?'checked':''}" onclick="toggleAction('0723-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F504; Lumen &mdash; Add Augie Buettner to recurring series and send formal AM transition note to Nathan</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Divyam Dewan &middot; Hayden Anderson has left HG and joined Clay. Augie Buettner is the incoming AM. Update the recurring calendar invite to include Augie, and send a brief transition email to Nathan (Lumen) formally introducing Augie with context on his HG tenure and role. Ensure no continuity gap during the handoff.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0723-6')?'done':''}" data-csm="divyam" id="action-0723-6">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0723-6')?'checked':''}" onclick="toggleAction('0723-6')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4B0; Workhuman &mdash; Confirm review gen budget and send H2 activation plan to Ethan</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Divyam Dewan &middot; Ethan Bukowiec raised uncertainty about whether Workhuman&rsquo;s contract includes a review generation budget. Check contract terms and confirm with Ethan what is included (CVP budget, incentive credits, etc.). Once confirmed, send a written H2 review generation plan with campaign timeline, Inbound event integration, and expected review targets. Budget ambiguity must not block H2 activation.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0723-7')?'done':''}" data-csm="nick" id="action-0723-7">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0723-7')?'checked':''}" onclick="toggleAction('0723-7')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; UKG Market Analyzer &mdash; Escalate raw data export request and activate Dan Pasch</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Nick Johnson &middot; Greg Pridgeon and Dan Pasch expressed need to access raw Market Analyzer data for back-end manipulation beyond what the UI provides. Log as a product feedback item (raw data export / API access). Separately, Dan Pasch has not yet logged in &mdash; send direct outreach to Dan with a quick-start guide and offer a 1:1 onboarding session to get him activated.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0723-8')?'done':''}" data-csm="riley" id="action-0723-8">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0723-8')?'checked':''}" onclick="toggleAction('0723-8')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4E4; SAP Ariba &mdash; Prepare and share HG overlap campaign analysis with Alejandro</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Riley Rogers &middot; Riley proposed sending overlap campaign analysis slides to Alejandro using HG&rsquo;s targeting tool. Prepare a concise analysis showing SAP&rsquo;s target account overlap with competitor install data and send to Alejandro ahead of the next sync. Could open a new campaign strategy conversation and demonstrate HG data value beyond reviews.</div>
+      </div>
+    </div>
+
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No actions match the current filter.</div>`;
+}
