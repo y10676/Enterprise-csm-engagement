@@ -1108,7 +1108,7 @@ function monthCoverageHTML_2026_06() {
   return _renderCoverageTable(stats, 'Jun 27, 2026');
 }
 
-// July 2026 -- snapshot from Jul 22, 2026 Vitally refresh
+// July 2026 -- snapshot from Jul 25, 2026 Vitally refresh
 function monthCoverageHTML_2026_07() {
   const stats = [
   {
@@ -1175,11 +1175,11 @@ function monthCoverageHTML_2026_07() {
     "csm": "atisha",
     "name": "Atisha Waghela",
     "total": 28,
-    "both": 19,
+    "both": 21,
     "pulseOnly": 0,
-    "noteOnly": 1,
-    "neither": 8,
-    "pct": 68
+    "noteOnly": 0,
+    "neither": 7,
+    "pct": 75
   },
   {
     "csm": "andy",
@@ -1192,5 +1192,5 @@ function monthCoverageHTML_2026_07() {
     "pct": 93
   }
 ];
-  return _renderCoverageTable(stats, 'Jul 22, 2026');
+  return _renderCoverageTable(stats, 'Jul 25, 2026');
 }
