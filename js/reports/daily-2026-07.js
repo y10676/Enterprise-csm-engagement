@@ -5489,3 +5489,284 @@ function dayActionsHTML_2026_07_23() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No actions match the current filter.</div>`;
 }
+
+// ─────────────────────────────────────────────────────────────────────────────
+// July 24, 2026 — Friday
+// 39 recordings scanned · 5 confirmed CSM calls · 3 expansion signals
+// ─────────────────────────────────────────────────────────────────────────────
+
+function dayData_2026_07_24() {
+  return {
+    calls: [
+      { ts: 'Jul 24 · 2:00 AM', csm: 'andy',   account: 'Colt Technology Services',
+        note: 'Monthly sync — Bombura/Demandbase usage check-in; MCP agent demo opportunity surfaced',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Monthly cadence with Arkadiusz Wolinski (Colt). Andy and AM David Garcia-Thomas reviewed Bombura/Demandbase usage progress and discussed scheduling an MCP/AI agent demo for Colt — similar to the SAS Institute engagement that generated strong results.' },
+
+      { ts: 'Jul 24 · 8:00 AM', csm: 'divyam', account: 'Thomson Reuters',
+        note: 'Pre-renewal partnership review — RGIF upgrade, AM transition Hayden→Augie, Lumen cadence',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Partnership review with Blake (Thomson Reuters) and new AM Augie Buettner ahead of July 30 renewal. Covered RGIF upgrade (252K accounts vs universe data feed), expansion of Lumen weekly cadence to 30 min, and AM transition from Hayden Anderson to Augie. Renewal on track.' },
+
+      { ts: 'Jul 24 · 9:00 AM', csm: 'varun',  account: 'Zendesk, Inc.',
+        note: 'Bi-weekly sync — MCP/AI agent trial offered; Zendesk migrating to ChatGPT Codex next week',
+        mins: 30, health: 'Warn',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Bi-weekly sync surfaced an MCP integration opportunity. Rodrigo Gomez confirmed Zendesk is rolling out ChatGPT (Codex + Coworker) to all CS employees starting next week. Charles Hawkins offered a trial to automate account brief/snapshot generation via HG MCP connected to a custom GPT — replacing their current manual workflow.' },
+
+      { ts: 'Jul 24 · 9:00 AM', csm: 'rani',   account: 'Docusign, Inc.',
+        note: 'OpenGTM x Docusign kickoff — HG technographic depth for intelligence layer, scoring & targeting',
+        mins: 25, health: 'Warn',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Expansion',
+        detail: 'First formal call with OpenGTM (Ben Salzman) and Docusign AI Innovation PM Adam Melamed to explore HG technographic depth for powering Docusign\'s scoring, targeting, and segmentation. OpenGTM kicked off a formal Docusign engagement last week. HG AE Ziad Amira noted a parallel AI go-to-market agent project underway with OpenAI as proof of concept.' },
+
+      { ts: 'Jul 24 · 11:00 AM', csm: 'atisha', account: 'Apple Inc.',
+        note: 'Weekly sync — ML model progress; Apple asked to expand fast-growth scoring to healthcare & other sectors',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Atisha presented progress on the HG fast-growth account scoring model built on 30M+ company universe. Simone Amorim and Adrian Escobar asked to expand scope beyond AI-native accounts (Anthropic model) to fast-growing healthcare and other industry verticals. Atisha will build multi-industry win-rate analysis to identify accounts outside Apple\'s current managed coverage.' },
+    ],
+    pulses: [
+      { csm: 'andy',   account: 'Colt Technology Services', health: 'Healthy',
+        note: 'Monthly sync on Bombura/Demandbase usage; MCP agent demo opportunity discussed with David Garcia-Thomas.' },
+      { csm: 'divyam', account: 'Thomson Reuters',           health: 'Healthy',
+        note: 'Pre-renewal partnership review with Blake and AM Augie Buettner. RGIF upgrade discussed. Renewal July 30.' },
+      { csm: 'varun',  account: 'Zendesk, Inc.',             health: 'Warn',
+        note: 'MCP/AI trial offered via bi-weekly sync. Zendesk rolling out ChatGPT Codex next week — HG custom GPT integration opportunity.' },
+      { csm: 'rani',   account: 'Docusign, Inc.',            health: 'Warn',
+        note: 'OpenGTM x Docusign kickoff: exploring HG technographic depth for intelligence layer, scoring, and targeting.' },
+      { csm: 'atisha', account: 'Apple Inc.',                 health: 'Healthy',
+        note: 'Weekly sync: ML model fast-growth scoring expanded to healthcare and non-AI verticals at Apple\'s request.' },
+    ],
+  };
+}
+
+function dayMeta_2026_07_24() {
+  return {
+    pills: [
+      ['dot-teal',   '5 Calls'],
+      ['dot-purple', '3 Expansion'],
+      ['dot-green',  '5 Pulses'],
+      ['dot-grey',   'Fri Jul 24 · 39 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (5)', 'Pulses (5)', 'Action Items (6)'],
+  };
+}
+
+function dayOverviewHTML_2026_07_24() {
+  return `<div class="section-label">Team Activity &mdash; Friday July 24, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Friday Jul 24 &mdash; 39 recordings scanned</strong> via SFDC SOQL &middot; <strong>5 confirmed customer calls</strong> across 5 CSMs &middot; 3 expansion signals (Zendesk MCP trial, Docusign/OpenGTM, Apple ML scope expansion) &middot; Thomson Reuters renewal due July 30
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #818cf8;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#a5b4fc;">
+    &#x1F4C8; <strong>Expansion signals:</strong> Varun offered Zendesk an MCP/ChatGPT trial &middot; Rani joined OpenGTM x Docusign intelligence kickoff &middot; Atisha expanded Apple ML scoring to healthcare &amp; multi-industry verticals
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="andy">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Colt Technology Services (monthly sync, Bombura check-in, MCP demo opportunity)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Thomson Reuters (pre-renewal review, renewal July 30, RGIF upgrade, AM transition)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Zendesk (bi-weekly sync + MCP trial offer; ChatGPT Codex rollout next week)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">25m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Docusign (OpenGTM kickoff — technographic intelligence layer exploration, expansion)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Apple (weekly sync — ML model scope expanded to healthcare &amp; multi-industry verticals)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="riley">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No events or recordings detected on Jul 24</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="nick">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event (Infor debrief check-in, 5:00 AM PT) &mdash; no recording found</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 events scheduled (ZI-TR Sync, ADP Smart Compliance) &mdash; no recordings confirmed</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_07_24() {
+  return `<div class="calls-table">
+  <div style="background:#1c2333;border:1px solid #818cf8;border-left:3px solid #818cf8;border-radius:6px;padding:8px 14px;margin:0 0 12px 0;font-size:12px;color:#a5b4fc;">
+    &#x1F4C8; <strong>3 expansion signals today:</strong> Varun offered Zendesk an MCP/ChatGPT trial &middot; Rani joined OpenGTM x Docusign intelligence kickoff &middot; Atisha expanded Apple ML scoring to healthcare &amp; multi-industry verticals
+  </div>
+  <div style="background:#1a1a2e;border:1px solid #475569;border-radius:6px;padding:8px 14px;margin:0 0 12px 0;font-size:12px;color:#94a3b8;">
+    &#x26A0;&#xFE0F; <strong>Unconfirmed (no transcript):</strong> Rani Guy &mdash; Hitachi Vantara sync (9:30 AM PT, 30 min) &mdash; EventId match to SFDC event but no transcript synced. Varun Tiwari &mdash; HG &lt;&gt; Zendesk (10:30 AM PT, 30 min) &mdash; EventId matched but speaker labeled &ldquo;Varun&rsquo;s iPhone&rdquo;, not name-verified.
+  </div>
+  </div>`;
+}
+
+function dayPulsesHTML_2026_07_24() {
+  const cards = [
+    { csm:'andy',   health:'Healthy',    account:'Colt Technology Services',
+      arr:'Enterprise &middot; Andy Lim', csmlbl:'Andy Lim',
+      change:'Jul 24 &middot; Monthly Sync',
+      excerpt:'AL: Colt monthly check-in (Jul 24, 2:00 AM PT, 30 min). Arkadiusz Wolinski. Reviewed Bombura/Demandbase usage progress. MCP/AI agent demo opportunity surfaced &mdash; Andy to coordinate with David Garcia-Thomas and Francis Brero to schedule similar to SAS Institute engagement.' },
+    { csm:'divyam', health:'Healthy',    account:'Thomson Reuters',
+      arr:'Enterprise &middot; Divyam Dewan', csmlbl:'Divyam Dewan',
+      change:'Jul 24 &middot; Pre-Renewal Review',
+      excerpt:'DD: Thomson Reuters pre-renewal partnership review (Jul 24, 8:00 AM PT, 30 min). Blake + AM Augie Buettner. RGIF upgrade discussed (252K accounts). Lumen weekly extended to 30 min. AM transition from Hayden Anderson to Augie Buettner confirmed. Renewal due July 30.' },
+    { csm:'varun',  health:'Warn',       account:'Zendesk, Inc.',
+      arr:'Enterprise &middot; Varun Tiwari', csmlbl:'Varun Tiwari',
+      change:'Jul 24 &middot; Bi-Weekly + MCP Trial',
+      excerpt:'VT: Zendesk bi-weekly sync (Jul 24, 9:00 AM PT, 30 min). Rodrigo Gomez + Charles Hawkins. Zendesk rolling out ChatGPT Codex to all CS employees next week. HG offered MCP trial via custom GPT to automate account brief generation. Renewal Aug 26.' },
+    { csm:'rani',   health:'Warn',       account:'Docusign, Inc.',
+      arr:'Enterprise &middot; Rani Guy', csmlbl:'Rani Guy',
+      change:'Jul 24 &middot; OpenGTM Kickoff',
+      excerpt:'RG: OpenGTM x Docusign intelligence kickoff (Jul 24, 9:00 AM PT, 25 min). Ben Salzman (OpenGTM) + Adam Melamed (Docusign AI Innovation PM). Early-stage exploration of HG technographic depth for scoring, targeting, segmentation. AE Ziad Amira also on call.' },
+    { csm:'atisha', health:'Healthy',    account:'Apple Inc.',
+      arr:'Strategic &middot; Atisha Waghela', csmlbl:'Atisha Waghela',
+      change:'Jul 24 &middot; ML Model Expansion',
+      excerpt:'AW: Apple weekly sync (Jul 24, 11:00 AM PT, 30 min). Simone Amorim + Adrian Escobar. ML fast-growth scoring model scope expanded to healthcare &amp; non-AI verticals. Atisha to run multi-industry win-rate analysis to identify accounts outside Apple&rsquo;s managed coverage.' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div style="font-weight:600;font-size:13px;">${c.account}</div>
+          <div style="color:#94a3b8;font-size:11px;">${c.arr}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_07_24() {
+  return `<div class="action-list">
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0724-1')?'done':''}" data-csm="varun" id="action-0724-1">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0724-1')?'checked':''}" onclick="toggleAction('0724-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F916; Zendesk &mdash; Activate MCP trial via custom ChatGPT connection before Codex rollout</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Varun Tiwari &middot; Zendesk is rolling out ChatGPT Codex to all CS employees next week. Charles Hawkins offered an MCP trial to automate account brief generation. Set up the technical connection (custom GPT + HG MCP) and schedule a hands-on session with Rodrigo Gomez and Stephen Micek before the Codex rollout to capture this window of momentum. Renewal is Aug 26.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0724-2')?'done':''}" data-csm="divyam" id="action-0724-2">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0724-2')?'checked':''}" onclick="toggleAction('0724-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C5; Thomson Reuters &mdash; Confirm renewal signed by July 30 and brief Augie on RGIF upgrade path</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Divyam Dewan &middot; Thomson Reuters renewal is due July 30 &mdash; 6 days away. Confirm the renewal is moving through procurement, brief Augie Buettner on the RGIF upgrade proposal (252K accounts), and ensure Blake has everything needed to sign. Do not let the renewal slip past July 30 without a clear commitment or extension in writing.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0724-3')?'done':''}" data-csm="andy" id="action-0724-3">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0724-3')?'checked':''}" onclick="toggleAction('0724-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F916; Colt &mdash; Schedule MCP/AI agent demo with Francis Brero and Chloe</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Andy Lim &middot; David Garcia-Thomas suggested scheduling an MCP/AI agent call for Colt similar to the SAS Institute engagement. Andy agreed. Coordinate with David, Francis Brero, and Chloe to find a time that works for Arkadiusz Wolinski and the Colt team. Follow up with a calendar invite this week.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0724-4')?'done':''}" data-csm="rani" id="action-0724-4">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0724-4')?'checked':''}" onclick="toggleAction('0724-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CA; Docusign &mdash; Send OpenGTM next-steps recap and propose technographic depth demo</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Rani Guy &middot; First formal call with OpenGTM (Ben Salzman) and Docusign AI Innovation PM (Adam Melamed) went well. Send a recap of today&rsquo;s discussion, outline HG&rsquo;s technographic depth (installs, spend, intent, time series), and propose a focused demo on Docusign&rsquo;s target account universe. Coordinate with AE Ziad Amira on the follow-up plan to keep momentum.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0724-5')?'done':''}" data-csm="atisha" id="action-0724-5">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0724-5')?'checked':''}" onclick="toggleAction('0724-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F3E5; Apple &mdash; Build multi-industry win-rate analysis (healthcare + non-AI fast-growth)</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Atisha Waghela &middot; Simone Amorim and Adrian Escobar asked to expand the ML fast-growth scoring model beyond AI accounts to healthcare and other high-growth industries. Run an industry win-rate analysis against Apple&rsquo;s historical data to identify top industries to prioritize, then layer HG scoring signals (tech stack, employee growth, competitors) to produce a shortlist of unmanaged accounts per industry.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0724-6')?'done':''}" data-csm="rani" id="action-0724-6">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0724-6')?'checked':''}" onclick="toggleAction('0724-6')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F3AF; Hitachi Vantara &mdash; Confirm Hitachi sync occurred and log pulse note</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Rani Guy &middot; SFDC EventId matched a Hitachi Vantara recording (16:30 UTC, 30 min) but no transcript synced to SFDC. Verify with Rani whether the call took place, and if so, log a Vitally pulse note with the key topics discussed. Unconfirmed without transcript.</div>
+      </div>
+    </div>
+
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No actions match the current filter.</div>`;
+}
