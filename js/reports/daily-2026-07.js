@@ -5770,3 +5770,288 @@ function dayActionsHTML_2026_07_24() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No actions match the current filter.</div>`;
 }
+
+// ── July 27, 2026 ──────────────────────────────────────────────────────────
+
+function dayData_2026_07_27() {
+  return {
+    calls: [
+      { ts: 'Jul 27 · 3:00 AM', csm: 'varun', account: 'OpenText',
+        note: 'Bi-weekly cadence; renewal status with David, RGIP migration walkthrough planned for Aug 17+.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Renewal budget confirmed with David (returning Aug 17). Varun discussing RGIP platform migration (deadline Dec 31) and offering to send pre-read materials. Sujay shared OpenText new fiscal year focus on organic growth and key product suites from Berlin conference.' },
+      { ts: 'Jul 27 · 7:00 AM', csm: 'atisha', account: 'Apple',
+        note: 'FY27 industry insights collaboration; account ranking list and marketing team data deliverable.',
+        mins: 60, health: 'Healthy',
+        nature: 'Routine', initiator: 'Customer', purpose: 'Check-in',
+        detail: 'Simone (Apple) requested FY27 industry insights and a ranked account list (target ~100 accounts, not 2000). Atisha committed to delivering ranking by end of day and coordinating with HG marketing team for industry insights data.' },
+      { ts: 'Jul 27 · 9:00 AM', csm: 'atisha', account: 'RSM US',
+        note: 'Pre-renewal check-in; Andrea adoption update and renewal business case prep for Friday full call.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Kristin returning from 2.5 weeks PTO. Andrea (new pilot user) successfully using HG data for NFL team research — positive signal. Renewal strengthening: Atisha and Kristin to reconnect Friday with Leo. Atisha working to expand Andrea\'s use case awareness for the renewal case.' },
+      { ts: 'Jul 27 · 11:00 AM', csm: 'riley', account: 'Paycom',
+        note: 'Weekly sync; EBR scheduling, review video delivery, June campaign metrics review.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Riley scheduling virtual EBR (in-person Oklahoma trip cancelled). TrustRadius review videos in production — Riley coordinating with event manager to deliver to Peyton/Alexis/Katie before YouTube/TR go-live. New reviewer behavior dashboard rolling out August. June campaign metrics shared.' },
+      { ts: 'Jul 27 · 1:00 PM', csm: 'rani', account: 'NetApp',
+        note: 'Weekly sync; champion Elise departed NetApp, renewal ~60 days out, ownership transition in progress.',
+        mins: 25, health: 'Concerning',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Key champion Elise has departed NetApp. Renewal is ~50–60 days away. Bini Valsala and Megan Santiago-Gould indicate ownership is TBD — likely moving to a different team. Renewal proposal sent to Ross and Ryan last Friday. Match rate improved from 30% to 52% (expanded dataset to 43M accounts). Elise\'s target of 80% match rate remains the benchmark.' },
+    ],
+    pulses: [
+      { csm: 'varun', account: 'OpenText', health: 'Healthy', note: 'Renewal budget confirmed with David; RGIP migration demo scheduled for post-Aug 17.' },
+      { csm: 'atisha', account: 'Apple', health: 'Healthy', note: 'FY27 industry insights in progress; account ranking deliverable committed for EOD today.' },
+      { csm: 'atisha', account: 'RSM US', health: 'Healthy', note: 'Andrea onboarding positive; renewal prep call scheduled for Friday with Kristin and Leo.' },
+      { csm: 'riley', account: 'Paycom', health: 'Healthy', note: 'Engaged — EBR scheduling active, review videos in pipeline, new dashboard rollout August.' },
+      { csm: 'rani', account: 'NetApp', health: 'Concerning', note: 'Champion Elise departed. Renewal ~60 days out with no clear owner. Proposal sent to Ross/Ryan.' },
+    ],
+  };
+}
+
+function dayMeta_2026_07_27() {
+  return {
+    pills: [
+      ['dot-teal',  '5 Calls'],
+      ['dot-red',   '1 Concerning'],
+      ['dot-amber', '1 Expansion'],
+      ['dot-green', '5 Vitally Pulses'],
+      ['dot-grey',  'Mon Jul 27 · 65 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (5)', 'Pulses (5)', 'Action Items (6)'],
+  };
+}
+
+function dayOverviewHTML_2026_07_27() {
+  return `<div class="section-label">Team Activity &mdash; Monday July 27, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Monday Jul 27 &mdash; 65 recordings scanned</strong> via SFDC SOQL &middot; <strong>5 confirmed customer calls</strong> across 4 CSMs &middot; 2 internal sessions excluded &middot; 5 unconfirmed (no transcript)
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>NetApp &mdash; Champion Departed:</strong> Rani Guy's key champion Elise has left NetApp. Renewal is ~50&ndash;60 days out with ownership TBD. Renewal proposal sent to Ross &amp; Ryan &mdash; no response confirmed yet.
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>OpenText &mdash; RGIP Migration &amp; Renewal:</strong> Varun Tiwari confirmed renewal budget with David (returns Aug 17). RGIP platform demo and migration in motion &mdash; Dec 31 migration deadline.
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Paycom (Check-in: EBR scheduling, video delivery, Aug dashboard rollout)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">OpenText (Expansion: RGIP migration + renewal prep, David back Aug 17) &middot; Ciena unconfirmed</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">25m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">NetApp &#x1F534; (champion Elise departed, renewal ~60 days out, ownership TBD)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">90m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Apple (FY27 insights, account ranking deliverable) &middot; RSM (renewal prep, Friday call)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="nick">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">4 events scheduled — no confirmed recordings (Infor debrief, HCL, Intuit IES, NTT — all unconfirmed/no transcript)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="divyam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 events scheduled — no confirmed recordings (Blackbaud unconfirmed/no transcript, Dynatrace no recording)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Attended internal GTM Enablement session (excluded) &mdash; no customer calls detected</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Infoblox recording found (AM-led call, Andy not detected as speaker) &mdash; no confirmed calls</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_07_27() {
+  return `<div class="calls-table">
+  <div style="background:#1c1117;border:1px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>Concerning:</strong> NetApp &mdash; Elise (key champion) has departed. Renewal ~60 days out. Ownership unknown. Rani sent renewal proposal to Ross &amp; Ryan last Friday.
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>Expansion:</strong> OpenText &mdash; RGIP platform migration in motion. Dec 31 deadline. Renewal budget confirmed with David (returns Aug 17).
+  </div>
+  <div style="background:#1c1f26;border:1px solid #64748b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#94a3b8;">
+    &#x26A0; <strong>5 unconfirmed calls</strong> (no transcript): Varun/Ciena &middot; Nick/Infor debrief &middot; Nick/Intuit IES &middot; Atisha/DRT &middot; Divyam/Blackbaud
+  </div>
+  <div style="background:#1c1f26;border:1px solid #64748b;border-radius:6px;padding:8px 14px;margin:0 0 6px 0;font-size:12px;color:#94a3b8;">
+    &#x1F512; <strong>2 internal sessions excluded:</strong> Weekly GTM Enablement (Rani/Pam/Riley + HG staff, 8:00 AM PT) &middot; Workday Renewal Prep (Rani + Mardigan Moffat HG/TR staff only, 1:30 PM PT)
+  </div>
+  </div>`;
+}
+
+function dayPulsesHTML_2026_07_27() {
+  const cards = [
+    { csm: 'varun', health: 'Healthy', account: 'OpenText',
+      opp: 'Vitally Pulse &mdash; Jul 27 Call',
+      arr: 'Enterprise &middot; Varun Tiwari',
+      csmlbl: 'Varun Tiwari',
+      change: 'Jul 27 &middot; Expansion signal',
+      excerpt: '7/27 VT: Bi-weekly cadence with Sujay Kodagali (3:00 AM, 30 min). Renewal budget confirmed with David (returns Aug 17). Varun preparing RGIP platform pre-read + demo to migrate OpenText from legacy OpGen/MI to new RGIP module before Sep renewal.' },
+    { csm: 'atisha', health: 'Healthy', account: 'Apple',
+      opp: 'Vitally Pulse &mdash; Jul 27 Call',
+      arr: 'Enterprise &middot; Atisha Waghela',
+      csmlbl: 'Atisha Waghela',
+      change: 'Jul 27 &middot; Check-in',
+      excerpt: '7/27 AW: ML Model call with Simone Amorim and Aditi Saluja (7:00 AM, 60 min). Active FY27 industry insights collaboration. Atisha committed to delivering account ranking list (≤100) EOD today and coordinating HG marketing industry data.' },
+    { csm: 'atisha', health: 'Healthy', account: 'RSM US',
+      opp: 'Vitally Pulse &mdash; Jul 27 Call',
+      arr: 'Enterprise &middot; Atisha Waghela',
+      csmlbl: 'Atisha Waghela',
+      change: 'Jul 27 &middot; Renewal prep',
+      excerpt: '7/27 AW: Weekly sync with Kristin Lewis (9:00 AM, 30 min). Kristin returning from PTO. Andrea (new pilot user) successfully using HG data for NFL team research. Renewal strengthening call scheduled Friday with Leo and Kristin.' },
+    { csm: 'riley', health: 'Healthy', account: 'Paycom',
+      opp: 'Vitally Pulse &mdash; Jul 27 Call',
+      arr: 'Enterprise &middot; Riley Rogers',
+      csmlbl: 'Riley Rogers',
+      change: 'Jul 27 &middot; Check-in',
+      excerpt: '7/27 RR: TrustRadius sync with Peyton VanCuren and Alexis Correa (11:00 AM, 30 min). Virtual EBR being scheduled (Oklahoma in-person cancelled). Review videos in production, Riley coordinating priority delivery. Aug dashboard rollout discussed.' },
+    { csm: 'rani', health: 'Concerning', account: 'NetApp',
+      opp: 'Vitally Pulse &mdash; Jul 27 Call',
+      arr: 'Enterprise &middot; Rani Guy',
+      csmlbl: 'Rani Guy',
+      change: 'Jul 27 &middot; &#x1F534; Concerning',
+      excerpt: '7/27 RG: Weekly sync with Bini Valsala and Megan Santiago-Gould (1:00 PM, 25 min). Key champion Elise has departed NetApp. Renewal ~50-60 days out. Ownership TBD — likely moving to different team. Renewal proposal sent to Ross/Ryan last Friday. Match rate improved 30%→52% (43M accounts).' },
+  ];
+  const bc = h => h === 'Healthy' ? 'badge-healthy' : h === 'Concerning' ? 'badge-concerning' : 'badge-poor';
+  const bi = h => h === 'Healthy' ? '&#128994;' : h === 'Concerning' ? '&#128993;' : '&#128308;';
+  return `<div class="pulse-grid">${cards.map(c => `
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div style="font-weight:600;font-size:13px;color:#f1f5f9;">${c.account}</div>
+          <div style="font-size:11px;color:#94a3b8;">${c.opp}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filters.</div>`;
+}
+
+function dayActionsHTML_2026_07_27() {
+  return `<div class="action-list">
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0727-1')?'done':''}" data-csm="rani" id="action-0727-1">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0727-1')?'checked':''}" onclick="toggleAction('0727-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F534; NetApp &mdash; Identify New Champion + Confirm Renewal Process</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy &middot; Elise departed NetApp. Renewal is ~50&ndash;60 days away. Confirm with Ross and Ryan that they received last Friday's renewal proposal and have authority to move forward. If not, escalate to identify the new decision-maker and relationship owner before the renewal window closes. Set a 10-day deadline for a response commitment.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0727-2')?'done':''}" data-csm="varun" id="action-0727-2">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0727-2')?'checked':''}" onclick="toggleAction('0727-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; OpenText &mdash; Send RGIP Pre-Read to Sujay and Schedule David Demo (Aug 17+)</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Varun Tiwari &middot; Send RGIP platform materials and brochure to Sujay Kodagali this week for David to review before his return Aug 17. Schedule the formal live RGIP walkthrough demo (new unified module replacing OpGen + MI) for week of Aug 17. Migration deadline is Dec 31 &mdash; OpenText renewal is in September, so migrate contract and platform simultaneously.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0727-3')?'done':''}" data-csm="atisha" id="action-0727-3">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0727-3')?'checked':''}" onclick="toggleAction('0727-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F34E; Apple &mdash; Deliver Account Ranking List and Industry Insights to Simone (Today)</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Atisha Waghela &middot; Simone Amorim is waiting for the FY27 industry insights and a ranked account list (50&ndash;100 accounts, not 2000). Atisha committed to delivering by EOD today (Jul 27). Also share HG marketing team's FY27 industry insights once received today. This is a time-sensitive deliverable for Apple's planning cycle.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0727-4')?'done':''}" data-csm="atisha" id="action-0727-4">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0727-4')?'checked':''}" onclick="toggleAction('0727-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CA; RSM &mdash; Prepare Renewal Business Case for Friday Call with Kristin and Leo</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Atisha Waghela &middot; Full renewal prep call with Kristin Lewis and Leo on Friday. Prepare: (1) Andrea's new use case as renewal evidence (NFL team data research &mdash; unconventional use case that demonstrates HG data breadth), (2) expanded use case suggestions for Andrea to strengthen multi-stakeholder adoption, (3) overall renewal business case doc.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0727-5')?'done':''}" data-csm="rani" id="action-0727-5">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0727-5')?'checked':''}" onclick="toggleAction('0727-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CA; NetApp &mdash; Share Match Rate Progress Report with Ross and Ryan</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Rani Guy &middot; Reinforce renewal value by sending Ross and Ryan a summary of the match rate improvement work: 30% → 52% match rate, expanded dataset from 10M to 43M accounts. Frame as progress toward Elise's 80% target. Include data quality analysis (99% of accounts had name-only, no URL) to contextualize the remaining gap. This gives new stakeholders context before the renewal conversation.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0727-6')?'done':''}" data-csm="riley" id="action-0727-6">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0727-6')?'checked':''}" onclick="toggleAction('0727-6')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F3A5; Paycom &mdash; Coordinate Video Delivery and Schedule Virtual EBR</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Riley Rogers &middot; (1) Have event coordinator Angel send TrustRadius review videos to Peyton VanCuren, Alexis Correa, and Katie before they go live on YouTube/TR site. (2) Lock in date for virtual EBR — Oklahoma in-person trip cancelled. Riley is OOO Wed&ndash;next Wed, so confirm EBR date before departing or coordinate for the week of Aug 3.</div>
+      </div>
+    </div>
+
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filters.</div>`;
+}
