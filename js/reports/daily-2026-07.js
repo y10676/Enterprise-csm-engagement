@@ -6055,3 +6055,586 @@ function dayActionsHTML_2026_07_27() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filters.</div>`;
 }
+
+// ─── 2026-07-28 ─────────────────────────────────────────────────────────────
+
+function dayData_2026_07_28() {
+  return {
+    calls: [
+      { ts: 'Jul 28 · 5:00 AM', csm: 'varun', account: 'DXC', note: 'Brief renewal planning check; rescheduled to Thursday afternoon. Credit model transition discussed.', mins: 30, health: 'Healthy', nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in', detail: 'Varun Tiwari and Augie Buettner (AM) connected with Gabriella at DXC for renewal planning. Augie rescheduled the full discussion to Thursday afternoon. Topics included DXC credit model transition and invoice procurement routing issue (invoice sent to Prithi\'s team in error). Renewal due Nov 30, 2026.' },
+      { ts: 'Jul 28 · 6:30 AM', csm: 'nick', account: 'IBM', note: 'Monthly sync on HashiCorp install data and IBM\'s data strategy for HashiCorp-related decisions.', mins: 30, health: 'Healthy', nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in', detail: 'Nick Johnson and Clayton Cutbush (HG AE) joined IBM contacts Kruti Desai, JJ, and William Onesti for monthly sync. Primary agenda: IBM email from Sid at HashiCorp and context on IBM-HashiCorp relationship. Nick referenced prior conversations with Sid and directed discussion toward how HG install data can support IBM\'s HashiCorp go-to-market decisions.' },
+      { ts: 'Jul 28 · 9:00 AM', csm: 'nick', account: 'Red Hat', note: 'Catch-up after 6-week gap; Julia Schwartz connected to AI segmentation pilots and Salesforce recommendation object program.', mins: 60, health: 'Healthy', nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Mixed', detail: 'Nick Johnson and Augie Buettner reconnected with Julia Schwartz after a 6-week gap (Augie\'s honeymoon + Julia\'s PTO). Max Shaw introduced to help evangelize HG pilot programs. Julia flagged difficulty centralizing segmentation pilots across Red Hat\'s large sales org. Nick offered to connect field teams to existing AI segmentation pilot work streams and Salesforce recommendation object. Expansion: broader pilot adoption across Red Hat field sales.' },
+      { ts: 'Jul 28 · 9:00 AM', csm: 'rani', account: 'Cloudflare', note: 'Continued expansion conversation with Robert Goldfarb and Martin Kielczewski; down 8 headcount but expansion momentum continues.', mins: 30, health: 'Healthy', nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion', detail: 'Rani Guy continued the Cloudflare expansion conversation with Robert Goldfarb and Martin Kielczewski (Mardigan Moffat of TrustRadius also attended). Martin noted Cloudflare is down 8 people and dealing with high context-switching load. Despite resource constraints flagged in the Jul 7 signal (60% ops resource loss, build-vs-buy eval), expansion conversation is actively progressing — a positive reversal from last month\'s concerning flag.' },
+      { ts: 'Jul 28 · 9:30 AM', csm: 'nick', account: 'SAP', note: 'Biweekly sync; Rob Nute (Dir. Advanced Analytics) demoed vendor centricity capability; renewal direction discussed.', mins: 30, health: 'Healthy', nature: 'Routine', initiator: 'HG CS', purpose: 'Mixed', detail: 'Nick Johnson hosted biweekly SAP sync with Adriana Aguiar and David Garcia-Thomas. Rob Nute (HG Director of Advanced Analytics) joined to demo the vendor centricity capability developed over several months. Adriana requested starting with renewal direction before the vendor centricity demo. Both renewal path and new capability expansion are on the table.' },
+      { ts: 'Jul 28 · 10:00 AM', csm: 'riley', account: 'Zoom', note: 'TR CSM sync; GEO dashboard vendor portal update; Camille Shortridge prepping for customer webinar on GEO metrics.', mins: 30, health: 'Healthy', nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in', detail: 'Riley Rogers held recurring Zoom Video Communications TrustRadius CSM sync with Camille Shortridge and Cole Arutian. Riley updated Camille that the GEO dashboard in the vendor portal is still being finalized but will be available soon. Camille is preparing for a customer webinar and needs a briefing on the new GEO metrics. Riley connected her to Grace for a pre-webinar walkthrough.' },
+      { ts: 'Jul 28 · 10:00 AM', csm: 'rani', account: 'Cisco (Isovalent)', note: 'Onboarding status check with Tu-Anh; inbound account scoring discussed but declined due to cost; onboarding nearing completion.', mins: 30, health: 'Healthy', nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in', detail: 'Rani Guy held onboarding check-in with Tu-Anh at Cisco Isovalent (Mel on PTO). Rani clarified inbound account scoring is a separate paid product not included in current Cisco subscription — Tu-Anh deferred to Mel for cost evaluation. This was the last outstanding onboarding item. Account is part of Cisco-Marimuthu MK Platform & Data 05.27.2026 opportunity.' },
+      { ts: 'Jul 28 · 10:00 AM', csm: 'atisha', account: 'Equinix', note: 'New contact Hassan Ali (ex-CrowdStrike, new to Equinix) discovered HG subscription; Atisha and Charles Hawkins oriented him to platform and data use cases.', mins: 30, health: 'Healthy', nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Check-in', detail: 'Atisha Waghela and Charles Hawkins (HG, new account owner) connected with Hassan Ali, who recently joined Equinix and discovered they are an HG customer. Hassan previously used HG at CrowdStrike for competitive displacement plays. Atisha helped orient Hassan to data-center and managed-services use cases relevant to Equinix GTM. Charles noted significant personnel changes at Equinix over the last 6 months. New high-intent stakeholder is a positive account health signal.' },
+      { ts: 'Jul 28 · 10:30 AM', csm: 'rani', account: 'SAP (Partner)', note: 'Strategic SAP-HG upsell analysis partnership call; Michael Harding (SAP Rise GTM) exploring deeper HG data integration into SAP\'s upsell motion.', mins: 30, health: 'Healthy', nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion', detail: 'Rani Guy and Mark Fell (HG VP) joined Everett Oliven and KP Pindle in a strategic call with Michael Harding (SAP, manages global GTM for SAP Rise on Google Cloud). Everett (ex-AWS) facilitated the introduction, noting SAP already has HG data embedded in its propensity model. Goal: ensure SAP is fully consuming HG data and identify upsell/cross-sell expansion opportunities in SAP\'s global GTM motion. Significant expansion signal — HG data potentially embedded deeper in SAP\'s worldwide upsell analytics.' },
+      { ts: 'Jul 28 · 11:00 AM', csm: 'divyam', account: 'Lumen', note: 'RGIP platform onboarding session with Nathan, Kunal Jha, Julie Chalk, Eric Bailey; new acquisition capabilities covered; multiple lookalike models requested.', mins: 60, health: 'Healthy', nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in', detail: 'Divyam Dewan led a structured RGIP platform onboarding session for Lumen Technologies team (Nathan, Kunal Jha, Julie Chalk, Eric Bailey, Yatin Chalke). Covered new platform capabilities added through HG acquisitions; sessions kept interactive and use-case relevant. Nathan flagged several upcoming lookalike model requests from Lumen\'s internal teams. Lumen renewed Jul 1 (175K credits) and onboarding is progressing on schedule.' },
+      { ts: 'Jul 28 · 11:30 AM', csm: 'riley', account: 'Red Hat', note: 'Biweekly TrustRadius sync; GEO dashboard update; layoff discussion (Stacy departed HG); Riley departing Aruba vacation tomorrow.', mins: 30, health: 'Healthy', nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in', detail: 'Riley Rogers held biweekly Red Hat TrustRadius sync with Brianna Gault and Abhilasha (HG). The team discussed recent HG layoffs — Stacy\'s departure was noted and the team processed it together. Riley covered the GEO dashboard vendor portal update. Riley departs for Aruba vacation tomorrow. Mardigan Moffat (TrustRadius) also attended. Relationship continuity noted as strong despite org changes.' },
+      { ts: 'Jul 28 · 12:30 PM', csm: 'riley', account: 'Intuit', note: 'TrustRadius reengagement call with Rana Hannoush; AI increasing TrustRadius value; budget constraints and org shifts noted.', mins: 30, health: 'Healthy', nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in', detail: 'Riley Rogers and Mardigan Moffat (TrustRadius) reconnected with Rana Hannoush (Intuit QuickBooks Workforce) after an extended gap. Mardigan noted TrustRadius acquisition by HG has brought new products and changes. Discussion: AI is increasing the value of social proof as AI engines crawl review content — TrustRadius is well-positioned. Budget constraints and project ownership shifts in Intuit marketing org noted as ongoing friction.' },
+    ],
+    pulses: [
+      { csm: 'varun', account: 'DXC', health: 'Healthy', note: 'Renewal planning call with Augie and Gabriella. Credit model transition discussed; invoice routing issue being resolved. Renewal Nov 30.' },
+      { csm: 'nick', account: 'IBM', health: 'Healthy', note: 'Monthly sync. HashiCorp install data strategy discussed with Kruti Desai and JJ. Directing IBM toward HG data for HashiCorp GTM decisions.' },
+      { csm: 'nick', account: 'Red Hat', health: 'Healthy', note: 'Reconnect after 6-week gap. Julia Schwartz connected to AI segmentation pilot work streams and Salesforce recommendation object. Max Shaw introduced.' },
+      { csm: 'rani', account: 'Cloudflare', health: 'Healthy', note: 'Continued expansion conversation. Martin Kielczewski (down 8 headcount) still engaged. Positive reversal from Jul 7 concerning flag.' },
+      { csm: 'nick', account: 'SAP', health: 'Healthy', note: 'Biweekly sync. Rob Nute demoed vendor centricity. Renewal direction discussed with Adriana Aguiar.' },
+      { csm: 'riley', account: 'Zoom', health: 'Healthy', note: 'TR CSM sync. GEO dashboard in vendor portal coming soon. Camille Shortridge connected to Grace for pre-webinar briefing.' },
+      { csm: 'rani', account: 'Cisco (Isovalent)', health: 'Healthy', note: 'Onboarding check-in with Tu-Anh. Inbound account scoring declined (cost). Onboarding nearing completion.' },
+      { csm: 'atisha', account: 'Equinix', health: 'Healthy', note: 'New stakeholder Hassan Ali (ex-CrowdStrike) engaged. Oriented to HG platform. New high-intent contact signals strong account health.' },
+      { csm: 'rani', account: 'SAP (Partner)', health: 'Healthy', note: 'Strategic SAP-HG upsell partnership call. Michael Harding (SAP Rise GTM) engaged. HG data already in SAP propensity model — deeper integration opportunity.' },
+      { csm: 'divyam', account: 'Lumen', health: 'Healthy', note: 'RGIP onboarding session. New acquisition capabilities covered. Nathan flagging multiple lookalike model requests from internal teams.' },
+      { csm: 'riley', account: 'Red Hat', health: 'Healthy', note: 'Biweekly TR sync. GEO dashboard update. Layoff discussion (Stacy). Riley on Aruba vacation starting tomorrow.' },
+      { csm: 'riley', account: 'Intuit', health: 'Healthy', note: 'TR reengagement with Rana Hannoush. AI increasing TrustRadius value. Budget constraints and org changes noted.' },
+    ],
+  };
+}
+
+function dayMeta_2026_07_28() {
+  return {
+    pills: [
+      ['dot-teal',  '12 Calls'],
+      ['dot-amber', '3 Expansion'],
+      ['dot-green', '12 Pulses'],
+      ['dot-grey',  'Tue Jul 28 · 89 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (12)', 'Pulses (12)', 'Action Items (7)'],
+  };
+}
+
+function dayOverviewHTML_2026_07_28() {
+  return `<div class="section-label">Team Activity &mdash; Tuesday July 28, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Tuesday Jul 28 &mdash; 89 recordings scanned</strong> via SFDC SOQL &middot; <strong>12 confirmed calls</strong> across 6 CSMs &middot; <span style="color:#f59e0b;">3 Expansion signals</span> (Cloudflare, SAP Partner, Red Hat) &middot; 0 Concerning
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>Expansion signals:</strong> Cloudflare expansion conversation with Robert Goldfarb &amp; Martin Kielczewski (positive reversal from Jul 7 concerning flag) &middot; SAP upsell analysis partnership call with SAP Rise GTM (Michael Harding) &middot; Red Hat segmentation pilot expansion (Julia Schwartz connected to AI pilot work streams)
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">3 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">3</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">90m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Zoom (GEO dashboard) &middot; Red Hat TR (biweekly) &middot; Intuit (reengagement)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">3 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">3</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">120m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">IBM (monthly) &middot; Red Hat (pilots expansion) &middot; SAP (vendor centricity demo)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Lumen (RGIP onboarding, multiple lookalike models requested)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">3 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">3</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">90m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Cloudflare (expansion &uarr;) &middot; Cisco Isovalent (onboarding) &middot; SAP Partner (upsell &uarr;)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">DXC (brief renewal planning; rescheduled to Thu afternoon)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Equinix (new stakeholder Hassan Ali engaged, high intent)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event (internal HG team sync &mdash; Mark Fell Ops) &mdash; no external customer recordings</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event scheduled (ConnectWise biweekly) &mdash; no recording synced</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_07_28() {
+  return `<div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 12px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>3 Expansion signals today:</strong> Cloudflare (Robert Goldfarb + Martin Kielczewski, positive reversal from Jul 7 concerning) &middot; SAP Partner (Michael Harding, SAP Rise GTM upsell analytics) &middot; Red Hat (Julia Schwartz, AI segmentation pilot expansion)
+  </div>
+  <div style="background:#1c1f26;border:1px solid #334155;border-radius:6px;padding:8px 14px;margin:0 0 12px 0;font-size:12px;color:#94a3b8;">
+    &#x26A0; <strong>Unconfirmed (no transcript):</strong> Unum biweekly (Varun &mdash; recording exists, no transcript) &middot; Apple Strategy &amp; Planning (Atisha &mdash; recording exists, no transcript) &middot; ConnectWise biweekly (Andy &mdash; no recording)<br>
+    &#x1F534; <strong>Internal excluded:</strong> Team Sync &mdash; Mark Fell Ops (Pam Huck, WhatId = HG Insights account)
+  </div>
+  <div class="calls-table"><!-- auto-table rendered by core.js from dayData fields --></div>`;
+}
+
+function dayPulsesHTML_2026_07_28() {
+  const cards = [
+    { csm: 'varun', health: 'Healthy', account: 'DXC',
+      opp: 'Vitally Pulse &mdash; Jul 28 Call',
+      arr: 'Enterprise &middot; Varun Tiwari', csmlbl: 'Varun Tiwari',
+      change: 'Jul 28 &middot; Check-in',
+      excerpt: '7/28 VT: Renewal planning with Augie &amp; Gabriella (5:00 AM, 30 min). Call briefly rescheduled to Thursday afternoon by Augie. Credit model transition discussed; invoice routing issue (Prithi\'s team) being resolved. Renewal Nov 30, ~$40K. Lookahead: full renewal meeting Thu.' },
+    { csm: 'nick', health: 'Healthy', account: 'IBM',
+      opp: 'Vitally Pulse &mdash; Jul 28 Call',
+      arr: 'Enterprise &middot; Nick Johnson', csmlbl: 'Nick Johnson',
+      change: 'Jul 28 &middot; Check-in',
+      excerpt: '7/28 NJ: Monthly sync with Kruti Desai, JJ, William Onesti (6:30 AM, 30 min). Discussed IBM email from Sid at HashiCorp; Nick directed team toward HG install data to support IBM\'s HashiCorp GTM. Clayton Cutbush (HG AE) also on call.' },
+    { csm: 'nick', health: 'Healthy', account: 'Red Hat',
+      opp: 'Vitally Pulse &mdash; Jul 28 Call',
+      arr: 'Enterprise &middot; Nick Johnson', csmlbl: 'Nick Johnson',
+      change: 'Jul 28 &middot; Expansion signal',
+      excerpt: '7/28 NJ: Reconnect with Julia Schwartz after 6-week gap (9:00 AM, 60 min). Introduced Max Shaw to evangelize HG pilots. Julia working to centralize AI segmentation pilots across Red Hat field. Nick + Augie connecting her to existing AI pilot work streams and Salesforce recommendation object.' },
+    { csm: 'rani', health: 'Healthy', account: 'Cloudflare',
+      opp: 'Vitally Pulse &mdash; Jul 28 Call',
+      arr: 'Enterprise &middot; Rani Guy', csmlbl: 'Rani Guy',
+      change: 'Jul 28 &middot; Expansion signal',
+      excerpt: '7/28 RG: Continued expansion conversation with Robert Goldfarb &amp; Martin Kielczewski (9:00 AM, 30 min). Martin noted Cloudflare is down 8 headcount. Positive reversal from Jul 7 concerning flag (build-vs-buy eval). Expansion momentum continues despite resource constraints.' },
+    { csm: 'nick', health: 'Healthy', account: 'SAP',
+      opp: 'Vitally Pulse &mdash; Jul 28 Call',
+      arr: 'Enterprise &middot; Nick Johnson', csmlbl: 'Nick Johnson',
+      change: 'Jul 28 &middot; Mixed',
+      excerpt: '7/28 NJ: Biweekly SAP sync with Adriana Aguiar &amp; David Garcia-Thomas (9:30 AM, 30 min). Rob Nute (HG Dir. Advanced Analytics) demoed vendor centricity capability. Renewal direction discussed — Adriana prioritized renewal discussion before the demo. Both renewal path and expansion on table.' },
+    { csm: 'riley', health: 'Healthy', account: 'Zoom',
+      opp: 'Vitally Pulse &mdash; Jul 28 Call',
+      arr: 'Enterprise &middot; Riley Rogers', csmlbl: 'Riley Rogers',
+      change: 'Jul 28 &middot; Check-in',
+      excerpt: '7/28 RR: TR CSM sync with Camille Shortridge &amp; Cole Arutian (10:00 AM, 30 min). GEO dashboard in vendor portal launching soon. Camille prepping for customer webinar on GEO metrics; connected to Grace for pre-webinar walkthrough.' },
+    { csm: 'rani', health: 'Healthy', account: 'Cisco (Isovalent)',
+      opp: 'Vitally Pulse &mdash; Jul 28 Call',
+      arr: 'Enterprise &middot; Rani Guy', csmlbl: 'Rani Guy',
+      change: 'Jul 28 &middot; Check-in',
+      excerpt: '7/28 RG: Onboarding check-in with Tu-Anh (10:00 AM, 30 min). Mel on PTO. Inbound account scoring discussed; Tu-Anh declined at current cost. Last outstanding onboarding item resolved. Account onboarding nearing completion.' },
+    { csm: 'atisha', health: 'Healthy', account: 'Equinix',
+      opp: 'Vitally Pulse &mdash; Jul 28 Call',
+      arr: 'Enterprise &middot; Atisha Waghela', csmlbl: 'Atisha Waghela',
+      change: 'Jul 28 &middot; Check-in',
+      excerpt: '7/28 AW: New stakeholder call with Hassan Ali (10:00 AM, 30 min). Hassan is new to Equinix, previously used HG at CrowdStrike. Atisha + Charles Hawkins (new HG owner) oriented him to HG platform and data-center displacement use cases. High-intent new contact.' },
+    { csm: 'rani', health: 'Healthy', account: 'SAP (Partner)',
+      opp: 'Vitally Pulse &mdash; Jul 28 Call',
+      arr: 'Enterprise &middot; Rani Guy', csmlbl: 'Rani Guy',
+      change: 'Jul 28 &middot; Expansion signal',
+      excerpt: '7/28 RG: Strategic SAP-HG upsell analysis call with Michael Harding (SAP Rise GTM) (10:30 AM, 30 min). HG data already in SAP propensity model. Everett Oliven (ex-AWS) facilitated. Goal: deepen HG data consumption and identify upsell/cross-sell in SAP\'s global GTM motion. Significant expansion opportunity.' },
+    { csm: 'divyam', health: 'Healthy', account: 'Lumen',
+      opp: 'Vitally Pulse &mdash; Jul 28 Call',
+      arr: 'Enterprise &middot; Divyam Dewan', csmlbl: 'Divyam Dewan',
+      change: 'Jul 28 &middot; Check-in',
+      excerpt: '7/28 DD: RGIP platform onboarding session with Nathan, Kunal Jha, Julie Chalk, Eric Bailey (11:00 AM, 60 min). New acquisition capabilities covered interactively. Nathan flagging multiple lookalike model requests incoming from internal teams. Lumen renewal (Jul 1, 175K credits) progressing well.' },
+    { csm: 'riley', health: 'Healthy', account: 'Red Hat',
+      opp: 'Vitally Pulse &mdash; Jul 28 Call',
+      arr: 'Enterprise &middot; Riley Rogers', csmlbl: 'Riley Rogers',
+      change: 'Jul 28 &middot; Check-in',
+      excerpt: '7/28 RR: Biweekly TR sync with Brianna Gault &amp; Abhilasha HG (11:30 AM, 30 min). Discussed HG layoffs (Stacy departed). GEO dashboard vendor portal update. Riley departing for Aruba vacation tomorrow.' },
+    { csm: 'riley', health: 'Healthy', account: 'Intuit',
+      opp: 'Vitally Pulse &mdash; Jul 28 Call',
+      arr: 'Enterprise &middot; Riley Rogers', csmlbl: 'Riley Rogers',
+      change: 'Jul 28 &middot; Check-in',
+      excerpt: '7/28 RR: TR reengagement with Rana Hannoush (12:30 PM, 30 min). First reconnect in a while with Mardigan Moffat (TR). AI increasing TrustRadius value as AI engines crawl reviews. Budget constraints and org ownership shifts noted at Intuit.' },
+  ];
+  const bc = h => h === 'Healthy' ? 'badge-healthy' : h === 'Concerning' ? 'badge-concerning' : 'badge-poor';
+  const bi = h => h === 'Healthy' ? '&#128994;' : h === 'Concerning' ? '&#128993;' : '&#128308;';
+  return `<div class="pulse-grid">${cards.map(c => `
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div style="font-weight:600;font-size:13px;color:#f1f5f9;">${c.account}</div>
+          <div style="font-size:11px;color:#94a3b8;">${c.opp}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filters.</div>`;
+}
+
+function dayActionsHTML_2026_07_28() {
+  return `<div class="action-list">
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0728-1')?'done':''}" data-csm="rani" id="action-0728-1">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0728-1')?'checked':''}" onclick="toggleAction('0728-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Cloudflare &mdash; Advance Expansion Conversation with Robert Goldfarb &amp; Martin</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy &middot; Jul 28 expansion call progressed despite Martin being down 8 headcount. This is a direct reversal of the Jul 7 concerning flag (build-vs-buy eval, 60% ops resource loss). Rani should document the expansion scope discussed, identify what product/feature expansion is on the table, and set a concrete follow-up timeline with Robert and Martin. The momentum is real &mdash; keep it moving before resource constraints stall it again.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0728-2')?'done':''}" data-csm="rani" id="action-0728-2">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0728-2')?'checked':''}" onclick="toggleAction('0728-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F91D; SAP (Partner) &mdash; Document HG-SAP Upsell Analytics Partnership Next Steps</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy + Mark Fell &middot; Strategic call with Michael Harding (SAP Rise GTM) is a significant expansion signal. HG data is already embedded in SAP\'s propensity model. Next step: Rani and Mark Fell should prepare a clear proposal or one-pager on how HG data can be more deeply integrated into SAP\'s global upsell/cross-sell motion. Clarify the scope, commercial structure, and next decision-maker meeting. Everett Oliven should be kept in the loop as facilitator.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0728-3')?'done':''}" data-csm="nick" id="action-0728-3">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0728-3')?'checked':''}" onclick="toggleAction('0728-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CA; Red Hat &mdash; Connect Julia Schwartz to AI Segmentation Pilot &amp; Salesforce Recommendation Object</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Nick Johnson &middot; Julia Schwartz is returning from a 6-week gap and is ready to centralize Red Hat\'s segmentation pilots. Nick and Augie committed to connecting her to the existing AI pilot work stream and Salesforce recommendation object program. Nick should send Julia a direct intro to the relevant pilot work stream lead and provide a brief overview of the recommendation object already deployed in Red Hat\'s SFDC. Move this week to capture momentum while Julia is re-engaged.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0728-4')?'done':''}" data-csm="varun" id="action-0728-4">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0728-4')?'checked':''}" onclick="toggleAction('0728-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; DXC &mdash; Confirm Thursday Afternoon Renewal Meeting Agenda with Augie</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Varun Tiwari &middot; Today\'s call was rescheduled to Thursday afternoon by Augie. Varun should confirm the time with Augie and prepare the renewal agenda: (1) credit model transition ($40K subscription = ~40K credits), (2) vendor onboarding paperwork timeline, (3) Gabriella\'s individual usage stats (Augie to share), (4) outstanding invoice resolution status from Prithi\'s manager. Renewal is Nov 30, 2026 &mdash; procurement timelines require early action.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0728-5')?'done':''}" data-csm="nick" id="action-0728-5">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0728-5')?'checked':''}" onclick="toggleAction('0728-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4E4; SAP &mdash; Send Vendor Centricity Materials to Adriana After Rob Nute Demo</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Nick Johnson &middot; Rob Nute (Dir. Advanced Analytics) presented the vendor centricity capability in the biweekly SAP sync. Nick should follow up with Adriana Aguiar and David Garcia-Thomas with the vendor centricity deck or materials and confirm next steps on the renewal direction discussed. Two parallel tracks: (1) renewal pricing and structure, (2) vendor centricity capability expansion. Separate follow-ups may be needed for each track.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0728-6')?'done':''}" data-csm="atisha" id="action-0728-6">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0728-6')?'checked':''}" onclick="toggleAction('0728-6')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F5FA; Equinix &mdash; Follow Up with Hassan Ali on Platform Access and Use Case Setup</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Atisha Waghela &middot; Hassan Ali is a new high-intent contact at Equinix (previously used HG at CrowdStrike for competitive displacement). Atisha should send Hassan a follow-up with: (1) instructions for accessing the HG platform via his Equinix credentials, (2) a 1-pager on data-center and managed services displacement use cases, (3) an offer for a dedicated onboarding call with Equinix\'s relevant team. This is a strong new stakeholder opportunity given Hassan\'s prior HG experience and stated use case fit.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0728-7')?'done':''}" data-csm="divyam" id="action-0728-7">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0728-7')?'checked':''}" onclick="toggleAction('0728-7')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F9E9; Lumen &mdash; Queue Lookalike Model Requests from Nathan and Confirm Next Onboarding Session</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Divyam Dewan &middot; Nathan flagged multiple lookalike model requests coming through from Lumen\'s internal teams. Divyam should confirm: (1) queue the incoming model requests and set turnaround expectations with Nathan, (2) send a session recap with the new platform capabilities covered today, (3) confirm schedule for the next onboarding session. Lumen is tracking well post-renewal (Jul 1, 175K credits).</div>
+      </div>
+    </div>
+
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filters.</div>`;
+}
+
+// ─── July 29, 2026 ────────────────────────────────────────────────────────────
+
+function dayData_2026_07_29() {
+  return {
+    calls: [
+      { ts: 'Jul 29 · 5:00 AM', csm: 'Varun Tiwari', account: 'BMC Software', duration: '30 min',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Post-advisory session action review; license renewal planning; invoice routing resolution with Prithi\'s team' },
+      { ts: 'Jul 29 · 7:30 AM', csm: 'Varun Tiwari', account: 'CBTS', duration: '30 min',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Bi-weekly sync; platform engagement and usage review' },
+      { ts: 'Jul 29 · 8:30 AM', csm: 'Nick Johnson', account: 'Siemens AG', duration: '30 min',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Bi-weekly cadence; HG data usage and strategic alignment; Max Shaw (HG inside sales) also present' },
+      { ts: 'Jul 29 · 10:00 AM', csm: 'Atisha Waghela', account: 'Apple', duration: '30 min',
+        nature: 'Routine', initiator: 'Customer', purpose: 'Check-in',
+        detail: 'ML model use case review; data prop team engagement discussion; platform check-in' },
+      { ts: 'Jul 29 · 12:00 PM', csm: 'Divyam Dewan', account: 'Blackbaud', duration: '30 min',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'TrustRadius biweekly sync; review status and engagement next steps' },
+      { ts: 'Jul 29 · 12:00 PM', csm: 'Rani Guy', account: 'Lenovo Group Ltd.', duration: '30 min',
+        nature: 'Routine', initiator: 'Customer', purpose: 'Expansion',
+        detail: 'Kam (ISV BD) exploring HG data for ISV market penetration and workstation sales plays; new use case — quantify TAM, activate ISV account-based sales plays' },
+      { ts: 'Jul 29 · 1:00 PM', csm: 'Atisha Waghela', account: 'Databricks Inc.', duration: '30 min',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Issue',
+        detail: 'Custom spend model concerns; app development criteria questions; expert Doug on leave until Aug 11; Tracy Chong covering' },
+    ],
+    pulses: [
+      { account: 'BMC Software',      csm: 'Varun Tiwari',  health: 'Healthy' },
+      { account: 'CBTS',              csm: 'Varun Tiwari',  health: 'Healthy' },
+      { account: 'Siemens AG',        csm: 'Nick Johnson',  health: 'Healthy' },
+      { account: 'Apple',             csm: 'Atisha Waghela',health: 'Healthy' },
+      { account: 'Blackbaud',         csm: 'Divyam Dewan',  health: 'Healthy' },
+      { account: 'Lenovo Group Ltd.', csm: 'Rani Guy',      health: 'Healthy' },
+      { account: 'Databricks Inc.',   csm: 'Atisha Waghela',health: 'Concerning' },
+    ]
+  };
+}
+
+function dayMeta_2026_07_29() {
+  return {
+    pills: [
+      ['dot-teal',  '7 Calls'],
+      ['dot-green', '5 CSMs Active'],
+      ['dot-blue',  '1 Expansion'],
+      ['dot-red',   '1 Issue'],
+    ],
+    tabs: ['Overview', 'Calls', 'Pulses', 'Actions']
+  };
+}
+
+function dayOverviewHTML_2026_07_29() {
+  return `<div class="section-label">Wednesday &middot; July 29, 2026 &middot; 7 confirmed calls across 5 CSMs &middot; 1 expansion signal (Lenovo ISV BD) &middot; 1 issue flag (Databricks custom spend model)</div>
+  <div class="overview-grid">
+
+    <div class="csm-card no-calls" data-csm="riley">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No customer calls &mdash; on Aruba vacation (departed Jul 28)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Siemens (bi-weekly cadence; Max Shaw on call)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Blackbaud (TrustRadius biweekly sync)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Lenovo (Kam ISV BD &mdash; new use case expansion signal)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">BMC (post-advisory action review + renewal) &middot; CBTS (bi-weekly)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No confirmed customer recordings</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Apple (ML model check-in) &middot; Databricks (custom spend issue &mdash; Doug on leave)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No confirmed customer recordings</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_07_29() {
+  return `<div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 12px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>1 Expansion signal:</strong> Lenovo &mdash; Kam (ISV BD) exploring HG data to quantify TAM, map market penetration, and activate workstation ISV sales plays with Rani Guy &amp; Adrian Escobar
+  </div>
+  <div style="background:#2c1c1c;border:1px solid #f87171;border-left:3px solid #f87171;border-radius:6px;padding:8px 14px;margin:0 0 12px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0; <strong>1 Issue flag:</strong> Databricks &mdash; Customer concerns about custom spend model criteria (app development segmentation); expert Doug on leave until Aug 11; Tracy Chong covering
+  </div>
+  <div class="calls-table"><!-- auto-table rendered by core.js from dayData fields --></div>`;
+}
+
+function dayPulsesHTML_2026_07_29() {
+  const cards = [
+    { csm: 'varun', health: 'Healthy', account: 'BMC Software',
+      opp: 'Vitally Pulse &mdash; Jul 29 Call',
+      arr: 'Enterprise &middot; Varun Tiwari', csmlbl: 'Varun Tiwari',
+      change: 'Jul 29 &middot; Check-in',
+      excerpt: '7/29 VT: Post-advisory session action review with David Bartholomew and Augie Buettner (5:00 AM, 30 min). David debriefed from the HG Advisory event; identified key action items on license renewal. Discussion around credit model transition and outstanding invoice routing issue (Prithi\'s team). Renewal planning continuing; specific follow-up actions from advisory session being tracked.' },
+    { csm: 'varun', health: 'Healthy', account: 'CBTS',
+      opp: 'Vitally Pulse &mdash; Jul 29 Call',
+      arr: 'Enterprise &middot; Varun Tiwari', csmlbl: 'Varun Tiwari',
+      change: 'Jul 29 &middot; Check-in',
+      excerpt: '7/29 VT: Bi-weekly sync (7:30 AM, 30 min). Routine cadence call; platform engagement and usage review with CBTS team. No critical escalations. Engagement ongoing.' },
+    { csm: 'nick', health: 'Healthy', account: 'Siemens AG',
+      opp: 'Vitally Pulse &mdash; Jul 29 Call',
+      arr: 'Enterprise &middot; Nick Johnson', csmlbl: 'Nick Johnson',
+      change: 'Jul 29 &middot; Check-in',
+      excerpt: '7/29 NJ: Bi-weekly cadence call (8:30 AM, 30 min). Nick Johnson confirmed as speaker; Max Shaw (HG inside sales) and Chloé Portier (HG) also present. Regular HG data usage and strategic alignment review with Siemens team. Steady engagement; no escalations noted.' },
+    { csm: 'atisha', health: 'Healthy', account: 'Apple',
+      opp: 'Vitally Pulse &mdash; Jul 29 Call',
+      arr: 'Enterprise &middot; Atisha Waghela', csmlbl: 'Atisha Waghela',
+      change: 'Jul 29 &middot; Check-in',
+      excerpt: '7/29 AW: ML model use case review (10:00 AM, 30 min). Customer-initiated check-in focused on data prop team engagement and ML model criteria. Atisha covered the full scope of Apple\'s HG data deployment and addressed questions from the data prop team. Healthy engagement with focus on advanced use cases.' },
+    { csm: 'divyam', health: 'Healthy', account: 'Blackbaud',
+      opp: 'Vitally Pulse &mdash; Jul 29 Call',
+      arr: 'Enterprise &middot; Divyam Dewan', csmlbl: 'Divyam Dewan',
+      change: 'Jul 29 &middot; Check-in',
+      excerpt: '7/29 DD: TrustRadius biweekly sync (12:00 PM, 30 min). Regular cadence with Blackbaud TrustRadius contacts. Review status update and engagement next steps discussed. Ongoing relationship maintenance; no flags surfaced.' },
+    { csm: 'rani', health: 'Healthy', account: 'Lenovo Group Ltd.',
+      opp: 'Vitally Pulse &mdash; Jul 29 Call',
+      arr: 'Enterprise &middot; Rani Guy', csmlbl: 'Rani Guy',
+      change: 'Jul 29 &middot; Expansion signal',
+      excerpt: '7/29 RG: Expansion discovery call with Kam (ISV BD), Ryan Warren, Adrian Escobar (12:00 PM, 30 min). Kam is developing an ISV market plan to drive workstation hardware sales and is exploring HG data to quantify TAM, measure ISV market penetration, and activate targeted account-based sales plays with ISV partners. Ryan has been working with HG for ~2 years; Kam is net new to the platform. Clear expansion use case with committed internal sponsor. Rani and Adrian should define data scope and next steps.' },
+    { csm: 'atisha', health: 'Concerning', account: 'Databricks Inc.',
+      opp: 'Vitally Pulse &mdash; Jul 29 Call',
+      arr: 'Enterprise &middot; Atisha Waghela', csmlbl: 'Atisha Waghela',
+      change: 'Jul 29 &middot; Issue',
+      excerpt: '7/29 AW: Custom spend model issue call with Ryan Comstock, Charles Hawkins (1:00 PM, 30 min). Customer raised concerns about app development criteria in the custom spend model &mdash; specifically how AI workload segmentation overlaps with the broader TAN model. Doug (custom spend expert) is the sole builder of the model and is on leave until Aug 11. Tracy Chong covering. Risk: customer decisions about model configuration may be delayed 2+ weeks. Atisha should ensure Tracy is fully briefed and set a follow-up meeting for Aug 11.' },
+  ];
+  const bc = h => h === 'Healthy' ? 'badge-healthy' : h === 'Concerning' ? 'badge-concerning' : 'badge-poor';
+  const bi = h => h === 'Healthy' ? '&#128994;' : h === 'Concerning' ? '&#128993;' : '&#128308;';
+  return `<div class="pulse-grid">${cards.map(c => `
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div style="font-weight:600;font-size:13px;color:#f1f5f9;">${c.account}</div>
+          <div style="font-size:11px;color:#94a3b8;">${c.opp}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filters.</div>`;
+}
+
+function dayActionsHTML_2026_07_29() {
+  return `<div class="action-list">
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0729-1')?'done':''}" data-csm="rani" id="action-0729-1">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0729-1')?'checked':''}" onclick="toggleAction('0729-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Lenovo &mdash; Define ISV BD Expansion Scope with Kam and Advance to Commercial Discussion</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy + Adrian Escobar &middot; Kam (Lenovo ISV BD) is building a structured ISV market plan to grow workstation hardware sales and came with specific data needs: TAM quantification, ISV market penetration analysis, and account-based sales play activation with ISV partners. This is a clear, sponsored new use case that sits outside Lenovo&apos;s current HG footprint. Rani and Adrian should send a follow-up scoping doc or deck to Kam defining what HG data can address (install data for ISV account targeting, spend signals, competitive displacement), confirm whether this requires a seat expansion or new product, and set a next discovery call. Ryan Warren can facilitate internal alignment on Lenovo&apos;s side.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0729-2')?'done':''}" data-csm="atisha" id="action-0729-2">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0729-2')?'checked':''}" onclick="toggleAction('0729-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0; Databricks &mdash; Brief Tracy on Custom Spend Model &amp; Set Aug 11 Follow-Up with Doug</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Atisha Waghela &middot; Databricks raised specific concerns about app development criteria in the custom spend model, particularly around AI workload segmentation overlap. Doug, the sole model expert, is on leave until Aug 11. Tracy Chong is covering but may not have full context on the model build decisions. Atisha should: (1) send Tracy a written summary of the customer&apos;s questions from today&apos;s call so she can respond to anything time-sensitive, (2) advise Ryan Comstock and Charles Hawkins not to make model configuration changes until Doug returns, (3) schedule a follow-up call with Doug, Atisha, and Databricks for the week of Aug 11 to resolve the criteria questions. Do not let this sit without a clear timeline communicated to the customer.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0729-3')?'done':''}" data-csm="varun" id="action-0729-3">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0729-3')?'checked':''}" onclick="toggleAction('0729-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; BMC &mdash; Send Advisory Session Action Summary to Augie and Schedule Next Renewal Meeting</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Varun Tiwari &middot; Today&apos;s call with David Bartholomew and Augie Buettner was explicitly a post-advisory action review. Key items discussed: credit model transition ($40K subscription mapping), invoice routing issue (Prithi&apos;s team), and renewal planning (Nov 30, 2026). Varun should send Augie a written action log from the advisory session with owner and due date for each item, confirm status of the invoice routing escalation, and schedule the formal renewal planning meeting with Augie and Gabriella to complete what today&apos;s call set up.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0729-4')?'done':''}" data-csm="nick" id="action-0729-4">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0729-4')?'checked':''}" onclick="toggleAction('0729-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4E4; Siemens &mdash; Send Bi-Weekly Recap and Confirm Next Meeting</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Nick Johnson &middot; Routine bi-weekly call completed. Nick (and Max Shaw) should send a brief recap email confirming any action items or data requests surfaced during the call. Confirm the next bi-weekly cadence date to maintain momentum. No escalations flagged.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0729-5')?'done':''}" data-csm="divyam" id="action-0729-5">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0729-5')?'checked':''}" onclick="toggleAction('0729-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Blackbaud &mdash; Follow Up on Any TR Review Program Action Items from Biweekly</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Divyam Dewan &middot; Routine TrustRadius biweekly sync completed. Divyam should send a brief follow-up with any review program action items or next steps discussed. Confirm the next biweekly cadence. Healthy engagement; no flags.</div>
+      </div>
+    </div>
+
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filters.</div>`;
+}
