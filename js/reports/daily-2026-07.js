@@ -5990,8 +5990,9 @@ function dayPulsesHTML_2026_07_27() {
     <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
       <div class="pulse-card-top">
         <div>
-          <div style="font-weight:600;font-size:13px;color:#f1f5f9;">${c.account}</div>
-          <div style="font-size:11px;color:#94a3b8;">${c.opp}</div>
+          <div class="pulse-account">${c.account}</div>
+          <div class="pulse-opp">${c.opp}</div>
+          <div class="pulse-arr">${c.arr}</div>
         </div>
         <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
       </div>
@@ -6424,7 +6425,13 @@ function dayMeta_2026_07_29() {
 }
 
 function dayOverviewHTML_2026_07_29() {
-  return `<div class="section-label">Wednesday &middot; July 29, 2026 &middot; 7 confirmed calls across 5 CSMs &middot; 1 expansion signal (Lenovo ISV BD) &middot; 1 issue flag (Databricks custom spend model)</div>
+  return `<div class="section-label">Team Activity &mdash; Wednesday July 29, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Wednesday Jul 29 &mdash; 90 recordings scanned</strong> via SFDC SOQL &middot; <strong>7 confirmed calls</strong> across 5 CSMs &middot; <span style="color:#f59e0b;">1 Expansion signal</span> (Lenovo ISV BD) &middot; 1 Issue flag (Databricks)
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>Expansion signal:</strong> Lenovo ISV BD &mdash; Kam developing ISV market penetration plan to quantify TAM &amp; activate workstation sales plays with Rani Guy &amp; Adrian Escobar &middot; &#x26A0; <strong>Issue flag:</strong> Databricks custom spend model &mdash; Doug on leave until Aug 11; Tracy Chong covering
+  </div>
   <div class="overview-grid">
 
     <div class="csm-card no-calls" data-csm="riley">
@@ -6531,7 +6538,7 @@ function dayCallsHTML_2026_07_29() {
   return `<div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 12px 0;font-size:12px;color:#7dd3fc;">
     &#x1F4C8; <strong>1 Expansion signal:</strong> Lenovo &mdash; Kam (ISV BD) exploring HG data to quantify TAM, map market penetration, and activate workstation ISV sales plays with Rani Guy &amp; Adrian Escobar
   </div>
-  <div style="background:#2c1c1c;border:1px solid #f87171;border-left:3px solid #f87171;border-radius:6px;padding:8px 14px;margin:0 0 12px 0;font-size:12px;color:#fca5a5;">
+  <div style="background:#1c1f26;border:1px solid #334155;border-radius:6px;padding:8px 14px;margin:0 0 12px 0;font-size:12px;color:#94a3b8;">
     &#x26A0; <strong>1 Issue flag:</strong> Databricks &mdash; Customer concerns about custom spend model criteria (app development segmentation); expert Doug on leave until Aug 11; Tracy Chong covering
   </div>
   <div class="calls-table"><!-- auto-table rendered by core.js from dayData fields --></div>`;
@@ -6581,8 +6588,9 @@ function dayPulsesHTML_2026_07_29() {
     <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
       <div class="pulse-card-top">
         <div>
-          <div style="font-weight:600;font-size:13px;color:#f1f5f9;">${c.account}</div>
-          <div style="font-size:11px;color:#94a3b8;">${c.opp}</div>
+          <div class="pulse-account">${c.account}</div>
+          <div class="pulse-opp">${c.opp}</div>
+          <div class="pulse-arr">${c.arr}</div>
         </div>
         <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
       </div>
@@ -6591,7 +6599,6 @@ function dayPulsesHTML_2026_07_29() {
     </div>`).join('')}</div>
   <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filters.</div>`;
 }
-
 function dayActionsHTML_2026_07_29() {
   return `<div class="action-list">
 
