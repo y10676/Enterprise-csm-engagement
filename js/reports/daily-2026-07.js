@@ -6434,15 +6434,6 @@ function dayOverviewHTML_2026_07_29() {
   </div>
   <div class="overview-grid">
 
-    <div class="csm-card no-calls" data-csm="riley">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header">
-        <div class="avatar av-riley">RR</div>
-        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
-      </div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No customer calls &mdash; on Aruba vacation (departed Jul 28)</div>
-    </div>
-
     <div class="csm-card has-calls" data-csm="nick">
       <span class="call-badge">1 CALL</span>
       <div class="csm-card-header">
@@ -6499,15 +6490,6 @@ function dayOverviewHTML_2026_07_29() {
       <div class="csm-account-note">BMC (post-advisory action review + renewal) &middot; CBTS (bi-weekly)</div>
     </div>
 
-    <div class="csm-card no-calls" data-csm="pam">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header">
-        <div class="avatar av-grey">PH</div>
-        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
-      </div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No confirmed customer recordings</div>
-    </div>
-
     <div class="csm-card has-calls" data-csm="atisha">
       <span class="call-badge">2 CALLS</span>
       <div class="csm-card-header">
@@ -6520,6 +6502,24 @@ function dayOverviewHTML_2026_07_29() {
         <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
       </div>
       <div class="csm-account-note">Apple (ML model check-in) &middot; Databricks (custom spend issue &mdash; Doug on leave)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="riley">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No customer calls &mdash; on Aruba vacation (departed Jul 28)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No confirmed customer recordings</div>
     </div>
 
     <div class="csm-card no-calls" data-csm="andy">
