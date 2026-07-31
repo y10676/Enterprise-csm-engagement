@@ -6645,3 +6645,339 @@ function dayActionsHTML_2026_07_29() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filters.</div>`;
 }
+
+function dayData_2026_07_30() {
+  return {
+    calls: [
+      { ts: 'Jul 30 · 2:00 AM', csm: 'Nick Johnson', account: 'Telefonica', duration: '30 min',
+        nature: 'Routine', initiator: 'Customer', purpose: 'Mixed',
+        detail: 'Lorena assessing HG data value for new BI area ahead of renewal; David (AM) introduced new Fabric dataset (42M companies Spain+Brazil vs. current V2 10M) as upgrade path' },
+      { ts: 'Jul 30 · 3:30 AM', csm: 'Nick Johnson', account: 'Sopra Steria', duration: '30 min',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'New pricing discussion with Peter Quinn (new stakeholder); Angus (AM) leading commercial conversation; HCL BigFix TrustRadius premium listing surfaced as parallel opportunity' },
+      { ts: 'Jul 30 · 5:00 AM', csm: 'Varun Tiwari', account: 'DXC', duration: '30 min',
+        nature: 'Routine', initiator: 'Customer', purpose: 'Check-in',
+        detail: 'Preethi outlined renewal planning priorities: data module coverage, usage metrics, data refresh timeline, and future connector/integration options for FY27 automation scaling' },
+      { ts: 'Jul 30 · 5:00 AM', csm: 'Divyam Dewan', account: 'Infinigate', duration: '30 min',
+        nature: 'Routine', initiator: 'Customer', purpose: 'Issue',
+        detail: 'Abolfazl flagged drastic decrease in search results from data export; caused by backend data replugging (unforeseen outage); EMEA intent data degraded across Germany, France, Netherlands, Austria, UK — no fix timeline confirmed' },
+      { ts: 'Jul 30 · 6:30 AM', csm: 'Varun Tiwari', account: 'Exclusive Networks', duration: '30 min',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Matt Tinker managing simultaneous major transformation projects: Salesforce implementation, MDM setup, new sales performance tools, partner data, vendor onboarding — platform usage on hold during transformation period' },
+      { ts: 'Jul 30 · 7:30 AM', csm: 'Nick Johnson', account: 'Siemens', duration: '30 min',
+        nature: 'Routine', initiator: 'Customer', purpose: 'Check-in',
+        detail: 'Siemens Process & Technology reorg effective Aug 1: Hayden to AI-focused role; Christina to strategic land initiative + social selling (Account Compass); Pat to zone-level key initiatives — HG tool usage shifting to new owners' },
+      { ts: 'Jul 30 · 7:30 AM', csm: 'Varun Tiwari', account: 'ServiceNow', duration: '30 min',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Varun introducing Kraig Kraning (new this week, replaces Ravi who moved to new role; formerly ZoomInfo); 7+ year partnership review with Santhosh' },
+      { ts: 'Jul 30 · 8:30 AM', csm: 'Divyam Dewan', account: 'Lumen', duration: '30 min',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Training session earlier this week went well (Julie Chalk positive); AM transition — new AM joining next Thursday (Augie being replaced); Nathan\'s team adoption growing with each member finding their niche' },
+      { ts: 'Jul 30 · 9:00 AM', csm: 'Nick Johnson', account: 'Veeam', duration: '45 min',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Propensity model sync: Angus (AM) and JBI (Jean-Baptiste Vermersch) reviewing 500+ technology signals to curate model scope; Tricia Greenwald (Corporate Tech, back from PTO) joined; Sid Subramany also on call' },
+      { ts: 'Jul 30 · 11:00 AM', csm: 'Divyam Dewan', account: 'Genesys', duration: '30 min',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'TrustRadius sync with Erica Heil; sustainability award application submitted (awaiting results); historical ratings-to-reviews campaign review; Divyam proactively clearing any open items' },
+      { ts: 'Jul 30 · 11:00 AM', csm: 'Rani Guy', account: 'Cloudflare', duration: '60 min',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Open Price batch matching methodology deep-dive; 4 parallel batch files queued (Omkar config\'d), results expected early next week; quarterly matching cadence and credits expansion scope to be defined post-results' },
+      { ts: 'Jul 30 · 11:00 AM', csm: 'Varun Tiwari', account: 'Pega', duration: '30 min',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Frank Collette wants ICP expansion from ~2,900 to up to 25K companies using DUNS numbers; co-term two existing agreements into one deal; credit accuracy issue from prior agreement to resolve before signing' },
+      { ts: 'Jul 30 · 11:30 AM', csm: 'Pam Huck', account: 'Epicor', duration: '30 min',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Pre-meeting prep for in-person Epicor DG team meeting; Sam Malecek flagged CMO priority: LLM/GEO visibility as top-of-funnel driver — GEO dashboard a key interest; TrustRadius review gen, September event, renewal justification also on agenda' },
+    ],
+    pulses: [
+      { account: 'Telefonica',         csm: 'Nick Johnson',   health: 'Healthy' },
+      { account: 'Sopra Steria',       csm: 'Nick Johnson',   health: 'Healthy' },
+      { account: 'DXC',                csm: 'Varun Tiwari',   health: 'Healthy' },
+      { account: 'Infinigate',         csm: 'Divyam Dewan',   health: 'Concerning' },
+      { account: 'Exclusive Networks', csm: 'Varun Tiwari',   health: 'Healthy' },
+      { account: 'Siemens',            csm: 'Nick Johnson',   health: 'Healthy' },
+      { account: 'ServiceNow',         csm: 'Varun Tiwari',   health: 'Healthy' },
+      { account: 'Lumen',              csm: 'Divyam Dewan',   health: 'Healthy' },
+      { account: 'Veeam',              csm: 'Nick Johnson',   health: 'Healthy' },
+      { account: 'Genesys',            csm: 'Divyam Dewan',   health: 'Healthy' },
+      { account: 'Cloudflare',         csm: 'Rani Guy',       health: 'Healthy' },
+      { account: 'Pega',               csm: 'Varun Tiwari',   health: 'Healthy' },
+      { account: 'Epicor',             csm: 'Pam Huck',       health: 'Healthy' },
+    ]
+  };
+}
+
+function dayMeta_2026_07_30() {
+  return {
+    pills: [
+      ['dot-teal',  '13 Calls'],
+      ['dot-amber', '5 Expansion'],
+      ['dot-red',   '1 Issue'],
+      ['dot-grey',  'Thu Jul 30 · 72 scanned'],
+    ],
+    tabs: ['Overview', 'Calls', 'Pulses', 'Actions']
+  };
+}
+
+function dayOverviewHTML_2026_07_30() {
+  return `<div class="section-label">Team Activity &mdash; Thursday July 30, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Thursday Jul 30 &mdash; 72 recordings scanned</strong> via SFDC SOQL &middot; <strong>13 confirmed calls</strong> across 5 CSMs &middot; <span style="color:#f59e0b;">5 Expansion signals</span> (Telefonica, Sopra Steria, Cloudflare, Pega, Epicor) &middot; <span style="color:#ef4444;">1 Issue</span> (Infinigate EMEA intent data)
+  </div>
+  <div style="background:#1c2333;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fbbf24;">
+    &#x1F4C8; <strong>Expansion signals:</strong> Telefonica &mdash; Fabric dataset (42M co.) upgrade path surfaced &middot; Sopra Steria &mdash; Peter Quinn new pricing meeting &middot; Cloudflare &mdash; Open Price batch matching + quarterly cadence &middot; Pega &mdash; Frank Collette wants ICP 2,900 &rarr; 25K + co-term &middot; Epicor &mdash; CMO priority: LLM/GEO visibility (GEO dashboard interest)
+  </div>
+  <div style="background:#1c1f26;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0; <strong>Issue flag:</strong> Infinigate &mdash; Drastic search results drop (backend data replugging); EMEA intent data degraded across Germany, France, Netherlands, Austria, UK &mdash; no fix timeline confirmed
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">4 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">4</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">4</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">135m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Telefonica (Fabric upgrade path &mdash; expansion) &middot; Sopra Steria (new pricing &mdash; expansion) &middot; Siemens (reorg Aug 1) &middot; Veeam (propensity model sync)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">4 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">4</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">4</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">120m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">DXC (renewal planning) &middot; Exclusive Networks (transformation) &middot; ServiceNow (new contact intro) &middot; Pega (ICP expansion &rarr; 25K &mdash; expansion)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">3 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">3</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">90m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Infinigate (EMEA data issue &mdash; flag) &middot; Lumen (training + AM transition) &middot; Genesys (TR sustainability award)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Cloudflare (Open Price batch matching + credits expansion &mdash; expansion signal)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="pam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Epicor (in-person prep; CMO LLM/GEO visibility priority &mdash; expansion signal)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="riley">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Red Hat recording found &mdash; no transcript synced; 2 other events (Jama, Apptio) &mdash; no recordings found</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="atisha">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Insight Direct recording found &mdash; no transcript synced; 4 events (SysPro, Kong, Apple, Versa) &mdash; no recordings found</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No confirmed customer recordings</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_07_30() {
+  return `<div style="background:#1c2333;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 12px 0;font-size:12px;color:#fbbf24;">
+    &#x1F4C8; <strong>5 Expansion signals:</strong> Telefonica &mdash; Fabric dataset upgrade &middot; Sopra Steria &mdash; Peter Quinn new pricing &middot; Cloudflare &mdash; Open Price matching + credits &middot; Pega &mdash; ICP 2,900 &rarr; 25K + co-term &middot; Epicor &mdash; CMO LLM/GEO dashboard interest
+  </div>
+  <div style="background:#1c1f26;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 12px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0; <strong>Issue flag:</strong> Infinigate &mdash; EMEA intent data degradation (5 countries); drastic search results drop from backend data replugging &mdash; no fix timeline communicated to customer
+  </div>`;
+}
+
+function dayPulsesHTML_2026_07_30() {
+  const cards = [
+    { csm: 'nick', health: 'Healthy', account: 'Telefonica',
+      opp: 'Vitally Pulse — Jul 30 Call',
+      arr: 'Enterprise · Nick Johnson', csmlbl: 'Nick Johnson',
+      change: 'Jul 30 · Mixed (Check-in + Expansion)',
+      excerpt: '7/30 NJ: Renewal planning check-in (2:00 AM, 30 min). Lorena recently moved to a new BI area within Telefonica and is assessing the value of HG data for her team ahead of renewal. David (AM) introduced the new Fabric dataset (42M companies in Spain and Brazil) as an upgrade from the current V2 license (10M companies). Clear expansion opportunity to be developed ahead of renewal conversation.' },
+    { csm: 'nick', health: 'Healthy', account: 'Sopra Steria',
+      opp: 'Vitally Pulse — Jul 30 Call',
+      arr: 'Enterprise · Nick Johnson', csmlbl: 'Nick Johnson',
+      change: 'Jul 30 · Expansion',
+      excerpt: '7/30 NJ: New pricing discussion (3:30 AM, 30 min). Ad-hoc call with Peter Quinn (new Sopra Steria stakeholder) led by Angus (AM) with Nick participating. Commercial options discussed. HCL BigFix TrustRadius premium listing also surfaced as a parallel opportunity — warm interest from an interested party. Two distinct expansion paths now open.' },
+    { csm: 'varun', health: 'Healthy', account: 'DXC',
+      opp: 'Vitally Pulse — Jul 30 Call',
+      arr: 'Enterprise · Varun Tiwari', csmlbl: 'Varun Tiwari',
+      change: 'Jul 30 · Check-in',
+      excerpt: '7/30 VT: Renewal planning session (5:00 AM, 30 min). Preethi (DXC, India) outlined four renewal priorities: data module coverage, usage metrics, data refresh timeline, and future integration/connector options for FY27 automation scaling. She is managing CI workflows using HG data for account planning and pursuit support. Varun and Augie Buettner (AM) to respond with a structured proposal addressing each item.' },
+    { csm: 'divyam', health: 'Concerning', account: 'Infinigate',
+      opp: 'Vitally Pulse — Jul 30 Call',
+      arr: 'Enterprise · Divyam Dewan', csmlbl: 'Divyam Dewan',
+      change: 'Jul 30 · Issue',
+      excerpt: '7/30 DD: Platform data issue (5:00 AM, 30 min). Abolfazl (Infinigate) opened the call immediately with a report of a drastic decrease in search results during data export. Divyam explained a backend data replugging event that caused a temporary drop — an unforeseen platform issue. Separately, EMEA intent data is degraded across Germany, France, Netherlands, Austria, and the UK with no fix timeline confirmed. Divyam needs to escalate the EMEA coverage gap and communicate a remediation timeline to the customer.' },
+    { csm: 'varun', health: 'Healthy', account: 'Exclusive Networks',
+      opp: 'Vitally Pulse — Jul 30 Call',
+      arr: 'Enterprise · Varun Tiwari', csmlbl: 'Varun Tiwari',
+      change: 'Jul 30 · Check-in',
+      excerpt: '7/30 VT: Bi-weekly sync (6:30 AM, 30 min). Matt Tinker described an intense parallel transformation period: Salesforce implementation, MDM project, new sales performance management tools, partner data work, and new vendor onboarding all running simultaneously. Platform usage is effectively on hold during this period. Varun and Angus (AM) acknowledged the capacity constraints. Monitor for re-engagement post-transformation.' },
+    { csm: 'nick', health: 'Healthy', account: 'Siemens',
+      opp: 'Vitally Pulse — Jul 30 Call',
+      arr: 'Enterprise · Nick Johnson', csmlbl: 'Nick Johnson',
+      change: 'Jul 30 · Check-in',
+      excerpt: '7/30 NJ: Bi-weekly cadence (7:30 AM, 30 min). Major reorg effective August 1: Hayden moving to an AI-focused role; Christina taking on the strategic land initiative (Account Compass) plus social selling; Pat focusing on zone-level key initiatives. Pat noted HG tools will remain in use but role and ownership changes will shift who accesses the platform and how. Nick should map new owners to their HG use cases and ensure continuity post-reorg.' },
+    { csm: 'varun', health: 'Healthy', account: 'ServiceNow',
+      opp: 'Vitally Pulse — Jul 30 Call',
+      arr: 'Enterprise · Varun Tiwari', csmlbl: 'Varun Tiwari',
+      change: 'Jul 30 · Check-in',
+      excerpt: '7/30 VT: Monthly partnership sync (7:30 AM, 30 min). Varun introduced Kraig Kraning as the new account support resource replacing Ravi (who moved to a new internal role). Kraig joined HG this week and comes from ZoomInfo. Santhosh (ServiceNow) has managed the HG partnership for 7+ years and welcomed the new contact warmly. Transition being handled proactively. Healthy long-term partnership.' },
+    { csm: 'divyam', health: 'Healthy', account: 'Lumen',
+      opp: 'Vitally Pulse — Jul 30 Call',
+      arr: 'Enterprise · Divyam Dewan', csmlbl: 'Divyam Dewan',
+      change: 'Jul 30 · Check-in',
+      excerpt: '7/30 DD: Weekly sync (8:30 AM, 30 min). Platform training session held earlier this week was well received — Julie Chalk said she really enjoyed it and the team is looking forward to diving deeper. AM transition underway: Augie being replaced by a new AM who joins next Thursday. Nathan\'s team adoption growing with each member finding their preferred use cases. No flags.' },
+    { csm: 'nick', health: 'Healthy', account: 'Veeam',
+      opp: 'Vitally Pulse — Jul 30 Call',
+      arr: 'Enterprise · Nick Johnson', csmlbl: 'Nick Johnson',
+      change: 'Jul 30 · Check-in',
+      excerpt: '7/30 NJ: Propensity model sync (9:00 AM, 45 min). Angus (AM) and JBI (Jean-Baptiste Vermersch) leading a structured review of 500+ technology signals to curate the propensity model scope. Tricia Greenwald (Corporate Tech) joined on her first day back from PTO. Sid Subramany working through recommended additions and removals. Process methodical — final model decisions still being arbitrated. Steady progress.' },
+    { csm: 'divyam', health: 'Healthy', account: 'Genesys',
+      opp: 'Vitally Pulse — Jul 30 Call',
+      arr: 'Enterprise · Divyam Dewan', csmlbl: 'Divyam Dewan',
+      change: 'Jul 30 · Check-in',
+      excerpt: '7/30 DD: TrustRadius monthly sync (11:00 AM, 30 min). Erica Heil confirmed sustainability award application was submitted (last week) and is awaiting results (expected in ~2 weeks). Divyam reviewed historical ratings-to-reviews campaign activity and cleared any open items. Proactive, maintenance-focused call. No issues surfaced.' },
+    { csm: 'rani', health: 'Healthy', account: 'Cloudflare',
+      opp: 'Vitally Pulse — Jul 30 Call',
+      arr: 'Enterprise · Rani Guy', csmlbl: 'Rani Guy',
+      change: 'Jul 30 · Expansion',
+      excerpt: '7/30 RG: Matching methodology deep-dive (11:00 AM, 60 min). Rani led a technical session on Open Price batch matching for Cloudflare\'s expanded dataset with Omkar (HG data team), Tracy York, and Gavin Padden. Omkar configured OP to run 4 batch files in parallel; results expected early next week. Next steps: define quarterly matching cadence, scope credits needed for the expansion. Strong expansion signal with active data team collaboration.' },
+    { csm: 'varun', health: 'Healthy', account: 'Pega',
+      opp: 'Vitally Pulse — Jul 30 Call',
+      arr: 'Enterprise · Varun Tiwari', csmlbl: 'Varun Tiwari',
+      change: 'Jul 30 · Expansion',
+      excerpt: '7/30 VT: Renewal + expansion options meeting (11:00 AM, 30 min). Frank Collette wants to expand the ICP company count from the current ~2,900 to up to 25,000 using DUNS numbers, and co-term two existing agreements into one deal. Varun and KP presented multiple renewal scenarios. A credit accuracy issue from a prior agreement also needs resolution before the new deal is signed. Strong expansion signal — Frank is engaged and motivated to close.' },
+    { csm: 'pam', health: 'Healthy', account: 'Epicor',
+      opp: 'Vitally Pulse — Jul 30 Call',
+      arr: 'Enterprise · Pam Huck', csmlbl: 'Pam Huck',
+      change: 'Jul 30 · Mixed (Check-in + Expansion)',
+      excerpt: '7/30 PH: In-person prep call (11:30 AM, 30 min). Sam Malecek flagged a key CMO priority: driving top-of-funnel through LLM/AI search visibility. The GEO dashboard was identified as a high-value tool for this goal. Pam is prepping an agenda for the in-person DG team meeting: TrustRadius review gen, September event, results from prior events, and renewal justification. Sam committed to attending the full afternoon. Clear expansion signal around GEO dashboard.' },
+  ];
+  const bc = h => h === 'Healthy' ? 'badge-healthy' : h === 'Concerning' ? 'badge-concerning' : 'badge-poor';
+  const bi = h => h === 'Healthy' ? '&#128994;' : h === 'Concerning' ? '&#128993;' : '&#128308;';
+  return `<div class="pulse-grid">${cards.map(c => `
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div class="pulse-account">${c.account}</div>
+          <div class="pulse-opp">${c.opp}</div>
+          <div class="pulse-arr">${c.arr}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filters.</div>`;
+}
+
+function dayActionsHTML_2026_07_30() {
+  return `<div class="action-list">
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0730-1')?'done':''}" data-csm="nick" id="action-0730-1">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0730-1')?'checked':''}" onclick="toggleAction('0730-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Sopra Steria &mdash; Send Peter Quinn Pricing Proposal + Follow Up on HCL BigFix TrustRadius Listing</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Nick Johnson + Angus Hyams (AM) &middot; Today&apos;s ad-hoc call introduced Peter Quinn (new Sopra Steria stakeholder) to commercial options. Nick and Angus should send a written pricing proposal addressing the new package options discussed. Separately, the interest in a TrustRadius premium listing for HCL BigFix should be followed up directly &mdash; confirm who the decision-maker is and what the next step looks like. Two distinct expansion paths to advance in parallel.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0730-2')?'done':''}" data-csm="varun" id="action-0730-2">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0730-2')?'checked':''}" onclick="toggleAction('0730-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Pega &mdash; Send ICP Expansion Proposal to Frank Collette + Resolve Credit Accuracy Issue</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Varun Tiwari + KP &middot; Frank Collette is ready to move on expanding the ICP from ~2,900 to up to 25,000 companies using DUNS numbers and co-terming two existing agreements. Varun should send Frank a formal written proposal with at least two pricing scenarios (current tier vs. 25K DUNS bucket) and a co-term structure that collapses the two agreements into one clean renewal date. Before the proposal is accepted, the credit accuracy discrepancy from the prior agreement must be resolved &mdash; get Finance/Ops confirmation on the credit number so there are no blockers at signing.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0730-3')?'done':''}" data-csm="rani" id="action-0730-3">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0730-3')?'checked':''}" onclick="toggleAction('0730-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CA; Cloudflare &mdash; Confirm Batch Matching Results Delivery with Omkar + Schedule Post-Results Scoping Call</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy + Omkar (HG Data Team) &middot; Omkar configured 4 parallel Open Price batch files for Cloudflare&apos;s expanded dataset; results expected early next week. Rani should confirm the delivery date directly with Omkar and share that timeline with Cloudflare (Tracy York, Gavin Padden, Craig). As soon as results are in, schedule a scoping call to define the quarterly matching cadence and determine what credits will be needed for the expansion. This is an active expansion in motion &mdash; don&apos;t let it stall between now and results delivery.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0730-4')?'done':''}" data-csm="divyam" id="action-0730-4">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0730-4')?'checked':''}" onclick="toggleAction('0730-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0; Infinigate &mdash; Escalate EMEA Intent Data Gap + Communicate Remediation Timeline to Abolfazl</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Divyam Dewan &middot; Two issues were surfaced on today&apos;s call: (1) a short-term data export drop caused by backend replugging &mdash; Divyam should confirm whether this is fully resolved and send a brief confirmation to Abolfazl; (2) the ongoing EMEA intent data degradation across Germany, France, Netherlands, Austria, and the UK, for which no fix timeline was given. Divyam must escalate the EMEA coverage gap to the data or product team internally and get a realistic remediation timeline. Then send Abolfazl a written update with: what happened, current status, and when to expect resolution. Do not leave the customer without a timeline on an ongoing data quality issue.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0730-5')?'done':''}" data-csm="varun" id="action-0730-5">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0730-5')?'checked':''}" onclick="toggleAction('0730-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; DXC &mdash; Send Preethi Renewal Proposal Addressing Her 4 Agenda Items</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Varun Tiwari + Augie Buettner (AM) &middot; Preethi (DXC India) came to today&apos;s call with a written agenda covering four renewal planning topics: (1) current data module coverage, (2) maximum track usage and platform engagement metrics, (3) data refresh cadence and coverage scope, and (4) connector/integration options and costs for FY27 automation scaling. She asked Augie to address each point so she can bring the right stakeholders to the next conversation. Varun and Augie should collaborate on a structured proposal or one-pager that directly maps to Preethi&apos;s four bullets and schedule a follow-up within 1&ndash;2 weeks.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0730-6')?'done':''}" data-csm="pam" id="action-0730-6">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0730-6')?'checked':''}" onclick="toggleAction('0730-6')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Epicor &mdash; Finalize In-Person Agenda + Confirm GEO Dashboard Timeline for Sam&apos;s CMO Update</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Pam Huck &middot; The upcoming in-person meeting with Epicor&apos;s demand gen team is an important engagement touchpoint. Sam Malecek has committed to attending all afternoon and flagged a CMO-driven priority: LLM/AI search visibility as top-of-funnel driver, with the GEO dashboard as the key vehicle. Pam should: (1) finalize the meeting agenda with review gen advocacy, September event planning, and renewal justification as confirmed sections; (2) check with the product team on the GEO dashboard release timeline so Sam can bring a concrete update to the CMO; (3) confirm any pre-meeting logistics with Sam. Strong CMO-level interest in GEO is an expansion signal that should be captured and developed.</div>
+      </div>
+    </div>
+
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filters.</div>`;
+}
