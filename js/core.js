@@ -1053,7 +1053,7 @@ function accountsHTML() {
 
   return `
     <style id="acct-search-style">tr.acct-row.srch-hidden{display:none!important}</style>
-    <div class="section-label">Accounts · 123 Total · $47.2M ARR · 240 Opportunities</div>
+    <div class="section-label">Accounts · ${ACCOUNTS_DATA.length} Total · $${(ACCOUNTS_DATA.reduce((s,a)=>s+(a.arr||0),0)/1e6).toFixed(1)}M ARR · ${ACCOUNTS_DATA.reduce((s,a)=>s+(a.opportunities||[]).length,0)} Opportunities</div>
     <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap">
       <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">
         <div style="position:relative;display:flex;align-items:center">
@@ -1062,15 +1062,8 @@ function accountsHTML() {
         </div>
         <label for="accounts-csm-filter" style="font-size:11px;color:#6b7280;text-transform:uppercase;letter-spacing:.5px;font-weight:600">CSM</label>
         <select id="accounts-csm-filter" onchange="window.filterAccountsByCsm(this.value)" style="font-size:12px;padding:4px 10px;border:1px solid #d1d5db;background:#fff;border-radius:6px;cursor:pointer;color:#374151;min-width:180px">
-          <option value="all">All CSMs (123)</option>
-          <option value="riley">Riley Rogers (6)</option>
-          <option value="varun">Varun Tiwari (22)</option>
-          <option value="divyam">Divyam Dewan (22)</option>
-          <option value="nick">Nick Johnson (27)</option>
-          <option value="rani">Rani Guy (10)</option>
-          <option value="pam">Pam Huck (7)</option>
-          <option value="atisha">Atisha Waghela (18)</option>
-          <option value="andy">Andy Lim (10)</option>
+          <option value="all">All CSMs (${ACCOUNTS_DATA.length})</option>
+          ${Object.entries(CSM_DISPLAY).sort((a,b)=>a[1].name.localeCompare(b[1].name)).map(([k,d])=>`<option value="${k}">${d.name} (${d.accounts||0})</option>`).join('')}
         </select>
         <span id="accounts-filter-count" style="font-size:11px;color:#9ca3af"></span>
       </div>
