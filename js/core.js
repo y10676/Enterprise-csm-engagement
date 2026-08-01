@@ -98,7 +98,7 @@ function render() {
   const mc = document.getElementById('main-content');
 
   // Global Accounts tab — always first, always visible
-  const acctTabHtml = `<div class="tab${activeTab==='accounts'?' active':''}" onclick="switchTab('accounts')">Accounts (123)</div>`;
+  const acctTabHtml = `<div class="tab${activeTab==='accounts'?' active':''}" onclick="switchTab('accounts')">Accounts (${ACCOUNTS_DATA ? ACCOUNTS_DATA.length : 0})</div>`;
 
   // Build period tabs HTML without calling the full renderer (avoids activeTab side-effects)
   function periodTabsHtml() {
@@ -246,17 +246,28 @@ function renderDay(mc, tabsRow, statPills) {
 
 // ─── CSM REGISTRY ──────────────────────────────────────────────
 // Stable display metadata for all 8 Enterprise CSMs.
-// Update accounts/opps counts here if the book changes.
+// accounts/opps/arr are derived dynamically from ACCOUNTS_DATA below.
 const CSM_DISPLAY = {
-  atisha: { name: 'Atisha Waghela', initials: 'AW', cls: 'av-grey',   accounts: 18, opps: 22 },
-  nick:   { name: 'Nick Johnson',   initials: 'NJ', cls: 'av-grey',   accounts: 27, opps: 43 },
-  varun:  { name: 'Varun Tiwari',   initials: 'VT', cls: 'av-varun',  accounts: 21, opps: 26 },
-  pam:    { name: 'Pam Huck',       initials: 'PH', cls: 'av-grey',   accounts:  7, opps: 17 },
-  rani:   { name: 'Rani Guy',       initials: 'RG', cls: 'av-grey',   accounts: 10, opps: 27 },
-  riley:  { name: 'Riley Rogers',   initials: 'RR', cls: 'av-riley',  accounts:  6, opps: 59 },
-  andy:   { name: 'Andy Lim',       initials: 'AL', cls: 'av-grey',   accounts: 10, opps: 13 },
-  divyam: { name: 'Divyam Dewan',   initials: 'DD', cls: 'av-divyam', accounts: 21, opps: 28 },
+  atisha: { name: 'Atisha Waghela', initials: 'AW', cls: 'av-grey'   },
+  nick:   { name: 'Nick Johnson',   initials: 'NJ', cls: 'av-grey'   },
+  varun:  { name: 'Varun Tiwari',   initials: 'VT', cls: 'av-varun'  },
+  pam:    { name: 'Pam Huck',       initials: 'PH', cls: 'av-grey'   },
+  rani:   { name: 'Rani Guy',       initials: 'RG', cls: 'av-grey'   },
+  riley:  { name: 'Riley Rogers',   initials: 'RR', cls: 'av-riley'  },
+  andy:   { name: 'Andy Lim',       initials: 'AL', cls: 'av-grey'   },
+  divyam: { name: 'Divyam Dewan',   initials: 'DD', cls: 'av-divyam' },
 };
+// Derive accounts/opps counts and total ARR dynamically from ACCOUNTS_DATA
+(function() {
+  Object.keys(CSM_DISPLAY).forEach(k => { CSM_DISPLAY[k].accounts = 0; CSM_DISPLAY[k].opps = 0; CSM_DISPLAY[k].arr = 0; });
+  (typeof ACCOUNTS_DATA !== 'undefined' ? ACCOUNTS_DATA : []).forEach(ac => {
+    const d = CSM_DISPLAY[ac.csmKey];
+    if (!d) return;
+    d.accounts++;
+    d.opps += (ac.opportunities || []).length;
+    d.arr  += (ac.arr || 0);
+  });
+})();
 const CSM_ORDER = ['varun','pam','rani','divyam','riley','nick','atisha','andy'];
 
 // ─── MONTH AGGREGATOR ──────────────────────────────────────────
@@ -635,7 +646,7 @@ function autoWeekCSMHTML(data) {
   const totalConcerning = data.pulses.filter(p=>p.health==='Concerning').length;
   const totalAccounts = Object.values(CSM_DISPLAY).reduce((s,d)=>s+(d.accounts||0), 0);
   const totalOpps     = Object.values(CSM_DISPLAY).reduce((s,d)=>s+(d.opps||0), 0);
-  let rows = `<div class="csm-row csm-total" data-csm="all"><div class="avatar">Σ</div><div style="flex:1"><div class="csm-row-name">Total — All CSMs</div><div class="csm-row-sub">8 Enterprise CSMs · ${totalAccounts} accounts · $47.3M ARR</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">${totalCalls}</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">${totalPulses}</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n" style="color:#d97706">${totalConcerning}</div><div class="l">Risks</div></div><div class="row-stat"><div class="n" style="color:#7c3aed">${totalAccounts}</div><div class="l">Accounts</div></div><div class="row-stat"><div class="n" style="color:#2563eb">${totalOpps}</div><div class="l">Opps</div></div></div></div>`;
+  let rows = `<div class="csm-row csm-total" data-csm="all"><div class="avatar">Σ</div><div style="flex:1"><div class="csm-row-name">Total — All CSMs</div><div class="csm-row-sub">8 Enterprise CSMs · ${totalAccounts} accounts · $${(Object.values(CSM_DISPLAY).reduce((s,d)=>s+(d.arr||0),0)/1e6).toFixed(1)}M ARR</div></div><div class="csm-row-stats"><div class="row-stat"><div class="n ct">${totalCalls}</div><div class="l">Calls</div></div><div class="row-stat"><div class="n" style="color:#059669">${totalPulses}</div><div class="l">Pulses</div></div><div class="row-stat"><div class="n" style="color:#d97706">${totalConcerning}</div><div class="l">Risks</div></div><div class="row-stat"><div class="n" style="color:#7c3aed">${totalAccounts}</div><div class="l">Accounts</div></div><div class="row-stat"><div class="n" style="color:#2563eb">${totalOpps}</div><div class="l">Opps</div></div></div></div>`;
   const sorted = CSM_ORDER.slice().sort((a,b) => (stats[b]?.calls||0) - (stats[a]?.calls||0));
   sorted.forEach(k => {
     const s = stats[k] || {calls:0, pulses:0, concerning:0, accounts:new Set()};
