@@ -6981,3 +6981,242 @@ function dayActionsHTML_2026_07_30() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filters.</div>`;
 }
+
+// ─────────────────────────────────────────────
+//  JULY 31, 2026
+// ─────────────────────────────────────────────
+
+function dayData_2026_07_31() {
+  return {
+    calls: [
+      { ts: 'Jul 31 · 8:30 AM', csm: 'varun', account: 'Zendesk', duration: '30 min',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Bi-weekly data review. Matching improved from 60% to 80% since account onboarding. July platform export drop flagged as potential connector change to investigate.' },
+      { ts: 'Jul 31 · 10:00 AM', csm: 'atisha', account: 'Intel', duration: '30 min',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Continuing ISV discovery session. Atisha walked Ryan Melton (Intel ISV team) through HG product catalog to identify ISVs in AI, robotics, and high-performance compute.' },
+      { ts: 'Jul 31 · 10:00 AM', csm: 'rani', account: 'NetApp', duration: '30 min',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Expansion',
+        detail: 'New NetApp stakeholder Gabe (replacing Elise) expressed sticker shock over 50% price increase ($880K to $1.2M). Rani and AE Adrian Escobar aligned with champion Ross Ackerman on 14x coverage value narrative. Budget with procurement.' },
+      { ts: 'Jul 31 · 1:30 PM', csm: 'rani', account: 'Cloudflare', duration: '30 min',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Cloud Dynamics renewal discussion with Martin Kielczewski and Kraig Kraning. Traffic data unavailable in HG Core alone — renewal critical for continuity. Adoption recovery post-Cloudflare RIF confirmed. White space ICP scoping and onsite scheduling in progress.' },
+    ],
+    pulses: [
+      { csm: 'varun',  account: 'Zendesk',    health: 'Healthy',    note: 'Data feed vs Salesforce review. Matching 60→80%. July export anomaly to investigate.' },
+      { csm: 'atisha', account: 'Intel',       health: 'Healthy',    note: 'ISV discovery continuing. Product catalog walkthrough for AI/HPC segment.' },
+      { csm: 'rani',   account: 'NetApp',      health: 'Concerning', note: 'Renewal at risk. New stakeholder Gabe sticker shock at $1.2M. With procurement.' },
+      { csm: 'rani',   account: 'Cloudflare',  health: 'Healthy',    note: 'Cloud Dynamics renewal active. Traffic data gap risk. Onsite and ICP scoping in progress.' },
+    ]
+  };
+}
+
+function dayMeta_2026_07_31() {
+  return {
+    pills: [
+      ['dot-teal',  '4 Calls'],
+      ['dot-red',   '1 Concerning'],
+      ['dot-amber', '1 Expansion'],
+      ['dot-green', '4 Pulses'],
+      ['dot-grey',  'Fri Jul 31 · 52 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (4)', 'Pulses (4)', 'Action Items (5)']
+  };
+}
+
+function dayOverviewHTML_2026_07_31() {
+  return `<div class="section-label">Team Activity &mdash; Friday July 31, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Friday Jul 31 &mdash; 52 recordings scanned</strong> via SFDC SOQL &middot; <strong>4 confirmed calls</strong> across 3 CSMs &middot; <span style="color:#f59e0b;">2 Expansion signals</span> (NetApp renewal pricing, Cloudflare Cloud Dynamics) &middot; <span style="color:#ef4444;">1 Concerning</span> (NetApp new stakeholder sticker shock)
+  </div>
+  <div style="background:#1c2333;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0; <strong>Renewal risk:</strong> NetApp &mdash; new stakeholder Gabe replacing Elise; sticker shock at 50% price increase ($880K&rarr;$1.2M); value narrative underway with Ross Ackerman and Adrian Escobar; budget with procurement
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card no-calls" data-csm="riley">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No confirmed customer recordings</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="nick">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No confirmed customer recordings</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="divyam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No confirmed customer recordings</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">NetApp (new stakeholder sticker shock &mdash; renewal risk) &middot; Cloudflare (Cloud Dynamics renewal + ICP scoping)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Zendesk (bi-weekly; matching 60&rarr;80%; July export anomaly to investigate)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No confirmed customer recordings</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Intel ISV discovery (confirmed) &middot; 5 Apple/Intel events &mdash; no recordings &middot; RSM unconfirmed (no transcript)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">TrustRadius / ADP event &mdash; no recording synced</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_07_31() {
+  return `<div style="background:#1c2333;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 12px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0; <strong>Renewal risk:</strong> NetApp &mdash; Gabe (new stakeholder, replacing Elise) sticker shock at $1.2M renewal; 50% price increase; value narrative in motion with Ross Ackerman and Adrian Escobar; budget currently with procurement
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 12px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>Expansion signal:</strong> Cloudflare Cloud Dynamics renewal &mdash; traffic data (core Cloud Dynamics component) unavailable in HG Core alone; renewal critical for data continuity; white space ICP scoping and onsite in progress
+  </div>
+  <div class="calls-table"><!-- auto-table rendered by core.js from dayData fields --></div>`;
+}
+
+function dayPulsesHTML_2026_07_31() {
+  const cards = [
+    { csm: 'varun', health: 'Healthy', account: 'Zendesk',
+      opp: 'Vitally Pulse — Jul 31 Call',
+      arr: 'Enterprise · Varun Tiwari', csmlbl: 'Varun Tiwari',
+      change: 'Jul 31 · Check-in',
+      excerpt: '7/31 VT: Bi-weekly data review (8:30 AM, 30 min). Varun walked through data feed vs Salesforce discrepancies with Zendesk team. Matching rate improved from 60% to 80% since account onboarding. July platform export volume drop flagged — potential connector change to investigate. Healthy trajectory; one open technical item to close.' },
+    { csm: 'atisha', health: 'Healthy', account: 'Intel',
+      opp: 'Vitally Pulse — Jul 31 Call',
+      arr: 'Enterprise · Atisha Waghela', csmlbl: 'Atisha Waghela',
+      change: 'Jul 31 · Check-in',
+      excerpt: '7/31 AW: ISV discovery session continuation (10:00 AM, 30 min). Atisha walked Ryan Melton (Intel ISV team) through HG product catalog to identify relevant ISVs across AI, robotics, and high-performance compute segments. Continuing from prior session; alignment building on which catalog areas match Intel’s ISV partner targeting strategy.' },
+    { csm: 'rani', health: 'Concerning', account: 'NetApp',
+      opp: 'Vitally Pulse — Jul 31 Call',
+      arr: 'Enterprise · Rani Guy', csmlbl: 'Rani Guy',
+      change: 'Jul 31 · Renewal risk',
+      excerpt: '7/31 RG: Renewal risk call (10:00 AM, 30 min). New stakeholder Gabe (replacing Elise) surfaced sticker shock over 50% price increase ($880K→$1.2M). Rani and AE Adrian Escobar are aligning with NetApp champion Ross Ackerman to build a 14x coverage value narrative before the procurement conversation closes. Budget currently sits with procurement; no decision date confirmed.' },
+    { csm: 'rani', health: 'Healthy', account: 'Cloudflare',
+      opp: 'Vitally Pulse — Jul 31 Call',
+      arr: 'Enterprise · Rani Guy', csmlbl: 'Rani Guy',
+      change: 'Jul 31 · Expansion',
+      excerpt: '7/31 RG: Cloud Dynamics renewal call with Martin Kielczewski and Kraig Kraning (1:30 PM, 30 min). Traffic data — the core Cloud Dynamics component — is not available in HG Core alone; renewal is essential for continuity. Adoption recovery confirmed post-Cloudflare RIF. Rani and Martin are scoping white space ICP segments and scheduling an onsite. Active expansion conversation with strong champion engagement.' },
+  ];
+  const bc = h => h === 'Healthy' ? 'badge-healthy' : h === 'Concerning' ? 'badge-concerning' : 'badge-poor';
+  const bi = h => h === 'Healthy' ? '&#128994;' : h === 'Concerning' ? '&#128993;' : '&#128308;';
+  return `<div class="pulse-grid">${cards.map(c => `
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div class="pulse-account">${c.account}</div>
+          <div class="pulse-opp">${c.opp}</div>
+          <div class="pulse-arr">${c.arr}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filters.</div>`;
+}
+
+function dayActionsHTML_2026_07_31() {
+  return `<div class="action-list">
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0731-1')?'done':''}" data-csm="rani" id="action-0731-1">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0731-1')?'checked':''}" onclick="toggleAction('0731-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0; NetApp &mdash; Arm Ross Ackerman with Value Narrative Before Procurement Decision</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy + Adrian Escobar &middot; New stakeholder Gabe replaced Elise and landed cold on a 50% price increase ($880K&rarr;$1.2M). He has no HG history and no basis for evaluating the jump. Ross Ackerman is the internal champion who does. Rani and Adrian should: (1) brief Ross on how to frame 14x coverage value in a way that lands for a finance-focused stakeholder, (2) prepare a one-page ROI summary or coverage comparison Gabe can take into the procurement conversation, (3) set a check-in with Ross to confirm the narrative is holding before procurement escalates. Do not wait for procurement to come back with a counter &mdash; get ahead of it now.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0731-2')?'done':''}" data-csm="rani" id="action-0731-2">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0731-2')?'checked':''}" onclick="toggleAction('0731-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C5; Cloudflare &mdash; Lock Onsite Date and Finalize White Space ICP Scope</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Rani Guy &middot; Today&apos;s call confirmed two parallel threads: (1) the Cloud Dynamics renewal is active and adoption recovery is real post-RIF, and (2) Martin and Kraig want to scope white space ICP segments to make the renewal case stronger. Both threads converge on an onsite. Rani should send a calendar hold to Martin and Kraig to lock an onsite date, and separately prepare a short ICP scoping proposal (which segments, which signals, what&apos;s in scope for Cloud Dynamics vs HG Core) so the onsite has a defined agenda. This keeps the renewal conversation moving and adds strategic depth before the close.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0731-3')?'done':''}" data-csm="varun" id="action-0731-3">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0731-3')?'checked':''}" onclick="toggleAction('0731-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F527; Zendesk &mdash; Investigate July Platform Export Anomaly</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Varun Tiwari &middot; The July platform export volume drop flagged on today&apos;s call may indicate a connector configuration change on Zendesk&apos;s side or a platform-side data delivery issue. Varun should: (1) pull the July export logs and compare volume against June baseline, (2) check whether any connector settings changed on Zendesk&apos;s end around the drop date, (3) if a platform-side issue is suspected, loop in HG data ops for a root cause check. Communicate findings to Zendesk within 5 business days. Matching improvement (60%&rarr;80%) is positive; resolve the export anomaly before it becomes a trust issue.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0731-4')?'done':''}" data-csm="atisha" id="action-0731-4">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0731-4')?'checked':''}" onclick="toggleAction('0731-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Intel &mdash; Send ISV Catalog Summary and Confirm Next Discovery Session</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Atisha Waghela &middot; Today&apos;s session was the second in what appears to be a multi-part ISV discovery engagement with Ryan Melton. The HG product catalog walkthrough (AI, robotics, HPC segments) builds toward a specific use case: identifying ISVs Intel wants to target. Atisha should send Ryan a brief follow-up summarizing which catalog areas were covered, which segment gaps remain, and a proposed agenda for the next session. Confirm whether the engagement is moving toward a specific deliverable (e.g., ISV target list, data scope doc) so the series has a defined outcome and timeline.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${typeof doneActions!=='undefined'&&doneActions.has('0731-5')?'done':''}" data-csm="atisha" id="action-0731-5">
+      <div class="action-checkbox ${typeof doneActions!=='undefined'&&doneActions.has('0731-5')?'checked':''}" onclick="toggleAction('0731-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F50D; Atisha &mdash; Verify RSM and Google (bw) Unconfirmed Calls &amp; Confirm Apple Coverage Status</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Atisha Waghela &middot; Two recordings exist for Jul 31 that could not be confirmed: RSM Intent Driven Leads (10:30 AM) and HG Insights | Google bi-weekly (11:00 AM) &mdash; both have recordings but no transcripts synced to SFDC. Additionally, 5 Atisha events (Intel Platform Training at 5:30 AM, Apple bi-weeklies at 8:00 &amp; 9:00 AM, Apple Market Intelligence Training at 11:00 AM, Apple Platform Team Call at noon) had no recordings at all. Atisha should (1) confirm whether the RSM and Google calls happened and, if so, note key outcomes in Vitally; (2) confirm whether the Apple events were no-shows, covered by another CSM, or simply not recorded &mdash; and update Vitally accordingly so account coverage is correctly logged.</div>
+      </div>
+    </div>
+
+  </div>`;
+}
