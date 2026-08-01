@@ -1281,3 +1281,144 @@ function monthCoverageHTML_2026_08() {
 ];
   return _renderCoverageTable(stats, 'Aug 1, 2026');
 }
+
+// ═══════════════════════════════════════════════════════════════
+// JULY 2026 MONTHLY HOOKS
+// monthArrHTML_2026_07() — injected into monthSummaryHTML ARR panel
+// monthEditorial_2026_07() — injected into monthly editorial section
+// ═══════════════════════════════════════════════════════════════
+
+function monthArrHTML_2026_07() {
+  return `<div class="health-bar-wrap">
+    <div class="health-bar-title">ARR Engagement Summary &mdash; July 2026 (23 Working Days)</div>
+    <div class="health-bar-row"><div class="health-bar-label">🟢 Active / Healthy</div><div class="health-bar-track"><div class="health-bar-fill hf-green" style="width:78%"></div></div><div class="health-bar-count" style="width:50px">78%</div></div>
+    <div style="margin:4px 0 10px 24px;padding:8px 12px;background:#f0fdf4;border-left:3px solid #059669;border-radius:4px;font-size:11px;color:#374151;line-height:1.7">
+      <strong>196 confirmed calls · 150+ pulse notes · 55 unique accounts engaged</strong><br>
+      <strong>Riley Rogers (37 calls):</strong> SAP mega-portfolio — SuccessFactors, Concur, CIAM, Joule, S/4HANA, Business Network, Cloud ERP; IBM, Adobe, Intuit, Zoom, TriNet, Paylocity, zScaler<br>
+      <strong>Rani Guy (37 calls):</strong> NetApp, Cloudflare, Workday, Hitachi Vantara, Cisco, AWS/Amazon, Lenovo, HPE, Docusign, GTM Fabric<br>
+      <strong>Varun Tiwari (29 calls):</strong> BMC Software, Autodesk, Datadog, ServiceNow, Zendesk, MongoDB, DXC, Five9, Pega, OpenText<br>
+      <strong>Nick Johnson (25 calls):</strong> Red Hat, Siemens, Infor, Accenture, Veeam, Check Point, UKG, Freshworks, Telefonica, Softcat<br>
+      <strong>Atisha Waghela (25 calls):</strong> Intel, Palo Alto Networks, TD Synnex, Deloitte, Equinix, Databricks, Insight, Salesforce, RSM, Kyndryl<br>
+      <strong>Divyam Dewan (19 calls):</strong> Adobe, HubSpot, Quadient, Thomson Reuters, Blackbaud, Genesys, Sage, Informatica, Workhuman, Lumen<br>
+      <strong>Pam Huck (12 calls):</strong> Microsoft, Oracle, ADP, Cisco, Epicor, F5<br>
+      <strong>Andy Lim (12 calls):</strong> Pure Storage, SAS Institute, Cockroach Labs, Toast, Colt, Evapure, Zycus
+    </div>
+    <div class="health-bar-row"><div class="health-bar-label">🟡 Expansion in Motion</div><div class="health-bar-track"><div class="health-bar-fill hf-amber" style="width:53%"></div></div><div class="health-bar-count" style="width:50px">53 signals</div></div>
+    <div style="margin:4px 0 10px 24px;padding:8px 12px;background:#fffbeb;border-left:3px solid #d97706;border-radius:4px;font-size:11px;color:#374151;line-height:1.7">
+      <strong>Top expansion conversations this month:</strong><br>
+      • <strong>Cloudflare</strong> — Cloud Dynamics renewal discussion; ICP scoping + onsite scheduling; traffic data gap addressed<br>
+      • <strong>Workday</strong> — ongoing expansion positioning across multiple calls (Rani)<br>
+      • <strong>Hitachi Vantara</strong> — QBR completed; Phoenix/MCP expansion positioned; intent+install consolidation<br>
+      • <strong>Siemens</strong> — $50K expansion opp active (Nick); MCP AI intelligence positioning<br>
+      • <strong>Zendesk</strong> — matching improvement 60→80%; platform growth signals (Varun)<br>
+      • <strong>Databricks</strong> — active use case expansion discussions (Atisha)<br>
+      • <strong>SAP portfolio</strong> — continued cross-product expansion across 8+ product lines (Riley)<br>
+      <span style="color:#9ca3af;font-size:10px">53 expansion-tagged call events across the month.</span>
+    </div>
+    <div class="health-bar-row"><div class="health-bar-label">🔴 Renewal Risk / Concerning</div><div class="health-bar-track"><div class="health-bar-fill hf-red" style="width:25%"></div></div><div class="health-bar-count" style="width:50px">25 flags</div></div>
+    <div style="margin:4px 0 10px 24px;padding:8px 12px;background:#fff1f2;border-left:3px solid #ef4444;border-radius:4px;font-size:11px;color:#374151;line-height:1.7">
+      • <strong>NetApp</strong> — Jul 31: new stakeholder Gabe (replacing Elise) sticker shock at 50% price increase ($880K→$1.2M); value narrative underway with Ross Ackerman + AE Adrian Escobar; budget with procurement<br>
+      • <strong>Cisco</strong> — ongoing renewal risk; AI Board approval still pending; budget concerns on Splunk/IDL<br>
+      • <strong>Lenovo</strong> — recurring data quality and coverage concerns<br>
+      • <strong>TD Synnex</strong> — poor health post Dec 2025 RFP loss; IBM re-engagement strategy in motion<br>
+      • <strong>Deloitte</strong> — vendor consolidation pressure; direct CSM engagement required<br>
+      <span style="color:#9ca3af;font-size:10px">25 concerning-tagged call events across the month (not all unique accounts).</span>
+    </div>
+    <div style="margin-top:8px;font-size:10px;color:#9ca3af;font-style:italic">* Bar widths are illustrative — ARR breakdown by opp not itemized for July. Pulse coverage data available in the Coverage tab.</div>
+  </div>`;
+}
+
+function monthEditorial_2026_07() {
+  return `<div class="section-label">July 2026 &mdash; Account Highlights &amp; Action Items</div>
+  <div class="account-highlights">
+
+    <div class="acct-card ac-amber">
+      <div class="acct-name">NetApp</div>
+      <div class="acct-csm">CSM: Rani Guy &middot; AE: Adrian Escobar</div>
+      <div class="acct-stats">
+        <div class="acct-stat"><div class="n ct">4+</div><div class="l">Calls</div></div>
+        <div class="acct-stat"><div class="n" style="color:#ef4444">&#x26A0;</div><div class="l">Renewal Risk</div></div>
+        <div class="acct-stat"><div class="n" style="color:#d97706">$1.2M</div><div class="l">Renewal</div></div>
+      </div>
+      <div class="acct-note">New stakeholder Gabe (replacing Elise) expressed sticker shock at 50% price increase Jul 31. Champion Ross Ackerman aligned. 14x coverage value narrative in motion. Budget with procurement. Exec alignment critical before Q3 close.</div>
+    </div>
+
+    <div class="acct-card ac-amber">
+      <div class="acct-name">Cloudflare</div>
+      <div class="acct-csm">CSM: Rani Guy</div>
+      <div class="acct-stats">
+        <div class="acct-stat"><div class="n ct">3+</div><div class="l">Calls</div></div>
+        <div class="acct-stat"><div class="n" style="color:#7c3aed">&#x2B06;</div><div class="l">Expansion</div></div>
+        <div class="acct-stat"><div class="n" style="color:#059669">Onsite</div><div class="l">Pending</div></div>
+      </div>
+      <div class="acct-note">Cloud Dynamics renewal discussion ongoing. Traffic data (core Cloud Dynamics component) not in HG Core — positioning differentiation. Adoption recovery post-RIF confirmed. White space ICP scoping + onsite scheduling in progress. Strong expansion signal.</div>
+    </div>
+
+    <div class="acct-card">
+      <div class="acct-name">SAP Portfolio</div>
+      <div class="acct-csm">CSM: Riley Rogers &middot; 29 calls across 8+ products</div>
+      <div class="acct-stats">
+        <div class="acct-stat"><div class="n ct">29</div><div class="l">Calls</div></div>
+        <div class="acct-stat"><div class="n" style="color:#059669">8+</div><div class="l">Products</div></div>
+        <div class="acct-stat"><div class="n" style="color:#2563eb">Joule</div><div class="l">AI Focus</div></div>
+      </div>
+      <div class="acct-note">Riley's largest single-vendor portfolio: SuccessFactors, Concur, CIAM, Joule (AI product), S/4HANA, Business Network, Cloud ERP, Ariba. Active cadences across all product lines throughout July. SAP Joule AI positioning gaining traction.</div>
+    </div>
+
+    <div class="acct-card">
+      <div class="acct-name">Zendesk</div>
+      <div class="acct-csm">CSM: Varun Tiwari</div>
+      <div class="acct-stats">
+        <div class="acct-stat"><div class="n ct">3+</div><div class="l">Calls</div></div>
+        <div class="acct-stat"><div class="n" style="color:#059669">80%</div><div class="l">Match Rate</div></div>
+        <div class="acct-stat"><div class="n" style="color:#7c3aed">&#x2B06;</div><div class="l">Growth</div></div>
+      </div>
+      <div class="acct-note">Matching improved from 60% to 80% since onboarding — strong momentum. Jul 31 bi-weekly review flagged July platform export drop as potential connector change to investigate. Otherwise healthy engagement trajectory.</div>
+    </div>
+
+    <div class="acct-card">
+      <div class="acct-name">Intel</div>
+      <div class="acct-csm">CSM: Atisha Waghela</div>
+      <div class="acct-stats">
+        <div class="acct-stat"><div class="n ct">4+</div><div class="l">Calls</div></div>
+        <div class="acct-stat"><div class="n" style="color:#7c3aed">ISV</div><div class="l">Discovery</div></div>
+        <div class="acct-stat"><div class="n" style="color:#059669">AI</div><div class="l">Focus</div></div>
+      </div>
+      <div class="acct-note">Ongoing ISV discovery sessions with Intel's ISV team (Ryan Melton). Walking through HG product catalog for AI, robotics, and high-performance compute ISVs. Apple Intel cross-account complexity — multiple events, selective recording coverage.</div>
+    </div>
+
+    <div class="acct-card ac-amber">
+      <div class="acct-name">TD Synnex</div>
+      <div class="acct-csm">CSM: Atisha Waghela</div>
+      <div class="acct-stats">
+        <div class="acct-stat"><div class="n ct">2+</div><div class="l">Calls</div></div>
+        <div class="acct-stat"><div class="n" style="color:#d97706">&#x26A0;</div><div class="l">At Risk</div></div>
+        <div class="acct-stat"><div class="n" style="color:#7c3aed">IBM</div><div class="l">Strategy</div></div>
+      </div>
+      <div class="acct-note">Continued from Q2 risk: poor health post Dec 2025 RFP loss. IBM agent re-engagement strategy ongoing. Need exec-level re-alignment and clear success metric agreement before Q3 review.</div>
+    </div>
+
+  </div>
+
+  <div class="section-label">July 2026 &mdash; Monthly Action Items</div>
+  <div style="background:#1c1f26;border:1px solid #334155;border-radius:8px;padding:12px 16px;margin:8px 0;">
+    <div style="font-size:12px;color:#94a3b8;margin-bottom:10px;font-weight:600;">CARRY-FORWARD INTO AUGUST</div>
+    <div style="display:grid;gap:8px;">
+      <div style="background:#1c2333;border-left:3px solid #ef4444;border-radius:4px;padding:8px 12px;font-size:12px;">
+        <span style="color:#ef4444;font-weight:700">HIGH &middot; NetApp</span><span style="color:#94a3b8;margin:0 8px">|</span><span style="color:#e2e8f0">Rani + Adrian: advance 14x value narrative with Gabe; confirm budget timeline with procurement; lock exec sponsor before Q3 close. Sticker shock at $1.2M renewal = live risk.</span>
+      </div>
+      <div style="background:#1c2333;border-left:3px solid #f59e0b;border-radius:4px;padding:8px 12px;font-size:12px;">
+        <span style="color:#f59e0b;font-weight:700">MED &middot; Cloudflare</span><span style="color:#94a3b8;margin:0 8px">|</span><span style="color:#e2e8f0">Rani: schedule onsite visit; complete white space ICP scoping; close Cloud Dynamics renewal positioning. Traffic data differentiation is the anchor — use it.</span>
+      </div>
+      <div style="background:#1c2333;border-left:3px solid #f59e0b;border-radius:4px;padding:8px 12px;font-size:12px;">
+        <span style="color:#f59e0b;font-weight:700">MED &middot; Zendesk</span><span style="color:#94a3b8;margin:0 8px">|</span><span style="color:#e2e8f0">Varun: investigate July platform export drop — confirm if connector change caused anomaly. Document resolution for account health record.</span>
+      </div>
+      <div style="background:#1c2333;border-left:3px solid #f59e0b;border-radius:4px;padding:8px 12px;font-size:12px;">
+        <span style="color:#f59e0b;font-weight:700">MED &middot; Cisco</span><span style="color:#94a3b8;margin:0 8px">|</span><span style="color:#e2e8f0">Pam: get Cisco AI Board approval status on CVP Media renewal. Splunk/IDL budget confirmation needed. Escalation path if board approval misses Q3 window.</span>
+      </div>
+      <div style="background:#1c2333;border-left:3px solid #6366f1;border-radius:4px;padding:8px 12px;font-size:12px;">
+        <span style="color:#6366f1;font-weight:700">LOW &middot; TD Synnex</span><span style="color:#94a3b8;margin:0 8px">|</span><span style="color:#e2e8f0">Atisha: IBM re-engagement strategy — define success metrics jointly, present to leadership. Set explicit Q3 health target to exit "at risk" status.</span>
+      </div>
+    </div>
+  </div>`;
+}

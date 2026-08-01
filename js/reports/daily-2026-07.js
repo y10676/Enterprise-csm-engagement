@@ -7034,33 +7034,6 @@ function dayOverviewHTML_2026_07_31() {
   </div>
   <div class="overview-grid">
 
-    <div class="csm-card no-calls" data-csm="riley">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header">
-        <div class="avatar av-riley">RR</div>
-        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
-      </div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No confirmed customer recordings</div>
-    </div>
-
-    <div class="csm-card no-calls" data-csm="nick">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header">
-        <div class="avatar av-grey">NJ</div>
-        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
-      </div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No confirmed customer recordings</div>
-    </div>
-
-    <div class="csm-card no-calls" data-csm="divyam">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header">
-        <div class="avatar av-divyam">DD</div>
-        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
-      </div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No confirmed customer recordings</div>
-    </div>
-
     <div class="csm-card has-calls" data-csm="rani">
       <span class="call-badge">2 CALLS</span>
       <div class="csm-card-header">
@@ -7089,15 +7062,6 @@ function dayOverviewHTML_2026_07_31() {
       <div class="csm-account-note">Zendesk (bi-weekly; matching 60&rarr;80%; July export anomaly to investigate)</div>
     </div>
 
-    <div class="csm-card no-calls" data-csm="pam">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header">
-        <div class="avatar av-grey">PH</div>
-        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
-      </div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No confirmed customer recordings</div>
-    </div>
-
     <div class="csm-card has-calls" data-csm="atisha">
       <span class="call-badge">1 CALL</span>
       <div class="csm-card-header">
@@ -7110,6 +7074,42 @@ function dayOverviewHTML_2026_07_31() {
         <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
       </div>
       <div class="csm-account-note">Intel ISV discovery (confirmed) &middot; 5 Apple/Intel events &mdash; no recordings &middot; RSM unconfirmed (no transcript)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="riley">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No confirmed customer recordings</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="nick">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No confirmed customer recordings</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="divyam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No confirmed customer recordings</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No confirmed customer recordings</div>
     </div>
 
     <div class="csm-card no-calls" data-csm="andy">
