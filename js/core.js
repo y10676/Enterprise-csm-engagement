@@ -12,7 +12,7 @@
 const REPORTS = {
   day: {},  // auto-populated at init by probing for dayOverviewHTML_* functions
   week: { '2026-W17': true, '2026-W18': true },   // W17 = Apr 20-26 · W18 = Apr 27–May 3
-  month: { '2026-04': true, '2026-05': true, '2026-06': true },
+  month: { '2026-04': true, '2026-05': true, '2026-06': true, '2026-07': true },
 };
 
 // ─── STATE ─────────────────────────────────────────────────────
@@ -1932,6 +1932,14 @@ if (sessionStorage.getItem('hg-auth')) {
     // Any day with structured data contributes to its week
     m = k.match(/^dayData_(\d{4})_(\d{2})_(\d{2})$/);
     if (m) REPORTS.week[weekKey(`${m[1]}-${m[2]}-${m[3]}`)] = true;
+  });
+})();
+
+// Auto-detect available month reports from dayData_* functions.
+(function detectMonthReports() {
+  Object.keys(window).forEach(k => {
+    const m = k.match(/^dayData_(\d{4})_(\d{2})_\d{2}$/);
+    if (m) REPORTS.month[`${m[1]}-${m[2]}`] = true;
   });
 })();
 
