@@ -1201,18 +1201,18 @@ function monthCoverageHTML_2026_08() {
   {
     "csm": "riley",
     "name": "Riley Rogers",
-    "total": 63,
-    "both": 35,
-    "pulseOnly": 1,
+    "total": 43,
+    "both": 24,
+    "pulseOnly": 3,
     "noteOnly": 3,
-    "neither": 24,
+    "neither": 13,
     "pct": 56
   },
   {
     "csm": "varun",
     "name": "Varun Tiwari",
-    "total": 29,
-    "both": 27,
+    "total": 28,
+    "both": 26,
     "pulseOnly": 0,
     "noteOnly": 0,
     "neither": 2,
@@ -1221,18 +1221,18 @@ function monthCoverageHTML_2026_08() {
   {
     "csm": "divyam",
     "name": "Divyam Dewan",
-    "total": 27,
-    "both": 25,
+    "total": 24,
+    "both": 22,
     "pulseOnly": 0,
     "noteOnly": 0,
     "neither": 2,
-    "pct": 93
+    "pct": 92
   },
   {
     "csm": "nick",
     "name": "Nick Johnson",
-    "total": 38,
-    "both": 35,
+    "total": 36,
+    "both": 33,
     "pulseOnly": 0,
     "noteOnly": 0,
     "neither": 3,
@@ -1242,17 +1242,17 @@ function monthCoverageHTML_2026_08() {
     "csm": "rani",
     "name": "Rani Guy",
     "total": 24,
-    "both": 19,
+    "both": 18,
     "pulseOnly": 0,
     "noteOnly": 0,
-    "neither": 5,
-    "pct": 79
+    "neither": 6,
+    "pct": 75
   },
   {
     "csm": "pam",
     "name": "Pam Huck",
-    "total": 14,
-    "both": 14,
+    "total": 10,
+    "both": 10,
     "pulseOnly": 0,
     "noteOnly": 0,
     "neither": 0,
@@ -1271,12 +1271,12 @@ function monthCoverageHTML_2026_08() {
   {
     "csm": "andy",
     "name": "Andy Lim",
-    "total": 14,
-    "both": 13,
+    "total": 11,
+    "both": 10,
     "pulseOnly": 0,
     "noteOnly": 0,
     "neither": 1,
-    "pct": 93
+    "pct": 91
   }
 ];
   return _renderCoverageTable(stats, 'Aug 1, 2026');
