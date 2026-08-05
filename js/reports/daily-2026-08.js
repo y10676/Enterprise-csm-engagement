@@ -357,7 +357,6 @@ function dayActionsHTML_2026_08_03() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
 }
-// ——— 2026-08-04 (Tuesday, Aug 4) ———
 
 // ——— 2026-08-04 (Tuesday, Aug 4) ———
 
@@ -445,16 +444,17 @@ function dayMeta_2026_08_04() {
     tabs: ['Overview', 'Calls (8)', 'Pulses (8)', 'Action Items (6)'],
   };
 }
+
 function dayOverviewHTML_2026_08_04() {
   return `<div class="section-label">Team Activity &mdash; Tuesday, August 4, 2026</div>
   <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
     &#x1F4C5; <strong>Tuesday August 4 &mdash; 86 recordings scanned</strong> via SFDC SOQL &middot; <strong>8 confirmed calls</strong> across 3 CSMs &middot; 1 Concerning &middot; 2 Expansion signals &middot; 6 unconfirmed (no transcript)
   </div>
   <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
-    &#x26A0;&#xFE0F; <strong>Concerning:</strong> <strong>Accenture</strong> &mdash; unsigned contract + data deletion deadline. If contract is not executed before deadline, HG must delete data per data governance policy. Requires immediate legal escalation.
+    &#x26A0;&#xFE0F; <strong>Concerning:</strong> <strong>Accenture</strong> — unsigned contract + data deletion deadline. If contract is not executed before deadline, HG must delete data per data governance policy. Requires immediate legal escalation.
   </div>
   <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
-    &#x1F4C8; <strong>2 Expansion signals:</strong> <strong>Freshworks</strong> &mdash; customer-initiated pricing inquiry for IT spend data expansion (150&ndash;200K accounts). &middot; <strong>F5</strong> &mdash; interest in GEO dashboard expansion and LLM/AI data integration.
+    &#x1F4C8; <strong>2 Expansion signals:</strong> <strong>Freshworks</strong> — customer-initiated pricing inquiry for IT spend data expansion (150–200K accounts). &middot; <strong>F5</strong> — interest in GEO dashboard expansion and LLM/AI data integration.
   </div>
   <div class="overview-grid">
 
@@ -470,7 +470,7 @@ function dayOverviewHTML_2026_08_04() {
         <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
         <div><div class="metric-num m-grey">120m</div><div class="metric-lbl">Duration</div></div>
       </div>
-      <div class="csm-account-note">Accenture (unsigned contract, data deletion deadline &mdash; urgent) &middot; Freshworks (IT spend expansion, 150&ndash;200K accounts) &middot; Veeam (TR event review) &middot; Accel4 (2027 goals)</div>
+      <div class="csm-account-note">Accenture (unsigned contract, data deletion deadline — urgent) &middot; Freshworks (IT spend expansion, 150–200K accounts) &middot; Veeam (TR event review) &middot; Accel4 (2027 goals)</div>
     </div>
 
     <div class="csm-card has-calls" data-csm="varun">
@@ -552,10 +552,10 @@ function dayOverviewHTML_2026_08_04() {
 function dayCallsHTML_2026_08_04() {
   return `<div class="calls-table">
   <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
-    &#x26A0;&#xFE0F; <strong>Concerning:</strong> Accenture &mdash; unsigned contract + data deletion deadline. Immediate escalation required before data must be deleted.
+    &#x26A0;&#xFE0F; <strong>Concerning:</strong> Accenture — unsigned contract + data deletion deadline. Immediate escalation required before data must be deleted.
   </div>
   <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
-    &#x1F4C8; <strong>Expansion:</strong> Freshworks &mdash; IT spend data, 150&ndash;200K account pricing &middot; F5 &mdash; GEO dashboard + LLM integration interest
+    &#x1F4C8; <strong>Expansion:</strong> Freshworks — IT spend data, 150–200K account pricing &middot; F5 — GEO dashboard + LLM integration interest
   </div>
   <div style="background:#161b22;border:1px solid #30363d;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#8b949e;">
     &#x1F4CB; <strong>Unconfirmed (no transcript):</strong> Varun / Absolute Industrial Supplies (6:30 AM) &middot; Varun / Iron Mountain (8:30 AM) &middot; Atisha / Apple Inc. (8:30 AM) &middot; Nick / NICE inContact (9:30 AM) &middot; Rani / Cisco Isovalent (10:00 AM) &middot; Pam / Cisco Meraki (2:00 PM)
@@ -589,7 +589,7 @@ function dayPulsesHTML_2026_08_04() {
       arr:'Enterprise &middot; Nick Johnson',
       csmlbl:'Nick Johnson',
       change:'Aug 4 &middot; Expansion',
-      excerpt:'NJ: Customer-initiated pricing discussion for IT spend data expansion to 150,000&ndash;200,000 accounts (7:30 AM PT, 30 min). Nick to prepare expansion proposal and pricing options.' },
+      excerpt:'NJ: Customer-initiated pricing discussion for IT spend data expansion to 150,000–200,000 accounts (7:30 AM PT, 30 min). Nick to prepare expansion proposal and pricing options.' },
     { csm:'varun', health:'Healthy', account:'Zscaler',
       opp:'Vitally Pulse &mdash; Aug 4 Call',
       arr:'Enterprise &middot; Varun Tiwari',
@@ -643,7 +643,7 @@ function dayActionsHTML_2026_08_04() {
     <div class="action-item ${doneActions.has('0804-2')?'done':''}" data-csm="nick" id="action-0804-2">
       <div class="action-checkbox ${doneActions.has('0804-2')?'checked':''}" onclick="toggleAction('0804-2')"></div>
       <div class="action-body">
-        <div class="action-title">&#x1F4C8; Freshworks &mdash; Prepare IT spend data expansion pricing proposal (150&ndash;200K accounts)</div>
+        <div class="action-title">&#x1F4C8; Freshworks &mdash; Prepare IT spend data expansion pricing proposal (150–200K accounts)</div>
         <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Nick Johnson &middot; Customer is actively evaluating an IT spend data expansion. Build pricing options for 150K and 200K account tiers. Include sample data and value story. Send proposal within 2 business days while interest is active.</div>
       </div>
     </div>
