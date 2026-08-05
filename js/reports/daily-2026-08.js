@@ -357,3 +357,329 @@ function dayActionsHTML_2026_08_03() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
 }
+// ——— 2026-08-04 (Tuesday, Aug 4) ———
+
+// ——— 2026-08-04 (Tuesday, Aug 4) ———
+
+function dayData_2026_08_04() {
+  return {
+    calls: [
+      { ts: 'Aug 4 · 3:00 AM', csm: 'varun', account: 'CIENA',
+        note: 'New user onboarding walkthrough — HG platform orientation and data access.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Varun Tiwari led a new-user HG platform orientation for CIENA. Covered data access, product navigation, key features, and best practices for operationalizing technographic and spend data.' },
+
+      { ts: 'Aug 4 · 6:30 AM', csm: 'pam', account: 'Cvent',
+        note: 'Recurring Cvent-TrustRadius sync — profile updates and review collection cadence.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'Customer', purpose: 'Check-in',
+        detail: 'Pam Huck joined the regular Cvent-TrustRadius cadence call. Reviewed TrustRadius profile updates, ongoing review collection progress, and cadence alignment for the next collection cycle.' },
+
+      { ts: 'Aug 4 · 7:00 AM', csm: 'nick', account: 'Accenture',
+        note: 'Unsigned contract and data deletion deadline — urgent action required.',
+        mins: 30, health: 'Concerning',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Issue',
+        detail: 'Accenture flagged an unsigned contract combined with an imminent data deletion deadline. If the contract is not executed before the deadline, HG must delete the data per data governance policy. Nick must escalate to legal and account leadership immediately to prevent data loss.' },
+
+      { ts: 'Aug 4 · 7:30 AM', csm: 'nick', account: 'Freshworks',
+        note: 'IT spend data expansion — pricing discussion for 150–200K accounts.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Expansion',
+        detail: 'Freshworks initiated a conversation around expanding IT spend data coverage to 150,000–200,000 accounts. Customer-driven interest in a larger data package; Nick to prepare pricing options and expansion proposal.' },
+
+      { ts: 'Aug 4 · 8:00 AM', csm: 'varun', account: 'Zscaler',
+        note: 'Discovery call with AM Max Shaw — account context and expansion discussion.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Varun Tiwari joined AM Max Shaw on a Zscaler discovery call. Reviewed account context, current platform usage, and potential use-case expansion opportunities with the Zscaler team.' },
+
+      { ts: 'Aug 4 · 8:30 AM', csm: 'nick', account: 'Veeam',
+        note: 'TrustRadius event review performance — recurring sync.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Nick Johnson reviewed TrustRadius event-driven review performance with Veeam on their recurring cadence call. Covered recent event effectiveness metrics, review collection rates, and upcoming event review strategies.' },
+
+      { ts: 'Aug 4 · 11:00 AM', csm: 'nick', account: 'Accel4',
+        note: '2027 goal planning and GTM campaign usage review.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Nick Johnson connected with Accel4 to discuss 2027 strategic planning goals and current usage of HG-powered GTM campaigns. Session focused on aligning platform utilization to Accel4\'s forward-looking revenue targets.' },
+
+      { ts: 'Aug 4 · 2:30 PM', csm: 'pam', account: 'F5',
+        note: 'GEO dashboard discussion and LLM/AI integration exploration.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Pam Huck held the recurring F5 sync covering GEO dashboard capabilities and LLM/AI engine integration opportunities with HG data. Potential expansion into AI-driven use cases discussed; F5 expressed interest in deeper GEO analytics.' },
+    ],
+    pulses: [
+      { csm: 'varun', account: 'CIENA', health: 'Healthy',
+        note: 'New user onboarding walkthrough; platform orientation and data access best practices covered.' },
+      { csm: 'pam', account: 'Cvent', health: 'Healthy',
+        note: 'Recurring TrustRadius sync; profile updates and review cadence reviewed.' },
+      { csm: 'nick', account: 'Accenture', health: 'Concerning',
+        note: 'Unsigned contract + data deletion deadline flagged; urgent escalation required.' },
+      { csm: 'nick', account: 'Freshworks', health: 'Healthy',
+        note: 'IT spend data expansion discussion; customer-driven pricing inquiry for 150–200K accounts.' },
+      { csm: 'varun', account: 'Zscaler', health: 'Healthy',
+        note: 'Discovery call with AM Max Shaw; account context and expansion opportunities explored.' },
+      { csm: 'nick', account: 'Veeam', health: 'Healthy',
+        note: 'Recurring sync; TrustRadius event review performance metrics reviewed.' },
+      { csm: 'nick', account: 'Accel4', health: 'Healthy',
+        note: '2027 planning session; GTM campaign usage and strategic alignment discussed.' },
+      { csm: 'pam', account: 'F5', health: 'Healthy',
+        note: 'Recurring sync; GEO dashboard and LLM integration interest noted — expansion opportunity.' },
+    ],
+  };
+}
+
+function dayMeta_2026_08_04() {
+  return {
+    pills: [
+      ['dot-teal',  '8 Calls'],
+      ['dot-red',   '1 Concerning'],
+      ['dot-amber', '2 Expansion'],
+      ['dot-green', '8 Vitally Pulses'],
+      ['dot-grey',  'Tue Aug 4 · 86 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (8)', 'Pulses (8)', 'Action Items (6)'],
+  };
+}
+function dayOverviewHTML_2026_08_04() {
+  return `<div class="section-label">Team Activity &mdash; Tuesday, August 4, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Tuesday August 4 &mdash; 86 recordings scanned</strong> via SFDC SOQL &middot; <strong>8 confirmed calls</strong> across 3 CSMs &middot; 1 Concerning &middot; 2 Expansion signals &middot; 6 unconfirmed (no transcript)
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>Concerning:</strong> <strong>Accenture</strong> &mdash; unsigned contract + data deletion deadline. If contract is not executed before deadline, HG must delete data per data governance policy. Requires immediate legal escalation.
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>2 Expansion signals:</strong> <strong>Freshworks</strong> &mdash; customer-initiated pricing inquiry for IT spend data expansion (150&ndash;200K accounts). &middot; <strong>F5</strong> &mdash; interest in GEO dashboard expansion and LLM/AI data integration.
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">4 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">4</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">4</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">120m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Accenture (unsigned contract, data deletion deadline &mdash; urgent) &middot; Freshworks (IT spend expansion, 150&ndash;200K accounts) &middot; Veeam (TR event review) &middot; Accel4 (2027 goals)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">CIENA (new user onboarding walkthrough) &middot; Zscaler (discovery call with AM Max Shaw)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="pam">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Cvent (recurring TrustRadius sync, profile updates) &middot; F5 (GEO dashboard + LLM integration interest)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="riley">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No confirmed calls &mdash; no CSM-owned recordings detected</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="divyam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No confirmed calls &mdash; events scheduled (Adobe, Quadient, Dynatrace) but no matching recordings found</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="rani">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 unconfirmed &mdash; Cisco Isovalent (10:00 AM, no transcript synced)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="atisha">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 unconfirmed &mdash; Apple Inc. (8:30 AM, no transcript synced)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No confirmed calls &mdash; no CSM-owned recordings detected (Factset event: no matching recording)</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_08_04() {
+  return `<div class="calls-table">
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>Concerning:</strong> Accenture &mdash; unsigned contract + data deletion deadline. Immediate escalation required before data must be deleted.
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>Expansion:</strong> Freshworks &mdash; IT spend data, 150&ndash;200K account pricing &middot; F5 &mdash; GEO dashboard + LLM integration interest
+  </div>
+  <div style="background:#161b22;border:1px solid #30363d;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#8b949e;">
+    &#x1F4CB; <strong>Unconfirmed (no transcript):</strong> Varun / Absolute Industrial Supplies (6:30 AM) &middot; Varun / Iron Mountain (8:30 AM) &middot; Atisha / Apple Inc. (8:30 AM) &middot; Nick / NICE inContact (9:30 AM) &middot; Rani / Cisco Isovalent (10:00 AM) &middot; Pam / Cisco Meraki (2:00 PM)
+  </div>
+  <!-- Auto-table rendered by core.js from dayData calls with nature/initiator/purpose fields -->
+  </div>`;
+}
+
+function dayPulsesHTML_2026_08_04() {
+  const cards = [
+    { csm:'varun', health:'Healthy', account:'CIENA',
+      opp:'Vitally Pulse &mdash; Aug 4 Call',
+      arr:'Enterprise &middot; Varun Tiwari',
+      csmlbl:'Varun Tiwari',
+      change:'Aug 4 &middot; Check-in',
+      excerpt:'VT: New user onboarding walkthrough of HG platform (3:00 AM PT, 30 min). Covered data access, product navigation, key features, and best practices for operationalizing technographic and spend data.' },
+    { csm:'pam', health:'Healthy', account:'Cvent',
+      opp:'Vitally Pulse &mdash; Aug 4 Call',
+      arr:'Enterprise &middot; Pam Huck',
+      csmlbl:'Pam Huck',
+      change:'Aug 4 &middot; Check-in',
+      excerpt:'PH: Recurring Cvent-TrustRadius sync (6:30 AM PT, 30 min). Reviewed TrustRadius profile updates, review collection progress, and cadence alignment for next collection cycle.' },
+    { csm:'nick', health:'Concerning', account:'Accenture',
+      opp:'Vitally Pulse &mdash; Aug 4 Call',
+      arr:'Enterprise &middot; Nick Johnson',
+      csmlbl:'Nick Johnson',
+      change:'Aug 4 &middot; Issue',
+      excerpt:'NJ: Accenture flagged unsigned contract + imminent data deletion deadline (7:00 AM PT, 30 min). Per HG data governance policy, data must be deleted if contract is not executed before deadline. Requires immediate escalation to legal and account leadership.' },
+    { csm:'nick', health:'Healthy', account:'Freshworks',
+      opp:'Vitally Pulse &mdash; Aug 4 Call',
+      arr:'Enterprise &middot; Nick Johnson',
+      csmlbl:'Nick Johnson',
+      change:'Aug 4 &middot; Expansion',
+      excerpt:'NJ: Customer-initiated pricing discussion for IT spend data expansion to 150,000&ndash;200,000 accounts (7:30 AM PT, 30 min). Nick to prepare expansion proposal and pricing options.' },
+    { csm:'varun', health:'Healthy', account:'Zscaler',
+      opp:'Vitally Pulse &mdash; Aug 4 Call',
+      arr:'Enterprise &middot; Varun Tiwari',
+      csmlbl:'Varun Tiwari',
+      change:'Aug 4 &middot; Check-in',
+      excerpt:'VT: Discovery call with AM Max Shaw (8:00 AM PT, 30 min). Reviewed Zscaler account context, current platform usage, and potential expansion opportunities.' },
+    { csm:'nick', health:'Healthy', account:'Veeam',
+      opp:'Vitally Pulse &mdash; Aug 4 Call',
+      arr:'Enterprise &middot; Nick Johnson',
+      csmlbl:'Nick Johnson',
+      change:'Aug 4 &middot; Check-in',
+      excerpt:'NJ: Recurring sync on TrustRadius event review performance (8:30 AM PT, 30 min). Reviewed recent event effectiveness metrics, review collection rates, and upcoming event strategies.' },
+    { csm:'nick', health:'Healthy', account:'Accel4',
+      opp:'Vitally Pulse &mdash; Aug 4 Call',
+      arr:'Enterprise &middot; Nick Johnson',
+      csmlbl:'Nick Johnson',
+      change:'Aug 4 &middot; Check-in',
+      excerpt:'NJ: 2027 goal planning and GTM campaign usage review (11:00 AM PT, 30 min). Aligned platform utilization to Accel4\'s forward-looking revenue targets. Strategic planning session.' },
+    { csm:'pam', health:'Healthy', account:'F5',
+      opp:'Vitally Pulse &mdash; Aug 4 Call',
+      arr:'Enterprise &middot; Pam Huck',
+      csmlbl:'Pam Huck',
+      change:'Aug 4 &middot; Expansion',
+      excerpt:'PH: Recurring F5 sync covering GEO dashboard capabilities and LLM/AI integration opportunities (2:30 PM PT, 30 min). F5 expressed interest in deeper GEO analytics and AI-driven use cases with HG data.' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div><strong>${c.account}</strong><br><span style="color:#8b949e;font-size:11px;">${c.opp}</span></div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_08_04() {
+  return `<div class="action-list">
+
+    <div class="action-item ${doneActions.has('0804-1')?'done':''}" data-csm="nick" id="action-0804-1">
+      <div class="action-checkbox ${doneActions.has('0804-1')?'checked':''}" onclick="toggleAction('0804-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; Accenture &mdash; Escalate unsigned contract + data deletion deadline immediately</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Nick Johnson &middot; Data governance risk: contract must be signed before deletion deadline or HG must delete data. Loop in legal and account leadership today. Confirm exact deadline date and document status.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0804-2')?'done':''}" data-csm="nick" id="action-0804-2">
+      <div class="action-checkbox ${doneActions.has('0804-2')?'checked':''}" onclick="toggleAction('0804-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Freshworks &mdash; Prepare IT spend data expansion pricing proposal (150&ndash;200K accounts)</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Nick Johnson &middot; Customer is actively evaluating an IT spend data expansion. Build pricing options for 150K and 200K account tiers. Include sample data and value story. Send proposal within 2 business days while interest is active.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0804-3')?'done':''}" data-csm="pam" id="action-0804-3">
+      <div class="action-checkbox ${doneActions.has('0804-3')?'checked':''}" onclick="toggleAction('0804-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; F5 &mdash; Send GEO dashboard overview + LLM integration use case summary</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Pam Huck &middot; F5 expressed interest in GEO dashboard expansion and LLM/AI engine integration with HG data. Send capabilities summary, sample report, and proposed next step for an expanded AI use case evaluation.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0804-4')?'done':''}" data-csm="varun" id="action-0804-4">
+      <div class="action-checkbox ${doneActions.has('0804-4')?'checked':''}" onclick="toggleAction('0804-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; CIENA &mdash; Send onboarding follow-up resources to new user</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Varun Tiwari &middot; Follow up today's onboarding walkthrough with a summary email including quick-start guide, key feature links, and Varun's contact for support. Schedule 2-week check-in to confirm adoption.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0804-5')?'done':''}" data-csm="varun" id="action-0804-5">
+      <div class="action-checkbox ${doneActions.has('0804-5')?'checked':''}" onclick="toggleAction('0804-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F50D; Zscaler &mdash; Coordinate next steps with Max Shaw post-discovery</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Varun Tiwari &middot; Sync with AM Max Shaw to align on discovery outcomes and agree on next steps for Zscaler account engagement. Define follow-up actions and timeline.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0804-6')?'done':''}" data-csm="nick" id="action-0804-6">
+      <div class="action-checkbox ${doneActions.has('0804-6')?'checked':''}" onclick="toggleAction('0804-6')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CA; Veeam &mdash; Share TrustRadius event review performance report</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Nick Johnson &middot; Send Veeam the event review performance data discussed in today's sync. Include trend analysis and recommendations for maximizing review yield in upcoming events.</div>
+      </div>
+    </div>
+
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
