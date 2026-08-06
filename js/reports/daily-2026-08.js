@@ -683,3 +683,341 @@ function dayActionsHTML_2026_08_04() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
 }
+
+// ——— 2026-08-05 (Wednesday, Aug 5) ———
+
+function dayData_2026_08_05() {
+  return {
+    calls: [
+      { ts: 'Aug 5 · 6:30 AM', csm: 'nick', account: 'Protiviti',
+        note: 'SAP MDF 2027 campaign planning — intent data expansion and co-marketing strategy.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Nick Johnson reviewed Protiviti\'s 2027 SAP MDF (Market Development Funds) campaign strategy. Protiviti is growing its SAP practice and seeking to leverage HG\'s intent data to identify the broadest addressable market for SAP partner co-marketing MDF applications. Discussion covered intent data scope, comparison reporting, and HG\'s role as the data backbone for Protiviti\'s FY2027 SAP partner fund campaigns.' },
+
+      { ts: 'Aug 5 · 7:00 AM', csm: 'nick', account: 'LTIMindtree Limited',
+        note: 'SAP partner market enlargement pricing — ~$50K add-on discussed; credit usage at 255K.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Nick Johnson reviewed HG Insights pricing for the SAP partner market enlargement offering with David Garcia-Thomas (LTIMindtree). Reviewed current credit usage (255K) and walked through a ~$50K add-on for expanded SAP partner market access. Call included a side-by-side pricing comparison across data model options. Next step: formalize the market enlargement expansion proposal.' },
+
+      { ts: 'Aug 5 · 7:30 AM', csm: 'andy', account: 'Cockroach Labs',
+        note: 'User access issue — new team member unable to access HG platform; troubleshooting.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Issue',
+        detail: 'Cockroach Labs reached out to Andy Lim regarding a new team member who could not access the HG Insights platform. Andy walked through the provisioning process, verified seat assignments, and identified the access block. Resolution steps initiated. New user access to be confirmed by end of day. Customer-initiated — quick resolution expected.' },
+
+      { ts: 'Aug 5 · 8:30 AM', csm: 'nick', account: 'Unica (HCL)',
+        note: 'TrustRadius review program intro for Charles Cabouret — onboarding new HCL contact.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Nick Johnson introduced Charles Cabouret (new HCL Unica contact) to the TrustRadius review program. Covered review collection best practices, incentive options, review page optimization, and how buyer intent signals from TrustRadius reviews support HCL\'s GTM motion. Charles is the new primary TrustRadius POC for Unica and is getting up to speed on the program.' },
+
+      { ts: 'Aug 5 · 10:00 AM', csm: 'divyam', account: 'Informatica',
+        note: 'URGENT: Renewal expires Aug 7 (2 days) — SPA confirmed Aug 3, awaiting processing.',
+        mins: 30, health: 'Concerning',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Issue',
+        detail: 'Divyam Dewan connected with Heather (Informatica) on an urgent renewal check-in. The Informatica renewal expires August 7 — just 2 days from this call. The final SPA was confirmed on August 3 but has not yet cleared processing. Heather confirmed awareness and is following up internally. Divyam must escalate internally to ensure paperwork processes before the expiration date to avoid a service lapse.' },
+
+      { ts: 'Aug 5 · 12:00 PM', csm: 'atisha', account: 'Optiv',
+        note: 'AI Scoring product pitch and intent data file share — expansion opportunity with Roger.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Atisha Waghela ran the recurring Optiv sync and introduced the new HG AI Scoring product to Roger. Demonstrated AI Scoring capabilities for identifying and targeting AI-adopting accounts and shared an intent data file for Roger\'s review before tomorrow\'s follow-up session. Roger expressed interest in the expansion offering. Call also covered ongoing account health metrics and current platform usage.' },
+
+      { ts: 'Aug 5 · 1:15 PM', csm: 'pam', account: 'Oracle',
+        note: 'TrustRadius quick sync — GEO Dashboard walkthrough and AI visibility premium offering.',
+        mins: 15, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Pam Huck held a short TrustRadius sync with David Kearney (Oracle). Walked through the GEO Dashboard — AI engine citation tracking, brand sentiment in LLM search outputs, and product comparison visibility across AI engines. Discussed the premium tier GEO offering and how Oracle\'s product pages could improve AI search presence. David engaged positively; premium upgrade conversation to continue.' },
+    ],
+    pulses: [
+      { csm: 'nick', account: 'Protiviti', health: 'Healthy',
+        note: 'Routine sync; 2027 SAP MDF campaign strategy discussed; expansion opportunity flagged.' },
+      { csm: 'nick', account: 'LTIMindtree Limited', health: 'Healthy',
+        note: 'SAP partner market enlargement pricing reviewed (~$50K); credit usage at 255K.' },
+      { csm: 'andy', account: 'Cockroach Labs', health: 'Healthy',
+        note: 'Customer-reported user access issue; troubleshooting completed; resolution in progress.' },
+      { csm: 'nick', account: 'Unica (HCL)', health: 'Healthy',
+        note: 'TrustRadius program intro for new contact Charles Cabouret; onboarding underway.' },
+      { csm: 'divyam', account: 'Informatica', health: 'Concerning',
+        note: 'URGENT: Renewal expires Aug 7 — SPA confirmed Aug 3 but not yet processed. Escalation required.' },
+      { csm: 'atisha', account: 'Optiv', health: 'Healthy',
+        note: 'AI Scoring product pitched to Roger; intent data file shared; follow-up session scheduled tomorrow.' },
+      { csm: 'pam', account: 'Oracle', health: 'Healthy',
+        note: 'TrustRadius sync; GEO Dashboard walkthrough; AI visibility premium offering introduced.' },
+    ],
+  };
+}
+
+function dayMeta_2026_08_05() {
+  return {
+    pills: [
+      ['dot-teal',  '7 Calls'],
+      ['dot-red',   '1 Concerning'],
+      ['dot-amber', '3 Expansion'],
+      ['dot-green', '7 Vitally Pulses'],
+      ['dot-grey',  'Wed Aug 5 · 89 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (7)', 'Pulses (7)', 'Action Items (7)'],
+  };
+}
+
+function dayOverviewHTML_2026_08_05() {
+  return `<div class="section-label">Team Activity &mdash; Wednesday, August 5, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Wednesday August 5 &mdash; 89 recordings scanned</strong> via SFDC SOQL &middot; <strong>7 confirmed calls</strong> across 5 CSMs &middot; 1 Concerning &middot; 3 Expansion signals &middot; 1 internal GTM session excluded
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>URGENT &mdash; Informatica renewal expires Aug 7 (tomorrow):</strong> SPA confirmed Aug 3 but not yet processed. Divyam must confirm with Heather and escalate internally today to prevent a service lapse.
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>3 Expansion signals:</strong> <strong>Protiviti</strong> &mdash; 2027 SAP MDF campaign data expansion. &middot; <strong>LTIMindtree</strong> &mdash; ~$50K SAP partner market enlargement add-on in discussion. &middot; <strong>Optiv</strong> &mdash; AI Scoring product pitched to Roger; follow-up tomorrow.
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">3 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">3</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-amber">2</div><div class="metric-lbl">Expansion</div></div>
+        <div><div class="metric-num m-grey">90m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Protiviti (2027 SAP MDF expansion) &middot; LTIMindtree (~$50K market enlargement pricing) &middot; Unica HCL (TrustRadius onboarding for Charles Cabouret)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">&#x26A0;&#xFE0F; Informatica &mdash; renewal expires Aug 7, SPA confirmed but not yet processed. Urgent escalation required.</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-amber">1</div><div class="metric-lbl">Expansion</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Optiv (AI Scoring product intro to Roger; intent data file shared; follow-up session tomorrow)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="andy">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Cockroach Labs (user access issue; new team member provisioning; resolution initiated)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="pam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">15m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Oracle (TrustRadius sync; GEO Dashboard walkthrough; AI visibility premium offering pitched)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="rani">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">3 events scheduled (Google, Cisco Win Ctr, Lenovo/OneSix) &mdash; no recordings synced</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="varun">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">4 events scheduled (Informatica, Optiv, Autodesk, Insight) &mdash; recordings exist but no transcripts; counts unconfirmed</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="riley">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No CSM-owned events or recordings found for this date</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_08_05() {
+  return `<div class="calls-table">
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>Concerning:</strong> Informatica &mdash; renewal expires Aug 7 (TOMORROW); SPA confirmed Aug 3 but processing not confirmed. Divyam must escalate today.
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>Expansion:</strong> Protiviti (2027 SAP MDF campaign data) &middot; LTIMindtree (~$50K market enlargement pricing) &middot; Optiv (AI Scoring pitch; follow-up tomorrow)
+  </div>
+  <div style="background:#161b22;border:1px solid #30363d;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#8b949e;">
+    &#x1F4CB; <strong>No-transcript (unconfirmed):</strong> Varun Tiwari / Insight (Kickstart the Day) 6:30 AM &mdash; recording exists, no transcript &middot; Pam Huck / F5 10:30 AM &mdash; recording exists, no transcript
+  </div>
+  <div style="background:#161b22;border:1px solid #30363d;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#8b949e;">
+    &#x1F6AB; <strong>No recording:</strong> Rani Guy (Google 8:00 AM, Cisco Win Ctr 8:30 AM, Lenovo/OneSix 9:30 AM) &middot; Varun Tiwari (Informatica 9:00 AM, Optiv 11:30 AM, Autodesk 12:00 PM, F5 12:30 PM) &middot; Atisha Waghela (Salesforce ASEAN 1:30 AM) &middot; Nick Johnson (Veeam 4:45 AM) &middot; Andy Lim (RELEX 7:00 AM)
+  </div>
+  <div style="background:#161616;border:1px solid #30363d;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#8b949e;">
+    &#x1F4CB; <strong>Internal (excluded):</strong> Atisha Waghela / Weekly GTM Enablement Session 8:00 AM (60 min) &mdash; all HG staff; Disha Thakkar presenting AI Scoring to internal team
+  </div>
+  <!-- Auto-table rendered by core.js from dayData calls with nature/initiator/purpose fields -->
+  </div>`;
+}
+
+function dayPulsesHTML_2026_08_05() {
+  const cards = [
+    { csm:'divyam', health:'Concerning', account:'Informatica',
+      opp:'Vitally Pulse — Aug 5 Call',
+      arr:'Enterprise · Divyam Dewan',
+      csmlbl:'Divyam Dewan',
+      change:'Aug 5 · Concerning',
+      excerpt:'DD: URGENT renewal check-in with Heather (Informatica). Renewal expires Aug 7 — just 2 days away. Final SPA confirmed Aug 3 but not yet processed. Heather confirmed awareness and is following up internally. Internal escalation required to prevent service lapse. (10:00 AM PT, 30 min).' },
+    { csm:'nick', health:'Healthy', account:'Protiviti',
+      opp:'Vitally Pulse — Aug 5 Call',
+      arr:'Enterprise · Nick Johnson',
+      csmlbl:'Nick Johnson',
+      change:'Aug 5 · Expansion',
+      excerpt:'NJ: Routine sync for 2027 SAP MDF campaign planning. Protiviti expanding SAP practice and wants HG intent data to scope the broadest addressable market for SAP partner co-marketing fund applications. Intent data comparison and campaign structure discussed. Strong expansion signal for FY2027. (6:30 AM PT, 30 min).' },
+    { csm:'nick', health:'Healthy', account:'LTIMindtree Limited',
+      opp:'Vitally Pulse — Aug 5 Call',
+      arr:'Enterprise · Nick Johnson',
+      csmlbl:'Nick Johnson',
+      change:'Aug 5 · Expansion',
+      excerpt:'NJ: SAP partner market enlargement pricing review with David Garcia-Thomas (LTIMindtree). Reviewed current credit usage (255K). Walked through ~$50K add-on pricing for expanded SAP partner market access with side-by-side data model comparison. Next step: formalize expansion proposal. (7:00 AM PT, 30 min).' },
+    { csm:'atisha', health:'Healthy', account:'Optiv',
+      opp:'Vitally Pulse — Aug 5 Call',
+      arr:'Enterprise · Atisha Waghela',
+      csmlbl:'Atisha Waghela',
+      change:'Aug 5 · Expansion',
+      excerpt:'AW: Routine Optiv sync with Roger. Introduced new AI Scoring product — targeting AI-adopting accounts, scoring models, use cases. Shared intent data file for Roger\'s review before tomorrow\'s follow-up session. Roger expressed interest. Also covered account health and current platform usage. (12:00 PM PT, 30 min).' },
+    { csm:'andy', health:'Healthy', account:'Cockroach Labs',
+      opp:'Vitally Pulse — Aug 5 Call',
+      arr:'Enterprise · Andy Lim',
+      csmlbl:'Andy Lim',
+      change:'Aug 5 · Healthy',
+      excerpt:'AL: Customer-initiated call — new team member unable to access HG platform. Andy walked through provisioning process, verified seat assignments, identified access block. Resolution steps initiated. New user access to be confirmed by end of day. Minor issue, quick resolution. (7:30 AM PT, 30 min).' },
+    { csm:'nick', health:'Healthy', account:'Unica (HCL)',
+      opp:'Vitally Pulse — Aug 5 Call',
+      arr:'Enterprise · Nick Johnson',
+      csmlbl:'Nick Johnson',
+      change:'Aug 5 · Healthy',
+      excerpt:'NJ: TrustRadius program intro for Charles Cabouret (new HCL Unica POC). Covered review collection best practices, incentive options, page optimization, and buyer intent signal value from TR reviews. Charles is new to the account and will own TrustRadius program management going forward. (8:30 AM PT, 30 min).' },
+    { csm:'pam', health:'Healthy', account:'Oracle',
+      opp:'Vitally Pulse — Aug 5 Call',
+      arr:'Enterprise · Pam Huck',
+      csmlbl:'Pam Huck',
+      change:'Aug 5 · Healthy',
+      excerpt:'PH: Short TrustRadius sync with David Kearney (Oracle). Walked through GEO Dashboard — AI engine citation tracking, brand sentiment in LLM outputs, and product comparison visibility. Pitched premium tier GEO offering. David engaged positively; premium upgrade conversation to continue. (1:15 PM PT, 15 min).' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div><strong>${c.account}</strong><br><span style="color:#8b949e;font-size:11px;">${c.opp}</span></div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_08_05() {
+  return `<div class="action-list">
+
+    <div class="action-item ${doneActions.has('0805-1')?'done':''}" data-csm="divyam" id="action-0805-1">
+      <div class="action-checkbox ${doneActions.has('0805-1')?'checked':''}" onclick="toggleAction('0805-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F6A8; Informatica &mdash; Confirm SPA processing before Aug 7 expiration &mdash; escalate TODAY</div>
+        <div class="action-meta"><span class="urgency-badge urgency-urgent">URGENT</span>Divyam Dewan &middot; Renewal expires August 7 (tomorrow). Final SPA confirmed Aug 3 but not yet processed. Call or message Heather to confirm paperwork is submitted and being processed. Escalate to Nicole Morgan + Augie Buettner immediately if any delay is found.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0805-2')?'done':''}" data-csm="nick" id="action-0805-2">
+      <div class="action-checkbox ${doneActions.has('0805-2')?'checked':''}" onclick="toggleAction('0805-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Protiviti &mdash; Send 2027 SAP MDF expansion proposal and intent data comparison</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Nick Johnson &middot; Follow up on today's 2027 SAP MDF campaign discussion. Send Protiviti a tailored intent data comparison showing addressable SAP partner market size. Include proposed data scope and pricing for FY2027 MDF campaign support.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0805-3')?'done':''}" data-csm="nick" id="action-0805-3">
+      <div class="action-checkbox ${doneActions.has('0805-3')?'checked':''}" onclick="toggleAction('0805-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4B0; LTIMindtree &mdash; Formalize SAP partner market enlargement pricing proposal (~$50K)</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Nick Johnson &middot; Build and send the formal market enlargement expansion proposal to LTIMindtree. Include side-by-side data model comparison, credit usage analysis (255K current), and ~$50K add-on pricing. Save to LTI account folder and share with David Garcia-Thomas.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0805-4')?'done':''}" data-csm="atisha" id="action-0805-4">
+      <div class="action-checkbox ${doneActions.has('0805-4')?'checked':''}" onclick="toggleAction('0805-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F916; Optiv &mdash; Send AI Scoring overview deck to Roger before tomorrow's follow-up session</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Atisha Waghela &middot; Roger needs review time before tomorrow's AI Scoring follow-up. Send the AI Scoring product deck, the intent data file shared today, and a brief agenda for tomorrow's session. Confirm the meeting time with Roger.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0805-5')?'done':''}" data-csm="andy" id="action-0805-5">
+      <div class="action-checkbox ${doneActions.has('0805-5')?'checked':''}" onclick="toggleAction('0805-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F511; Cockroach Labs &mdash; Confirm new team member platform access is active</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Andy Lim &middot; Verify that the new Cockroach Labs team member's HG platform access has been successfully provisioned following today's troubleshooting. Send a confirmation email to the customer once access is confirmed.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0805-6')?'done':''}" data-csm="pam" id="action-0805-6">
+      <div class="action-checkbox ${doneActions.has('0805-6')?'checked':''}" onclick="toggleAction('0805-6')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CA; Oracle &mdash; Send GEO Dashboard overview and schedule premium tier follow-up</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Pam Huck &middot; Follow up with David Kearney on the GEO Dashboard premium offering discussed today. Send a capabilities summary, sample AI visibility report, and premium tier pricing. Propose a 30-minute deep-dive to explore the upgrade path for Oracle's product pages.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0805-7')?'done':''}" data-csm="nick" id="action-0805-7">
+      <div class="action-checkbox ${doneActions.has('0805-7')?'checked':''}" onclick="toggleAction('0805-7')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Unica (HCL) &mdash; Send Charles Cabouret TrustRadius onboarding guide and program overview</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Nick Johnson &middot; Charles Cabouret is the new HCL Unica TrustRadius POC. Send the program onboarding guide, review collection best practices doc, and incentive options summary. Schedule a 2-week check-in to assess early adoption and answer questions.</div>
+      </div>
+    </div>
+
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
