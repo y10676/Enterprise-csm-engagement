@@ -1021,3 +1021,411 @@ function dayActionsHTML_2026_08_05() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
 }
+
+// ——— 2026-08-06 (Thursday, Aug 6) ———
+
+function dayData_2026_08_06() {
+  return {
+    calls: [
+      { ts: 'Aug 6 · 5:00 AM', csm: 'atisha', account: 'Insight Direct USA',
+        note: 'Status update on AI sales coach and marketing assistant. Transition to solution selling and data integration challenges.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Status update on AI sales coach and marketing assistant. Transition to solution selling and data integration challenges. Follow-up with John Hickey planned.' },
+
+      { ts: 'Aug 6 · 7:00 AM', csm: 'varun', account: 'Autodesk',
+        note: 'Schema mismatches between test files and migration document. CRM ID integration into install file.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Issue',
+        detail: 'Schema mismatches between test files and migration document. CRM ID integration into install file. 100-account sample prepared for ETL pipeline testing.' },
+
+      { ts: 'Aug 6 · 7:00 AM', csm: 'atisha', account: 'Insight',
+        note: 'Updates on Vincent\'s leave, geo tracking tool, contact data management, and opportunity generator URL matching.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Updates on Vincent\'s leave, geo tracking tool, contact data management across ZoomInfo/Salesforce, and opportunity generator URL matching.' },
+
+      { ts: 'Aug 6 · 7:30 AM', csm: 'riley', account: 'SAP',
+        note: 'Newsletters for commerce/sales/service clouds published. Market report updates planned. SAP Connect event registration strategies discussed.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Newsletters for commerce/sales/service clouds published. Market report updates planned. SAP Connect event registration strategies discussed.' },
+
+      { ts: 'Aug 6 · 8:00 AM', csm: 'varun', account: 'MongoDB',
+        note: 'Credit consumption spike from system error (resolved). FAI data and time-series analysis presented. Custom dashboard/MCP pricing discussed.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Credit consumption spike from system error (resolved). FAI data and time-series analysis presented. Custom dashboard/MCP pricing discussed.' },
+
+      { ts: 'Aug 6 · 8:30 AM', csm: 'varun', account: 'Pegasystems',
+        note: 'New AM Julian Rojas introduced. ICP analysis and data pull — filtering by revenue, geography, industry.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Check-in',
+        detail: 'New AM Julian Rojas introduced. ICP analysis and data pull — filtering by revenue, geography, industry. Industry classification challenges identified.' },
+
+      { ts: 'Aug 6 · 8:30 AM', csm: 'riley', account: 'SAP / Joule',
+        note: 'Monthly TrustRadius sync on Joule (SAP AI product). Content development and competitive positioning review.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Monthly TrustRadius sync on Joule (SAP AI product). Content development and competitive positioning review.' },
+
+      { ts: 'Aug 6 · 9:00 AM', csm: 'varun', account: 'Autodesk',
+        note: 'ETL pipeline testing confirmed for staging environment. Products expanded from 350 to 1,100. White space and account coverage analysis underway.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'ETL pipeline testing confirmed for staging environment. Products expanded from 350 to 1,100. White space identification and account coverage analysis underway.' },
+
+      { ts: 'Aug 6 · 9:00 AM', csm: 'atisha', account: 'RSM',
+        note: 'Building renewal deck with value achieved + FY27 plans. Pricing proposals developing with new AM Julian. AI scoring model demo for account prioritization.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Building renewal deck with value achieved + FY27 plans. Pricing proposals developing with new AM Julian. AI scoring model demo for account prioritization.' },
+
+      { ts: 'Aug 6 · 10:00 AM', csm: 'nick', account: 'SAP',
+        note: 'Renewal options with consumption-based credit system. Multiple pricing tiers based on data depth and vendor scope.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Renewal options with consumption-based credit system. Multiple pricing tiers based on data depth and vendor scope. SOW expected by end of week.' },
+
+      { ts: 'Aug 6 · 11:00 AM', csm: 'riley', account: 'SAP Concur',
+        note: 'Phase 2 kick-off for intent-driven leads program. HG technographic data for more precise targeting, sales briefs for enablement.',
+        mins: 45, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Phase 2 kick-off for intent-driven leads program. HG technographic data for more precise targeting, sales briefs for enablement. Lead quality feedback addressed.' },
+
+      { ts: 'Aug 6 · 12:30 PM', csm: 'riley', account: 'SAP Integration Suite',
+        note: 'Competitive content for SAP Integration Suite. Focus on iPass over API management. Mulesoft report draft expected in 2–3 weeks.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'Customer', purpose: 'Check-in',
+        detail: 'Competitive content for SAP Integration Suite. Focus on iPass over API management. Mulesoft report draft expected in 2–3 weeks.' },
+    ],
+    pulses: [
+      { csm: 'riley', account: 'SAP', health: 'Healthy',
+        note: 'Routine sync; newsletters published; SAP Connect event registration strategies discussed.' },
+      { csm: 'riley', account: 'SAP / Joule', health: 'Healthy',
+        note: 'Monthly TrustRadius sync on Joule; content development and competitive positioning review.' },
+      { csm: 'riley', account: 'SAP Concur', health: 'Healthy',
+        note: 'Phase 2 intent-driven leads kick-off; HG technographic data integration for precise targeting.' },
+      { csm: 'riley', account: 'SAP Integration Suite', health: 'Healthy',
+        note: 'Competitive content for iPass focus; Mulesoft report draft expected in 2–3 weeks.' },
+      { csm: 'varun', account: 'Autodesk', health: 'Healthy',
+        note: 'Schema mismatch identified; CRM ID integration; 100-account sample for ETL testing prepared.' },
+      { csm: 'varun', account: 'Autodesk', health: 'Healthy',
+        note: 'ETL pipeline staging confirmed; products expanded 350→1,100; white space analysis underway.' },
+      { csm: 'varun', account: 'MongoDB', health: 'Healthy',
+        note: 'Credit spike resolved; FAI data and time-series analysis; dashboard/MCP pricing discussed.' },
+      { csm: 'varun', account: 'Pegasystems', health: 'Healthy',
+        note: 'New AM Julian Rojas introduced; ICP analysis with revenue/geo/industry filters; classification challenges.' },
+      { csm: 'atisha', account: 'Insight Direct USA', health: 'Healthy',
+        note: 'AI sales coach status update; solution selling transition; John Hickey follow-up planned.' },
+      { csm: 'atisha', account: 'Insight', health: 'Healthy',
+        note: 'Vincent leave updates; geo tracking tool; contact data management; URL matching for opp generator.' },
+      { csm: 'atisha', account: 'RSM', health: 'Healthy',
+        note: 'Renewal deck in progress with FY27 plans; pricing with AM Julian; AI scoring demo planned.' },
+      { csm: 'nick', account: 'SAP', health: 'Healthy',
+        note: 'Renewal with consumption-based credits; multiple pricing tiers; SOW expected end of week.' },
+    ],
+  };
+}
+
+function dayMeta_2026_08_06() {
+  return {
+    pills: [
+      ['dot-teal',  '12 Calls'],
+      ['dot-red',   '0 Concerning'],
+      ['dot-amber', '4 Expansion'],
+      ['dot-green', '12 Vitally Pulses'],
+      ['dot-grey',  'Thu Aug 6 · 78 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (12)', 'Pulses (12)', 'Action Items (9)'],
+  };
+}
+
+function dayOverviewHTML_2026_08_06() {
+  return `<div class="section-label">Team Activity &mdash; Thursday, August 6, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Thursday August 6 &mdash; 78 recordings scanned</strong> (46 with transcripts, 32 without) &middot; <strong>12 confirmed calls</strong> across 4 CSMs &middot; 0 Concerning &middot; 4 Expansion signals &middot; 52 CSM events
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>4 Expansion signals:</strong> <strong>Autodesk</strong> &mdash; product expansion 350&rarr;1,100, ETL pipeline staging confirmed. &middot; <strong>RSM</strong> &mdash; renewal deck with FY27 plans + AI scoring demo. &middot; <strong>SAP</strong> &mdash; consumption-based credit model, SOW by end of week. &middot; <strong>SAP Concur</strong> &mdash; Phase 2 intent-driven leads kick-off.
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">4 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">4</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">4</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-amber">1</div><div class="metric-lbl">Expansion</div></div>
+        <div><div class="metric-num m-grey">135m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">SAP (newsletters published, Connect event) &middot; SAP/Joule (monthly TR sync) &middot; SAP Concur (Phase 2 leads kick-off) &middot; SAP Integration Suite (Mulesoft competitive report)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-amber">1</div><div class="metric-lbl">Expansion</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">SAP (consumption-based credit renewal; SOW expected by end of week)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">4 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">4</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">4</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-amber">1</div><div class="metric-lbl">Expansion</div></div>
+        <div><div class="metric-num m-grey">120m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Autodesk x2 (schema mismatch + ETL pipeline, 350&rarr;1,100 products) &middot; MongoDB (credit spike resolved, FAI data) &middot; Pegasystems (new AM Julian Rojas, ICP analysis)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">3 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">3</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-amber">1</div><div class="metric-lbl">Expansion</div></div>
+        <div><div class="metric-num m-grey">90m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Insight Direct USA (AI sales coach status) &middot; Insight (geo tracking, contact data mgmt) &middot; RSM (renewal deck, AI scoring demo)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="rani">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 Adobe events &mdash; no matching recordings found</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="divyam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Safaricom 4:00 AM &amp; Sage 8:00 AM events &mdash; no transcripts synced</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">6 Epicor/TrustRadius events &mdash; in-person offsite, speakers labeled as conference room IDs</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Sage (with Nick) 6:30 AM &mdash; no transcript synced</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_08_06() {
+  return `<div class="calls-table">
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>Expansion:</strong> Autodesk (product expansion 350&rarr;1,100) &middot; RSM (renewal deck + AI scoring) &middot; SAP (consumption credit model) &middot; SAP Concur (Phase 2 leads)
+  </div>
+  <div style="background:#161b22;border:1px solid #30363d;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#8b949e;">
+    &#x1F4CB; <strong>No-transcript (unconfirmed):</strong> Pam Huck / 6 Epicor/TrustRadius events &mdash; in-person offsite, speakers labeled as conference room IDs &middot; Divyam Dewan / Safaricom 4:00 AM &mdash; no transcript &middot; Atisha Waghela / Kyndryl 5:30 AM &mdash; no transcript &middot; Nick Johnson + Andy Lim / Sage 6:30 AM &mdash; no transcript &middot; Divyam Dewan / Sage 8:00 AM &mdash; no transcript &middot; Rani Guy / 2 Adobe events &mdash; no matching recordings
+  </div>
+  <!-- Auto-table rendered by core.js from dayData calls with nature/initiator/purpose fields -->
+  </div>`;
+}
+
+function dayPulsesHTML_2026_08_06() {
+  const cards = [
+    { csm:'riley', health:'Healthy', account:'SAP',
+      opp:'Vitally Pulse — Aug 6 Call',
+      arr:'Enterprise · Riley Rogers',
+      csmlbl:'Riley Rogers',
+      change:'Aug 6 · Healthy',
+      excerpt:'RR: Routine SAP sync. Newsletters for commerce/sales/service clouds published. Market report updates planned. Discussed SAP Connect event registration strategies. (7:30 AM PT, 30 min).' },
+    { csm:'riley', health:'Healthy', account:'SAP / Joule',
+      opp:'Vitally Pulse — Aug 6 Call',
+      arr:'Enterprise · Riley Rogers',
+      csmlbl:'Riley Rogers',
+      change:'Aug 6 · Healthy',
+      excerpt:'RR: Monthly TrustRadius sync on Joule (SAP AI product). Content development progress reviewed. Competitive positioning for Joule assessed. (8:30 AM PT, 30 min).' },
+    { csm:'riley', health:'Healthy', account:'SAP Concur',
+      opp:'Vitally Pulse — Aug 6 Call',
+      arr:'Enterprise · Riley Rogers',
+      csmlbl:'Riley Rogers',
+      change:'Aug 6 · Expansion',
+      excerpt:'RR: Phase 2 kick-off for intent-driven leads program. HG technographic data integration for more precise targeting. Sales briefs for enablement. Lead quality feedback from Phase 1 addressed. (11:00 AM PT, 45 min).' },
+    { csm:'riley', health:'Healthy', account:'SAP Integration Suite',
+      opp:'Vitally Pulse — Aug 6 Call',
+      arr:'Enterprise · Riley Rogers',
+      csmlbl:'Riley Rogers',
+      change:'Aug 6 · Healthy',
+      excerpt:'RR: Competitive content for SAP Integration Suite. Focus shifting to iPass over API management. Mulesoft report draft expected in 2–3 weeks. Customer-initiated meeting. (12:30 PM PT, 30 min).' },
+    { csm:'nick', health:'Healthy', account:'SAP',
+      opp:'Vitally Pulse — Aug 6 Call',
+      arr:'Enterprise · Nick Johnson',
+      csmlbl:'Nick Johnson',
+      change:'Aug 6 · Expansion',
+      excerpt:'NJ: SAP renewal discussion with consumption-based credit system. Multiple pricing tiers explored based on data depth and vendor scope. SOW expected by end of week. (10:00 AM PT, 30 min).' },
+    { csm:'varun', health:'Healthy', account:'Autodesk',
+      opp:'Vitally Pulse — Aug 6 Call',
+      arr:'Enterprise · Varun Tiwari',
+      csmlbl:'Varun Tiwari',
+      change:'Aug 6 · Healthy',
+      excerpt:'VT: Schema mismatches between test files and migration document identified. CRM ID integration into install file. 100-account sample prepared for ETL pipeline testing. (7:00 AM PT, 30 min).' },
+    { csm:'varun', health:'Healthy', account:'Autodesk',
+      opp:'Vitally Pulse — Aug 6 Call (2)',
+      arr:'Enterprise · Varun Tiwari',
+      csmlbl:'Varun Tiwari',
+      change:'Aug 6 · Expansion',
+      excerpt:'VT: ETL pipeline testing confirmed for staging environment. Products expanded from 350 to 1,100. White space identification and account coverage analysis underway. Strong expansion signal. (9:00 AM PT, 30 min).' },
+    { csm:'varun', health:'Healthy', account:'MongoDB',
+      opp:'Vitally Pulse — Aug 6 Call',
+      arr:'Enterprise · Varun Tiwari',
+      csmlbl:'Varun Tiwari',
+      change:'Aug 6 · Healthy',
+      excerpt:'VT: Credit consumption spike from system error — now resolved. Presented FAI data and time-series analysis. Custom dashboard/MCP pricing discussed. (8:00 AM PT, 30 min).' },
+    { csm:'varun', health:'Healthy', account:'Pegasystems',
+      opp:'Vitally Pulse — Aug 6 Call',
+      arr:'Enterprise · Varun Tiwari',
+      csmlbl:'Varun Tiwari',
+      change:'Aug 6 · Healthy',
+      excerpt:'VT: Customer-initiated check-in. New AM Julian Rojas introduced. ICP analysis and data pull with filtering by revenue, geography, and industry. Industry classification challenges identified. (8:30 AM PT, 30 min).' },
+    { csm:'atisha', health:'Healthy', account:'Insight Direct USA',
+      opp:'Vitally Pulse — Aug 6 Call',
+      arr:'Enterprise · Atisha Waghela',
+      csmlbl:'Atisha Waghela',
+      change:'Aug 6 · Healthy',
+      excerpt:'AW: Ad-hoc status update on AI sales coach and marketing assistant. Transition to solution selling and data integration challenges discussed. Follow-up with John Hickey planned. (5:00 AM PT, 30 min).' },
+    { csm:'atisha', health:'Healthy', account:'Insight',
+      opp:'Vitally Pulse — Aug 6 Call',
+      arr:'Enterprise · Atisha Waghela',
+      csmlbl:'Atisha Waghela',
+      change:'Aug 6 · Healthy',
+      excerpt:'AW: Routine check-in. Updates on Vincent\'s leave, geo tracking tool, contact data management across ZoomInfo/Salesforce, and opportunity generator URL matching. (7:00 AM PT, 30 min).' },
+    { csm:'atisha', health:'Healthy', account:'RSM',
+      opp:'Vitally Pulse — Aug 6 Call',
+      arr:'Enterprise · Atisha Waghela',
+      csmlbl:'Atisha Waghela',
+      change:'Aug 6 · Expansion',
+      excerpt:'AW: Building renewal deck with value achieved + FY27 plans. Pricing proposals developing with new AM Julian. AI scoring model demo for account prioritization planned. (9:00 AM PT, 30 min).' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div><strong>${c.account}</strong><br><span style="color:#8b949e;font-size:11px;">${c.opp}</span></div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_08_06() {
+  return `<div class="action-list">
+
+    <div class="action-item ${doneActions.has('0806-1')?'done':''}" data-csm="nick" id="action-0806-1">
+      <div class="action-checkbox ${doneActions.has('0806-1')?'checked':''}" onclick="toggleAction('0806-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4B0; SAP &mdash; Finalize consumption-based credit pricing SOW by end of week</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Nick Johnson &middot; Finalize the SAP renewal SOW with the consumption-based credit pricing model. Include multiple pricing tiers based on data depth and vendor scope. Target delivery by Friday to keep renewal momentum on track.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0806-2')?'done':''}" data-csm="varun" id="action-0806-2">
+      <div class="action-checkbox ${doneActions.has('0806-2')?'checked':''}" onclick="toggleAction('0806-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F527; Autodesk &mdash; Resolve schema mismatch, deliver 100-account sample, confirm 1,100 products</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Varun Tiwari &middot; Resolve schema mismatches between test files and migration document. Integrate CRM IDs into install file. Deliver the 100-account sample and confirm the expanded product list (350&rarr;1,100) is ready for ETL pipeline staging tests.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0806-3')?'done':''}" data-csm="atisha" id="action-0806-3">
+      <div class="action-checkbox ${doneActions.has('0806-3')?'checked':''}" onclick="toggleAction('0806-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CA; RSM &mdash; Complete renewal deck with FY27 plans, coordinate pricing with AM Julian, prep AI scoring demo</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Atisha Waghela &middot; Complete the RSM renewal deck showing value achieved and FY27 plans. Coordinate pricing proposals with new AM Julian. Prepare AI scoring model demo for account prioritization to support the expansion conversation.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0806-4')?'done':''}" data-csm="riley" id="action-0806-4">
+      <div class="action-checkbox ${doneActions.has('0806-4')?'checked':''}" onclick="toggleAction('0806-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; SAP Concur &mdash; Deliver HG technographic data integration for Phase 2 intent-driven leads</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Riley Rogers &middot; Deliver the HG technographic data integration for SAP Concur Phase 2 intent-driven leads program. Prepare sales briefs for enablement and address lead quality feedback from Phase 1.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0806-5')?'done':''}" data-csm="atisha" id="action-0806-5">
+      <div class="action-checkbox ${doneActions.has('0806-5')?'checked':''}" onclick="toggleAction('0806-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4DE; Insight Direct USA &mdash; Schedule follow-up with John Hickey on AI sales coach status</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Atisha Waghela &middot; Schedule a follow-up call with John Hickey at Insight Direct USA to review the AI sales coach and marketing assistant progress. Address solution selling transition challenges and data integration blockers.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0806-6')?'done':''}" data-csm="varun" id="action-0806-6">
+      <div class="action-checkbox ${doneActions.has('0806-6')?'checked':''}" onclick="toggleAction('0806-6')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F50D; MongoDB &mdash; Confirm credit spike fully resolved, follow up on dashboard/MCP pricing</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Varun Tiwari &middot; Confirm the MongoDB credit consumption spike from the system error is fully resolved and no residual issues remain. Follow up on the custom dashboard/MCP pricing discussion from today's call.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0806-7')?'done':''}" data-csm="varun" id="action-0806-7">
+      <div class="action-checkbox ${doneActions.has('0806-7')?'checked':''}" onclick="toggleAction('0806-7')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Pegasystems &mdash; Deliver ICP analysis for new AM Julian Rojas</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Varun Tiwari &middot; Deliver the ICP analysis data pull for Pegasystems, filtered by revenue, geography, and industry. Address industry classification challenges identified during today's call with new AM Julian Rojas.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0806-8')?'done':''}" data-csm="riley" id="action-0806-8">
+      <div class="action-checkbox ${doneActions.has('0806-8')?'checked':''}" onclick="toggleAction('0806-8')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4DD; SAP Integration Suite &mdash; Deliver Mulesoft competitive report draft in 2&ndash;3 weeks</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Riley Rogers &middot; Draft and deliver the Mulesoft competitive report for SAP Integration Suite. Focus on iPass over API management positioning. Target delivery within 2&ndash;3 weeks as discussed with the customer.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0806-9')?'done':''}" data-csm="riley" id="action-0806-9">
+      <div class="action-checkbox ${doneActions.has('0806-9')?'checked':''}" onclick="toggleAction('0806-9')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C5; SAP Connect Event &mdash; Finalize event registration strategies</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Riley Rogers &middot; Finalize the SAP Connect event registration strategies discussed during today's routine sync. Coordinate with SAP team on promotion and attendee targeting.</div>
+      </div>
+    </div>
+
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
