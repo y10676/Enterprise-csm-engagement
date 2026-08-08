@@ -1429,3 +1429,302 @@ function dayActionsHTML_2026_08_06() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
 }
+
+// ─────────────────────────────────────────────────────────────────────────────
+// August 7, 2026 (Friday)
+// 4 confirmed calls · Atisha(2) Andy(1) Rani(1) · 4 Expansion signals · 0 Concerning
+// ─────────────────────────────────────────────────────────────────────────────
+
+function dayData_2026_08_07() {
+  return {
+    calls: [
+      {
+        ts: 'Aug 7 · 7:00 AM', csm: 'andy', account: 'Everpure',
+        note: 'New Platform Tour — AI scoring, consumption model, MCP demo; customer ICP lists launching campaigns',
+        mins: 30, health: 'Healthy', nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Platform demo for Rick Simbeck (Everpure/Portworks). Angus Hyams (AM) drove discovery. Customer created ICP lists from HG tech install + internal data (~3,000 accounts), now launching targeted campaigns. Demoed AI-assisted scoring profiles, consumption-based commercial model with credit-based cost structure, and MCP for AI integration.'
+      },
+      {
+        ts: 'Aug 7 · 9:30 AM', csm: 'atisha', account: 'Advanced Micro Devices (AMD)',
+        note: 'Bi-weekly touchpoint — new AM Charles Hawkins intro, renewal prep, AI maturity data',
+        mins: 30, health: 'Healthy', nature: 'Recurring', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Introduced new AM Charles Hawkins to David Rockwell. Discussed AI hardware market evolution (AMD vs Nvidia strategy), new AI maturity data points, and MCP capabilities. David to schedule purchasing meeting to kick off 2027 renewals. Charles to prepare brief showing how HG data can improve AMD internal reports. Calls moving to Thursdays. V2/V3 migration docs to be shared.'
+      },
+      {
+        ts: 'Aug 7 · 10:00 AM', csm: 'rani', account: 'CloudFlare Inc',
+        note: 'Expansion and match review — 85% match rate from 19M records, territory planning, pricing',
+        mins: 60, health: 'Concerning', nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Major expansion meeting. Omkar presented 85% match rate (85 records from 19M provided, 71 high-confidence). Discussion covered territory planning, wallet sizing, account scoring, product-level data integration. Robert Goldfarb, Chandra Raju, Akash Kapoor from Cloudflare. Follow-ups: Cloud Dynamics deep dive with Tracy/Satish, contract renewal data session with Chandra, pricing based on scope.'
+      },
+      {
+        ts: 'Aug 7 · 11:00 AM', csm: 'atisha', account: 'Apple Inc.',
+        note: 'Weekly syncup — high-growth company model, fit/need scoring, credit consumption',
+        mins: 30, health: 'Healthy', nature: 'Recurring', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Weekly syncup with Wes Koch (commercial accounts, first-time joiner), Adrian Escobar, and Simone Amorim. Refined model identifying high-growth "white space" companies — fit (org size, IT spend) and need (demand signals like Okta/Workday adoption). Resolved data download issue. Credit consumption approved for larger data set. Simone to discuss with Mario (tech lead) before his leave next week.'
+      }
+    ],
+    pulses: [
+      { csm: 'andy', account: 'Everpure', health: 'Healthy', note: 'Platform tour — expansion via new platform adoption' },
+      { csm: 'atisha', account: 'Advanced Micro Devices (AMD)', health: 'Healthy', note: 'New AM intro + 2027 renewal kickoff' },
+      { csm: 'rani', account: 'CloudFlare Inc', health: 'Concerning', note: 'Expansion match review — positive trajectory' },
+      { csm: 'atisha', account: 'Apple Inc.', health: 'Healthy', note: 'High-growth model + credit consumption' }
+    ]
+  };
+}
+
+function dayMeta_2026_08_07() {
+  return {
+    pills: [
+      ['dot-teal',  '4 Calls'],
+      ['dot-red',   '0 Concerning'],
+      ['dot-amber', '4 Expansion'],
+      ['dot-green', '4 Vitally Pulses'],
+      ['dot-grey',  'Fri Aug 7 · 46 scanned']
+    ],
+    tabs: ['Overview', 'Calls (4)', 'Pulses (4)', 'Action Items (5)']
+  };
+}
+
+function dayOverviewHTML_2026_08_07() {
+  return `<div class="section-label">Team Activity &mdash; Friday August 7, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Friday Aug 7 &mdash; 46 recordings scanned</strong> via SFDC SOQL &middot; <strong>4 confirmed calls</strong> across 3 CSMs &middot; 4 expansion signals &middot; 0 concerning &middot; 1 unconfirmed (Pam/ADP)
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>4 Expansion signals:</strong> Everpure (platform tour + consumption model) &middot; AMD (renewal prep + new data points) &middot; Cloudflare (85% match rate, territory planning) &middot; Apple (high-growth model, credit consumption)
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">AMD (new AM intro + renewal prep) &middot; Apple (high-growth model + credits)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="andy">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Everpure (platform tour + consumption model demo)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Cloudflare (expansion match review &mdash; 85% match rate)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="riley">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No events or recordings detected</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="nick">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 events (Infor, UKG) &mdash; UKG recording has Nick absent; Infor no recording</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="divyam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event (Quadient) &mdash; no recording synced</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="varun">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event (Zendesk) &mdash; no recording synced</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event (ADP Monthly) &mdash; recording exists, no transcript (unconfirmed)</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_08_07() {
+  return `<div class="calls-table">
+    <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+      &#x1F4C8; <strong>All 4 calls have expansion signals.</strong> Cloudflare match review is the biggest opportunity (60 min deep dive, 85% match rate from 19M records).
+    </div>
+    <div style="background:#1a1f2e;border:1px solid #475569;border-left:3px solid #475569;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#94a3b8;">
+      &#x26A0;&#xFE0F; 1 unconfirmed: <span class="csm-chip csm-pam" style="font-size:10px;">Pam Huck</span> &times; ADP (Monthly Success Call, 8:00 AM) &mdash; recording exists, no transcript synced.
+    </div>
+  </div>`;
+}
+
+function dayPulsesHTML_2026_08_07() {
+  const cards = [
+    { csm:'andy', health:'Healthy', account:'Everpure', opp:'Vitally Pulse &mdash; Aug 7 Call',
+      arr:'Not in enterprise book &middot; Andy Lim', csmlbl:'Andy Lim',
+      change:'Aug 7 &middot; Expansion',
+      excerpt:'8/7 AL: Platform tour with Rick Simbeck (7:00 AM, 30 min). Customer created ICP lists from HG tech install + internal data (~3K accounts), launching campaigns. Demoed AI scoring, consumption model, MCP. Expansion via new platform adoption.' },
+    { csm:'atisha', health:'Healthy', account:'Advanced Micro Devices (AMD)', opp:'Vitally Pulse &mdash; Aug 7 Call',
+      arr:'Strategic &middot; Atisha Waghela', csmlbl:'Atisha Waghela',
+      change:'Aug 7 &middot; Expansion',
+      excerpt:'8/7 AW: Bi-weekly touchpoint (9:30 AM, 30 min). Introduced new AM Charles Hawkins. AI hardware market, new data points, MCP capabilities. David scheduling purchasing meeting for 2027 renewals. Calls moving to Thursdays.' },
+    { csm:'rani', health:'Concerning', account:'CloudFlare Inc', opp:'Vitally Pulse &mdash; Aug 7 Call',
+      arr:'Enterprise &middot; Rani Guy', csmlbl:'Rani Guy',
+      change:'Aug 7 &middot; Expansion',
+      excerpt:'8/7 RG: Expansion and match review (10:00 AM, 60 min). 85% match rate from 19M records (71 high-confidence). Strong engagement from Robert Goldfarb, Chandra Raju. Follow-ups: Cloud Dynamics deep dive, contract renewal data, pricing. Major expansion opportunity.' },
+    { csm:'atisha', health:'Healthy', account:'Apple Inc.', opp:'Vitally Pulse &mdash; Aug 7 Call',
+      arr:'Strategic &middot; Atisha Waghela', csmlbl:'Atisha Waghela',
+      change:'Aug 7 &middot; Expansion',
+      excerpt:'8/7 AW: Weekly syncup (11:00 AM, 30 min). Wes Koch joined first time. Refined high-growth company model — fit/need scoring. Resolved data download issue. Simone to discuss with Mario before his leave. Credit consumption approved.' }
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div><strong>${c.account}</strong><br><span style="font-size:10px;color:#64748b;">${c.arr}</span></div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_08_07() {
+  return `<div class="action-list">
+
+    <div class="action-item ${doneActions.has('0807-1')?'done':''}" data-csm="andy" id="action-0807-1">
+      <div class="action-checkbox ${doneActions.has('0807-1')?'checked':''}" onclick="toggleAction('0807-1')"></div>
+      <div class="action-body">
+        <div class="action-id">0807-1</div>
+        <div class="action-title">&#x1F4C8; Everpure &mdash; Follow up on platform adoption and campaign ROI</div>
+        <div class="action-meta"><span class="urgency urgency-medium">MEDIUM</span>Andy Lim &middot; Angus to schedule further check-ins for platform transition before contract end. Monitor ROI of current ICP campaigns.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0807-2')?'done':''}" data-csm="atisha" id="action-0807-2">
+      <div class="action-checkbox ${doneActions.has('0807-2')?'checked':''}" onclick="toggleAction('0807-2')"></div>
+      <div class="action-body">
+        <div class="action-id">0807-2</div>
+        <div class="action-title">&#x1F4C8; AMD &mdash; Share V2/V3 migration docs + prepare data improvement brief</div>
+        <div class="action-meta"><span class="urgency urgency-high">HIGH PRIORITY</span>Atisha Waghela &middot; Share technical docs before next meeting (Thu). Charles to prepare brief on HG data improvements. David sending sample report by Monday.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0807-3')?'done':''}" data-csm="rani" id="action-0807-3">
+      <div class="action-checkbox ${doneActions.has('0807-3')?'checked':''}" onclick="toggleAction('0807-3')"></div>
+      <div class="action-body">
+        <div class="action-id">0807-3</div>
+        <div class="action-title">&#x1F4C8; Cloudflare &mdash; Share complete match data + schedule deep dives</div>
+        <div class="action-meta"><span class="urgency urgency-high">HIGH PRIORITY</span>Rani Guy &middot; Omkar to share full match list (firmographics, spend/install, product breakdown) by Monday. Schedule Cloud Dynamics deep dive with Tracy/Satish and contract renewal data session with Chandra. Work on pricing.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0807-4')?'done':''}" data-csm="atisha" id="action-0807-4">
+      <div class="action-checkbox ${doneActions.has('0807-4')?'checked':''}" onclick="toggleAction('0807-4')"></div>
+      <div class="action-body">
+        <div class="action-id">0807-4</div>
+        <div class="action-title">&#x1F4C8; Apple &mdash; Share refined A-tier output + sanity check technologies</div>
+        <div class="action-meta"><span class="urgency urgency-high">HIGH PRIORITY</span>Atisha Waghela &middot; Share refined A-tier accounts with fit/need scores and spend data by Monday. Cross-reference with previous Abba/Andy project. Simone to discuss with Mario before his leave.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0807-5')?'done':''}" data-csm="pam" id="action-0807-5">
+      <div class="action-checkbox ${doneActions.has('0807-5')?'checked':''}" onclick="toggleAction('0807-5')"></div>
+      <div class="action-body">
+        <div class="action-id">0807-5</div>
+        <div class="action-title">&#x26A0;&#xFE0F; ADP &mdash; Confirm Pam Huck participation in Monthly Success Call</div>
+        <div class="action-meta"><span class="urgency urgency-low">LOW</span>Pam Huck &middot; Recording had no transcript synced. Confirm call occurred and outcomes. ADP pulse: Some Risk (ARR $298.8K, renewal Jan 2027).</div>
+      </div>
+    </div>
+
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Week 1 Summary: Mon Aug 3 – Fri Aug 7, 2026
+// 40 confirmed calls · 8/8 CSMs active · 16 expansion · 4 concerning
+// ─────────────────────────────────────────────────────────────────────────────
+
+function weeklyOrMonthlyHTML_2026_08_07() {
+  return `<div class="section-label">Week of August 3&ndash;7, 2026 &mdash; Weekly Summary</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 12px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>W1 Aug 2026 &mdash; 40 confirmed customer calls across 5 workdays.</strong> All 8 CSMs had at least one confirmed call during the week. 16 expansion signals, 4 concerning signals.
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:12px;">
+    <div style="background:#141820;border:1px solid #1e293b;border-radius:8px;padding:12px;">
+      <div style="color:#64748b;font-size:10px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px;">Calls by CSM (Mon&ndash;Fri)</div>
+      <div style="font-size:12px;color:#cbd5e1;line-height:1.8;">
+        Nick Johnson: <strong style="color:#0ea5e9;">11</strong> (Mon 3, Tue 4, Wed 3, Thu 1)<br>
+        Atisha Waghela: <strong style="color:#0ea5e9;">7</strong> (Mon 1, Wed 1, Thu 3, Fri 2)<br>
+        Varun Tiwari: <strong style="color:#0ea5e9;">6</strong> (Tue 2, Thu 4)<br>
+        Riley Rogers: <strong style="color:#0ea5e9;">4</strong> (Thu 4)<br>
+        Pam Huck: <strong style="color:#0ea5e9;">4</strong> (Mon 1, Tue 2, Wed 1)<br>
+        Divyam Dewan: <strong style="color:#0ea5e9;">3</strong> (Mon 2, Wed 1)<br>
+        Andy Lim: <strong style="color:#0ea5e9;">3</strong> (Mon 1, Wed 1, Fri 1)<br>
+        Rani Guy: <strong style="color:#0ea5e9;">2</strong> (Mon 1, Fri 1)
+      </div>
+    </div>
+    <div style="background:#141820;border:1px solid #1e293b;border-radius:8px;padding:12px;">
+      <div style="color:#64748b;font-size:10px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px;">Daily Breakdown</div>
+      <div style="font-size:12px;color:#cbd5e1;line-height:1.8;">
+        <strong>Mon Aug 3:</strong> 8 calls &middot; 2 concerning &middot; 3 expansion<br>
+        <strong>Tue Aug 4:</strong> 8 calls &middot; 1 concerning &middot; 2 expansion<br>
+        <strong>Wed Aug 5:</strong> 7 calls &middot; 1 concerning &middot; 3 expansion<br>
+        <strong>Thu Aug 6:</strong> 12 calls &middot; 0 concerning &middot; 4 expansion<br>
+        <strong>Fri Aug 7:</strong> 4 calls &middot; 0 concerning &middot; 4 expansion
+      </div>
+    </div>
+  </div>
+  <div style="background:#141820;border:1px solid #1e293b;border-radius:8px;padding:12px;margin-bottom:8px;">
+    <div style="color:#64748b;font-size:10px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px;">Key Highlights This Week</div>
+    <div style="font-size:12px;color:#cbd5e1;line-height:2;">
+      <span style="color:#0ea5e9;font-weight:600;">&#x1F4C8;</span> &nbsp;Cloudflare expansion match review (Fri) &mdash; 85% match rate from 19M records, major expansion pipeline<br>
+      <span style="color:#0ea5e9;font-weight:600;">&#x1F4C8;</span> &nbsp;AMD new AM transition (Fri) &mdash; Charles Hawkins introduced, 2027 renewal prep started<br>
+      <span style="color:#0ea5e9;font-weight:600;">&#x1F4C8;</span> &nbsp;Apple high-growth model (Fri) &mdash; fit/need scoring, credit consumption for larger data set<br>
+      <span style="color:#0ea5e9;font-weight:600;">&#x1F4C8;</span> &nbsp;Riley Rogers had 4 calls Thu after 0 Mon&ndash;Wed &mdash; concentrated activity pattern<br>
+      <span style="color:#f59e0b;font-weight:600;">&#x26A0;&#xFE0F;</span> &nbsp;Nick Johnson dominated early week (11 calls Mon&ndash;Thu) then 0 on Friday<br>
+      <span style="color:#f59e0b;font-weight:600;">&#x26A0;&#xFE0F;</span> &nbsp;Rani Guy lowest call volume (2 calls) &mdash; but Cloudflare expansion deep dive was highest-value call of the week
+    </div>
+  </div>`;
+}
