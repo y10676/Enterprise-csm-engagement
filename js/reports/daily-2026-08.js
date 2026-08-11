@@ -1728,3 +1728,403 @@ function weeklyOrMonthlyHTML_2026_08_07() {
     </div>
   </div>`;
 }
+
+/* =========================================================
+   Sunday 2026-08-09 — Weekend (0 recordings, 0 calls)
+   ========================================================= */
+
+function dayData_2026_08_09() {
+  return {
+    calls: [],
+    pulses: []
+  };
+}
+
+function dayMeta_2026_08_09() {
+  return {
+    pills: [
+      ['dot-teal',  '0 Calls'],
+      ['dot-grey',  'Sun Aug 9 · Weekend']
+    ],
+    tabs: ['Overview', 'Calls (0)', 'Pulses (0)', 'Action Items (0)']
+  };
+}
+
+function dayOverviewHTML_2026_08_09() {
+  return `<div class="section-label">Team Activity &mdash; Sunday August 9, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #94a3b8;border-left:3px solid #94a3b8;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#cbd5e1;">
+    &#x1F4C5; <strong>Sunday Aug 9</strong> &mdash; Weekend day. <strong>0 recordings</strong> scanned via SFDC SOQL &middot; <strong>0 confirmed calls</strong> &middot; No customer activity expected.
+  </div>
+  <div class="overview-grid">
+    <div class="csm-card no-calls" data-csm="riley">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Weekend &mdash; no activity</div>
+    </div>
+    <div class="csm-card no-calls" data-csm="nick">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Weekend &mdash; no activity</div>
+    </div>
+    <div class="csm-card no-calls" data-csm="divyam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Weekend &mdash; no activity</div>
+    </div>
+    <div class="csm-card no-calls" data-csm="rani">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Weekend &mdash; no activity</div>
+    </div>
+    <div class="csm-card no-calls" data-csm="varun">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Weekend &mdash; no activity</div>
+    </div>
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Weekend &mdash; no activity</div>
+    </div>
+    <div class="csm-card no-calls" data-csm="atisha">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Weekend &mdash; no activity</div>
+    </div>
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Weekend &mdash; no activity</div>
+    </div>
+  </div>`;
+}
+
+function dayCallsHTML_2026_08_09() {
+  return `<div class="calls-table">
+    <div class="empty-state">No confirmed CSM customer calls on Sunday, August 9.</div>
+  </div>`;
+}
+
+function dayPulsesHTML_2026_08_09() {
+  const cards = [];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top"><span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span></div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty">No call-derived pulses for Sunday, August 9.</div>`;
+}
+
+function dayActionsHTML_2026_08_09() {
+  return `<div class="action-list">
+  </div>
+  <div class="empty-state" id="actions-empty">No action items &mdash; weekend day with no customer activity.</div>`;
+}
+
+/* ========= Monday 2026-08-10 — 5 calls, 4 CSMs active ========= */
+
+function dayData_2026_08_10() {
+  return {
+    calls: [
+      { ts: 'Aug 10 · 8:00 AM', csm: 'nick', account: 'HGI News Data Client',
+        note: 'Introductions for MCP/Phoenix team — news data delivery, SFTP setup, and real-time intake.',
+        mins: 60, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Nick Johnson organized introductions for Francis/Chloe from MCP team to HGI News Data Client (customer team in India). Discussed news data delivery process, SFTP setup, and real-time delivery via MCP/Phoenix platform. Covered intake process and database integration timeline.' },
+
+      { ts: 'Aug 10 · 8:30 AM', csm: 'riley', account: 'Intuit IES',
+        note: 'Weekly TrustRadius sync — TechCares nomination complete, category pivot from email marketing to ERP.',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Weekly CSM sync. Riley reminded about TechCares award nomination (filled out for Intuit, expected win in September). Discussed category changes from email marketing to ERP, and budget availability for additional categories.' },
+
+      { ts: 'Aug 10 · 9:30 AM', csm: 'varun', account: 'BMC Software Inc',
+        note: 'Kickoff with new contact Noman Ali — martech blueprint evaluation; Severe Risk, ARR $284,750.',
+        mins: 30, health: 'Concerning',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Kickoff with new contact Noman Ali who is building a martech blueprint. BMC is Severe Risk in Vitally (ARR $284,750). Noman evaluating whether to continue HG as standalone tool. Never did full intent integration. Potential expansion into copilot studio, ICP, intent, and job change features.' },
+
+      { ts: 'Aug 10 · 12:00 PM', csm: 'varun', account: 'Open Text Corporation',
+        note: 'Renewal scoping with procurement — Extremely Satisfied pulse; expansion discussion with new AM Julian Rojas.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Renewal scoping and alignment meeting with new sourcing contacts Simi Anbaran and Prateek. New AM Julian Rojas introduced. Customer pulse: Extremely Satisfied. ARR $226,575. Procurement already gave heads-up on approval.' },
+
+      { ts: 'Aug 10 · 12:00 PM', csm: 'rani', account: 'Hitachi',
+        note: 'Regular sync — contacts and outreach tracking for FAI & Intent 2026 renewal.',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'Unknown', purpose: 'Check-in',
+        detail: 'Regular sync discussing contacts and outreach tracking. Followed up on Neil reaching out to Nathan and John. Tracking engagement with customer stakeholders across Hitachi renewal (FAI & Intent 2026).' },
+    ],
+    pulses: [
+      { csm: 'nick', account: 'HGI News Data Client', health: 'Healthy',
+        note: 'New team introduction for MCP/Phoenix news data delivery; SFTP setup and real-time intake discussed.' },
+      { csm: 'riley', account: 'Intuit IES', health: 'Healthy',
+        note: 'Weekly TrustRadius sync; TechCares nomination complete, category pivot from email marketing to ERP discussed.' },
+      { csm: 'varun', account: 'BMC Software Inc', health: 'Concerning',
+        note: 'New contact Noman Ali building martech blueprint; evaluating HG standalone value. Severe Risk, ARR $284,750.' },
+      { csm: 'varun', account: 'Open Text Corporation', health: 'Healthy',
+        note: 'Renewal scoping with procurement; Extremely Satisfied pulse. Expansion discussion with new AM Julian Rojas. ARR $226,575.' },
+      { csm: 'rani', account: 'Hitachi', health: 'Healthy',
+        note: 'Regular sync; tracking Neil/Nathan outreach and stakeholder engagement for FAI & Intent renewal.' },
+    ],
+  };
+}
+
+function dayMeta_2026_08_10() {
+  return {
+    pills: [
+      ['dot-teal',  '5 Calls'],
+      ['dot-red',   '1 Concerning'],
+      ['dot-amber', '2 Expansion'],
+      ['dot-green', '5 Vitally Pulses'],
+      ['dot-grey',  'Mon Aug 10 · 55 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (5)', 'Pulses (5)', 'Action Items (5)'],
+  };
+}
+
+function dayOverviewHTML_2026_08_10() {
+  return `<div class="section-label">Team Activity &mdash; Monday, August 10, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Monday August 10 &mdash; 55 recordings scanned</strong> via SFDC SOQL &middot; <strong>5 confirmed calls</strong> across 4 CSMs &middot; 1 Concerning &middot; 2 Expansion signals &middot; 1 unconfirmed (no transcript)
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>Concerning:</strong> <strong>BMC Software Inc</strong> &mdash; Severe Risk in Vitally (ARR $284,750). New contact Noman Ali building martech blueprint; evaluating whether to continue HG as standalone tool.
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>2 Expansion signals:</strong> <strong>BMC Software Inc</strong> &mdash; potential expansion into copilot studio, ICP, intent, and job change features. &middot; <strong>Open Text Corporation</strong> &mdash; renewal expansion scoping with procurement; Extremely Satisfied pulse, ARR $226,575.
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">HGI News Data Client (MCP/Phoenix introductions, SFTP setup, real-time news data delivery)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Intuit IES (weekly TrustRadius sync, TechCares nomination, category pivot)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">BMC Software Inc (Severe Risk, martech blueprint evaluation) &middot; Open Text Corporation (renewal expansion, Extremely Satisfied)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Hitachi (regular sync, Neil/Nathan outreach tracking, FAI & Intent renewal)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="divyam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 unconfirmed &mdash; Dynatrace (recording exists, no transcript)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No confirmed calls &mdash; no events on this day</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="atisha">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 unconfirmed &mdash; Airtel (no recording matched)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 unconfirmed &mdash; Colt, SecureWorks (no recordings matched)</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_08_10() {
+  return `<div class="calls-table">
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>Concerning:</strong> BMC Software Inc &mdash; Severe Risk in Vitally (ARR $284,750). New contact Noman Ali building martech blueprint; evaluating HG standalone value.
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>Expansion:</strong> BMC Software Inc &mdash; potential expansion into copilot studio, ICP, intent, job change features &middot; Open Text Corporation &mdash; renewal expansion scoping, ARR $226,575
+  </div>
+  <div style="background:#161b22;border:1px solid #30363d;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#8b949e;">
+    &#x1F4CB; <strong>Unconfirmed (no transcript):</strong> Nick Johnson (inferred) x Intuit IES (8:30 AM, no transcript)
+  </div>
+  <!-- Auto-table rendered by core.js from dayData calls with nature/initiator/purpose fields -->
+  </div>`;
+}
+
+function dayPulsesHTML_2026_08_10() {
+  const cards = [
+    { csm:'nick', health:'Healthy', account:'HGI News Data Client',
+      opp:'Vitally Pulse &mdash; Aug 10 Call',
+      arr:'Enterprise &middot; Nick Johnson',
+      csmlbl:'Nick Johnson',
+      change:'Aug 10 &middot; Check-in',
+      excerpt:'NJ: Organized introductions for Francis/Chloe from MCP team to HGI News Data Client (8:00 AM PT, 60 min). Discussed news data delivery process, SFTP setup, and real-time delivery via MCP/Phoenix platform. Covered intake process and database integration timeline.' },
+    { csm:'riley', health:'Healthy', account:'Intuit IES',
+      opp:'Vitally Pulse &mdash; Aug 10 Call',
+      arr:'Enterprise &middot; Riley Rogers',
+      csmlbl:'Riley Rogers',
+      change:'Aug 10 &middot; Check-in',
+      excerpt:'RR: Weekly TrustRadius sync (8:30 AM PT, 30 min). TechCares award nomination filled out for Intuit, expected win in September. Discussed category changes from email marketing to ERP and budget availability for additional categories.' },
+    { csm:'varun', health:'Concerning', account:'BMC Software Inc',
+      opp:'Vitally Pulse &mdash; Aug 10 Call',
+      arr:'ARR $284,750 &middot; Varun Tiwari',
+      csmlbl:'Varun Tiwari',
+      change:'Aug 10 &middot; Mixed',
+      excerpt:'VT: Kickoff with new contact Noman Ali building martech blueprint (9:30 AM PT, 30 min). BMC is Severe Risk in Vitally. Noman evaluating whether to continue HG as standalone tool. Never did full intent integration. Potential expansion into copilot studio, ICP, intent, and job change features.' },
+    { csm:'varun', health:'Healthy', account:'Open Text Corporation',
+      opp:'Vitally Pulse &mdash; Aug 10 Call',
+      arr:'ARR $226,575 &middot; Varun Tiwari',
+      csmlbl:'Varun Tiwari',
+      change:'Aug 10 &middot; Expansion',
+      excerpt:'VT: Renewal scoping and alignment meeting with new sourcing contacts Simi Anbaran and Prateek (12:00 PM PT, 30 min). New AM Julian Rojas introduced. Customer pulse: Extremely Satisfied. Procurement already gave heads-up on approval.' },
+    { csm:'rani', health:'Healthy', account:'Hitachi',
+      opp:'Vitally Pulse &mdash; Aug 10 Call',
+      arr:'Enterprise &middot; Rani Guy',
+      csmlbl:'Rani Guy',
+      change:'Aug 10 &middot; Check-in',
+      excerpt:'RG: Regular sync discussing contacts and outreach tracking (12:00 PM PT, 30 min). Followed up on Neil reaching out to Nathan and John. Tracking engagement with customer stakeholders across Hitachi renewal (FAI & Intent 2026).' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div><strong>${c.account}</strong><br><span style="color:#8b949e;font-size:11px;">${c.opp}</span></div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_08_10() {
+  return `<div class="action-list">
+
+    <div class="action-item ${doneActions.has('0810-1')?'done':''}" data-csm="varun" id="action-0810-1">
+      <div class="action-checkbox ${doneActions.has('0810-1')?'checked':''}" onclick="toggleAction('0810-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; BMC Software Inc &mdash; Follow up on martech blueprint evaluation with Noman Ali</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Varun Tiwari &middot; ARR $284,750 &middot; Severe Risk. Noman Ali evaluating whether to continue HG as standalone tool. Schedule follow-up to present copilot studio, ICP, intent, and job change feature value. Build business case for full integration before martech blueprint decision is finalized.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0810-2')?'done':''}" data-csm="varun" id="action-0810-2">
+      <div class="action-checkbox ${doneActions.has('0810-2')?'checked':''}" onclick="toggleAction('0810-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Open Text Corporation &mdash; Prepare renewal expansion documentation for procurement</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Varun Tiwari &middot; ARR $226,575 &middot; Extremely Satisfied. Coordinate with new AM Julian Rojas on expansion scope. Prepare renewal documentation for Simi Anbaran and Prateek in procurement. Leverage positive customer pulse and pre-approval heads-up.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0810-3')?'done':''}" data-csm="nick" id="action-0810-3">
+      <div class="action-checkbox ${doneActions.has('0810-3')?'checked':''}" onclick="toggleAction('0810-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; HGI News Data Client &mdash; Confirm SFTP setup and MCP/Phoenix delivery timeline</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Nick Johnson &middot; Follow up with Francis/Chloe from MCP team and HGI News Data Client (India team) to confirm SFTP configuration, real-time intake process, and database integration timeline. Document delivery milestones.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0810-4')?'done':''}" data-csm="riley" id="action-0810-4">
+      <div class="action-checkbox ${doneActions.has('0810-4')?'checked':''}" onclick="toggleAction('0810-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CA; Intuit IES &mdash; Track TechCares award in September and monitor category change budget</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Riley Rogers &middot; TechCares nomination submitted for Intuit; expected win in September. Monitor category pivot from email marketing to ERP. Check budget availability for additional categories at next sync.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0810-5')?'done':''}" data-csm="rani" id="action-0810-5">
+      <div class="action-checkbox ${doneActions.has('0810-5')?'checked':''}" onclick="toggleAction('0810-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F50D; Hitachi &mdash; Follow up on Neil/Nathan outreach status</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Rani Guy &middot; Confirm whether Neil has connected with Nathan and John. Track stakeholder engagement progress for Hitachi FAI & Intent 2026 renewal. Update outreach status at next sync.</div>
+      </div>
+    </div>
+
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
