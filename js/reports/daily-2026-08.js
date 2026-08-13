@@ -2583,3 +2583,418 @@ function dayActionsHTML_2026_08_11() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
 }
+
+// ——— 2026-08-12 (Wednesday, Aug 12) ———
+
+function dayData_2026_08_12() {
+  return {
+    calls: [
+      { ts: 'Aug 12 · 5:30 AM', csm: 'varun', account: 'BMC Software Inc',
+        note: 'Check-in with Augie + David on propositions & platform walkthrough',
+        mins: 30, health: 'Poor',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Augie presented proposition analysis from action items sheet. David Bartholomew (BMC) wants to move platform walkthrough from theoretical to live demo. Collaborative session advancing engagement.' },
+
+      { ts: 'Aug 12 · 6:00 AM', csm: 'atisha', account: 'Deloitte',
+        note: 'Weekly sync — signal quality improvement confirmed',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'Customer', purpose: 'Check-in',
+        detail: 'Deloitte confirmed significant improvement in intent signal quality after product cleanup. Angus Hyams introduced as new EMEA account lead replacing Augie. Rajesh requested additional product removals for further refinement.' },
+
+      { ts: 'Aug 12 · 7:00 AM', csm: 'riley', account: 'IBM',
+        note: 'Biweekly sync — review campaign timeline extended to Sep 30',
+        mins: 45, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'IBM extended Buyer Choice review campaign to Sep 30 with $50 gift card incentive (reducing to $25 after Sep 10). Weekly reminders being sent internally. Riley pushing for additional review links requested by Mihaela.' },
+
+      { ts: 'Aug 12 · 7:00 AM', csm: 'divyam', account: 'Blackbaud, Inc.',
+        note: 'Biweekly sync — renewal signed, key contact departed',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Renewal signed Aug 3. Key contact Christine has left Blackbaud. Annie Baierl stepping into review gen role but still getting situated. Jaelon handles IDL. Scott Stater launching leads program.' },
+
+      { ts: 'Aug 12 · 9:00 AM', csm: 'varun', account: 'Exclusive Networks',
+        note: 'Bi-weekly — API test + pricing for new platform',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'Customer', purpose: 'Mixed',
+        detail: 'Exclusive Networks exploring API integration (test on 3 accounts first). Discussing pricing scenarios for new platform migration. Install data identified as primary value driver. New contract needed for platform transition.' },
+
+      { ts: 'Aug 12 · 10:00 AM', csm: 'rani', account: 'CloudFlare Inc',
+        note: 'First meeting with new contacts post-riff',
+        mins: 30, health: 'Concerning',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'First meeting with new Cloudflare contacts Andy Mitschke and Janelle Stalker after organizational changes. Rani establishing herself as primary CSM. TrustRadius team introduced. Cloudflare pulling TR data into Lighthouse platform.' },
+
+      { ts: 'Aug 12 · 11:00 AM', csm: 'pam', account: 'Epicor Software Corporation',
+        note: 'Bi-weekly — TrustQuotes mockup received, moving to monthly',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Epicor web team provided mockup for TrustQuotes placement. Sam working with brand/product on page selection. Cadence shifting from biweekly to monthly. Do It Best event end of Sep needs prep meeting.' },
+
+      { ts: 'Aug 12 · 11:00 AM', csm: 'varun', account: 'Pegasystems Inc',
+        note: 'Renewal scoping — ICP expansion sizing',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Expansion',
+        detail: 'Significant expansion discussion. Current ~200 orgs, corporate parents ~3,100, full universe ~85,000. Frank building cost model across firmographics (annual), installs (monthly), on-demand. ICP data via SharePoint. Renewal Aug 31.' },
+
+      { ts: 'Aug 12 · 11:00 AM', csm: 'riley', account: 'TriNet Group Inc',
+        note: 'Recurring sync — strong relationship, no urgent items',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Casual bi-weekly sync with Ashley and Kay Maxwell. Strong relationship signals — personal rapport around home renovations. No urgent business items raised. Healthy engagement.' },
+
+      { ts: 'Aug 12 · 11:00 AM', csm: 'atisha', account: 'Intel Corporation',
+        note: 'ISV target account data presentation to intern',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Atisha presented ISV target account research to Intel summer intern Yasmein (Fernando team). Software-specific install data compiled. First review session to refine dataset for Intel ISV targeting effort.' },
+
+      { ts: 'Aug 12 · 12:00 PM', csm: 'rani', account: 'Lenovo Group Ltd.',
+        note: 'Partner ecosystem intro meeting prep',
+        mins: 30, health: 'Concerning',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Rani and Adrian Escobar prepping for tomorrow meeting about Lenovo partner ecosystem introductions. Scope discussion — limiting to partner intros only. Coordination with Jeanette. Ryan from Lenovo engaged.' },
+
+      { ts: 'Aug 12 · 12:00 PM', csm: 'nick', account: 'Reply',
+        note: '2027 objectives — HubSpot migration + new platform interest',
+        mins: 30, health: 'Concerning',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Reply recently migrated from Zoho to HubSpot CRM. Sara Tran interested in HG platform integration. Paige is new (few months). Renewal coming up. Opportunity to align 2027 objectives with expanded data usage.' },
+
+      { ts: 'Aug 12 · 12:30 PM', csm: 'riley', account: 'SAP Inc',
+        note: 'BCA review sourcing — targeting by product/industry/size',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'Customer', purpose: 'Check-in',
+        detail: 'Alejandro preparing product list for targeted review generation. Focus on mid-market (corporate segment) and enterprise. SAP has LinkedIn profiles of end users to share. Mardigan suggested AI-powered email sourcing from profiles.' },
+    ],
+    pulses: [
+      { csm: 'varun', account: 'BMC Software Inc', health: 'Poor',
+        note: 'Proposition analysis presented; platform walkthrough moving from theoretical to live demo.' },
+      { csm: 'atisha', account: 'Deloitte', health: 'Healthy',
+        note: 'Signal quality improvement confirmed; new EMEA lead Angus Hyams introduced; product removal requested.' },
+      { csm: 'riley', account: 'IBM', health: 'Healthy',
+        note: 'Buyer Choice campaign extended to Sep 30; $50 gift card incentive; weekly internal reminders active.' },
+      { csm: 'divyam', account: 'Blackbaud, Inc.', health: 'Healthy',
+        note: 'Renewal signed Aug 3. Key contact Christine departed; Annie Baierl stepping in; leads program launching.' },
+      { csm: 'varun', account: 'Exclusive Networks', health: 'Healthy',
+        note: 'API integration exploration (3-account test); pricing scenarios for platform migration; install data is primary value.' },
+      { csm: 'rani', account: 'CloudFlare Inc', health: 'Concerning',
+        note: 'First meeting with new contacts post-riff. Establishing CSM relationship; TR data in Lighthouse platform.' },
+      { csm: 'pam', account: 'Epicor Software Corporation', health: 'Healthy',
+        note: 'TrustQuotes mockup received from web team; cadence shifting to monthly; Do It Best event prep needed.' },
+      { csm: 'varun', account: 'Pegasystems Inc', health: 'Healthy',
+        note: 'Expansion sizing: ~200 to ~85K universe. Frank building cost model. Renewal Aug 31.' },
+      { csm: 'riley', account: 'TriNet Group Inc', health: 'Healthy',
+        note: 'Casual bi-weekly sync; strong relationship signals; no urgent business items.' },
+      { csm: 'atisha', account: 'Intel Corporation', health: 'Healthy',
+        note: 'ISV target account data presented to summer intern; first review session to refine dataset.' },
+      { csm: 'rani', account: 'Lenovo Group Ltd.', health: 'Concerning',
+        note: 'Partner ecosystem intro meeting prep; scoping to partner intros only; coordination with Jeanette.' },
+      { csm: 'nick', account: 'Reply', health: 'Concerning',
+        note: 'HubSpot migration complete; new platform interest; renewal coming up; 2027 objectives alignment.' },
+      { csm: 'riley', account: 'SAP Inc', health: 'Healthy',
+        note: 'BCA review sourcing by product/industry/size; LinkedIn profiles for AI-powered email sourcing.' },
+    ],
+  };
+}
+
+function dayMeta_2026_08_12() {
+  return {
+    pills: [
+      ['dot-teal',  '13 Calls'],
+      ['dot-red',   '3 Concerning'],
+      ['dot-amber', '4 Expansion'],
+      ['dot-green', '13 Pulses'],
+      ['dot-grey',  'Wed Aug 12'],
+    ],
+    tabs: ['Overview', 'Calls (13)', 'Pulses (13)', 'Action Items (9)'],
+  };
+}
+
+function dayOverviewHTML_2026_08_12() {
+  return `<div class="section-label">Team Activity &mdash; Wednesday, August 12, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Wednesday Aug 12</strong> &middot; <strong>13 confirmed calls</strong> across 7 CSMs &middot; 3 concerning &middot; 4 expansion signals
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x1F6A8; <strong>BMC Software (Varun)</strong> &mdash; Poor health: proposition analysis advancing but platform walkthrough needs live demo to rebuild engagement.
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>3 Concerning accounts:</strong> BMC Software (Varun, Poor) &middot; CloudFlare (Rani, post-riff rebuild) &middot; Reply (Nick, renewal + migration)
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>4 Expansion signals:</strong> Pegasystems (ICP expansion sizing, renewal Aug 31) &middot; Exclusive Networks (API integration) &middot; Reply (HubSpot + new platform) &middot; Lenovo (partner ecosystem)
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">3 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">3</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Expansion</div></div>
+        <div><div class="metric-num m-grey">90m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">BMC Software (&#x1F6A8; Poor) &middot; Exclusive Networks (API test) &middot; Pegasystems (expansion sizing)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">3 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">3</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">105m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">IBM (campaign extended) &middot; TriNet (check-in) &middot; SAP (BCA review sourcing)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Deloitte (signal quality confirmed) &middot; Intel (ISV targeting)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">2</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">CloudFlare (&#x26A0;&#xFE0F; post-riff rebuild) &middot; Lenovo (partner ecosystem prep)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Expansion</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Reply (&#x26A0;&#xFE0F; HubSpot migration + 2027 objectives)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Blackbaud (renewal signed, key contact departed)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="pam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Epicor (TrustQuotes mockup, shifting to monthly)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 unconfirmed events &mdash; SAS Institute, Cockroach Labs; appeared in internal GTM session</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_08_12() {
+  return `<div class="calls-table">
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x1F6A8; <strong>BMC Software (Varun)</strong> &mdash; Poor health: proposition analysis advancing but live platform walkthrough demo needed to rebuild engagement.
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>3 Concerning:</strong> BMC Software (Poor) &middot; CloudFlare (post-riff) &middot; Reply (renewal + migration)
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>4 Expansion signals:</strong> Pegasystems &middot; Exclusive Networks &middot; Reply &middot; Lenovo
+  </div>
+  </div>`;
+}
+
+function dayPulsesHTML_2026_08_12() {
+  const cards = [
+    { csm:'varun', health:'Poor', account:'BMC Software Inc', opp:'Vitally Pulse &mdash; Aug 12 Call',
+      arr:'Enterprise &middot; Varun Tiwari', csmlbl:'Varun Tiwari',
+      change:'Aug 12 &middot; Check-in',
+      excerpt:'8/12 VT: Check-in with Augie + David. Proposition analysis presented; platform walkthrough moving from theoretical to live demo (5:30 AM PT, 30 min).' },
+    { csm:'atisha', health:'Healthy', account:'Deloitte', opp:'Vitally Pulse &mdash; Aug 12 Call',
+      arr:'Enterprise &middot; Atisha Waghela', csmlbl:'Atisha Waghela',
+      change:'Aug 12 &middot; Check-in',
+      excerpt:'8/12 AW: Weekly sync. Signal quality improvement confirmed after product cleanup. Angus Hyams introduced as new EMEA lead. Additional product removals requested (6:00 AM PT, 30 min).' },
+    { csm:'riley', health:'Healthy', account:'IBM', opp:'Vitally Pulse &mdash; Aug 12 Call',
+      arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Aug 12 &middot; Check-in',
+      excerpt:'8/12 RR: Biweekly sync. Buyer Choice campaign extended to Sep 30 with $50 gift card incentive. Weekly reminders active internally (7:00 AM PT, 45 min).' },
+    { csm:'divyam', health:'Healthy', account:'Blackbaud, Inc.', opp:'Vitally Pulse &mdash; Aug 12 Call',
+      arr:'Enterprise &middot; Divyam Dewan', csmlbl:'Divyam Dewan',
+      change:'Aug 12 &middot; Check-in',
+      excerpt:'8/12 DD: Biweekly sync. Renewal signed Aug 3. Key contact Christine departed; Annie Baierl stepping in. Scott Stater launching leads program (7:00 AM PT, 30 min).' },
+    { csm:'varun', health:'Healthy', account:'Exclusive Networks', opp:'Vitally Pulse &mdash; Aug 12 Call',
+      arr:'Enterprise &middot; Varun Tiwari', csmlbl:'Varun Tiwari',
+      change:'Aug 12 &middot; Mixed',
+      excerpt:'8/12 VT: Bi-weekly. API integration exploration — 3-account test first. Pricing scenarios for platform migration. Install data as primary value driver (9:00 AM PT, 30 min).' },
+    { csm:'rani', health:'Concerning', account:'CloudFlare Inc', opp:'Vitally Pulse &mdash; Aug 12 Call',
+      arr:'Enterprise &middot; Rani Guy', csmlbl:'Rani Guy',
+      change:'Aug 12 &middot; Check-in',
+      excerpt:'8/12 RG: First meeting with new contacts Andy Mitschke and Janelle Stalker post-riff. Establishing CSM relationship. TR data in Lighthouse platform (10:00 AM PT, 30 min).' },
+    { csm:'pam', health:'Healthy', account:'Epicor Software Corporation', opp:'Vitally Pulse &mdash; Aug 12 Call',
+      arr:'Enterprise &middot; Pam Huck', csmlbl:'Pam Huck',
+      change:'Aug 12 &middot; Check-in',
+      excerpt:'8/12 PH: Bi-weekly. TrustQuotes mockup received from web team. Cadence shifting to monthly. Do It Best event end of Sep needs prep (11:00 AM PT, 30 min).' },
+    { csm:'varun', health:'Healthy', account:'Pegasystems Inc', opp:'Vitally Pulse &mdash; Aug 12 Call',
+      arr:'Enterprise &middot; Varun Tiwari', csmlbl:'Varun Tiwari',
+      change:'Aug 12 &middot; Expansion',
+      excerpt:'8/12 VT: Renewal scoping. ICP expansion from ~200 to ~85K universe. Frank building cost model. Renewal Aug 31 (11:00 AM PT, 30 min).' },
+    { csm:'riley', health:'Healthy', account:'TriNet Group Inc', opp:'Vitally Pulse &mdash; Aug 12 Call',
+      arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Aug 12 &middot; Check-in',
+      excerpt:'8/12 RR: Casual bi-weekly sync with Ashley and Kay Maxwell. Strong relationship signals; no urgent items (11:00 AM PT, 30 min).' },
+    { csm:'atisha', health:'Healthy', account:'Intel Corporation', opp:'Vitally Pulse &mdash; Aug 12 Call',
+      arr:'Enterprise &middot; Atisha Waghela', csmlbl:'Atisha Waghela',
+      change:'Aug 12 &middot; Check-in',
+      excerpt:'8/12 AW: ISV target account data presented to Intel intern Yasmein. Software-specific install data compiled. First review session (11:00 AM PT, 30 min).' },
+    { csm:'rani', health:'Concerning', account:'Lenovo Group Ltd.', opp:'Vitally Pulse &mdash; Aug 12 Call',
+      arr:'Enterprise &middot; Rani Guy', csmlbl:'Rani Guy',
+      change:'Aug 12 &middot; Check-in',
+      excerpt:'8/12 RG: Partner ecosystem intro meeting prep with Adrian Escobar. Scope limited to partner intros. Coordination with Jeanette and Ryan (12:00 PM PT, 30 min).' },
+    { csm:'nick', health:'Concerning', account:'Reply', opp:'Vitally Pulse &mdash; Aug 12 Call',
+      arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Aug 12 &middot; Mixed',
+      excerpt:'8/12 NJ: 2027 objectives discussion. Reply migrated from Zoho to HubSpot. Sara Tran interested in HG platform integration. Renewal coming up (12:00 PM PT, 30 min).' },
+    { csm:'riley', health:'Healthy', account:'SAP Inc', opp:'Vitally Pulse &mdash; Aug 12 Call',
+      arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Aug 12 &middot; Check-in',
+      excerpt:'8/12 RR: BCA review sourcing. Alejandro preparing product list for targeted review gen. Focus on mid-market and enterprise. AI-powered email sourcing discussed (12:30 PM PT, 30 min).' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top"><strong>${c.account}</strong><span style="margin-left:auto" class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span></div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulse entries match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_08_12() {
+  return `<div class="action-list">
+
+    <div class="action-item ${doneActions.has('0812-1')?'done':''}" data-csm="varun" id="action-0812-1">
+      <div class="action-checkbox ${doneActions.has('0812-1')?'checked':''}" onclick="toggleAction('0812-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F6A8; Pegasystems &mdash; Renewal Aug 31: deliver ICP expansion sizing</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Varun Tiwari &middot; Ensure ICP expansion sizing is delivered and pricing calculator populated before renewal deadline. Current ~200 orgs expanding to ~85,000 universe. Frank building cost model across firmographics, installs, and on-demand.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0812-2')?'done':''}" data-csm="varun" id="action-0812-2">
+      <div class="action-checkbox ${doneActions.has('0812-2')?'checked':''}" onclick="toggleAction('0812-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F6A8; BMC Software &mdash; Severe Risk: schedule live platform walkthrough</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Varun Tiwari &middot; Follow up on proposition analysis findings and schedule live platform walkthrough demo. David Bartholomew wants to move from theoretical to hands-on. Critical for rebuilding engagement.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0812-3')?'done':''}" data-csm="divyam" id="action-0812-3">
+      <div class="action-checkbox ${doneActions.has('0812-3')?'checked':''}" onclick="toggleAction('0812-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F6A8; Blackbaud &mdash; Key contact departed: update primary contacts</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Divyam Dewan &middot; Key contact Christine has left Blackbaud. Confirm Annie Baierl and Jaelon Davis as new primary contacts, update Vitally. Annie stepping into review gen role; Jaelon handles IDL.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0812-4')?'done':''}" data-csm="rani" id="action-0812-4">
+      <div class="action-checkbox ${doneActions.has('0812-4')?'checked':''}" onclick="toggleAction('0812-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; Cloudflare &mdash; Post-riff relationship rebuild</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Rani Guy &middot; Schedule follow-up with Andy Mitschke and Janelle Stalker to establish regular cadence. First meeting post-organizational changes completed; need to build on momentum.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0812-5')?'done':''}" data-csm="varun" id="action-0812-5">
+      <div class="action-checkbox ${doneActions.has('0812-5')?'checked':''}" onclick="toggleAction('0812-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; Exclusive Networks &mdash; API test setup and pricing</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Varun Tiwari &middot; Coordinate with engineering on 3-account API test setup and provide pricing scenarios for new platform migration. Install data identified as primary value driver.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0812-6')?'done':''}" data-csm="nick" id="action-0812-6">
+      <div class="action-checkbox ${doneActions.has('0812-6')?'checked':''}" onclick="toggleAction('0812-6')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; Reply &mdash; HubSpot integration docs and platform demo</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Nick Johnson &middot; Provide HG platform integration docs for HubSpot and schedule demo of new platform. Sara Tran interested in integration. Align 2027 objectives with expanded data usage before renewal.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0812-7')?'done':''}" data-csm="pam" id="action-0812-7">
+      <div class="action-checkbox ${doneActions.has('0812-7')?'checked':''}" onclick="toggleAction('0812-7')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4DD; Epicor &mdash; Cadence shift and Do It Best prep</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Pam Huck &middot; Cadence shifting from biweekly to monthly. Set up Do It Best alignment meeting before the end-of-Sep event. TrustQuotes mockup received; Sam working on page selection.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0812-8')?'done':''}" data-csm="atisha" id="action-0812-8">
+      <div class="action-checkbox ${doneActions.has('0812-8')?'checked':''}" onclick="toggleAction('0812-8')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4DD; Deloitte &mdash; Send updated product removal list</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Atisha Waghela &middot; Send updated product removal list per Rajesh\'s feedback for further signal refinement. Angus Hyams is new EMEA lead replacing Augie.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0812-9')?'done':''}" data-csm="riley" id="action-0812-9">
+      <div class="action-checkbox ${doneActions.has('0812-9')?'checked':''}" onclick="toggleAction('0812-9')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4DD; SAP BCA &mdash; Compile review targeting criteria</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Riley Rogers &middot; Compile product/industry/size targeting criteria from Alejandro\'s list. Focus on mid-market (corporate segment) and enterprise. SAP to share LinkedIn profiles for AI-powered email sourcing.</div>
+      </div>
+    </div>
+
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
