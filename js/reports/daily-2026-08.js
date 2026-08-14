@@ -2998,3 +2998,309 @@ function dayActionsHTML_2026_08_12() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
 }
+
+// ——— 2026-08-13 (Thursday, Aug 13) ———
+
+function dayData_2026_08_13() {
+  return {
+    calls: [
+      { ts: 'Aug 13 · 1:30 AM', csm: 'nick', account: 'Check Point', note: 'Credit dispute — possible double-counting of export credits', mins: 30, health: 'Concerning', nature: 'Recurring', initiator: 'Customer', purpose: 'Issue', detail: 'Customer raised concern about potential double-counting of export credits. Dan Bavli believes re-running product searches counted credits twice. Nick committed to filing engineering ticket for granular export IDs by month. Only ~20-30k credits remaining. Uri requested better pricing and flexibility on consumption model.' },
+      { ts: 'Aug 13 · 5:00 AM', csm: 'divyam', account: 'Nuvias/Infinigate', note: 'Bi-weekly sync — 19% credit consumption, 3 open JIRAs', mins: 30, health: 'Healthy', nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in', detail: 'Bi-weekly sync with Abolfazl Akhondi. Credit consumption at 9,608 of 50,000 (19%). Three open JIRAs: Germany-level intent data, HQ telephone number export, partner intelligence (Q4 roadmap). Angus plans to demo RGIP platform on next call. Customer satisfied with data quality.' },
+      { ts: 'Aug 13 · 7:30 AM', csm: 'varun', account: 'BMC Software', note: 'Salesforce connector CPU timeout — 50k leads stuck for 15-20 days', mins: 30, health: 'Concerning', nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Issue', detail: 'BMC loaded 17M prospects into Marketing Cloud causing CPU timeout from HG SFDC trigger. Issue persisted 15-20 days with 50k leads stuck. Plan: disable trigger, sync pending records, investigate async trigger conversion. Elena and Rodolfo from engineering joined. Also discussed RGIP Salesforce integration prioritization.' },
+      { ts: 'Aug 13 · 8:00 AM', csm: 'divyam', account: 'Sage', note: 'Monthly sync — GEO dashboard walkthrough, review campaign performance', mins: 30, health: 'Healthy', nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in', detail: 'Divyam walked through new GEO dashboard (crawl analytics) for Sage Intacct and Sage Accounting. Review campaign: 187 submissions in 90 days with 54 reference candidates. Brock considering switching Sage Accounting profile to Sage X3 (more strategically important in NA). Profile update pending.' },
+      { ts: 'Aug 13 · 8:00 AM', csm: 'pam', account: 'Microsoft', note: 'Account matching review — 78% TPID match rate, on-site visit planning', mins: 45, health: 'Expansion', nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Mixed', detail: 'Major account matching results: 41M records from MSFT, 62% overall match rate, 78% on unique TPIDs (197k matched). Discussions on hierarchy expansion, quarterly re-matching, SMB domain enrichment. Mark Fell reviewed on-site visit deck. Bryce Bishop excited about results. Microsoft Unified Support identified as potential new project.' },
+      { ts: 'Aug 13 · 8:00 AM', csm: 'nick', account: 'KPMG', note: 'Connect — user access, data discrepancy, market sizing use cases', mins: 45, health: 'Healthy', nature: 'Recurring', initiator: 'Customer', purpose: 'Check-in', detail: 'Brian Smith and Ryan Hoskins discussed user access (6 export, 5 read-only of 10). Data discrepancy between MI and OG filed with product team. Ryan export license still not working. KPMG exploring market sizing for software product development. Max Shaw introduced as EMEA support. FY27 planning starts Oct 1.' },
+      { ts: 'Aug 13 · 9:00 AM', csm: 'rani', account: 'CloudFlare', note: 'Cloud Dynamics renewal at risk — team lost 8 people, 2 months churned', mins: 45, health: 'Concerning', nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Mixed', detail: 'Critical renewal discussion. Cloud Dynamics web app access churned ~2 months. Martin (RevOps) reported team lost 8 people, severely underwater. Traffic data mission-critical for scoring models. 25+ sellers requesting web app access. HG matched 900k accounts. Traffic data 6-8 months from HG fabric. White space analysis shows 5-6x expansion opportunity. Need joint call with Martin/Chandra/Akash.' },
+      { ts: 'Aug 13 · 9:15 AM', csm: 'varun', account: 'Five9', note: 'AI product categorization walkthrough for V2 platform', mins: 30, health: 'Healthy', nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in', detail: 'Varun helped Jordan Curtis map 83 HG products across four AI categories using MCP and Claude. Discussed product vs category vs attribute hierarchy for competitor analysis. Walked through custom column export limitations (product feedback noted). Introduced AI spend model and MCP Phoenix.' },
+      { ts: 'Aug 13 · 9:30 AM', csm: 'atisha', account: 'AMD', note: 'AI spend model deep dive — sales restructuring, 12k named account list', mins: 45, health: 'Expansion', nature: 'Recurring', initiator: 'HG CS', purpose: 'Mixed', detail: 'Bi-weekly with David Rockwell and Charles Hawkins. Deep dive into AI spend data — AMD needs clarity on hardware vs token spend. Updated AI spend model shared. David requested market-level dollar figures per category vs IDC/Gartner. AMD restructuring sales (acquisition vs retention). Custom spend models discussed. David to share 12,000 named account list for white space analysis. Intent signals emerging for planning models.' },
+      { ts: 'Aug 13 · 10:00 AM', csm: 'nick', account: 'Veeam', note: 'IDL campaign kickoff — SMB funnel focus, 50 leads/week target', mins: 30, health: 'Healthy', nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in', detail: 'IDL campaign kickoff with Cody Frew (new to Veeam, ~2 months). Intent-driven lead flow explained. CSV delivery (Salesforce in transition), 50 leads/week starting volume. Cody focused on feeding SMB funnel — Veeam swinging back from enterprise over-indexing. Content asset and survey form needed from Veeam.' },
+      { ts: 'Aug 13 · 10:30 AM', csm: 'rani', account: 'Workday', note: 'Renewal pricing — hard budget, credit anxiety, overage protection', mins: 30, health: 'Concerning', nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Mixed', detail: 'Critical pricing discussion. Alexandra Wilson (finance) has hard budget with no additional funding. Modeled consumption from 777K to $15M creating anxiety. Rani explained 46% discount, 500K credit pool with buffer. Rani offering contractual overage protection. OneTrust security questionnaire needed for API integration. Leo Zunz offered tiered pricing for future volume. Separate MCP decision call needed.' },
+    ],
+    pulses: [
+      { csm: 'nick', account: 'Check Point', health: 'Concerning', note: 'Aug 13 NJ: Credit dispute — possible double-counting, only 20-30k remaining. Customer requesting pricing flexibility. (1:30 AM PT, 30 min)' },
+      { csm: 'divyam', account: 'Nuvias/Infinigate', health: 'Healthy', note: 'Aug 13 DD: Bi-weekly sync — 19% credit consumption, 3 open JIRAs, customer satisfied with data quality. (5:00 AM PT, 30 min)' },
+      { csm: 'varun', account: 'BMC Software', health: 'Concerning', note: 'Aug 13 VT: SFDC trigger CPU timeout — 50k leads stuck 15-20 days. Plan: disable trigger, async conversion. Engineering joined. (7:30 AM PT, 30 min)' },
+      { csm: 'divyam', account: 'Sage', health: 'Healthy', note: 'Aug 13 DD: Monthly sync — GEO dashboard walkthrough, 187 review submissions, 54 reference candidates. Sage X3 profile swap considered. (8:00 AM PT, 30 min)' },
+      { csm: 'pam', account: 'Microsoft', health: 'Expansion', note: 'Aug 13 PH: Account matching — 78% TPID match rate (197k matched). On-site visit planning. Unified Support as new project. Bryce excited. (8:00 AM PT, 45 min)' },
+      { csm: 'nick', account: 'KPMG', health: 'Healthy', note: 'Aug 13 NJ: Connect — user access management, MI vs OG data discrepancy filed. Market sizing for software dev use case emerging. FY27 planning Oct 1. (8:00 AM PT, 45 min)' },
+      { csm: 'rani', account: 'CloudFlare', health: 'Concerning', note: 'Aug 13 RG: Cloud Dynamics churned 2 months, team lost 8 people. Traffic data mission-critical but 6-8 months away. 5-6x white space opportunity. Need bridge solution. (9:00 AM PT, 45 min)' },
+      { csm: 'varun', account: 'Five9', health: 'Healthy', note: 'Aug 13 VT: AI product categorization for V2 platform — 83 products mapped across 4 AI categories using MCP+Claude. Customer found it very helpful. (9:15 AM PT, 30 min)' },
+      { csm: 'atisha', account: 'AMD', health: 'Expansion', note: 'Aug 13 AW: AI spend model deep dive — sales restructuring acquisition vs retention. David sharing 12k named account list. Custom spend models and intent signals discussed. (9:30 AM PT, 45 min)' },
+      { csm: 'nick', account: 'Veeam', health: 'Healthy', note: 'Aug 13 NJ: IDL kickoff with new contact Cody Frew — SMB funnel focus, 50 leads/week target. CSV delivery setup. Content asset needed from Veeam. (10:00 AM PT, 30 min)' },
+      { csm: 'rani', account: 'Workday', health: 'Concerning', note: 'Aug 13 RG: Hard budget, credit anxiety ($777K to $15M modeled). Rani offering contractual overage protection. OneTrust questionnaire and MCP evaluation pending. (10:30 AM PT, 30 min)' },
+    ],
+  };
+}
+
+function dayMeta_2026_08_13() {
+  return {
+    pills: [['dot-teal','11 Calls'],['dot-red','4 Concerning'],['dot-amber','2 Expansion'],['dot-green','11 Pulses'],['dot-grey','Thu Aug 13 · 90 scanned']],
+    tabs: ['Overview','Calls (11)','Pulses (11)','Action Items (8)']
+  };
+}
+
+function dayOverviewHTML_2026_08_13() {
+  return `<div class="section-label">Team Activity &mdash; Thursday August 13, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Thursday August 13 &mdash; 90 recordings scanned</strong> via SFDC SOQL &middot; <strong>11 confirmed calls</strong> across 6 CSMs &middot; 4 Concerning &middot; 2 Expansion signals
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x1F6A8; <strong>4 Concerning:</strong> <strong>Check Point</strong> &mdash; credit dispute, possible double-counting, only 20-30k remaining. &middot; <strong>BMC Software</strong> &mdash; SFDC trigger CPU timeout, 50k leads stuck 15-20 days. &middot; <strong>CloudFlare</strong> &mdash; Cloud Dynamics renewal at risk, team lost 8 people, 2 months churned. &middot; <strong>Workday</strong> &mdash; hard budget constraints, credit anxiety, overage protection needed.
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>2 Expansion signals:</strong> <strong>Microsoft</strong> &mdash; 78% TPID match rate (197k matched), on-site visit planning, Unified Support as new project. &middot; <strong>AMD</strong> &mdash; AI spend model deep dive, sales restructuring, David sharing 12k named account list for white space analysis.
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">3 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">3</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">105m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Check Point (&#x26A0;&#xFE0F; credit dispute, double-counting) &middot; KPMG (user access, data discrepancy) &middot; Veeam IDL (SMB funnel kickoff, 50 leads/wk)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Nuvias/Infinigate (19% credit consumption, 3 JIRAs) &middot; Sage (GEO dashboard, review campaign)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">BMC Software (&#x26A0;&#xFE0F; SFDC trigger, 50k stuck) &middot; Five9 (AI product categorization, V2 platform)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">2</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">75m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">CloudFlare (&#x26A0;&#xFE0F; Cloud Dynamics churned 2mo, team lost 8) &middot; Workday (&#x26A0;&#xFE0F; hard budget, overage anxiety)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-amber">1</div><div class="metric-lbl">Expansion</div></div>
+        <div><div class="metric-num m-grey">45m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">AMD (&#x1F4C8; AI spend model deep dive, 12k accounts, sales restructuring)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="pam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-amber">1</div><div class="metric-lbl">Expansion</div></div>
+        <div><div class="metric-num m-grey">45m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Microsoft (&#x1F4C8; 78% TPID match, on-site visit, Unified Support)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="riley">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No CSM-owned events or recordings found for this date</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No CSM-owned events or recordings found for this date</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_08_13() {
+  return `<div class="calls-table">
+    <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+      &#x1F6A8; <strong>4 Concerning Signals:</strong> Check Point (credit dispute) &middot; BMC Software (SFDC trigger, 50k stuck) &middot; CloudFlare (Cloud Dynamics churned 2mo) &middot; Workday (hard budget, overage anxiety)
+    </div>
+    <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+      &#x1F4C8; <strong>2 Expansion Signals:</strong> Microsoft (78% TPID match, on-site visit, Unified Support) &middot; AMD (AI spend model, 12k accounts, sales restructuring)
+    </div>
+  </div>`;
+}
+
+function dayPulsesHTML_2026_08_13() {
+  const cards = [
+    { csm:'nick', health:'Concerning', account:'Check Point', opp:'Vitally Pulse &mdash; Aug 13 Call',
+      arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Aug 13 &middot; Issue',
+      excerpt:'Aug 13 NJ: Credit dispute — possible double-counting, only 20-30k remaining. Customer requesting pricing flexibility. (1:30 AM PT, 30 min)' },
+    { csm:'divyam', health:'Healthy', account:'Nuvias/Infinigate', opp:'Vitally Pulse &mdash; Aug 13 Call',
+      arr:'Enterprise &middot; Divyam Dewan', csmlbl:'Divyam Dewan',
+      change:'Aug 13 &middot; Check-in',
+      excerpt:'Aug 13 DD: Bi-weekly sync — 19% credit consumption (9,608 of 50,000), 3 open JIRAs, customer satisfied with data quality. Angus to demo RGIP next call. (5:00 AM PT, 30 min)' },
+    { csm:'varun', health:'Concerning', account:'BMC Software', opp:'Vitally Pulse &mdash; Aug 13 Call',
+      arr:'Enterprise &middot; Varun Tiwari', csmlbl:'Varun Tiwari',
+      change:'Aug 13 &middot; Issue',
+      excerpt:'Aug 13 VT: SFDC trigger CPU timeout — 50k leads stuck 15-20 days. 17M prospects loaded into Marketing Cloud. Plan: disable trigger, sync pending records, async conversion. Elena and Rodolfo joined. (7:30 AM PT, 30 min)' },
+    { csm:'divyam', health:'Healthy', account:'Sage', opp:'Vitally Pulse &mdash; Aug 13 Call',
+      arr:'Enterprise &middot; Divyam Dewan', csmlbl:'Divyam Dewan',
+      change:'Aug 13 &middot; Check-in',
+      excerpt:'Aug 13 DD: Monthly sync — GEO dashboard walkthrough for Sage Intacct and Sage Accounting. 187 review submissions, 54 reference candidates. Brock considering Sage X3 profile swap. (8:00 AM PT, 30 min)' },
+    { csm:'pam', health:'Expansion', account:'Microsoft', opp:'Vitally Pulse &mdash; Aug 13 Call',
+      arr:'Enterprise &middot; Pam Huck', csmlbl:'Pam Huck',
+      change:'Aug 13 &middot; Expansion',
+      excerpt:'Aug 13 PH: Account matching results — 41M records, 78% TPID match rate (197k matched). On-site visit deck reviewed with Mark Fell. Bryce Bishop excited. Unified Support identified as new project. (8:00 AM PT, 45 min)' },
+    { csm:'nick', health:'Healthy', account:'KPMG', opp:'Vitally Pulse &mdash; Aug 13 Call',
+      arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Aug 13 &middot; Check-in',
+      excerpt:'Aug 13 NJ: Connect with Brian Smith and Ryan Hoskins — user access (6 export, 5 read-only of 10). MI vs OG data discrepancy filed. Market sizing for software dev emerging. Max Shaw intro for EMEA. FY27 Oct 1. (8:00 AM PT, 45 min)' },
+    { csm:'rani', health:'Concerning', account:'CloudFlare', opp:'Vitally Pulse &mdash; Aug 13 Call',
+      arr:'Enterprise &middot; Rani Guy', csmlbl:'Rani Guy',
+      change:'Aug 13 &middot; Mixed',
+      excerpt:'Aug 13 RG: Cloud Dynamics web app churned ~2 months. Martin (RevOps) reported team lost 8 people, severely underwater. Traffic data mission-critical but 6-8 months out. 900k accounts matched. 5-6x white space opportunity. Joint call needed. (9:00 AM PT, 45 min)' },
+    { csm:'varun', health:'Healthy', account:'Five9', opp:'Vitally Pulse &mdash; Aug 13 Call',
+      arr:'Enterprise &middot; Varun Tiwari', csmlbl:'Varun Tiwari',
+      change:'Aug 13 &middot; Check-in',
+      excerpt:'Aug 13 VT: AI product categorization for V2 platform — helped Jordan Curtis map 83 HG products across 4 AI categories using MCP+Claude. Discussed product hierarchy and custom column export limitations. (9:15 AM PT, 30 min)' },
+    { csm:'atisha', health:'Expansion', account:'AMD', opp:'Vitally Pulse &mdash; Aug 13 Call',
+      arr:'Enterprise &middot; Atisha Waghela', csmlbl:'Atisha Waghela',
+      change:'Aug 13 &middot; Expansion',
+      excerpt:'Aug 13 AW: AI spend model deep dive with David Rockwell and Charles Hawkins. AMD needs hardware vs token spend clarity. Sales restructuring acquisition vs retention. David sharing 12k named account list for white space analysis. Intent signals emerging. (9:30 AM PT, 45 min)' },
+    { csm:'nick', health:'Healthy', account:'Veeam', opp:'Vitally Pulse &mdash; Aug 13 Call',
+      arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Aug 13 &middot; Check-in',
+      excerpt:'Aug 13 NJ: IDL campaign kickoff with Cody Frew (new ~2 months). SMB funnel focus — Veeam swinging back from enterprise over-indexing. 50 leads/week target, CSV delivery. Content asset and survey form needed. (10:00 AM PT, 30 min)' },
+    { csm:'rani', health:'Concerning', account:'Workday', opp:'Vitally Pulse &mdash; Aug 13 Call',
+      arr:'Enterprise &middot; Rani Guy', csmlbl:'Rani Guy',
+      change:'Aug 13 &middot; Mixed',
+      excerpt:'Aug 13 RG: Critical pricing discussion. Alexandra Wilson (finance) has hard budget. Consumption modeled $777K to $15M creating anxiety. 46% discount, 500K credit pool with buffer. Contractual overage protection offered. OneTrust questionnaire and MCP decision call pending. (10:30 AM PT, 30 min)' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':h==='Expansion'?'badge-expansion':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':h==='Expansion'?'&#128309;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div><strong>${c.account}</strong><br><span style="color:#8b949e;font-size:11px;">${c.opp}</span></div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_08_13() {
+  return `<div class="action-list">
+
+    <div class="action-item ${doneActions.has('0813-1')?'done':''}" data-csm="nick" id="action-0813-1">
+      <div class="action-checkbox ${doneActions.has('0813-1')?'checked':''}" onclick="toggleAction('0813-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F6A8; Check Point &mdash; Investigate credit double-counting, file engineering ticket for export ID granularity</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Nick Johnson &middot; Dan Bavli believes re-running product searches counted credits twice. File engineering ticket for granular export IDs by month. Only 20-30k credits remaining. Uri requesting better pricing and flexibility on consumption model.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0813-2')?'done':''}" data-csm="varun" id="action-0813-2">
+      <div class="action-checkbox ${doneActions.has('0813-2')?'checked':''}" onclick="toggleAction('0813-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F6A8; BMC Software &mdash; Disable SFDC trigger, sync pending records, evaluate async conversion</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Varun Tiwari + Engineering &middot; 17M prospects loaded into Marketing Cloud caused CPU timeout. 50k leads stuck 15-20 days. Immediate plan: disable trigger, sync pending records. Longer-term: investigate async trigger conversion. Elena and Rodolfo from engineering involved.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0813-3')?'done':''}" data-csm="rani" id="action-0813-3">
+      <div class="action-checkbox ${doneActions.has('0813-3')?'checked':''}" onclick="toggleAction('0813-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F6A8; CloudFlare &mdash; Schedule joint call Martin/Chandra/Akash re: Cloud Dynamics bridge solution</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy &middot; Cloud Dynamics web app churned ~2 months. Team lost 8 people, severely underwater. Traffic data mission-critical for scoring models but 6-8 months from HG fabric. 25+ sellers requesting web app access. 5-6x white space expansion opportunity. Need bridge solution urgently.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0813-4')?'done':''}" data-csm="rani" id="action-0813-4">
+      <div class="action-checkbox ${doneActions.has('0813-4')?'checked':''}" onclick="toggleAction('0813-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F6A8; Workday &mdash; Add contractual overage protection language, complete OneTrust security questionnaire</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy &middot; Alexandra Wilson (finance) has hard budget with no additional funding. Consumption modeled from $777K to $15M creating anxiety. Add contractual overage protection to proposal. Complete OneTrust security questionnaire for API integration. Schedule separate MCP decision call with Leo Zunz.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0813-5')?'done':''}" data-csm="pam" id="action-0813-5">
+      <div class="action-checkbox ${doneActions.has('0813-5')?'checked':''}" onclick="toggleAction('0813-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; Microsoft &mdash; Follow up on-site visit logistics, engage Copilot web content team</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Pam Huck &middot; Account matching delivered 78% TPID match rate (197k matched). Coordinate on-site visit logistics with Mark Fell. Engage Microsoft Copilot web content team. Explore Unified Support as new project opportunity. Bryce Bishop highly engaged.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0813-6')?'done':''}" data-csm="atisha" id="action-0813-6">
+      <div class="action-checkbox ${doneActions.has('0813-6')?'checked':''}" onclick="toggleAction('0813-6')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; AMD &mdash; Process 12,000 named account list for white space analysis, share AI spend dollar figures</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Atisha Waghela &middot; David Rockwell sharing 12k named account list — process for white space analysis. Provide market-level dollar figures per AI spend category (vs IDC/Gartner). AMD restructuring sales (acquisition vs retention). Custom spend models and intent signals emerging for planning.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0813-7')?'done':''}" data-csm="nick" id="action-0813-7">
+      <div class="action-checkbox ${doneActions.has('0813-7')?'checked':''}" onclick="toggleAction('0813-7')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; KPMG &mdash; Fix Ryan Hoskins export license, file MI vs OG discrepancy ticket</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Nick Johnson &middot; Ryan Hoskins export license still not working — resolve access issue. File product team ticket for MI vs OG data discrepancy. Max Shaw introduced as EMEA support. FY27 planning starts Oct 1.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0813-8')?'done':''}" data-csm="nick" id="action-0813-8">
+      <div class="action-checkbox ${doneActions.has('0813-8')?'checked':''}" onclick="toggleAction('0813-8')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Veeam IDL &mdash; Confirm content asset and survey form, set up CSV delivery pipeline</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Nick Johnson &middot; IDL campaign kickoff with Cody Frew (new ~2 months). Confirm content asset and survey form from Veeam. Set up CSV delivery pipeline (Salesforce in transition). 50 leads/week starting volume targeting SMB funnel.</div>
+      </div>
+    </div>
+
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
