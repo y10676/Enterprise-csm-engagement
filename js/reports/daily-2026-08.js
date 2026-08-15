@@ -3304,3 +3304,274 @@ function dayActionsHTML_2026_08_13() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
 }
+
+// ——— 2026-08-14 (Friday, Aug 14) ———
+
+function dayData_2026_08_14() {
+  return {
+    calls: [
+      { ts: 'Aug 14 · 7:00 AM', csm: 'divyam', account: 'Blackbaud',
+        note: 'Vendor portal walkthrough — crawl analytics, AI crawler dashboard, reviews, reference candidates. Buyer\'s Choice deadline Sep 26 and IDL activation discussed.',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Walked customer through vendor portal capabilities — crawl analytics, AI crawler dashboard, reviews, reference candidates. Discussed Buyer\'s Choice award deadline (Sep 26) and IDL program activation.' },
+
+      { ts: 'Aug 14 · 8:30 AM', csm: 'varun', account: 'ZScaler',
+        note: 'Demonstrated HG platform to Gerardo Perez Borja (LATAM) — Palo Alto competitive displacement, IT spend, functional area intel.',
+        mins: 30, health: 'Expansion',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Demonstrated HG platform to Gerardo Perez Borja (ZScaler LATAM) for new logo prioritization. Showed Palo Alto competitive displacement analysis, IT spend, functional area intel. Customer committed to sharing territory list and scheduling follow-up next Friday.' },
+
+      { ts: 'Aug 14 · 9:00 AM', csm: 'atisha', account: 'Apple',
+        note: 'New market sizing request from state & local government team — public safety, field services, device spend.',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'New market sizing request from Apple state & local government team for public safety and field services. Discussed device spend data, AppleCare, enterprise device management. Adrian Escobar demo\'d AI scoring. Atisha delivering initial analysis by Tuesday.' },
+
+      { ts: 'Aug 14 · 11:00 AM', csm: 'pam', account: 'Oracle',
+        note: '~45-day renewal deadline — unclear budget ownership due to Oracle reorgs. Jon Malone chasing budget owner.',
+        mins: 45, health: 'Concerning',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Mixed',
+        detail: '~45-day renewal deadline with unclear budget ownership due to Oracle reorgs. Mark Fell presented full data offering wheel. Jon Malone needs to chase down budget owner. Next monthly not until Sep 10 — inside danger zone.' },
+
+      { ts: 'Aug 14 · 12:30 PM', csm: 'rani', account: 'Cloudflare',
+        note: 'Strategic discussion — consolidating Cloud Dynamics with HG core into unified technographic package. Expanding 430K to 900K matched accounts.',
+        mins: 60, health: 'Expansion',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Major strategic discussion about consolidating Cloud Dynamics (Intricately) with HG core into unified technographic package. Expanding from 430K to 900K matched accounts. Cloudflare wants to replace ZoomInfo technographics with HG. Craig Kraning modeled white space using "Act" framework. TrustRadius API access issue being resolved.' },
+    ],
+    pulses: [
+      { csm: 'divyam', account: 'Blackbaud', health: 'Healthy',
+        note: 'Aug 14 DD: Vendor portal walkthrough — crawl analytics, AI crawler, reviews, reference candidates. Buyer\'s Choice Sep 26 deadline and IDL activation discussed.' },
+      { csm: 'varun', account: 'ZScaler', health: 'Expansion',
+        note: 'Aug 14 VT: Platform demo for Gerardo Perez Borja (LATAM). Palo Alto competitive displacement, IT spend. Customer sharing territory list, Friday follow-up committed.' },
+      { csm: 'atisha', account: 'Apple', health: 'Healthy',
+        note: 'Aug 14 AW: State & local government market sizing for public safety/field services. Device spend, AppleCare, AI scoring demo. Analysis due Tuesday.' },
+      { csm: 'pam', account: 'Oracle', health: 'Concerning',
+        note: 'Aug 14 PH: ~45-day renewal deadline, budget ownership unclear due to reorgs. Jon Malone chasing budget owner. Next monthly Sep 10 — danger zone.' },
+      { csm: 'rani', account: 'Cloudflare', health: 'Expansion',
+        note: 'Aug 14 RG: Consolidating Cloud Dynamics + HG core into unified technographic package. 430K to 900K matched accounts. Replacing ZoomInfo. TrustRadius API issue in progress.' },
+    ],
+  };
+}
+
+function dayMeta_2026_08_14() {
+  return {
+    pills: [['dot-teal','5 Calls'],['dot-red','1 Concerning'],['dot-amber','2 Expansion'],['dot-green','5 Pulses'],['dot-grey','Fri Aug 14 · 46 scanned']],
+    tabs: ['Overview','Calls (5)','Pulses (5)','Action Items (5)']
+  };
+}
+
+function dayOverviewHTML_2026_08_14() {
+  return `<div class="section-label">Team Activity &mdash; Friday, August 14, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Friday August 14 &mdash; 46 recordings scanned</strong> via SFDC SOQL &middot; <strong>5 confirmed calls</strong> across 4 CSMs &middot; 1 Concerning &middot; 2 Expansion signals
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>Concerning:</strong> <strong>Oracle</strong> &mdash; ~45-day renewal deadline, budget ownership unclear due to reorgs. Next monthly not until Sep 10 &mdash; inside danger zone.
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>2 Expansion signals:</strong> <strong>Cloudflare</strong> &mdash; consolidating Cloud Dynamics + HG core into unified technographic package, replacing ZoomInfo technographics, 430K to 900K matched accounts. &middot; <strong>ZScaler</strong> &mdash; LATAM territory expansion, Gerardo Perez Borja committed to sharing territory list and Friday follow-up.
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Apple (state &amp; local gov market sizing, public safety/field services, AI scoring demo)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Blackbaud (vendor portal walkthrough, Buyer's Choice Sep 26, IDL activation)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="pam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">45m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Oracle (&#x26A0;&#xFE0F; ~45-day renewal, budget ownership unclear, next monthly Sep 10)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-amber">1</div><div class="metric-lbl">Expansion</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Cloudflare (&#x1F4C8; unified technographic package, ZoomInfo replacement, 430K&rarr;900K)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-amber">1</div><div class="metric-lbl">Expansion</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">ZScaler (&#x1F4C8; LATAM territory expansion, Gerardo Perez Borja, Palo Alto displacement analysis)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 unconfirmed (Pipeline Group 8:00 AM PT) &mdash; recording exists, no transcript</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="nick">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 unconfirmed (Infor 5:00 AM PT) &mdash; no recording found</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="riley">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No CSM-owned events or recordings found for this date</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_08_14() {
+  return `<div class="calls-table">
+    <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+      &#x26A0;&#xFE0F; <strong>Concerning:</strong> Oracle &mdash; ~45-day renewal deadline, budget ownership unclear due to reorgs. Next monthly Sep 10 &mdash; inside danger zone.
+    </div>
+    <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+      &#x1F4C8; <strong>Expansion:</strong> Cloudflare &mdash; consolidating Cloud Dynamics + HG into unified technographic package, 430K&rarr;900K accounts, ZoomInfo replacement
+    </div>
+    <div style="background:#161b22;border:1px solid #30363d;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#8b949e;">
+      &#x1F4CB; <strong>Unconfirmed (8):</strong> Nick Johnson / Infor (no recording) &middot; Atisha / Intel (no recording) &middot; Atisha / Apple 8 AM (no match) &middot; Andy Lim / Pipeline Group (no transcript) &middot; Varun / BMC (wrong speaker) &middot; Atisha / AMD (no transcript) &middot; Atisha / Apple MI Training (no transcript) &middot; Atisha / Apple Platform Training (no match)
+    </div>
+  </div>`;
+}
+
+function dayPulsesHTML_2026_08_14() {
+  const cards = [
+    { csm:'divyam', health:'Healthy', account:'Blackbaud', opp:'Vitally Pulse &mdash; Aug 14 Call',
+      arr:'Enterprise &middot; Divyam Dewan', csmlbl:'Divyam Dewan',
+      change:'Aug 14 &middot; Check-in',
+      excerpt:'Aug 14 DD: Vendor portal walkthrough — crawl analytics, AI crawler dashboard, reviews, reference candidates. Discussed Buyer\'s Choice award deadline (Sep 26) and IDL program activation. (7:00 AM PT, 30 min)' },
+    { csm:'varun', health:'Expansion', account:'ZScaler', opp:'Vitally Pulse &mdash; Aug 14 Call',
+      arr:'Enterprise &middot; Varun Tiwari', csmlbl:'Varun Tiwari',
+      change:'Aug 14 &middot; Expansion',
+      excerpt:'Aug 14 VT: Demonstrated HG platform to Gerardo Perez Borja (ZScaler LATAM) for new logo prioritization. Palo Alto competitive displacement analysis, IT spend, functional area intel. Customer committed to sharing territory list and scheduling Friday follow-up. (8:30 AM PT, 30 min)' },
+    { csm:'atisha', health:'Healthy', account:'Apple', opp:'Vitally Pulse &mdash; Aug 14 Call',
+      arr:'Enterprise &middot; Atisha Waghela', csmlbl:'Atisha Waghela',
+      change:'Aug 14 &middot; Check-in',
+      excerpt:'Aug 14 AW: New market sizing request from Apple state & local government team — public safety, field services, device spend data, AppleCare, enterprise device management. Adrian Escobar demo\'d AI scoring. Atisha delivering initial analysis by Tuesday. (9:00 AM PT, 30 min)' },
+    { csm:'pam', health:'Concerning', account:'Oracle', opp:'Vitally Pulse &mdash; Aug 14 Call',
+      arr:'Enterprise &middot; Pam Huck', csmlbl:'Pam Huck',
+      change:'Aug 14 &middot; Mixed',
+      excerpt:'Aug 14 PH: ~45-day renewal deadline with unclear budget ownership due to Oracle reorgs. Mark Fell presented full data offering wheel. Jon Malone needs to chase down budget owner. Next monthly not until Sep 10 — inside danger zone. (11:00 AM PT, 45 min)' },
+    { csm:'rani', health:'Expansion', account:'Cloudflare', opp:'Vitally Pulse &mdash; Aug 14 Call',
+      arr:'Enterprise &middot; Rani Guy', csmlbl:'Rani Guy',
+      change:'Aug 14 &middot; Expansion',
+      excerpt:'Aug 14 RG: Major strategic discussion — consolidating Cloud Dynamics (Intricately) with HG core into unified technographic package. Expanding from 430K to 900K matched accounts. Cloudflare wants to replace ZoomInfo technographics with HG. Craig Kraning modeled white space using "Act" framework. TrustRadius API access issue being resolved. (12:30 PM PT, 60 min)' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':h==='Expansion'?'badge-expansion':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':h==='Expansion'?'&#128309;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div><strong>${c.account}</strong><br><span style="color:#8b949e;font-size:11px;">${c.opp}</span></div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_08_14() {
+  return `<div class="action-list">
+
+    <div class="action-item ${doneActions.has('0814-1')?'done':''}" data-csm="pam" id="action-0814-1">
+      <div class="action-checkbox ${doneActions.has('0814-1')?'checked':''}" onclick="toggleAction('0814-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F6A8; Oracle &mdash; Identify budget owner before Sep 10 monthly, engage DM for renewal sponsorship</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Pam Huck &middot; ~45-day renewal deadline with unclear budget ownership due to Oracle reorgs. Jon Malone needs to chase down budget owner. Next monthly not until Sep 10 — inside danger zone. Engage decision-maker for renewal sponsorship before gap widens.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0814-2')?'done':''}" data-csm="rani" id="action-0814-2">
+      <div class="action-checkbox ${doneActions.has('0814-2')?'checked':''}" onclick="toggleAction('0814-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Cloudflare &mdash; Prepare unified technographic package pricing, resolve TrustRadius API access</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Rani Guy &middot; Major strategic opportunity: consolidating Cloud Dynamics + HG core into unified technographic package. Expanding from 430K to 900K matched accounts. Cloudflare wants to replace ZoomInfo. Prepare pricing and resolve TrustRadius API access issue. Coordinate with Craig Kraning on white space modeling.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0814-3')?'done':''}" data-csm="varun" id="action-0814-3">
+      <div class="action-checkbox ${doneActions.has('0814-3')?'checked':''}" onclick="toggleAction('0814-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; ZScaler &mdash; Process Gerardo's LATAM territory list, prep competitive displacement analysis for Friday follow-up</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Varun Tiwari &middot; Gerardo Perez Borja (ZScaler LATAM) committed to sharing territory list. Process the list for new logo prioritization and prepare Palo Alto competitive displacement analysis ahead of Friday follow-up session.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0814-4')?'done':''}" data-csm="atisha" id="action-0814-4">
+      <div class="action-checkbox ${doneActions.has('0814-4')?'checked':''}" onclick="toggleAction('0814-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Apple &mdash; Deliver state & local government market sizing by Tuesday</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Atisha Waghela &middot; New market sizing request from Apple state & local government team for public safety and field services. Includes device spend data, AppleCare, and enterprise device management. Initial analysis due Tuesday.</div>
+      </div>
+    </div>
+
+    <div class="action-item ${doneActions.has('0814-5')?'done':''}" data-csm="divyam" id="action-0814-5">
+      <div class="action-checkbox ${doneActions.has('0814-5')?'checked':''}" onclick="toggleAction('0814-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4DD; Blackbaud &mdash; Follow up IDL program activation, remind Buyer's Choice deadline Sep 26</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Divyam Dewan &middot; Follow up on IDL program activation discussed during vendor portal walkthrough. Ensure Blackbaud is aware of Buyer's Choice award deadline (Sep 26) and is preparing submission materials.</div>
+      </div>
+    </div>
+
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
