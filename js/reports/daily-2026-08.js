@@ -3575,3 +3575,446 @@ function dayActionsHTML_2026_08_14() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
 }
+
+// ============================================================
+// August 16, 2026 (Sunday) — 0 calls (weekend)
+// ============================================================
+
+function dayData_2026_08_16() {
+  return {
+    calls: [],
+    pulses: []
+  };
+}
+
+function dayMeta_2026_08_16() {
+  return {
+    pills: [
+      ['dot-teal',  '0 Calls'],
+      ['dot-grey',  'Sun Aug 16 · Weekend']
+    ],
+    tabs: ['Overview', 'Calls (0)', 'Pulses (0)', 'Action Items (0)']
+  };
+}
+
+function dayOverviewHTML_2026_08_16() {
+  return `<div class="section-label">Team Activity &mdash; Sunday August 16, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Sunday Aug 16 &mdash; 0 recordings scanned</strong> via SFDC SOQL &middot; <strong>0 confirmed calls</strong> &middot; Weekend day &mdash; no customer activity expected.
+  </div>
+  <div class="overview-grid">
+    <div class="csm-card no-calls" data-csm="riley">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Sunday &mdash; no calls</div>
+    </div>
+    <div class="csm-card no-calls" data-csm="nick">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Sunday &mdash; no calls</div>
+    </div>
+    <div class="csm-card no-calls" data-csm="divyam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Sunday &mdash; no calls</div>
+    </div>
+    <div class="csm-card no-calls" data-csm="rani">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Sunday &mdash; no calls</div>
+    </div>
+    <div class="csm-card no-calls" data-csm="varun">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Sunday &mdash; no calls</div>
+    </div>
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Sunday &mdash; no calls</div>
+    </div>
+    <div class="csm-card no-calls" data-csm="atisha">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Sunday &mdash; no calls</div>
+    </div>
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Sunday &mdash; no calls</div>
+    </div>
+  </div>`;
+}
+
+function dayCallsHTML_2026_08_16() {
+  return `<div class="calls-table">
+    <div style="text-align:center;color:#94a3b8;padding:40px 20px;font-size:13px;">
+      No confirmed CSM calls on Sunday, August 16, 2026. Weekend day &mdash; no customer activity expected.
+    </div>
+  </div>
+  <div class="empty-state" id="calls-empty" style="display:none">No calls match the current filter.</div>`;
+}
+
+function dayPulsesHTML_2026_08_16() {
+  const cards = [];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top"><strong>${c.account}</strong> &mdash; ${c.opp}<span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span></div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_08_16() {
+  return `<div class="action-list">
+    <div style="text-align:center;color:#94a3b8;padding:40px 20px;font-size:13px;">
+      No action items for Sunday, August 16, 2026. Weekend day &mdash; no customer activity.
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
+
+// ──────────────────────────────────────────────────────────────────────
+// 2026-08-17 (Monday) — 10 confirmed calls, 5 CSMs active
+// ──────────────────────────────────────────────────────────────────────
+
+function dayData_2026_08_17() {
+  return {
+    calls: [
+      { ts: 'Aug 17 · 6:30 AM', csm: 'nick', account: 'Softcat',
+        note: 'Monthly sync: SMB data scope, credit export transition, pricing concerns.',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Discussion centered on SMB data scope/accessibility, transition to credit-based export system, and significant proposed price increase for upcoming year. Established rapport with casual banter.' },
+      { ts: 'Aug 17 · 7:30 AM', csm: 'nick', account: 'Lenovo',
+        note: 'Contacts data discussion. Cross-coverage: Rani Guy also on call.',
+        mins: 60, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Check-in',
+        detail: 'Clarified project data structure, delivery timelines, and roles. Focused on contact data (100K cap) and precise data points. Cross-coverage: both Nick Johnson and Rani Guy participated. Lenovo team included Antaleena Ganguly, Ujjaini Mazumdar, Preeti Mehra.' },
+      { ts: 'Aug 17 · 8:00 AM', csm: 'varun', account: 'BMC Software',
+        note: 'RGIP Walkthrough — Market Analyzer demo for Katherine Wang and Kasia Prewer.',
+        mins: 30, health: 'Concerning',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Varun introduced Katherine Wang and Kasia Prewer to Market Analyzer tool, demonstrating market segmentation, TAM/SAM sizing, whitespace analysis for cross-sell/upsell. BMC is Severe Risk pulse (ARR $284,750, renewal was 6/30 — overdue). RGIP walkthrough is positive re-engagement.' },
+      { ts: 'Aug 17 · 9:00 AM', csm: 'divyam', account: 'Lumen Technologies',
+        note: 'Weekly sync: new AM Julian Rojas intro, Lumen restructuring update.',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Introduced Julian Rojas as new AM replacing Hayden. Nathan shared Lumen major restructuring in past 2 months — shifted teams but same role. Discussion on evolving data needs, 500-600K target universe, CSA alignment priorities.' },
+      { ts: 'Aug 17 · 10:30 AM', csm: 'divyam', account: 'Genesys',
+        note: 'TR Promotional Deep Dive — customer-initiated. IDL and buyer intent.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Expansion',
+        detail: 'Genesys (Sam Bader, Alex Polley) exploring HG data and marketing solutions to drive bookings/revenue. Focus on AI initiatives, competitive displacement, IDL (Intent Driven Leads), buyer intent data. Customer-initiated outreach for promotional programs.' },
+      { ts: 'Aug 17 · 11:00 AM', csm: 'varun', account: 'Pegasystems',
+        note: 'Renewal Options — $180K proposal with two data feed options presented to Frank.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Presented proposal with two data feed options at $180,000 each, contingent on MCP team engagement. Renewal Aug 31 — 2 weeks remaining. Leo Zunz and Julian Rojas on HG side. Also explored AI direction and rapid tech advancement.' },
+      { ts: 'Aug 17 · 11:00 AM', csm: 'rani', account: 'AWS (Amazon)',
+        note: 'First TrustRadius intro for AWS. Zero existing TR license — net-new revenue opportunity.',
+        mins: 60, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'First TrustRadius introduction for AWS (Luis Garcia, Madhavi Mallajoshyula). Highlighted customer reviews, buyer intent data, AI visibility capabilities. Zero TR license to AWS currently — net-new revenue opportunity. Mark Fell driving with Cole Arutian, Mardigan Moffat.' },
+      { ts: 'Aug 17 · 12:00 PM', csm: 'riley', account: 'Paycom',
+        note: 'EBR: performance review, geo dashboards, IDL, premium content offers.',
+        mins: 60, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Comprehensive EBR reviewing performance metrics, content optimization, geo dashboard improvements. Discussed IDL (Intent Driven Leads) and premium content offers. AI in buyer research covered. Katie Lenhart, Alexis Correa, Peyton VanCuren from Paycom.' },
+      { ts: 'Aug 17 · 1:00 PM', csm: 'rani', account: 'NetApp',
+        note: 'Weekly sync: match rates, spend data categories (AI, SMB), renewal prep.',
+        mins: 25, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Addressed data requirements — match rate improvements, spend data categories (AI, SMB), enhanced coverage options for upcoming renewal. Megan Santiago-Gould, Ross Ackerman, Bini Valsala, Gabe Weske from NetApp.' },
+      { ts: 'Aug 17 · 1:00 PM', csm: 'riley', account: 'SAP Business Network',
+        note: 'TR program overview: buyer intent, profile optimization, category rankings.',
+        mins: 45, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Reviewed SAP Business Network presence on TrustRadius. Discussed buyer intent data, profile completeness, category rankings optimization. Content integration planned. Adrien Sirolli, Stephanie from SAP. Cole Arutian, Mardigan Moffat on HG side.' },
+    ],
+    pulses: [
+      { csm: 'nick', account: 'Softcat', health: 'Healthy', note: 'Monthly sync. Stable relationship. Pricing discussion flagged for renewal planning.' },
+      { csm: 'nick', account: 'Lenovo', health: 'Healthy', note: 'Customer-driven contacts engagement. Cross-CSM coverage (Nick + Rani) indicates strategic importance.' },
+      { csm: 'varun', account: 'BMC Software', health: 'Concerning', note: 'Severe Risk. ARR $284,750, renewal 6/30 overdue. RGIP walkthrough re-engagement is positive but escalation needed.' },
+      { csm: 'divyam', account: 'Lumen Technologies', health: 'Healthy', note: 'AM transition in progress. Customer restructuring but same stakeholders. Data partnership stable.' },
+      { csm: 'divyam', account: 'Genesys', health: 'Healthy', note: 'Customer-initiated outreach for promotional programs. Strong expansion signal via IDL/buyer intent.' },
+      { csm: 'varun', account: 'Pegasystems', health: 'Healthy', note: '$180K proposal presented. Renewal Aug 31 — 2 weeks. Contingent on MCP team engagement.' },
+      { csm: 'rani', account: 'AWS (Amazon)', health: 'Healthy', note: 'First TrustRadius intro. Net-new revenue opportunity. Mark Fell driving the engagement.' },
+      { csm: 'riley', account: 'Paycom', health: 'Healthy', note: 'EBR completed with strong engagement. IDL, geo dashboards, AI buyer research discussed.' },
+      { csm: 'rani', account: 'NetApp', health: 'Healthy', note: 'Weekly sync. Data requirements evolving (AI/SMB spend). Renewal discussion upcoming.' },
+      { csm: 'riley', account: 'SAP Business Network', health: 'Healthy', note: 'TR expansion in progress. Content integration planned. Multi-call engagement cadence.' },
+    ],
+  };
+}
+
+function dayMeta_2026_08_17() {
+  return {
+    pills: [
+      ['dot-teal',  '10 Calls'],
+      ['dot-red',   '1 Concerning'],
+      ['dot-amber', '5 Expansion'],
+      ['dot-green', '10 Vitally Pulses'],
+      ['dot-grey',  'Mon Aug 17'],
+    ],
+    tabs: ['Overview', 'Calls (10)', 'Pulses (10)', 'Action Items (8)'],
+  };
+}
+
+function dayOverviewHTML_2026_08_17() {
+  return `<div class="section-label">Team Activity &mdash; Monday August 17, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Monday Aug 17 &mdash; 51 recordings scanned</strong> via SFDC SOQL &middot; <strong>10 confirmed calls</strong> across 5 CSMs &middot; 1 concerning &middot; 5 expansion signals
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0; <strong>CONCERNING:</strong> BMC Software (Varun) &mdash; Severe Risk pulse, ARR $284.7K, renewal overdue. RGIP walkthrough shows re-engagement but renewal status critical.
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>EXPANSION (5):</strong> Pegasystems ($180K proposal, renewal Aug 31) &bull; Genesys (promotional programs) &bull; AWS (new TR opportunity) &bull; SAP (program overview) &bull; Paycom (IDL, geo dashboards)
+  </div>
+  <div class="overview-grid">
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">90m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Softcat (monthly sync, pricing) &middot; Lenovo (contacts data, cross-coverage w/ Rani)</div>
+    </div>
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Lumen (weekly sync, AM transition) &middot; Genesys (expansion, promotional programs)</div>
+    </div>
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">BMC Software (RGIP walkthrough, Severe Risk) &middot; Pegasystems ($180K proposal, renewal Aug 31)</div>
+    </div>
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">85m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">AWS (TR intro, new opp) &middot; NetApp (weekly sync, renewal prep) &middot; Also on Lenovo (cross-coverage)</div>
+    </div>
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">105m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Paycom (EBR, IDL) &middot; SAP Business Network (TR program overview, expansion)</div>
+    </div>
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No SFDC events for this date</div>
+    </div>
+    <div class="csm-card no-calls" data-csm="atisha">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 events (Airtel, KPMG) &mdash; no recordings found</div>
+    </div>
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No SFDC events for this date</div>
+    </div>
+  </div>`;
+}
+
+function dayCallsHTML_2026_08_17() {
+  return `<div class="calls-table">
+    <div style="background:#1c2333;border:1px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+      &#x1F504; <strong>Cross-coverage:</strong> Lenovo call (7:30 AM) included both Nick Johnson and Rani Guy
+    </div>
+    <div style="background:#1c1117;border:1px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+      &#x26A0; <strong>BMC Software</strong> &mdash; Severe Risk pulse, ARR $284.7K, renewal overdue. RGIP walkthrough is positive re-engagement but renewal status critical.
+    </div>
+  </div>`;
+}
+
+function dayPulsesHTML_2026_08_17() {
+  const cards = [
+    { csm:'nick', health:'Healthy', account:'Softcat', opp:'Vitally Pulse &mdash; Aug 17 Call',
+      arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Aug 17 &middot; Monthly Sync',
+      excerpt:'8/17 NJ: Monthly sync with Luke Herridge and David Garcia Thomas. SMB data scope, credit export transition, pricing concerns for renewal (6:30 AM PT, 30 min).' },
+    { csm:'nick', health:'Healthy', account:'Lenovo', opp:'Vitally Pulse &mdash; Aug 17 Call',
+      arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson + Rani Guy',
+      change:'Aug 17 &middot; Cross-Coverage',
+      excerpt:'8/17 NJ+RG: Customer-driven contacts discussion with Antaleena Ganguly. 100K contact cap, data structure, delivery timelines. Cross-CSM (7:30 AM PT, 60 min).' },
+    { csm:'varun', health:'Concerning', account:'BMC Software', opp:'Vitally Pulse &mdash; Aug 17 Call',
+      arr:'Enterprise &middot; Varun Tiwari', csmlbl:'Varun Tiwari',
+      change:'Aug 17 &middot; Severe Risk',
+      excerpt:'8/17 VT: RGIP Walkthrough with Katherine Wang and Kasia Prewer. Market Analyzer demo (segmentation, TAM/SAM, whitespace). Severe Risk pulse, ARR $284.7K, renewal overdue (8:00 AM PT, 30 min).' },
+    { csm:'divyam', health:'Healthy', account:'Lumen Technologies', opp:'Vitally Pulse &mdash; Aug 17 Call',
+      arr:'Enterprise &middot; Divyam Dewan', csmlbl:'Divyam Dewan',
+      change:'Aug 17 &middot; Weekly Sync',
+      excerpt:'8/17 DD: Introduced Julian Rojas as new AM. Lumen restructured past 2 months. Nathan same role, new team. Data needs discussion (9:00 AM PT, 30 min).' },
+    { csm:'divyam', health:'Healthy', account:'Genesys', opp:'Vitally Pulse &mdash; Aug 17 Call',
+      arr:'Enterprise &middot; Divyam Dewan', csmlbl:'Divyam Dewan',
+      change:'Aug 17 &middot; Expansion',
+      excerpt:'8/17 DD: Customer-initiated deep dive with Sam Bader and Alex Polley. Promotional programs, IDL, buyer intent, competitive displacement (10:30 AM PT, 30 min).' },
+    { csm:'varun', health:'Healthy', account:'Pegasystems', opp:'Vitally Pulse &mdash; Aug 17 Call',
+      arr:'Enterprise &middot; Varun Tiwari', csmlbl:'Varun Tiwari',
+      change:'Aug 17 &middot; Renewal',
+      excerpt:'8/17 VT: Renewal options with Leo Zunz and Julian Rojas. $180K proposal (two data feed options) presented to Frank. Renewal Aug 31 (11:00 AM PT, 30 min).' },
+    { csm:'rani', health:'Healthy', account:'AWS (Amazon)', opp:'Vitally Pulse &mdash; Aug 17 Call',
+      arr:'Enterprise &middot; Rani Guy', csmlbl:'Rani Guy',
+      change:'Aug 17 &middot; New Opportunity',
+      excerpt:'8/17 RG: First TR intro for AWS (Luis Garcia, Madhavi). Reviews, buyer intent, AI visibility. Zero existing TR license — net-new revenue. Mark Fell driving (11:00 AM PT, 60 min).' },
+    { csm:'riley', health:'Healthy', account:'Paycom', opp:'Vitally Pulse &mdash; Aug 17 Call',
+      arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Aug 17 &middot; EBR',
+      excerpt:'8/17 RR: EBR with Katie Lenhart, Alexis Correa, Peyton VanCuren. Performance review, geo dashboards, IDL, premium content, AI buyer research (12:00 PM PT, 60 min).' },
+    { csm:'rani', health:'Healthy', account:'NetApp', opp:'Vitally Pulse &mdash; Aug 17 Call',
+      arr:'Enterprise &middot; Rani Guy', csmlbl:'Rani Guy',
+      change:'Aug 17 &middot; Weekly Sync',
+      excerpt:'8/17 RG: Weekly sync with Megan Santiago-Gould, Ross Ackerman, Bini Valsala. Match rates, spend data (AI, SMB), enhanced coverage for renewal (1:00 PM PT, 25 min).' },
+    { csm:'riley', health:'Healthy', account:'SAP Business Network', opp:'Vitally Pulse &mdash; Aug 17 Call',
+      arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Aug 17 &middot; Expansion',
+      excerpt:'8/17 RR: Program overview with Adrien Sirolli, Stephanie. Buyer intent, profile optimization, category rankings, content integration (1:00 PM PT, 45 min).' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top"><strong>${c.account}</strong><span class="opp-name">${c.opp}</span><span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span></div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_08_17() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('0817-1')?'done':''}" data-csm="varun" id="action-0817-1">
+      <div class="action-checkbox ${doneActions.has('0817-1')?'checked':''}" onclick="toggleAction('0817-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0; BMC Software &mdash; Escalate Overdue Renewal</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Varun Tiwari &middot; Follow up on RGIP walkthrough with Katherine Wang and Kasia Prewer. Renewal was due 6/30 and is overdue &mdash; escalate if no renewal progress. ARR $284,750.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0817-2')?'done':''}" data-csm="varun" id="action-0817-2">
+      <div class="action-checkbox ${doneActions.has('0817-2')?'checked':''}" onclick="toggleAction('0817-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Pegasystems &mdash; Track $180K Proposal Response</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Varun Tiwari &middot; Track proposal response from Frank. Two data feed options at $180K each. Renewal Aug 31 &mdash; 2 weeks remaining.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0817-3')?'done':''}" data-csm="rani" id="action-0817-3">
+      <div class="action-checkbox ${doneActions.has('0817-3')?'checked':''}" onclick="toggleAction('0817-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; AWS (Amazon) &mdash; Follow Up on TrustRadius Intro</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Rani Guy &middot; Follow up on TR licensing intro with Luis Garcia and Madhavi. Unblock Chris connection for Quick access. Net-new revenue opportunity.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0817-4')?'done':''}" data-csm="divyam" id="action-0817-4">
+      <div class="action-checkbox ${doneActions.has('0817-4')?'checked':''}" onclick="toggleAction('0817-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Genesys &mdash; Prepare IDL Deliverables</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Divyam Dewan &middot; Prepare IDL and buyer intent deliverables Sam Bader requested. Define scope of promotional programs for Genesys.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0817-5')?'done':''}" data-csm="riley" id="action-0817-5">
+      <div class="action-checkbox ${doneActions.has('0817-5')?'checked':''}" onclick="toggleAction('0817-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; SAP Business Network &mdash; Content Integration Strategy</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Riley Rogers &middot; Strategize content integration and category rankings with Adrien Sirolli. Consolidate with tomorrow's follow-up call.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0817-6')?'done':''}" data-csm="divyam" id="action-0817-6">
+      <div class="action-checkbox ${doneActions.has('0817-6')?'checked':''}" onclick="toggleAction('0817-6')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F504; Lumen Technologies &mdash; AM Transition Support</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Divyam Dewan &middot; Ensure smooth AM transition from Hayden to Julian Rojas. Align on post-restructuring data needs with Nathan.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0817-7')?'done':''}" data-csm="nick" id="action-0817-7">
+      <div class="action-checkbox ${doneActions.has('0817-7')?'checked':''}" onclick="toggleAction('0817-7')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Softcat &mdash; Address Pricing Concern</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Nick Johnson &middot; Address pricing concern for renewal. Prepare commercially viable model for SMB data transition to credit-based export.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0817-8')?'done':''}" data-csm="rani" id="action-0817-8">
+      <div class="action-checkbox ${doneActions.has('0817-8')?'checked':''}" onclick="toggleAction('0817-8')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; NetApp &mdash; Prepare Enhanced Data Package</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Rani Guy &middot; Prepare enhanced data package options (AI spend, SMB coverage) for renewal discussion with Megan and team.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
