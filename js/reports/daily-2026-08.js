@@ -4018,3 +4018,321 @@ function dayActionsHTML_2026_08_17() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
 }
+
+// ——— 2026-08-18 (Tuesday, Aug 18) ———
+
+function dayData_2026_08_18() {
+  return {
+    calls: [
+      { ts: 'Aug 18 · 5:30 AM', csm: 'nick', account: 'IBM',
+        note: 'Data fill rate gaps in account fit scoring; CDO matching call scheduled same day.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Issue',
+        detail: 'IBM raised data fill rate gaps in their account fit scoring motion. Patty noted missing HG spend data above the $50M contract threshold. CDO office matching call scheduled for 11 AM ET same day to improve HDID assignment to location IDs.' },
+
+      { ts: 'Aug 18 · 6:00 AM', csm: 'nick', account: 'Infor (US), LLC',
+        note: 'Regular sync with Nicole Morgan; Ben OOO; routine relationship maintenance.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Routine sync with Nicole Morgan while Ben Howden is out of office this week. Discussion around internal team structure, strategic goals, and proposal alignment. Relationship maintenance.' },
+
+      { ts: 'Aug 18 · 6:30 AM', csm: 'nick', account: 'Siemens AG',
+        note: 'MCP credit pricing — $700K for 15M credits, 2-year term; leadership-approved discount from $900K.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'Customer', purpose: 'Expansion',
+        detail: 'Jeff Wymer (Siemens) discussing MCP credit pricing with David Garcia-Thomas. Quoted $700K for 15M credits on a 2-year term after leadership-approved discount from original $900K estimate. Slab pricing at ~$0.06/credit. Active procurement discussion with budget holder engagement.' },
+
+      { ts: 'Aug 18 · 8:00 AM', csm: 'riley', account: 'SAP Inc',
+        note: 'CX market report content refresh; introduced research team (Katie, Janessa) to Binod Negi.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Riley introduced Binod Negi (SAP CX) to Katie Allison and Janessa Rutiaga from HG research team. Discussion around refreshing the CX market report premium content for upcoming cycle.' },
+
+      { ts: 'Aug 18 · 8:30 AM', csm: 'rani', account: 'Workday',
+        note: 'Monthly sync with Patrycja Levey; introduced Kraig Kraning (week 4 at HG).',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Monthly sync with Patrycja Levey. Rani introduced Kraig Kraning as new team member supporting Workday (4th week at HG). Travel coordination and relationship maintenance discussed.' },
+
+      { ts: 'Aug 18 · 9:00 AM', csm: 'divyam', account: 'Paychex',
+        note: 'TR vendor portal walkthrough pt. 2 with Taylor Lohmann; covered GEO dashboard and terminology.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Continuation of vendor portal training with Taylor Lohmann (Paychex). Covered remaining TrustRadius portal features including GEO dashboard, terminology, and navigation. Taylor confirmed she did hands-on exploration since last session.' },
+
+      { ts: 'Aug 18 · 10:00 AM', csm: 'divyam', account: 'BILL',
+        note: 'Weekly sync with Eric Nguyen; Charles absent; collecting feedback; working session booked Monday.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Weekly sync with Eric Nguyen. Charles Hawkins unable to attend. Divyam collecting feedback on sales team call outcomes and following up on action items. Working session booked for next Monday to deep-dive into deliverables.' },
+
+      { ts: 'Aug 18 · 11:30 AM', csm: 'riley', account: 'SAP Inc',
+        note: 'Ariba + Fieldglass market report renewal; multi-stakeholder engagement with 5 SAP contacts.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Renewal discussion for SAP Ariba and Fieldglass TrustRadius market reports. Multi-stakeholder engagement with Ashleigh Riehl, Cole Arutian, Mardigan Moffat, Shrawanti, and Smitha Chelapurath. Positive engagement — several attendees pre-accepted the invite.' },
+
+      { ts: 'Aug 18 · 1:00 PM', csm: 'rani', account: 'Workday',
+        note: 'MCP ROI & requirements with procurement (Alexandra Wilson, Phoenix Majumder, Joe DosSantos, Winston Wu).',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'MCP ROI and requirements discussion with Workday procurement team including Alexandra Wilson, Phoenix Majumder, Joe DosSantos, and Winston Wu. Rani introduced Erica Yim (new VP CS, first day at HG). Active buying process with procurement engagement. Francis Brero and Leo Zunz from HG also joined.' },
+    ],
+    pulses: [
+      { csm: 'nick', account: 'IBM', health: 'Healthy',
+        note: 'Data fill rate gaps for account fit scoring; CDO matching call scheduled same day.' },
+      { csm: 'nick', account: 'Infor (US), LLC', health: 'Healthy',
+        note: 'Regular sync with Nicole Morgan; Ben OOO; routine relationship maintenance.' },
+      { csm: 'nick', account: 'Siemens AG', health: 'Healthy',
+        note: 'MCP credit pricing $700K/15M credits, 2-year term; leadership-approved discount; active procurement.' },
+      { csm: 'riley', account: 'SAP Inc', health: 'Healthy',
+        note: 'CX market report content refresh; research team introduced to Binod Negi.' },
+      { csm: 'rani', account: 'Workday', health: 'Healthy',
+        note: 'Monthly sync; Kraig Kraning introduced as new team member supporting Workday.' },
+      { csm: 'divyam', account: 'Paychex', health: 'Healthy',
+        note: 'TR vendor portal walkthrough pt. 2; GEO dashboard and terminology covered.' },
+      { csm: 'divyam', account: 'BILL', health: 'Healthy',
+        note: 'Weekly sync with Eric Nguyen; sales team feedback; Monday working session booked.' },
+      { csm: 'riley', account: 'SAP Inc', health: 'Healthy',
+        note: 'Ariba+Fieldglass market report renewal; multi-stakeholder engagement; positive signals.' },
+      { csm: 'rani', account: 'Workday', health: 'Healthy',
+        note: 'MCP ROI discussion with procurement team; Erica Yim introduced; active buying signal.' },
+    ],
+  };
+}
+
+function dayMeta_2026_08_18() {
+  return {
+    pills: [
+      ['dot-teal',  '9 Calls'],
+      ['dot-amber', '3 Expansion'],
+      ['dot-green', '9 Vitally Pulses'],
+      ['dot-grey',  'Tue Aug 18 · 84 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (9)', 'Pulses (9)', 'Action Items (8)'],
+  };
+}
+
+function dayOverviewHTML_2026_08_18() {
+  return `<div class="section-label">Team Activity &mdash; Tuesday, August 18, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Tuesday Aug 18 &mdash; 84 recordings scanned</strong> via SFDC SOQL &middot; <strong>9 confirmed calls</strong> across 4 CSMs &middot; 3 expansion signals &middot; Internal: CS + Solutions All Hands (Erica Yim welcomed as new VP CS)
+  </div>
+  <div style="background:#1c2333;border:1px solid #a78bfa;border-left:3px solid #a78bfa;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#c4b5fd;">
+    &#x1F4C8; <strong>3 Expansion Signals:</strong> Siemens AG &mdash; MCP credit pricing $700K/15M credits &middot; SAP &mdash; Ariba+Fieldglass market report renewal &middot; Workday &mdash; MCP ROI discussion with procurement team
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">3 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">3</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">90m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">IBM (data fill rate issue) &middot; Infor (sync, Ben OOO) &middot; Siemens AG (MCP $700K expansion)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">SAP CX (market report refresh) &middot; SAP Ariba (market report renewal &mdash; expansion)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Paychex (TR portal walkthrough pt. 2) &middot; BILL (weekly sync, Monday working session)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Workday monthly (Kraig onboarding) &middot; Workday MCP (ROI with procurement &mdash; expansion)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="varun">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Internal All Hands only &mdash; no customer recordings</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No customer recordings detected</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="atisha">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 events (Apple, Kyndryl) &mdash; unconfirmed, no transcript speaker match</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No customer recordings detected</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_08_18() {
+  return `<div style="background:#1c2333;border:1px solid #a78bfa;border-left:3px solid #a78bfa;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#c4b5fd;">
+    &#x1F4C8; <strong>3 Expansion Signals:</strong> Siemens AG (MCP $700K/15M credits) &middot; SAP (Ariba+Fieldglass renewal) &middot; Workday (MCP ROI with procurement)
+  </div>
+  <p style="color:#94a3b8;font-size:12px;">Table auto-generated from dayData — see columns below.</p>`;
+}
+
+function dayPulsesHTML_2026_08_18() {
+  const cards = [
+    { csm:'nick', health:'Healthy', account:'IBM', opp:'Vitally Pulse &mdash; Aug 18 Call',
+      arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Aug 18 &middot; Issue',
+      excerpt:'8/18 NJ: IBM data fill rate gaps for account fit scoring (5:30 AM PT, 30 min). Customer-initiated issue &mdash; CDO office matching call scheduled to improve HDID assignment.' },
+    { csm:'nick', health:'Healthy', account:'Infor (US), LLC', opp:'Vitally Pulse &mdash; Aug 18 Call',
+      arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Aug 18 &middot; Check-in',
+      excerpt:'8/18 NJ: Regular sync with Nicole Morgan, Ben OOO (6:00 AM PT, 30 min). Routine relationship maintenance and proposal alignment.' },
+    { csm:'nick', health:'Healthy', account:'Siemens AG', opp:'Vitally Pulse &mdash; Aug 18 Call',
+      arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Aug 18 &middot; Expansion',
+      excerpt:'8/18 NJ: MCP credit pricing &mdash; $700K for 15M credits, 2-year term (6:30 AM PT, 30 min). Leadership-approved discount from $900K. Active procurement.' },
+    { csm:'riley', health:'Healthy', account:'SAP Inc', opp:'Vitally Pulse &mdash; Aug 18 Call',
+      arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Aug 18 &middot; Check-in',
+      excerpt:'8/18 RR: CX market report content refresh with research team (8:00 AM PT, 30 min). Introduced Katie Allison and Janessa Rutiaga to Binod Negi.' },
+    { csm:'rani', health:'Healthy', account:'Workday', opp:'Vitally Pulse &mdash; Aug 18 Call',
+      arr:'Enterprise &middot; Rani Guy', csmlbl:'Rani Guy',
+      change:'Aug 18 &middot; Check-in',
+      excerpt:'8/18 RG: Monthly sync with Patrycja Levey (8:30 AM PT, 30 min). Introduced Kraig Kraning as new team member supporting Workday.' },
+    { csm:'divyam', health:'Healthy', account:'Paychex', opp:'Vitally Pulse &mdash; Aug 18 Call',
+      arr:'Enterprise &middot; Divyam Dewan', csmlbl:'Divyam Dewan',
+      change:'Aug 18 &middot; Check-in',
+      excerpt:'8/18 DD: TR vendor portal walkthrough pt. 2 with Taylor Lohmann (9:00 AM PT, 30 min). Covered GEO dashboard and terminology.' },
+    { csm:'divyam', health:'Healthy', account:'BILL', opp:'Vitally Pulse &mdash; Aug 18 Call',
+      arr:'Enterprise &middot; Divyam Dewan', csmlbl:'Divyam Dewan',
+      change:'Aug 18 &middot; Check-in',
+      excerpt:'8/18 DD: Weekly sync with Eric Nguyen (10:00 AM PT, 30 min). Collecting sales team feedback; Monday working session booked.' },
+    { csm:'riley', health:'Healthy', account:'SAP Inc', opp:'Vitally Pulse &mdash; Aug 18 Call',
+      arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Aug 18 &middot; Expansion',
+      excerpt:'8/18 RR: Ariba+Fieldglass market report renewal (11:30 AM PT, 30 min). Multi-stakeholder engagement with 5 SAP contacts. Positive signals.' },
+    { csm:'rani', health:'Healthy', account:'Workday', opp:'Vitally Pulse &mdash; Aug 18 Call',
+      arr:'Enterprise &middot; Rani Guy', csmlbl:'Rani Guy',
+      change:'Aug 18 &middot; Expansion',
+      excerpt:'8/18 RG: MCP ROI &amp; requirements with procurement team (1:00 PM PT, 30 min). Erica Yim introduced. Active buying signal.' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top"><span class="pulse-account">${c.account}</span><span class="pulse-opp">${c.opp}</span><span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span></div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_08_18() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('0818-1')?'done':''}" data-csm="rani" id="action-0818-1">
+      <div class="action-checkbox ${doneActions.has('0818-1')?'checked':''}" onclick="toggleAction('0818-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4B0; Workday &mdash; Follow Up on MCP ROI Discussion</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy &middot; Prepare pricing proposal for Alexandra Wilson and Phoenix Majumder. Procurement team engaged &mdash; capitalize on buying momentum. Coordinate with Francis Brero and Leo Zunz.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0818-2')?'done':''}" data-csm="nick" id="action-0818-2">
+      <div class="action-checkbox ${doneActions.has('0818-2')?'checked':''}" onclick="toggleAction('0818-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4B0; Siemens AG &mdash; Finalize MCP Credit Pricing</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Nick Johnson &middot; $700K for 15M credits on 2-year term approved by leadership. Coordinate with David Garcia-Thomas and Jeff Wymer on paperwork and timeline.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0818-3')?'done':''}" data-csm="nick" id="action-0818-3">
+      <div class="action-checkbox ${doneActions.has('0818-3')?'checked':''}" onclick="toggleAction('0818-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F50D; IBM &mdash; Track CDO Office Matching Results</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Nick Johnson &middot; CDO matching call scheduled 11 AM ET same day. Ensure fill rate improvements reach Patty's team for account fit scoring motion.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0818-4')?'done':''}" data-csm="riley" id="action-0818-4">
+      <div class="action-checkbox ${doneActions.has('0818-4')?'checked':''}" onclick="toggleAction('0818-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C4; SAP &mdash; Progress Ariba+Fieldglass Renewal</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Riley Rogers &middot; Multiple stakeholders engaged (Ashleigh, Cole, Mardigan, Shrawanti, Smitha). Ensure alignment and move toward contract renewal.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0818-5')?'done':''}" data-csm="atisha" id="action-0818-5">
+      <div class="action-checkbox ${doneActions.has('0818-5')?'checked':''}" onclick="toggleAction('0818-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F50E; Apple &mdash; Confirm Strategy &amp; Planning Outcomes</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Atisha Waghela &middot; No transcript available for Apple call. Follow up to confirm discussion topics and next steps.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0818-6')?'done':''}" data-csm="rani" id="action-0818-6">
+      <div class="action-checkbox ${doneActions.has('0818-6')?'checked':''}" onclick="toggleAction('0818-6')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F91D; Workday &mdash; Continue Kraig Onboarding</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Rani Guy &middot; Kraig Kraning in week 4. Schedule follow-up with Patrycja Levey. Ensure smooth handoff of supporting responsibilities.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0818-7')?'done':''}" data-csm="divyam" id="action-0818-7">
+      <div class="action-checkbox ${doneActions.has('0818-7')?'checked':''}" onclick="toggleAction('0818-7')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; BILL &mdash; Prep for Monday Working Session</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Divyam Dewan &middot; Working session booked with Eric Nguyen for Monday. Coordinate with Charles on sales team feedback and deliverables.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0818-8')?'done':''}" data-csm="nick" id="action-0818-8">
+      <div class="action-checkbox ${doneActions.has('0818-8')?'checked':''}" onclick="toggleAction('0818-8')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4DE; Lenovo &mdash; Confirm Weekly Check-in Status</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Nick Johnson &middot; No transcript from weekly check-in. Follow up to confirm status and any action items from the meeting.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
