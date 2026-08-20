@@ -4336,3 +4336,307 @@ function dayActionsHTML_2026_08_18() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
 }
+
+/* ═══════════════════════════════════════════════════════════════
+   2026-08-19  (Wednesday)  —  8 confirmed calls, 4 CSMs active
+   ═══════════════════════════════════════════════════════════════ */
+
+function dayData_2026_08_19() {
+  return {
+    calls: [
+      { ts: 'Aug 19 · 6:00 AM', csm: 'atisha', account: 'Deloitte',
+        note: 'Weekly sync reviewing data refinement progress; ~60% priority account changes; new keyword integration.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Atisha drove the weekly sync reviewing data set refinement progress. Significant changes in priority accounts (~60%) due to annual strategic shifts. Deloitte providing new search keywords for integration into the analysis. Topic and product count optimization ongoing.' },
+
+      { ts: 'Aug 19 · 6:00 AM', csm: 'varun', account: 'Autodesk',
+        note: 'Ad-hoc alignment on data feed delivery; 850K CRM records; staging → production deployment.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Varun arranged this ad-hoc call to align on data feed delivery rather than continuing email back-and-forth. Autodesk provided 44M CRM records resolving to 15M unique companies. Agreed on staged deployment: staging test first, then production. White space file to be delivered separately.' },
+
+      { ts: 'Aug 19 · 9:00 AM', csm: 'riley', account: 'SAP SuccessFactors',
+        note: 'Recurring progress call; internal SAP changes affecting peer review strategy next year.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'Customer', purpose: 'Check-in',
+        detail: 'Kristin shared internal SAP changes that will affect peer review strategy positioning next year. Riley and Kristin discussed content delivery timelines and event planning. No direct impact on TrustRadius relationship expected.' },
+
+      { ts: 'Aug 19 · 10:00 AM', csm: 'varun', account: 'Autodesk',
+        note: 'Bi-weekly sync; white space product count constraint (991 products, 150K accounts); spend data discussion.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Varun led the bi-weekly sync addressing white space product count constraints. Autodesk selected 991 products but only 150K accounts could be supported. Discussed whether to ship 150K now and iterate or have Autodesk narrow product selection. Also covered absolute vs. relative spend data utilization and staging environment testing.' },
+
+      { ts: 'Aug 19 · 10:00 AM', csm: 'riley', account: 'Adobe',
+        note: 'Success call tracking Buyer\'s Choice Award progress; Commerce (1), Frame.io (4), Real-time CDP (5) reviews needed.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Riley led the success call tracking Buyer\'s Choice Award progress across three Adobe products. Remaining reviews needed: Commerce (1), Frame.io (4), Real-time CDP (5). Discussed premium content geo optimization features and how clients leverage reports for sales enablement and demand generation.' },
+
+      { ts: 'Aug 19 · 11:00 AM', csm: 'varun', account: 'Datadog',
+        note: 'Intent insights review (June/July data); geo dashboard walkthrough; market report access confirmed.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Varun and Scott reviewed intent data insights with Datadog, breaking down recent leads and how intent signals correlate with account activity. Walked through the new geo dashboard and confirmed access to the market report.' },
+
+      { ts: 'Aug 19 · 12:00 PM', csm: 'andy', account: 'SAS',
+        note: 'Business case brainstorm for HG expansion; competitive positioning; account segmentation.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Andy and Augie (AM) helped SAS\'s Steven White build a business case for expanding HG usage. Focused on competitive positioning using HG data, account segmentation, and creating targeted attack plans against competitors. Expansion signal — SAS building internal justification for broader HG adoption.' },
+
+      { ts: 'Aug 19 · 12:30 PM', csm: 'varun', account: 'OpenText',
+        note: 'Renewal scoping; export limit increase 25K→100K; 3-year commitment with aggressive discount proposed.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'Customer', purpose: 'Expansion',
+        detail: 'OpenText requested increasing annual export limits from 25K to 100K due to overages. Budget is a constraint — Prateek and Simi proposed aggressive discount for a 3-year commitment. Varun confirmed a 3% like-for-like increase is the baseline. Expansion signal — scope increase under negotiation.' },
+    ],
+    pulses: [
+      { csm: 'atisha', account: 'Deloitte', health: 'Healthy',
+        note: 'Weekly sync; data refinement ~60% priority account changes; new keyword integration from Deloitte.' },
+      { csm: 'varun', account: 'Autodesk', health: 'Healthy',
+        note: 'Ad-hoc data feed alignment; 44M CRM records → 15M unique companies; staged deployment agreed.' },
+      { csm: 'riley', account: 'SAP SuccessFactors', health: 'Healthy',
+        note: 'Internal SAP changes affecting peer review strategy next year; content delivery timelines discussed.' },
+      { csm: 'varun', account: 'Autodesk', health: 'Healthy',
+        note: 'Bi-weekly sync; 991 products/150K account constraint; spend data utilization discussion.' },
+      { csm: 'riley', account: 'Adobe', health: 'Healthy',
+        note: 'Buyer\'s Choice Award tracking; remaining reviews: Commerce (1), Frame.io (4), Real-time CDP (5).' },
+      { csm: 'varun', account: 'Datadog', health: 'Healthy',
+        note: 'Intent insights review (Jun/Jul); geo dashboard walkthrough; market report access confirmed.' },
+      { csm: 'andy', account: 'SAS', health: 'Healthy',
+        note: 'Business case for HG expansion; competitive positioning; targeted attack plans using HG data.' },
+      { csm: 'varun', account: 'OpenText', health: 'Healthy',
+        note: 'Export limit increase 25K→100K; budget-constrained; 3-year commitment discount proposed.' },
+    ],
+  };
+}
+
+function dayMeta_2026_08_19() {
+  return {
+    pills: [
+      ['dot-teal',  '8 Calls'],
+      ['dot-amber', '2 Expansion'],
+      ['dot-green', '8 Vitally Pulses'],
+      ['dot-grey',  'Wed Aug 19 · 89 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (8)', 'Pulses (8)', 'Action Items (7)']
+  };
+}
+
+function dayOverviewHTML_2026_08_19() {
+  return `<div class="section-label">Team Activity &mdash; Wednesday August 19, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Wednesday Aug 19 &mdash; 89 recordings scanned</strong> via SFDC SOQL &middot; <strong>8 confirmed calls</strong> across 4 CSMs &middot; 2 expansion signals (OpenText 4x export increase, SAS business case) &middot; 0 concerning &middot; 1 internal meeting excluded
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>Expansion:</strong> OpenText requesting 4x export limit increase (25K &rarr; 100K), negotiating 3-year commitment with discount &middot; SAS building internal business case for expanded HG adoption
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">4 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">4</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">4</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">120m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Autodesk x2 (data feed + white space) &middot; Datadog (intent review) &middot; OpenText (export expansion)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">SAP SuccessFactors (peer review strategy) &middot; Adobe (Buyer's Choice Award)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Deloitte (data refinement, keyword integration)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="andy">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">SAS (business case for HG expansion)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="nick">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">3 events scheduled &mdash; no confirmed calls (Accenture unconfirmed, Veeam no recording, Lenovo no CSM in transcript)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="rani">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">5 events scheduled &mdash; no confirmed calls (Google, Lenovo x2, Cisco, AWS — no CalEventId or no CSM in transcript)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="divyam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event scheduled &mdash; no confirmed calls (Informatica — no CalEventId, no CSM in transcript)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 events scheduled &mdash; no confirmed calls (F5 unconfirmed, Prophix no recording)</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_08_19() {
+  return `<div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>Expansion:</strong> OpenText requesting 4x export limit increase (25K &rarr; 100K), negotiating 3-year commitment &middot; SAS building internal business case for HG expansion
+  </div>
+  <div style="font-size:11px;color:#64748b;margin-bottom:8px;">Auto-table generated from dayData — 8 confirmed calls across 4 CSMs &middot; 2 unconfirmed (Nick/Accenture, Pam/F5) &middot; 1 internal meeting excluded</div>`;
+}
+
+function dayPulsesHTML_2026_08_19() {
+  const cards = [
+    { csm:'atisha', health:'Healthy', account:'Deloitte', opp:'Vitally Pulse &mdash; Aug 19 Call',
+      arr:'Enterprise &middot; Atisha Waghela', csmlbl:'Atisha Waghela',
+      change:'Aug 19 &middot; Weekly Sync',
+      excerpt:'8/19 AW: Weekly sync reviewing data refinement progress. ~60% priority account changes due to annual strategic shifts. Deloitte providing new search keywords for integration. (6:00 AM PT, 30 min).' },
+    { csm:'varun', health:'Healthy', account:'Autodesk', opp:'Vitally Pulse &mdash; Aug 19 Call',
+      arr:'Enterprise &middot; Varun Tiwari', csmlbl:'Varun Tiwari',
+      change:'Aug 19 &middot; Data Feed Alignment',
+      excerpt:'8/19 VT: Ad-hoc call to align on data feed delivery. 44M CRM records resolving to 15M unique companies. Staged deployment agreed: staging test first, then production. (6:00 AM PT, 30 min).' },
+    { csm:'riley', health:'Healthy', account:'SAP SuccessFactors', opp:'Vitally Pulse &mdash; Aug 19 Call',
+      arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Aug 19 &middot; Progress Call',
+      excerpt:'8/19 RR: Internal SAP changes affecting peer review strategy positioning next year. Content delivery timelines and event planning discussed. No direct impact on TR relationship expected. (9:00 AM PT, 30 min).' },
+    { csm:'varun', health:'Healthy', account:'Autodesk', opp:'Vitally Pulse &mdash; Aug 19 Bi-Weekly',
+      arr:'Enterprise &middot; Varun Tiwari', csmlbl:'Varun Tiwari',
+      change:'Aug 19 &middot; Bi-Weekly Sync',
+      excerpt:'8/19 VT: White space product count constraint — 991 products selected, only 150K accounts supported. Discussing whether to ship 150K now or narrow product selection. Spend data utilization reviewed. (10:00 AM PT, 30 min).' },
+    { csm:'riley', health:'Healthy', account:'Adobe', opp:'Vitally Pulse &mdash; Aug 19 Call',
+      arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Aug 19 &middot; Success Call',
+      excerpt:'8/19 RR: Buyer\'s Choice Award tracking across three Adobe products. Remaining reviews needed: Commerce (1), Frame.io (4), Real-time CDP (5). Premium content geo optimization discussed. (10:00 AM PT, 30 min).' },
+    { csm:'varun', health:'Healthy', account:'Datadog', opp:'Vitally Pulse &mdash; Aug 19 Call',
+      arr:'Enterprise &middot; Varun Tiwari', csmlbl:'Varun Tiwari',
+      change:'Aug 19 &middot; Intent Review',
+      excerpt:'8/19 VT: Intent data insights review (June/July data) with Datadog. Walked through geo dashboard. Confirmed access to market report. (11:00 AM PT, 30 min).' },
+    { csm:'andy', health:'Healthy', account:'SAS', opp:'Vitally Pulse &mdash; Aug 19 Call',
+      arr:'Enterprise &middot; Andy Lim', csmlbl:'Andy Lim',
+      change:'Aug 19 &middot; Business Case',
+      excerpt:'8/19 AL: Helped Steven White build business case for expanding HG usage. Competitive positioning, account segmentation, and targeted attack plans. Expansion signal — SAS building internal justification. (12:00 PM PT, 30 min).' },
+    { csm:'varun', health:'Healthy', account:'OpenText', opp:'Vitally Pulse &mdash; Aug 19 Call',
+      arr:'Enterprise &middot; Varun Tiwari', csmlbl:'Varun Tiwari',
+      change:'Aug 19 &middot; Renewal Scoping',
+      excerpt:'8/19 VT: Export limit increase requested from 25K to 100K annually. Budget-constrained — 3-year commitment with aggressive discount proposed. 3% like-for-like increase baseline. Expansion signal — scope increase under negotiation. (12:30 PM PT, 30 min).' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div><div class="pulse-opp">${c.opp}</div><div class="pulse-arr">${c.arr}</div></div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_08_19() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('0819-1')?'done':''}" data-csm="varun" id="action-0819-1">
+      <div class="action-checkbox ${doneActions.has('0819-1')?'checked':''}" onclick="toggleAction('0819-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F6A8; OpenText &mdash; Follow up on export limit pricing</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Varun Tiwari &middot; Coordinate with finance on pricing for 25K&rarr;100K annual export increase. Customer is budget-constrained — prepare discount scenarios for 3-year commitment.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0819-2')?'done':''}" data-csm="andy" id="action-0819-2">
+      <div class="action-checkbox ${doneActions.has('0819-2')?'checked':''}" onclick="toggleAction('0819-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F6A8; SAS &mdash; Support business case completion</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Andy Lim &middot; Andy and Augie to provide competitive data and account segmentation materials to help Steven White complete the SAS internal business case.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0819-3')?'done':''}" data-csm="varun" id="action-0819-3">
+      <div class="action-checkbox ${doneActions.has('0819-3')?'checked':''}" onclick="toggleAction('0819-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; Autodesk &mdash; Resolve white space product count constraint</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Varun Tiwari &middot; Determine whether to ship 150K accounts now or have Autodesk narrow from 991 products. Confirm with engineering on expanding capacity.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0819-4')?'done':''}" data-csm="riley" id="action-0819-4">
+      <div class="action-checkbox ${doneActions.has('0819-4')?'checked':''}" onclick="toggleAction('0819-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; Adobe &mdash; Track Buyer's Choice Award reviews</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Riley Rogers &middot; Follow up on remaining reviews needed: Commerce (1), Frame.io (4), Real-time CDP (5). Coordinate with Adobe team on review collection.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0819-5')?'done':''}" data-csm="atisha" id="action-0819-5">
+      <div class="action-checkbox ${doneActions.has('0819-5')?'checked':''}" onclick="toggleAction('0819-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; Deloitte &mdash; Finalize refined data file</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Atisha Waghela &middot; Atisha committed to delivering the refined topic/product file by Aug 20. Incorporate Deloitte's new search keywords into the analysis.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0819-6')?'done':''}" data-csm="varun" id="action-0819-6">
+      <div class="action-checkbox ${doneActions.has('0819-6')?'checked':''}" onclick="toggleAction('0819-6')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Datadog &mdash; Confirm market report access</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Varun Tiwari &middot; Verify Datadog team has full access to the market report and geo dashboard shared during the call.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0819-7')?'done':''}" data-csm="nick" id="action-0819-7">
+      <div class="action-checkbox ${doneActions.has('0819-7')?'checked':''}" onclick="toggleAction('0819-7')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Accenture &mdash; Verify call occurrence</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Nick Johnson &middot; Accenture Projects Connect (3:30 AM PT) had a Teams recording but no transcript. Confirm if call occurred and capture any action items.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
