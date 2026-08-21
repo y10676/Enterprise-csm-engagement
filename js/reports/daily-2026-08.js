@@ -4640,3 +4640,380 @@ function dayActionsHTML_2026_08_19() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
 }
+
+function dayData_2026_08_20() {
+  return {
+    calls: [
+      { ts: 'Aug 20 · 4:00 AM', csm: 'andy', account: 'SAS Institute',
+        note: 'HG pilot feedback session; positive reception on consolidated sales research tool; data completeness challenges noted.',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'HG pilot feedback session. Positive reception on consolidated sales research tool. Data completeness challenges in certain regions noted. Scoring mechanism refinement discussed.' },
+
+      { ts: 'Aug 20 · 4:30 AM', csm: 'andy', account: 'Pure Storage (Evapure)',
+        note: 'Portworx completely unresponsive; unused license utilization opportunity; alternate contact path explored.',
+        mins: 30, health: 'Concerning',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Portworx completely unresponsive — Charlie reports ‘they’ve been blanking me.’ Unused license utilization opportunity discussed. Alternate contact path being explored.' },
+
+      { ts: 'Aug 20 · 9:00 AM', csm: 'atisha', account: 'RSM US',
+        note: 'Pricing numbers received from Leo; Cinnamon discussion this afternoon; Ben anticipates positive resolution.',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Pricing numbers received from Leo, moving forward. Cinnamon discussion scheduled for this afternoon. Ben anticipates positive resolution. No further needs from Atisha.' },
+
+      { ts: 'Aug 20 · 9:00 AM', csm: 'nick', account: 'Veeam',
+        note: '1:1 AI credit match for MCP pilot; data feed finalized with 100K scored accounts; evaluation not yet started.',
+        mins: 45, health: 'Concerning',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: '1:1 AI credit match for MCP pilot offered in renewal order form. Data feed finalized with improved scope and 100K scored accounts. Customer says ‘haven’t started evaluation’ — risk to renewal inclusion timeline.' },
+
+      { ts: 'Aug 20 · 9:30 AM', csm: 'rani', account: 'NetApp',
+        note: 'Monthly sync focused on 80% match rate goal; Ryan Maas transitioning out; replacement Shuming to take over.',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Monthly sync focused on 80% match rate goal. Ryan Maas transitioning out (last day next Friday), replacement Shuming to take over. Hierarchy classification discussion (group HQ vs corporate parent).' },
+
+      { ts: 'Aug 20 · 10:00 AM', csm: 'varun', account: 'BMC Software',
+        note: 'Sales Copilot guided demo for BDR team; licensing allocation strategy; Lindsay to be added as admin.',
+        mins: 45, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Sales Copilot guided demo for BDR team. Licensing allocation strategy discussed. Lindsay to be added as admin. Dedicated onboarding sessions to be scheduled. Note: BMC has Severe Risk pulse in SFDC.' },
+
+      { ts: 'Aug 20 · 10:30 AM', csm: 'nick', account: 'NTT Data',
+        note: 'Contract expansion discussion; bundle package more cost-effective than à la carte; procurement contact established.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Contract expansion discussion — additional users/exports pricing. Bundle package more cost-effective than à la carte. Prior 30-40% discount can’t be replicated. Procurement contact Mauro Ricardo established.' },
+
+      { ts: 'Aug 20 · 11:00 AM', csm: 'pam', account: 'Oracle',
+        note: 'SOW update from TrustRadius to HG Insights; AI-driven lead offering pilot proposed for Q3; renewal confirmed at $35K.',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'SOW update from TrustRadius to HG Insights for billing. New AI-driven lead offering pilot proposed for Q3 pending budget. Renewal confirmed at existing $35K terms.' },
+
+      { ts: 'Aug 20 · 11:30 AM', csm: 'varun', account: 'OpenText',
+        note: 'Account brief feedback; 13-page format too lengthy for ADR team; new AM Julian Rojas introduced.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Account brief feedback — Kirk says data valuable but 13-page format too lengthy for ADR team (250-300 outreaches/week). New AM Julian Rojas introduced. Better suited for AE team post-qualification.' },
+
+      { ts: 'Aug 20 · 12:00 PM', csm: 'riley', account: 'SAP Concur',
+        note: 'Campaign coordination with Aiden; Tech Cares award won; CTA link update discussion.',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Campaign coordination with Aiden. Tech Cares award won — media kit next week, Sep 1 announcement. CTA link update discussion. Ella interested in HG data for review sourcing.' },
+
+      { ts: 'Aug 20 · 12:00 PM', csm: 'atisha', account: 'Optiv',
+        note: 'Roger back from paternity leave; Optiv selling consulting services business; intent data methodology discussed.',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'Customer', purpose: 'Check-in',
+        detail: 'Roger Conarroe back from paternity leave. Optiv selling consulting services business (significant restructuring). Intent data methodology discussion — signal strength scoring clarified. Microsoft Copilot integration explored.' },
+
+      { ts: 'Aug 20 · 1:00 PM', csm: 'riley', account: 'SAP Inc (Concall BCA)',
+        note: 'Competitive analysis improvement; increasing review data for competitors; SAP internal reorgs affecting roles.',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Competitive analysis improvement — increasing review data for competitors and developing comparison reports. SAP internal reorgs affecting product marketing roles. Next: identify top competitors by Monday.' },
+    ],
+    pulses: [
+      { csm: 'andy', account: 'SAS Institute', health: 'Healthy',
+        note: 'HG pilot feedback; positive reception on sales research tool; data completeness challenges in certain regions.' },
+      { csm: 'andy', account: 'Pure Storage (Evapure)', health: 'Concerning',
+        note: 'Portworx completely unresponsive; unused license utilization opportunity; alternate contact path explored.' },
+      { csm: 'atisha', account: 'RSM US', health: 'Healthy',
+        note: 'Pricing numbers received from Leo; Cinnamon discussion this afternoon; Ben anticipates positive resolution.' },
+      { csm: 'nick', account: 'Veeam', health: 'Concerning',
+        note: '1:1 AI credit match for MCP pilot; data feed finalized with 100K scored accounts; evaluation not started.' },
+      { csm: 'rani', account: 'NetApp', health: 'Healthy',
+        note: 'Monthly sync on 80% match rate goal; Ryan Maas transitioning out; Shuming to take over.' },
+      { csm: 'varun', account: 'BMC Software', health: 'Healthy',
+        note: 'Sales Copilot guided demo for BDR team; licensing allocation; Lindsay to be added as admin.' },
+      { csm: 'nick', account: 'NTT Data', health: 'Healthy',
+        note: 'Contract expansion discussion; bundle package more cost-effective; procurement contact Mauro Ricardo established.' },
+      { csm: 'pam', account: 'Oracle', health: 'Healthy',
+        note: 'SOW entity update; AI-driven lead offering pilot proposed for Q3; renewal confirmed at $35K.' },
+      { csm: 'varun', account: 'OpenText', health: 'Healthy',
+        note: 'Account brief too lengthy for ADR team; new AM Julian Rojas introduced; better suited for AE team.' },
+      { csm: 'riley', account: 'SAP Concur', health: 'Healthy',
+        note: 'Campaign coordination; Tech Cares award won; CTA link update; Ella interested in HG data for review sourcing.' },
+      { csm: 'atisha', account: 'Optiv', health: 'Healthy',
+        note: 'Roger back from paternity leave; Optiv selling consulting business; intent data methodology clarified.' },
+      { csm: 'riley', account: 'SAP Inc (Concall BCA)', health: 'Healthy',
+        note: 'Competitive analysis improvement; increasing review data for competitors; SAP reorgs affecting product marketing.' },
+    ],
+  };
+}
+
+function dayMeta_2026_08_20() {
+  return {
+    pills: [
+      ['dot-teal',  '12 Calls'],
+      ['dot-red',   '2 Concerning'],
+      ['dot-amber', '2 Expansion'],
+      ['dot-green', '12 Vitally Pulses'],
+      ['dot-grey',  'Thu Aug 20 · 85 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (12)', 'Pulses (12)', 'Action Items (8)']
+  };
+}
+
+function dayOverviewHTML_2026_08_20() {
+  return `<div class="section-label">Team Activity &mdash; Thursday August 20, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Thursday Aug 20 &mdash; 85 recordings scanned</strong> via SFDC SOQL &middot; <strong>12 confirmed calls</strong> across 7 CSMs &middot; 2 expansion signals (Veeam MCP pilot, NTT Data contract expansion) &middot; 2 concerning (Pure Storage unresponsive, Veeam evaluation stalled)
+  </div>
+  <div style="background:#1c2333;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fcd34d;">
+    &#x26A0;&#xFE0F; <strong>Concerning:</strong> Pure Storage/Evapure &mdash; Portworx completely unresponsive, &lsquo;they&rsquo;ve been blanking me&rsquo; &middot; Veeam &mdash; customer says &lsquo;haven&rsquo;t started evaluation&rsquo;, risk to renewal inclusion timeline
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>Expansion:</strong> Veeam 1:1 AI credit match for MCP pilot in renewal order form &middot; NTT Data contract expansion with bundle pricing &middot; Oracle Q3 AI lead pilot pending budget
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">75m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Veeam (MCP pilot, &#x26A0;&#xFE0F; concerning) &middot; NTT Data (contract expansion)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">75m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">BMC Software (Sales Copilot demo) &middot; OpenText (account brief feedback)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="andy">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">SAS Institute (pilot feedback) &middot; Pure Storage/Evapure (&#x26A0;&#xFE0F; concerning, Portworx unresponsive)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">RSM US (pricing from Leo) &middot; Optiv (Roger back, restructuring)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">SAP Concur (Tech Cares award) &middot; SAP Inc (competitive analysis)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="pam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Oracle (SOW update, AI lead pilot, renewal confirmed at $35K)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">NetApp (80% match rate goal, Ryan Maas transition)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="divyam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">8+ events scheduled (Safaricom, Sage&times;3, Adobe&times;2, DynaTrace, Workhuman, Lumen, Paycor) &mdash; no transcript speaker detection in any recording</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_08_20() {
+  return `<div style="background:#1c2333;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fcd34d;">
+    &#x26A0;&#xFE0F; <strong>Concerning:</strong> Pure Storage/Evapure &mdash; Portworx unresponsive &middot; Veeam &mdash; evaluation not started, risk to renewal timeline
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>Expansion:</strong> Veeam 1:1 AI credit match for MCP pilot &middot; NTT Data bundle expansion pricing &middot; Oracle Q3 AI lead pilot pending budget
+  </div>
+  <div style="font-size:11px;color:#64748b;margin-bottom:8px;">Auto-table generated from dayData &mdash; 12 confirmed calls across 7 CSMs &middot; Divyam: 8+ events with no transcript speaker labels</div>`;
+}
+
+function dayPulsesHTML_2026_08_20() {
+  const cards = [
+    { csm:'andy', health:'Healthy', account:'SAS Institute', opp:'Vitally Pulse &mdash; Aug 20 Call',
+      arr:'Enterprise &middot; Andy Lim', csmlbl:'Andy Lim',
+      change:'Aug 20 &middot; Pilot Feedback',
+      excerpt:'8/20 AL: HG pilot feedback session. Positive reception on consolidated sales research tool. Data completeness challenges in certain regions noted. Scoring mechanism refinement discussed. (4:00 AM PT, 30 min).' },
+    { csm:'andy', health:'Concerning', account:'Pure Storage (Evapure)', opp:'Vitally Pulse &mdash; Aug 20 Call',
+      arr:'Enterprise &middot; Andy Lim', csmlbl:'Andy Lim',
+      change:'Aug 20 &middot; Escalation',
+      excerpt:'8/20 AL: Portworx completely unresponsive — Charlie reports ‘they’ve been blanking me.’ Unused license utilization opportunity discussed. Alternate contact path being explored. (4:30 AM PT, 30 min).' },
+    { csm:'atisha', health:'Healthy', account:'RSM US', opp:'Vitally Pulse &mdash; Aug 20 Call',
+      arr:'Enterprise &middot; Atisha Waghela', csmlbl:'Atisha Waghela',
+      change:'Aug 20 &middot; Pricing Update',
+      excerpt:'8/20 AW: Pricing numbers received from Leo, moving forward. Cinnamon discussion scheduled for this afternoon. Ben anticipates positive resolution. No further needs from Atisha. (9:00 AM PT, 30 min).' },
+    { csm:'nick', health:'Concerning', account:'Veeam', opp:'Vitally Pulse &mdash; Aug 20 Call',
+      arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Aug 20 &middot; MCP Pilot',
+      excerpt:'8/20 NJ: 1:1 AI credit match for MCP pilot offered in renewal order form. Data feed finalized with 100K scored accounts. Customer says ‘haven’t started evaluation’ — risk to renewal inclusion timeline. (9:00 AM PT, 45 min).' },
+    { csm:'rani', health:'Healthy', account:'NetApp', opp:'Vitally Pulse &mdash; Aug 20 Call',
+      arr:'Enterprise &middot; Rani Guy', csmlbl:'Rani Guy',
+      change:'Aug 20 &middot; Monthly Sync',
+      excerpt:'8/20 RG: Monthly sync focused on 80% match rate goal. Ryan Maas transitioning out (last day next Friday), replacement Shuming to take over. Hierarchy classification discussion. (9:30 AM PT, 30 min).' },
+    { csm:'varun', health:'Healthy', account:'BMC Software', opp:'Vitally Pulse &mdash; Aug 20 Call',
+      arr:'Enterprise &middot; Varun Tiwari', csmlbl:'Varun Tiwari',
+      change:'Aug 20 &middot; Sales Copilot Demo',
+      excerpt:'8/20 VT: Sales Copilot guided demo for BDR team. Licensing allocation strategy discussed. Lindsay to be added as admin. Dedicated onboarding sessions to be scheduled. Note: BMC has Severe Risk pulse in SFDC. (10:00 AM PT, 45 min).' },
+    { csm:'nick', health:'Healthy', account:'NTT Data', opp:'Vitally Pulse &mdash; Aug 20 Call',
+      arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Aug 20 &middot; Expansion',
+      excerpt:'8/20 NJ: Contract expansion discussion — additional users/exports pricing. Bundle package more cost-effective than à la carte. Prior 30-40% discount can’t be replicated. Procurement contact Mauro Ricardo established. (10:30 AM PT, 30 min).' },
+    { csm:'pam', health:'Healthy', account:'Oracle', opp:'Vitally Pulse &mdash; Aug 20 Call',
+      arr:'Enterprise &middot; Pam Huck', csmlbl:'Pam Huck',
+      change:'Aug 20 &middot; Renewal/Pilot',
+      excerpt:'8/20 PH: SOW update from TrustRadius to HG Insights for billing. New AI-driven lead offering pilot proposed for Q3 pending budget. Renewal confirmed at existing $35K terms. (11:00 AM PT, 30 min).' },
+    { csm:'varun', health:'Healthy', account:'OpenText', opp:'Vitally Pulse &mdash; Aug 20 Call',
+      arr:'Enterprise &middot; Varun Tiwari', csmlbl:'Varun Tiwari',
+      change:'Aug 20 &middot; Brief Feedback',
+      excerpt:'8/20 VT: Account brief feedback — Kirk says data valuable but 13-page format too lengthy for ADR team (250-300 outreaches/week). New AM Julian Rojas introduced. Better suited for AE team post-qualification. (11:30 AM PT, 30 min).' },
+    { csm:'riley', health:'Healthy', account:'SAP Concur', opp:'Vitally Pulse &mdash; Aug 20 Call',
+      arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Aug 20 &middot; Campaign Sync',
+      excerpt:'8/20 RR: Campaign coordination with Aiden. Tech Cares award won — media kit next week, Sep 1 announcement. CTA link update discussion. Ella interested in HG data for review sourcing. (12:00 PM PT, 30 min).' },
+    { csm:'atisha', health:'Healthy', account:'Optiv', opp:'Vitally Pulse &mdash; Aug 20 Call',
+      arr:'Enterprise &middot; Atisha Waghela', csmlbl:'Atisha Waghela',
+      change:'Aug 20 &middot; Restructuring Update',
+      excerpt:'8/20 AW: Roger Conarroe back from paternity leave. Optiv selling consulting services business (significant restructuring). Intent data methodology discussion — signal strength scoring clarified. Microsoft Copilot integration explored. (12:00 PM PT, 30 min).' },
+    { csm:'riley', health:'Healthy', account:'SAP Inc (Concall BCA)', opp:'Vitally Pulse &mdash; Aug 20 Call',
+      arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Aug 20 &middot; Competitive Analysis',
+      excerpt:'8/20 RR: Competitive analysis improvement — increasing review data for competitors and developing comparison reports. SAP internal reorgs affecting product marketing roles. Next: identify top competitors by Monday. (1:00 PM PT, 30 min).' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div><div class="pulse-opp">${c.opp}</div><div class="pulse-arr">${c.arr}</div></div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_08_20() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('0820-1')?'done':''}" data-csm="nick" id="action-0820-1">
+      <div class="action-checkbox ${doneActions.has('0820-1')?'checked':''}" onclick="toggleAction('0820-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F6A8; Veeam &mdash; Follow up on MCP evaluation timeline</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Nick Johnson &middot; Customer says &lsquo;haven&rsquo;t started evaluation&rsquo; &mdash; risk to renewal inclusion. Escalate timeline and confirm MCP pilot readiness.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0820-2')?'done':''}" data-csm="andy" id="action-0820-2">
+      <div class="action-checkbox ${doneActions.has('0820-2')?'checked':''}" onclick="toggleAction('0820-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F6A8; Pure Storage/Evapure &mdash; Escalate Portworx unresponsiveness</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Andy Lim &middot; &lsquo;They&rsquo;ve been blanking me.&rsquo; Consider alternate contact path and escalation to Pure Storage leadership.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0820-3')?'done':''}" data-csm="nick" id="action-0820-3">
+      <div class="action-checkbox ${doneActions.has('0820-3')?'checked':''}" onclick="toggleAction('0820-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; NTT Data &mdash; Send updated expansion proposals</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Nick Johnson &middot; Send updated expansion proposals with discount options; clarify budget for bundle vs. &agrave; la carte.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0820-4')?'done':''}" data-csm="rani" id="action-0820-4">
+      <div class="action-checkbox ${doneActions.has('0820-4')?'checked':''}" onclick="toggleAction('0820-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; NetApp &mdash; Coordinate with Shuming on transition</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Rani Guy &middot; Coordinate with Shuming (Ryan Maas replacement) on match rate goal and platform license transfer.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0820-5')?'done':''}" data-csm="varun" id="action-0820-5">
+      <div class="action-checkbox ${doneActions.has('0820-5')?'checked':''}" onclick="toggleAction('0820-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; BMC Software &mdash; Schedule BDR onboarding sessions</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Varun Tiwari &middot; Schedule dedicated BDR onboarding sessions; assign Lindsay as Sales Copilot admin.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0820-6')?'done':''}" data-csm="pam" id="action-0820-6">
+      <div class="action-checkbox ${doneActions.has('0820-6')?'checked':''}" onclick="toggleAction('0820-6')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; Oracle &mdash; Prepare Q3 pilot test proposal</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Pam Huck &middot; Prepare Q3 pilot test proposal for new AI-driven lead offering; update SOW with HG Insights entity.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0820-7')?'done':''}" data-csm="varun" id="action-0820-7">
+      <div class="action-checkbox ${doneActions.has('0820-7')?'checked':''}" onclick="toggleAction('0820-7')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; OpenText &mdash; Send sales persona use cases</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Varun Tiwari &middot; Send sales persona use cases; explore connection to Kirk&rsquo;s leadership for AE-level brief adoption.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0820-8')?'done':''}" data-csm="divyam" id="action-0820-8">
+      <div class="action-checkbox ${doneActions.has('0820-8')?'checked':''}" onclick="toggleAction('0820-8')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Divyam &mdash; Investigate zero transcript speaker labels</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Divyam Dewan &middot; Investigate zero transcript speaker labels across 8+ events. Check Weflow sync status.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
