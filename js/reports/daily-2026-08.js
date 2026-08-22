@@ -5017,3 +5017,350 @@ function dayActionsHTML_2026_08_20() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
 }
+
+// ——— 2026-08-21 (Friday, Aug 21) ———
+
+function dayData_2026_08_21() {
+  return {
+    calls: [
+      { ts: 'Aug 21 · 5:30 AM', csm: 'nick', account: 'Lenovo',
+        note: 'PTB data integration for Secure PC strategy. AI/GenAI spend data added. New team introductions.',
+        mins: 60, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Integrating HG\'s propensity-to-buy (PTB) data into Lenovo\'s Secure PC business strategy. Covered fit/need/intent framework and combining third-party data with Lenovo\'s first-party data. AI and GenAI spend added to data dictionary. New Lenovo team members introduced.' },
+
+      { ts: 'Aug 21 · 8:00 AM', csm: 'nick', account: 'Avanade',
+        note: 'Onboarding round 2. Market Analyzer walkthrough, product catalog, data export.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Second onboarding session for Avanade. Nick walked new users through Market Analyzer, product catalog exploration, data export capabilities, and Microsoft Dynamics segmentation. Filter profile setup for common HG use cases.' },
+
+      { ts: 'Aug 21 · 8:00 AM', csm: 'rani', account: 'Cloudflare',
+        note: 'Proposal review. Net new spend, co-terming, rent vs. buy data access. Follow-up with stakeholders planned.',
+        mins: 45, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Finalizing deal terms including net new spend, co-terming, and data access models (rent vs. buy). Rani and Kraig strategized before Martin joined. Follow-up with Akash and key stakeholders planned to close.' },
+
+      { ts: 'Aug 21 · 9:00 AM', csm: 'varun', account: 'Zendesk',
+        note: 'Org restructuring impacted team. Rodrigo remit expanded. Platform migration to new RGI with AI. Renewal Aug 26.',
+        mins: 30, health: 'Concerning',
+        nature: 'Routine', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Zendesk underwent major org restructuring 3 weeks ago; Rodrigo\'s team impacted but his remit expanded to all CI/MI. Varun proactively proposing migration to new HG platform with enhanced AI assistance and improved data analysis. Renewal Aug 26 — 5 days away.' },
+
+      { ts: 'Aug 21 · 9:30 AM', csm: 'divyam', account: 'Lumen Technologies',
+        note: 'Blue Wave analysis. Evaluating ZoomInfo/Demandbase for cost optimization. HG strengths highlighted.',
+        mins: 30, health: 'Concerning',
+        nature: 'Routine', initiator: 'Customer', purpose: 'Check-in',
+        detail: 'Weekly sync covering Blue Wave analysis progress and data quality refinement. Lumen actively evaluating competitors (ZoomInfo, Demandbase) for cost optimization. Divyam highlighted HG strengths but vendor evaluation is ongoing. Target account criteria discussed.' },
+
+      { ts: 'Aug 21 · 9:30 AM', csm: 'nick', account: 'Syskoplan',
+        note: 'Platform training for Paige Harrison. Opportunity Generator, SAP ERP/APO filters, intent data.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Hands-on platform training for new user Paige Harrison. Covered Opportunity Generator walkthrough, list building with SAP ERP/APO filters, data export, and intent data usage for prospecting.' },
+
+      { ts: 'Aug 21 · 11:00 AM', csm: 'atisha', account: 'Apple',
+        note: 'FY27 planning with Simone. Scoring data praised. White space analysis for 32-33 accounts.',
+        mins: 30, health: 'Healthy',
+        nature: 'Routine', initiator: 'Customer', purpose: 'Check-in',
+        detail: 'Weekly sync with Simone focused on FY27 planning. Account scoring data praised for benefiting their process. White space analysis requested for 32-33 new accounts with technology usage and spend data. Strong customer-driven engagement.' },
+    ],
+    pulses: [
+      { csm: 'nick', account: 'Lenovo', health: 'Healthy',
+        note: 'PTB data integration for Secure PC line. AI/GenAI spend added. New team introductions.' },
+      { csm: 'nick', account: 'Avanade', health: 'Healthy',
+        note: 'Onboarding round 2 — Market Analyzer walkthrough and product catalog exploration with new users.' },
+      { csm: 'rani', account: 'Cloudflare', health: 'Healthy',
+        note: 'Active proposal review. Net new spend, co-terming, and data access model discussed. Stakeholder follow-up planned.' },
+      { csm: 'varun', account: 'Zendesk', health: 'Concerning',
+        note: 'Org restructuring impacted team. Varun proactively offering new platform migration with AI. Renewal Aug 26.' },
+      { csm: 'divyam', account: 'Lumen Technologies', health: 'Concerning',
+        note: 'Evaluating competitors (ZoomInfo, Demandbase) for cost optimization. HG strengths highlighted but vendor eval ongoing.' },
+      { csm: 'nick', account: 'Syskoplan', health: 'Healthy',
+        note: 'Platform training for Paige Harrison. Opportunity Generator, SAP ERP/APO filters, intent data.' },
+      { csm: 'atisha', account: 'Apple', health: 'Healthy',
+        note: 'FY27 planning deep-dive with Simone. Scoring data praised. White space analysis for 32-33 accounts requested.' },
+    ],
+  };
+}
+
+function dayMeta_2026_08_21() {
+  return {
+    pills: [
+      ['dot-teal',   '7 Calls'],
+      ['dot-red',    '2 Concerning'],
+      ['dot-amber',  '2 Expansion'],
+      ['dot-green',  '7 Vitally Pulses'],
+      ['dot-grey',   'Fri Aug 21 · 66 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (7)', 'Pulses (7)', 'Action Items (7)']
+  };
+}
+
+function dayOverviewHTML_2026_08_21() {
+  return `<div class="section-label">Team Activity &mdash; Friday August 21, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Friday Aug 21 &mdash; 66 recordings scanned</strong> via SFDC SOQL &middot; <strong>7 confirmed calls</strong> across 5 CSMs &middot; 2 concerning signals &middot; 2 expansion signals
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x1F6A8; <strong>CONCERNING:</strong> Zendesk renewal in 5 days (Aug 26) &mdash; org restructuring impacted Rodrigo&rsquo;s team. Varun proactively managing platform migration. &middot; Lumen evaluating competitors (ZoomInfo, Demandbase) for cost optimization &mdash; vendor review underway.
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>EXPANSION:</strong> Cloudflare &mdash; active proposal review, net new spend + data access model discussion (Rani Guy). &middot; Lenovo &mdash; PTB data integration for Secure PC strategy (Nick Johnson).
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">3 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">3</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">120m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Lenovo (PTB expansion) &middot; Avanade (onboarding) &middot; Syskoplan (training)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Lumen Technologies (competitor eval &mdash; ZoomInfo/Demandbase)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">45m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Cloudflare (expansion &mdash; proposal review, net new spend)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Zendesk (renewal Aug 26 &mdash; org restructuring, platform migration)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Apple (FY27 planning, white space analysis for 32-33 accounts)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="riley">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 internal TrustRadius call only &mdash; no enterprise customer calls</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No CSM-owned events on this date</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No CSM-owned events on this date</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_08_21() {
+  return `<div class="section-label">Confirmed Calls &mdash; Friday August 21, 2026</div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x1F6A8; <strong>CONCERNING:</strong> Zendesk renewal in 5 days (Aug 26) &mdash; org restructuring. &middot; Lumen evaluating ZoomInfo/Demandbase.
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>EXPANSION:</strong> Cloudflare proposal review (Rani) &middot; Lenovo PTB integration (Nick)
+  </div>`;
+}
+
+function dayPulsesHTML_2026_08_21() {
+  const cards = [
+    { csm:'nick', health:'Healthy', account:'Lenovo', opp:'Vitally Pulse &mdash; Aug 21 Call',
+      arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Aug 21 &middot; Expansion',
+      excerpt:'8/21 NJ: PTB data integration for Secure PC line. AI/GenAI spend data added to delivery. New Lenovo team members introduced. (5:30 AM PT, 60 min).' },
+    { csm:'nick', health:'Healthy', account:'Avanade', opp:'Vitally Pulse &mdash; Aug 21 Call',
+      arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Aug 21 &middot; Check-in',
+      excerpt:'8/21 NJ: Onboarding round 2 — Market Analyzer walkthrough and product catalog exploration with new users. Positive engagement. (8:00 AM PT, 30 min).' },
+    { csm:'rani', health:'Healthy', account:'Cloudflare', opp:'Vitally Pulse &mdash; Aug 21 Call',
+      arr:'Enterprise &middot; Rani Guy', csmlbl:'Rani Guy',
+      change:'Aug 21 &middot; Expansion',
+      excerpt:'8/21 RG: Active proposal review with Martin. Net new spend, co-terming, and rent vs. buy data access discussed. Follow-up with stakeholders planned. (8:00 AM PT, 45 min).' },
+    { csm:'varun', health:'Concerning', account:'Zendesk', opp:'Vitally Pulse &mdash; Aug 21 Call',
+      arr:'Enterprise &middot; Varun Tiwari', csmlbl:'Varun Tiwari',
+      change:'Aug 21 &middot; Mixed',
+      excerpt:'8/21 VT: Org restructuring impacted Rodrigo\'s team; remit expanded to all CI/MI. Varun proactively offering new platform migration with AI features. Renewal Aug 26. (9:00 AM PT, 30 min).' },
+    { csm:'divyam', health:'Concerning', account:'Lumen Technologies', opp:'Vitally Pulse &mdash; Aug 21 Call',
+      arr:'Enterprise &middot; Divyam Dewan', csmlbl:'Divyam Dewan',
+      change:'Aug 21 &middot; Check-in',
+      excerpt:'8/21 DD: Blue Wave analysis review. Lumen evaluating competitors (ZoomInfo, Demandbase) for cost optimization. HG strengths highlighted but vendor evaluation ongoing. (9:30 AM PT, 30 min).' },
+    { csm:'nick', health:'Healthy', account:'Syskoplan', opp:'Vitally Pulse &mdash; Aug 21 Call',
+      arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Aug 21 &middot; Check-in',
+      excerpt:'8/21 NJ: Platform training for Paige Harrison on Opportunity Generator. SAP ERP/APO filtering, list building, intent data. Engaged learner. (9:30 AM PT, 30 min).' },
+    { csm:'atisha', health:'Healthy', account:'Apple', opp:'Vitally Pulse &mdash; Aug 21 Call',
+      arr:'Enterprise &middot; Atisha Waghela', csmlbl:'Atisha Waghela',
+      change:'Aug 21 &middot; Check-in',
+      excerpt:'8/21 AW: FY27 planning deep-dive with Simone. Account scoring data praised. White space analysis for 32-33 accounts requested. Strong customer-driven engagement. (11:00 AM PT, 30 min).' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top"><div><div class="pulse-opp">${c.opp}</div><div class="pulse-arr">${c.arr}</div></div><span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span></div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_08_21() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('0821-1')?'done':''}" data-csm="varun" id="action-0821-1">
+      <div class="action-checkbox ${doneActions.has('0821-1')?'checked':''}" onclick="toggleAction('0821-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F6A8; Zendesk &mdash; Pre-renewal check</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Varun Tiwari &middot; Renewal Aug 26 (5 days). Confirm renewal status given org restructuring. Ensure Rodrigo&rsquo;s expanded remit translates to continued HG usage. Schedule pre-renewal alignment with stakeholders if needed.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0821-2')?'done':''}" data-csm="divyam" id="action-0821-2">
+      <div class="action-checkbox ${doneActions.has('0821-2')?'checked':''}" onclick="toggleAction('0821-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F6A8; Lumen Technologies &mdash; Counter competitive evaluation</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Divyam Dewan &middot; Lumen actively evaluating ZoomInfo and Demandbase for cost optimization. Prepare competitive differentiation materials. Ensure Blue Wave analysis demonstrates unique HG value. Align with AM Julian Rojas on defense strategy.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0821-3')?'done':''}" data-csm="rani" id="action-0821-3">
+      <div class="action-checkbox ${doneActions.has('0821-3')?'checked':''}" onclick="toggleAction('0821-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Cloudflare &mdash; Advance proposal to close</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Rani Guy &middot; Schedule follow-up with Akash and key stakeholders to finalize net new spend and data access model. Clarify co-terming and pricing before end of month.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0821-4')?'done':''}" data-csm="nick" id="action-0821-4">
+      <div class="action-checkbox ${doneActions.has('0821-4')?'checked':''}" onclick="toggleAction('0821-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Lenovo &mdash; PTB keyword alignment</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Nick Johnson &middot; Identify specific keywords and products for Secure PC line PTB model. Refine data weighting. Schedule follow-up session with Lenovo analytics team.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0821-5')?'done':''}" data-csm="atisha" id="action-0821-5">
+      <div class="action-checkbox ${doneActions.has('0821-5')?'checked':''}" onclick="toggleAction('0821-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Apple &mdash; White space account analysis</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Atisha Waghela &middot; Receive Simone&rsquo;s final account list (32-33 accounts). Populate spreadsheet with technology usage, spend, and install base data. Critical for FY27 planning.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0821-6')?'done':''}" data-csm="varun" id="action-0821-6">
+      <div class="action-checkbox ${doneActions.has('0821-6')?'checked':''}" onclick="toggleAction('0821-6')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Zendesk &mdash; New platform demo</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Varun Tiwari &middot; Send Rodrigo invite for new RGI platform. Schedule demo/walkthrough within 1 week. Ensure smooth migration from old to new platform.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0821-7')?'done':''}" data-csm="nick" id="action-0821-7">
+      <div class="action-checkbox ${doneActions.has('0821-7')?'checked':''}" onclick="toggleAction('0821-7')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Avanade &mdash; Platform adoption follow-up</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Nick Johnson &middot; Provide sample data exports for review. Schedule deeper dive on platform capabilities. Ensure Charles and Hoa are ramping successfully.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
+
+// ——— Weekly Summary: Aug 17–21, 2026 ———
+
+function weeklyOrMonthlyHTML_2026_08_21() {
+  return `<div class="section-label">Week of August 17&ndash;21, 2026 &mdash; Weekly Summary</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 12px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>W3 Aug 2026 &mdash; 46 confirmed customer calls across 5 workdays.</strong> All 8 CSMs had at least one confirmed call during the week. 14 expansion signals, 5 concerning signals.
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:12px;">
+    <div style="background:#141820;border:1px solid #1e293b;border-radius:8px;padding:12px;">
+      <div style="color:#64748b;font-size:10px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px;">Calls by CSM (Mon&ndash;Fri)</div>
+      <div style="font-size:12px;color:#cbd5e1;line-height:1.8;">
+        Nick Johnson: <strong style="color:#0ea5e9;">10</strong> (Mon 2, Tue 3, Thu 2, Fri 3)<br>
+        Varun Tiwari: <strong style="color:#0ea5e9;">9</strong> (Mon 2, Wed 4, Thu 2, Fri 1)<br>
+        Riley Rogers: <strong style="color:#0ea5e9;">8</strong> (Mon 2, Tue 2, Wed 2, Thu 2)<br>
+        Rani Guy: <strong style="color:#0ea5e9;">6</strong> (Mon 2, Tue 2, Thu 1, Fri 1)<br>
+        Divyam Dewan: <strong style="color:#0ea5e9;">5</strong> (Mon 2, Tue 2, Fri 1)<br>
+        Atisha Waghela: <strong style="color:#0ea5e9;">4</strong> (Wed 1, Thu 2, Fri 1)<br>
+        Andy Lim: <strong style="color:#0ea5e9;">3</strong> (Wed 1, Thu 2)<br>
+        Pam Huck: <strong style="color:#0ea5e9;">1</strong> (Thu 1)
+      </div>
+    </div>
+    <div style="background:#141820;border:1px solid #1e293b;border-radius:8px;padding:12px;">
+      <div style="color:#64748b;font-size:10px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px;">Daily Breakdown</div>
+      <div style="font-size:12px;color:#cbd5e1;line-height:1.8;">
+        <strong>Mon Aug 17:</strong> 10 calls &middot; 1 concerning &middot; 5 expansion<br>
+        <strong>Tue Aug 18:</strong> 9 calls &middot; 0 concerning &middot; 3 expansion<br>
+        <strong>Wed Aug 19:</strong> 8 calls &middot; 0 concerning &middot; 2 expansion<br>
+        <strong>Thu Aug 20:</strong> 12 calls &middot; 2 concerning &middot; 2 expansion<br>
+        <strong>Fri Aug 21:</strong> 7 calls &middot; 2 concerning &middot; 2 expansion
+      </div>
+    </div>
+  </div>
+  <div style="background:#141820;border:1px solid #1e293b;border-radius:8px;padding:12px;margin-bottom:8px;">
+    <div style="color:#64748b;font-size:10px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px;">Key Highlights This Week</div>
+    <div style="font-size:12px;color:#cbd5e1;line-height:2;">
+      <span style="color:#ef4444;font-weight:600;">&#x1F6A8;</span> &nbsp;Zendesk renewal Aug 26 &mdash; org restructuring impacted team; Varun proactively offering platform migration (Fri)<br>
+      <span style="color:#ef4444;font-weight:600;">&#x1F6A8;</span> &nbsp;Lumen Technologies evaluating ZoomInfo/Demandbase for cost optimization (Fri)<br>
+      <span style="color:#0ea5e9;font-weight:600;">&#x1F4C8;</span> &nbsp;Cloudflare expansion &mdash; proposal review with net new spend and data access model (Fri)<br>
+      <span style="color:#0ea5e9;font-weight:600;">&#x1F4C8;</span> &nbsp;Lenovo PTB data integration for Secure PC strategy with AI/GenAI spend added (Fri)<br>
+      <span style="color:#0ea5e9;font-weight:600;">&#x1F4C8;</span> &nbsp;Apple FY27 planning &mdash; scoring data praised, white space analysis for 32-33 accounts (Fri)<br>
+      <span style="color:#f59e0b;font-weight:600;">&#x26A0;&#xFE0F;</span> &nbsp;Nick Johnson highest volume again (10 calls) &mdash; 3-account Friday included Lenovo expansion<br>
+      <span style="color:#f59e0b;font-weight:600;">&#x26A0;&#xFE0F;</span> &nbsp;Pam Huck lowest call volume (1 call Thu) &mdash; monitor for engagement pattern
+    </div>
+  </div>`;
+}
