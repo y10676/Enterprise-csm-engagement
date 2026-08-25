@@ -5364,3 +5364,375 @@ function weeklyOrMonthlyHTML_2026_08_21() {
     </div>
   </div>`;
 }
+
+// ——— Monday August 24, 2026 ———
+
+function dayData_2026_08_24() {
+  return {
+    calls: [
+      { ts: 'Aug 24 · 5:00 AM', csm: 'nick', account: 'Infor (US), LLC',
+        note: 'Post-onsite debrief with Nicole Morgan. Reviewed HG-prepared checklist and resources — customer very pleased.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Post-onsite debrief with Nicole Morgan (Infor). Reviewed HG-prepared checklist and resource materials — customer very pleased with preparation. Follow-up on product recommendations discussed.' },
+
+      { ts: 'Aug 24 · 6:00 AM', csm: 'nick', account: 'Check Point Software',
+        note: 'Data validation session with Assaf Cohen, Uri Nishry, and Ariel Keinan. Match export and data-quality check requested.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Check-in',
+        detail: 'Data validation session with Assaf Cohen, Uri Nishry, and Ariel Keinan. Customer requested match export and data-quality check. User Hadass on PTO.' },
+
+      { ts: 'Aug 24 · 6:30 AM', csm: 'nick', account: 'SAP Inc',
+        note: 'Renewal discussion with new procurement contact Josephine Polzer (GPO Software team). Purchases shifted from Marketing GPO.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Renewal discussion with new SAP procurement contact Josephine Polzer (GPO Software team). Purchases shifted from Marketing GPO to software procurement. David Garcia-Thomas leading introductions.' },
+
+      { ts: 'Aug 24 · 6:30 AM', csm: 'pam', account: 'ADP, Inc',
+        note: 'Monthly success call with Karena McKenzie. Planning advocacy program push. Customer excited about LinkedIn review-sharing.',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Monthly success call with Karena McKenzie. No reviews this month — planning advocacy program push. Customer excited about LinkedIn review-sharing. Andy Lim co-attended.' },
+
+      { ts: 'Aug 24 · 8:00 AM', csm: 'nick', account: 'Lenovo Group Ltd.',
+        note: 'CROSS-COVERAGE (Rani\'s account). Data walkthrough — customer flagged .gz extension and D&B number issues.',
+        mins: 30, health: 'Concerning',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Issue',
+        detail: 'CROSS-COVERAGE (Rani\'s account). Data walkthrough with Raju Ghosh and Alexi Mouarkach. Customer flagged multiple data issues: requested .gz extension (not .gzip), D&B numbers missing from subset. Next data release Sept 1.' },
+
+      { ts: 'Aug 24 · 8:30 AM', csm: 'andy', account: 'SAS Institute Inc.',
+        note: 'Weekly EMEA sync with Adrian Carr, Steven White, and new team member Bhargavi (UK-based).',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Weekly EMEA sync with Adrian Carr, Steven White, and new team member Bhargavi (UK-based). Discussed changes to top 250 target list based on HG insights.' },
+
+      { ts: 'Aug 24 · 8:30 AM', csm: 'divyam', account: 'Blackbaud, Inc.',
+        note: 'Biweekly sync with Scott Stater and Jaelon Davis. IDL campaign now live — first leads delivery in one week.',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Biweekly sync with Scott Stater and Jaelon Davis. IDL campaign now live — first leads delivery in one week. Discussing RGI data experimentation.' },
+
+      { ts: 'Aug 24 · 9:00 AM', csm: 'riley', account: 'zScaler',
+        note: 'CROSS-COVERAGE (Varun\'s account). Intent-driven leads campaign kickoff with Josh Mercer and Vivian Chan.',
+        mins: 60, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'CROSS-COVERAGE (Varun\'s account). Intent-driven leads campaign kickoff with Josh Mercer and Vivian Chan. Scott Stater co-leading. Establishing campaign parameters, ICP, and lead flow for new TrustRadius IDL program.' },
+
+      { ts: 'Aug 24 · 9:30 AM', csm: 'pam', account: 'Epicor Software Corporation',
+        note: 'BANT leads qualification discussion for BisTrack product with Anderson and Parsa Taheri.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Expansion',
+        detail: 'BANT leads qualification discussion with Anderson and Parsa Taheri for BisTrack product. Customer seeking more sales-ready leads beyond standard IDL.' },
+
+      { ts: 'Aug 24 · 10:00 AM', csm: 'divyam', account: 'BILL Operations, LLC',
+        note: 'Weekly sync with Eric Nguyen. Support ticket escalation: PKCE connection issue between Marketo and Salesforce API.',
+        mins: 30, health: 'Concerning',
+        nature: 'Recurring', initiator: 'Customer', purpose: 'Issue',
+        detail: 'Weekly sync with Eric Nguyen (Bill) and Charles Hawkins (HG). Support ticket escalation: PKCE connection issue between Marketo and Salesforce API.' },
+
+      { ts: 'Aug 24 · 10:00 AM', csm: 'varun', account: 'Autodesk Inc',
+        note: 'Whitespace data feed Q&A with Trishna Patel and Ameya Kambli. Reviewed 191 products for whitespace analysis.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Whitespace data feed Q&A with Trishna Patel and Ameya Kambli. Reviewed 191 products for whitespace analysis. CRM list resolved to 16M unique HG IDs.' },
+
+      { ts: 'Aug 24 · 1:00 PM', csm: 'rani', account: 'NetApp',
+        note: 'Weekly sync with Gabe Weske and Bini Valsala. Adrian Escobar driving procurement/expansion conversation.',
+        mins: 25, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Weekly sync with Gabe Weske and Bini Valsala (NetApp). Adrian Escobar driving procurement/expansion conversation. Rani on PTO but joined briefly.' },
+    ],
+    pulses: [
+      { csm: 'nick', account: 'Infor (US), LLC', health: 'Healthy',
+        note: 'Post-onsite debrief with Nicole Morgan. HG checklist and resources well received. Product recommendations follow-up.' },
+      { csm: 'nick', account: 'Check Point Software', health: 'Healthy',
+        note: 'Data validation session with Assaf Cohen, Uri Nishry, and Ariel Keinan. Match export and data-quality check requested.' },
+      { csm: 'nick', account: 'SAP Inc', health: 'Healthy',
+        note: 'Renewal discussion with new procurement contact Josephine Polzer. Purchases shifted from Marketing GPO to software procurement.' },
+      { csm: 'pam', account: 'ADP, Inc', health: 'Healthy',
+        note: 'Monthly success call with Karena McKenzie. Advocacy program push planned. Customer excited about LinkedIn review-sharing.' },
+      { csm: 'nick', account: 'Lenovo Group Ltd.', health: 'Concerning',
+        note: 'CROSS-COVERAGE (Rani\'s account). Data issues flagged: .gz extension request, D&B numbers missing. Next release Sept 1.' },
+      { csm: 'andy', account: 'SAS Institute Inc.', health: 'Healthy',
+        note: 'Weekly EMEA sync. New team member Bhargavi onboarding. Top 250 target list changes based on HG insights.' },
+      { csm: 'divyam', account: 'Blackbaud, Inc.', health: 'Healthy',
+        note: 'IDL campaign now live — first leads delivery in one week. RGI data experimentation discussed.' },
+      { csm: 'riley', account: 'zScaler', health: 'Healthy',
+        note: 'CROSS-COVERAGE (Varun\'s account). IDL campaign kickoff with Josh Mercer and Vivian Chan. Campaign parameters and ICP established.' },
+      { csm: 'pam', account: 'Epicor Software Corporation', health: 'Healthy',
+        note: 'BANT leads qualification for BisTrack product. Customer seeking more sales-ready leads beyond standard IDL.' },
+      { csm: 'divyam', account: 'BILL Operations, LLC', health: 'Concerning',
+        note: 'PKCE connection issue between Marketo and Salesforce API. Support ticket escalation with Eric Nguyen.' },
+      { csm: 'varun', account: 'Autodesk Inc', health: 'Healthy',
+        note: 'Whitespace data feed Q&A. Reviewed 191 products for whitespace analysis. CRM list resolved to 16M unique HG IDs.' },
+      { csm: 'rani', account: 'NetApp', health: 'Healthy',
+        note: 'Weekly sync with Gabe Weske and Bini Valsala. Adrian Escobar driving procurement/expansion conversation.' },
+    ],
+  };
+}
+
+function dayMeta_2026_08_24() {
+  return {
+    pills: [
+      ['dot-teal',  '12 Calls'],
+      ['dot-red',   '2 Concerning'],
+      ['dot-amber', '3 Expansion'],
+      ['dot-green', '12 Vitally Pulses'],
+      ['dot-grey',  'Mon Aug 24 · 63 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (12)', 'Pulses (12)', 'Action Items (7)']
+  };
+}
+
+function dayOverviewHTML_2026_08_24() {
+  return `<div class="section-label">Team Activity &mdash; Monday August 24, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Monday Aug 24 &mdash; 63 recordings scanned</strong> via SFDC SOQL &middot; <strong>12 confirmed calls</strong> across 7 CSMs &middot; 2 concerning signals &middot; 3 expansion signals &middot; 2 cross-coverage calls
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x1F6A8; <strong>CONCERNING:</strong> Lenovo ($695K High Risk) &mdash; data format issues (.gz extension, D&amp;B numbers missing); Nick cross-covering for Rani &middot; BILL Operations ($103K Some Risk) &mdash; PKCE connection issue between Marketo and Salesforce API
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>EXPANSION:</strong> Zscaler ($424K) &mdash; IDL campaign kickoff, Riley cross-covering for Varun &middot; Epicor ($216K) &mdash; BANT leads expansion for BisTrack &middot; NetApp ($840K) &mdash; procurement/expansion with Adrian Escobar
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">4 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">4</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">4</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">120m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Infor (debrief) &middot; Check Point (data validation) &middot; SAP (renewal/procurement) &middot; Lenovo (&#x26A0;&#xFE0F; data issues, CROSS)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="pam">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">ADP (advocacy program) &middot; Epicor (BANT leads expansion)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="andy">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">ADP (co-attended) &middot; SAS (EMEA top 250 list)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Blackbaud (IDL campaign live) &middot; BILL (&#x26A0;&#xFE0F; PKCE issue)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Zscaler (IDL campaign kickoff, CROSS for Varun)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Autodesk (whitespace data feed)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">25m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">NetApp (procurement/expansion)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="atisha">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 events (Airtel 3:00 AM no recording, DRT 11:00 AM no transcript) &mdash; no confirmed calls</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_08_24() {
+  return `<div class="section-label">Confirmed Calls &mdash; Monday August 24, 2026</div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x1F6A8; <strong>CONCERNING:</strong> Lenovo ($695K High Risk) &mdash; data format issues, D&amp;B numbers missing &middot; BILL Operations ($103K Some Risk) &mdash; PKCE Marketo-Salesforce API issue
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>EXPANSION:</strong> Zscaler IDL campaign kickoff (Riley, CROSS) &middot; Epicor BANT leads (Pam) &middot; NetApp procurement/expansion (Rani)
+  </div>
+  <div style="font-size:11px;color:#64748b;margin-bottom:8px;">Auto-table generated from dayData &mdash; 12 confirmed calls across 7 CSMs &middot; 2 cross-coverage calls (Nick&#x2192;Lenovo, Riley&#x2192;Zscaler)</div>`;
+}
+
+function dayPulsesHTML_2026_08_24() {
+  const cards = [
+    { csm:'nick', health:'Healthy', account:'Infor (US), LLC', opp:'Vitally Pulse &mdash; Aug 24 Call',
+      arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Aug 24 &middot; Check-in',
+      excerpt:'8/24 NJ: Post-onsite debrief with Nicole Morgan (Infor). Reviewed HG-prepared checklist and resource materials — customer very pleased. Follow-up on product recommendations. (5:00 AM PT, 30 min).' },
+    { csm:'nick', health:'Healthy', account:'Check Point Software', opp:'Vitally Pulse &mdash; Aug 24 Call',
+      arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Aug 24 &middot; Check-in',
+      excerpt:'8/24 NJ: Data validation session with Assaf Cohen, Uri Nishry, and Ariel Keinan. Customer requested match export and data-quality check. Hadass on PTO. (6:00 AM PT, 30 min).' },
+    { csm:'nick', health:'Healthy', account:'SAP Inc', opp:'Vitally Pulse &mdash; Aug 24 Call',
+      arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Aug 24 &middot; Mixed',
+      excerpt:'8/24 NJ: Renewal discussion with new procurement contact Josephine Polzer (GPO Software team). Purchases shifted from Marketing GPO to software procurement. David Garcia-Thomas leading introductions. (6:30 AM PT, 30 min).' },
+    { csm:'pam', health:'Healthy', account:'ADP, Inc', opp:'Vitally Pulse &mdash; Aug 24 Call',
+      arr:'Enterprise &middot; Pam Huck', csmlbl:'Pam Huck',
+      change:'Aug 24 &middot; Check-in',
+      excerpt:'8/24 PH: Monthly success call with Karena McKenzie. No reviews this month — planning advocacy program push. Customer excited about LinkedIn review-sharing. Andy Lim co-attended. (6:30 AM PT, 30 min).' },
+    { csm:'nick', health:'Concerning', account:'Lenovo Group Ltd.', opp:'Vitally Pulse &mdash; Aug 24 Call',
+      arr:'Enterprise &middot; Nick Johnson (CROSS for Rani)', csmlbl:'Nick Johnson',
+      change:'Aug 24 &middot; Issue',
+      excerpt:'8/24 NJ: CROSS-COVERAGE (Rani\'s account). Data walkthrough with Raju Ghosh and Alexi Mouarkach. Customer flagged .gz extension request and D&B numbers missing from subset. Next data release Sept 1. (8:00 AM PT, 30 min).' },
+    { csm:'andy', health:'Healthy', account:'SAS Institute Inc.', opp:'Vitally Pulse &mdash; Aug 24 Call',
+      arr:'Enterprise &middot; Andy Lim', csmlbl:'Andy Lim',
+      change:'Aug 24 &middot; Check-in',
+      excerpt:'8/24 AL: Weekly EMEA sync with Adrian Carr, Steven White, and new team member Bhargavi (UK-based). Discussed changes to top 250 target list based on HG insights. (8:30 AM PT, 30 min).' },
+    { csm:'divyam', health:'Healthy', account:'Blackbaud, Inc.', opp:'Vitally Pulse &mdash; Aug 24 Call',
+      arr:'Enterprise &middot; Divyam Dewan', csmlbl:'Divyam Dewan',
+      change:'Aug 24 &middot; Check-in',
+      excerpt:'8/24 DD: Biweekly sync with Scott Stater and Jaelon Davis. IDL campaign now live — first leads delivery in one week. Discussing RGI data experimentation. (8:30 AM PT, 30 min).' },
+    { csm:'riley', health:'Healthy', account:'zScaler', opp:'Vitally Pulse &mdash; Aug 24 Call',
+      arr:'Enterprise &middot; Riley Rogers (CROSS for Varun)', csmlbl:'Riley Rogers',
+      change:'Aug 24 &middot; Expansion',
+      excerpt:'8/24 RR: CROSS-COVERAGE (Varun\'s account). Intent-driven leads campaign kickoff with Josh Mercer and Vivian Chan. Scott Stater co-leading. Establishing campaign parameters, ICP, and lead flow for new TrustRadius IDL program. (9:00 AM PT, 60 min).' },
+    { csm:'pam', health:'Healthy', account:'Epicor Software Corporation', opp:'Vitally Pulse &mdash; Aug 24 Call',
+      arr:'Enterprise &middot; Pam Huck', csmlbl:'Pam Huck',
+      change:'Aug 24 &middot; Expansion',
+      excerpt:'8/24 PH: BANT leads qualification discussion with Anderson and Parsa Taheri for BisTrack product. Customer seeking more sales-ready leads beyond standard IDL. (9:30 AM PT, 30 min).' },
+    { csm:'divyam', health:'Concerning', account:'BILL Operations, LLC', opp:'Vitally Pulse &mdash; Aug 24 Call',
+      arr:'Enterprise &middot; Divyam Dewan', csmlbl:'Divyam Dewan',
+      change:'Aug 24 &middot; Issue',
+      excerpt:'8/24 DD: Weekly sync with Eric Nguyen (Bill) and Charles Hawkins (HG). Support ticket escalation: PKCE connection issue between Marketo and Salesforce API. (10:00 AM PT, 30 min).' },
+    { csm:'varun', health:'Healthy', account:'Autodesk Inc', opp:'Vitally Pulse &mdash; Aug 24 Call',
+      arr:'Enterprise &middot; Varun Tiwari', csmlbl:'Varun Tiwari',
+      change:'Aug 24 &middot; Check-in',
+      excerpt:'8/24 VT: Whitespace data feed Q&A with Trishna Patel and Ameya Kambli. Reviewed 191 products for whitespace analysis. CRM list resolved to 16M unique HG IDs. (10:00 AM PT, 30 min).' },
+    { csm:'rani', health:'Healthy', account:'NetApp', opp:'Vitally Pulse &mdash; Aug 24 Call',
+      arr:'Enterprise &middot; Rani Guy', csmlbl:'Rani Guy',
+      change:'Aug 24 &middot; Expansion',
+      excerpt:'8/24 RG: Weekly sync with Gabe Weske and Bini Valsala (NetApp). Adrian Escobar driving procurement/expansion conversation. Rani on PTO but joined briefly. (1:00 PM PT, 25 min).' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top"><div><div class="pulse-opp">${c.opp}</div><div class="pulse-arr">${c.arr}</div></div><span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span></div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_08_24() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('0824-1')?'done':''}" data-csm="nick" id="action-0824-1">
+      <div class="action-checkbox ${doneActions.has('0824-1')?'checked':''}" onclick="toggleAction('0824-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F6A8; Lenovo &mdash; Data format issues for Sept 1 release</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Nick Johnson &middot; Follow up on data format issues — ensure .gz extension (not .gzip) and D&amp;B numbers included in Sept 1 release. Coordinate with Rani (cross-coverage). Confirm resolution with Raju Ghosh and Alexi Mouarkach.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0824-2')?'done':''}" data-csm="divyam" id="action-0824-2">
+      <div class="action-checkbox ${doneActions.has('0824-2')?'checked':''}" onclick="toggleAction('0824-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F6A8; BILL Operations &mdash; PKCE support ticket escalation</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Divyam Dewan &middot; Escalate PKCE support ticket with Matthew. Ensure resolution for Marketo-Salesforce API connection issue. Follow up with Eric Nguyen on status.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0824-3')?'done':''}" data-csm="riley" id="action-0824-3">
+      <div class="action-checkbox ${doneActions.has('0824-3')?'checked':''}" onclick="toggleAction('0824-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Zscaler &mdash; Track IDL campaign launch metrics</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Riley Rogers &middot; Track IDL campaign launch metrics after first week. Coordinate with Varun on Josh Mercer feedback. Monitor lead flow and ICP alignment for new TrustRadius IDL program.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0824-4')?'done':''}" data-csm="pam" id="action-0824-4">
+      <div class="action-checkbox ${doneActions.has('0824-4')?'checked':''}" onclick="toggleAction('0824-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Epicor BisTrack &mdash; BANT leads program proposal</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Pam Huck &middot; Send BANT leads program proposal to Parsa Taheri. Scope pilot timeline and lead volume for BisTrack product expansion.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0824-5')?'done':''}" data-csm="rani" id="action-0824-5">
+      <div class="action-checkbox ${doneActions.has('0824-5')?'checked':''}" onclick="toggleAction('0824-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; NetApp &mdash; Procurement discussion follow-up</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Rani Guy &middot; Follow up on procurement discussion outcomes with Gabe Weske. Track expansion/renewal path with Adrian Escobar driving the conversation.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0824-6')?'done':''}" data-csm="nick" id="action-0824-6">
+      <div class="action-checkbox ${doneActions.has('0824-6')?'checked':''}" onclick="toggleAction('0824-6')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; SAP Inc &mdash; Procurement contact transition</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Nick Johnson &middot; Maintain relationship with new procurement contact Josephine Polzer (GPO Software team). Ensure smooth transition from Marketing GPO for renewal continuity.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0824-7')?'done':''}" data-csm="andy" id="action-0824-7">
+      <div class="action-checkbox ${doneActions.has('0824-7')?'checked':''}" onclick="toggleAction('0824-7')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; SAS Institute EMEA &mdash; Onboard Bhargavi</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Andy Lim &middot; Onboard Bhargavi to recurring EMEA cadence. Schedule top 250 list review based on Adrian Carr&rsquo;s changes.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
