@@ -5736,3 +5736,333 @@ function dayActionsHTML_2026_08_24() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
 }
+
+function dayData_2026_08_25() {
+  return {
+    calls: [
+      { ts: 'Aug 25 · 3:00 AM', csm: 'varun', account: 'Open Text Corporation',
+        note: 'Bi-weekly cadence with Sujay Kodagali. New RGIP platform login now working. Export tracking discussion.',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Bi-weekly cadence with Sujay Kodagali on Open Text Year 2 Renewal + Expansion 2026. Confirmed new RGIP platform login is working after onboarding email bug fix. Discussed export tracking improvements over old platform.' },
+
+      { ts: 'Aug 25 · 6:30 AM', csm: 'nick', account: 'IBM',
+        note: 'Monthly sync. Kruti Desai completed contact data benchmark analysis — no immediate need for expansion. DUNS matching alternatives clarified.',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Monthly sync with Kruti Desai (IBM), Augie Buettner, and Clayton Cutbush. Kruti reported contact data benchmark analysis complete — no immediate business need to purchase additional data. Clayton walked through DUNS matching entitlement history and domain-based matching alternatives.' },
+
+      { ts: 'Aug 25 · 7:30 AM', csm: 'riley', account: 'SAP Inc (CX)',
+        note: 'CX sync. Binod Negi flagged multi-channel marketing feedback: market reports across LOBs look too similar — customer saturation risk.',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'Customer', purpose: 'Issue',
+        detail: 'SAP CX Sync with Binod Negi, Erica Vialardi, Milene Flores, and Janessa Rutiaga. Binod flagged feedback from multi-channel marketing: market reports across ERP/CX/Commerce Cloud LOBs look similar — same customer contacts hit with multiple reports leading to saturation. Janessa can support minor customizations within brand template.' },
+
+      { ts: 'Aug 25 · 8:00 AM', csm: 'riley', account: 'BMC Software (TR)',
+        note: 'TR sync with Michael Garside and Claire Murphy. Tech Cares Award recognition; Control-M review generation update.',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'BMC + TrustRadius sync with Michael Garside, Claire Murphy, and Augie Buettner. Celebrated recent TrustRadius Tech Cares Award; media kit coming next week. Discussed review generation progress for Control-M and AMY products; June workshop referenced.' },
+
+      { ts: 'Aug 25 · 8:00 AM', csm: 'nick', account: 'Accenture',
+        note: 'Executive intro session with John Walsh. James Tudway (VP Enterprise) joined to align on Accenture + partner opportunities (AWS).',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Executive intro session with John Walsh (Accenture) — the original sponsor for the account. Nick and James Tudway (VP Enterprise) joined to align on opportunities with Accenture and partners like AWS. Discussed how HG data supports client/opportunity research at Accenture.' },
+
+      { ts: 'Aug 25 · 8:30 AM', csm: 'nick', account: 'Veeam Software AG',
+        note: 'TrustRadius sync with Abigail Fish. Introduced free GEO/AI Prompt Tracking activation for current HG customer.',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Veeam + TrustRadius sync with Abigail Fish. Referenced Angus’s recent conversation with Alexandra Polischuk re: lead generation. Nick offered free GEO/AI Prompt Tracking activation for Veeam as current HG customer, walked through free vs premium differences.' },
+
+      { ts: 'Aug 25 · 9:30 AM', csm: 'nick', account: 'SAP Inc',
+        note: 'Biweekly sync with Joaquin and Franklin Herbas. Procurement calls update for SAP Install Subscription renewal 2026.',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'SAP biweekly sync with Joaquin and Franklin Herbas. Update on ongoing procurement calls for SAP Install Subscription renewal 2026. Casual rapport, team distribution across US, India, and South America.' },
+
+      { ts: 'Aug 25 · 10:00 AM', csm: 'nick', account: 'Infor (US), LLC',
+        note: 'Firmographic + company hierarchy walkthrough with Matt Meyer (former IBM MDM analyst). Berkshire Hathaway example used.',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Check-in',
+        detail: 'Firmographic + corporate hierarchy walkthrough with Matt Meyer (Infor) and Nicole Morgan (dropped early — triple booked). Matt raised specific gap questions comparing HG ghq/hq resolution to D&B using Berkshire Hathaway. Augie leading pitch on firmo + hierarchy better-together story.' },
+
+      { ts: 'Aug 25 · 10:15 AM', csm: 'riley', account: 'Zoom Video Communications',
+        note: 'Short CSM sync with Mardigan Moffat and Camille Shortridge. Buyer’s Choice + Tech Cares nomination alignment.',
+        mins: 15, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Short (15 min) CSM sync with Mardigan Moffat and Camille Shortridge (Zoom). Focus on Buyer’s Choice and Tech Cares nominations. Rescheduled twice previously. Riley mentioned frustration with unrelated BMC situation.' },
+
+      { ts: 'Aug 25 · 10:30 AM', csm: 'varun', account: 'BMC Software Inc',
+        note: 'Sales Copilot onboarding session for Lindsay Saunders. Mark Sweeney co-leading enablement.',
+        mins: 45, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Sales Copilot onboarding + next-steps alignment with Louise Eekhof, Lindsay Saunders, Mark Sweeney, and Erica Yim (BMC). New user Lindsay being enabled on Sales Copilot. Mark Sweeney co-leading rollout. Chelsea absent.' },
+
+      { ts: 'Aug 25 · 11:30 AM', csm: 'riley', account: 'Red Hat Inc',
+        note: 'CROSS-COVERAGE (Nick’s account). Biweekly TR sync. Brianna Gault flagged dashboard visibility issue — only REL leads visible.',
+        mins: 30, health: 'Concerning',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Issue',
+        detail: 'CROSS-COVERAGE (Nick’s account). Red Hat + TrustRadius biweekly with Brianna Gault. Dashboard visibility issue: campaigns are running but only REL leads are surfacing on Brianna’s dashboard. Team verifying whether it’s a dashboard-scoping issue or a campaign delivery problem.' },
+    ],
+    pulses: [
+      { csm: 'varun', account: 'Open Text Corporation', health: 'Healthy',
+        note: 'Bi-weekly cadence with Sujay Kodagali. RGIP platform login working post-bug-fix. Export tracking improvements over old platform.' },
+      { csm: 'nick', account: 'IBM', health: 'Healthy',
+        note: 'Monthly sync. Contact data benchmark analysis complete — no immediate purchase need. DUNS matching entitlement + domain-based matching clarified.' },
+      { csm: 'riley', account: 'SAP Inc (CX)', health: 'Healthy',
+        note: 'Customer saturation feedback: LOB market reports look too similar. Janessa scoping template-safe customizations for CX.' },
+      { csm: 'riley', account: 'BMC Software (TR)', health: 'Healthy',
+        note: 'Tech Cares Award recognition; media kit next week. Control-M and AMY review generation on track post-June workshop.' },
+      { csm: 'nick', account: 'Accenture', health: 'Healthy',
+        note: 'Exec intro with John Walsh. James Tudway (VP Enterprise) driving Accenture + AWS opportunity alignment.' },
+      { csm: 'nick', account: 'Veeam Software AG', health: 'Healthy',
+        note: 'GEO/AI Prompt Tracking free-tier activation offered to Abigail Fish. Alexandra Polischuk lead-gen thread referenced.' },
+      { csm: 'nick', account: 'SAP Inc', health: 'Healthy',
+        note: 'Biweekly sync. SAP Install Subscription renewal 2026 procurement calls in flight.' },
+      { csm: 'nick', account: 'Infor (US), LLC', health: 'Healthy',
+        note: 'Firmo + hierarchy walkthrough with Matt Meyer (former IBM MDM). Berkshire Hathaway used as ghq/hq resolution example.' },
+      { csm: 'riley', account: 'Zoom Video Communications', health: 'Healthy',
+        note: '15-min sync with Mardigan Moffat + Camille Shortridge. Buyer’s Choice + Tech Cares nominations aligned.' },
+      { csm: 'varun', account: 'BMC Software Inc', health: 'Healthy',
+        note: 'Sales Copilot onboarding for Lindsay Saunders. Mark Sweeney co-leading enablement rollout.' },
+      { csm: 'riley', account: 'Red Hat Inc', health: 'Concerning',
+        note: 'CROSS-COVERAGE (Nick’s account). Dashboard visibility issue — only REL leads surfacing. Team investigating scoping vs delivery.' },
+    ],
+  };
+}
+
+function dayMeta_2026_08_25() {
+  return {
+    pills: [
+      ['dot-teal',  '11 Calls'],
+      ['dot-red',   '1 Concerning'],
+      ['dot-amber', '3 Expansion'],
+      ['dot-green', '11 Vitally Pulses'],
+      ['dot-grey',  'Tue Aug 25 · 104 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (11)', 'Pulses (11)', 'Action Items (6)']
+  };
+}
+
+function dayOverviewHTML_2026_08_25() {
+  return `<div class="section-label">Team Activity &mdash; Tuesday August 25, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Tuesday Aug 25 &mdash; 104 recordings scanned</strong> via SFDC SOQL &middot; <strong>11 confirmed calls</strong> across 3 CSMs &middot; 1 concerning signal &middot; 3 expansion signals &middot; 1 cross-coverage call
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x1F6A8; <strong>CONCERNING:</strong> Red Hat &mdash; TrustRadius dashboard visibility issue: only REL leads surfacing on Brianna’s dashboard; team verifying scoping vs campaign delivery (Riley cross-covering for Nick)
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>EXPANSION:</strong> Accenture &mdash; exec intro with John Walsh, James Tudway (VP Enterprise) driving AWS partner alignment &middot; Veeam &mdash; free GEO/AI Prompt Tracking activation offered &middot; BMC Software &mdash; Sales Copilot onboarding for new user
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">5 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">5</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">5</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">150m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">IBM (benchmark) &middot; Accenture (&#x1F4C8; exec intro) &middot; Veeam (&#x1F4C8; GEO tracking) &middot; SAP (procurement) &middot; Infor (firmo hierarchy)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">4 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">4</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">4</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">105m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">SAP CX (saturation feedback) &middot; BMC TR (Tech Cares) &middot; Zoom (nominations) &middot; Red Hat (&#x26A0;&#xFE0F; dashboard issue, CROSS)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">75m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Open Text (platform login/exports) &middot; BMC (&#x1F4C8; Sales Copilot onboarding)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="atisha">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">3 Apple events (8:30, 8:30, 9:00 AM) &mdash; no transcripts synced</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="divyam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Adobe GTM Tool Review (no recording), Quadient TR sync (TR staff only)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="rani">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Cisco (Isovalent) onboarding recorded &mdash; no transcript synced</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Team Sync (internal, Mark Fell Ops) &mdash; no customer-facing calls</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">ConnectWise bi-weekly (no recording) &mdash; no confirmed calls</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_08_25() {
+  return `<div class="section-label">Confirmed Calls &mdash; Tuesday August 25, 2026</div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x1F6A8; <strong>CONCERNING:</strong> Red Hat &mdash; TrustRadius dashboard visibility issue, only REL leads surfacing (Riley cross-covering for Nick)
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>EXPANSION:</strong> Accenture exec intro (Nick + James Tudway) &middot; Veeam GEO/AI Prompt Tracking activation (Nick) &middot; BMC Sales Copilot onboarding (Varun)
+  </div>
+  <div style="font-size:11px;color:#64748b;margin-bottom:8px;">Auto-table generated from dayData &mdash; 11 confirmed calls across 3 CSMs &middot; 1 cross-coverage (Riley &rarr; Red Hat)</div>`;
+}
+
+function dayPulsesHTML_2026_08_25() {
+  const cards = [
+    { csm:'varun', health:'Healthy', account:'Open Text Corporation', opp:'Vitally Pulse &mdash; Aug 25 Call',
+      arr:'Enterprise &middot; Varun Tiwari', csmlbl:'Varun Tiwari',
+      change:'Aug 25 &middot; Check-in',
+      excerpt:'8/25 VT: Bi-weekly cadence with Sujay Kodagali. New RGIP platform login working after onboarding email bug fix. Export tracking improvements over old platform. (3:00 AM PT, 30 min).' },
+    { csm:'nick', health:'Healthy', account:'IBM', opp:'Vitally Pulse &mdash; Aug 25 Call',
+      arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Aug 25 &middot; Check-in',
+      excerpt:'8/25 NJ: Monthly sync with Kruti Desai. Contact data benchmark analysis complete — no immediate purchase need. Clayton clarified DUNS entitlement and domain-based matching. (6:30 AM PT, 30 min).' },
+    { csm:'riley', health:'Healthy', account:'SAP Inc (CX)', opp:'Vitally Pulse &mdash; Aug 25 Call',
+      arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Aug 25 &middot; Issue',
+      excerpt:'8/25 RR: CX sync with Binod Negi. Multi-channel marketing feedback: LOB market reports look too similar, causing customer saturation. Janessa scoping template-safe customizations. (7:30 AM PT, 30 min).' },
+    { csm:'riley', health:'Healthy', account:'BMC Software (TR)', opp:'Vitally Pulse &mdash; Aug 25 Call',
+      arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Aug 25 &middot; Check-in',
+      excerpt:'8/25 RR: BMC + TR sync with Michael Garside and Claire Murphy. Tech Cares Award celebration + media kit next week. Control-M and AMY review generation post-June workshop. (8:00 AM PT, 30 min).' },
+    { csm:'nick', health:'Healthy', account:'Accenture', opp:'Vitally Pulse &mdash; Aug 25 Call',
+      arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Aug 25 &middot; Expansion',
+      excerpt:'8/25 NJ: Executive intro session with John Walsh (Accenture). James Tudway (VP Enterprise) joined to align on Accenture + AWS partner opportunities. (8:00 AM PT, 30 min).' },
+    { csm:'nick', health:'Healthy', account:'Veeam Software AG', opp:'Vitally Pulse &mdash; Aug 25 Call',
+      arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Aug 25 &middot; Expansion',
+      excerpt:'8/25 NJ: Veeam + TR sync with Abigail Fish. Offered free GEO/AI Prompt Tracking activation as current HG user. Alexandra Polischuk lead-gen thread referenced. (8:30 AM PT, 30 min).' },
+    { csm:'nick', health:'Healthy', account:'SAP Inc', opp:'Vitally Pulse &mdash; Aug 25 Call',
+      arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Aug 25 &middot; Check-in',
+      excerpt:'8/25 NJ: Biweekly sync with Joaquin and Franklin Herbas. Update on SAP Install Subscription renewal 2026 procurement calls in progress. (9:30 AM PT, 30 min).' },
+    { csm:'nick', health:'Healthy', account:'Infor (US), LLC', opp:'Vitally Pulse &mdash; Aug 25 Call',
+      arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Aug 25 &middot; Check-in',
+      excerpt:'8/25 NJ: Firmographic + corporate hierarchy walkthrough with Matt Meyer (former IBM MDM) and Nicole Morgan. Berkshire Hathaway used as ghq/hq resolution example. Augie leading pitch. (10:00 AM PT, 30 min).' },
+    { csm:'riley', health:'Healthy', account:'Zoom Video Communications', opp:'Vitally Pulse &mdash; Aug 25 Call',
+      arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Aug 25 &middot; Check-in',
+      excerpt:'8/25 RR: 15-min CSM sync with Mardigan Moffat and Camille Shortridge. Buyer’s Choice + Tech Cares nomination alignment. Rescheduled twice previously. (10:15 AM PT, 15 min).' },
+    { csm:'varun', health:'Healthy', account:'BMC Software Inc', opp:'Vitally Pulse &mdash; Aug 25 Call',
+      arr:'Enterprise &middot; Varun Tiwari', csmlbl:'Varun Tiwari',
+      change:'Aug 25 &middot; Expansion',
+      excerpt:'8/25 VT: Sales Copilot onboarding + next-steps alignment with Louise Eekhof, Lindsay Saunders, Mark Sweeney, Erica Yim. New user Lindsay being enabled; Mark Sweeney co-leading rollout. (10:30 AM PT, 45 min).' },
+    { csm:'riley', health:'Concerning', account:'Red Hat Inc', opp:'Vitally Pulse &mdash; Aug 25 Call',
+      arr:'Enterprise &middot; Riley Rogers (CROSS for Nick)', csmlbl:'Riley Rogers',
+      change:'Aug 25 &middot; Issue',
+      excerpt:'8/25 RR: CROSS-COVERAGE (Nick’s account). Biweekly TR sync with Brianna Gault. Dashboard visibility issue — only REL leads surfacing; team verifying scoping vs campaign delivery. (11:30 AM PT, 30 min).' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top"><div><div class="pulse-opp">${c.opp}</div><div class="pulse-arr">${c.arr}</div></div><span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span></div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_08_25() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('0825-1')?'done':''}" data-csm="riley" id="action-0825-1">
+      <div class="action-checkbox ${doneActions.has('0825-1')?'checked':''}" onclick="toggleAction('0825-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F6A8; Red Hat &mdash; Dashboard visibility investigation</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Riley Rogers &middot; Investigate Brianna Gault&rsquo;s dashboard visibility issue &mdash; only REL leads surfacing. Confirm whether scoping or campaign delivery. Loop Nick Johnson (account CSM) on findings.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0825-2')?'done':''}" data-csm="nick" id="action-0825-2">
+      <div class="action-checkbox ${doneActions.has('0825-2')?'checked':''}" onclick="toggleAction('0825-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Accenture &mdash; Executive follow-up with John Walsh</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Nick Johnson &middot; Coordinate with James Tudway on next steps with John Walsh. Package Accenture + AWS partner opportunities into a follow-up brief for executive alignment.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0825-3')?'done':''}" data-csm="nick" id="action-0825-3">
+      <div class="action-checkbox ${doneActions.has('0825-3')?'checked':''}" onclick="toggleAction('0825-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Veeam &mdash; Activate GEO/AI Prompt Tracking free tier</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Nick Johnson &middot; Provision free GEO/AI Prompt Tracking for Abigail Fish. Send the free-vs-premium spec link and schedule feedback checkpoint post-activation.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0825-4')?'done':''}" data-csm="varun" id="action-0825-4">
+      <div class="action-checkbox ${doneActions.has('0825-4')?'checked':''}" onclick="toggleAction('0825-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; BMC Software &mdash; Sales Copilot enablement for Lindsay</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Varun Tiwari &middot; Complete Sales Copilot onboarding for Lindsay Saunders. Coordinate with Mark Sweeney on rollout plan; confirm cadence for follow-up enablement sessions.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0825-5')?'done':''}" data-csm="riley" id="action-0825-5">
+      <div class="action-checkbox ${doneActions.has('0825-5')?'checked':''}" onclick="toggleAction('0825-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; SAP CX &mdash; Report differentiation exploration</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Riley Rogers &middot; Follow up with Janessa on CX-specific first-page customization options. Sync with Erica Vialardi before making any template changes to avoid brand conflicts.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0825-6')?'done':''}" data-csm="nick" id="action-0825-6">
+      <div class="action-checkbox ${doneActions.has('0825-6')?'checked':''}" onclick="toggleAction('0825-6')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; IBM &mdash; Track future contact data opportunity</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Nick Johnson &middot; Kruti Desai indicated no immediate contact data purchase need but flagged as future possibility. Maintain benchmark reference and revisit in next monthly sync.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
