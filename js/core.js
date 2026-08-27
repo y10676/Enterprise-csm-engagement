@@ -11,8 +11,8 @@
 // ─── REPORT DATA ───────────────────────────────────────────────
 const REPORTS = {
   day: {},  // auto-populated at init by probing for dayOverviewHTML_* functions
-  week: { '2026-W17': true, '2026-W18': true },   // W17 = Apr 20-26 · W18 = Apr 27–May 3
-  month: { '2026-04': true, '2026-05': true, '2026-06': true, '2026-07': true },
+  week: { '2026-W17': true, '2026-W18': true, '2026-W34': true },   // W17 = Apr 20-26 · W18 = Apr 27–May 3
+  month: { '2026-04': true, '2026-05': true, '2026-06': true, '2026-07': true, '2026-08': true },
 };
 
 // ─── STATE ─────────────────────────────────────────────────────
