@@ -6066,3 +6066,384 @@ function dayActionsHTML_2026_08_25() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
 }
+
+function dayData_2026_08_26() {
+  return {
+    calls: [
+      { ts: 'Aug 26 · 6:30 AM', csm: 'riley', account: `SAP Inc (Concur)`,
+        note: `IDL Briefs onboarding session with new SAP Concur field marketing lead Aiden. Team changes over the summer — post-vacation intro/context sync.`,
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `IDL Briefs session with Aiden (new SAP Concur field marketing lead) after summer team turnover — Kyle's equivalent for GB left for SAP proper. Scott Stater leading Concur leads program. Intro/context sync on TrustRadius IDL brief delivery cadence.` },
+      { ts: 'Aug 26 · 7:00 AM', csm: 'riley', account: `IBM`,
+        note: `TechXchange event sync. Buyer's Choice review-gen concern — 3 weeks to Sept 26 deadline, no clicks on links, no reviews driven. Push team to activate.`,
+        mins: 45, health: 'Concerning',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Mixed',
+        detail: `IBM TechXchange sync with Chaitali Pramanik, Mihaela, plus HG events team (Angel Carvalho). Riley flagged Buyer's Choice review push not converting — reporting shows links not being clicked, no reviews from campaign. Cutoff Sept 26; team wants to wrap by Sept 12. Chaitali requesting a report view; two links exist.` },
+      { ts: 'Aug 26 · 7:00 AM', csm: 'nick', account: `Argano LLC`,
+        note: `SAP MDF Partner Program 2026/27 renewal (Oct 12). Evgeny Treskin (VP-level SAP focus). One VR resource focused on SAP; also Oracle/SFDC/Microsoft business units.`,
+        mins: 20, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `SAP MDF Partner Program 2026/27 planning with Evgeny Treskin. Argano continues using HG for SAP account intelligence — currently one VR dedicated to SAP. Renewal Oct 12 via SAP MDF. Nick clarified HG covers other Fortune 500 vendors (Oracle, Microsoft) but SAP MDF restricts usage — need to be cognizant of scope.` },
+      { ts: 'Aug 26 · 7:30 AM', csm: 'varun', account: `CBTS`,
+        note: `Bi-weekly sync with Mitchell VanderKam + Omkar Hunuswadkar. Monthly refresh email not received (spam/PTO auto-reply); re-shared. Data feed walkthrough offered.`,
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `Bi-weekly CBTS sync with Mitchell VanderKam and Omkar Hunuswadkar. Aug 5 email on account-list automation didn't arrive (PTO auto-reply may have interfered). Varun re-forwarded thread and offered live walkthrough of the monthly automation steps. Data-quality feedback pending; jack call still on hold.` },
+      { ts: 'Aug 26 · 8:00 AM', csm: 'pam', account: `ADP, Inc`,
+        note: `Monthly Success Call. Review-gen stalled: ~13-14% AI crawler share for 6 months. Fiscal year end + new CMO + new VP Rob Sacon = org changes delaying campaigns.`,
+        mins: 30, health: 'Concerning',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Issue',
+        detail: `ADP Workforce Monthly Success Call with Jennifer Stone (Andrew leading). No new reviews driven in months despite steady ~13-14% AI crawler share. Jennifer flagged multiple org changes: fiscal year end (June), new CMO with initiative changes, new VP (Rob Sacon) replacing Charlie Payne (retired). Review campaigns not immediately on radar — pushed to Q4.` },
+      { ts: 'Aug 26 · 9:00 AM', csm: 'nick', account: `Lenovo Group Ltd.`,
+        note: `Family Tree / account matching workflow session. Alexi Mouarkach (HG solutions) supporting. Customer team (Niranjan, Raju, Ujjaini) on Teams — group chat routing issue flagged.`,
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Issue',
+        detail: `Family Tree / account matching workflow session with Lenovo team (Niranjan Marx, Raju Ghosh, Ujjaini Mazumdar) + Alexi Mouarkach (HG). Customer team using Microsoft Teams while HG uses Zoom — Teams group-chat messages not reaching Nick post-meeting. Alexi to set up Teams channel like other customer configurations. Email confirmed as reliable channel.` },
+      { ts: 'Aug 26 · 9:30 AM', csm: 'riley', account: `Paylocity`,
+        note: `Monthly sync with Matt Doyle + Olivia. Tech Cares media kit sent; officially won. Buyer's Choice above review threshold, on track. Added 11k accounts.`,
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Mixed',
+        detail: `Paylocity monthly sync with Matt Doyle and Olivia. Tech Cares Award officially won (announced next week Sept 1); media kit delivered. Buyer's Choice on track — above review threshold with strong numbers, released October. Added 11k accounts to platform; Riley coordinating with tech ops team.` },
+      { ts: 'Aug 26 · 9:30 AM', csm: 'divyam', account: `HubSpot`,
+        note: `Monthly sync with Jordan Montgomery. Tech Cares Award won — media kit shared. Buyer's Choice eligibility confirmed: HubSpot CRM + Marketing Hub (non-subscribe still eligible).`,
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Mixed',
+        detail: `HubSpot Monthly Sync with Jordan Montgomery (Lisa on parental-leave coverage). Three agenda points: (1) Tech Cares Award won — media kit shared for marketing use; (2) Buyer's Choice Sept 26 deadline — HubSpot CRM (subscribe) + Marketing Hub (non-subscribe) both eligible; (3) review generation campaign planning to drive visibility ahead of next-April Top Rated.` },
+      { ts: 'Aug 26 · 9:30 AM', csm: 'nick', account: `SAP MDF: Phoenix`,
+        note: `SAP MDF Partner Program 2026/27 renewal (Oct 12) with Derik Simovart + Jagadeesan M. Heavy program usage (38k exports on 25k limit). Data-accuracy feedback flagged.`,
+        mins: 20, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `SAP MDF Phoenix 2026/27 planning with Derik Simovart and Jagadeesan M (Houston). Phoenix one of the biggest users of the SAP partner program — 38k unique entity exports on a 25k limit. Renewal Oct 12. Jagadeesan flagged install-data accuracy concerns: filtered exports (e.g., ECC customers) don't always match reality — some prospects had different software or weren't SAP customers.` },
+      { ts: 'Aug 26 · 10:00 AM', csm: 'nick', account: `Infor (US), LLC`,
+        note: `D&B Firmographic + hierarchy comparison continuation with Matt Meyer. Augie leading pitch: HG hierarchies fit-for-purpose vs D&B; already stitched to install/spend data.`,
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Follow-up on Aug 25 firmo/hierarchy walkthrough. Matt Meyer (Infor, ex-IBM MDM analyst) reviewed the Berkshire Hathaway + Ford examples video Augie sent. Augie positioning two-part advantage: (1) HG hierarchies already fit for go-to-market use, freeing internal MDM resources; (2) HG firmographic/hierarchy pre-stitched to install + spend data. Nick coordinating.` },
+      { ts: 'Aug 26 · 10:30 AM', csm: 'divyam', account: `CoreLogic Solutions, LLC`,
+        note: `TrustRadius weekly with Shannon Farrer, Micah Zeuch, Christopher Gibson, Lori Garza. Press release template for award coming from Divyam; GEO board walkthrough on agenda.`,
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `TrustRadius Weekly with Shannon Farrer + team (Micah Zeuch, Christopher Gibson, Lori Garza). Long gap since last sync due to Shannon travel. Two agenda items: (1) press release template for the award CoreLogic won — Divyam to send customer references and template guidance; (2) review status — none yet, working internally to drive. GEO board walkthrough queued.` },
+      { ts: 'Aug 26 · 10:30 AM', csm: 'nick', account: `SAP MDF: Kloud Data`,
+        note: `SAP MDF Partner Program 2026/27 renewal (Oct 12) with Ankur C Das. Bespoke SAP partner package pricing ($30k SAP MDF vs. $70k retail). Q4 sales cycle context.`,
+        mins: 20, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `SAP MDF Kloud Data 2026/27 with Ankur C Das. SAP partner package priced at ~$30k (via SAP MDF) vs ~$70k retail equivalent. Kloud Data (SAP reseller/consulting partner) uses HG technographic filtering for outreach — critical to differentiate ECC on-prem vs SAP cloud vs non-SAP install segments. Renewal Oct 12; Q4 sales sprint underway.` },
+      { ts: 'Aug 26 · 11:00 AM', csm: 'pam', account: `F5`,
+        note: `Business Review with Pascale Royal + Mardigan Moffat. Rushed to 15-min slot. GEO offering positioning for renewal — new packaging (2-year gives extras) discussed.`,
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `F5 TrustRadius Business Review with Pascale Royal (attending 15 min only) and Mardigan Moffat (AM). Compressed agenda: skip overview, focus on renewal packaging. GEO offering positioning — "everyone opt into GEO, scale back if needed." Two-year option includes extras at incrementally higher cost. Need follow-up for full alignment given time constraint.` },
+      { ts: 'Aug 26 · 11:30 AM', csm: 'nick', account: `SAP MDF: LTI (Larsen & Toubro)`,
+        note: `SAP MDF Partner Program 2026/27 renewal (Oct 12) with Rakesh R + Surya Khoday. License cleanup (Rajan removed, Apeksha inactive).`,
+        mins: 20, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `SAP MDF LTI (Larsen & Toubro Infotech) 2026/27 with Rakesh R and Surya Khoday. First cohort SAP HG partner via SAP MDF. Renewal Oct 12. License housekeeping: remove Rajan (left LTI) and Apeksha (never activated). Nick surveying partner cohort feedback ahead of expansion talks to other partner tiers.` },
+      { ts: 'Aug 26 · 12:30 PM', csm: 'pam', account: `Microsoft`,
+        note: `Security Sync with Colleen Nelson (SWIFT Group) + Maryann Okonkwo. Black Hat conference results: 51-55 reviews across 6 security products.`,
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'Customer', purpose: 'Expansion',
+        detail: `Microsoft Security Sync with Colleen Nelson and Maryann Okonkwo. Black Hat conference results shared: 51 reviews confirmed (55 total including in-flight). Product breakdown: Intra ID 27, Defender for Endpoint 15, Copilot 6, Sentinel 3, Purview 2, Defender for Cloud 2. Sub-published ratings to be encouraged toward review completion. Colleen requesting biweekly report tracker integration.` },
+    ],
+    pulses: [
+      { csm: 'riley', account: `SAP Inc (Concur)`, health: 'Healthy',
+        note: `IDL Briefs onboarding for Aiden (new field marketing lead) post-summer turnover. Scott Stater leading Concur leads program.` },
+      { csm: 'riley', account: `IBM`, health: 'Concerning',
+        note: `TechXchange sync. Buyer's Choice review push not converting — no link clicks, no reviews. 3 weeks to Sept 26 deadline. Team wants Sept 12 wrap.` },
+      { csm: 'nick', account: `Argano LLC`, health: 'Healthy',
+        note: `SAP MDF Partner Program 2026/27 renewal (Oct 12). VP Evgeny Treskin — Argano actively using HG for SAP account intelligence.` },
+      { csm: 'varun', account: `CBTS`, health: 'Healthy',
+        note: `Bi-weekly sync. Automation email lost in PTO auto-reply — re-shared. Data feed walkthrough queued.` },
+      { csm: 'pam', account: `ADP, Inc`, health: 'Concerning',
+        note: `Review generation stalled — no new reviews for months. Fiscal year end + new CMO + new VP Rob Sacon delaying campaigns to Q4.` },
+      { csm: 'nick', account: `Lenovo Group Ltd.`, health: 'Healthy',
+        note: `Family Tree / account matching workflow session. Teams-vs-Zoom messaging routing issue flagged; email confirmed reliable.` },
+      { csm: 'riley', account: `Paylocity`, health: 'Healthy',
+        note: `Tech Cares Award won — media kit sent. Buyer's Choice on track. Added 11k accounts to platform.` },
+      { csm: 'divyam', account: `HubSpot`, health: 'Healthy',
+        note: `Tech Cares Award won. Buyer's Choice eligibility confirmed for HubSpot CRM + Marketing Hub (non-subscribe still qualifies).` },
+      { csm: 'nick', account: `SAP MDF: Phoenix`, health: 'Healthy',
+        note: `SAP MDF 2026/27 renewal (Oct 12). 38k exports on 25k limit — heavy usage. Install data accuracy feedback flagged for product review.` },
+      { csm: 'nick', account: `Infor (US), LLC`, health: 'Healthy',
+        note: `D&B firmographic comparison continuation. Augie leading pitch — HG hierarchies fit-for-purpose vs D&B, already stitched to install/spend.` },
+      { csm: 'divyam', account: `CoreLogic Solutions, LLC`, health: 'Healthy',
+        note: `TrustRadius Weekly. Press release template coming for award CoreLogic won. GEO board walkthrough queued; review generation not yet started.` },
+      { csm: 'nick', account: `SAP MDF: Kloud Data`, health: 'Healthy',
+        note: `SAP MDF 2026/27 renewal (Oct 12). Bespoke $30k package. Critical technographic filtering for ECC on-prem vs cloud vs non-SAP prospects.` },
+      { csm: 'pam', account: `F5`, health: 'Healthy',
+        note: `Business Review compressed to 15 min. GEO offering positioning for renewal — 2-year packaging with extras at incrementally higher cost.` },
+      { csm: 'nick', account: `SAP MDF: LTI (Larsen & Toubro)`, health: 'Healthy',
+        note: `SAP MDF 2026/27 renewal (Oct 12). License cleanup — Rajan removed, Apeksha inactive.` },
+      { csm: 'pam', account: `Microsoft`, health: 'Healthy',
+        note: `Black Hat results: 51-55 reviews across 6 security products (Intra ID 27, Defender for Endpoint 15, Copilot 6, Sentinel 3, Purview 2, Defender for Cloud 2).` },
+    ],
+  };
+}
+
+function dayMeta_2026_08_26() {
+  return {
+    pills: [
+      ['dot-teal',  '15 Calls'],
+      ['dot-red',   '2 Concerning'],
+      ['dot-amber', '9 Expansion'],
+      ['dot-green', '15 Vitally Pulses'],
+      ['dot-grey',  'Wed Aug 26 · 125 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (15)', 'Pulses (15)', 'Action Items (6)']
+  };
+}
+
+function dayOverviewHTML_2026_08_26() {
+  return `<div class="section-label">Team Activity &mdash; Wednesday August 26, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Wednesday Aug 26 &mdash; 125 recordings scanned</strong> via SFDC SOQL &middot; <strong>15 confirmed calls</strong> across 5 CSMs &middot; 2 concerning signals &middot; 9 expansion signals &middot; Nick&rsquo;s SAP MDF partner-cohort renewal blitz (5 calls in one day)
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x1F6A8; <strong>CONCERNING:</strong> IBM &mdash; TechXchange Buyer&rsquo;s Choice push not converting (no clicks, no reviews) with 3 weeks to Sept 26 deadline &middot; ADP &mdash; review generation stalled through new CMO + VP transition, campaigns pushed to Q4
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>EXPANSION:</strong> SAP MDF partner-cohort Oct 12 renewal &mdash; Argano, Phoenix (38k exports on 25k limit), Kloud Data, LTI &middot; Infor D&amp;B firmographic replacement pitch &middot; Paylocity + HubSpot Tech Cares Awards won &middot; F5 GEO/2-year renewal packaging &middot; Microsoft Black Hat 51-55 reviews across 6 security products
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">6 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">6</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">6</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">140m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Argano (&#x1F4C8; SAP MDF) &middot; Lenovo (family tree matching) &middot; Phoenix (&#x1F4C8; SAP MDF) &middot; Infor (&#x1F4C8; D&amp;B firmo) &middot; Kloud Data (&#x1F4C8; SAP MDF) &middot; LTI (&#x1F4C8; SAP MDF)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">3 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">3</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">105m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">SAP Concur (IDL onboarding) &middot; IBM (&#x26A0;&#xFE0F; Buyer&rsquo;s Choice stall) &middot; Paylocity (&#x1F4C8; Tech Cares)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="pam">
+      <span class="call-badge">3 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">3</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">90m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">ADP (&#x26A0;&#xFE0F; review-gen stall) &middot; F5 (&#x1F4C8; GEO renewal) &middot; Microsoft (&#x1F4C8; Black Hat 51 reviews)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">HubSpot (&#x1F4C8; Tech Cares + Buyer&rsquo;s Choice) &middot; CoreLogic (press release template)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">CBTS (bi-weekly &mdash; automation email re-shared, data feed walkthrough queued)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="rani">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">7 events scheduled (ServiceNow, Google x3, Lenovo, Workday, Cisco GRO) &mdash; no recordings/transcripts synced</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="atisha">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Deloitte weekly recorded (no transcript) &middot; Salesforce/Unily/EY events scheduled &mdash; no recordings</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Cockroach Labs recorded (no transcript) &middot; ADP + Catchup events scheduled &mdash; no recordings</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_08_26() {
+  return `<div class="section-label">Confirmed Calls &mdash; Wednesday August 26, 2026</div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x1F6A8; <strong>CONCERNING:</strong> IBM &mdash; Buyer&rsquo;s Choice review push stalled ahead of Sept 26 deadline (Riley) &middot; ADP &mdash; review generation on hold through CMO/VP transition (Pam)
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>SAP MDF PARTNER RENEWAL BLITZ (Nick):</strong> Argano, Phoenix, Kloud Data, LTI all in 2026/27 planning ahead of Oct 12 renewal &middot; <strong>OTHER EXPANSION:</strong> Infor (D&amp;B firmo replacement), Paylocity (Tech Cares), HubSpot (Tech Cares + Buyer&rsquo;s Choice), F5 (GEO/2-year renewal), Microsoft (Black Hat 51 reviews)
+  </div>`;
+}
+
+function dayPulsesHTML_2026_08_26() {
+  const cards = [
+    { csm:'riley', health:'Healthy', account:`SAP Inc (Concur)`, opp:`Vitally Pulse &mdash; Aug 26 Call`,
+      arr:`Enterprise &middot; Riley Rogers`, csmlbl:`Riley Rogers`,
+      change:`Aug 26 &middot; Healthy`,
+      excerpt:`IDL Briefs onboarding for Aiden (new field marketing lead) post-summer turnover. Scott Stater leading Concur leads program.` },
+    { csm:'riley', health:'Concerning', account:`IBM`, opp:`Vitally Pulse &mdash; Aug 26 Call`,
+      arr:`Enterprise &middot; Riley Rogers`, csmlbl:`Riley Rogers`,
+      change:`Aug 26 &middot; Concerning`,
+      excerpt:`TechXchange sync. Buyer's Choice review push not converting — no link clicks, no reviews. 3 weeks to Sept 26 deadline. Team wants Sept 12 wrap.` },
+    { csm:'nick', health:'Healthy', account:`Argano LLC`, opp:`Vitally Pulse &mdash; Aug 26 Call`,
+      arr:`Enterprise &middot; Nick Johnson`, csmlbl:`Nick Johnson`,
+      change:`Aug 26 &middot; Healthy`,
+      excerpt:`SAP MDF Partner Program 2026/27 renewal (Oct 12). VP Evgeny Treskin — Argano actively using HG for SAP account intelligence.` },
+    { csm:'varun', health:'Healthy', account:`CBTS`, opp:`Vitally Pulse &mdash; Aug 26 Call`,
+      arr:`Enterprise &middot; Varun Tiwari`, csmlbl:`Varun Tiwari`,
+      change:`Aug 26 &middot; Healthy`,
+      excerpt:`Bi-weekly sync. Automation email lost in PTO auto-reply — re-shared. Data feed walkthrough queued.` },
+    { csm:'pam', health:'Concerning', account:`ADP, Inc`, opp:`Vitally Pulse &mdash; Aug 26 Call`,
+      arr:`Enterprise &middot; Pam Huck`, csmlbl:`Pam Huck`,
+      change:`Aug 26 &middot; Concerning`,
+      excerpt:`Review generation stalled — no new reviews for months. Fiscal year end + new CMO + new VP Rob Sacon delaying campaigns to Q4.` },
+    { csm:'nick', health:'Healthy', account:`Lenovo Group Ltd.`, opp:`Vitally Pulse &mdash; Aug 26 Call`,
+      arr:`Enterprise &middot; Nick Johnson`, csmlbl:`Nick Johnson`,
+      change:`Aug 26 &middot; Healthy`,
+      excerpt:`Family Tree / account matching workflow session. Teams-vs-Zoom messaging routing issue flagged; email confirmed reliable.` },
+    { csm:'riley', health:'Healthy', account:`Paylocity`, opp:`Vitally Pulse &mdash; Aug 26 Call`,
+      arr:`Enterprise &middot; Riley Rogers`, csmlbl:`Riley Rogers`,
+      change:`Aug 26 &middot; Healthy`,
+      excerpt:`Tech Cares Award won — media kit sent. Buyer's Choice on track. Added 11k accounts to platform.` },
+    { csm:'divyam', health:'Healthy', account:`HubSpot`, opp:`Vitally Pulse &mdash; Aug 26 Call`,
+      arr:`Enterprise &middot; Divyam Dewan`, csmlbl:`Divyam Dewan`,
+      change:`Aug 26 &middot; Healthy`,
+      excerpt:`Tech Cares Award won. Buyer's Choice eligibility confirmed for HubSpot CRM + Marketing Hub (non-subscribe still qualifies).` },
+    { csm:'nick', health:'Healthy', account:`SAP MDF: Phoenix`, opp:`Vitally Pulse &mdash; Aug 26 Call`,
+      arr:`Enterprise &middot; Nick Johnson`, csmlbl:`Nick Johnson`,
+      change:`Aug 26 &middot; Healthy`,
+      excerpt:`SAP MDF 2026/27 renewal (Oct 12). 38k exports on 25k limit — heavy usage. Install data accuracy feedback flagged for product review.` },
+    { csm:'nick', health:'Healthy', account:`Infor (US), LLC`, opp:`Vitally Pulse &mdash; Aug 26 Call`,
+      arr:`Enterprise &middot; Nick Johnson`, csmlbl:`Nick Johnson`,
+      change:`Aug 26 &middot; Healthy`,
+      excerpt:`D&B firmographic comparison continuation. Augie leading pitch — HG hierarchies fit-for-purpose vs D&B, already stitched to install/spend.` },
+    { csm:'divyam', health:'Healthy', account:`CoreLogic Solutions, LLC`, opp:`Vitally Pulse &mdash; Aug 26 Call`,
+      arr:`Enterprise &middot; Divyam Dewan`, csmlbl:`Divyam Dewan`,
+      change:`Aug 26 &middot; Healthy`,
+      excerpt:`TrustRadius Weekly. Press release template coming for award CoreLogic won. GEO board walkthrough queued; review generation not yet started.` },
+    { csm:'nick', health:'Healthy', account:`SAP MDF: Kloud Data`, opp:`Vitally Pulse &mdash; Aug 26 Call`,
+      arr:`Enterprise &middot; Nick Johnson`, csmlbl:`Nick Johnson`,
+      change:`Aug 26 &middot; Healthy`,
+      excerpt:`SAP MDF 2026/27 renewal (Oct 12). Bespoke $30k package. Critical technographic filtering for ECC on-prem vs cloud vs non-SAP prospects.` },
+    { csm:'pam', health:'Healthy', account:`F5`, opp:`Vitally Pulse &mdash; Aug 26 Call`,
+      arr:`Enterprise &middot; Pam Huck`, csmlbl:`Pam Huck`,
+      change:`Aug 26 &middot; Healthy`,
+      excerpt:`Business Review compressed to 15 min. GEO offering positioning for renewal — 2-year packaging with extras at incrementally higher cost.` },
+    { csm:'nick', health:'Healthy', account:`SAP MDF: LTI (Larsen & Toubro)`, opp:`Vitally Pulse &mdash; Aug 26 Call`,
+      arr:`Enterprise &middot; Nick Johnson`, csmlbl:`Nick Johnson`,
+      change:`Aug 26 &middot; Healthy`,
+      excerpt:`SAP MDF 2026/27 renewal (Oct 12). License cleanup — Rajan removed, Apeksha inactive.` },
+    { csm:'pam', health:'Healthy', account:`Microsoft`, opp:`Vitally Pulse &mdash; Aug 26 Call`,
+      arr:`Enterprise &middot; Pam Huck`, csmlbl:`Pam Huck`,
+      change:`Aug 26 &middot; Healthy`,
+      excerpt:`Black Hat results: 51-55 reviews across 6 security products (Intra ID 27, Defender for Endpoint 15, Copilot 6, Sentinel 3, Purview 2, Defender for Cloud 2).` },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div class="pulse-account">${c.account}</div>
+          <div class="pulse-opp">${c.opp}</div>
+          <div class="pulse-arr">${c.arr}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_08_26() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('0826-1')?'done':''}" data-csm="riley" id="action-0826-1">
+      <div class="action-checkbox ${doneActions.has('0826-1')?'checked':''}" onclick="toggleAction('0826-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F6A8; IBM &mdash; Rescue Buyer's Choice review-gen push</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Riley Rogers &middot; Cutoff Sept 26 with team push to Sept 12 &mdash; links not being clicked and no reviews driven. Package a click/review report view for Chaitali; escalate with Mihaela if links need refresh or re-promotion.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0826-2')?'done':''}" data-csm="pam" id="action-0826-2">
+      <div class="action-checkbox ${doneActions.has('0826-2')?'checked':''}" onclick="toggleAction('0826-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F6A8; ADP &mdash; Review-gen unlock plan post-CMO/VP transition</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Pam Huck &middot; Fiscal year end + new CMO + new VP Rob Sacon = campaigns pushed to Q4. Build a lightweight review-gen playbook aligned to the new leadership priorities so Jennifer Stone can propose to the CMO once the org settles.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0826-3')?'done':''}" data-csm="nick" id="action-0826-3">
+      <div class="action-checkbox ${doneActions.has('0826-3')?'checked':''}" onclick="toggleAction('0826-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; SAP MDF partner cohort &mdash; Oct 12 renewal packaging</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Nick Johnson &middot; Bundle feedback from Argano/Phoenix/Kloud Data/LTI/Infor into a partner-cohort renewal pitch for SAP MDF Oct 12. Phoenix flagged install-data accuracy issues &mdash; loop product team on the ECC filter mismatches before the renewal narrative goes final.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0826-4')?'done':''}" data-csm="pam" id="action-0826-4">
+      <div class="action-checkbox ${doneActions.has('0826-4')?'checked':''}" onclick="toggleAction('0826-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; F5 &mdash; Re-book proper renewal conversation</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Pam Huck &middot; The 15-min compressed slot with Pascale Royal wasn't enough for GEO offering + 2-year packaging. Coordinate with Mardigan on a full 45-60 min follow-up to validate budget/buy-in before renewal packaging goes to procurement.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0826-5')?'done':''}" data-csm="divyam" id="action-0826-5">
+      <div class="action-checkbox ${doneActions.has('0826-5')?'checked':''}" onclick="toggleAction('0826-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; CoreLogic &mdash; Press release template + review-gen kickoff</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Divyam Dewan &middot; Send Shannon Farrer press-release template with customer references, plus a review-generation playbook they can execute internally. Follow up on GEO board walkthrough for next week.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0826-6')?'done':''}" data-csm="pam" id="action-0826-6">
+      <div class="action-checkbox ${doneActions.has('0826-6')?'checked':''}" onclick="toggleAction('0826-6')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Microsoft &mdash; Deliver review-links pack to Colleen</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Pam Huck &middot; Send Colleen Nelson direct links for all 51-55 Black Hat reviews across the 6 security products for her master tracker. Encourage completion of the 2 in-submitted reviews.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
