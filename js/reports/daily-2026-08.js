@@ -6447,3 +6447,400 @@ function dayActionsHTML_2026_08_26() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
 }
+
+function dayData_2026_08_27() {
+  return {
+    calls: [
+      { ts: 'Aug 27 · 2:00 AM', csm: 'nick', account: `Sopra Steria`,
+        note: `HG Insights Onboarding session with new user Sanna Soomro. Platform walkthrough — account scoring + company profiles use cases.`,
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `HG Insights Onboarding session with Sanna Soomro (Sopra Steria). Nick drove platform walkthrough — Sanna to focus on account scoring + company profiles work per Ivy's direction. Recording shared for later reference.` },
+      { ts: 'Aug 27 · 3:00 AM', csm: 'varun', account: `IFS`,
+        note: `Alignment on Priorities + HubSpot integration. David Garcia-Thomas (HG solutions) sent HubSpot integration info. Sam Hasaj to showcase portal customizations.`,
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Mixed',
+        detail: `IFS + HGI alignment call with David Garcia-Thomas and Sam Hasaj. HubSpot integration questions — Sam wants to showcase what IFS has built in the portal and what needs automation. Connectors mostly out-of-the-box; some field building required. Angus flagged priorities alignment separately.` },
+      { ts: 'Aug 27 · 4:00 AM', csm: 'andy', account: `SAS Institute Inc.`,
+        note: `Check-in with Mike & Augie. Mike reconstructed scoring methodologies from Chloe's doc into internal tool. Sales-guide trigger on intent/status change planned; Jesper to validate.`,
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Expansion',
+        detail: `SAS check-in with Mike-D (customer) and Augie Buettner (HG AM). Mike reconstructed HG scoring methodologies into internal tool per Chloe's doc — plan is to use scores to trigger sales-guide actions when intent/status changes. Waiting for Jesper (details owner) to validate. Andy pushed for clarity on pilot success measures.` },
+      { ts: 'Aug 27 · 4:30 AM', csm: 'atisha', account: `Insight Direct USA Ltd`,
+        note: `Bi-weekly sync. Augie flagged 4-week stall on Paul/John Hickey follow-up for Microsoft Client Portal sales-accelerate initiative — no response despite multiple pings.`,
+        mins: 30, health: 'Concerning',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Issue',
+        detail: `Insight Direct bi-weekly with Rakesh, Rajesh (Rakesh's team, go-to-market focus) and Augie Buettner. Augie: "we feel like we're not doing anything to be honest" — Paul (internal Microsoft Client Portal owner) referred them to John Hickey four weeks ago and no follow-up despite pings. Adoption gap risks Microsoft sales-accelerate use case.` },
+      { ts: 'Aug 27 · 4:45 AM', csm: 'nick', account: `Lenovo Group Ltd.`,
+        note: `Propensity modeling pre-meeting with Antaleena. Both parties out of office; discussing document review timing and cross-coverage for next 2 weeks (Rani/Adrian/Jenny).`,
+        mins: 15, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Mixed',
+        detail: `Lenovo propensity modeling pre-meeting with Antaleena Ganguly and Ujjaini Mazumdar. Nick out 2 weeks; Antaleena out Aug 31 - Sept 2. Discussed team review of shared ICP/secure-PC docs. Rani will back Nick up (Adrian consistent); Antaleena will designate her own backup, likely Jenny.` },
+      { ts: 'Aug 27 · 5:30 AM', csm: 'nick', account: `Lenovo Group Ltd.`,
+        note: `Follow-up strategic catch-up with Antaleena. Reviewed internal project plan, summarized deliverables and outstanding items ahead of PTO handoff.`,
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `Lenovo strategic catch-up with Antaleena Ganguly. Nick walked internal project plan showing HG-side progress. Focus on wrapping deliverables + defining what customer team can expect during 2-3 week overlap of both PTOs. Rainy returning Monday; Rani backing Nick up.` },
+      { ts: 'Aug 27 · 6:00 AM', csm: 'andy', account: `FactSet Research Systems`,
+        note: `TR sync + relationship handoff. FactSet FY starts September; Aidan Leonard introducing Lin Zuo as go-to. Riley previously ran account; Andy now transitioning in.`,
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `FactSet TrustRadius sync with Aidan Leonard, Lin Zuo, Shea Williams. FactSet's FY starts in September — Aidan introducing Lin Zuo as new go-to relationship manager. Andy (5 years HG) transitioning from Riley's coverage; taking call from holiday in Normandy to not miss introduction.` },
+      { ts: 'Aug 27 · 7:00 AM', csm: 'nick', account: `Intuit (Mailchimp)`,
+        note: `Blackbaud campaign strategy session with Julian Rojas (AM) + Intuit team (Lindsay Gerardy, Joe You, Varun Batra, Tyler Frazer, Max Shaw). Constant Contact campaign launched yesterday.`,
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Intuit/Mailchimp Blackbaud campaign strategy. Julian Rojas leading with Nick + expanded HG team (Max Shaw). Intuit team introductions: Lindsay Gerardy, Joe You (new — met Max 3 weeks ago high-level), Varun Batra (mid-market sales manager, AE team focus), Tyler Frazer. Constant Contact BDR-targeted campaign launched Wednesday — Blackbaud campaign is next.` },
+      { ts: 'Aug 27 · 7:30 AM', csm: 'nick', account: `Siemens AG`,
+        note: `Biweekly sync — customer signal: Kaden and Christina moving away from HG platform post-reorg. Data still consumed via Jeff Weimer's dashboards + Account Compass MCP.`,
+        mins: 30, health: 'Concerning',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Issue',
+        detail: `Siemens biweekly with Christina Villar and Kaden (Pat double-booked). End-of-fiscal-year reorg impact: Kaden explicit — "probably actually haven't opened up HG since the whole reorg... probably am not in the platform at all now." Data still used via Jeff Weimer's dashboards, Business Analyzer, Account Compass MCP. Both suggested this recurring call become ad-hoc.` },
+      { ts: 'Aug 27 · 8:00 AM', csm: 'nick', account: `Avanade Inc.`,
+        note: `Onboarding round 2 with Hoa Pantastico. Clarified dynamics/CRM data interpretation — Hoa was looking for CRM in ERP export; Nick walked through product linkages.`,
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Issue',
+        detail: `Avanade onboarding round 2 with Hoa Pantastico. Hoa raised interpretation issue — expected to see CRM data in the export but only saw core ERP systems view. Nick clarified: Dynamics is captured as a product install per company, but the pull was scoped to ERP filter; also walked through Roadrunner deck talk-track slides.` },
+      { ts: 'Aug 27 · 8:00 AM', csm: 'divyam', account: `BILL Operations, LLC`,
+        note: `Score Override Query technical session with Charles Hawkins (HG solutions). Divyam confirmed duplicate-live-model workflow required to test score-override changes.`,
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Issue',
+        detail: `BILL Score Override Query with Charles Hawkins (HG customer fit solutions), Divyam Dewan, Eric Nguyen (customer), Julian Rojas (AM). Charles proposed testing in HG's instance rather than Eric's. Confirmed workflow: cannot edit live model — must duplicate (live or draft) and promote after changes; can delete duplicates or rename to sandbox them.` },
+      { ts: 'Aug 27 · 9:00 AM', csm: 'varun', account: `Exclusive Networks`,
+        note: `Bi-weekly with Angus Hyams (AM), MTinker, plus Abraham back from Vietnam PTO. Rain-in-London small talk kicked off; relationship-focused cadence continuing.`,
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `Exclusive Networks bi-weekly with Angus Hyams (HG AM), MTinker (customer), Abraham (customer, back from Vietnam PTO week 2). Relationship rapport strong — extensive personal catch-up before agenda. First cadence sync post-summer.` },
+      { ts: 'Aug 27 · 9:30 AM', csm: 'varun', account: `Iron Mountain Incorporated`,
+        note: `Intent Topics Coverage Analysis with Juan Camilo Carreño. Julian Rojas introduced as NEW AM taking over Iron Mountain account. Rishabh Wadhwa presenting data.`,
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Iron Mountain Intent Topics Coverage Analysis with Juan Camilo Carreño (Colombia-based customer) and Rishabh Wadhwa (HG solutions). Julian Rojas introduced as NEW Account Manager taking over Iron Mountain — Colombian heritage bridged rapport quickly. Session structured in two parts covering topic coverage assessment.` },
+      { ts: 'Aug 27 · 9:30 AM', csm: 'riley', account: `SAP Inc (Build)`,
+        note: `SAP Build monthly TR sync with Cole Arutian + Mardigan Moffat (AM). Riley off-camera due to poor connection — in Tennessee (Sevierville/Gatlinburg mountains).`,
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `SAP Build TrustRadius monthly with Cole Arutian and Mardigan Moffat (HG AM). Riley traveling in Sevierville TN — off-camera due to bandwidth. Extensive personal rapport (Lake Powell, Gatlinburg, water levels). Relationship-focused monthly cadence.` },
+      { ts: 'Aug 27 · 10:30 AM', csm: 'atisha', account: `RSM US`,
+        note: `IDL program Next Steps with Kristin L, Kelsey Kish, Sai A. Content update from Kelsey; ICP targeting/industry verticals question from Kristin. Aiming FY27 launch.`,
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Mixed',
+        detail: `RSM Intent Driven Leads program next steps with Kristin L, Kelsey Kish, Sai A (HG), Julian Rojas (AM). Kelsey: content ready pending Krista scheduling. Kristin: seniority titles + industry verticals/ICP targeting questions. FY27 target for program launch.` },
+      { ts: 'Aug 27 · 12:00 PM', csm: 'varun', account: `Zendesk`,
+        note: `RGIP Market Analyzer walkthrough with Rodrigo Gomez, Panchaya Pimprapoat (new Competitive Intelligence team member). Charles Hawkins covering multi-consumption options.`,
+        mins: 45, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Zendesk RGIP Walkthrough — Market Analyzer demo. Rodrigo Gomez introducing Panchaya Pimprapoat (Zendesk Competitive Intelligence team, East Bay) to HG. Charles Hawkins walked through multi-consumption modes: raw data, API, MCP, and HG's OpenAI app store integration (approval pending on Zendesk side).` },
+    ],
+    pulses: [
+      { csm: 'nick', account: `Sopra Steria`, health: 'Healthy',
+        note: `HG Insights Onboarding — Sanna Soomro platform walkthrough for account scoring + company profiles.` },
+      { csm: 'varun', account: `IFS`, health: 'Healthy',
+        note: `HubSpot integration alignment — connectors out of box, Sam to showcase portal customizations for automation.` },
+      { csm: 'andy', account: `SAS Institute Inc.`, health: 'Healthy',
+        note: `Scoring methodology reconstructed into internal tool. Sales-guide trigger on intent/status change planned; awaiting Jesper validation.` },
+      { csm: 'atisha', account: `Insight Direct USA Ltd`, health: 'Concerning',
+        note: `Microsoft Client Portal adoption stalled 4 weeks — Paul referred to John Hickey with no follow-up despite pings. Augie: "we feel like we're not doing anything."` },
+      { csm: 'nick', account: `Lenovo Group Ltd.`, health: 'Healthy',
+        note: `Propensity modeling pre-meeting — cross-PTO coverage discussion (Rani/Rainy for Nick; Jenny for Antaleena).` },
+      { csm: 'nick', account: `Lenovo Group Ltd.`, health: 'Healthy',
+        note: `Follow-up strategic catch-up — internal project plan review with deliverable summary ahead of PTO overlap.` },
+      { csm: 'andy', account: `FactSet Research Systems`, health: 'Healthy',
+        note: `FactSet FY starts September — Aidan introduced Lin Zuo as new go-to. Andy transitioning from Riley's prior coverage.` },
+      { csm: 'nick', account: `Intuit (Mailchimp)`, health: 'Healthy',
+        note: `Blackbaud campaign strategy — Julian Rojas leading with expanded HG team (Max Shaw). Constant Contact BDR campaign launched Wed.` },
+      { csm: 'nick', account: `Siemens AG`, health: 'Concerning',
+        note: `Post-reorg engagement drop — Kaden "not in the platform at all now." Data still consumed via Jeff Weimer dashboards + Account Compass MCP. Recurring → ad-hoc.` },
+      { csm: 'nick', account: `Avanade Inc.`, health: 'Healthy',
+        note: `Onboarding round 2 — data interpretation Q on Dynamics/CRM export vs ERP filter. Nick walked product linkages.` },
+      { csm: 'divyam', account: `BILL Operations, LLC`, health: 'Healthy',
+        note: `Score Override Query technical session — confirmed duplicate-live-model workflow required to test score-override changes.` },
+      { csm: 'varun', account: `Exclusive Networks`, health: 'Healthy',
+        note: `Bi-weekly relationship cadence — Abraham back from Vietnam PTO. Strong rapport continuing.` },
+      { csm: 'varun', account: `Iron Mountain Incorporated`, health: 'Healthy',
+        note: `Julian Rojas introduced as NEW AM. Intent Topics Coverage Analysis session with Juan Camilo Carreño + Rishabh Wadhwa.` },
+      { csm: 'riley', account: `SAP Inc (Build)`, health: 'Healthy',
+        note: `SAP Build monthly — Riley off-camera in Sevierville TN. Relationship-focused; no urgent asks flagged.` },
+      { csm: 'atisha', account: `RSM US`, health: 'Healthy',
+        note: `IDL program next steps — content ready (Kelsey), ICP targeting/seniority + industry verticals question (Kristin). FY27 launch target.` },
+      { csm: 'varun', account: `Zendesk`, health: 'Healthy',
+        note: `RGIP Market Analyzer walkthrough with Panchaya Pimprapoat (new Competitive Intelligence team). OpenAI app store integration pending Zendesk approval.` },
+    ],
+  };
+}
+
+function dayMeta_2026_08_27() {
+  return {
+    pills: [
+      ['dot-teal',  '16 Calls'],
+      ['dot-red',   '2 Concerning'],
+      ['dot-amber', '6 Expansion'],
+      ['dot-green', '16 Vitally Pulses'],
+      ['dot-grey',  'Thu Aug 27 · 103 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (16)', 'Pulses (16)', 'Action Items (6)']
+  };
+}
+
+function dayOverviewHTML_2026_08_27() {
+  return `<div class="section-label">Team Activity &mdash; Thursday August 27, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Thursday Aug 27 &mdash; 103 recordings scanned</strong> via SFDC SOQL &middot; <strong>16 confirmed calls</strong> across 6 CSMs &middot; 2 concerning signals &middot; 6 expansion signals &middot; Nick&rsquo;s 6-call day (Lenovo x2, Sopra Steria onboarding, Intuit/Mailchimp campaign, Siemens, Avanade)
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x1F6A8; <strong>CONCERNING:</strong> Insight Direct &mdash; Microsoft sales-accelerate adoption stalled 4 weeks (Paul&rarr;John Hickey referral no response, Augie: &ldquo;we feel like we&rsquo;re not doing anything&rdquo;) &middot; Siemens &mdash; Kaden explicit post-reorg &ldquo;not in the platform at all,&rdquo; consuming HG data only via Jeff Weimer dashboards + Account Compass MCP
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>EXPANSION:</strong> SAS internal scoring pilot (sales-guide trigger on intent change) &middot; Intuit/Mailchimp Blackbaud campaign strategy (new stakeholders Joe You + Varun Batra) &middot; Iron Mountain Julian Rojas new AM + intent topics analysis &middot; Zendesk RGIP Market Analyzer demo to new Competitive Intel team &middot; Lenovo secure-PC propensity modeling &middot; FactSet FY-cycle relationship handoff (Aidan &rarr; Lin Zuo)
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">6 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">6</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">6</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">150m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Sopra Steria (onboarding) &middot; Lenovo x2 (propensity modeling + PTO handoff) &middot; Intuit/Mailchimp (&#x1F4C8; Blackbaud campaign) &middot; Siemens (&#x26A0;&#xFE0F; platform-off, MCP-only) &middot; Avanade (onboarding round 2)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">4 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">4</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">4</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">135m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">IFS (HubSpot integration) &middot; Exclusive Networks (bi-weekly) &middot; Iron Mountain (&#x1F4C8; new AM + intent analysis) &middot; Zendesk (&#x1F4C8; RGIP Market Analyzer demo)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Insight Direct (&#x26A0;&#xFE0F; MSFT sales-accelerate stall) &middot; RSM (IDL program next steps, FY27 target)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="andy">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">SAS (&#x1F4C8; scoring pilot + sales-guide trigger) &middot; FactSet (FY handoff Aidan &rarr; Lin Zuo)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">BILL Operations (Score Override Query technical session with Charles Hawkins)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">SAP Build (monthly TR, off-camera due to travel bandwidth in Sevierville TN)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="rani">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No CSM events scheduled &mdash; no recordings/transcripts synced</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No CSM-owned events scheduled &mdash; no confirmed calls</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_08_27() {
+  return `<div class="section-label">Confirmed Calls &mdash; Thursday August 27, 2026</div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x1F6A8; <strong>CONCERNING:</strong> Insight Direct &mdash; Microsoft sales-accelerate adoption 4-week stall (Atisha + Augie) &middot; Siemens &mdash; post-reorg platform disengagement, MCP/dashboards only (Nick)
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>EXPANSION:</strong> SAS scoring pilot (Andy) &middot; Intuit/Mailchimp Blackbaud campaign (Nick) &middot; Iron Mountain new AM + intent analysis (Varun) &middot; Zendesk RGIP Market Analyzer (Varun) &middot; Lenovo propensity modeling (Nick) &middot; FactSet FY handoff (Andy)
+  </div>`;
+}
+
+function dayPulsesHTML_2026_08_27() {
+  const cards = [
+    { csm:'nick', health:'Healthy', account:`Sopra Steria`, opp:`Vitally Pulse &mdash; Aug 27 Call`,
+      arr:`Enterprise &middot; Nick Johnson`, csmlbl:`Nick Johnson`,
+      change:`Aug 27 &middot; Healthy`,
+      excerpt:`HG Insights Onboarding — Sanna Soomro platform walkthrough for account scoring + company profiles.` },
+    { csm:'varun', health:'Healthy', account:`IFS`, opp:`Vitally Pulse &mdash; Aug 27 Call`,
+      arr:`Enterprise &middot; Varun Tiwari`, csmlbl:`Varun Tiwari`,
+      change:`Aug 27 &middot; Healthy`,
+      excerpt:`HubSpot integration alignment — connectors out of box, Sam to showcase portal customizations for automation.` },
+    { csm:'andy', health:'Healthy', account:`SAS Institute Inc.`, opp:`Vitally Pulse &mdash; Aug 27 Call`,
+      arr:`Enterprise &middot; Andy Lim`, csmlbl:`Andy Lim`,
+      change:`Aug 27 &middot; Healthy`,
+      excerpt:`Scoring methodology reconstructed into internal tool. Sales-guide trigger on intent/status change planned; awaiting Jesper validation.` },
+    { csm:'atisha', health:'Concerning', account:`Insight Direct USA Ltd`, opp:`Vitally Pulse &mdash; Aug 27 Call`,
+      arr:`Enterprise &middot; Atisha Waghela`, csmlbl:`Atisha Waghela`,
+      change:`Aug 27 &middot; Concerning`,
+      excerpt:`Microsoft Client Portal adoption stalled 4 weeks — Paul referred to John Hickey with no follow-up despite pings. Augie: "we feel like we're not doing anything."` },
+    { csm:'nick', health:'Healthy', account:`Lenovo Group Ltd.`, opp:`Vitally Pulse &mdash; Aug 27 Call`,
+      arr:`Enterprise &middot; Nick Johnson`, csmlbl:`Nick Johnson`,
+      change:`Aug 27 &middot; Healthy`,
+      excerpt:`Propensity modeling pre-meeting — cross-PTO coverage discussion (Rani/Rainy for Nick; Jenny for Antaleena).` },
+    { csm:'nick', health:'Healthy', account:`Lenovo Group Ltd.`, opp:`Vitally Pulse &mdash; Aug 27 Call`,
+      arr:`Enterprise &middot; Nick Johnson`, csmlbl:`Nick Johnson`,
+      change:`Aug 27 &middot; Healthy`,
+      excerpt:`Follow-up strategic catch-up — internal project plan review with deliverable summary ahead of PTO overlap.` },
+    { csm:'andy', health:'Healthy', account:`FactSet Research Systems`, opp:`Vitally Pulse &mdash; Aug 27 Call`,
+      arr:`Enterprise &middot; Andy Lim`, csmlbl:`Andy Lim`,
+      change:`Aug 27 &middot; Healthy`,
+      excerpt:`FactSet FY starts September — Aidan introduced Lin Zuo as new go-to. Andy transitioning from Riley's prior coverage.` },
+    { csm:'nick', health:'Healthy', account:`Intuit (Mailchimp)`, opp:`Vitally Pulse &mdash; Aug 27 Call`,
+      arr:`Enterprise &middot; Nick Johnson`, csmlbl:`Nick Johnson`,
+      change:`Aug 27 &middot; Healthy`,
+      excerpt:`Blackbaud campaign strategy — Julian Rojas leading with expanded HG team (Max Shaw). Constant Contact BDR campaign launched Wed.` },
+    { csm:'nick', health:'Concerning', account:`Siemens AG`, opp:`Vitally Pulse &mdash; Aug 27 Call`,
+      arr:`Enterprise &middot; Nick Johnson`, csmlbl:`Nick Johnson`,
+      change:`Aug 27 &middot; Concerning`,
+      excerpt:`Post-reorg engagement drop — Kaden "not in the platform at all now." Data still consumed via Jeff Weimer dashboards + Account Compass MCP. Recurring → ad-hoc.` },
+    { csm:'nick', health:'Healthy', account:`Avanade Inc.`, opp:`Vitally Pulse &mdash; Aug 27 Call`,
+      arr:`Enterprise &middot; Nick Johnson`, csmlbl:`Nick Johnson`,
+      change:`Aug 27 &middot; Healthy`,
+      excerpt:`Onboarding round 2 — data interpretation Q on Dynamics/CRM export vs ERP filter. Nick walked product linkages.` },
+    { csm:'divyam', health:'Healthy', account:`BILL Operations, LLC`, opp:`Vitally Pulse &mdash; Aug 27 Call`,
+      arr:`Enterprise &middot; Divyam Dewan`, csmlbl:`Divyam Dewan`,
+      change:`Aug 27 &middot; Healthy`,
+      excerpt:`Score Override Query technical session — confirmed duplicate-live-model workflow required to test score-override changes.` },
+    { csm:'varun', health:'Healthy', account:`Exclusive Networks`, opp:`Vitally Pulse &mdash; Aug 27 Call`,
+      arr:`Enterprise &middot; Varun Tiwari`, csmlbl:`Varun Tiwari`,
+      change:`Aug 27 &middot; Healthy`,
+      excerpt:`Bi-weekly relationship cadence — Abraham back from Vietnam PTO. Strong rapport continuing.` },
+    { csm:'varun', health:'Healthy', account:`Iron Mountain Incorporated`, opp:`Vitally Pulse &mdash; Aug 27 Call`,
+      arr:`Enterprise &middot; Varun Tiwari`, csmlbl:`Varun Tiwari`,
+      change:`Aug 27 &middot; Healthy`,
+      excerpt:`Julian Rojas introduced as NEW AM. Intent Topics Coverage Analysis session with Juan Camilo Carreño + Rishabh Wadhwa.` },
+    { csm:'riley', health:'Healthy', account:`SAP Inc (Build)`, opp:`Vitally Pulse &mdash; Aug 27 Call`,
+      arr:`Enterprise &middot; Riley Rogers`, csmlbl:`Riley Rogers`,
+      change:`Aug 27 &middot; Healthy`,
+      excerpt:`SAP Build monthly — Riley off-camera in Sevierville TN. Relationship-focused; no urgent asks flagged.` },
+    { csm:'atisha', health:'Healthy', account:`RSM US`, opp:`Vitally Pulse &mdash; Aug 27 Call`,
+      arr:`Enterprise &middot; Atisha Waghela`, csmlbl:`Atisha Waghela`,
+      change:`Aug 27 &middot; Healthy`,
+      excerpt:`IDL program next steps — content ready (Kelsey), ICP targeting/seniority + industry verticals question (Kristin). FY27 launch target.` },
+    { csm:'varun', health:'Healthy', account:`Zendesk`, opp:`Vitally Pulse &mdash; Aug 27 Call`,
+      arr:`Enterprise &middot; Varun Tiwari`, csmlbl:`Varun Tiwari`,
+      change:`Aug 27 &middot; Healthy`,
+      excerpt:`RGIP Market Analyzer walkthrough with Panchaya Pimprapoat (new Competitive Intelligence team). OpenAI app store integration pending Zendesk approval.` },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div class="pulse-account">${c.account}</div>
+          <div class="pulse-opp">${c.opp}</div>
+          <div class="pulse-arr">${c.arr}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_08_27() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('0827-1')?'done':''}" data-csm="atisha" id="action-0827-1">
+      <div class="action-checkbox ${doneActions.has('0827-1')?'checked':''}" onclick="toggleAction('0827-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F6A8; Insight Direct &mdash; Escalate Microsoft sales-accelerate stall</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Atisha Waghela &middot; Paul referred to John Hickey 4 weeks ago with no follow-up despite pings. Escalate through Augie&rsquo;s AM channel; consider direct outreach to andrew (sales-accelerate initiative owner) to unstick adoption before Q3 close.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0827-2')?'done':''}" data-csm="nick" id="action-0827-2">
+      <div class="action-checkbox ${doneActions.has('0827-2')?'checked':''}" onclick="toggleAction('0827-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F6A8; Siemens &mdash; Convert biweekly to ad-hoc, secure data-feed narrative</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Nick Johnson &middot; Kaden and Christina moving off platform post-reorg but still consuming HG data via Jeff Weimer&rsquo;s dashboards + Account Compass MCP. Convert cadence to ad-hoc; reframe renewal narrative around data-feed/MCP value rather than platform seats.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0827-3')?'done':''}" data-csm="nick" id="action-0827-3">
+      <div class="action-checkbox ${doneActions.has('0827-3')?'checked':''}" onclick="toggleAction('0827-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Lenovo &mdash; PTO coverage handoff to Rani</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Nick Johnson &middot; Nick out 2 weeks starting next week; Antaleena also out Aug 31&ndash;Sept 2. Brief Rani + Adrian on secure-PC propensity modeling status and open ICP-doc feedback loop before Nick departs.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0827-4')?'done':''}" data-csm="andy" id="action-0827-4">
+      <div class="action-checkbox ${doneActions.has('0827-4')?'checked':''}" onclick="toggleAction('0827-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; SAS &mdash; Pilot success criteria alignment before Jesper validation</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Andy Lim &middot; Mike-D reconstructed scoring methodologies into internal tool; sales-guide trigger planned. Push Mike/Augie for explicit pilot success criteria + timeline for Jesper validation review so pilot can convert cleanly.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0827-5')?'done':''}" data-csm="varun" id="action-0827-5">
+      <div class="action-checkbox ${doneActions.has('0827-5')?'checked':''}" onclick="toggleAction('0827-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Iron Mountain &mdash; Julian AM handoff enablement</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Varun Tiwari &middot; Julian Rojas newly onboarded as Iron Mountain AM. Bundle intent-topics coverage analysis + prior CVP/Juan Camilo context into a Julian-facing enablement pack so handoff momentum carries through renewal window.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0827-6')?'done':''}" data-csm="nick" id="action-0827-6">
+      <div class="action-checkbox ${doneActions.has('0827-6')?'checked':''}" onclick="toggleAction('0827-6')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Intuit/Mailchimp &mdash; Blackbaud campaign kickoff after Constant Contact launch</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Nick Johnson &middot; Constant Contact BDR campaign launched Wed. Sequence Blackbaud campaign next; loop in new stakeholders Joe You + Varun Batra (mid-market sales) so campaign strategy stays aligned with expanded team.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
