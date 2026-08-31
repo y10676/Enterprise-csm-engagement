@@ -6844,3 +6844,227 @@ function dayActionsHTML_2026_08_27() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
 }
+
+function dayData_2026_08_28() {
+  return {
+    calls: [
+      { ts: 'Aug 28 · 7:00 AM', csm: 'riley', account: `SAP Business Network`,
+        note: `TrustRadius partnership next steps monthly. Custom questions audit + AI crawl data review + exploring TR capabilities across other SAP supply chain products.`,
+        mins: 60, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Riley Rogers driving TrustRadius partnership sync with SAP Business Network team (Stephanie, Kathryn Zwack, Jamie Fitzcarlos; Adrian on PTO). Focus on optimizing SAP&rsquo;s TR profile — description length, multimedia (demos/screenshots) to improve algorithmic ranking; custom questions audit for cleaner review flow; AI crawl data (grounding vs training + competitor analysis); Chrome extension for tagged customer quotes. Jamie interested in extending TR across broader supply chain portfolio. Next sync rescheduled to Sept 15 @ 1:30 PM ET.` },
+      { ts: 'Aug 28 · 9:00 AM', csm: 'atisha', account: `Apple Inc.`,
+        note: `Bi-weekly sync with Roy Basnayake. Federal/state/local gov data bifurcation via Claude tests, AI scoring model for high-growth companies, tracking new AI hardware categories (NVIDIA DGX Park, AMD Strix Halo).`,
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Apple bi-weekly with Roy Basnayake. Atisha shared federal/state gov data bifurcation — manual approach + Claude-based cloud scanning tested on ~300 accounts; results good but some state-level agencies (e.g., NYC) surfaced at city-level. Focused on 10K+ employee companies (~$40B of the $19B market spend captured). Discussed reverse account signals modeling at aggregated level, AI scoring for high-growth companies (size/industry/intent factors), and tracking new AI hardware categories like NVIDIA DGX Park and AMD Strix Halo. Adrian Escobar joined for reverse modeling timeline discussion.` },
+      { ts: 'Aug 28 · 11:30 AM', csm: 'atisha', account: `RSM US`,
+        note: `Regular RSM sync. Customer (Kristin Lewis) asked Atisha to turn off recording so she could speak more freely &mdash; call continued off-record.`,
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'Customer', purpose: 'Check-in',
+        detail: `RSM sync with Kristin Lewis. Kristin opened by asking Atisha to turn off recording — &ldquo;I&rsquo;ll be able to speak more freely and I think it&rsquo;ll really help.&rdquo; Atisha agreed and recording stopped. Follows Aug 27&rsquo;s IDL program planning conversation; likely candid discussion on internal RSM budget/timing dynamics ahead of FY27 IDL launch target.` },
+    ],
+    pulses: [
+      { csm: 'riley', account: `SAP Business Network`, health: 'Healthy',
+        note: `Partnership optimization sync. Custom questions audit + AI crawl data + Chrome extension. Jamie exploring TR across other SAP supply chain products.` },
+      { csm: 'atisha', account: `Apple Inc.`, health: 'Healthy',
+        note: `Federal/state/local gov bifurcation ready Monday. AI scoring model for high-growth companies + new AI hardware category tracking (DGX Park, Strix Halo).` },
+      { csm: 'atisha', account: `RSM US`, health: 'Healthy',
+        note: `Regular sync; customer requested recording off for candid conversation. IDL program work continuing toward FY27 target.` },
+    ],
+  };
+}
+
+function dayMeta_2026_08_28() {
+  return {
+    pills: [
+      ['dot-teal',   '3 Calls'],
+      ['dot-amber',  '2 Expansion'],
+      ['dot-green',  '3 Vitally Pulses'],
+      ['dot-grey',   'Fri Aug 28 &middot; 53 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (3)', 'Pulses (3)', 'Action Items (5)']
+  };
+}
+
+function dayOverviewHTML_2026_08_28() {
+  return `<div class="section-label">Team Activity &mdash; Friday August 28, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Friday Aug 28 &mdash; 53 recordings scanned</strong> via SFDC SOQL &middot; <strong>3 confirmed calls</strong> across 2 CSMs &middot; 0 concerning &middot; 2 expansion signals &middot; Light Friday &mdash; Riley on the road (TN), most CSMs quiet
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>EXPANSION:</strong> SAP Business Network TrustRadius partnership optimization (custom questions audit, AI crawl analysis, exploring TR across broader SAP supply chain portfolio) &middot; Apple bi-weekly (federal/state/local gov data bifurcation, AI scoring for high-growth companies, new AI hardware category tracking &mdash; DGX Park, Strix Halo)
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Apple (&#x1F4C8; gov data bifurcation + AI scoring + hardware tracking) &middot; RSM (regular sync, recording stopped for candid conversation)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">SAP Business Network (&#x1F4C8; TrustRadius partnership: custom questions audit + AI crawl + exploring other SAP supply chain products)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="nick">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event scheduled (Infor onsite debrief 5:00 AM) &mdash; no recording synced. Nick starting 2-week PTO handoff period.</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="divyam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No CSM-owned events scheduled &mdash; no confirmed calls</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="rani">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event scheduled (Hitachi Vantara sync 9:30 AM) &mdash; recording synced but no transcript</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="varun">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No CSM-owned events scheduled &mdash; no confirmed calls</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event scheduled (ADP Smart Compliance 12:30 PM) &mdash; no recording synced</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 events scheduled (COLT 2:00 AM &mdash; recording had no CSM speakers detected; ADP Smart Compliance 8:30 AM &mdash; no recording)</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_08_28() {
+  return `<div class="section-label">Confirmed Calls &mdash; Friday August 28, 2026</div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>EXPANSION:</strong> SAP Business Network TR partnership optimization (Riley) &middot; Apple gov data bifurcation + AI scoring + hardware tracking (Atisha)
+  </div>
+  <div style="background:#1c1f26;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fcd34d;">
+    &#x26A0;&#xFE0F; <strong>UNCONFIRMED (no transcript):</strong> Rani &times; Hitachi Vantara (9:30 AM PT, recording synced but no transcript) &middot; Andy &times; COLT (2:00 AM PT, recording synced but only &ldquo;Unknown&rdquo; speaker labels)
+  </div>
+  <div style="background:#1c1f26;border:1px solid #64748b;border-left:3px solid #64748b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#cbd5e1;">
+    &#x1F4C5; <strong>NO RECORDING:</strong> Nick &times; Infor onsite debrief (5:00 AM) &middot; Atisha &times; Intel Platform Training (5:30 AM) &middot; Andy &times; ADP Smart Compliance (8:30 AM) &middot; Atisha &times; AMD Bi-weekly Touchpoint (9:30 AM) &middot; Atisha &times; Apple Market Intelligence Training (11:00 AM) &middot; Atisha &times; Apple Platform Training Team Call (12:00 PM) &middot; Pam &times; ADP Smart Compliance (12:30 PM)
+  </div>`;
+}
+
+function dayPulsesHTML_2026_08_28() {
+  const cards = [
+    { csm:'riley', health:'Healthy', account:`SAP Business Network`, opp:`Vitally Pulse &mdash; Aug 28 Call`,
+      arr:`Enterprise &middot; Riley Rogers`, csmlbl:`Riley Rogers`,
+      change:`Aug 28 &middot; Healthy`,
+      excerpt:`TrustRadius partnership optimization &mdash; custom questions audit + AI crawl data (grounding vs training) + Chrome extension for tagged quotes. Jamie exploring TR across broader SAP supply chain portfolio. Next sync Sept 15.` },
+    { csm:'atisha', health:'Healthy', account:`Apple Inc.`, opp:`Vitally Pulse &mdash; Aug 28 Call`,
+      arr:`Enterprise &middot; Atisha Waghela`, csmlbl:`Atisha Waghela`,
+      change:`Aug 28 &middot; Healthy`,
+      excerpt:`Bi-weekly with Roy Basnayake. Federal/state/local gov data bifurcation via Claude cloud scanning (~300 accounts tested). AI scoring model for high-growth companies. New AI hardware category tracking &mdash; DGX Park, Strix Halo.` },
+    { csm:'atisha', health:'Healthy', account:`RSM US`, opp:`Vitally Pulse &mdash; Aug 28 Call`,
+      arr:`Enterprise &middot; Atisha Waghela`, csmlbl:`Atisha Waghela`,
+      change:`Aug 28 &middot; Healthy`,
+      excerpt:`Kristin Lewis asked Atisha to turn off recording for candid conversation &mdash; likely continuation of IDL/FY27 planning from Aug 27 call, internal budget/timing dynamics.` },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div class="pulse-account">${c.account}</div>
+          <div class="pulse-opp">${c.opp}</div>
+          <div class="pulse-arr">${c.arr}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_08_28() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('0828-1')?'done':''}" data-csm="atisha" id="action-0828-1">
+      <div class="action-checkbox ${doneActions.has('0828-1')?'checked':''}" onclick="toggleAction('0828-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Apple &mdash; Deliver bifurcated gov data + contract mapping by Monday</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Atisha Waghela &middot; Roy expecting bifurcated federal/state/local government data (with city-level agencies filtered for spend size) plus contract data mapped onto spend data by Monday. Also share the combined file so Roy&rsquo;s team can plug it into next round of AI scoring model tests.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0828-2')?'done':''}" data-csm="atisha" id="action-0828-2">
+      <div class="action-checkbox ${doneActions.has('0828-2')?'checked':''}" onclick="toggleAction('0828-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Apple &mdash; Share AI-specific product list + hardware category examples</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Atisha Waghela &middot; Send Roy the AI-specific product list with any history on tracking, plus examples of emerging hardware categories like NVIDIA DGX Park and AMD Strix Halo so Adrian&rsquo;s team can assess market growth signals. Follow up on reverse account signals modeling timeline (Roy + Adrian conversation).</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0828-3')?'done':''}" data-csm="riley" id="action-0828-3">
+      <div class="action-checkbox ${doneActions.has('0828-3')?'checked':''}" onclick="toggleAction('0828-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; SAP Business Network &mdash; Send custom questions audit + investigate Logan Tane review</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Riley Rogers &middot; Send custom questions audit survey to Stephanie and Kathryn ahead of their custom-questions review with the research team. Investigate the publication status of Logan Tane&rsquo;s review. Deadline aligned to Sept 15 rescheduled sync.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0828-4')?'done':''}" data-csm="riley" id="action-0828-4">
+      <div class="action-checkbox ${doneActions.has('0828-4')?'checked':''}" onclick="toggleAction('0828-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; SAP Business Network &mdash; SAP Ariba category alignment + intent data best practices</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Riley Rogers &middot; Follow up with the SAP Ariba team on category alignment so SAP&rsquo;s products are properly bucketed on TrustRadius. Find and send intent-data leverage best practices to Kathryn and Jamie ahead of expanding TR into other SAP supply chain products.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0828-5')?'done':''}" data-csm="atisha" id="action-0828-5">
+      <div class="action-checkbox ${doneActions.has('0828-5')?'checked':''}" onclick="toggleAction('0828-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; RSM &mdash; Async follow-up on IDL/FY27 candid discussion</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Atisha Waghela &middot; Recording was stopped at Kristin&rsquo;s request &mdash; capture and log the candid Kristin discussion (IDL/FY27 launch, budget/timing) in Vitally note (private) and confirm any owed follow-ups from Aug 27&rsquo;s program-planning session.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
