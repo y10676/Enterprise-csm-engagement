@@ -7068,3 +7068,215 @@ function dayActionsHTML_2026_08_28() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
 }
+
+function dayData_2026_08_31() {
+  return {
+    calls: [
+      { ts: 'Aug 31 · 7:30 AM', csm: 'divyam', account: `Procore Technologies`,
+        note: `TrustRadius monthly sync + GEO Dashboard walkthrough with Michael Beahm. Buyer Choice Award prep &mdash; need 10 reviews by Sept 26 (have 7); Divyam to run review-gen campaign after Michael shares customer list.`,
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Procore TrustRadius sync with Michael Beahm. Divyam drove agenda &mdash; reviewed award eligibility (7 reviews vs 10 needed for Buyer&rsquo;s Choice, deadline Sept 26). Michael to share customer list (target 60 names) by end of week; Divyam to kick off 3-email cadence next Tuesday. GEO Dashboard walkthrough: crawl analytics (grounding/training/AI overviews), page-type analysis (alternatives/comparisons/pricing/reviews), citation monitoring, competitor benchmarking (Monday.com). High pricing search demand &mdash; Michael to update description + integrations this fall. Divyam sharing dashboard reports with Tony Pataki (Director of Global SEO Analytics &amp; CRO).` },
+      { ts: 'Aug 31 · 10:00 AM', csm: 'divyam', account: `BILL Operations, LLC`,
+        note: `Weekly sync with Charles Hawkins + Eric Nguyen. SFDC connection dropped/re-established (root cause pending, BILL-side conflict). Aug 26&ndash;27 records not scored despite retry logic. Manual quarterly refresh agreed (Matthew&rsquo;s team). 1700 low-fit closed-won deals for investigation.`,
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Mixed',
+        detail: `BILL weekly sync with Charles Hawkins + Eric Nguyen. Follow-ups from Aug 26 working session with Matthew: SFDC connection reset (Matthew&rsquo;s team owning root cause on BILL side); manual quarterly refresh agreed (no API-token consumption). Open items: Aug 26/27 records not scored despite retry logic (Divyam to screenshot specific records by Wed/Thu); alerts for SFDC downtime being scoped; 1700 low-fit closed-won deals identified &mdash; Charles&rsquo;s team analyzing to determine if model logic needs adjustment; recent override analysis shows disproportionate lead increase with minimal conversion coverage gain, needs deeper review by end of week.` },
+    ],
+    pulses: [
+      { csm: 'divyam', account: `Procore Technologies`, health: 'Healthy',
+        note: `TR Buyer Choice Award review-gen campaign kicking off; GEO Dashboard live with crawl/citation analytics. High pricing search demand.` },
+      { csm: 'divyam', account: `BILL Operations, LLC`, health: 'Healthy',
+        note: `Weekly sync &mdash; SFDC reconnected, root cause pending; unsorted Aug 26/27 records + 1700 low-fit closed-won deals under investigation.` },
+    ],
+  };
+}
+
+function dayMeta_2026_08_31() {
+  return {
+    pills: [
+      ['dot-teal',   '2 Calls'],
+      ['dot-amber',  '1 Expansion'],
+      ['dot-green',  '2 Vitally Pulses'],
+      ['dot-grey',   'Mon Aug 31 &middot; 41 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (2)', 'Pulses (2)', 'Action Items (5)']
+  };
+}
+
+function dayOverviewHTML_2026_08_31() {
+  return `<div class="section-label">Team Activity &mdash; Monday August 31, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Monday Aug 31 &mdash; 41 recordings scanned</strong> via SFDC SOQL &middot; <strong>2 confirmed calls</strong> across 1 CSM (Divyam) &middot; 0 concerning &middot; 1 expansion signal &middot; Very light Monday &mdash; Nick on PTO (2-wk handoff), Atisha PTO, most CSM events had no recording synced
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>EXPANSION:</strong> Procore TrustRadius Buyer&rsquo;s Choice Award review-gen campaign (3-email cadence to 60+ customers, Sept 26 deadline) + GEO Dashboard live with crawl/citation analytics; description/pricing updates this fall.
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Procore (&#x1F4C8; TR Buyer&rsquo;s Choice review campaign + GEO Dashboard) &middot; BILL Operations (weekly &mdash; SFDC reconnected, 1700 low-fit deals under review)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="nick">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">On PTO (2-week handoff) &mdash; 5 CSM-owned events (Softcat, HCL TR, NICE, NTT Data, Softcat biweekly) &mdash; NTT Data recording happened without Nick (David Garcia Thomas + Kirsten Allen-Broyles took the meeting); others had no recording</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="rani">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event (NetApp weekly sync 1:00 PM) &mdash; recording synced but no transcript</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="varun">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 events (Ciena monthly 6:00 AM &mdash; no recording; Capital One monthly touchpoint 10:05 AM &mdash; recording synced, no transcript)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="atisha">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event (Airtel Africa sync 3:00 AM) &mdash; no recording synced</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event (Splunk TR monthly sync 11:00 AM) &mdash; no recording synced</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="riley">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No CSM-owned events scheduled &mdash; likely travel bandwidth continuing from Aug 28</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No CSM-owned events scheduled</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_08_31() {
+  return `<div class="section-label">Confirmed Calls &mdash; Monday August 31, 2026</div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>EXPANSION:</strong> Procore TR Buyer&rsquo;s Choice Award review-gen campaign + GEO Dashboard live with crawl/citation analytics (Divyam)
+  </div>
+  <div style="background:#1c1f26;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fcd34d;">
+    &#x26A0;&#xFE0F; <strong>UNCONFIRMED (no transcript):</strong> Varun &times; Capital One (10:05 AM PT, recording synced but no transcript) &middot; Rani &times; NetApp (1:00 PM PT, recording synced but no transcript)
+  </div>
+  <div style="background:#1c1f26;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fcd34d;">
+    &#x26A0;&#xFE0F; <strong>NICK ON PTO &mdash; NTT DATA HELD WITHOUT CSM:</strong> Nick&rsquo;s scheduled 9:00 AM NTT Data monthly session recorded, but the CSM did not attend &mdash; only David Garcia Thomas (HG) + Kirsten Allen-Broyles (customer) present. Handoff coverage needed for the 2-week Nick PTO window.
+  </div>
+  <div style="background:#1c1f26;border:1px solid #64748b;border-left:3px solid #64748b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#cbd5e1;">
+    &#x1F4C5; <strong>NO RECORDING:</strong> Atisha &times; Airtel Africa (3:00 AM) &middot; Varun &times; Ciena (6:00 AM) &middot; Nick &times; Softcat biweekly (6:30 AM) &middot; Nick &times; HCL TR (7:30 AM) &middot; Nick &times; NICE biweekly (8:00 AM) &middot; Pam &times; Splunk TR (11:00 AM)
+  </div>`;
+}
+
+function dayPulsesHTML_2026_08_31() {
+  const cards = [
+    { csm:'divyam', health:'Healthy', account:`Procore Technologies`, opp:`Vitally Pulse &mdash; Aug 31 Call`,
+      arr:`Enterprise &middot; Divyam Dewan`, csmlbl:`Divyam Dewan`,
+      change:`Aug 31 &middot; Healthy`,
+      excerpt:`TR Buyer&rsquo;s Choice Award review-gen kicking off &mdash; 7 reviews of 10 needed by Sept 26; Michael sharing 60+ customer list. GEO Dashboard live &mdash; crawl analytics, citation monitoring, pricing search demand identified. Full session with Tony Pataki (Director SEO) upcoming.` },
+    { csm:'divyam', health:'Healthy', account:`BILL Operations, LLC`, opp:`Vitally Pulse &mdash; Aug 31 Call`,
+      arr:`Enterprise &middot; Divyam Dewan`, csmlbl:`Divyam Dewan`,
+      change:`Aug 31 &middot; Healthy`,
+      excerpt:`SFDC reconnected (Matthew&rsquo;s team on root cause, BILL-side conflict). Aug 26/27 records not scored &mdash; retry logic didn&rsquo;t trigger. 1700 low-fit closed-won deals &mdash; Charles&rsquo;s team investigating. Override analysis shows lead-count increase without conversion-coverage gain.` },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div class="pulse-account">${c.account}</div>
+          <div class="pulse-opp">${c.opp}</div>
+          <div class="pulse-arr">${c.arr}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_08_31() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('0831-1')?'done':''}" data-csm="nick" id="action-0831-1">
+      <div class="action-checkbox ${doneActions.has('0831-1')?'checked':''}" onclick="toggleAction('0831-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F6A8; Nick PTO handoff &mdash; NTT Data + Softcat + NICE coverage</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Nick Johnson (out) / Rani Guy (backup) &middot; NTT Data 9 AM ran without Nick (David Garcia Thomas + Kirsten took it). Confirm Rani + Adrian have coverage plans for Softcat biweekly, NICE biweekly, HCL TR, and NTT monthly for the remaining 2-week window. Loop David/Kirsten on customer commitments made during the NTT session.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0831-2')?'done':''}" data-csm="divyam" id="action-0831-2">
+      <div class="action-checkbox ${doneActions.has('0831-2')?'checked':''}" onclick="toggleAction('0831-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Procore &mdash; Kick off review-gen campaign after customer list arrives</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Divyam Dewan &middot; Prompt Michael Beahm on Tuesday if the 60+ customer list hasn&rsquo;t landed. Launch 3-email review-gen cadence by Tuesday to leave enough runway for Sept 26 Buyer&rsquo;s Choice deadline (need 3&ndash;4 net-new qualifying reviews).</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0831-3')?'done':''}" data-csm="divyam" id="action-0831-3">
+      <div class="action-checkbox ${doneActions.has('0831-3')?'checked':''}" onclick="toggleAction('0831-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F534; BILL &mdash; Investigate Aug 26/27 unscored records + SFDC downtime alerts</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Divyam Dewan &middot; Screenshot the specific Aug 26/27 records that weren&rsquo;t scored despite retry logic; deliver to Eric by Wed/Thu. Pull options for setting up SFDC-connection downtime alerts so BILL isn&rsquo;t reliant on manual discovery next time. Schedule follow-up with Charles by Wed/Thu.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0831-4')?'done':''}" data-csm="divyam" id="action-0831-4">
+      <div class="action-checkbox ${doneActions.has('0831-4')?'checked':''}" onclick="toggleAction('0831-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Procore &mdash; Share GEO Dashboard reports with Tony Pataki + Michael description updates</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Divyam Dewan &middot; Share specific GEO Dashboard reports with Tony Pataki (Director of Global SEO Analytics &amp; CRO); schedule full walkthrough of remaining two dashboards. Follow up with Michael on setting monthly regular delivery of dashboard analytics.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0831-5')?'done':''}" data-csm="divyam" id="action-0831-5">
+      <div class="action-checkbox ${doneActions.has('0831-5')?'checked':''}" onclick="toggleAction('0831-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; BILL &mdash; Analyze low-fit closed-won deals + override impact</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Divyam Dewan &middot; Pull previous fiscal quarter data for comparison with current quarter to help Charles&rsquo;s team assess the 1700 low-fit closed-won deals; join follow-up meeting Wed/Thu to review model performance analysis + override impact (recent overrides increased lead count disproportionately vs conversion-coverage gain).</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
+
