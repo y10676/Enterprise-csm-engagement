@@ -7082,12 +7082,19 @@ function dayData_2026_08_31() {
         mins: 30, health: 'Healthy',
         nature: 'Recurring', initiator: 'HG CS', purpose: 'Mixed',
         detail: `BILL weekly sync with Charles Hawkins + Eric Nguyen. Follow-ups from Aug 26 working session with Matthew: SFDC connection reset (Matthew&rsquo;s team owning root cause on BILL side); manual quarterly refresh agreed (no API-token consumption). Open items: Aug 26/27 records not scored despite retry logic (Divyam to screenshot specific records by Wed/Thu); alerts for SFDC downtime being scoped; 1700 low-fit closed-won deals identified &mdash; Charles&rsquo;s team analyzing to determine if model logic needs adjustment; recent override analysis shows disproportionate lead increase with minimal conversion coverage gain, needs deeper review by end of week.` },
+      { ts: 'Aug 31 · 11:30 PM', csm: 'atisha', account: `Equinix`,
+        note: `Late-night scoping call with Garrett Dee. Competitive intelligence target-list build for Equinix colocation/data-center services &mdash; two lists (product categories + attributes). Adjacent categories dropped as too broad. Cloud Dynamics data set surfaced as better source than HG core. Pricing consult with AM tomorrow.`,
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Equinix scoping session with Garrett Dee (11:30 PM PT). Atisha drove agenda: built two candidate target lists (product-category-based + attribute-based) for Equinix&rsquo;s direct-competitor mapping (colocation, data-center services, interconnection). Adjacent-category expansion (CDN/IaaS) discussed and rejected by Garrett as &ldquo;muddying the waters.&rdquo; Cloud Dynamics data emerged as potentially better source than HG core for this specific use case. Atisha to consult with west-coast-based AM on pricing and share tomorrow; Garrett flagged Equinix wants deliverable this week.` },
     ],
     pulses: [
       { csm: 'divyam', account: `Procore Technologies`, health: 'Healthy',
         note: `TR Buyer Choice Award review-gen campaign kicking off; GEO Dashboard live with crawl/citation analytics. High pricing search demand.` },
       { csm: 'divyam', account: `BILL Operations, LLC`, health: 'Healthy',
         note: `Weekly sync &mdash; SFDC reconnected, root cause pending; unsorted Aug 26/27 records + 1700 low-fit closed-won deals under investigation.` },
+      { csm: 'atisha', account: `Equinix`, health: 'Healthy',
+        note: `Competitive intelligence target-list scoping. Cloud Dynamics as better data source than HG core. Pricing consult with AM tomorrow.` },
     ],
   };
 }
@@ -7095,22 +7102,22 @@ function dayData_2026_08_31() {
 function dayMeta_2026_08_31() {
   return {
     pills: [
-      ['dot-teal',   '2 Calls'],
-      ['dot-amber',  '1 Expansion'],
-      ['dot-green',  '2 Vitally Pulses'],
-      ['dot-grey',   'Mon Aug 31 &middot; 41 scanned'],
+      ['dot-teal',   '3 Calls'],
+      ['dot-amber',  '2 Expansion'],
+      ['dot-green',  '3 Vitally Pulses'],
+      ['dot-grey',   'Mon Aug 31 &middot; 42 scanned'],
     ],
-    tabs: ['Overview', 'Calls (2)', 'Pulses (2)', 'Action Items (5)']
+    tabs: ['Overview', 'Calls (3)', 'Pulses (3)', 'Action Items (6)']
   };
 }
 
 function dayOverviewHTML_2026_08_31() {
   return `<div class="section-label">Team Activity &mdash; Monday August 31, 2026</div>
   <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
-    &#x1F4C5; <strong>Monday Aug 31 &mdash; 41 recordings scanned</strong> via SFDC SOQL &middot; <strong>2 confirmed calls</strong> across 1 CSM (Divyam) &middot; 0 concerning &middot; 1 expansion signal &middot; Very light Monday &mdash; Nick on PTO (2-wk handoff), Atisha PTO, most CSM events had no recording synced
+    &#x1F4C5; <strong>Monday Aug 31 &mdash; 42 recordings scanned</strong> via SFDC SOQL &middot; <strong>3 confirmed calls</strong> across 2 CSMs (Divyam &times;2, Atisha &times;1) &middot; 0 concerning &middot; 2 expansion signals &middot; Late add: Atisha &times; Equinix at 11:30 PM PT (competitive intelligence scoping + pricing consult)
   </div>
   <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
-    &#x1F4C8; <strong>EXPANSION:</strong> Procore TrustRadius Buyer&rsquo;s Choice Award review-gen campaign (3-email cadence to 60+ customers, Sept 26 deadline) + GEO Dashboard live with crawl/citation analytics; description/pricing updates this fall.
+    &#x1F4C8; <strong>EXPANSION:</strong> Procore TR Buyer&rsquo;s Choice Award review-gen + GEO Dashboard analytics (Divyam) &middot; Equinix competitive-intelligence target-list scoping with pricing consult in flight (Atisha, 11:30 PM PT)
   </div>
   <div class="overview-grid">
 
@@ -7126,6 +7133,20 @@ function dayOverviewHTML_2026_08_31() {
         <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
       </div>
       <div class="csm-account-note">Procore (&#x1F4C8; TR Buyer&rsquo;s Choice review campaign + GEO Dashboard) &middot; BILL Operations (weekly &mdash; SFDC reconnected, 1700 low-fit deals under review)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Equinix (&#x1F4C8; late-night 11:30 PM PT scoping call &mdash; competitive intelligence target list + pricing consult in flight) &middot; Airtel Africa event at 3 AM had no recording</div>
     </div>
 
     <div class="csm-card no-calls" data-csm="nick">
@@ -7153,15 +7174,6 @@ function dayOverviewHTML_2026_08_31() {
         <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
       </div>
       <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 events (Ciena monthly 6:00 AM &mdash; no recording; Capital One monthly touchpoint 10:05 AM &mdash; recording synced, no transcript)</div>
-    </div>
-
-    <div class="csm-card no-calls" data-csm="atisha">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header">
-        <div class="avatar av-grey">AW</div>
-        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
-      </div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event (Airtel Africa sync 3:00 AM) &mdash; no recording synced</div>
     </div>
 
     <div class="csm-card no-calls" data-csm="pam">
@@ -7197,7 +7209,7 @@ function dayOverviewHTML_2026_08_31() {
 function dayCallsHTML_2026_08_31() {
   return `<div class="section-label">Confirmed Calls &mdash; Monday August 31, 2026</div>
   <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
-    &#x1F4C8; <strong>EXPANSION:</strong> Procore TR Buyer&rsquo;s Choice Award review-gen campaign + GEO Dashboard live with crawl/citation analytics (Divyam)
+    &#x1F4C8; <strong>EXPANSION:</strong> Procore TR Buyer&rsquo;s Choice Award review-gen + GEO Dashboard analytics (Divyam) &middot; Equinix competitive-intelligence target-list scoping + pricing consult (Atisha, 11:30 PM PT late add)
   </div>
   <div style="background:#1c1f26;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fcd34d;">
     &#x26A0;&#xFE0F; <strong>UNCONFIRMED (no transcript):</strong> Varun &times; Capital One (10:05 AM PT, recording synced but no transcript) &middot; Rani &times; NetApp (1:00 PM PT, recording synced but no transcript)
@@ -7220,6 +7232,10 @@ function dayPulsesHTML_2026_08_31() {
       arr:`Enterprise &middot; Divyam Dewan`, csmlbl:`Divyam Dewan`,
       change:`Aug 31 &middot; Healthy`,
       excerpt:`SFDC reconnected (Matthew&rsquo;s team on root cause, BILL-side conflict). Aug 26/27 records not scored &mdash; retry logic didn&rsquo;t trigger. 1700 low-fit closed-won deals &mdash; Charles&rsquo;s team investigating. Override analysis shows lead-count increase without conversion-coverage gain.` },
+    { csm:'atisha', health:'Healthy', account:`Equinix`, opp:`Vitally Pulse &mdash; Aug 31 Call`,
+      arr:`Enterprise &middot; Atisha Waghela`, csmlbl:`Atisha Waghela`,
+      change:`Aug 31 &middot; Healthy`,
+      excerpt:`Late-night scoping (11:30 PM PT) with Garrett Dee. Two candidate target lists built (product-category + attribute). Adjacent CDN/IaaS excluded as too broad. Cloud Dynamics data set emerged as better competitor-match source than HG core. Pricing consult with AM tomorrow.` },
   ];
   const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
   const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
@@ -7276,7 +7292,16 @@ function dayActionsHTML_2026_08_31() {
         <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Divyam Dewan &middot; Pull previous fiscal quarter data for comparison with current quarter to help Charles&rsquo;s team assess the 1700 low-fit closed-won deals; join follow-up meeting Wed/Thu to review model performance analysis + override impact (recent overrides increased lead count disproportionately vs conversion-coverage gain).</div>
       </div>
     </div>
+    <div class="action-item ${doneActions.has('0831-6')?'done':''}" data-csm="atisha" id="action-0831-6">
+      <div class="action-checkbox ${doneActions.has('0831-6')?'checked':''}" onclick="toggleAction('0831-6')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Equinix &mdash; Deliver pricing + bifurcated vendor list to Garrett tomorrow</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Atisha Waghela &middot; Consult with west-coast AM on pricing for the scoped colocation/data-center target list and share with Garrett Dee by end of day tomorrow (Sept 1). Garrett wants deliverable this week. Also finalize the two candidate lists (product-category + attribute-based) and consider whether Cloud Dynamics data set is a better fit than HG core for this competitive-mapping use case.</div>
+      </div>
+    </div>
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
 }
+
+
 
