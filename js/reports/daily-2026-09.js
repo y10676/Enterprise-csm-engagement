@@ -392,3 +392,217 @@ function weeklyOrMonthlyHTML_2026_09_01() {
     </div>
   </div>`;
 }
+
+function dayData_2026_09_02() {
+  return {
+    calls: [
+      { ts: 'Sep 2 · 7:30 AM', csm: 'rani', account: `Workday Inc`,
+        note: `SOW math walkthrough follow-up with Elaina Wasmus + Kraig Kraning + Leo Zunz. 481,746 additional credits at no extra cost as partnership gesture. Presenting both 1-year and 3-year options to finance before long weekend (~20-30% savings needed to justify budget increase).`,
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Workday SOW math walkthrough follow-up with Elaina Wasmus, Kraig Kraning, Leo Zunz (Elaina stepping in for Alex). Rani asked Elaina to walk through her math (unclear jump to 4M credits + per-credit cost). Confirmed: ~481,746 additional credits at no extra cost as partnership gesture (buffer for evaluation). 3-year commitment offers significant vs annual renewals w/ capped increases + credit rollover. Finance needs 20-30% savings for budget increase. Both 1-year + 3-year options going to finance before long weekend. Follow-up call tomorrow.` },
+      { ts: 'Sep 2 · 10:30 AM', csm: 'pam', account: `F5`,
+        note: `Bi-weekly with Sherry Arnold + Mardigan Moffat. Hgeo customer voice platform 2-year discounted pricing pitch for Pascal (budget meeting upcoming). AI-driven content + SEO ranking value framing. Big IP being considered for product list expansion. Personal note: Sherry&rsquo;s mom recent ovarian cancer diagnosis.`,
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `F5 TrustRadius bi-weekly with Sherry Arnold + Mardigan Moffat. Personal update: Sherry&rsquo;s mom broken shoulder + ovarian cancer dx (port placement scheduled Sept 18). Business: Hgeo customer voice platform 2-year option with discounted pricing ready for Pascal ahead of budget meeting. AI-driven solutions + content increasingly important for search-engine ranking; strategic value framing. Review-collection challenge for new AI products w/ small customer bases. Adding &ldquo;Big IP&rdquo; to product list under consideration. Mardigan to send market/competitive report examples.` },
+    ],
+    pulses: [
+      { csm: 'rani', account: `Workday Inc`, health: 'Healthy',
+        note: `SOW math walkthrough; 481K bonus credits partnership gesture; 1-yr and 3-yr options to finance before long weekend.` },
+      { csm: 'pam', account: `F5`, health: 'Healthy',
+        note: `Hgeo 2-year discounted pricing pitch for Pascal budget meeting; AI-driven content value framing; Big IP product-list expansion consideration.` },
+    ],
+  };
+}
+
+function dayMeta_2026_09_02() {
+  return {
+    pills: [
+      ['dot-teal',   '2 Calls'],
+      ['dot-amber',  '2 Expansion'],
+      ['dot-green',  '2 Vitally Pulses'],
+      ['dot-grey',   'Wed Sep 2 &middot; 101 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (2)', 'Pulses (2)', 'Action Items (5)']
+  };
+}
+
+function dayOverviewHTML_2026_09_02() {
+  return `<div class="section-label">Team Activity &mdash; Wednesday September 2, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Wednesday Sep 2 &mdash; 101 recordings scanned</strong> via SFDC SOQL &middot; <strong>2 confirmed calls</strong> (Rani, Pam) &middot; 0 concerning &middot; 2 expansion &middot; Very heavy day for CSM events (39 scheduled) but only 2 confirmed via transcript &mdash; 72 recordings had no transcript synced
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>EXPANSION:</strong> Workday SOW follow-up &mdash; 481K bonus credits + 1-yr/3-yr options to finance before long weekend (Rani) &middot; F5 Hgeo 2-year pricing pitch for Pascal budget meeting + Big IP product-list expansion consideration (Pam)
+  </div>
+  <div style="background:#1c1f26;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fcd34d;">
+    &#x26A0;&#xFE0F; <strong>DARK DATA:</strong> 39 CSM-owned events but only 2 confirmed via transcript. Widespread no-transcript recordings across Atisha (SFDC, Deloitte, Optiv, Intel, RELEX, EY, Insight Direct, Unily), Rani (Google, AWS, Lenovo, Cisco, Oracle), Divyam (Informatica, Salesforce), Varun (Autodesk, Workspan, Five9, Informatica, Insight), Riley (SAP BTP, Adobe), Andy (RELEX, Cockroach), Pam (Epicor, F5 second slot).
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Workday (&#x1F4C8; SOW walkthrough; 481K bonus credits; finance decision before long weekend) &middot; 5 other events (Google, AWS, Lenovo, Cisco, Oracle) all no-transcript</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="pam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">F5 (&#x1F4C8; Hgeo 2-year pricing pitch for Pascal) &middot; Epicor 7:30 AM + F5 second slot 10:30 AM no-transcript</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="atisha">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">HUGE calendar day (8 events: SFDC ASEAN, Deloitte weekly, EY standing sync, RELEX co-attended, Optiv weekly, Insight Direct AI Sales Coach, Intel, Unily) &mdash; every one no-transcript</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="varun">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">6 events (Insight MI Add-on, Workspan, Autodesk biweekly, Five9, Informatica co-w/ Divyam) &mdash; all no-transcript</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="divyam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 events (Informatica weekly co-w/ Varun 9 AM, Salesforce/Informatica followup 10 AM) &mdash; both no-transcript</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 events (RELEX 7 AM co-attended w/ Atisha, Cockroach Labs 9 AM) &mdash; both no-transcript</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="riley">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 events (SAP BTP TR 7 AM, TR-Adobe Success Call 10 AM) &mdash; recordings had no CSM speaker labels</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="nick">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Still on PTO. 2 events (Veeam team sync, Westcon monthly) had no recording synced</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_09_02() {
+  return `<div class="section-label">Confirmed Calls &mdash; Wednesday September 2, 2026</div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>EXPANSION:</strong> Workday SOW &mdash; 481K bonus credits + 1-yr/3-yr options to finance before long weekend (Rani) &middot; F5 Hgeo 2-year pitch for Pascal budget meeting + Big IP product-list expansion (Pam)
+  </div>
+  <div style="background:#1c1f26;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fcd34d;">
+    &#x26A0;&#xFE0F; <strong>WIDESPREAD NO-TRANSCRIPT:</strong> 39 CSM events, 2 confirmed. Notable dark-data day &mdash; Atisha (8 events all no-transcript), Rani (5 additional events no-transcript), Varun (6), Divyam (2), Andy (2), Riley (2 no-CSM-speaker), Pam (2 additional slots). Suspect Weflow-side sync backlog rather than actual no-shows.
+  </div>`;
+}
+
+function dayPulsesHTML_2026_09_02() {
+  const cards = [
+    { csm:'rani', health:'Healthy', account:`Workday Inc`, opp:`Vitally Pulse &mdash; Sep 2 Call`,
+      arr:`Enterprise &middot; Rani Guy`, csmlbl:`Rani Guy`,
+      change:`Sep 2 &middot; Healthy`,
+      excerpt:`SOW math walkthrough &mdash; 481,746 additional credits offered at no extra cost as partnership gesture. Elaina Wasmus walking finance both 1-year and 3-year options before long weekend. Finance needs 20-30% savings to justify budget increase.` },
+    { csm:'pam', health:'Healthy', account:`F5`, opp:`Vitally Pulse &mdash; Sep 2 Call`,
+      arr:`Enterprise &middot; Pam Huck`, csmlbl:`Pam Huck`,
+      change:`Sep 2 &middot; Healthy`,
+      excerpt:`Hgeo 2-year discounted pricing ready for Pascal ahead of budget meeting. AI-driven content + SEO framing gaining traction. Big IP under consideration for product-list expansion. Personal: Sherry&rsquo;s mom ovarian cancer dx, port placement Sept 18.` },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div class="pulse-account">${c.account}</div>
+          <div class="pulse-opp">${c.opp}</div>
+          <div class="pulse-arr">${c.arr}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_09_02() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('0902-1')?'done':''}" data-csm="rani" id="action-0902-1">
+      <div class="action-checkbox ${doneActions.has('0902-1')?'checked':''}" onclick="toggleAction('0902-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Workday &mdash; Send updated proposal + historical contract numbers before long weekend</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy + Kraig Kraning &middot; Send updated proposal with exact savings numbers for both 1-year and 3-year options plus historical contract numbers so finance can see price increase justification. Elaina presenting to finance before long weekend. Follow-up call tomorrow.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0902-2')?'done':''}" data-csm="pam" id="action-0902-2">
+      <div class="action-checkbox ${doneActions.has('0902-2')?'checked':''}" onclick="toggleAction('0902-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; F5 &mdash; Send Hgeo pricing deck to Pascal for budget meeting</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Pam Huck &middot; Send Pascal the Hgeo pricing deck ASAP ahead of Pascal&rsquo;s upcoming budget meeting. Sherry to follow up separately on AI-driven solutions value framing given F5&rsquo;s smaller AI customer base.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0902-3')?'done':''}" data-csm="pam" id="action-0902-3">
+      <div class="action-checkbox ${doneActions.has('0902-3')?'checked':''}" onclick="toggleAction('0902-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; F5 &mdash; Market/competitive report examples + AI review strategy</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Mardigan Moffat &middot; Send Sherry examples of market + competitive reports. Team to strategize on how to best encourage AI customers to write reviews given small customer bases. Consider adding &ldquo;Big IP&rdquo; to product list for review collection.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0902-4')?'done':''}" data-csm="all" id="action-0902-4">
+      <div class="action-checkbox ${doneActions.has('0902-4')?'checked':''}" onclick="toggleAction('0902-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; Team &mdash; Investigate Weflow no-transcript backlog</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Ops &middot; 39 CSM events scheduled Sep 2 but only 2 confirmed via transcript. This is the highest dark-data day observed. Check whether Weflow sync is backlogged, whether specific CSMs&rsquo; Zoom/Teams setups changed, or whether new browser plugin issue. If backlog, expect these to re-scan positive in 24-48h.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0902-5')?'done':''}" data-csm="nick" id="action-0902-5">
+      <div class="action-checkbox ${doneActions.has('0902-5')?'checked':''}" onclick="toggleAction('0902-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Nick PTO handoff &mdash; Veeam team sync + Westcon monthly coverage</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Nick Johnson (PTO) / Rani (backup) &middot; Nick&rsquo;s Sept 2 events (Veeam team sync 4:45 AM, Westcon monthly 8 AM) had no recordings synced. Confirm coverage/re-scheduling status for remainder of PTO week.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
+
