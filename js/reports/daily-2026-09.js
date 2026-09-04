@@ -606,3 +606,271 @@ function dayActionsHTML_2026_09_02() {
   <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
 }
 
+function dayData_2026_09_03() {
+  return {
+    calls: [
+      { ts: 'Sep 3 · 7:00 AM', csm: 'riley', account: `Adobe Systems Incorporated`,
+        note: `Adobe MAX TR event planning with Angel Carvalho. 440 review target (last year&rsquo;s cadence). 6 laptops + designated seating, setup Oct 10-12. Swag: gift cards (TR + G2), 1000 handheld fans, 1500 pins. Riley to add Angel to Adobe Slack channel.`,
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `Adobe MAX TR event planning session with Angel Carvalho (TR event mgmt). Target 440 reviews (similar to prior year). Setup on 10th, 11th, 12th (optional 9th). 6 laptops + designated seating. Swag: gift cards from TR + G2 vendors, 1000 rechargeable handheld fans, 1500 enamel pins. Swag distributable regardless of review completion (legal), but framed as incentive. Allison to send shipping label + hotel info + booth final mockup. Riley adding Angel to Adobe Slack channel.` },
+      { ts: 'Sep 3 · 7:30 AM', csm: 'rani', account: `Workday Inc`,
+        note: `SOW continued &mdash; Elaina personally favoring 3-yr $150 YoY option (cleaner tracking, avoids complex discount math). 10% credit investment covering overages. Legal + budget approvals + team feedback all TODAY. Deal near close.`,
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Workday SOW continued (3-day thread: Sept 1 redline &rarr; Sept 2 math walkthrough &rarr; Sept 3 finalization). Elaina personally favoring 3-year $150 YoY option for cleaner tracking (slightly worse discount, but avoids complex usage/discount tracking). 10% credit as HG investment acknowledging consumption model + covering potential overages. Future renewals based on 3-yr average usage. All internal work happening TODAY: team feedback, legal review, budget approvals. Rani sending VP Finance contact for signature. Elaina copying Rani + Kraig on all comms.` },
+      { ts: 'Sep 3 · 7:30 AM', csm: 'riley', account: `Intuit (Mailchimp)`,
+        note: `Mailchimp TR bi-weekly with Spencer Adkins. Review generation now a priority as internal &ldquo;dust settles.&rdquo; Spencer using existing incentive budget; more budget post-Nov renewal. Riley to send campaign examples + self-serve links. Renewal + budget discussion Sept 22.`,
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Mailchimp TR bi-weekly with Spencer Adkins. Review generation moving up as internal priorities settle. Spencer to use existing incentive budget for initial campaigns + assess before adding more. Riley providing tools + links (self-serve campaigns, HG-run campaigns). November renewal approaching &mdash; increased incentive budget will be available post-renewal. Discussion + budget alignment scheduled for Sept 22 with Spencer + Mardigan.` },
+      { ts: 'Sep 3 · 10:30 AM', csm: 'pam', account: `ZoomInfo`,
+        note: `TR sync with Russell Martin. Product consolidation strategy &mdash; Chorus + NeverBounce being folded into GTM Studio. January new website launch clarifying portfolio. Updating TR/G2 profiles to reflect forward-looking vision. Chorus continues alongside for transition.`,
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Expansion',
+        detail: `ZoomInfo TR sync with Russell Martin. Product consolidation initiative: legacy products (Chorus, NeverBounce) folding into GTM Studio to streamline messaging. January website launch will clarify SKU lineup (removing older listings). Third-party review sites (G2, TrustRadius) critical for market perception &mdash; profile updates prioritized around new product strategy. Chorus sold alongside GTM Studio during transition, capabilities + reviews to merge (avoiding EOL status). Sales team enablement key.` },
+      { ts: 'Sep 3 · 1:00 PM', csm: 'divyam', account: `OpenAI`,
+        note: `Competitive Intelligence Initiative intro with Ziad Amira. HG credit-based pricing walkthrough. Demoed &ldquo;wallet share analyzer&rdquo; (install + functional intel + time series). Delivery options: API, SFTP, data lake. HG can ingest new products/competitors in 2-3 weeks.`,
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `OpenAI Competitive Intelligence Initiative intro with Ziad Amira. Divyam walked HG&rsquo;s credit-based pricing model (transition from entity-based) + data offerings: technographics, install data (usage history + intensity), functional area intelligence, time series for churn mitigation. Demoed &ldquo;wallet share analyzer&rdquo; (install + functional intel + time series showing account growth/decline + competitor adoption). Delivery: API, SFTP, or direct-to-data-lake &mdash; credit consumption tracked regardless. New products/competitors ingestable in 2-3 weeks on request. Next: exports, docs, wallet-share HTML link.` },
+    ],
+    pulses: [
+      { csm: 'riley', account: `Adobe Systems Incorporated`, health: 'Healthy',
+        note: `Adobe MAX TR event planning &mdash; 440 review target, setup Oct 10-12, swag/logistics locked.` },
+      { csm: 'rani', account: `Workday Inc`, health: 'Healthy',
+        note: `SOW continued Day 3 &mdash; 3-yr $150 YoY option, deal near close, legal + budget + team review all TODAY.` },
+      { csm: 'riley', account: `Intuit (Mailchimp)`, health: 'Healthy',
+        note: `TR review generation priority; Spencer using existing budget; Nov renewal + budget uplift Sept 22.` },
+      { csm: 'pam', account: `ZoomInfo`, health: 'Healthy',
+        note: `Chorus + NeverBounce folding into GTM Studio; Jan website launch; TR/G2 profile updates in flight.` },
+      { csm: 'divyam', account: `OpenAI`, health: 'Healthy',
+        note: `Competitive Intelligence intro; wallet-share analyzer demo; credit model + delivery options walkthrough.` },
+    ],
+  };
+}
+
+function dayMeta_2026_09_03() {
+  return {
+    pills: [
+      ['dot-teal',   '5 Calls'],
+      ['dot-amber',  '4 Expansion'],
+      ['dot-green',  '5 Vitally Pulses'],
+      ['dot-grey',   'Thu Sep 3 &middot; 101 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (5)', 'Pulses (5)', 'Action Items (7)']
+  };
+}
+
+function dayOverviewHTML_2026_09_03() {
+  return `<div class="section-label">Team Activity &mdash; Thursday September 3, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Thursday Sep 3 &mdash; 101 recordings scanned</strong> via SFDC SOQL &middot; <strong>5 confirmed calls</strong> across 4 CSMs (Riley &times;2, Rani, Pam, Divyam) &middot; 0 concerning &middot; 4 expansion signals &middot; 51 CSM events (high volume) but still elevated no-transcript rate (75%)
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>EXPANSION:</strong> Workday SOW near close (Day 3 of thread; 3-yr $150 YoY option; legal + budget + team review all TODAY) (Rani) &middot; Mailchimp TR review-gen priority + Nov renewal uplift (Riley) &middot; ZoomInfo product consolidation (Chorus/NeverBounce &rarr; GTM Studio; Jan website launch) (Pam) &middot; OpenAI Competitive Intelligence intro + wallet-share analyzer demo (Divyam)
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Adobe MAX (event planning &mdash; 440 review target, Oct 10-12) &middot; Mailchimp (&#x1F4C8; TR review-gen priority + Nov renewal uplift) &middot; SAP Ariba+Fieldglass 11 AM no-transcript</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Workday (&#x1F4C8; SOW continued Day 3 &mdash; deal near close) &middot; Lenovo, Adobe, Hitachi Vantara no-transcript</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="pam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">ZoomInfo (&#x1F4C8; Chorus/NeverBounce &rarr; GTM Studio consolidation; TR/G2 profile updates for Jan website launch)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">OpenAI (&#x1F4C8; Competitive Intelligence Initiative intro + wallet-share analyzer demo) &middot; Safaricom, Sage, Lumen, Adobe, Dynatrace, Omnissa 8+ events no-transcript</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="atisha">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">HUGE calendar day (10+ events: Kyndryl monthly, Insight biweekly, Kong weekly, RSM weekly, AMD biweekly, Apple training, Kyndryl MCP hours, Insight Direct GGP) &mdash; all no-transcript</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="varun">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">4 events (Insight biweekly, Ciena, Autodesk biweekly, HG-Insight sync) all no-transcript</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">3 events (Evapure biweekly, Sage biweekly co-w/ Nick, NetApp monthly) &mdash; all no-transcript</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="nick">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Still on PTO. 3 events (PTC monthly 2 AM, Nuvias/Infinigate 5 AM, Sage biweekly co-w/ Andy) had no recording synced</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_09_03() {
+  return `<div class="section-label">Confirmed Calls &mdash; Thursday September 3, 2026</div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>EXPANSION:</strong> Workday SOW Day-3 finalization (Rani) &middot; Mailchimp TR review-gen priority + Nov renewal (Riley) &middot; ZoomInfo Chorus/NeverBounce &rarr; GTM Studio consolidation (Pam) &middot; OpenAI Competitive Intelligence intro (Divyam)
+  </div>
+  <div style="background:#1c1f26;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fcd34d;">
+    &#x26A0;&#xFE0F; <strong>NO-TRANSCRIPT RATE STILL ELEVATED:</strong> 76 of 101 recordings without transcripts (75% vs typical 40-50%). Atisha&rsquo;s 10+ scheduled events all missing transcripts &mdash; suspect Weflow sync backlog persisting from Sept 2 flag. Sept 2 recordings still worth re-scanning in a few days.
+  </div>`;
+}
+
+function dayPulsesHTML_2026_09_03() {
+  const cards = [
+    { csm:'rani', health:'Healthy', account:`Workday Inc`, opp:`Vitally Pulse &mdash; Sep 3 Call`,
+      arr:`Enterprise &middot; Rani Guy`, csmlbl:`Rani Guy`,
+      change:`Sep 3 &middot; Healthy`,
+      excerpt:`SOW Day 3 near close. Elaina personally favoring 3-yr $150 YoY (cleaner tracking). 10% credit investment covering overages. Legal + budget + team review all TODAY. VP Finance signature next.` },
+    { csm:'riley', health:'Healthy', account:`Adobe Systems Incorporated`, opp:`Vitally Pulse &mdash; Sep 3 Call`,
+      arr:`Enterprise &middot; Riley Rogers`, csmlbl:`Riley Rogers`,
+      change:`Sep 3 &middot; Healthy`,
+      excerpt:`Adobe MAX TR event planning w/ Angel Carvalho. 440 review target, setup Oct 10-12, 6 laptops, swag package (gift cards + 1000 fans + 1500 pins). Riley adding Angel to Adobe Slack channel.` },
+    { csm:'riley', health:'Healthy', account:`Intuit (Mailchimp)`, opp:`Vitally Pulse &mdash; Sep 3 Call`,
+      arr:`Enterprise &middot; Riley Rogers`, csmlbl:`Riley Rogers`,
+      change:`Sep 3 &middot; Healthy`,
+      excerpt:`Mailchimp TR bi-weekly. Review generation now a priority as &ldquo;dust settles.&rdquo; Spencer using existing incentive budget for initial campaigns. Nov renewal + budget uplift discussion Sept 22 w/ Mardigan.` },
+    { csm:'pam', health:'Healthy', account:`ZoomInfo`, opp:`Vitally Pulse &mdash; Sep 3 Call`,
+      arr:`Enterprise &middot; Pam Huck`, csmlbl:`Pam Huck`,
+      change:`Sep 3 &middot; Healthy`,
+      excerpt:`ZoomInfo product consolidation strategy: Chorus + NeverBounce folding into GTM Studio. Jan 2027 website launch will clarify portfolio. TR/G2 profile updates being sequenced to align with forward-looking vision.` },
+    { csm:'divyam', health:'Healthy', account:`OpenAI`, opp:`Vitally Pulse &mdash; Sep 3 Call`,
+      arr:`Enterprise &middot; Divyam Dewan`, csmlbl:`Divyam Dewan`,
+      change:`Sep 3 &middot; Healthy`,
+      excerpt:`OpenAI Competitive Intelligence Initiative intro with Ziad Amira. Credit-based pricing walkthrough, wallet-share analyzer demo (install + functional intel + time series). Delivery via API/SFTP/data lake. Ingest new products in 2-3 weeks.` },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div class="pulse-account">${c.account}</div>
+          <div class="pulse-opp">${c.opp}</div>
+          <div class="pulse-arr">${c.arr}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_09_03() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('0903-1')?'done':''}" data-csm="rani" id="action-0903-1">
+      <div class="action-checkbox ${doneActions.has('0903-1')?'checked':''}" onclick="toggleAction('0903-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Workday &mdash; Send VP Finance contact + monitor legal/budget approvals</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy &middot; Send Elaina the HG VP of Finance contact for signature. Track internal decisions + legal + budget approvals happening today. Elaina copying Rani + Kraig on all comms. Deal near close &mdash; 3-yr $150 YoY structure preferred internally.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0903-2')?'done':''}" data-csm="divyam" id="action-0903-2">
+      <div class="action-checkbox ${doneActions.has('0903-2')?'checked':''}" onclick="toggleAction('0903-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; OpenAI &mdash; Send exports, docs, wallet-share link + confirm API credit tracking</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Divyam Dewan &middot; Share firmographics/hierarchy export with credit breakdown, technographic descriptions + API usage docs, data-feed/data-lake setup docs, wallet-share analyzer HTML link + detailed data dictionary. Confirm with product engineering whether credit calculations available via API and follow up with Chris.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0903-3')?'done':''}" data-csm="riley" id="action-0903-3">
+      <div class="action-checkbox ${doneActions.has('0903-3')?'checked':''}" onclick="toggleAction('0903-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Adobe MAX &mdash; Coordinate booth logistics + swag delivery</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Riley Rogers &middot; Add Angel to Adobe Slack channel. Track Allison shipping label (pre-Oct 8), booth mockup, hotel info. Angel to send landing page + QR code by end of week; double-check business card quantity with contractors. 440 review target, setup Oct 10-12.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0903-4')?'done':''}" data-csm="riley" id="action-0903-4">
+      <div class="action-checkbox ${doneActions.has('0903-4')?'checked':''}" onclick="toggleAction('0903-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Mailchimp &mdash; Send review-gen campaign toolkit + prep Sept 22 renewal discussion</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Riley Rogers &middot; Send Spencer campaign examples + best practices + self-serve links + spreadsheet of examples. Spencer to build lists + run initial campaigns using existing incentive budget. Prep Sept 22 call with Spencer + Mardigan on renewal terms + budget uplift.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0903-5')?'done':''}" data-csm="pam" id="action-0903-5">
+      <div class="action-checkbox ${doneActions.has('0903-5')?'checked':''}" onclick="toggleAction('0903-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; ZoomInfo &mdash; TR/G2 profile refresh sequencing for Jan website launch</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Pam Huck &middot; Align TR/G2 profile updates with ZoomInfo&rsquo;s Jan 2027 website launch (Chorus + NeverBounce &rarr; GTM Studio consolidation). Coordinate with sales enablement on framing (Chorus continues alongside during transition &mdash; avoid EOL positioning). Prioritize forward-looking product SKUs.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0903-6')?'done':''}" data-csm="all" id="action-0903-6">
+      <div class="action-checkbox ${doneActions.has('0903-6')?'checked':''}" onclick="toggleAction('0903-6')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; Ops &mdash; Weflow sync backlog investigation (Day 2)</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Ops &middot; No-transcript rate at 75% again (was 71% on Sept 2, typically 40-50%). Atisha&rsquo;s 10+ scheduled events on Sept 3 all missing transcripts. Escalate to Weflow support if not resolving in 24h. Re-scan Sept 2 and Sept 3 in 24-48h to see if backlog processes.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0903-7')?'done':''}" data-csm="nick" id="action-0903-7">
+      <div class="action-checkbox ${doneActions.has('0903-7')?'checked':''}" onclick="toggleAction('0903-7')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Nick PTO handoff &mdash; PTC + Nuvias/Infinigate + Sage coverage</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Nick Johnson (PTO) / Rani (backup) &middot; Nick&rsquo;s Sept 3 events (PTC monthly 2 AM, Nuvias/Infinigate 5 AM, Sage biweekly co-w/ Andy 6:30 AM) had no recordings synced. Confirm coverage. Nick expected back around Sept 11.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
+
+
