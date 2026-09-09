@@ -1176,3 +1176,199 @@ function dayActionsHTML_2026_09_07() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
 }
+
+function dayData_2026_09_08() {
+  return {
+    calls: [
+      { ts: 'Sep 8 · 10:00 AM', csm: 'rani', account: `Google Inc.`,
+        note: `60-min Google Renewal Discussion with Mark Fell. Credit-based pricing walkthrough: tiered structure, credit carryover, FAI/Gen AI exclusion options. Old platform EOL &rarr; new AI-driven version. Google to do internal analysis; follow-up week of 14th (Wed/Thu).`,
+        mins: 60, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Google renewal discussion with Mark Fell. Google evaluating transition to credit-based pricing model (from prior consumption/entity-based). Rani + Mark walked: tiered pricing (per-credit cost decreases with volume), credit carryover across years (mitigates &ldquo;use it or lose it&rdquo;), option to exclude FAI + Gen AI to reduce credit usage. Also flagged old platform nearing EOL &mdash; new AI-driven version available but integration + cost need evaluation. Google team to conduct internal catalog analysis + startup propensity model + TrustRadius Customer Voice priorities before next meeting. Natalia sending meeting invite options for week of Sept 14 (Wed/Thu preferred).` },
+      { ts: 'Sep 8 · 11:30 AM', csm: 'divyam', account: `BILL Operations, LLC`,
+        note: `Weekly sync with Charles Hawkins + Eric Nguyen. Sales conversion analysis: self-service/API vs SNE (digital charge card) vs APAR (accounts payable/receivable) product lines have distinct conversion + deal-size profiles. Clearbit vs SFDC data-source prioritization discussion. V12 engagement model push planning.`,
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Mixed',
+        detail: `BILL weekly sync with Charles Hawkins + Eric Nguyen. Analyzed low conversion rates by product line: SNE (digital charge card, self-serve-friendly) vs APAR (accounts payable/receivable, larger lift, not self-serve). Self-service/API originations dominate closed-won volume in SMB but skew analysis; recommend excluding from certain reports. Data source prioritization: Divyam checking whether Clearbit is being used for industry + employee size vs SFDC/CRM primary. V12 engagement model push planning (impact on API calls). Disagreement on lead-scoring criteria (ICP fit vs behavior vs blend, override management). Divyam to do product-wise closed-won vs closed-lost analysis excluding self-serve.` },
+    ],
+    pulses: [
+      { csm: 'rani', account: `Google Inc.`, health: 'Healthy',
+        note: `Google renewal &mdash; credit-based pricing walkthrough. Old platform EOL, new AI-driven version. Google internal analysis in flight; follow-up week of Sept 14.` },
+      { csm: 'divyam', account: `BILL Operations, LLC`, health: 'Healthy',
+        note: `SNE vs APAR product-line conversion analysis; V12 engagement model push; Clearbit vs SFDC source prioritization.` },
+    ],
+  };
+}
+
+function dayMeta_2026_09_08() {
+  return {
+    pills: [
+      ['dot-teal',   '2 Calls'],
+      ['dot-amber',  '2 Expansion'],
+      ['dot-green',  '2 Vitally Pulses'],
+      ['dot-grey',   'Tue Sep 8 &middot; 92 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (2)', 'Pulses (2)', 'Action Items (5)']
+  };
+}
+
+function dayOverviewHTML_2026_09_08() {
+  return `<div class="section-label">Team Activity &mdash; Tuesday September 8, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Tuesday Sep 8 &mdash; 92 recordings scanned</strong> via SFDC SOQL &middot; <strong>2 confirmed calls</strong> (Rani, Divyam) &middot; 0 concerning &middot; 2 expansion signals &middot; 35 CSM events but 72% no-transcript rate persists (Day 4 of backlog)
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>EXPANSION:</strong> Google renewal discussion (60 min) &mdash; credit-based pricing walkthrough (tiered, carryover, FAI/Gen AI exclusion options) + old platform EOL to new AI-driven version (Rani) &middot; BILL sales conversion analysis + V12 engagement model push + product-line split (Divyam)
+  </div>
+  <div style="background:#1c1f26;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fcd34d;">
+    &#x26A0;&#xFE0F; <strong>Weflow sync backlog Day 4 (72% no-transcript):</strong> Nick (PTO)&rsquo;s 6 events (Softcat + SAP x2 + Siemens x3 + Hyland + Dintec) all no-transcript. Also Rani&rsquo;s NetApp PTB + Cisco Isovalent + Workday Usage Review, Riley&rsquo;s Red Hat + Iterable + TriNet + Insperity + Piano, Atisha&rsquo;s Apple Strategy, Varun&rsquo;s OpenText + Iron Mountain.
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Google (&#x1F4C8; 60-min renewal discussion &mdash; credit-based pricing + AI-driven platform) &middot; NetApp PTB + Cisco Isovalent + Workday Usage Review + NetApp weekly all no-transcript</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">BILL (&#x1F4C8; product-line conversion analysis + V12 engagement push) &middot; Adobe monthly + Paychex Paycor TR all no-transcript</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="nick">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">NJ</div><div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Still on PTO (back ~Sept 11). 6 events (Softcat 1:30 AM, Siemens x3 at 5 AM, Hyland 7 AM, SAP x2 at 9:30 AM, Dintec 9 AM) all no-transcript</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="varun">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-varun">VT</div><div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">4 events (OpenText biweekly x2 at 3 AM, HG&amp;Insight sync, Iron Mountain biweekly 8 AM) all no-transcript</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="riley">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-riley">RR</div><div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">5 events (Iterable, TriNet x2, Red Hat biweekly, Insperity, Piano) all no-transcript</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="atisha">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">AW</div><div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 events (Apple Strategy &amp; Planning 8:30 AM x2) all no-transcript</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">PH</div><div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event (Team Sync - Mark Fell Ops 8 AM co-w/ Rani) no-transcript</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">AL</div><div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No CSM-owned events scheduled</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_09_08() {
+  return `<div class="section-label">Confirmed Calls &mdash; Tuesday September 8, 2026</div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>EXPANSION:</strong> Google renewal &mdash; credit-based pricing model discussion (Rani) &middot; BILL conversion analysis + V12 engagement push (Divyam)
+  </div>
+  <div style="background:#1c1f26;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fcd34d;">
+    &#x26A0;&#xFE0F; <strong>Weflow sync backlog Day 4 (72% no-transcript):</strong> Nick (PTO) has 6 events all missing transcripts. Also affects Rani&rsquo;s NetApp/Cisco/Workday slots, Riley&rsquo;s entire TR portfolio (Red Hat, TriNet, Iterable, Insperity), Varun&rsquo;s OpenText + Iron Mountain, Divyam&rsquo;s Adobe + Paychex.
+  </div>`;
+}
+
+function dayPulsesHTML_2026_09_08() {
+  const cards = [
+    { csm:'rani', health:'Healthy', account:`Google Inc.`, opp:`Vitally Pulse &mdash; Sep 8 Call`,
+      arr:`Enterprise &middot; Rani Guy`, csmlbl:`Rani Guy`,
+      change:`Sep 8 &middot; Healthy`,
+      excerpt:`Google renewal discussion &mdash; credit-based pricing walkthrough (tiered, carryover, FAI/Gen AI exclusion). Old platform EOL, new AI-driven version. Google to do internal catalog + startup propensity + TR CVP priority analysis. Follow-up week of Sept 14.` },
+    { csm:'divyam', health:'Healthy', account:`BILL Operations, LLC`, opp:`Vitally Pulse &mdash; Sep 8 Call`,
+      arr:`Enterprise &middot; Divyam Dewan`, csmlbl:`Divyam Dewan`,
+      change:`Sep 8 &middot; Healthy`,
+      excerpt:`SNE (digital charge card, self-serve) vs APAR (accounts payable/receivable, larger lift) product-line conversion analysis. Self-service/API originations skew SMB. Clearbit vs SFDC source prioritization. V12 engagement model push planning.` },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div class="pulse-account">${c.account}</div>
+          <div class="pulse-opp">${c.opp}</div>
+          <div class="pulse-arr">${c.arr}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_09_08() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('0908-1')?'done':''}" data-csm="rani" id="action-0908-1">
+      <div class="action-checkbox ${doneActions.has('0908-1')?'checked':''}" onclick="toggleAction('0908-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Google &mdash; Prep tailored package + pricing for follow-up week of Sept 14</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy + Mark Fell &middot; Package + pricing options based on Google&rsquo;s internal analysis (impact of FAI/Gen AI inclusion, credit consumption, budget constraints, build-in growth flexibility). Confirm Natalia&rsquo;s meeting invite for Wed/Thu of Sept 14 week.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0908-2')?'done':''}" data-csm="divyam" id="action-0908-2">
+      <div class="action-checkbox ${doneActions.has('0908-2')?'checked':''}" onclick="toggleAction('0908-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F534; BILL &mdash; Confirm data source hierarchy + V12 push impact</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Divyam Dewan &middot; By next Monday call: double-check if Clearbit is being used for industry + employee size, and confirm whether SFDC/CRM data can be prioritized. Within 1-2 days: clarify how to push V12 engagement model live + expected API-call impact.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0908-3')?'done':''}" data-csm="divyam" id="action-0908-3">
+      <div class="action-checkbox ${doneActions.has('0908-3')?'checked':''}" onclick="toggleAction('0908-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; BILL &mdash; Product-line closed-won vs closed-lost analysis</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Divyam Dewan &middot; Run product-wise closed-won vs closed-lost analysis excluding self-serve/API-originated deals to isolate sales-driven signal for SNE and APAR separately. Support the lead-scoring-criteria discussion (ICP fit vs behavior weighting).</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0908-4')?'done':''}" data-csm="all" id="action-0908-4">
+      <div class="action-checkbox ${doneActions.has('0908-4')?'checked':''}" onclick="toggleAction('0908-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; Ops &mdash; Weflow sync backlog Day 4 escalation</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Ops &middot; Fourth elevated no-transcript day (Sept 2 71% &rarr; Sept 3 75% &rarr; Sept 4 76% &rarr; Sept 8 72%). Sept 7 was Labor Day. Escalate to Weflow support if not already. Consider stopgap: run inferred-from-CSM-event fallback for continuity while sync resolves.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0908-5')?'done':''}" data-csm="nick" id="action-0908-5">
+      <div class="action-checkbox ${doneActions.has('0908-5')?'checked':''}" onclick="toggleAction('0908-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Nick PTO wrap-up &mdash; SAP + Siemens + Hyland + Softcat coverage gaps</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Nick Johnson (returning ~Sept 11) &middot; 6 Nick-owned events on Sept 8 all no-transcript (Softcat 1:30 AM, Siemens monthly x3 at 5 AM, Hyland 7 AM, SAP biweekly x2 9:30 AM, Dintec 9 AM). Confirm Rani + Adrian coverage until Nick returns Thu-Fri this week.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
+
