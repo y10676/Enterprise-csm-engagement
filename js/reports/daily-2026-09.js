@@ -1567,4 +1567,116 @@ function dayActionsHTML_2026_09_09() {
   <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
 }
 
+function dayData_2026_09_10() {
+  return {
+    calls: [],
+    pulses: [],
+  };
+}
+
+function dayMeta_2026_09_10() {
+  return {
+    pills: [
+      ['dot-teal',   '0 Calls'],
+      ['dot-red',    'Weflow incident'],
+      ['dot-grey',   'Thu Sep 10 &middot; 118 scanned &middot; 85% no-transcript'],
+    ],
+    tabs: ['Overview', 'Calls (0)', 'Pulses (0)', 'Action Items (2)']
+  };
+}
+
+function dayOverviewHTML_2026_09_10() {
+  return `<div class="section-label">Team Activity &mdash; Thursday September 10, 2026</div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:12px 16px;margin:0 0 12px 0;font-size:12px;color:#fca5a5;">
+    &#x1F6A8; <strong>WEFLOW INCIDENT &mdash; DAY 6:</strong> 0 confirmed CSM calls today despite 118 recordings + 34 CSM-owned events. <strong>85% no-transcript rate</strong> (worst observed &mdash; up from 75% Sept 9). Every scheduled CSM meeting is dark. Losing signal on all critical renewals: Cisco (Oct 5), Veeam Propensity, ServiceNow, Hyland 3-yr expansion, BMC Integration, Oracle x2, Nuvias/Infinigate, Sage, Lumen, AMD, SAP SuccessFactors L&amp;T, Procore.
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x1F6A8; <strong>DATA-QUALITY BREAKDOWN:</strong> Sept 2 71% &rarr; Sept 3 75% &rarr; Sept 4 76% &rarr; Sept 8 72% &rarr; Sept 9 75% &rarr; <strong>Sept 10 85%</strong>. Trend is worsening, not resolving. Report content is unusable as a source-of-truth for CSM engagement until Weflow sync resumes normal operation.
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card no-calls" data-csm="nick">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">NJ</div><div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Nick returned from PTO today. 3 events (Siemens biweekly, Veeam Propensity Model Sync, VASS 2026/27 plans) &mdash; all no-transcript</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="rani">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">RG</div><div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 events (Cisco Oct-5-renewal 9 AM, Oracle monthly 9 AM co-w/ Pam) &mdash; both no-transcript</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="varun">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-varun">VT</div><div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">8 events (IFS, Insight, Hyland 3-yr, PANW Cloud Dynamics, BMC Integration, ServiceNow x2, PANW Monthly) &mdash; all no-transcript</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="divyam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-divyam">DD</div><div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">6 events (delaware, Nuvias/Infinigate x2, Sage, Lumen, Omnissa quarterly, extra Lumen 9 PM) &mdash; all no-transcript</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="atisha">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">AW</div><div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">7 events (Insight Direct Rakesh x4 at 3:30-4:30 AM, AMD x2 at 9:30 AM, Versa biweekly 10:30 AM, PANW co-slot 12 PM) &mdash; all no-transcript</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">PH</div><div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">4 events (Cisco TR x2 at 8 AM, Oracle monthly 9 AM co-w/ Rani, Oracle NetSuite 12 PM) &mdash; all no-transcript</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="riley">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-riley">RR</div><div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">3 events (Apptio TR biweekly 10 AM, SAP SuccessFactors L&amp;T Premium Renewals 10:30 AM, Procore CSM Syncs 11 AM) &mdash; all no-transcript</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">AL</div><div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No CSM-owned events scheduled</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_09_10() {
+  return `<div class="section-label">Confirmed Calls &mdash; Thursday September 10, 2026</div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:12px 16px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x1F6A8; <strong>ZERO CONFIRMED CALLS &mdash; WEFLOW INCIDENT DAY 6:</strong> 34 CSM events all missing transcripts. 85% no-transcript rate overall. Escalation urgent &mdash; content below is inferred from CSM event ownership only, not speaker-verified.
+  </div>`;
+}
+
+function dayPulsesHTML_2026_09_10() {
+  return `<div class="pulse-grid"></div>
+  <div class="empty-state" id="pulses-empty">No confirmed calls today &mdash; no pulse data generated. See Overview for the Weflow incident context.</div>`;
+}
+
+function dayActionsHTML_2026_09_10() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('0910-1')?'done':''}" data-csm="all" id="action-0910-1">
+      <div class="action-checkbox ${doneActions.has('0910-1')?'checked':''}" onclick="toggleAction('0910-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F6A8; Ops &mdash; Weflow sync incident (Day 6, 85% no-transcript) &mdash; URGENT escalation</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Ops / Rishi &middot; Six consecutive elevated days (71%&rarr;75%&rarr;76%&rarr;72%&rarr;75%&rarr;85%). Trend worsening. Open P0 with Weflow support today. Losing signal on Cisco Oct 5 renewal, Veeam Propensity Model, ServiceNow, Hyland 3-yr expansion, BMC Integration, Oracle, Nuvias/Infinigate, Sage, Lumen, AMD, SAP SuccessFactors, Procore. Consider bringing back the inferred-from-CSM-event fallback for weekly rollups + Slack Yuan/leadership on data-quality gap.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0910-2')?'done':''}" data-csm="all" id="action-0910-2">
+      <div class="action-checkbox ${doneActions.has('0910-2')?'checked':''}" onclick="toggleAction('0910-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; CSM team &mdash; Manual Vitally log for critical Sept 10 renewals</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani (Cisco Oct 5 renewal), Nick (Veeam Propensity), Varun (ServiceNow break-rewrite + Hyland 3-yr + BMC Integration + PANW Cloud Dynamics), Divyam (Nuvias/Infinigate + Sage + Lumen + Omnissa quarterly), Riley (SAP SuccessFactors L&amp;T renewals), Pam (Oracle + Oracle NetSuite + Cisco TR), Atisha (AMD + Versa + Insight Direct Rakesh) &middot; With transcripts unavailable, each CSM should manually log the meeting outcomes + next steps in Vitally today so the signal isn&rsquo;t lost. Reports will backfill when sync resumes.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
+
+
 
