@@ -1877,3 +1877,248 @@ function dayActionsHTML_2026_09_11() {
 }
 
 
+// ============================================================
+// Monday September 15, 2026
+// ============================================================
+
+function dayData_2026_09_15() {
+  return {
+    calls: [
+      { ts: 'Sep 15 &middot; 2:00 AM', csm: 'nick', account: 'Lenovo',
+        note: 'Secure PC PTB propensity model deep-dive with Batta Pruthvi (Lenovo) + Gavin Padden (HG DS): keyword→product/intent catalog mapping across SentinelOne, Absolute, LDO offerings for scoring grid',
+        mins: 60, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Nick + Gavin Padden (HG data science) walked Batta Pruthvi (Lenovo) column-by-column through the Secure PC Propensity-To-Buy scoring grid built from Lenovo\'s raw offering keywords (SentinelOne, Absolute, LDO). Framework: keywords map to HG product catalog + intent catalog with relevance scoring; ability to broaden signal via adjacent products (e.g., McAfee/Trellix, Fortinet, Symantec as endpoint-protection theme). This is the pre-work for a customer-shareable propensity model — output goes to Lenovo stakeholders. Ties to Lenovo\'s $695K ARR (per July 20 memory) and the Dec 2026 renewal window. Continuation of the propensity/scoring modeling stream Nick has been running (Aug 27 memory noted Lenovo propensity as an expansion signal).' },
+
+      { ts: 'Sep 15 &middot; 8:00 AM', csm: 'divyam', account: 'Workhuman',
+        note: 'TR Buyer\'s Choice + Top Rated award query meeting with Ethan Bukowiec; deadline extended to Oct 16 (announcement Nov); Workhuman got Top Rated 2026, needs 10 reviews (has 4) with 75%+ best-in for Buyer\'s Choice',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Check-in',
+        detail: 'Ethan Bukowiec (Workhuman) requested clarity on which TR awards Workhuman is eligible for and how the new vs legacy vendor portal maps to award tracking. Divyam confirmed Workhuman got Top Rated 2026 (badges to be sent post-call) and is tracking to Buyer\'s Choice 2026 with the Oct 16 extended deadline. Current state: 4 reviews with 3 qualified for Buyer\'s Choice; need 10 reviews total, 75%+ saying "best in" (use / value for money / customer relationship). Reviews generated Apr–Sep count toward both Buyer\'s Choice AND Top Rated 2027. Ethan is running the campaign via Workhuman\'s customer advocacy team rather than TR-driven outreach. Ownership: Workhuman customer approvals now unblocked → cadence expected to improve.' },
+
+      { ts: 'Sep 15 &middot; 11:00 AM', csm: 'divyam', account: 'BILL',
+        note: 'MadKudu scoring bug (Sept 11 fix — accounts not repositioned after scoring change) + Clearbit vs SFDC data source hierarchy decision for industry/employee-size scoring inputs; Loom walk-through offered',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Divyam updated Eric Nguyen + Charles Hawkins on two open BILL tickets: (1) ICP fit analysis Level 2 delivered; (2) scoring-lower-than-expected root-caused as MadKudu bug (accounts not repositioned after scoring change) — fix landed Sept 11. Underlying model gap: MadKudu currently uses Clearbit as the third-party enrichment source for industry + employee-size and ignores SFDC values. Two remediation paths: (a) set SFDC as primary source (quick), (b) add fallback logic Clearbit→SFDC (slower, more precise). Divyam offered Loom walk-through with engineering support if Eric wants a deeper session. Eric confirmed Clearbit is directly connected to their Salesforce instance. Follow-up: BILL to pick a/b, HG engineering to schedule.' },
+
+      { ts: 'Sep 15 &middot; 1:30 PM', csm: 'varun', account: 'BMC Software',
+        note: 'Copilot 2.0 onboarding to BMC field/BDR teams: company context walk-through (products, competitors, intent topics), offering setup, integration path decoupled from user activation; Devin McCarthy (field seal team leads) new to the account',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Varun ran the new-Copilot demo for Louise Eekhof (BMC), Lindsay Saunders (BDR manager), Devin McCarthy (field sales team lead, new intro), and Mark Sweeney. Augie Buettner (HG AE) on the call. Old Copilot users auto-migrated to Copilot 2.0 access — no waiting for integrations (SFDC/ZoomInfo/S3) needed to start prospecting. Walked through: (1) auto-loaded BMC company context (products, competitors, intent topics from domain — Lindsay flagged irrelevant Helix products for admin cleanup); (2) offerings model (product + ICP + competitors + intent + industry bundle used for prospecting); (3) admin vs end-user controls. Louise asked for guidance on how sales plays + playbooks fit in; homework tied to the next call. Integration completion still in flight in background to unlock richer signals — Varun to send the recording link plus company-context edit doc.' },
+    ],
+    pulses: [
+      { csm:'nick', health:'Healthy', account:'Lenovo',
+        opp:'Vitally Pulse &mdash; Sep 15 Call',
+        arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+        change:'Sep 15 &middot; Propensity Model Deep-Dive',
+        excerpt:'9/15 NJ: 60 min Secure PC PTB propensity model walkthrough with Batta Pruthvi (Lenovo) + Gavin Padden (HG DS) at 2 AM PT. Keyword→product/intent catalog mapping across SentinelOne, Absolute, LDO offerings. Output goes to Lenovo stakeholders as customer-shareable model. Ties to $695K ARR + Dec 2026 renewal.' },
+
+      { csm:'divyam', health:'Healthy', account:'Workhuman',
+        opp:'Vitally Pulse &mdash; Sep 15 Call',
+        arr:'Enterprise &middot; Divyam Dewan', csmlbl:'Divyam Dewan',
+        change:'Sep 15 &middot; TR Awards Alignment',
+        excerpt:'9/15 DD: 30 min TR Buyer\'s Choice + Top Rated query meeting with Ethan Bukowiec (Workhuman) at 8 AM PT. Workhuman got Top Rated 2026; needs 4→10 reviews with 75%+ best-in for Buyer\'s Choice by Oct 16 extended deadline. Ethan running campaign via internal customer advocacy team, unblocked internally.' },
+
+      { csm:'divyam', health:'Healthy', account:'BILL',
+        opp:'Vitally Pulse &mdash; Sep 15 Call',
+        arr:'Enterprise &middot; Divyam Dewan', csmlbl:'Divyam Dewan',
+        change:'Sep 15 &middot; Scoring Bug Fix + Data Source Decision',
+        excerpt:'9/15 DD: 30 min BILL weekly sync with Eric Nguyen + Charles Hawkins at 11 AM PT. MadKudu bug fixed Sept 11 (accounts not repositioned after scoring change). Open decision: Clearbit vs SFDC as primary source for industry + employee-size scoring inputs — two paths on the table, engineering follow-up scheduled.' },
+
+      { csm:'varun', health:'Healthy', account:'BMC Software',
+        opp:'Vitally Pulse &mdash; Sep 15 Call',
+        arr:'Enterprise &middot; Varun Tiwari', csmlbl:'Varun Tiwari',
+        change:'Sep 15 &middot; Copilot 2.0 Onboarding',
+        excerpt:'9/15 VT: 30 min Copilot 2.0 onboarding to BMC field/BDR teams (Louise Eekhof, Lindsay Saunders, Devin McCarthy new intro, Mark Sweeney) at 1:30 PM PT. Old users auto-migrated; no integration blocker to start prospecting. Company context walkthrough + offerings setup; sales plays/playbooks homework tied to next call.' },
+    ],
+  };
+}
+
+function dayMeta_2026_09_15() {
+  return {
+    pills: [
+      ['dot-teal',   '4 Calls'],
+      ['dot-amber',  '3 Expansion'],
+      ['dot-green',  '4 Vitally Pulses'],
+      ['dot-grey',   'Mon Sep 15 &middot; 99 scanned &middot; 79% no-transcript'],
+    ],
+    tabs: ['Overview', 'Calls (4)', 'Pulses (4)', 'Action Items (6)']
+  };
+}
+
+function dayOverviewHTML_2026_09_15() {
+  return `<div class="section-label">Team Activity &mdash; Monday September 15, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Mon Sep 15 &mdash; 99 recordings scanned</strong> via SFDC SOQL &middot; <strong>4 confirmed calls</strong> across 3 CSMs (Nick, Divyam x2, Varun) &middot; 0 Concerning &middot; 3 Expansion (Lenovo propensity, BMC Copilot 2.0 onboarding, Workhuman Buyer\'s Choice) &middot; 1 Issue-resolved thread (BILL MadKudu bug fixed Sept 11).
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>Weflow sync backlog Day 8 &mdash; regressing:</strong> 79% no-transcript rate (up from 69% Sept 11). Trajectory: Sep 2 71% &rarr; Sep 3 75% &rarr; Sep 4 76% &rarr; Sep 8 72% &rarr; Sep 9 75% &rarr; Sep 10 85% &rarr; Sep 11 69% &rarr; <strong>Sep 15 79%</strong>. Recovery from Sep 10 peak was partial; sync is NOT back to baseline. 7 CSM-owned events with recordings had no transcript (Varun&times;workspan + Pegasystems renewal, Pam&times;HG Insights, Atisha&times;Apple + PANW renewal, Rani&times;AppD, Riley&times;SAP) &mdash; inferred only.
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>Expansion threads:</strong> Lenovo Secure PC PTB propensity model (Nick, ties to Dec 2026 renewal / $695K ARR); BMC Copilot 2.0 rollout to field teams (Varun, new Devin McCarthy intro); Workhuman Buyer\'s Choice 2026 review-gen (Divyam, Oct 16 extended deadline).
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header"><div class="avatar av-grey">NJ</div><div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Lenovo (Secure PC PTB propensity model deep-dive with Gavin Padden / HG DS)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header"><div class="avatar av-divyam">DD</div><div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Workhuman (Buyer\'s Choice + Top Rated award query, Oct 16 deadline) &middot; BILL (MadKudu bug fix + Clearbit vs SFDC source decision)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header"><div class="avatar av-varun">VT</div><div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">BMC Software (Copilot 2.0 onboarding to field/BDR teams, Devin McCarthy new intro) &middot; workspan 6:30 AM + Pegasystems 7:30 AM (no transcript)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="rani">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">RG</div><div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">3 events (Workday monthly sync x2 no recording, AppD 10 AM inferred only) &mdash; sync backlog</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="riley">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-riley">RR</div><div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">3 events (SAP 10:30 AM inferred only, Quadient TR biweekly no recording, Piano 3 PM no recording)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">PH</div><div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 events (HG Insights 8 AM inferred only &mdash; likely internal, Epicor 10:30 AM no recording)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="atisha">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">AW</div><div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 events (Apple 8:30 AM inferred only, PANW Central Analy2027 renewal 10:30 AM inferred only)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">AL</div><div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 events (Veracode HG Insights x2 8:30 AM) &mdash; no recordings synced</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_09_15() {
+  return `<div class="section-label">Confirmed Calls &mdash; Monday September 15, 2026</div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>7 CSM events had recordings with no transcript</strong> &mdash; inferred from event ownership only: Varun&times;workspan (6:30 AM), Varun&times;Pegasystems renewal (7:30 AM), Pam&times;HG Insights (8 AM, likely internal), Atisha&times;Apple (8:30 AM), Rani&times;AppD (10 AM), Atisha&times;PANW Central Analy2027 renewal (10:30 AM), Riley&times;SAP (10:30 AM). Additionally, 9 CSM events had no recording at all (Nick&times;Visionet biweekly, Divyam&times;Adobe GTM Tool Review, Varun&times;Unum biweekly, Rani&times;Workday monthly, Andy&times;Veracode, Pam&times;Epicor, Divyam&times;Quadient TR biweekly [co-w/Riley], Varun&times;SentinelOne monthly, Divyam&times;Dynatrace query meeting, Riley&times;Piano).
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x1F4CC; <strong>Note on Varun/BMC call:</strong> SFDC linked the recording to a Veritas Technologies event, but the transcript is unambiguously BMC Software (Louise Eekhof, Lindsay Saunders, Devin McCarthy, Mark Sweeney all BMC). Reporting as BMC Software based on speaker/transcript truth.
+  </div>`;
+}
+
+function dayPulsesHTML_2026_09_15() {
+  const cards = [
+    { csm:'nick', health:'Healthy', account:'Lenovo', opp:'Vitally Pulse &mdash; Sep 15 Call',
+      arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Sep 15 &middot; Propensity Model Deep-Dive',
+      excerpt:'9/15 NJ: 60 min Secure PC PTB propensity model walkthrough with Batta Pruthvi (Lenovo) + Gavin Padden (HG DS) at 2 AM PT. Keyword→product/intent catalog mapping across SentinelOne, Absolute, LDO offerings. Output goes to Lenovo stakeholders as customer-shareable model. Ties to $695K ARR + Dec 2026 renewal.' },
+    { csm:'divyam', health:'Healthy', account:'Workhuman', opp:'Vitally Pulse &mdash; Sep 15 Call',
+      arr:'Enterprise &middot; Divyam Dewan', csmlbl:'Divyam Dewan',
+      change:'Sep 15 &middot; TR Awards Alignment',
+      excerpt:'9/15 DD: 30 min TR Buyer\'s Choice + Top Rated query meeting with Ethan Bukowiec (Workhuman) at 8 AM PT. Workhuman got Top Rated 2026; needs 4→10 reviews with 75%+ best-in for Buyer\'s Choice by Oct 16 extended deadline. Ethan running campaign via internal customer advocacy team, unblocked internally.' },
+    { csm:'divyam', health:'Healthy', account:'BILL', opp:'Vitally Pulse &mdash; Sep 15 Call',
+      arr:'Enterprise &middot; Divyam Dewan', csmlbl:'Divyam Dewan',
+      change:'Sep 15 &middot; Scoring Bug Fix + Data Source Decision',
+      excerpt:'9/15 DD: 30 min BILL weekly sync with Eric Nguyen + Charles Hawkins at 11 AM PT. MadKudu bug fixed Sept 11 (accounts not repositioned after scoring change). Open decision: Clearbit vs SFDC as primary source for industry + employee-size scoring inputs — two paths on the table, engineering follow-up scheduled.' },
+    { csm:'varun', health:'Healthy', account:'BMC Software', opp:'Vitally Pulse &mdash; Sep 15 Call',
+      arr:'Enterprise &middot; Varun Tiwari', csmlbl:'Varun Tiwari',
+      change:'Sep 15 &middot; Copilot 2.0 Onboarding',
+      excerpt:'9/15 VT: 30 min Copilot 2.0 onboarding to BMC field/BDR teams (Louise Eekhof, Lindsay Saunders, Devin McCarthy new intro, Mark Sweeney) at 1:30 PM PT. Old users auto-migrated; no integration blocker to start prospecting. Company context walkthrough + offerings setup; sales plays/playbooks homework tied to next call.' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div style="font-size:13px;font-weight:600;color:#e2e8f0;">${c.account}</div>
+          <div style="font-size:11px;color:#94a3b8;margin-top:2px;">${c.opp}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_09_15() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('0915-1')?'done':''}" data-csm="nick" id="action-0915-1">
+      <div class="action-checkbox ${doneActions.has('0915-1')?'checked':''}" onclick="toggleAction('0915-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Lenovo &mdash; Finalize Secure PC PTB propensity model for stakeholder share</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Nick Johnson &middot; Gavin Padden to finalize keyword→product/intent catalog matching + relevance scoring for SentinelOne + Absolute + LDO offerings. Duplicate keywords across matched products (Batta requested for column c/g alignment). Deliverable: customer-shareable propensity model deck. Ties to Dec 2026 renewal ($695K ARR) and prior Aug 27 Lenovo propensity thread.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0915-2')?'done':''}" data-csm="divyam" id="action-0915-2">
+      <div class="action-checkbox ${doneActions.has('0915-2')?'checked':''}" onclick="toggleAction('0915-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Workhuman &mdash; Send Top Rated 2026 + Buyer\'s Choice badge assets</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Divyam Dewan &middot; Post-call: send Ethan Bukowiec digital-asset links for Top Rated 2026 badges (existing win) + Buyer\'s Choice badges once earned. Ethan updating website + marketing materials, wants current-year assets. Track: 10 reviews target with 75%+ best-in language by Oct 16 (currently at 4 reviews, 3 qualified).</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0915-3')?'done':''}" data-csm="divyam" id="action-0915-3">
+      <div class="action-checkbox ${doneActions.has('0915-3')?'checked':''}" onclick="toggleAction('0915-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F527; BILL &mdash; Clearbit vs SFDC scoring source decision + Loom walk-through</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Divyam Dewan &middot; BILL to pick (a) SFDC as primary source [quick] or (b) Clearbit→SFDC fallback logic [slower, more precise] for industry + employee-size scoring inputs. Divyam to schedule engineering-support session (Loom + live) once BILL confirms path. MadKudu Sept 11 fix already resolved account-repositioning bug.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0915-4')?'done':''}" data-csm="varun" id="action-0915-4">
+      <div class="action-checkbox ${doneActions.has('0915-4')?'checked':''}" onclick="toggleAction('0915-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; BMC Software &mdash; Copilot 2.0 admin cleanup + integration completion</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Varun Tiwari &middot; Send Louise Eekhof (1) recording link + (2) company-context edit doc so BMC admin can strip irrelevant Helix products from auto-loaded context (Lindsay flagged). Continue Copilot 2.0 rollout in background while integration (SFDC/ZoomInfo/S3) completes to unlock richer signals. Devin McCarthy (field seal team lead) newly introduced — get him on the recurring cadence.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0915-5')?'done':''}" data-csm="all" id="action-0915-5">
+      <div class="action-checkbox ${doneActions.has('0915-5')?'checked':''}" onclick="toggleAction('0915-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; CSM team &mdash; Manual Vitally log for 7 inferred + 10 no-recording calls</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Varun (workspan, Pegasystems Users 2026 renewal, Unum biweekly, SentinelOne monthly), Pam (HG Insights, Epicor), Atisha (Apple, PANW Central Analy2027 renewal), Rani (AppD, Workday monthly x2), Riley (SAP, Quadient TR biweekly, Piano), Divyam (Adobe GTM Tool Review, Quadient TR co-w/Riley, Dynatrace query meeting), Nick (Visionet biweekly), Andy (Veracode) &middot; Log outcomes + next steps in Vitally today so nothing is lost while Weflow sync remains degraded. Pegasystems renewal + PANW renewal + Apple/AppD/Workday all warrant capture.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0915-6')?'done':''}" data-csm="all" id="action-0915-6">
+      <div class="action-checkbox ${doneActions.has('0915-6')?'checked':''}" onclick="toggleAction('0915-6')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F6A8; Ops &mdash; Weflow sync backlog Day 8 (79%, regressing from 69%)</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Ops / Rishi &middot; No-transcript rate jumped from 69% Sept 11 to 79% Sept 15 &mdash; recovery reversed. Sep 2 71% &rarr; Sep 3 75% &rarr; Sep 4 76% &rarr; Sep 8 72% &rarr; Sep 9 75% &rarr; Sep 10 85% &rarr; Sep 11 69% &rarr; Sep 15 79%. This is not a transient backlog — escalate to Weflow product owner + inform Yuan/leadership. Consider standing up a lighter-touch fallback (event-based inferred report) until sync is trustworthy.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
+
+
