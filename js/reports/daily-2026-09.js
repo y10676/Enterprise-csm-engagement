@@ -1679,4 +1679,201 @@ function dayActionsHTML_2026_09_10() {
 }
 
 
+// ============================================================
+// Friday September 11, 2026
+// ============================================================
+
+function dayData_2026_09_11() {
+  return {
+    calls: [
+      { ts: 'Sep 11 &middot; 9:00 AM', csm: 'riley', account: 'Zoom',
+        note: 'Camille Shortridge farewell / handoff to Travis; Buyer’s Choice deadline extended to Oct 16; API + SSO enablement plan for incoming lead',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Final handoff sync ahead of Camille Shortridge’s departure (going to Figma Monday). Riley confirmed Travis has Buyer’s Choice tracker access; SSO and API enablement in flight; free-links doc to be shared for interim reviews. Riley extended the Buyer’s Choice program deadline three weeks to Oct 16 (announcement Nov). Marla intro re-attempted via second handoff email. Watch: successor backfill (colleague going on maternity leave in a few months) and momentum on review-gen without Camille driving.' },
+
+      { ts: 'Sep 11 &middot; 10:00 AM', csm: 'rani', account: 'Google Inc.',
+        note: 'Multi-stream: Contact Data POC scoped (1,000 accounts + DPA), Gemini Enterprise MCP intro request, TR Precision Demand pitched; renewal locked to like-for-like for December',
+        mins: 45, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Mixed',
+        detail: 'Rani ran the agenda with Marianna Prodan (Google contact-data owner), Mark Fell + KP Pindle + Mardigan Moffat + Cole Arutian. Renewal reality-check: Lawrence + procurement pushing like-for-like extension in December (budgets locked for the year, no room for contact-data add-in until 2027 budget cycle). Path forward: execute renewal in December + parallel POC now. POC scoped at ~1,000 accounts across geos/segments (KP owns), MVL requires first/last/title/company/country + validated non-catch-all business emails only (no gmail). DPA is the blocker — Rani driving to attach to Lawrence’s renewal amendment vs standalone. Gemini Enterprise MCP: Rani asked for warm intro (Noah Rowitz indicated ZoomInfo has done this integration already). Precision Demand program pitched by Mardigan as bridge for marketing contacts + intent-driven leads on TR side. Deadline to send DPA + kick off POC list: today.' },
+    ],
+    pulses: [
+      { csm:'riley', health:'Healthy', account:'Zoom',
+        opp:'Vitally Pulse &mdash; Sep 11 Call',
+        arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+        change:'Sep 11 &middot; Handoff / Transition',
+        excerpt:'9/11 RR: Camille Shortridge (primary Zoom sponsor) leaving for Figma; Travis absorbing responsibilities (30 min, 9 AM PT). Buyer’s Choice deadline extended to Oct 16 (announcement Nov). API + SSO enablement in flight. Marla intro re-tried via second handoff email.' },
+
+      { csm:'rani', health:'Healthy', account:'Google Inc.',
+        opp:'Vitally Pulse &mdash; Sep 11 Call',
+        arr:'Enterprise &middot; Rani Guy', csmlbl:'Rani Guy',
+        change:'Sep 11 &middot; Renewal + POC + MCP',
+        excerpt:'9/11 RG: 45 min contact-POC scoping (10 AM PT). Google’s 2026 budget locked — December renewal must be like-for-like; contact-data add-on to be POC’d now, contracted in 2027. 1,000-account POC + DPA in motion. Rani asked for Gemini Enterprise MCP intro (Noah Rowitz hint that ZoomInfo already did the integration).' },
+    ],
+  };
+}
+
+function dayMeta_2026_09_11() {
+  return {
+    pills: [
+      ['dot-teal',   '2 Calls'],
+      ['dot-amber',  '1 Expansion'],
+      ['dot-green',  '2 Vitally Pulses'],
+      ['dot-grey',   'Fri Sep 11 &middot; 52 scanned &middot; 69% no-transcript'],
+    ],
+    tabs: ['Overview', 'Calls (2)', 'Pulses (2)', 'Action Items (5)']
+  };
+}
+
+function dayOverviewHTML_2026_09_11() {
+  return `<div class="section-label">Team Activity &mdash; Friday September 11, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Fri Sep 11 &mdash; 52 recordings scanned</strong> via SFDC SOQL &middot; <strong>2 confirmed calls</strong> across 2 CSMs &middot; 0 Concerning &middot; 1 Expansion (Google contact POC + Gemini MCP + TR Precision Demand) &middot; Nick back from PTO (Infor onsite debrief no-recording).
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>Weflow sync backlog Day 7:</strong> 69% no-transcript rate (down from 85% Sept 10, still elevated vs 40-50% typical). Trajectory: Sep 2 71% &rarr; Sep 3 75% &rarr; Sep 4 76% &rarr; Sep 8 72% &rarr; Sep 9 75% &rarr; Sep 10 85% &rarr; <strong>Sep 11 69%</strong>. Improvement but not resolved. 3 no-transcript recordings that were CSM-owned events (Andy&times;SAS renewal 5:30 AM, Varun&times;MongoDB 9 AM, Rani&times;Hitachi Vantara 9:30 AM) &mdash; inferred only, not speaker-verified.
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>Expansion:</strong> Google (Rani) &mdash; contact-data POC scoped at 1,000 accounts + DPA in motion; Gemini Enterprise MCP intro requested; TR Precision Demand program pitched. December renewal will be like-for-like (budget locked); contact-add expected 2027 budget cycle.
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header"><div class="avatar av-riley">RR</div><div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Zoom (Camille Shortridge farewell / Travis handoff; Buyer’s Choice deadline Oct 16)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header"><div class="avatar av-grey">RG</div><div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">45m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Google (contact POC + Gemini MCP + TR Precision Demand; renewal locked to like-for-like Dec) &middot; Hitachi Vantara 9:30 AM (no transcript)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="nick">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">NJ</div><div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Back from PTO (Day 2). 1 event (Infor onsite debrief 5 AM) &mdash; no recording synced</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="divyam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-divyam">DD</div><div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No CSM-owned events scheduled</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="varun">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-varun">VT</div><div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event (MongoDB 9 AM) &mdash; recorded but no transcript (inferred only)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">PH</div><div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No CSM-owned events scheduled</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="atisha">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">AW</div><div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">3 events (Intel Platform Training 5:30 AM, AMD Bi-weekly 9:30 AM, Apple Platform Training 12 PM) &mdash; no recordings synced</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">AL</div><div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event (SAS Team - MI Licenses 2027 Renewal 5:30 AM) &mdash; recorded but no transcript (inferred only)</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_09_11() {
+  return `<div class="section-label">Confirmed Calls &mdash; Friday September 11, 2026</div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>3 CSM events had recordings but no transcript</strong> &mdash; inferred from CSM event ownership only, not speaker-verified: Andy&times;SAS (MI Licenses 2027 Renewal, 5:30 AM PT, 30 min), Varun&times;MongoDB (9 AM PT, 30 min), Rani&times;Hitachi Vantara (9:30 AM PT, 30 min). 4 additional CSM events had no recording at all: Nick&times;Infor onsite debrief (5 AM), Atisha&times;Intel Platform Training (5:30 AM), Atisha&times;AMD Bi-weekly (9:30 AM), Atisha&times;Apple Platform Training (12 PM).
+  </div>`;
+}
+
+function dayPulsesHTML_2026_09_11() {
+  const cards = [
+    { csm:'riley', health:'Healthy', account:'Zoom', opp:'Vitally Pulse &mdash; Sep 11 Call',
+      arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Sep 11 &middot; Handoff / Transition',
+      excerpt:'9/11 RR: Camille Shortridge (primary Zoom sponsor) leaving for Figma; Travis absorbing responsibilities (30 min, 9 AM PT). Buyer’s Choice deadline extended to Oct 16 (announcement Nov). API + SSO enablement in flight. Marla intro re-tried via second handoff email.' },
+    { csm:'rani', health:'Healthy', account:'Google Inc.', opp:'Vitally Pulse &mdash; Sep 11 Call',
+      arr:'Enterprise &middot; Rani Guy', csmlbl:'Rani Guy',
+      change:'Sep 11 &middot; Renewal + POC + MCP',
+      excerpt:'9/11 RG: 45 min contact-POC scoping (10 AM PT). Google’s 2026 budget locked — December renewal must be like-for-like; contact-data add-on to be POC’d now, contracted in 2027. 1,000-account POC + DPA in motion. Rani asked for Gemini Enterprise MCP intro (Noah Rowitz hint that ZoomInfo already did the integration).' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div style="font-size:13px;font-weight:600;color:#e2e8f0;">${c.account}</div>
+          <div style="font-size:11px;color:#94a3b8;margin-top:2px;">${c.opp}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_09_11() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('0911-1')?'done':''}" data-csm="rani" id="action-0911-1">
+      <div class="action-checkbox ${doneActions.has('0911-1')?'checked':''}" onclick="toggleAction('0911-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Google &mdash; Send DPA + kick off 1,000-account POC list (TODAY)</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy &middot; Get HG DPA to Rani today so she can attach to Lawrence’s December renewal amendment (Marianna confirmed DPA is normally bundled with contract). KP to spec 1,000-account POC list w/ geo + segment spread. Google 2026 budget is locked — contact-data add-on won’t be contracted until 2027 budget cycle, so POC evidence + amendment path is the play.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0911-2')?'done':''}" data-csm="rani" id="action-0911-2">
+      <div class="action-checkbox ${doneActions.has('0911-2')?'checked':''}" onclick="toggleAction('0911-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Google &mdash; Gemini Enterprise MCP intro request via Marianna</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Rani Guy &middot; Noah Rowitz signaled ZoomInfo already integrated their data into Gemini Enterprise via MCP. Rani asked Marianna for a warm intro to the internal Gemini Enterprise contact. Short window — chase next week if no response.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0911-3')?'done':''}" data-csm="riley" id="action-0911-3">
+      <div class="action-checkbox ${doneActions.has('0911-3')?'checked':''}" onclick="toggleAction('0911-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Zoom &mdash; Travis onboarding: SSO, API, free-links doc</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Riley Rogers &middot; Travis (Camille’s successor) taking over Zoom TR ownership Monday. Confirm SSO enablement complete, drop free-links doc in shared folder, and walk Travis through vendor portal on next sync. Backfill for Camille’s role uncertain (colleague also going on maternity leave in a few months) — flag risk to Yuan.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0911-4')?'done':''}" data-csm="all" id="action-0911-4">
+      <div class="action-checkbox ${doneActions.has('0911-4')?'checked':''}" onclick="toggleAction('0911-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; CSM team &mdash; Manual Vitally log for 3 inferred + 4 no-recording calls</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Andy (SAS MI Licenses 2027 Renewal), Varun (MongoDB), Rani (Hitachi Vantara), Nick (Infor onsite debrief), Atisha (Intel Platform Training + AMD Bi-weekly + Apple Platform Training) &middot; With transcripts missing or recordings absent, each CSM should manually log the outcomes + next steps in Vitally so the signal isn’t lost. SAS renewal call in particular is worth capturing.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0911-5')?'done':''}" data-csm="all" id="action-0911-5">
+      <div class="action-checkbox ${doneActions.has('0911-5')?'checked':''}" onclick="toggleAction('0911-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F6A8; Ops &mdash; Weflow sync backlog Day 7 (69%, improving from 85%)</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Ops / Rishi &middot; No-transcript rate dropped from 85% Sept 10 to 69% Sept 11 — recovery starting but still 20+ pts above 40-50% baseline. Keep P0 open with Weflow support; if rate is back to baseline by Sept 14 (Monday), close ticket. Otherwise escalate to product.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
+
 
