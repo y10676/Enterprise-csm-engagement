@@ -2569,3 +2569,249 @@ function dayActionsHTML_2026_09_16() {
   <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
 }
 
+
+// ============================================================
+// Thursday September 17, 2026
+// ============================================================
+
+function dayData_2026_09_17() {
+  return {
+    calls: [
+      { ts: 'Sep 17 &middot; 12:15 AM', csm: 'divyam', account: 'Xero',
+        note: 'Xero Monthly Sync w/ Andrea Gonzalez (EMEA time slot) &mdash; payment cleared Sept 11; walkthrough of Crawl Analytics Cache now available in vendor portal (LLM stats surfaced from Looker to portal, scheduling supported)',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Divyam ran the monthly TrustRadius sync with Andrea Gonzalez (Xero, EMEA). Payment cleared Sept 11 &mdash; Divyam to confirm on HG side. Andrea flagged no issues but limited TR usage this cycle due to competing campaign priorities. Divyam walked through the Crawl Analytics Cache: the LLM-stats dashboard (how prospects find Xero via LLMs, competitor pricing/product visibility) has moved from internal Looker to the vendor portal, with weekly/monthly/quarterly views and scheduled delivery.' },
+
+      { ts: 'Sep 17 &middot; 10:00 AM', csm: 'rani', account: 'Google Inc.',
+        note: 'Google Renewal Discussion w/ Mark Fell (HG) + Natalia Pereira Fritz (Google procurement, xWF) &mdash; expansion pitch away from like-for-like: 10M&rarr;55M org universe, new AI-driven analytics + UI, credit-based licensing; 15&ndash;20-user free-trial pilot proposed; Monday on-site with Lawrence + Noah Rowitz',
+        mins: 60, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Rani + Mark Fell on with Natalia (Google procurement) ahead of Monday&rsquo;s on-site with Lawrence + Noah Rowitz + Mark&rsquo;s leadership team in the Bay Area. Mark framed the ask: current 3-year agreement was for a &ldquo;rich slice&rdquo; but HG data has matured &mdash; 10M orgs then vs 55M today, new AI-driven analytics, new UI, credit-based licensing. Goal: reframe December renewal away from like-for-like toward capability-based negotiation. Natalia is under Google procurement mandate to move renewals to credit/token-based licensing, wants pilot to model consumption fixes. Proposed: 15&ndash;20 pilot users representative across Rebecca Sanders&rsquo; team, Pramod&rsquo;s org, APAC/LatAm startup segments. Mark: &ldquo;let&rsquo;s give them the entire cart&rdquo; (Market Analyzer, GSI, ISV, AI sales copilot, VDR) for a free trial with biweekly feedback so both sides can prioritize. Rani to work with Roo Heat on training + product feedback loop.' },
+
+      { ts: 'Sep 17 &middot; 10:30 AM', csm: 'pam', account: 'ZoomInfo',
+        note: 'ZoomInfo TR sync w/ Russell Martin &mdash; product-profile merges (Chorus still standalone pending go-to-market clarity, NeverBounce awaiting response), Buyer&rsquo;s Choice qualification for GTM AI new product',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Pam met Russell for the TrustRadius sync. Product-profile merges: several completed, Chorus staying standalone until ZoomInfo publicly clarifies GTM strategy, NeverBounce still awaiting response. Buyer&rsquo;s Choice qualification: ZoomInfo qualified for Studio + Workspace products; GTM AI is brand new (1 G2 review) so Pam and Russell agreed likely too early for the mid-October 16 deadline but Russell to check with the GTM AI team for willing reviewers. Pam offered to create tracking link + can help with review sourcing lists if Russell provides.' },
+
+      { ts: 'Sep 17 &middot; 11:00 AM', csm: 'divyam', account: 'Workhuman',
+        note: 'Workhuman Monthly Cadence w/ Ethan Bukowiec &mdash; Buyer&rsquo;s Choice review campaign strategy (30 days to Oct 16 deadline); Workhuman to manage all future review campaigns internally via Pendo (privacy policy driven, no HG-side outreach)',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Divyam and Ethan aligned on Buyer&rsquo;s Choice review-gen path. Ethan met with Sophia (Workhuman CE) yesterday: Workhuman will manage all review-campaign outreach internally &mdash; either through their Workhuman ecosystem communications or via Pendo automated workflows &mdash; not through HG-driven campaigns. Reason: privacy policy + CE-team comfort with customer-list sharing. Divyam confirmed she&rsquo;ll continue to provide campaign links; short-term and long-term posture is that Workhuman handles outreach in-house. 30 days to Oct 16 Buyer&rsquo;s Choice deadline; Workhuman expects to hit review quota without issue.' },
+    ],
+    pulses: [
+      { csm:'divyam', health:'Healthy', account:'Xero',
+        opp:'Vitally Pulse &mdash; Sep 17 Call',
+        arr:'Enterprise &middot; Divyam Dewan', csmlbl:'Divyam Dewan',
+        change:'Sep 17 &middot; Payment + Crawl Analytics',
+        excerpt:'9/17 DD: 30 min Xero Monthly Sync (12:15 AM PT EMEA slot) w/ Andrea Gonzalez. Payment cleared Sept 11 &mdash; Divyam to confirm on HG side. Crawl Analytics Cache walkthrough: LLM stats now on vendor portal (previously Looker only) with scheduled delivery.' },
+      { csm:'rani', health:'Healthy', account:'Google Inc.',
+        opp:'Vitally Pulse &mdash; Sep 17 Call',
+        arr:'Strategic &middot; Rani Guy', csmlbl:'Rani Guy',
+        change:'Sep 17 &middot; Renewal Reframe + Pilot',
+        excerpt:'9/17 RG+MF: 60 min Google Renewal Discussion (10 AM PT) w/ Natalia Pereira Fritz (procurement, xWF). HG pitching expansion beyond like-for-like: 10M&rarr;55M org universe, new AI-driven analytics + UI, credit-based licensing. 15&ndash;20-user free-trial pilot proposed. Monday on-site with Lawrence + Noah Rowitz + HG leadership. December renewal execution track parallel.' },
+      { csm:'pam', health:'Healthy', account:'ZoomInfo',
+        opp:'Vitally Pulse &mdash; Sep 17 Call',
+        arr:'Enterprise &middot; Pam Huck', csmlbl:'Pam Huck',
+        change:'Sep 17 &middot; Profile Merges + Buyer&rsquo;s Choice',
+        excerpt:'9/17 PH: 30 min ZoomInfo TR sync (10:30 AM PT) w/ Russell Martin. Profile merges: Chorus standalone pending GTM clarity, NeverBounce awaiting response. Buyer&rsquo;s Choice: qualified for Studio + Workspace; GTM AI brand new (1 G2 review) likely too early for Oct 16 deadline but Russell to check with GTM AI team.' },
+      { csm:'divyam', health:'Healthy', account:'Workhuman',
+        opp:'Vitally Pulse &mdash; Sep 17 Call',
+        arr:'Enterprise &middot; Divyam Dewan', csmlbl:'Divyam Dewan',
+        change:'Sep 17 &middot; Review Campaigns Internal',
+        excerpt:'9/17 DD: 30 min Workhuman Monthly Cadence (11 AM PT) w/ Ethan Bukowiec. Confirmed Workhuman will manage all review-gen internally via their ecosystem or Pendo automated workflows (privacy policy + CE-team preference). Divyam continues to provide campaign links. Oct 16 Buyer&rsquo;s Choice deadline &mdash; Workhuman on track to hit quota.' },
+    ],
+  };
+}
+
+function dayMeta_2026_09_17() {
+  return {
+    pills: [
+      ['dot-teal',   '4 Calls'],
+      ['dot-amber',  '1 Expansion'],
+      ['dot-green',  '4 Vitally Pulses'],
+      ['dot-grey',   'Thu Sep 17 &middot; 96 scanned &middot; 84% no-transcript'],
+    ],
+    tabs: ['Overview', 'Calls (4)', 'Pulses (4)', 'Action Items (6)']
+  };
+}
+
+function dayOverviewHTML_2026_09_17() {
+  return `<div class="section-label">Team Activity &mdash; Thursday September 17, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Thu Sep 17 &mdash; 96 recordings scanned</strong> via SFDC SOQL &middot; <strong>4 confirmed customer calls</strong> (Divyam &times;2, Rani &times;1, Pam &times;1) &middot; 0 Concerning &middot; 1 Expansion (Google renewal reframe with 15&ndash;20-user pilot ahead of Monday on-site).
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x1F6A8; <strong>Weflow sync backlog Day 11 &mdash; SEVERE:</strong> 84% no-transcript rate on Sept 17 (improved marginally from 92% Sept 16 but still severe). Trajectory: Sep 2 71% &rarr; Sep 10 85% &rarr; Sep 11 69% &rarr; Sep 14 78% &rarr; Sep 15 79% &rarr; Sep 16 92% &rarr; <strong>Sep 17 84%</strong>. 16 CSM-owned recordings had no transcript today &mdash; largest cluster on Pam (F5 GEO/LLM Demo 1 PM 60 min &times;2 slots) and Divyam (Safaricom, Sage, Dynatrace). 24 CSM events had no recording at all. Escalation to Weflow support + Yuan/leadership still warranted.
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>Expansion:</strong> Google (Rani + Mark Fell) &mdash; renewal-discussion prep for Monday&rsquo;s on-site with Lawrence + Noah Rowitz. HG pitching expansion beyond like-for-like: 10M&rarr;55M org universe, new AI-driven analytics + UI, credit-based licensing. 15&ndash;20-user free-trial pilot proposed (Market Analyzer + GSI + ISV + AI sales copilot + VDR) with biweekly feedback loop. Natalia (Google procurement) under mandate to shift renewals to credit/token licensing.
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header"><div class="avatar av-divyam">DD</div><div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Xero (Monthly TR sync &mdash; payment cleared Sept 11, Crawl Analytics Cache walkthrough) &middot; Workhuman (Monthly cadence &mdash; review campaigns internal via Pendo, Oct 16 Buyer&rsquo;s Choice on track)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header"><div class="avatar av-grey">RG</div><div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Google Inc. (Renewal Discussion &mdash; expansion reframe pre-Monday on-site w/ Lawrence + Noah Rowitz; 15&ndash;20-user pilot proposed; credit-based licensing mandate)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="pam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header"><div class="avatar av-grey">PH</div><div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">ZoomInfo (TR sync &mdash; profile merges Chorus/NeverBounce, Buyer&rsquo;s Choice GTM AI qualification too early) &middot; 4 unconfirmed w/ recordings: ZoomInfo 2nd-slot 10:30 AM, Oracle NetSuite 11 AM, F5 GEO/LLM Demo 1 PM &times;2 slots</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="riley">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-riley">RR</div><div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 recording no transcript (SAP Events Sync 10:30 AM). No other CSM events</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="nick">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">NJ</div><div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 recording no transcript (Intuit/Blackbaud sync 9:30 AM) &middot; 3 events no recording (Infinigate biweekly, Sage biweekly, +1)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="varun">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-varun">VT</div><div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">4 recordings no transcript (DXC Renewal Planning 6:30 AM &times;2 slots, MongoDB 8 AM, Iron Mountain biweekly 12:30 PM) &middot; 4 events no recording (Insight sync &times;2, IFS quarterly 8 AM, Insight Marketing)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="atisha">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">AW</div><div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 recordings no transcript (Insight Direct biweekly 7 AM, Arben/Atisha 11:30 AM) &middot; 4 events no recording (Kong Weekly Sync &times;2, Saviynt monthly 10 AM, Kyndryl MCP office hours 11:30 AM)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">AL</div><div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 recording no transcript (Evapure/Pure Storage biweekly 4:30 AM) &middot; 1 event no recording (Sage biweekly 6:30 AM)</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_09_17() {
+  return `<div class="section-label">Confirmed Calls &mdash; Thursday September 17, 2026</div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>16 CSM-owned recordings had no transcript</strong> &mdash; inferred from CSM event ownership only, not speaker-verified. Notable: Pam&times;F5 GEO/LLM Demo (1 PM PT, 60 min, 2 slots &mdash; expansion-adjacent demo topic); Nick&times;Intuit/Blackbaud (9:30 AM); Varun&times;DXC Renewal Planning + New Platform Walkthrough (6:30 AM, 2 slots); Divyam&times;Safaricom biweekly (4 AM); Andy&times;Evapure/Pure Storage biweekly (4:30 AM). 24 additional CSM events had no recording at all.
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F551; <strong>EMEA time slot:</strong> Divyam&times;Xero (12:15 AM PT) is the morning-EMEA slot for Andrea Gonzalez (Xero, likely Europe based on weather references). Real customer call &mdash; not a false positive.
+  </div>`;
+}
+
+function dayPulsesHTML_2026_09_17() {
+  const cards = [
+    { csm:'divyam', health:'Healthy', account:'Xero',
+      opp:'Vitally Pulse &mdash; Sep 17 Call',
+      arr:'Enterprise &middot; Divyam Dewan', csmlbl:'Divyam Dewan',
+      change:'Sep 17 &middot; Payment + Crawl Analytics',
+      excerpt:'9/17 DD: 30 min Xero Monthly Sync (12:15 AM PT EMEA slot) w/ Andrea Gonzalez. Payment cleared Sept 11 &mdash; Divyam to confirm on HG side. Crawl Analytics Cache walkthrough: LLM stats now on vendor portal (previously Looker only) with scheduled delivery.' },
+    { csm:'rani', health:'Healthy', account:'Google Inc.',
+      opp:'Vitally Pulse &mdash; Sep 17 Call',
+      arr:'Strategic &middot; Rani Guy', csmlbl:'Rani Guy',
+      change:'Sep 17 &middot; Renewal Reframe + Pilot',
+      excerpt:'9/17 RG+MF: 60 min Google Renewal Discussion (10 AM PT) w/ Natalia Pereira Fritz (procurement, xWF). HG pitching expansion beyond like-for-like: 10M&rarr;55M org universe, new AI-driven analytics + UI, credit-based licensing. 15&ndash;20-user free-trial pilot proposed. Monday on-site with Lawrence + Noah Rowitz + HG leadership. December renewal execution track parallel.' },
+    { csm:'pam', health:'Healthy', account:'ZoomInfo',
+      opp:'Vitally Pulse &mdash; Sep 17 Call',
+      arr:'Enterprise &middot; Pam Huck', csmlbl:'Pam Huck',
+      change:'Sep 17 &middot; Profile Merges + Buyer&rsquo;s Choice',
+      excerpt:'9/17 PH: 30 min ZoomInfo TR sync (10:30 AM PT) w/ Russell Martin. Profile merges: Chorus standalone pending GTM clarity, NeverBounce awaiting response. Buyer&rsquo;s Choice: qualified for Studio + Workspace; GTM AI brand new (1 G2 review) likely too early for Oct 16 deadline but Russell to check with GTM AI team.' },
+    { csm:'divyam', health:'Healthy', account:'Workhuman',
+      opp:'Vitally Pulse &mdash; Sep 17 Call',
+      arr:'Enterprise &middot; Divyam Dewan', csmlbl:'Divyam Dewan',
+      change:'Sep 17 &middot; Review Campaigns Internal',
+      excerpt:'9/17 DD: 30 min Workhuman Monthly Cadence (11 AM PT) w/ Ethan Bukowiec. Confirmed Workhuman will manage all review-gen internally via their ecosystem or Pendo automated workflows (privacy policy + CE-team preference). Divyam continues to provide campaign links. Oct 16 Buyer&rsquo;s Choice deadline &mdash; Workhuman on track to hit quota.' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div style="font-size:13px;font-weight:600;color:#e2e8f0;">${c.account}</div>
+          <div style="font-size:11px;color:#94a3b8;margin-top:2px;">${c.opp}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_09_17() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('0917-1')?'done':''}" data-csm="rani" id="action-0917-1">
+      <div class="action-checkbox ${doneActions.has('0917-1')?'checked':''}" onclick="toggleAction('0917-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Google &mdash; Deliver 12-month credit-consumption telemetry to Natalia + identify 15&ndash;20 pilot users pre-Monday on-site</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy &middot; Rani to pull month-over-month credit usage across data feed + platform users (FAI, spend, install counts) and share with Natalia so procurement can model consumption for the new credit/token licensing model. Also identify 15&ndash;20 pilot users representative across Rebecca Sanders&rsquo; team, Pramod&rsquo;s org, APAC/LatAm startup segments &mdash; Mark wants a broad free-trial (Market Analyzer + GSI + ISV + AI sales copilot + VDR) with biweekly feedback. Deliver before Monday&rsquo;s on-site with Lawrence + Noah Rowitz.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0917-2')?'done':''}" data-csm="pam" id="action-0917-2">
+      <div class="action-checkbox ${doneActions.has('0917-2')?'checked':''}" onclick="toggleAction('0917-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; ZoomInfo &mdash; Follow up on NeverBounce merge + GTM AI Buyer&rsquo;s Choice reviews</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Pam Huck &middot; NeverBounce profile merge is still awaiting response &mdash; chase down. Chorus stays standalone until ZoomInfo publicly clarifies GTM strategy. GTM AI (1 G2 review) likely too early for Oct 16 Buyer&rsquo;s Choice deadline but Russell to check with GTM AI team for willing reviewers; Pam ready with tracking link + list-sourcing support if useful.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0917-3')?'done':''}" data-csm="divyam" id="action-0917-3">
+      <div class="action-checkbox ${doneActions.has('0917-3')?'checked':''}" onclick="toggleAction('0917-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Xero &mdash; Confirm Sept 11 payment on HG side + share Crawl Analytics Cache scheduled report</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Divyam Dewan &middot; Divyam to check with HG finance that Xero&rsquo;s Sept 11 payment landed; if not, loop back with Andrea to trace via her accounting team. Set up Crawl Analytics Cache scheduled delivery for Andrea (weekly cadence with LLM stats + competitor visibility).</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0917-4')?'done':''}" data-csm="divyam" id="action-0917-4">
+      <div class="action-checkbox ${doneActions.has('0917-4')?'checked':''}" onclick="toggleAction('0917-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Workhuman &mdash; Continue providing campaign links; monitor Oct 16 Buyer&rsquo;s Choice quota</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Divyam Dewan &middot; Workhuman managing outreach internally via Workhuman ecosystem + Pendo automated workflows (privacy policy driven). Divyam continues to provide campaign links + monitor review count over the next 30 days. Ethan expects to hit quota without issue.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0917-5')?'done':''}" data-csm="all" id="action-0917-5">
+      <div class="action-checkbox ${doneActions.has('0917-5')?'checked':''}" onclick="toggleAction('0917-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; CSM team &mdash; Manual Vitally log for 16 inferred (no-transcript) + 24 no-recording events</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Pam (F5 GEO/LLM Demo &times;2 &mdash; expansion-adjacent, Oracle NetSuite TR, ZoomInfo 2nd-slot), Divyam (Safaricom, Sage, Dynatrace, Adobe &times;3, Lumen &times;2, Paycor), Varun (DXC Renewal &times;2, MongoDB, Iron Mountain, Insight &times;2, IFS quarterly), Atisha (Insight Direct, Arben, Kong &times;2, Saviynt, Kyndryl MCP office hours), Nick (Intuit/Blackbaud, Infinigate, Sage), Andy (Evapure/Pure Storage biweekly, Sage biweekly), Riley (SAP Events Sync) &middot; Weflow sync still at 84% no-transcript on Sept 17 means the daily scan continues to be materially incomplete. Highest priority for manual logging: Pam&times;F5 GEO/LLM Demo (expansion topic!), Varun&times;DXC Renewal (new-platform walkthrough tied to 2026 renewal), Rani/Divyam-adjacent renewal chains (Sage, Safaricom, Adobe RGIP migration, Lumen).</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0917-6')?'done':''}" data-csm="all" id="action-0917-6">
+      <div class="action-checkbox ${doneActions.has('0917-6')?'checked':''}" onclick="toggleAction('0917-6')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F6A8; Ops &mdash; Weflow sync backlog Day 11 (84%, still severe) &mdash; open Vercel fallback discussion</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Ops / Rishi / Yuan &middot; No-transcript rate improved marginally from 92% Sept 16 to 84% Sept 17 but still severe. Trajectory: Sep 10 85% &rarr; Sep 11 69% &rarr; Sep 14 78% &rarr; Sep 15 79% &rarr; Sep 16 92% &rarr; <strong>Sep 17 84%</strong>. Not resolving reliably. Weflow product escalation still open. Recommend spinning up event-based inferred fallback report (attribute by CSM event ownership + calendar signal, mark as lower-confidence) so the engagement view isn&rsquo;t blind while Weflow stabilizes.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
+
