@@ -3016,3 +3016,187 @@ function dayActionsHTML_2026_09_18() {
   <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
 }
 
+
+// ============================================================
+// Monday September 21, 2026
+// ============================================================
+
+function dayData_2026_09_21() {
+  return {
+    calls: [
+      { ts: 'Sep 21 &middot; 9:00 AM', csm: 'nick', account: 'NTT Data Corporation',
+        note: 'NTT Strategic Alliances onboarding &mdash; new EVP Murat Aksu (May start) drove introduction; Strategic Alliances team using HG data for "dirty dozen" partner cross-sell strategy (Microsoft/AWS/Google/SAP/Oracle/Salesforce/Databricks/Snowflake/OpenAI/Anthropic/NVIDIA); ~300 export request backlog + bulk export ask',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Nick ran a fresh onboarding for a new HG stakeholder inside NTT: Strategic Alliances / Partner Organization (within NTT&rsquo;s Client Growth Office). New EVP Murat Aksu joined in May and got apprised of HG via the Samol/mega-deals-team lead. This is a new use case for an existing account &mdash; historically NTT used HG via Naveen (data analytics) + Samol&rsquo;s mega-deals team; now Alliances wants a partner-lens view. Their "dirty dozen" partner list mirrors HG&rsquo;s top vendors (MS leading, then AWS/Google/SAP/Oracle/Salesforce/Databricks/Snowflake/OpenAI/Anthropic/NVIDIA). Use cases discussed: install-data + intensity multiplier (Toyota example: heavy AWS transformative partnership but MS-largest footprint due to Office), VMware take-out plays, product-description AI enrichment, industry-flavor tagging. Customer flagged ~300 export request backlog; asked whether bulk-export by geo/list is available. Nick walked through Titus example, Intent (visible not explorable at current tier), Contract tab (less useful than name implies). Location data + FAI both under-utilized. Renewal-adjacent: opportunity to package Alliances expansion + new licensing at renewal.' },
+    ],
+    pulses: [
+      { csm:'nick', health:'Healthy', account:'NTT Data Corporation',
+        opp:'Vitally Pulse &mdash; Sep 21 Call',
+        arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+        change:'Sep 21 &middot; New Stakeholder + Expansion',
+        excerpt:'9/21 NJ: 30 min NTT Strategic Alliances onboarding (9 AM PT). New EVP Murat Aksu (May start) triggered the intro; Alliances team now using HG for "dirty dozen" partner cross-sell strategy. ~300 export backlog + bulk export ask. Location data + FAI under-utilized. Renewal-adjacent expansion vector.' },
+    ],
+  };
+}
+
+function dayMeta_2026_09_21() {
+  return {
+    pills: [
+      ['dot-teal',   '1 Call'],
+      ['dot-amber',  '1 Expansion'],
+      ['dot-green',  '1 Vitally Pulse'],
+      ['dot-grey',   'Mon Sep 21 &middot; 65 scanned &middot; 78% no-transcript'],
+    ],
+    tabs: ['Overview', 'Calls (1)', 'Pulses (1)', 'Action Items (5)']
+  };
+}
+
+function dayOverviewHTML_2026_09_21() {
+  return `<div class="section-label">Team Activity &mdash; Monday September 21, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Mon Sep 21 &mdash; 65 recordings scanned</strong> via SFDC SOQL &middot; <strong>1 confirmed customer call</strong> (Nick&times;NTT Strategic Alliances onboarding) &middot; 0 Concerning &middot; 1 Expansion (NTT new-stakeholder + partner-lens use case).
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>Weflow sync backlog Day 13 &mdash; slight regression:</strong> 78% no-transcript rate on Sept 21 (up from 71% Sept 18). Trajectory: Sep 10 85% &rarr; Sep 11 69% &rarr; Sep 14 78% &rarr; Sep 15 79% &rarr; Sep 16 92% &rarr; Sep 17 84% &rarr; Sep 18 71% &rarr; <strong>Sep 21 78%</strong>. Not resolving to baseline. 8 CSM-owned recordings had no transcript today &mdash; notably Pam&times;Microsoft Weekly Sync (11 AM 45m &mdash; Unified Support Renewal & Growth Sales Motion), Rani&times;HPE Cloud Dynamics Mapping (9:30 AM), Riley&times;Zscaler Leads Kickoff (10:30 AM), Divyam&times;BILL Weekly ×2 slots (10 AM). 11 CSM events had no recording.
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>Expansion:</strong> NTT Data (Nick) &mdash; new stakeholder onboarding for NTT&rsquo;s Strategic Alliances / Partner Organization team (previously HG-inactive; new EVP Murat Aksu joined May). New use case: partner-lens cross-sell for "dirty dozen" partners (MS/AWS/Google/SAP/Oracle/Salesforce/Databricks/Snowflake/OpenAI/Anthropic/NVIDIA). ~300 export backlog surfaced &mdash; bulk-export capability ask. Renewal-adjacent packaging opportunity.
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F91D; <strong>Google on-site today:</strong> Rani&rsquo;s major Google renewal on-site with Lawrence + Noah Rowitz + Mark Fell + HG leadership team in the Bay Area today &mdash; NO Weflow recording expected (in-person meeting). Rani&rsquo;s calendar showed only Lenovo Alliance + HPE + workspan monthly + NetApp weekly (no recordings). Outcome/notes to log manually in Vitally.
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header"><div class="avatar av-grey">NJ</div><div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">NTT Data (Strategic Alliances onboarding &mdash; new EVP-driven partner-lens use case, 300 export backlog + bulk export ask) &middot; 1 event no recording: HCL TR Profile Review 7:30 AM</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="rani">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">RG</div><div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 recordings no transcript (HPE Cloud Dynamics Mapping 9:30 AM, NetApp weekly 1 PM). 3 events no recording (Lenovo alignment 8 AM, workspan monthly 8:30 AM, NetApp weekly variant 1 PM). <strong>Google on-site (in-person) w/ Lawrence + Noah Rowitz + Mark Fell today</strong> &mdash; no Weflow recording expected.</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">PH</div><div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 recordings no transcript (Microsoft Weekly Sync 11 AM 45m &mdash; Unified Support renewal/growth topic; Greenhouse candidate interview 7 AM 45m &mdash; internal, not customer)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="divyam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-divyam">DD</div><div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 recordings no transcript (BILL Weekly Sync ×2 slots 10 AM). 2 events no recording (Blackbaud biweekly 8:30 AM, Dynatrace biweekly 10 AM)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="riley">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-riley">RR</div><div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 recording no transcript (Zscaler Leads Kickoff 10:30 AM &mdash; worth manual log given Sept 7 pre-renewal expansion thread)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="varun">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-varun">VT</div><div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 recording no transcript (OpenText biweekly 3 AM Year 2 Renewal + Expansion). 1 event no recording (MadKudu/HG&times;Autodesk 10:30 AM)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="atisha">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">AW</div><div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event no recording (Airtel &lt;&gt; HG Insights 3 AM)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">AL</div><div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No CSM-owned events on calendar today</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_09_21() {
+  return `<div class="section-label">Confirmed Calls &mdash; Monday September 21, 2026</div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F464; <strong>Speaker-detection note:</strong> The NTT customer joined as "K iPhone 12 Pro Max" (device display name) so their turns were not caught by the CSM/name regex. Only Nick Johnson was detected as a name-formatted speaker &mdash; but the call is a real customer engagement.
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>8 CSM-owned recordings had no transcript</strong> &mdash; inferred from CSM event ownership only. Highest-value manual-log candidates: Pam&times;Microsoft Weekly (11 AM 45m &mdash; Unified Support Renewal & Growth Sales Motion), Rani&times;HPE Cloud Dynamics Mapping (9:30 AM &mdash; V2 Follow-up), Riley&times;Zscaler Leads Kickoff (10:30 AM &mdash; follows Sept 7 pre-renewal expansion), Divyam&times;BILL Weekly &times;2 slots (10 AM &mdash; HG API for Clay), Varun&times;OpenText biweekly (3 AM Year 2 Renewal + Expansion). 11 CSM events had no recording at all.
+  </div>`;
+}
+
+function dayPulsesHTML_2026_09_21() {
+  const cards = [
+    { csm:'nick', health:'Healthy', account:'NTT Data Corporation',
+      opp:'Vitally Pulse &mdash; Sep 21 Call',
+      arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Sep 21 &middot; New Stakeholder + Expansion',
+      excerpt:'9/21 NJ: 30 min NTT Strategic Alliances onboarding (9 AM PT). New EVP Murat Aksu (May start) triggered the intro; Alliances team now using HG for "dirty dozen" partner cross-sell strategy. ~300 export backlog + bulk export ask. Location data + FAI under-utilized. Renewal-adjacent expansion vector.' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div style="font-size:13px;font-weight:600;color:#e2e8f0;">${c.account}</div>
+          <div style="font-size:11px;color:#94a3b8;margin-top:2px;">${c.opp}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_09_21() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('0921-1')?'done':''}" data-csm="nick" id="action-0921-1">
+      <div class="action-checkbox ${doneActions.has('0921-1')?'checked':''}" onclick="toggleAction('0921-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; NTT &mdash; Follow up with Strategic Alliances lead on bulk-export capability + Alliances licensing packaging</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Nick Johnson &middot; New stakeholder (Alliances team, EVP Murat Aksu) added a fresh use case to the NTT engagement &mdash; partner-lens cross-sell across the "dirty dozen." Customer flagged 300+ export request backlog and asked whether a bulk export by geo/list is possible. Nick to: (1) confirm bulk-export capabilities at current license tier, (2) walk Alliances lead through location data + FAI (currently unused, high leverage for their partner-scoping), (3) map Alliances requirements against current NTT license and quantify what expansion or add-on would unlock the workflow. Renewal-adjacent opportunity to bundle Alliances expansion at next renewal.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0921-2')?'done':''}" data-csm="rani" id="action-0921-2">
+      <div class="action-checkbox ${doneActions.has('0921-2')?'checked':''}" onclick="toggleAction('0921-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Google &mdash; Manual Vitally log for today&rsquo;s in-person on-site with Lawrence + Noah Rowitz + Mark Fell</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy &middot; The Sept 21 Google renewal on-site was in-person in the Bay Area (no Weflow recording). Follows the Sept 17 60-min prep call and the Sept 11 contact-POC scoping. Capture: (a) Lawrence&rsquo;s reaction to the expansion pitch (10M&rarr;55M universe, credit/token licensing, new AI-driven UI), (b) alignment on the 15&ndash;20-user free-trial pilot (Market Analyzer + GSI + ISV + AI sales copilot + VDR), (c) DPA + amendment path for the December renewal, (d) any Gemini Enterprise MCP intro progress. Log outcomes + next steps in Vitally today.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0921-3')?'done':''}" data-csm="pam" id="action-0921-3">
+      <div class="action-checkbox ${doneActions.has('0921-3')?'checked':''}" onclick="toggleAction('0921-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Microsoft &mdash; Manual Vitally log for Unified Support Renewal & Growth weekly sync</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Pam Huck &middot; 45-min weekly (11 AM PT) tagged to the Microsoft Unified Support Renewal and Growth Sales Motion opp. No transcript synced &mdash; Pam should manually log outcomes/action items so the signal isn&rsquo;t lost. Companion track to Sept 16&rsquo;s Intent Topic Review (credit-impact quantification for Bryce&rsquo;s recommendations still owed).</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0921-4')?'done':''}" data-csm="all" id="action-0921-4">
+      <div class="action-checkbox ${doneActions.has('0921-4')?'checked':''}" onclick="toggleAction('0921-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; CSM team &mdash; Manual Vitally log for 8 inferred (no-transcript) + 11 no-recording events</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Rani (HPE Cloud Dynamics Mapping 9:30 AM, NetApp 1 PM), Riley (Zscaler Leads Kickoff 10:30 AM &mdash; follows Sept 7 pre-renewal expansion thread), Divyam (BILL Weekly HG API for Clay &times;2 slots 10 AM), Varun (OpenText Year 2 Renewal + Expansion biweekly 3 AM), Pam (Microsoft Weekly + Greenhouse candidate interview), plus events with no recording (Nick&times;HCL TR, Rani&times;Lenovo alignment/workspan/NetApp variant, Divyam&times;Blackbaud biweekly + Dynatrace biweekly, Varun&times;MadKudu/HG&times;Autodesk, Atisha&times;Airtel). Highest priority manual captures: Zscaler (expansion), OpenText (renewal + expansion), HPE (V2 follow-up), Microsoft Weekly (Unified Support renewal).</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0921-5')?'done':''}" data-csm="all" id="action-0921-5">
+      <div class="action-checkbox ${doneActions.has('0921-5')?'checked':''}" onclick="toggleAction('0921-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F6A8; Ops &mdash; Weflow sync backlog Day 13 (78%, slight regression) &mdash; escalate again if not resolved by Wed</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Ops / Rishi &middot; No-transcript rate ticked back up to 78% on Sept 21 after 71% on Sept 18 &mdash; recovery not holding. Trajectory: Sep 10 85% &rarr; Sep 11 69% &rarr; Sep 14 78% &rarr; Sep 15 79% &rarr; Sep 16 92% &rarr; Sep 17 84% &rarr; Sep 18 71% &rarr; <strong>Sep 21 78%</strong>. If Wed (Sept 23) is still &gt;60%, escalate to Weflow product owner + brief Yuan. Consider ordering the event-based inferred fallback report if there&rsquo;s no clear resolution ETA.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
+
