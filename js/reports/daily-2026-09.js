@@ -2815,3 +2815,204 @@ function dayActionsHTML_2026_09_17() {
   <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
 }
 
+
+// ============================================================
+// Friday September 18, 2026
+// ============================================================
+
+function dayData_2026_09_18() {
+  return {
+    calls: [
+      { ts: 'Sep 18 &middot; 8:00 AM', csm: 'atisha', account: 'INFUSE',
+        note: 'INFUSE Demo &mdash; broad team walkthrough of HG platform (partnerships team, GTM strategy, deal desk, client success) run by Harry Chemla (new HG SE); expected follow-up: separate partnership-team session',
+        mins: 60, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Atisha co-attended a 60-min HG platform demo with Harry Chemla (new HG SE), Christopher Picanso (HG), and David Verwey (HG) for a broad INFUSE audience. INFUSE side: Petya Dolaptchieva + Mia Dragojlovic (Client Success), Kayla + Chris (GTM Strategy), Max + Connor + Ursula (Deal Desk), Josh + Maurice + Bianca (Partnerships). Petya framed the intro; Harry did the platform demo. Expected next step: separate follow-up session for the partnership team specifically to dive into what HG can do with INFUSE&rsquo;s partner program. INFUSE is not in the current Enterprise CSM account book but the demo puts them on the radar &mdash; classify as prospect/awareness engagement.' },
+
+      { ts: 'Sep 18 &middot; 8:00 AM', csm: 'nick', account: 'Infor (US), LLC',
+        note: 'Account-match review with Matt Meyer, Nicole Morgan, Prasanna (Infor) + Max Shaw (HG) &mdash; methodology deep-dive on ~500-account matching exercise from summer, framing quality vs completeness ahead of October renewal',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Nick (back this week from PTO) reconvened with Matt Meyer + Nicole Morgan + Prasanna (Infor) and Max Shaw (HG Solutions) for a match-review of the ~500-account file Infor sent earlier in the summer. Nicole framed two parallel exercises: (1) firmographic deep-dive on new data categories Infor will access post-October renewal, (2) data-quality assessment on the matched account file. Matt&rsquo;s concern: understand HG&rsquo;s matching methodology since Infor is D&B-hierarchy-heavy and matching quality drives whether technographic data is usable. Nick walked through raw match results and noted this is iterative &mdash; will send raw data for Infor to review over a few days, then iterate. Renewal-adjacent (October) so timeline matters &mdash; follows the Aug 3 Concerning signal on Infor renewal pricing/Bain model.' },
+    ],
+    pulses: [
+      { csm:'atisha', health:'Healthy', account:'INFUSE',
+        opp:'Vitally Pulse &mdash; Sep 18 Call',
+        arr:'Prospect/Awareness &middot; Atisha Waghela', csmlbl:'Atisha Waghela',
+        change:'Sep 18 &middot; Platform Demo',
+        excerpt:'9/18 AW: 60 min INFUSE Demo (8 AM PT). Broad INFUSE team demo led by Harry Chemla (new HG SE): Client Success + GTM Strategy + Deal Desk + Partnerships. Follow-up ask: separate partnership-team session. Not in current Enterprise book &mdash; classify as prospect/awareness.' },
+      { csm:'nick', health:'Healthy', account:'Infor (US), LLC',
+        opp:'Vitally Pulse &mdash; Sep 18 Call',
+        arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+        change:'Sep 18 &middot; Match Review Pre-Renewal',
+        excerpt:'9/18 NJ: 30 min Infor account-match review (8 AM PT) w/ Matt Meyer + Nicole Morgan + Prasanna + Max Shaw. Methodology deep-dive on the ~500-account summer file: quality vs completeness assessment ahead of October renewal. Iterative &mdash; Nick to send raw data for Infor review then iterate. Follows Aug 3 Concerning signal on Infor renewal pricing/Bain model.' },
+    ],
+  };
+}
+
+function dayMeta_2026_09_18() {
+  return {
+    pills: [
+      ['dot-teal',   '2 Calls'],
+      ['dot-green',  '2 Vitally Pulses'],
+      ['dot-grey',   'Fri Sep 18 &middot; 66 scanned &middot; 71% no-transcript'],
+    ],
+    tabs: ['Overview', 'Calls (2)', 'Pulses (2)', 'Action Items (5)']
+  };
+}
+
+function dayOverviewHTML_2026_09_18() {
+  return `<div class="section-label">Team Activity &mdash; Friday September 18, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Fri Sep 18 &mdash; 66 recordings scanned</strong> via SFDC SOQL &middot; <strong>2 confirmed customer calls</strong> (Atisha &times;1 INFUSE demo, Nick &times;1 Infor match review) &middot; 0 Concerning &middot; 0 Expansion &middot; Nick back from PTO Week 3 running Infor renewal-adjacent work.
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>Weflow sync backlog Day 12 &mdash; improving:</strong> 71% no-transcript rate on Sept 18 (down from 84% Sept 17, 92% Sept 16). Trajectory: Sep 10 85% &rarr; Sep 11 69% &rarr; Sep 14 78% &rarr; Sep 15 79% &rarr; Sep 16 92% &rarr; Sep 17 84% &rarr; <strong>Sep 18 71%</strong>. Approaching baseline but still elevated. 4 CSM-owned recordings had no transcript (Nick&times;Westcon 5:30 AM, Riley&times;SAP Ariba+Fieldglass 8 AM, Atisha&times;Apple biweekly 9 AM, Divyam&times;Cotality TR categories query 12:30 PM). 9 CSM events had no recording.
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4A1; <strong>Light Friday:</strong> 14 CSM events scheduled today (lowest since Sept 10). Nick, Atisha, Divyam, Riley, Varun accounted for most of the calendar; Rani off (light Friday and prep for Monday&rsquo;s Google on-site).
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header"><div class="avatar av-grey">NJ</div><div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Infor (US) &mdash; account-match review pre-October renewal w/ Matt Meyer + Nicole Morgan + Prasanna + Max Shaw &middot; 1 unconfirmed: Westcon 5:30 AM (no transcript). Nick back from PTO Week 3.</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header"><div class="avatar av-grey">AW</div><div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">INFUSE Demo (broad-team platform walkthrough co-led w/ Harry Chemla new HG SE + Christopher Picanso + David Verwey) &middot; 1 unconfirmed: Apple biweekly 9 AM &middot; 3 events no recording: Intel Platform Training 5:30 AM, AMD biweekly 9:30 AM, Apple Platform Training Team Call 12 PM</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="riley">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-riley">RR</div><div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 recording no transcript (SAP Ariba + Fieldglass TR 8 AM &mdash; inferred only)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="divyam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-divyam">DD</div><div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 recording no transcript (Cotality Query Meeting &mdash; TrustRadius product categories 12:30 PM). 1 event no recording: Quadient biweekly 7:30 AM</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="rani">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">RG</div><div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No CSM-owned events on calendar &mdash; likely prep for Monday&rsquo;s Google on-site with Lawrence + Noah Rowitz + HG leadership</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="varun">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-varun">VT</div><div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event no recording: Zendesk biweekly 9 AM</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">PH</div><div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No CSM-owned events on calendar today</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">AL</div><div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No CSM-owned events on calendar today</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_09_18() {
+  return `<div class="section-label">Confirmed Calls &mdash; Friday September 18, 2026</div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>4 CSM-owned recordings had no transcript</strong> &mdash; inferred from CSM event ownership only: Nick&times;Westcon Install/Intent (5:30 AM), Riley&times;SAP Ariba + Fieldglass TR (8 AM), Atisha&times;Apple Bi-weekly Sync (9 AM), Divyam&times;Cotality TR Product Categories Query (12:30 PM). 9 additional CSM events had no recording at all.
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F91D; <strong>Nick back from PTO Week 3:</strong> Nick Johnson returned this week (previously PTO Sept 1&ndash;Sept 10). Infor account-match review is renewal-adjacent (October renewal, follows Aug 3 Concerning signal). Nick also had Westcon Install + Intent discussion at 5:30 AM (no transcript).
+  </div>`;
+}
+
+function dayPulsesHTML_2026_09_18() {
+  const cards = [
+    { csm:'atisha', health:'Healthy', account:'INFUSE',
+      opp:'Vitally Pulse &mdash; Sep 18 Call',
+      arr:'Prospect/Awareness &middot; Atisha Waghela', csmlbl:'Atisha Waghela',
+      change:'Sep 18 &middot; Platform Demo',
+      excerpt:'9/18 AW: 60 min INFUSE Demo (8 AM PT). Broad INFUSE team demo led by Harry Chemla (new HG SE): Client Success + GTM Strategy + Deal Desk + Partnerships. Follow-up ask: separate partnership-team session. Not in current Enterprise book &mdash; classify as prospect/awareness.' },
+    { csm:'nick', health:'Healthy', account:'Infor (US), LLC',
+      opp:'Vitally Pulse &mdash; Sep 18 Call',
+      arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Sep 18 &middot; Match Review Pre-Renewal',
+      excerpt:'9/18 NJ: 30 min Infor account-match review (8 AM PT) w/ Matt Meyer + Nicole Morgan + Prasanna + Max Shaw. Methodology deep-dive on the ~500-account summer file: quality vs completeness assessment ahead of October renewal. Iterative &mdash; Nick to send raw data for Infor review then iterate. Follows Aug 3 Concerning signal on Infor renewal pricing/Bain model.' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div style="font-size:13px;font-weight:600;color:#e2e8f0;">${c.account}</div>
+          <div style="font-size:11px;color:#94a3b8;margin-top:2px;">${c.opp}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_09_18() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('0918-1')?'done':''}" data-csm="nick" id="action-0918-1">
+      <div class="action-checkbox ${doneActions.has('0918-1')?'checked':''}" onclick="toggleAction('0918-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Infor &mdash; Send raw match-review data + iterate on methodology pre-October renewal</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Nick Johnson &middot; Send Nicole Morgan + Matt Meyer + Prasanna the raw match results for the ~500-account summer file. Give Infor a few days to review, then reconvene with additional matching approaches Nick can apply. Infor D&B-hierarchy-heavy so matching quality drives whether technographic data is usable post-renewal. October renewal timeline &mdash; follows Aug 3 Concerning signal on renewal pricing/Bain model, so keep momentum on the data-quality story to unblock renewal.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0918-2')?'done':''}" data-csm="atisha" id="action-0918-2">
+      <div class="action-checkbox ${doneActions.has('0918-2')?'checked':''}" onclick="toggleAction('0918-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; INFUSE &mdash; Schedule follow-up partnership-team session; confirm account status in book</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Atisha Waghela &middot; Petya asked for a separate deeper dive with the INFUSE Partnership team (Josh, Maurice, Bianca). INFUSE isn&rsquo;t in the current Enterprise CSM account book &mdash; check with sales / RevOps whether this is a live opportunity or a prospect-nurture engagement. If live, propose adding to book with an ownership decision.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0918-3')?'done':''}" data-csm="all" id="action-0918-3">
+      <div class="action-checkbox ${doneActions.has('0918-3')?'checked':''}" onclick="toggleAction('0918-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; CSM team &mdash; Manual Vitally log for 4 inferred (no-transcript) + 9 no-recording events</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Nick (Westcon Install/Intent 5:30 AM &mdash; renewal 2028), Riley (SAP Ariba + Fieldglass TR 8 AM), Atisha (Apple biweekly 9 AM + Intel Platform Training 5:30 AM + AMD biweekly 9:30 AM + Apple Platform Training Team 12 PM), Divyam (Cotality TR Product Categories 12:30 PM + Quadient biweekly 7:30 AM), Varun (Zendesk biweekly 9 AM), Nick (Capgemini monthly &times;2 slots 3:30 AM + Infor onsite debrief check-ins 5 AM) &middot; Manual Vitally log for these so the signal isn&rsquo;t lost while Weflow sync recovers. Cotality TR categories query is worth capturing (part of the Cotality CVP + intent 2027 renewal path).</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0918-4')?'done':''}" data-csm="rani" id="action-0918-4">
+      <div class="action-checkbox ${doneActions.has('0918-4')?'checked':''}" onclick="toggleAction('0918-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Google &mdash; Final prep for Monday on-site with Lawrence + Noah Rowitz + HG leadership</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy &middot; Rani had no calendar events on Sept 18 &mdash; likely prep day for Monday&rsquo;s Google renewal on-site (from Sept 17 call: HG pitching expansion beyond like-for-like, 15&ndash;20-user free-trial pilot, credit/token licensing). Confirm 12-mo credit-consumption telemetry pulled + pilot-user shortlist ready across Rebecca Sanders&rsquo; team, Pramod&rsquo;s org, APAC/LatAm startups.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0918-5')?'done':''}" data-csm="all" id="action-0918-5">
+      <div class="action-checkbox ${doneActions.has('0918-5')?'checked':''}" onclick="toggleAction('0918-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Ops &mdash; Weflow sync backlog Day 12 (71%, improving) &mdash; keep monitoring, hold P0 open</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Ops / Rishi &middot; No-transcript rate improved from 92% Sept 16 to 71% Sept 18 &mdash; recovery trajectory returning after the Day 10 severe spike. Trajectory: Sep 10 85% &rarr; Sep 11 69% &rarr; Sep 14 78% &rarr; Sep 15 79% &rarr; Sep 16 92% &rarr; Sep 17 84% &rarr; <strong>Sep 18 71%</strong>. Hold P0 open with Weflow support &mdash; if Monday returns to 40-50% baseline, close ticket with post-mortem; if the pattern regresses again, escalate to product owner + leadership.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
+
