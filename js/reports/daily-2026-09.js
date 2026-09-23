@@ -3200,3 +3200,233 @@ function dayActionsHTML_2026_09_21() {
   <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
 }
 
+
+// ============================================================
+// Tuesday September 22, 2026
+// ============================================================
+
+function dayData_2026_09_22() {
+  return {
+    calls: [
+      { ts: 'Sep 22 &middot; 10:00 AM', csm: 'riley', account: 'Zoom Video Communications',
+        note: 'CSM Sync w/ Travis Sterne (new sponsor post-Camille handoff) + Mardigan Moffat &mdash; Buyer&rsquo;s Choice tracker update (deadline extended Oct 16), Zoom 8 past 10-review threshold, Zoom Rooms review in moderation queue, campaign subscription for Zoom Meet + Zoom Phone; Zoom "marketing pod" structure clarified',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Riley + Mardigan Moffat (HG) on with Travis Sterne (Zoom, taking over sponsorship from Camille who left for Figma). Buyer&rsquo;s Choice status: Zoom 8 crossed the 10-review threshold (qualified); Zoom Rooms has one pending review in moderation queue; Events & Webinars close; other products at ~2 reviews and need a push. Deadline extended to Oct 16. Campaign subscription confirmed for Zoom Meet + Zoom Phone (Brent&rsquo;s decision), with one additional product still TBD (fence between Events & Webinars vs Revenue Accelerator). Travis walked through Zoom&rsquo;s marketing pod structure (Zoom for IT pod, Marketing pod including Events & Webinars, CX pod covering virtual agent + contact center) so future campaigns can be routed correctly. Successful Camille&rarr;Travis handoff to date &mdash; cadence and content-sharing intact.' },
+
+      { ts: 'Sep 22 &middot; 11:05 AM', csm: 'pam', account: 'Microsoft (Security)',
+        note: 'Microsoft Security TR sync w/ Colleen Nelson (SWIFT GROUP, Microsoft Security marketing) &mdash; Copilot review-clip download for social use; product-name tagging on review nuggets; per-product review consolidation for SharePoint',
+        mins: 25, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Pam sent review content ahead of the call. Colleen (Microsoft Security marketing via SWIFT GROUP) walked through downloading the Security Copilot review recording from SharePoint. Discussion focused on: (1) using standalone review "nuggets" on social vs YouTube redirect &mdash; social team likely to clip highlights, HG can share raw file if useful; (2) per-product tagging on nuggets is missing &mdash; when quotes are used outside a product page, they need Microsoft Security Copilot / product-name context appended. Pam offered to either add product-name tags on HG&rsquo;s side (via the tool that generates them) or let Colleen adjust. Review content is being consolidated per-product for the Microsoft Security SharePoint + shared with product marketing managers.' },
+
+      { ts: 'Sep 22 &middot; 12:00 PM', csm: 'atisha', account: 'Equinix, Inc.',
+        note: 'Future of Cloud Dynamics session w/ Ram Bala (Equinix AI Center of Excellence lead) + Charles Hawkins (HG, new AM ex-MadKudu taking over from promoted Tyler) + Satish Grandhi (HG CTO / AI Excellence); Ram&rsquo;s portfolio expanded from CRO AI to corp strategy + competitor intel + people/finance/portfolio; December renewal pending; FY26 rollover + FY27 priorities interlock sessions completed',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'First-time meeting between Ram Bala (Equinix) and Satish Grandhi (HG CTO / AI Excellence). Charles Hawkins (HG, joined via last year&rsquo;s MadKudu acquisition) is taking over the Equinix account from Tyler (promoted). Ram&rsquo;s scope expanded over the last 6&ndash;9 months: originally CRO AI point of contact, now also supporting corporate strategy competitor intel + people/finance/portfolio functions &mdash; but HG data primarily leveraged in GTM/CRO space. Equinix has a December renewal pending; Ram pushed the meeting from two weeks ago to this week to align with their FY26 rollover + FY27 priorities interlock sessions. Charles framed this as a Cloud Dynamics-evolution + AI-center-of-excellence conversation ahead of renewal. HG side pitching Satish&rsquo;s AI Excellence work as an inflection point for Ram&rsquo;s expanded portfolio &mdash; potential expansion beyond current Cloud Dynamics footprint into new use cases.' },
+    ],
+    pulses: [
+      { csm:'riley', health:'Healthy', account:'Zoom Video Communications',
+        opp:'Vitally Pulse &mdash; Sep 22 Call',
+        arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+        change:'Sep 22 &middot; Buyer&rsquo;s Choice + Handoff',
+        excerpt:'9/22 RR: 30 min Zoom TR CSM sync (10 AM PT) w/ Travis Sterne + Mardigan Moffat. Zoom 8 crossed 10-review threshold; Zoom Rooms has 1 in moderation queue. Campaign subscription confirmed for Zoom Meet + Zoom Phone. Deadline Oct 16. Camille&rarr;Travis handoff intact.' },
+      { csm:'pam', health:'Healthy', account:'Microsoft (Security)',
+        opp:'Vitally Pulse &mdash; Sep 22 Call',
+        arr:'Strategic &middot; Pam Huck', csmlbl:'Pam Huck',
+        change:'Sep 22 &middot; Security Copilot Reviews',
+        excerpt:'9/22 PH: 25 min Microsoft Security TR sync (11:05 AM PT) w/ Colleen Nelson (SWIFT GROUP). Downloaded Security Copilot review clip for social. Product-name tagging needed on standalone quote nuggets. Pam to add tags on HG side. Per-product SharePoint consolidation in flight.' },
+      { csm:'atisha', health:'Healthy', account:'Equinix, Inc.',
+        opp:'Vitally Pulse &mdash; Sep 22 Call',
+        arr:'Enterprise &middot; Atisha Waghela', csmlbl:'Atisha Waghela',
+        change:'Sep 22 &middot; Renewal + AI Excellence Pitch',
+        excerpt:'9/22 AW: 30 min Equinix Cloud Dynamics conversation (12 PM PT) w/ Ram Bala + Charles Hawkins + Satish Grandhi. First meeting between Ram + Satish (HG CTO/AI Excellence). Charles taking over from promoted Tyler. December renewal + FY27 priorities align &mdash; expansion pitch beyond current Cloud Dynamics.' },
+    ],
+  };
+}
+
+function dayMeta_2026_09_22() {
+  return {
+    pills: [
+      ['dot-teal',   '3 Calls'],
+      ['dot-amber',  '1 Expansion'],
+      ['dot-green',  '3 Vitally Pulses'],
+      ['dot-grey',   'Tue Sep 22 &middot; 100 scanned &middot; 79% no-transcript'],
+    ],
+    tabs: ['Overview', 'Calls (3)', 'Pulses (3)', 'Action Items (6)']
+  };
+}
+
+function dayOverviewHTML_2026_09_22() {
+  return `<div class="section-label">Team Activity &mdash; Tuesday September 22, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Tue Sep 22 &mdash; 100 recordings scanned</strong> via SFDC SOQL &middot; <strong>3 confirmed customer calls</strong> (Riley&times;Zoom, Pam&times;Microsoft Security, Atisha&times;Equinix) &middot; 0 Concerning &middot; 1 Expansion (Equinix &mdash; HG CTO/AI Excellence intro to Ram Bala pre-December renewal).
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>Weflow sync backlog Day 14 &mdash; not improving:</strong> 79% no-transcript rate on Sept 22 (essentially flat vs 78% Sept 21). Trajectory: Sep 10 85% &rarr; Sep 11 69% &rarr; Sep 14 78% &rarr; Sep 15 79% &rarr; Sep 16 92% &rarr; Sep 17 84% &rarr; Sep 18 71% &rarr; Sep 21 78% &rarr; <strong>Sep 22 79%</strong>. Weekly pattern now consistently in the 78&ndash;79% zone with occasional worse days. Baseline (40&ndash;50%) not returning. 10 CSM-owned recordings had no transcript today. 10 CSM events had no recording.
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>Expansion:</strong> Equinix (Atisha + Charles Hawkins + Satish Grandhi) &mdash; first meeting between HG CTO Satish and Ram Bala (Equinix AI Center of Excellence). Ram&rsquo;s scope expanded from CRO AI to corporate strategy + competitor intel + people/finance/portfolio functions. December renewal + FY26/FY27 interlock aligned; HG pitching AI Excellence work as inflection point for expanded scope.
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header"><div class="avatar av-riley">RR</div><div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Zoom (CSM sync &mdash; Buyer&rsquo;s Choice status w/ Travis Sterne post-Camille handoff) &middot; 4 unconfirmed w/ recordings: SAP CX Sync &times;2 slots 7:30 AM, Red Hat biweekly 11:30 AM, Paycom TR 12 PM &middot; 1 event no recording: Piano 3 PM</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="pam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header"><div class="avatar av-grey">PH</div><div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">25m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Microsoft Security (TR sync &mdash; Security Copilot review-clip download + product-name tagging for social/SharePoint use w/ Colleen Nelson)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header"><div class="avatar av-grey">AW</div><div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Equinix (Future of Cloud Dynamics w/ Ram Bala + Charles Hawkins + Satish Grandhi HG CTO; pre-December renewal expansion pitch) &middot; 2 unconfirmed w/ recordings: Apple Strategy & Planning 8:30 AM, Digital Realty SFDC Mapping 10:30 AM</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="nick">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">NJ</div><div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">4 events no recording: NTT monthly &times;2 slots 5 AM, IBM monthly 6:30 AM, SAP biweekly 9:30 AM &mdash; heavy renewal cadence hidden due to sync backlog</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="divyam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-divyam">DD</div><div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 recording no transcript (Omnissa Data Usage & Next Steps 11:30 AM) &middot; 2 events no recording (Adobe GTM Tool Review &times;2 slots 4:30 AM &mdash; Adobe RGIP migration path)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="rani">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">RG</div><div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 events no recording (Cisco/Isovalent onboarding 10 AM, Cloudflare TR recurring 1 PM). Cloudflare recording exists but only HG staff detected (Andy Mitschke, Cole Arutian, Kraig Kraning, Mardigan Moffat) &mdash; internal HG campaign-planning session, no customer present</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="varun">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-varun">VT</div><div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 recording no transcript (workspan "Kickstart the Day" 6:30 AM 15m) &middot; 1 event no recording (Insight sync 5 AM)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">AL</div><div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No CSM-owned events on calendar today</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_09_22() {
+  return `<div class="section-label">Confirmed Calls &mdash; Tuesday September 22, 2026</div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>10 CSM-owned recordings had no transcript</strong> &mdash; inferred from CSM event ownership only. Highest-value manual-log candidates: Varun&times;workspan Kickstart 6:30 AM, Riley&times;SAP CX &times;2 slots 7:30 AM, Atisha&times;Apple Strategy & Planning 8:30 AM, Riley&times;Zoom TR CSM Syncs &times;2 duplicate slots 10 AM (same call as confirmed), Atisha&times;Digital Realty SFDC Mapping 10:30 AM (2027 Renewal), Riley&times;Red Hat biweekly 11:30 AM, Divyam&times;Omnissa Data Usage & Next Steps 11:30 AM (Global 2027 Opp Gen), Riley&times;Paycom TR 12 PM (2026 Competitive Displacement Report). 10 CSM events had no recording at all.
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F91D; <strong>Internal HG-only excluded:</strong> Cloudflare TR (recurring) 1 PM &mdash; Rani&rsquo;s event but recording shows only HG staff (Andy Mitschke, Cole Arutian, Kraig Kraning, Mardigan Moffat). No customer present &mdash; internal Cloudflare campaign-planning session, not a customer engagement.
+  </div>`;
+}
+
+function dayPulsesHTML_2026_09_22() {
+  const cards = [
+    { csm:'riley', health:'Healthy', account:'Zoom Video Communications',
+      opp:'Vitally Pulse &mdash; Sep 22 Call',
+      arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Sep 22 &middot; Buyer&rsquo;s Choice + Handoff',
+      excerpt:'9/22 RR: 30 min Zoom TR CSM sync (10 AM PT) w/ Travis Sterne + Mardigan Moffat. Zoom 8 crossed 10-review threshold; Zoom Rooms has 1 in moderation queue. Campaign subscription confirmed for Zoom Meet + Zoom Phone. Deadline Oct 16. Camille&rarr;Travis handoff intact.' },
+    { csm:'pam', health:'Healthy', account:'Microsoft (Security)',
+      opp:'Vitally Pulse &mdash; Sep 22 Call',
+      arr:'Strategic &middot; Pam Huck', csmlbl:'Pam Huck',
+      change:'Sep 22 &middot; Security Copilot Reviews',
+      excerpt:'9/22 PH: 25 min Microsoft Security TR sync (11:05 AM PT) w/ Colleen Nelson (SWIFT GROUP). Downloaded Security Copilot review clip for social. Product-name tagging needed on standalone quote nuggets. Pam to add tags on HG side. Per-product SharePoint consolidation in flight.' },
+    { csm:'atisha', health:'Healthy', account:'Equinix, Inc.',
+      opp:'Vitally Pulse &mdash; Sep 22 Call',
+      arr:'Enterprise &middot; Atisha Waghela', csmlbl:'Atisha Waghela',
+      change:'Sep 22 &middot; Renewal + AI Excellence Pitch',
+      excerpt:'9/22 AW: 30 min Equinix Cloud Dynamics conversation (12 PM PT) w/ Ram Bala + Charles Hawkins + Satish Grandhi. First meeting between Ram + Satish (HG CTO/AI Excellence). Charles taking over from promoted Tyler. December renewal + FY27 priorities align &mdash; expansion pitch beyond current Cloud Dynamics.' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div style="font-size:13px;font-weight:600;color:#e2e8f0;">${c.account}</div>
+          <div style="font-size:11px;color:#94a3b8;margin-top:2px;">${c.opp}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_09_22() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('0922-1')?'done':''}" data-csm="atisha" id="action-0922-1">
+      <div class="action-checkbox ${doneActions.has('0922-1')?'checked':''}" onclick="toggleAction('0922-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Equinix &mdash; Follow up on Satish-Ram AI Excellence intro; scope expansion topics before December renewal</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Atisha Waghela + Charles Hawkins &middot; Satish (HG CTO/AI Excellence) and Ram Bala (Equinix AI Center of Excellence) met for the first time today. Ram&rsquo;s portfolio has expanded beyond CRO AI to corp strategy competitor intel + people/finance/portfolio. Equinix December renewal is pending &mdash; align on which of Ram&rsquo;s expanded use cases translate to HG data + AI Excellence work. Charles is new AM (ex-MadKudu, taking over from promoted Tyler). Plan next-step meeting to build the renewal case tied to AI Excellence.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0922-2')?'done':''}" data-csm="riley" id="action-0922-2">
+      <div class="action-checkbox ${doneActions.has('0922-2')?'checked':''}" onclick="toggleAction('0922-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Zoom &mdash; Confirm Buyer&rsquo;s Choice campaign subscription for 3rd product (Events & Webinars vs Revenue Accelerator)</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Riley Rogers &middot; Zoom Meet + Zoom Phone campaign subscription confirmed (per Brent); one more product slot open. Travis to check with Brett + Zoom marketing pod (Zoom for IT vs Marketing vs CX) on brand-awareness need for Events & Webinars vs Revenue Accelerator. Also chase Zoom Rooms review through moderation queue to lock in that product&rsquo;s qualification before Oct 16.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0922-3')?'done':''}" data-csm="pam" id="action-0922-3">
+      <div class="action-checkbox ${doneActions.has('0922-3')?'checked':''}" onclick="toggleAction('0922-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Microsoft Security &mdash; Add product-name tags to standalone review nuggets; provide raw video file for social clipping</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Pam Huck &middot; Colleen&rsquo;s Microsoft Security marketing team needs product-name context on standalone quote nuggets (Security Copilot etc). Pam to add tags via the HG nugget-generation tool. Also: package the raw review-video file for Microsoft&rsquo;s social team to clip highlights (rather than YouTube redirect). Colleen meeting Microsoft social team tomorrow.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0922-4')?'done':''}" data-csm="all" id="action-0922-4">
+      <div class="action-checkbox ${doneActions.has('0922-4')?'checked':''}" onclick="toggleAction('0922-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; CSM team &mdash; Manual Vitally log for 10 inferred (no-transcript) + 10 no-recording events</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Priority manual captures: Nick&times;NTT monthly &times;2 (new NTT Alliances follow-up from Sept 21 onboarding), Nick&times;IBM monthly (renewal), Nick&times;SAP biweekly (Install Subscription 2026 renewal), Divyam&times;Adobe GTM Tool Review &times;2 slots (RGIP migration path), Divyam&times;Omnissa Data Usage & Next Steps (Global 2027 Opp Gen), Atisha&times;Digital Realty SFDC Mapping (2027 Renewal), Atisha&times;Apple Strategy & Planning, Rani&times;Cisco/Isovalent onboarding, Riley&times;SAP CX &times;2, Red Hat biweekly, Paycom TR (2026 Competitive Displacement), Piano.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0922-5')?'done':''}" data-csm="rani" id="action-0922-5">
+      <div class="action-checkbox ${doneActions.has('0922-5')?'checked':''}" onclick="toggleAction('0922-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Google &mdash; Post-Monday-on-site debrief + next steps from Lawrence + Noah Rowitz meeting</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy &middot; Yesterday&rsquo;s in-person Bay Area on-site outcomes still owed as manual Vitally log. Confirm: (a) Lawrence&rsquo;s reaction to expansion pitch (10M&rarr;55M universe, credit/token licensing), (b) pilot alignment (15&ndash;20 users), (c) DPA + amendment path for December renewal, (d) Gemini Enterprise MCP intro progress, (e) any pushback or accelerators from Noah Rowitz. Set up next-step meeting to keep momentum through December.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0922-6')?'done':''}" data-csm="all" id="action-0922-6">
+      <div class="action-checkbox ${doneActions.has('0922-6')?'checked':''}" onclick="toggleAction('0922-6')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F6A8; Ops &mdash; Weflow sync backlog Day 14, plateau at 78&ndash;79% &mdash; escalate to product owner now</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Ops / Rishi / Yuan &middot; No-transcript rate has plateaued at 78&ndash;79% for the last two runs (Sept 21 78%, Sept 22 79%) &mdash; roughly 30 pts above the 40&ndash;50% baseline. Trajectory: Sep 10 85% &rarr; Sep 11 69% &rarr; Sep 14 78% &rarr; Sep 15 79% &rarr; Sep 16 92% &rarr; Sep 17 84% &rarr; Sep 18 71% &rarr; Sep 21 78% &rarr; <strong>Sep 22 79%</strong>. Two consecutive days at plateau meets the escalation trigger &mdash; brief Yuan + Weflow product owner now. Stand up event-based inferred fallback report as interim so engagement view isn&rsquo;t running blind.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
+
