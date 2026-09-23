@@ -1878,6 +1878,257 @@ function dayActionsHTML_2026_09_11() {
 
 
 // ============================================================
+// Monday September 14, 2026
+// ============================================================
+
+function dayData_2026_09_14() {
+  return {
+    calls: [
+      { ts: 'Sep 14 &middot; 6:30 AM', csm: 'pam', account: 'ADP, Inc',
+        note: 'Co-attended with Andy Lim &mdash; Monthly Success Call: TR score analysis 89&rarr;90.5, Buyer&rsquo;s Choice qualified (Nov 10 announce, 2027 badge), review-gen via customer advocacy program, voice-of-customer quotes usage',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Pam ran the monthly success sync with Karena McKenzie and Jill S; Andy Lim (ADP&rsquo;s CSM of record) co-attended. Pam walked through a TR score analysis that lifted ADP from 89 to just above 90, and confirmed ADP is already qualified for Buyer&rsquo;s Choice (announcement Nov 10, 2027 badge for the full year). Review-gen continues to trickle in via the customer advocacy program &mdash; a handful in July/August with more expected. One review flagged for insufficient detail is being re-worked with the reviewer. Voice-of-Customer quotes are actively used in ADP&rsquo;s internal quotes database. Cross-coverage note: Andy is account CSM, Pam drives the TR/Buyer&rsquo;s Choice program work.' },
+
+      { ts: 'Sep 14 &middot; 6:30 AM', csm: 'andy', account: 'ADP, Inc',
+        note: 'Co-attended with Pam Huck on ADP Monthly Success Call; Andy is account CSM of record, Pam led the TR/Buyer&rsquo;s Choice content',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Andy is ADP&rsquo;s Enterprise CSM; joined Pam on the monthly TR/Buyer&rsquo;s Choice sync with Karena and Jill. Discussion was Pam-led (TR score, Buyer&rsquo;s Choice qualification, review-gen). See Pam&rsquo;s row for full detail. No net-new action items on Andy&rsquo;s side beyond cadence.' },
+
+      { ts: 'Sep 14 &middot; 7:30 AM', csm: 'nick', account: 'Accenture',
+        note: 'Accenture VIP platform team requesting 3&ndash;5 test accounts through full HG data fabric to compare vs current firmographics/installs/spend feed; expansion path toward buying centers, AI/cloud maturity, outsourced positioning, technology momentum',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Sachin (Accenture VIP program lead) with Patrick, Tatiana, Lupe on the customer side. HG side: Nick, Max Shaw, DC (David Crossman), Gavin Padden. Accenture VIP currently receives firmographics, installs, and IT-spend-category data for ~1,400 billion-dollar accounts. Sachin proposed a fast dry-run: Accenture sends 3&ndash;5 test accounts, HG returns the full data-fabric profile, VIP team compares against what they already have and identifies the delta. DC pitched extending the feed with buying centers, patented AI/cloud maturity, outsourced positioning (which regional/global SIs are already engaged), and technology momentum/intensity around specific stacks &mdash; attributes hyperscalers have already asked HG to build. Next step: Sachin sends 3&ndash;5 target accounts, HG returns enriched profiles, Accenture compares.' },
+
+      { ts: 'Sep 14 &middot; 11:00 AM', csm: 'riley', account: 'TriNet Group Inc',
+        note: 'Monthly CSM sync &mdash; Buyer&rsquo;s Choice qualified (deadline extended Oct 16, announce Nov 10), TR-score-to-80 plan via unbiased review sourcing, TriNet event campaign audit; Ashley OOO 3 weeks; Jan 2027 renewal on horizon',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Riley met Ashley for the recurring TrustRadius CSM sync (kmaxwell had a brief cameo). TriNet is at 79 TR score across 813 reviews and wants to break 80 &mdash; Ashley&rsquo;s never hit it in her four years. Riley outlined the unbiased-sampling approach (send campaigns to a full sample rather than pulling only NPS 9&ndash;10s so the research team doesn&rsquo;t downweight biased-feeling reviews) and offered to audit the recent TriNet event campaign (five reviews around mid-August tied to a recurring TriNet GCV event) to see whether those reviews qualify for full weighting. Buyer&rsquo;s Choice deadline extended to Oct 16, announcement Nov 10 (badge for 2027). Ashley OOO for three weeks on leave. Renewal is January 2027 &mdash; Riley plans to loop Anderson (AM) in when Ashley returns. Cadence intact, no red flags.' },
+    ],
+    pulses: [
+      { csm:'pam', health:'Healthy', account:'ADP, Inc',
+        opp:'Vitally Pulse &mdash; Sep 14 Call',
+        arr:'Enterprise &middot; Pam Huck (co-cover)', csmlbl:'Pam Huck',
+        change:'Sep 14 &middot; TR Score + Buyer’s Choice',
+        excerpt:'9/14 PH+AL: 30 min ADP Monthly Success (6:30 AM PT). TR score lifted 89&rarr;90.5 after analysis. Buyer&rsquo;s Choice already qualified (Nov 10 announce, 2027 badge). Review-gen steady via customer advocacy program. Cross-coverage: Andy is account CSM, Pam drives TR program.' },
+      { csm:'andy', health:'Healthy', account:'ADP, Inc',
+        opp:'Vitally Pulse &mdash; Sep 14 Call (co-attended)',
+        arr:'Enterprise &middot; Andy Lim', csmlbl:'Andy Lim',
+        change:'Sep 14 &middot; Co-attend with Pam',
+        excerpt:'9/14 AL: 30 min ADP Monthly Success (6:30 AM PT), co-attended with Pam. Andy account CSM of record; Pam led TR/Buyer&rsquo;s Choice content. Cadence intact, no net-new action items on Andy&rsquo;s side.' },
+      { csm:'nick', health:'Healthy', account:'Accenture',
+        opp:'Vitally Pulse &mdash; Sep 14 Call',
+        arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+        change:'Sep 14 &middot; VIP Expansion',
+        excerpt:'9/14 NJ: 30 min Accenture VIP program (7:30 AM PT). Sachin requested 3&ndash;5 test accounts through the full HG data fabric to compare vs current firmographics/installs/spend. DC pitched buying centers, AI/cloud maturity, outsourced positioning, tech momentum. Next step: Sachin sends 3&ndash;5 accounts, HG returns enriched profiles.' },
+      { csm:'riley', health:'Healthy', account:'TriNet Group Inc',
+        opp:'Vitally Pulse &mdash; Sep 14 Call',
+        arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+        change:'Sep 14 &middot; TR Score + Buyer’s Choice',
+        excerpt:'9/14 RR: 30 min TriNet Monthly CSM Sync (11 AM PT). Score 79 / 813 reviews &mdash; Ashley wants 80. Riley to audit recent TriNet event campaign for full-weight eligibility + push unbiased sampling. Buyer&rsquo;s Choice qualified (Oct 16 deadline, Nov 10 announce). Ashley OOO 3 weeks. Jan 2027 renewal &mdash; loop Anderson (AM) on return.' },
+    ],
+  };
+}
+
+function dayMeta_2026_09_14() {
+  return {
+    pills: [
+      ['dot-teal',   '4 Calls'],
+      ['dot-amber',  '1 Expansion'],
+      ['dot-green',  '4 Vitally Pulses'],
+      ['dot-grey',   'Mon Sep 14 &middot; 55 scanned &middot; 78% no-transcript'],
+    ],
+    tabs: ['Overview', 'Calls (4)', 'Pulses (4)', 'Action Items (6)']
+  };
+}
+
+function dayOverviewHTML_2026_09_14() {
+  return `<div class="section-label">Team Activity &mdash; Monday September 14, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Mon Sep 14 &mdash; 55 recordings scanned</strong> via SFDC SOQL &middot; <strong>4 confirmed calls</strong> (3 unique meetings; ADP co-attended by Pam + Andy) across 4 CSMs &middot; 0 Concerning &middot; 1 Expansion (Accenture VIP data-fabric dry-run) &middot; Cross-coverage: Pam + Andy on ADP.
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>Weflow sync backlog Day 8 (regressing):</strong> 78% no-transcript rate on Sept 14 (regressed from 69% Sept 11). Trajectory: Sep 2 71% &rarr; Sep 3 75% &rarr; Sep 4 76% &rarr; Sep 8 72% &rarr; Sep 9 75% &rarr; Sep 10 85% &rarr; Sep 11 69% &rarr; <strong>Sep 14 78%</strong>. Recovery did not hold through the weekend. 4 CSM-owned recordings had no transcript (Pam&times;Microsoft SFTP 4:15 AM, Andy&times;ADP duplicate recorder 7:00 AM, Rani&times;Cisco WarRoom 8:00 AM, Rani&times;NetApp 1:00 PM) &mdash; inferred only, not speaker-verified. 14 additional CSM events had no recording at all.
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>Expansion:</strong> Accenture (Nick) &mdash; VIP program team requested 3&ndash;5 test accounts through the full HG data fabric to compare vs their current firmographics/installs/spend feed. DC pitched buying centers, AI/cloud maturity, outsourced positioning, tech momentum. Fast dry-run should close the gap on what VIP needs vs what they get today.
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header"><div class="avatar av-riley">RR</div><div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">TriNet Group Inc (Monthly CSM sync; TR-score-to-80 plan; Buyer&rsquo;s Choice qualified; Ashley OOO 3 weeks; Jan 2027 renewal)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header"><div class="avatar av-grey">NJ</div><div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Accenture (VIP program dry-run: 3&ndash;5 test accounts through full HG data fabric; expansion path toward buying centers, AI/cloud maturity, outsourced positioning, tech momentum)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="pam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header"><div class="avatar av-grey">PH</div><div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">ADP, Inc (co-attended with Andy; TR score 89&rarr;90.5; Buyer&rsquo;s Choice qualified) &middot; Microsoft SFTP 4:15 AM (no transcript, inferred)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="andy">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header"><div class="avatar av-grey">AL</div><div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">ADP, Inc (co-attended with Pam) &middot; SecureWorks Monthly Cadence (no recording)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="divyam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-divyam">DD</div><div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No CSM-owned events scheduled</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="rani">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">RG</div><div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 events with recordings but no transcript (Cisco WarRoom 8 AM, NetApp weekly 1 PM) &mdash; inferred only</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="varun">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-varun">VT</div><div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No CSM-owned events scheduled</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="atisha">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">AW</div><div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">4 events (Airtel &times;2 3 AM, Intel weekly 7 AM, Placeholder Intel 12 PM) &mdash; no recordings synced</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_09_14() {
+  return `<div class="section-label">Confirmed Calls &mdash; Monday September 14, 2026</div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F91D; <strong>Cross-coverage:</strong> Pam Huck + Andy Lim both on ADP&rsquo;s Monthly Success Call (6:30 AM PT). Andy is account CSM of record; Pam drives the TR/Buyer&rsquo;s Choice content.
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>4 CSM-owned recordings had no transcript</strong> &mdash; inferred from CSM event ownership only, not speaker-verified: Pam&times;Microsoft SFTP (4:15 AM PT, 15 min), Andy&times;ADP duplicate recorder (7:00 AM PT, 30 min &mdash; same call as the confirmed 6:30 AM ADP recording), Rani&times;Cisco WarRoom (8:00 AM PT, 40 min &mdash; renewal war-room), Rani&times;NetApp weekly (1:00 PM PT, 25 min). 14 CSM events had no recording at all (Atisha&times;Airtel&times;2, Nick&times;Softcat&times;3, Andy&times;ADP + SecureWorks, Atisha&times;Intel + Intel-placeholder, Nick&times;NICE&times;2 + TrustRadius&times;Infor&times;2, Rani&times;NetApp-earlier-slot).
+  </div>`;
+}
+
+function dayPulsesHTML_2026_09_14() {
+  const cards = [
+    { csm:'pam', health:'Healthy', account:'ADP, Inc',
+      opp:'Vitally Pulse &mdash; Sep 14 Call',
+      arr:'Enterprise &middot; Pam Huck (co-cover)', csmlbl:'Pam Huck',
+      change:'Sep 14 &middot; TR Score + Buyer’s Choice',
+      excerpt:'9/14 PH+AL: 30 min ADP Monthly Success (6:30 AM PT). TR score lifted 89&rarr;90.5 after analysis. Buyer&rsquo;s Choice already qualified (Nov 10 announce, 2027 badge). Review-gen steady via customer advocacy program. Cross-coverage: Andy is account CSM, Pam drives TR program.' },
+    { csm:'andy', health:'Healthy', account:'ADP, Inc',
+      opp:'Vitally Pulse &mdash; Sep 14 Call (co-attended)',
+      arr:'Enterprise &middot; Andy Lim', csmlbl:'Andy Lim',
+      change:'Sep 14 &middot; Co-attend with Pam',
+      excerpt:'9/14 AL: 30 min ADP Monthly Success (6:30 AM PT), co-attended with Pam. Andy account CSM of record; Pam led TR/Buyer’s Choice content. Cadence intact, no net-new action items on Andy’s side.' },
+    { csm:'nick', health:'Healthy', account:'Accenture',
+      opp:'Vitally Pulse &mdash; Sep 14 Call',
+      arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Sep 14 &middot; VIP Expansion',
+      excerpt:'9/14 NJ: 30 min Accenture VIP program (7:30 AM PT). Sachin requested 3–5 test accounts through the full HG data fabric to compare vs current firmographics/installs/spend. DC pitched buying centers, AI/cloud maturity, outsourced positioning, tech momentum. Next step: Sachin sends 3–5 accounts, HG returns enriched profiles.' },
+    { csm:'riley', health:'Healthy', account:'TriNet Group Inc',
+      opp:'Vitally Pulse &mdash; Sep 14 Call',
+      arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Sep 14 &middot; TR Score + Buyer’s Choice',
+      excerpt:'9/14 RR: 30 min TriNet Monthly CSM Sync (11 AM PT). Score 79 / 813 reviews — Ashley wants 80. Riley to audit recent TriNet event campaign for full-weight eligibility + push unbiased sampling. Buyer’s Choice qualified (Oct 16 deadline, Nov 10 announce). Ashley OOO 3 weeks. Jan 2027 renewal — loop Anderson (AM) on return.' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div style="font-size:13px;font-weight:600;color:#e2e8f0;">${c.account}</div>
+          <div style="font-size:11px;color:#94a3b8;margin-top:2px;">${c.opp}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_09_14() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('0914-1')?'done':''}" data-csm="nick" id="action-0914-1">
+      <div class="action-checkbox ${doneActions.has('0914-1')?'checked':''}" onclick="toggleAction('0914-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Accenture &mdash; Await 3&ndash;5 test accounts from Sachin, return full data-fabric profile</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Nick Johnson &middot; Sachin (VIP program lead) is sending 3&ndash;5 test accounts for HG to run through the full data fabric (buying centers, AI/cloud maturity, outsourced positioning, tech momentum). DC + Gavin to enrich; return profiles + rows-and-columns view + interpretive commentary. Fastest path to expansion beyond current firmographics/installs/spend feed.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0914-2')?'done':''}" data-csm="riley" id="action-0914-2">
+      <div class="action-checkbox ${doneActions.has('0914-2')?'checked':''}" onclick="toggleAction('0914-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; TriNet &mdash; Audit August TriNet GCV event campaign for full-weight review eligibility</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Riley Rogers &middot; TriNet is at 79 / 813 reviews and wants to break 80. Riley to pull the ~5 recent event-campaign reviews (mid-August, tied to recurring TriNet GCV events), send to research team with note that source is unbiased (event attendees, not NPS-9/10 pulls). If team confirms full weighting, score should nudge up. Report back to Ashley on return from OOO.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0914-3')?'done':''}" data-csm="riley" id="action-0914-3">
+      <div class="action-checkbox ${doneActions.has('0914-3')?'checked':''}" onclick="toggleAction('0914-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; TriNet &mdash; Loop Anderson (AM) in on Ashley&rsquo;s return for Jan 2027 renewal prep</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Riley Rogers &middot; Ashley OOO 3 weeks; when she returns, schedule a Riley+Ashley+Anderson three-way to align on Jan 2027 renewal (Enterprise segment, $78K ARR). Riley flagged "let us know if any red flags" &mdash; positive tone but worth the pre-renewal touch.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0914-4')?'done':''}" data-csm="pam" id="action-0914-4">
+      <div class="action-checkbox ${doneActions.has('0914-4')?'checked':''}" onclick="toggleAction('0914-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; ADP &mdash; Continue Buyer&rsquo;s Choice review-gen cadence via customer advocacy program</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Pam Huck &middot; ADP already qualified for Buyer&rsquo;s Choice (Nov 10 announce). Program period runs through mid-October &mdash; keep the customer advocacy program pushing steady reviews so no last-minute scramble. Follow up on the flagged short-word-count review that&rsquo;s being re-worked.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0914-5')?'done':''}" data-csm="all" id="action-0914-5">
+      <div class="action-checkbox ${doneActions.has('0914-5')?'checked':''}" onclick="toggleAction('0914-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; CSM team &mdash; Manual Vitally log for 4 inferred + 14 no-recording calls</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Pam (Microsoft SFTP), Rani (Cisco WarRoom, NetApp), Andy (ADP duplicate, SecureWorks), Atisha (Airtel &times;2, Intel weekly, Intel Placeholder), Nick (Softcat &times;3, NICE &times;2, TrustRadius &amp; Infor &times;2) &middot; Transcripts missing or recordings absent for these events. Rani&rsquo;s Cisco WarRoom in particular matters (Cisco renewal Oct 6, pulse is Poor) &mdash; capture outcomes and next steps in Vitally so the signal isn&rsquo;t lost.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0914-6')?'done':''}" data-csm="all" id="action-0914-6">
+      <div class="action-checkbox ${doneActions.has('0914-6')?'checked':''}" onclick="toggleAction('0914-6')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F6A8; Ops &mdash; Weflow sync backlog Day 8 (78%, regressed from 69% Sept 11)</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Ops / Rishi &middot; No-transcript rate jumped back to 78% Sept 14 after improving to 69% Sept 11. Recovery did not hold through the weekend. Keep P0 open with Weflow support, escalate to product owner + Yuan/leadership. Consider standing up event-based inferred fallback report until sync is trustworthy.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
+
+
+// ============================================================
 // Monday September 15, 2026
 // ============================================================
 
