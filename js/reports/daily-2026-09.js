@@ -2373,3 +2373,199 @@ function dayActionsHTML_2026_09_15() {
 }
 
 
+// ============================================================
+// Wednesday September 16, 2026
+// ============================================================
+
+function dayData_2026_09_16() {
+  return {
+    calls: [
+      { ts: 'Sep 16 &middot; 9:30 AM', csm: 'pam', account: 'Microsoft',
+        note: 'HG Intent Topic Review with Will Norris (Microsoft) + Rishabh Wadhwa (HG Solutions) &mdash; Bryce&rsquo;s recommendations across Cloud/AI Platforms/Security/AIBS propositions; competitor products not yet in feed; ~480K credits remaining slush for topic changes',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Pam and Rishabh Wadhwa (HG Solutions) walked Will Norris (Microsoft) through Bryce&rsquo;s intent-topic recommendations across three propositions: Cloud, AI Platforms & Security, and AIBS. Microsoft currently receives intent for ~256 topics; Bryce&rsquo;s file overlaps with some but not all of the current feed, and there are competitor products Microsoft wants tracked that aren&rsquo;t in the feed today (need to add). Credit burn discussion: ~480K credits remain in slush for adding companies or changing topics &mdash; healthy runway a couple months in. Will flagged that August was a &ldquo;slip and slide&rdquo; month personally + Microsoft-side reorgs, but has now had good alignment calls with the broader Microsoft team and with McBride on the data. Next: work through the topic-recommendation delta + net-new competitor products, quantify credit impact.' },
+
+      { ts: 'Sep 16 &middot; 10:30 AM', csm: 'pam', account: 'F5',
+        note: 'Bi-weekly TR sync with Sherry Arnold (F5) + Mardigan Moffat (HG) &mdash; F5 AI Security Platform modular product-page approach; RSA + AppWorld + Black Hat 2027 campaign planning; F5 year-end campaign timing constraint',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Regular bi-weekly with Sherry Arnold (F5) and Mardigan Moffat (HG). Focus was on the F5 AI Security Platform TR profile: existing single AI-platform profile likely isn&rsquo;t the right one; plan is to list individual modules under the platform, with a widget per module, and let optional module-tagging on reviews drive routing. Mardigan can push tag requests in bulk to help Sherry catch up on backlog. Campaign timing: F5 is at year-end so no push for a bit; RSA is confirmed, plus AppWorld (flagship Vegas + Singapore + LatAm) and possibly Black Hat. Sherry down a couple team members so bandwidth is thin. Health tone positive but note the resource constraint.' },
+    ],
+    pulses: [
+      { csm:'pam', health:'Healthy', account:'Microsoft',
+        opp:'Vitally Pulse &mdash; Sep 16 Call',
+        arr:'Strategic &middot; Pam Huck', csmlbl:'Pam Huck',
+        change:'Sep 16 &middot; Intent Topics + Expansion',
+        excerpt:'9/16 PH: 30 min Intent Topic Review (9:30 AM PT) w/ Will Norris + Rishabh Wadhwa. Reviewing Bryce&rsquo;s recommendations across Cloud/AI Platforms & Security/AIBS. Competitor products missing from current 256-topic feed &mdash; expansion path. ~480K credits in slush for changes. Will has broader Microsoft alignment now (post-August reorgs).' },
+      { csm:'pam', health:'Healthy', account:'F5',
+        opp:'Vitally Pulse &mdash; Sep 16 Call',
+        arr:'Enterprise &middot; Pam Huck', csmlbl:'Pam Huck',
+        change:'Sep 16 &middot; Modular Product Pages + Events',
+        excerpt:'9/16 PH: 30 min F5 TR bi-weekly (10:30 AM PT) w/ Sherry Arnold + Mardigan Moffat. AI Security Platform: split into module widgets under platform profile; optional module-tagging drives routing. Mardigan to push tag requests in bulk. RSA + AppWorld + possibly Black Hat 2027 campaign plan. F5 year-end freeze near-term; team thin (~2 members down).' },
+    ],
+  };
+}
+
+function dayMeta_2026_09_16() {
+  return {
+    pills: [
+      ['dot-teal',   '2 Calls'],
+      ['dot-amber',  '1 Expansion'],
+      ['dot-green',  '2 Vitally Pulses'],
+      ['dot-grey',   'Wed Sep 16 &middot; 100 scanned &middot; 92% no-transcript'],
+    ],
+    tabs: ['Overview', 'Calls (2)', 'Pulses (2)', 'Action Items (5)']
+  };
+}
+
+function dayOverviewHTML_2026_09_16() {
+  return `<div class="section-label">Team Activity &mdash; Wednesday September 16, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Wed Sep 16 &mdash; 100 recordings scanned</strong> via SFDC SOQL &middot; <strong>2 confirmed customer calls</strong> (Pam Huck &times;2) &middot; 0 Concerning &middot; 1 Expansion (Microsoft intent topics + competitor products) &middot; 1 INTERNAL HG-only excluded (Weekly GTM Enablement Session, 8 AM &mdash; Rani, Pam, Andy on it but all HG staff, no customer).
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x1F6A8; <strong>Weflow sync backlog Day 10 &mdash; SEVERE:</strong> 92% no-transcript rate on Sept 16 (worst observed; up from 79% Sept 15, 78% Sept 14). Trajectory: Sep 2 71% &rarr; Sep 3 75% &rarr; Sep 4 76% &rarr; Sep 8 72% &rarr; Sep 9 75% &rarr; Sep 10 85% &rarr; Sep 11 69% &rarr; Sep 14 78% &rarr; Sep 15 79% &rarr; <strong>Sep 16 92%</strong>. 8 CSM-owned recordings had no transcript (Atisha&times;Deloitte 6 AM, Riley&times;FactSet Onboarding 7 AM, Nick&times;Lenovo Account Match 7:30 AM, Riley&times;SAP SuccessFactors 9 AM, Pam&times;F5 second-slot 10:30 AM, Varun&times;Alight Competitor Refresh 11:30 AM, Atisha&times;Optiv Weekly 12 PM, Riley&times;SAP Custom Questions 12:30 PM). 22 more CSM events had no recording at all. Report is materially incomplete &mdash; escalate to Weflow product owner + Yuan.
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>Expansion:</strong> Microsoft (Pam) &mdash; Bryce&rsquo;s intent-topic recommendations across Cloud/AI Platforms & Security/AIBS reviewed with Will Norris; competitor products missing from the current 256-topic feed need to be added. ~480K credits remain in slush for topic/company changes. Next: HG returns credit-impact quantification per scenario.
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="pam">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header"><div class="avatar av-grey">PH</div><div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Microsoft (Intent Topic Review; Bryce recommendations across Cloud/AI/AIBS; competitor products missing from feed) &middot; F5 (bi-weekly TR; AI Security Platform modular product-page approach + event campaign planning)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="riley">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-riley">RR</div><div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">4 events with recordings but no transcript (FactSet Onboarding 7 AM, SAP SuccessFactors 9 AM, SAP Custom Questions 12:30 PM, plus SAP Business Data Cloud) &mdash; inferred only</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="nick">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">NJ</div><div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 recording no transcript (Lenovo Account Match Analysis 7:30 AM) &middot; 4 events no recording (Veeam &times;2, HCL &times;1, Lenovo HG sync)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="divyam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-divyam">DD</div><div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event (Informatica weekly partnership sync 9 AM co-attended with Varun) &mdash; no recording</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="rani">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">RG</div><div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Attended internal Weekly GTM Enablement Session 8 AM (excluded &mdash; no customer). 5 CSM events (Google weekly &times;3, AWS monthly, Cisco GRO, Lenovo/OneSix) &mdash; no recordings</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="varun">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-varun">VT</div><div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 recording no transcript (Alight Competitor Refresh 11:30 AM). 6 events no recording (Insight MI, Informatica &times;3, Autodesk &times;2, Zendesk)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="atisha">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">AW</div><div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 recordings no transcript (Deloitte 6 AM, Optiv 12 PM). 5 events no recording (Unily, EY, RELEX &times;2, plus another)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">AL</div><div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Attended internal Weekly GTM Enablement Session 8 AM (excluded &mdash; no customer). 2 CSM events (RELEX 7 AM, Cockroach Labs 9 AM) &mdash; no recording</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_09_16() {
+  return `<div class="section-label">Confirmed Calls &mdash; Wednesday September 16, 2026</div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F91D; <strong>Internal HG-only meeting excluded:</strong> Weekly GTM Enablement Session (8 AM PT, 60 min) &mdash; Rani Guy, Pam Huck, Andy Lim were all on it, but every speaker was HG staff (Katie Pariseau, Samantha Staynings, Francis Brero, Charles Hawkins, Kraig Kraning, Laurie Crosby, Mark Fell, Nick Wright, Paul Otte, Scott Stater, Tyler Neubauer, Augie Buettner, Ari Echt) &mdash; no customer present. Topic was HG&rsquo;s Context 26 virtual-event launch prep and MCP server training. Not a customer engagement.
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>8 CSM-owned recordings had no transcript</strong> &mdash; inferred from CSM event ownership only, not speaker-verified: Atisha&times;Deloitte weekly (6 AM), Riley&times;FactSet TR Onboarding (7 AM), Nick&times;Lenovo Account Match (7:30 AM), Riley&times;SAP SuccessFactors + TR Progress (9 AM), Pam&times;F5 TR Sync second-slot (10:30 AM), Varun&times;Alight Competitor Refresh + SFDC Config Review (11:30 AM), Atisha&times;Optiv Weekly (12 PM), Riley&times;SAP Custom Questions Sync (12:30 PM). 22 additional CSM events had no recording at all &mdash; see the overview cards.
+  </div>`;
+}
+
+function dayPulsesHTML_2026_09_16() {
+  const cards = [
+    { csm:'pam', health:'Healthy', account:'Microsoft',
+      opp:'Vitally Pulse &mdash; Sep 16 Call',
+      arr:'Strategic &middot; Pam Huck', csmlbl:'Pam Huck',
+      change:'Sep 16 &middot; Intent Topics + Expansion',
+      excerpt:'9/16 PH: 30 min Intent Topic Review (9:30 AM PT) w/ Will Norris + Rishabh Wadhwa. Reviewing Bryce&rsquo;s recommendations across Cloud/AI Platforms & Security/AIBS. Competitor products missing from current 256-topic feed &mdash; expansion path. ~480K credits in slush for changes. Will has broader Microsoft alignment now (post-August reorgs).' },
+    { csm:'pam', health:'Healthy', account:'F5',
+      opp:'Vitally Pulse &mdash; Sep 16 Call',
+      arr:'Enterprise &middot; Pam Huck', csmlbl:'Pam Huck',
+      change:'Sep 16 &middot; Modular Product Pages + Events',
+      excerpt:'9/16 PH: 30 min F5 TR bi-weekly (10:30 AM PT) w/ Sherry Arnold + Mardigan Moffat. AI Security Platform: split into module widgets under platform profile; optional module-tagging drives routing. Mardigan to push tag requests in bulk. RSA + AppWorld + possibly Black Hat 2027 campaign plan. F5 year-end freeze near-term; team thin (~2 members down).' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div style="font-size:13px;font-weight:600;color:#e2e8f0;">${c.account}</div>
+          <div style="font-size:11px;color:#94a3b8;margin-top:2px;">${c.opp}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_09_16() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('0916-1')?'done':''}" data-csm="pam" id="action-0916-1">
+      <div class="action-checkbox ${doneActions.has('0916-1')?'checked':''}" onclick="toggleAction('0916-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Microsoft &mdash; Return credit-impact quantification for topic-recommendation delta + net-new competitor products</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Pam Huck &middot; Rishabh Wadhwa (HG Solutions) walked Will Norris through Bryce&rsquo;s topic recommendations across Cloud, AI Platforms & Security, and AIBS. Some overlap with the current 256-topic Microsoft feed, some are new. Additionally, Microsoft flagged competitor products not currently in the feed that need to be added. Next step: model out credit-impact scenarios (full adoption vs subset) against the ~480K slush and send to Will + Mark for prioritization.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0916-2')?'done':''}" data-csm="pam" id="action-0916-2">
+      <div class="action-checkbox ${doneActions.has('0916-2')?'checked':''}" onclick="toggleAction('0916-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; F5 &mdash; Stand up modular product pages under F5 AI Security Platform + push bulk tag request</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Pam Huck &middot; Sherry Arnold agreed to the &ldquo;widget per module&rdquo; approach under the AI Security Platform profile with optional module-tagging on reviews. Mardigan Moffat to bundle Sherry&rsquo;s tag requests and push as a single batch to unblock her (team down 2 members, no bandwidth for one-off tag requests). Also confirm RSA + AppWorld (Vegas / Singapore / LatAm) + possibly Black Hat campaign slots for 2027; F5 in year-end freeze near-term so timing matters.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0916-3')?'done':''}" data-csm="all" id="action-0916-3">
+      <div class="action-checkbox ${doneActions.has('0916-3')?'checked':''}" onclick="toggleAction('0916-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; CSM team &mdash; Manual Vitally log for 8 inferred (no-transcript) + 22 no-recording events</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Atisha (Deloitte weekly, Optiv weekly, Unily, EY, RELEX &times;2), Riley (FactSet Onboarding, SAP SuccessFactors, SAP Custom Questions, 8x8, Paylocity, Zendesk co), Nick (Lenovo Account Match, Veeam &times;2, HCL, Lenovo HG sync), Varun (Alight Refresh, Insight MI, Informatica &times;3, Autodesk &times;2, Zendesk co), Divyam (Informatica co), Rani (Google &times;3, AWS monthly, Cisco GRO, Lenovo/OneSix), Andy (RELEX, Cockroach Labs) &middot; Weflow sync at 92% no-transcript on Sept 16 means the daily scan is materially incomplete. Each CSM should manually log outcomes + next steps in Vitally for their affected events. Highest-priority: Nick&times;Lenovo Account Match Analysis (renewal Dec 2026, $695K ARR), Atisha&times;Deloitte, Rani&times;Google &times;3, Rani&times;Cisco GRO (Oct 6 renewal, Poor pulse).</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0916-4')?'done':''}" data-csm="all" id="action-0916-4">
+      <div class="action-checkbox ${doneActions.has('0916-4')?'checked':''}" onclick="toggleAction('0916-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F6A8; Ops &mdash; Weflow sync backlog Day 10 (92%, WORST observed) &mdash; CRITICAL escalation</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Ops / Rishi / Yuan / leadership &middot; No-transcript rate jumped to 92% on Sept 16 &mdash; new worst-case (Sep 2 71% &rarr; Sep 10 85% &rarr; Sep 11 69% &rarr; Sep 14 78% &rarr; Sep 15 79% &rarr; <strong>Sep 16 92%</strong>). Backlog is worsening, not resolving. Escalate to Weflow product owner immediately + brief Yuan/leadership that the daily engagement report is materially incomplete until sync resumes. Consider standing up event-based inferred fallback report as interim; treat CSM engagement data as untrustworthy for the last 10 days.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0916-5')?'done':''}" data-csm="all" id="action-0916-5">
+      <div class="action-checkbox ${doneActions.has('0916-5')?'checked':''}" onclick="toggleAction('0916-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Internal &mdash; Weekly GTM Enablement Session flagged as internal (excluded from customer count)</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Rani, Pam, Andy &middot; Attended the Weekly GTM Enablement Session (8 AM PT, 60 min) &mdash; internal HG training / Context 26 event prep + MCP server topics. No customer present. Flagged as INTERNAL and excluded from Sept 16 customer call count. No action needed; noted for accurate attribution.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
+
