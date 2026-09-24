@@ -1177,200 +1177,11 @@ function dayActionsHTML_2026_09_07() {
   <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
 }
 
-function dayData_2026_09_08() {
-  return {
-    calls: [
-      { ts: 'Sep 8 · 10:00 AM', csm: 'rani', account: `Google Inc.`,
-        note: `60-min Google Renewal Discussion with Mark Fell. Credit-based pricing walkthrough: tiered structure, credit carryover, FAI/Gen AI exclusion options. Old platform EOL &rarr; new AI-driven version. Google to do internal analysis; follow-up week of 14th (Wed/Thu).`,
-        mins: 60, health: 'Healthy',
-        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
-        detail: `Google renewal discussion with Mark Fell. Google evaluating transition to credit-based pricing model (from prior consumption/entity-based). Rani + Mark walked: tiered pricing (per-credit cost decreases with volume), credit carryover across years (mitigates &ldquo;use it or lose it&rdquo;), option to exclude FAI + Gen AI to reduce credit usage. Also flagged old platform nearing EOL &mdash; new AI-driven version available but integration + cost need evaluation. Google team to conduct internal catalog analysis + startup propensity model + TrustRadius Customer Voice priorities before next meeting. Natalia sending meeting invite options for week of Sept 14 (Wed/Thu preferred).` },
-      { ts: 'Sep 8 · 11:30 AM', csm: 'divyam', account: `BILL Operations, LLC`,
-        note: `Weekly sync with Charles Hawkins + Eric Nguyen. Sales conversion analysis: self-service/API vs SNE (digital charge card) vs APAR (accounts payable/receivable) product lines have distinct conversion + deal-size profiles. Clearbit vs SFDC data-source prioritization discussion. V12 engagement model push planning.`,
-        mins: 30, health: 'Healthy',
-        nature: 'Recurring', initiator: 'HG CS', purpose: 'Mixed',
-        detail: `BILL weekly sync with Charles Hawkins + Eric Nguyen. Analyzed low conversion rates by product line: SNE (digital charge card, self-serve-friendly) vs APAR (accounts payable/receivable, larger lift, not self-serve). Self-service/API originations dominate closed-won volume in SMB but skew analysis; recommend excluding from certain reports. Data source prioritization: Divyam checking whether Clearbit is being used for industry + employee size vs SFDC/CRM primary. V12 engagement model push planning (impact on API calls). Disagreement on lead-scoring criteria (ICP fit vs behavior vs blend, override management). Divyam to do product-wise closed-won vs closed-lost analysis excluding self-serve.` },
-    ],
-    pulses: [
-      { csm: 'rani', account: `Google Inc.`, health: 'Healthy',
-        note: `Google renewal &mdash; credit-based pricing walkthrough. Old platform EOL, new AI-driven version. Google internal analysis in flight; follow-up week of Sept 14.` },
-      { csm: 'divyam', account: `BILL Operations, LLC`, health: 'Healthy',
-        note: `SNE vs APAR product-line conversion analysis; V12 engagement model push; Clearbit vs SFDC source prioritization.` },
-    ],
-  };
-}
 
-function dayMeta_2026_09_08() {
-  return {
-    pills: [
-      ['dot-teal',   '2 Calls'],
-      ['dot-amber',  '2 Expansion'],
-      ['dot-green',  '2 Vitally Pulses'],
-      ['dot-grey',   'Tue Sep 8 &middot; 92 scanned'],
-    ],
-    tabs: ['Overview', 'Calls (2)', 'Pulses (2)', 'Action Items (5)']
-  };
-}
 
-function dayOverviewHTML_2026_09_08() {
-  return `<div class="section-label">Team Activity &mdash; Tuesday September 8, 2026</div>
-  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
-    &#x1F4C5; <strong>Tuesday Sep 8 &mdash; 92 recordings scanned</strong> via SFDC SOQL &middot; <strong>2 confirmed calls</strong> (Rani, Divyam) &middot; 0 concerning &middot; 2 expansion signals &middot; 35 CSM events but 72% no-transcript rate persists (Day 4 of backlog)
-  </div>
-  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
-    &#x1F4C8; <strong>EXPANSION:</strong> Google renewal discussion (60 min) &mdash; credit-based pricing walkthrough (tiered, carryover, FAI/Gen AI exclusion options) + old platform EOL to new AI-driven version (Rani) &middot; BILL sales conversion analysis + V12 engagement model push + product-line split (Divyam)
-  </div>
-  <div style="background:#1c1f26;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fcd34d;">
-    &#x26A0;&#xFE0F; <strong>Weflow sync backlog Day 4 (72% no-transcript):</strong> Nick (PTO)&rsquo;s 6 events (Softcat + SAP x2 + Siemens x3 + Hyland + Dintec) all no-transcript. Also Rani&rsquo;s NetApp PTB + Cisco Isovalent + Workday Usage Review, Riley&rsquo;s Red Hat + Iterable + TriNet + Insperity + Piano, Atisha&rsquo;s Apple Strategy, Varun&rsquo;s OpenText + Iron Mountain.
-  </div>
-  <div class="overview-grid">
 
-    <div class="csm-card has-calls" data-csm="rani">
-      <span class="call-badge">1 CALL</span>
-      <div class="csm-card-header">
-        <div class="avatar av-grey">RG</div>
-        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
-      </div>
-      <div class="csm-metrics">
-        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
-        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
-        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
-      </div>
-      <div class="csm-account-note">Google (&#x1F4C8; 60-min renewal discussion &mdash; credit-based pricing + AI-driven platform) &middot; NetApp PTB + Cisco Isovalent + Workday Usage Review + NetApp weekly all no-transcript</div>
-    </div>
 
-    <div class="csm-card has-calls" data-csm="divyam">
-      <span class="call-badge">1 CALL</span>
-      <div class="csm-card-header">
-        <div class="avatar av-divyam">DD</div>
-        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
-      </div>
-      <div class="csm-metrics">
-        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
-        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
-        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
-      </div>
-      <div class="csm-account-note">BILL (&#x1F4C8; product-line conversion analysis + V12 engagement push) &middot; Adobe monthly + Paychex Paycor TR all no-transcript</div>
-    </div>
 
-    <div class="csm-card no-calls" data-csm="nick">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header"><div class="avatar av-grey">NJ</div><div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Still on PTO (back ~Sept 11). 6 events (Softcat 1:30 AM, Siemens x3 at 5 AM, Hyland 7 AM, SAP x2 at 9:30 AM, Dintec 9 AM) all no-transcript</div>
-    </div>
-
-    <div class="csm-card no-calls" data-csm="varun">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header"><div class="avatar av-varun">VT</div><div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">4 events (OpenText biweekly x2 at 3 AM, HG&amp;Insight sync, Iron Mountain biweekly 8 AM) all no-transcript</div>
-    </div>
-
-    <div class="csm-card no-calls" data-csm="riley">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header"><div class="avatar av-riley">RR</div><div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">5 events (Iterable, TriNet x2, Red Hat biweekly, Insperity, Piano) all no-transcript</div>
-    </div>
-
-    <div class="csm-card no-calls" data-csm="atisha">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header"><div class="avatar av-grey">AW</div><div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 events (Apple Strategy &amp; Planning 8:30 AM x2) all no-transcript</div>
-    </div>
-
-    <div class="csm-card no-calls" data-csm="pam">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header"><div class="avatar av-grey">PH</div><div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event (Team Sync - Mark Fell Ops 8 AM co-w/ Rani) no-transcript</div>
-    </div>
-
-    <div class="csm-card no-calls" data-csm="andy">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header"><div class="avatar av-grey">AL</div><div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No CSM-owned events scheduled</div>
-    </div>
-
-  </div>`;
-}
-
-function dayCallsHTML_2026_09_08() {
-  return `<div class="section-label">Confirmed Calls &mdash; Tuesday September 8, 2026</div>
-  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
-    &#x1F4C8; <strong>EXPANSION:</strong> Google renewal &mdash; credit-based pricing model discussion (Rani) &middot; BILL conversion analysis + V12 engagement push (Divyam)
-  </div>
-  <div style="background:#1c1f26;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fcd34d;">
-    &#x26A0;&#xFE0F; <strong>Weflow sync backlog Day 4 (72% no-transcript):</strong> Nick (PTO) has 6 events all missing transcripts. Also affects Rani&rsquo;s NetApp/Cisco/Workday slots, Riley&rsquo;s entire TR portfolio (Red Hat, TriNet, Iterable, Insperity), Varun&rsquo;s OpenText + Iron Mountain, Divyam&rsquo;s Adobe + Paychex.
-  </div>`;
-}
-
-function dayPulsesHTML_2026_09_08() {
-  const cards = [
-    { csm:'rani', health:'Healthy', account:`Google Inc.`, opp:`Vitally Pulse &mdash; Sep 8 Call`,
-      arr:`Enterprise &middot; Rani Guy`, csmlbl:`Rani Guy`,
-      change:`Sep 8 &middot; Healthy`,
-      excerpt:`Google renewal discussion &mdash; credit-based pricing walkthrough (tiered, carryover, FAI/Gen AI exclusion). Old platform EOL, new AI-driven version. Google to do internal catalog + startup propensity + TR CVP priority analysis. Follow-up week of Sept 14.` },
-    { csm:'divyam', health:'Healthy', account:`BILL Operations, LLC`, opp:`Vitally Pulse &mdash; Sep 8 Call`,
-      arr:`Enterprise &middot; Divyam Dewan`, csmlbl:`Divyam Dewan`,
-      change:`Sep 8 &middot; Healthy`,
-      excerpt:`SNE (digital charge card, self-serve) vs APAR (accounts payable/receivable, larger lift) product-line conversion analysis. Self-service/API originations skew SMB. Clearbit vs SFDC source prioritization. V12 engagement model push planning.` },
-  ];
-  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
-  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
-  return `<div class="pulse-grid">${cards.map(c=>`
-    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
-      <div class="pulse-card-top">
-        <div>
-          <div class="pulse-account">${c.account}</div>
-          <div class="pulse-opp">${c.opp}</div>
-          <div class="pulse-arr">${c.arr}</div>
-        </div>
-        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
-      </div>
-      <div class="pulse-excerpt">${c.excerpt}</div>
-      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
-    </div>`).join('')}</div>
-  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
-}
-
-function dayActionsHTML_2026_09_08() {
-  return `<div class="action-list">
-    <div class="action-item ${doneActions.has('0908-1')?'done':''}" data-csm="rani" id="action-0908-1">
-      <div class="action-checkbox ${doneActions.has('0908-1')?'checked':''}" onclick="toggleAction('0908-1')"></div>
-      <div class="action-body">
-        <div class="action-title">&#x1F4C8; Google &mdash; Prep tailored package + pricing for follow-up week of Sept 14</div>
-        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy + Mark Fell &middot; Package + pricing options based on Google&rsquo;s internal analysis (impact of FAI/Gen AI inclusion, credit consumption, budget constraints, build-in growth flexibility). Confirm Natalia&rsquo;s meeting invite for Wed/Thu of Sept 14 week.</div>
-      </div>
-    </div>
-    <div class="action-item ${doneActions.has('0908-2')?'done':''}" data-csm="divyam" id="action-0908-2">
-      <div class="action-checkbox ${doneActions.has('0908-2')?'checked':''}" onclick="toggleAction('0908-2')"></div>
-      <div class="action-body">
-        <div class="action-title">&#x1F534; BILL &mdash; Confirm data source hierarchy + V12 push impact</div>
-        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Divyam Dewan &middot; By next Monday call: double-check if Clearbit is being used for industry + employee size, and confirm whether SFDC/CRM data can be prioritized. Within 1-2 days: clarify how to push V12 engagement model live + expected API-call impact.</div>
-      </div>
-    </div>
-    <div class="action-item ${doneActions.has('0908-3')?'done':''}" data-csm="divyam" id="action-0908-3">
-      <div class="action-checkbox ${doneActions.has('0908-3')?'checked':''}" onclick="toggleAction('0908-3')"></div>
-      <div class="action-body">
-        <div class="action-title">&#x1F4CB; BILL &mdash; Product-line closed-won vs closed-lost analysis</div>
-        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Divyam Dewan &middot; Run product-wise closed-won vs closed-lost analysis excluding self-serve/API-originated deals to isolate sales-driven signal for SNE and APAR separately. Support the lead-scoring-criteria discussion (ICP fit vs behavior weighting).</div>
-      </div>
-    </div>
-    <div class="action-item ${doneActions.has('0908-4')?'done':''}" data-csm="all" id="action-0908-4">
-      <div class="action-checkbox ${doneActions.has('0908-4')?'checked':''}" onclick="toggleAction('0908-4')"></div>
-      <div class="action-body">
-        <div class="action-title">&#x26A0;&#xFE0F; Ops &mdash; Weflow sync backlog Day 4 escalation</div>
-        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Ops &middot; Fourth elevated no-transcript day (Sept 2 71% &rarr; Sept 3 75% &rarr; Sept 4 76% &rarr; Sept 8 72%). Sept 7 was Labor Day. Escalate to Weflow support if not already. Consider stopgap: run inferred-from-CSM-event fallback for continuity while sync resolves.</div>
-      </div>
-    </div>
-    <div class="action-item ${doneActions.has('0908-5')?'done':''}" data-csm="nick" id="action-0908-5">
-      <div class="action-checkbox ${doneActions.has('0908-5')?'checked':''}" onclick="toggleAction('0908-5')"></div>
-      <div class="action-body">
-        <div class="action-title">&#x1F4CB; Nick PTO wrap-up &mdash; SAP + Siemens + Hyland + Softcat coverage gaps</div>
-        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Nick Johnson (returning ~Sept 11) &middot; 6 Nick-owned events on Sept 8 all no-transcript (Softcat 1:30 AM, Siemens monthly x3 at 5 AM, Hyland 7 AM, SAP biweekly x2 9:30 AM, Dintec 9 AM). Confirm Rani + Adrian coverage until Nick returns Thu-Fri this week.</div>
-      </div>
-    </div>
-  </div>
-  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
-}
 
 
 
@@ -4712,6 +4523,363 @@ function dayActionsHTML_2026_09_09() {
       <div class="action-body">
         <div class="action-title">&#x26A0;&#xFE0F; Ops &mdash; Weflow SFDC-sync backlog Day 5 (75% no-transcript)</div>
         <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Ops &middot; Sept 9 &mdash; 70 of 93 recordings had no SFDC transcript (75%). SFDC speaker detection confirmed only 2 of 10 unique customer calls; 8 recovered via Weflow &lsquo;participants&rsquo; fallback. Consider formal Weflow support ticket if pattern persists across the week.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
+
+
+
+
+// ============================================================
+// Tuesday September 8, 2026
+// ============================================================
+
+function dayData_2026_09_08() {
+  return {
+    calls: [
+      { ts: 'Sep 8 &middot; 3:00 AM', csm: 'varun', account: `Open Text Corporation`,
+        note: `Bi-weekly cadence w/ Sujay Kodagali + David De nazareth. Revised renewal quote $233K&rarr;$240K reflecting long-term partnership + 3% uplift. Export credits + monthly-report process. AWS Marketplace alt route being explored. Renewal close before Oct 23.`,
+        mins: 23, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `OpenText bi-weekly cadence. Initial quote revised from $233K w/ 3% uplift to $240K reflecting longer-term partnership commitment + value. Export functionality + credit management: monthly reports for consumption tracking + additional credits (120K-130K) assigned for spend + install data points. Transition to new platform gradual (UI changes on new, data consistent across both). AWS Marketplace alternative execution route available (private offer + 7 extra days). Varun to close renewal one week ahead of Oct 23 deadline + schedule call w/ David re export functionality + push new AM Julian intro post-renewal. Sujay to align w/ Pratik on approach + explore CRM file upload automation. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 8 &middot; 4:30 AM', csm: 'divyam', account: `Adobe Systems Incorporated`,
+        note: `Monthly w/ Abhishek Srivastava + Man Hon Ding. V2 platform&rarr;RGIP migration prep. Credit-based data-type consumption model. Proposed annual $187K vs current $165K. RGIP demo for stakeholders (Jill + Manon + Marson) week of Oct 21 or 28.`,
+        mins: 27, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Adobe monthly migration prep. Migrating from legacy V2 platform to new RGIP (Revenue Growth Intelligence Platform). New features: Market Analyzer (AI-ready market sizing) + AI Scoring (AI-powered signals). Consumption model shifting from entity-based to data-type-based credits (spend data most expensive). Proposed annual commitment: $187K (fractional increase from $165K current); further discounts for multi-year/prepaid. 20-day dual-platform-access window during migration. Divyam/Mark to provide apples-to-apples comparison of current (100K entities) vs proposed credit model by end of October. Divyam to schedule 45-min RGIP demo for key stakeholders (Jill, Manon, Marson) week of Oct 21 or 28. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 8 &middot; 7:00 AM', csm: 'divyam', account: `Paychex + Paycor`,
+        note: `TR Monthly Sync w/ Nick Berta + Taylor Lohmann + Anderson Duncan. First batch intent-driven leads expected soon (post-holiday delay). Paychex closer to review criteria; Paycor needs more reviews on capabilities/value-for-money. New paid-programs hire onboarding this month.`,
+        mins: 14, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `Paychex + Paycor TR monthly. Intent-driven leads program first batch expected shortly (potentially tomorrow) post-holiday delay. Customer review collection ongoing: Paychex closer to meeting review criteria; Paycor needs more reviews highlighting capabilities or value-for-money. New hire joining later this month to manage paid programs across both brands (profile management + review generation campaigns). HG Insights + TrustRadius integration educational sessions being offered to customers. Scott to confirm lead delivery timeline by next Tuesday; Divyam to follow up w/ Michelle re lead confirmation. Nick Berta to send campaign user list for review generation. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 8 &middot; 7:30 AM', csm: 'riley', account: `SAP Inc (CX Sync)`,
+        note: `SAP & TR CX Sync w/ Binod Negi + Christin Untenzu + Cole Arutian + Mardigan Moffat. First draft Commerce Cloud survey report Sept 21; Sales Cloud draft EoD today. Buyer&rsquo;s Choice extended Oct 16 (all 3 products qualified). TR review volume dropped &mdash; SAP Connect push.`,
+        mins: 16, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `SAP CX Sync w/ TR team. First draft Commerce Cloud survey report expected Sept 21; Sales Cloud draft EoD today. Differentiate SAP market reports to avoid similarity. Buyer&rsquo;s Choice deadline extended to Oct 16 (all 3 products Commerce/Sales/Service qualified). Overall TR review volume has dropped &mdash; drive more reviews at upcoming SAP Connect. Riley to (a) share previously-generated Sales Cloud report w/ Binod, (b) generate single incentivized review link for Sales+Service+Commerce ("Q3" or "H2" tracking), (c) initiate campaign for rating-only users to submit full reviews, (d) share Binod's LinkedIn post w/ TR team. Binod to reach out to Milan re fresh Sales Cloud quotes + review report drafts. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 8 &middot; 7:30 AM', csm: 'rani', account: `NetApp (PTB Capabilities)`,
+        note: `NetApp PTB Capabilities discussion w/ Adrian Escobar + Gavin Padden + Jieun Chung + Madhup Tibrewala + Akanksha Jain. IT install + IT spend + intensity-score walkthrough. Follow-up scheduled Sept 9 10 AM PST for Jieun deep-dive on AI + storage spend + PTB model inputs/outputs.`,
+        mins: 32, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `NetApp PTB Capabilities discussion. HG's IT install + IT spend data provide granular view beyond simple wallet size. Intensity-score indicates depth + longevity of tech adoption (vendor incumbency + upsell/cross-sell/displacement opportunities). PTB models leverage multiple signals: spend + installs + firmographics + intent. NetApp interested in AI spend + cloud-storage spend field specifics for market sizing + account prioritization. Adrian to provide data catalogs + dictionaries + docs before follow-up. Follow-up meeting scheduled Sept 9 at 10 AM PST (first 30 mins for Jieun) w/ Adrian + Gavin to walk through PTB model inputs/outputs. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 8 &middot; 8:00 AM', csm: 'varun', account: `Iron Mountain Incorporated`,
+        note: `Bi-weekly w/ Peter Rush + Kimberly Hardin + Julian Rojas + Karin Pindle + Leo Zunz + Max Shaw + Francis Brero + Chlo&eacute; Portier + David Crossman. ML PTB model + market sizing walkthrough. Potential 2-month contract extension to align w/ longer-term renewal plans.`,
+        mins: 95, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Mixed',
+        detail: `Iron Mountain bi-weekly. Iron Mountain building new ML propensity-to-buy model &mdash; integrating HG data w/ Salesforce signals + customer interactions. Market sizing: 2500+ employees or $1B+ revenue focus for digital business + asset lifecycle management units. HG clarified contextual intent (company-level) vs buyer intent (granular TR signals). Product catalog coverage evaluation + interest in adding more products/geos. Potential 2-month contract extension being considered to align w/ longer-term renewal plans. HG to share: corporate hierarchy docs + TR intent-data docs + country-level counts + Market Analyzer PDF + time-series data link. Iron Mountain to provide: 4 defined size-segment criteria + list of all IRM products for validation. Follow-up call early next week + confirm 2-month contract extension viability. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 8 &middot; 9:30 AM', csm: 'nick', account: `SAP Inc (biweekly)`,
+        note: `SAP biweekly w/ David Garcia Thomas + L&eacute;opold Baudry. Target company revenue threshold lowered 50M&rarr;20M (expands customer base). Procurement leaning 1-year contract due to price hikes vs multi-year price locks. David to provide 1yr vs 3yr pricing comparison this week.`,
+        mins: 8, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `Short SAP biweekly sync. Target revenue threshold revised downwards from 50M to 20M &mdash; significantly expanding potential customer base. Contract-length tension: procurement leaning 1-year term due to recent substantial business-model cost increases, but multi-year offers price certainty + potentially deeper discounts. Pricing model discounts originally based on multi-year agreements &mdash; shift to 1-year may require adjustments. David to (a) provide updated numbers/figures by EoD, (b) provide 1yr vs 3yr pricing comparison before end of week, (c) discuss commercial model for 20M+ revenue vendors w/ James ASAP. Franklin to address Jocelyn (or Jo Raheem Zaman) re calculations. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 8 &middot; 10:00 AM', csm: 'rani', account: `Google Inc.`,
+        note: `Renewal Discussion w/ Natalia Fritz + Mark Fell. Credit-based consumption model transition &mdash; tiered pricing + annual credit carry-over. FAI + Gen AI considered for scope removal to manage costs. Natalia running internal analysis w/ Lawrence early next week; follow-up week of 14th.`,
+        mins: 45, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Google renewal transition to credit-based consumption model. Tiered pricing (cost/credit decreases as volume increases) + annual credit carry-over for budget predictability. FAI + Gen AI being considered for removal from initial scope to manage costs (possible re-add later). New platform (RGIP) is AI-driven, replacing older V2 which is going EOL &mdash; enhanced capabilities but requiring different access approach. Natalia (client rep + decision maker) to conduct internal analysis w/ Lawrence (business stakeholder) + Sohana (procurement) early next week to align on critical data needs + product priorities. Mark to schedule follow-up meeting week of Sep 14th (Wed/Thu) to discuss finalized package + pricing + share TR Customer Voice + platform info. Confirmed via SFDC transcript speaker detection.`, source: 'sfdc' },
+
+      { ts: 'Sep 8 &middot; 10:00 AM', csm: 'rani', account: `Cisco (Isovalent onboarding)`,
+        note: `Cisco Isovalent onboarding w/ Melmoff + Adrian Escobar. AI Scoring positive feedback + HubSpot integration interest. Credits needed for AI Scoring &mdash; potentially replace ZoomInfo. Budget constraints prevent immediate acquisition (H2 or next year budget). Adrian to share AI scoring cost + rate card.`,
+        mins: 17, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Cisco Isovalent onboarding + AI scoring feedback. Melmoff (user) satisfied w/ AI scoring &mdash; potential integration w/ HubSpot; interest in replacing ZoomInfo. Budget constraint: no immediate credits available; expected budget H2 or following year. AI Scoring can be tailored by sales plays; plan to develop 4 distinct scoring mechanisms. ~1000 accounts for initial A/B tiers scoring. Adrian to (i) get sales + CS approval for AI Scoring credits by EoD/tomorrow, (ii) share AI scoring cost estimates w/ Melmoff, (iii) share credit rate card for future reference, (iv) chat w/ Rainy re potential credit arrangements, (v) get leadership approval on AI credit solutions. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 8 &middot; 11:00 AM', csm: 'rani', account: `Workday Inc`,
+        note: `Usage Review w/ Elaina Wasmus + Joe DosSantos + Kraig Kraning + Rishabh Wadhwa + Leo Zunz. 3-year deal finalization &mdash; credit usage reconciled to ~1.2M credits. Buffer + rollover options to provide cost predictability. Workday submitting for internal approvals by tomorrow; target close end of week.`,
+        mins: 36, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Workday 3-year deal finalization. Credit usage reconciled from initial 1.5M-14M range down to ~1.2M revised estimate. HG clarified UI opportunity generator + monthly data fee methodology; excluded contract + spend data feeds from calculations to align w/ Workday's adjusted numbers. Buffer + rollover options being explored for cost predictability + flexibility over 3-year term. Elaina to review contract for internal approvals (Alex + team) + submit into Workday system by tomorrow. Target: finalize by end of this week pending internal finance approval. Workday planning onsite workshop for use-case + collaborative topics. Kraig/Rani to reshare MCP materials + side-by-side comparison of data offerings. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 8 &middot; 11:30 AM', csm: 'divyam', account: `BILL Operations`,
+        note: `Weekly Sync w/ Charles Hawkins. Sales conversion data analysis &mdash; self-serve/API accounts skewing scoring metrics (lower deal sizes). MRR vs VAS metric separation needed. SNE vs APAR product-family conversion differences. Lead engagement model v12 refinements in flight.`,
+        mins: 44, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Mixed',
+        detail: `BILL weekly sync. Sales conversion analysis: self-service + API-originated accounts represent significant lower-scoring closed-won deal share (small deal sizes) &mdash; skewing overall conversion metrics. Revenue metrics: MRR vs Verified Addressable Spend need separate consideration for average deal size interpretation. Product-family disparities: SNE (digital, self-serve) vs APAR (larger lift, less self-serve) require tailored approaches. Data hygiene: incorrect account associations skew scoring accuracy. Current lead scoring model effectiveness being questioned re ICP fit vs behavioral data balance. Divyam to verify Clearbit data usage + investigate SFDC/CRM data as primary source by next Monday's meeting; conduct advanced product-wise closed-won vs closed-lost analysis (excluding self-serve/API) within 1-2 days. Eric to finish tweaking engagement model. Confirmed via SFDC transcript speaker detection.`, source: 'sfdc' },
+
+      { ts: 'Sep 8 &middot; 11:30 AM', csm: 'riley', account: `Red Hat, LLC`,
+        note: `TR biweekly w/ Brianna Gault + Cole Arutian + Mardigan Moffat. Ansible + OpenShift + RHPL lead-gen campaign performance review. Lead-number reporting discrepancy between Brianna dashboard vs Sai integrate view. Tech Tiers + Buyer&rsquo;s Choice + Red Hat update prep.`,
+        mins: 32, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `Red Hat TR biweekly. Lead-gen campaign performance review: Ansible (Senior Directors 41% + VPs 3%), OpenShift (Architects 48% + Directors 37% + VPs 21%), RHPL largest pullback due to "architect"/"product manager" ambiguity. Reporting discrepancy: Brianna's sales cloud dashboard shows 132 leads vs Sai's integrate view showing 134 (OpenShift) + higher for RHPL. Sai + Abby to address RHEL leads mis-categorized under "Power of Linux ebook discovery" sessions. Riley to send vendor portal form link to Brianna + ensure products activated in prompt tracking. Tech Tiers alignment w/ Red Hat Week internally. Buyer&rsquo;s Choice ongoing prep. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 8 &middot; 12:30 PM', csm: 'rani', account: `NetApp (weekly sync)`,
+        note: `Weekly sync w/ Adrian Escobar + Megan Santiago + Gabe Weske + Bini Valsala. Contract renewal lapsed due to recent holidays but approvals in progress (expected EoD or tomorrow). Intent data (top-of-funnel Bitstream + bottom-of-funnel TR) discussion. SMB + AI spend future add-on discussion.`,
+        mins: 19, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `NetApp weekly sync. Contract renewal has lapsed due to recent holidays &mdash; approvals in progress, expected EoD or early tomorrow. Intent data available: top-of-funnel (Bitstream) + bottom-of-funnel (TrustRadius) for buyer behavior understanding. HG doesn't build PTB models by default but offers consulting + data scoring best practices. Verified install dates (first/last) leveraged for contract-renewal timeline prediction + service-switching opportunity ID. Ongoing initiative to refine company + operational hierarchies for legal-ownership + decision-making alignment. Megan to stay close to EAs for leader sign-offs by end of week; Adrian to send collateral on TR + Bitstream intent data to Gabe + info on differentiation between two intent-data types. Post-contract execution: schedule AI + SMB data discussion. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+    ],
+    pulses: [
+      { csm: 'varun', account: `Open Text Corporation`, health: 'Healthy',
+        note: `Bi-weekly cadence &mdash; renewal quote revised $233K&rarr;$240K. Export credits + monthly-report process. AWS Marketplace alt route. Renewal close before Oct 23.` },
+      { csm: 'divyam', account: `Adobe Systems Incorporated`, health: 'Healthy',
+        note: `V2&rarr;RGIP platform migration prep. Credit-based data-type consumption. Proposed $187K vs current $165K. RGIP demo for stakeholders week of Oct 21 or 28.` },
+      { csm: 'divyam', account: `Paychex + Paycor`, health: 'Healthy',
+        note: `TR Monthly &mdash; first batch intent-driven leads expected soon (post-holiday delay). Paychex closer to review criteria; Paycor needs more capabilities/value reviews. New paid-programs hire this month.` },
+      { csm: 'riley', account: `SAP Inc (CX Sync)`, health: 'Healthy',
+        note: `Commerce Cloud draft Sept 21; Sales Cloud draft EoD. Buyer&rsquo;s Choice extended Oct 16 (all 3 products qualified). TR review volume dropped &mdash; SAP Connect push.` },
+      { csm: 'rani', account: `NetApp (PTB Capabilities)`, health: 'Healthy',
+        note: `PTB capabilities discussion &mdash; IT install + IT spend + intensity score walkthrough. Follow-up Sept 9 10 AM PST for Jieun deep-dive on AI + storage spend + PTB model.` },
+      { csm: 'varun', account: `Iron Mountain Incorporated`, health: 'Healthy',
+        note: `ML PTB model + market sizing walkthrough. Potential 2-month contract extension to align w/ longer-term renewal plans. Product catalog + geo coverage evaluation. Follow-up early next week.` },
+      { csm: 'nick', account: `SAP Inc (biweekly)`, health: 'Healthy',
+        note: `Target revenue threshold lowered 50M&rarr;20M (expanded customer base). Procurement leaning 1-year vs multi-year price-lock tension. David to provide 1yr vs 3yr pricing comparison this week.` },
+      { csm: 'rani', account: `Google Inc.`, health: 'Healthy',
+        note: `Renewal discussion &mdash; credit-based consumption transition + tiered pricing + annual credit carry-over. FAI + Gen AI considered for scope removal. Natalia internal analysis early next week; follow-up week of 14th.` },
+      { csm: 'rani', account: `Cisco (Isovalent onboarding)`, health: 'Healthy',
+        note: `AI Scoring positive feedback + HubSpot integration interest. Credits potentially to replace ZoomInfo. Budget constraint (H2 or next year). Adrian to share AI scoring cost + rate card.` },
+      { csm: 'rani', account: `Workday Inc`, health: 'Healthy',
+        note: `3-year deal finalization &mdash; usage reconciled to ~1.2M credits. Buffer + rollover for cost predictability. Elaina submitting internal approvals tomorrow; target close end of week.` },
+      { csm: 'divyam', account: `BILL Operations`, health: 'Healthy',
+        note: `Sales conversion data analysis &mdash; self-serve/API accounts skewing scoring. MRR vs VAS separation. SNE vs APAR product-family conversion differences. Lead engagement model v12 refinements.` },
+      { csm: 'riley', account: `Red Hat, LLC`, health: 'Healthy',
+        note: `TR biweekly &mdash; Ansible + OpenShift + RHPL lead-gen review. Lead-number reporting discrepancy investigation (Sai + Abhilasha). Tech Tiers + Buyer&rsquo;s Choice + Red Hat update prep.` },
+      { csm: 'rani', account: `NetApp (weekly sync)`, health: 'Healthy',
+        note: `Weekly sync &mdash; contract renewal lapsed post-holiday but approvals in progress (EoD/tomorrow). Intent data walkthrough (Bitstream + TR). SMB + AI spend future add-on.` },
+    ],
+  };
+}
+
+function dayMeta_2026_09_08() {
+  return {
+    pills: [
+      ['dot-teal',   '13 Calls'],
+      ['dot-amber',  '5 Expansion'],
+      ['dot-green',  '13 Vitally Pulses'],
+      ['dot-grey',   'Tue Sep 8 &middot; 92 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (13)', 'Pulses (13)', 'Action Items (7)']
+  };
+}
+
+function dayOverviewHTML_2026_09_08() {
+  return `<div class="section-label">Team Activity &mdash; Tuesday September 8, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Tuesday Sep 8 &mdash; 92 recordings scanned</strong> via SFDC SOQL &middot; <strong>13 confirmed calls</strong> across 5 CSMs &middot; 0 concerning &middot; 5 expansion signals &middot; SFDC confirmed 2 (Google + BILL); Weflow fallback added 11 unique recoveries
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>5 EXPANSION:</strong> Google (credit-based consumption model transition + FAI/Gen AI scope decision) &middot; Adobe (V2&rarr;RGIP migration + $187K proposed) &middot; OpenText (renewal quote $240K reflecting long-term partnership) &middot; Cisco Isovalent (AI Scoring credits to potentially replace ZoomInfo) &middot; Workday (3-year deal finalization + ~1.2M credits + buffer/rollover)
+  </div>
+  <div style="background:#1c1f26;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fcd34d;">
+    &#x26A0;&#xFE0F; <strong>Weflow SFDC-sync backlog Day 4 (73% no-transcript):</strong> Sept 8 = 92 recordings, 25 with transcripts, 67 without. SFDC speaker detection confirmed only 2 customer calls (Google + BILL); 11 additional confirmations recovered via Weflow &lsquo;participants&rsquo; fallback.
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">5 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">5</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">5</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">149m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">NetApp PTB (fit/need/intent) &middot; Google (&#x1F4C8; credit-model transition + FAI/GenAI scope) &middot; Cisco Isovalent (&#x1F4C8; AI Scoring + ZoomInfo replace) &middot; Workday (&#x1F4C8; 3yr deal + 1.2M credits) &middot; NetApp weekly (renewal lapsed but approvals in progress)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">3 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">3</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">85m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Adobe (&#x1F4C8; V2&rarr;RGIP migration + $187K) &middot; Paychex+Paycor (TR Monthly + intent-driven leads batch soon) &middot; BILL (sales conversion analysis + lead scoring model v12)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">118m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">OpenText (&#x1F4C8; renewal $240K + AWS Marketplace alt + Oct 23 close) &middot; Iron Mountain (ML PTB + market sizing + 2-month extension)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">48m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">SAP CX Sync (Commerce+Sales+Service draft prep + Buyer&rsquo;s Choice Oct 16) &middot; Red Hat TR (Ansible+OpenShift+RHPL lead-gen review)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">8m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">SAP biweekly (revenue threshold 50M&rarr;20M + procurement 1yr vs multi-year price-lock tension)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">PH</div><div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No confirmed customer calls. Team Sync w/ Mark Fell (SAP IBP) was an internal HG sync per event; no CSM speaker in customer transcripts; Weflow participants did not surface Pam.</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="atisha">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">AW</div><div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No confirmed customer calls. Apple Strategy & Planning event had no transcript synced; no Weflow-participant hits.</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">AL</div><div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No confirmed customer calls. No Andy speaker in SFDC transcripts; no Weflow-participant hits.</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_09_08() {
+  return `<div class="section-label">Confirmed Calls &mdash; Tuesday September 8, 2026</div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>5 EXPANSION:</strong> Google (credit-model transition) &middot; Adobe (V2&rarr;RGIP migration $187K proposed) &middot; OpenText (renewal $240K + AWS Marketplace) &middot; Cisco Isovalent (AI Scoring credits to replace ZoomInfo) &middot; Workday (3-year deal + 1.2M credits + buffer/rollover)
+  </div>`;
+}
+
+function dayPulsesHTML_2026_09_08() {
+  const cards = [
+    { csm:'varun', health:'Healthy', account:`Open Text Corporation`, opp:`Vitally Pulse &mdash; Sep 8 Call`,
+      arr:`Enterprise &middot; Varun Tiwari`, csmlbl:`Varun Tiwari`, change:`Sep 8 &middot; Healthy`,
+      excerpt:`OpenText bi-weekly cadence &mdash; renewal quote revised $233K&rarr;$240K reflecting long-term partnership + 3% uplift. Export credits + monthly-report process. AWS Marketplace alt route (private offer + 7 extra days). Renewal close before Oct 23.` },
+    { csm:'divyam', health:'Healthy', account:`Adobe Systems Incorporated`, opp:`Vitally Pulse &mdash; Sep 8 Call`,
+      arr:`Enterprise &middot; Divyam Dewan`, csmlbl:`Divyam Dewan`, change:`Sep 8 &middot; Healthy`,
+      excerpt:`V2&rarr;RGIP platform migration prep. Credit-based data-type consumption (spend data most expensive). Proposed $187K vs current $165K (fractional increase). 20-day dual-platform-access window. RGIP demo for stakeholders (Jill+Manon+Marson) week of Oct 21 or 28.` },
+    { csm:'divyam', health:'Healthy', account:`Paychex + Paycor`, opp:`Vitally Pulse &mdash; Sep 8 Call`,
+      arr:`Enterprise &middot; Divyam Dewan`, csmlbl:`Divyam Dewan`, change:`Sep 8 &middot; Healthy`,
+      excerpt:`TR Monthly &mdash; first batch intent-driven leads expected soon (post-holiday delay). Paychex closer to meeting review criteria; Paycor needs more reviews on capabilities/value-for-money. New paid-programs hire onboarding later this month.` },
+    { csm:'riley', health:'Healthy', account:`SAP Inc (CX Sync)`, opp:`Vitally Pulse &mdash; Sep 8 Call`,
+      arr:`Enterprise &middot; Riley Rogers`, csmlbl:`Riley Rogers`, change:`Sep 8 &middot; Healthy`,
+      excerpt:`SAP CX Sync &mdash; Commerce Cloud survey report first draft Sept 21; Sales Cloud draft EoD today. Buyer&rsquo;s Choice extended Oct 16 (all 3 products Commerce/Sales/Service qualified). TR review volume dropped &mdash; SAP Connect push.` },
+    { csm:'rani', health:'Healthy', account:`NetApp (PTB Capabilities)`, opp:`Vitally Pulse &mdash; Sep 8 Call`,
+      arr:`Enterprise &middot; Rani Guy`, csmlbl:`Rani Guy`, change:`Sep 8 &middot; Healthy`,
+      excerpt:`NetApp PTB Capabilities discussion &mdash; IT install + IT spend + intensity-score walkthrough beyond wallet size. Follow-up scheduled Sept 9 10 AM PST for Jieun deep-dive on AI + storage spend + PTB model inputs/outputs.` },
+    { csm:'varun', health:'Healthy', account:`Iron Mountain Incorporated`, opp:`Vitally Pulse &mdash; Sep 8 Call`,
+      arr:`Enterprise &middot; Varun Tiwari`, csmlbl:`Varun Tiwari`, change:`Sep 8 &middot; Healthy`,
+      excerpt:`Iron Mountain building ML PTB model + market sizing (2500+ emp or $1B+ rev focus). Product catalog + geo coverage evaluation. Potential 2-month contract extension to align w/ longer-term renewal plans. Follow-up early next week.` },
+    { csm:'nick', health:'Healthy', account:`SAP Inc (biweekly)`, opp:`Vitally Pulse &mdash; Sep 8 Call`,
+      arr:`Enterprise &middot; Nick Johnson`, csmlbl:`Nick Johnson`, change:`Sep 8 &middot; Healthy`,
+      excerpt:`SAP biweekly &mdash; target company revenue threshold lowered 50M&rarr;20M (expanded customer base). Procurement leaning 1-year vs multi-year price-lock tension. David to provide 1yr vs 3yr pricing comparison before end of week.` },
+    { csm:'rani', health:'Healthy', account:`Google Inc.`, opp:`Vitally Pulse &mdash; Sep 8 Call`,
+      arr:`Enterprise &middot; Rani Guy`, csmlbl:`Rani Guy`, change:`Sep 8 &middot; Healthy`,
+      excerpt:`Google renewal &mdash; credit-based consumption model transition + tiered pricing + annual credit carry-over. FAI + Gen AI considered for removal from initial scope. Natalia internal analysis w/ Lawrence early next week; follow-up week of 14th (Wed/Thu).` },
+    { csm:'rani', health:'Healthy', account:`Cisco (Isovalent onboarding)`, opp:`Vitally Pulse &mdash; Sep 8 Call`,
+      arr:`Enterprise &middot; Rani Guy`, csmlbl:`Rani Guy`, change:`Sep 8 &middot; Healthy`,
+      excerpt:`Cisco Isovalent onboarding &mdash; AI Scoring positive feedback + HubSpot integration interest. Credits needed for AI Scoring, potentially to replace ZoomInfo. Budget constraint (H2 or next year). Adrian to share AI Scoring cost + credit rate card.` },
+    { csm:'rani', health:'Healthy', account:`Workday Inc`, opp:`Vitally Pulse &mdash; Sep 8 Call`,
+      arr:`Enterprise &middot; Rani Guy`, csmlbl:`Rani Guy`, change:`Sep 8 &middot; Healthy`,
+      excerpt:`Workday 3-year deal finalization &mdash; credit usage reconciled 1.5M-14M range down to ~1.2M revised estimate. Buffer + rollover for cost predictability. Elaina submitting internal approvals tomorrow; target close end of week. Onsite workshop planned.` },
+    { csm:'divyam', health:'Healthy', account:`BILL Operations`, opp:`Vitally Pulse &mdash; Sep 8 Call`,
+      arr:`Enterprise &middot; Divyam Dewan`, csmlbl:`Divyam Dewan`, change:`Sep 8 &middot; Healthy`,
+      excerpt:`BILL Weekly Sync &mdash; sales conversion data analysis. Self-serve/API accounts skewing scoring (small deal sizes). MRR vs VAS separation needed. SNE vs APAR product-family conversion differences. Lead engagement model v12 refinements in flight.` },
+    { csm:'riley', health:'Healthy', account:`Red Hat, LLC`, opp:`Vitally Pulse &mdash; Sep 8 Call`,
+      arr:`Enterprise &middot; Riley Rogers`, csmlbl:`Riley Rogers`, change:`Sep 8 &middot; Healthy`,
+      excerpt:`Red Hat TR biweekly &mdash; Ansible + OpenShift + RHPL lead-gen review. Lead-number reporting discrepancy investigation (Sai + Abhilasha). Tech Tiers alignment w/ Red Hat Week internally. Buyer&rsquo;s Choice + Red Hat update prep ongoing.` },
+    { csm:'rani', health:'Healthy', account:`NetApp (weekly sync)`, opp:`Vitally Pulse &mdash; Sep 8 Call`,
+      arr:`Enterprise &middot; Rani Guy`, csmlbl:`Rani Guy`, change:`Sep 8 &middot; Healthy`,
+      excerpt:`Weekly sync &mdash; contract renewal lapsed due to recent holidays but approvals in progress (EoD or early tomorrow). Intent data walkthrough: Bitstream (top-of-funnel) + TR (bottom-of-funnel). SMB + AI spend future add-on discussion post-contract.` },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div class="pulse-account">${c.account}</div>
+          <div class="pulse-opp">${c.opp}</div>
+          <div class="pulse-arr">${c.arr}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_09_08() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('0908-1')?'done':''}" data-csm="rani" id="action-0908-1">
+      <div class="action-checkbox ${doneActions.has('0908-1')?'checked':''}" onclick="toggleAction('0908-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Google &mdash; credit-based consumption transition + week-of-14th follow-up</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy + Mark Fell &middot; Natalia (client decision maker) to conduct internal analysis w/ Lawrence + Sohana (procurement) early next week to align on critical data needs + product priorities. Mark to schedule follow-up meeting week of Sep 14 (Wed/Thu) to finalize package + pricing; share TR Customer Voice + platform info + exciting new-platform videos/demos. FAI + Gen AI scope decision needed to manage costs.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0908-2')?'done':''}" data-csm="rani" id="action-0908-2">
+      <div class="action-checkbox ${doneActions.has('0908-2')?'checked':''}" onclick="toggleAction('0908-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Workday &mdash; 3-year deal finalization by end of this week</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy + Kraig Kraning + Elaina Wasmus &middot; Credit usage reconciled to ~1.2M. Elaina to review contract for internal approvals (Alex + team) + submit into Workday system by tomorrow. Target finalize by end of this week pending internal finance approval. Kraig/Rani to reshare MCP materials + side-by-side data-offerings comparison. Plan onsite workshop for use cases + collaborative topics.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0908-3')?'done':''}" data-csm="varun" id="action-0908-3">
+      <div class="action-checkbox ${doneActions.has('0908-3')?'checked':''}" onclick="toggleAction('0908-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; OpenText &mdash; renewal close before Oct 23 + export functionality alignment</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Varun Tiwari + Sujay Kodagali + David De nazareth &middot; Renewal quote $240K (revised from $233K + 3% uplift). Varun to close renewal one week ahead of Oct 23 deadline + schedule call w/ David re export functionality + share monthly-export reports. Assign additional credits (120K-130K) for spend + install data points post-renewal. Sujay to align w/ Pratik on approach + schedule Pratik call for platform alignment.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0908-4')?'done':''}" data-csm="divyam" id="action-0908-4">
+      <div class="action-checkbox ${doneActions.has('0908-4')?'checked':''}" onclick="toggleAction('0908-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Adobe &mdash; V2&rarr;RGIP migration + apples-to-apples credit comparison by EoM</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Divyam Dewan + Abhishek Srivastava &middot; Divyam/Mark to provide apples-to-apples comparison of current 100K entities consumption vs proposed credit model for same usage by end of October. Divyam to schedule 45-min RGIP demo for Jill + Manon + Marson week of Oct 21 or 28. Abhishek to forward apples-to-apples email to stakeholders + confirm if Mark can meet directly w/ Jill or Glenn.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0908-5')?'done':''}" data-csm="rani" id="action-0908-5">
+      <div class="action-checkbox ${doneActions.has('0908-5')?'checked':''}" onclick="toggleAction('0908-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Cisco Isovalent &mdash; AI Scoring credits approval + cost estimates</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Rani Guy + Adrian Escobar &middot; Adrian to get sales + customer success approval for AI Scoring credits by EoD/tomorrow + share AI scoring cost estimates + credit rate card w/ Melmoff. Chat w/ Rainy re potential credit arrangements + get leadership approval on AI credit solutions. Melmoff to determine specific number of accounts for AI Scoring (~1000 for A/B tiers initially) + explore using ZoomInfo usage as credit-estimation basis.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0908-6')?'done':''}" data-csm="rani" id="action-0908-6">
+      <div class="action-checkbox ${doneActions.has('0908-6')?'checked':''}" onclick="toggleAction('0908-6')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; NetApp &mdash; contract renewal approvals close + PTB model follow-up Sept 9</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Rani Guy + Adrian Escobar + Megan Santiago &middot; Megan to stay close to EAs for NetApp leader sign-offs by end of week. Adrian to send TR + Bitstream intent-data collateral + differentiation info to Gabe Weske. PTB follow-up meeting Sept 9 10 AM PST (first 30 mins for Jieun) to walk through PTB model inputs/outputs + AI spend + storage spend + data dictionaries. Post-contract execution: schedule AI + SMB data discussion.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0908-7')?'done':''}" data-csm="divyam" id="action-0908-7">
+      <div class="action-checkbox ${doneActions.has('0908-7')?'checked':''}" onclick="toggleAction('0908-7')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; BILL &mdash; sales conversion analysis + lead engagement model v12 tweaks</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Divyam Dewan + Charles Hawkins + Eric Nguyen &middot; Divyam to (a) verify Clearbit data usage + investigate SFDC/CRM data as primary source by next Monday, (b) conduct advanced product-wise closed-won vs closed-lost analysis (excluding self-serve/API) within 1-2 days. Eric to finish tweaking engagement model + review together w/ Charles before next call + check if field exists that stamps when enrichment data has been applied to SFDC record.</div>
       </div>
     </div>
   </div>
