@@ -3430,3 +3430,287 @@ function dayActionsHTML_2026_09_22() {
   <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
 }
 
+
+// ============================================================
+// Wednesday September 23, 2026
+// ============================================================
+
+function dayData_2026_09_23() {
+  return {
+    calls: [
+      { ts: 'Sep 23 &middot; 9:00 AM', csm: 'divyam', account: 'Snowflake',
+        note: 'Snowflake / HGI intro w/ Alpesh Jain (Snowflake GTM Strategy & Ops, ~1.5 yrs in role) + Ziad Amira (HG AE) + Gavin Padden (HG Solutions) &mdash; first Divyam&times;Alpesh meeting; Cloud Dynamics Renewal 2028 timeframe; GTM/new-logo/market-expansion use cases',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'First-time meeting between Divyam and Alpesh Jain (Snowflake, leading part of GTM Strategy & Ops for ~1.5 years, covering new logos, market expansion, and related topics). Max was unable to join. Ziad opened with Snowflake&rsquo;s Cloud Dynamics renewal context (2028), Gavin explained the Solutions role as the "data-fit" lens for new use cases. Divyam framed CSM continuity from ZoomInfo background. This is a foundation-setting call for the Snowflake team as they get more strategic about how HG data fits into their new-logo and expansion motion.' },
+
+      { ts: 'Sep 23 &middot; 9:30 AM', csm: 'varun', account: 'MongoDB Inc',
+        note: 'MongoDB Renewal Scoping w/ Steven Harbron + (Will Bracken absent, awaiting Slack ping) + Ziad Amira (HG AE) &mdash; new pricing model reduces install-data credit cost 0.5&rarr;0.1; contract could drop to ~$16K but $40K RGIP minimum; Steven has flat-budget approval; opportunity to keep budget same and consume more data',
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: 'Ziad delivered pricing update: HG&rsquo;s new credit model dropped install-data cost from 0.5&rarr;0.1 credits per record. Based on MongoDB&rsquo;s current consumption pattern, effective renewal price could be ~$16K vs their current ~$40K spend &mdash; but the RGIP data feed has a $40K minimum threshold. Steven confirmed he has approval to keep the budget flat and was actively trying to tailor the technology list to avoid overages. He shared a revised technology list with swap-ins/swap-outs already made. Expansion angle: since Steven wants flat budget, the freed credits open up capacity for more data consumption &mdash; net-new logo acquisition + enrichment beyond current scope. Ziad and Varun to work up options that keep budget at $40K but expand consumption footprint. India-based procurement (Gaprit Moran) will coordinate signature timing.' },
+
+      { ts: 'Sep 23 &middot; 10:00 AM', csm: 'varun', account: 'BMC Software Inc',
+        note: 'BMC Copilot 2.0 onboarding follow-up w/ Louise Eekhof (BMC Sales Ops) + Rafael Mueller (BMC Engineering, builds the sales copilot) + Rohit Saraf (HG) + Augie Buettner (HG AM) &mdash; Louise wants smaller focused sessions to "take action instead of discussing over and over"; Salesforce integration blocking Copilot value; territory-mapping segment filter (growth/enterprise/star) demoed',
+        mins: 30, health: 'Concerning',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Issue',
+        detail: 'Louise Eekhof (BMC Sales Ops) explicitly asked to shrink group size going forward: "I feel like if we&rsquo;re in a bigger group we&rsquo;re more focused on the strategy or like other things and I just want to see how I can help in order to move it forward and really take some action now instead of keep discussing things over and over again." Salesforce integration is currently NOT connected in production, which materially reduces Copilot value. Varun walked through how the new Sales Copilot displays segment filters (growth/enterprise/star) that pull from a Salesforce field once the integration is up. Rafael (BMC Engineering, building the sales copilot on their side) joined to listen and identify platform gaps that need to change. Renewal history from prior memory: Aug 17 flagged BMC as Severe Risk pulse ($284.7K ARR), Sept 15 had Copilot 2.0 onboarding with Devin McCarthy new field lead. Louise&rsquo;s frustration + integration blocker on top of the prior severe pulse warrants Concerning classification &mdash; escalate to keep the Copilot deployment on track.' },
+
+      { ts: 'Sep 23 &middot; 10:30 AM', csm: 'nick', account: 'VASS',
+        note: 'VASS SAP MDF renewal + 2027 plans conversation w/ Jessica Utley (VASS, new CS lead replacing Eve) &mdash; Oct 12 renewal, VASS used SAP development funds for original signing, but Jessica flagged internal adoption of the tool has NOT been as high as they&rsquo;d like &mdash; adoption gap ahead of renewal',
+        mins: 30, health: 'Concerning',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Part of Nick&rsquo;s ongoing SAP-partner-cohort renewal blitz (Aug 27 memory noted 5 partners in one day pre-Oct 12 renewal). VASS renewal is Oct 12; original contract was signed via SAP development funds under Eve (predecessor to Jessica Utley). Jessica is new to the CS role and asked when a renewal decision needs to be made &mdash; Nick clarified there is no auto-renewal so timing depends on VASS side to align SAP funds again. Jessica was transparent: "I don&rsquo;t know if the adoption of the tool internally has been as high as we would like it to be." Nick recapped the 2026 cohort training model (monthly sessions with all SAP partners) and offered to be more responsive on VASS-specific requests. Adoption gap + renewal in 19 days + brand-new CS lead = Concerning. Nick to work with VASS on rapid-adoption assist + re-scope 2027 packaging.' },
+
+      { ts: 'Sep 23 &middot; 12:30 PM', csm: 'riley', account: 'Paylocity',
+        note: 'Paylocity TR monthly w/ Matt Doyle + Olivia (Paylocity) + Anderson (HG AM); new feature preview: incentive budget live in vendor portal; nothing top-of-mind on customer side',
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: 'Recurring monthly TR sync. Riley preemptively flagged she had ~15 min due to a family visit. Anderson (HG AM) present for continuity; introduced to Olivia (new to the calls). Matt confirmed no top-of-mind concerns. Riley walked through new features: the incentive budget dashboard now live in the vendor portal ($14,725 balance surfaced). Matt engaged positively with the new visibility. Cadence intact.' },
+    ],
+    pulses: [
+      { csm:'divyam', health:'Healthy', account:'Snowflake',
+        opp:'Vitally Pulse &mdash; Sep 23 Call',
+        arr:'Enterprise &middot; Divyam Dewan', csmlbl:'Divyam Dewan',
+        change:'Sep 23 &middot; New Stakeholder Intro',
+        excerpt:'9/23 DD: 30 min Snowflake / HGI intro (9 AM PT) w/ Alpesh Jain (GTM Strategy & Ops) + Ziad Amira + Gavin Padden. First Divyam&times;Alpesh meeting. Cloud Dynamics Renewal 2028 timeframe. New-logo + market-expansion use cases; foundation-setting.' },
+      { csm:'varun', health:'Healthy', account:'MongoDB Inc',
+        opp:'Vitally Pulse &mdash; Sep 23 Call',
+        arr:'Enterprise &middot; Varun Tiwari', csmlbl:'Varun Tiwari',
+        change:'Sep 23 &middot; Pricing Expansion Opportunity',
+        excerpt:'9/23 VT: 30 min MongoDB Renewal Scoping (9:30 AM PT) w/ Steven Harbron + Ziad Amira. New credit model drops install cost 0.5&rarr;0.1 &mdash; effective renewal could be ~$16K vs current $40K, but $40K RGIP minimum. Steven has flat-budget approval &mdash; opportunity to expand data consumption at same price.' },
+      { csm:'varun', health:'Concerning', account:'BMC Software Inc',
+        opp:'Vitally Pulse &mdash; Sep 23 Call',
+        arr:'Enterprise &middot; Varun Tiwari', csmlbl:'Varun Tiwari',
+        change:'Sep 23 &middot; Copilot Integration Blocker',
+        excerpt:'9/23 VT: 30 min BMC Copilot 2.0 onboarding follow-up (10 AM PT) w/ Louise Eekhof + Rafael Mueller + Rohit Saraf + Augie Buettner. Salesforce integration NOT connected in production &mdash; blocking Copilot value. Louise wants smaller groups + action, not more discussion. Follows Aug 17 Severe Risk pulse.' },
+      { csm:'nick', health:'Concerning', account:'VASS',
+        opp:'Vitally Pulse &mdash; Sep 23 Call',
+        arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+        change:'Sep 23 &middot; Adoption Gap Pre-Renewal',
+        excerpt:'9/23 NJ: 30 min VASS 2027 plans (10:30 AM PT) w/ Jessica Utley (new CS lead). Oct 12 renewal &mdash; Jessica flagged internal adoption "not as high as we would like it to be." SAP dev-fund path assumed. Adoption gap + 19 days to renewal + new CS lead = Concerning.' },
+      { csm:'riley', health:'Healthy', account:'Paylocity',
+        opp:'Vitally Pulse &mdash; Sep 23 Call',
+        arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+        change:'Sep 23 &middot; Incentive Budget Feature',
+        excerpt:'9/23 RR: 30 min Paylocity TR monthly (12:30 PM PT) w/ Matt Doyle + Olivia + Anderson (HG AM). Incentive budget dashboard now live in vendor portal ($14,725 balance surfaced). Nothing top-of-mind on customer side. Cadence intact.' },
+    ],
+  };
+}
+
+function dayMeta_2026_09_23() {
+  return {
+    pills: [
+      ['dot-teal',   '5 Calls'],
+      ['dot-red',    '2 Concerning'],
+      ['dot-amber',  '1 Expansion'],
+      ['dot-green',  '5 Vitally Pulses'],
+      ['dot-grey',   'Wed Sep 23 &middot; 145 scanned &middot; 86% no-transcript'],
+    ],
+    tabs: ['Overview', 'Calls (5)', 'Pulses (5)', 'Action Items (7)']
+  };
+}
+
+function dayOverviewHTML_2026_09_23() {
+  return `<div class="section-label">Team Activity &mdash; Wednesday September 23, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Wed Sep 23 &mdash; 145 recordings scanned</strong> via SFDC SOQL &middot; <strong>5 confirmed customer calls</strong> (Divyam&times;Snowflake, Varun&times;MongoDB, Varun&times;BMC, Nick&times;VASS, Riley&times;Paylocity) &middot; <strong>2 Concerning (BMC, VASS)</strong> &middot; 1 Expansion (MongoDB pricing model unlocks expansion at flat budget) &middot; 1 INTERNAL excluded (Weekly GTM Enablement Session 8 AM w/ Pam).
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x1F6A8; <strong>Weflow sync backlog Day 15 &mdash; regression continues:</strong> 86% no-transcript rate on Sept 23 (up from 79% Sept 22, 78% Sept 21). Trajectory: Sep 16 92% &rarr; Sep 17 84% &rarr; Sep 18 71% &rarr; Sep 21 78% &rarr; Sep 22 79% &rarr; <strong>Sep 23 86%</strong>. Escalation trigger met yesterday still open. 7 CSM-owned recordings had no transcript; 26 CSM events had no recording &mdash; biggest gap yet.
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x1F6A8; <strong>Concerning &mdash; BMC (Varun):</strong> Louise Eekhof (BMC Sales Ops) asked for smaller groups + action ("not keep discussing things over and over"); Salesforce integration NOT connected in production is blocking Copilot value. Follows Aug 17 Severe Risk pulse. Renewal watch.<br>
+    &#x1F6A8; <strong>Concerning &mdash; VASS (Nick):</strong> Oct 12 renewal (19 days); Jessica Utley (new CS lead replacing Eve) flagged internal adoption of HG tool "not as high as we would like it to be." SAP development-fund path assumed but adoption gap is the risk.
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>Expansion &mdash; MongoDB (Varun):</strong> New HG credit model drops install-data cost 0.5&rarr;0.1 credits/record. Effective renewal could be ~$16K vs current $40K, but $40K RGIP minimum. Steven has flat-budget approval &mdash; freed credits open room to expand data consumption (net-new logo acquisition + enrichment).
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F91D; <strong>Internal HG-only excluded:</strong> Weekly GTM Enablement Session (8 AM PT, 60 min) &mdash; Pam Huck attended along with Katie Pariseau, Samantha Staynings, Nik Koutsoukos (HG CTO), Disha Ahuja, Grace Wells, Katie Allison, Rachel Christopher, Ranjit Nair. Topic: Context 26 virtual event prep + HG Customer Voice launch. All HG staff, no customer.
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header"><div class="avatar av-varun">VT</div><div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">MongoDB (Renewal Scoping &mdash; pricing drop 0.5&rarr;0.1 credit unlocks expansion) &middot; BMC Software (Concerning &mdash; Copilot 2.0 SFDC integration blocker + Louise&rsquo;s "action-not-discussion" pushback) &middot; 5 CSM events no recording: CBTS (no transcript), ServiceNow monthly, Five9 sync, Informatica ×3, Exclusive Networks biweekly, Zendesk TR CSM Sync, Pegasystems biweekly, Insight sync</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header"><div class="avatar av-divyam">DD</div><div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Snowflake (first Divyam&times;Alpesh Jain meeting; Cloud Dynamics Renewal 2028; new-logo + market-expansion use cases) &middot; 1 unconfirmed w/ recording: Xero Monthly Sync 12:15 AM (EMEA slot) &middot; 2 events no recording: Safaricom Monthly Cadence 4 AM, Informatica weekly co</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header"><div class="avatar av-grey">NJ</div><div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">VASS (Concerning &mdash; Oct 12 renewal, adoption gap flagged by new CS lead Jessica Utley) &middot; 1 unconfirmed: SAP intro 9 AM &middot; 1 event no recording: Exclusive Networks biweekly 9 AM</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header"><div class="avatar av-riley">RR</div><div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Paylocity (TR monthly &mdash; incentive budget dashboard new feature; nothing top-of-mind for customer) &middot; 1 event no recording: MasterControl TR CSM Sync 8 AM</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls (customer)</span>
+      <div class="csm-card-header"><div class="avatar av-grey">PH</div><div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Attended Weekly GTM Enablement Session 8 AM (INTERNAL, excluded) &middot; 2 recordings no transcript (Epicor 9:30 AM, Microsoft Security TR 11:05 AM) &middot; 4 events no recording (Epicor variants, GoTo TR Sync)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="rani">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">RG</div><div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">5 events no recording: Google Weekly ×2 slots (AI Spend 90-day POC + CVP/Intent/IDL) 8 AM, Lenovo/OneSix Onboarding 9:30 AM, Workday monthly 9:30 AM, Cisco GRO 10 AM. Google post-on-site cadence intact but hidden.</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="atisha">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">AW</div><div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 recordings no transcript (SFDC ASEAN 1:30 AM, Deloitte weekly 6 AM) &middot; 3 events no recording (Unily 6 AM, EY Standing Sync 6:30 AM, RSM Quick Syncup 11 AM)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">AL</div><div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event no recording: Catchup 2 AM</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_09_23() {
+  return `<div class="section-label">Confirmed Calls &mdash; Wednesday September 23, 2026</div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>7 CSM-owned recordings had no transcript</strong> &mdash; inferred only. Highest-value manual-log candidates: Divyam&times;Xero Monthly Sync (12:15 AM EMEA slot &mdash; 2027 renewal), Atisha&times;Salesforce Weekly Sync (1:30 AM &mdash; ASEAN 2027 Renewal), Atisha&times;Deloitte weekly (6 AM &mdash; G500 Alliance Strategic Intel 2027 Renewal), Varun&times;CBTS biweekly (7:30 AM), Nick&times;SAP intro (9 AM), Pam&times;Epicor (9:30 AM NA Sales), Pam&times;Microsoft Security TR (11:05 AM &mdash; second week running, part of Sept 22 Security Copilot review-clip thread). 26 additional CSM events had no recording at all.
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F91D; <strong>Internal HG-only excluded:</strong> Weekly GTM Enablement Session (8 AM PT, 60 min &mdash; Pam attended) &mdash; Context 26 launch prep + HG Customer Voice deep-dive. All HG staff, no customer.
+  </div>`;
+}
+
+function dayPulsesHTML_2026_09_23() {
+  const cards = [
+    { csm:'divyam', health:'Healthy', account:'Snowflake',
+      opp:'Vitally Pulse &mdash; Sep 23 Call',
+      arr:'Enterprise &middot; Divyam Dewan', csmlbl:'Divyam Dewan',
+      change:'Sep 23 &middot; New Stakeholder Intro',
+      excerpt:'9/23 DD: 30 min Snowflake / HGI intro (9 AM PT) w/ Alpesh Jain (GTM Strategy & Ops) + Ziad Amira + Gavin Padden. First Divyam&times;Alpesh meeting. Cloud Dynamics Renewal 2028 timeframe. New-logo + market-expansion use cases; foundation-setting.' },
+    { csm:'varun', health:'Healthy', account:'MongoDB Inc',
+      opp:'Vitally Pulse &mdash; Sep 23 Call',
+      arr:'Enterprise &middot; Varun Tiwari', csmlbl:'Varun Tiwari',
+      change:'Sep 23 &middot; Pricing Expansion Opportunity',
+      excerpt:'9/23 VT: 30 min MongoDB Renewal Scoping (9:30 AM PT) w/ Steven Harbron + Ziad Amira. New credit model drops install cost 0.5&rarr;0.1 &mdash; effective renewal could be ~$16K vs current $40K, but $40K RGIP minimum. Steven has flat-budget approval &mdash; opportunity to expand data consumption at same price.' },
+    { csm:'varun', health:'Concerning', account:'BMC Software Inc',
+      opp:'Vitally Pulse &mdash; Sep 23 Call',
+      arr:'Enterprise &middot; Varun Tiwari', csmlbl:'Varun Tiwari',
+      change:'Sep 23 &middot; Copilot Integration Blocker',
+      excerpt:'9/23 VT: 30 min BMC Copilot 2.0 onboarding follow-up (10 AM PT) w/ Louise Eekhof + Rafael Mueller + Rohit Saraf + Augie Buettner. Salesforce integration NOT connected in production &mdash; blocking Copilot value. Louise wants smaller groups + action, not more discussion. Follows Aug 17 Severe Risk pulse.' },
+    { csm:'nick', health:'Concerning', account:'VASS',
+      opp:'Vitally Pulse &mdash; Sep 23 Call',
+      arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
+      change:'Sep 23 &middot; Adoption Gap Pre-Renewal',
+      excerpt:'9/23 NJ: 30 min VASS 2027 plans (10:30 AM PT) w/ Jessica Utley (new CS lead). Oct 12 renewal &mdash; Jessica flagged internal adoption "not as high as we would like it to be." SAP dev-fund path assumed. Adoption gap + 19 days to renewal + new CS lead = Concerning.' },
+    { csm:'riley', health:'Healthy', account:'Paylocity',
+      opp:'Vitally Pulse &mdash; Sep 23 Call',
+      arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
+      change:'Sep 23 &middot; Incentive Budget Feature',
+      excerpt:'9/23 RR: 30 min Paylocity TR monthly (12:30 PM PT) w/ Matt Doyle + Olivia + Anderson (HG AM). Incentive budget dashboard now live in vendor portal ($14,725 balance surfaced). Nothing top-of-mind on customer side. Cadence intact.' },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div style="font-size:13px;font-weight:600;color:#e2e8f0;">${c.account}</div>
+          <div style="font-size:11px;color:#94a3b8;margin-top:2px;">${c.opp}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_09_23() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('0923-1')?'done':''}" data-csm="varun" id="action-0923-1">
+      <div class="action-checkbox ${doneActions.has('0923-1')?'checked':''}" onclick="toggleAction('0923-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F534; BMC &mdash; Unblock Salesforce integration for Copilot 2.0; shrink meeting size per Louise&rsquo;s ask</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Varun Tiwari + Augie Buettner &middot; Louise Eekhof explicitly asked for smaller focused groups and action-oriented sessions, not more discussion. Salesforce integration is NOT connected in production which is the value-blocker. Confirm SFDC integration owner on BMC side (Louise vs Rohit/HG side), get connection scheduled this week, and prep territory-mapping segment-field configuration (growth/enterprise/star) that Rafael and the BMC engineering team can review. Prior Aug 17 memory: BMC Severe Risk pulse ($284.7K ARR); this Copilot 2.0 deployment path is the reset.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0923-2')?'done':''}" data-csm="nick" id="action-0923-2">
+      <div class="action-checkbox ${doneActions.has('0923-2')?'checked':''}" onclick="toggleAction('0923-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F534; VASS &mdash; Rapid-adoption assist + 2027 packaging pre-Oct 12 renewal</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Nick Johnson &middot; Oct 12 renewal is 19 days out. New CS lead Jessica Utley flagged low internal adoption &mdash; the renewal case has to bridge that gap. Actions: (1) confirm SAP dev-fund availability + timeline w/ Jessica, (2) offer VASS-specific rapid-adoption sessions (not the cohort model that had mixed attendance in 2026), (3) draft 2027 packaging that ties to specific VASS use cases so Jessica has a defensible internal case. If SAP funds path doesn&rsquo;t work, propose self-funded bridge to buy time.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0923-3')?'done':''}" data-csm="varun" id="action-0923-3">
+      <div class="action-checkbox ${doneActions.has('0923-3')?'checked':''}" onclick="toggleAction('0923-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; MongoDB &mdash; Model out flat-budget expansion options (net-new logos + enrichment) at $40K RGIP min</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Varun Tiwari + Ziad Amira &middot; New pricing drops install-data credit cost 0.5&rarr;0.1. Steven has approval for flat budget and the new pricing math lands ~$16K but the RGIP feed has a $40K minimum. Package that gap as expansion: freed credit capacity applied to net-new logo acquisition + broader enrichment (Steven&rsquo;s revised technology list already has swap-ins). Coordinate with Gaprit Moran (India procurement) on signature timing. Deliver the options doc to Steven + Will Bracken this week.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0923-4')?'done':''}" data-csm="divyam" id="action-0923-4">
+      <div class="action-checkbox ${doneActions.has('0923-4')?'checked':''}" onclick="toggleAction('0923-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Snowflake &mdash; Follow-up 1:1 with Alpesh Jain + Matt intro; map GTM Strategy & Ops use cases to HG data</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Divyam Dewan &middot; First Divyam&times;Alpesh meeting today. Alpesh runs part of GTM Strategy & Ops at Snowflake covering new logos + market expansion. Next-step meeting to walk through platform + specific new-logo/expansion queries. Also introduce Alpesh to Matt (whom Ziad has been the main HG contact for) to close the loop across the Snowflake side.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0923-5')?'done':''}" data-csm="all" id="action-0923-5">
+      <div class="action-checkbox ${doneActions.has('0923-5')?'checked':''}" onclick="toggleAction('0923-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; CSM team &mdash; Manual Vitally log for 7 inferred (no-transcript) + 26 no-recording events</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Priority captures: Rani&rsquo;s Google Weekly ×2 slots + Workday monthly + Cisco GRO + Lenovo/OneSix (Google post-on-site cadence intact but hidden); Pam&rsquo;s Epicor + Microsoft Security TR (second week running); Varun&rsquo;s ServiceNow + Five9 + Informatica ×3 + Pegasystems + Exclusive Networks; Nick&rsquo;s SAP intro + Exclusive Networks biweekly; Atisha&rsquo;s SFDC ASEAN + Deloitte weekly + Unily + EY + RSM. Highest-signal for renewal risk tracking: BMC Concerning follow-up capture, VASS renewal timeline, Cisco WarRoom Oct 6 renewal (still Poor pulse).</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0923-6')?'done':''}" data-csm="rani" id="action-0923-6">
+      <div class="action-checkbox ${doneActions.has('0923-6')?'checked':''}" onclick="toggleAction('0923-6')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Google &mdash; Post-on-site debrief STILL owed (3-day gap from Monday) + Weekly Sync cadence follow-through</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Rani Guy &middot; Monday&rsquo;s in-person on-site with Lawrence + Noah Rowitz + Mark Fell still lacks a manual Vitally log &mdash; capturing Lawrence&rsquo;s reaction to the expansion pitch, pilot alignment, and DPA/amendment path is time-critical for December renewal execution. Also: Sept 23 had 2 Google weekly sync events (AI Spend 90-day POC + CVP/Intent/IDL Google Cloud) with no recording &mdash; capture manually.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0923-7')?'done':''}" data-csm="all" id="action-0923-7">
+      <div class="action-checkbox ${doneActions.has('0923-7')?'checked':''}" onclick="toggleAction('0923-7')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F6A8; Ops &mdash; Weflow sync Day 15 regressed to 86% no-transcript &mdash; escalate NOW</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Ops / Rishi / Yuan &middot; No-transcript rate jumped to 86% Sept 23 (up from 79% Sept 22, 78% Sept 21). Trajectory: Sep 16 92% &rarr; Sep 17 84% &rarr; Sep 18 71% &rarr; Sep 21 78% &rarr; Sep 22 79% &rarr; <strong>Sep 23 86%</strong>. The plateau escalation trigger set Sept 22 has now been exceeded &mdash; formal Weflow product-owner brief + leadership visibility warranted. Recording volume was 145 today (highest in the window); combined with 86% no-transcript rate this hides an unusually large chunk of CSM engagement.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
+
