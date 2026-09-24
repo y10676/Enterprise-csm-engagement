@@ -1372,200 +1372,11 @@ function dayActionsHTML_2026_09_08() {
   <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
 }
 
-function dayData_2026_09_09() {
-  return {
-    calls: [
-      { ts: 'Sep 9 · 8:00 AM', csm: 'rani', account: `Hitachi Vantara`,
-        note: `Clay + universe-feed transition discussion with Rebecca Klein + Umar Farooq Adam (Hitachi) + Adrian Escobar (HG). Anders universe-feed contract terminates Oct 22; Hitachi migrating to credit-based API model. New API charges on data returned, not calls. Follow-up end of Sept for credit projections.`,
-        mins: 30, health: 'Healthy',
-        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
-        detail: `Hitachi transition planning with Rebecca Klein + Umar Farooq Adam + Adrian Escobar. Anders "universe feed" data service ends Oct 22 &mdash; Hitachi must remove all licensed data by that deadline. Transitioning Hitachi to credit-based data access model via API (potentially lower cost + more flexibility). Clarified new API charges based on data returned, not just API calls (important for cost management). Firmographic + technographic needs to be scoped for new credit subscription. Follow-up end of Sept to review credit projections + rate cards.` },
-      { ts: 'Sep 9 · 9:30 AM', csm: 'riley', account: `Intuit (Desktop Enterprise)`,
-        note: `TR CSM sync on Desktop Enterprise &rarr; Online migration. QB Desktop Enterprise sunsetting; premium content + third-party validation being considered. Buyer&rsquo;s Choice review deadline Oct 16. Concern: awards for Desktop may inadvertently keep users in ecosystem.`,
-        mins: 30, health: 'Healthy',
-        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
-        detail: `Intuit Desktop Enterprise TR CSM sync. QB Online being brought to feature parity with Desktop (inventory + manufacturing). Strategic push to migrate users from Desktop Enterprise (sunsetting product) to online versions. Considering premium content + third-party validation to highlight online benefits. Buyer&rsquo;s Choice review cycle deadline Oct 16 approaching. Strategic tension: winning Desktop Enterprise awards may keep users in Desktop ecosystem, hindering online transition. Riley to sync with Martin + Katie internally; Andy to check with Natalie on content interest/feasibility.` },
-    ],
-    pulses: [
-      { csm: 'rani', account: `Hitachi Vantara`, health: 'Healthy',
-        note: `Clay integration + Anders universe-feed termination transition. Oct 22 data-removal deadline. Credit-based API model transition; follow-up end of Sept.` },
-      { csm: 'riley', account: `Intuit (Desktop Enterprise)`, health: 'Healthy',
-        note: `Desktop&rarr;Online migration push. Premium content + third-party validation. Buyer&rsquo;s Choice deadline Oct 16. Strategic award focus tension to resolve.` },
-    ],
-  };
-}
 
-function dayMeta_2026_09_09() {
-  return {
-    pills: [
-      ['dot-teal',   '2 Calls'],
-      ['dot-amber',  '2 Expansion'],
-      ['dot-green',  '2 Vitally Pulses'],
-      ['dot-grey',   'Wed Sep 9 &middot; 93 scanned'],
-    ],
-    tabs: ['Overview', 'Calls (2)', 'Pulses (2)', 'Action Items (5)']
-  };
-}
 
-function dayOverviewHTML_2026_09_09() {
-  return `<div class="section-label">Team Activity &mdash; Wednesday September 9, 2026</div>
-  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
-    &#x1F4C5; <strong>Wednesday Sep 9 &mdash; 93 recordings scanned</strong> via SFDC SOQL &middot; <strong>2 confirmed calls</strong> (Rani, Riley) &middot; 0 concerning &middot; 2 expansion signals &middot; 37 CSM events but 75% no-transcript rate (Weflow backlog Day 5)
-  </div>
-  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
-    &#x1F4C8; <strong>EXPANSION:</strong> Hitachi Clay + Anders universe-feed termination (Oct 22) &mdash; transition to credit-based API model (Rani) &middot; Intuit Desktop Enterprise&rarr;Online migration push + Buyer&rsquo;s Choice review deadline Oct 16 (Riley)
-  </div>
-  <div style="background:#1c1f26;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fcd34d;">
-    &#x26A0;&#xFE0F; <strong>Weflow sync backlog Day 5 (75% no-transcript):</strong> No improvement post-holiday. Atisha (Deloitte, EY, Intel, Unily), Nick still-PTO (Accenture Projects Connect x2, Siemens biweekly), Varun (CBTS, Insight, Informatica x3, Pegasystems, Exclusive Networks), Pam&rsquo;s entire day (Cisco, Datadog, Epicor, MSFT Security, GoTo, Talkdesk).
-  </div>
-  <div class="overview-grid">
 
-    <div class="csm-card has-calls" data-csm="rani">
-      <span class="call-badge">1 CALL</span>
-      <div class="csm-card-header">
-        <div class="avatar av-grey">RG</div>
-        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
-      </div>
-      <div class="csm-metrics">
-        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
-        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
-        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
-      </div>
-      <div class="csm-account-note">Hitachi (&#x1F4C8; Clay + Anders universe-feed transition to credit-based API) &middot; Google + Lenovo + Cisco GRO all no-transcript</div>
-    </div>
 
-    <div class="csm-card has-calls" data-csm="riley">
-      <span class="call-badge">1 CALL</span>
-      <div class="csm-card-header">
-        <div class="avatar av-riley">RR</div>
-        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
-      </div>
-      <div class="csm-metrics">
-        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
-        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
-        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
-      </div>
-      <div class="csm-account-note">Intuit (&#x1F4C8; Desktop Enterprise TR sync &mdash; Desktop&rarr;Online migration + Buyer&rsquo;s Choice Oct 16) &middot; BMC + Hootsuite + Litmus all no-transcript</div>
-    </div>
 
-    <div class="csm-card no-calls" data-csm="nick">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header"><div class="avatar av-grey">NJ</div><div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Last day of PTO (back tomorrow). 4 events (Accenture Projects Connect x2 at 3:30 AM, Siemens biweekly 8 AM, Exclusive Networks 9 AM) all no-transcript</div>
-    </div>
-
-    <div class="csm-card no-calls" data-csm="atisha">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header"><div class="avatar av-grey">AW</div><div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">7 events (SFDC ASEAN 1:30 AM, Deloitte weekly 6 AM, Unily, EY standing sync 6:30 AM, Intel x2 at 7:30 AM, Talkdesk 8:30 AM) all no-transcript</div>
-    </div>
-
-    <div class="csm-card no-calls" data-csm="varun">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header"><div class="avatar av-varun">VT</div><div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">7 events (Insight, CBTS monthly, Informatica x3 at 9 AM, Exclusive Networks biweekly, Pegasystems biweekly 10:30 AM) all no-transcript</div>
-    </div>
-
-    <div class="csm-card no-calls" data-csm="pam">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header"><div class="avatar av-grey">PH</div><div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">7 events (Cisco TR 7:30 AM, Datadog 9:30 AM, Epicor TR x3 at 11 AM, MSFT Security 11:05 AM, GoTo TR 11:30 AM) &mdash; entire day dark</div>
-    </div>
-
-    <div class="csm-card no-calls" data-csm="divyam">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header"><div class="avatar av-divyam">DD</div><div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event (Informatica weekly co-w/ Varun 9 AM) no-transcript</div>
-    </div>
-
-    <div class="csm-card no-calls" data-csm="andy">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header"><div class="avatar av-grey">AL</div><div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 events (Catchup 2 AM, FactSet TR walkthrough 9 AM) &mdash; FactSet inferred from event ownership, no transcript</div>
-    </div>
-
-  </div>`;
-}
-
-function dayCallsHTML_2026_09_09() {
-  return `<div class="section-label">Confirmed Calls &mdash; Wednesday September 9, 2026</div>
-  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
-    &#x1F4C8; <strong>EXPANSION:</strong> Hitachi Clay + Anders universe-feed transition &mdash; credit-based API model (Rani) &middot; Intuit Desktop Enterprise&rarr;Online migration push + Buyer&rsquo;s Choice Oct 16 deadline (Riley)
-  </div>
-  <div style="background:#1c1f26;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fcd34d;">
-    &#x26A0;&#xFE0F; <strong>Weflow sync backlog Day 5 (75% no-transcript):</strong> Sept 2 71% &rarr; Sept 3 75% &rarr; Sept 4 76% &rarr; Sept 8 72% &rarr; Sept 9 75%. Pam had 7 events dark (Cisco, Datadog, Epicor x3, MSFT Security, GoTo). Atisha had 7 events dark. Varun had 7 events dark. Escalate to Weflow if not already.
-  </div>`;
-}
-
-function dayPulsesHTML_2026_09_09() {
-  const cards = [
-    { csm:'rani', health:'Healthy', account:`Hitachi Vantara`, opp:`Vitally Pulse &mdash; Sep 9 Call`,
-      arr:`Enterprise &middot; Rani Guy`, csmlbl:`Rani Guy`,
-      change:`Sep 9 &middot; Healthy`,
-      excerpt:`Clay + Anders universe-feed termination (Oct 22 data-removal deadline). Transitioning Hitachi to credit-based API model &mdash; new charges on data returned, not calls. Follow-up end of Sept for credit projections + rate cards.` },
-    { csm:'riley', health:'Healthy', account:`Intuit (Desktop Enterprise)`, opp:`Vitally Pulse &mdash; Sep 9 Call`,
-      arr:`Enterprise &middot; Riley Rogers`, csmlbl:`Riley Rogers`,
-      change:`Sep 9 &middot; Healthy`,
-      excerpt:`QB Desktop&rarr;Online migration push. Premium content + third-party validation being considered. Buyer&rsquo;s Choice review deadline Oct 16. Strategic tension: Desktop awards may keep users in Desktop ecosystem, hindering online transition.` },
-  ];
-  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
-  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
-  return `<div class="pulse-grid">${cards.map(c=>`
-    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
-      <div class="pulse-card-top">
-        <div>
-          <div class="pulse-account">${c.account}</div>
-          <div class="pulse-opp">${c.opp}</div>
-          <div class="pulse-arr">${c.arr}</div>
-        </div>
-        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
-      </div>
-      <div class="pulse-excerpt">${c.excerpt}</div>
-      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
-    </div>`).join('')}</div>
-  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
-}
-
-function dayActionsHTML_2026_09_09() {
-  return `<div class="action-list">
-    <div class="action-item ${doneActions.has('0909-1')?'done':''}" data-csm="rani" id="action-0909-1">
-      <div class="action-checkbox ${doneActions.has('0909-1')?'checked':''}" onclick="toggleAction('0909-1')"></div>
-      <div class="action-body">
-        <div class="action-title">&#x1F534; Hitachi &mdash; Oct 22 universe-feed data-removal deadline + credit projections</div>
-        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy + Adrian Escobar &middot; Hitachi must remove all licensed Anders universe-feed data by Oct 22 (43 days). Finalize credit calculations for transition period + provide detailed rate cards. Reconvene end of Sept to solidify path forward and confirm firmographic + technographic subscription scope.</div>
-      </div>
-    </div>
-    <div class="action-item ${doneActions.has('0909-2')?'done':''}" data-csm="riley" id="action-0909-2">
-      <div class="action-checkbox ${doneActions.has('0909-2')?'checked':''}" onclick="toggleAction('0909-2')"></div>
-      <div class="action-body">
-        <div class="action-title">&#x1F4C8; Intuit &mdash; Desktop&rarr;Online strategy + Buyer&rsquo;s Choice Oct 16 push</div>
-        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Riley Rogers &middot; Confirm w/ Morgan whether PDF example can be shared with Andy (or provide alternate). Sync with Martin + Katie before next week to prep. Andy to check w/ Natalie on content interest + review-campaign feasibility. Address strategic tension: Desktop awards vs Online migration goal ahead of Oct 16 deadline.</div>
-      </div>
-    </div>
-    <div class="action-item ${doneActions.has('0909-3')?'done':''}" data-csm="all" id="action-0909-3">
-      <div class="action-checkbox ${doneActions.has('0909-3')?'checked':''}" onclick="toggleAction('0909-3')"></div>
-      <div class="action-body">
-        <div class="action-title">&#x26A0;&#xFE0F; Ops &mdash; Weflow backlog Day 5 &mdash; formal escalation needed</div>
-        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Ops &middot; Fifth day of elevated no-transcript rate (75% Sept 9). Pam + Atisha + Varun each had 7 events dark. Losing signal on every major account daily (Cisco, Datadog, MSFT Security, Deloitte, EY, Intel, Informatica, Pegasystems). Open Weflow support ticket + consider inferred-from-event-ownership fallback for weekly aggregates.</div>
-      </div>
-    </div>
-    <div class="action-item ${doneActions.has('0909-4')?'done':''}" data-csm="nick" id="action-0909-4">
-      <div class="action-checkbox ${doneActions.has('0909-4')?'checked':''}" onclick="toggleAction('0909-4')"></div>
-      <div class="action-body">
-        <div class="action-title">&#x1F4CB; Nick PTO return prep &mdash; Accenture + Siemens + Exclusive Networks catchup</div>
-        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Nick Johnson (returning tomorrow) &middot; 4 Nick-owned events on Sept 9 all no-transcript (Accenture Projects Connect x2 at 3:30 AM, Siemens biweekly 8 AM, Exclusive Networks biweekly 9 AM). Brief Nick on coverage decisions + open commitments made during PTO before he re-engages.</div>
-      </div>
-    </div>
-    <div class="action-item ${doneActions.has('0909-5')?'done':''}" data-csm="riley" id="action-0909-5">
-      <div class="action-checkbox ${doneActions.has('0909-5')?'checked':''}" onclick="toggleAction('0909-5')"></div>
-      <div class="action-body">
-        <div class="action-title">&#x1F4CB; BMC &mdash; TR offering/roadmap review follow-up (from Sept 1 concerning signal)</div>
-        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Riley Rogers &middot; Sept 9 BMC TR offering/roadmap review event (6:30 AM) had no transcript. This is a continuation of the Sept 1 concerning conversation (BMC won&rsquo;t renew at current cost, evaluating G2/PeerSpot). Log outcome + next steps in Vitally regardless of transcript status; loop Augie + Todd.</div>
-      </div>
-    </div>
-  </div>
-  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
-}
 
 
 
@@ -4544,6 +4355,363 @@ function dayActionsHTML_2026_09_16() {
       <div class="action-body">
         <div class="action-title">&#x26A0;&#xFE0F; Ops &mdash; Weflow SFDC-sync backlog persisting (92% no-transcript &mdash; worst-yet)</div>
         <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Ops &middot; Sept 16 &mdash; 92 of 100 recordings had no SFDC transcript (92% &mdash; worst rate in the backlog). Only 2 customer calls confirmed via SFDC speaker detection (Microsoft + F5); 14 additional confirmations recovered via Weflow &lsquo;participants&rsquo; fallback. Formal Weflow support ticket long overdue; daily scan entirely dependent on Weflow participant metadata.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
+
+
+
+
+// ============================================================
+// Wednesday September 9, 2026
+// ============================================================
+
+function dayData_2026_09_09() {
+  return {
+    calls: [
+      { ts: 'Sep 9 &middot; 7:00 AM', csm: 'riley', account: `IBM (TR Biweekly)`,
+        note: `TrustRadius IBM biweekly w/ Ruxandra Marin + Mihaela Nedelescu + Cole Arutian + Mardigan Moffat. Buyer&rsquo;s Choice deadline extended to Oct 16 (+3 weeks). New Slack channel + client story strategists channels for review generation. AI-initiative metrics + crawler analytics discussion.`,
+        mins: 21, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `IBM TR biweekly. Buyer&rsquo;s Choice reviews deadline extended to Oct 16 &mdash; extra 3 weeks. New review-gen channels: Slack channel w/ CSMs + architects for data + AI products; client story strategists engaged w/ incentive for review promotion. Direct outreach to G2 reviewers to solicit TR reviews (replacing prior respondents). TR value for AI initiatives being measured via vendor-portal mentions, citations, sentiment, prompt data. Crawler analytics: understanding &lsquo;training&rsquo; vs &lsquo;grounding&rsquo; AI models + how often chatbots reference TR reviews. Riley to investigate "2026 champs" campaign code; check category-level dashboard issue; explore consolidated IBM portfolio reporting. Mihaela to post in AI/data Slack channel tomorrow. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 9 &middot; 7:30 AM', csm: 'pam', account: `Cisco (TR Recurring)`,
+        note: `TR Recurring w/ Ross Marchant + Mellissa Jensen + Mardigan Moffat. Cisco UCS product family restructuring on TR (X/C/S/B series + UCS Manager). Reporting shift to monthly (reviews + ratings + traffic + crawler info). Geo-dashboard + custom questions refresh for Cisco Live.`,
+        mins: 23, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `Cisco UCS product-listing restructuring on TR. Deciding between consolidating UCS X/C/S/B series into single profile vs maintaining separate listings. Old intent-data reporting being discontinued; shifting to monthly delivery of reviews + ratings + page traffic + crawler info. Geo-dashboard + product monitoring features (citations + sentiment) available but not yet integrated into standard reporting &mdash; expert session planned. Custom questions for 13 products being revisited for Cisco Live alignment. Ross to research UCS family structure + product representation options by end of month; Pam to schedule monitoring-expert call + pull custom questions for 13 products by end of month. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 9 &middot; 7:30 AM', csm: 'varun', account: `CBTS`,
+        note: `Monthly Sync w/ Mitchell VanderKam + Zach King + Ziad Amira + Omkar Hunuswadkar. Data-feed walkthrough (spend projections + installation signals + time-series adoption + FAI + Gen AI navigator). Cadence changing to monthly. Contact-data offering feedback needed. ICP file due before the 20th.`,
+        mins: 14, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `Varun walked Mitchell + Zach through monthly programmatic data feed elements: spend projections (12-month, dedupe corporate-parent double-counting), installation signals (first/last detected + location + intensity), time-series technographic adoption (competitor + prioritization analysis), FAI/buying centers (departmental usage hotspots), Gen AI navigator. Cadence shifting from bi-weekly to monthly placeholder. Varun to share collateral + knowledge-ops + website link + prepared file + use-case reports. Mitchell to provide feedback on new contact data offering + share ICP file this month (before the 20th) + attempt to automate monthly file this week. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 9 &middot; 8:00 AM', csm: 'rani', account: `Hitachi Vantara`,
+        note: `Clay + Anders universe-feed transition discussion w/ Rebecca Klein + Umar Farooq Adam + Adrian Escobar. Anders universe-feed contract terminates Oct 22 &mdash; ALL licensed data must be removed. Transitioning to credit-based API model. Follow-up Sept 30 tentative.`,
+        mins: 41, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Hitachi Vantara transition planning. Anders universe-feed contract NOT renewing post-Oct 22 &mdash; Anders will only renew intent portion for marketing. ALL ingested contract + spend data from universe-feed license MUST be removed from Hitachi systems by Oct 22. New credit-based model proposed for ongoing needs (potentially lower cost vs Clay/third-party). API access being explored to bridge gap + facilitate ongoing post-contract access. Provisional estimate: ~68K credits for initial needs (80K firmographics + 100K technographics). Rani to send official data-removal letter to Miguel + legal docs; Rani+Adrian to calculate credit costs + confirm API details + credit-charging mechanism (per API call vs per result returned). Follow-up meeting Sept 30 tentative. Confirmed via SFDC transcript speaker detection.`, source: 'sfdc' },
+
+      { ts: 'Sep 9 &middot; 8:00 AM', csm: 'nick', account: `Siemens AG`,
+        note: `Bi-weekly w/ Jeff Wymer + David Garcia Thomas + Max Shaw + Gavin Padden + Chlo&eacute; Portier. Account Compass expansion to DI Automation; Siemens reshifting progress; renewal quarter-end push (discount tied to quarter-end alignment).`,
+        mins: 17, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `Siemens bi-weekly. Account Compass expansion to DI Automation pending data-source identification from Mitchell + Ross. Siemens reshifting progressing (current team ring-fenced for at least next year). ABM initiative w/ 75 pharma accounts showing high intent signals post-pre-warming. Renewal nearing official date &mdash; efforts to process before quarter-end for discount alignment. Next: Jeff to wait on Mitchell + Ross for data sources; David to set up prototype call w/ Chloe + Francis (on-demand live report generation from MCP); David to coordinate w/ Nick on December piece + MCP credits; Max to follow up w/ intent teams on DI Automation + Smart Infrastructure topics; Jeff to get on Fred (Finance) calendar today re renewal status. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 9 &middot; 9:00 AM', csm: 'andy', account: `FactSet Research Systems`,
+        note: `TR Walkthrough w/ Riley co-attend + Greta Wilson Spiess + Shea Williams + Lin Zuo + Anderson Duncan. Contract clarification: $30K Customer Voice Package base + $10K content bundle add-on decision deferred until Aiden returns Sept 17. Vendor portal re-enable + native lead forms setup.`,
+        mins: 63, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Expansion',
+        detail: `FactSet TR contract clarification + customer voice package walkthrough. Proceeding with base $30K Customer Voice Package. $10K content bundle decision deferred pending Aiden's return Sept 17 &mdash; Greta + Anderson to follow up w/ Aiden on intended use before finalizing. Intent data + intent-driven leads discussed as future add-ons (not immediate). Anderson to submit ticket to re-enable vendor portal access ASAP + send content-type list to Greta + confirm ability to reach net-new reviewers + update negative-review notifications from Aiden to Lin. Lin taking over TR relationship day-to-day. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 9 &middot; 9:00 AM', csm: 'riley', account: `FactSet Research Systems (co-attend)`,
+        note: `Riley co-attended FactSet TR Walkthrough supporting Andy + Anderson. Same content &mdash; $30K Customer Voice Package base + $10K content bundle deferred until Aiden returns Sept 17. Lin taking over day-to-day TR relationship.`,
+        mins: 63, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Expansion',
+        detail: `Riley co-attended FactSet TR walkthrough providing historical context (previously worked with Aiden on the account). Same content &mdash; contract package clarification, vendor portal re-enable, native lead forms setup, Lin as new day-to-day owner. Attendance via Weflow participants.`, source: 'weflow' },
+
+      { ts: 'Sep 9 &middot; 9:00 AM', csm: 'varun', account: `Exclusive Networks`,
+        note: `Bi-weekly w/ Matt Tinker + Angus Hyams + Nick co-attend. Safaricom account gone quiet (main contact leaving, no successor). Angus to lead Safaricom renewal &mdash; target November. Digital initiative proposal submitted + awaiting feedback.`,
+        mins: 7, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `Short Exclusive Networks bi-weekly. Safaricom account has become inactive &mdash; main contact leaving, no successor identified. Angus to lead Safaricom renewal w/ target sign-off November. Q3+Q4 renewal volume increasing; early contract finalization preferred to avoid end-of-year stress. Matt updated on digital initiative proposal (submitted + awaiting response). Moving from platform to API/data feed indicates higher market maturity + better utilization. Matt to sync w/ Ben by next week on digital initiative mapping. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 9 &middot; 9:00 AM', csm: 'nick', account: `Exclusive Networks (co-attend)`,
+        note: `Nick co-attended Exclusive Networks bi-weekly supporting Varun + Angus. Same content &mdash; Safaricom account inactive, Angus leading renewal to November, digital initiative proposal submitted.`,
+        mins: 7, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `Nick co-attended Exclusive Networks bi-weekly. Same content &mdash; Safaricom account gone quiet (contact leaving), Angus to lead Safaricom renewal to November, digital initiative proposal submitted + awaiting feedback. Attendance via Weflow participants.`, source: 'weflow' },
+
+      { ts: 'Sep 9 &middot; 9:30 AM', csm: 'riley', account: `Intuit (Desktop Enterprise)`,
+        note: `TR CSM sync on Desktop Enterprise&rarr;Online migration. Premium content + third-party validation strategy for switch narrative. Buyer&rsquo;s Choice review deadline Oct 16 approaching. Strategic tension: Desktop awards may keep users in Desktop ecosystem.`,
+        mins: 21, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Intuit Desktop Enterprise TR sync w/ Andrew Lum + Mardigan. QB Online being brought to feature parity w/ Desktop (inventory + manufacturing). Strategic push to migrate users from Desktop Enterprise (sunsetting product) to online. Premium content (case studies + testimonials) + third-party validation being considered to highlight online benefits. Buyer&rsquo;s Choice review cycle deadline Oct 16 approaching. Strategic tension flagged: winning Desktop Enterprise awards may inadvertently keep users in Desktop ecosystem, hindering online transition. Riley to confirm w/ Morgan whether existing premium-content PDF example can be shared w/ Andy + meet w/ Mardigan + Katie to review premium-content idea + meet w/ Natalie Pratt (IES team) Monday to gauge online-advance team interest. Confirmed via SFDC transcript speaker detection.`, source: 'sfdc' },
+
+      { ts: 'Sep 9 &middot; 10:00 AM', csm: 'rani', account: `NetApp`,
+        note: `IT Spend + PTB Models discussion w/ Adrian Escobar + Gavin Padden + David Crossman + NetApp team (Madhup Tibrewala + Jieun Chung + Akanksha Jain). Fit/need/intent PTB framework walkthrough. Data dictionary + specific field definitions being shared.`,
+        mins: 60, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `NetApp PTB modeling session. HG&rsquo;s data supports building Propensity-to-Buy (PTB) models via fit/need/intent framework: firmographics + IT spend + technology + contracts + intent. Firmographic accuracy high for large orgs, banded for SMBs. IT spend +/-6% accuracy. Technology data 90%+ accuracy (coverage varies for end-user devices). GSI contracts 100% accurate but limited to announced. Intent data (TR) captures active research + evaluation. Next: Gavin to share HG data dictionary + fields used in scoring models (by EoW); Madhup/Akanksha to provide definitions for digital-native + sovereign-cloud + neo-cloud; Adrian + Megan + Gabe to discuss incorporating intent data (top + bottom of funnel) tomorrow; Gavin to share fit/need/intent model slide w/ Akanksha for internal discussion refinement. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 9 &middot; 11:00 AM', csm: 'pam', account: `Epicor Software Corporation`,
+        note: `TR sync w/ Scott Olson + Michelle Graham + Anderson Duncan. Final proposal alignment: same base services as prior year + geo-offering consultation added + 46-47% discount (highest among customers). Procurement navigation the main challenge.`,
+        mins: 12, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Epicor final proposal review. Proposal aligned w/ previous agreements + core services intact. Buyer intent data integrated into leads offering (drives PPLs, not a separate signal). 46-47% discount secured (highest among customers). Value add: consultation for custom prompts w/ new geo offering at no additional cost. Main challenge: new Epicor procurement process may cause short-term delays. Anderson to send final executable proposal ASAP (hopefully today). Scott to send proposal to Stephanie + flag for procurement + immediately submit to Wrike requesting PO. Scott/Anderson to connect Anderson w/ procurement if needed. Ensure order form has capitalized 'T' in 'Biz Track'. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+    ],
+    pulses: [
+      { csm: 'riley', account: `IBM (TR Biweekly)`, health: 'Healthy',
+        note: `Buyer&rsquo;s Choice deadline extended to Oct 16. New Slack + client story strategist channels for review gen. AI-initiative metrics + crawler analytics discussion.` },
+      { csm: 'pam', account: `Cisco (TR Recurring)`, health: 'Healthy',
+        note: `Cisco UCS product family restructuring on TR (X/C/S/B series + UCS Manager). Reporting shift to monthly. Geo-dashboard + custom questions refresh for Cisco Live.` },
+      { csm: 'varun', account: `CBTS`, health: 'Healthy',
+        note: `Data-feed walkthrough (spend projections + installation signals + time-series + FAI). Cadence changing to monthly. Contact-data feedback needed; ICP file before the 20th.` },
+      { csm: 'rani', account: `Hitachi Vantara`, health: 'Healthy',
+        note: `Clay + Anders universe-feed termination Oct 22 &mdash; all licensed data must be removed. Transitioning to credit-based API model. Follow-up Sept 30 tentative.` },
+      { csm: 'nick', account: `Siemens AG`, health: 'Healthy',
+        note: `Bi-weekly &mdash; Account Compass expansion to DI Automation; Siemens reshifting progressing; renewal quarter-end push (discount tied to alignment).` },
+      { csm: 'andy', account: `FactSet Research Systems`, health: 'Healthy',
+        note: `TR Walkthrough &mdash; $30K Customer Voice Package base + $10K content bundle decision deferred until Aiden returns Sept 17. Vendor portal re-enable + Lin new day-to-day owner.` },
+      { csm: 'riley', account: `FactSet Research Systems (co-attend)`, health: 'Healthy',
+        note: `Riley co-attended FactSet TR Walkthrough providing historical context. Same content &mdash; contract package clarification + Lin as new day-to-day owner.` },
+      { csm: 'varun', account: `Exclusive Networks`, health: 'Healthy',
+        note: `Bi-weekly &mdash; Safaricom account inactive (main contact leaving). Angus to lead Safaricom renewal to November. Digital initiative proposal submitted + awaiting feedback.` },
+      { csm: 'nick', account: `Exclusive Networks (co-attend)`, health: 'Healthy',
+        note: `Nick co-attended Exclusive Networks bi-weekly supporting Varun + Angus. Same content &mdash; Safaricom account inactive; Angus leading Safaricom renewal to November.` },
+      { csm: 'riley', account: `Intuit (Desktop Enterprise)`, health: 'Healthy',
+        note: `Desktop&rarr;Online migration push. Premium content + third-party validation. Buyer&rsquo;s Choice deadline Oct 16. Strategic tension: Desktop awards vs Online migration.` },
+      { csm: 'rani', account: `NetApp`, health: 'Healthy',
+        note: `PTB modeling session &mdash; fit/need/intent framework walkthrough. Data dictionary + field definitions being shared. NetApp exploring bottom-up modeling approach.` },
+      { csm: 'pam', account: `Epicor Software Corporation`, health: 'Healthy',
+        note: `Final proposal aligned w/ prior year + geo-offering consultation added + 46-47% discount (highest among customers). Procurement navigation is the main challenge.` },
+    ],
+  };
+}
+
+function dayMeta_2026_09_09() {
+  return {
+    pills: [
+      ['dot-teal',   '12 Calls'],
+      ['dot-amber',  '4 Expansion'],
+      ['dot-green',  '12 Vitally Pulses'],
+      ['dot-grey',   'Wed Sep 9 &middot; 93 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (12)', 'Pulses (12)', 'Action Items (7)']
+  };
+}
+
+function dayOverviewHTML_2026_09_09() {
+  return `<div class="section-label">Team Activity &mdash; Wednesday September 9, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Wednesday Sep 9 &mdash; 93 recordings scanned</strong> via SFDC SOQL &middot; <strong>12 confirmed calls</strong> (10 unique + 2 co-attend) across 6 CSMs &middot; 0 concerning &middot; 4 expansion signals &middot; SFDC confirmed 2 (Hitachi + Intuit); Weflow fallback added 8 unique recoveries
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>4 EXPANSION:</strong> Hitachi (Anders universe-feed termination Oct 22 &mdash; credit-based API transition) &middot; Intuit (Desktop&rarr;Online migration + premium content strategy; Buyer&rsquo;s Choice Oct 16) &middot; FactSet (Customer Voice Package $30K base + $10K content bundle decision Sept 17) &middot; Epicor (final proposal + 46-47% discount + procurement navigation)
+  </div>
+  <div style="background:#1c1f26;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fcd34d;">
+    &#x26A0;&#xFE0F; <strong>Weflow SFDC-sync backlog Day 5 (75% no-transcript):</strong> Sept 9 = 93 recordings, 23 with transcripts, 70 without. SFDC speaker detection confirmed only 2 customer calls (Hitachi + Intuit); 8 additional confirmations recovered via Weflow &lsquo;participants&rsquo; fallback.
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">3 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">3</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">105m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">IBM TR (Buyer&rsquo;s Choice Oct 16 push) &middot; FactSet TR co-attend (&#x1F4C8; $30K base + $10K bundle Sept 17) &middot; Intuit (&#x1F4C8; Desktop&rarr;Online migration + Oct 16 Buyer&rsquo;s Choice)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">101m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Hitachi (&#x1F4C8; Anders universe-feed termination Oct 22 + credit-based transition) &middot; NetApp (PTB modeling fit/need/intent framework)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="pam">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">35m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Cisco TR (UCS restructuring + monthly reporting shift) &middot; Epicor (&#x1F4C8; final proposal + 46-47% discount)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">24m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Siemens bi-weekly (Account Compass DI Automation + renewal quarter-end push) &middot; Exclusive Networks co-attend</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">21m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">CBTS (monthly programmatic data-feed walkthrough) &middot; Exclusive Networks (Safaricom inactive + digital initiative)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="andy">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">63m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">FactSet TR Walkthrough (&#x1F4C8; $30K Customer Voice Package + $10K content bundle decision Sept 17)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="atisha">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">AW</div><div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No confirmed customer calls. SFDC transcripts contained no Atisha speaker label; Weflow participants did not surface Atisha on any Sept 9 recording. Deloitte + Intel events had no transcript synced.</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="divyam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-divyam">DD</div><div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No confirmed customer calls. SFDC transcripts contained no Divyam speaker label; Weflow participants did not surface Divyam on any Sept 9 recording.</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_09_09() {
+  return `<div class="section-label">Confirmed Calls &mdash; Wednesday September 9, 2026</div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>4 EXPANSION:</strong> Hitachi (universe-feed transition + credit-based API model) &middot; Intuit (Desktop&rarr;Online migration + premium content strategy) &middot; FactSet ($30K Customer Voice Package + $10K bundle decision) &middot; Epicor (proposal finalization + procurement navigation)
+  </div>
+  <div style="background:#1c1f26;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fcd34d;">
+    &#x26A0;&#xFE0F; <strong>Weekly GTM Enablement Session excluded as INTERNAL:</strong> HG-only participants, no customer engagement &mdash; not counted in daily metrics.
+  </div>`;
+}
+
+function dayPulsesHTML_2026_09_09() {
+  const cards = [
+    { csm:'riley', health:'Healthy', account:`IBM (TR Biweekly)`, opp:`Vitally Pulse &mdash; Sep 9 Call`,
+      arr:`Enterprise &middot; Riley Rogers`, csmlbl:`Riley Rogers`, change:`Sep 9 &middot; Healthy`,
+      excerpt:`Buyer&rsquo;s Choice deadline extended to Oct 16 (+3 weeks). New Slack channels + client story strategists for review gen. AI initiative measurement via vendor portal mentions + citations + sentiment + prompt data. Crawler analytics discussion (training vs grounding).` },
+    { csm:'pam', health:'Healthy', account:`Cisco (TR Recurring)`, opp:`Vitally Pulse &mdash; Sep 9 Call`,
+      arr:`Enterprise &middot; Pam Huck`, csmlbl:`Pam Huck`, change:`Sep 9 &middot; Healthy`,
+      excerpt:`Cisco UCS product family restructuring on TR (X/C/S/B series + UCS Manager). Reporting shift to monthly (reviews + ratings + traffic + crawler). Geo-dashboard + custom questions refresh for Cisco Live. Decisions by end of month.` },
+    { csm:'varun', health:'Healthy', account:`CBTS`, opp:`Vitally Pulse &mdash; Sep 9 Call`,
+      arr:`Enterprise &middot; Varun Tiwari`, csmlbl:`Varun Tiwari`, change:`Sep 9 &middot; Healthy`,
+      excerpt:`Monthly programmatic data-feed walkthrough w/ Mitchell + Zach: spend projections + installation signals + time-series adoption + FAI + Gen AI navigator. Cadence changing to monthly. Contact-data offering feedback needed; ICP file before the 20th.` },
+    { csm:'rani', health:'Healthy', account:`Hitachi Vantara`, opp:`Vitally Pulse &mdash; Sep 9 Call`,
+      arr:`Enterprise &middot; Rani Guy`, csmlbl:`Rani Guy`, change:`Sep 9 &middot; Healthy`,
+      excerpt:`Anders universe-feed termination Oct 22 &mdash; all licensed data must be removed by that date. Transitioning to credit-based API model (estimated ~68K credits for initial firmographics + technographics needs). Follow-up Sept 30 tentative.` },
+    { csm:'nick', health:'Healthy', account:`Siemens AG`, opp:`Vitally Pulse &mdash; Sep 9 Call`,
+      arr:`Enterprise &middot; Nick Johnson`, csmlbl:`Nick Johnson`, change:`Sep 9 &middot; Healthy`,
+      excerpt:`Siemens bi-weekly &mdash; Account Compass expansion to DI Automation pending data sources. Siemens reshifting progressing (team ring-fenced for at least next year). Renewal quarter-end push (discount tied to alignment).` },
+    { csm:'andy', health:'Healthy', account:`FactSet Research Systems`, opp:`Vitally Pulse &mdash; Sep 9 Call`,
+      arr:`Enterprise &middot; Andy Lim`, csmlbl:`Andy Lim`, change:`Sep 9 &middot; Healthy`,
+      excerpt:`TR Walkthrough &mdash; proceeding with $30K Customer Voice Package base. $10K content bundle decision deferred pending Aiden return Sept 17. Anderson to submit vendor-portal re-enable ticket + send content-type list. Lin new day-to-day TR owner.` },
+    { csm:'riley', health:'Healthy', account:`FactSet Research Systems (co-attend)`, opp:`Vitally Pulse &mdash; Sep 9 Call`,
+      arr:`Enterprise &middot; Riley Rogers`, csmlbl:`Riley Rogers`, change:`Sep 9 &middot; Healthy`,
+      excerpt:`Riley co-attended FactSet TR walkthrough providing historical context. Same content &mdash; $30K + $10K contract clarification, vendor portal re-enable, Lin new day-to-day owner.` },
+    { csm:'varun', health:'Healthy', account:`Exclusive Networks`, opp:`Vitally Pulse &mdash; Sep 9 Call`,
+      arr:`Enterprise &middot; Varun Tiwari`, csmlbl:`Varun Tiwari`, change:`Sep 9 &middot; Healthy`,
+      excerpt:`Bi-weekly &mdash; Safaricom account inactive (main contact leaving, no successor). Angus to lead Safaricom renewal &mdash; target November sign-off. Q3+Q4 renewal volume increasing. Digital initiative proposal submitted + awaiting feedback.` },
+    { csm:'nick', health:'Healthy', account:`Exclusive Networks (co-attend)`, opp:`Vitally Pulse &mdash; Sep 9 Call`,
+      arr:`Enterprise &middot; Nick Johnson`, csmlbl:`Nick Johnson`, change:`Sep 9 &middot; Healthy`,
+      excerpt:`Nick co-attended Exclusive Networks bi-weekly supporting Varun + Angus. Same content &mdash; Safaricom inactive, Angus leading renewal to November, digital initiative proposal in review.` },
+    { csm:'riley', health:'Healthy', account:`Intuit (Desktop Enterprise)`, opp:`Vitally Pulse &mdash; Sep 9 Call`,
+      arr:`Enterprise &middot; Riley Rogers`, csmlbl:`Riley Rogers`, change:`Sep 9 &middot; Healthy`,
+      excerpt:`Desktop Enterprise&rarr;Online migration push. Premium content + third-party validation strategy for switch narrative. Buyer&rsquo;s Choice review deadline Oct 16 approaching. Strategic tension: Desktop awards may keep users in Desktop ecosystem.` },
+    { csm:'rani', health:'Healthy', account:`NetApp`, opp:`Vitally Pulse &mdash; Sep 9 Call`,
+      arr:`Enterprise &middot; Rani Guy`, csmlbl:`Rani Guy`, change:`Sep 9 &middot; Healthy`,
+      excerpt:`PTB modeling session &mdash; fit/need/intent framework walkthrough w/ Madhup + Akanksha + Jieun (NetApp). Firmographics + IT spend + technology + contracts + intent layers. Data dictionary + field definitions being shared. Bottom-up modeling approach.` },
+    { csm:'pam', health:'Healthy', account:`Epicor Software Corporation`, opp:`Vitally Pulse &mdash; Sep 9 Call`,
+      arr:`Enterprise &middot; Pam Huck`, csmlbl:`Pam Huck`, change:`Sep 9 &middot; Healthy`,
+      excerpt:`Final Epicor proposal aligned w/ prior-year services + geo-offering consultation added at no additional cost. 46-47% discount (highest among customers). Main challenge: new Epicor procurement process may cause short-term delays.` },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div class="pulse-account">${c.account}</div>
+          <div class="pulse-opp">${c.opp}</div>
+          <div class="pulse-arr">${c.arr}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_09_09() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('0909-1')?'done':''}" data-csm="rani" id="action-0909-1">
+      <div class="action-checkbox ${doneActions.has('0909-1')?'checked':''}" onclick="toggleAction('0909-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Hitachi &mdash; Anders universe-feed termination Oct 22 + credit-based API transition</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy + Adrian Escobar &middot; Anders universe-feed contract non-renewing Oct 22. Rani to send official data-removal letter to Miguel + legal docs. Rani + Adrian to calculate credit costs (80K firmographics + 100K technographics est.) + confirm API details + charging mechanism (per API call vs per result). Rebecca + Umar to model costs internally. Follow-up meeting Sept 30 tentative.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0909-2')?'done':''}" data-csm="riley" id="action-0909-2">
+      <div class="action-checkbox ${doneActions.has('0909-2')?'checked':''}" onclick="toggleAction('0909-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Intuit &mdash; Desktop&rarr;Online migration content strategy + Oct 16 Buyer&rsquo;s Choice</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Riley Rogers + Andy Lum &middot; Riley to confirm w/ Morgan on sharing existing premium-content PDF example w/ Andy + meet w/ Mardigan + Katie on premium-content idea + meet w/ Natalie Pratt (IES team) Monday to gauge online-advance team interest. Andy to check in w/ Natalie on interest + potential funding for transition-focused premium content. Resolve strategic tension on Desktop awards ahead of Oct 16 deadline.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0909-3')?'done':''}" data-csm="riley" id="action-0909-3">
+      <div class="action-checkbox ${doneActions.has('0909-3')?'checked':''}" onclick="toggleAction('0909-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; IBM TR &mdash; Buyer&rsquo;s Choice Oct 16 push + new review-gen channels</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Riley Rogers + Mihaela Nedelescu &middot; Buyer&rsquo;s Choice deadline extended to Oct 16 (+3 weeks). Mihaela to post in AI/data Slack channel tomorrow. Ruxandra engaging client story strategists globally. Riley to investigate "2026 champs" campaign code + fix category-level dashboard + explore consolidated IBM portfolio reporting. Direct outreach to G2 reviewers ongoing.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0909-4')?'done':''}" data-csm="andy" id="action-0909-4">
+      <div class="action-checkbox ${doneActions.has('0909-4')?'checked':''}" onclick="toggleAction('0909-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; FactSet &mdash; $30K Customer Voice Package + $10K bundle decision Sept 17</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Andy Lim + Riley Rogers + Anderson Duncan &middot; Anderson to submit ticket to re-enable FactSet vendor portal ASAP + send content-type list to Greta + confirm ability to reach net-new reviewers + update negative-review notifications from Aiden to Lin. Greta + Anderson to follow up w/ Aiden on intended content-bundle use before finalizing $10K portion after his return Sept 17. Lin new day-to-day TR relationship owner.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0909-5')?'done':''}" data-csm="pam" id="action-0909-5">
+      <div class="action-checkbox ${doneActions.has('0909-5')?'checked':''}" onclick="toggleAction('0909-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Epicor &mdash; final proposal submission + procurement navigation</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Pam Huck + Anderson Duncan &middot; Anderson to send final executable proposal ASAP (hopefully today). Scott to send proposal to Stephanie + flag for procurement + immediately submit to Wrike requesting PO. Scott/Anderson to connect Anderson w/ new procurement contact if needed. Ensure order form has capitalized 'T' in 'Biz Track'. 46-47% discount (highest among customers) at stake.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0909-6')?'done':''}" data-csm="nick" id="action-0909-6">
+      <div class="action-checkbox ${doneActions.has('0909-6')?'checked':''}" onclick="toggleAction('0909-6')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Siemens &mdash; renewal quarter-end push + Account Compass DI Automation expansion</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Nick Johnson + David Garcia Thomas + Jeff Wymer &middot; Jeff to try to get on Fred (Finance) calendar today re Siemens renewal status &mdash; discount tied to quarter-end alignment. David to set up prototype call w/ Chloe + Francis (on-demand live report generation from MCP) + coordinate w/ Nick on December piece + MCP credits. Max to follow up w/ intent teams on DI Automation + Smart Infrastructure topics. Jeff waiting on Mitchell + Ross for Account Compass data sources.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0909-7')?'done':''}" data-csm="all" id="action-0909-7">
+      <div class="action-checkbox ${doneActions.has('0909-7')?'checked':''}" onclick="toggleAction('0909-7')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; Ops &mdash; Weflow SFDC-sync backlog Day 5 (75% no-transcript)</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Ops &middot; Sept 9 &mdash; 70 of 93 recordings had no SFDC transcript (75%). SFDC speaker detection confirmed only 2 of 10 unique customer calls; 8 recovered via Weflow &lsquo;participants&rsquo; fallback. Consider formal Weflow support ticket if pattern persists across the week.</div>
       </div>
     </div>
   </div>
