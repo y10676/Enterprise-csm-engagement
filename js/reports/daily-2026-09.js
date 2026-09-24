@@ -869,245 +869,11 @@ function dayActionsHTML_2026_09_14() {
 // Monday September 15, 2026
 // ============================================================
 
-function dayData_2026_09_15() {
-  return {
-    calls: [
-      { ts: 'Sep 15 &middot; 2:00 AM', csm: 'nick', account: 'Lenovo',
-        note: 'Secure PC PTB propensity model deep-dive with Batta Pruthvi (Lenovo) + Gavin Padden (HG DS): keyword→product/intent catalog mapping across SentinelOne, Absolute, LDO offerings for scoring grid',
-        mins: 60, health: 'Healthy',
-        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
-        detail: 'Nick + Gavin Padden (HG data science) walked Batta Pruthvi (Lenovo) column-by-column through the Secure PC Propensity-To-Buy scoring grid built from Lenovo\'s raw offering keywords (SentinelOne, Absolute, LDO). Framework: keywords map to HG product catalog + intent catalog with relevance scoring; ability to broaden signal via adjacent products (e.g., McAfee/Trellix, Fortinet, Symantec as endpoint-protection theme). This is the pre-work for a customer-shareable propensity model — output goes to Lenovo stakeholders. Ties to Lenovo\'s $695K ARR (per July 20 memory) and the Dec 2026 renewal window. Continuation of the propensity/scoring modeling stream Nick has been running (Aug 27 memory noted Lenovo propensity as an expansion signal).' },
 
-      { ts: 'Sep 15 &middot; 8:00 AM', csm: 'divyam', account: 'Workhuman',
-        note: 'TR Buyer\'s Choice + Top Rated award query meeting with Ethan Bukowiec; deadline extended to Oct 16 (announcement Nov); Workhuman got Top Rated 2026, needs 10 reviews (has 4) with 75%+ best-in for Buyer\'s Choice',
-        mins: 30, health: 'Healthy',
-        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Check-in',
-        detail: 'Ethan Bukowiec (Workhuman) requested clarity on which TR awards Workhuman is eligible for and how the new vs legacy vendor portal maps to award tracking. Divyam confirmed Workhuman got Top Rated 2026 (badges to be sent post-call) and is tracking to Buyer\'s Choice 2026 with the Oct 16 extended deadline. Current state: 4 reviews with 3 qualified for Buyer\'s Choice; need 10 reviews total, 75%+ saying "best in" (use / value for money / customer relationship). Reviews generated Apr–Sep count toward both Buyer\'s Choice AND Top Rated 2027. Ethan is running the campaign via Workhuman\'s customer advocacy team rather than TR-driven outreach. Ownership: Workhuman customer approvals now unblocked → cadence expected to improve.' },
 
-      { ts: 'Sep 15 &middot; 11:00 AM', csm: 'divyam', account: 'BILL',
-        note: 'MadKudu scoring bug (Sept 11 fix — accounts not repositioned after scoring change) + Clearbit vs SFDC data source hierarchy decision for industry/employee-size scoring inputs; Loom walk-through offered',
-        mins: 30, health: 'Healthy',
-        nature: 'Recurring', initiator: 'HG CS', purpose: 'Mixed',
-        detail: 'Divyam updated Eric Nguyen + Charles Hawkins on two open BILL tickets: (1) ICP fit analysis Level 2 delivered; (2) scoring-lower-than-expected root-caused as MadKudu bug (accounts not repositioned after scoring change) — fix landed Sept 11. Underlying model gap: MadKudu currently uses Clearbit as the third-party enrichment source for industry + employee-size and ignores SFDC values. Two remediation paths: (a) set SFDC as primary source (quick), (b) add fallback logic Clearbit→SFDC (slower, more precise). Divyam offered Loom walk-through with engineering support if Eric wants a deeper session. Eric confirmed Clearbit is directly connected to their Salesforce instance. Follow-up: BILL to pick a/b, HG engineering to schedule.' },
 
-      { ts: 'Sep 15 &middot; 1:30 PM', csm: 'varun', account: 'BMC Software',
-        note: 'Copilot 2.0 onboarding to BMC field/BDR teams: company context walk-through (products, competitors, intent topics), offering setup, integration path decoupled from user activation; Devin McCarthy (field seal team leads) new to the account',
-        mins: 30, health: 'Healthy',
-        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
-        detail: 'Varun ran the new-Copilot demo for Louise Eekhof (BMC), Lindsay Saunders (BDR manager), Devin McCarthy (field sales team lead, new intro), and Mark Sweeney. Augie Buettner (HG AE) on the call. Old Copilot users auto-migrated to Copilot 2.0 access — no waiting for integrations (SFDC/ZoomInfo/S3) needed to start prospecting. Walked through: (1) auto-loaded BMC company context (products, competitors, intent topics from domain — Lindsay flagged irrelevant Helix products for admin cleanup); (2) offerings model (product + ICP + competitors + intent + industry bundle used for prospecting); (3) admin vs end-user controls. Louise asked for guidance on how sales plays + playbooks fit in; homework tied to the next call. Integration completion still in flight in background to unlock richer signals — Varun to send the recording link plus company-context edit doc.' },
-    ],
-    pulses: [
-      { csm:'nick', health:'Healthy', account:'Lenovo',
-        opp:'Vitally Pulse &mdash; Sep 15 Call',
-        arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
-        change:'Sep 15 &middot; Propensity Model Deep-Dive',
-        excerpt:'9/15 NJ: 60 min Secure PC PTB propensity model walkthrough with Batta Pruthvi (Lenovo) + Gavin Padden (HG DS) at 2 AM PT. Keyword→product/intent catalog mapping across SentinelOne, Absolute, LDO offerings. Output goes to Lenovo stakeholders as customer-shareable model. Ties to $695K ARR + Dec 2026 renewal.' },
 
-      { csm:'divyam', health:'Healthy', account:'Workhuman',
-        opp:'Vitally Pulse &mdash; Sep 15 Call',
-        arr:'Enterprise &middot; Divyam Dewan', csmlbl:'Divyam Dewan',
-        change:'Sep 15 &middot; TR Awards Alignment',
-        excerpt:'9/15 DD: 30 min TR Buyer\'s Choice + Top Rated query meeting with Ethan Bukowiec (Workhuman) at 8 AM PT. Workhuman got Top Rated 2026; needs 4→10 reviews with 75%+ best-in for Buyer\'s Choice by Oct 16 extended deadline. Ethan running campaign via internal customer advocacy team, unblocked internally.' },
 
-      { csm:'divyam', health:'Healthy', account:'BILL',
-        opp:'Vitally Pulse &mdash; Sep 15 Call',
-        arr:'Enterprise &middot; Divyam Dewan', csmlbl:'Divyam Dewan',
-        change:'Sep 15 &middot; Scoring Bug Fix + Data Source Decision',
-        excerpt:'9/15 DD: 30 min BILL weekly sync with Eric Nguyen + Charles Hawkins at 11 AM PT. MadKudu bug fixed Sept 11 (accounts not repositioned after scoring change). Open decision: Clearbit vs SFDC as primary source for industry + employee-size scoring inputs — two paths on the table, engineering follow-up scheduled.' },
-
-      { csm:'varun', health:'Healthy', account:'BMC Software',
-        opp:'Vitally Pulse &mdash; Sep 15 Call',
-        arr:'Enterprise &middot; Varun Tiwari', csmlbl:'Varun Tiwari',
-        change:'Sep 15 &middot; Copilot 2.0 Onboarding',
-        excerpt:'9/15 VT: 30 min Copilot 2.0 onboarding to BMC field/BDR teams (Louise Eekhof, Lindsay Saunders, Devin McCarthy new intro, Mark Sweeney) at 1:30 PM PT. Old users auto-migrated; no integration blocker to start prospecting. Company context walkthrough + offerings setup; sales plays/playbooks homework tied to next call.' },
-    ],
-  };
-}
-
-function dayMeta_2026_09_15() {
-  return {
-    pills: [
-      ['dot-teal',   '4 Calls'],
-      ['dot-amber',  '3 Expansion'],
-      ['dot-green',  '4 Vitally Pulses'],
-      ['dot-grey',   'Mon Sep 15 &middot; 99 scanned &middot; 79% no-transcript'],
-    ],
-    tabs: ['Overview', 'Calls (4)', 'Pulses (4)', 'Action Items (6)']
-  };
-}
-
-function dayOverviewHTML_2026_09_15() {
-  return `<div class="section-label">Team Activity &mdash; Monday September 15, 2026</div>
-  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
-    &#x1F4C5; <strong>Mon Sep 15 &mdash; 99 recordings scanned</strong> via SFDC SOQL &middot; <strong>4 confirmed calls</strong> across 3 CSMs (Nick, Divyam x2, Varun) &middot; 0 Concerning &middot; 3 Expansion (Lenovo propensity, BMC Copilot 2.0 onboarding, Workhuman Buyer\'s Choice) &middot; 1 Issue-resolved thread (BILL MadKudu bug fixed Sept 11).
-  </div>
-  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
-    &#x26A0;&#xFE0F; <strong>Weflow sync backlog Day 8 &mdash; regressing:</strong> 79% no-transcript rate (up from 69% Sept 11). Trajectory: Sep 2 71% &rarr; Sep 3 75% &rarr; Sep 4 76% &rarr; Sep 8 72% &rarr; Sep 9 75% &rarr; Sep 10 85% &rarr; Sep 11 69% &rarr; <strong>Sep 15 79%</strong>. Recovery from Sep 10 peak was partial; sync is NOT back to baseline. 7 CSM-owned events with recordings had no transcript (Varun&times;workspan + Pegasystems renewal, Pam&times;HG Insights, Atisha&times;Apple + PANW renewal, Rani&times;AppD, Riley&times;SAP) &mdash; inferred only.
-  </div>
-  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
-    &#x1F4C8; <strong>Expansion threads:</strong> Lenovo Secure PC PTB propensity model (Nick, ties to Dec 2026 renewal / $695K ARR); BMC Copilot 2.0 rollout to field teams (Varun, new Devin McCarthy intro); Workhuman Buyer\'s Choice 2026 review-gen (Divyam, Oct 16 extended deadline).
-  </div>
-  <div class="overview-grid">
-
-    <div class="csm-card has-calls" data-csm="nick">
-      <span class="call-badge">1 CALL</span>
-      <div class="csm-card-header"><div class="avatar av-grey">NJ</div><div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-metrics">
-        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
-        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
-        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
-      </div>
-      <div class="csm-account-note">Lenovo (Secure PC PTB propensity model deep-dive with Gavin Padden / HG DS)</div>
-    </div>
-
-    <div class="csm-card has-calls" data-csm="divyam">
-      <span class="call-badge">2 CALLS</span>
-      <div class="csm-card-header"><div class="avatar av-divyam">DD</div><div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-metrics">
-        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
-        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
-        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
-      </div>
-      <div class="csm-account-note">Workhuman (Buyer\'s Choice + Top Rated award query, Oct 16 deadline) &middot; BILL (MadKudu bug fix + Clearbit vs SFDC source decision)</div>
-    </div>
-
-    <div class="csm-card has-calls" data-csm="varun">
-      <span class="call-badge">1 CALL</span>
-      <div class="csm-card-header"><div class="avatar av-varun">VT</div><div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-metrics">
-        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
-        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
-        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
-      </div>
-      <div class="csm-account-note">BMC Software (Copilot 2.0 onboarding to field/BDR teams, Devin McCarthy new intro) &middot; workspan 6:30 AM + Pegasystems 7:30 AM (no transcript)</div>
-    </div>
-
-    <div class="csm-card no-calls" data-csm="rani">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header"><div class="avatar av-grey">RG</div><div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">3 events (Workday monthly sync x2 no recording, AppD 10 AM inferred only) &mdash; sync backlog</div>
-    </div>
-
-    <div class="csm-card no-calls" data-csm="riley">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header"><div class="avatar av-riley">RR</div><div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">3 events (SAP 10:30 AM inferred only, Quadient TR biweekly no recording, Piano 3 PM no recording)</div>
-    </div>
-
-    <div class="csm-card no-calls" data-csm="pam">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header"><div class="avatar av-grey">PH</div><div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 events (HG Insights 8 AM inferred only &mdash; likely internal, Epicor 10:30 AM no recording)</div>
-    </div>
-
-    <div class="csm-card no-calls" data-csm="atisha">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header"><div class="avatar av-grey">AW</div><div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 events (Apple 8:30 AM inferred only, PANW Central Analy2027 renewal 10:30 AM inferred only)</div>
-    </div>
-
-    <div class="csm-card no-calls" data-csm="andy">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header"><div class="avatar av-grey">AL</div><div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 events (Veracode HG Insights x2 8:30 AM) &mdash; no recordings synced</div>
-    </div>
-
-  </div>`;
-}
-
-function dayCallsHTML_2026_09_15() {
-  return `<div class="section-label">Confirmed Calls &mdash; Monday September 15, 2026</div>
-  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
-    &#x26A0;&#xFE0F; <strong>7 CSM events had recordings with no transcript</strong> &mdash; inferred from event ownership only: Varun&times;workspan (6:30 AM), Varun&times;Pegasystems renewal (7:30 AM), Pam&times;HG Insights (8 AM, likely internal), Atisha&times;Apple (8:30 AM), Rani&times;AppD (10 AM), Atisha&times;PANW Central Analy2027 renewal (10:30 AM), Riley&times;SAP (10:30 AM). Additionally, 9 CSM events had no recording at all (Nick&times;Visionet biweekly, Divyam&times;Adobe GTM Tool Review, Varun&times;Unum biweekly, Rani&times;Workday monthly, Andy&times;Veracode, Pam&times;Epicor, Divyam&times;Quadient TR biweekly [co-w/Riley], Varun&times;SentinelOne monthly, Divyam&times;Dynatrace query meeting, Riley&times;Piano).
-  </div>
-  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
-    &#x1F4CC; <strong>Note on Varun/BMC call:</strong> SFDC linked the recording to a Veritas Technologies event, but the transcript is unambiguously BMC Software (Louise Eekhof, Lindsay Saunders, Devin McCarthy, Mark Sweeney all BMC). Reporting as BMC Software based on speaker/transcript truth.
-  </div>`;
-}
-
-function dayPulsesHTML_2026_09_15() {
-  const cards = [
-    { csm:'nick', health:'Healthy', account:'Lenovo', opp:'Vitally Pulse &mdash; Sep 15 Call',
-      arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
-      change:'Sep 15 &middot; Propensity Model Deep-Dive',
-      excerpt:'9/15 NJ: 60 min Secure PC PTB propensity model walkthrough with Batta Pruthvi (Lenovo) + Gavin Padden (HG DS) at 2 AM PT. Keyword→product/intent catalog mapping across SentinelOne, Absolute, LDO offerings. Output goes to Lenovo stakeholders as customer-shareable model. Ties to $695K ARR + Dec 2026 renewal.' },
-    { csm:'divyam', health:'Healthy', account:'Workhuman', opp:'Vitally Pulse &mdash; Sep 15 Call',
-      arr:'Enterprise &middot; Divyam Dewan', csmlbl:'Divyam Dewan',
-      change:'Sep 15 &middot; TR Awards Alignment',
-      excerpt:'9/15 DD: 30 min TR Buyer\'s Choice + Top Rated query meeting with Ethan Bukowiec (Workhuman) at 8 AM PT. Workhuman got Top Rated 2026; needs 4→10 reviews with 75%+ best-in for Buyer\'s Choice by Oct 16 extended deadline. Ethan running campaign via internal customer advocacy team, unblocked internally.' },
-    { csm:'divyam', health:'Healthy', account:'BILL', opp:'Vitally Pulse &mdash; Sep 15 Call',
-      arr:'Enterprise &middot; Divyam Dewan', csmlbl:'Divyam Dewan',
-      change:'Sep 15 &middot; Scoring Bug Fix + Data Source Decision',
-      excerpt:'9/15 DD: 30 min BILL weekly sync with Eric Nguyen + Charles Hawkins at 11 AM PT. MadKudu bug fixed Sept 11 (accounts not repositioned after scoring change). Open decision: Clearbit vs SFDC as primary source for industry + employee-size scoring inputs — two paths on the table, engineering follow-up scheduled.' },
-    { csm:'varun', health:'Healthy', account:'BMC Software', opp:'Vitally Pulse &mdash; Sep 15 Call',
-      arr:'Enterprise &middot; Varun Tiwari', csmlbl:'Varun Tiwari',
-      change:'Sep 15 &middot; Copilot 2.0 Onboarding',
-      excerpt:'9/15 VT: 30 min Copilot 2.0 onboarding to BMC field/BDR teams (Louise Eekhof, Lindsay Saunders, Devin McCarthy new intro, Mark Sweeney) at 1:30 PM PT. Old users auto-migrated; no integration blocker to start prospecting. Company context walkthrough + offerings setup; sales plays/playbooks homework tied to next call.' },
-  ];
-  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
-  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
-  return `<div class="pulse-grid">${cards.map(c=>`
-    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
-      <div class="pulse-card-top">
-        <div>
-          <div style="font-size:13px;font-weight:600;color:#e2e8f0;">${c.account}</div>
-          <div style="font-size:11px;color:#94a3b8;margin-top:2px;">${c.opp}</div>
-        </div>
-        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
-      </div>
-      <div class="pulse-excerpt">${c.excerpt}</div>
-      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
-    </div>`).join('')}</div>
-  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
-}
-
-function dayActionsHTML_2026_09_15() {
-  return `<div class="action-list">
-    <div class="action-item ${doneActions.has('0915-1')?'done':''}" data-csm="nick" id="action-0915-1">
-      <div class="action-checkbox ${doneActions.has('0915-1')?'checked':''}" onclick="toggleAction('0915-1')"></div>
-      <div class="action-body">
-        <div class="action-title">&#x1F4C8; Lenovo &mdash; Finalize Secure PC PTB propensity model for stakeholder share</div>
-        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Nick Johnson &middot; Gavin Padden to finalize keyword→product/intent catalog matching + relevance scoring for SentinelOne + Absolute + LDO offerings. Duplicate keywords across matched products (Batta requested for column c/g alignment). Deliverable: customer-shareable propensity model deck. Ties to Dec 2026 renewal ($695K ARR) and prior Aug 27 Lenovo propensity thread.</div>
-      </div>
-    </div>
-    <div class="action-item ${doneActions.has('0915-2')?'done':''}" data-csm="divyam" id="action-0915-2">
-      <div class="action-checkbox ${doneActions.has('0915-2')?'checked':''}" onclick="toggleAction('0915-2')"></div>
-      <div class="action-body">
-        <div class="action-title">&#x1F4C8; Workhuman &mdash; Send Top Rated 2026 + Buyer\'s Choice badge assets</div>
-        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Divyam Dewan &middot; Post-call: send Ethan Bukowiec digital-asset links for Top Rated 2026 badges (existing win) + Buyer\'s Choice badges once earned. Ethan updating website + marketing materials, wants current-year assets. Track: 10 reviews target with 75%+ best-in language by Oct 16 (currently at 4 reviews, 3 qualified).</div>
-      </div>
-    </div>
-    <div class="action-item ${doneActions.has('0915-3')?'done':''}" data-csm="divyam" id="action-0915-3">
-      <div class="action-checkbox ${doneActions.has('0915-3')?'checked':''}" onclick="toggleAction('0915-3')"></div>
-      <div class="action-body">
-        <div class="action-title">&#x1F527; BILL &mdash; Clearbit vs SFDC scoring source decision + Loom walk-through</div>
-        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Divyam Dewan &middot; BILL to pick (a) SFDC as primary source [quick] or (b) Clearbit→SFDC fallback logic [slower, more precise] for industry + employee-size scoring inputs. Divyam to schedule engineering-support session (Loom + live) once BILL confirms path. MadKudu Sept 11 fix already resolved account-repositioning bug.</div>
-      </div>
-    </div>
-    <div class="action-item ${doneActions.has('0915-4')?'done':''}" data-csm="varun" id="action-0915-4">
-      <div class="action-checkbox ${doneActions.has('0915-4')?'checked':''}" onclick="toggleAction('0915-4')"></div>
-      <div class="action-body">
-        <div class="action-title">&#x1F4C8; BMC Software &mdash; Copilot 2.0 admin cleanup + integration completion</div>
-        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Varun Tiwari &middot; Send Louise Eekhof (1) recording link + (2) company-context edit doc so BMC admin can strip irrelevant Helix products from auto-loaded context (Lindsay flagged). Continue Copilot 2.0 rollout in background while integration (SFDC/ZoomInfo/S3) completes to unlock richer signals. Devin McCarthy (field seal team lead) newly introduced — get him on the recurring cadence.</div>
-      </div>
-    </div>
-    <div class="action-item ${doneActions.has('0915-5')?'done':''}" data-csm="all" id="action-0915-5">
-      <div class="action-checkbox ${doneActions.has('0915-5')?'checked':''}" onclick="toggleAction('0915-5')"></div>
-      <div class="action-body">
-        <div class="action-title">&#x1F4CB; CSM team &mdash; Manual Vitally log for 7 inferred + 10 no-recording calls</div>
-        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Varun (workspan, Pegasystems Users 2026 renewal, Unum biweekly, SentinelOne monthly), Pam (HG Insights, Epicor), Atisha (Apple, PANW Central Analy2027 renewal), Rani (AppD, Workday monthly x2), Riley (SAP, Quadient TR biweekly, Piano), Divyam (Adobe GTM Tool Review, Quadient TR co-w/Riley, Dynatrace query meeting), Nick (Visionet biweekly), Andy (Veracode) &middot; Log outcomes + next steps in Vitally today so nothing is lost while Weflow sync remains degraded. Pegasystems renewal + PANW renewal + Apple/AppD/Workday all warrant capture.</div>
-      </div>
-    </div>
-    <div class="action-item ${doneActions.has('0915-6')?'done':''}" data-csm="all" id="action-0915-6">
-      <div class="action-checkbox ${doneActions.has('0915-6')?'checked':''}" onclick="toggleAction('0915-6')"></div>
-      <div class="action-body">
-        <div class="action-title">&#x1F6A8; Ops &mdash; Weflow sync backlog Day 8 (79%, regressing from 69%)</div>
-        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Ops / Rishi &middot; No-transcript rate jumped from 69% Sept 11 to 79% Sept 15 &mdash; recovery reversed. Sep 2 71% &rarr; Sep 3 75% &rarr; Sep 4 76% &rarr; Sep 8 72% &rarr; Sep 9 75% &rarr; Sep 10 85% &rarr; Sep 11 69% &rarr; Sep 15 79%. This is not a transient backlog — escalate to Weflow product owner + inform Yuan/leadership. Consider standing up a lighter-touch fallback (event-based inferred report) until sync is trustworthy.</div>
-      </div>
-    </div>
-  </div>
-  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
-}
 
 
 // ============================================================
@@ -5282,6 +5048,333 @@ function dayActionsHTML_2026_09_03() {
       <div class="action-body">
         <div class="action-title">&#x1F4CB; Insight Direct &mdash; master data strategy analysis (5-10 companies) + leadership case for investment</div>
         <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Atisha Waghela + Daniel Gray + Augie Buettner + Clayton Cutbush &middot; Daniel to select 5-10 companies for deeper analysis (data gaps + HG coverage) by next working session. Augie + Clayton to dive into selected companies (e.g., 3M, AAA) within 90 days. Augie to set up strategy session w/ Clayton on master data cleanup + share updated SharePoint w/ match analysis today. Sergio to build leadership case for master data strategy improvements + investment.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
+
+
+
+
+// ============================================================
+// Tuesday September 15, 2026
+// ============================================================
+
+function dayData_2026_09_15() {
+  return {
+    calls: [
+      { ts: 'Sep 15 &middot; 2:00 AM', csm: 'nick', account: `Lenovo Group Ltd. (Secure PC PTB)`,
+        note: `Secure PC PTB Model mapping w/ Batta Pruthvi + Ujjaini Mazumdar + Agniteja Matavalam + Adrian Escobar + Gavin Padden + Alexi Mouarkach + David Crossman. Mapped Sentinel One/Absolute/LDO keywords to HG product+intent catalogs. Sept 18 launch deadline.`,
+        mins: 38, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Lenovo Secure PC PTB Model &mdash; keyword mapping from Sentinel One + Absolute + LDO documents to HG's product + intent catalogs to enrich data signals. Mapping methodology: closest matches + product IDs + overall analysis of match relevance + differentiating intent vs product matches. Adjacent signals included to broaden data story. Scoring grid: fit/need/intent factors + defined weightings + rules + direct data vs proxies transparency. Data-availability limits: no specific endpoint counts. Next: Gavin to share mapping document + scoring grid w/ Batta + Nick. Nick + Gavin to discuss internally + confirm if account list can be shared for 3 specific use cases. Follow-up call within an hour of current call. Batta to confirm w/ Johnny + extended team re account list sharing + mapping validation before stakeholder meeting. Confirmed via SFDC transcript speaker detection.`, source: 'sfdc' },
+
+      { ts: 'Sep 15 &middot; 2:00 AM', csm: 'rani', account: `Lenovo Group Ltd. (co-attend)`,
+        note: `Rani co-attended Lenovo Secure PC PTB Model mapping session supporting Nick + Adrian + Gavin. Same content &mdash; keyword mapping + scoring grid + Sept 18 launch deadline urgency.`,
+        mins: 38, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Rani co-attended Lenovo Secure PC PTB Model mapping session. Same content &mdash; Sentinel One/Absolute/LDO keyword mapping to HG product + intent catalogs + scoring grid methodology + Sept 18 launch deadline. Attendance via Weflow participants.`, source: 'weflow' },
+
+      { ts: 'Sep 15 &middot; 7:30 AM', csm: 'varun', account: `Pegasystems, Inc`,
+        note: `MCP Onboarding technical deep-dive w/ Frank Boudreau + Matt Taylor + Taylor Crosby + Francis Brero + Chlo&eacute; Portier + Julian Rojas + Erica Yim. MCP endpoint activation confirmed. Skills marketplace + workflows for efficient MCP utilization. Prompt engineering to manage credits.`,
+        mins: 39, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Pegasystems MCP (Machine Control Protocol) Onboarding &mdash; technical deep-dive + alignment session. MCP endpoint activation confirmed (Matt Taylor successfully connected). Distinction between API data feed (raw data) vs MCP credits (specific AI-driven queries + analysis). Effective prompt engineering crucial to avoid unnecessary credit consumption. HG offering skills library + workflows: guidance on chaining tools + efficient contact recommendations. Pega defining use cases internally + determining optimal approach (API data feed vs MCP calls). Next: Pega team continues internal setup + testing. Varun/Julian to (a) follow up w/ MCP inclusion docs + changes, (b) provide 'hdata query' tool access if beneficial, (c) coordinate follow-up call in 1-1.5 weeks re data feed requirements based on new ICP definitions, (d) share meeting minutes + collateral. Matt/Taylor to reach out w/ questions during MCP testing. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 15 &middot; 8:00 AM', csm: 'divyam', account: `Globoforce / Workhuman`,
+        note: `TR Buyer&rsquo;s Choice Query Meeting w/ Ethan Bukowiec. Buyer&rsquo;s Choice deadline extended Oct 16 &mdash; 4 reviews (3 qualifying). Top Rated 2026 achieved. Customer advocacy team targeted outreach + larger Q4/Q1 campaign planned.`,
+        mins: 19, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `Workhuman TR Buyer&rsquo;s Choice + Top Rated award discussion. Top Rated criteria: 10+ reviews last 12 months + 0.5% traffic volume + TR score 75+. Reviews April-Oct count toward both Top Rated + Buyer&rsquo;s Choice. Buyer&rsquo;s Choice deadline extended Oct 16 &mdash; 10 reviews needed where 75% mention "best in use", "best value for money", "price", or "customer relationship". Currently 4 reviews (3 qualifying). Top Rated 2026 already achieved. TR vendor portal has new UI + legacy version; new UI being updated. Diverse reviewer pool crucial for higher TR score. Next: Ethan to initiate targeted review campaign using customer advocacy team + known responsive customers by Oct 16 + provide instructions for diverse customer-segment pull + follow up on Q4/Q1 campaign list. Divyam to share Top Rated 2026 badges + marketing assets + run larger Q4/Q1 campaign. Recurring Thursday cadence confirmed. Confirmed via SFDC transcript speaker detection.`, source: 'sfdc' },
+
+      { ts: 'Sep 15 &middot; 10:00 AM', csm: 'rani', account: `Cisco (Isovalent)`,
+        note: `Cisco Isovalent onboarding w/ Melmoff + Adrian Escobar + Margo Rey. Data studio + HubSpot integration + AI Sales Copilot discussion. Custom-object scoring approach preferred over company-level fields. Oct target for HubSpot scoring implementation.`,
+        mins: 31, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Cisco Isovalent onboarding. Client did not initially pay for Data Studio (not in original contract) &mdash; would incur additional cost. HubSpot integration + AI Sales Copilot discussion &mdash; need to clarify latest versions + upgrade costs. Decision: explore custom objects in HubSpot for scoring system (more control + flexibility than company-level fields despite potential reporting complexity). Transparency + control over scoring prioritized (away from "black box"). Target: October completion for HubSpot scoring implementation, leveraging existing Salesforce setup as model. Next: Rani to follow up w/ Adrian re AI tool credits + potential migration mandates. Margo to send Salesforce scoring profile article to Tu-Anh + keep Melmoff + Tu-Anh updated on HubSpot integration progress. Tu-Anh to provide custom object data structure + architecture. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 15 &middot; 10:30 AM', csm: 'rani', account: `CloudFlare Inc (Data Proposal)`,
+        note: `Data Proposal Discussion w/ Martin Kielczewski + Chandra Raju + Jarvis Schuckman + Kraig Kraning. Expanded technographic + traffic data matched to CF Salesforce universe. Traffic data (Cloud Dynamics) now in core offering. Blended rate from existing credit pricing.`,
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Cloudflare expanded-scope data proposal. Focus on matched Salesforce accounts + essential data points; 'white space' excluded for immediate implementation (execution capacity + readiness). Traffic data (previously via Cloud Dynamics separate platform) integrated into core offering &mdash; simplifies access + only necessary data points for modeling. Pricing modeled on existing contract credit pricing (blended rate) &mdash; financially advantageous vs new standalone contract. 'White space' as potential 2027 pilot for digital native sellers to assess ROI. Need to clarify exact data points/fields Chandra requires for simplified delivery. Next: Martin to (a) involve procurement (Yang + Akash) for detailed contract discussions (1-yr vs multi-year), (b) connect w/ Jarvis re docs on data management + matching processes, (c) provide Chandra w/ specific fields for traffic data, (d) prepare detailed budget numbers + justification for incremental spend. Kraig to (i) provide docs on alternative data structuring approaches (internal ID vs Duns match), (ii) potentially provide itemized cost breakdown for traffic data vs technographics if requested by procurement. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 15 &middot; 10:30 AM', csm: 'riley', account: `SAP Inc (Business Network TR)`,
+        note: `SAP Business Network TR bi-weekly w/ Kathryn Zwack + Adrien Sirolli + Stephanie Coupland. Buyer&rsquo;s Choice review threshold met, deadline Oct 16, announcement Nov 10. Top Rated April push (6 more reviews). Ratings-to-Review campaign launched today. SAP Connect booth prep.`,
+        mins: 21, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `SAP Business Network TR bi-weekly. Buyer&rsquo;s Choice review requirement MET; deadline extended Oct 16; announcement Nov 10. Top Rated by April: need 6 more reviews (reduces new-review need until January). Ratings-to-Review campaign launching today. SAP Connect strategies: dedicated booth staff + landing page for SAP products + QR codes/incentives. Next: Riley to (a) send media kit for Buyer&rsquo;s Choice promotion around end of October, (b) provide business cards w/ QR codes for review promotion before SAP Connect, (c) follow up w/ Stephanie on business card requirements, (d) alert research team to reach out re custom questions immediately after call, (e) send Alejandro Buyer&rsquo;s Choice status + other product info within 10 minutes. Stephanie + Kathryn to revisit + refine custom questions for profiles before conference. Kathryn to coordinate w/ Bob for distributing business cards at other demo pods before SAP Connect. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 15 &middot; 11:00 AM', csm: 'riley', account: `SAP Inc (Buyer's Choice Weekly)`,
+        note: `TR Buyer&rsquo;s Choice Award Weekly Check-in w/ Alejandro Barajas + Cole Arutian + Mardigan Moffat. Alejandro emphasizing CENTRALIZED strategy for events + review sourcing (decentralized causes confusion). SEO/LLM results tied to investment + renewal.`,
+        mins: 35, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `SAP Buyer&rsquo;s Choice weekly check-in. Alejandro emphasized centralized strategy for all event-related activities (review sourcing + business card distribution) &mdash; decentralized efforts cause confusion + misallocation of resources + jeopardize future contract renewals. Contractors Tara + Becky ("superstars") crucial for driving review generation. TR success in LLM search results directly tied to investment + contract renewal &mdash; not ranking high enough currently; imperative to improve citation results + demonstrate ROI. Angel (new to role) needs clear guidance on coordinating w/ central strategy. Analytics needed for blog services + geo content reports (ROI demonstration + AI integration planning). Next: Riley + Alejandro to schedule recurring monthly call w/ Angel by Thu Sept 17. Riley to send calendar invite for Sept 17 10:30 AM PST meeting + provide Janessa proposed custom questions + connect w/ Janessa tomorrow to share blog analytics + investigate geo content report analytics + provide Alejandro w/ Becky + Tara contact info + facilitate BN team custom-questions comms. Alejandro to follow up w/ Ina + Christina Stamati re involvement + follow up w/ Cole re Integrated Business Planning contacts + advocate for blog service analytics access + send follow-up email to Connect organizer. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 15 &middot; 11:00 AM', csm: 'divyam', account: `BILL Operations`,
+        note: `Weekly Sync w/ Charles Hawkins + Eric Nguyen. MQL scoring discrepancy w/ MadKudu (relies on Clearbit; not fully utilizing Salesforce). Potential Salesforce-primary or fallback logic. Explore direct HG API integration w/ Clearbit for cost savings.`,
+        mins: 64, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `BILL weekly sync. MQL scoring discrepancy identified &mdash; MadKudu relies primarily on Clearbit data, not fully utilizing Salesforce's comprehensive data. Need to clarify which fields are sourced by Clearbit vs Salesforce. Potential solution: Salesforce data as primary source or fallback logic (Salesforce supplements Clearbit when incomplete). New product lines + unified revenue metric complicate current scoring + analysis. Refine ICP fit analysis by removing self-serve conversions to get clearer picture of sales-led motion performance. Exploring direct HG API integration w/ Clearbit (or other data sources) for better pricing + additional data points vs Clay intermediary. Next: Divyam to provide further inputs on MQL discussion thread. Eric to (a) share MQL field access thread link EoD, (b) investigate + define filtering out self-serve conversions + closed won/loss by product type by next week, (c) add HG-Clearbit direct API integration to discussion, (d) finalize self-serve leads analysis. Charles to (i) share AI-driven model explainability example by end of week, (ii) assist w/ MadKudu audience + conversion goals updates, (iii) explore MQL score lookup via MCP server. Confirmed via SFDC transcript speaker detection.`, source: 'sfdc' },
+
+      { ts: 'Sep 15 &middot; 1:30 PM', csm: 'varun', account: `BMC Software Inc`,
+        note: `BMC Sales Copilot rollout w/ Louise Eekhof + Devin McCarthy + Lindsay Saunders + Mark Sweeney + Matt (Support) + Augie Buettner + Erica Yim. New Sales Copilot demo. Immediate usability without CRM integration. Salesforce integration parallel track. Enablement sessions next week.`,
+        mins: 50, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `BMC Sales Copilot rollout / new platform demo. New Sales Copilot: immediate usability without waiting for full CRM integration &mdash; reps can start prospecting + researching accounts directly. Configuring company context (products + intent topics) crucial first step. Defining specific "offerings" or sales plays (Control M + ERP + data pipelines) essential for prospecting. Account prioritization remains significant challenge &mdash; Salesforce integration key to aligning tool w/ existing territories + BDR assignments. AI chat feature provides insights + generates artifacts (competitive battle cards) without consuming user credits (except contact reveals). Next: Varun to provide step-by-step setup guide by next week + work w/ Louise to set up admin portal + company context + offerings + account scoring + schedule parallel technical call for SFDC integration once POC identified + assist w/ CSV uploads if SFDC integration delayed. Louise to look into offerings + product relevance in admin hub + schedule enablement sessions for users next week + align w/ IT Ops + Noman's team re SFDC integration technicalities immediately. Lindsay + Devin to confirm single pilot user vs broader rollout + define 3 specific Control M sales plays (displacement + ERP + data) by next week. Matt to participate in call w/ relevant BMC person re SFDC integration ASAP. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+    ],
+    pulses: [
+      { csm: 'nick', account: `Lenovo Group Ltd. (Secure PC PTB)`, health: 'Healthy',
+        note: `PTB Model mapping &mdash; Sentinel One/Absolute/LDO keywords mapped to HG product + intent catalogs. Sept 18 launch deadline. Account list decision + stakeholder meeting prep.` },
+      { csm: 'rani', account: `Lenovo Group Ltd. (co-attend)`, health: 'Healthy',
+        note: `Rani co-attended Lenovo Secure PC PTB Model mapping session supporting Nick + Adrian + Gavin. Same content &mdash; Sept 18 launch deadline urgency.` },
+      { csm: 'varun', account: `Pegasystems, Inc`, health: 'Healthy',
+        note: `MCP Onboarding technical deep-dive &mdash; MCP endpoint activation confirmed. Skills marketplace + workflows. Prompt engineering to manage credits. Follow-up in 1-1.5 weeks re data feed requirements.` },
+      { csm: 'divyam', account: `Globoforce / Workhuman`, health: 'Healthy',
+        note: `TR Buyer&rsquo;s Choice Query Meeting &mdash; deadline Oct 16, 4 reviews (3 qualifying). Top Rated 2026 achieved. Customer advocacy team targeted outreach + Q4/Q1 campaign planned.` },
+      { csm: 'rani', account: `Cisco (Isovalent)`, health: 'Healthy',
+        note: `Onboarding &mdash; data studio + HubSpot integration + AI Sales Copilot. Custom-object scoring approach preferred over company-level fields. Oct target for HubSpot scoring implementation.` },
+      { csm: 'rani', account: `CloudFlare Inc (Data Proposal)`, health: 'Healthy',
+        note: `Data Proposal &mdash; expanded technographic + traffic data matched to CF Salesforce universe. Traffic data now in core offering (from Cloud Dynamics separate platform). Blended rate + procurement handoff.` },
+      { csm: 'riley', account: `SAP Inc (Business Network TR)`, health: 'Healthy',
+        note: `TR bi-weekly &mdash; Buyer&rsquo;s Choice threshold met (Oct 16 deadline; Nov 10 announcement). Top Rated April push. Ratings-to-Review campaign launched today. SAP Connect booth prep.` },
+      { csm: 'riley', account: `SAP Inc (Buyer's Choice Weekly)`, health: 'Healthy',
+        note: `Weekly check-in &mdash; Alejandro emphasizing CENTRALIZED strategy for events + review sourcing. TR success in LLM search results tied to investment + renewal. Angel onboarding + analytics need.` },
+      { csm: 'divyam', account: `BILL Operations`, health: 'Healthy',
+        note: `Weekly Sync &mdash; MQL scoring discrepancy w/ MadKudu (Clearbit-only). Potential Salesforce-primary or fallback logic. Explore direct HG API integration w/ Clearbit for cost savings.` },
+      { csm: 'varun', account: `BMC Software Inc`, health: 'Healthy',
+        note: `Sales Copilot rollout &mdash; new platform demo + immediate usability without CRM integration. Salesforce integration parallel track. Enablement sessions next week. Pilot vs broader-rollout decision.` },
+    ],
+  };
+}
+
+function dayMeta_2026_09_15() {
+  return {
+    pills: [
+      ['dot-teal',   '10 Calls'],
+      ['dot-amber',  '5 Expansion'],
+      ['dot-green',  '10 Vitally Pulses'],
+      ['dot-grey',   'Tue Sep 15 &middot; 99 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (10)', 'Pulses (10)', 'Action Items (7)']
+  };
+}
+
+function dayOverviewHTML_2026_09_15() {
+  return `<div class="section-label">Team Activity &mdash; Tuesday September 15, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Tuesday Sep 15 &mdash; 99 recordings scanned</strong> via SFDC SOQL &middot; <strong>10 confirmed calls</strong> (9 unique + 1 co-attend on Lenovo) across 5 CSMs &middot; 0 concerning &middot; 5 expansion signals &middot; SFDC confirmed 4; Weflow fallback added 5 unique recoveries
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>5 EXPANSION:</strong> Lenovo Secure PC PTB (Sept 18 launch deadline) &middot; Pegasystems (MCP endpoint activation + skills marketplace) &middot; Cisco Isovalent (HubSpot integration + Oct scoring implementation) &middot; Cloudflare (expanded data proposal + traffic data in core offering + procurement) &middot; BMC Sales Copilot (new platform rollout + immediate usability + SFDC integration parallel track)
+  </div>
+  <div style="background:#1c1f26;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fcd34d;">
+    &#x26A0;&#xFE0F; <strong>Weflow SFDC-sync backlog Day 7 (79% no-transcript):</strong> Sept 15 = 99 recordings, 21 with transcripts, 78 without. SFDC speaker detection confirmed 4 customer calls; 5 additional confirmations recovered via Weflow &lsquo;participants&rsquo; fallback.
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">3 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">3</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">99m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Lenovo Secure PC PTB co-attend (&#x1F4C8; Sept 18 launch) &middot; Cisco Isovalent (&#x1F4C8; HubSpot integration + custom object scoring) &middot; Cloudflare Data Proposal (&#x1F4C8; expanded technographic + traffic data)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">56m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">SAP Business Network TR (Buyer&rsquo;s Choice threshold met + Ratings-to-Review campaign) &middot; SAP Buyer&rsquo;s Choice Weekly (centralized strategy + LLM search + Angel onboarding)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">89m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Pega MCP Onboarding (&#x1F4C8; endpoint activation + skills marketplace) &middot; BMC Sales Copilot (&#x1F4C8; new platform rollout + SFDC integration parallel track)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">83m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Workhuman (Buyer&rsquo;s Choice Oct 16 + Top Rated 2026 achieved) &middot; BILL (MQL scoring discrepancy + Salesforce vs Clearbit + MCP integration exploration)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">38m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Lenovo Secure PC PTB Model (&#x1F4C8; Sept 18 launch deadline; account list decision + stakeholder meeting prep)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="atisha">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">AW</div><div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No confirmed customer calls. Apple Strategy + PANW events had no transcript synced; no Weflow-participant hits.</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">PH</div><div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No confirmed customer calls. Team Sync w/ Mark Fell (Pam's SAP IBP-labeled event was internal HG). No Weflow-participant hits.</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">AL</div><div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No confirmed customer calls. No Andy speaker in SFDC transcripts; no Weflow-participant hits.</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_09_15() {
+  return `<div class="section-label">Confirmed Calls &mdash; Tuesday September 15, 2026</div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>5 EXPANSION:</strong> Lenovo Secure PC PTB (Sept 18 launch) &middot; Pegasystems MCP &middot; Cisco Isovalent (HubSpot integration + Oct scoring) &middot; Cloudflare (data proposal + traffic data in core + procurement) &middot; BMC Sales Copilot rollout
+  </div>
+  <div style="background:#1c1f26;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fcd34d;">
+    &#x26A0;&#xFE0F; <strong>Team Sync w/ Mark Fell Ops (Pam SAP IBP-labeled event) excluded as INTERNAL.</strong>
+  </div>`;
+}
+
+function dayPulsesHTML_2026_09_15() {
+  const cards = [
+    { csm:'nick', health:'Healthy', account:`Lenovo Group Ltd. (Secure PC PTB)`, opp:`Vitally Pulse &mdash; Sep 15 Call`,
+      arr:`Enterprise &middot; Nick Johnson`, csmlbl:`Nick Johnson`, change:`Sep 15 &middot; Healthy`,
+      excerpt:`Secure PC PTB Model mapping &mdash; Sentinel One/Absolute/LDO keywords to HG product + intent catalogs. Scoring grid: fit/need/intent factors w/ transparent proxies. Sept 18 launch deadline. Account list decision + stakeholder meeting prep.` },
+    { csm:'rani', health:'Healthy', account:`Lenovo Group Ltd. (co-attend)`, opp:`Vitally Pulse &mdash; Sep 15 Call`,
+      arr:`Enterprise &middot; Rani Guy`, csmlbl:`Rani Guy`, change:`Sep 15 &middot; Healthy`,
+      excerpt:`Rani co-attended Lenovo Secure PC PTB Model mapping session supporting Nick + Adrian + Gavin. Same content &mdash; keyword mapping + scoring grid + Sept 18 launch deadline.` },
+    { csm:'varun', health:'Healthy', account:`Pegasystems, Inc`, opp:`Vitally Pulse &mdash; Sep 15 Call`,
+      arr:`Enterprise &middot; Varun Tiwari`, csmlbl:`Varun Tiwari`, change:`Sep 15 &middot; Healthy`,
+      excerpt:`MCP Onboarding &mdash; MCP endpoint activation confirmed. API data feed (raw data) vs MCP credits (AI-driven queries). Skills marketplace + workflows. Prompt engineering to manage credits. Follow-up 1-1.5 weeks re data feed requirements.` },
+    { csm:'divyam', health:'Healthy', account:`Globoforce / Workhuman`, opp:`Vitally Pulse &mdash; Sep 15 Call`,
+      arr:`Enterprise &middot; Divyam Dewan`, csmlbl:`Divyam Dewan`, change:`Sep 15 &middot; Healthy`,
+      excerpt:`Workhuman TR Buyer&rsquo;s Choice Query Meeting &mdash; deadline extended Oct 16. 4 reviews (3 qualifying). Top Rated 2026 achieved. Customer advocacy team targeted outreach + larger Q4/Q1 campaign planned.` },
+    { csm:'rani', health:'Healthy', account:`Cisco (Isovalent)`, opp:`Vitally Pulse &mdash; Sep 15 Call`,
+      arr:`Enterprise &middot; Rani Guy`, csmlbl:`Rani Guy`, change:`Sep 15 &middot; Healthy`,
+      excerpt:`Onboarding &mdash; data studio + HubSpot integration + AI Sales Copilot. Custom-object scoring approach preferred over company-level fields (more control + flexibility). Oct target for HubSpot scoring implementation.` },
+    { csm:'rani', health:'Healthy', account:`CloudFlare Inc (Data Proposal)`, opp:`Vitally Pulse &mdash; Sep 15 Call`,
+      arr:`Enterprise &middot; Rani Guy`, csmlbl:`Rani Guy`, change:`Sep 15 &middot; Healthy`,
+      excerpt:`Expanded technographic + traffic data proposal matched to CF Salesforce universe. Traffic data (previously Cloud Dynamics separate) integrated into core offering. Blended rate from existing credit pricing. Procurement (Yang + Akash) handoff.` },
+    { csm:'riley', health:'Healthy', account:`SAP Inc (Business Network TR)`, opp:`Vitally Pulse &mdash; Sep 15 Call`,
+      arr:`Enterprise &middot; Riley Rogers`, csmlbl:`Riley Rogers`, change:`Sep 15 &middot; Healthy`,
+      excerpt:`TR bi-weekly &mdash; Buyer&rsquo;s Choice review threshold MET; deadline Oct 16; announcement Nov 10. Top Rated April: need 6 more reviews. Ratings-to-Review campaign launched today. SAP Connect booth prep + QR codes.` },
+    { csm:'riley', health:'Healthy', account:`SAP Inc (Buyer's Choice Weekly)`, opp:`Vitally Pulse &mdash; Sep 15 Call`,
+      arr:`Enterprise &middot; Riley Rogers`, csmlbl:`Riley Rogers`, change:`Sep 15 &middot; Healthy`,
+      excerpt:`Weekly check-in &mdash; Alejandro emphasizing CENTRALIZED strategy for events + review sourcing (decentralized causes confusion + resource misallocation). TR success in LLM search results tied to investment + renewal. Angel onboarding + analytics need.` },
+    { csm:'divyam', health:'Healthy', account:`BILL Operations`, opp:`Vitally Pulse &mdash; Sep 15 Call`,
+      arr:`Enterprise &middot; Divyam Dewan`, csmlbl:`Divyam Dewan`, change:`Sep 15 &middot; Healthy`,
+      excerpt:`Weekly Sync &mdash; MQL scoring discrepancy: MadKudu relies primarily on Clearbit, not fully utilizing Salesforce. Potential Salesforce-primary or fallback logic. Explore direct HG API integration w/ Clearbit for cost savings.` },
+    { csm:'varun', health:'Healthy', account:`BMC Software Inc`, opp:`Vitally Pulse &mdash; Sep 15 Call`,
+      arr:`Enterprise &middot; Varun Tiwari`, csmlbl:`Varun Tiwari`, change:`Sep 15 &middot; Healthy`,
+      excerpt:`BMC Sales Copilot rollout &mdash; new platform demo. Immediate usability without waiting for CRM integration. Configuring company context + offerings + account scoring. Salesforce integration parallel track. Enablement sessions next week.` },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div class="pulse-account">${c.account}</div>
+          <div class="pulse-opp">${c.opp}</div>
+          <div class="pulse-arr">${c.arr}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_09_15() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('1501')?'done':''}" data-csm="nick" id="action-1501">
+      <div class="action-checkbox ${doneActions.has('1501')?'checked':''}" onclick="toggleAction('1501')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Lenovo Secure PC PTB &mdash; Sept 18 launch deadline + account list decision</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Nick Johnson + Rani Guy + Gavin Padden &middot; Gavin to share mapping doc + scoring grid w/ Batta + Nick. Nick + Gavin to discuss internally + confirm if account list can be shared for 3 specific use cases. Follow-up call within an hour of current call. Batta to confirm w/ Johnny + extended team re account list sharing + mapping validation before stakeholder meeting. Sept 18 launch deadline.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('1502')?'done':''}" data-csm="varun" id="action-1502">
+      <div class="action-checkbox ${doneActions.has('1502')?'checked':''}" onclick="toggleAction('1502')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; BMC Sales Copilot &mdash; step-by-step setup guide by next week + enablement sessions</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Varun Tiwari + Louise Eekhof + Devin McCarthy + Lindsay Saunders &middot; Varun to (a) provide step-by-step Sales Copilot setup + config guide by next week, (b) work w/ Louise on admin portal + company context + offerings + account scoring, (c) assist w/ CSV uploads if SFDC integration delayed, (d) schedule parallel technical call for SFDC integration once POC identified. Louise to look into offerings + product relevance in admin hub + schedule enablement sessions next week + align w/ IT Ops + Noman's team re SFDC integration immediately. Lindsay + Devin to confirm single pilot user vs broader rollout + define 3 Control M sales plays by next week.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('1503')?'done':''}" data-csm="varun" id="action-1503">
+      <div class="action-checkbox ${doneActions.has('1503')?'checked':''}" onclick="toggleAction('1503')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Pega MCP &mdash; internal setup + testing + follow-up in 1-1.5 weeks re data feed requirements</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Varun Tiwari + Julian Rojas + Francis Brero + Chloe Portier &middot; Pega internal team to (a) continue internal setup + testing of MCP, (b) define specific use cases + decide API data feed vs MCP calls for each, (c) develop clear instructions + parameters for MCP usage to control credit consumption. Varun + Julian to (i) follow up w/ MCP inclusion docs, (ii) provide 'hdata query' tool access if beneficial, (iii) coordinate follow-up call in 1-1.5 weeks re data feed requirements based on new ICP definitions, (iv) share meeting minutes + collateral.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('1504')?'done':''}" data-csm="rani" id="action-1504">
+      <div class="action-checkbox ${doneActions.has('1504')?'checked':''}" onclick="toggleAction('1504')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Cloudflare Data Proposal &mdash; procurement handoff + budget justification</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Rani Guy + Kraig Kraning + Martin Kielczewski &middot; Martin to (a) involve Yang + Akash for detailed contract discussions (1-yr vs multi-year), (b) connect w/ Jarvis re docs on data management + matching, (c) provide Chandra w/ specific fields for traffic data, (d) prepare detailed budget numbers + justification. Kraig to provide docs on alternative data structuring approaches + potentially itemized cost breakdown for traffic vs technographics if requested. White space potential 2027 pilot for digital native sellers.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('1505')?'done':''}" data-csm="rani" id="action-1505">
+      <div class="action-checkbox ${doneActions.has('1505')?'checked':''}" onclick="toggleAction('1505')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Cisco Isovalent &mdash; HubSpot custom-object scoring implementation Oct target</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Rani Guy + Adrian Escobar + Margo Rey &middot; Rani to follow up w/ Adrian re AI tool credits + potential migration mandates. Margo to (a) send Salesforce scoring profile article to Tu-Anh, (b) keep Melmoff + Tu-Anh updated on HubSpot integration progress, (c) investigate how to pause note-taker feature. Tu-Anh to provide custom object data structure + architecture. Implementation target October.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('1506')?'done':''}" data-csm="riley" id="action-1506">
+      <div class="action-checkbox ${doneActions.has('1506')?'checked':''}" onclick="toggleAction('1506')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; SAP Buyer&rsquo;s Choice + Business Network &mdash; Oct 16 deadline + Nov 10 announcement + centralized-strategy alignment</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Riley Rogers + Cole + Mardigan + Alejandro Barajas + Stephanie Coupland &middot; Riley + Alejandro to schedule recurring monthly call w/ Angel by Thu Sept 17. Riley to (a) send Sept 17 10:30 AM PST calendar invite, (b) provide Janessa proposed custom questions, (c) connect w/ Janessa tomorrow re blog analytics, (d) provide Alejandro w/ Becky + Tara contact info, (e) send media kit around end of Oct, (f) provide business cards w/ QR codes before SAP Connect. Alejandro to follow up w/ Ina + Christina Stamati + Cole re IBP contacts + advocate for blog service analytics access. Stephanie + Kathryn to revisit + refine custom questions before conference.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('1507')?'done':''}" data-csm="divyam" id="action-1507">
+      <div class="action-checkbox ${doneActions.has('1507')?'checked':''}" onclick="toggleAction('1507')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; BILL &mdash; MQL scoring + Salesforce fallback logic + direct HG-Clearbit API exploration</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Divyam Dewan + Charles Hawkins + Eric Nguyen &middot; Divyam to provide further inputs on MQL discussion thread. Eric to (a) share MQL field access thread link EoD, (b) investigate + define filtering out self-serve conversions + closed won/loss by product type by next week, (c) add HG-Clearbit direct API integration to discussion, (d) finalize self-serve leads analysis. Charles to (i) share AI-driven model explainability example by end of week, (ii) assist w/ MadKudu audience + conversion goals updates, (iii) explore MQL score lookup via MCP server.</div>
       </div>
     </div>
   </div>
