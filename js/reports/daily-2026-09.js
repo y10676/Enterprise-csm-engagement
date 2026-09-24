@@ -81,218 +81,11 @@ function weeklyOrMonthlyHTML_2026_09_01() {
   </div>`;
 }
 
-function dayData_2026_09_02() {
-  return {
-    calls: [
-      { ts: 'Sep 2 · 7:30 AM', csm: 'rani', account: `Workday Inc`,
-        note: `SOW math walkthrough follow-up with Elaina Wasmus + Kraig Kraning + Leo Zunz. 481,746 additional credits at no extra cost as partnership gesture. Presenting both 1-year and 3-year options to finance before long weekend (~20-30% savings needed to justify budget increase).`,
-        mins: 30, health: 'Healthy',
-        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
-        detail: `Workday SOW math walkthrough follow-up with Elaina Wasmus, Kraig Kraning, Leo Zunz (Elaina stepping in for Alex). Rani asked Elaina to walk through her math (unclear jump to 4M credits + per-credit cost). Confirmed: ~481,746 additional credits at no extra cost as partnership gesture (buffer for evaluation). 3-year commitment offers significant vs annual renewals w/ capped increases + credit rollover. Finance needs 20-30% savings for budget increase. Both 1-year + 3-year options going to finance before long weekend. Follow-up call tomorrow.` },
-      { ts: 'Sep 2 · 10:30 AM', csm: 'pam', account: `F5`,
-        note: `Bi-weekly with Sherry Arnold + Mardigan Moffat. Hgeo customer voice platform 2-year discounted pricing pitch for Pascal (budget meeting upcoming). AI-driven content + SEO ranking value framing. Big IP being considered for product list expansion.`,
-        mins: 30, health: 'Healthy',
-        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
-        detail: `F5 TrustRadius bi-weekly with Sherry Arnold + Mardigan Moffat. Business: Hgeo customer voice platform 2-year option with discounted pricing ready for Pascal ahead of budget meeting. AI-driven solutions + content increasingly important for search-engine ranking; strategic value framing. Review-collection challenge for new AI products w/ small customer bases. Adding &ldquo;Big IP&rdquo; to product list under consideration. Mardigan to send market/competitive report examples.` },
-    ],
-    pulses: [
-      { csm: 'rani', account: `Workday Inc`, health: 'Healthy',
-        note: `SOW math walkthrough; 481K bonus credits partnership gesture; 1-yr and 3-yr options to finance before long weekend.` },
-      { csm: 'pam', account: `F5`, health: 'Healthy',
-        note: `Hgeo 2-year discounted pricing pitch for Pascal budget meeting; AI-driven content value framing; Big IP product-list expansion consideration.` },
-    ],
-  };
-}
 
-function dayMeta_2026_09_02() {
-  return {
-    pills: [
-      ['dot-teal',   '2 Calls'],
-      ['dot-amber',  '2 Expansion'],
-      ['dot-green',  '2 Vitally Pulses'],
-      ['dot-grey',   'Wed Sep 2 &middot; 101 scanned'],
-    ],
-    tabs: ['Overview', 'Calls (2)', 'Pulses (2)', 'Action Items (5)']
-  };
-}
 
-function dayOverviewHTML_2026_09_02() {
-  return `<div class="section-label">Team Activity &mdash; Wednesday September 2, 2026</div>
-  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
-    &#x1F4C5; <strong>Wednesday Sep 2 &mdash; 101 recordings scanned</strong> via SFDC SOQL &middot; <strong>2 confirmed calls</strong> (Rani, Pam) &middot; 0 concerning &middot; 2 expansion &middot; Very heavy day for CSM events (39 scheduled) but only 2 confirmed via transcript &mdash; 72 recordings had no transcript synced
-  </div>
-  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
-    &#x1F4C8; <strong>EXPANSION:</strong> Workday SOW follow-up &mdash; 481K bonus credits + 1-yr/3-yr options to finance before long weekend (Rani) &middot; F5 Hgeo 2-year pricing pitch for Pascal budget meeting + Big IP product-list expansion consideration (Pam)
-  </div>
-  <div style="background:#1c1f26;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fcd34d;">
-    &#x26A0;&#xFE0F; <strong>DARK DATA:</strong> 39 CSM-owned events but only 2 confirmed via transcript. Widespread no-transcript recordings across Atisha (SFDC, Deloitte, Optiv, Intel, RELEX, EY, Insight Direct, Unily), Rani (Google, AWS, Lenovo, Cisco, Oracle), Divyam (Informatica, Salesforce), Varun (Autodesk, Workspan, Five9, Informatica, Insight), Riley (SAP BTP, Adobe), Andy (RELEX, Cockroach), Pam (Epicor, F5 second slot).
-  </div>
-  <div class="overview-grid">
 
-    <div class="csm-card has-calls" data-csm="rani">
-      <span class="call-badge">1 CALL</span>
-      <div class="csm-card-header">
-        <div class="avatar av-grey">RG</div>
-        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
-      </div>
-      <div class="csm-metrics">
-        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
-        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
-        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
-      </div>
-      <div class="csm-account-note">Workday (&#x1F4C8; SOW walkthrough; 481K bonus credits; finance decision before long weekend) &middot; 5 other events (Google, AWS, Lenovo, Cisco, Oracle) all no-transcript</div>
-    </div>
 
-    <div class="csm-card has-calls" data-csm="pam">
-      <span class="call-badge">1 CALL</span>
-      <div class="csm-card-header">
-        <div class="avatar av-grey">PH</div>
-        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
-      </div>
-      <div class="csm-metrics">
-        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
-        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
-        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
-      </div>
-      <div class="csm-account-note">F5 (&#x1F4C8; Hgeo 2-year pricing pitch for Pascal) &middot; Epicor 7:30 AM + F5 second slot 10:30 AM no-transcript</div>
-    </div>
 
-    <div class="csm-card no-calls" data-csm="atisha">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header">
-        <div class="avatar av-grey">AW</div>
-        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
-      </div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">HUGE calendar day (8 events: SFDC ASEAN, Deloitte weekly, EY standing sync, RELEX co-attended, Optiv weekly, Insight Direct AI Sales Coach, Intel, Unily) &mdash; every one no-transcript</div>
-    </div>
-
-    <div class="csm-card no-calls" data-csm="varun">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header">
-        <div class="avatar av-varun">VT</div>
-        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
-      </div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">6 events (Insight MI Add-on, Workspan, Autodesk biweekly, Five9, Informatica co-w/ Divyam) &mdash; all no-transcript</div>
-    </div>
-
-    <div class="csm-card no-calls" data-csm="divyam">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header">
-        <div class="avatar av-divyam">DD</div>
-        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
-      </div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 events (Informatica weekly co-w/ Varun 9 AM, Salesforce/Informatica followup 10 AM) &mdash; both no-transcript</div>
-    </div>
-
-    <div class="csm-card no-calls" data-csm="andy">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header">
-        <div class="avatar av-grey">AL</div>
-        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
-      </div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 events (RELEX 7 AM co-attended w/ Atisha, Cockroach Labs 9 AM) &mdash; both no-transcript</div>
-    </div>
-
-    <div class="csm-card no-calls" data-csm="riley">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header">
-        <div class="avatar av-riley">RR</div>
-        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
-      </div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 events (SAP BTP TR 7 AM, TR-Adobe Success Call 10 AM) &mdash; recordings had no CSM speaker labels</div>
-    </div>
-
-    <div class="csm-card no-calls" data-csm="nick">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header">
-        <div class="avatar av-grey">NJ</div>
-        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
-      </div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Still on PTO. 2 events (Veeam team sync, Westcon monthly) had no recording synced</div>
-    </div>
-
-  </div>`;
-}
-
-function dayCallsHTML_2026_09_02() {
-  return `<div class="section-label">Confirmed Calls &mdash; Wednesday September 2, 2026</div>
-  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
-    &#x1F4C8; <strong>EXPANSION:</strong> Workday SOW &mdash; 481K bonus credits + 1-yr/3-yr options to finance before long weekend (Rani) &middot; F5 Hgeo 2-year pitch for Pascal budget meeting + Big IP product-list expansion (Pam)
-  </div>
-  <div style="background:#1c1f26;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fcd34d;">
-    &#x26A0;&#xFE0F; <strong>WIDESPREAD NO-TRANSCRIPT:</strong> 39 CSM events, 2 confirmed. Notable dark-data day &mdash; Atisha (8 events all no-transcript), Rani (5 additional events no-transcript), Varun (6), Divyam (2), Andy (2), Riley (2 no-CSM-speaker), Pam (2 additional slots). Suspect Weflow-side sync backlog rather than actual no-shows.
-  </div>`;
-}
-
-function dayPulsesHTML_2026_09_02() {
-  const cards = [
-    { csm:'rani', health:'Healthy', account:`Workday Inc`, opp:`Vitally Pulse &mdash; Sep 2 Call`,
-      arr:`Enterprise &middot; Rani Guy`, csmlbl:`Rani Guy`,
-      change:`Sep 2 &middot; Healthy`,
-      excerpt:`SOW math walkthrough &mdash; 481,746 additional credits offered at no extra cost as partnership gesture. Elaina Wasmus walking finance both 1-year and 3-year options before long weekend. Finance needs 20-30% savings to justify budget increase.` },
-    { csm:'pam', health:'Healthy', account:`F5`, opp:`Vitally Pulse &mdash; Sep 2 Call`,
-      arr:`Enterprise &middot; Pam Huck`, csmlbl:`Pam Huck`,
-      change:`Sep 2 &middot; Healthy`,
-      excerpt:`Hgeo 2-year discounted pricing ready for Pascal ahead of budget meeting. AI-driven content + SEO framing gaining traction. Big IP under consideration for product-list expansion.` },
-  ];
-  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
-  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
-  return `<div class="pulse-grid">${cards.map(c=>`
-    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
-      <div class="pulse-card-top">
-        <div>
-          <div class="pulse-account">${c.account}</div>
-          <div class="pulse-opp">${c.opp}</div>
-          <div class="pulse-arr">${c.arr}</div>
-        </div>
-        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
-      </div>
-      <div class="pulse-excerpt">${c.excerpt}</div>
-      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
-    </div>`).join('')}</div>
-  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
-}
-
-function dayActionsHTML_2026_09_02() {
-  return `<div class="action-list">
-    <div class="action-item ${doneActions.has('0902-1')?'done':''}" data-csm="rani" id="action-0902-1">
-      <div class="action-checkbox ${doneActions.has('0902-1')?'checked':''}" onclick="toggleAction('0902-1')"></div>
-      <div class="action-body">
-        <div class="action-title">&#x1F4C8; Workday &mdash; Send updated proposal + historical contract numbers before long weekend</div>
-        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy + Kraig Kraning &middot; Send updated proposal with exact savings numbers for both 1-year and 3-year options plus historical contract numbers so finance can see price increase justification. Elaina presenting to finance before long weekend. Follow-up call tomorrow.</div>
-      </div>
-    </div>
-    <div class="action-item ${doneActions.has('0902-2')?'done':''}" data-csm="pam" id="action-0902-2">
-      <div class="action-checkbox ${doneActions.has('0902-2')?'checked':''}" onclick="toggleAction('0902-2')"></div>
-      <div class="action-body">
-        <div class="action-title">&#x1F4C8; F5 &mdash; Send Hgeo pricing deck to Pascal for budget meeting</div>
-        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Pam Huck &middot; Send Pascal the Hgeo pricing deck ASAP ahead of Pascal&rsquo;s upcoming budget meeting. Sherry to follow up separately on AI-driven solutions value framing given F5&rsquo;s smaller AI customer base.</div>
-      </div>
-    </div>
-    <div class="action-item ${doneActions.has('0902-3')?'done':''}" data-csm="pam" id="action-0902-3">
-      <div class="action-checkbox ${doneActions.has('0902-3')?'checked':''}" onclick="toggleAction('0902-3')"></div>
-      <div class="action-body">
-        <div class="action-title">&#x1F4CB; F5 &mdash; Market/competitive report examples + AI review strategy</div>
-        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Mardigan Moffat &middot; Send Sherry examples of market + competitive reports. Team to strategize on how to best encourage AI customers to write reviews given small customer bases. Consider adding &ldquo;Big IP&rdquo; to product list for review collection.</div>
-      </div>
-    </div>
-    <div class="action-item ${doneActions.has('0902-4')?'done':''}" data-csm="all" id="action-0902-4">
-      <div class="action-checkbox ${doneActions.has('0902-4')?'checked':''}" onclick="toggleAction('0902-4')"></div>
-      <div class="action-body">
-        <div class="action-title">&#x26A0;&#xFE0F; Team &mdash; Investigate Weflow no-transcript backlog</div>
-        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Ops &middot; 39 CSM events scheduled Sep 2 but only 2 confirmed via transcript. This is the highest dark-data day observed. Check whether Weflow sync is backlogged, whether specific CSMs&rsquo; Zoom/Teams setups changed, or whether new browser plugin issue. If backlog, expect these to re-scan positive in 24-48h.</div>
-      </div>
-    </div>
-    <div class="action-item ${doneActions.has('0902-5')?'done':''}" data-csm="nick" id="action-0902-5">
-      <div class="action-checkbox ${doneActions.has('0902-5')?'checked':''}" onclick="toggleAction('0902-5')"></div>
-      <div class="action-body">
-        <div class="action-title">&#x1F4CB; Nick PTO handoff &mdash; Veeam team sync + Westcon monthly coverage</div>
-        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Nick Johnson (PTO) / Rani (backup) &middot; Nick&rsquo;s Sept 2 events (Veeam team sync 4:45 AM, Westcon monthly 8 AM) had no recordings synced. Confirm coverage/re-scheduling status for remainder of PTO week.</div>
-      </div>
-    </div>
-  </div>
-  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
-}
 
 function dayData_2026_09_03() {
   return {
@@ -4961,6 +4754,360 @@ function dayActionsHTML_2026_09_01() {
       <div class="action-body">
         <div class="action-title">&#x1F4C8; SAS Institute &mdash; VP Sales meeting tomorrow + AI Navigator investment recommendations</div>
         <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Andy Lim + Steven White + Augie Buettner + Max Shaw &middot; Augie to prepare slides w/ data for VP Sales meeting tomorrow + send AI + Gen AI Navigator deck to Steven for additional talking points + relay feedback to product team re inability to apply product filters at market level in new Market Analyzer. Steven to brief Neil upon his return; resync w/ Neil once caught up on investment recommendations.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
+
+
+
+
+// ============================================================
+// Wednesday September 2, 2026
+// ============================================================
+
+function dayData_2026_09_02() {
+  return {
+    calls: [
+      { ts: 'Sep 2 &middot; 5:30 AM', csm: 'atisha', account: `Insight Direct USA Ltd`,
+        note: `AI Sales Coach + Marketing Assistant quick sync w/ Stephan Kuiper + Augie Buettner. Cloud consumption data integration w/ install data. "Resolved thing" clarified as v2 (not RJF). Follow-up needed w/ Bogdan on specific use case.`,
+        mins: 7, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `Short Insight Direct sync. Cloud consumption data being combined w/ install data by Stephen. Prior confusion about "resolved thing" resolved &mdash; confirmed on v2, not RJF as initially thought. Atisha to reach out to Bogdan to set up call to understand use case + build relationship today. Augie to work w/ attendees to reschedule missed meeting due to conflicting availability. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 2 &middot; 6:00 AM', csm: 'atisha', account: `Deloitte`,
+        note: `Weekly syncup w/ Rakesh Reddy + Angus Hyams + Augie Buettner + Omkar Hunuswadkar. Product catalog expanded from current installs to entire catalog. Data IQ license expiring soon &mdash; expedite data delivery. Continuous product-list refinement via Claude feedback.`,
+        mins: 23, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `Deloitte India Global GTM Strategy Team weekly. Product catalog expanded from current-installs focus to entire catalog based on user feedback. "Sketchbook" inclusion explained via AI rationalization for industrial use. Continuous refinement of product list + prompts for relevance/accuracy. Data IQ license expiry impending &mdash; urgency for current data drop. Both full universe + filtered list to be provided. Next: Omkar to provide updated data feed w/ new accounts by EoD + send mapping file w/ GHQ redirect explanations by EoD. Atisha to share Sketchbook classification feedback w/ Claude for refinement + refine product list for future deliveries. Rakesh + Rajesh to review provided data sets. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 2 &middot; 6:30 AM', csm: 'varun', account: `DXC Technology Services`,
+        note: `HGI Renewal + AQS connector integration session (91 min) w/ Preethi Vaidyanathan + Antoine Voiry + Jorge Pimentel + Augie Buettner + Mike Galyen. Client Lens + AQS integration exploration + MCP AI credits + Quick integration + Nov renewal timeframe.`,
+        mins: 91, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `DXC deep-dive on HG Insights data integration w/ Client Lens + AQS. Current process is manual (Excel export + manual ingestion) &mdash; not architecturally sound. HG MCP offers advanced consumption via AI credits &mdash; direct insights (account briefs, sales plays) vs current platform access. Direct integration w/ Quick as potential end goal &mdash; different pricing model based on AI credit consumption for specific queries/outputs vs raw data access. AI credit model focuses on paying for answers + insights (efficient vs processing raw data). HG proprietary + public data = "secret sauce" for actionable insights. Next: Augie + Preethi to schedule technical deep-dive tomorrow or early next week; Augie to send recap of data refresh schedule; Mike to show Quick pricing model diff vs current contract + explore credit allocation per user w/ Jorge + show credit consumption examples + demo Quick plugin + provide verified contact data if resolution enabled. All: iron out MCP integration details before November renewal. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 2 &middot; 7:00 AM', csm: 'riley', account: `SAP Inc (BTP)`,
+        note: `TR Monthly w/ Chris Grundy + Cole Arutian + Mardigan Moffat. SAP Dual Studio launching end of September &mdash; will supersede existing build solutions. Recent SAP org changes: teams merged into larger Business AI Platform (BAIP) marketing org. BTP already qualified for Buyer&rsquo;s Choice.`,
+        mins: 8, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `Short SAP BTP TR monthly. SAP Dual Studio launching end of September &mdash; eventual replacement for existing build solutions. Recent SAP org changes: multiple teams merged into larger Business AI Platform (BAIP) marketing organization &mdash; more coordinated messaging. Early-access programs for Dual Studio running &mdash; hopes for customer reviews from participants. SAP BTP already qualified for Buyer&rsquo;s Choice award. Efforts underway for next year's Top Rated. Next: SAP team to identify customers for Dual Studio reviews (by mid-November) + start pursuing reviews once launched end of September. Riley + Chris to schedule follow-up late September / early October + continue conversations on BAIP presence. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 2 &middot; 7:30 AM', csm: 'rani', account: `Workday Inc`,
+        note: `SOW discussion w/ Elaina Wasmus + Kraig Kraning + Leo Zunz. Additional 400K credits at no additional cost as partnership incentive tied to multi-year commitment. 3-year deal (3% cap y2/y3 vs 5% annual on 1yr) + 50% rollover of unused credits addressing finance concerns.`,
+        mins: 34, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Workday SOW discussion. Justification for additional 400K credits: partnership incentive at no additional cost tied to multi-year commitment (flexibility to evaluate credit usage). 3-year commitment offers significant savings vs 1-year (5% annual): 3% capped increase years 2/3 + rollover of unused credits. Blended cost per credit based on consumption tiers (not flat rate) &mdash; jumping to 4M credits doesn't auto-yield expected cost due to tiered pricing steps. Workday finance requires strong business case + demonstrable value/savings for spending exceeding budgeted amounts. 50% rollover of unused credits addresses finance concerns re unpredictable costs + surprise bills. Rani + Kraig to provide previous year contract numbers for comparison ASAP + firm up + send exact multi-year pricing ASAP + provide additional assets (discount details) to Elaina. Elaina to discuss w/ internal team + finance before four-day weekend. Rani to schedule follow-up call tomorrow. Confirmed via SFDC transcript speaker detection.`, source: 'sfdc' },
+
+      { ts: 'Sep 2 &middot; 7:30 AM', csm: 'pam', account: `Epicor Software Corporation`,
+        note: `TR Monthly w/ Rachel Abasi + Sam Malecek + Anderson Duncan. Event planning Sept 25-28 (potential Sept 24 Propello boot camp) &mdash; review generation strategy for Propello + Biztrack. Welcome party Fri Sept 25 4-5:30 PM = review-collection opportunity. Angel Carvalho managing onsite.`,
+        mins: 21, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `Epicor TR monthly. Event dates confirmed Sept 25-28 + potential Sept 24 focus for Propello boot camp (prime niche audience for review collection). Angel Carvalho manages onsite events team + coordinating logistics. Team bringing laptops + iPads + signage + QR-coded business cards (requires designated table space). Welcome party Fri Sept 25 4-5:30 PM = review-collection opportunity. Biztrack review gathering treated as test case for potential partnership + shared booth space. Next: Breanna to confirm event hours + expected Propello customer count + Sally Smith (Events) + Sunny Kennedy (Demand Gen) contact info + attempt to secure 4-seater table + confirm power needs. Pam to send registration link + QR code + team contact info + confirm incentive details ($25 gift card upon processing, $10 on-site). Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 2 &middot; 8:00 AM', csm: 'rani', account: `Amazon Web Services (AWS)`,
+        note: `AWS + TrustRadius introductions w/ Kris Durantet + Mark Fell + Karin Pindle + Cole Arutian + Mardigan Moffat. Potential TR+AWS partnership on account intelligence + ABM &mdash; consolidating tools + enhancing account intelligence layer. TR Quick integration collaboration + one-to-one/one-to-few ABM personalization.`,
+        mins: 27, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `AWS + TrustRadius partnership exploration for account intelligence + ABM. AWS focused on ABM + consolidating MarTech stack &mdash; wants unified experience for marketers + reduced tool count. TR offers broad contact data + generating engaged leads through targeted outbound campaigns using gated assets (market reports). AWS uses one-to-one/one-to-few ABM &mdash; requires highly personalized messaging + outreach vs broader scaled approaches. Contact acquisition key challenge for AWS ABM (identifying + engaging contacts in white-space accounts). TR Quick integration = potential collaboration avenue (currently seller-centric but adaptable for ABM). Next: Kris to reach out to internal stakeholders re how insights integrate into account intelligence layer + send TR materials for internal conversations + understand TR competitive differentiation vs ZoomInfo + 6sense. Mark to include Greg Schwartz + Diego for HG + Quick integration discussions in follow-on email + collaborate w/ AWS on Quick integration. Mardigan/Kris to schedule follow-up w/ AWS IDP/IDC teams re scaled marketing + contact acquisition. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 2 &middot; 8:30 AM', csm: 'varun', account: `Five9 Inc`,
+        note: `Trial-access grant + demo w/ Jordan Curtis + Ziad Amira + Brett Castonguay. New platform: better UI + AI-assisted outbound scoring + Market Analyzer w/ TAM/SAM/SOM. Jordan on PTO exploring during time-off; deep-dive w/ Varun 2-3 weeks after return.`,
+        mins: 26, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Five9 new-platform trial demo. Enhanced UI + functionality vs current platform. Market Intelligence tool: direct TAM/SAM/SOM definition + interactive AI support + advanced filtering. AI-assisted outbound scoring more sophisticated than current quick-start account scoring. Admin capabilities: manage access + track usage + control credits (reduces dependency on external support). Potential cost savings for Five9 via advanced product roadmaps + better integration possibilities. Jordan to explore during PTO + upon return + reach out to partner marketing team for project details by Thursday + upload account list for analysis (optional) + explore Market Sizing + Market Analyzer modules + investigate use cases + discuss pricing/purchase w/ team post-exploration. Varun to schedule deep-dive within 2-3 weeks of Jordan's return + monitor for product-team requests during PTO + extend trial period if needed. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 2 &middot; 10:00 AM', csm: 'divyam', account: `Informatica (SFDC-driven)`,
+        note: `Weekly Partnership Sync w/ Ziad Amira + Alexi Mouarkach + Hemraj Singh. Data feed delivered w/ new company_group_id column for install credits tracking (starting Dec 1). ROI matrix revisit &mdash; quantify AOV + win-rate for HG vs non-HG accounts. Teams + Slack delivery methods launching.`,
+        mins: 8, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `Informatica-SFDC partnership weekly. Data feed delivered (originally scheduled today, slight delay). Includes new company_group_id column for tracking install credits &mdash; necessitated by shift to credit-consumption model. New column implementation starts Dec 1; next feed after that date. ROI matrix revisit needed to quantify subscription value: how high-scoring accounts perform on AOV + win rate for HG vs non-HG accounts (referenced April 14 account distribution analysis by ICP band). HG introducing new delivery methods: Microsoft Teams + Slack integrations for human-language querying (account summaries + sales call prep). Zelmasry team to make arrangements for new column by Dec 1 + investigate ROI matrix re-eval + consider attending "Edging Cider" session Nov 8 or register for recording. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 2 &middot; 10:00 AM', csm: 'riley', account: `Adobe Systems Incorporated`,
+        note: `TR Success Call w/ Allison + Giacomo Pesaresi + Cole Arutian + Mardigan Moffat. Buyer&rsquo;s Choice extended Oct 16 (several products qualified). Commerce (11 reviews), Frame.io (8), Real-Time CDP (5). New Precision Demand Leads program leveraging AI + specific account data.`,
+        mins: 20, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `Adobe TR success call. Buyer&rsquo;s Choice deadline extended to Oct 16 &mdash; several products already qualified. Current review counts: Commerce (11) + Frame.io (8) + Real-Time CDP (5). New Precision Demand Leads program leveraging AI + specific account data for high-quality leads. Need to understand cost-effectiveness + conversion rates of additional review programs vs existing strategies (events). Product renewals underway: potentially consolidating/upgrading Brand Visibility coverage for FY27. Next: Giacomo + Allison to schedule market-reports review early next week. Allison to (a) connect w/ Giacomo async re market reports + review program details, (b) explore renewal options for 12/1 renewal by next week, (c) schedule sync w/ Mardigan later next week, (d) connect w/ Erica re Precision Demand Leads program post-renewal, (e) ask sales-ops liaison team about internal AI tools for sellers tomorrow. Riley to reschedule Angel meeting to tomorrow 10 AM EST + send Allison typical-questions doc pre-meeting. Cole to create Firefly example brief for Allison. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 2 &middot; 10:30 AM', csm: 'pam', account: `F5`,
+        note: `F5 TrustRadius bi-weekly with Sherry Arnold + Mardigan Moffat. Renewal positive: Pascal considering 2-year option w/ better value + discounts. Hgeo customer voice platform + geo crawlers + AI section. "Big IP" being explored as new product. AI-review strategy for small AI-product customer bases.`,
+        mins: 25, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `F5 TrustRadius bi-weekly. Pascal (client decision maker) very positive re current services + intends to renew + considering adding more products + events. 2-year contract option available w/ payment term similar to current one &mdash; best value + discounts. Hgeo customer voice platform includes standard features + new additions: geo crawlers + AI section to enhance LLM interactions. New reports hostable on trustradius.com + crawled by search engines &mdash; aids ranking for geo-specific LLM questions. Need to strategize on review generation for AI products (current customer base small; initial attempts faced challenges). Sherry to (a) follow up on geo item responsibility + schedule meetings, (b) follow up w/ Pascal re renewal + expansion, (c) investigate "Big IP" as product + review potential, (d) reach out to Pascal re TrustRadius presentation for her budget meeting, (e) develop AI-customer review strategy (campaigns/events). Pam to (i) ensure Pascal receives updated pricing + contract options, (ii) correct one-year slide indicating "one" not "two", (iii) coordinate w/ Sherry to process renewal paperwork, (iv) explore adding "Big IP" as product, (v) work w/ Sherry to create distributed-cloud sessions slide encouraging reviews at F5 Insiders booth. Mardigan to send Pascal hgeo customer voice platform overview + discuss AI use cases (product feedback from reviews). Confirmed via SFDC transcript speaker detection.`, source: 'sfdc' },
+
+      { ts: 'Sep 2 &middot; 12:00 PM', csm: 'atisha', account: `Optiv Security Inc`,
+        note: `Weekly sync w/ Roger Conarroe + Augie Buettner. Data expounding successful (incl. medium-strength signals). New CRL Sean joined (AI-focused strategy) taking over from John Hurley. AI tools discussion &mdash; Microsoft Copilot + internal "ag" tool for sales insights + fastback automation.`,
+        mins: 12, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `Optiv weekly sync. Data expounding successful including medium-strength signals. Org change: new CRL Sean brings AI-focused strategy (John Hurley stepping down to advisory). AI tools potential for enriching sales insights + automating content creation: Microsoft Copilot + internal "ag" tool for fastbacks. AI integration can significantly reduce sales team time on research + content generation. Considerations: sales reps' data understanding + bandwidth for advanced AI tools. Next: Roger to discuss "ag" + data tools w/ sales rep today + conduct similar reviews w/ other sales reps before next week + provide update on sales-rep conversation + potential HG impact + follow up on AI tool adoption + feedback. Atisha to share link for "edgy insider" MCP + agents integration w/ Slack + Microsoft Copilot session. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+    ],
+    pulses: [
+      { csm: 'atisha', account: `Insight Direct USA Ltd`, health: 'Healthy',
+        note: `AI Sales Coach quick sync &mdash; cloud consumption + install data integration. "Resolved thing" clarified on v2. Bogdan use-case discussion to be set up.` },
+      { csm: 'atisha', account: `Deloitte`, health: 'Healthy',
+        note: `Weekly &mdash; product catalog expanded to entire catalog. Data IQ license expiry urgency. Continuous product-list refinement via Claude feedback loop.` },
+      { csm: 'varun', account: `DXC Technology Services`, health: 'Healthy',
+        note: `Deep integration session (91 min) &mdash; Client Lens + AQS + MCP + Quick integration + AI credit consumption model. Nov renewal timeframe.` },
+      { csm: 'riley', account: `SAP Inc (BTP)`, health: 'Healthy',
+        note: `TR Monthly &mdash; SAP Dual Studio launching end of Sept. SAP teams merged into larger BAIP marketing org. BTP already qualified for Buyer&rsquo;s Choice.` },
+      { csm: 'rani', account: `Workday Inc`, health: 'Healthy',
+        note: `SOW discussion &mdash; 400K credits at no additional cost partnership incentive. 3-year deal (3% cap y2/y3 vs 5% annual on 1yr) + 50% credit rollover addressing finance concerns.` },
+      { csm: 'pam', account: `Epicor Software Corporation`, health: 'Healthy',
+        note: `TR Monthly &mdash; event planning Sept 25-28 + Propello boot camp Sept 24. Review generation strategy for Propello + Biztrack. Welcome party Fri Sept 25 = review-collection opportunity.` },
+      { csm: 'rani', account: `Amazon Web Services (AWS)`, health: 'Healthy',
+        note: `TR intros &mdash; potential partnership on account intelligence + ABM. Consolidating MarTech stack. TR Quick integration collaboration + one-to-one/one-to-few ABM personalization.` },
+      { csm: 'varun', account: `Five9 Inc`, health: 'Healthy',
+        note: `Trial access + demo &mdash; new platform w/ better UI + AI-assisted outbound scoring + Market Analyzer TAM/SAM/SOM. Jordan exploring during OOO; deep-dive 2-3 weeks post-return.` },
+      { csm: 'divyam', account: `Informatica (SFDC-driven)`, health: 'Healthy',
+        note: `Partnership sync &mdash; data feed delivered w/ new company_group_id column for credit tracking (Dec 1). ROI matrix revisit for AOV + win-rate quantification. Teams + Slack delivery launching.` },
+      { csm: 'riley', account: `Adobe Systems Incorporated`, health: 'Healthy',
+        note: `TR Success &mdash; Buyer&rsquo;s Choice extended Oct 16. Commerce (11) + Frame.io (8) + Real-Time CDP (5) reviews. New Precision Demand Leads program leveraging AI.` },
+      { csm: 'pam', account: `F5`, health: 'Healthy',
+        note: `Bi-weekly &mdash; renewal positive (2-year option preferred). Hgeo customer voice platform + geo crawlers + AI section. "Big IP" being explored as new product. AI-review strategy for small AI-product customer bases.` },
+      { csm: 'atisha', account: `Optiv Security Inc`, health: 'Healthy',
+        note: `Weekly &mdash; data expounding successful. New CRL Sean AI-focused (from John Hurley). Microsoft Copilot + internal "ag" tool discussion for sales insights + fastback automation.` },
+    ],
+  };
+}
+
+function dayMeta_2026_09_02() {
+  return {
+    pills: [
+      ['dot-teal',   '12 Calls'],
+      ['dot-amber',  '5 Expansion'],
+      ['dot-green',  '12 Vitally Pulses'],
+      ['dot-grey',   'Wed Sep 2 &middot; 101 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (12)', 'Pulses (12)', 'Action Items (7)']
+  };
+}
+
+function dayOverviewHTML_2026_09_02() {
+  return `<div class="section-label">Team Activity &mdash; Wednesday September 2, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Wednesday Sep 2 &mdash; 101 recordings scanned</strong> via SFDC SOQL &middot; <strong>12 confirmed calls</strong> across 6 CSMs &middot; 0 concerning &middot; 5 expansion signals &middot; SFDC confirmed 2 (Workday + F5); Weflow fallback added 10 unique recoveries
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>5 EXPANSION:</strong> Workday (SOW + 400K credits partnership incentive + 3-year cap + 50% rollover) &middot; F5 (renewal + 2-year option + hgeo platform + "Big IP" new product) &middot; AWS (potential TR partnership on account intelligence + ABM + Quick integration) &middot; DXC (integration deep-dive + MCP + Quick + AI credit model + Nov renewal) &middot; Five9 (new platform trial + AI-assisted outbound scoring)
+  </div>
+  <div style="background:#1c1f26;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fcd34d;">
+    &#x26A0;&#xFE0F; <strong>Weflow SFDC-sync backlog Day 1 (71% no-transcript):</strong> Sept 2 = 101 recordings, 29 with transcripts, 72 without. SFDC speaker detection confirmed only 2 customer calls (Workday + F5); 10 additional confirmations recovered via Weflow &lsquo;participants&rsquo; fallback.
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">3 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">3</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">42m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Insight Direct (cloud + install integration) &middot; Deloitte weekly (product catalog expansion + Data IQ license urgency) &middot; Optiv (new CRL AI-focused + AI tools for sales)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">117m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">DXC (&#x1F4C8; 91-min integration deep-dive + Client Lens + AQS + MCP + Quick + Nov renewal) &middot; Five9 (&#x1F4C8; new platform trial + AI-assisted scoring)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">61m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Workday SOW (&#x1F4C8; 400K credits partnership incentive + 3yr cap + 50% rollover) &middot; AWS (&#x1F4C8; TR partnership on account intel + ABM + Quick integration)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="pam">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">46m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Epicor TR (Sept 25-28 event + Propello + Biztrack review-gen strategy) &middot; F5 (&#x1F4C8; 2-year option + hgeo + "Big IP" new product)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">28m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">SAP BTP (Dual Studio launch end of Sept + BAIP org merger) &middot; Adobe (Buyer&rsquo;s Choice Oct 16 + Precision Demand Leads program)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">8m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Informatica (SFDC-driven) &mdash; new company_group_id column for credit tracking (Dec 1) + Teams + Slack delivery methods launching</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="nick">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">NJ</div><div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No confirmed customer calls. No Nick speaker in SFDC transcripts; no Weflow-participant hits on any Sept 2 recording.</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">AL</div><div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No confirmed customer calls. No Andy speaker in SFDC transcripts; no Weflow-participant hits on any Sept 2 recording.</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_09_02() {
+  return `<div class="section-label">Confirmed Calls &mdash; Wednesday September 2, 2026</div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>5 EXPANSION:</strong> Workday SOW (400K credits + 3yr cap + rollover) &middot; F5 (2-year renewal + hgeo + Big IP) &middot; AWS (TR partnership on account intel + ABM) &middot; DXC (91-min integration deep-dive + Nov renewal) &middot; Five9 (new platform trial)
+  </div>`;
+}
+
+function dayPulsesHTML_2026_09_02() {
+  const cards = [
+    { csm:'atisha', health:'Healthy', account:`Insight Direct USA Ltd`, opp:`Vitally Pulse &mdash; Sep 2 Call`,
+      arr:`Enterprise &middot; Atisha Waghela`, csmlbl:`Atisha Waghela`, change:`Sep 2 &middot; Healthy`,
+      excerpt:`AI Sales Coach + Marketing Assistant quick sync &mdash; cloud consumption + install data integration. "Resolved thing" clarified as v2 (not RJF). Atisha to reach out to Bogdan to build relationship + understand use case.` },
+    { csm:'atisha', health:'Healthy', account:`Deloitte`, opp:`Vitally Pulse &mdash; Sep 2 Call`,
+      arr:`Enterprise &middot; Atisha Waghela`, csmlbl:`Atisha Waghela`, change:`Sep 2 &middot; Healthy`,
+      excerpt:`Weekly syncup &mdash; product catalog expanded from current-installs to entire catalog. Data IQ license expiry impending &mdash; expedited data delivery urgency. Continuous product-list refinement via Claude feedback loop.` },
+    { csm:'varun', health:'Healthy', account:`DXC Technology Services`, opp:`Vitally Pulse &mdash; Sep 2 Call`,
+      arr:`Enterprise &middot; Varun Tiwari`, csmlbl:`Varun Tiwari`, change:`Sep 2 &middot; Healthy`,
+      excerpt:`HGI Renewal + AQS connector integration deep-dive (91 min) &mdash; Client Lens + AQS integration exploration + MCP AI credits + Quick integration + AI credit consumption model vs raw data access. Nov renewal timeframe.` },
+    { csm:'riley', health:'Healthy', account:`SAP Inc (BTP)`, opp:`Vitally Pulse &mdash; Sep 2 Call`,
+      arr:`Enterprise &middot; Riley Rogers`, csmlbl:`Riley Rogers`, change:`Sep 2 &middot; Healthy`,
+      excerpt:`TR Monthly &mdash; SAP Dual Studio launching end of September, will supersede existing build solutions. SAP org changes: teams merged into larger BAIP (Business AI Platform) marketing org. BTP already qualified for Buyer&rsquo;s Choice award.` },
+    { csm:'rani', health:'Healthy', account:`Workday Inc`, opp:`Vitally Pulse &mdash; Sep 2 Call`,
+      arr:`Enterprise &middot; Rani Guy`, csmlbl:`Rani Guy`, change:`Sep 2 &middot; Healthy`,
+      excerpt:`SOW discussion &mdash; 400K credits at no additional cost as partnership incentive (multi-year commitment). 3-year commitment offers 3% cap y2/y3 vs 5% annual on 1-year + 50% rollover of unused credits addressing finance concerns.` },
+    { csm:'pam', health:'Healthy', account:`Epicor Software Corporation`, opp:`Vitally Pulse &mdash; Sep 2 Call`,
+      arr:`Enterprise &middot; Pam Huck`, csmlbl:`Pam Huck`, change:`Sep 2 &middot; Healthy`,
+      excerpt:`TR Monthly &mdash; event planning Sept 25-28 + potential Sept 24 Propello boot camp. Review generation strategy for Propello + Biztrack. Welcome party Fri Sept 25 4-5:30 PM = review-collection opportunity. Angel Carvalho managing onsite.` },
+    { csm:'rani', health:'Healthy', account:`Amazon Web Services (AWS)`, opp:`Vitally Pulse &mdash; Sep 2 Call`,
+      arr:`Enterprise &middot; Rani Guy`, csmlbl:`Rani Guy`, change:`Sep 2 &middot; Healthy`,
+      excerpt:`TR + AWS introductions &mdash; potential partnership on account intelligence + ABM. AWS consolidating MarTech stack. TR Quick integration collaboration + one-to-one/one-to-few ABM personalization. Contact acquisition key challenge for white-space accounts.` },
+    { csm:'varun', health:'Healthy', account:`Five9 Inc`, opp:`Vitally Pulse &mdash; Sep 2 Call`,
+      arr:`Enterprise &middot; Varun Tiwari`, csmlbl:`Varun Tiwari`, change:`Sep 2 &middot; Healthy`,
+      excerpt:`Trial access + demo &mdash; new platform w/ better UI + AI-assisted outbound scoring + Market Analyzer TAM/SAM/SOM. Jordan exploring during OOO; deep-dive w/ Varun 2-3 weeks after return. Potential cost savings via better integration possibilities.` },
+    { csm:'divyam', health:'Healthy', account:`Informatica (SFDC-driven)`, opp:`Vitally Pulse &mdash; Sep 2 Call`,
+      arr:`Enterprise &middot; Divyam Dewan`, csmlbl:`Divyam Dewan`, change:`Sep 2 &middot; Healthy`,
+      excerpt:`Partnership sync &mdash; data feed delivered w/ new company_group_id column for install credits tracking (starting Dec 1). ROI matrix revisit for AOV + win-rate quantification. Teams + Slack delivery methods launching for human-language querying.` },
+    { csm:'riley', health:'Healthy', account:`Adobe Systems Incorporated`, opp:`Vitally Pulse &mdash; Sep 2 Call`,
+      arr:`Enterprise &middot; Riley Rogers`, csmlbl:`Riley Rogers`, change:`Sep 2 &middot; Healthy`,
+      excerpt:`TR Success &mdash; Buyer&rsquo;s Choice extended Oct 16. Commerce (11) + Frame.io (8) + Real-Time CDP (5) reviews. New Precision Demand Leads program leveraging AI + specific account data. 12/1 renewal discussion + Brand Visibility consolidation.` },
+    { csm:'pam', health:'Healthy', account:`F5`, opp:`Vitally Pulse &mdash; Sep 2 Call`,
+      arr:`Enterprise &middot; Pam Huck`, csmlbl:`Pam Huck`, change:`Sep 2 &middot; Healthy`,
+      excerpt:`Bi-weekly &mdash; renewal positive w/ Pascal considering 2-year option (better value + discounts). Hgeo customer voice platform + geo crawlers + AI section for LLM interactions. "Big IP" being explored as new product. AI-review strategy for small AI-product customer bases.` },
+    { csm:'atisha', health:'Healthy', account:`Optiv Security Inc`, opp:`Vitally Pulse &mdash; Sep 2 Call`,
+      arr:`Enterprise &middot; Atisha Waghela`, csmlbl:`Atisha Waghela`, change:`Sep 2 &middot; Healthy`,
+      excerpt:`Weekly sync &mdash; data expounding successful. New CRL Sean joined w/ AI-focused strategy (from John Hurley). Microsoft Copilot + internal "ag" tool discussion for enriching sales insights + fastback automation.` },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div class="pulse-account">${c.account}</div>
+          <div class="pulse-opp">${c.opp}</div>
+          <div class="pulse-arr">${c.arr}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_09_02() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('0902-1')?'done':''}" data-csm="rani" id="action-0902-1">
+      <div class="action-checkbox ${doneActions.has('0902-1')?'checked':''}" onclick="toggleAction('0902-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Workday &mdash; SOW pricing + Docusign before four-day weekend</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy + Kraig Kraning + Leo Zunz &middot; Provide previous-year contract numbers for comparison ASAP + firm up + send exact multi-year pricing numbers ASAP + provide additional assets (discount details) to Elaina. Elaina to discuss w/ internal team + finance before four-day weekend. Rani to schedule follow-up call tomorrow. 400K credits at no additional cost partnership incentive + 3% cap y2/y3 + 50% rollover.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0902-2')?'done':''}" data-csm="varun" id="action-0902-2">
+      <div class="action-checkbox ${doneActions.has('0902-2')?'checked':''}" onclick="toggleAction('0902-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; DXC &mdash; technical deep-dive + MCP integration decisions before Nov renewal</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Varun Tiwari + Augie Buettner + Mike Galyen + Preethi Vaidyanathan &middot; Schedule tech deep-dive tomorrow or early next week. Augie to send data-refresh schedule recap. Mike to (a) show Quick pricing model diff vs current contract, (b) explore credit allocation per user w/ Jorge, (c) show credit consumption examples (account brief + outreach sequence), (d) demo Quick plugin, (e) provide verified contact data if resolution enabled. Iron out MCP integration details before Nov renewal.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0902-3')?'done':''}" data-csm="pam" id="action-0902-3">
+      <div class="action-checkbox ${doneActions.has('0902-3')?'checked':''}" onclick="toggleAction('0902-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; F5 &mdash; 2-year renewal option + hgeo customer voice + "Big IP" new product</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Pam Huck + Sherry Arnold + Mardigan Moffat &middot; Pam to ensure Pascal receives updated pricing + contract options + correct one-year slide indicating "one" not "two" + coordinate renewal paperwork + explore adding "Big IP" as product + create distributed-cloud sessions slide for F5 Insiders booth. Sherry to follow up on geo item responsibility + Pascal renewal/expansion + investigate "Big IP" review potential + AI-customer review strategy. Mardigan to send Pascal hgeo overview + discuss AI use cases.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0902-4')?'done':''}" data-csm="rani" id="action-0902-4">
+      <div class="action-checkbox ${doneActions.has('0902-4')?'checked':''}" onclick="toggleAction('0902-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; AWS &mdash; TR partnership follow-up + Quick integration + ABM contact acquisition</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Rani Guy + Mark Fell + Mardigan Moffat &middot; Kris to reach out to internal stakeholders re insights integration into account intelligence layer + send TR materials + understand TR competitive differentiation vs ZoomInfo + 6sense. Mark to include Greg Schwartz + Diego for HG + Quick integration discussions + collaborate w/ AWS on Quick integration. Mardigan/Kris to schedule follow-up w/ AWS IDP/IDC teams re scaled marketing + contact acquisition.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0902-5')?'done':''}" data-csm="varun" id="action-0902-5">
+      <div class="action-checkbox ${doneActions.has('0902-5')?'checked':''}" onclick="toggleAction('0902-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Five9 &mdash; new platform trial exploration + deep-dive 2-3 weeks post-Jordan return</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Varun Tiwari + Jordan Curtis &middot; Jordan to explore new platform during PTO + upon return + reach out to partner marketing team for project details by Thursday + upload account list for analysis + explore Market Sizing + Market Analyzer + investigate use cases + discuss pricing/purchase w/ team post-exploration. Varun to schedule deep-dive within 2-3 weeks of Jordan's return + monitor for product-team requests during PTO + extend trial period if needed.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0902-6')?'done':''}" data-csm="atisha" id="action-0902-6">
+      <div class="action-checkbox ${doneActions.has('0902-6')?'checked':''}" onclick="toggleAction('0902-6')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Deloitte &mdash; expedite data feed before Data IQ license expiry</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Atisha Waghela + Omkar Hunuswadkar &middot; Omkar to provide updated data feed w/ new accounts by EoD + send mapping file w/ GHQ redirect explanations by EoD. Atisha to share "Sketchbook" classification feedback w/ Claude for refinement + refine product list for future deliveries. Rakesh + Rajesh to review provided full + filtered data sets. Data Team to resolve issues re accounts linked to different GHQs.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0902-7')?'done':''}" data-csm="pam" id="action-0902-7">
+      <div class="action-checkbox ${doneActions.has('0902-7')?'checked':''}" onclick="toggleAction('0902-7')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Epicor &mdash; event logistics + review-generation setup for Sept 25-28</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Pam Huck + Breanna Maloney + Anderson Duncan &middot; Breanna to confirm event hours + expected Propello customer count + Sally Smith (Events) + Sunny Kennedy (Demand Gen) contact info + secure 4-seater table w/ power. Pam to send registration link + QR code + team contact info + confirm review-incentive details ($25 gift card upon processing, $10 on-site) + discuss tagging strategy + widget priorities in future meeting.</div>
       </div>
     </div>
   </div>
