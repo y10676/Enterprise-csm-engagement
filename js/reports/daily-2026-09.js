@@ -3454,284 +3454,11 @@ function dayActionsHTML_2026_09_22() {
 // Wednesday September 23, 2026
 // ============================================================
 
-function dayData_2026_09_23() {
-  return {
-    calls: [
-      { ts: 'Sep 23 &middot; 9:00 AM', csm: 'divyam', account: 'Snowflake',
-        note: 'Snowflake / HGI intro w/ Alpesh Jain (Snowflake GTM Strategy & Ops, ~1.5 yrs in role) + Ziad Amira (HG AE) + Gavin Padden (HG Solutions) &mdash; first Divyam&times;Alpesh meeting; Cloud Dynamics Renewal 2028 timeframe; GTM/new-logo/market-expansion use cases',
-        mins: 30, health: 'Healthy',
-        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
-        detail: 'First-time meeting between Divyam and Alpesh Jain (Snowflake, leading part of GTM Strategy & Ops for ~1.5 years, covering new logos, market expansion, and related topics). Max was unable to join. Ziad opened with Snowflake&rsquo;s Cloud Dynamics renewal context (2028), Gavin explained the Solutions role as the "data-fit" lens for new use cases. Divyam framed CSM continuity from ZoomInfo background. This is a foundation-setting call for the Snowflake team as they get more strategic about how HG data fits into their new-logo and expansion motion.' },
 
-      { ts: 'Sep 23 &middot; 9:30 AM', csm: 'varun', account: 'MongoDB Inc',
-        note: 'MongoDB Renewal Scoping w/ Steven Harbron + (Will Bracken absent, awaiting Slack ping) + Ziad Amira (HG AE) &mdash; new pricing model reduces install-data credit cost 0.5&rarr;0.1; contract could drop to ~$16K but $40K RGIP minimum; Steven has flat-budget approval; opportunity to keep budget same and consume more data',
-        mins: 30, health: 'Healthy',
-        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
-        detail: 'Ziad delivered pricing update: HG&rsquo;s new credit model dropped install-data cost from 0.5&rarr;0.1 credits per record. Based on MongoDB&rsquo;s current consumption pattern, effective renewal price could be ~$16K vs their current ~$40K spend &mdash; but the RGIP data feed has a $40K minimum threshold. Steven confirmed he has approval to keep the budget flat and was actively trying to tailor the technology list to avoid overages. He shared a revised technology list with swap-ins/swap-outs already made. Expansion angle: since Steven wants flat budget, the freed credits open up capacity for more data consumption &mdash; net-new logo acquisition + enrichment beyond current scope. Ziad and Varun to work up options that keep budget at $40K but expand consumption footprint. India-based procurement (Gaprit Moran) will coordinate signature timing.' },
 
-      { ts: 'Sep 23 &middot; 10:00 AM', csm: 'varun', account: 'BMC Software Inc',
-        note: 'BMC Copilot 2.0 onboarding follow-up w/ Louise Eekhof (BMC Sales Ops) + Rafael Mueller (BMC Engineering, builds the sales copilot) + Rohit Saraf (HG) + Augie Buettner (HG AM) &mdash; Louise wants smaller focused sessions to "take action instead of discussing over and over"; Salesforce integration blocking Copilot value; territory-mapping segment filter (growth/enterprise/star) demoed',
-        mins: 30, health: 'Concerning',
-        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Issue',
-        detail: 'Louise Eekhof (BMC Sales Ops) explicitly asked to shrink group size going forward: "I feel like if we&rsquo;re in a bigger group we&rsquo;re more focused on the strategy or like other things and I just want to see how I can help in order to move it forward and really take some action now instead of keep discussing things over and over again." Salesforce integration is currently NOT connected in production, which materially reduces Copilot value. Varun walked through how the new Sales Copilot displays segment filters (growth/enterprise/star) that pull from a Salesforce field once the integration is up. Rafael (BMC Engineering, building the sales copilot on their side) joined to listen and identify platform gaps that need to change. Renewal history from prior memory: Aug 17 flagged BMC as Severe Risk pulse ($284.7K ARR), Sept 15 had Copilot 2.0 onboarding with Devin McCarthy new field lead. Louise&rsquo;s frustration + integration blocker on top of the prior severe pulse warrants Concerning classification &mdash; escalate to keep the Copilot deployment on track.' },
 
-      { ts: 'Sep 23 &middot; 10:30 AM', csm: 'nick', account: 'VASS',
-        note: 'VASS SAP MDF renewal + 2027 plans conversation w/ Jessica Utley (VASS, new CS lead replacing Eve) &mdash; Oct 12 renewal, VASS used SAP development funds for original signing, but Jessica flagged internal adoption of the tool has NOT been as high as they&rsquo;d like &mdash; adoption gap ahead of renewal',
-        mins: 30, health: 'Concerning',
-        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
-        detail: 'Part of Nick&rsquo;s ongoing SAP-partner-cohort renewal blitz (Aug 27 memory noted 5 partners in one day pre-Oct 12 renewal). VASS renewal is Oct 12; original contract was signed via SAP development funds under Eve (predecessor to Jessica Utley). Jessica is new to the CS role and asked when a renewal decision needs to be made &mdash; Nick clarified there is no auto-renewal so timing depends on VASS side to align SAP funds again. Jessica was transparent: "I don&rsquo;t know if the adoption of the tool internally has been as high as we would like it to be." Nick recapped the 2026 cohort training model (monthly sessions with all SAP partners) and offered to be more responsive on VASS-specific requests. Adoption gap + renewal in 19 days + brand-new CS lead = Concerning. Nick to work with VASS on rapid-adoption assist + re-scope 2027 packaging.' },
 
-      { ts: 'Sep 23 &middot; 12:30 PM', csm: 'riley', account: 'Paylocity',
-        note: 'Paylocity TR monthly w/ Matt Doyle + Olivia (Paylocity) + Anderson (HG AM); new feature preview: incentive budget live in vendor portal; nothing top-of-mind on customer side',
-        mins: 30, health: 'Healthy',
-        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
-        detail: 'Recurring monthly TR sync. Riley preemptively flagged she had ~15 min due to a family visit. Anderson (HG AM) present for continuity; introduced to Olivia (new to the calls). Matt confirmed no top-of-mind concerns. Riley walked through new features: the incentive budget dashboard now live in the vendor portal ($14,725 balance surfaced). Matt engaged positively with the new visibility. Cadence intact.' },
-    ],
-    pulses: [
-      { csm:'divyam', health:'Healthy', account:'Snowflake',
-        opp:'Vitally Pulse &mdash; Sep 23 Call',
-        arr:'Enterprise &middot; Divyam Dewan', csmlbl:'Divyam Dewan',
-        change:'Sep 23 &middot; New Stakeholder Intro',
-        excerpt:'9/23 DD: 30 min Snowflake / HGI intro (9 AM PT) w/ Alpesh Jain (GTM Strategy & Ops) + Ziad Amira + Gavin Padden. First Divyam&times;Alpesh meeting. Cloud Dynamics Renewal 2028 timeframe. New-logo + market-expansion use cases; foundation-setting.' },
-      { csm:'varun', health:'Healthy', account:'MongoDB Inc',
-        opp:'Vitally Pulse &mdash; Sep 23 Call',
-        arr:'Enterprise &middot; Varun Tiwari', csmlbl:'Varun Tiwari',
-        change:'Sep 23 &middot; Pricing Expansion Opportunity',
-        excerpt:'9/23 VT: 30 min MongoDB Renewal Scoping (9:30 AM PT) w/ Steven Harbron + Ziad Amira. New credit model drops install cost 0.5&rarr;0.1 &mdash; effective renewal could be ~$16K vs current $40K, but $40K RGIP minimum. Steven has flat-budget approval &mdash; opportunity to expand data consumption at same price.' },
-      { csm:'varun', health:'Concerning', account:'BMC Software Inc',
-        opp:'Vitally Pulse &mdash; Sep 23 Call',
-        arr:'Enterprise &middot; Varun Tiwari', csmlbl:'Varun Tiwari',
-        change:'Sep 23 &middot; Copilot Integration Blocker',
-        excerpt:'9/23 VT: 30 min BMC Copilot 2.0 onboarding follow-up (10 AM PT) w/ Louise Eekhof + Rafael Mueller + Rohit Saraf + Augie Buettner. Salesforce integration NOT connected in production &mdash; blocking Copilot value. Louise wants smaller groups + action, not more discussion. Follows Aug 17 Severe Risk pulse.' },
-      { csm:'nick', health:'Concerning', account:'VASS',
-        opp:'Vitally Pulse &mdash; Sep 23 Call',
-        arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
-        change:'Sep 23 &middot; Adoption Gap Pre-Renewal',
-        excerpt:'9/23 NJ: 30 min VASS 2027 plans (10:30 AM PT) w/ Jessica Utley (new CS lead). Oct 12 renewal &mdash; Jessica flagged internal adoption "not as high as we would like it to be." SAP dev-fund path assumed. Adoption gap + 19 days to renewal + new CS lead = Concerning.' },
-      { csm:'riley', health:'Healthy', account:'Paylocity',
-        opp:'Vitally Pulse &mdash; Sep 23 Call',
-        arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
-        change:'Sep 23 &middot; Incentive Budget Feature',
-        excerpt:'9/23 RR: 30 min Paylocity TR monthly (12:30 PM PT) w/ Matt Doyle + Olivia + Anderson (HG AM). Incentive budget dashboard now live in vendor portal ($14,725 balance surfaced). Nothing top-of-mind on customer side. Cadence intact.' },
-    ],
-  };
-}
 
-function dayMeta_2026_09_23() {
-  return {
-    pills: [
-      ['dot-teal',   '5 Calls'],
-      ['dot-red',    '2 Concerning'],
-      ['dot-amber',  '1 Expansion'],
-      ['dot-green',  '5 Vitally Pulses'],
-      ['dot-grey',   'Wed Sep 23 &middot; 145 scanned &middot; 86% no-transcript'],
-    ],
-    tabs: ['Overview', 'Calls (5)', 'Pulses (5)', 'Action Items (7)']
-  };
-}
-
-function dayOverviewHTML_2026_09_23() {
-  return `<div class="section-label">Team Activity &mdash; Wednesday September 23, 2026</div>
-  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
-    &#x1F4C5; <strong>Wed Sep 23 &mdash; 145 recordings scanned</strong> via SFDC SOQL &middot; <strong>5 confirmed customer calls</strong> (Divyam&times;Snowflake, Varun&times;MongoDB, Varun&times;BMC, Nick&times;VASS, Riley&times;Paylocity) &middot; <strong>2 Concerning (BMC, VASS)</strong> &middot; 1 Expansion (MongoDB pricing model unlocks expansion at flat budget) &middot; 1 INTERNAL excluded (Weekly GTM Enablement Session 8 AM w/ Pam).
-  </div>
-  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
-    &#x1F6A8; <strong>Weflow sync backlog Day 15 &mdash; regression continues:</strong> 86% no-transcript rate on Sept 23 (up from 79% Sept 22, 78% Sept 21). Trajectory: Sep 16 92% &rarr; Sep 17 84% &rarr; Sep 18 71% &rarr; Sep 21 78% &rarr; Sep 22 79% &rarr; <strong>Sep 23 86%</strong>. Escalation trigger met yesterday still open. 7 CSM-owned recordings had no transcript; 26 CSM events had no recording &mdash; biggest gap yet.
-  </div>
-  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
-    &#x1F6A8; <strong>Concerning &mdash; BMC (Varun):</strong> Louise Eekhof (BMC Sales Ops) asked for smaller groups + action ("not keep discussing things over and over"); Salesforce integration NOT connected in production is blocking Copilot value. Follows Aug 17 Severe Risk pulse. Renewal watch.<br>
-    &#x1F6A8; <strong>Concerning &mdash; VASS (Nick):</strong> Oct 12 renewal (19 days); Jessica Utley (new CS lead replacing Eve) flagged internal adoption of HG tool "not as high as we would like it to be." SAP development-fund path assumed but adoption gap is the risk.
-  </div>
-  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
-    &#x1F4C8; <strong>Expansion &mdash; MongoDB (Varun):</strong> New HG credit model drops install-data cost 0.5&rarr;0.1 credits/record. Effective renewal could be ~$16K vs current $40K, but $40K RGIP minimum. Steven has flat-budget approval &mdash; freed credits open room to expand data consumption (net-new logo acquisition + enrichment).
-  </div>
-  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
-    &#x1F91D; <strong>Internal HG-only excluded:</strong> Weekly GTM Enablement Session (8 AM PT, 60 min) &mdash; Pam Huck attended along with Katie Pariseau, Samantha Staynings, Nik Koutsoukos (HG CTO), Disha Ahuja, Grace Wells, Katie Allison, Rachel Christopher, Ranjit Nair. Topic: Context 26 virtual event prep + HG Customer Voice launch. All HG staff, no customer.
-  </div>
-  <div class="overview-grid">
-
-    <div class="csm-card has-calls" data-csm="varun">
-      <span class="call-badge">2 CALLS</span>
-      <div class="csm-card-header"><div class="avatar av-varun">VT</div><div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-metrics">
-        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
-        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
-        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
-        <div><div class="metric-num m-grey">60m</div><div class="metric-lbl">Duration</div></div>
-      </div>
-      <div class="csm-account-note">MongoDB (Renewal Scoping &mdash; pricing drop 0.5&rarr;0.1 credit unlocks expansion) &middot; BMC Software (Concerning &mdash; Copilot 2.0 SFDC integration blocker + Louise&rsquo;s "action-not-discussion" pushback) &middot; 5 CSM events no recording: CBTS (no transcript), ServiceNow monthly, Five9 sync, Informatica ×3, Exclusive Networks biweekly, Zendesk TR CSM Sync, Pegasystems biweekly, Insight sync</div>
-    </div>
-
-    <div class="csm-card has-calls" data-csm="divyam">
-      <span class="call-badge">1 CALL</span>
-      <div class="csm-card-header"><div class="avatar av-divyam">DD</div><div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-metrics">
-        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
-        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
-        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
-      </div>
-      <div class="csm-account-note">Snowflake (first Divyam&times;Alpesh Jain meeting; Cloud Dynamics Renewal 2028; new-logo + market-expansion use cases) &middot; 1 unconfirmed w/ recording: Xero Monthly Sync 12:15 AM (EMEA slot) &middot; 2 events no recording: Safaricom Monthly Cadence 4 AM, Informatica weekly co</div>
-    </div>
-
-    <div class="csm-card has-calls" data-csm="nick">
-      <span class="call-badge">1 CALL</span>
-      <div class="csm-card-header"><div class="avatar av-grey">NJ</div><div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-metrics">
-        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
-        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
-        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
-        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
-      </div>
-      <div class="csm-account-note">VASS (Concerning &mdash; Oct 12 renewal, adoption gap flagged by new CS lead Jessica Utley) &middot; 1 unconfirmed: SAP intro 9 AM &middot; 1 event no recording: Exclusive Networks biweekly 9 AM</div>
-    </div>
-
-    <div class="csm-card has-calls" data-csm="riley">
-      <span class="call-badge">1 CALL</span>
-      <div class="csm-card-header"><div class="avatar av-riley">RR</div><div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-metrics">
-        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
-        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
-        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
-      </div>
-      <div class="csm-account-note">Paylocity (TR monthly &mdash; incentive budget dashboard new feature; nothing top-of-mind for customer) &middot; 1 event no recording: MasterControl TR CSM Sync 8 AM</div>
-    </div>
-
-    <div class="csm-card no-calls" data-csm="pam">
-      <span class="no-call-badge">0 Calls (customer)</span>
-      <div class="csm-card-header"><div class="avatar av-grey">PH</div><div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Attended Weekly GTM Enablement Session 8 AM (INTERNAL, excluded) &middot; 2 recordings no transcript (Epicor 9:30 AM, Microsoft Security TR 11:05 AM) &middot; 4 events no recording (Epicor variants, GoTo TR Sync)</div>
-    </div>
-
-    <div class="csm-card no-calls" data-csm="rani">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header"><div class="avatar av-grey">RG</div><div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">5 events no recording: Google Weekly ×2 slots (AI Spend 90-day POC + CVP/Intent/IDL) 8 AM, Lenovo/OneSix Onboarding 9:30 AM, Workday monthly 9:30 AM, Cisco GRO 10 AM. Google post-on-site cadence intact but hidden.</div>
-    </div>
-
-    <div class="csm-card no-calls" data-csm="atisha">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header"><div class="avatar av-grey">AW</div><div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 recordings no transcript (SFDC ASEAN 1:30 AM, Deloitte weekly 6 AM) &middot; 3 events no recording (Unily 6 AM, EY Standing Sync 6:30 AM, RSM Quick Syncup 11 AM)</div>
-    </div>
-
-    <div class="csm-card no-calls" data-csm="andy">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header"><div class="avatar av-grey">AL</div><div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event no recording: Catchup 2 AM</div>
-    </div>
-
-  </div>`;
-}
-
-function dayCallsHTML_2026_09_23() {
-  return `<div class="section-label">Confirmed Calls &mdash; Wednesday September 23, 2026</div>
-  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
-    &#x26A0;&#xFE0F; <strong>7 CSM-owned recordings had no transcript</strong> &mdash; inferred only. Highest-value manual-log candidates: Divyam&times;Xero Monthly Sync (12:15 AM EMEA slot &mdash; 2027 renewal), Atisha&times;Salesforce Weekly Sync (1:30 AM &mdash; ASEAN 2027 Renewal), Atisha&times;Deloitte weekly (6 AM &mdash; G500 Alliance Strategic Intel 2027 Renewal), Varun&times;CBTS biweekly (7:30 AM), Nick&times;SAP intro (9 AM), Pam&times;Epicor (9:30 AM NA Sales), Pam&times;Microsoft Security TR (11:05 AM &mdash; second week running, part of Sept 22 Security Copilot review-clip thread). 26 additional CSM events had no recording at all.
-  </div>
-  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
-    &#x1F91D; <strong>Internal HG-only excluded:</strong> Weekly GTM Enablement Session (8 AM PT, 60 min &mdash; Pam attended) &mdash; Context 26 launch prep + HG Customer Voice deep-dive. All HG staff, no customer.
-  </div>`;
-}
-
-function dayPulsesHTML_2026_09_23() {
-  const cards = [
-    { csm:'divyam', health:'Healthy', account:'Snowflake',
-      opp:'Vitally Pulse &mdash; Sep 23 Call',
-      arr:'Enterprise &middot; Divyam Dewan', csmlbl:'Divyam Dewan',
-      change:'Sep 23 &middot; New Stakeholder Intro',
-      excerpt:'9/23 DD: 30 min Snowflake / HGI intro (9 AM PT) w/ Alpesh Jain (GTM Strategy & Ops) + Ziad Amira + Gavin Padden. First Divyam&times;Alpesh meeting. Cloud Dynamics Renewal 2028 timeframe. New-logo + market-expansion use cases; foundation-setting.' },
-    { csm:'varun', health:'Healthy', account:'MongoDB Inc',
-      opp:'Vitally Pulse &mdash; Sep 23 Call',
-      arr:'Enterprise &middot; Varun Tiwari', csmlbl:'Varun Tiwari',
-      change:'Sep 23 &middot; Pricing Expansion Opportunity',
-      excerpt:'9/23 VT: 30 min MongoDB Renewal Scoping (9:30 AM PT) w/ Steven Harbron + Ziad Amira. New credit model drops install cost 0.5&rarr;0.1 &mdash; effective renewal could be ~$16K vs current $40K, but $40K RGIP minimum. Steven has flat-budget approval &mdash; opportunity to expand data consumption at same price.' },
-    { csm:'varun', health:'Concerning', account:'BMC Software Inc',
-      opp:'Vitally Pulse &mdash; Sep 23 Call',
-      arr:'Enterprise &middot; Varun Tiwari', csmlbl:'Varun Tiwari',
-      change:'Sep 23 &middot; Copilot Integration Blocker',
-      excerpt:'9/23 VT: 30 min BMC Copilot 2.0 onboarding follow-up (10 AM PT) w/ Louise Eekhof + Rafael Mueller + Rohit Saraf + Augie Buettner. Salesforce integration NOT connected in production &mdash; blocking Copilot value. Louise wants smaller groups + action, not more discussion. Follows Aug 17 Severe Risk pulse.' },
-    { csm:'nick', health:'Concerning', account:'VASS',
-      opp:'Vitally Pulse &mdash; Sep 23 Call',
-      arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
-      change:'Sep 23 &middot; Adoption Gap Pre-Renewal',
-      excerpt:'9/23 NJ: 30 min VASS 2027 plans (10:30 AM PT) w/ Jessica Utley (new CS lead). Oct 12 renewal &mdash; Jessica flagged internal adoption "not as high as we would like it to be." SAP dev-fund path assumed. Adoption gap + 19 days to renewal + new CS lead = Concerning.' },
-    { csm:'riley', health:'Healthy', account:'Paylocity',
-      opp:'Vitally Pulse &mdash; Sep 23 Call',
-      arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
-      change:'Sep 23 &middot; Incentive Budget Feature',
-      excerpt:'9/23 RR: 30 min Paylocity TR monthly (12:30 PM PT) w/ Matt Doyle + Olivia + Anderson (HG AM). Incentive budget dashboard now live in vendor portal ($14,725 balance surfaced). Nothing top-of-mind on customer side. Cadence intact.' },
-  ];
-  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
-  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
-  return `<div class="pulse-grid">${cards.map(c=>`
-    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
-      <div class="pulse-card-top">
-        <div>
-          <div style="font-size:13px;font-weight:600;color:#e2e8f0;">${c.account}</div>
-          <div style="font-size:11px;color:#94a3b8;margin-top:2px;">${c.opp}</div>
-        </div>
-        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
-      </div>
-      <div class="pulse-excerpt">${c.excerpt}</div>
-      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
-    </div>`).join('')}</div>
-  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
-}
-
-function dayActionsHTML_2026_09_23() {
-  return `<div class="action-list">
-    <div class="action-item ${doneActions.has('0923-1')?'done':''}" data-csm="varun" id="action-0923-1">
-      <div class="action-checkbox ${doneActions.has('0923-1')?'checked':''}" onclick="toggleAction('0923-1')"></div>
-      <div class="action-body">
-        <div class="action-title">&#x1F534; BMC &mdash; Unblock Salesforce integration for Copilot 2.0; shrink meeting size per Louise&rsquo;s ask</div>
-        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Varun Tiwari + Augie Buettner &middot; Louise Eekhof explicitly asked for smaller focused groups and action-oriented sessions, not more discussion. Salesforce integration is NOT connected in production which is the value-blocker. Confirm SFDC integration owner on BMC side (Louise vs Rohit/HG side), get connection scheduled this week, and prep territory-mapping segment-field configuration (growth/enterprise/star) that Rafael and the BMC engineering team can review. Prior Aug 17 memory: BMC Severe Risk pulse ($284.7K ARR); this Copilot 2.0 deployment path is the reset.</div>
-      </div>
-    </div>
-    <div class="action-item ${doneActions.has('0923-2')?'done':''}" data-csm="nick" id="action-0923-2">
-      <div class="action-checkbox ${doneActions.has('0923-2')?'checked':''}" onclick="toggleAction('0923-2')"></div>
-      <div class="action-body">
-        <div class="action-title">&#x1F534; VASS &mdash; Rapid-adoption assist + 2027 packaging pre-Oct 12 renewal</div>
-        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Nick Johnson &middot; Oct 12 renewal is 19 days out. New CS lead Jessica Utley flagged low internal adoption &mdash; the renewal case has to bridge that gap. Actions: (1) confirm SAP dev-fund availability + timeline w/ Jessica, (2) offer VASS-specific rapid-adoption sessions (not the cohort model that had mixed attendance in 2026), (3) draft 2027 packaging that ties to specific VASS use cases so Jessica has a defensible internal case. If SAP funds path doesn&rsquo;t work, propose self-funded bridge to buy time.</div>
-      </div>
-    </div>
-    <div class="action-item ${doneActions.has('0923-3')?'done':''}" data-csm="varun" id="action-0923-3">
-      <div class="action-checkbox ${doneActions.has('0923-3')?'checked':''}" onclick="toggleAction('0923-3')"></div>
-      <div class="action-body">
-        <div class="action-title">&#x1F4C8; MongoDB &mdash; Model out flat-budget expansion options (net-new logos + enrichment) at $40K RGIP min</div>
-        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Varun Tiwari + Ziad Amira &middot; New pricing drops install-data credit cost 0.5&rarr;0.1. Steven has approval for flat budget and the new pricing math lands ~$16K but the RGIP feed has a $40K minimum. Package that gap as expansion: freed credit capacity applied to net-new logo acquisition + broader enrichment (Steven&rsquo;s revised technology list already has swap-ins). Coordinate with Gaprit Moran (India procurement) on signature timing. Deliver the options doc to Steven + Will Bracken this week.</div>
-      </div>
-    </div>
-    <div class="action-item ${doneActions.has('0923-4')?'done':''}" data-csm="divyam" id="action-0923-4">
-      <div class="action-checkbox ${doneActions.has('0923-4')?'checked':''}" onclick="toggleAction('0923-4')"></div>
-      <div class="action-body">
-        <div class="action-title">&#x1F4CB; Snowflake &mdash; Follow-up 1:1 with Alpesh Jain + Matt intro; map GTM Strategy & Ops use cases to HG data</div>
-        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Divyam Dewan &middot; First Divyam&times;Alpesh meeting today. Alpesh runs part of GTM Strategy & Ops at Snowflake covering new logos + market expansion. Next-step meeting to walk through platform + specific new-logo/expansion queries. Also introduce Alpesh to Matt (whom Ziad has been the main HG contact for) to close the loop across the Snowflake side.</div>
-      </div>
-    </div>
-    <div class="action-item ${doneActions.has('0923-5')?'done':''}" data-csm="all" id="action-0923-5">
-      <div class="action-checkbox ${doneActions.has('0923-5')?'checked':''}" onclick="toggleAction('0923-5')"></div>
-      <div class="action-body">
-        <div class="action-title">&#x1F4CB; CSM team &mdash; Manual Vitally log for 7 inferred (no-transcript) + 26 no-recording events</div>
-        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Priority captures: Rani&rsquo;s Google Weekly ×2 slots + Workday monthly + Cisco GRO + Lenovo/OneSix (Google post-on-site cadence intact but hidden); Pam&rsquo;s Epicor + Microsoft Security TR (second week running); Varun&rsquo;s ServiceNow + Five9 + Informatica ×3 + Pegasystems + Exclusive Networks; Nick&rsquo;s SAP intro + Exclusive Networks biweekly; Atisha&rsquo;s SFDC ASEAN + Deloitte weekly + Unily + EY + RSM. Highest-signal for renewal risk tracking: BMC Concerning follow-up capture, VASS renewal timeline, Cisco WarRoom Oct 6 renewal (still Poor pulse).</div>
-      </div>
-    </div>
-    <div class="action-item ${doneActions.has('0923-6')?'done':''}" data-csm="rani" id="action-0923-6">
-      <div class="action-checkbox ${doneActions.has('0923-6')?'checked':''}" onclick="toggleAction('0923-6')"></div>
-      <div class="action-body">
-        <div class="action-title">&#x1F4CB; Google &mdash; Post-on-site debrief STILL owed (3-day gap from Monday) + Weekly Sync cadence follow-through</div>
-        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Rani Guy &middot; Monday&rsquo;s in-person on-site with Lawrence + Noah Rowitz + Mark Fell still lacks a manual Vitally log &mdash; capturing Lawrence&rsquo;s reaction to the expansion pitch, pilot alignment, and DPA/amendment path is time-critical for December renewal execution. Also: Sept 23 had 2 Google weekly sync events (AI Spend 90-day POC + CVP/Intent/IDL Google Cloud) with no recording &mdash; capture manually.</div>
-      </div>
-    </div>
-    <div class="action-item ${doneActions.has('0923-7')?'done':''}" data-csm="all" id="action-0923-7">
-      <div class="action-checkbox ${doneActions.has('0923-7')?'checked':''}" onclick="toggleAction('0923-7')"></div>
-      <div class="action-body">
-        <div class="action-title">&#x1F6A8; Ops &mdash; Weflow sync Day 15 regressed to 86% no-transcript &mdash; escalate NOW</div>
-        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Ops / Rishi / Yuan &middot; No-transcript rate jumped to 86% Sept 23 (up from 79% Sept 22, 78% Sept 21). Trajectory: Sep 16 92% &rarr; Sep 17 84% &rarr; Sep 18 71% &rarr; Sep 21 78% &rarr; Sep 22 79% &rarr; <strong>Sep 23 86%</strong>. The plateau escalation trigger set Sept 22 has now been exceeded &mdash; formal Weflow product-owner brief + leadership visibility warranted. Recording volume was 145 today (highest in the window); combined with 86% no-transcript rate this hides an unusually large chunk of CSM engagement.</div>
-      </div>
-    </div>
-  </div>
-  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
-}
 
 
 
@@ -4135,6 +3862,402 @@ function dayActionsHTML_2026_09_10() {
       <div class="action-body">
         <div class="action-title">&#x26A0;&#xFE0F; Ops &mdash; Weflow SFDC-sync backlog Day 6 (86% no-transcript, 0 CSM speakers in SFDC)</div>
         <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Ops &middot; Sept 10 hit 86% no-transcript rate (101/118) &mdash; worst of the 6-day backlog. Zero of the 17 transcribed recordings contained a CSM speaker label; all 11 confirmations recovered via Weflow fallback. SFDC path is effectively blind. Open formal Weflow support ticket if not already; without transcripts in SFDC the daily scan depends entirely on Weflow participant metadata &mdash; brittle if that changes.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
+
+
+
+
+// ============================================================
+// Wednesday September 23, 2026
+// ============================================================
+
+function dayData_2026_09_23() {
+  return {
+    calls: [
+      { ts: 'Sep 23 &middot; 1:30 AM', csm: 'atisha', account: `Salesforce Inc.`,
+        note: `SFDC ASEAN weekly sync w/ Rishabh Wadhwa. Zscaler blockage resolved (workaround in place) unlocking credit adoption. Demoed AI Scoring + Functional Area Intelligence (FAI) + Intent data. Team wants variety of use cases before deep-diving into FAI.`,
+        mins: 26, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Mixed',
+        detail: `Weekly sync w/ Bangalore-Torrey Pines Salesforce team. (1) Zscaler blockage identified &mdash; workaround in place, tool is now accessible &mdash; credit adoption unlocked. (2) AI Scoring + FAI + Intent demoed for sales-play use cases (competitive displacement + market expansion). (3) Intent data value framed as reducing account-research time by prioritizing high-purchase-likelihood accounts. Atisha to send: Context Unboxed virtual event registration + collateral w/ speaker/topic details + 5-10 use case examples + a document on reading insights into workflows. Follow-up deep-dive on intent+FAI to be scheduled. Attendance via Weflow participants (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 23 &middot; 7:00 AM', csm: 'riley', account: `IBM (TR Biweekly)`,
+        note: `TrustRadius biweekly team sync w/ Ruxandra Marin + Mihaela Nedelescu + Cole Arutian + Mardigan Moffat. Push for reviews to qualify products for TR Buyer&rsquo;s Choice awards (5-9 needed). 2 new products qualified. Gift-card incentive extended to $50 through Oct 16.`,
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `IBM TR biweekly. Goal: increase product reviews to qualify for Buyer&rsquo;s Choice awards (need 5-9 per product). 2 additional products have qualified since last update. Top Rated badges valued more than Buyer&rsquo;s Choice for category ranking (but B&rsquo;s C efforts contribute to Top Rated too). Gift-card incentive: $50 until Oct 16, $25 after. Riley to (a) ask campaigns team for additional review generation, (b) DM Angel re Tech Exchange arrival/departure dates, (c) add Angel + Caslin + Becky to Oct 21 enablement call, (d) update meeting invite w/ Tech Exchange details. Ruxandra to loop in client story strategists globally. Attendance via Weflow (SFDC transcript synced, CSM speaker also confirmed).`, source: 'sfdc' },
+
+      { ts: 'Sep 23 &middot; 8:30 AM', csm: 'riley', account: `SAP Inc (IBP)`,
+        note: `TR SAP IBP market report finalization w/ Alejandro Barajas + Cristina Stamati + Guido Kaup + Cole Arutian + Mardigan Moffat. Core messaging = &ldquo;agentic AI playing reimagined&rdquo; + decision support. 2-week turnaround post-paperwork. Buyer&rsquo;s Choice target 10 reviews by Oct 16.`,
+        mins: 27, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `SAP IBP TR market report finalization. Focus: agentic AI + decision support messaging w/ Intelligent Supply Chain Planning (IVP) emphasis. Translations being addressed (Alejandro submitting update; Mardigan syncing tomorrow). Timeline: ~2 weeks to build report after paperwork/SOW finalized (ideally before end of September). Report built entirely on TrustRadius verified metrics + customer quotes. Key challenge: bridging industry AI noise vs actual customer adoption/use-case maturity. Buyer&rsquo;s Choice: aiming for 10 reviews by Oct 16. Leverage SAP Connect (Oct 5-7) to drive reviews + gather insights. Custom questions being developed w/ Alejandro. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 23 &middot; 9:00 AM', csm: 'divyam', account: `Snowflake Inc.`,
+        note: `Renewal scoping w/ Alpesh Jain (SNOW GTM Strategy) + Ziad Amira (HG AE) + Gavin Padden. Snowflake needs install data for China + India market sizing beyond current cloud-spend usage. HG proposing potential one-off analysis for immediate priority.`,
+        mins: 23, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Expansion',
+        detail: `Cloud Dynamics-Snowflake Renewal 2028 scoping. Snowflake currently uses HG cloud-spend data only (feeding APS model), lacks install/technographic data access. Immediate ask: high-level market sizing + segmentation for China (CSP, domestic vs global, state-owned vs MNC) and India (domestic vs GCC/competency centers) &mdash; short timeline. Ziad to explore one-off analysis feasibility w/ leadership + follow up via email; also seek intro to Field Ops + Data team (Beck Madden's team) for broader account-level intelligence discussion. Alpesh to ping Matt on Snowflake data team about full HG data set. Confirmed via SFDC transcript speaker detection.`, source: 'sfdc' },
+
+      { ts: 'Sep 23 &middot; 9:00 AM', csm: 'nick', account: `SAP Inc (intro)`,
+        note: `Intro call w/ Satish Grandhi (SAP CTO track) + Anish + Scott Martin. SAP wants to leverage existing HG data more deeply within Crystal Ball + dashboards for demand-gen. Credit-based pricing + bulk file uploads discussed.`,
+        mins: 25, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Introduction call to expand SAP's use of HG data beyond current bulk-delivery for commercial teams + Crystal Ball. SAP exploring: (a) API-access via existing contracted credits, (b) weekly bulk file uploads for dashboard integration, (c) technographic data on target companies (installs, verification dates, intensity) to spot tech shifts. Nick to (i) share contact info for SAP's current internal data-strategy team, (ii) provide HG documentation + website asset, (iii) facilitate intro to Franklin Herbert (main SAP contact from prior HG-built models), (iv) provide data on Rise Baking Company as requested example. SAP team to investigate existing credit contract for API activation + explore dashboard integration paths. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 23 &middot; 9:00 AM', csm: 'varun', account: `Exclusive Networks`,
+        note: `Bi-weekly w/ Matt Tinker + Ben Abraham + Angus Hyams + Nick Johnson. Budget clearance pending; API sandbox testing prep. USER OVER-EXPORT INCIDENT &mdash; two users had excess data exports; access changed to read-only immediately.`,
+        mins: 27, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Mixed',
+        detail: `Multi-thread bi-weekly. (1) Budget for next phase pending &mdash; shifting to digital budget w/ country-level finance implications. (2) API sandbox testing prioritized; plan to build Databricks pipeline w/ Lewis + Paulina + Margot + Morgan next week. (3) Managing consumption-based costs on new platform PostgreSQL architecture. (4) IMMEDIATE ACTION: Vanessa + Sandrine had excessive data exports depleting credits &mdash; Varun changed their access to read-only immediately. (5) Flexible contract options being explored (later start date, AWS Marketplace payment). Angus to arrange API sandbox access + brief Morgan on HG methodology before API call. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 23 &middot; 9:00 AM', csm: 'nick', account: `Exclusive Networks (co-attend)`,
+        note: `Nick co-attended Exclusive Networks bi-weekly supporting Varun + Angus. Same content &mdash; budget pending, API sandbox prep, user over-export incident restricted to read-only.`,
+        mins: 27, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Mixed',
+        detail: `Nick co-attended Exclusive Networks bi-weekly. Same call &mdash; budget clearance pending, API sandbox testing prep w/ technical teams next week, and same immediate action on Vanessa+Sandrine over-export incident (restricted to read-only). Attendance via Weflow participants.`, source: 'weflow' },
+
+      { ts: 'Sep 23 &middot; 9:30 AM', csm: 'varun', account: `MongoDB Inc`,
+        note: `Renewal scoping w/ Steven Harbron. Flat renewal decided but major price reduction (0.01 vs 0.05 credits per install data) gives MongoDB more capacity in same budget. Follow-up in ~1 month on future expansion (new product categories + embedding models).`,
+        mins: 12, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Short but decisive renewal scoping. Pricing has dropped substantially &mdash; install data now 0.01 credits (from 0.05), 40k min threshold. MongoDB gets more data for same budget. Decision: proceed w/ flat renewal + current account/technology list, use the increased credit capacity. Steven expressed interest in future expansion (additional product categories, embedding models, other platforms). Next: Ziad + team to send follow-up email recap + updated renewal terms ASAP. Steven + Will Bracken to revise account lists + technologies for potential future expansion and circle back in ~1 month. Confirmed via SFDC transcript speaker detection.`, source: 'sfdc' },
+
+      { ts: 'Sep 23 &middot; 9:30 AM', csm: 'pam', account: `Epicor Software Corporation`,
+        note: `Discovery call w/ Anthea Louie + Anderson Duncan + KP Pindle + Leo Zunz + Will Merman. HG data pitched for demand-gen &mdash; target-account IDs, RFP intent, technographics. POC scoped for manufacturing vertical (Americas + UK + SEA).`,
+        mins: 31, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Epicor demand-gen discovery. HG data pitched for: (1) target-account identification in key markets, (2) TrustRadius buyer intent for RFP visibility + involvement, (3) technographic data from job postings + resumes for ERP install visibility, (4) buying centers + FAI for stakeholder ID, (5) executive-move tracking correlated w/ past tech implementations for predictive adoption. POC scope: single use case operationalizing technographics + fabric data, focused on manufacturing vertical w/ global footprint. Anderson to follow up via email w/ Anthea to structure POC. Consider BDR-first testing period before sales expansion. Mark Roussin + Will Merman + Natalie as key contacts for requirements. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 23 &middot; 9:30 AM', csm: 'riley', account: `IBM (TR Precision Demand + GEO)`,
+        note: `TR follow-up w/ Rebecca Green + Chaitali Pramanik + Cole Arutian + Mardigan Moffat. Tiered licensing model discussion (maintenance mode for mature offerings, robust support for emerging). Geo-dashboard deep-dive scheduled. Precision Demand pilot for Q4/Q1.`,
+        mins: 34, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `IBM TR follow-up on Precision Demand Program + GEO Initiatives. Shift from one-size-fits-all licensing to flexible, tiered approach aligned w/ product lifecycle: maintenance mode for mature offerings; robust support for emerging + market-leading. Growing importance of geo-insights + AI search traction &mdash; leverage reviews + content for actionable insights + LLM optimization. Chaitali to push global pods for 50-link + prioritize products. Cole to schedule geo-dashboards deep-dive w/ Ruxandra + Mihaila. Rebecca + Chaitali + Mardigan to explore + present tiered licensing/support options in the next 2 weeks. Chaitali to Slack Bill Engel + Sasha re AG insights + intent-data pre-meeting. Precision Demand pilot: Q4/Q1 target. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 23 &middot; 10:00 AM', csm: 'varun', account: `BMC Software Inc`,
+        note: `Sales Copilot Salesforce integration follow-up w/ Louise Eekhof + Rafael Mueller + Augie Buettner. Field mapping + configuration steps to unlock Copilot value. Louise to identify minimum required fields + coordinate w/ Noman + Amrit for tech mapping.`,
+        mins: 40, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Sales Copilot integration follow-up. Copilot value significantly diminished without SFDC integration &mdash; blocks leveraging existing customer data + territory info. Integration enables filtering accounts by segment (growth/enterprise), providing sellers w/ context. Copilot primarily read-only on SFDC data (minimal rate-limit concerns). Rafael to provide Excel file listing all available SFDC fields for mapping. Louise to identify minimum required fields + coordinate w/ Noman + Amrit/Jagan on tech mapping + review the configuration deck by Friday. Varun to schedule live config session (company context, offerings, scoring) + share detailed deck. Meeting next week to activate the system. Confirmed via SFDC transcript speaker detection.`, source: 'sfdc' },
+
+      { ts: 'Sep 23 &middot; 10:30 AM', csm: 'nick', account: `VASS (SAP MDF)`,
+        note: `Renewal call w/ Jessica Utley + David Garcia Thomas. Contract expires Oct 12; internal adoption low; Jessica on vacation until early Nov &mdash; likely COVERAGE LAPSE. Delay past current cohort model may cost the discount tier.`,
+        mins: 13, health: 'Concerning',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Issue',
+        detail: `SAP MDF Funds VASS renewal &mdash; SAP partner agreement expires Oct 12. Jessica Utley (VASS) flagged: (1) internal HG-tool adoption has NOT been as high as needed &mdash; needs justification to renew, (2) she's on vacation and won't be able to decide with team until early November, (3) coverage lapse likely, (4) SAP dev fund deadline for new requests approaching + funds may already be fully utilized, (5) delaying past current cohort model risks losing current discount tier from HG leadership. Nick to (i) provide usage data for VASS team, (ii) share success stories + updated materials on HG value, (iii) confirm SAP dev fund deadline w/ PMM. Jessica to review internal usage + check SAP dev fund status. Reconnect first week of November. Confirmed via SFDC transcript speaker detection.`, source: 'sfdc' },
+
+      { ts: 'Sep 23 &middot; 12:30 PM', csm: 'riley', account: `Paylocity`,
+        note: `TR monthly w/ Matt Doyle + Olivia McFadden + Anderson Duncan. New features: live incentive budget in vendor portal, Google sign-in for reviewers, flexible event review system. Geo-dashboard deep-dive: mentions + citations + AI crawl data. Grayscale acquisition needs merge.`,
+        mins: 22, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `Paylocity TR monthly. Product updates: (1) live incentive budget tracking in vendor portal, (2) Google sign-in for reviewer frictionless UX, (3) flexible event-review system for attendee feedback without full review. Geo-dashboard deep-dive: content mentions + citations + sentiment + AI-crawl data + scheduled delivery. Paylocity enhancing AI (recruiting tools + embedded AI agents in workflows) &mdash; needs mapping to relevant TR platform categories. Riley to (a) audit Paylocity's categories, (b) notify team about Grayscale acquisition + combine Grayscale profile under Paylocity, (c) pass expanded scope details to team for category identification. Anderson to send Matt + Olivia more info on premium content offerings. Confirmed via SFDC transcript speaker detection.`, source: 'sfdc' },
+    ],
+    pulses: [
+      { csm: 'atisha', account: `Salesforce Inc.`, health: 'Healthy',
+        note: `SFDC ASEAN sync &mdash; Zscaler blockage resolved (workaround), AI Scoring + FAI + Intent demoed, use-case collateral + deep-dive follow-up owed.` },
+      { csm: 'riley', account: `IBM (TR Biweekly)`, health: 'Healthy',
+        note: `TR Buyer&rsquo;s Choice review push (5-9 needed per product). 2 new qualifiers. $50 incentive through Oct 16. Tech Exchange enablement scheduled Oct 21.` },
+      { csm: 'riley', account: `SAP Inc (IBP)`, health: 'Healthy',
+        note: `SAP IBP TR market report finalization &mdash; "agentic AI + decision support" messaging, 2-week turnaround post-SOW. Buyer&rsquo;s Choice: 10 reviews target by Oct 16 (SAP Connect Oct 5-7).` },
+      { csm: 'divyam', account: `Snowflake Inc.`, health: 'Healthy',
+        note: `Renewal scoping &mdash; Snowflake needs install data for China + India market sizing (beyond current cloud-spend). HG exploring one-off analysis + intro to Field Ops/Data team (Beck Madden).` },
+      { csm: 'nick', account: `SAP Inc (intro)`, health: 'Healthy',
+        note: `Intro call w/ Satish Grandhi + Anish + Scott. Expanding SAP HG-data usage beyond Crystal Ball &mdash; API/bulk file uploads for dashboards + technographic data on target companies.` },
+      { csm: 'varun', account: `Exclusive Networks`, health: 'Healthy',
+        note: `Bi-weekly &mdash; budget pending, API sandbox next week (Databricks pipeline). USER OVER-EXPORT: Vanessa + Sandrine access changed to read-only immediately. Flexible contract options being explored.` },
+      { csm: 'nick', account: `Exclusive Networks (co-attend)`, health: 'Healthy',
+        note: `Nick co-attended Exclusive Networks bi-weekly supporting Varun + Angus. Same content &mdash; budget pending, API sandbox prep, user over-export restricted to read-only.` },
+      { csm: 'varun', account: `MongoDB Inc`, health: 'Healthy',
+        note: `Flat renewal + major price cut (0.01 vs 0.05 credits per install data) unlocks more capacity in same budget. Future expansion (categories + embedding models) in ~1 month.` },
+      { csm: 'pam', account: `Epicor Software Corporation`, health: 'Healthy',
+        note: `Demand-gen discovery &mdash; HG data pitched for target-accounts + RFP intent + technographics + executive-moves. POC scoped for manufacturing vertical (Americas + UK + SEA).` },
+      { csm: 'riley', account: `IBM (TR Precision Demand)`, health: 'Healthy',
+        note: `TR follow-up on tiered licensing + geo-dashboard + Precision Demand pilot (Q4/Q1). Framework proposal in 2 weeks; geo-dashboard deep-dive scheduled.` },
+      { csm: 'varun', account: `BMC Software Inc`, health: 'Healthy',
+        note: `Sales Copilot SFDC integration follow-up &mdash; field mapping + configuration steps. Live config session + activation next week; Louise to identify minimum required fields by Friday.` },
+      { csm: 'nick', account: `VASS (SAP MDF)`, health: 'Concerning',
+        note: `Oct 12 renewal + low internal adoption + Jessica on vacation until early Nov = likely coverage lapse. Delay past cohort model may cost discount tier. Reconnect first week of Nov.` },
+      { csm: 'riley', account: `Paylocity`, health: 'Healthy',
+        note: `TR monthly &mdash; live incentive budget + Google sign-in + flexible event reviews. Geo-dashboard deep-dive. Grayscale acquisition profile merge needed.` },
+    ],
+  };
+}
+
+function dayMeta_2026_09_23() {
+  return {
+    pills: [
+      ['dot-teal',   '13 Calls'],
+      ['dot-red',    '1 Concerning'],
+      ['dot-amber',  '7 Expansion'],
+      ['dot-green',  '13 Vitally Pulses'],
+      ['dot-grey',   'Wed Sep 23 &middot; 145 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (13)', 'Pulses (13)', 'Action Items (8)']
+  };
+}
+
+function dayOverviewHTML_2026_09_23() {
+  return `<div class="section-label">Team Activity &mdash; Wednesday September 23, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Wednesday Sep 23 &mdash; 145 recordings scanned</strong> via SFDC SOQL &middot; <strong>13 confirmed calls</strong> (12 unique + 1 co-attend) across 6 CSMs &middot; 1 concerning &middot; 7 expansion signals &middot; SFDC alone confirmed 5 customer calls (1 GTM enablement excluded internal) &middot; Weflow fallback added 7 recoveries
+  </div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x1F534; <strong>1 CONCERNING:</strong> VASS SAP MDF (Nick) &mdash; Oct 12 renewal + low internal adoption + Jessica on vacation until early Nov = likely coverage lapse; delay past current cohort model may cost the discount tier
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>7 EXPANSION:</strong> Snowflake (China+India market-sizing one-off + broader data-team intro) &middot; MongoDB (flat renewal + 5x price cut on install data unlocks capacity + future categories) &middot; BMC (Sales Copilot SFDC integration activation) &middot; SAP IBP (agentic-AI TR market report + Oct 16 review target) &middot; SAP intro (dashboard/API expansion beyond Crystal Ball) &middot; Epicor (demand-gen POC scoped for manufacturing vertical) &middot; IBM Precision Demand (tiered licensing + geo-dashboard + Q4/Q1 pilot)
+  </div>
+  <div style="background:#1c1f26;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fcd34d;">
+    &#x26A0;&#xFE0F; <strong>Weflow SFDC-sync backlog Day 15+ (86% no-transcript):</strong> Sept 23 = 145 recordings, 21 with transcripts, 124 without. Only 5 of 13 confirmed customer calls surfaced via SFDC speaker detection; the remaining 8 were recovered from Weflow &lsquo;participants&rsquo; fallback (Riley on 3 TR calls, Nick on 2 SAP calls, Atisha SFDC, Pam Epicor, Nick+Varun on Exclusive Networks). Formal Weflow escalation long overdue.
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">4 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">4</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">4</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">113m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">IBM x2 (TR biweekly + Precision Demand + geo) &middot; SAP IBP (&#x1F4C8; agentic-AI market report) &middot; Paylocity (TR monthly + Grayscale merge)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">3 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">3</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">79m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">MongoDB (&#x1F4C8; flat renewal + 5x price cut) &middot; BMC (Sales Copilot SFDC integration) &middot; Exclusive Networks (user over-export incident + API sandbox prep)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">3 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">3</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">65m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">SAP intro (&#x1F4C8; dashboard/API expansion) &middot; Exclusive Networks co-attend &middot; VASS SAP MDF (&#x1F534; Oct 12 renewal + coverage lapse risk)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">26m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Salesforce ASEAN (Zscaler workaround unblocks credit adoption; AI Scoring + FAI demoed; collateral + deep-dive owed)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">23m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Snowflake (&#x1F4C8; China + India market-sizing one-off + broader data-team intro pending)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="pam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">31m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Epicor (&#x1F4C8; demand-gen discovery &mdash; POC scoped for manufacturing vertical)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="rani">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">RG</div><div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No confirmed customer calls. SFDC transcripts contained no Rani speaker label; Weflow participants did not surface Rani on any Sept 23 recording.</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">AL</div><div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No confirmed customer calls. SFDC transcripts contained no Andy speaker label; Weflow participants did not surface Andy on any Sept 23 recording.</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_09_23() {
+  return `<div class="section-label">Confirmed Calls &mdash; Wednesday September 23, 2026</div>
+  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x1F534; <strong>1 CONCERNING:</strong> VASS SAP MDF (Nick) &mdash; Oct 12 renewal + low internal adoption + vacation delay until early Nov = coverage lapse risk + potential discount-tier loss
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>7 EXPANSION:</strong> Snowflake &middot; MongoDB &middot; BMC &middot; SAP IBP &middot; SAP intro &middot; Epicor &middot; IBM Precision Demand
+  </div>
+  <div style="background:#1c1f26;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fcd34d;">
+    &#x26A0;&#xFE0F; <strong>Weekly GTM Enablement Session excluded as INTERNAL:</strong> 95+ HG employees on the recording (rebrand to &lsquo;Contextual Intelligence&rsquo; Oct 6 launch prep). Pam Huck present as Q&amp;A participant but no customer &mdash; not counted in daily engagement metrics.
+  </div>`;
+}
+
+function dayPulsesHTML_2026_09_23() {
+  const cards = [
+    { csm:'atisha', health:'Healthy', account:`Salesforce Inc.`, opp:`Vitally Pulse &mdash; Sep 23 Call`,
+      arr:`Enterprise &middot; Atisha Waghela`, csmlbl:`Atisha Waghela`,
+      change:`Sep 23 &middot; Healthy`,
+      excerpt:`SFDC ASEAN weekly sync &mdash; Zscaler blockage resolved (workaround in place) unblocks credit adoption. Demoed AI Scoring + FAI + Intent for sales-play use cases. Atisha to send 5-10 use case collateral + insights-into-workflow doc; deep-dive on intent+FAI TBD.` },
+    { csm:'riley', health:'Healthy', account:`IBM (TR Biweekly)`, opp:`Vitally Pulse &mdash; Sep 23 Call`,
+      arr:`Enterprise &middot; Riley Rogers`, csmlbl:`Riley Rogers`,
+      change:`Sep 23 &middot; Healthy`,
+      excerpt:`TR Buyer&rsquo;s Choice review push &mdash; 5-9 needed per product. 2 new qualifiers this cycle. $50 gift-card incentive through Oct 16. Tech Exchange enablement call scheduled Oct 21 (adding Angel + Caslin + Becky).` },
+    { csm:'riley', health:'Healthy', account:`SAP Inc (IBP)`, opp:`Vitally Pulse &mdash; Sep 23 Call`,
+      arr:`Enterprise &middot; Riley Rogers`, csmlbl:`Riley Rogers`,
+      change:`Sep 23 &middot; Healthy`,
+      excerpt:`SAP IBP TR market report &mdash; agentic-AI + decision-support messaging, 2-week turnaround post-SOW. Buyer&rsquo;s Choice: 10 reviews target by Oct 16. Leverage SAP Connect (Oct 5-7) for reviews. Alejandro handling translations + custom questions.` },
+    { csm:'divyam', health:'Healthy', account:`Snowflake Inc.`, opp:`Vitally Pulse &mdash; Sep 23 Call`,
+      arr:`Enterprise &middot; Divyam Dewan`, csmlbl:`Divyam Dewan`,
+      change:`Sep 23 &middot; Healthy`,
+      excerpt:`Cloud Dynamics-Snowflake renewal scoping. Snowflake needs install data for China (CSP + state-owned vs MNC) + India (domestic vs GCC) market sizing. HG exploring one-off analysis + intro to Field Ops/Data team (Beck Madden).` },
+    { csm:'nick', health:'Healthy', account:`SAP Inc (intro)`, opp:`Vitally Pulse &mdash; Sep 23 Call`,
+      arr:`Enterprise &middot; Nick Johnson`, csmlbl:`Nick Johnson`,
+      change:`Sep 23 &middot; Healthy`,
+      excerpt:`Intro call w/ Satish Grandhi + Anish + Scott. SAP wants deeper HG data use in Crystal Ball + dashboards + API. Nick to share HG docs + facilitate intro to Franklin Herbert + provide sample data on Rise Baking Company.` },
+    { csm:'varun', health:'Healthy', account:`Exclusive Networks`, opp:`Vitally Pulse &mdash; Sep 23 Call`,
+      arr:`Enterprise &middot; Varun Tiwari`, csmlbl:`Varun Tiwari`,
+      change:`Sep 23 &middot; Healthy`,
+      excerpt:`Bi-weekly &mdash; budget clearance pending. API sandbox testing prep w/ Lewis + Paulina + Margot + Morgan next week (Databricks pipeline). USER OVER-EXPORT: Vanessa + Sandrine access changed to read-only immediately. Flexible contract options being explored.` },
+    { csm:'nick', health:'Healthy', account:`Exclusive Networks (co-attend)`, opp:`Vitally Pulse &mdash; Sep 23 Call`,
+      arr:`Enterprise &middot; Nick Johnson`, csmlbl:`Nick Johnson`,
+      change:`Sep 23 &middot; Healthy`,
+      excerpt:`Nick co-attended Exclusive Networks bi-weekly supporting Varun + Angus. Same call &mdash; budget clearance pending, API sandbox testing next week, user over-export incident restricted to read-only.` },
+    { csm:'varun', health:'Healthy', account:`MongoDB Inc`, opp:`Vitally Pulse &mdash; Sep 23 Call`,
+      arr:`Enterprise &middot; Varun Tiwari`, csmlbl:`Varun Tiwari`,
+      change:`Sep 23 &middot; Healthy`,
+      excerpt:`Flat renewal decided + major price reduction (0.01 vs 0.05 credits per install data). MongoDB gets more data for same budget. Future expansion (product categories + embedding models + other platforms) planned for revisit in ~1 month.` },
+    { csm:'pam', health:'Healthy', account:`Epicor Software Corporation`, opp:`Vitally Pulse &mdash; Sep 23 Call`,
+      arr:`Enterprise &middot; Pam Huck`, csmlbl:`Pam Huck`,
+      change:`Sep 23 &middot; Healthy`,
+      excerpt:`Demand-gen discovery w/ Anthea Louie + Anderson Duncan + KP Pindle + Leo Zunz. POC scoped for manufacturing vertical (Americas + UK + SEA), operationalizing HG technographics + fabric data. BDR-first testing before sales expansion.` },
+    { csm:'riley', health:'Healthy', account:`IBM (TR Precision Demand)`, opp:`Vitally Pulse &mdash; Sep 23 Call`,
+      arr:`Enterprise &middot; Riley Rogers`, csmlbl:`Riley Rogers`,
+      change:`Sep 23 &middot; Healthy`,
+      excerpt:`TR follow-up on Precision Demand + GEO. Tiered licensing model discussion (maintenance mode for mature offerings, robust support for emerging). Geo-dashboards deep-dive to be scheduled. Precision Demand pilot targeted for Q4/Q1.` },
+    { csm:'varun', health:'Healthy', account:`BMC Software Inc`, opp:`Vitally Pulse &mdash; Sep 23 Call`,
+      arr:`Enterprise &middot; Varun Tiwari`, csmlbl:`Varun Tiwari`,
+      change:`Sep 23 &middot; Healthy`,
+      excerpt:`Sales Copilot SFDC integration follow-up. Rafael to provide Excel field list. Louise to identify minimum required fields + review config deck by Friday. Live config session next week + activation the following week.` },
+    { csm:'nick', health:'Concerning', account:`VASS (SAP MDF)`, opp:`Vitally Pulse &mdash; Sep 23 Call`,
+      arr:`Enterprise &middot; Nick Johnson`, csmlbl:`Nick Johnson`,
+      change:`Sep 23 &middot; Concerning`,
+      excerpt:`Oct 12 renewal expiration. Internal adoption low + Jessica Utley on vacation until early Nov &mdash; likely coverage lapse. Delaying past current cohort model risks losing discount tier. Nick to send usage data + success stories; reconnect first week of Nov.` },
+    { csm:'riley', health:'Healthy', account:`Paylocity`, opp:`Vitally Pulse &mdash; Sep 23 Call`,
+      arr:`Enterprise &middot; Riley Rogers`, csmlbl:`Riley Rogers`,
+      change:`Sep 23 &middot; Healthy`,
+      excerpt:`TR monthly &mdash; live incentive budget in vendor portal + Google sign-in + flexible event review system. Geo-dashboard mentions + citations + AI-crawl data. Grayscale acquisition profile to be merged. Category audit + expanded-scope handoff to team.` },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div class="pulse-account">${c.account}</div>
+          <div class="pulse-opp">${c.opp}</div>
+          <div class="pulse-arr">${c.arr}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_09_23() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('0923-1')?'done':''}" data-csm="nick" id="action-0923-1">
+      <div class="action-checkbox ${doneActions.has('0923-1')?'checked':''}" onclick="toggleAction('0923-1')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F534; VASS SAP MDF &mdash; Oct 12 renewal + likely coverage lapse (Jessica on vacation)</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Nick Johnson &middot; Contract expires Oct 12 but Jessica Utley on vacation until early Nov = coverage lapse. Nick to (1) send VASS usage data by end of week, (2) share success stories + updated HG value materials, (3) confirm SAP dev-fund deadline w/ PMM (funds may already be exhausted). Flag risk to leadership: delay past current cohort model may cost the discount tier. Reconnect first week of November.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0923-2')?'done':''}" data-csm="divyam" id="action-0923-2">
+      <div class="action-checkbox ${doneActions.has('0923-2')?'checked':''}" onclick="toggleAction('0923-2')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Snowflake &mdash; scope one-off China + India market-sizing analysis + broader data-team intro</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Divyam Dewan + Ziad Amira &middot; Snowflake needs install-data breakdown for China (CSP, domestic vs global, state-owned vs MNC) + India (domestic vs GCC/competency centers). Ziad to discuss one-off analysis feasibility w/ leadership + follow up w/ Alpesh by email. Also seek intro to Field Ops + Data team (Beck Madden). Alpesh will loop in Matt on Snowflake data team.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0923-3')?'done':''}" data-csm="varun" id="action-0923-3">
+      <div class="action-checkbox ${doneActions.has('0923-3')?'checked':''}" onclick="toggleAction('0923-3')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; BMC &mdash; Sales Copilot SFDC integration activation next week</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Varun Tiwari + Rafael Mueller &middot; Rafael to provide Excel file listing all SFDC fields for mapping ASAP. Louise Eekhof to identify minimum required fields + coordinate w/ Noman + Amrit/Jagan on tech mapping + review config deck by Friday. Varun to schedule live config session (company context, offerings, scoring) + meeting next week to activate the system.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0923-4')?'done':''}" data-csm="varun" id="action-0923-4">
+      <div class="action-checkbox ${doneActions.has('0923-4')?'checked':''}" onclick="toggleAction('0923-4')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F534; Exclusive Networks &mdash; user over-export incident + API sandbox prep</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Varun Tiwari + Angus Hyams &middot; Two users (Vanessa + Sandrine) had excessive data exports depleting credits &mdash; Varun already restricted access to read-only. Angus to arrange API sandbox access for Lewis + Paulina + Margot + Morgan next week and brief Morgan on HG methodology before API call. Angus to discuss flexible contract options (later start date, AWS Marketplace payment) w/ deal desk. Monitor consumption ongoing.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0923-5')?'done':''}" data-csm="riley" id="action-0923-5">
+      <div class="action-checkbox ${doneActions.has('0923-5')?'checked':''}" onclick="toggleAction('0923-5')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; SAP IBP + IBM &mdash; Buyer&rsquo;s Choice Oct 16 push (multi-account TR review drive)</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Riley Rogers &middot; SAP IBP target: 10 reviews by Oct 16 (leverage SAP Connect Oct 5-7). IBM target: qualify remaining products (need 5-9 per product; 2 new qualifiers this week). $50 gift-card incentive live through Oct 16 &rarr; drops to $25. Riley to (a) ask campaigns team for additional review generation efforts across both accounts, (b) update Tech Exchange enablement invite + add Angel + Caslin + Becky by Oct 21, (c) audit Paylocity categories + merge Grayscale profile.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0923-6')?'done':''}" data-csm="nick" id="action-0923-6">
+      <div class="action-checkbox ${doneActions.has('0923-6')?'checked':''}" onclick="toggleAction('0923-6')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; SAP intro &mdash; expand SAP HG-data usage beyond Crystal Ball (Franklin Herbert intro)</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Nick Johnson &middot; Nick to (1) share contact info for SAP's internal data-strategy team, (2) provide HG documentation + website asset, (3) facilitate intro to Franklin Herbert (main SAP contact from prior HG-built models), (4) provide sample technographic data on Rise Baking Company. SAP team to investigate existing credit contract for API activation + explore dashboard integration paths.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0923-7')?'done':''}" data-csm="pam" id="action-0923-7">
+      <div class="action-checkbox ${doneActions.has('0923-7')?'checked':''}" onclick="toggleAction('0923-7')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Epicor &mdash; structure manufacturing-vertical POC (Americas + UK + SEA)</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Pam Huck + Anderson Duncan &middot; Anderson to follow up via email w/ Anthea to structure POC. Focus on single use case demonstrating operationalization of HG technographics + fabric data for manufacturing vertical (global footprint). Consider BDR-first testing period before sales expansion. Mark Roussin + Will Merman + Natalie identified as key contacts for requirements (employee count limits, etc.). Mark Roussin to be added to automated email drip.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0923-8')?'done':''}" data-csm="all" id="action-0923-8">
+      <div class="action-checkbox ${doneActions.has('0923-8')?'checked':''}" onclick="toggleAction('0923-8')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; Ops &mdash; Weflow SFDC-sync backlog persisting (86% no-transcript)</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Ops &middot; Sept 23 &mdash; 124 of 145 recordings had no SFDC transcript (86%). Only 5 of 13 confirmed customer calls surfaced via SFDC speaker detection; 8 recovered via Weflow &lsquo;participants&rsquo; fallback. This has been at 70-86% no-transcript for 15+ consecutive days. Open/escalate formal Weflow support ticket if not already; daily scan relies entirely on Weflow participant metadata which is brittle.</div>
       </div>
     </div>
   </div>
