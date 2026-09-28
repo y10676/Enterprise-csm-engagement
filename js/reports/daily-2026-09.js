@@ -5524,3 +5524,340 @@ function dayActionsHTML_2026_09_17() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
 }
+
+
+
+
+// ============================================================
+// Thursday September 24, 2026
+// ============================================================
+
+function dayData_2026_09_24() {
+  return {
+    calls: [
+      { ts: 'Sep 24 &middot; 3:00 AM', csm: 'varun', account: `IFS`,
+        note: `HGI + IFS Bi-Weekly Connect. Varun confirmed via SFDC transcript speaker detection. Renewal - Intent + FAI + V2 Migration 2026. Short 17m sync.`,
+        mins: 17, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `IFS bi-weekly connect. Varun confirmed via SFDC transcript speaker detection. Renewal - IFS - Intent & FAI and V2 Migration 2026. Standard cadence. Second longer IFS quarterly sync at 8 AM PT was CSM-owned but had no synced transcript.`, source: 'sfdc' },
+
+      { ts: 'Sep 24 &middot; 6:00 AM', csm: 'nick', account: `Intuit`,
+        note: `Intuit platform walkthrough w/ Ashutosh Singh. New user exploring HG capabilities for lead gen + sales enablement. Data enrichment + account intelligence + Sales Copilot demo. Ashutosh to test use cases (inbound team + new customer acquisition) by next week.`,
+        mins: 36, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Intuit platform walkthrough. Ashutosh Singh (new to platform) exploring HG capabilities for lead gen + sales enablement. Nick provided comprehensive overview: account-level intelligence + technographic data enrichment + Sales Copilot in Salesforce for account briefs + contact info. Data access via BigQuery integration + APIs for backend flexibility beyond UI. Platform allows customization of models + scoring + adjusting predefined weights + incorporating additional data sources. Ashutosh drew parallels w/ Cognism + ZoomInfo experience. Next: Ashutosh to explore platform (model building + Sales Copilot) EoD today + test use cases for inbound team + new customer acquisition by end of next week + reach out to Nick w/ questions tomorrow/Monday + connect w/ Rachel (manager) to position piloting opportunities. Nick to provide support + answer follow-up questions. Confirmed via SFDC transcript speaker detection.`, source: 'sfdc' },
+
+      { ts: 'Sep 24 &middot; 6:45 AM', csm: 'andy', account: `SAS Institute Inc.`,
+        note: `SAS + HG MCP scoring sync w/ Jesper Bank Jorgensen + Mike Turner + Augie Buettner + Chlo&eacute; Portier. Mike troubleshooting API integration issues (payload + domain call changes). HT data query tool recommended for intent topic querying. Business case for system modernization being built.`,
+        mins: 16, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `SAS + HG MCP scoring sync. Mike troubleshooting API integration issues &mdash; changes in API payload + domain calls impacting ability to score data. Chloe clarified distinction between company intent tool + HT data query tool; advising HT data query for comprehensive intent topic querying while v2 developed. Team developing + demonstrating new features to support business case for system modernization &mdash; need buy-in from sales managers + sellers. Critical need to ensure proposed modernization works effectively to gain team buy-in; formal approval eventually from executive leadership. Next: Mike to troubleshoot API calls + payload changes. Mike + Andy + Chloe to sync tomorrow morning on API issues + potential solutions. Mike to incorporate additional IDs from Andy into API testing. Chloe to send v1 + v2 intent tool documentation ASAP. Team to demonstrate built features to leadership + gather feedback next week. Jesper + Mike to continue building modernization support case. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 24 &middot; 7:30 AM', csm: 'pam', account: `Cisco (TR Recurring)`,
+        note: `Cisco TR recurring w/ Ross Marchant + Mellissa Jensen + Mardigan Moffat. UCS profile consolidation (2&rarr;1). New tagging strategy for granular review categorization. Widget reinstitution + baseline metrics capture. Review-refresh campaign planning.`,
+        mins: 26, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `Cisco TR recurring. UCS product profiles consolidation: merge 2 existing profiles into single comprehensive profile to simplify product representation + user experience. New granular tagging strategy for reviews: better categorization for quote retrieval + product info (marketing campaigns + sales support). Cleanup of existing review tags (remove outdated + irrelevant + align w/ current 13 product offerings). Widget reinstitution in flight + baseline metric capture before re-launch to measure engagement + content performance impact. Review-refresh campaign planned targeting specific themes + product categories. Next: Pam to (a) combine UCS profiles + switch Intersight for UCS + set up UCS in geo monitoring ASAP, (b) help team w/ tag cleanup after Ross's first pass, (c) send custom review-questions questionnaire ASAP, (d) review custom questions w/ Ross + potentially PMMs, (e) set up call w/ data team + relevant people re crawler data + citations + mentions, (f) double-check Bing clicks reporting + align w/ Ross's fiscal quarters, (g) provide quarter-end dates by Nov 2 report, (h) capture widget baseline stats before go-live. Ross to (i) first-pass tag cleanup (esp. Webex), (ii) fill out custom-questions questionnaire (~10 min per product) before Feb event, (iii) identify top 3 priority products for geo visibility + measurement. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 24 &middot; 7:30 AM', csm: 'varun', account: `Autodesk Inc`,
+        note: `Data Feed Clarifications + Use Cases Activation w/ Ameya Kambli + Aleksandra Sadowska + Adrian Escobar + Rishabh Wadhwa. Spend data: absolute vs relative + parent hierarchy (DP/CP/GHQ). Projected spend ~90% accuracy. SolidWorks competitor analysis + whitespace prospecting.`,
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Autodesk data-feed clarifications + use-cases activation session. Distinction between absolute spend (includes subsidiaries) + relative spend (excludes subsidiaries) crucial for accurate analysis. Spend data = forward-looking projection influenced by revenue + company size + tech used &mdash; component of prioritization vs sole ranking factor. Three parent IDs: domestic (country level) + corporate (aggregates DPs) + group HQ (ultimate global head). Data grain at HGID (child) level; sum child-level for aggregated parent-level spend if not directly provided. Projected spend models data-driven + demonstrated reliability ~90% accuracy (Fortune 100 territory allocation + time calculation). Next: Rishabh to (a) run query showing count of corporate parents + absolute/relative spend in delivered dataset today, (b) provide sample columns to analyze for SolidWorks competitor + associated opportunity spend today, (c) connect w/ data science team for spend model inputs + accuracy overview later. Varun to (i) share spend model calculations + accuracy doc, (ii) share updated draft of spend data incl. SMB + definitions, (iii) schedule follow-up next week for granular details. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 24 &middot; 8:30 AM', csm: 'divyam', account: `Lumen Technologies`,
+        note: `Weekly Sync w/ Nathan Der + Julie Chalk + Max Shaw + Julian Rojas. Fortune 500/Forbes 2000 data available via RGI but needs platform feature integration (no timeline). 12 new products tracking (AT&T VPN + Vodafone MPLS live; 9 need URL re-verify). Nile scoring model on hold (DIA&rarr;Intelligent Internet phase-out).`,
+        mins: 30, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `Lumen weekly sync. Fortune 500 + Forbes 2000 data available via HG Insights RGI platform but specific feature needed for direct platform integration &mdash; no exact timeline yet. Client prefers waiting for actual feature vs workaround (need to upload own lists for matching + analysis). Tracking for 12 new products ongoing: AT&T VPN + Vodafone MPLS in production; URLs for other 9 need re-verification for accurate tracking. Separate ICPs needed for 3 partner lookalike lists (Transit OT3 + Lightyear) &mdash; provided as Excel + safe searches. Nile scoring model on hold due to DIA content dependency (being phased out in favor of "Intelligent Internet") &mdash; requires rework. Next: Divyam to (a) provide partner lookalike ICPs + safe searches via email by tomorrow, (b) chase product team on Fortune 500 feature update, (c) provide event registration link for Oct 6 event, (d) shift cadence meeting by 30 min + find new slot for 60-min meeting. Nathan to (i) double-check + send HG product URLs for untrackable products ASAP, (ii) follow up on billing inquiry if no response by Tuesday (Rika contact). Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 24 &middot; 9:30 AM', csm: 'atisha', account: `Advanced Micro Devices, Inc.`,
+        note: `AMD Bi-weekly Touchpoint w/ David Rockwell + Tyler Neubauer + Charles Hawkins + Ravi Sharma. New delivery mechanism + consumption-based tokenized pricing model. "Sales AI Hub" consolidating multiple AI tools. Baseline consumption estimate + follow-up working sessions to build sample use cases.`,
+        mins: 31, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `AMD bi-weekly touchpoint. Transitioning to new delivery mechanism + consumption-based tokenized pricing model. Data + AI capabilities integrating into "Sales AI Hub" &mdash; unified interface consolidating multiple AI tools + chatbots; integrates w/ Salesforce + market intelligence. Complexity of channel sales + OEM relationships adds layers to deal management + revenue tracking. New AI-driven context signals being developed to proactively identify opportunities + risks (churn) + usage patterns within accounts. Next: Charles to (a) provide baseline estimate of moving to new platform (example use cases + baseline consumption) by next week's meeting, (b) schedule follow-up working sessions w/ relevant functional groups (e.g. Lenovo sales teams) to build sample use cases + validate POV. David to think about applying new data signals + context to AMD's sales motion + identify teams for follow-up by next meeting. Atisha to invite relevant AMD team members (BMO + Sales Ops) to overview session on new platform for Oct 6 conference or follow-up. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 24 &middot; 10:00 AM', csm: 'riley', account: `UKG`,
+        note: `TR Monthly Success Call (short 6m). Riley confirmed via SFDC transcript speaker detection.`,
+        mins: 6, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `Short UKG TR monthly success call. Riley confirmed via SFDC transcript speaker detection. Brief touchpoint &mdash; minimal content in 6m exchange.`, source: 'sfdc' },
+
+      { ts: 'Sep 24 &middot; 11:30 AM', csm: 'divyam', account: `Cotality (CoreLogic)`,
+        note: `TR Product Categories Query Meeting (Contd.) w/ Todd Detmold. Prioritizing new TR software categories: Insurance Suites + Data Management + Data Integration for competitive parity vs G2. Property Data identified as significant market gap.`,
+        mins: 9, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `Cotality TR product categories query meeting (continued). Identifying + prioritizing new TR categories for competitive differentiation vs G2. High-priority: Insurance Suites + Data Management + Data Integration. AI Governance + Data Governance + Privacy Management deemed more "watchdog" &mdash; less aligned w/ TR current offerings. Significant market gap: "Property Data" (real estate + property management services software) &mdash; currently underserved. Next: Todd to (a) evaluate addition of Insurance Suites + Data Management + Data Integration categories by end of week, (b) investigate feasibility of creating new "Property Data" category by end of week, (c) send email update on progress. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 24 &middot; 1:00 PM', csm: 'riley', account: `Zoom (Shani intro)`,
+        note: `TrustRadius: Connect w/ Shani@Zoom (26m). Riley confirmed via SFDC transcript speaker detection. Introduction call w/ new Zoom contact.`,
+        mins: 26, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `Zoom introduction call w/ Shani. Riley confirmed via SFDC transcript speaker detection. Initial connection + relationship-building call.`, source: 'sfdc' },
+    ],
+    pulses: [
+      { csm: 'varun', account: `IFS`, health: 'Healthy',
+        note: `Bi-Weekly Connect &mdash; short 17m sync. Renewal - Intent + FAI + V2 Migration 2026. Second IFS quarterly sync 8 AM PT had no transcript.` },
+      { csm: 'nick', account: `Intuit`, health: 'Healthy',
+        note: `Platform walkthrough &mdash; Ashutosh Singh exploring HG capabilities for lead gen + sales enablement. Sales Copilot + BigQuery integration + model customization discussed. Testing use cases next week.` },
+      { csm: 'andy', account: `SAS Institute Inc.`, health: 'Healthy',
+        note: `MCP scoring sync &mdash; Mike troubleshooting API integration issues. HT data query tool recommended for intent topic querying. Business case for system modernization being built.` },
+      { csm: 'pam', account: `Cisco (TR Recurring)`, health: 'Healthy',
+        note: `TR Recurring &mdash; UCS profile consolidation (2&rarr;1). New tagging strategy for granular review categorization. Widget reinstitution + baseline metrics. Review-refresh campaign.` },
+      { csm: 'varun', account: `Autodesk Inc`, health: 'Healthy',
+        note: `Data Feed Clarifications &mdash; spend data absolute vs relative + DP/CP/GHQ hierarchy. Projected spend ~90% accuracy. SolidWorks competitor analysis + whitespace prospecting.` },
+      { csm: 'divyam', account: `Lumen Technologies`, health: 'Healthy',
+        note: `Weekly Sync &mdash; Fortune 500/Forbes 2000 platform feature integration pending. 12 new products tracking. Nile scoring model on hold (DIA&rarr;Intelligent Internet phase-out).` },
+      { csm: 'atisha', account: `Advanced Micro Devices, Inc.`, health: 'Healthy',
+        note: `Bi-weekly Touchpoint &mdash; new delivery mechanism + consumption-based tokenized pricing. "Sales AI Hub" consolidating AI tools. Baseline consumption estimate + working sessions.` },
+      { csm: 'riley', account: `UKG`, health: 'Healthy',
+        note: `TR Monthly Success Call (short 6m). Confirmed via SFDC transcript speaker detection.` },
+      { csm: 'divyam', account: `Cotality (CoreLogic)`, health: 'Healthy',
+        note: `TR Product Categories &mdash; prioritizing Insurance Suites + Data Management + Data Integration for competitive parity. Property Data identified as significant market gap.` },
+      { csm: 'riley', account: `Zoom (Shani intro)`, health: 'Healthy',
+        note: `TrustRadius intro call w/ new Zoom contact Shani. Confirmed via SFDC transcript speaker detection. Initial connection.` },
+    ],
+  };
+}
+
+function dayMeta_2026_09_24() {
+  return {
+    pills: [
+      ['dot-teal',   '10 Calls'],
+      ['dot-amber',  '3 Expansion'],
+      ['dot-green',  '10 Vitally Pulses'],
+      ['dot-grey',   'Thu Sep 24 &middot; 109 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (10)', 'Pulses (10)', 'Action Items (7)']
+  };
+}
+
+function dayOverviewHTML_2026_09_24() {
+  return `<div class="section-label">Team Activity &mdash; Thursday September 24, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Thursday Sep 24 &mdash; 109 recordings scanned</strong> via SFDC SOQL &middot; <strong>10 confirmed calls</strong> across 8 CSMs (all active) &middot; 0 concerning &middot; 3 expansion signals &middot; SFDC confirmed 4; Weflow fallback added 6 unique recoveries
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>3 EXPANSION:</strong> Intuit (Ashutosh Singh platform walkthrough &mdash; new user exploring HG for lead gen + Sales Copilot) &middot; Autodesk (data feed clarifications + spend data + SolidWorks competitor analysis + whitespace prospecting) &middot; AMD (new delivery mechanism + Sales AI Hub + consumption-based tokenized pricing)
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">32m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">UKG (TR monthly &mdash; short) &middot; Zoom Shani intro (TR contact intro)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">47m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">IFS Bi-Weekly (renewal cadence) &middot; Autodesk (&#x1F4C8; data feed clarifications + spend data + SolidWorks competitor analysis)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">39m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Lumen (Fortune 500/Forbes 2000 platform feature integration + Nile scoring model on hold) &middot; Cotality TR product categories (Insurance/Data/Property Data gap)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">36m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Intuit platform walkthrough (&#x1F4C8; Ashutosh Singh new user exploring HG for lead gen + Sales Copilot)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="andy">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">16m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">SAS MCP scoring sync (Mike API integration issues + business case for modernization)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="pam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">26m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Cisco TR Recurring (UCS profile consolidation + tagging strategy + widget reinstitution)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">31m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">AMD Bi-weekly (&#x1F4C8; new delivery mechanism + Sales AI Hub + consumption-based pricing)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="rani">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">RG</div><div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No confirmed customer calls. No Rani speaker in SFDC transcripts; no Weflow-participant hits on any Sept 24 recording.</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_09_24() {
+  return `<div class="section-label">Confirmed Calls &mdash; Thursday September 24, 2026</div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>3 EXPANSION:</strong> Intuit (Ashutosh platform walkthrough) &middot; Autodesk (data feed clarifications + SolidWorks whitespace) &middot; AMD (Sales AI Hub + consumption-based pricing)
+  </div>`;
+}
+
+function dayPulsesHTML_2026_09_24() {
+  const cards = [
+    { csm:'varun', health:'Healthy', account:`IFS`, opp:`Vitally Pulse &mdash; Sep 24 Call`,
+      arr:`Enterprise &middot; Varun Tiwari`, csmlbl:`Varun Tiwari`, change:`Sep 24 &middot; Healthy`,
+      excerpt:`IFS Bi-Weekly Connect &mdash; short 17m sync. Renewal - Intent + FAI + V2 Migration 2026. Standard cadence. Second longer IFS quarterly sync at 8 AM PT was CSM-owned but had no synced transcript.` },
+    { csm:'nick', health:'Healthy', account:`Intuit`, opp:`Vitally Pulse &mdash; Sep 24 Call`,
+      arr:`Enterprise &middot; Nick Johnson`, csmlbl:`Nick Johnson`, change:`Sep 24 &middot; Healthy`,
+      excerpt:`Platform walkthrough w/ Ashutosh Singh (new user). HG account-level intelligence + technographic data enrichment + Sales Copilot demo. BigQuery integration + model customization. Testing inbound + new customer acquisition use cases next week.` },
+    { csm:'andy', health:'Healthy', account:`SAS Institute Inc.`, opp:`Vitally Pulse &mdash; Sep 24 Call`,
+      arr:`Enterprise &middot; Andy Lim`, csmlbl:`Andy Lim`, change:`Sep 24 &middot; Healthy`,
+      excerpt:`SAS + HG MCP scoring sync &mdash; Mike troubleshooting API integration (payload + domain call changes). HT data query tool recommended. Business case for system modernization being built. Mike + Andy + Chloe sync tomorrow AM.` },
+    { csm:'pam', health:'Healthy', account:`Cisco (TR Recurring)`, opp:`Vitally Pulse &mdash; Sep 24 Call`,
+      arr:`Enterprise &middot; Pam Huck`, csmlbl:`Pam Huck`, change:`Sep 24 &middot; Healthy`,
+      excerpt:`Cisco TR Recurring &mdash; UCS profile consolidation (2&rarr;1). New tagging strategy for granular review categorization. Widget reinstitution + baseline metrics before go-live. Review-refresh campaign planning + custom questions questionnaire.` },
+    { csm:'varun', health:'Healthy', account:`Autodesk Inc`, opp:`Vitally Pulse &mdash; Sep 24 Call`,
+      arr:`Enterprise &middot; Varun Tiwari`, csmlbl:`Varun Tiwari`, change:`Sep 24 &middot; Healthy`,
+      excerpt:`Data Feed Clarifications + Use Cases Activation. Spend data: absolute vs relative + DP/CP/GHQ hierarchy. Projected spend ~90% accuracy. SolidWorks competitor analysis + whitespace prospecting.` },
+    { csm:'divyam', health:'Healthy', account:`Lumen Technologies`, opp:`Vitally Pulse &mdash; Sep 24 Call`,
+      arr:`Enterprise &middot; Divyam Dewan`, csmlbl:`Divyam Dewan`, change:`Sep 24 &middot; Healthy`,
+      excerpt:`Weekly Sync &mdash; Fortune 500/Forbes 2000 data available via RGI but platform feature integration pending. 12 new products tracking (AT&T VPN + Vodafone MPLS live; 9 need URL re-verify). Nile scoring model on hold (DIA&rarr;Intelligent Internet phase-out).` },
+    { csm:'atisha', health:'Healthy', account:`Advanced Micro Devices, Inc.`, opp:`Vitally Pulse &mdash; Sep 24 Call`,
+      arr:`Enterprise &middot; Atisha Waghela`, csmlbl:`Atisha Waghela`, change:`Sep 24 &middot; Healthy`,
+      excerpt:`AMD Bi-weekly Touchpoint &mdash; new delivery mechanism + consumption-based tokenized pricing. "Sales AI Hub" consolidating multiple AI tools. Baseline consumption estimate + follow-up working sessions to build sample use cases.` },
+    { csm:'riley', health:'Healthy', account:`UKG`, opp:`Vitally Pulse &mdash; Sep 24 Call`,
+      arr:`Enterprise &middot; Riley Rogers`, csmlbl:`Riley Rogers`, change:`Sep 24 &middot; Healthy`,
+      excerpt:`TR Monthly Success Call (short 6m). Confirmed via SFDC transcript speaker detection.` },
+    { csm:'divyam', health:'Healthy', account:`Cotality (CoreLogic)`, opp:`Vitally Pulse &mdash; Sep 24 Call`,
+      arr:`Enterprise &middot; Divyam Dewan`, csmlbl:`Divyam Dewan`, change:`Sep 24 &middot; Healthy`,
+      excerpt:`TR Product Categories Query Meeting (Contd.) &mdash; prioritizing Insurance Suites + Data Management + Data Integration for competitive parity vs G2. Property Data identified as significant market gap.` },
+    { csm:'riley', health:'Healthy', account:`Zoom (Shani intro)`, opp:`Vitally Pulse &mdash; Sep 24 Call`,
+      arr:`Enterprise &middot; Riley Rogers`, csmlbl:`Riley Rogers`, change:`Sep 24 &middot; Healthy`,
+      excerpt:`TrustRadius intro call w/ new Zoom contact Shani (26m). Riley confirmed via SFDC transcript speaker detection. Initial connection + relationship-building.` },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div class="pulse-account">${c.account}</div>
+          <div class="pulse-opp">${c.opp}</div>
+          <div class="pulse-arr">${c.arr}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_09_24() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('2401')?'done':''}" data-csm="nick" id="action-2401">
+      <div class="action-checkbox ${doneActions.has('2401')?'checked':''}" onclick="toggleAction('2401')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Intuit &mdash; Ashutosh use-case testing + piloting positioning w/ manager Rachel</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Nick Johnson &middot; Ashutosh Singh to explore platform (model building + Sales Copilot) EoD today + test use cases for inbound team + new customer acquisition by end of next week + reach out to Nick w/ questions tomorrow/Monday + connect w/ Rachel (manager) to position piloting opportunities. Nick to provide support + answer follow-up questions.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('2402')?'done':''}" data-csm="varun" id="action-2402">
+      <div class="action-checkbox ${doneActions.has('2402')?'checked':''}" onclick="toggleAction('2402')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Autodesk &mdash; SolidWorks competitor analysis + spend data doc + follow-up next week</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Varun Tiwari + Rishabh Wadhwa + Adrian Escobar &middot; Rishabh to (a) run query showing count of corporate parents + absolute/relative spend today, (b) provide sample columns for SolidWorks competitor + opportunity spend today, (c) connect w/ data science team for spend model inputs + accuracy overview. Varun to share spend model calculations + accuracy doc + updated spend data draft incl. SMB + definitions + schedule follow-up next week for granular details.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('2403')?'done':''}" data-csm="atisha" id="action-2403">
+      <div class="action-checkbox ${doneActions.has('2403')?'checked':''}" onclick="toggleAction('2403')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; AMD &mdash; new platform baseline consumption estimate + Oct 6 conference session</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Atisha Waghela + Charles Hawkins + David Rockwell &middot; Charles to provide baseline estimate of moving to new platform (example use cases + baseline consumption) by next week's meeting + schedule follow-up working sessions w/ relevant functional groups. David to think about applying new data signals + context to AMD's sales motion + identify teams for follow-up by next meeting. Atisha to invite AMD BMO + Sales Ops team members to overview session for Oct 6 conference or follow-up.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('2404')?'done':''}" data-csm="pam" id="action-2404">
+      <div class="action-checkbox ${doneActions.has('2404')?'checked':''}" onclick="toggleAction('2404')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Cisco &mdash; UCS profile consolidation + tag cleanup + widget baseline before go-live</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Pam Huck + Ross Marchant + Mardigan Moffat &middot; Pam to (a) combine UCS profiles + switch Intersight for UCS + set up UCS in geo monitoring ASAP, (b) help team w/ tag cleanup, (c) send custom review-questions questionnaire ASAP, (d) set up call w/ data team + relevant people re crawler data + citations + mentions, (e) double-check Bing clicks reporting + align w/ Ross's fiscal quarters, (f) capture widget baseline stats before go-live. Ross to (i) first-pass tag cleanup (esp. Webex), (ii) fill custom-questions questionnaire before Feb event, (iii) identify top 3 priority products for geo visibility.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('2405')?'done':''}" data-csm="divyam" id="action-2405">
+      <div class="action-checkbox ${doneActions.has('2405')?'checked':''}" onclick="toggleAction('2405')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Lumen &mdash; partner lookalike ICPs + Fortune 500 feature chase + billing follow-up</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Divyam Dewan + Nathan Der &middot; Divyam to (a) provide partner lookalike ICPs + safe searches via email by tomorrow, (b) chase product team on Fortune 500 feature update, (c) provide event registration link for Oct 6 event, (d) shift cadence meeting by 30 min. Nathan to (i) double-check + send HG product URLs for untrackable products ASAP, (ii) follow up on billing inquiry (Rika contact) if no response by Tuesday.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('2406')?'done':''}" data-csm="andy" id="action-2406">
+      <div class="action-checkbox ${doneActions.has('2406')?'checked':''}" onclick="toggleAction('2406')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; SAS &mdash; MCP API troubleshooting + leadership modernization case</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Andy Lim + Augie Buettner + Chloe Portier + Jesper + Mike Turner &middot; Mike to troubleshoot API calls + payload changes. Mike + Andy + Chloe to sync tomorrow morning on API issues + potential solutions. Mike to incorporate additional IDs from Andy into API testing. Chloe to send v1 + v2 intent tool documentation ASAP. Team to demonstrate built features to leadership + gather feedback next week. Jesper + Mike to continue building modernization support case.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('2407')?'done':''}" data-csm="divyam" id="action-2407">
+      <div class="action-checkbox ${doneActions.has('2407')?'checked':''}" onclick="toggleAction('2407')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Cotality &mdash; TR category feasibility evaluation by end of week</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Divyam Dewan + Todd Detmold &middot; Todd to (a) evaluate addition of Insurance Suites + Data Management + Data Integration categories by end of week, (b) investigate feasibility of creating new "Property Data" category by end of week, (c) send email update on progress by end of week.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
