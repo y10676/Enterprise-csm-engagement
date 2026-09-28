@@ -128,198 +128,11 @@ function weeklyOrMonthlyHTML_2026_09_01() {
 // Friday September 11, 2026
 // ============================================================
 
-function dayData_2026_09_11() {
-  return {
-    calls: [
-      { ts: 'Sep 11 &middot; 9:00 AM', csm: 'riley', account: 'Zoom',
-        note: 'Camille Shortridge farewell / handoff to Travis; Buyer’s Choice deadline extended to Oct 16; API + SSO enablement plan for incoming lead',
-        mins: 30, health: 'Healthy',
-        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
-        detail: 'Final handoff sync ahead of Camille Shortridge’s departure (going to Figma Monday). Riley confirmed Travis has Buyer’s Choice tracker access; SSO and API enablement in flight; free-links doc to be shared for interim reviews. Riley extended the Buyer’s Choice program deadline three weeks to Oct 16 (announcement Nov). Marla intro re-attempted via second handoff email. Watch: successor backfill uncertain and momentum on review-gen without Camille driving.' },
 
-      { ts: 'Sep 11 &middot; 10:00 AM', csm: 'rani', account: 'Google Inc.',
-        note: 'Multi-stream: Contact Data POC scoped (1,000 accounts + DPA), Gemini Enterprise MCP intro request, TR Precision Demand pitched; renewal locked to like-for-like for December',
-        mins: 45, health: 'Healthy',
-        nature: 'Recurring', initiator: 'HG CS', purpose: 'Mixed',
-        detail: 'Rani ran the agenda with Marianna Prodan (Google contact-data owner), Mark Fell + KP Pindle + Mardigan Moffat + Cole Arutian. Renewal reality-check: Lawrence + procurement pushing like-for-like extension in December (budgets locked for the year, no room for contact-data add-in until 2027 budget cycle). Path forward: execute renewal in December + parallel POC now. POC scoped at ~1,000 accounts across geos/segments (KP owns), MVL requires first/last/title/company/country + validated non-catch-all business emails only (no gmail). DPA is the blocker — Rani driving to attach to Lawrence’s renewal amendment vs standalone. Gemini Enterprise MCP: Rani asked for warm intro (Noah Rowitz indicated ZoomInfo has done this integration already). Precision Demand program pitched by Mardigan as bridge for marketing contacts + intent-driven leads on TR side. Deadline to send DPA + kick off POC list: today.' },
-    ],
-    pulses: [
-      { csm:'riley', health:'Healthy', account:'Zoom',
-        opp:'Vitally Pulse &mdash; Sep 11 Call',
-        arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
-        change:'Sep 11 &middot; Handoff / Transition',
-        excerpt:'9/11 RR: Camille Shortridge (primary Zoom sponsor) leaving for Figma; Travis absorbing responsibilities (30 min, 9 AM PT). Buyer’s Choice deadline extended to Oct 16 (announcement Nov). API + SSO enablement in flight. Marla intro re-tried via second handoff email.' },
 
-      { csm:'rani', health:'Healthy', account:'Google Inc.',
-        opp:'Vitally Pulse &mdash; Sep 11 Call',
-        arr:'Enterprise &middot; Rani Guy', csmlbl:'Rani Guy',
-        change:'Sep 11 &middot; Renewal + POC + MCP',
-        excerpt:'9/11 RG: 45 min contact-POC scoping (10 AM PT). Google’s 2026 budget locked — December renewal must be like-for-like; contact-data add-on to be POC’d now, contracted in 2027. 1,000-account POC + DPA in motion. Rani asked for Gemini Enterprise MCP intro (Noah Rowitz hint that ZoomInfo already did the integration).' },
-    ],
-  };
-}
 
-function dayMeta_2026_09_11() {
-  return {
-    pills: [
-      ['dot-teal',   '2 Calls'],
-      ['dot-amber',  '1 Expansion'],
-      ['dot-green',  '2 Vitally Pulses'],
-      ['dot-grey',   'Fri Sep 11 &middot; 52 scanned &middot; 69% no-transcript'],
-    ],
-    tabs: ['Overview', 'Calls (2)', 'Pulses (2)', 'Action Items (5)']
-  };
-}
 
-function dayOverviewHTML_2026_09_11() {
-  return `<div class="section-label">Team Activity &mdash; Friday September 11, 2026</div>
-  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
-    &#x1F4C5; <strong>Fri Sep 11 &mdash; 52 recordings scanned</strong> via SFDC SOQL &middot; <strong>2 confirmed calls</strong> across 2 CSMs &middot; 0 Concerning &middot; 1 Expansion (Google contact POC + Gemini MCP + TR Precision Demand) &middot; Nick back from PTO (Infor onsite debrief no-recording).
-  </div>
-  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
-    &#x26A0;&#xFE0F; <strong>Weflow sync backlog Day 7:</strong> 69% no-transcript rate (down from 85% Sept 10, still elevated vs 40-50% typical). Trajectory: Sep 2 71% &rarr; Sep 3 75% &rarr; Sep 4 76% &rarr; Sep 8 72% &rarr; Sep 9 75% &rarr; Sep 10 85% &rarr; <strong>Sep 11 69%</strong>. Improvement but not resolved. 3 no-transcript recordings that were CSM-owned events (Andy&times;SAS renewal 5:30 AM, Varun&times;MongoDB 9 AM, Rani&times;Hitachi Vantara 9:30 AM) &mdash; inferred only, not speaker-verified.
-  </div>
-  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
-    &#x1F4C8; <strong>Expansion:</strong> Google (Rani) &mdash; contact-data POC scoped at 1,000 accounts + DPA in motion; Gemini Enterprise MCP intro requested; TR Precision Demand program pitched. December renewal will be like-for-like (budget locked); contact-add expected 2027 budget cycle.
-  </div>
-  <div class="overview-grid">
 
-    <div class="csm-card has-calls" data-csm="riley">
-      <span class="call-badge">1 CALL</span>
-      <div class="csm-card-header"><div class="avatar av-riley">RR</div><div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-metrics">
-        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
-        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
-        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
-      </div>
-      <div class="csm-account-note">Zoom (Camille Shortridge farewell / Travis handoff; Buyer’s Choice deadline Oct 16)</div>
-    </div>
-
-    <div class="csm-card has-calls" data-csm="rani">
-      <span class="call-badge">1 CALL</span>
-      <div class="csm-card-header"><div class="avatar av-grey">RG</div><div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-metrics">
-        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
-        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
-        <div><div class="metric-num m-grey">45m</div><div class="metric-lbl">Duration</div></div>
-      </div>
-      <div class="csm-account-note">Google (contact POC + Gemini MCP + TR Precision Demand; renewal locked to like-for-like Dec) &middot; Hitachi Vantara 9:30 AM (no transcript)</div>
-    </div>
-
-    <div class="csm-card no-calls" data-csm="nick">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header"><div class="avatar av-grey">NJ</div><div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Back from PTO (Day 2). 1 event (Infor onsite debrief 5 AM) &mdash; no recording synced</div>
-    </div>
-
-    <div class="csm-card no-calls" data-csm="divyam">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header"><div class="avatar av-divyam">DD</div><div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No CSM-owned events scheduled</div>
-    </div>
-
-    <div class="csm-card no-calls" data-csm="varun">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header"><div class="avatar av-varun">VT</div><div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event (MongoDB 9 AM) &mdash; recorded but no transcript (inferred only)</div>
-    </div>
-
-    <div class="csm-card no-calls" data-csm="pam">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header"><div class="avatar av-grey">PH</div><div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No CSM-owned events scheduled</div>
-    </div>
-
-    <div class="csm-card no-calls" data-csm="atisha">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header"><div class="avatar av-grey">AW</div><div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">3 events (Intel Platform Training 5:30 AM, AMD Bi-weekly 9:30 AM, Apple Platform Training 12 PM) &mdash; no recordings synced</div>
-    </div>
-
-    <div class="csm-card no-calls" data-csm="andy">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header"><div class="avatar av-grey">AL</div><div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event (SAS Team - MI Licenses 2027 Renewal 5:30 AM) &mdash; recorded but no transcript (inferred only)</div>
-    </div>
-
-  </div>`;
-}
-
-function dayCallsHTML_2026_09_11() {
-  return `<div class="section-label">Confirmed Calls &mdash; Friday September 11, 2026</div>
-  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
-    &#x26A0;&#xFE0F; <strong>3 CSM events had recordings but no transcript</strong> &mdash; inferred from CSM event ownership only, not speaker-verified: Andy&times;SAS (MI Licenses 2027 Renewal, 5:30 AM PT, 30 min), Varun&times;MongoDB (9 AM PT, 30 min), Rani&times;Hitachi Vantara (9:30 AM PT, 30 min). 4 additional CSM events had no recording at all: Nick&times;Infor onsite debrief (5 AM), Atisha&times;Intel Platform Training (5:30 AM), Atisha&times;AMD Bi-weekly (9:30 AM), Atisha&times;Apple Platform Training (12 PM).
-  </div>`;
-}
-
-function dayPulsesHTML_2026_09_11() {
-  const cards = [
-    { csm:'riley', health:'Healthy', account:'Zoom', opp:'Vitally Pulse &mdash; Sep 11 Call',
-      arr:'Enterprise &middot; Riley Rogers', csmlbl:'Riley Rogers',
-      change:'Sep 11 &middot; Handoff / Transition',
-      excerpt:'9/11 RR: Camille Shortridge (primary Zoom sponsor) leaving for Figma; Travis absorbing responsibilities (30 min, 9 AM PT). Buyer’s Choice deadline extended to Oct 16 (announcement Nov). API + SSO enablement in flight. Marla intro re-tried via second handoff email.' },
-    { csm:'rani', health:'Healthy', account:'Google Inc.', opp:'Vitally Pulse &mdash; Sep 11 Call',
-      arr:'Enterprise &middot; Rani Guy', csmlbl:'Rani Guy',
-      change:'Sep 11 &middot; Renewal + POC + MCP',
-      excerpt:'9/11 RG: 45 min contact-POC scoping (10 AM PT). Google’s 2026 budget locked — December renewal must be like-for-like; contact-data add-on to be POC’d now, contracted in 2027. 1,000-account POC + DPA in motion. Rani asked for Gemini Enterprise MCP intro (Noah Rowitz hint that ZoomInfo already did the integration).' },
-  ];
-  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
-  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
-  return `<div class="pulse-grid">${cards.map(c=>`
-    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
-      <div class="pulse-card-top">
-        <div>
-          <div style="font-size:13px;font-weight:600;color:#e2e8f0;">${c.account}</div>
-          <div style="font-size:11px;color:#94a3b8;margin-top:2px;">${c.opp}</div>
-        </div>
-        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
-      </div>
-      <div class="pulse-excerpt">${c.excerpt}</div>
-      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
-    </div>`).join('')}</div>
-  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
-}
-
-function dayActionsHTML_2026_09_11() {
-  return `<div class="action-list">
-    <div class="action-item ${doneActions.has('0911-1')?'done':''}" data-csm="rani" id="action-0911-1">
-      <div class="action-checkbox ${doneActions.has('0911-1')?'checked':''}" onclick="toggleAction('0911-1')"></div>
-      <div class="action-body">
-        <div class="action-title">&#x1F4C8; Google &mdash; Send DPA + kick off 1,000-account POC list (TODAY)</div>
-        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy &middot; Get HG DPA to Rani today so she can attach to Lawrence’s December renewal amendment (Marianna confirmed DPA is normally bundled with contract). KP to spec 1,000-account POC list w/ geo + segment spread. Google 2026 budget is locked — contact-data add-on won’t be contracted until 2027 budget cycle, so POC evidence + amendment path is the play.</div>
-      </div>
-    </div>
-    <div class="action-item ${doneActions.has('0911-2')?'done':''}" data-csm="rani" id="action-0911-2">
-      <div class="action-checkbox ${doneActions.has('0911-2')?'checked':''}" onclick="toggleAction('0911-2')"></div>
-      <div class="action-body">
-        <div class="action-title">&#x1F4C8; Google &mdash; Gemini Enterprise MCP intro request via Marianna</div>
-        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Rani Guy &middot; Noah Rowitz signaled ZoomInfo already integrated their data into Gemini Enterprise via MCP. Rani asked Marianna for a warm intro to the internal Gemini Enterprise contact. Short window — chase next week if no response.</div>
-      </div>
-    </div>
-    <div class="action-item ${doneActions.has('0911-3')?'done':''}" data-csm="riley" id="action-0911-3">
-      <div class="action-checkbox ${doneActions.has('0911-3')?'checked':''}" onclick="toggleAction('0911-3')"></div>
-      <div class="action-body">
-        <div class="action-title">&#x1F4CB; Zoom &mdash; Travis onboarding: SSO, API, free-links doc</div>
-        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Riley Rogers &middot; Travis (Camille’s successor) taking over Zoom TR ownership Monday. Confirm SSO enablement complete, drop free-links doc in shared folder, and walk Travis through vendor portal on next sync. Backfill for Camille’s role uncertain — flag risk to Yuan.</div>
-      </div>
-    </div>
-    <div class="action-item ${doneActions.has('0911-4')?'done':''}" data-csm="all" id="action-0911-4">
-      <div class="action-checkbox ${doneActions.has('0911-4')?'checked':''}" onclick="toggleAction('0911-4')"></div>
-      <div class="action-body">
-        <div class="action-title">&#x1F4CB; CSM team &mdash; Manual Vitally log for 3 inferred + 4 no-recording calls</div>
-        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Andy (SAS MI Licenses 2027 Renewal), Varun (MongoDB), Rani (Hitachi Vantara), Nick (Infor onsite debrief), Atisha (Intel Platform Training + AMD Bi-weekly + Apple Platform Training) &middot; With transcripts missing or recordings absent, each CSM should manually log the outcomes + next steps in Vitally so the signal isn’t lost. SAS renewal call in particular is worth capturing.</div>
-      </div>
-    </div>
-    <div class="action-item ${doneActions.has('0911-5')?'done':''}" data-csm="all" id="action-0911-5">
-      <div class="action-checkbox ${doneActions.has('0911-5')?'checked':''}" onclick="toggleAction('0911-5')"></div>
-      <div class="action-body">
-        <div class="action-title">&#x1F6A8; Ops &mdash; Weflow sync backlog Day 7 (69%, improving from 85%)</div>
-        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Ops / Rishi &middot; No-transcript rate dropped from 85% Sept 10 to 69% Sept 11 — recovery starting but still 20+ pts above 40-50% baseline. Keep P0 open with Weflow support; if rate is back to baseline by Sept 14 (Monday), close ticket. Otherwise escalate to product.</div>
-      </div>
-    </div>
-  </div>
-  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
-}
 
 
 // ============================================================
@@ -6259,6 +6072,338 @@ function dayActionsHTML_2026_09_07() {
       <div class="action-body">
         <div class="action-title">&#x1F4CB; zScaler &mdash; revisit account matching + DUNS reliance in ~1 month</div>
         <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Varun Tiwari + Manoj Parameswara &middot; Both to revisit the discussion on account matching + DUNS reliance in approximately one month, once Zscaler's internal DUNS quality work has progressed.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
+
+function dayData_2026_09_11() {
+  return {
+    calls: [
+      { ts: 'Sep 11 &middot; 3:00 AM', csm: 'nick', account: `Lenovo Group Ltd.`,
+        note: `HGI Propensity Model &mdash; Next Steps w/ Adrian Escobar + Gavin Padden + Alexi Mouarkach + David Crossman + Lenovo team (Agniteja Matavalam + Batta Pruthvi + Derek). LDO (Lenovo Device Orchestrator) prioritized alongside Sentinel One + Absolute. Account lists w/ scores + logic due Sep 15 (v1); refined Sep 17. Cross-coverage: Nick covering (Rani's account).`,
+        mins: 23, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Lenovo propensity-model next-steps sync. LDO (Lenovo Device Orchestrator) prioritized alongside Sentinel One + Absolute &mdash; contrary to initial plan to put LDO on hold. Detailed LDO information + materials being shared for accurate scoring. Scoring criteria for LDO will consider: proportion of Lenovo devices within an account + presence of aging device fleets or competing products indicating upgrade cycles. Sales teams to receive account lists w/ scores + underlying logic: initial version Sep 15; refined version by Sep 17. Models built w/ less available information will be flagged for iteration. Gavin to (a) send meeting invite for Tuesday follow-up, (b) incorporate LDO factors into scoring model by Tuesday, (c) share account list w/ scores + logic (Sep 15 initial, Sep 17 refined). Batta Pruthvi to share LDO file + formatting details. Agniteja to inform Ujjayi about stakeholder concerns ASAP. HG team to address matching + news data queries ASAP. Cross-coverage: Nick covering Rani's Lenovo account for the propensity model work. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 11 &middot; 5:30 AM', csm: 'andy', account: `SAS Institute Inc.`,
+        note: `SAS renewal + MCP pilot direction w/ Augie Buettner + Chlo&eacute; Portier + Neil Dover. Renewal ROI justification needed for finance. New AI sales copilot as potential alternative to current offerings. Business case finalization in next 1-2 weeks. Renewal - SAS-Max CI team 2027 + Renewal - SAS Team - MI Licenses 2027.`,
+        mins: 36, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Mixed',
+        detail: `SAS renewal + MCP pilot direction sync. Demonstrating ROI is crucial for continued investment (finance requires direct revenue attribution). Discussion of a new AI sales copilot (potentially more streamlined + integrated for sellers; possibly reduced credit consumption) as an alternative to current offerings. Qualitative benefits (time savings + improved focus) valued but harder to quantify for finance. MCP pilot's future being debated: define scope + value to justify continuation or closure. Internal planning + segmentation processes underway will inform renewal investment/usage level. Next: Neil + Stephen to finalize business case for executive approval in next 1-2 weeks. Augie + Neil to discuss MCP pilot continuation + potential investment next week. Augie to clarify credit consumption for the AI sales copilot before next meeting. Neil to talk to Jasper re MCP pilot's status + discuss w/ Stephen to round out business case before next week's meeting. Neil to explore operationalizing the platform more effectively (ongoing). Andy + Chlo&eacute; may revise pilot prompt for better outcomes as needed. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 11 &middot; 9:00 AM', csm: 'riley', account: `Zoom Video Communications (TR CSM Sync)`,
+        note: `Zoom &lt;&gt; TrustRadius CSM sync &mdash; short 9m touchpoint. Riley confirmed via SFDC transcript speaker detection. TR-side coordination (Zoom is Andy Lim's HG account).`,
+        mins: 9, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `Short Zoom TrustRadius CSM sync. Brief touchpoint. Riley confirmed via SFDC transcript speaker detection.`, source: 'sfdc' },
+
+      { ts: 'Sep 11 &middot; 9:00 AM', csm: 'varun', account: `MongoDB Inc`,
+        note: `MongoDB renewal w/ Ziad Amira + Will Bracken + Steven Harbron. MongoDB aiming for flat renewal via tech-list refinement. Interest in Functional AI Intelligence + Geo-monitoring + RGIP platform + API access. Updated account list + product selections for credit estimation due early next week.`,
+        mins: 33, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `MongoDB renewal discussion. MongoDB aiming to keep renewal flat via refining tracked technologies (manage costs effectively). Understanding credit consumption + overages a focus (identify cost-reduction opportunities). Will Bracken exploring integration of HG data into their surfaces for competitor analysis + interested in embedding-provider tracking. Interest in expanding to Functional AI Intelligence + Geo-monitoring features for enterprise penetration + strategic sales/marketing. API access for data export being explored (beyond current S3 bucket integrations). Next: Ziad + Varun to share file detailing tracked technologies + coverage + suggestions for other relevant technologies + file suggesting other relevant technologies in specific domains. Will + Varun to provide updated account list + product selections for credit estimation early next week. Varun to provision Steven access to new RGIP platform after the call + provide RGIP download next week + send follow-up email w/ required fields for input lists. Steven to sync w/ Ali re launching a POC for paid media when Ali is back. Ziad to confirm if API access for data export is free for RGIF customers. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 11 &middot; 9:30 AM', csm: 'rani', account: `Hitachi Vantara`,
+        note: `Hitachi sync w/ Adrian Escobar + Miguel Ortega. Data retention refinement (bottom two data sets retained; others outside intent schemas to be destroyed). Rebecca bulk credits provisioned until Oct 9. Renewal uncertainty for install + spend + intent contracts. Legal engagement re Nov 1 platform usage.`,
+        mins: 14, health: 'Concerning',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Mixed',
+        detail: `Hitachi Vantara sync following data-deletion clause work. Refined retention: bottom two data sets to be kept; others outside specific intent schemas to be destroyed &mdash; data-driven approach. Bulk API credits provisioned to Rebecca until Oct 9 as goodwill/partnership gesture (outside contractual obligation); renewal uncertain due to budget constraints. Renewal uncertainty across install + spend + intent contracts due to long sales cycles + potential budget limitations for Rebecca + Nathan. Rani working w/ legal re platform usage after Nov 1 (different system than initially discussed). Multiple communications sent re data changes; acknowledged stakeholders may not always retain the info. Next: Rani to share specific spile schema for intent + other schemas as needed + provide Rajiv's email to Miguel + continue Rebecca conversations re credit usage + budget + work w/ legal re Nov 1 platform usage + ensure Rajiv is copied on follow-up comms. Miguel to confirm data destruction/retention plan w/ his team + double-check + inform Rani. Pulse Poor. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 11 &middot; 10:00 AM', csm: 'rani', account: `Google Inc.`,
+        note: `Google Contact POC + TrustRadius continued w/ Marianna Prodan + Mark Fell + KP Pindle + Mardigan Moffat. Three objectives: HG contact data POC for geo coverage gaps + TrustRadius (CVP + Geo + Intent + FAI intent). Introduction to Gemini Enterprise team requested for MCP integration.`,
+        mins: 50, health: 'Concerning',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Mixed',
+        detail: `Google POC + TrustRadius continued discussion. Three parallel streams: (1) HG contact data POC around specific geos w/ coverage gaps, (2) TrustRadius Customer Voice Platform + Geo concept + intent-driven leads, (3) FBI intent + context data. Rani mentioned prior week's meeting w/ Lawrence + ongoing conversations w/ procurement scoping business need. Team asked Marianna for her priority for the call. Mark to confirm Marianna's linkage to contacts follow / contacts-with-intent / CVP; if not, request intro. Team requested introduction to Gemini Enterprise team to integrate HG data via MCP (short window). Zoom Info contract clarified as Google (not Google Cloud) &mdash; Mariana working w/ it. Long sales-cycle + budget uncertainty context established. Pulse Concerning. Confirmed via SFDC transcript speaker detection.`, source: 'sfdc' },
+
+      { ts: 'Sep 11 &middot; 12:30 PM', csm: 'riley', account: `Adobe Systems Incorporated`,
+        note: `TrustRadius + Adobe renewal w/ Cole Arutian + Mardigan Moffat + Giacomo Pesaresi + Allison. Adobe budget constraint: 14 &rarr; 10-11 products. New offerings: Geo/AI summaries + Precision Demand + event support (Summit + MAX) budget integration. Revised proposals by Oct 1. Cross-coverage: Riley covering (Divyam's account).`,
+        mins: 25, health: 'Concerning',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Mixed',
+        detail: `Adobe TrustRadius renewal discussion. Adobe facing significant budget constraints ("do more with less") &mdash; product count likely dropping 14 &rarr; 10-11. Two package options discussed: Geo Customer Voice Platform (CVP; includes geo/market report) vs legacy HG Customer Voice (more streamlined). Adobe exploring integrating event-support budgets (Summit + MAX booths) into main package + quarterly billing (vs upfront) to increase "bang for buck". New Precision Demand program introduced (leveraging HG's technographic + install data for target-account insights + buying committees + sales plays) &mdash; may interest Adobe lead-gen team. Mardigan to provide revised package options based on 10-11 products + event support + potential package deal by Oct 1. Gpesaresi to conduct internal discussions w/ Allison + Erica re Precision Demand for lead gen + determine final product count/config by Oct 1 + explore cross-charging for event support inclusion. Mardigan to send package details + documentation ASAP for Adobe internal case-building. Cross-coverage: Riley (TrustRadius-side) covering Divyam's Adobe HG account. Pulse Concerning. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 11 &middot; 1:15 PM', csm: 'pam', account: `Microsoft`,
+        note: `Microsoft Agent Engine + Collaboration Model alignment w/ Karin Pindle + Mark Fell + Cole Arutian + Mardigan Moffat + Francis Brero + Noah Alford + Microsoft team (Cesar Martinez + Abhay Sawhney + Sarani Roy + Sam Staudaher). SFTP access + Microsoft Fabric integration + potential Center of Excellence. Rapid prototyping/build cadence established.`,
+        mins: 98, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Microsoft strategic collaboration-model alignment. Streamlined development process: business discussions &rarr; mockups/prototypes within hours &rarr; iterate to build phase within a week or two &mdash; speed + quality emphasis. Data access: SFTP initially, then exploring Microsoft Fabric access; SFTP provides "a slice", MCP the "whole pie". Two collaboration points defined: initial intake/shaping + data validation/build sprint. Ongoing discussion re initiative evolving into a Center of Excellence (CoE) within Microsoft to coordinate + scale successful projects. Multiple Microsoft opps in play: Contract Consolidation (AIBS + CAIP + Security co-term 2027) + Hardware &amp; Devices Precision Demand Intel Pilot + M365 Copilot Precision Demand Intel Pilot + TR Microsoft CVP x6 + Mkt Report x6 + Event Support x2 (Written Renewal). Next: Karin to coordinate SFTP key provisioning for Microsoft team by Mon/Tue latest. Microsoft team (Abe + David + Caesar + Sarani) to use SFTP key + begin building Diana's project starting next week. Microsoft team to continue collaborating w/ HG (Karin + Rob + Francis) for data validation + build support. Mark to ensure sanitized portfolio updates to Jim shareable w/ HG monthly. Cesar to add sharing updates w/ HG to Jim calls. Microsoft team to continue Will Norris discussions re coordination + potential CoE. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 11 &middot; 1:30 PM', csm: 'atisha', account: `Databricks Inc.`,
+        note: `TrustRadius &lt;&gt; Databricks w/ Charles Hawkins + Todd Detmold + Jessica Darnell + Estelle Hayes + Sara Steffen. AI crawler data + review-generation strategies. AI agent governance tools identified as growth area. Follow-up call Wed Sep 16, 1 PM PT (campaign operations demo).`,
+        mins: 41, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `TrustRadius &lt;&gt; Databricks strategic discussion. Databricks has good foundation (existing traffic + ratings) but lacks review volume, especially for newer products &mdash; opportunity for TR. AI tools actively indexing TR content, significant portion of crawl requests are "grounding requests" (users seeking specific info for AI-driven queries). Competitor analysis: similar crawl patterns between Databricks + Snowflake (both researched + compared &mdash; strong TR presence important). AI agent governance tools = significant growth area where Databricks can establish third-party trust via listings + incentivized reviews. Sentiment: Databricks seen as comprehensive AI/ML solution; Snowflake faces some negative sentiment on pricing scalability. Next: Charles + CSM partner to demo day-to-day campaign operations Wed Sep 16, 1 PM PT. Databricks team to align product categories + listings w/ current market state + explore AI agent governance tool listing + investigate custom page creation for product narratives + SEO + access free TR platform to explore category alignment before next call. Charles to send presentation deck as follow-up. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+    ],
+    pulses: [
+      { csm: 'nick', account: `Lenovo Group Ltd. (cross-coverage for Rani)`, health: 'Healthy',
+        note: `LDO propensity model prioritized alongside Sentinel One + Absolute. Account lists w/ scores + logic due Sep 15 (v1) + Sep 17 (refined). Nick covering Rani's Lenovo account for propensity work.` },
+      { csm: 'andy', account: `SAS Institute Inc.`, health: 'Healthy',
+        note: `Renewal ROI justification for finance. New AI sales copilot as alternative to current offerings. MCP pilot's future under review. Business case in next 1-2 weeks. Renewals SAS-Max CI 2027 + SAS Team MI Licenses 2027.` },
+      { csm: 'riley', account: `Zoom Video Communications (TR CSM Sync)`, health: 'Healthy',
+        note: `Short 9m TrustRadius CSM sync. Riley confirmed via SFDC transcript speaker detection.` },
+      { csm: 'varun', account: `MongoDB Inc`, health: 'Healthy',
+        note: `Renewal aim: flat via tech-list refinement. Functional AI Intelligence + Geo-monitoring + RGIP + API access expansion interest. Updated account list + product selections due early next week.` },
+      { csm: 'rani', account: `Hitachi Vantara`, health: 'Concerning',
+        note: `Data retention refinement (bottom two data sets kept; others destroyed). Rebecca bulk credits until Oct 9. Renewal uncertainty for install + spend + intent contracts. Legal engagement re Nov 1 platform usage. Pulse Poor.` },
+      { csm: 'rani', account: `Google Inc.`, health: 'Concerning',
+        note: `Contact POC + TrustRadius CVP + Geo + Intent streams. Introduction to Gemini Enterprise team requested for MCP integration. Long sales-cycle + budget uncertainty. Pulse Concerning.` },
+      { csm: 'riley', account: `Adobe (cross-coverage for Divyam)`, health: 'Concerning',
+        note: `Budget constraint 14&rarr;10-11 products. Precision Demand + Geo/AI summaries + event-support integration explored. Revised proposals due Oct 1. Pulse Concerning. Riley covering Divyam's Adobe HG account for TR-side renewal.` },
+      { csm: 'pam', account: `Microsoft`, health: 'Healthy',
+        note: `Agent Engine collaboration model + SFTP + Microsoft Fabric integration + potential Center of Excellence. Rapid prototype/build cadence. Multiple opps in play (Contract Consolidation 2027 + Hardware/M365 Copilot Precision Demand Intel Pilots + TR CVP+Mkt Report+Event Support).` },
+      { csm: 'atisha', account: `Databricks Inc.`, health: 'Healthy',
+        note: `TrustRadius AI crawler + review-generation strategy. AI agent governance tools identified as growth area. Follow-up demo Wed Sep 16, 1 PM PT.` },
+    ],
+  };
+}
+
+function dayMeta_2026_09_11() {
+  return {
+    pills: [
+      ['dot-teal',   '9 Calls'],
+      ['dot-amber',  '6 Expansion'],
+      ['dot-red',    '3 Concerning'],
+      ['dot-green',  '9 Vitally Pulses'],
+      ['dot-grey',   'Fri Sep 11 &middot; 52 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (9)', 'Pulses (9)', 'Action Items (7)']
+  };
+}
+
+function dayOverviewHTML_2026_09_11() {
+  return `<div class="section-label">Team Activity &mdash; Friday September 11, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Friday Sep 11 &mdash; 52 recordings scanned</strong> via SFDC SOQL &middot; <strong>9 confirmed calls</strong> across 7 CSMs (Divyam idle) &middot; 3 Concerning &middot; 6 Expansion signals &middot; SFDC confirmed 2; Weflow fallback added 7 unique recoveries
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>6 EXPANSION:</strong> Microsoft (SFTP + Microsoft Fabric integration + potential CoE + Precision Demand Intel Pilots) &middot; Databricks (TR AI agent governance tools growth area) &middot; Lenovo (LDO propensity model) &middot; MongoDB (Functional AI + Geo-monitoring + RGIP + API access) &middot; Adobe (Precision Demand + Geo/AI summaries) &middot; SAS (AI sales copilot + business case)
+  </div>
+  <div style="background:#2a1f1f;border:1px solid #b45309;border-left:3px solid #b45309;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>3 CONCERNING:</strong> Hitachi Vantara (pulse Poor; renewal uncertainty for install+spend+intent contracts; Rebecca bulk credits until Oct 9) &middot; Google Inc. (pulse Concerning; long sales-cycle + budget uncertainty; Gemini Enterprise intro requested) &middot; Adobe (pulse Concerning; 14&rarr;10-11 product downgrade under budget constraint)
+  </div>
+  <div style="background:#1c2333;border:1px solid #7c3aed;border-left:3px solid #7c3aed;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#c4b5fd;">
+    &#x1F91D; <strong>2 CROSS-COVERAGE:</strong> Nick covered Lenovo (Rani's account) for LDO propensity model work &middot; Riley covered Adobe (Divyam's account) for TrustRadius-side renewal.
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">64m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Hitachi (&#x26A0;&#xFE0F; retention + Rebecca credits Oct 9 + Nov 1 legal) &middot; Google (&#x26A0;&#xFE0F; contact POC + TR streams + Gemini Enterprise intro)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">34m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Zoom (TR CSM sync - 9m) &middot; Adobe (&#x26A0;&#xFE0F; cross-coverage; 14&rarr;10-11 products; Precision Demand)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="pam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">98m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Microsoft (&#x1F4C8; Agent Engine + SFTP + Fabric + potential CoE; multiple opps)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">41m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Databricks TR (&#x1F4C8; AI crawler + review generation + AI agent governance)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="andy">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">36m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">SAS (renewal ROI + AI sales copilot + MCP pilot future; business case 1-2 weeks)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">33m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">MongoDB (&#x1F4C8; flat renewal + Functional AI + Geo-monitoring + API access)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">23m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Lenovo (&#x1F91D; cross-coverage; LDO propensity model; scores Sep 15/17)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="divyam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-divyam">DD</div><div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No confirmed customer calls. Divyam's Adobe covered by Riley for TR renewal work.</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_09_11() {
+  return `<div class="section-label">Confirmed Calls &mdash; Friday September 11, 2026</div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>6 EXPANSION:</strong> Microsoft (SFTP + Fabric + CoE) &middot; Databricks (AI agent governance) &middot; Lenovo (LDO propensity) &middot; MongoDB (Functional AI + API) &middot; Adobe (Precision Demand) &middot; SAS (AI sales copilot)
+  </div>
+  <div style="background:#2a1f1f;border:1px solid #b45309;border-left:3px solid #b45309;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>3 CONCERNING:</strong> Hitachi Vantara (renewal uncertainty; pulse Poor) &middot; Google Inc. (long sales-cycle + budget; pulse Concerning) &middot; Adobe (14&rarr;10-11 product downgrade; pulse Concerning)
+  </div>
+  <div style="background:#1c2333;border:1px solid #7c3aed;border-left:3px solid #7c3aed;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#c4b5fd;">
+    &#x1F91D; <strong>Cross-coverage:</strong> Nick covered Rani's Lenovo &middot; Riley covered Divyam's Adobe (TR-side).
+  </div>`;
+}
+
+function dayPulsesHTML_2026_09_11() {
+  const cards = [
+    { csm:'nick', health:'Healthy', account:`Lenovo Group Ltd.`, opp:`Vitally Pulse &mdash; Sep 11 Call`,
+      arr:`Enterprise &middot; Nick Johnson (cross-coverage for Rani)`, csmlbl:`Nick Johnson`, change:`Sep 11 &middot; Healthy`,
+      excerpt:`LDO (Lenovo Device Orchestrator) prioritized alongside Sentinel One + Absolute. Scoring criteria include Lenovo device proportion + aging fleets + competing products. Account lists w/ scores + logic: Sep 15 initial, Sep 17 refined.` },
+    { csm:'andy', health:'Healthy', account:`SAS Institute Inc.`, opp:`Vitally Pulse &mdash; Sep 11 Call`,
+      arr:`Enterprise &middot; Andy Lim`, csmlbl:`Andy Lim`, change:`Sep 11 &middot; Healthy`,
+      excerpt:`Renewal ROI justification needed. New AI sales copilot under review as potential alternative. MCP pilot's future under review. Business case finalization in next 1-2 weeks. Renewals SAS-Max CI 2027 + SAS Team MI Licenses 2027.` },
+    { csm:'riley', health:'Healthy', account:`Zoom Video Communications (TR CSM Sync)`, opp:`Vitally Pulse &mdash; Sep 11 Call`,
+      arr:`TrustRadius &middot; Riley Rogers`, csmlbl:`Riley Rogers`, change:`Sep 11 &middot; Healthy`,
+      excerpt:`Short 9m TrustRadius CSM sync. Riley confirmed via SFDC transcript speaker detection.` },
+    { csm:'varun', health:'Healthy', account:`MongoDB Inc`, opp:`Vitally Pulse &mdash; Sep 11 Call`,
+      arr:`Enterprise &middot; Varun Tiwari`, csmlbl:`Varun Tiwari`, change:`Sep 11 &middot; Healthy`,
+      excerpt:`Renewal aim: flat via tech-list refinement + credit-consumption cleanup. Functional AI Intelligence + Geo-monitoring + RGIP + API access expansion interest. Updated account list + product selections early next week.` },
+    { csm:'rani', health:'Concerning', account:`Hitachi Vantara`, opp:`Vitally Pulse &mdash; Sep 11 Call`,
+      arr:`Enterprise &middot; Rani Guy`, csmlbl:`Rani Guy`, change:`Sep 11 &middot; Concerning`,
+      excerpt:`Data retention refinement (bottom two datasets retained; others destroyed). Rebecca bulk credits until Oct 9. Renewal uncertainty for install + spend + intent contracts (long sales cycles + budget constraints for Rebecca + Nathan). Legal engagement re Nov 1 platform usage.` },
+    { csm:'rani', health:'Concerning', account:`Google Inc.`, opp:`Vitally Pulse &mdash; Sep 11 Call`,
+      arr:`Strategic &middot; Rani Guy`, csmlbl:`Rani Guy`, change:`Sep 11 &middot; Concerning`,
+      excerpt:`Contact POC + TrustRadius CVP + Geo + Intent streams. Introduction to Gemini Enterprise team requested for MCP integration (short window). Long sales-cycle + budget uncertainty.` },
+    { csm:'riley', health:'Concerning', account:`Adobe Systems Incorporated`, opp:`Vitally Pulse &mdash; Sep 11 Call`,
+      arr:`Strategic &middot; Riley Rogers (cross-coverage for Divyam)`, csmlbl:`Riley Rogers`, change:`Sep 11 &middot; Concerning`,
+      excerpt:`Budget constraint: 14&rarr;10-11 products. Precision Demand + Geo/AI summaries + event-support (Summit + MAX) budget integration explored. Revised proposals due Oct 1. Riley (TR-side) covering Divyam's Adobe HG account. Pulse Concerning.` },
+    { csm:'pam', health:'Healthy', account:`Microsoft`, opp:`Vitally Pulse &mdash; Sep 11 Call`,
+      arr:`Strategic &middot; Pam Huck`, csmlbl:`Pam Huck`, change:`Sep 11 &middot; Healthy`,
+      excerpt:`Agent Engine collaboration model + SFTP + Microsoft Fabric + potential Center of Excellence. Rapid prototype/build cadence. Multiple opps: Contract Consolidation 2027 + Hardware/M365 Copilot Precision Demand Pilots + TR CVP+Mkt Report+Event Support.` },
+    { csm:'atisha', health:'Healthy', account:`Databricks Inc.`, opp:`Vitally Pulse &mdash; Sep 11 Call`,
+      arr:`Strategic &middot; Atisha Waghela`, csmlbl:`Atisha Waghela`, change:`Sep 11 &middot; Healthy`,
+      excerpt:`TR AI crawler data + review-generation strategy. AI agent governance tools identified as growth area. Sentiment analysis: Databricks comprehensive AI/ML; Snowflake pricing scalability concerns. Follow-up demo Wed Sep 16, 1 PM PT.` },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div class="pulse-account">${c.account}</div>
+          <div class="pulse-opp">${c.opp}</div>
+          <div class="pulse-arr">${c.arr}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_09_11() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('1101')?'done':''}" data-csm="pam" id="action-1101">
+      <div class="action-checkbox ${doneActions.has('1101')?'checked':''}" onclick="toggleAction('1101')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Microsoft &mdash; SFTP key provisioning + Diana's project kickoff + CoE discussion</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Pam Huck + Karin Pindle + Microsoft team (Cesar + Abe + David + Sarani) &middot; Karin to coordinate SFTP key provisioning by Mon/Tue latest. Microsoft team to use SFTP key + begin building Diana's project starting next week. Microsoft team to continue collaborating w/ HG (Karin + Rob + Francis) for data validation + build support. Mark to ensure sanitized portfolio updates to Jim monthly. Microsoft team to continue Will Norris discussions re coordination + potential CoE.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('1102')?'done':''}" data-csm="riley" id="action-1102">
+      <div class="action-checkbox ${doneActions.has('1102')?'checked':''}" onclick="toggleAction('1102')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; Adobe &mdash; revised 10-11 product package + Precision Demand internal discussion by Oct 1 (cross-coverage)</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Riley Rogers (cross-coverage for Divyam) + Mardigan Moffat + Giacomo Pesaresi &middot; Mardigan to provide revised package options based on 10-11 products + event support + potential package deal by Oct 1 + send package details + documentation ASAP. Gpesaresi to conduct internal discussions w/ Allison + Erica re Precision Demand for lead gen + determine final product count/config by Oct 1 + explore cross-charging for event support inclusion.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('1103')?'done':''}" data-csm="rani" id="action-1103">
+      <div class="action-checkbox ${doneActions.has('1103')?'checked':''}" onclick="toggleAction('1103')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; Hitachi Vantara &mdash; retention schemas + Rebecca budget conversations + Nov 1 legal work</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy + Miguel Ortega &middot; Rani to share specific spile schema for intent + other schemas + provide Rajiv's email + continue Rebecca conversations re credit usage + budget + work w/ legal re Nov 1 platform usage + ensure Rajiv copied on follow-up comms. Miguel to confirm data destruction/retention plan w/ his team + double-check + inform Rani. Rebecca bulk credits provisioned until Oct 9. Pulse Poor.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('1104')?'done':''}" data-csm="rani" id="action-1104">
+      <div class="action-checkbox ${doneActions.has('1104')?'checked':''}" onclick="toggleAction('1104')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; Google &mdash; Gemini Enterprise intro + contact POC + TrustRadius stream alignment</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy + Mark Fell + KP Pindle + Mardigan Moffat + Marianna Prodan &middot; Mark to confirm Marianna's linkage to contacts follow / contacts-with-intent / CVP. Team requested introduction to Gemini Enterprise team for MCP integration (short window). Rani + Mark to align on prioritization across three streams (contact POC / TrustRadius CVP-Geo-Intent / FBI intent + context data). Long sales-cycle + budget uncertainty.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('1105')?'done':''}" data-csm="nick" id="action-1105">
+      <div class="action-checkbox ${doneActions.has('1105')?'checked':''}" onclick="toggleAction('1105')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Lenovo &mdash; LDO propensity model + Sep 15/17 account list delivery (cross-coverage)</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Nick Johnson (cross-coverage for Rani) + Adrian Escobar + Gavin Padden + Agniteja Matavalam &middot; Gavin to send Tuesday follow-up invite + incorporate LDO factors into scoring model by Tuesday + share account list w/ scores + logic (Sep 15 initial, Sep 17 refined). Batta Pruthvi to share LDO file + formatting details. Agniteja to inform Ujjayi about stakeholder concerns ASAP. HG team to address matching + news data queries ASAP.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('1106')?'done':''}" data-csm="varun" id="action-1106">
+      <div class="action-checkbox ${doneActions.has('1106')?'checked':''}" onclick="toggleAction('1106')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; MongoDB &mdash; updated account list + product selections + RGIP provisioning</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Varun Tiwari + Ziad Amira + Will Bracken + Steven Harbron &middot; Ziad/Varun to share file detailing tracked technologies + coverage + suggestions for other relevant technologies. Will/Varun to provide updated account list + product selections for credit estimation early next week. Varun to provision Steven access to RGIP after the call + provide RGIP download next week + send follow-up email w/ required fields. Steven to sync w/ Ali re paid-media POC. Ziad to confirm if API access for data export is free for RGIF customers.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('1107')?'done':''}" data-csm="andy" id="action-1107">
+      <div class="action-checkbox ${doneActions.has('1107')?'checked':''}" onclick="toggleAction('1107')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; SAS &mdash; business case for executive approval + MCP pilot continuation decision</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Andy Lim + Augie Buettner + Chlo&eacute; Portier + Neil Dover &middot; Neil + Stephen to finalize business case for executive approval in next 1-2 weeks. Augie + Neil to discuss MCP pilot continuation + potential investment next week. Augie to clarify credit consumption for AI sales copilot before next meeting. Neil to talk to Jasper re MCP pilot status + discuss w/ Stephen to round out business case + explore operationalizing platform effectively (ongoing). Andy + Chlo&eacute; may revise pilot prompt for better outcomes as needed.</div>
       </div>
     </div>
   </div>
