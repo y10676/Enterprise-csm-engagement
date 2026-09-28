@@ -5861,3 +5861,306 @@ function dayActionsHTML_2026_09_24() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
 }
+
+function dayData_2026_09_25() {
+  return {
+    calls: [
+      { ts: 'Sep 25 &middot; 2:00 AM', csm: 'andy', account: `SAS Institute Inc.`,
+        note: `SAS Sync w/ Mike Turner + Chlo&eacute; Portier. Sales territory planning tool development &mdash; API integrations, live score + revenue potential score. Bug fixes in intent + evaluation scoring in progress. Live test across 2,400 accounts planned post-lunch.`,
+        mins: 21, health: 'Healthy',
+        nature: 'Recurring', initiator: 'Customer', purpose: 'Check-in',
+        detail: `SAS territory planning tool sync. Mike presented updates on new sales tool integrating APIs and delivering 'live scores' + 'revenue potential scores' for 2027 territory planning. Progress on bug fixes for API versions + scoring calculations; some intent + evaluation scoring bugs still to debug. 'Planning score' (HDI scores + revenue potential) will help sales managers allocate accounts + territories. Tiering system based on revenue potential for decisioning products simplifies prioritization. Next: Mike to debug remaining scoring issues + run live test across all 2,400 accounts post-lunch + share updated scores for team review. Andy + Mike to discuss significantly different or odd scores if needed. Mike to implement MCP integration for research tab (future). Jesper to review scores + confirm comfort level with system output. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 25 &middot; 2:00 AM', csm: 'nick', account: `NTT Data Corporation`,
+        note: `NTT Data annual check-in w/ Naveen Mittal. D&amp;B DUNS not activated on this license (other-team parity); Nick to request activation. Platform data growth: ~68M companies now tracked. Confirmed install-base downloads + contact subscription included &mdash; no extra credits.`,
+        mins: 30, health: 'Concerning',
+        nature: 'Recurring', initiator: 'Customer', purpose: 'Mixed',
+        detail: `NTT Data annual check-in. Naveen surfaced three items: (1) D&amp;B DUNS coverage &mdash; not currently activated on Naveen's license (aligned with other-team license), Nick to ask internal team about switching on (would require contract change); coverage limited to top ~700k accounts by size. (2) Platform changes over past year &mdash; growing dataset (now ~68M companies tracked); Naveen still on v2 platform (older, more cost-effective, same data as new platform). (3) Confirmed all contacts visible in the platform are part of subscription + install-base downloads with country filters don't consume extra credits. Nick offered to send install-base report by email so Naveen doesn't have to trigger downloads. Account pulse Poor; steady engagement continues but no expansion motion. Confirmed via SFDC transcript speaker detection.`, source: 'sfdc' },
+
+      { ts: 'Sep 25 &middot; 6:30 AM', csm: 'pam', account: `Epicor Software Corporation`,
+        note: `Epicor account brief creation w/ Mark Roussin + Taylor Krumm + KP. ICP refined: $40M-$500M revenue range for upper mid-market manufacturing. Walmart pop-ins flagged. LLMs (ChatGPT connecting Outreach + SFDC) blocked by legal.`,
+        mins: 12, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Epicor account brief creation. KP running research to build SDR account briefs; team honing ICP for manufacturing verticals. Taylor confirmed manufacturing territories are revenue-based (not employee-based): upper mid-market = $40M-$500M annual revenue as the sweet spot; anything above OK too. Walmart-scale accounts popping in flagged for filtering. Reps split ~60/40 between Salesforce (vetting + reports + territory follow-up) and Outreach (sequences + calls + emails). LLM connectivity (ChatGPT connecting both) blocked by internal legal concerns &mdash; hoping for green-light in ~5 days. Next: KP to iterate account brief with revenue-based ICP filter, then share back with Epicor team. Confirmed via SFDC transcript speaker detection.`, source: 'sfdc' },
+
+      { ts: 'Sep 25 &middot; 6:30 AM', csm: 'riley', account: `TeamViewer (TR)`,
+        note: `TeamViewer TR geo coverage + review data analysis w/ Alvaro Padilla + Debottama Mukherjee + Wes Lawrence. Refining review questions for pricing nuance. Incentivized ($25) review campaign launching mid-October targeting 12-24 month volume.`,
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `TeamViewer TR review-data + geo-engine analysis. Reviewed how TeamViewer's existing review content and profile feed AI crawlers &mdash; identified gaps in pricing transparency and branded vs unbranded content optimization. Pricing is a gap: simplistic answers ("very pricey", "half the cost") don't add nuance; refresh campaigns vs sales-quote redirect discussed given use-case-dependent pricing. Incentivized review campaign planned ($25/review, 12-24 month window) to boost volume + specificity. Custom prompt tracking a future capability &mdash; contingent on TeamViewer corporate vision alignment. Next: Debottama to share prompt-generation workflow + best practices for testimonials/case studies + create incentivized-review link. Alvaro to sync w/ SEO team on geo dashboard + brand content strategy + launch incentivized campaign mid-October. Expansion opp for AI Agents + Platform Outbound Scoring + Contact Email Deliverability still open. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 25 &middot; 8:00 AM', csm: 'nick', account: `Intuit`,
+        note: `Intuit / Mailchimp BlackBaud whitespace w/ Eric McKnight + Julian Rojas. BlackBaud list export performing well; ~12,972 contacts additional export = ~12K credits. Klaviyo + Constant Contact competitor analysis. Contract + credits expire Nov 30.`,
+        mins: 25, health: 'Concerning',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Expansion',
+        detail: `Intuit/Mailchimp BlackBaud whitespace expansion sync. Existing BlackBaud list export outperforming other campaigns (good traction + conversion) &mdash; opportunity to export additional whitespace accounts. Estimated cost for ~12,972 contacts (phone + email) is ~12,000 credits. Competitor analysis is next-phase focus with Klaviyo + Constant Contact identified as key BlackBaud alternatives. Contract + remaining credits expire Nov 30; renewal decision routes through sales ops. Nick joining as coverage &mdash; Intuit's assigned CSM is Atisha Waghela; Intuit pulse Poor. Next: Eric to provide competitor list + ping Rachel re renewal budget + run payoff analysis on BlackBaud performance. Nick to pull contacts pre-Oct 1 meeting. Julian to analyze competitor list + provide credit-deduction estimate + export lists. Follow-up meeting Oct 1. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 25 &middot; 9:00 AM', csm: 'atisha', account: `Apple Inc. (Bi-weekly)`,
+        note: `Apple bi-weekly sync w/ Roy + Adrian Escobar. Mac Mini + Mac Studio market analysis using AI maturity + time-series data. New team member Vedica onboarding to Edgy platform before virtual event. Cloud + AI maturity brief in flight.`,
+        mins: 27, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Apple bi-weekly touchpoint focused on AI-driven data analysis for sales + market insights. Discussion on integrating external HG data into Apple's internal AI platforms (data security + licensing considerations). Strong Apple interest in Mac Mini + Mac Studio market opportunities via AI scoring + intent data; historical time-series data + AI maturity metrics valued for engagement timing + account targeting. New AI spend + maturity data points introduced. Next: Atisha to (a) provide brief for 5-10 accounts using historical time-series + AI maturity for Mac Mini targeting by next week, (b) set up read-only license for Vedica before her demo, (c) work with Roy on combined cloud + AI maturity brief for targeted accounts (ongoing). Roy to (i) email Vedica cc: Atisha + Adrian to coordinate demo before virtual event, (ii) explore Mac Studio market potential (immediate Q4 need). Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 25 &middot; 9:00 AM', csm: 'divyam', account: `Snowflake Inc.`,
+        note: `Snowflake / Cloud Dynamics renewal 2028 w/ Alpesh Jain + Ziad Amira + Gavin Padden. China PaaS TAM analysis: CSP share, HQ segmentation (global MNCs, Chinese MNCs, domestic, government). Snowflake offering RGIP platform access temporarily in exchange for data science team introduction.`,
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Expansion',
+        detail: `Snowflake renewal 2028 discussion. Alpesh (Snowflake) confirmed Snowflake will grant temporary access to their RGIP platform to allow custom TAM analysis, in exchange for introduction to Snowflake's data science team (to explore how HG data can improve their APS/FPS account prioritization). Alpesh's specific ask: China platform-as-a-service spend TAM by CSP share, further split by company type: global MNCs in China vs Chinese MNCs with international presence vs China-domestic vs government/state-owned. Second cut: spend by Chinese MNCs outside China (using HQ + entity geography). Gavin confirmed HG can deliver via relative-spend fabric using hierarchy assignments. Discussion of overall PaaS market view first (dominant vendor stack-rank) before granular account-level analysis. Renewal is 2028; this expansion touchpoint firms up strategic value ahead of renewal cycle. Next: Gavin to send screenshot of proposed TAM view. Alpesh to make data science team introduction. Confirmed via SFDC transcript speaker detection.`, source: 'sfdc' },
+
+      { ts: 'Sep 25 &middot; 11:00 AM', csm: 'atisha', account: `Apple Inc. (Weekly)`,
+        note: `Apple weekly sync w/ Vivek Sundarbabu (Product Manager, Core Data Management, Worldwide Sales API) + Adrian Escobar. Platform walkthrough for new Apple stakeholder &mdash; IT spend + hierarchy mapping + install data sources + monthly S3 feed. Renewal - Apple - Market Intelligence 2027 opp.`,
+        mins: 34, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Apple weekly syncup &mdash; expansion touchpoint bringing in Vivek Sundarbabu (Product Manager, Core Data Management, Worldwide Sales API team). Vivek's team consolidating clean customer list across multiple systems; sees HG Insights as natural expansion for consolidation + enrichment + opportunity generation. Atisha + Adrian walked through market intelligence + opportunity generator + granular IT spend data (categories: communication, hardware, services, software) + hierarchy mapping. Explained install-tech source methodology (job listings + resumes + publicly available info + verification process). Confirmed Apple already receives monthly S3 data feed w/ install + spend + firmographic data. Renewal - Apple - Market Intelligence 2027 opp anchoring. Next: Vivek to review activation email + explore platform (spend + install focus). Atisha to share data + documentation + capability links. Atisha + Bunny to provision Vivek with S3 data feed access. Follow-up sync next week. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+    ],
+    pulses: [
+      { csm: 'andy', account: `SAS Institute Inc.`, health: 'Healthy',
+        note: `Territory planning tool dev sync &mdash; API integrations, live score + revenue potential score. Live test across 2,400 accounts + Mike incorporating additional IDs from Andy into API testing.` },
+      { csm: 'nick', account: `NTT Data Corporation`, health: 'Concerning',
+        note: `Annual check-in &mdash; DUNS not activated on this license (aligned to other-team parity); Nick chasing activation. ~68M companies tracked. Install-base downloads + contacts confirmed included. Pulse Poor.` },
+      { csm: 'pam', account: `Epicor Software Corporation`, health: 'Healthy',
+        note: `Account brief creation &mdash; ICP refined to $40M-$500M revenue manufacturing. Walmart pop-ins to filter. LLM connectivity blocked by legal (~5 days out).` },
+      { csm: 'riley', account: `TeamViewer (TR)`, health: 'Healthy',
+        note: `TR review data + geo coverage analysis &mdash; incentivized $25 review campaign launching mid-October. Custom prompt tracking future capability. Expansion opp AI Agents + Platform Outbound Scoring + Contact Email Deliverability open.` },
+      { csm: 'nick', account: `Intuit`, health: 'Concerning',
+        note: `Mailchimp BlackBaud whitespace &mdash; ~12,972 contact export = ~12K credits. Klaviyo + Constant Contact competitor analysis. Contract + credits expire Nov 30. Nick covering (Atisha is Intuit CSM). Pulse Poor.` },
+      { csm: 'atisha', account: `Apple Inc. (Bi-weekly)`, health: 'Healthy',
+        note: `Bi-weekly &mdash; Mac Mini + Mac Studio market analysis using AI maturity + time-series data. Vedica onboarding to Edgy before virtual event. Cloud + AI maturity brief in flight.` },
+      { csm: 'divyam', account: `Snowflake Inc.`, health: 'Healthy',
+        note: `Renewal 2028 &mdash; RGIP platform access in exchange for data science team intro. China PaaS TAM analysis by CSP share + HQ segmentation. Gavin sending screenshot of proposed view.` },
+      { csm: 'atisha', account: `Apple Inc. (Weekly)`, health: 'Healthy',
+        note: `Weekly &mdash; new stakeholder Vivek Sundarbabu (Core Data Management PM) onboarding. Platform walkthrough + monthly S3 feed access. Renewal - Apple - Market Intelligence 2027 opp anchoring.` },
+    ],
+  };
+}
+
+function dayMeta_2026_09_25() {
+  return {
+    pills: [
+      ['dot-teal',   '8 Calls'],
+      ['dot-amber',  '5 Expansion'],
+      ['dot-red',    '2 Concerning'],
+      ['dot-green',  '8 Vitally Pulses'],
+      ['dot-grey',   'Fri Sep 25 &middot; 53 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (8)', 'Pulses (8)', 'Action Items (6)']
+  };
+}
+
+function dayOverviewHTML_2026_09_25() {
+  return `<div class="section-label">Team Activity &mdash; Friday September 25, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Friday Sep 25 &mdash; 53 recordings scanned</strong> via SFDC SOQL &middot; <strong>8 confirmed calls</strong> across 6 CSMs (Varun + Rani idle) &middot; 2 Concerning (NTT Data + Intuit pulses Poor) &middot; 5 expansion signals &middot; SFDC confirmed 3; Weflow fallback added 5 unique recoveries
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>5 EXPANSION:</strong> Snowflake (China PaaS TAM + RGIP access + data science intro) &middot; TeamViewer TR (incentivized review campaign + custom prompt tracking) &middot; Intuit/Mailchimp (BlackBaud whitespace + Nov 30 renewal decision) &middot; Apple Bi-weekly (Mac Mini/Studio TAM w/ AI maturity + Vedica onboarding) &middot; Apple Weekly (new stakeholder Vivek Sundarbabu &mdash; Core Data Mgmt PM)
+  </div>
+  <div style="background:#2a1f1f;border:1px solid #b45309;border-left:3px solid #b45309;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>2 CONCERNING:</strong> NTT Data (pulse Poor &mdash; annual check-in surfaced DUNS license limitation, no expansion motion) &middot; Intuit (pulse Poor &mdash; Nick covering for Atisha on Mailchimp BlackBaud whitespace; Nov 30 contract expiry)
+  </div>
+  <div style="background:#1c2333;border:1px solid #7c3aed;border-left:3px solid #7c3aed;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#c4b5fd;">
+    &#x1F91D; <strong>CROSS-COVERAGE:</strong> Nick Johnson covered Intuit (Atisha's account) for Mailchimp/BlackBaud whitespace expansion w/ Julian Rojas.
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">61m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Apple Bi-weekly (&#x1F4C8; Mac Mini/Studio TAM + Vedica onboarding) &middot; Apple Weekly (&#x1F4C8; new stakeholder Vivek &mdash; Core Data Mgmt PM)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">55m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">NTT Data annual check-in (&#x26A0;&#xFE0F; DUNS license limitation, pulse Poor) &middot; Intuit/Mailchimp (&#x1F4C8; BlackBaud whitespace + cross-coverage for Atisha, Nov 30 renewal)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Snowflake renewal 2028 (&#x1F4C8; China PaaS TAM + RGIP access swap for data science team intro)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="andy">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">21m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">SAS territory planning tool dev (live scores + revenue potential + 2,400-account test)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">TeamViewer TR (&#x1F4C8; incentivized $25 review campaign + custom prompt tracking)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="pam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">12m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Epicor account brief creation (manufacturing ICP $40M-$500M revenue)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="varun">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">VT</div><div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No confirmed customer calls. No Varun speaker label in SFDC transcripts; no Weflow-participant hits on any Sept 25 recording.</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="rani">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">RG</div><div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No confirmed customer calls. No Rani speaker label in SFDC transcripts; no Weflow-participant hits on any Sept 25 recording.</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_09_25() {
+  return `<div class="section-label">Confirmed Calls &mdash; Friday September 25, 2026</div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>5 EXPANSION:</strong> Snowflake (China PaaS TAM + RGIP swap) &middot; TeamViewer TR (incentivized reviews) &middot; Intuit/Mailchimp (BlackBaud whitespace + Nov 30 renewal) &middot; Apple Bi-weekly (Mac Mini/Studio TAM) &middot; Apple Weekly (new stakeholder Vivek Sundarbabu)
+  </div>
+  <div style="background:#2a1f1f;border:1px solid #b45309;border-left:3px solid #b45309;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>2 CONCERNING:</strong> NTT Data (pulse Poor) &middot; Intuit (pulse Poor &mdash; Nick covering for Atisha, Nov 30 contract expiry)
+  </div>`;
+}
+
+function dayPulsesHTML_2026_09_25() {
+  const cards = [
+    { csm:'andy', health:'Healthy', account:`SAS Institute Inc.`, opp:`Vitally Pulse &mdash; Sep 25 Call`,
+      arr:`Enterprise &middot; Andy Lim`, csmlbl:`Andy Lim`, change:`Sep 25 &middot; Healthy`,
+      excerpt:`SAS territory planning tool sync w/ Mike + Chlo&eacute;. API integrations + live score + revenue potential score. Live test across 2,400 accounts planned. Mike + Andy debugging intent + evaluation scoring bugs.` },
+    { csm:'nick', health:'Concerning', account:`NTT Data Corporation`, opp:`Vitally Pulse &mdash; Sep 25 Call`,
+      arr:`Strategic &middot; Nick Johnson`, csmlbl:`Nick Johnson`, change:`Sep 25 &middot; Concerning`,
+      excerpt:`Annual check-in &mdash; DUNS coverage not activated on this license (aligned to other-team parity). ~68M companies tracked. Install-base downloads + contacts confirmed included. Nick chasing DUNS activation. Pulse Poor; no expansion motion.` },
+    { csm:'pam', health:'Healthy', account:`Epicor Software Corporation`, opp:`Vitally Pulse &mdash; Sep 25 Call`,
+      arr:`Enterprise &middot; Pam Huck`, csmlbl:`Pam Huck`, change:`Sep 25 &middot; Healthy`,
+      excerpt:`Epicor account brief creation for SDR enablement. ICP refined: $40M-$500M revenue upper mid-market manufacturing. Walmart pop-ins to filter. LLM connectivity blocked by legal (~5 days out).` },
+    { csm:'riley', health:'Healthy', account:`TeamViewer (TR)`, opp:`Vitally Pulse &mdash; Sep 25 Call`,
+      arr:`TrustRadius &middot; Riley Rogers`, csmlbl:`Riley Rogers`, change:`Sep 25 &middot; Healthy`,
+      excerpt:`TeamViewer TR geo coverage + review data analysis. Incentivized $25 review campaign launching mid-October (12-24 month window). Refining pricing-review questions. Custom prompt tracking future capability. Expansion opp still open.` },
+    { csm:'nick', health:'Concerning', account:`Intuit`, opp:`Vitally Pulse &mdash; Sep 25 Call`,
+      arr:`Strategic &middot; Nick Johnson (cross-coverage for Atisha)`, csmlbl:`Nick Johnson`, change:`Sep 25 &middot; Concerning`,
+      excerpt:`Mailchimp BlackBaud whitespace &mdash; ~12,972 contact export = ~12K credits. Klaviyo + Constant Contact competitor analysis. Contract + credits expire Nov 30 &mdash; renewal decision routes through sales ops. Pulse Poor.` },
+    { csm:'atisha', health:'Healthy', account:`Apple Inc. (Bi-weekly)`, opp:`Vitally Pulse &mdash; Sep 25 Call`,
+      arr:`Strategic &middot; Atisha Waghela`, csmlbl:`Atisha Waghela`, change:`Sep 25 &middot; Healthy`,
+      excerpt:`Apple bi-weekly &mdash; Mac Mini + Mac Studio market analysis using AI maturity + time-series data. Vedica onboarding to Edgy before virtual event. Cloud + AI maturity brief for targeted accounts.` },
+    { csm:'divyam', health:'Healthy', account:`Snowflake Inc.`, opp:`Vitally Pulse &mdash; Sep 25 Call`,
+      arr:`Strategic &middot; Divyam Dewan`, csmlbl:`Divyam Dewan`, change:`Sep 25 &middot; Healthy`,
+      excerpt:`Snowflake renewal 2028 &mdash; RGIP platform access swap for data science team intro. China PaaS TAM analysis by CSP share + HQ segmentation (global MNCs, Chinese MNCs, domestic, government). Gavin sending TAM view screenshot.` },
+    { csm:'atisha', health:'Healthy', account:`Apple Inc. (Weekly)`, opp:`Vitally Pulse &mdash; Sep 25 Call`,
+      arr:`Strategic &middot; Atisha Waghela`, csmlbl:`Atisha Waghela`, change:`Sep 25 &middot; Healthy`,
+      excerpt:`Apple weekly &mdash; new stakeholder Vivek Sundarbabu (Product Manager, Core Data Management, Worldwide Sales API) onboarding. Platform walkthrough: IT spend + hierarchy mapping + install sources + monthly S3 feed. Renewal - Apple - Market Intelligence 2027 opp anchoring.` },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div class="pulse-account">${c.account}</div>
+          <div class="pulse-opp">${c.opp}</div>
+          <div class="pulse-arr">${c.arr}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_09_25() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('2501')?'done':''}" data-csm="divyam" id="action-2501">
+      <div class="action-checkbox ${doneActions.has('2501')?'checked':''}" onclick="toggleAction('2501')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Snowflake &mdash; China PaaS TAM screenshot + data science team introduction</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Divyam Dewan + Gavin Padden + Alpesh Jain &middot; Gavin to send screenshot of proposed China PaaS TAM view (CSP share + HQ segmentation: global MNCs vs Chinese MNCs vs domestic vs government) + second cut for Chinese MNCs outside China. Alpesh to introduce HG to Snowflake's data science team to explore APS/FPS account prioritization improvements. Alpesh confirmed temporary RGIP platform access for custom analysis in exchange.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('2502')?'done':''}" data-csm="atisha" id="action-2502">
+      <div class="action-checkbox ${doneActions.has('2502')?'checked':''}" onclick="toggleAction('2502')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Apple &mdash; Vivek Sundarbabu onboarding + Mac Mini AI maturity brief + Vedica read-only license</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Atisha Waghela + Adrian Escobar &middot; Atisha to (a) share data + documentation + capability links w/ Vivek by email + provision S3 data feed access via Bunny, (b) provide brief for 5-10 accounts using historical time-series + AI maturity for Mac Mini targeting by next week, (c) set up read-only license for Vedica before her demo, (d) work with Roy on combined cloud + AI maturity brief. Vivek to review activation email + explore platform (spend + install focus).</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('2503')?'done':''}" data-csm="nick" id="action-2503">
+      <div class="action-checkbox ${doneActions.has('2503')?'checked':''}" onclick="toggleAction('2503')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; Intuit &mdash; Mailchimp BlackBaud whitespace export + Nov 30 renewal decision (Oct 1 follow-up)</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Nick Johnson (cross-coverage for Atisha) + Julian Rojas + Eric McKnight &middot; Nick to pull contacts for Eric before Oct 1 meeting. Julian to analyze competitor list (Klaviyo + Constant Contact) + provide credit-deduction estimate + export lists before Oct 1. Eric to provide competitor list + ping Rachel re renewal budget + run payoff analysis on BlackBaud performance. Follow-up Oct 1 to discuss use cases + credit utilization. Contract + credits expire Nov 30 &mdash; sales ops final call. Pulse Poor.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('2504')?'done':''}" data-csm="riley" id="action-2504">
+      <div class="action-checkbox ${doneActions.has('2504')?'checked':''}" onclick="toggleAction('2504')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; TeamViewer TR &mdash; incentivized $25 review campaign + SEO team engagement</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Riley Rogers + Debottama Mukherjee + Alvaro Padilla &middot; Debottama to share prompt-generation workflow + best practices for testimonials/case studies + create incentivized-review link for Alvaro's campaign. Alvaro to discuss w/ TeamViewer SEO team about geo dashboard + brand content strategy next week + launch incentivized review campaign mid-October + provide feedback on developing features. Explore custom prompt tracking if aligned with corporate vision.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('2505')?'done':''}" data-csm="nick" id="action-2505">
+      <div class="action-checkbox ${doneActions.has('2505')?'checked':''}" onclick="toggleAction('2505')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; NTT Data &mdash; DUNS activation request + install-base report by email</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Nick Johnson + Naveen Mittal &middot; Nick to (a) check w/ internal team about switching on D&amp;B DUNS on Naveen's license (requires contract change; coverage limited to ~700k top accounts), (b) send install-base report by email so Naveen avoids download friction. Pulse Poor; steady engagement continues but no expansion motion.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('2506')?'done':''}" data-csm="andy" id="action-2506">
+      <div class="action-checkbox ${doneActions.has('2506')?'checked':''}" onclick="toggleAction('2506')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; SAS &mdash; live test across 2,400 accounts + intent + evaluation scoring debug</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Andy Lim + Mike Turner + Chlo&eacute; Portier + Jesper Bank Jorgensen &middot; Mike to (a) continue debugging remaining intent + evaluation scoring bugs post-lunch, (b) run live test across all 2,400 accounts + share updated scores. Team to review scores for reasonableness. Andy + Mike to discuss significantly different or odd scores. Jesper to review scores + confirm comfort level. Mike to implement MCP integration for research tab (future).</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
