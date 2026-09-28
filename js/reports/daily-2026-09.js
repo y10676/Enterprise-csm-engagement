@@ -93,160 +93,11 @@ function weeklyOrMonthlyHTML_2026_09_01() {
 
 
 
-function dayData_2026_09_04() {
-  return {
-    calls: [
-      { ts: 'Sep 4 · 10:30 AM', csm: 'divyam', account: `BILL Operations, LLC`,
-        note: `MQL/scoring model education for marketing team. 3 paths to MQL (pure MadKudu, activity-based, hybrid). White paper download example showed negative statistical correlation to conversion. Divyam + Charles building enhanced docs + AI-simplified explanations.`,
-        mins: 30, health: 'Healthy',
-        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
-        detail: `BILL session with Charles Hawkins + Eric Nguyen. Marketing needs clearer view of how actions correlate to MQL status. Three MQL paths: pure MadKudu-driven, activity-based, hybrid. Explored white paper download example (negative statistical correlation to conversion). Recommend explaining model via segments + point importance (not raw 0-100 score). Divyam finalizing outstanding tickets; Charles preparing educational materials for marketing. GDPR/regional overrides also discussed.` },
-    ],
-    pulses: [
-      { csm: 'divyam', account: `BILL Operations, LLC`, health: 'Healthy',
-        note: `MQL/scoring model education for marketing team. 3 paths to MQL. Enhanced docs + AI simplification in flight.` },
-    ],
-  };
-}
 
-function dayMeta_2026_09_04() {
-  return {
-    pills: [
-      ['dot-teal',   '1 Call'],
-      ['dot-green',  '1 Vitally Pulse'],
-      ['dot-grey',   'Fri Sep 4 &middot; 55 scanned'],
-    ],
-    tabs: ['Overview', 'Calls (1)', 'Pulses (1)', 'Action Items (3)']
-  };
-}
 
-function dayOverviewHTML_2026_09_04() {
-  return `<div class="section-label">Team Activity &mdash; Friday September 4, 2026</div>
-  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
-    &#x1F4C5; <strong>Friday Sep 4 &mdash; 55 recordings scanned</strong> via SFDC SOQL &middot; <strong>1 confirmed call</strong> (Divyam &times; BILL) &middot; 0 concerning &middot; 0 expansion &middot; Very light pre-Labor-Day Friday
-  </div>
-  <div style="background:#1c1f26;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fcd34d;">
-    &#x26A0;&#xFE0F; <strong>Weflow sync backlog Day 3:</strong> 55 recordings, 13 with transcripts (24%). Continues Sept 2 + Sept 3 pattern. 6 CSM-owned events with recordings had no transcript (Nick&times;SAP, Pam&times;Oracle, Andy&times;ADP, Rani&times;Hitachi + Google, Atisha&times;Intel).
-  </div>
-  <div class="overview-grid">
 
-    <div class="csm-card has-calls" data-csm="divyam">
-      <span class="call-badge">1 CALL</span>
-      <div class="csm-card-header">
-        <div class="avatar av-divyam">DD</div>
-        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
-      </div>
-      <div class="csm-metrics">
-        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
-        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
-        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
-      </div>
-      <div class="csm-account-note">BILL (MQL/scoring model education for marketing team &mdash; 3 paths to MQL + white paper correlation example)</div>
-    </div>
 
-    <div class="csm-card no-calls" data-csm="nick">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header"><div class="avatar av-grey">NJ</div><div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Still on PTO. 2 events (Infor onsite 5 AM, SAP 6 AM) &mdash; SAP recorded no-transcript</div>
-    </div>
 
-    <div class="csm-card no-calls" data-csm="rani">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header"><div class="avatar av-grey">RG</div><div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 events (Hitachi sync 9:30 AM, Google bw 10 AM) both no-transcript</div>
-    </div>
-
-    <div class="csm-card no-calls" data-csm="varun">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header"><div class="avatar av-varun">VT</div><div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event (Zendesk biweekly 9 AM) &mdash; no recording synced</div>
-    </div>
-
-    <div class="csm-card no-calls" data-csm="atisha">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header"><div class="avatar av-grey">AW</div><div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">3 events (Intel Platform Training 5:30 AM, Apple Platform Team Call 12 PM, HGI &amp; Intel 12:35 PM) &mdash; all no-transcript</div>
-    </div>
-
-    <div class="csm-card no-calls" data-csm="pam">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header"><div class="avatar av-grey">PH</div><div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event (Oracle ER Diagram walkthrough 8 AM) &mdash; no transcript</div>
-    </div>
-
-    <div class="csm-card no-calls" data-csm="andy">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header"><div class="avatar av-grey">AL</div><div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event (ADP Workforce TR monthly 8 AM) &mdash; no transcript</div>
-    </div>
-
-    <div class="csm-card no-calls" data-csm="riley">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header"><div class="avatar av-riley">RR</div><div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No CSM-owned events scheduled</div>
-    </div>
-
-  </div>`;
-}
-
-function dayCallsHTML_2026_09_04() {
-  return `<div class="section-label">Confirmed Calls &mdash; Friday September 4, 2026</div>
-  <div style="background:#1c1f26;border:1px solid #f59e0b;border-left:3px solid #f59e0b;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fcd34d;">
-    &#x26A0;&#xFE0F; <strong>SYNC BACKLOG DAY 3:</strong> Sept 4 hit rate 24% (13/55). Multiple CSM events with recordings but no transcripts: Nick&times;SAP, Pam&times;Oracle, Andy&times;ADP, Rani&times;Hitachi, Rani&times;Google, Atisha&times;Intel.
-  </div>`;
-}
-
-function dayPulsesHTML_2026_09_04() {
-  const cards = [
-    { csm:'divyam', health:'Healthy', account:`BILL Operations, LLC`, opp:`Vitally Pulse &mdash; Sep 4 Call`,
-      arr:`Enterprise &middot; Divyam Dewan`, csmlbl:`Divyam Dewan`,
-      change:`Sep 4 &middot; Healthy`,
-      excerpt:`MQL/scoring model education for marketing team. 3 paths to MQL (pure MadKudu, activity-based, hybrid). White paper download example showed negative statistical correlation. Enhanced docs + AI-simplified explanations in flight.` },
-  ];
-  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
-  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
-  return `<div class="pulse-grid">${cards.map(c=>`
-    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
-      <div class="pulse-card-top">
-        <div>
-          <div class="pulse-account">${c.account}</div>
-          <div class="pulse-opp">${c.opp}</div>
-          <div class="pulse-arr">${c.arr}</div>
-        </div>
-        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
-      </div>
-      <div class="pulse-excerpt">${c.excerpt}</div>
-      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
-    </div>`).join('')}</div>
-  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
-}
-
-function dayActionsHTML_2026_09_04() {
-  return `<div class="action-list">
-    <div class="action-item ${doneActions.has('0904-1')?'done':''}" data-csm="divyam" id="action-0904-1">
-      <div class="action-checkbox ${doneActions.has('0904-1')?'checked':''}" onclick="toggleAction('0904-1')"></div>
-      <div class="action-body">
-        <div class="action-title">&#x1F4CB; BILL &mdash; Finalize outstanding tickets + AI-simplified MQL explanations</div>
-        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Divyam Dewan &middot; Finalize open tickets (Aug 26/27 unscored records + override analysis). Coordinate w/ Charles on marketing-team-facing MQL explanation deck (3 paths + segment/point-importance framing). Consider AI-based simplification approach.</div>
-      </div>
-    </div>
-    <div class="action-item ${doneActions.has('0904-2')?'done':''}" data-csm="all" id="action-0904-2">
-      <div class="action-checkbox ${doneActions.has('0904-2')?'checked':''}" onclick="toggleAction('0904-2')"></div>
-      <div class="action-body">
-        <div class="action-title">&#x26A0;&#xFE0F; Ops &mdash; Weflow sync backlog Day 3</div>
-        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Ops &middot; Third consecutive day of elevated no-transcript rate (Sept 2 71% → Sept 3 75% → Sept 4 76%). Multiple critical customer meetings unconfirmed: Nick×SAP, Pam×Oracle, Andy×ADP, Rani×Hitachi/Google, Atisha×Intel. Escalate to Weflow support urgently.</div>
-      </div>
-    </div>
-    <div class="action-item ${doneActions.has('0904-3')?'done':''}" data-csm="nick" id="action-0904-3">
-      <div class="action-checkbox ${doneActions.has('0904-3')?'checked':''}" onclick="toggleAction('0904-3')"></div>
-      <div class="action-body">
-        <div class="action-title">&#x1F4CB; Nick PTO handoff &mdash; Infor onsite debrief coverage</div>
-        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Nick Johnson (PTO) / Rani (backup) &middot; Nick&rsquo;s Sept 4 Infor onsite debrief (5 AM) no recording synced. SAP call ran but no transcript. Confirm coverage. Nick expected back ~Sept 11.</div>
-      </div>
-    </div>
-  </div>
-  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
-}
 
 function dayData_2026_09_07() {
   return {
@@ -6159,6 +6010,250 @@ function dayActionsHTML_2026_09_25() {
       <div class="action-body">
         <div class="action-title">&#x1F4CB; SAS &mdash; live test across 2,400 accounts + intent + evaluation scoring debug</div>
         <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Andy Lim + Mike Turner + Chlo&eacute; Portier + Jesper Bank Jorgensen &middot; Mike to (a) continue debugging remaining intent + evaluation scoring bugs post-lunch, (b) run live test across all 2,400 accounts + share updated scores. Team to review scores for reasonableness. Andy + Mike to discuss significantly different or odd scores. Jesper to review scores + confirm comfort level. Mike to implement MCP integration for research tab (future).</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
+
+function dayData_2026_09_04() {
+  return {
+    calls: [
+      { ts: 'Sep 4 &middot; 6:00 AM', csm: 'nick', account: `SAP Inc`,
+        note: `SAP renewal pricing pushback w/ James Tudway + Josephine Polzer. SAP flagged ~5&times; cost increase on existing contract scope as commercially unviable. Compromise proposed: lower revenue threshold from $50M to $20M. James to revise proposal by Monday.`,
+        mins: 25, health: 'Concerning',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Issue',
+        detail: `SAP renewal pricing pushback &mdash; SAP flagged that the new credit-based pricing model represents a ~5&times; cost increase versus existing contract scope, deemed commercially unviable + hard to justify to leadership. Even a reduced-scope Proposal 2 at $450K remained above their expected level. James explained the pricing shift reflects data + product-catalog growth and the transition to credit-based monetization. Compromise: lower the revenue threshold from $50M to $20M, potentially expanding company coverage while landing at a price point closer to current spend. SAP reiterated desire to continue the partnership but warned they will explore alternatives absent a realistic proposal. James (with David) to work up a $20M-threshold proposal by Monday, possibly including additional credits for testing new data points. SAP team to include a covering colleague for immediate actions while Josephine is OOO the following week. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 4 &middot; 7:30 AM', csm: 'rani', account: `Hitachi Vantara`,
+        note: `Hitachi/HG Follow-Up Sync w/ Nathan Ditton + Adrian Escobar + Mike Galyen + Gavin Padden + Alex Skowronek. HG + Microsoft Copilot MCP integration for TAM/SAM analysis + sales manager natural-language querying. Client evaluating cost models + timelines internally through late Sept.`,
+        mins: 44, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Expansion',
+        detail: `Hitachi Vantara follow-up sync focused on integrating HG Insights data with Microsoft Copilot to enhance sales team capabilities &mdash; TAM/SAM analysis + target-account scoring beyond basic firmographics + natural-language query for sales managers via Copilot. Discussion emphasized empowering sales managers with more autonomy vs relying on centralized data teams. Cost of stacking multiple AI tools (incl. Copilot) is a significant client consideration. Client weighing lightweight quick-deploy vs robust long-term integrations. Next: Nathan + client team to evaluate presented capabilities + cost models internally through late September + determine direction/budget/timelines. Rani to reconnect week of Sep 28 (post-Dreamforce). HG to send follow-up info + potential demos of specific capabilities as requested. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 4 &middot; 8:30 AM', csm: 'varun', account: `zScaler`,
+        note: `Zscaler Account Market Analysis Review w/ Max Shaw + Julian Rojas + Zscaler LatAm team. Zscaler exploring MCP integration w/ Gemini for LatAm account briefs + prioritization. HG to send MCP access quote + data-accuracy details by Tuesday.`,
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Zscaler account market analysis review focused on how HG's data + AI capabilities can power Zscaler's sales efforts in Latin America (region with limited local market knowledge). Zscaler expressed strong interest in leveraging HG data via an MCP integration with Gemini &mdash; account briefs + insights for targeted outreach + improved sales efficiency. Data accuracy + confidence rates highlighted as critical for less-familiar markets. Prior internal Zscaler data-analysis initiatives faced accuracy challenges &mdash; HG's reliable data seen as a key differentiator. Next: HG to send MCP-access quote + data-accuracy/confidence-rate details before Tuesday. Zscaler to provide estimated user count + accounts needing data before Tuesday. Pricing + scope discussion scheduled for Tuesday. HG to share CMI account brief post-meeting. Renewals: Zscaler IDL Expansion 2026-2027 + zScaler 2026 + TR Zscaler CVP/IDL/Cat Intent x6 auto-renewal open. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 4 &middot; 9:30 AM', csm: 'rani', account: `Hitachi Vantara`,
+        note: `Hitachi sync w/ Adrian Escobar + Miguel Ortega. Deal pricing $157 approved (down from $210 initial ask). Data deletion clause: complete removal by Nov 1st (data usage ceases Oct 22nd). API access being explored as cheaper alternative for Rebecca's campaigns.`,
+        mins: 19, health: 'Concerning',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Mixed',
+        detail: `Hitachi Vantara sync (Renewal - Hitachi - FAI &amp; Intent 2026 + Renewal - Hitachi Vantara - Universe- XaaS 2026). Deal pricing approved at $157 (reduced from $210 by ops committee). Procurement needs clear visibility into applied discounts + rationale versus prior years. Contract change mandates a data deletion clause: complete removal by Nov 1st; data usage ceases Oct 22nd (term end). Data feed partnership changes (e.g. Clay) altered accessibility &mdash; moving from flat files to API calls, impacting existing users like Rebecca. API access being explored as a cheaper path for HG firmographics + technographics. Next: Adrian to add applied-discount column to pricing spreadsheet + send revised sheet to Miguel today. Rani to (a) send comms re data deletion clause Tue/Wed, (b) coordinate w/ engineering + legal on destruction/removal (Nov 1 deadline), (c) explore API access path for Rebecca's campaigns (meeting next week). Miguel to notify Anders + Ragu + start internal deletion process (visibility first, then destruction). Pulse Poor. Confirmed via Weflow participants (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 4 &middot; 10:30 AM', csm: 'divyam', account: `BILL Operations, LLC and its Affiliates`,
+        note: `BILL renewal 2027 sync w/ Charles Hawkins + Eric Nguyen. Marketing MQL criteria + scoring model education. Documentation + joint marketing session planned. Weekly meeting rescheduled to Tue Sep 8 at 11:30 AM PT.`,
+        mins: 41, health: 'Healthy',
+        nature: 'Recurring', initiator: 'Customer', purpose: 'Check-in',
+        detail: `BILL renewal 2027 sync focused on clarifying MQL criteria + underlying scoring model in response to marketing's questions correlating actions to MQLs. Current documentation is complex (three paths to MQL) and needs simplification. Model's statistical correlations can appear counterintuitive (e.g. white paper downloads showing negative correlation) &mdash; require transparent explanation. Need to distinguish between core ML model statistical findings and human overrides/criteria adjustments influencing MQLs. Decision: collaboratively build clearer documentation + potentially hold joint marketing session to demystify MQL process. Next: Divyam to reply to closed-one analysis ticket + post updates for Eric + complete open items from last meeting today. Charles to walk through model w/ Eric + prepare marketing deck + documentation spreadsheet + offer to join calls to explain model. Eric Nguyen to continue building marketing education content. Weekly meeting rescheduled to Tue Sep 8, 11:30 AM PT. Confirmed via SFDC transcript speaker detection.`, source: 'sfdc' },
+    ],
+    pulses: [
+      { csm: 'nick', account: `SAP Inc`, health: 'Concerning',
+        note: `Renewal pricing pushback &mdash; SAP flagged ~5&times; cost increase as commercially unviable. Compromise: $20M revenue threshold (from $50M). James revising proposal by Monday. SAP warned they will explore alternatives absent a realistic proposal.` },
+      { csm: 'rani', account: `Hitachi Vantara (Follow-Up Sync)`, health: 'Healthy',
+        note: `Microsoft Copilot MCP integration for TAM/SAM + sales manager natural-language querying. Client evaluating cost models + timelines internally through late September. Reconnect week of Sep 28 (post-Dreamforce).` },
+      { csm: 'varun', account: `zScaler`, health: 'Healthy',
+        note: `Zscaler LatAm MCP + Gemini integration exploration. HG to send MCP access quote + data-accuracy details by Tuesday. Zscaler to provide user count + account count by Tuesday. Renewals for IDL Expansion + zScaler 2026 + TR CVP/IDL open.` },
+      { csm: 'rani', account: `Hitachi Vantara (Sync)`, health: 'Concerning',
+        note: `Deal pricing $157 approved (from $210). Data deletion clause: complete removal by Nov 1st (usage ceases Oct 22nd). API access for Rebecca's campaigns being explored. Pulse Poor.` },
+      { csm: 'divyam', account: `BILL Operations, LLC and its Affiliates`, health: 'Healthy',
+        note: `MQL criteria + scoring model education for marketing. Documentation + joint marketing session planned. Weekly meeting rescheduled to Tue Sep 8, 11:30 AM PT.` },
+    ],
+  };
+}
+
+function dayMeta_2026_09_04() {
+  return {
+    pills: [
+      ['dot-teal',   '5 Calls'],
+      ['dot-amber',  '3 Expansion'],
+      ['dot-red',    '2 Concerning'],
+      ['dot-green',  '5 Vitally Pulses'],
+      ['dot-grey',   'Fri Sep 4 &middot; 55 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (5)', 'Pulses (5)', 'Action Items (5)']
+  };
+}
+
+function dayOverviewHTML_2026_09_04() {
+  return `<div class="section-label">Team Activity &mdash; Friday September 4, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Friday Sep 4 &mdash; 55 recordings scanned</strong> via SFDC SOQL &middot; <strong>5 confirmed calls</strong> across 4 CSMs (Pam + Riley + Atisha + Andy idle) &middot; 2 Concerning (SAP + Hitachi) &middot; 3 Expansion signals &middot; SFDC confirmed 1; Weflow fallback added 4 unique recoveries
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>3 EXPANSION:</strong> Hitachi Vantara Follow-Up (Microsoft Copilot MCP integration for TAM/SAM + sales manager natural-language querying) &middot; zScaler (MCP + Gemini integration for LatAm account prioritization + Tuesday quote) &middot; Hitachi Vantara Sync (API access exploration for Rebecca's campaigns)
+  </div>
+  <div style="background:#2a1f1f;border:1px solid #b45309;border-left:3px solid #b45309;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>2 CONCERNING:</strong> SAP (pricing pushback &mdash; ~5&times; cost increase deemed commercially unviable; SAP warned of exploring alternatives) &middot; Hitachi Vantara Sync (pulse Poor; data deletion clause requires complete removal by Nov 1; usage ceases Oct 22)
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">63m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Hitachi Follow-Up (&#x1F4C8; Microsoft Copilot MCP + TAM/SAM) &middot; Hitachi Sync (&#x26A0;&#xFE0F; pricing $157 + data deletion Nov 1 + API expansion)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">25m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">SAP renewal pricing pushback (&#x26A0;&#xFE0F; ~5&times; cost jump; $20M threshold compromise; revised proposal by Monday)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">zScaler LatAm (&#x1F4C8; MCP + Gemini integration; MCP quote + data-accuracy details due Tuesday)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">41m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">BILL Operations renewal 2027 (MQL scoring model education for marketing; docs + joint session planned)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">PH</div><div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No confirmed customer calls. Oracle "HG Data Files + ER Diagram Walkthrough" event owned by Pam had no recording synced; no Weflow-participant hit.</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="riley">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-riley">RR</div><div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No confirmed customer calls. No Riley speaker label in SFDC transcripts; no Weflow-participant hits.</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="atisha">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">AW</div><div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No confirmed customer calls. "HGI &amp; Intel" event owned by Atisha had no recording synced; no Weflow-participant hit.</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">AL</div><div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No confirmed customer calls. "ADP Workforce &lt;&gt; TrustRadius Monthly Success Call" event owned by Andy had no recording synced; no Weflow-participant hit.</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_09_04() {
+  return `<div class="section-label">Confirmed Calls &mdash; Friday September 4, 2026</div>
+  <div style="background:#2a1f1f;border:1px solid #b45309;border-left:3px solid #b45309;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>2 CONCERNING:</strong> SAP (~5&times; pricing shock; SAP warned of exploring alternatives; $20M threshold compromise + revised proposal by Monday) &middot; Hitachi Vantara Sync (pulse Poor; data deletion clause complete removal by Nov 1)
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>3 EXPANSION:</strong> Hitachi Follow-Up (Microsoft Copilot MCP) &middot; zScaler (MCP + Gemini LatAm) &middot; Hitachi Sync (API access for Rebecca's campaigns)
+  </div>`;
+}
+
+function dayPulsesHTML_2026_09_04() {
+  const cards = [
+    { csm:'nick', health:'Concerning', account:`SAP Inc`, opp:`Vitally Pulse &mdash; Sep 4 Call`,
+      arr:`Strategic &middot; Nick Johnson`, csmlbl:`Nick Johnson`, change:`Sep 4 &middot; Concerning`,
+      excerpt:`SAP renewal pricing pushback &mdash; ~5&times; cost increase deemed commercially unviable. Compromise: $20M revenue threshold (from $50M). James revising proposal by Monday. SAP warned of exploring alternatives absent a realistic proposal.` },
+    { csm:'rani', health:'Healthy', account:`Hitachi Vantara (Follow-Up Sync)`, opp:`Vitally Pulse &mdash; Sep 4 Call`,
+      arr:`Enterprise &middot; Rani Guy`, csmlbl:`Rani Guy`, change:`Sep 4 &middot; Healthy`,
+      excerpt:`Microsoft Copilot MCP integration for TAM/SAM + sales manager natural-language querying. Client evaluating cost models + timelines internally through late September. Rani to reconnect week of Sep 28 (post-Dreamforce).` },
+    { csm:'varun', health:'Healthy', account:`zScaler`, opp:`Vitally Pulse &mdash; Sep 4 Call`,
+      arr:`Enterprise &middot; Varun Tiwari`, csmlbl:`Varun Tiwari`, change:`Sep 4 &middot; Healthy`,
+      excerpt:`Zscaler LatAm MCP + Gemini integration exploration. HG to send MCP-access quote + data-accuracy details by Tuesday. Zscaler to provide user count + account count by Tuesday. Multiple renewals in play (IDL Expansion + zScaler 2026 + TR CVP/IDL Auto Renewal).` },
+    { csm:'rani', health:'Concerning', account:`Hitachi Vantara (Sync)`, opp:`Vitally Pulse &mdash; Sep 4 Call`,
+      arr:`Enterprise &middot; Rani Guy`, csmlbl:`Rani Guy`, change:`Sep 4 &middot; Concerning`,
+      excerpt:`Deal pricing $157 approved (down from $210). Data deletion clause: complete removal by Nov 1st (data usage ceases Oct 22nd). API access exploration for Rebecca's campaigns (cheaper alternative for HG firmographics + technographics). Pulse Poor.` },
+    { csm:'divyam', health:'Healthy', account:`BILL Operations, LLC and its Affiliates`, opp:`Vitally Pulse &mdash; Sep 4 Call`,
+      arr:`Enterprise &middot; Divyam Dewan`, csmlbl:`Divyam Dewan`, change:`Sep 4 &middot; Healthy`,
+      excerpt:`BILL renewal 2027 &mdash; MQL criteria + scoring model education for marketing. Documentation + joint marketing session planned. Weekly meeting rescheduled to Tue Sep 8, 11:30 AM PT.` },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div class="pulse-account">${c.account}</div>
+          <div class="pulse-opp">${c.opp}</div>
+          <div class="pulse-arr">${c.arr}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_09_04() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('0401')?'done':''}" data-csm="nick" id="action-0401">
+      <div class="action-checkbox ${doneActions.has('0401')?'checked':''}" onclick="toggleAction('0401')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; SAP &mdash; revised $20M-threshold proposal by Monday (renewal risk)</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Nick Johnson + James Tudway + David &middot; James (w/ David) to work up a $20M-threshold proposal by Monday, possibly including additional credits for testing new data points, that lands closer to SAP's current spend level. SAP team to include a covering colleague for immediate actions while Josephine is OOO next week. SAP warned they will explore alternatives absent a realistic proposal.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0402')?'done':''}" data-csm="rani" id="action-0402">
+      <div class="action-checkbox ${doneActions.has('0402')?'checked':''}" onclick="toggleAction('0402')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; Hitachi Vantara &mdash; data deletion clause (complete removal by Nov 1; usage ceases Oct 22)</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy + Miguel Ortega + Adrian Escobar &middot; Adrian to add applied-discount column to pricing spreadsheet + send revised sheet to Miguel today. Rani to (a) send comms re data deletion clause Tue/Wed, (b) coordinate w/ engineering + legal on destruction/removal (Nov 1 deadline), (c) explore API access path for Rebecca's campaigns (meeting next week). Miguel to notify Anders + Ragu + start internal deletion process (visibility first, then destruction). Data usage ceases Oct 22.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0403')?'done':''}" data-csm="varun" id="action-0403">
+      <div class="action-checkbox ${doneActions.has('0403')?'checked':''}" onclick="toggleAction('0403')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; zScaler &mdash; MCP-access quote + data-accuracy details by Tuesday (LatAm expansion)</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Varun Tiwari + Max Shaw + Julian Rojas &middot; HG to send MCP-access quote + data-accuracy/confidence-rate details before Tuesday. Zscaler to provide estimated user count + accounts needing data before Tuesday. Pricing + scope discussion scheduled Tuesday. HG to share CMI account brief post-meeting.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0404')?'done':''}" data-csm="rani" id="action-0404">
+      <div class="action-checkbox ${doneActions.has('0404')?'checked':''}" onclick="toggleAction('0404')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Hitachi Vantara &mdash; Microsoft Copilot MCP integration + late-Sept reconnect (post-Dreamforce)</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Rani Guy + Nathan Ditton + Adrian Escobar + Mike Galyen + Gavin Padden &middot; Nathan + client team to evaluate presented HG capabilities + cost models internally through late September + determine direction/budget/timelines. Rani to schedule follow-up meeting week of Sep 28 (post-Dreamforce). HG to provide follow-up info + potential demos of specific capabilities as requested.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0405')?'done':''}" data-csm="divyam" id="action-0405">
+      <div class="action-checkbox ${doneActions.has('0405')?'checked':''}" onclick="toggleAction('0405')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; BILL Operations &mdash; MQL scoring model documentation + joint marketing session</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Divyam Dewan + Charles Hawkins + Eric Nguyen &middot; Divyam to reply to closed-one analysis ticket + post updates for Eric + complete open items from last meeting today. Charles to walk through model w/ Eric + prepare marketing deck + documentation spreadsheet + offer to join calls to explain model. Eric to continue building marketing education content. Weekly meeting rescheduled to Tue Sep 8, 11:30 AM PT.</div>
       </div>
     </div>
   </div>
