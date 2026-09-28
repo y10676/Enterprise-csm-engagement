@@ -99,154 +99,11 @@ function weeklyOrMonthlyHTML_2026_09_01() {
 
 
 
-function dayData_2026_09_07() {
-  return {
-    calls: [
-      { ts: 'Sep 7 · 9:00 AM', csm: 'varun', account: `Zscaler`,
-        note: `Labor Day alignment session with Manoj Parameswara. AI/MCP+LLM (Claude) walkthrough for auto-generating account briefs + technographic intel. Product data coverage expansion (55&rarr;200-300 products). Dec renewal scoping: freeze reqs Sept/Oct, sign Nov.`,
-        mins: 30, health: 'Healthy',
-        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
-        detail: `Zscaler alignment on Labor Day with Manoj Parameswara. Varun demoed MCP integrated with Claude for auto-generated account briefs + technographic intel to support sales planning. Zscaler currently at 55 products in HG data &mdash; potential to expand to 200-300 based on their scale. Spend data coverage &gt;95% for contracted accounts; early amendment discussion possible. Account matching should use URL + country in addition to DUNS. Dec renewal &mdash; scope + requirements freeze in Sept/Oct, contract signature November.` },
-    ],
-    pulses: [
-      { csm: 'varun', account: `Zscaler`, health: 'Healthy',
-        note: `Pre-renewal expansion signal &mdash; AI/MCP+LLM demo, 55&rarr;200-300 product data expansion, Dec renewal scoping in flight.` },
-    ],
-  };
-}
 
-function dayMeta_2026_09_07() {
-  return {
-    pills: [
-      ['dot-teal',   '1 Call'],
-      ['dot-amber',  '1 Expansion'],
-      ['dot-green',  '1 Vitally Pulse'],
-      ['dot-grey',   'Mon Sep 7 (Labor Day) &middot; 21 scanned'],
-    ],
-    tabs: ['Overview', 'Calls (1)', 'Pulses (1)', 'Action Items (2)']
-  };
-}
 
-function dayOverviewHTML_2026_09_07() {
-  return `<div class="section-label">Team Activity &mdash; Monday September 7, 2026 (Labor Day)</div>
-  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
-    &#x1F4C5; <strong>Monday Sep 7 (Labor Day) &mdash; 21 recordings scanned</strong> via SFDC SOQL &middot; <strong>1 confirmed call</strong> (Varun &times; Zscaler) &middot; 0 concerning &middot; 1 expansion &middot; US federal holiday &mdash; expected minimal activity
-  </div>
-  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
-    &#x1F4C8; <strong>EXPANSION:</strong> Zscaler pre-renewal alignment &mdash; AI/MCP+LLM demo for auto-generated account briefs, 55&rarr;200-300 product data expansion, Dec renewal scoping (Sept/Oct freeze &rarr; Nov signature).
-  </div>
-  <div class="overview-grid">
 
-    <div class="csm-card has-calls" data-csm="varun">
-      <span class="call-badge">1 CALL</span>
-      <div class="csm-card-header">
-        <div class="avatar av-varun">VT</div>
-        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
-      </div>
-      <div class="csm-metrics">
-        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
-        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
-        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
-      </div>
-      <div class="csm-account-note">Zscaler (&#x1F4C8; AI/MCP demo + 55&rarr;200-300 product data expansion + Dec renewal scoping)</div>
-    </div>
 
-    <div class="csm-card no-calls" data-csm="nick">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header"><div class="avatar av-grey">NJ</div><div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">On PTO (Labor Day). 1 event (HCL TR 7:30 AM) &mdash; no recording synced</div>
-    </div>
 
-    <div class="csm-card no-calls" data-csm="divyam">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header"><div class="avatar av-divyam">DD</div><div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">3 events (Blackbaud TR 8:30 AM, Okta TR 9:30 AM, Dynatrace 10 AM) &mdash; all no-transcript</div>
-    </div>
-
-    <div class="csm-card no-calls" data-csm="atisha">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header"><div class="avatar av-grey">AW</div><div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event (Airtel Africa 3 AM) &mdash; no recording synced (Labor Day pattern)</div>
-    </div>
-
-    <div class="csm-card no-calls" data-csm="riley">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header"><div class="avatar av-riley">RR</div><div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event (Filevine TR 11:30 AM) &mdash; no transcript</div>
-    </div>
-
-    <div class="csm-card no-calls" data-csm="rani">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header"><div class="avatar av-grey">RG</div><div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No CSM-owned events (Labor Day)</div>
-    </div>
-
-    <div class="csm-card no-calls" data-csm="pam">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header"><div class="avatar av-grey">PH</div><div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No CSM-owned events (Labor Day)</div>
-    </div>
-
-    <div class="csm-card no-calls" data-csm="andy">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header"><div class="avatar av-grey">AL</div><div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No CSM-owned events (Labor Day)</div>
-    </div>
-
-  </div>`;
-}
-
-function dayCallsHTML_2026_09_07() {
-  return `<div class="section-label">Confirmed Calls &mdash; Monday September 7, 2026 (Labor Day)</div>
-  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
-    &#x1F4C8; <strong>EXPANSION:</strong> Zscaler AI/MCP demo + 55&rarr;200-300 product data expansion + Dec renewal scoping (Varun)
-  </div>`;
-}
-
-function dayPulsesHTML_2026_09_07() {
-  const cards = [
-    { csm:'varun', health:'Healthy', account:`Zscaler`, opp:`Vitally Pulse &mdash; Sep 7 Call`,
-      arr:`Enterprise &middot; Varun Tiwari`, csmlbl:`Varun Tiwari`,
-      change:`Sep 7 &middot; Healthy`,
-      excerpt:`Labor Day alignment. AI/MCP + Claude demo for auto-generated account briefs + technographic intel. Product data coverage expansion (55 &rarr; 200-300). Dec renewal scoping in flight &mdash; Sept/Oct requirements freeze &rarr; Nov contract signature.` },
-  ];
-  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
-  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
-  return `<div class="pulse-grid">${cards.map(c=>`
-    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
-      <div class="pulse-card-top">
-        <div>
-          <div class="pulse-account">${c.account}</div>
-          <div class="pulse-opp">${c.opp}</div>
-          <div class="pulse-arr">${c.arr}</div>
-        </div>
-        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
-      </div>
-      <div class="pulse-excerpt">${c.excerpt}</div>
-      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
-    </div>`).join('')}</div>
-  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
-}
-
-function dayActionsHTML_2026_09_07() {
-  return `<div class="action-list">
-    <div class="action-item ${doneActions.has('0907-1')?'done':''}" data-csm="varun" id="action-0907-1">
-      <div class="action-checkbox ${doneActions.has('0907-1')?'checked':''}" onclick="toggleAction('0907-1')"></div>
-      <div class="action-body">
-        <div class="action-title">&#x1F4C8; Zscaler &mdash; Send updated product catalog + spend data validation</div>
-        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Varun Tiwari &middot; Send updated HG product catalog covering the expansion path from 55 to 200-300 Zscaler products. Support Manoj on internal data-utilization assessment and prep for Dec renewal leadership discussion. Sept/Oct requirements freeze window is now.</div>
-      </div>
-    </div>
-    <div class="action-item ${doneActions.has('0907-2')?'done':''}" data-csm="varun" id="action-0907-2">
-      <div class="action-checkbox ${doneActions.has('0907-2')?'checked':''}" onclick="toggleAction('0907-2')"></div>
-      <div class="action-body">
-        <div class="action-title">&#x1F4CB; Zscaler &mdash; MCP + AI demo assets for internal share</div>
-        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Varun Tiwari &middot; Package the MCP + Claude demo assets (account brief generation, technographic intel) so Manoj can share internally ahead of the leadership renewal discussion. Reinforce URL + country matching (beyond DUNS) for account validation.</div>
-      </div>
-    </div>
-  </div>
-  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
-}
 
 
 
@@ -6254,6 +6111,154 @@ function dayActionsHTML_2026_09_04() {
       <div class="action-body">
         <div class="action-title">&#x1F4CB; BILL Operations &mdash; MQL scoring model documentation + joint marketing session</div>
         <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Divyam Dewan + Charles Hawkins + Eric Nguyen &middot; Divyam to reply to closed-one analysis ticket + post updates for Eric + complete open items from last meeting today. Charles to walk through model w/ Eric + prepare marketing deck + documentation spreadsheet + offer to join calls to explain model. Eric to continue building marketing education content. Weekly meeting rescheduled to Tue Sep 8, 11:30 AM PT.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
+
+function dayData_2026_09_07() {
+  return {
+    calls: [
+      { ts: 'Sep 7 &middot; 9:00 AM', csm: 'varun', account: `zScaler`,
+        note: `zScaler alignment w/ Manoj Parameswara &mdash; Q4 renewal planning kickoff. MCP + Phoenix walkthrough (Slack integration + multi-format data queries). Product catalog identification for sales planning. LATAM outreach touchpoint referenced (Gerardo Lastra follow-up).`,
+        mins: 29, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Mixed',
+        detail: `zScaler alignment for Q4 renewal planning. Renewal timeline: scoping Sep/Oct + contract finalization Nov + signing early Dec + new contract starts Jan. Discussion of Zscaler's product catalog (55 products) &mdash; need to identify which are most applicable for their market + understand competitor footprints for sales planning. Zscaler receives significant value from HG spend data (>95% coverage on contracted accounts). Data accuracy work ongoing: Zscaler internal team improving DUNS-number quality; account matching to be re-run w/ updated Zscaler CRM list within a week. Varun demonstrated MCP + Phoenix capabilities: Slack integration + fetching multi-format data (account briefs, PDFs, PPTs); Phoenix's edgy database queryable via Claude. Reference to LATAM opp (Zscaler - HG Account Prioritization for LATAM Sales) &mdash; Gerardo Lastra (Director in Sales LATAM) engagement continuing; Manoj noted LATAM team will reach out organically as needs arise. Next: Varun to share product catalog by Dec 1 + re-perform account matching within a week + confirm data-feed timestamps/filenames. Manoj to compile internal metrics on how HG data aided sales planning + initiate leadership discussion (Dennis + Grisham) about last-year usage, next-year plan, budget for tools, and potential additions. Both to revisit account matching + DUNS reliance in ~1 month. Confirmed via SFDC transcript speaker detection.`, source: 'sfdc' },
+    ],
+    pulses: [
+      { csm: 'varun', account: `zScaler`, health: 'Healthy',
+        note: `Q4 renewal alignment &mdash; MCP + Phoenix walkthrough + product catalog identification for sales planning. LATAM opp continuing (Gerardo Lastra). Timeline: scope Sep/Oct + contract Nov + sign early Dec + start Jan.` },
+    ],
+  };
+}
+
+function dayMeta_2026_09_07() {
+  return {
+    pills: [
+      ['dot-teal',   '1 Call'],
+      ['dot-amber',  '1 Expansion touchpoint'],
+      ['dot-green',  '1 Vitally Pulse'],
+      ['dot-grey',   'Mon Sep 7 &middot; 21 scanned &middot; US Labor Day'],
+    ],
+    tabs: ['Overview', 'Calls (1)', 'Pulses (1)', 'Action Items (2)']
+  };
+}
+
+function dayOverviewHTML_2026_09_07() {
+  return `<div class="section-label">Team Activity &mdash; Monday September 7, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Monday Sep 7 (US Labor Day) &mdash; 21 recordings scanned</strong> via SFDC SOQL &middot; <strong>1 confirmed call</strong> across 1 CSM &middot; Very light day &middot; SFDC confirmed 1; Weflow fallback added 0 unique
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>Expansion touchpoint:</strong> zScaler Q4 renewal alignment &mdash; scoping Sep/Oct + contract Nov + sign Dec + new contract starts Jan. MCP + Phoenix walkthrough. LATAM opp (Gerardo Lastra) continuing.
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">29m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">zScaler Q4 renewal alignment (MCP + Phoenix walkthrough; LATAM opp continuing; product-catalog identification)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="rani">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">RG</div><div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">US Labor Day &mdash; no confirmed customer calls.</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="divyam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-divyam">DD</div><div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">US Labor Day &mdash; no confirmed customer calls.</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">PH</div><div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">US Labor Day &mdash; no confirmed customer calls.</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="riley">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-riley">RR</div><div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">US Labor Day &mdash; no confirmed customer calls.</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="nick">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">NJ</div><div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">US Labor Day &mdash; no confirmed customer calls.</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="atisha">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">AW</div><div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">US Labor Day &mdash; no confirmed customer calls.</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">AL</div><div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">US Labor Day &mdash; no confirmed customer calls.</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_09_07() {
+  return `<div class="section-label">Confirmed Calls &mdash; Monday September 7, 2026 (US Labor Day)</div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; Very light day &mdash; only Varun took a call on the Labor Day holiday.
+  </div>`;
+}
+
+function dayPulsesHTML_2026_09_07() {
+  const cards = [
+    { csm:'varun', health:'Healthy', account:`zScaler`, opp:`Vitally Pulse &mdash; Sep 7 Call`,
+      arr:`Enterprise &middot; Varun Tiwari`, csmlbl:`Varun Tiwari`, change:`Sep 7 &middot; Healthy`,
+      excerpt:`Q4 renewal alignment w/ Manoj Parameswara. Timeline: scoping Sep/Oct + contract Nov + signing early Dec + new contract starts Jan. MCP + Phoenix walkthrough (Slack + multi-format data). Product-catalog identification for sales planning. LATAM opp (Gerardo Lastra) continuing.` },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div class="pulse-account">${c.account}</div>
+          <div class="pulse-opp">${c.opp}</div>
+          <div class="pulse-arr">${c.arr}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_09_07() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('0701')?'done':''}" data-csm="varun" id="action-0701">
+      <div class="action-checkbox ${doneActions.has('0701')?'checked':''}" onclick="toggleAction('0701')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; zScaler &mdash; product catalog + account matching + data-feed confirmations (Q4 renewal path)</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Varun Tiwari + Manoj Parameswara &middot; Varun to (a) share product catalog by Dec 1, (b) re-perform account matching w/ updated Zscaler CRM list within a week, (c) confirm data-feed timestamps + filenames if needed, (d) check w/ Gagandeep re data shared w/ Manoj's team (new accounts). Manoj to (i) compile internal metrics on how HG data aided sales planning, (ii) initiate leadership discussion (Dennis + Grisham) about last-year usage + next-year plan + budget + potential additions, (iii) check w/ Gagandeep re data shared w/ Varun's team.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0702')?'done':''}" data-csm="varun" id="action-0702">
+      <div class="action-checkbox ${doneActions.has('0702')?'checked':''}" onclick="toggleAction('0702')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; zScaler &mdash; revisit account matching + DUNS reliance in ~1 month</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Varun Tiwari + Manoj Parameswara &middot; Both to revisit the discussion on account matching + DUNS reliance in approximately one month, once Zscaler's internal DUNS quality work has progressed.</div>
       </div>
     </div>
   </div>
