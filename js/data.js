@@ -1,5 +1,5 @@
 // ─── CSM_ACCOUNTS ─────────────────────────────────────────────────────
-// Source: HG GTM Tools — snapshot Apr 25, 2026; AM/segment corrections May 14, 2026; opp pulse/notes updated from SFDC 2026-09-23; Vitally refresh May 29, 2026
+// Source: HG GTM Tools — snapshot Apr 25, 2026; AM/segment corrections May 14, 2026; opp pulse/notes updated from SFDC 2026-09-28; Vitally refresh May 29, 2026
 // DO NOT EDIT when adding new daily reports. Only update when account data changes.
 // ──────────────────────────────────────────────────────────────────────
 
