@@ -7498,3 +7498,387 @@ function dayActionsHTML_2026_09_29() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
 }
+
+function dayData_2026_09_30() {
+  return {
+    calls: [
+      { ts: 'Sep 30 &middot; 4:30 AM', csm: 'nick', account: `HCLSoftware`,
+        note: `HCL "Need Assistance" w/ Augie Buettner + Angus Hyams + Soumya Kattimani + Awanish Kumar das. Filter/product-tracking limitations for IBM Workload Automation + Broadcom Automation in Greece/Israel/Turkey. Nick to investigate backend tagging + feed back inconsistencies to product team.`,
+        mins: 26, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Issue',
+        detail: `HCL support call for new platform. Filtering + identifying customers using specific products (IBM Workload Automation + Broadcom Automation) in Greece + Israel + Turkey revealed data inconsistencies + lack of specific product installations &mdash; potential data tagging / tracking limitations. Inconsistency between initial screen data and detailed filter results to escalate to product team. Platform market-sizing + project-creation features touched on; may need dedicated exploration. Next: Nick to investigate backend tagging for IBM Workload Automation + Broadcom Automation in Greece/Israel/Turkey + double-check if IBM + Broadcom have other workload automation products tracked + feed back inconsistencies to product team + schedule further sessions on market sizing + project creation features. Soumya + Aditi to run through other requests after process clarification + email Nick if concerns before next session. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 30 &middot; 6:00 AM', csm: 'andy', account: `Sage Global Services`,
+        note: `Sage "FW: HG Insights with Andy" w/ Darren Horvath + Nathan Ward. Winter '27 release &mdash; Salesforce connector technographics not appearing. "Localized installs" + "country level matching" settings suspected. Nathan to disable settings + run sync test on Bayer LLC tonight/tomorrow. Follow-up tomorrow 2 PM UK. Pulse Poor.`,
+        mins: 91, health: 'Concerning',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Issue',
+        detail: `Sage Winter '27 release blocker &mdash; technographics data not appearing in Salesforce connector. Primary objective: resolve missing technographics before production deployment. Key discussions around checking test environment (CIT 1) configurations, specifically "localized installs" + "country level matching" settings that restrict data to specific subsidiaries. Team decided to disable these settings + run sync to test effect. While firmographics present, technographics absence is significant concern before production. Next: Nathan to disable localized installs + country level matching settings + run sync on Bayer (German address) test entity tonight/tomorrow. Darren to schedule follow-up meeting tomorrow 2 PM UK + export data for known company w/ technographics from ZoomInfo to compare w/ Salesforce data. Andy to investigate if technographics data exists for Bayer LLC + check if HGIDs available to identify specific entities + associated data. Pulse Poor. Confirmed via SFDC transcript speaker detection.`, source: 'sfdc' },
+
+      { ts: 'Sep 30 &middot; 7:45 AM', csm: 'varun', account: `Exclusive Networks`,
+        note: `Exclusive-networks API setup w/ Angus Hyams + Alexi Mouarkach + Rishabh Wadhwa + Margo Rey + Matt Tinker + Ben Abraham. Sandbox for Lewis + Ben; API access for customer data platform (cyber security focus). API vs data-feed evaluation. Renewal Exclusive Networks 2024 Renewal/Up2026.`,
+        mins: 39, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Exclusive Networks API setup for HG data integration into their customer data insights platform (cyber security space focus). HG data will identify existing customers + new opportunities + white space in addressable market. API offers flexible on-demand access to all HG data assets; data feeds provide structured monthly delivery into data warehouses. Client's initial implementation likely API for flexibility, potential shift to data feeds as processes mature. Understanding internal data classification + PIM/MDM systems crucial for successful integration. Next: Angus + Rishabh to set up sandbox environment for Lewis + Ben w/ API credits. Ben + Lewis to explore API documentation + begin familiarization. Ben to investigate responsibility for PIM/MDM systems + relevant data structure conversations. Ben/Lewis/Nyle to discuss data structure integration w/ PIM/MDM teams (Nile's input by Wednesday next week). Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 30 &middot; 8:00 AM', csm: 'andy', account: `ADP, Inc`,
+        note: `ADP Workforce TR monthly (short 8m) w/ Brett Castonguay + Pam Huck + Jennifer Stone. Buyer's Choice qualified for year (10 reviews). Ratings-to-review campaign initiated. Jill championing renewal. Jennifer potentially delegating renewal tasks due to workload w/ new advocacy tool.`,
+        mins: 8, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `ADP Workforce TR monthly success call. Buyer's Choice qualification secured for year due to prior campaign meeting minimum 10 reviews (alleviating pressure). Ratings-to-review campaign initiated to boost reviews without external lists (smart compliance runs with lists). Current ratings generally good (most high, even lower ones in 7s/8s) &mdash; no significant risk of negative impact. Two major awards annually (Top Rated Spring + Buyer's Choice Fall) to avoid excessive award chasing. Pam to run ratings-to-review campaign (mid-November timing implied by Buyer's Choice announcement) + submit request today. Jennifer to inform Jeff about Buyer's Choice announcement timing (mid-November). Jill to champion renewal process (ongoing). Jennifer potentially delegating renewal tasks to Jill due to workload w/ new client advocacy tool implementation. Both Pam + Andy on call. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 30 &middot; 8:00 AM', csm: 'riley', account: `Red Hat, LLC (TR)`,
+        note: `Red Hat TR new opportunities discussion w/ Cole Arutian + Mardigan Moffat + Jennifer Nomides + Brianna Gault + Andrew King. Precision Demand Leads program overview (HG-integrated targeting + AI-generated sales briefs). Custom Red Hat brief in progress + hosted market reports w/ LLM/AI SEO boost.`,
+        mins: 32, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Red Hat TR new opportunities discussion focused on Precision Demand Leads program overview. Program enhances targeting by integrating HG Insights data (competitor installations + firmographic/technographic details) to identify "right accounts" with fit + need + intent. Significant new feature: AI-generated sales brief contextualizing data + providing sellers w/ summarized intelligence (improves deal effectiveness + reduces multi-source research time). Enables more targeted campaigns (competitive takeout plays) by overlaying intent w/ firmo + technographic insights. Market reports can now be hosted on TR to leverage LLMs + AI (additional fee for SEO boost). Existing Intent Driven Leads program remains viable option w/ updated pricing; new Precision Demand Leads offers advanced capabilities at higher price point. Next: Cole to send presentation slides to Andrew + Brianna + create custom example brief for Red Hat + track down more info on geo-hosted market reports. Andrew to review custom brief + Red Hat product example brief. Brianna to report back + pass info along to team. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 30 &middot; 8:00 AM', csm: 'rani', account: `Hitachi Vantara`,
+        note: `Hitachi Clay credit requirement w/ Adrian Escobar + Rebecca Klein + Umar Farooq Adam. Clay credit surplus &mdash; more cost-effective to purchase HDI data via Clay before March renewal. HDI intent contract now 1-year (was 3-year). Upcoming Clay in-platform caching + HDI packaging may reduce costs. Pulse Poor.`,
+        mins: 25, health: 'Concerning',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Mixed',
+        detail: `Hitachi Clay credit requirement discussion. Significant surplus of Clay credits to utilize before Clay renewal in March &mdash; more cost-effective to purchase HDI data through Clay despite potentially higher price than direct purchase. Organization evaluating overall investment in data sources + value considering marketing/sales budget crossover (currently managed separately). Internal discussions to reassess data models + performance of intelligence tools. Contract for intent data w/ HDI is 1-year term (contrasts w/ previous 3-year for install/contract/spend data) &mdash; reflects trend toward shorter contract durations due to rapidly evolving GTM tech stacks. Upcoming Clay features: in-platform caching + potential HDI insights packaging aim to reduce data consumption + costs (not yet live). Next: Umar to keep log of Clay credit usage for HDI data to compare costs w/ direct HDI purchases + monitor Clay development. Rani to touch base w/ partner team working w/ Clay for more clarity on upcoming features + packages + offer roadmap discussion + share HDI pricing structure w/ Umar + Rebecca before Clay renewal. Rebecca + Umar to continue internal discussions + evaluate data source value/cost-effectiveness. Pulse Poor. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 30 &middot; 8:00 AM', csm: 'nick', account: `Lenovo Group Ltd. (Lenovo Connect)`,
+        note: `HGI-Lenovo Connect w/ Adrian Escobar + Gavin Padden + Alexi Mouarkach + David Crossman + Fiona O'Brien + Anuradha Sathe + Ujjaini Mazumdar + Guido Moyano + Antaleena Ganguly. Major misalignments: AI spend scope + MCP&rarr;data feed transition + PTB scores removed from SOW + city-level matching gap + data-delivery simplification. Reconvene next week. Pulse Poor.`,
+        mins: 106, health: 'Concerning',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Issue',
+        detail: `Lenovo Connect &mdash; major partnership realignment session. Significant misalignments raised: (1) AI spend inclusion in contract &mdash; Lenovo asserted it was in initial scope based on sample files + discussions; HG initially claimed out of scope; (2) MCP news delivery transition to data feed &mdash; original SOW mentioned MCP or flat file; concerns around associated credits + limitations; (3) Propensity to Buy (PTB) scores initially in proposal + early SOW versions but later removed &mdash; Lenovo considered this key differentiator + basis for engaging HG; (4) Account matching methodology needs redefinition for L2-level requirements vs HG's HQ level focus &mdash; misinterpretation of matched records for site-level data causing challenges; (5) Data delivery needs simplification &mdash; moving from large file count (98 files vs 9) to delta-based approach for time-series data. Next: HG team to provide clear response re ongoing Gen AI + AI spend data inclusion + confirmation of recurring delivery + finalize + propose revised account-matching methodology aligned w/ L2 requirements + share detailed report on current match rates + logic by tomorrow + confirm AI spend inclusion in October refresh + align on PTB outputs + supporting scores + agree on roadmap + categories + timelines for operationalizing news delivery + simplify data delivery (delta-based) + share QC reports monthly. Lenovo team to provide any additional info re data structures + ingestion. Vibhu to convene internally + provide proposed timeline within next day or so. HG + Lenovo to reconvene next week to review progress + discuss mitigation. Pulse Poor. Multiple 2027/2028/2029 renewals + Sept Insider expansion in play. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 30 &middot; 8:30 AM', csm: 'andy', account: `SAS Institute EMEA`,
+        note: `SAS EMEA weekly sync (short 8m) w/ Andy + Bhargavi. Discussion of upcoming "edge gene sites" summit + AI features (product momentum + copilot for scoring/prioritization). Challenge: SAS tracking of variables/inputs contributing to sales success.`,
+        mins: 8, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `Short SAS EMEA weekly sync. Upcoming "edge gene sites" summit will feature AI breakout: guardrails + prompting best practices + new copilot capability. New features to preview: product momentum (competitor activity tracking) + enhanced AI for scoring models + ICP prioritization. Platform copilot allows natural-language interaction to identify relevant accounts + build scoring models + prioritize based on business needs (security or analytics). Challenge: SAS + many companies have poor tracking of variables + inputs contributing to sales success, making it difficult to attribute wins to specific tools or strategies &mdash; harder to build case for contract expansions/renewals as platform value cannot be easily evidenced. Next: Continue exploring AI functionalities + best practices for SAS implementation + prepare for edge gene sites summit + SAS team expected to sign new contract incorporating discussed AI features + improve tracking of sales variables + inputs to better evidence platform influence on deal success. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 30 &middot; 9:00 AM', csm: 'rani', account: `NetApp (Seattle prep)`,
+        note: `NetApp Seattle meeting prep w/ Adrian Escobar + Gabe Weske + Bini Valsala. Planning 3-hour in-person session next Wednesday for NetApp executives. Agenda: introductions + current offerings + roadmap + topical deep dives (cloud spend + 15k accounts + propensity + AI/Neo cloud).`,
+        mins: 28, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `NetApp Seattle meeting prep. Planning 3-hour in-person session w/ NetApp executives. Structure: dedicated time for introductions + current offerings + roadmap discussions + topical deep dives. Specific topics: cloud spend + 15k accounts + propensity modeling + AI/Neo cloud insights. Need to understand NetApp's priorities/challenges around cloud strategy + segmentation + territory design + potential for single spend for cloud storage. Quota setting: AI spend + third-party wallet share analysis + aligning data categories w/ Gartner's framework to improve quota accuracy. NetApp leadership concerned about rapid AI + Neo cloud emergence &mdash; need info on how to gain customer insights + stay relevant. Next: Gabe + Megan schedule internal Friday agenda time. Adrian + Rani to prepare + send draft agenda to Gabe + Megan by Friday. Monday meeting w/ Gabe + HGI to discuss agenda in detail + assign topic leads. Align on final agenda + attendees by Tuesday. HGI team to connect w/ SMEs internally to confirm attendance + readiness by Friday. Gabe to contact hotel to confirm room booking + AV setup. Rani to arrive at hotel early to troubleshoot AV. Adrian + Rani to provide updated AI spend info + schedule call w/ Doug + Habib re spend model + share cloud spend + wallet share analysis before Wednesday meeting. HGI team to continue building propensity model + provide first run for 1600 specific accounts by end of October. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 30 &middot; 9:00 AM', csm: 'riley', account: `SAP Inc (TR SuccessFactors Connect)`,
+        note: `SAP SuccessFactors TR Progress call w/ Cole Arutian + Mardigan Moffat + Kristin. Final Connect event prep: video + audio reviews prioritized (target 60+); 55 engaged customers targeted; wine cellar room + pull-down banner backdrop; SF-focused reviews only.`,
+        mins: 34, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `SAP SuccessFactors TR progress call finalizing Connect event prep. Primary focus: video + audio customer reviews from engaged SuccessFactors customers, target 60+ reviews throughout event. Target ~55 engaged customers (potential to reach up to 10 more). Content capture (video/audio reviews) prioritize quieter private area (wine cellar room if available). Pull-down banner w/ company logo for video backdrop maintains consistency + unbiased appearance. Customer reviews focused solely on SuccessFactors; anonymity options clearly communicated. Next: Angel to double-check available banners in storage by Monday + share Kaslan's contact info + coordinate group email + check w/ Katie about new flexible review system rollout + confirm if additional devices needed for Kaslan beyond tablet before Monday. Kristin to confirm wine cellar room venue details + furniture arrangements + forward info on badge pickup locations before Monday. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 30 &middot; 10:00 AM', csm: 'riley', account: `Adobe Systems Incorporated (TR)`,
+        note: `Adobe TR Success Call (short 11m) w/ Cole Arutian + Mardigan Moffat + Alison. Buyer's Choice reviews for Real-Time CDP + Frame.io &mdash; more unlikely due to bandwidth. Renewal proposal largely aligned; event support cost $15K (bundled discount). Alison OOO Oct 5-16. Pulse Concerning.`,
+        mins: 11, health: 'Concerning',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Mixed',
+        detail: `Adobe TR success call focused on renewal proposal + buyer's choice reviews. Campaign team continuing to push for Real-Time CDP + Frame.io Buyer's Choice reviews, but more unlikely due to bandwidth limitations. Renewal proposal largely aligned; main discussion point: increased cost of event support (currently $15,000, includes significant bundled discount). Procurement process concerns &mdash; HG Insights needs to ensure fully approved in new procurement system + potential delays. Alison OOO Oct 5-16; Giacomo covering. Meeting w/ Ashley being sought for renewal specifics (busy calendar). Next: Riley to continue pushing campaign team for buyer's choice reviews. Mardigan to provide feedback on renewal proposal + sync w/ team re HG's renewal + procurement system status + submit revised proposal once scope + budget finalized. Alison to provide updates on renewal to Giacomo + add meeting details to OOO list + bubble up any questions from HG re procurement + schedule meeting w/ Ashley before Oct 5 leave. Adobe pulse Concerning. Multiple TR Adobe opps + Adobe Renewal + Migration to RGIP in play. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 30 &middot; 11:00 AM', csm: 'rani', account: `CloudFlare Inc`,
+        note: `CloudFlare connect w/ James Tudway + Kraig Kraning + Martin Kielczewski. Pricing concerns on $600K package. Zscaler-based data visualization to demonstrate value. Potential 144K org data add at $0 cost. Follow-up Friday. Pulse Poor.`,
+        mins: 37, health: 'Concerning',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Mixed',
+        detail: `CloudFlare contract finalization discussion. Pricing concerns on "hg" (product/service) may require adjustments to scope + duration + negotiation. Demonstrating tangible business value w/ data (using Zscaler as prime example) crucial for gaining executive approval + urgency. Potential inclusion of additional 144,000 organizations' data for traffic analysis being considered as value-add. Need to create business case that highlights value + urgency + moves beyond planning to actual usage. Executive buy-in secured but finalization still faces procurement process hurdles + budget alignment. Next: Martin to explore avenues to address pricing concerns + potential scope/timing adjustments by Friday follow-up. Rani to provide Zscaler-based data visualization demonstrating current vs expanded coverage by EOD today or first thing tomorrow morning. James + Rani to rethink $600K package to reflect potential scope changes + discounts by Friday + discuss including additional 144K organizations' data at zero cost. Martin to work on highlighting value proposition + urgency to leadership (ongoing) + multi-year contract component. Follow-up Friday to discuss progress + alignment. Pulse Poor. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 30 &middot; 11:00 AM', csm: 'riley', account: `SAP Inc (TR Ariba + Fieldglass)`,
+        note: `SAP Ariba + Fieldglass TR sync (29m; largely scheduling coordination) w/ Cole Arutian + Mardigan Moffat + Ashleigh Riehl. Meeting scheduled Monday 1:30 PM EST w/ Janessa + Smitha (potentially Aaron) to plan Connect event + drive reviews. Riley to send past Connect numbers.`,
+        mins: 29, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `SAP Ariba + Fieldglass TR sync focused on Connect event planning + review-drive coordination. Meeting confirmed Monday 1:30 PM EST w/ Janessa + Smitha + potentially Aaron to plan for Connect event + strategies to drive reviews for Ashleigh's products. Riley to send past connect numbers from last few years to Ashleigh ASAP + schedule Monday meeting + send invitation. Riley working on gathering info for Alejandro re Connect event next week + will provide links to Ashleigh's products to help drive reviews. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 30 &middot; 11:30 AM', csm: 'divyam', account: `HubSpot`,
+        note: `HubSpot TR monthly sync w/ Max Shaw + Anderson Duncan + Jordan Montgomery. HubSpot CRM 59 reviews collected &mdash; Top Rated qualified + Buyer's Choice qualified. Divyam to provide review-campaign breakdown across all hubs + Excel export + insights draft by tomorrow. Renewal HubSpot Ultimate 2027.`,
+        mins: 20, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `HubSpot TR monthly sync. HubSpot CRM successfully generated 59 reviews (52 in Aug/Sept), meeting threshold for Top Rated status + qualifying for Buyer's Choice award. Discussion on strategies for more consistent review generation throughout year. HG runs various review-generation campaigns incl. "waiting to review" campaign; response rates vary + may be product-specific. AI reports accessible via vendor portal (option to schedule email delivery). Trust codes utilized to categorize reviews + create widgets for websites &mdash; valuable third-party proof for sales + marketing. Next: Divyam to provide breakdown of review campaign results across all hubs in Excel format by tomorrow + pull review data for all products from last 2 years incl. review content/links + provide initial insights draft for marketing + sales use cases + confirm if review data export for all products is possible. Jordan to schedule delivery for AI reports via email before next meeting. Renewal HubSpot Ultimate 2027 + HubSpot RGIF/RGIP India Pilot 2026 opps. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 30 &middot; 12:00 PM', csm: 'rani', account: `Lenovo Group Ltd. (2nd sync)`,
+        note: `Second Lenovo sync w/ Adrian Escobar + Ryan Warren + Jeevan Aranha + Kristen Sasser + Kamran Jahadi + Don McCall. Data quality issues (DUNS + account naming inconsistencies) requiring manual mapping. 500K-account limit constrains marketing flexibility. Renewals + RGI platform + HG Academy discussion. Pulse Poor.`,
+        mins: 30, health: 'Concerning',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Mixed',
+        detail: `Second Lenovo sync focused on data quality + operational issues. Significant data quality issues w/ HGI data: incorrect DUNS numbers + inconsistent account naming conventions requiring extensive manual cleansing + mapping. 500K-account limit for certain initiatives restricts marketing team flexibility for campaign targeting. Billing + payment issues being resolved; payments processing + Scott handling reconciliation. Future payment strategies for services post-year 3: tokenization + regional MCP options. Next: Ryan to respond to billing team re payment status + work on data for global accounts (inquiries from Scott + Maggie) + match HGI data w/ sales data (manual mapping of account names + DUNS numbers) + pull HGID number for data mapping + send email to Adrian w/ Rani copied re data mapping + platform login + log into Escar platform + investigate new HG Insights Academy virtual event + register + look into RGI platform capabilities re bringing in sales contacts. Rani to recommend including HGID field in Salesforce for better data linkage + provide more insights on tokenomics + devops employee hiring. Adrian to resend contract signed by Fiona if requested + send invite for new platform rollout event. Multiple 2027/2028/2029 renewals in play. Pulse Poor. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+    ],
+    pulses: [
+      { csm: 'nick', account: `HCLSoftware`, health: 'Healthy',
+        note: `Support call re product filtering limitations for IBM Workload Automation + Broadcom Automation in Greece/Israel/Turkey. Nick investigating backend tagging + feeding back inconsistencies to product team.` },
+      { csm: 'andy', account: `Sage Global Services`, health: 'Concerning',
+        note: `Winter '27 release blocker &mdash; Salesforce connector technographics not appearing. "Localized installs" + "country level matching" settings suspected. Test sync tonight/tomorrow. Follow-up tomorrow 2 PM UK. Pulse Poor.` },
+      { csm: 'varun', account: `Exclusive Networks`, health: 'Healthy',
+        note: `API setup for customer data platform (cyber security space focus). Sandbox for Lewis + Ben w/ API credits. Renewal Exclusive Networks 2024 Renewal/Up2026.` },
+      { csm: 'andy', account: `ADP, Inc`, health: 'Healthy',
+        note: `TR monthly (short 8m; Pam joint speaker) &mdash; Buyer's Choice secured. Ratings-to-review campaign initiated. Jill championing renewal.` },
+      { csm: 'riley', account: `Red Hat, LLC (TR)`, health: 'Healthy',
+        note: `Precision Demand Leads program overview &mdash; HG-integrated targeting + AI-generated sales briefs. Custom Red Hat brief in progress. Hosted market reports w/ LLM/AI SEO boost.` },
+      { csm: 'rani', account: `Hitachi Vantara`, health: 'Concerning',
+        note: `Clay credit surplus optimization &mdash; more cost-effective to purchase HDI via Clay before March renewal. Intent contract now 1-year. Upcoming Clay in-platform caching + HDI packaging. Pulse Poor.` },
+      { csm: 'nick', account: `Lenovo Group Ltd. (Lenovo Connect)`, health: 'Concerning',
+        note: `Major misalignments &mdash; AI spend scope + MCP&rarr;data feed transition + PTB scores removed from SOW + city-level matching gap + data-delivery simplification. Reconvene next week. Pulse Poor.` },
+      { csm: 'andy', account: `SAS Institute EMEA`, health: 'Healthy',
+        note: `Short EMEA weekly sync. Edge gene sites summit prep + new AI features (product momentum + copilot). Sales-input tracking challenge for renewal evidence.` },
+      { csm: 'rani', account: `NetApp (Seattle prep)`, health: 'Healthy',
+        note: `Prep for 3-hour in-person session next Wednesday w/ NetApp executives. Agenda: cloud spend + 15k accounts + propensity + AI/Neo cloud.` },
+      { csm: 'riley', account: `SAP Inc (TR SF Connect)`, health: 'Healthy',
+        note: `SuccessFactors Connect event prep &mdash; video + audio reviews prioritized (target 60+); 55 engaged customers targeted; wine cellar room + banner backdrop.` },
+      { csm: 'riley', account: `Adobe Systems Incorporated (TR)`, health: 'Concerning',
+        note: `TR success call &mdash; renewal proposal largely aligned; event support cost $15K bundled discount. Alison OOO Oct 5-16; Giacomo covering. Pulse Concerning.` },
+      { csm: 'rani', account: `CloudFlare Inc`, health: 'Concerning',
+        note: `Contract pricing concerns on $600K package. Zscaler-based data visualization for value demo. Potential 144K org data add at $0 cost. Follow-up Friday. Pulse Poor.` },
+      { csm: 'riley', account: `SAP Inc (TR Ariba+Fieldglass)`, health: 'Healthy',
+        note: `Connect event planning + review-drive coordination. Meeting Monday 1:30 PM EST w/ Janessa + Smitha to plan Connect + drive reviews.` },
+      { csm: 'divyam', account: `HubSpot`, health: 'Healthy',
+        note: `TR monthly &mdash; HubSpot CRM 59 reviews (Top Rated + Buyer's Choice qualified). Review campaign breakdown across all hubs by tomorrow. Renewal HubSpot Ultimate 2027.` },
+      { csm: 'rani', account: `Lenovo Group Ltd. (2nd sync)`, health: 'Concerning',
+        note: `Data quality issues (DUNS + naming inconsistencies) + 500K-account limit constraining marketing. Multi-year renewal + RGI platform + HG Academy discussion. Pulse Poor.` },
+    ],
+  };
+}
+
+function dayMeta_2026_09_30() {
+  return {
+    pills: [
+      ['dot-teal',   '15 Calls'],
+      ['dot-amber',  '5 Expansion'],
+      ['dot-red',    '5 Concerning'],
+      ['dot-green',  '15 Vitally Pulses'],
+      ['dot-grey',   'Wed Sep 30 &middot; 95 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (15)', 'Pulses (15)', 'Action Items (8)']
+  };
+}
+
+function dayOverviewHTML_2026_09_30() {
+  return `<div class="section-label">Team Activity &mdash; Wednesday September 30, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Wednesday Sep 30 &mdash; 95 recordings scanned</strong> via SFDC SOQL &middot; <strong>15 confirmed calls</strong> across 7 CSMs (Atisha idle) &middot; 5 Concerning &middot; 5 Expansion signals &middot; SFDC confirmed 1; Weflow fallback added 14 unique recoveries. Riley + Rani + Andy tied at 4 calls each; Nick 2; Pam supported on ADP.
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>5 EXPANSION:</strong> Red Hat TR (Precision Demand Leads program overview + AI-generated sales briefs) &middot; Exclusive Networks (API sandbox setup for customer data platform) &middot; HubSpot (Top Rated + Buyer's Choice qualified; review campaign breakdown) &middot; SAP SuccessFactors Connect (video+audio review capture for 60+ target) &middot; CloudFlare (144K org data add at $0 cost + Zscaler-based value demo)
+  </div>
+  <div style="background:#2a1f1f;border:1px solid #b45309;border-left:3px solid #b45309;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>5 CONCERNING:</strong> Lenovo Connect (pulse Poor; major misalignments across AI spend + MCP + PTB + L2 matching) &middot; Sage (pulse Poor; Winter '27 Salesforce connector technographics blocker) &middot; CloudFlare (pulse Poor; $600K pricing concerns) &middot; Hitachi (pulse Poor; Clay credit surplus + shorter contracts) &middot; Adobe (pulse Concerning; event-support cost + Oct 5-16 OOO)
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">4 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">4</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">4</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">106m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Red Hat TR (&#x1F4C8; Precision Demand Leads) &middot; SAP SF Connect prep &middot; Adobe TR (&#x26A0;&#xFE0F; renewal proposal) &middot; SAP Ariba+Fieldglass (Connect event coord)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">4 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">4</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">4</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">120m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Hitachi (&#x26A0;&#xFE0F; Clay credits) &middot; NetApp Seattle prep &middot; CloudFlare (&#x26A0;&#xFE0F; $600K pricing) &middot; Lenovo 2nd sync (&#x26A0;&#xFE0F; data quality)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="andy">
+      <span class="call-badge">3 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">3</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">107m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Sage (&#x26A0;&#xFE0F; Winter '27 Salesforce connector blocker) &middot; ADP TR (w/ Pam) &middot; SAS EMEA short sync</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">132m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">HCLSoftware (product filter issues) &middot; Lenovo Connect (&#x26A0;&#xFE0F; major partnership realignment, 106m)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">39m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Exclusive Networks (&#x1F4C8; API sandbox setup for cyber security customer data platform)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">20m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">HubSpot (&#x1F4C8; Top Rated + Buyer's Choice; review campaign breakdown)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="pam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">8m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">ADP TR joint w/ Andy (Buyer's Choice + ratings-to-review campaign)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="atisha">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">AW</div><div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No confirmed customer calls. Deloitte 6 AM PT event had no recording synced; no Weflow-participant hits.</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_09_30() {
+  return `<div class="section-label">Confirmed Calls &mdash; Wednesday September 30, 2026</div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>5 EXPANSION:</strong> Red Hat TR (Precision Demand Leads) &middot; Exclusive Networks (API sandbox) &middot; HubSpot (Top Rated + Buyer's Choice) &middot; SAP SF Connect (60+ video/audio reviews) &middot; CloudFlare (144K org data add at $0)
+  </div>
+  <div style="background:#2a1f1f;border:1px solid #b45309;border-left:3px solid #b45309;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>5 CONCERNING:</strong> Lenovo Connect (major misalignments; pulse Poor) &middot; Sage (Winter '27 blocker; pulse Poor) &middot; CloudFlare (pricing; pulse Poor) &middot; Hitachi (Clay credit surplus; pulse Poor) &middot; Adobe (event support cost; pulse Concerning)
+  </div>`;
+}
+
+function dayPulsesHTML_2026_09_30() {
+  const cards = [
+    { csm:'nick', health:'Healthy', account:`HCLSoftware`, opp:`Vitally Pulse &mdash; Sep 30 Call`, arr:`Enterprise &middot; Nick Johnson`, csmlbl:`Nick Johnson`, change:`Sep 30 &middot; Healthy`,
+      excerpt:`Support call re product filtering limitations for IBM Workload Automation + Broadcom Automation in Greece/Israel/Turkey. Nick investigating backend tagging + feeding back inconsistencies to product team.` },
+    { csm:'andy', health:'Concerning', account:`Sage Global Services`, opp:`Vitally Pulse &mdash; Sep 30 Call`, arr:`Enterprise &middot; Andy Lim`, csmlbl:`Andy Lim`, change:`Sep 30 &middot; Concerning`,
+      excerpt:`Winter '27 release blocker &mdash; Salesforce connector technographics not appearing. "Localized installs" + "country level matching" settings suspected. Test sync tonight/tomorrow. Follow-up tomorrow 2 PM UK. Pulse Poor.` },
+    { csm:'varun', health:'Healthy', account:`Exclusive Networks`, opp:`Vitally Pulse &mdash; Sep 30 Call`, arr:`Enterprise &middot; Varun Tiwari`, csmlbl:`Varun Tiwari`, change:`Sep 30 &middot; Healthy`,
+      excerpt:`API setup for customer data insights platform (cyber security focus). Sandbox for Lewis + Ben w/ API credits. Renewal Exclusive Networks 2024 Renewal/Up2026.` },
+    { csm:'andy', health:'Healthy', account:`ADP, Inc`, opp:`Vitally Pulse &mdash; Sep 30 Call`, arr:`Enterprise &middot; Andy Lim (+ Pam Huck)`, csmlbl:`Andy Lim`, change:`Sep 30 &middot; Healthy`,
+      excerpt:`Short 8m TR monthly &mdash; Buyer's Choice qualification secured for year. Ratings-to-review campaign initiated. Jill championing renewal.` },
+    { csm:'riley', health:'Healthy', account:`Red Hat, LLC (TR)`, opp:`Vitally Pulse &mdash; Sep 30 Call`, arr:`Enterprise &middot; Riley Rogers`, csmlbl:`Riley Rogers`, change:`Sep 30 &middot; Healthy`,
+      excerpt:`Precision Demand Leads program overview &mdash; HG-integrated targeting + AI-generated sales briefs. Custom Red Hat brief in progress. Hosted market reports w/ LLM/AI SEO boost.` },
+    { csm:'rani', health:'Concerning', account:`Hitachi Vantara`, opp:`Vitally Pulse &mdash; Sep 30 Call`, arr:`Enterprise &middot; Rani Guy`, csmlbl:`Rani Guy`, change:`Sep 30 &middot; Concerning`,
+      excerpt:`Clay credit surplus optimization &mdash; more cost-effective to purchase HDI via Clay before March renewal. Intent contract now 1-year. Upcoming Clay in-platform caching + HDI packaging. Pulse Poor.` },
+    { csm:'nick', health:'Concerning', account:`Lenovo Group Ltd. (Lenovo Connect)`, opp:`Vitally Pulse &mdash; Sep 30 Call`, arr:`Enterprise &middot; Nick Johnson`, csmlbl:`Nick Johnson`, change:`Sep 30 &middot; Concerning`,
+      excerpt:`Major misalignments &mdash; AI spend scope + MCP&rarr;data feed transition + PTB scores removed from SOW + city-level matching gap + data-delivery simplification. Reconvene next week. Pulse Poor.` },
+    { csm:'andy', health:'Healthy', account:`SAS Institute EMEA`, opp:`Vitally Pulse &mdash; Sep 30 Call`, arr:`Enterprise &middot; Andy Lim`, csmlbl:`Andy Lim`, change:`Sep 30 &middot; Healthy`,
+      excerpt:`Short EMEA weekly sync. Edge gene sites summit prep + new AI features (product momentum + copilot). Sales-input tracking challenge for renewal evidence.` },
+    { csm:'rani', health:'Healthy', account:`NetApp (Seattle prep)`, opp:`Vitally Pulse &mdash; Sep 30 Call`, arr:`Enterprise &middot; Rani Guy`, csmlbl:`Rani Guy`, change:`Sep 30 &middot; Healthy`,
+      excerpt:`Prep for 3-hour in-person session next Wednesday w/ NetApp executives. Agenda: cloud spend + 15k accounts + propensity + AI/Neo cloud.` },
+    { csm:'riley', health:'Healthy', account:`SAP Inc (TR SF Connect)`, opp:`Vitally Pulse &mdash; Sep 30 Call`, arr:`Strategic &middot; Riley Rogers`, csmlbl:`Riley Rogers`, change:`Sep 30 &middot; Healthy`,
+      excerpt:`SuccessFactors Connect event prep &mdash; video + audio reviews prioritized (target 60+); 55 engaged customers targeted; wine cellar room + banner backdrop.` },
+    { csm:'riley', health:'Concerning', account:`Adobe Systems Incorporated (TR)`, opp:`Vitally Pulse &mdash; Sep 30 Call`, arr:`Strategic &middot; Riley Rogers`, csmlbl:`Riley Rogers`, change:`Sep 30 &middot; Concerning`,
+      excerpt:`TR success call &mdash; renewal proposal largely aligned; event support cost $15K bundled discount. Alison OOO Oct 5-16; Giacomo covering. Pulse Concerning.` },
+    { csm:'rani', health:'Concerning', account:`CloudFlare Inc`, opp:`Vitally Pulse &mdash; Sep 30 Call`, arr:`Enterprise &middot; Rani Guy`, csmlbl:`Rani Guy`, change:`Sep 30 &middot; Concerning`,
+      excerpt:`Contract pricing concerns on $600K package. Zscaler-based data visualization for value demo. Potential 144K org data add at $0 cost. Follow-up Friday. Pulse Poor.` },
+    { csm:'riley', health:'Healthy', account:`SAP Inc (TR Ariba+Fieldglass)`, opp:`Vitally Pulse &mdash; Sep 30 Call`, arr:`Strategic &middot; Riley Rogers`, csmlbl:`Riley Rogers`, change:`Sep 30 &middot; Healthy`,
+      excerpt:`Connect event planning + review-drive coordination. Meeting Monday 1:30 PM EST w/ Janessa + Smitha to plan Connect + drive reviews.` },
+    { csm:'divyam', health:'Healthy', account:`HubSpot`, opp:`Vitally Pulse &mdash; Sep 30 Call`, arr:`Enterprise &middot; Divyam Dewan`, csmlbl:`Divyam Dewan`, change:`Sep 30 &middot; Healthy`,
+      excerpt:`TR monthly &mdash; HubSpot CRM 59 reviews (Top Rated + Buyer's Choice qualified). Review campaign breakdown across all hubs by tomorrow. Renewal HubSpot Ultimate 2027.` },
+    { csm:'rani', health:'Concerning', account:`Lenovo Group Ltd. (2nd sync)`, opp:`Vitally Pulse &mdash; Sep 30 Call`, arr:`Enterprise &middot; Rani Guy`, csmlbl:`Rani Guy`, change:`Sep 30 &middot; Concerning`,
+      excerpt:`Data quality issues (DUNS + naming inconsistencies) + 500K-account limit constraining marketing. Multi-year renewal + RGI platform + HG Academy discussion. Pulse Poor.` },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div class="pulse-account">${c.account}</div>
+          <div class="pulse-opp">${c.opp}</div>
+          <div class="pulse-arr">${c.arr}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_09_30() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('3001')?'done':''}" data-csm="nick" id="action-3001">
+      <div class="action-checkbox ${doneActions.has('3001')?'checked':''}" onclick="toggleAction('3001')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; Lenovo Connect &mdash; realign AI spend + PTB + MCP transition + L2 matching + data delivery simplification (reconvene next week)</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Nick Johnson + Adrian Escobar + Gavin Padden + Alexi Mouarkach + David Crossman + Fiona O'Brien + Anuradha Sathe + Antaleena Ganguly &middot; HG team to provide clear response re ongoing Gen AI + AI spend data inclusion + finalize revised account-matching methodology aligned w/ L2 requirements + share detailed report on current match rates + logic by tomorrow + confirm AI spend inclusion in October refresh + align on PTB outputs + agree on roadmap for news delivery + simplify data delivery (delta-based) + share monthly QC reports. Vibhu to convene internally + provide proposed timeline within next day or so. Reconvene next week. Pulse Poor.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('3002')?'done':''}" data-csm="andy" id="action-3002">
+      <div class="action-checkbox ${doneActions.has('3002')?'checked':''}" onclick="toggleAction('3002')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; Sage &mdash; disable localized installs + country level matching + test sync + follow-up tomorrow 2 PM UK</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Andy Lim + Darren Horvath + Nathan Ward &middot; Nathan to disable localized installs + country level matching settings + run sync on Bayer LLC (German address) test entity tonight/tomorrow. Darren to schedule follow-up meeting tomorrow 2 PM UK + export data for known company w/ technographics from ZoomInfo to compare. Andy to investigate if technographics data exists for Bayer LLC + check if HGIDs available. Pulse Poor.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('3003')?'done':''}" data-csm="rani" id="action-3003">
+      <div class="action-checkbox ${doneActions.has('3003')?'checked':''}" onclick="toggleAction('3003')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; CloudFlare &mdash; Zscaler-based value demo EOD + $600K package rethink + Friday follow-up</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy + James Tudway + Martin Kielczewski &middot; Rani to provide Zscaler-based data visualization demonstrating current vs expanded coverage by EOD today or first thing tomorrow. James + Rani to rethink $600K package to reflect potential scope changes + discounts by Friday + discuss including additional 144K organizations' data at zero cost. Martin to work on highlighting value proposition + urgency to leadership + multi-year contract component. Follow-up Friday. Pulse Poor.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('3004')?'done':''}" data-csm="rani" id="action-3004">
+      <div class="action-checkbox ${doneActions.has('3004')?'checked':''}" onclick="toggleAction('3004')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; NetApp Seattle &mdash; 3-hour in-person session prep by Friday agenda / Monday review / Wednesday meeting</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy + Adrian Escobar + Gabe Weske + Megan Santiago-Gould &middot; Gabe + Megan to schedule internal Friday agenda time. Adrian + Rani to prepare + send draft agenda to Gabe + Megan by Friday. Monday meeting w/ Gabe + HGI to discuss agenda in detail + assign topic leads. Align on final agenda + attendees by Tuesday. HGI team to connect w/ SMEs internally to confirm attendance + readiness by Friday. Adrian + Rani to provide updated AI spend info + share cloud spend + wallet share analysis before Wednesday meeting. HGI team to provide first run of propensity model for 1600 specific accounts by end of October.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('3005')?'done':''}" data-csm="divyam" id="action-3005">
+      <div class="action-checkbox ${doneActions.has('3005')?'checked':''}" onclick="toggleAction('3005')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; HubSpot &mdash; review campaign breakdown + 2-year data pull + insights draft (by tomorrow)</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Divyam Dewan + Max Shaw + Anderson Duncan + Jordan Montgomery &middot; Divyam to provide breakdown of review campaign results across all hubs in Excel format by tomorrow + pull review data for all products from last 2 years incl. review content/links + provide initial insights draft for marketing + sales use cases + confirm if review data export for all products is possible. Jordan to schedule delivery for AI reports via email before next meeting.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('3006')?'done':''}" data-csm="rani" id="action-3006">
+      <div class="action-checkbox ${doneActions.has('3006')?'checked':''}" onclick="toggleAction('3006')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; Hitachi &mdash; Clay credit optimization + upcoming Clay features monitoring + HDI pricing share before March renewal</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Rani Guy + Adrian Escobar + Rebecca Klein + Umar Farooq Adam &middot; Umar to keep log of Clay credit usage for HDI data to compare costs w/ direct HDI purchases + monitor Clay development of in-platform caching + HDI packaging. Rani to touch base w/ partner team working w/ Clay for more clarity on upcoming features + packages + offer roadmap discussion + share HDI pricing structure w/ Umar + Rebecca before Clay renewal in March. Rebecca + Umar to continue internal discussions + evaluate data source value/cost-effectiveness. Pulse Poor.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('3007')?'done':''}" data-csm="riley" id="action-3007">
+      <div class="action-checkbox ${doneActions.has('3007')?'checked':''}" onclick="toggleAction('3007')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Red Hat TR &mdash; custom brief + presentation slides + geo-hosted market report info</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Riley Rogers + Cole Arutian + Mardigan Moffat + Jennifer Nomides + Brianna Gault + Andrew King &middot; Cole to send presentation slides to Andrew + Brianna + create custom example brief for Red Hat + track down more info on geo-hosted market reports. Andrew to review custom brief + Red Hat product example brief. Brianna to report back + pass info along to team.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('3008')?'done':''}" data-csm="varun" id="action-3008">
+      <div class="action-checkbox ${doneActions.has('3008')?'checked':''}" onclick="toggleAction('3008')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Exclusive Networks &mdash; API sandbox setup for Lewis + Ben + PIM/MDM integration discussion</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Varun Tiwari + Angus Hyams + Rishabh Wadhwa + Alexi Mouarkach + Matt Tinker + Ben Abraham &middot; Angus + Rishabh to set up sandbox environment for Lewis + Ben w/ API credits. Ben + Lewis to explore API documentation + begin familiarization. Ben to investigate responsibility for PIM/MDM systems + relevant data structure conversations. Ben/Lewis/Nyle to discuss data structure integration w/ PIM/MDM teams (Nile's input by Wednesday next week).</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
