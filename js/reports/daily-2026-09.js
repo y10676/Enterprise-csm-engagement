@@ -6723,3 +6723,394 @@ function dayActionsHTML_2026_09_21() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
 }
+
+function dayData_2026_09_28() {
+  return {
+    calls: [
+      { ts: 'Sep 28 &middot; 2:00 AM', csm: 'nick', account: `HCLSoftware`,
+        note: `HCL onboarding session w/ Poonam Fotedar + Navneet Kaur + Soumya Kattimani + Mohan Kewalramani + Hariharan P. New HG platform intro: account intelligence + IT spend + technographics + new AI scoring for AppScan ICP. Credit-based export system. Next session Oct 12.`,
+        mins: 52, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `HCL onboarding to new HG platform. Features covered: account-level data intelligence + IT spend projection models + technographics (job postings + sources) + new AI scoring functionality for ICP identification + propensity to buy (esp. for AppScan). Access + license management being finalized (Aditi + Aditya assignments + potential transfers due to org changes). Credit-based data-export system; users to be mindful of consumption + focus on relevant exports. HG committed to ongoing onboarding + HG Academy resources. Next: Nick to send recording + docs + update license assignments for Aditi + Aditya + share invite for Oct 12 follow-up + investigate excluding specific spend categories from exports + speak to account manager re HG-HCL proposal + potential Claude integration setup. Mohan to establish internal mechanism for tracking data downloads to avoid duplication. HCL team to explore platform + utilize HG Academy + create standard templates for "Safe Collections" product exports. Follow-up scheduled week of Oct 12. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 28 &middot; 2:00 AM', csm: 'atisha', account: `Check Point Software Technologies, Inc.`,
+        note: `Check Point handoff sync w/ David Garcia Thomas + Nick Johnson + Uri Nishry + Ariel Keinan + Hadas Arazi + Assaf Cohen. Atisha introduced as new CSM (handoff from Nick). Data enrichment + AI initiatives + centralized data lakehouse. New Edge Insights datasets (corporate hierarchies + contextual intent + TR buyer intent + contact data). Renewal Check Point Platform 2027 + Universe feed expansion opps.`,
+        mins: 29, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Mixed',
+        detail: `Check Point CSM handoff + strategic sync. Atisha introduced as new Customer Success Manager taking over account management for next year (Nick continues to be involved). Checkpoint team (Uri Nishry leading Rev Ops project + Ariel Keinan + Hadas Arazi + Assaf Cohen) shared ongoing data enrichment + AI + transformation projects. Current AGI data uses: CRM enrichment (firmographic + technographic). Potential expansion: intent data + AI-driven insights + centralized data lakehouse. Edge Insights launched new datasets: corporate hierarchies + contextual intent + TrustRadius buyer intent + contact data &mdash; more actionable insights. Next: Atisha to follow up w/ David + Nick re contact-data accuracy + coverage in target countries + share contact documentation + discuss contact-data scoping for target countries + research target-country data + report back to Checkpoint. Checkpoint team to review shared link on data sets + copilot + agents + MCP offline. Renewal Check Point Platform 2027 + Check Point Universe feed expansion opps in play. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 28 &middot; 5:00 AM', csm: 'nick', account: `Infor (US), LLC (Renewal debrief)`,
+        note: `Infor onsite debrief w/ Augie Buettner + Clayton Cutbush + Nicole Morgan. Formal approvals moving fast &mdash; updates end of day. Platform upgrade tech: new data elements (relative spend + time series + firmographic) integrated into Snowflake. Semantic layer updates needed for propensity model. Working session next Monday.`,
+        mins: 19, health: 'Concerning',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Check-in',
+        detail: `Infor onsite debrief for HG renewal + platform upgrade. Formal approvals moving quickly &mdash; end-of-day updates expected. New HG platform introduces new data elements (relative spend + time series + firmographic) integrated into Snowflake. HG updates data feed; Infor needs semantic-layer updates to correctly interpret + utilize new elements for propensity model. Time series data will be "chunky" (detailed product detection over time). Data refresh: monthly first-of-month deliveries, full refresh w/ duplicated data from prior month for ETL processing. Working session scheduled next Monday. Next: Nicole to provide approval status EOD + schedule working session w/ Melissa + Ossif + Shailene's org for propensity-model needs + share Infor's current semantic-layer setup w/ Augie + create working-session agenda. Augie to share team POVs on product tracking (ERP + broad HCM/Supply Chain/Workforce/AWS + partner tracking). Nick to provide document on new data files + integration. Tom Lundis team to leverage existing semantic views + data eng resources if needed. Pulse Poor. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 28 &middot; 6:00 AM', csm: 'varun', account: `CIENA Corporation`,
+        note: `Ciena monthly checkin w/ Calum Walsh (back from PTO). Discussion of dashboards Calum built for financial-institutions targeting across Europe using HG platform data (revenue + communications budget filters). Pivot-table views for top-30 by industry.`,
+        mins: 23, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `Ciena monthly checkin. Calum returned from PTO. Model working well; Calum + Josh actively using data. Calum shared dashboard demo: pre-filtered by European countries + industry (e.g. financial institutions) + revenue + communications budget. Pivot table for top-N views by industry. Uses HG platform data (revenue + comms budget shared data points) for customer prospect lists. Varun asked follow-up on revenue calculation methodology (sum of total revenue for Allianz example). Confirmed via SFDC transcript speaker detection.`, source: 'sfdc' },
+
+      { ts: 'Sep 28 &middot; 6:30 AM', csm: 'nick', account: `Softcat Ltd`,
+        note: `Softcat monthly sync w/ David Garcia Thomas + Sara Ewen. Marketo implementation underway + GDT acquisition through US gov approval (multi-year integration). D365 must remain master data source vs Marketo. In-person meeting late Oct / early Nov. Renewal Softcat Platform 2027.`,
+        mins: 29, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `Softcat monthly sync. Marketo implementation underway for marketing automation + thought leadership (better customer segmentation + proactive approach). D365 must remain master data source vs Marketo (avoid data discrepancies between systems). GDT acquisition progressing through US government approval; significant integration period expected (potentially several years to fully combine operations + systems). Initial data + system analysis for GDT limited; scope of integration unclear. Existing data structures for multinational entities provide foundation, but GDT integration will require review + potential re-running of data counts + reports. Next: Sara to review + provide feedback on shared data points + coordinate w/ Luke + John O re in-person meeting availability + investigate GDT's current data + systems + tech stack. David + Nick to share potential dates for in-person meeting (late Oct / early Nov). David to explore running data counts + reports separately for Softcat + GDT during initial integration period. Renewal Softcat Platform HGSCPGLH0909 2027 + Softcat Early Renewal + International Expansion opps in play. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 28 &middot; 7:00 AM', csm: 'nick', account: `Veeam Software AG`,
+        note: `Veeam account alignment w/ Angus Hyams + Alexi Mouarkach + Victor Criclivii. Deduplication discrepancies &mdash; HGI company IDs in match types (should not be in recent data per Alexi; Victor's legacy data shows them). ETL process + data corruption suspected. Renewal Veeam Global Platform + Universe Feed Expan2026. Pulse Poor.`,
+        mins: 49, health: 'Concerning',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Issue',
+        detail: `Veeam account alignment focused on deduplication process discrepancies. HGI company IDs found in match types &mdash; Alexi confirmed should NOT be present in recent data; Victor's legacy data shows them. Potential root causes: ETL process issues + data corruption. Current dedup logic prioritizes match types; alignment on scoring/prioritization needed. Alexi recommended refined scoring: DUNS highest, then name, then URL + country. Victor's team retaining historical data; Alexi advises against (leads to outdated info; use latest monthly files instead). Next: Victor to investigate ETL process + data handling + close out accounts if no update from other side + revisit deduplication process + adjust case statement to assign scores to match types + verify team correctly filtering for latest data (not 2024 historical) + work w/ analytics engineers to finalize consolidation of spend tables to add legacy account ID. Alexi to query latest files directly from S3 to identify root cause of HGI company ID presence in match types + provide Victor w/ specific examples from September files. Pulse Poor. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 28 &middot; 8:00 AM', csm: 'andy', account: `Infoblox Inc`,
+        note: `Infoblox monthly cadence w/ Charles Hawkins + Ishant Mulani + Andrew Fetick. Data file formatting: consolidate 3 files (contract + spend + install) into one w/ 3 tabs. Platform migration to RGIP/RGIF (AI outbound scoring + credit-based model). New AM Bryson intro. Rate sheet + Glean integration follow-up.`,
+        mins: 14, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Mixed',
+        detail: `Infoblox monthly cadence. Data file formatting consistency crucial for Andrew's Python model &mdash; consolidate 3 files (contract + spend + install) into one w/ separate tabs. Platform migration to new RGIP/RGIF: enhanced features incl. AI outbound scoring + credit-based consumption model (replaces previous consumption model). Existing segments + safe searches + DAM/SAM analysis + CRM connections + scoring profiles + export history + remaining credits accessible on new platform. New AI outbound scoring: easier model creation + chatbot interaction via ICP + domain, no additional cost. Follow-up meeting needed to discuss cost/feasibility of connecting rate sheet data to Glean (internal AI tool). Next: Ishant to combine 3 files into one w/ 3 tabs by tomorrow / day after + confirm w/ data team re third file + send email confirming completion + block calendar for Glean discussion + bring new account manager Bryson to next call next week. Andrew to complete CAPDB tasks before focusing on migration. Renewal Infoblox Opp Gen + MI Tool 2027 opp in play. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 28 &middot; 8:00 AM', csm: 'nick', account: `Infor (US), LLC (Hierarchy analysis)`,
+        note: `Infor hierarchy analysis w/ Augie Buettner + Clayton Cutbush + Nicole Morgan + Prasanna Jayashankar + Matt Meyer. HG Insights data for buying-entity ID + sales/marketing hierarchies (potential D&amp;B replacement for those); D&amp;B remains crucial for legal/financial. Migration plan to develop internally. Pulse Poor.`,
+        mins: 28, health: 'Concerning',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Expansion',
+        detail: `Infor account hierarchy analysis. HG Insights data promising for identifying buying entities &mdash; potentially better than D&amp;B for this specific need. Significant firmographic-data overlap between HG + D&amp;B; consolidation review warranted. HG highly valuable for sales/marketing hierarchy needs (more market-ready view vs D&amp;B's legal hierarchy). D&amp;B remains essential for legal, tax, and A/R requirements due to robust legal-hierarchy structure. Data completeness + quality (headcount + revenue) are crucial factors for Infor's internal analysis + potential shift away from D&amp;B. Next: Prasanna to analyze provided data further + return w/ questions. Infor team to develop internal plan for process shifts + potential migration to HG Insights if data deemed suitable + review + share perspective on "HCI Field Reference Guide" doc. Nicole to manually download + resend HCI Field Reference Guide (currently inaccessible) within minutes. Pulse Poor. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 28 &middot; 8:45 AM', csm: 'riley', account: `Intuit Mailchimp`,
+        note: `Mailchimp TR bi-weekly success call (short 12m) w/ Spencer Adkins + Mardigan Moffat. Buyer's Choice good (Nov 10 announcement). Jan 1 renewal &mdash; keep at $45K (down from $60K package); Mardigan working w/ Intuit procurement (4-5 different contracts + procurement contacts).`,
+        mins: 12, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Mixed',
+        detail: `Mailchimp TR bi-weekly success call. Buyer's Choice qualification good (Nov 10 announcement). Jan 1 renewal coming up. Mardigan brought on to accelerate renewal discussion. Budget-conscious environment ("do more w/ less" across the board) &mdash; agreed to keep at $45K package (down from $60K) to keep things simple + get renewed for good partnership continuation. Spencer confirmed alignment w/ his internal notes from Q2 discussion (Jan 2027 target of $45K). Intuit has 4-5 different contracts (AES group + desktop enterprise + different pockets) + 4-5 procurement contacts. TR-to-HG-Insights vendor-change paperwork already completed. Mardigan already going through renewals w/ IES team. Confirmed via SFDC transcript speaker detection.`, source: 'sfdc' },
+
+      { ts: 'Sep 28 &middot; 10:00 AM', csm: 'divyam', account: `BILL Operations, LLC and its Affiliates`,
+        note: `BILL weekly sync w/ Charles Hawkins + Kristen Malkovich + Eric Nguyen. New Data Studio version w/ generative AI chat interface. Copilot training sessions scheduled week after next (separate marketing + sales). Direct API integration vs Clay cost-benefit analysis.`,
+        mins: 24, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `BILL weekly sync focused on Data Studio + Copilot updates. New Data Studio version features generative-AI chat interface for intuitive model building + updates + explainability. Copilot tool improved explainability features crucial for user adoption + understanding. Using API key directly can be more cost-effective than going through Clay (esp. for high volumes &gt;5000 requests) &mdash; exploring direct API integration to reduce Clay markup on credits. Separate marketing + sales Copilot training sessions recommended due to distinct needs + questions &mdash; scheduled week after next. Next: Charles to schedule call w/ Kristen + Heenal + Kaden to walk through new Data Studio version this week + share updated dataset w/ Eric + coordinate w/ Eric to set up meeting w/ internal product people to demo new Data Studio + send Heenal times for October meeting. Eric to clean up data by removing self-serve folks this week + prepare high-level analysis for leadership week after next + prepare MQL order-of-operations diagram/walkthrough. Kristen to determine right audiences for Copilot training on marketing side + ask Renee about sales enablement + who to include in sales training + aim for week-after-next for marketing + sales Copilot training sessions. Heenal to take point on sales-side Copilot training. Kaden to take point on marketing-side Copilot training. Renewal BILL 2027 + Bill HG API for Clay opps in play. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 28 &middot; 11:00 AM', csm: 'atisha', account: `Digital Realty Trust L.P.`,
+        note: `DRT Strategy Planning w/ Leo Zunz + Stuart Wang + Amanda Jin. Edgy data to CRM mapping target end of October. New GTM engineering team forming. AI workflow integration (edgy as plugin to Microsoft Copilot). Follow-up Oct 12 w/ new GTM eng leader. Pulse Poor.`,
+        mins: 20, health: 'Concerning',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Digital Realty strategy planning focused on integrating edgy data into AI-enabled workflows for sales + marketing. GTM engineering team forming w/ new leader joining + Sohail providing technical support. Mapping edgy data to CRM is priority: target end of October. Future goals: account prioritization + targeting + scoring using integrated data. Edgy data includes demographic + corporate hierarchy + technographic + intent + trust radius + maturity data. AI workflows enhanced by integrating edgy data as plugin to existing LLMs like Microsoft Copilot (significant time savings on account research + email drafting). Next: Atisha to follow up w/ Sohail re mapping process + keep Stuart in loop by end of October + log Stuart + Amanda in once mapping starts + share MCP w/ Copilot documentation + schedule follow-up meeting for Oct 12 + invite new GTM engineering leader + connect Stuart w/ new account manager Julian. Stuart to check on initiation of AI workflow project w/ Zach + Tyler + provide feedback on virtual customer conference. Renewal DRT 2027 opX opp. Pulse Poor. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 28 &middot; 11:00 AM', csm: 'pam', account: `Microsoft`,
+        note: `Microsoft weekly sync w/ Noah Alford + Mark Fell + Rishabh Wadhwa. Parquet data delivery format for test folder + revised matching set tomorrow. Additional topics + fit/need/intent prioritization + new "momentum" feature for growing companies. Digital natives project urgency w/ Sam. Mark Teams-access issue.`,
+        mins: 53, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Mixed',
+        detail: `Microsoft weekly sync. Revised matching set to be delivered by tomorrow/day after. Discussion of Parquet file format delivery &mdash; test folder to be set up for user testing. Ongoing effort to address duplicate data entries reported by eng team. "Fit, need, intent" model crucial for prioritization &mdash; "intent" represents buying cycle + market readiness. New "momentum" feature being developed to identify growing companies + ISVs (significant advantage). Technical Teams-access issue for Mark Fell causing communication problems &mdash; needs urgent resolution. Next: Pam to continue delivering existing file format + set up Parquet test folder + confirm w/ Will re adding ~19 additional products + send updated product track list for databases to Mark. Ankita to provide revised matching set by tomorrow/day after. Mark to track down duplicate data entries w/ eng team + investigate Teams access issue. Will + Mark to discuss credits + strategic data additions separately. Rishabh to identify top 10-20 requested new topics from additional 100 for tight/crisp list. Will to schedule follow-up w/ Mark re Teams access + potentially w/ Jordan Sheridan about Corey's project + push Sam re digital-natives project urgency + potential Q1 initiatives by tomorrow's meeting + discuss digital-natives project w/ Sam to clarify requirements + timelines. Multiple opps in play (Contract Consolidation 2027 + Hardware/M365 Copilot Precision Demand Intel Pilots + TR Microsoft CVP+Mkt Report+Event Support Written Renewal). Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 28 &middot; 1:00 PM', csm: 'rani', account: `NetApp`,
+        note: `NetApp weekly sync w/ Adrian Escobar + Bini Valsala + Michael Danaher + Megan Santiago Gould. 115K account list refinement + propensity model for 600 expand + 1000 whitespace accounts. AI-native/cloud/sovereign cloud filtering request. EBR + kickoff logistics.`,
+        mins: 31, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `NetApp weekly sync. Update on 15K account list (actually 115K, being refined + matched for accuracy + gap ID). Propensity model under development for high-value "expand" + "whitespace" accounts &mdash; initial focus on top 600 expand + 1000 whitespace. Ongoing effort to identify + categorize AI-native + cloud + sovereign cloud companies &mdash; request for HG data to filter these types. Challenges w/ historical data (HQ revenue vs child companies) being addressed w/ relative revenue. Delivery mechanism for propensity scores + insights to sellers still being determined &mdash; near-term spreadsheets due to tight timelines; long-term more sophisticated solution. Next: Rani + team to walk through completed account matching + ID gaps for 15K accounts post-kickoff call tomorrow + follow up on conglomerate data + explore Neo cloud data categorization + roadmap. Megan to validate EBR meeting details w/ Gabriel + coordinate invite sharing. Michael's team to fold in third-party data to refine propensity model over next week + continue brainstorming propensity model focus + account targeting + develop initial spreadsheet reporting for sellers near-term + explore more sophisticated + scalable reporting solutions long-term. Rani to share AI company definitions + list w/ Bini + Michael to explore validation within HG's dataset + follow up on 15K list w/ Michael + Bini soon + prepare for kickoff call tomorrow + set up meeting for broader team once up + running. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+    ],
+    pulses: [
+      { csm: 'nick', account: `HCLSoftware`, health: 'Healthy',
+        note: `Platform onboarding &mdash; new HG platform intro: account intelligence + IT spend + technographics + new AI scoring for AppScan. Credit-based export system. Next session Oct 12.` },
+      { csm: 'atisha', account: `Check Point Software Technologies, Inc.`, health: 'Healthy',
+        note: `Handoff sync &mdash; Atisha introduced as new CSM (from Nick). Data enrichment + AI initiatives + centralized data lakehouse discussion. New Edge Insights datasets. Renewal Check Point Platform 2027 + Universe feed expansion opps.` },
+      { csm: 'nick', account: `Infor (US), LLC (Renewal debrief)`, health: 'Concerning',
+        note: `Onsite debrief &mdash; formal approvals moving fast (EOD updates). Platform upgrade tech: new data elements + Snowflake integration + semantic-layer updates needed for propensity model. Working session next Monday. Pulse Poor.` },
+      { csm: 'varun', account: `CIENA Corporation`, health: 'Healthy',
+        note: `Monthly checkin &mdash; Calum back from PTO. Dashboard demo for European financial-institutions targeting. Data working well; Calum + Josh actively using it for customer prospect lists.` },
+      { csm: 'nick', account: `Softcat Ltd`, health: 'Healthy',
+        note: `Monthly sync &mdash; Marketo implementation + GDT acquisition (US gov approval, multi-year integration). D365 as master data source vs Marketo. In-person meeting late Oct/early Nov. Renewal Softcat Platform 2027.` },
+      { csm: 'nick', account: `Veeam Software AG`, health: 'Concerning',
+        note: `Account alignment &mdash; deduplication discrepancies (HGI company IDs in match types; ETL + data corruption suspected). Renewal Veeam Global Platform 2026. Pulse Poor.` },
+      { csm: 'andy', account: `Infoblox Inc`, health: 'Healthy',
+        note: `Monthly cadence &mdash; data-file formatting consolidation + platform migration to RGIP/RGIF (AI outbound scoring + credit-based). New AM Bryson intro. Renewal Infoblox Opp Gen + MI Tool 2027.` },
+      { csm: 'nick', account: `Infor (US), LLC (Hierarchy analysis)`, health: 'Concerning',
+        note: `Account hierarchy analysis &mdash; HG for buying-entity ID + sales/marketing hierarchies (D&amp;B replacement candidate); D&amp;B stays for legal/financial. Migration plan to develop internally. Pulse Poor.` },
+      { csm: 'riley', account: `Intuit Mailchimp`, health: 'Healthy',
+        note: `TR bi-weekly &mdash; Buyer's Choice qualified (Nov 10 announcement). Jan 1 renewal keep at $45K (down from $60K package) to simplify. Intuit has 4-5 contracts + procurement contacts to navigate.` },
+      { csm: 'divyam', account: `BILL Operations, LLC and its Affiliates`, health: 'Healthy',
+        note: `Weekly sync &mdash; new Data Studio w/ generative AI chat interface. Separate Copilot training sessions week after next (marketing + sales). Direct-API vs Clay cost-benefit exploration. Renewal BILL 2027 + Bill HG API for Clay opps.` },
+      { csm: 'atisha', account: `Digital Realty Trust L.P.`, health: 'Concerning',
+        note: `Strategy Planning &mdash; edgy data to CRM mapping target end of October. New GTM engineering team forming. AI workflow integration via Microsoft Copilot. Follow-up Oct 12. Pulse Poor.` },
+      { csm: 'pam', account: `Microsoft`, health: 'Healthy',
+        note: `Weekly sync &mdash; Parquet data delivery + revised matching set tomorrow + fit/need/intent prioritization + new "momentum" feature for growing companies. Digital natives project urgency w/ Sam. Mark Teams-access issue.` },
+      { csm: 'rani', account: `NetApp`, health: 'Healthy',
+        note: `Weekly sync &mdash; 115K account list refinement + propensity model dev (600 expand + 1000 whitespace initial focus) + AI-native/cloud/sovereign cloud filtering. EBR + kickoff logistics.` },
+    ],
+  };
+}
+
+function dayMeta_2026_09_28() {
+  return {
+    pills: [
+      ['dot-teal',   '13 Calls'],
+      ['dot-amber',  '6 Expansion'],
+      ['dot-red',    '3 Concerning'],
+      ['dot-green',  '13 Vitally Pulses'],
+      ['dot-grey',   'Mon Sep 28 &middot; 67 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (13)', 'Pulses (13)', 'Action Items (8)']
+  };
+}
+
+function dayOverviewHTML_2026_09_28() {
+  return `<div class="section-label">Team Activity &mdash; Monday September 28, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Monday Sep 28 &mdash; 67 recordings scanned</strong> via SFDC SOQL &middot; <strong>13 confirmed calls</strong> across all 8 CSMs (full team active) &middot; 3 Concerning &middot; 6 Expansion signals &middot; SFDC confirmed 2; Weflow fallback added 11 unique recoveries. Nick took 5 calls (heavy day).
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>6 EXPANSION:</strong> HCLSoftware (new platform onboarding + AppScan AI scoring) &middot; Infor Hierarchy (D&amp;B replacement candidate for sales/marketing) &middot; BILL (new Data Studio generative-AI chat + Copilot training marketing+sales) &middot; DRT (edgy data to CRM + AI workflow via Copilot) &middot; NetApp (115K account propensity model + AI-native filtering) &middot; Check Point (Atisha handoff + Edge Insights new datasets + Universe feed expansion)
+  </div>
+  <div style="background:#2a1f1f;border:1px solid #b45309;border-left:3px solid #b45309;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>3 CONCERNING:</strong> Infor (pulse Poor; renewal + platform-upgrade approvals in flight; 2 calls today) &middot; Veeam (pulse Poor; dedup discrepancies + ETL corruption suspected) &middot; Digital Realty (pulse Poor; edgy-to-CRM mapping target end October)
+  </div>
+  <div style="background:#1c2333;border:1px solid #7c3aed;border-left:3px solid #7c3aed;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#c4b5fd;">
+    &#x1F91D; <strong>CSM TRANSITION:</strong> Atisha Waghela introduced as new CSM for Check Point (handoff from Nick Johnson; Nick continues involvement).
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">5 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">5</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">5</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">177m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">HCLSoftware (&#x1F4C8; platform onboarding) &middot; Infor debrief (&#x26A0;&#xFE0F;) &middot; Softcat (Marketo + GDT) &middot; Veeam (&#x26A0;&#xFE0F; dedup issues) &middot; Infor hierarchy (&#x1F4C8; D&amp;B replace candidate) &middot; also supported Atisha's Check Point handoff</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">49m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Check Point (&#x1F91D; new CSM handoff; &#x1F4C8; Edge Insights new datasets) &middot; DRT (&#x26A0;&#xFE0F; edgy-to-CRM Oct end target)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">23m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">CIENA monthly checkin (dashboard demo for European financial-institutions targeting)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="andy">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">14m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Infoblox monthly cadence (data-file consolidation + RGIP/RGIF platform migration + new AM Bryson)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">12m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Mailchimp TR (Jan 1 renewal $45K; Nov 10 Buyer's Choice; Intuit 4-5 contracts)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">24m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">BILL (&#x1F4C8; Data Studio generative-AI chat + Copilot training marketing+sales week after next)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="pam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">53m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Microsoft (Parquet delivery + fit/need/intent + new "momentum" feature + digital natives project urgency)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">31m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">NetApp (&#x1F4C8; 115K list + propensity model dev + AI-native/cloud/sovereign filtering)</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_09_28() {
+  return `<div class="section-label">Confirmed Calls &mdash; Monday September 28, 2026</div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>6 EXPANSION:</strong> HCLSoftware (platform onboarding + AppScan AI scoring) &middot; Infor Hierarchy (D&amp;B replace) &middot; BILL (Data Studio + Copilot training) &middot; DRT (edgy-to-CRM + Copilot AI workflow) &middot; NetApp (115K + propensity model) &middot; Check Point (Edge Insights new datasets)
+  </div>
+  <div style="background:#2a1f1f;border:1px solid #b45309;border-left:3px solid #b45309;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>3 CONCERNING:</strong> Infor (pulse Poor, renewal + upgrade in flight; 2 calls) &middot; Veeam (dedup + ETL corruption suspected) &middot; DRT (edgy-to-CRM Oct end target)
+  </div>
+  <div style="background:#1c2333;border:1px solid #7c3aed;border-left:3px solid #7c3aed;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#c4b5fd;">
+    &#x1F91D; <strong>CSM Transition:</strong> Atisha introduced as new CSM for Check Point (handoff from Nick).
+  </div>`;
+}
+
+function dayPulsesHTML_2026_09_28() {
+  const cards = [
+    { csm:'nick', health:'Healthy', account:`HCLSoftware`, opp:`Vitally Pulse &mdash; Sep 28 Call`,
+      arr:`Enterprise &middot; Nick Johnson`, csmlbl:`Nick Johnson`, change:`Sep 28 &middot; Healthy`,
+      excerpt:`Platform onboarding &mdash; new HG platform: account intelligence + IT spend + technographics + new AI scoring for AppScan ICP. Credit-based export system. Next session Oct 12.` },
+    { csm:'atisha', health:'Healthy', account:`Check Point Software Technologies, Inc.`, opp:`Vitally Pulse &mdash; Sep 28 Call`,
+      arr:`Enterprise &middot; Atisha Waghela (new CSM, handoff from Nick)`, csmlbl:`Atisha Waghela`, change:`Sep 28 &middot; Healthy`,
+      excerpt:`Handoff sync &mdash; Atisha introduced as new CSM. Data enrichment + AI initiatives + centralized data lakehouse. New Edge Insights datasets (corporate hierarchies + contextual intent + TR buyer intent + contact data). Renewal Check Point Platform 2027 + Universe feed expansion.` },
+    { csm:'nick', health:'Concerning', account:`Infor (US), LLC (Renewal debrief)`, opp:`Vitally Pulse &mdash; Sep 28 Call`,
+      arr:`Enterprise &middot; Nick Johnson`, csmlbl:`Nick Johnson`, change:`Sep 28 &middot; Concerning`,
+      excerpt:`Onsite debrief &mdash; formal approvals moving fast (EOD updates). New data elements (relative spend + time series + firmographic) integrated into Snowflake. Infor needs semantic-layer updates for propensity model. Working session next Monday. Pulse Poor.` },
+    { csm:'varun', health:'Healthy', account:`CIENA Corporation`, opp:`Vitally Pulse &mdash; Sep 28 Call`,
+      arr:`Enterprise &middot; Varun Tiwari`, csmlbl:`Varun Tiwari`, change:`Sep 28 &middot; Healthy`,
+      excerpt:`Monthly checkin &mdash; Calum back from PTO. Dashboard demo for European financial-institutions targeting. Data working well; Calum + Josh actively using it for customer prospect lists.` },
+    { csm:'nick', health:'Healthy', account:`Softcat Ltd`, opp:`Vitally Pulse &mdash; Sep 28 Call`,
+      arr:`Enterprise &middot; Nick Johnson`, csmlbl:`Nick Johnson`, change:`Sep 28 &middot; Healthy`,
+      excerpt:`Monthly sync &mdash; Marketo implementation for marketing automation + GDT acquisition through US gov approval (multi-year integration). D365 as master data source vs Marketo. In-person meeting late Oct/early Nov. Renewal Softcat Platform 2027.` },
+    { csm:'nick', health:'Concerning', account:`Veeam Software AG`, opp:`Vitally Pulse &mdash; Sep 28 Call`,
+      arr:`Enterprise &middot; Nick Johnson`, csmlbl:`Nick Johnson`, change:`Sep 28 &middot; Concerning`,
+      excerpt:`Account alignment &mdash; deduplication discrepancies (HGI company IDs in match types that shouldn't be there). ETL process + data corruption suspected as root causes. Renewal Veeam Global Platform + Universe Feed Expan2026. Pulse Poor.` },
+    { csm:'andy', health:'Healthy', account:`Infoblox Inc`, opp:`Vitally Pulse &mdash; Sep 28 Call`,
+      arr:`Enterprise &middot; Andy Lim`, csmlbl:`Andy Lim`, change:`Sep 28 &middot; Healthy`,
+      excerpt:`Monthly cadence &mdash; data file consolidation (3 files &rarr; 1 w/ 3 tabs). Platform migration to RGIP/RGIF (AI outbound scoring + credit-based). New AM Bryson intro. Renewal Infoblox Opp Gen + MI Tool 2027.` },
+    { csm:'nick', health:'Concerning', account:`Infor (US), LLC (Hierarchy analysis)`, opp:`Vitally Pulse &mdash; Sep 28 Call`,
+      arr:`Enterprise &middot; Nick Johnson`, csmlbl:`Nick Johnson`, change:`Sep 28 &middot; Concerning`,
+      excerpt:`Account hierarchy analysis &mdash; HG for buying-entity ID + sales/marketing hierarchies (potential D&amp;B replacement). D&amp;B remains for legal/financial. Migration plan to develop internally. Pulse Poor.` },
+    { csm:'riley', health:'Healthy', account:`Intuit Mailchimp`, opp:`Vitally Pulse &mdash; Sep 28 Call`,
+      arr:`TrustRadius &middot; Riley Rogers`, csmlbl:`Riley Rogers`, change:`Sep 28 &middot; Healthy`,
+      excerpt:`Bi-weekly TR success call &mdash; Buyer's Choice qualified (Nov 10 announcement). Jan 1 renewal keep at $45K (down from $60K) to simplify. Intuit has 4-5 different contracts + procurement contacts to navigate.` },
+    { csm:'divyam', health:'Healthy', account:`BILL Operations, LLC and its Affiliates`, opp:`Vitally Pulse &mdash; Sep 28 Call`,
+      arr:`Enterprise &middot; Divyam Dewan`, csmlbl:`Divyam Dewan`, change:`Sep 28 &middot; Healthy`,
+      excerpt:`Weekly sync &mdash; new Data Studio generative-AI chat interface. Separate Copilot training week after next (marketing + sales). Direct-API vs Clay cost-benefit. Renewal BILL 2027 + Bill HG API for Clay opps.` },
+    { csm:'atisha', health:'Concerning', account:`Digital Realty Trust L.P.`, opp:`Vitally Pulse &mdash; Sep 28 Call`,
+      arr:`Enterprise &middot; Atisha Waghela`, csmlbl:`Atisha Waghela`, change:`Sep 28 &middot; Concerning`,
+      excerpt:`Strategy Planning &mdash; edgy data to CRM mapping target end of October. New GTM engineering team forming. AI workflow integration via Microsoft Copilot. Follow-up Oct 12 w/ new GTM eng leader. Pulse Poor.` },
+    { csm:'pam', health:'Healthy', account:`Microsoft`, opp:`Vitally Pulse &mdash; Sep 28 Call`,
+      arr:`Strategic &middot; Pam Huck`, csmlbl:`Pam Huck`, change:`Sep 28 &middot; Healthy`,
+      excerpt:`Weekly sync &mdash; Parquet data delivery + revised matching set tomorrow + fit/need/intent prioritization + new "momentum" feature for growing companies. Digital natives project urgency w/ Sam. Mark Teams-access issue.` },
+    { csm:'rani', health:'Healthy', account:`NetApp`, opp:`Vitally Pulse &mdash; Sep 28 Call`,
+      arr:`Enterprise &middot; Rani Guy`, csmlbl:`Rani Guy`, change:`Sep 28 &middot; Healthy`,
+      excerpt:`Weekly sync &mdash; 115K account list refinement + propensity model dev (600 expand + 1000 whitespace initial focus) + AI-native/cloud/sovereign cloud filtering request. EBR + kickoff logistics.` },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div class="pulse-account">${c.account}</div>
+          <div class="pulse-opp">${c.opp}</div>
+          <div class="pulse-arr">${c.arr}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_09_28() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('2801')?'done':''}" data-csm="nick" id="action-2801">
+      <div class="action-checkbox ${doneActions.has('2801')?'checked':''}" onclick="toggleAction('2801')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; Infor &mdash; renewal formal approvals EOD + platform-upgrade semantic-layer working session next Monday</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Nick Johnson + Augie Buettner + Nicole Morgan + Clayton Cutbush &middot; Nicole to provide approval status EOD (potentially early tomorrow if delayed) + schedule working session w/ Melissa + Ossif + Shailene's org for propensity-model needs + share Infor's current semantic-layer setup w/ Augie + create working-session agenda. Augie to share team POVs on product tracking. Nick to provide document on new data files + integration. Tom Lundis team to leverage existing semantic views + data eng resources if needed. Next working session next Monday.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('2802')?'done':''}" data-csm="nick" id="action-2802">
+      <div class="action-checkbox ${doneActions.has('2802')?'checked':''}" onclick="toggleAction('2802')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; Veeam &mdash; dedup ETL + HGI company ID root-cause investigation</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Nick Johnson + Alexi Mouarkach + Victor Criclivii &middot; Victor to investigate ETL process + data handling for discrepancies + close out accounts if no update from other side + revisit dedup process + adjust case statement to assign scores to match types + verify team correctly filtering for latest data (not 2024 historical) + work w/ analytics engineers to finalize consolidation of spend tables. Alexi to query latest files directly from S3 to identify root cause of HGI company ID presence in match types + provide Victor w/ specific examples from September files. Pulse Poor.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('2803')?'done':''}" data-csm="atisha" id="action-2803">
+      <div class="action-checkbox ${doneActions.has('2803')?'checked':''}" onclick="toggleAction('2803')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; Digital Realty &mdash; edgy-to-CRM mapping end October + AI workflow follow-up Oct 12</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Atisha Waghela + Leo Zunz + Stuart Wang + Amanda Jin &middot; Atisha to follow up w/ Sohail re mapping process + keep Stuart in loop by end of October + log Stuart + Amanda in once mapping starts + share MCP w/ Copilot documentation + schedule follow-up meeting for Oct 12 + invite new GTM engineering leader + connect Stuart w/ new account manager Julian. Stuart to check on initiation of AI workflow project w/ Zach + Tyler. Pulse Poor.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('2804')?'done':''}" data-csm="nick" id="action-2804">
+      <div class="action-checkbox ${doneActions.has('2804')?'checked':''}" onclick="toggleAction('2804')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; HCLSoftware &mdash; platform onboarding follow-up Oct 12 + license assignments + Claude integration exploration</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Nick Johnson + Mohan Kewalramani + Poonam Fotedar + HCL team &middot; Nick to send recording + docs + update license assignments for Aditi + Aditya + share invite for Oct 12 follow-up + investigate excluding specific spend categories from exports w/ product team + speak to account manager re HG-HCL proposal + potential Claude integration setup. Mohan to establish internal mechanism for tracking data downloads to avoid duplication. HCL team to explore platform + utilize HG Academy + create standard templates for Safe Collections product exports.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('2805')?'done':''}" data-csm="divyam" id="action-2805">
+      <div class="action-checkbox ${doneActions.has('2805')?'checked':''}" onclick="toggleAction('2805')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; BILL &mdash; Copilot training sessions (marketing + sales) week after next + Data Studio demo this week</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Divyam Dewan + Charles Hawkins + Kristen Malkovich + Eric Nguyen &middot; Charles to schedule call w/ Kristen + Heenal + Kaden to walk through new Data Studio version this week + share updated dataset w/ Eric + coordinate w/ Eric to set up meeting w/ internal product people for Data Studio demo + send Heenal times for October meeting. Eric to clean up data + prepare high-level analysis for leadership week after next + prepare MQL order-of-operations diagram. Kristen to determine right audiences for marketing-side Copilot training + ask Renee about sales enablement + aim for week-after-next for both sessions. Heenal to take point on sales-side training; Kaden on marketing side.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('2806')?'done':''}" data-csm="rani" id="action-2806">
+      <div class="action-checkbox ${doneActions.has('2806')?'checked':''}" onclick="toggleAction('2806')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; NetApp &mdash; 115K account list refinement + propensity-model dev + AI-native validation</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Rani Guy + Adrian Escobar + Michael Danaher + Bini Valsala + Megan Santiago Gould &middot; Rani + team to walk through completed account matching + ID gaps for 15K accounts post-kickoff call tomorrow + follow up on conglomerate data + explore Neo cloud data categorization + share AI company definitions/list w/ Bini + Michael to explore validation. Megan to validate EBR meeting details w/ Gabriel. Michael's team to fold in third-party data to refine propensity model over next week + continue brainstorming + develop initial spreadsheet reporting near-term + explore more sophisticated scalable reporting long-term.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('2807')?'done':''}" data-csm="atisha" id="action-2807">
+      <div class="action-checkbox ${doneActions.has('2807')?'checked':''}" onclick="toggleAction('2807')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F91D; Check Point &mdash; CSM handoff + contact-data accuracy research for target countries</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Atisha Waghela (new CSM) + Nick Johnson + David Garcia Thomas + Uri Nishry &middot; Atisha to follow up w/ David + Nick re contact-data accuracy + coverage in target countries + share contact documentation + discuss contact-data scoping w/ David + Nick + research target-country data for contacts + report back to Checkpoint. Checkpoint team to review shared link on data sets + copilot + agents + MCP offline. Renewal Check Point Platform 2027 + Universe feed expansion opps in play.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('2808')?'done':''}" data-csm="pam" id="action-2808">
+      <div class="action-checkbox ${doneActions.has('2808')?'checked':''}" onclick="toggleAction('2808')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Microsoft &mdash; Parquet test folder + revised matching set + digital-natives project urgency w/ Sam</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Pam Huck + Noah Alford + Mark Fell + Will Norris + Rishabh Wadhwa &middot; Pam to continue delivering existing file format + set up Parquet test folder + confirm w/ Will re adding ~19 additional products + send updated product track list for databases to Mark. Ankita to provide revised matching set by tomorrow/day after. Mark to track down duplicate data entries w/ eng team + investigate Teams access issue. Rishabh to identify top 10-20 requested new topics from additional 100. Will to push Sam re digital-natives project urgency + potential Q1 initiatives + discuss w/ Sam to clarify requirements + timelines.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
