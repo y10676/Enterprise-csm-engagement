@@ -194,184 +194,11 @@ function weeklyOrMonthlyHTML_2026_09_01() {
 // Monday September 21, 2026
 // ============================================================
 
-function dayData_2026_09_21() {
-  return {
-    calls: [
-      { ts: 'Sep 21 &middot; 9:00 AM', csm: 'nick', account: 'NTT Data Corporation',
-        note: 'NTT Strategic Alliances onboarding &mdash; new EVP Murat Aksu (May start) drove introduction; Strategic Alliances team using HG data for "dirty dozen" partner cross-sell strategy (Microsoft/AWS/Google/SAP/Oracle/Salesforce/Databricks/Snowflake/OpenAI/Anthropic/NVIDIA); ~300 export request backlog + bulk export ask',
-        mins: 30, health: 'Healthy',
-        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
-        detail: 'Nick ran a fresh onboarding for a new HG stakeholder inside NTT: Strategic Alliances / Partner Organization (within NTT&rsquo;s Client Growth Office). New EVP Murat Aksu joined in May and got apprised of HG via the Samol/mega-deals-team lead. This is a new use case for an existing account &mdash; historically NTT used HG via Naveen (data analytics) + Samol&rsquo;s mega-deals team; now Alliances wants a partner-lens view. Their "dirty dozen" partner list mirrors HG&rsquo;s top vendors (MS leading, then AWS/Google/SAP/Oracle/Salesforce/Databricks/Snowflake/OpenAI/Anthropic/NVIDIA). Use cases discussed: install-data + intensity multiplier (Toyota example: heavy AWS transformative partnership but MS-largest footprint due to Office), VMware take-out plays, product-description AI enrichment, industry-flavor tagging. Customer flagged ~300 export request backlog; asked whether bulk-export by geo/list is available. Nick walked through Titus example, Intent (visible not explorable at current tier), Contract tab (less useful than name implies). Location data + FAI both under-utilized. Renewal-adjacent: opportunity to package Alliances expansion + new licensing at renewal.' },
-    ],
-    pulses: [
-      { csm:'nick', health:'Healthy', account:'NTT Data Corporation',
-        opp:'Vitally Pulse &mdash; Sep 21 Call',
-        arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
-        change:'Sep 21 &middot; New Stakeholder + Expansion',
-        excerpt:'9/21 NJ: 30 min NTT Strategic Alliances onboarding (9 AM PT). New EVP Murat Aksu (May start) triggered the intro; Alliances team now using HG for "dirty dozen" partner cross-sell strategy. ~300 export backlog + bulk export ask. Location data + FAI under-utilized. Renewal-adjacent expansion vector.' },
-    ],
-  };
-}
 
-function dayMeta_2026_09_21() {
-  return {
-    pills: [
-      ['dot-teal',   '1 Call'],
-      ['dot-amber',  '1 Expansion'],
-      ['dot-green',  '1 Vitally Pulse'],
-      ['dot-grey',   'Mon Sep 21 &middot; 65 scanned &middot; 78% no-transcript'],
-    ],
-    tabs: ['Overview', 'Calls (1)', 'Pulses (1)', 'Action Items (5)']
-  };
-}
 
-function dayOverviewHTML_2026_09_21() {
-  return `<div class="section-label">Team Activity &mdash; Monday September 21, 2026</div>
-  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
-    &#x1F4C5; <strong>Mon Sep 21 &mdash; 65 recordings scanned</strong> via SFDC SOQL &middot; <strong>1 confirmed customer call</strong> (Nick&times;NTT Strategic Alliances onboarding) &middot; 0 Concerning &middot; 1 Expansion (NTT new-stakeholder + partner-lens use case).
-  </div>
-  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
-    &#x26A0;&#xFE0F; <strong>Weflow sync backlog Day 13 &mdash; slight regression:</strong> 78% no-transcript rate on Sept 21 (up from 71% Sept 18). Trajectory: Sep 10 85% &rarr; Sep 11 69% &rarr; Sep 14 78% &rarr; Sep 15 79% &rarr; Sep 16 92% &rarr; Sep 17 84% &rarr; Sep 18 71% &rarr; <strong>Sep 21 78%</strong>. Not resolving to baseline. 8 CSM-owned recordings had no transcript today &mdash; notably Pam&times;Microsoft Weekly Sync (11 AM 45m &mdash; Unified Support Renewal & Growth Sales Motion), Rani&times;HPE Cloud Dynamics Mapping (9:30 AM), Riley&times;Zscaler Leads Kickoff (10:30 AM), Divyam&times;BILL Weekly ×2 slots (10 AM). 11 CSM events had no recording.
-  </div>
-  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
-    &#x1F4C8; <strong>Expansion:</strong> NTT Data (Nick) &mdash; new stakeholder onboarding for NTT&rsquo;s Strategic Alliances / Partner Organization team (previously HG-inactive; new EVP Murat Aksu joined May). New use case: partner-lens cross-sell for "dirty dozen" partners (MS/AWS/Google/SAP/Oracle/Salesforce/Databricks/Snowflake/OpenAI/Anthropic/NVIDIA). ~300 export backlog surfaced &mdash; bulk-export capability ask. Renewal-adjacent packaging opportunity.
-  </div>
-  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
-    &#x1F91D; <strong>Google on-site today:</strong> Rani&rsquo;s major Google renewal on-site with Lawrence + Noah Rowitz + Mark Fell + HG leadership team in the Bay Area today &mdash; NO Weflow recording expected (in-person meeting). Rani&rsquo;s calendar showed only Lenovo Alliance + HPE + workspan monthly + NetApp weekly (no recordings). Outcome/notes to log manually in Vitally.
-  </div>
-  <div class="overview-grid">
 
-    <div class="csm-card has-calls" data-csm="nick">
-      <span class="call-badge">1 CALL</span>
-      <div class="csm-card-header"><div class="avatar av-grey">NJ</div><div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-metrics">
-        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
-        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
-        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
-      </div>
-      <div class="csm-account-note">NTT Data (Strategic Alliances onboarding &mdash; new EVP-driven partner-lens use case, 300 export backlog + bulk export ask) &middot; 1 event no recording: HCL TR Profile Review 7:30 AM</div>
-    </div>
 
-    <div class="csm-card no-calls" data-csm="rani">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header"><div class="avatar av-grey">RG</div><div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 recordings no transcript (HPE Cloud Dynamics Mapping 9:30 AM, NetApp weekly 1 PM). 3 events no recording (Lenovo alignment 8 AM, workspan monthly 8:30 AM, NetApp weekly variant 1 PM). <strong>Google on-site (in-person) w/ Lawrence + Noah Rowitz + Mark Fell today</strong> &mdash; no Weflow recording expected.</div>
-    </div>
 
-    <div class="csm-card no-calls" data-csm="pam">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header"><div class="avatar av-grey">PH</div><div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 recordings no transcript (Microsoft Weekly Sync 11 AM 45m &mdash; Unified Support renewal/growth topic; Greenhouse candidate interview 7 AM 45m &mdash; internal, not customer)</div>
-    </div>
-
-    <div class="csm-card no-calls" data-csm="divyam">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header"><div class="avatar av-divyam">DD</div><div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">2 recordings no transcript (BILL Weekly Sync ×2 slots 10 AM). 2 events no recording (Blackbaud biweekly 8:30 AM, Dynatrace biweekly 10 AM)</div>
-    </div>
-
-    <div class="csm-card no-calls" data-csm="riley">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header"><div class="avatar av-riley">RR</div><div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 recording no transcript (Zscaler Leads Kickoff 10:30 AM &mdash; worth manual log given Sept 7 pre-renewal expansion thread)</div>
-    </div>
-
-    <div class="csm-card no-calls" data-csm="varun">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header"><div class="avatar av-varun">VT</div><div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 recording no transcript (OpenText biweekly 3 AM Year 2 Renewal + Expansion). 1 event no recording (MadKudu/HG&times;Autodesk 10:30 AM)</div>
-    </div>
-
-    <div class="csm-card no-calls" data-csm="atisha">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header"><div class="avatar av-grey">AW</div><div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event no recording (Airtel &lt;&gt; HG Insights 3 AM)</div>
-    </div>
-
-    <div class="csm-card no-calls" data-csm="andy">
-      <span class="no-call-badge">0 Calls</span>
-      <div class="csm-card-header"><div class="avatar av-grey">AL</div><div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div></div>
-      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No CSM-owned events on calendar today</div>
-    </div>
-
-  </div>`;
-}
-
-function dayCallsHTML_2026_09_21() {
-  return `<div class="section-label">Confirmed Calls &mdash; Monday September 21, 2026</div>
-  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
-    &#x1F464; <strong>Speaker-detection note:</strong> The NTT customer joined as "K iPhone 12 Pro Max" (device display name) so their turns were not caught by the CSM/name regex. Only Nick Johnson was detected as a name-formatted speaker &mdash; but the call is a real customer engagement.
-  </div>
-  <div style="background:#1c1117;border:1px solid #ef4444;border-left:3px solid #ef4444;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
-    &#x26A0;&#xFE0F; <strong>8 CSM-owned recordings had no transcript</strong> &mdash; inferred from CSM event ownership only. Highest-value manual-log candidates: Pam&times;Microsoft Weekly (11 AM 45m &mdash; Unified Support Renewal & Growth Sales Motion), Rani&times;HPE Cloud Dynamics Mapping (9:30 AM &mdash; V2 Follow-up), Riley&times;Zscaler Leads Kickoff (10:30 AM &mdash; follows Sept 7 pre-renewal expansion), Divyam&times;BILL Weekly &times;2 slots (10 AM &mdash; HG API for Clay), Varun&times;OpenText biweekly (3 AM Year 2 Renewal + Expansion). 11 CSM events had no recording at all.
-  </div>`;
-}
-
-function dayPulsesHTML_2026_09_21() {
-  const cards = [
-    { csm:'nick', health:'Healthy', account:'NTT Data Corporation',
-      opp:'Vitally Pulse &mdash; Sep 21 Call',
-      arr:'Enterprise &middot; Nick Johnson', csmlbl:'Nick Johnson',
-      change:'Sep 21 &middot; New Stakeholder + Expansion',
-      excerpt:'9/21 NJ: 30 min NTT Strategic Alliances onboarding (9 AM PT). New EVP Murat Aksu (May start) triggered the intro; Alliances team now using HG for "dirty dozen" partner cross-sell strategy. ~300 export backlog + bulk export ask. Location data + FAI under-utilized. Renewal-adjacent expansion vector.' },
-  ];
-  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
-  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
-  return `<div class="pulse-grid">${cards.map(c=>`
-    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
-      <div class="pulse-card-top">
-        <div>
-          <div style="font-size:13px;font-weight:600;color:#e2e8f0;">${c.account}</div>
-          <div style="font-size:11px;color:#94a3b8;margin-top:2px;">${c.opp}</div>
-        </div>
-        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
-      </div>
-      <div class="pulse-excerpt">${c.excerpt}</div>
-      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
-    </div>`).join('')}</div>
-  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
-}
-
-function dayActionsHTML_2026_09_21() {
-  return `<div class="action-list">
-    <div class="action-item ${doneActions.has('0921-1')?'done':''}" data-csm="nick" id="action-0921-1">
-      <div class="action-checkbox ${doneActions.has('0921-1')?'checked':''}" onclick="toggleAction('0921-1')"></div>
-      <div class="action-body">
-        <div class="action-title">&#x1F4C8; NTT &mdash; Follow up with Strategic Alliances lead on bulk-export capability + Alliances licensing packaging</div>
-        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Nick Johnson &middot; New stakeholder (Alliances team, EVP Murat Aksu) added a fresh use case to the NTT engagement &mdash; partner-lens cross-sell across the "dirty dozen." Customer flagged 300+ export request backlog and asked whether a bulk export by geo/list is possible. Nick to: (1) confirm bulk-export capabilities at current license tier, (2) walk Alliances lead through location data + FAI (currently unused, high leverage for their partner-scoping), (3) map Alliances requirements against current NTT license and quantify what expansion or add-on would unlock the workflow. Renewal-adjacent opportunity to bundle Alliances expansion at next renewal.</div>
-      </div>
-    </div>
-    <div class="action-item ${doneActions.has('0921-2')?'done':''}" data-csm="rani" id="action-0921-2">
-      <div class="action-checkbox ${doneActions.has('0921-2')?'checked':''}" onclick="toggleAction('0921-2')"></div>
-      <div class="action-body">
-        <div class="action-title">&#x1F4CB; Google &mdash; Manual Vitally log for today&rsquo;s in-person on-site with Lawrence + Noah Rowitz + Mark Fell</div>
-        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy &middot; The Sept 21 Google renewal on-site was in-person in the Bay Area (no Weflow recording). Follows the Sept 17 60-min prep call and the Sept 11 contact-POC scoping. Capture: (a) Lawrence&rsquo;s reaction to the expansion pitch (10M&rarr;55M universe, credit/token licensing, new AI-driven UI), (b) alignment on the 15&ndash;20-user free-trial pilot (Market Analyzer + GSI + ISV + AI sales copilot + VDR), (c) DPA + amendment path for the December renewal, (d) any Gemini Enterprise MCP intro progress. Log outcomes + next steps in Vitally today.</div>
-      </div>
-    </div>
-    <div class="action-item ${doneActions.has('0921-3')?'done':''}" data-csm="pam" id="action-0921-3">
-      <div class="action-checkbox ${doneActions.has('0921-3')?'checked':''}" onclick="toggleAction('0921-3')"></div>
-      <div class="action-body">
-        <div class="action-title">&#x1F4CB; Microsoft &mdash; Manual Vitally log for Unified Support Renewal & Growth weekly sync</div>
-        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Pam Huck &middot; 45-min weekly (11 AM PT) tagged to the Microsoft Unified Support Renewal and Growth Sales Motion opp. No transcript synced &mdash; Pam should manually log outcomes/action items so the signal isn&rsquo;t lost. Companion track to Sept 16&rsquo;s Intent Topic Review (credit-impact quantification for Bryce&rsquo;s recommendations still owed).</div>
-      </div>
-    </div>
-    <div class="action-item ${doneActions.has('0921-4')?'done':''}" data-csm="all" id="action-0921-4">
-      <div class="action-checkbox ${doneActions.has('0921-4')?'checked':''}" onclick="toggleAction('0921-4')"></div>
-      <div class="action-body">
-        <div class="action-title">&#x1F4CB; CSM team &mdash; Manual Vitally log for 8 inferred (no-transcript) + 11 no-recording events</div>
-        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Rani (HPE Cloud Dynamics Mapping 9:30 AM, NetApp 1 PM), Riley (Zscaler Leads Kickoff 10:30 AM &mdash; follows Sept 7 pre-renewal expansion thread), Divyam (BILL Weekly HG API for Clay &times;2 slots 10 AM), Varun (OpenText Year 2 Renewal + Expansion biweekly 3 AM), Pam (Microsoft Weekly + Greenhouse candidate interview), plus events with no recording (Nick&times;HCL TR, Rani&times;Lenovo alignment/workspan/NetApp variant, Divyam&times;Blackbaud biweekly + Dynatrace biweekly, Varun&times;MadKudu/HG&times;Autodesk, Atisha&times;Airtel). Highest priority manual captures: Zscaler (expansion), OpenText (renewal + expansion), HPE (V2 follow-up), Microsoft Weekly (Unified Support renewal).</div>
-      </div>
-    </div>
-    <div class="action-item ${doneActions.has('0921-5')?'done':''}" data-csm="all" id="action-0921-5">
-      <div class="action-checkbox ${doneActions.has('0921-5')?'checked':''}" onclick="toggleAction('0921-5')"></div>
-      <div class="action-body">
-        <div class="action-title">&#x1F6A8; Ops &mdash; Weflow sync backlog Day 13 (78%, slight regression) &mdash; escalate again if not resolved by Wed</div>
-        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Ops / Rishi &middot; No-transcript rate ticked back up to 78% on Sept 21 after 71% on Sept 18 &mdash; recovery not holding. Trajectory: Sep 10 85% &rarr; Sep 11 69% &rarr; Sep 14 78% &rarr; Sep 15 79% &rarr; Sep 16 92% &rarr; Sep 17 84% &rarr; Sep 18 71% &rarr; <strong>Sep 21 78%</strong>. If Wed (Sept 23) is still &gt;60%, escalate to Weflow product owner + brief Yuan. Consider ordering the event-based inferred fallback report if there&rsquo;s no clear resolution ETA.</div>
-      </div>
-    </div>
-  </div>
-  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
-}
 
 
 // ============================================================
@@ -6584,6 +6411,313 @@ function dayActionsHTML_2026_09_18() {
       <div class="action-body">
         <div class="action-title">&#x1F4CB; INFUSE Media &mdash; post-demo follow-up (new prospect relationship)</div>
         <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Atisha Waghela + Christopher Picanso + Mia Dragojlovic + Petya Dolaptchieva + INFUSE team &middot; Follow up post-demo. INFUSE Media not yet in tracked accounts. Confirmed via SFDC transcript speaker detection.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
+
+function dayData_2026_09_21() {
+  return {
+    calls: [
+      { ts: 'Sep 21 &middot; 3:00 AM', csm: 'varun', account: `Open Text Corporation`,
+        note: `OpenText bi-weekly cadence w/ Leo Zunz + Omkar Hunuswadkar + Julian Rojas + Sujay Kodagali + David De nazareth. New OpenText platform migration &mdash; market sizing + company analysis + user management + credit consumption. Renewal opportunity: strategic review + potential update of 43M account selections. Pulse Poor.`,
+        mins: 39, health: 'Concerning',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `OpenText bi-weekly cadence. New OpenText platform offers enhanced market sizing + company analysis vs previous version. User access + permissions managed directly in platform (granular control for exports + admin tasks). Credit consumption tracked but OpenText focus is unique companies exported (buffer for overages). Upcoming contract renewal (OpenText Year 2 Renewal + Expansion 2026) is opportunity to re-evaluate + potentially update selected 43M accounts to better align w/ business + leverage new product offerings. Latest product catalog usage crucial &mdash; regularly updated + older versions may not reflect current offerings. Next: Varun to (a) assign credits to Sujay on new platform, (b) show credit-usage report format, (c) coordinate internally re contract renewal + potential account updates, (d) provide additional data if needed for data-feed reconfiguration decision, (e) resend invite to David for platform access. Sujay to consider reconfiguring data feed + updating account selections during renewal (sooner rather than later) + decide on migrating other users to new platform (Q1 or end of Q4). Varun + Sujay to schedule detailed platform demo in a month or two. Pulse Poor. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 21 &middot; 8:30 AM', csm: 'divyam', account: `Blackbaud, Inc. (TR)`,
+        note: `Blackbaud x TrustRadius biweekly sync w/ Anderson Duncan + Jaelon Davis (covering after Annie's departure). Razor's Edge qualified for Buyer's Choice; Financial Edge needs 2 more reviews by Oct 16 deadline. BB Con Sep 28 week in Ohio. Company restructuring underway.`,
+        mins: 22, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Mixed',
+        detail: `Blackbaud x TR biweekly sync focused on Buyer's Choice Awards. Razor's Edge has met qualification (10 reviews + strong scores across feature set / value-price / relationship). Financial Edge requires 2 more reviews to qualify &mdash; deadline extended to Oct 16 (additional 20-30 days). Annie no longer w/ Blackbaud; Jaelon stepping in to manage her previous responsibilities incl. TR meetings. BB Con &mdash; Blackboard's largest annual event &mdash; scheduled week of Sept 28 in Ohio (product roadmaps + updates). Company-wide restructuring at Blackbaud is underway; Jaelon awaiting new directives which may impact future strategies + contract decisions. Discussion of support for upcoming BB Con event + feedback on recent lead-gen campaigns. Next: Divyam to remove Annie from cadence + offer enablement sessions on vendor portal to Jaelon or others + provide QR codes/business cards for BB Con by Thursday + follow up via email w/ discussion summary + samples. Jaelon to check internally re campaign lists / links + confirm QR code / business card needs for BB Con + reach out to sales teams in Hyderabad re lead-transfer experience + check Salesforce notes for Michael's involvement. Scott Stater to follow up w/ sales team re feedback on 25 delivered leads. Not in tracked HG accounts (TR account). Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 21 &middot; 9:00 AM', csm: 'nick', account: `NTT Data Corporation`,
+        note: `NTT onboarding call w/ new NTT contact (Dallas/Plano area). Nick recapped multi-year NTT engagement history + previous work w/ Naveen's team (data analytics) + Grant Gibson's Venus/Big Deal teams (Samo now managing). Pulse Poor. Renewal path unclear.`,
+        mins: 32, health: 'Concerning',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `NTT Data onboarding call. Nick met w/ new NTT contact (Texas/Dallas-Plano area). Nick provided context on multi-year NTT engagement: initial work w/ Naveen's team focused on data analytics; laterally worked w/ Grant Gibson's team (now managed by Samo) &mdash; the "Venus" team (looking at similar data points but at scale) and the "Big Logo" team (looking on 1:1 basis for major accounts, extracting everything for one account). Onboarding-style call to establish relationship w/ new stakeholder. Pulse Poor; no expansion motion currently. Confirmed via SFDC transcript speaker detection.`, source: 'sfdc' },
+
+      { ts: 'Sep 21 &middot; 9:30 AM', csm: 'rani', account: `Hewlett Packard Enterprise Co`,
+        note: `HPE Cloud Dynamics Mapping + V2 Follow-up w/ Adrian Escobar + Alexi Mouarkach + Tracy York + Varghedi + Maximiliano Fonseca. Matching HP accounts w/ cloud dynamics data: ~90% match rate + significant net-new accounts identified. Two intent-data solutions discussed (top-of-funnel + TrustRadius bottom-of-funnel).`,
+        mins: 26, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `HPE Cloud Dynamics Mapping + V2 Follow-up. Matching process between HP accounts + cloud dynamics data identified significant net-new accounts for HP &mdash; potential expansion opportunities. Current matching logic has limitations (missing URL data + "open price" component may not accurately reflect confidence levels) &mdash; needs refinement. High match rate (~90%) achieved; confidence scoring needs adjustment. Two types of intent data available: top-of-funnel (Bitstream) + bottom-of-funnel (TrustRadius) &mdash; different insights into buyer behavior + research. TR platform provides in-depth reviews + comparison data for identifying competitive displacement + expansion opportunities. Next: Alexi to re-run matching analysis w/ updated logic this week + provide unique HP company IDs mapped + guidance for adjusting match thresholds (w/ Tracy). Varghedi to ingest new data into database + check w/ team re intent-data documentation. Adrian to investigate history + agreement surrounding one-time intent-data delivery + explore possibility of trial/pilot + schedule call to discuss intent-data solutions further. HP team to determine how to activate net new domains/companies. Renewals HG Cloud Consumption 2028 + HPE Universe 2028 in play. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 21 &middot; 10:00 AM', csm: 'divyam', account: `BILL Operations, LLC and its Affiliates`,
+        note: `BILL weekly sync w/ Charles Hawkins + Kristen Malkovich + Eric Nguyen. MCP server for internal docs/querying + score explainability + Copilot tool pilot exploration. Balancing lead quality (predictive scores) vs quantity (free email domains). Renewal BILL 2027 + Bill HG API for Clay opps.`,
+        mins: 53, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `BILL weekly sync focused on improving MadKudu platform utilization. MCP server desired for internal documentation + querying (not public-facing) &mdash; helps round out existing stack w/ tools for Clay + Inflection. Score explainability tool of interest for sales team to understand why leads receive specific scores (addressing confusion + desire to tweak model). Copilot tool significant interest &mdash; sales-centric view of data + prospecting + Salesforce integration &mdash; could help connect existing data fields + scoring mechanisms. Clear need for sales-team training + enablement on how model works + why scoring/routing decisions are made (combat manual score adjustments + ensure alignment). Challenge: balancing lead quality (predictive scores) vs quantity (accepting free email domains) especially for SMBs + independent contractors &mdash; need strategic routing + automation. Next: Kristen to schedule Copilot tool presentation to marketing + sales leaders for feedback + identify BDRs + sales leaders for Copilot pilot program. Charles to double-check Kristen's contract to confirm Copilot inclusion + send Copilot documentation + capabilities + provide info on Copilot enablement sessions. Eric to finish tweaking weights for draft model number 19 (likelihood to buy) this week + run automation suggestion for free-email-domain queue. Divyam to check w/ support re which package installed in Bill's Salesforce for enabling MadKudu + plan session w/ sales leaders + provide Salesforce fields list (clarify employee count fields) + circle back on self-serve definition analysis. Charles to update analysis for conversion / audience mapping. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 21 &middot; 10:30 AM', csm: 'riley', account: `zScaler`,
+        note: `Zscaler / HG Insights Leads Kick-off w/ Vivian Chan + Scott Stater + Jocelyn. Customer-reviews deadline extended to Oct 16 (target 10 reviews). "Intent-based" program w/ 5 pillars (Zero Trust/SASE, AI Security, Data Security, Agentic SecOps). New data-security enterprise guide + customer story + market report. Campaign go-live targeting Oct week 1-2.`,
+        mins: 26, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Zscaler leads kickoff for data security program. Deadline for customer reviews extended to Oct 16 (target 10 reviews). "Intent-based" program structured around 5 pillars: Zero Trust/SASE + AI Security + Data Security + Agentic SecOps. New enterprise guide for data security being developed (middle-of-funnel asset covering DSPM + DLP + Gen AI + SaaS Security/SSPM). Premium content plans include customer story + potentially market report. Campaign is mix of current-customer upsell + net-new logo acquisition w/ specific target account lists for different product pillars. Next: Vivian to sync w/ Jocelyn re email + confirm deadline extension by Oct 16 + confirm campaign go-live date targeting first/second week of October + ensure Jocelyn in loop re customer-spotlight assets + amplification. Riley to share Box folder w/ content for Jocelyn's review ASAP. Scott + Riley to create roadmap of content for Vivian + Scott to investigate existing market reports for data security. Scott to potentially pause testing until shortly before Oct launch depending on content finalization. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 21 &middot; 11:00 AM', csm: 'pam', account: `Microsoft`,
+        note: `Microsoft HG Weekly Sync w/ Noah Alford + Mark Fell (absent) + Will Norris + Bryce Bishop. Coordination on key provisioning (Cesar + Shubham Raut). New products (SAP Sybase + competitor) for October refresh. Intent topics clarification. Pilot scenarios + data strategy presentations upcoming.`,
+        mins: 24, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `Microsoft weekly sync. Mark absent. Discussion focused on organizational efforts + project clarity. Key discussions: (1) alignment on key provisioning w/ three individuals (Cesar + Shubham Raut + possibly Bryce) &mdash; ensure no duplication, (2) new competitor products for October refresh incl. SAP's Sybase + a competitor product, (3) clarification needed on "intent topics" project (scope + which rows to remove + impact of changes before proceeding), (4) upcoming pilot scenarios + data-strategy presentations (Mid-Market SME + Growth Majors teams), (5) account matching &mdash; dedicated call scheduled Wednesday. Next: Will to (a) email Pam name + product ID for SAP Sybase + competitor product today, (b) follow up w/ Sam re Shubham Raut's role + responsibilities today, (c) clarify scope + action required for intent topics w/ Bryce today, (d) track down Bryce's availability + confirm next steps today. Pam to add Will to account-matching call Wednesday + forward relevant email thread about key provisioning. Noah to schedule call for Mark w/ Mid-Market SME + Growth Major teams next week. Multiple opps in play (Contract Consolidation 2027 + Hardware Precision Demand Intel Pilot + M365 Copilot Precision Demand Intel Pilot + TR Microsoft CVP+Mkt Report+Event Support Written Renewal). Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 21 &middot; 1:00 PM', csm: 'rani', account: `NetApp`,
+        note: `NetApp weekly sync intro w/ Adrian Escobar + Bini Valsala + Akanksha Jain + Michael Danaher + Chris Kim + Jieun Chung. SMB spend data + AI spend data trials introduced. NetApp requested deep-dive on fit/need/intent model &mdash; Gavin sales engineer follow-up tomorrow.`,
+        mins: 21, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `NetApp weekly sync serving as introduction between HG + NetApp teams for upcoming data-set renewals + new product trials. New trials introduced: SMB spend data (companies under $250M revenue) + AI spend data (hardware, software, services) &mdash; both separate from existing IT spend data. NetApp team members expressed strong interest in understanding HG's data modeling, specifically "fit, need, intent" framework + how AI spend data is incorporated. Follow-up w/ sales engineer (Gavin) tomorrow to demonstrate model + provide sample data for specific accounts. Upcoming contract renewal includes expanded data sets &mdash; NetApp requires confirmation on when new data access granted post-signing. Next: Adrian to schedule follow-up meeting w/ Gavin tomorrow to demonstrate fit/need/intent model + provide sample data for buying centers + buyers + confirm delivery timeline for new data sets upon contract signing + notify NetApp when delivered. Bini to respond to email re questions on attributes from previous data set today. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+    ],
+    pulses: [
+      { csm: 'varun', account: `Open Text Corporation`, health: 'Concerning',
+        note: `Bi-weekly cadence &mdash; new OpenText platform migration + market sizing + user access. Renewal Year 2 2026 opportunity: strategic review + potential update of 43M account selections. Pulse Poor.` },
+      { csm: 'divyam', account: `Blackbaud, Inc. (TR)`, health: 'Healthy',
+        note: `TR biweekly &mdash; Razor's Edge Buyer's Choice qualified; Financial Edge needs 2 more reviews by Oct 16. BB Con Sept 28 Ohio. Jaelon covering after Annie's departure. Company restructuring underway.` },
+      { csm: 'nick', account: `NTT Data Corporation`, health: 'Concerning',
+        note: `Onboarding new NTT contact (Dallas/Plano). Multi-year engagement recap &mdash; Naveen's data analytics team + Samo's Big Deal / Venus teams. Pulse Poor; no expansion motion currently.` },
+      { csm: 'rani', account: `Hewlett Packard Enterprise Co`, health: 'Healthy',
+        note: `Cloud Dynamics Mapping + V2 Follow-up. ~90% match rate + significant net-new accounts identified. Two intent-data solutions discussed (top-of-funnel Bitstream + TR bottom-of-funnel). Renewals HG Cloud Consumption 2028 + HPE Universe 2028.` },
+      { csm: 'divyam', account: `BILL Operations, LLC and its Affiliates`, health: 'Healthy',
+        note: `Weekly sync &mdash; MCP server for internal docs + score explainability + Copilot tool pilot exploration. Balancing lead quality vs quantity. Renewal BILL 2027 + Bill HG API for Clay opps.` },
+      { csm: 'riley', account: `zScaler`, health: 'Healthy',
+        note: `Data-security leads kickoff. Reviews deadline extended to Oct 16 (target 10). 5-pillar program (Zero Trust/SASE + AI Security + Data Security + Agentic SecOps). Enterprise guide + customer story + market report. Campaign go-live Oct week 1-2.` },
+      { csm: 'pam', account: `Microsoft`, health: 'Healthy',
+        note: `Weekly sync (Mark absent). Key provisioning coordination + new products (SAP Sybase + competitor) for Oct refresh + intent-topics clarification + pilot scenarios + account matching call Wednesday. Multiple opps in play.` },
+      { csm: 'rani', account: `NetApp`, health: 'Healthy',
+        note: `Weekly sync introducing HG + NetApp teams. SMB spend + AI spend data trials introduced. Fit/need/intent model deep-dive requested; Gavin sales engineer follow-up tomorrow.` },
+    ],
+  };
+}
+
+function dayMeta_2026_09_21() {
+  return {
+    pills: [
+      ['dot-teal',   '8 Calls'],
+      ['dot-amber',  '5 Expansion'],
+      ['dot-red',    '2 Concerning'],
+      ['dot-green',  '8 Vitally Pulses'],
+      ['dot-grey',   'Mon Sep 21 &middot; 65 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (8)', 'Pulses (8)', 'Action Items (7)']
+  };
+}
+
+function dayOverviewHTML_2026_09_21() {
+  return `<div class="section-label">Team Activity &mdash; Monday September 21, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Monday Sep 21 &mdash; 65 recordings scanned</strong> via SFDC SOQL &middot; <strong>8 confirmed calls</strong> across 6 CSMs (Atisha + Andy idle; Andy Lim out Sept 17-23) &middot; 2 Concerning &middot; 5 Expansion signals &middot; SFDC confirmed 1; Weflow fallback added 7 unique recoveries
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>5 EXPANSION:</strong> Open Text (new platform migration + renewal 2026 + 43M account selection update) &middot; BILL (MCP server + score explainability + Copilot pilot exploration) &middot; HPE (Cloud Dynamics net-new accounts + intent-data solutions) &middot; zScaler (data-security campaign + 5-pillar intent program) &middot; NetApp (SMB spend + AI spend data trials + fit/need/intent model deep-dive)
+  </div>
+  <div style="background:#2a1f1f;border:1px solid #b45309;border-left:3px solid #b45309;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>2 CONCERNING:</strong> Open Text (pulse Poor; renewal 2026 requires strategic 43M account review) &middot; NTT Data (pulse Poor; new contact onboarding + no expansion motion)
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">47m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">HPE (&#x1F4C8; Cloud Dynamics net-new + intent data) &middot; NetApp (&#x1F4C8; SMB + AI spend trials + fit/need/intent deep-dive)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">75m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Blackbaud TR (Buyer's Choice push; Jaelon covering) &middot; BILL (&#x1F4C8; MCP server + score explainability + Copilot pilot)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">39m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Open Text (&#x26A0;&#xFE0F; platform migration + Renewal Year 2 2026, pulse Poor)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">32m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">NTT Data (&#x26A0;&#xFE0F; new-contact onboarding, pulse Poor)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">26m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">zScaler (&#x1F4C8; data-security leads kickoff; 5-pillar campaign; Oct go-live)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="pam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">24m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Microsoft (key provisioning + Sybase competitor add + intent-topics clarification; Mark absent)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="atisha">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">AW</div><div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No confirmed customer calls. No Atisha speaker label in SFDC transcripts; no Weflow-participant hits.</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">AL</div><div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Andy Lim out Sept 17-23; Nick Johnson (UK) covering for urgent matters.</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_09_21() {
+  return `<div class="section-label">Confirmed Calls &mdash; Monday September 21, 2026</div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>5 EXPANSION:</strong> Open Text (platform migration + renewal + 43M account update) &middot; BILL (MCP server + Copilot pilot) &middot; HPE (Cloud Dynamics net-new + intent data) &middot; zScaler (data-security campaign) &middot; NetApp (SMB + AI spend trials)
+  </div>
+  <div style="background:#2a1f1f;border:1px solid #b45309;border-left:3px solid #b45309;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>2 CONCERNING:</strong> Open Text (pulse Poor; strategic 43M account review) &middot; NTT Data (pulse Poor; new-contact onboarding + no expansion motion)
+  </div>`;
+}
+
+function dayPulsesHTML_2026_09_21() {
+  const cards = [
+    { csm:'varun', health:'Concerning', account:`Open Text Corporation`, opp:`Vitally Pulse &mdash; Sep 21 Call`,
+      arr:`Enterprise &middot; Varun Tiwari`, csmlbl:`Varun Tiwari`, change:`Sep 21 &middot; Concerning`,
+      excerpt:`Bi-weekly cadence &mdash; new OpenText platform migration + market sizing + user access. Renewal Year 2 2026 opportunity: strategic review + potential update of 43M account selections. Pulse Poor.` },
+    { csm:'divyam', health:'Healthy', account:`Blackbaud, Inc. (TR)`, opp:`Vitally Pulse &mdash; Sep 21 Call`,
+      arr:`TrustRadius &middot; Divyam Dewan`, csmlbl:`Divyam Dewan`, change:`Sep 21 &middot; Healthy`,
+      excerpt:`TR biweekly &mdash; Razor's Edge Buyer's Choice qualified; Financial Edge needs 2 more reviews by Oct 16 deadline. BB Con Sept 28 Ohio. Jaelon covering after Annie's departure. Company restructuring underway.` },
+    { csm:'nick', health:'Concerning', account:`NTT Data Corporation`, opp:`Vitally Pulse &mdash; Sep 21 Call`,
+      arr:`Strategic &middot; Nick Johnson`, csmlbl:`Nick Johnson`, change:`Sep 21 &middot; Concerning`,
+      excerpt:`Onboarding new NTT contact (Dallas/Plano). Multi-year engagement recap &mdash; Naveen's data analytics team + Samo's Big Deal / Venus teams. Pulse Poor; no expansion motion currently.` },
+    { csm:'rani', health:'Healthy', account:`Hewlett Packard Enterprise Co`, opp:`Vitally Pulse &mdash; Sep 21 Call`,
+      arr:`Strategic &middot; Rani Guy`, csmlbl:`Rani Guy`, change:`Sep 21 &middot; Healthy`,
+      excerpt:`Cloud Dynamics Mapping + V2 Follow-up. ~90% match rate + significant net-new accounts identified. Two intent-data solutions discussed (top-of-funnel Bitstream + TR bottom-of-funnel). Renewals HG Cloud Consumption 2028 + HPE Universe 2028.` },
+    { csm:'divyam', health:'Healthy', account:`BILL Operations, LLC and its Affiliates`, opp:`Vitally Pulse &mdash; Sep 21 Call`,
+      arr:`Enterprise &middot; Divyam Dewan`, csmlbl:`Divyam Dewan`, change:`Sep 21 &middot; Healthy`,
+      excerpt:`Weekly sync &mdash; MCP server for internal docs + score explainability + Copilot tool pilot exploration. Balancing lead quality vs quantity (SMBs + free email domains). Renewal BILL 2027 + Bill HG API for Clay opps.` },
+    { csm:'riley', health:'Healthy', account:`zScaler`, opp:`Vitally Pulse &mdash; Sep 21 Call`,
+      arr:`Enterprise &middot; Riley Rogers`, csmlbl:`Riley Rogers`, change:`Sep 21 &middot; Healthy`,
+      excerpt:`Data-security leads kickoff. Reviews deadline extended to Oct 16 (target 10). 5-pillar program (Zero Trust/SASE + AI Security + Data Security + Agentic SecOps). Enterprise guide + customer story + market report. Campaign go-live Oct week 1-2.` },
+    { csm:'pam', health:'Healthy', account:`Microsoft`, opp:`Vitally Pulse &mdash; Sep 21 Call`,
+      arr:`Strategic &middot; Pam Huck`, csmlbl:`Pam Huck`, change:`Sep 21 &middot; Healthy`,
+      excerpt:`Weekly sync (Mark absent). Key provisioning coordination + new products (SAP Sybase + competitor) for Oct refresh + intent-topics clarification + pilot scenarios + account-matching call Wednesday. Multiple opps in play.` },
+    { csm:'rani', health:'Healthy', account:`NetApp`, opp:`Vitally Pulse &mdash; Sep 21 Call`,
+      arr:`Enterprise &middot; Rani Guy`, csmlbl:`Rani Guy`, change:`Sep 21 &middot; Healthy`,
+      excerpt:`Weekly sync introducing HG + NetApp teams. SMB spend + AI spend data trials introduced. Fit/need/intent model deep-dive requested; Gavin sales engineer follow-up tomorrow.` },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div class="pulse-account">${c.account}</div>
+          <div class="pulse-opp">${c.opp}</div>
+          <div class="pulse-arr">${c.arr}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_09_21() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('2101')?'done':''}" data-csm="varun" id="action-2101">
+      <div class="action-checkbox ${doneActions.has('2101')?'checked':''}" onclick="toggleAction('2101')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; Open Text &mdash; renewal strategic review + 43M account update decision</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Varun Tiwari + Leo Zunz + Sujay Kodagali + Julian Rojas &middot; Varun to (a) assign credits to Sujay on new platform, (b) show credit-usage report format, (c) coordinate internally re contract renewal + potential account updates, (d) provide additional data if needed for data-feed reconfiguration, (e) resend invite to David for platform access. Sujay to consider reconfiguring data feed + updating account selections during renewal (sooner rather than later) + decide on migrating other users to new platform (Q1 or end of Q4). Varun + Sujay to schedule detailed platform demo in month or two. Pulse Poor.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('2102')?'done':''}" data-csm="divyam" id="action-2102">
+      <div class="action-checkbox ${doneActions.has('2102')?'checked':''}" onclick="toggleAction('2102')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; BILL &mdash; Copilot pilot participants + weights tweaking + MadKudu SFDC package check</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Divyam Dewan + Charles Hawkins + Kristen Malkovich + Eric Nguyen &middot; Kristen to schedule Copilot tool presentation to marketing + sales leaders for feedback + identify BDRs + sales leaders for Copilot pilot program. Charles to double-check Kristen's contract to confirm Copilot inclusion + send Copilot documentation + capabilities. Eric to finish tweaking weights for draft model 19 (likelihood to buy) this week + run automation suggestion for free-email-domain queue. Divyam to check w/ support re which package installed in Bill's Salesforce for enabling MadKudu + plan sales-leader session + provide Salesforce fields list + circle back on self-serve definition analysis.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('2103')?'done':''}" data-csm="rani" id="action-2103">
+      <div class="action-checkbox ${doneActions.has('2103')?'checked':''}" onclick="toggleAction('2103')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; HPE &mdash; re-run matching analysis w/ updated logic + net-new domain activation strategy</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy + Adrian Escobar + Alexi Mouarkach + Tracy York + Varghedi &middot; Alexi to re-run matching analysis w/ updated logic this week + provide unique HP company IDs mapped + guidance for adjusting match thresholds (w/ Tracy). Varghedi to ingest new data into database + check w/ team re intent-data documentation. Adrian to investigate history + agreement surrounding one-time intent-data delivery + explore trial/pilot possibility + schedule call to discuss intent-data solutions further. HP team to determine how to activate net new domains/companies identified.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('2104')?'done':''}" data-csm="riley" id="action-2104">
+      <div class="action-checkbox ${doneActions.has('2104')?'checked':''}" onclick="toggleAction('2104')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; zScaler &mdash; data-security campaign content roadmap + Oct week 1-2 go-live</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Riley Rogers + Vivian Chan + Scott Stater + Jocelyn &middot; Riley to share Box folder w/ content for Jocelyn's review ASAP. Scott + Riley to create content roadmap for Vivian before next sync. Vivian to sync w/ Jocelyn re email + confirm deadline extension by Oct 16 + confirm campaign go-live date targeting first/second week of October + ensure Jocelyn in loop re customer-spotlight assets. Scott to investigate existing market reports for data security + potentially pause testing until Oct launch depending on content finalization.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('2105')?'done':''}" data-csm="rani" id="action-2105">
+      <div class="action-checkbox ${doneActions.has('2105')?'checked':''}" onclick="toggleAction('2105')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; NetApp &mdash; Gavin sales-engineer follow-up tomorrow (fit/need/intent model demo)</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Rani Guy + Adrian Escobar + Bini Valsala + Akanksha Jain &middot; Adrian to schedule follow-up w/ Gavin (sales engineer) tomorrow to demonstrate fit/need/intent model + provide sample data for buying centers + buyers + confirm delivery timeline for new data sets upon contract signing + notify NetApp when delivered. Bini to respond to email re questions on attributes from previous data set today.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('2106')?'done':''}" data-csm="pam" id="action-2106">
+      <div class="action-checkbox ${doneActions.has('2106')?'checked':''}" onclick="toggleAction('2106')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Microsoft &mdash; key provisioning + Sybase product ID + intent-topics scope clarification</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Pam Huck + Noah Alford + Will Norris + Bryce Bishop &middot; Will to (a) email Pam name + product ID for SAP Sybase + competitor product today, (b) follow up w/ Sam re Shubham Raut's role today, (c) clarify scope + action required for intent topics w/ Bryce today, (d) track down Bryce's availability + confirm next steps today. Pam to add Will to account-matching call Wednesday + forward relevant email thread about key provisioning. Noah to schedule call for Mark w/ Mid-Market SME + Growth Major teams next week.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('2107')?'done':''}" data-csm="divyam" id="action-2107">
+      <div class="action-checkbox ${doneActions.has('2107')?'checked':''}" onclick="toggleAction('2107')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Blackbaud TR &mdash; Financial Edge 2 more reviews by Oct 16 + BB Con Sept 28 support</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Divyam Dewan + Jaelon Davis + Anderson Duncan &middot; Divyam to remove Annie from cadence + offer enablement sessions on vendor portal to Jaelon or others + provide QR codes/business cards for BB Con by Thursday + follow up via email w/ discussion summary + samples. Jaelon to check internally re campaign lists / links + confirm QR code / business card needs for BB Con + reach out to sales teams in Hyderabad re lead-transfer experience + check Salesforce notes for Michael's involvement. Scott Stater to follow up w/ sales team re feedback on 25 delivered leads.</div>
       </div>
     </div>
   </div>
