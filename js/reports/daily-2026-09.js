@@ -7114,3 +7114,387 @@ function dayActionsHTML_2026_09_28() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
 }
+
+function dayData_2026_09_29() {
+  return {
+    calls: [
+      { ts: 'Sep 29 &middot; 5:30 AM', csm: 'nick', account: `Lenovo Group Ltd.`,
+        note: `Lenovo Weekly Check-in w/ Antaleena Ganguly (+ Anu + Fiona planned tomorrow). Account-matching discussion &mdash; standard process only (no city-level match; newer partnership-based process out of scope). Weekly cadence shifting to bi-weekly 15m starting next week. Pulse Poor.`,
+        mins: 80, health: 'Concerning',
+        nature: 'Recurring', initiator: 'Customer', purpose: 'Check-in',
+        detail: `Lenovo weekly check-in prep. Antaleena asked about pending items ahead of major call tomorrow (Anu + Fiona). Current account matching uses standard pre-sales process; newer city-level matching process is under review from a new partnership agreement but NOT in scope for this project. Tomorrow's call will address: (1) why HG doesn't match at city level + how customers use HG data at that granularity, (2) alternative approaches using HG data points to identify tech installs at city level. Other tomorrow agenda: new data + currency spot. Weekly catch-ups transitioning to shorter, bi-weekly format (~15 min) starting next week. Multiple 2027/2028/2029 renewals in play. Pulse Poor. Confirmed via SFDC transcript speaker detection.`, source: 'sfdc' },
+
+      { ts: 'Sep 29 &middot; 7:00 AM', csm: 'nick', account: `Siemens AG`,
+        note: `Siemens data ingestion approaches w/ David Garcia Thomas + Max Shaw + Chlo&eacute; Portier + Jeff Wymer. MCP vs API vs foundational universe feed evaluation for ABM competitive intelligence. Jeff to share intent-topic list + digital-threads solution mapping.`,
+        mins: 37, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Expansion',
+        detail: `Siemens data-ingestion approaches discussion. Primary goal: enhance data access for sales + marketing (competitive intelligence + market analysis) to support ABM strategies. Weighing options: comprehensive universe feed vs on-demand API access vs MCP platform &mdash; balancing cost + performance + flexibility. Flexibility crucial: users need core data quickly + ability to do deeper niche analyses or broader market intelligence. Technographics + firmographics key data points; readily-available + accurate essential. Cost-effectiveness driving need for optimized solutions. Next: Jeff to share intent topic list + digital-threads solution domain mapping (Excel) + check for/share Radar app or similar ICP app for definitions + provide industry descriptions + digital-thread descriptions + assigned solutions + SIC codes aligned to industry. Gavin/Nick/Chlo&eacute; to run scenarios on primary products + markets + refine taxonomy + solution alignment. David to confirm location for upcoming San Mateo meeting. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 29 &middot; 7:30 AM', csm: 'riley', account: `SAP Inc (TR)`,
+        note: `SAP TR Concall re Next Steps Market Report + Customer Story w/ Leah Stussy + Alejandro Barajas + Janessa Rutiaga. Delay content creation until after Connect event (leverage fresh reviews). Mid-market Harper customer story approved. Human-led localization confirmed.`,
+        mins: 18, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `SAP TR concall on next steps for market report + customer story. Decision to delay content creation until after Connect event (leverage fresh customer reviews). Existing reviews may not sufficiently cover AI focus. Mid-market Harper customer story selected as strongest option &mdash; will proceed w/ localization to follow. Both customer story + market report will undergo human-led localization (no AI translation). Connect event opportunity to drive reviews via centralized booth + business cards w/ QR codes. Leah to check w/ product marketing contact re Connect involvement. Alejandro to follow up w/ PMM to request Connect review-drive support + schedule follow-up call week of Oct 12 (Wed/Thu). Janessa to send Leah market-report kickoff doc + initiate Harper customer-story request + start localization after story compiled. Riley to check calendars for follow-up + verify review-sourcing service for BDC is activated. TR SAP Business Data Cloud - GEO Market Report opp + multiple SAP TR renewals. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 29 &middot; 8:30 AM', csm: 'varun', account: `Iron Mountain Incorporated`,
+        note: `Iron Mountain bi-weekly sync w/ Karin Pindle + Leo Zunz + Max Shaw + Rishabh Wadhwa + Julian Rojas + Juan Camilo Carre&ntilde;o. 4 renewal scenarios presented (product coverage + contextual intent + account universe expansion). Renewal deadline October. Propensity models being split (buy vs in-market).`,
+        mins: 20, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Iron Mountain bi-weekly renewal sync. 4 scenarios presented for expanding data intelligence + scoring models: Scenario 2 (deepening intelligence in existing account universe: product coverage + contextual intent topics increase &mdash; significant price increase), Scenario 3 (expand account universe w/ whitespace accounts meeting revenue + country criteria), Scenario 4 (Scenario 2 + 3 combined &mdash; comprehensive + highest-priced). Value of contextual intent data questioned due to lack of observed uplift + potential overlap w/ existing 6sense intent. Decision to split models: "propensity to buy" vs "propensity to be in-market" for clearer focus + better intent-data utilization. Next: Juan + Kimberly + Peter to align on propensity-to-buy vs propensity-to-be-in-market needs + budget by end of week/early next week. Juan to schedule follow-up meeting w/ Julian + KP early next week. Julian + KP to share PDF of pricing options + work offline on Vercel page. Iron Mountain team to review shared interactive pricing model + confirm meeting availability for Friday or early Monday. Renewal deadline October. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 29 &middot; 9:00 AM', csm: 'nick', account: `Confluent Corporation`,
+        note: `Confluent/IBM + HG quick sync w/ Augie Buettner + Erik Hagen + Cassie Mills. Confluent integration into IBM: differences in sales cycles (real-time vs flexible), customer support layers, data deletion timeline Oct 31. Confluent expertise being brought into IBM Data + AI group. Renewal Confluent Global 2026.`,
+        mins: 22, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Mixed',
+        detail: `Confluent/IBM integration sync. Confluent now integrated into IBM Data + AI group; discussion of contrasts: IBM's closing/paperwork processes are more flexible than Confluent's real-time end-of-quarter approach (adjustment period for Confluent team); customer support at IBM has more layers + AI tools vs Confluent's direct expertise; system + data migration to IBM's platform happening rapidly. Opportunity for Confluent to bring its expertise (vendor signals + custom data signals) to IBM's Data + AI group (largely managed by Confluent now). Legal + operational hierarchy alignment ongoing (IBM D&amp;B data vs Confluent go-to-market sales/marketing data). Next: Cassie + data science team to work w/ Angela on Salesforce data-deletion timeline by Oct 31. Augie + Nick to register attendees for upcoming virtual customer conference + coordinate working session on matching IBM + HG data + schedule follow-up on data strategy + integration. Erik + Confluent team to explore how to access IBM data (seller data for commission payouts) + collaborate w/ Clayton Cutbush on IBM account data. Confluent Global 2026 renewal opp. Confirmed via SFDC transcript speaker detection.`, source: 'sfdc' },
+
+      { ts: 'Sep 29 &middot; 10:00 AM', csm: 'atisha', account: `Apple Inc.`,
+        note: `Apple platform walkthrough w/ Adrian Escobar + Vedika (new Apple stakeholder). Vedika introduction; TAM/SAM identification via account-level technographic data (complements Gartner). Focus on healthcare + computing devices market opportunities. Follow-up after Atisha's trip. Renewal Apple MI 2027.`,
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Apple platform walkthrough for new stakeholder Vedika. Atisha + Adrian provided platform overview + potential value for Apple's market-intelligence initiatives. HG Insights provides account-level technographic data complementing existing tools like Gartner &mdash; identifies specific companies within larger market opportunities. Can define TAM + SAM via detailed IT spend + technology adoption at account level. Vedika starting from scratch w/ HG; looking to understand how tool supports her work in identifying market opportunities, especially within healthcare industry + computing devices product category. HG's data scientific approach (anonymous CVs + job postings) allows granular insights into tech usage by location + role &mdash; key differentiator. Customized IT spend models (like Apple laptop/desktop spend) provide more accurate market sizing. Next: Vedika to explore HG platform this week. Atisha + Adrian to schedule follow-up calls after Atisha's trip for deeper dives + enablement + prepare focused presentation based on Vedika's initiatives + projects. Renewal Apple - Market Intelligence 2027 opp. Confirmed via SFDC transcript speaker detection.`, source: 'sfdc' },
+
+      { ts: 'Sep 29 &middot; 10:00 AM', csm: 'pam', account: `Microsoft (Domain Matching)`,
+        note: `Microsoft Domain Matching w/ Mark Fell + Omkar Hunuswadkar + Ankita Bhatnagar + Vibhu Pratap. URL fill rates 56%&rarr;59%; 156M records unmatched (URL absence major factor). Reschedule for Thursday deeper analysis w/ Ankita once historical context gathered.`,
+        mins: 40, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Microsoft domain-matching results review. Recent matching run showed slight improvement in URL fill rates (56%&rarr;59%) + increased row count &mdash; progress but significant enhancement room. 156M records unmatched w/ URL absence a key driver. Matching logic relies on company name + URL + country combination; struggles w/ non-English scripts + inconsistent data. Vibhu's team uses different matching approach focusing on explainability + bespoke solutions vs Omkar's more standardized analysis. Need to investigate historical matching processes + results (current team may be reinventing the wheel vs leveraging previous learnings). Reschedule for Thursday for deeper analysis once more data + historical context gathered. Next: Pam + Omkar to check w/ Mark + Rainy for historical matching details ASAP. Omkar/Vibhu to provide Ankita w/ documentation of matching rules ASAP. Ankita to discuss w/ eng team about providing parent-level data w/ better fill rates for URLs + addresses + provide file w/ only parent records for matching + be precise about required changes in customer file based on meeting insights. Vibhu to share executive overview docs. Follow-up meeting Thursday. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 29 &middot; 10:30 AM', csm: 'atisha', account: `Palo Alto Networks Inc`,
+        note: `PANW Bi-weekly Syncup w/ Alfredo Corral + Charles Hawkins (new AM). Data-feed visibility gap discussion &mdash; no tracking on how Gaurav/team use delivered data. Alfredo to email Gaurav + Srinivasan to reconnect. Renewal PANW Central Analytics 2027.`,
+        mins: 21, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `PANW bi-weekly syncup. Charles Hawkins introduced as new account manager (17 years RevTech experience) working alongside Atisha + Tyler previously on account. Discussion of visibility gap in current setup: HG delivers data feed to Gaurav + team but has no downstream tracking on how sales leadership/team uses that data. Action from previous conversation: Alfredo would connect w/ Gaurav to understand current setup + which teams use data + try to get more stakeholders on to explore more use cases. Alfredo sending email to Gaurav + Srinivasan (Gaurav's boss). Working-session format used for note-taking + follow-ups. Renewal PANW - Central Analytics 2027 opp. Confirmed via SFDC transcript speaker detection.`, source: 'sfdc' },
+
+      { ts: 'Sep 29 &middot; 10:30 AM', csm: 'pam', account: `Microsoft (Dark Accounts)`,
+        note: `Microsoft Dark Accounts Acceleration Working Session w/ Noah Alford + Mark Fell + Karin Pindle + Will Norris + Ryan Tannenbaum + Sam Conway. HG data (firmographics + technographics + intent) crucial for dark-account identification + prioritization. IT spend + revenue validation next week.`,
+        mins: 63, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Microsoft dark-accounts acceleration working session. "Dark accounts" defined as those with low wallet share or where Microsoft has limited presence &mdash; requiring targeted strategies to increase engagement + revenue. HG Insights data (firmographics + technographics + intent signals) crucial for identifying + prioritizing these accounts. Need for better integration + user-friendly workflows for sales teams to effectively utilize HG data + insights. Discussion highlighted importance of understanding customer tech stacks + competitive footprints + potential triggers like contract renewals or tech refreshes. Future collaboration: refining data models + validating IT spend + revenue data + exploring how intent data provides sense of urgency or risk for specific accounts. Next: Will + Noah to continue refining agenda + mini-invite for future meetings. Sam + Ryan to provide clarity on definition + identification of dark accounts + desired signals. Mark to explore potential integrations + workflows for better data utilization. HG team to validate IT spend + revenue data w/ Microsoft's data scientist next week. Pam to coordinate follow-up actions re data validation + public-sector + intent-data conversations next week + send presentation deck. Ryan to explore easier workflows for creating + sending account lists to HG for analysis. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 29 &middot; 11:00 AM', csm: 'riley', account: `SAP Inc (TR Buyer's Choice)`,
+        note: `SAP TR Weekly Check-in for Buyer's Choice w/ Cole Arutian + Mardigan Moffat + Alejandro Barajas + Angel Carvalho. Crossover campaigns generating reviews but landing-page delivery delays frustrating Alejandro. SAP-specific branding + resource management concerns raised.`,
+        mins: 29, health: 'Concerning',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Mixed',
+        detail: `SAP TR Buyer's Choice weekly check-in. Crossover campaigns generating positive September results but significant delays in delivering campaign landing pages + links causing frustration for Alejandro &mdash; impacting his ability to meet commitments. Alejandro raised concerns about lack of progress on AI adoption + resource management given significant partnership investment; expects better performance + fewer excuses. Event-registration process for contractors (like Becky) requires clarification + involves workarounds for payment + pass procurement. SAP-specific branding for events + materials is crucial. Next: Riley to (a) provide accurate landing page by end of day tomorrow, (b) ensure all links + URLs active by Friday, (c) pass info to leadership re advance creation of campaign links, (d) work w/ Cole Martigan to bubble up concerns to executive leadership, (e) check w/ Cole on status + location of Google Form for content upload, (f) ensure SAP Insider event links are similar to previous + submitted ahead of time. Angel to coordinate w/ accounting for payment processing ASAP + connect w/ Mardigan re future event processes + provide SAP business card template PDF by tomorrow midday. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 29 &middot; 11:30 AM', csm: 'varun', account: `Alight Solutions LLC`,
+        note: `Alight New RGIP Platform Walkthrough w/ Matthew James + Kendall Hamilton + Betsy Turnbaugh. New HG platform trial extension. Varun demoing platform capabilities for revenue planning + forecasting team + business health mapping. Renewal Alight Global 2026.`,
+        mins: 46, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Alight RGIP platform walkthrough. Alight team (Matthew James + Kendall Hamilton + Betsy Turnbaugh) &mdash; Matthew leading revenue planning + forecasting team (renamed). Varun (senior CSM) has been working w/ Betsy for ~1 year on multiple initiatives incl. product-to-category mapping (parent-child mapping for Alight's health/wealth/leave business shift). Varun demoing new HG RGIP platform + extending trial for Alight. Renewal Alight Global 2026 opp. Confirmed via SFDC transcript speaker detection.`, source: 'sfdc' },
+
+      { ts: 'Sep 29 &middot; 11:30 AM', csm: 'riley', account: `Insperity (TR prospect)`,
+        note: `Insperity + TrustRadius w/ Anderson Duncan + Renee Talbert. Insperity aims to boost online visibility + brand credibility via improved reviews program. Legal restrictions + outreach challenges. TR proposal for AEO/GEO visibility + review generation + intent-driven leads. Demo Thu/Fri.`,
+        mins: 31, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Insperity TR prospect discussion. Insperity experiencing low online visibility + not making shortlists due to poor SEO + brand reputation; focus on reviving customer reviews program. Internal legal restrictions + challenges in client outreach are significant obstacles for Insperity in collecting customer reviews. TR proposed as solution to help drive reviews + optimize online presence: AEO/GEO visibility + third-party content generation + review-driving via events + optimized outreach. Discussion of package options + partnership opportunities to support outreach given legal roadblocks. TR intent data for demand gen + intent-driven leads discussed as valuable addition. Next: Anderson to provide pricing for TR packages by Thu/Fri + schedule + conduct demonstration of TR capabilities (AEO/GEO + dashboards + profile optimization + content generation) Thu/Fri + follow up via email + send calendar invite. Renee to review TR packages + pricing + potentially invite Chris (Insperity buyer-intent contact) to demo. New TR prospect. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 29 &middot; 12:00 PM', csm: 'divyam', account: `Quadient Software, Inc`,
+        note: `Quadient TR monthly sync (short 14m) w/ Angus Hyams + Ashlin Haley. Buyer's Choice needs more reviews for Inspire + AI (Oct 16 deadline). Contract renewal Oct 31 &mdash; potential budget constraints. Divyam checking auto-renewal clause w/ Angus. Pulse Poor.`,
+        mins: 14, health: 'Concerning',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Mixed',
+        detail: `Quadient TR monthly sync focused on Buyer's Choice + renewal. Buyer's Choice requires 10 reviews w/ 75% positive across 3 parameters; feature/value/relationship strong but Inspire + AI volume low w/ 17 days remaining until Oct 16 deadline. Contract renewal due Oct 31 &mdash; Ashlin indicated potential budget constraints for current year + inquired about auto-renewal process. Leah's Geo dashboard access confirmed (core products; subscription level may differ). Next: Ashlin to confirm internally re renewal budget w/ Lauren (CFO) + Leah early next week. Divyam to inquire w/ Angus about auto-renewal clause by mid-next week + follow up on renewal status if no response by Oct 7 + double-check Leah's Geo dashboard access level. Pulse Poor. Multiple TR IDL renewals in play. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 29 &middot; 12:00 PM', csm: 'rani', account: `NetApp (Kick off)`,
+        note: `NetApp Kick off Meeting w/ Adrian Escobar + Omkar Hunuswadkar + Erica Yim + Kate Coyle + Gabe Weske + Shuming Chen + others. Contract limits: 2M entities cap for firmographic data. New data sets: SMB spend + AI spend + contextual intent. Pause pending Deepak return. 3-month POC + Dec 7 QBR.`,
+        mins: 38, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `NetApp kick-off meeting to align on contract scope + new data-asset delivery. Contract limited to 2M entities for firmographic data (reduction from previous discussions) &mdash; requires focused approach. New data sets to be delivered alongside existing firmographic + technology-product data: SMB spend + AI spend + contextual intent. Accurate account matching critical &mdash; focus on improving match rates by incorporating new data fields like corporate URLs + CRM IDs. Data delivery on hold pending Deepak's return (key personnel for account matching + data access clarity). Primary goal: 80% match rate + proposed 3-month POC to evaluate value + effectiveness. Next: Kate to check w/ Deepak upon return re documented info from Ryan re data access + account matching + investigate internal access to data points like URLs to improve match quality + define owner for quarterly account-list refreshes on NetApp side. Rani + Adrian to book flights for next week's in-person meeting. Rani to schedule follow-up call Dec 7 for formal review of SMB data + AI spend + intent data. Gabe to coordinate w/ Rani to schedule 30-min meeting w/ his team next week to ensure alignment on objectives + priorities. Multiple renewals in play. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Sep 29 &middot; 1:30 PM', csm: 'riley', account: `Zoom Video Communications`,
+        note: `Zoom MyNotes sourcing campaign w/ Travis Sterne (short opening banter about baseball + Padres playoffs). Riley pushing for reviews. Zoom TR review-sourcing focus.`,
+        mins: 31, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `Zoom MyNotes sourcing campaign call. Riley pushing for MyNotes reviews via Zoom sourcing initiative. Travis was distracted by MLB wild-card ticket coordination in Zoom chat; Riley focused conversation back to needed reviews. Zoom Video Communications account per data.js is Andy's, but Riley on TR side drives review sourcing. Confirmed via SFDC transcript speaker detection.`, source: 'sfdc' },
+    ],
+    pulses: [
+      { csm: 'nick', account: `Lenovo Group Ltd.`, health: 'Concerning',
+        note: `Weekly check-in prep &mdash; account matching only at standard level (no city-level; newer partnership process out of scope). Major call tomorrow w/ Anu + Fiona. Cadence shifting bi-weekly 15m. Pulse Poor.` },
+      { csm: 'nick', account: `Siemens AG`, health: 'Healthy',
+        note: `Data-ingestion approaches for ABM &mdash; MCP vs API vs foundational universe feed evaluation. Jeff sharing intent-topic list + digital-threads solution mapping. San Mateo meeting upcoming.` },
+      { csm: 'riley', account: `SAP Inc (TR concall)`, health: 'Healthy',
+        note: `Market report + Harper customer story kick-off &mdash; delay content until after Connect event (fresh reviews). Human-led localization confirmed. Follow-up week of Oct 12.` },
+      { csm: 'varun', account: `Iron Mountain Incorporated`, health: 'Healthy',
+        note: `Bi-weekly renewal sync &mdash; 4 scenarios presented (product coverage + contextual intent + account universe expansion). Split models: propensity to buy vs propensity to be in-market. Renewal deadline October.` },
+      { csm: 'nick', account: `Confluent Corporation`, health: 'Healthy',
+        note: `Confluent/IBM integration &mdash; sales-cycle + support differences. Salesforce data deletion Oct 31 deadline. Confluent expertise being brought into IBM Data + AI group. Renewal 2026.` },
+      { csm: 'atisha', account: `Apple Inc.`, health: 'Healthy',
+        note: `Platform walkthrough for new stakeholder Vedika (healthcare + computing devices focus). TAM/SAM via account-level technographic data (complements Gartner). Follow-up after Atisha's trip. Renewal Apple MI 2027.` },
+      { csm: 'pam', account: `Microsoft (Domain Matching)`, health: 'Healthy',
+        note: `URL fill rate 56%&rarr;59%; 156M records unmatched (URL absence major factor). Reschedule Thursday for deeper analysis + historical context.` },
+      { csm: 'atisha', account: `Palo Alto Networks Inc`, health: 'Healthy',
+        note: `Bi-weekly syncup &mdash; Charles Hawkins new AM. Data-feed visibility gap discussion; Alfredo to email Gaurav + Srinivasan to reconnect on downstream use tracking. Renewal PANW Central Analytics 2027.` },
+      { csm: 'pam', account: `Microsoft (Dark Accounts)`, health: 'Healthy',
+        note: `Dark-accounts acceleration working session (63m) &mdash; HG data crucial for identification + prioritization. IT spend + revenue validation next week. Better sales-team workflows needed.` },
+      { csm: 'riley', account: `SAP Inc (TR Buyer's Choice)`, health: 'Concerning',
+        note: `Buyer's Choice weekly &mdash; crossover campaigns generating reviews but landing-page delivery delays frustrating Alejandro. Resource management + AI adoption concerns. SAP-specific branding critical.` },
+      { csm: 'varun', account: `Alight Solutions LLC`, health: 'Healthy',
+        note: `New RGIP Platform Walkthrough &mdash; trial extension. Product-to-category mapping for health/wealth/leave business shift. Renewal Alight Global 2026.` },
+      { csm: 'riley', account: `Insperity (TR prospect)`, health: 'Healthy',
+        note: `TR prospect &mdash; low visibility + brand-credibility challenge; legal + outreach hurdles. TR proposal for AEO/GEO + review generation + intent-driven leads. Demo Thu/Fri; pricing to Renee.` },
+      { csm: 'divyam', account: `Quadient Software, Inc`, health: 'Concerning',
+        note: `TR monthly &mdash; Buyer's Choice needs more Inspire + AI reviews by Oct 16. Contract renewal Oct 31 w/ potential budget constraints. Auto-renewal clause being verified. Pulse Poor.` },
+      { csm: 'rani', account: `NetApp (Kick off)`, health: 'Healthy',
+        note: `Kick off meeting &mdash; 2M entities firmographic cap. New data: SMB spend + AI spend + contextual intent. Pause pending Deepak return. 3-month POC + Dec 7 QBR. In-person meeting next week.` },
+      { csm: 'riley', account: `Zoom Video Communications`, health: 'Healthy',
+        note: `MyNotes sourcing campaign push. Riley pushing for reviews on TR side. Zoom Video Communications account.` },
+    ],
+  };
+}
+
+function dayMeta_2026_09_29() {
+  return {
+    pills: [
+      ['dot-teal',   '15 Calls'],
+      ['dot-amber',  '6 Expansion'],
+      ['dot-red',    '3 Concerning'],
+      ['dot-green',  '15 Vitally Pulses'],
+      ['dot-grey',   'Tue Sep 29 &middot; 80 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (15)', 'Pulses (15)', 'Action Items (8)']
+  };
+}
+
+function dayOverviewHTML_2026_09_29() {
+  return `<div class="section-label">Team Activity &mdash; Tuesday September 29, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Tuesday Sep 29 &mdash; 80 recordings scanned</strong> via SFDC SOQL &middot; <strong>15 confirmed calls</strong> across 7 CSMs (Andy idle) &middot; 3 Concerning &middot; 6 Expansion signals &middot; SFDC confirmed 6; Weflow fallback added 9 unique recoveries. Riley took 4 calls (heaviest day); Nick 3; Pam 2; Atisha 2; Varun 2.
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>6 EXPANSION:</strong> Siemens (data-ingestion approaches for ABM) &middot; Iron Mountain (4 renewal scenarios + propensity model split) &middot; Apple (Vedika new-stakeholder walkthrough) &middot; Microsoft Dark Accounts (63m working session; HG data for identification) &middot; Alight (new RGIP platform trial) &middot; Insperity (new TR prospect) &middot; Also NetApp Kick off (2M entities cap; 3-month POC)
+  </div>
+  <div style="background:#2a1f1f;border:1px solid #b45309;border-left:3px solid #b45309;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>3 CONCERNING:</strong> Lenovo (pulse Poor; major call tomorrow re city-level matching + partnership scope) &middot; SAP TR Buyer's Choice (Alejandro frustration re landing-page delivery delays; resource management concerns) &middot; Quadient (pulse Poor; Oct 31 renewal + budget constraints; auto-renewal clause verification)
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">4 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">4</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">4</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">109m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">SAP TR concall (Harper story) &middot; SAP TR Buyer's Choice (&#x26A0;&#xFE0F; delivery delays) &middot; Insperity (&#x1F4C8; new prospect) &middot; Zoom (MyNotes sourcing)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">3 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">3</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">139m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Lenovo (&#x26A0;&#xFE0F; pulse Poor; city-matching debate) &middot; Siemens (&#x1F4C8; data ingestion) &middot; Confluent (IBM integration transition)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">51m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Apple (&#x1F4C8; Vedika new-stakeholder walkthrough) &middot; PANW (Charles Hawkins new AM; visibility gap on data feed)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">66m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Iron Mountain (&#x1F4C8; 4 renewal scenarios; Oct deadline) &middot; Alight (&#x1F4C8; new RGIP trial + Renewal 2026)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="pam">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">103m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Microsoft Domain Matching (URL fill 56&rarr;59%) &middot; Microsoft Dark Accounts (&#x1F4C8; 63m working session)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">14m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Quadient (&#x26A0;&#xFE0F; Oct 31 renewal + budget; auto-renewal clause; pulse Poor)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">38m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">NetApp Kick off (&#x1F4C8; 2M entities cap; new SMB + AI spend + contextual intent; 3-month POC + Dec 7 QBR)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">AL</div><div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No confirmed customer calls. No Andy speaker label in SFDC transcripts; no Weflow-participant hits.</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_09_29() {
+  return `<div class="section-label">Confirmed Calls &mdash; Tuesday September 29, 2026</div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>6 EXPANSION:</strong> Siemens (data ingestion approaches) &middot; Iron Mountain (4 renewal scenarios) &middot; Apple (Vedika walkthrough) &middot; Microsoft Dark Accounts (63m) &middot; Alight (RGIP trial) &middot; Insperity (TR prospect) &middot; NetApp Kick off (2M cap + 3-month POC)
+  </div>
+  <div style="background:#2a1f1f;border:1px solid #b45309;border-left:3px solid #b45309;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>3 CONCERNING:</strong> Lenovo (pulse Poor; city-matching debate) &middot; SAP TR Buyer's Choice (delivery-delay frustration) &middot; Quadient (Oct 31 renewal + budget; pulse Poor)
+  </div>`;
+}
+
+function dayPulsesHTML_2026_09_29() {
+  const cards = [
+    { csm:'nick', health:'Concerning', account:`Lenovo Group Ltd.`, opp:`Vitally Pulse &mdash; Sep 29 Call`, arr:`Enterprise &middot; Nick Johnson`, csmlbl:`Nick Johnson`, change:`Sep 29 &middot; Concerning`,
+      excerpt:`Weekly check-in prep &mdash; account matching only at standard level; newer partnership-based city-level matching out of scope. Major call tomorrow w/ Anu + Fiona. Cadence shifting to bi-weekly 15m. Pulse Poor.` },
+    { csm:'nick', health:'Healthy', account:`Siemens AG`, opp:`Vitally Pulse &mdash; Sep 29 Call`, arr:`Enterprise &middot; Nick Johnson`, csmlbl:`Nick Johnson`, change:`Sep 29 &middot; Healthy`,
+      excerpt:`Data-ingestion approaches for ABM &mdash; MCP vs API vs foundational universe feed. Jeff sharing intent-topic list + digital-threads mapping. San Mateo meeting upcoming.` },
+    { csm:'riley', health:'Healthy', account:`SAP Inc (TR concall)`, opp:`Vitally Pulse &mdash; Sep 29 Call`, arr:`Strategic &middot; Riley Rogers`, csmlbl:`Riley Rogers`, change:`Sep 29 &middot; Healthy`,
+      excerpt:`Market report + Harper customer story kickoff &mdash; delay content until after Connect event (fresh reviews). Human-led localization confirmed. Follow-up week of Oct 12.` },
+    { csm:'varun', health:'Healthy', account:`Iron Mountain Incorporated`, opp:`Vitally Pulse &mdash; Sep 29 Call`, arr:`Enterprise &middot; Varun Tiwari`, csmlbl:`Varun Tiwari`, change:`Sep 29 &middot; Healthy`,
+      excerpt:`Bi-weekly renewal sync &mdash; 4 scenarios (product coverage + contextual intent + universe expansion). Split models: propensity to buy vs propensity to be in-market. Renewal deadline October.` },
+    { csm:'nick', health:'Healthy', account:`Confluent Corporation`, opp:`Vitally Pulse &mdash; Sep 29 Call`, arr:`Enterprise &middot; Nick Johnson`, csmlbl:`Nick Johnson`, change:`Sep 29 &middot; Healthy`,
+      excerpt:`Confluent/IBM integration &mdash; sales-cycle + support differences. Salesforce data deletion Oct 31. Confluent expertise being brought into IBM Data + AI group. Renewal 2026.` },
+    { csm:'atisha', health:'Healthy', account:`Apple Inc.`, opp:`Vitally Pulse &mdash; Sep 29 Call`, arr:`Strategic &middot; Atisha Waghela`, csmlbl:`Atisha Waghela`, change:`Sep 29 &middot; Healthy`,
+      excerpt:`Platform walkthrough for new stakeholder Vedika (healthcare + computing devices focus). TAM/SAM via account-level technographic data. Follow-up after Atisha's trip. Renewal Apple MI 2027.` },
+    { csm:'pam', health:'Healthy', account:`Microsoft (Domain Matching)`, opp:`Vitally Pulse &mdash; Sep 29 Call`, arr:`Strategic &middot; Pam Huck`, csmlbl:`Pam Huck`, change:`Sep 29 &middot; Healthy`,
+      excerpt:`URL fill rate 56%&rarr;59%; 156M records unmatched (URL absence major factor). Reschedule Thursday for deeper analysis + historical context.` },
+    { csm:'atisha', health:'Healthy', account:`Palo Alto Networks Inc`, opp:`Vitally Pulse &mdash; Sep 29 Call`, arr:`Enterprise &middot; Atisha Waghela`, csmlbl:`Atisha Waghela`, change:`Sep 29 &middot; Healthy`,
+      excerpt:`Bi-weekly syncup &mdash; Charles Hawkins new AM. Data-feed visibility gap discussion; Alfredo to email Gaurav + Srinivasan to reconnect. Renewal PANW Central Analytics 2027.` },
+    { csm:'pam', health:'Healthy', account:`Microsoft (Dark Accounts)`, opp:`Vitally Pulse &mdash; Sep 29 Call`, arr:`Strategic &middot; Pam Huck`, csmlbl:`Pam Huck`, change:`Sep 29 &middot; Healthy`,
+      excerpt:`Dark-accounts acceleration working session (63m) &mdash; HG data crucial for identification + prioritization. IT spend + revenue validation next week. Better sales-team workflows needed.` },
+    { csm:'riley', health:'Concerning', account:`SAP Inc (TR Buyer's Choice)`, opp:`Vitally Pulse &mdash; Sep 29 Call`, arr:`Strategic &middot; Riley Rogers`, csmlbl:`Riley Rogers`, change:`Sep 29 &middot; Concerning`,
+      excerpt:`Buyer's Choice weekly &mdash; crossover campaigns generating reviews but landing-page delivery delays frustrating Alejandro. Resource management + AI adoption concerns. SAP-specific branding critical.` },
+    { csm:'varun', health:'Healthy', account:`Alight Solutions LLC`, opp:`Vitally Pulse &mdash; Sep 29 Call`, arr:`Enterprise &middot; Varun Tiwari`, csmlbl:`Varun Tiwari`, change:`Sep 29 &middot; Healthy`,
+      excerpt:`RGIP platform walkthrough &mdash; trial extension. Product-to-category mapping for health/wealth/leave business shift. Renewal Alight Global 2026.` },
+    { csm:'riley', health:'Healthy', account:`Insperity (TR prospect)`, opp:`Vitally Pulse &mdash; Sep 29 Call`, arr:`TrustRadius &middot; Riley Rogers`, csmlbl:`Riley Rogers`, change:`Sep 29 &middot; Healthy`,
+      excerpt:`TR prospect &mdash; low visibility + brand-credibility challenge; legal + outreach hurdles. TR proposal for AEO/GEO + review generation + intent-driven leads. Demo Thu/Fri.` },
+    { csm:'divyam', health:'Concerning', account:`Quadient Software, Inc`, opp:`Vitally Pulse &mdash; Sep 29 Call`, arr:`Enterprise &middot; Divyam Dewan`, csmlbl:`Divyam Dewan`, change:`Sep 29 &middot; Concerning`,
+      excerpt:`TR monthly &mdash; Buyer's Choice needs more Inspire + AI reviews by Oct 16. Contract renewal Oct 31 w/ potential budget constraints. Auto-renewal clause verification. Pulse Poor.` },
+    { csm:'rani', health:'Healthy', account:`NetApp (Kick off)`, opp:`Vitally Pulse &mdash; Sep 29 Call`, arr:`Enterprise &middot; Rani Guy`, csmlbl:`Rani Guy`, change:`Sep 29 &middot; Healthy`,
+      excerpt:`Kick off meeting &mdash; 2M entities firmographic cap. New data: SMB spend + AI spend + contextual intent. Pause pending Deepak return. 3-month POC + Dec 7 QBR. In-person next week.` },
+    { csm:'riley', health:'Healthy', account:`Zoom Video Communications`, opp:`Vitally Pulse &mdash; Sep 29 Call`, arr:`TrustRadius &middot; Riley Rogers`, csmlbl:`Riley Rogers`, change:`Sep 29 &middot; Healthy`,
+      excerpt:`MyNotes sourcing campaign push. Riley pushing for reviews on TR side.` },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div class="pulse-account">${c.account}</div>
+          <div class="pulse-opp">${c.opp}</div>
+          <div class="pulse-arr">${c.arr}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_09_29() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('2901')?'done':''}" data-csm="nick" id="action-2901">
+      <div class="action-checkbox ${doneActions.has('2901')?'checked':''}" onclick="toggleAction('2901')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; Lenovo &mdash; tomorrow's major call w/ Anu + Fiona re city-level matching + alternative data-point approach</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Nick Johnson + Antaleena Ganguly + Anu + Fiona &middot; Discuss why HG doesn't match at city level + how customers use HG data at that granularity + alternative approaches using HG data points to identify tech installs at city level. Cover new data + currency spot. Weekly cadence shifting to bi-weekly 15m starting next week. Pulse Poor.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('2902')?'done':''}" data-csm="riley" id="action-2902">
+      <div class="action-checkbox ${doneActions.has('2902')?'checked':''}" onclick="toggleAction('2902')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; SAP TR Buyer's Choice &mdash; landing page EOD tomorrow + all links active Friday + resource escalation</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Riley Rogers + Cole Arutian + Mardigan Moffat + Alejandro Barajas &middot; Riley to (a) provide accurate landing page by EOD tomorrow, (b) ensure all links + URLs active by Friday, (c) pass info to leadership re advance creation of campaign links, (d) work w/ Cole Martigan to bubble up concerns to executive leadership. Angel to coordinate w/ accounting for payment processing ASAP + provide SAP business card template PDF by tomorrow midday.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('2903')?'done':''}" data-csm="divyam" id="action-2903">
+      <div class="action-checkbox ${doneActions.has('2903')?'checked':''}" onclick="toggleAction('2903')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x26A0;&#xFE0F; Quadient &mdash; Oct 31 renewal budget confirmation + auto-renewal clause check + Oct 16 Buyer's Choice deadline</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Divyam Dewan + Angus Hyams + Ashlin Haley + Lauren + Leah &middot; Ashlin to confirm internally re renewal budget w/ Lauren (CFO) + Leah early next week. Divyam to inquire w/ Angus about auto-renewal clause by mid-next week + follow up on renewal status if no response by Oct 7 + double-check Leah's Geo dashboard access level. Buyer's Choice needs 2 more Inspire + AI reviews by Oct 16. Pulse Poor.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('2904')?'done':''}" data-csm="pam" id="action-2904">
+      <div class="action-checkbox ${doneActions.has('2904')?'checked':''}" onclick="toggleAction('2904')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Microsoft &mdash; Dark accounts IT spend + revenue validation next week + Domain Matching follow-up Thursday</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Pam Huck + Noah Alford + Mark Fell + Karin Pindle + Will Norris + Ryan Tannenbaum + Sam Conway + Ankita Bhatnagar &middot; HG team to validate IT spend + revenue data w/ Microsoft's data scientist next week. Pam to coordinate follow-up actions re data validation + public-sector + intent-data conversations + send presentation deck. Ryan to explore easier workflows for sending account lists to HG. Domain Matching: Pam + Omkar to check w/ Mark + Rainy for historical matching details ASAP. Ankita to provide file w/ only parent records + be precise about required changes. Follow-up Thursday.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('2905')?'done':''}" data-csm="varun" id="action-2905">
+      <div class="action-checkbox ${doneActions.has('2905')?'checked':''}" onclick="toggleAction('2905')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Iron Mountain &mdash; 4 renewal scenarios + propensity model split alignment (early next week)</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Varun Tiwari + Karin Pindle + Julian Rojas + Juan Camilo Carre&ntilde;o + Kimberly Hardin + Peter &middot; Juan + Kimberly + Peter to align on propensity-to-buy vs propensity-to-be-in-market needs + budget by end of week/early next week. Juan to schedule follow-up meeting w/ Julian + KP early next week. Julian + KP to share PDF of pricing options + work offline on Vercel page. Iron Mountain team to review shared interactive pricing model + confirm meeting availability. Renewal deadline October.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('2906')?'done':''}" data-csm="rani" id="action-2906">
+      <div class="action-checkbox ${doneActions.has('2906')?'checked':''}" onclick="toggleAction('2906')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; NetApp Kick off &mdash; Deepak return unlock + in-person meeting next week + Dec 7 QBR</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Rani Guy + Adrian Escobar + Kate Coyle + Gabe Weske + Omkar Hunuswadkar &middot; Kate to check w/ Deepak upon return re documented info from Ryan re data access + account matching + investigate internal access to data points like URLs + define owner for quarterly account-list refreshes. Rani + Adrian to book flights for next week's in-person meeting. Rani to schedule Dec 7 QBR for formal review of SMB data + AI spend + intent data. Gabe to coordinate 30-min meeting w/ his team next week.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('2907')?'done':''}" data-csm="atisha" id="action-2907">
+      <div class="action-checkbox ${doneActions.has('2907')?'checked':''}" onclick="toggleAction('2907')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Apple &mdash; Vedika platform exploration + follow-up deep dives after Atisha's trip</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Atisha Waghela + Adrian Escobar + Vedika &middot; Vedika to explore HG platform this week. Atisha + Adrian to schedule follow-up calls after Atisha's trip for deeper dives into specific use cases + enablement + prepare focused presentation based on Vedika's initiatives + projects.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('2908')?'done':''}" data-csm="riley" id="action-2908">
+      <div class="action-checkbox ${doneActions.has('2908')?'checked':''}" onclick="toggleAction('2908')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Insperity &mdash; TR pricing to Renee by Thu/Fri + demo Thu/Fri</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Riley Rogers + Anderson Duncan + Renee Talbert &middot; Anderson to provide pricing for TR packages by Thu/Fri + schedule + conduct demonstration of TR capabilities (AEO/GEO + dashboards + profile optimization + content generation) + follow up via email + send calendar invite. Renee to review TR packages + pricing + potentially invite Chris to demo. New TR prospect.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
