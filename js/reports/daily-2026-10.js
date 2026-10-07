@@ -570,3 +570,375 @@ function dayActionsHTML_2026_10_02() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
 }
+
+
+function dayData_2026_10_05() {
+  return {
+    calls: [
+      { ts: 'Oct 05 &middot; 6:30 AM', csm: 'rani', account: `NetApp`,
+        note: `HG Insights / NetApp PTB model walkthrough w/ Michael Danaher + Adrian Escobar + Omkar + Gavin. Internal walkthrough of propensity-to-buy model logic + scoring methodology ahead of Wed onsite. Data inputs + feature weights + validation approach reviewed. Positioning the model as centerpiece for onsite presentation to NetApp exec audience.`,
+        mins: 33, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `NetApp propensity-to-buy (PTB) model walkthrough &mdash; internal HG + NetApp coordination session ahead of Wed onsite. Reviewed model logic + scoring methodology + input features + validation approach. Rani/Omkar to finalize scoring run on 15K-account list. Model slated as centerpiece for exec audience at Wed onsite. Cross-coverage: Rani + Adrian aligned on sequencing + stakeholder mapping. Confirmed via SFDC transcript speaker detection.`, source: 'sfdc' },
+
+      { ts: 'Oct 05 &middot; 8:00 AM', csm: 'rani', account: `Workday Inc`,
+        note: `HG Insights / Workday HG AI Sales Copilot onboarding w/ Patricia Levey + Karina Wodynska + Rohit Saraf. Onboarding Patricia's team to new AI Sales Copilot platform. Credit-model walkthrough (user-level vs tenant-level charges; $1/data credit, 2 AI credits per $1); role-based export + contact-reveal controls under discussion. Latest platform version confirmed; Market Analyzer deep-dive to be scheduled.`,
+        mins: 44, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Workday AI Sales Copilot onboarding &mdash; focused on getting Patricia's team on the latest platform version + managing credit consumption. Credit model clarified: user-level actions (file export, contact reveal) differ from tenant-level charges; redundant exports multiply charges. Discussed role-based access controls to prevent over-consumption + feasibility of backend switch to disable contact reveals for select users. Market Analyzer read-only access does not incur credits (vs Copilot export). Next: Rani's colleague to increase seat count for Patricia's team within hours; Rohit + Rani to double-check tenant is correctly set up; Patricia to open ticket for Okta login reset; Rani to schedule Market Analyzer deep-dive session + investigate backend switch for disabling contact reveals. Patricia to confirm when seats reflect in her tenant. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Oct 05 &middot; 8:30 AM', csm: 'varun', account: `zScaler`,
+        note: `HGI + Zscaler | Data Scoping for Upcoming Renewal w/ Chandra Raju. Short scoping conversation on data needs for upcoming renewal; EMEA opportunity match rates + product set clarification (6 vs 14 products in current/net-new feeds). Updated CRM list requested; Rani/Omkar to investigate coverage discrepancies.`,
+        mins: 8, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `Zscaler data-scoping sync ahead of renewal &mdash; abbreviated session focused on data accuracy + opportunity coverage. Chandra flagged low customer match rates for Zscaler opportunities (particularly EMEA) + requested updated CRM list to ensure accurate representation. Confusion whether 'current feed' + 'net-new feed' include 6 or 14 products &mdash; impacts the data comparison. Next: Chandra to provide updated CRM list to Rani (so coverage visualization can be shared); Rani/Omkar to investigate discrepancy in Zscaler coverage numbers + provide account IDs + CRM IDs for matched accounts for comparison by midday tomorrow; Rani to share list of products included in 6 + 14 product sets w/ Chandra. Confirmed via SFDC transcript speaker detection.`, source: 'sfdc' },
+
+      { ts: 'Oct 05 &middot; 8:30 AM', csm: 'divyam', account: `Blackbaud, Inc.`,
+        note: `Blackbaud x TrustRadius Biweekly Sync w/ Anderson Duncan (abbreviated 6-min call). Target account list feedback arrived late + requires replacement accounts (some flagged as 'squishy'/unsuitable). Primary contact Adam on extended leave &mdash; impacting communication + task handling. Scott to coordinate w/ delivery team on 25 replacement leads next week.`,
+        mins: 6, health: 'Concerning',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Issue',
+        detail: `Blackbaud TR biweekly sync &mdash; shortened session focused on account-list feedback timing + replacements. Feedback on target account lists arrived late in the process + some accounts flagged as 'squishy'/unsuitable + need replacement. Primary customer-side contact (Adam) on extended leave, affecting communication + task throughput. Despite friction, focus remains on client satisfaction. Next: Divyam to get an update from J; Scott to coordinate w/ delivery team to generate 25 replacement leads next week (ensure all orgs); Scott to send accounts flagged as needing replacement to Divyam; both aiming to connect before Friday for an earlier meeting; Divyam to run discovery on Friday if Scott cannot join. Pulse Concerning &mdash; ownership gap + feedback-cycle delay require attention. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Oct 05 &middot; 10:00 AM', csm: 'atisha', account: `TD Synnex`,
+        note: `steve and hg quick sync w/ Steve Markle + Augie Buettner + Max Shaw. TAM list expanding from 20K &rarr; 30K accounts; focus on "hero" products + prioritized intent topics. Zoom + HG intent signals to refine targeting. Steve planning purchase in next 2 weeks to maximize current-year budget + prepare sustainable program for next year.`,
+        mins: 18, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `TD Synnex (Steve Markle) sync &mdash; expanding TAM from 20K to 30K accounts + refining intent topics for upcoming purchases. Focus on "hero" products + broader IBM + sub-product consideration. Intent data from Zoom + HG Insights to identify relevant topics for targeted engagement. Prioritized topic list to guide future purchasing decisions + maximize value. Need to differentiate between internal planning + customer-facing plans for account strategies. Next: Augie to chase Lisa for the 30K account list (ASAP); Steve to provide updated list w/ 'select' + 'horizon' designations + data on intent topic relevance + associated company counts + prioritized intent topic list (before next purchase); Steve to make purchase within next 2 weeks to maximize current year budget + prepare for next year; Augie to provide fill rate report for updated account list; Steve to refine intent topics using AI + monitor/refresh intent topics quarterly or more frequently if needed. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Oct 05 &middot; 10:00 AM', csm: 'divyam', account: `BILL Operations, LLC`,
+        note: `Bill x HG Insights Weekly Sync w/ Charles Hawkins + Eric Nguyen. Enablement sessions postponed (conferences + internal meetings); Basic Receivables (BR) + self-serve data to be filtered out of 3-month analysis. New unified metric blending VAS + MRR; PNR (Predicted Net Revenue) now ties to sales compensation. Data Studio demo (AI-prompt scoring) scheduled Wed 9:30 AM PT.`,
+        mins: 28, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `BILL weekly sync &mdash; enablement sessions postponed due to conferences + internal meetings. Ongoing effort to filter out BR (Basic Receivables) + self-serve data from analysis for accurate cohort insights. New unified/blended metric being developed combining VAS + MRR. PNR (Predicted Net Revenue) metric tied to new sales compensation model &mdash; incentivizes reps to focus on larger impactful deals. Model deployment + MQL trigger alignment under discussion. New Data Studio version supports AI-prompt-based analysis + setup &mdash; demo scheduled Wed 9:30 AM PT for enablement use case. Next: Divyam to finish updating weightings for likelihood-to-buy model by Friday + button up list excluding BR records for 3-month data analysis (later this morning); Charles + Eric to schedule Data Studio demo meeting (Wed 9:30 AM PT, 30 min); Eric to investigate how to filter out BR records from Salesforce + consider turning off MQL trigger based on Makudu score updates during model deployment; Charles to explore 'deployment impact analysis' feature in Data Studio. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Oct 05 &middot; 10:30 AM', csm: 'varun', account: `Autodesk Inc`,
+        note: `MadKudu/HG<>Autodesk w/ David Guo + Adrian Escobar. Enterprise Technology Team evaluating Makuru vs internal lead-scoring tool for unification. Recent data drift on Makuru input side (slight drop in high-scored leads) &mdash; being addressed. Feb renewal; Dec discussion kickoff. AI Sales Copilot introduced; workshop in Oct to optimize Makuru model. Budget conversation w/ Construction Marketing (budget owner) targeted late Oct.`,
+        mins: 31, health: 'Healthy',
+        nature: 'Recurring', initiator: 'Customer', purpose: 'Mixed',
+        detail: `Autodesk/MadKudu sync &mdash; Enterprise Technology Team evaluating lead-scoring tools (goal: unify across Autodesk BUs); comparing Makuru against internal tool. Recent data drift observed on Makuru input side potentially causing slight drop in high/very-high scored leads &mdash; being addressed. Makuru renewal approaching in February; discussions typically start in December. Autodesk ETS heavily using 'HC Insights' for lead scoring; possibility of integrating AI Sales Copilot for sales-facing tools (target account list generation). Scott Nicholson's team migrated to new automated HG Insights data feed. Next: David Guo to gather feedback + metrics on lead conversion rates from scored leads by end of October + provide insights on noticeable data drift on model input side + share information on new developments/releases re customer fit model in Data Studio + inform budget owner team about informal business review/chat; Varun + Data Studio Team to conduct workshop w/ David + stakeholders to optimize Makuru model during October; Varun to coordinate w/ team to analyze data drift + follow up w/ David w/in this week; Varun + Adrian to schedule conversation w/ budget owner team (Construction Marketing) re Makuru renewal + potential transition &mdash; target after Oct 15, preferably late October. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Oct 05 &middot; 10:30 AM', csm: 'riley', account: `SAP Inc`,
+        note: `SAP Ariba + Fieldglass TrustRadius Premium Content Kickoff w/ Janessa Rutiaga + Ashleigh Riehl + Erin Giordano + Smitha Chelapurath. Kickoff for market reports (Ariba first, then Fieldglass); updated custom questions re AI + ROI + Juul; competitive analysis vs SAP competitors; enterprise + corporate/mid-market focus. First draft in 2-3 weeks; final within a month; translations 3-4 weeks after first finalization.`,
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `SAP Ariba + Fieldglass TR Premium Content Kickoff &mdash; preparation + content for upcoming market reports featuring updated custom questions on AI capabilities + ROI + use of AI bots within products. Strong emphasis on including AI + 'Juul' as key discussion points (concerns raised about current stage of AI adoption + availability of detailed customer metrics). Competitive analysis for Ariba + Fieldglass a significant part of reports (showcasing where SAP exceeds competitors; data availability may vary). Target market: enterprise primary + corporate/mid-sized secondary. Layout + structure to resemble prior years' formats for consistency + efficiency. Next: Janessa to send out custom questions for Ariba + Fieldglass for review by SAP Connect kickoff + send market survey kickoff links immediately after meeting + pursue competitive aspect of reports (ongoing) + stagger report creation starting w/ Ariba then Fieldglass + provide first draft within 2-3 weeks + allow one week for feedback + finalize + deliver completed reports within a month + provide translations ~3-4 weeks after first report is finalized. Ashleigh to get updated competitor list from Tim for Ariba report (ASAP). Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Oct 05 &middot; 11:00 AM', csm: 'pam', account: `Microsoft`,
+        note: `Microsoft HG Weekly Sync w/ Noah Alford + Mark Fell + Karin Pindle. "Sales agent" project advancing (empowering sellers w/ actionable intelligence); "dark accounts" pilot leveraging intent + firmographic data for high-potential account engagement. Shared Excel project tracker to be set up by EOW. SMB + enterprise pilot alignment ongoing. Internal sales-agent demo tentatively Fri 10/9 9 AM for Francis + KP.`,
+        mins: 63, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Microsoft HG weekly sync &mdash; advancing sales enablement tools (particularly the 'sales agent' project) + exploring data-driven strategies via "dark accounts" + AI pilots. Critical importance of leveraging data (intent signals + firmographic data) to identify high-potential accounts + drive pipeline growth. Strong emphasis on collaboration + alignment across teams/projects to avoid duplicated efforts. Addressing technical challenges (Mark's Teams connectivity) crucial for seamless workflow. Next: Mark Fell to draft + share Excel document for project tracking (open tickets + techno intent topics + proof of concepts) by EOW + follow up w/ Shireen on Teams connectivity + share PDF document on 'plays' + data points for sales agent integration; Will Norris to fill out + contribute to shared Excel + schedule sales agent demo for internal stakeholders (Francis + KP) tentatively Fri 10/9 9 AM + have IT support investigate Teams connectivity + schedule call w/ Sam for tomorrow re rhythm + integration + follow up w/ Sam + Ryan on SMB pilots next week (10/13) + continue discussions w/ Michelle on AI pilots + feedback on additional lenses + provide highly ranked accounts for back-testing model + align w/ Trish on SMB pilot needs. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Oct 05 &middot; 11:00 AM', csm: 'riley', account: `TriNet`,
+        note: `TriNet <> TrustRadius CSM Syncs (abbreviated 7-min session). Short CSM sync &mdash; limited substantive discussion captured in recording.`,
+        mins: 7, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `TriNet TR CSM sync &mdash; abbreviated 7-min session. Short recurring check-in; limited substantive discussion captured. Monthly cadence maintained; written renewal 01.20.2027. Confirmed via SFDC transcript speaker detection.`, source: 'sfdc' },
+
+      { ts: 'Oct 05 &middot; 12:00 PM', csm: 'atisha', account: `Advanced Micro Devices, Inc.`,
+        note: `HG Insights <> AMD w/ Charles Hawkins + David Rockwell. Consumption-based credit model walkthrough (vs legacy HD subscription pricing). Data credits $1 ea; AI credits 2 per $1 ($0.50 ea). Platform supports multiple consumption methods (feeds + export + API). Austin follow-up targeted week of Oct 27 to finalize plans + explore AI Sales Copilot working session w/ platform specialists.`,
+        mins: 26, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `AMD sync &mdash; walkthrough of new consumption-based credit model (vs previous subscription-based HD pricing); emphasis on flexibility to select + pay only for data + AI services needed. Regular data credits $1 each; AI credits 2 per $1 ($0.50 each) &mdash; AI cheaper but consumed differently. Platform supports multiple consumption methods: data feeds + platform export + API. Additional data points + advanced model building (propensity + AI briefs) require specific credit allocations w/ usage estimates provided. New platform version offers enhanced credit management + governance features for admin control over allocation + usage. Next: Charles Hawkins to send detailed materials + credit model breakdown to David Rockwell + coordinate w/ AI sales copilot hub team for potential working session during Austin meeting; David Rockwell to review materials + discuss w/ team to determine credit needs + plan for next year + schedule follow-up meeting in Austin for week of Oct 27. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Oct 05 &middot; 12:30 PM', csm: 'rani', account: `CloudFlare Inc`,
+        note: `HG Insights / Cloudflare reconnect w/ Martin Kielczewski + James Tudway + Kraig Kraning. Zscaler-opportunity data discrepancies between Rani + Chandra (potentially CRM updates / data cleansing). Martin outlined internal approval: multi-year, CEO sign-off (deal &gt;$400K), budget timing; delayed payment options being explored. Two scoped options: $600K scoped-down + $715K scoped-up (extra data).`,
+        mins: 28, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Cloudflare reconnect &mdash; reconciling Zscaler opportunity data discrepancies between Rani + Chandra; CRM updates + data cleansing identified as potential root causes. Chandra needs updated CRM list to ensure accurate reporting + identify all opportunities (particularly EMEA). Confusion whether 'current feed' + 'net-new feed' include 6 or 14 products. Martin outlined internal approval process: multi-year approval, CEO sign-off (deal exceeding $400K), finalizing budget timing. Delayed payment options being explored to align w/ fiscal timelines. Two options being packaged: scoped-down $600K + scoped-up $715K (w/ extra data). Next: Chandra to provide updated CRM list to Rani; Rani to share Zscaler coverage visualization w/ Chandra + share list of products included in 6 + 14 product sets; Rani/Omkar to investigate Zscaler coverage number discrepancy + provide account IDs + CRM IDs for matched accounts for comparison + confirm if 'net new feed' includes 14 products + provide Zscaler numbers alignment (by midday tomorrow); Martin to obtain multi-year contract approval + draft + send email to CEO for approval tomorrow + discuss w/ Mike about CEO approval process + determine budget-securing timing + if service date needs to be in next fiscal year + send CEO + CAO approval request emails; Martin + Rani to package two options ($600K + $715K) into official proposals by tomorrow; Rani to provide specific APAC countries of interest (Australia, Japan, Korea) to Martin. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+
+      { ts: 'Oct 05 &middot; 1:00 PM', csm: 'rani', account: `NetApp`,
+        note: `HG Insights / NetApp weekly sync w/ Adrian Escobar. Programmatic 15K-account file delivered. 30 intent topics from June pending (follow-up initiated). AI system for account scoring in progress w/ Gavin. Wed onsite logistics finalized (AV + attendee list); Rani preparing presentation. Megan to coordinate hotel + Chief of Staff details.`,
+        mins: 23, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `NetApp weekly sync focused on coordinating data delivery + Wed onsite preparations &mdash; addressing logistical details + attendee confirmations. Programmatic file for accounts in 15K list delivered; pending request for 30 intent topics from June (follow-up initiated). Work ongoing for AI system for account scoring (discussed w/ Gavin). Agenda for upcoming calendar invite updated; onsite AV arrangements made. Finalizing attendee list for Wed meeting (clarity on remote vs in-person). Next: Rani to follow up w/ June re 30 intent topics + work on AI system for account scoring + prepare presentation for Wed meeting based on confirmed audience + work closely w/ Megan post-onsite to document action items + establish cadence for dropping files quarterly in SFTP endpoint (back burner) + confirm timeline for delivery of intent data w/ Omkar by morning + deliver intent data by end of week + respond to Bini's email re spend model methodology + schedule follow-up session (today) + work on Germany + France account list by EOD + ensure calendar invite for onsite is recorded. Megan to follow up w/ Gabrielle's Chief of Staff + EA re hotel contact info immediately + double-check w/ Marybeth + Megan re invite list. Bini to send additional thousand accounts to list + add to ticket. Attendance via Weflow (SFDC transcript not synced).`, source: 'weflow' },
+    ],
+    pulses: [
+      { csm: 'rani', account: `NetApp`, health: 'Healthy',
+        note: `PTB model walkthrough &mdash; internal prep ahead of Wed onsite; model slated as centerpiece for exec audience. 15K-account scoring run finalization + onsite stakeholder sequencing w/ Adrian.` },
+      { csm: 'rani', account: `Workday Inc`, health: 'Healthy',
+        note: `AI Sales Copilot onboarding &mdash; latest platform version confirmed; credit model walkthrough (user vs tenant charges); role-based export + contact-reveal controls. Market Analyzer deep-dive to be scheduled.` },
+      { csm: 'varun', account: `zScaler`, health: 'Healthy',
+        note: `Data scoping for upcoming renewal &mdash; EMEA match-rate concerns + 6 vs 14 product set clarification needed. Updated CRM list + coverage visualization + product list sharing in progress.` },
+      { csm: 'divyam', account: `Blackbaud, Inc.`, health: 'Concerning',
+        note: `TR biweekly sync (abbreviated) &mdash; target account list feedback arrived late; replacement accounts needed. Primary contact Adam on extended leave &mdash; impacting workflow. Scott to deliver 25 replacement leads next week.` },
+      { csm: 'atisha', account: `TD Synnex`, health: 'Healthy',
+        note: `Steve + HG quick sync &mdash; TAM expanding 20K &rarr; 30K accounts; "hero" products focus + prioritized intent topics. Steve planning purchase in next 2 weeks to maximize current-year budget + prep sustainable program.` },
+      { csm: 'divyam', account: `BILL Operations, LLC`, health: 'Healthy',
+        note: `Weekly sync &mdash; enablement sessions postponed; BR + self-serve filtering for 3-mo analysis. Unified VAS+MRR metric (PNR) ties to new sales comp. Data Studio AI-prompt demo scheduled Wed 9:30 AM PT.` },
+      { csm: 'varun', account: `Autodesk Inc`, health: 'Healthy',
+        note: `Makuru vs internal tool evaluation &mdash; data drift on input side being addressed; Feb renewal (Dec kickoff). AI Sales Copilot introduced; workshop in Oct to optimize model + budget conversation w/ Construction Marketing late Oct.` },
+      { csm: 'riley', account: `SAP Inc`, health: 'Healthy',
+        note: `Ariba + Fieldglass TR Premium Content Kickoff &mdash; updated custom questions (AI + ROI + Juul) + competitive analysis. First draft 2-3 wks; final within a month; translations 3-4 wks after.` },
+      { csm: 'pam', account: `Microsoft`, health: 'Healthy',
+        note: `Weekly sync &mdash; "sales agent" project advancing; "dark accounts" pilot leveraging intent + firmographic data. Shared Excel project tracker by EOW; internal sales-agent demo tentatively Fri 10/9 9 AM for Francis + KP.` },
+      { csm: 'riley', account: `TriNet`, health: 'Healthy',
+        note: `TR CSM sync (abbreviated 7-min). Short recurring check-in; monthly cadence maintained; written renewal 01.20.2027.` },
+      { csm: 'atisha', account: `Advanced Micro Devices, Inc.`, health: 'Healthy',
+        note: `Consumption-based credit model walkthrough (vs legacy HD subscription). Data $1/credit; AI 2 per $1. Austin follow-up targeted week of Oct 27; AI Sales Copilot working session planned.` },
+      { csm: 'rani', account: `CloudFlare Inc`, health: 'Healthy',
+        note: `Reconnect &mdash; Zscaler data discrepancies + multi-year approval process (CEO sign-off deal &gt;$400K). Two scoped options: $600K scoped-down + $715K scoped-up (extra data) packaged tomorrow.` },
+      { csm: 'rani', account: `NetApp`, health: 'Healthy',
+        note: `Weekly sync &mdash; 15K-account file delivered; 30 intent topics from June pending; AI account scoring in progress w/ Gavin. Wed onsite logistics finalized; presentation prep underway.` },
+    ],
+  };
+}
+
+function dayMeta_2026_10_05() {
+  return {
+    pills: [
+      ['dot-teal',   '13 Calls'],
+      ['dot-amber',  '7 Expansion'],
+      ['dot-red',    '1 Concerning'],
+      ['dot-green',  '13 Vitally Pulses'],
+      ['dot-grey',   'Mon Oct 05 &middot; 68 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (13)', 'Pulses (13)', 'Action Items (10)']
+  };
+}
+
+function dayOverviewHTML_2026_10_05() {
+  return `<div class="section-label">Team Activity &mdash; Monday October 05, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Monday Oct 05 &mdash; 68 recordings scanned</strong> via SFDC SOQL &middot; <strong>13 confirmed calls</strong> across 6 CSMs &middot; 7 Expansion signals &middot; 1 Concerning &middot; SFDC confirmed 3; Weflow fallback added 10 recoveries (77% dependency). Rani leads w/ 4 calls; Divyam + Varun + Atisha + Riley tied at 2 each; Pam 1.
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>7 EXPANSION:</strong> Cloudflare ($600K-$715K multi-year packaged tomorrow + CEO approval) &middot; Workday (AI Sales Copilot onboarding + credit model walkthrough) &middot; AMD (consumption-based credit model + Austin follow-up Oct 27) &middot; Microsoft (sales agent development + dark accounts pilot) &middot; SAP Ariba+Fieldglass TR (Premium Content Kickoff + market reports) &middot; TD Synnex (TAM 20K &rarr; 30K + prioritized intent + purchase in next 2 weeks) &middot; Autodesk (AI Sales Copilot intro + Oct optimization workshop)
+  </div>
+  <div style="background:#2a1f1f;border:1px solid #b45309;border-left:3px solid #b45309;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>1 CONCERNING:</strong> Blackbaud (late target-account-list feedback + replacement accounts needed; primary contact Adam on extended leave &mdash; impacting workflow; 25 replacement leads due next week; discovery call Friday)
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">4 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">4</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">4</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">128m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">NetApp PTB walkthrough + weekly (&#x1F4C4; 15K list + Wed onsite prep) &middot; Workday (&#x1F4C8; AI Sales Copilot onboarding) &middot; Cloudflare (&#x1F4C8; $600-715K multi-year approval)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">34m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Blackbaud TR (&#x1F534; late feedback + replacement accounts) &middot; BILL (&#x1F4C4; PNR metric + Data Studio demo Wed)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">39m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Zscaler (&#x1F4C4; EMEA match + 6/14 product clarification) &middot; Autodesk (&#x1F501; Makuru vs internal eval + AI Sales Copilot intro)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">44m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">TD Synnex (&#x1F4C8; TAM 20K &rarr; 30K + purchase in 2 wks) &middot; AMD (&#x1F4C8; consumption credit model + Austin Oct 27)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">37m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">SAP Ariba+Fieldglass TR (&#x1F4C8; Premium Content Kickoff) &middot; TriNet TR CSM sync (short 7-min)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="pam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">63m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Microsoft (&#x1F4C8; sales agent dev + dark accounts pilot; demo tentatively 10/9 9 AM for Francis + KP)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="nick">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">NJ</div><div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event scheduled (HCL TR Profile and Portal Review) &mdash; no CSM speaker in recording + no Weflow-participant hit.</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">AL</div><div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">1 event scheduled (ADP Run TR Monthly Success Call) &mdash; no CSM speaker in recording + no Weflow-participant hit.</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_10_05() {
+  return `<div class="section-label">Confirmed Calls &mdash; Monday October 05, 2026</div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>7 EXPANSION:</strong> Cloudflare ($600-715K multi-year + CEO approval) &middot; Workday (AI Sales Copilot onboarding) &middot; AMD (consumption credit model + Austin Oct 27) &middot; Microsoft (sales agent + dark accounts) &middot; SAP Ariba+Fieldglass TR (Premium Content Kickoff) &middot; TD Synnex (TAM 20K &rarr; 30K + 2-wk purchase) &middot; Autodesk (AI Sales Copilot intro + Oct workshop)
+  </div>
+  <div style="background:#2a1f1f;border:1px solid #b45309;border-left:3px solid #b45309;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>1 CONCERNING:</strong> Blackbaud (late target-account-list feedback + replacement accounts needed; primary contact Adam on extended leave &mdash; impacting workflow). 10 of 13 confirmed via Weflow fallback (SFDC transcript sync at 3/13 today).
+  </div>`;
+}
+
+function dayPulsesHTML_2026_10_05() {
+  const cards = [
+    { csm:'rani', health:'Healthy', account:`NetApp`, opp:`Vitally Pulse &mdash; Oct 05 Call`, arr:`Enterprise &middot; Rani Guy`, csmlbl:`Rani Guy`, change:`Oct 05 &middot; Healthy`,
+      excerpt:`PTB model walkthrough &mdash; internal prep ahead of Wed onsite; model slated as centerpiece for exec audience. 15K-account scoring run finalization + onsite stakeholder sequencing w/ Adrian.` },
+    { csm:'rani', health:'Healthy', account:`Workday Inc`, opp:`Vitally Pulse &mdash; Oct 05 Call`, arr:`Enterprise &middot; Rani Guy`, csmlbl:`Rani Guy`, change:`Oct 05 &middot; Healthy`,
+      excerpt:`AI Sales Copilot onboarding &mdash; latest platform version confirmed; credit model walkthrough (user vs tenant charges); role-based export + contact-reveal controls. Market Analyzer deep-dive to be scheduled.` },
+    { csm:'varun', health:'Healthy', account:`zScaler`, opp:`Vitally Pulse &mdash; Oct 05 Call`, arr:`Enterprise &middot; Varun Tiwari`, csmlbl:`Varun Tiwari`, change:`Oct 05 &middot; Healthy`,
+      excerpt:`Data scoping for upcoming renewal &mdash; EMEA match-rate concerns + 6 vs 14 product set clarification needed. Updated CRM list + coverage visualization + product list sharing in progress.` },
+    { csm:'divyam', health:'Concerning', account:`Blackbaud, Inc.`, opp:`Vitally Pulse &mdash; Oct 05 Call`, arr:`Enterprise &middot; Divyam Dewan`, csmlbl:`Divyam Dewan`, change:`Oct 05 &middot; Concerning`,
+      excerpt:`TR biweekly sync (abbreviated) &mdash; target account list feedback arrived late; replacement accounts needed. Primary contact Adam on extended leave &mdash; impacting workflow. Scott to deliver 25 replacement leads next week.` },
+    { csm:'atisha', health:'Healthy', account:`TD Synnex`, opp:`Vitally Pulse &mdash; Oct 05 Call`, arr:`Enterprise &middot; Atisha Waghela`, csmlbl:`Atisha Waghela`, change:`Oct 05 &middot; Healthy`,
+      excerpt:`Steve + HG quick sync &mdash; TAM expanding 20K &rarr; 30K accounts; "hero" products focus + prioritized intent topics. Steve planning purchase in next 2 weeks to maximize current-year budget + prep sustainable program.` },
+    { csm:'divyam', health:'Healthy', account:`BILL Operations, LLC`, opp:`Vitally Pulse &mdash; Oct 05 Call`, arr:`Enterprise &middot; Divyam Dewan`, csmlbl:`Divyam Dewan`, change:`Oct 05 &middot; Healthy`,
+      excerpt:`Weekly sync &mdash; enablement sessions postponed; BR + self-serve filtering for 3-mo analysis. Unified VAS+MRR metric (PNR) ties to new sales comp. Data Studio AI-prompt demo scheduled Wed 9:30 AM PT.` },
+    { csm:'varun', health:'Healthy', account:`Autodesk Inc`, opp:`Vitally Pulse &mdash; Oct 05 Call`, arr:`Enterprise &middot; Varun Tiwari`, csmlbl:`Varun Tiwari`, change:`Oct 05 &middot; Healthy`,
+      excerpt:`Makuru vs internal tool evaluation &mdash; data drift on input side being addressed; Feb renewal (Dec kickoff). AI Sales Copilot introduced; workshop in Oct to optimize model + budget conversation w/ Construction Marketing late Oct.` },
+    { csm:'riley', health:'Healthy', account:`SAP Inc`, opp:`Vitally Pulse &mdash; Oct 05 Call`, arr:`Enterprise &middot; Riley Rogers`, csmlbl:`Riley Rogers`, change:`Oct 05 &middot; Healthy`,
+      excerpt:`Ariba + Fieldglass TR Premium Content Kickoff &mdash; updated custom questions (AI + ROI + Juul) + competitive analysis. First draft 2-3 wks; final within a month; translations 3-4 wks after.` },
+    { csm:'pam', health:'Healthy', account:`Microsoft`, opp:`Vitally Pulse &mdash; Oct 05 Call`, arr:`Strategic &middot; Pam Huck`, csmlbl:`Pam Huck`, change:`Oct 05 &middot; Healthy`,
+      excerpt:`Weekly sync &mdash; "sales agent" project advancing; "dark accounts" pilot leveraging intent + firmographic data. Shared Excel project tracker by EOW; internal sales-agent demo tentatively Fri 10/9 9 AM for Francis + KP.` },
+    { csm:'riley', health:'Healthy', account:`TriNet`, opp:`Vitally Pulse &mdash; Oct 05 Call`, arr:`Enterprise &middot; Riley Rogers`, csmlbl:`Riley Rogers`, change:`Oct 05 &middot; Healthy`,
+      excerpt:`TR CSM sync (abbreviated 7-min). Short recurring check-in; monthly cadence maintained; written renewal 01.20.2027.` },
+    { csm:'atisha', health:'Healthy', account:`Advanced Micro Devices, Inc.`, opp:`Vitally Pulse &mdash; Oct 05 Call`, arr:`Enterprise &middot; Atisha Waghela`, csmlbl:`Atisha Waghela`, change:`Oct 05 &middot; Healthy`,
+      excerpt:`Consumption-based credit model walkthrough (vs legacy HD subscription). Data $1/credit; AI 2 per $1. Austin follow-up targeted week of Oct 27; AI Sales Copilot working session planned.` },
+    { csm:'rani', health:'Healthy', account:`CloudFlare Inc`, opp:`Vitally Pulse &mdash; Oct 05 Call`, arr:`Enterprise &middot; Rani Guy`, csmlbl:`Rani Guy`, change:`Oct 05 &middot; Healthy`,
+      excerpt:`Reconnect &mdash; Zscaler data discrepancies + multi-year approval process (CEO sign-off deal &gt;$400K). Two scoped options: $600K scoped-down + $715K scoped-up (extra data) packaged tomorrow.` },
+    { csm:'rani', health:'Healthy', account:`NetApp`, opp:`Vitally Pulse &mdash; Oct 05 Call`, arr:`Enterprise &middot; Rani Guy`, csmlbl:`Rani Guy`, change:`Oct 05 &middot; Healthy`,
+      excerpt:`Weekly sync &mdash; 15K-account file delivered; 30 intent topics from June pending; AI account scoring in progress w/ Gavin. Wed onsite logistics finalized; presentation prep underway.` },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div class="pulse-account">${c.account}</div>
+          <div class="pulse-opp">${c.opp}</div>
+          <div class="pulse-arr">${c.arr}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_10_05() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('0501')?'done':''}" data-csm="rani" id="action-0501">
+      <div class="action-checkbox ${doneActions.has('0501')?'checked':''}" onclick="toggleAction('0501')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Cloudflare &mdash; package $600K + $715K options into official proposals by tomorrow + CEO approval email</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy + Martin Kielczewski + James Tudway + Kraig Kraning &middot; Martin + Rani to package the two scoped options ($600K scoped-down + $715K scoped-up w/ extra data) into official proposals by tomorrow. Martin to obtain approval for multi-year contract + draft + send email to CEO for approval tomorrow + discuss w/ Mike about CEO approval process + determine timing of securing budget + if service date needs to be in next fiscal year + send CEO + CAO approval request emails. Rani to provide specific APAC geos (Australia, Japan, Korea).</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0502')?'done':''}" data-csm="rani" id="action-0502">
+      <div class="action-checkbox ${doneActions.has('0502')?'checked':''}" onclick="toggleAction('0502')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C4; Cloudflare &mdash; Zscaler coverage discrepancy investigation + visualization share by midday tomorrow</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy + Chandra Raju + Omkar &middot; Chandra to provide updated CRM list to Rani. Rani to share Zscaler coverage visualization w/ Chandra + share list of products in 6 + 14 product sets. Rani/Omkar to investigate Zscaler coverage discrepancy + provide account IDs + CRM IDs for matched accounts for comparison + confirm if 'net new feed' includes 14 products + provide Zscaler numbers alignment by midday tomorrow.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0503')?'done':''}" data-csm="rani" id="action-0503">
+      <div class="action-checkbox ${doneActions.has('0503')?'checked':''}" onclick="toggleAction('0503')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C4; NetApp &mdash; Wed onsite prep: 30 intent topics follow-up + AI scoring work + presentation + Germany/France list by EOD</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy + Adrian Escobar + Megan Santiago-Gould + Omkar + Gavin + June &middot; Rani to follow up w/ June re 30 intent topics from June + work on AI system for account scoring w/ Gavin + prepare presentation for Wed meeting based on confirmed audience + work closely w/ Megan post-onsite to document action items + confirm timeline for delivery of intent data w/ Omkar by morning + deliver intent data by EOW + respond to Bini's email re spend model methodology (today) + work on Germany + France account list by EOD + ensure calendar invite for onsite is recorded. Megan to follow up w/ Gabrielle's Chief of Staff + EA re hotel contact info immediately. Bini to send additional 1K accounts to list.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0504')?'done':''}" data-csm="divyam" id="action-0504">
+      <div class="action-checkbox ${doneActions.has('0504')?'checked':''}" onclick="toggleAction('0504')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F534; Blackbaud TR &mdash; 25 replacement leads next week + earlier connect before Friday + Friday discovery backup</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Divyam Dewan + Anderson Duncan + Scott + J &middot; Divyam to get an update from J. Scott to coordinate w/ delivery team to generate another 25 leads next week + ensure all orgs + send accounts flagged as needing replacement to Divyam. Both to aim to connect before Friday for earlier meeting. Divyam to run discovery on Friday if Scott unable to join. Primary contact Adam on extended leave &mdash; ownership gap requires attention.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0505')?'done':''}" data-csm="atisha" id="action-0505">
+      <div class="action-checkbox ${doneActions.has('0505')?'checked':''}" onclick="toggleAction('0505')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; TD Synnex &mdash; 30K account list chase + prioritized intent topics + purchase within 2 weeks</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Atisha Waghela + Steve Markle + Augie Buettner + Max Shaw &middot; Augie to chase Lisa for 30K account list ASAP + provide fill rate report for updated list. Steve to provide updated list w/ 'select' + 'horizon' designations + data on intent topic relevance + associated company counts ASAP + develop prioritized intent topic list before next purchase + make purchase within next 2 weeks to maximize current-year budget + refine topics using AI + monitor/refresh intent topics quarterly or more frequently as needed.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0506')?'done':''}" data-csm="rani" id="action-0506">
+      <div class="action-checkbox ${doneActions.has('0506')?'checked':''}" onclick="toggleAction('0506')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Workday &mdash; seat count increase + tenant setup verification + Okta reset + Market Analyzer deep-dive</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Rani Guy + Patricia Levey + Rohit Saraf + Karina Wodynska &middot; Rani's colleague to increase number of seats for Patricia's team within next couple of hours. Rohit + Rani to double-check Patricia's tenant is correctly set up ASAP. Patricia to create ticket for her IT team to reset up Okta login ASAP + confirm when seats are reflected in her tenant instance. Rani to figure out good flow for ensuring Patricia's team is fully up to speed on all offerings + schedule session to deep dive into Market Analyzer + investigate feasibility of adding backend switch to disable contact reveals for AI Sales Copilot.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0507')?'done':''}" data-csm="divyam" id="action-0507">
+      <div class="action-checkbox ${doneActions.has('0507')?'checked':''}" onclick="toggleAction('0507')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C4; BILL &mdash; likelihood-to-buy weightings by Friday + BR exclusion list + Data Studio demo Wed 9:30 AM PT</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Divyam Dewan + Charles Hawkins + Eric Nguyen &middot; Divyam to finish updating weightings for likelihood-to-buy model by Friday + button up list excluding BR records for 3-month data analysis later this morning. Charles + Eric to schedule Data Studio demo meeting Wed 9:30 AM Pacific for 30 min. Eric to investigate how to filter out BR records from Salesforce + consider turning off MQL trigger based on Makudu score updates during model deployment. Charles to explore 'deployment impact analysis' feature in Data Studio.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0508')?'done':''}" data-csm="varun" id="action-0508">
+      <div class="action-checkbox ${doneActions.has('0508')?'checked':''}" onclick="toggleAction('0508')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F501; Autodesk Makuru &mdash; Oct workshop to optimize model + data-drift analysis w/in week + budget-owner conversation after Oct 15</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Varun Tiwari + David Guo + Adrian Escobar + Construction Marketing team &middot; David to gather feedback + metrics on lead conversion rates from scored leads by end of Oct + provide insights on noticeable data drift on model input side + share info on new developments/releases re customer fit model in Data Studio + inform budget owner team about informal business review/chat. Varun + Data Studio Team to conduct workshop w/ David + stakeholders to optimize Makuru model during October. Varun to coordinate w/ team to analyze data drift + follow up w/ David w/in this week. Varun + Adrian to schedule conversation w/ budget owner team (Construction Marketing) re Makuru renewal + potential transition &mdash; target after Oct 15, preferably late Oct.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0509')?'done':''}" data-csm="riley" id="action-0509">
+      <div class="action-checkbox ${doneActions.has('0509')?'checked':''}" onclick="toggleAction('0509')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; SAP Ariba + Fieldglass TR &mdash; custom questions by SAP Connect kickoff + first draft in 2-3 weeks + competitor list ASAP</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Riley Rogers + Janessa Rutiaga + Ashleigh Riehl + Erin Giordano + Smitha Chelapurath &middot; Janessa to send out custom questions for Ariba + Fieldglass for review by SAP Connect kickoff + send market survey kickoff links immediately after meeting + pursue competitive aspect of reports (ongoing) + stagger report creation starting w/ Ariba then Fieldglass + provide first draft within 2-3 weeks + allow 1 week for feedback + finalize + deliver completed reports within a month + provide translations ~3-4 wks after first report finalized. Ashleigh to get updated competitor list from Tim for Ariba report ASAP.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0510')?'done':''}" data-csm="atisha" id="action-0510">
+      <div class="action-checkbox ${doneActions.has('0510')?'checked':''}" onclick="toggleAction('0510')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; AMD &mdash; credit model materials to David + Austin follow-up week of Oct 27 + AI sales copilot working session</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Atisha Waghela + Charles Hawkins + David Rockwell &middot; Charles Hawkins to send detailed materials + credit model breakdown to David Rockwell + coordinate w/ AI sales copilot hub team for potential working session during Austin meeting. David Rockwell to review materials + discuss w/ team to determine credit needs + plan for next year + schedule follow-up meeting in Austin for week of Oct 27.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
