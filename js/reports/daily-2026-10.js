@@ -1752,3 +1752,401 @@ function dayActionsHTML_2026_10_07() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
 }
+
+function dayData_2026_10_08() {
+  return {
+    calls: [
+      { ts: 'Oct 08 &middot; 3:00 AM', csm: 'varun', account: `IFS`,
+        note: `HGI + IFS <> Bi Weekly Connect w/ David Garcia Thomas. Solutioning options for IFS data integration (HubSpot priority, Salesforce + other systems also considered). Current Excel/Power BI manual mapping is inefficient. Hybrid data strategy under consideration. Business case + budget justification needed. Call on Oct 21 to finalize access method.`,
+        mins: 27, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `IFS biweekly &mdash; solutioning approaches for data integration. HubSpot is the key priority; Salesforce + other systems also under consideration. Current manual Excel-to-Power BI mapping needs to be replaced with automated/integrated solution. Use cases vary by team (marketing for HubSpot, sales for territory planning + market sizing). Hybrid approach balancing cost-effectiveness with comprehensive data access being explored. Varun to send email with questions re additional filters (country, revenue band, employee band) for greenfield accounts. Next call Oct 21 to discuss specific access methods (MCP, platform access, data feed, HubSpot connector). Multi-opp: Renewal - IFS - Intent & FAI and V2 Migration 2026. Confirmed via SFDC transcript speaker detection.`, source: 'sfdc' },
+
+      { ts: 'Oct 08 &middot; 5:00 AM', csm: 'divyam', account: `INFINIGATE HLD UK LIMITED`,
+        note: `Infinigate x HG Insights | Bi-Weekly Sync w/ Angus Hyams + Abolfazl Akhondi. HG rebrand + Sales Copilot platform launch review. Abolfazl's access being reset. Nordic expansion (Sweden starting) + feedback awaited. Credit migration from legacy to Sales Copilot being modeled for potential no-cost migration before March 2027 renewal.`,
+        mins: 32, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Infinigate biweekly &mdash; HG rebrand + Contextual Intelligence Platform (Sales Copilot) launch. Abolfazl experienced login issues on new platform; Divyam to resend welcome email + re-initiate access. Discussion covered Market Analyzer + Sales Copilot functionality + how to access contact information + compare w/ Cognizant data. Abolfazl expanding HG presence in Nordic countries starting w/ Sweden; awaiting Sweden team feedback. Migration from legacy to Sales Copilot discussed incl credit system for firmographics + install base + spend + possibility of no-cost migration before March 2027 renewal. Next: Divyam to re-initiate welcome email ASAP + investigate why Abolfazl cannot access Apollo data + confirm if only HG Insights data available + add missing products to database (ongoing) + add Abolfazl to platform + send invitation ASAP. Abolfazl to provide feedback from Sweden team on new country expansion + install base data by beginning of next week + compare HG Insights' contact database w/ current one using specific job titles after Sweden feedback. Divyam + Abolfazl to calculate + agree on credit migration before March 2027 renewal. Multi-opp: Renewal - Nuvias Group (soon to be Infinigate) - Wayne Gratton 2027. Attendance from Weflow participants; transcript not synced to SFDC.`, source: 'weflow' },
+
+      { ts: 'Oct 08 &middot; 5:30 AM', csm: 'nick', account: `Check Point Software Technologies, Inc.`,
+        note: `HGI - Export Full CP list w/ Ben Armon + Dan Bavli. Export issue: missing country column prevents filtering/upload. HG Company ID as primary matching field. Product filtering critical. 250K record upload limit requires multiple exports. Nick providing 215K company IDs for offline processing.`,
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Mixed',
+        detail: `Check Point export/upload working session &mdash; primary issue was missing "country" column in exported company usage data preventing proper filtering + upload. Discussed using HG Company ID as primary matching field during uploads (company name + URL as secondary fallbacks). Product filtering critical w/ list of product IDs to narrow target companies. Platform handles ~250K records per upload, necessitating multiple exports for large datasets. Duplicate uploads do not result in double charges but create messy data view. Next: Ben Armon to ensure HG Company ID column correctly labeled + save relevant sheet as CSV UTF-8 by Sunday + upload prepared data to opportunity generator by Sunday + apply product filters using provided product list CSV by Sunday + export matched data in multiple batches due to platform limitations by Sunday; Nick to assist Ben Armon w/ upload + filtering process (ongoing) + provide list of 215K company IDs for potential offline processing ASAP. Multi-opp: Check Point - Universe feed expansion + Renewal - Check Point Platform 2027. Attendance from Weflow participants; transcript not synced to SFDC.`, source: 'weflow' },
+
+      { ts: 'Oct 08 &middot; 6:30 AM', csm: 'nick', account: `Accenture`,
+        note: `Accenture / HG Insights - Request for insights follow-up w/ David Garcia Thomas + Max Shaw + Gavin Padden + Ganesh Kamalakannan. One-time legal exception granted for data-share to Evergy. Need scalable + repeatable process for future requests &mdash; contract amendments or expanded partnership agreements. Models under consideration: revenue share, per-project, data allowance tiers.`,
+        mins: 9, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Mixed',
+        detail: `Accenture Day-2 follow-up on yesterday's legal blocker &mdash; one-time exception granted to allow data sharing w/ Evergy client. Current contract primarily for internal use cases, necessitating discussion on how to handle repeatable external data-sharing requests. Need to establish streamlined process via contract amendments or expanded partnership agreements to avoid individual order forms for each request. Both legal + revenue teams evaluating options for future data sharing (revenue share, per-project costs, data allowance tiers). Expansion opportunity emerging around repeatable data-sharing model. Next: David Garcia-Thomas to get response from legal team re one-time exception + documentation + discuss w/ Ganesh re potential contract amendments for repeatable data sharing; Ganesh Kamalakannan to check w/ legal team if email suffices or if anything else needs to be signed + work w/ team on reviewing SD Insights orders + other contracts for potential amendments (next few weeks) + come back w/ proposed amendments to agreement to expand usage rights. Multi-opp: Accenture + Accenture Global account planning for expansion + Renewal Accenture Avanade Sub Access + Renewal Accenture John Walsh + Renewal AABG Partnership Contract. Attendance from Weflow participants; transcript not synced to SFDC.`, source: 'weflow' },
+
+      { ts: 'Oct 08 &middot; 7:30 AM', csm: 'varun', account: `Autodesk Inc`,
+        note: `HGI + Autodesk <> Whitespace Accounts w/ Rishabh Wadhwa. Whitespace data walkthrough: 50K accounts, 24K corporate parents. Absolute vs relative spend methodology. Account tiering (A/B/C) based on category spend + Autodesk-competitor usage. Null revenue totals + overlap with existing CRM data addressed.`,
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Autodesk whitespace accounts walkthrough &mdash; data clarity + spend methodology. Whitespace data includes ~50K accounts w/ 24K identified as corporate parents. Clarified absolute spend (includes subsidiary) vs relative spend (entity alone); summing both leads to duplication. Account tiering (A/B/C) based on factors like significant spend in category of interest + usage of Autodesk competitors. Revenue + employee data discrepancies explained &mdash; null 'revenue total' is expected (system provides 'revenue band' estimate). Mapped Autodesk products to closest spend categories. Next: Rishabh to share deck + Excel data + recording w/ Ankita + Dwiti + analyze provided list of overlapping HG company IDs + map Autodesk's product list to closest spend category + investigate varying group HQ company IDs + provide explanation; Ankita Yadav to share list of overlapping HG company IDs + share screenshots of varying group HQ company IDs within same geo; Varun to share technographics methodology w/ Ankita + Dwiti + discuss internally w/ Dwiti how to expand whitespace accounts after hierarchies are removed. Multi-opp: MK - Autodesk 2026 Ren2027 + Autodesk2029. Confirmed via SFDC transcript speaker detection.`, source: 'sfdc' },
+
+      { ts: 'Oct 08 &middot; 7:30 AM', csm: 'nick', account: `Accenture`,
+        note: `CONNECT :: Hector (Accenture) | Rohini (HGI) w/ David Garcia Thomas + Max Shaw + Rohini Kasturi. Hector (MD AI for Oil & Gas at Accenture) exploring HG data for proactive account planning. Revenue Growth Intelligence Fabric demo. Aramco account-level intelligence report as next-step deliverable. Account planning gap: HG data underutilized in major planning meetings.`,
+        mins: 31, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Accenture AI for Oil & Gas intro &mdash; Hector (Accenture MD for AI in O&G) exploring how HG data can enhance Accenture's AI strategy w/ proactive, data-driven account planning. Challenges in traditional relationship-based account planning (lack of external data-driven view). HG demonstrated Revenue Growth Intelligence Fabric that stitches data for outside-in view. Hector surprised not to see HG data referenced in major account planning meetings &mdash; suggests underutilization within parts of Accenture. Accenture Edge targets mid-market, indicating need for scaled-down offerings HG could support. Next: Rohini Kasturi to create account-level intelligence report for Aramco + share contact info + guidance on navigating Accenture; Hector to follow up w/ Rachel re Value Insights Platform + Aramco account; David Garcia-Thomas + Nick to share contact info for Rachel (VIP lead) + provide sample data/demonstration for Accenture's sales plays. Multi-opp: Accenture + Accenture Global account planning for expansion + Renewal Accenture Avanade Sub Access + Renewal Accenture John Walsh + Renewal AABG Partnership Contract. Confirmed via SFDC transcript speaker detection.`, source: 'sfdc' },
+
+      { ts: 'Oct 08 &middot; 7:30 AM', csm: 'rani', account: `NetApp`,
+        note: `HG Insights / NetApp Single Spend discussion w/ Adrian Escobar. Kevin Peters raised significant TAM discrepancies ($28B HG cloud storage vs $75-85B internal). Methodology under scrutiny. InstaCluster TAM ($130B) questioned as inflated. Observability + backup categories missing. Collaborative refinement + account-level analysis required.`,
+        mins: 29, health: 'Concerning',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Issue',
+        detail: `NetApp custom spend review &mdash; Kevin Peters raised significant discrepancies between HG's TAM figures + internal data. Cloud storage TAM ($28B) significantly lower than Kevin's internal estimate ($75-85B); Data Resiliency Services TAM ($11B) too low (products like 'cyres' + 'backup' not fully considered). InstaCluster TAM ($130B) questioned as inflated (includes entire database management market, not just open-source segment). Observability + software infrastructure categories missing. Custom spend model requires collaborative mapping to align w/ HG's taxonomy. Pulse Concerning &mdash; methodology credibility risks segmentation strategy + leadership confidence. Next: Doug Oliver-Watts + Dev Reddy to revisit + revise calculations for cloud storage + data services + InstaCluster TAM based on feedback + consider adding observability + backup categories; Doug to follow up w/ email clarifying adjustments; Kevin Peters to share meeting presentation w/ VP for review + potentially engage colleague w/ extensive experience to review data + provide point of view on relevancy; Doug + Dev to investigate whether InstaCluster TAM can be refined to represent only open-source database market + aim to provide updated calculations + conduct account-level analysis once consensus reached on top-level numbers. Multi-opp: NetApp + Ne2029. Attendance from Weflow participants; transcript not synced to SFDC.`, source: 'weflow' },
+
+      { ts: 'Oct 08 &middot; 9:00 AM', csm: 'rani', account: `Oracle`,
+        note: `HG Insights / Oracle monthly sync w/ Mark Fell + Noah Alford + Karin Pindle + David Crossman + Kraig Kraning + Erica Yim + Pam Huck (co-attended). Renewal push w/ Nicole Krout; HG Fabric + AI capabilities + MCP server; "good/better/best" pricing + credit-based model; mid-November target to avoid holiday delays.`,
+        mins: 59, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Oracle monthly sync &mdash; renewal push w/ Nicole Krout (Sr Director Product Management). Mark Fell + team presented HG Fabric + AI capabilities + new MCP server. Pricing models detailed: tiered "good/better/best" options w/ flexibility for customization + consumption-based pricing for MCP server. Importance of accurate company IDs + context for AI precision emphasized. Mid-November target to finalize renewal + avoid holiday delays. Cross-coverage: Rani + Pam co-attended. Next: Nicole Krout + Oracle team to review proposed solutions + pricing internally + compare w/ other third-party data providers by mid-November + provide feedback on proposed data feed parameters (revenue thresholds, vendor lists) ongoing + initiate procurement process by mid-November; HG Insights to send link to HG Fabric documentation + recording of yesterday's webinar to Nicole Krout ASAP + set up weekly cadence for follow-up discussions to tailor proposal starting next week. Multi-opp: Oracle - Renewal - RGIF Migration + Oracle NetSuite MCP Use Case for Scoring + Territory Development. Attendance from Weflow participants; transcript not synced to SFDC.`, source: 'weflow' },
+
+      { ts: 'Oct 08 &middot; 9:00 AM', csm: 'pam', account: `Oracle`,
+        note: `HG Insights / Oracle monthly sync (co-attended w/ Rani Guy) &mdash; see Rani's row for full details. Pam represented CS to facilitate communication during HG Fabric + credit-based model presentation.`,
+        mins: 59, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Oracle monthly sync co-attendance &mdash; Pam Huck co-attended Rani's Oracle renewal push session (full details in Rani's row). CS presence facilitated communication during HG Fabric + AI capabilities + MCP server + pricing-model presentation. Mid-November target to finalize renewal. Attendance from Weflow participants; transcript not synced to SFDC.`, source: 'weflow' },
+
+      { ts: 'Oct 08 &middot; 9:00 AM', csm: 'atisha', account: `RSM US`,
+        note: `HGI <> RSM: Weekly Sync w/ Francis Brero + Chloé Portier + Julian Rojas + Kristin Lewis. Key RSM stakeholder on extended leave; decision-maker unavailable. Kristin flagged daily check-in cadence as excessive. Signatory process clarified (order-form signatory need not match contract signatory). Revised timeline: year-end potential close.`,
+        mins: 22, health: 'Concerning',
+        nature: 'Recurring', initiator: 'Customer', purpose: 'Mixed',
+        detail: `RSM weekly sync &mdash; key stakeholder (Ben) on extended leave; decision-maker unavailable, impacting partnership momentum. Kristin Lewis flagged daily check-ins from Julian Rojas as excessive + negatively impacting partnership; need for refined communication process. Order-form signatory clarified: does not need to match contract signatory (significant relief for Kristin). Core MSA remains in place; current focus is on updating order form for renewal (not renegotiating entire contract). Another part of RSM org evaluating vendors incl TrustRadius for pilot program &mdash; opportunity to influence broader adoption. Revised timeline: potential close by year-end (December refresh). Pulse Concerning &mdash; stakeholder unavailable + customer flagged excessive outreach + timeline slipped. Next: Kristin Lewis to check w/ procurement re order-form signatory + potential need for higher-level signatory + provide update on deal status + direction + send update via email if possible + continue working on deal (prioritize top three); Atisha Waghela to schedule 15-min check-in call + send invite + revisit discussion for potential close by year-end + consider renewing December contract to include TR's broader product offerings. Multi-opp: Iron Mountain - Renewal 2026 (link via lead) + Renewal RSM US Microsoft 2026 + RSM TR Data Renewal. Attendance from Weflow participants; transcript not synced to SFDC.`, source: 'weflow' },
+
+      { ts: 'Oct 08 &middot; 9:30 AM', csm: 'atisha', account: `Advanced Micro Devices , Inc.`,
+        note: `AMD/HG Insights: Bi-weekly Touchpoint (abbreviated 8-min) w/ Tyler Neubauer + Charles Hawkins + Ravi Sharma + David Rockwell. Oct 27 Austin meeting logistics confirmed (AI sales hub workshop + credit usage). New HG rebrand + upcoming product updates discussed. Proposal w/ multiple scenarios + cost estimations being finalized.`,
+        mins: 8, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `AMD biweekly touchpoint &mdash; short logistics-focused session. Oct 27 meeting in Austin confirmed to discuss AI sales hub, potential credit usage for workshops, review proposal scenarios. New HG company branding + color palette unveiled; new product updates expected. AI sales hub session interest + workshop planning (participants can use credits to test data functionality). Proposal w/ multiple scenarios + cost estimations being finalized. Next: David Rockwell to block time on Oct 27 for meetings w/ working-level folks + Sarah from AI sales hub team + gather feedback from recent event (Context 2026); Charles Hawkins to confirm flight details for Oct 27 + finalize + share proposal w/ different scenarios + cost estimations; Charles + David to coordinate on Austin lunch recommendations. Multi-opp: Renewal - AMD - Universe Feed Renewal 2027. Attendance from Weflow participants; transcript not synced to SFDC.`, source: 'weflow' },
+
+      { ts: 'Oct 08 &middot; 10:00 AM', csm: 'nick', account: `NTT Data Corporation`,
+        note: `Leveraging Market Analyzer from HG Insights w/ David Garcia Thomas + Ryan Lough + Zeeshan Rashid + Abir Bhowmic. JV partner analysis use case (IT spend + market activity). Current tools limited to 12-month projections; need defensible long-term assumptions. Market Analyzer AI scoring trial planned (set up Tuesday next week).`,
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Expansion',
+        detail: `NTT Data Market Analyzer intro &mdash; potential joint venture requires analysis of partner's IT spend + market trajectory. Current market intelligence tools provide detailed IT spend data by company + region but limited to 12-month projections for future spend; extending projections requires further analysis or new solutions. Market Analyzer tool w/ AI scoring feature identified as potential solution to prioritize target companies for JV. Need for data-driven, defensible assumptions for long-term revenue projections to gain senior leadership confidence. Trial planned to evaluate advanced capabilities (AI scoring + deeper analysis). Next: Abir Bhowmic + Zeeshan to plan trial of Market Analyzer tool based on calendar availability (next week into the week after); David Garcia Thomas + Nick Johnson to set up trial access for Market Analyzer tool by Tuesday next week + share examples of sales play scoring ASAP; Ryan Lough to send list of new users for read-only access to Nick Johnson later today; David Garcia Thomas to work w/ procurement to amend contract to remove one month ASAP. Multi-opp: Renewal - NTT - NA Value Creation Team Platform Access 2028. Attendance from Weflow participants; transcript not synced to SFDC.`, source: 'weflow' },
+
+      { ts: 'Oct 08 &middot; 11:00 AM', csm: 'varun', account: `Pegasystems, Inc`,
+        note: `HGI + Pega <> Push of New ICP Datafeed w/ Max Shaw + Julian Rojas + Frank Boudreau + Taylor Crosby. ICP + data-feed scope refinement (26 countries, 8 industries, revenue threshold increased to $1B+). Phased rollout: spend + install data first, intent data later. Credit-based model enables flexibility + bi-monthly scope revisits.`,
+        mins: 14, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Pegasystems ICP datafeed push kickoff &mdash; refined ICP + data-feed scope. Initial scope: 26 countries, 8 industries, revenue threshold &lt;$100M, 200 products, 10 topics. Decision to phase rollout &mdash; spend + install data first, intent data later. Revenue threshold proposed to be increased to $1B+ to reduce target company count. Time-series technological progression recommended given install data availability. Credit-based model allows flexibility to mix/match parameters + revisit scope every 2 months. Next: Varun to share updated scope materials incl product + intent catalogs w/ Frank after call + reset Frank's tenant on edgy to enable email notifications for credit consumption on data feeds; Frank's team to begin exploring initial data feed (spend + install) + provide feedback + consider testing intent signals in later phase; Varun + Julian to provide support + expertise for questions or challenges during onboarding + testing. Multi-opp: Renewal - Pegasystems - Americas Sales 2028. Attendance from Weflow participants; transcript not synced to SFDC.`, source: 'weflow' },
+
+      { ts: 'Oct 08 &middot; 12:30 PM', csm: 'rani', account: `Google Inc.`,
+        note: `HG Insights / Google Buying Groups for Sales Plays discussion w/ Mark Fell + Erica Yim + Tracy York + Marianna Prodan + Lawrence. Buying groups capability demo for Google Cloud sales plays. Google Cloud Q4 pilot + Q1 rollout planned. HG to analyze sales play docs + build tailored buying-group example.`,
+        mins: 33, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Google buying groups for sales plays &mdash; moving beyond MQLs to identifying + engaging defined buying groups for targeted sales. HG's data capabilities map technology installations to specific departments + locations + individual contacts for detailed view of technology usage within companies. Google Cloud (represented by Lawrence) actively developing system to dynamically create buying groups based on sales plays + solution workloads + existing internal signals (Q4 pilot, Q1 rollout targets). Recognized need for external data or services to fill gaps in understanding buying-group composition + roles + exact locations where technologies are used. Collaboration aims to leverage vendor expertise to build or inform creation of dynamic buying groups + streamline sales process. Next: Lawrence/Google Cloud to send 1-2 sales play documents + 1-2 solution workload documents to HG for analysis today; HG/Tracy York to analyze provided documents + develop tailored example illustrating how HG data can build buying group based on sales plays/workloads + explore how capability can be scaled + integrated into Google Cloud's systems; Marianna Prodan to review proposal + example from HG to determine potential collaboration + next steps. Multi-opp: Google Inc. - RevX Core 3P Data feed. Attendance from Weflow participants; transcript not synced to SFDC.`, source: 'weflow' },
+
+      { ts: 'Oct 08 &middot; 1:30 PM', csm: 'rani', account: `Docusign, Inc.`,
+        note: `HG Insights / DocuSign roadmap discussion w/ Ziad Amira + Karin Pindle + Yuan Fang + Gavin Padden + Tracy York + Keith Hamrick + Andrew Schankerman. Renewal + expansion focus: HG Fabric, AI scoring, credit-based model, MCP integration. Keith to share latest competitor list. Katie Bueller GTM Intelligence Team intro planned.`,
+        mins: 66, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `DocuSign roadmap + renewal strategy session &mdash; HG Insights showcased expanded data assets, new AI-driven features for scoring + opportunity sizing, upcoming platform migration (new UI "the fabric"), credit-based model transition. DocuSign expressed interest in refining competitive strategy + identifying new market opportunities. Current use focuses on opportunity sizing + market planning (not territory planning) w/ strong emphasis on understanding addressable markets + potential revenue. Discussion also touched on current usage, future needs, upcoming contract renewal (credit-based model + MCP implications), security review requirements. Proactive renewal planning + exploration of new capabilities emphasized. Next: Ziad + Rani to follow up re credit-based model (pricing, usage scenarios, MCP technical details) by tomorrow + facilitate intro to Katie Bueller's go-to-market intelligence team at DocuSign ASAP + provide DocuSign w/ breakdown of credit costs for different data points + potential usage scenarios by tomorrow; Keith Hamrick to share latest list of DocuSign's competitors ASAP; Rani to schedule follow-up call to deep dive into specific platform features + share videos for async review + discuss credit model implications for MCP usage + potential security review requirements during next call + explore possibility of DocuSign's team leveraging HG Insights' existing agents or transforming them + provide demo of department-level information + share details on HG's expanded technology tracking. Multi-opp: Docusign Agentic Play + Renewal Docusign CEO Referral Platform 2027 + Renewal Docusign Better Together Pilot 2027. Attendance from Weflow participants; transcript not synced to SFDC.`, source: 'weflow' },
+    ],
+    pulses: [
+      { csm: 'varun', account: `IFS`, health: 'Healthy',
+        note: `Biweekly &mdash; solutioning options for data integration (HubSpot priority + Salesforce + hybrid approach). Business case + budget justification needed by Oct 21.` },
+      { csm: 'divyam', account: `INFINIGATE HLD UK LIMITED`, health: 'Healthy',
+        note: `Biweekly &mdash; HG rebrand + Sales Copilot launch review. Nordic (Sweden) expansion feedback awaited. Credit migration modeled for no-cost migration before March 2027 renewal.` },
+      { csm: 'nick', account: `Check Point Software Technologies, Inc.`, health: 'Healthy',
+        note: `Export/upload working session for Universe Feed expansion &mdash; missing country column fix; HG Company ID matching; 215K company IDs provided for offline processing.` },
+      { csm: 'nick', account: `Accenture (follow-up)`, health: 'Healthy',
+        note: `Day-2 follow-up on legal exception &mdash; one-time Evergy share granted; focus on scalable repeatable process via contract amendments or expanded partnership agreements.` },
+      { csm: 'varun', account: `Autodesk Inc`, health: 'Healthy',
+        note: `Whitespace walkthrough (50K accounts, 24K corporate parents) &mdash; absolute vs relative spend; tiering methodology; null revenue total + CRM overlap addressed.` },
+      { csm: 'nick', account: `Accenture (Hector)`, health: 'Healthy',
+        note: `CONNECT w/ Hector Accenture MD AI for Oil & Gas &mdash; Aramco account-level intelligence report planned; HG data underutilized in Accenture account planning.` },
+      { csm: 'rani', account: `NetApp`, health: 'Concerning',
+        note: `TAM discrepancies &mdash; cloud storage $28B HG vs $75-85B internal (Kevin Peters); InstaCluster inflated; observability + backup missing. Methodology risks segmentation strategy.` },
+      { csm: 'rani', account: `Oracle`, health: 'Healthy',
+        note: `Monthly renewal push w/ Nicole Krout &mdash; HG Fabric + MCP server + "good/better/best" pricing + credit-based model. Mid-Nov target to avoid holiday delays. Pam co-attended.` },
+      { csm: 'pam', account: `Oracle (co-attend)`, health: 'Healthy',
+        note: `Co-attended Oracle monthly sync w/ Rani &mdash; CS presence during HG Fabric + credit-model presentation. Mid-Nov renewal target.` },
+      { csm: 'atisha', account: `RSM US`, health: 'Concerning',
+        note: `Key stakeholder on extended leave; decision-maker unavailable. Kristin flagged check-in cadence as excessive. Signatory process clarified. Revised year-end timeline.` },
+      { csm: 'atisha', account: `Advanced Micro Devices , Inc.`, health: 'Healthy',
+        note: `Short logistics touchpoint &mdash; Oct 27 Austin AI sales hub workshop confirmed. New HG rebrand + product updates discussed. Multi-scenario proposal being finalized.` },
+      { csm: 'nick', account: `NTT Data Corporation`, health: 'Healthy',
+        note: `Market Analyzer trial for JV partner analysis &mdash; AI scoring to prioritize target companies. Trial set up Tuesday next week. Read-only access for new users today.` },
+      { csm: 'varun', account: `Pegasystems, Inc`, health: 'Healthy',
+        note: `New ICP datafeed phased rollout &mdash; spend + install first, intent later. Revenue threshold raised to $1B+. Bi-monthly scope revisits enabled by credit model.` },
+      { csm: 'rani', account: `Google Inc.`, health: 'Healthy',
+        note: `Buying Groups for Sales Plays &mdash; Google Cloud Q4 pilot + Q1 rollout. HG to build tailored buying-group example from Lawrence's sales play docs.` },
+      { csm: 'rani', account: `Docusign, Inc.`, health: 'Healthy',
+        note: `Roadmap + renewal strategy &mdash; HG Fabric, AI scoring, credit model, MCP integration. Katie Bueller GTM Intelligence Team intro planned. Keith to share competitor list.` },
+    ],
+  };
+}
+
+function dayMeta_2026_10_08() {
+  return {
+    pills: [
+      ['dot-teal',   '15 Calls'],
+      ['dot-amber',  '5 Expansion'],
+      ['dot-red',    '2 Concerning'],
+      ['dot-green',  '15 Vitally Pulses'],
+      ['dot-grey',   'Thu Oct 08 &middot; 104 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (15)', 'Pulses (15)', 'Action Items (10)']
+  };
+}
+
+function dayOverviewHTML_2026_10_08() {
+  return `<div class="section-label">Team Activity &mdash; Thursday October 08, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Thursday Oct 08 &mdash; 104 recordings scanned</strong> via SFDC SOQL &middot; <strong>14 unique customer calls</strong> (Oracle co-attended by Rani + Pam counts twice in CSM attendance) across 6 CSMs &middot; 5 Expansion signals &middot; 2 Concerning &middot; SFDC confirmed 3; Weflow fallback added 11 recoveries (73% dependency). Nick + Rani lead w/ 4 calls each; Varun 3; Atisha 2; Divyam + Pam 1. Riley + Andy inactive.
+  </div>
+  <div style="background:#2a1f1f;border:1px solid #b45309;border-left:3px solid #b45309;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>2 CONCERNING:</strong> NetApp (Kevin Peters raised significant TAM discrepancies: cloud storage $28B HG vs $75-85B internal; InstaCluster $130B inflated; observability + backup categories missing &mdash; methodology credibility risks segmentation strategy) &middot; RSM US (key stakeholder on extended leave + decision-maker unavailable; Kristin flagged daily check-in cadence as excessive; revised year-end timeline)
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>5 EXPANSION:</strong> Oracle (mid-Nov renewal push + HG Fabric + MCP server + good/better/best pricing) &middot; DocuSign (roadmap + renewal strategy + MCP integration + Katie Bueller GTM intelligence intro) &middot; Google (buying groups for sales plays, Q4 pilot/Q1 rollout) &middot; Pegasystems (new ICP datafeed, phased rollout, $1B+ revenue threshold) &middot; Accenture Hector (Oil & Gas AI vertical + Aramco account-level intelligence report)
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F91D; <strong>CROSS-COVERAGE:</strong> Oracle monthly sync &mdash; Rani Guy (primary CSM) + Pam Huck co-attended; Mark Fell led. Strategic-accounts coordination for Nicole Krout renewal push.
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">4 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">4</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">4</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">100m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Check Point (Universe feed export issue) &middot; Accenture (legal exception + repeatable process) &middot; Accenture Hector (&#x1F4C8; O&G AI vertical + Aramco report) &middot; NTT Data (&#x1F4C8; Market Analyzer trial for JV)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">4 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">4</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">4</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">187m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">NetApp (&#x1F534; TAM discrepancies) &middot; Oracle (&#x1F4C8; renewal push; Pam co-attend) &middot; Google (&#x1F4C8; buying groups) &middot; DocuSign (&#x1F4C8; roadmap + MCP + Katie Bueller intro)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">3 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">3</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">71m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">IFS (data-integration solutioning) &middot; Autodesk (whitespace walkthrough 50K/24K) &middot; Pegasystems (&#x1F4C8; new ICP datafeed phased rollout)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">30m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">RSM US (&#x1F534; stakeholder on leave + cadence feedback; year-end revised) &middot; AMD (short Oct 27 AI sales hub prep)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">32m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Infinigate (HG rebrand + Sales Copilot launch; Sweden expansion; credit migration for March 2027 renewal)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="pam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">59m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Oracle (co-attended w/ Rani; CS presence during Nicole Krout renewal push)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="riley">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-riley">RR</div><div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Several TrustRadius events scheduled &mdash; no CSM speaker in any recording + no Weflow-participant hit.</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">AL</div><div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Events scheduled &mdash; no CSM speaker in recording + no Weflow-participant hit.</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_10_08() {
+  return `<div class="section-label">Confirmed Calls &mdash; Thursday October 08, 2026</div>
+  <div style="background:#2a1f1f;border:1px solid #b45309;border-left:3px solid #b45309;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>2 CONCERNING:</strong> NetApp (Kevin Peters raised TAM discrepancies vs internal data; methodology credibility risks segmentation strategy) &middot; RSM US (key stakeholder on extended leave + customer flagged daily check-in cadence as excessive; revised year-end timeline).
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>5 EXPANSION:</strong> Oracle (mid-Nov renewal push + HG Fabric + MCP) &middot; DocuSign (roadmap + MCP + Katie Bueller intro) &middot; Google (buying groups Q4 pilot) &middot; Pegasystems (new ICP datafeed) &middot; Accenture Hector (O&G AI + Aramco). 11 of 14 confirmed via Weflow fallback (SFDC transcript sync at 3/14 = 21%).
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F91D; <strong>CROSS-COVERAGE:</strong> Oracle monthly sync &mdash; Rani Guy (primary) + Pam Huck co-attended; Mark Fell led the renewal push for Nicole Krout.
+  </div>`;
+}
+
+function dayPulsesHTML_2026_10_08() {
+  const cards = [
+    { csm:'varun', health:'Healthy', account:`IFS`, opp:`Vitally Pulse &mdash; Oct 08 Call`, arr:`Enterprise &middot; Varun Tiwari`, csmlbl:`Varun Tiwari`, change:`Oct 08 &middot; Healthy`,
+      excerpt:`Biweekly &mdash; solutioning options for data integration (HubSpot priority + Salesforce + hybrid approach). Business case + budget justification needed by Oct 21.` },
+    { csm:'divyam', health:'Healthy', account:`INFINIGATE HLD UK LIMITED`, opp:`Vitally Pulse &mdash; Oct 08 Call`, arr:`Enterprise &middot; Divyam Dewan`, csmlbl:`Divyam Dewan`, change:`Oct 08 &middot; Healthy`,
+      excerpt:`Biweekly &mdash; HG rebrand + Sales Copilot launch review. Nordic (Sweden) expansion feedback awaited. Credit migration modeled for no-cost migration before March 2027 renewal.` },
+    { csm:'nick', health:'Healthy', account:`Check Point Software Technologies, Inc.`, opp:`Vitally Pulse &mdash; Oct 08 Call`, arr:`Enterprise &middot; Nick Johnson`, csmlbl:`Nick Johnson`, change:`Oct 08 &middot; Healthy`,
+      excerpt:`Export/upload working session for Universe Feed expansion &mdash; missing country column fix; HG Company ID matching; 215K company IDs provided for offline processing.` },
+    { csm:'nick', health:'Healthy', account:`Accenture (follow-up)`, opp:`Vitally Pulse &mdash; Oct 08 Call`, arr:`Strategic &middot; Nick Johnson`, csmlbl:`Nick Johnson`, change:`Oct 08 &middot; Healthy`,
+      excerpt:`Day-2 follow-up on legal exception &mdash; one-time Evergy share granted; focus on scalable repeatable process via contract amendments or expanded partnership agreements.` },
+    { csm:'varun', health:'Healthy', account:`Autodesk Inc`, opp:`Vitally Pulse &mdash; Oct 08 Call`, arr:`Enterprise &middot; Varun Tiwari`, csmlbl:`Varun Tiwari`, change:`Oct 08 &middot; Healthy`,
+      excerpt:`Whitespace walkthrough (50K accounts, 24K corporate parents) &mdash; absolute vs relative spend; tiering methodology; null revenue total + CRM overlap addressed.` },
+    { csm:'nick', health:'Healthy', account:`Accenture (Hector)`, opp:`Vitally Pulse &mdash; Oct 08 Call`, arr:`Strategic &middot; Nick Johnson`, csmlbl:`Nick Johnson`, change:`Oct 08 &middot; Healthy`,
+      excerpt:`CONNECT w/ Hector Accenture MD AI for Oil & Gas &mdash; Aramco account-level intelligence report planned; HG data underutilized in Accenture account planning.` },
+    { csm:'rani', health:'Concerning', account:`NetApp`, opp:`Vitally Pulse &mdash; Oct 08 Call`, arr:`Strategic &middot; Rani Guy`, csmlbl:`Rani Guy`, change:`Oct 08 &middot; Concerning`,
+      excerpt:`TAM discrepancies &mdash; cloud storage $28B HG vs $75-85B internal (Kevin Peters); InstaCluster inflated; observability + backup missing. Methodology risks segmentation strategy.` },
+    { csm:'rani', health:'Healthy', account:`Oracle`, opp:`Vitally Pulse &mdash; Oct 08 Call`, arr:`Strategic &middot; Rani Guy`, csmlbl:`Rani Guy`, change:`Oct 08 &middot; Healthy`,
+      excerpt:`Monthly renewal push w/ Nicole Krout &mdash; HG Fabric + MCP server + "good/better/best" pricing + credit-based model. Mid-Nov target to avoid holiday delays. Pam co-attended.` },
+    { csm:'pam', health:'Healthy', account:`Oracle (co-attend)`, opp:`Vitally Pulse &mdash; Oct 08 Call`, arr:`Strategic &middot; Pam Huck`, csmlbl:`Pam Huck`, change:`Oct 08 &middot; Healthy`,
+      excerpt:`Co-attended Oracle monthly sync w/ Rani &mdash; CS presence during HG Fabric + credit-model presentation. Mid-Nov renewal target.` },
+    { csm:'atisha', health:'Concerning', account:`RSM US`, opp:`Vitally Pulse &mdash; Oct 08 Call`, arr:`Enterprise &middot; Atisha Waghela`, csmlbl:`Atisha Waghela`, change:`Oct 08 &middot; Concerning`,
+      excerpt:`Key stakeholder on extended leave; decision-maker unavailable. Kristin flagged check-in cadence as excessive. Signatory process clarified. Revised year-end timeline.` },
+    { csm:'atisha', health:'Healthy', account:`Advanced Micro Devices , Inc.`, opp:`Vitally Pulse &mdash; Oct 08 Call`, arr:`Strategic &middot; Atisha Waghela`, csmlbl:`Atisha Waghela`, change:`Oct 08 &middot; Healthy`,
+      excerpt:`Short logistics touchpoint &mdash; Oct 27 Austin AI sales hub workshop confirmed. New HG rebrand + product updates discussed. Multi-scenario proposal being finalized.` },
+    { csm:'nick', health:'Healthy', account:`NTT Data Corporation`, opp:`Vitally Pulse &mdash; Oct 08 Call`, arr:`Enterprise &middot; Nick Johnson`, csmlbl:`Nick Johnson`, change:`Oct 08 &middot; Healthy`,
+      excerpt:`Market Analyzer trial for JV partner analysis &mdash; AI scoring to prioritize target companies. Trial set up Tuesday next week. Read-only access for new users today.` },
+    { csm:'varun', health:'Healthy', account:`Pegasystems, Inc`, opp:`Vitally Pulse &mdash; Oct 08 Call`, arr:`Enterprise &middot; Varun Tiwari`, csmlbl:`Varun Tiwari`, change:`Oct 08 &middot; Healthy`,
+      excerpt:`New ICP datafeed phased rollout &mdash; spend + install first, intent later. Revenue threshold raised to $1B+. Bi-monthly scope revisits enabled by credit model.` },
+    { csm:'rani', health:'Healthy', account:`Google Inc.`, opp:`Vitally Pulse &mdash; Oct 08 Call`, arr:`Strategic &middot; Rani Guy`, csmlbl:`Rani Guy`, change:`Oct 08 &middot; Healthy`,
+      excerpt:`Buying Groups for Sales Plays &mdash; Google Cloud Q4 pilot + Q1 rollout. HG to build tailored buying-group example from Lawrence's sales play docs.` },
+    { csm:'rani', health:'Healthy', account:`Docusign, Inc.`, opp:`Vitally Pulse &mdash; Oct 08 Call`, arr:`Strategic &middot; Rani Guy`, csmlbl:`Rani Guy`, change:`Oct 08 &middot; Healthy`,
+      excerpt:`Roadmap + renewal strategy &mdash; HG Fabric, AI scoring, credit model, MCP integration. Katie Bueller GTM Intelligence Team intro planned. Keith to share competitor list.` },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div class="pulse-account">${c.account}</div>
+          <div class="pulse-opp">${c.opp}</div>
+          <div class="pulse-arr">${c.arr}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_10_08() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('0801')?'done':''}" data-csm="rani" id="action-0801">
+      <div class="action-checkbox ${doneActions.has('0801')?'checked':''}" onclick="toggleAction('0801')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F534; NetApp &mdash; revise TAM calculations for cloud storage + data services + InstaCluster; add observability + backup categories</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy + Adrian Escobar + Doug Oliver-Watts + Dev Reddy + Kevin Peters &middot; Doug + Dev to revisit + revise calculations for cloud storage ($28B HG vs $75-85B internal) + data services + InstaCluster TAM ($130B question re open-source vs full database market) based on feedback. Doug to follow up w/ email clarifying adjustments + consider adding observability + backup categories to data resiliency services. Kevin Peters to share meeting presentation w/ VP for review + potentially engage colleague w/ extensive experience to review data + provide point of view on relevancy. Doug + Dev to aim to provide updated calculations + conduct account-level analysis once consensus reached on top-level numbers.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0802')?'done':''}" data-csm="atisha" id="action-0802">
+      <div class="action-checkbox ${doneActions.has('0802')?'checked':''}" onclick="toggleAction('0802')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F534; RSM US &mdash; revise outreach cadence + confirm order-form signatory + target year-end close w/ TR expansion scope</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Atisha Waghela + Julian Rojas + Francis Brero + Kristin Lewis + Ed Abrams &middot; Kristin Lewis to check w/ procurement re order-form signatory + potential need for higher-level signatory + provide update on deal status + direction + send update via email if possible + continue working on deal (prioritize top three). Atisha Waghela to schedule 15-min check-in call + send invite + revisit discussion for potential close by year-end + consider renewing December contract to include TR's broader product offerings. Julian to revise communication process to respect customer's cadence preference.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0803')?'done':''}" data-csm="rani" id="action-0803">
+      <div class="action-checkbox ${doneActions.has('0803')?'checked':''}" onclick="toggleAction('0803')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Oracle &mdash; HG Fabric + MCP + credit model follow-ups ahead of mid-Nov renewal deadline</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy + Pam Huck (co-attend) + Mark Fell + Nicole Krout + Noah Alford + Karin Pindle + David Crossman &middot; Nicole Krout + Oracle team to review proposed solutions + pricing internally + compare w/ other third-party data providers by mid-November + provide feedback on proposed data feed parameters (revenue thresholds, vendor lists) ongoing + initiate procurement process by mid-November. HG Insights to send link to HG Fabric documentation + recording of yesterday's webinar to Nicole Krout ASAP + set up weekly cadence for follow-up discussions to tailor proposal starting next week.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0804')?'done':''}" data-csm="rani" id="action-0804">
+      <div class="action-checkbox ${doneActions.has('0804')?'checked':''}" onclick="toggleAction('0804')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; DocuSign &mdash; credit model + MCP breakdown + Katie Bueller GTM intelligence intro by tomorrow</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Rani Guy + Ziad Amira + Keith Hamrick + Andrew Schankerman + Karin Pindle + Yuan Fang + Gavin Padden &middot; Ziad + Rani to follow up re credit-based model (pricing, usage scenarios, MCP technical details) by tomorrow + facilitate intro to Katie Bueller's go-to-market intelligence team at DocuSign ASAP + provide DocuSign w/ breakdown of credit costs for different data points + potential usage scenarios by tomorrow. Keith Hamrick to share latest list of DocuSign's competitors ASAP. Rani to schedule follow-up call to deep dive into specific platform features + share videos for async review + discuss credit model implications for MCP usage + potential security review requirements during next call.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0805')?'done':''}" data-csm="nick" id="action-0805">
+      <div class="action-checkbox ${doneActions.has('0805')?'checked':''}" onclick="toggleAction('0805')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Accenture (Hector) &mdash; build Aramco account-level intelligence report + share Rachel (VIP) contact</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Nick Johnson + David Garcia-Thomas + Rohini Kasturi + Max Shaw + Hector (Accenture) &middot; Rohini Kasturi to create account-level intelligence report for Aramco + share contact info + guidance on navigating Accenture. Hector to follow up w/ Rachel re Value Insights Platform + Aramco account. David Garcia-Thomas + Nick to share contact info for Rachel (VIP lead) + provide sample data/demonstration for Accenture's sales plays.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0806')?'done':''}" data-csm="rani" id="action-0806">
+      <div class="action-checkbox ${doneActions.has('0806')?'checked':''}" onclick="toggleAction('0806')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Google &mdash; analyze Lawrence's sales play docs + build tailored buying-group example (Q4 pilot/Q1 rollout)</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Rani Guy + Mark Fell + Erica Yim + Tracy York + Marianna Prodan + Lawrence &middot; Lawrence/Google Cloud to send 1-2 sales play documents + 1-2 solution workload documents to HG for analysis today. HG/Tracy York to analyze provided documents + develop tailored example illustrating how HG data can build buying group based on sales plays/workloads + explore how capability can be scaled + integrated into Google Cloud's systems. Marianna Prodan to review proposal + example from HG to determine potential collaboration + next steps.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0807')?'done':''}" data-csm="varun" id="action-0807">
+      <div class="action-checkbox ${doneActions.has('0807')?'checked':''}" onclick="toggleAction('0807')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Pegasystems &mdash; share updated scope materials + reset Frank's tenant for credit-consumption notifications</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Varun Tiwari + Max Shaw + Julian Rojas + Frank Boudreau + Taylor Crosby &middot; Varun to share updated scope materials incl product + intent catalogs w/ Frank after call + reset Frank's tenant on edgy to enable email notifications for credit consumption on data feeds. Frank's team to begin exploring initial data feed (spend + install) + provide feedback + consider testing intent signals in later phase. Varun + Julian to provide support + expertise for questions or challenges during onboarding + testing.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0808')?'done':''}" data-csm="nick" id="action-0808">
+      <div class="action-checkbox ${doneActions.has('0808')?'checked':''}" onclick="toggleAction('0808')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F501; Accenture (Day-2) &mdash; propose contract amendments for repeatable external data sharing (next few weeks)</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Nick Johnson + David Garcia-Thomas + Max Shaw + Gavin Padden + Ganesh Kamalakannan &middot; David Garcia-Thomas to get response from legal team re one-time exception + documentation + discuss w/ Ganesh re potential contract amendments for repeatable data sharing. Ganesh Kamalakannan to check w/ legal team if email suffices or if anything else needs to be signed + work w/ team on reviewing SD Insights orders + other contracts for potential amendments (next few weeks) + come back w/ proposed amendments to agreement to expand usage rights.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0809')?'done':''}" data-csm="divyam" id="action-0809">
+      <div class="action-checkbox ${doneActions.has('0809')?'checked':''}" onclick="toggleAction('0809')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F501; Infinigate &mdash; re-initiate Abolfazl Sales Copilot access + Sweden feedback + credit migration model by March 2027 renewal</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Divyam Dewan + Angus Hyams + Abolfazl Akhondi &middot; Divyam to re-initiate welcome email ASAP + investigate why Abolfazl cannot access Apollo data + confirm if only HG Insights data available + add missing products to database (ongoing) + add Abolfazl to platform + send invitation ASAP. Abolfazl to provide feedback from Sweden team on new country expansion + install base data by beginning of next week + compare HG Insights' contact database w/ current one using specific job titles after Sweden feedback. Divyam + Abolfazl to calculate + agree on credit migration before March 2027 renewal.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0810')?'done':''}" data-csm="varun" id="action-0810">
+      <div class="action-checkbox ${doneActions.has('0810')?'checked':''}" onclick="toggleAction('0810')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; IFS &mdash; prepare data strategy + business case for Oct 21 solutioning call</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Varun Tiwari + David Garcia-Thomas + IFS team &middot; Varun to send email w/ questions re additional filters (country, revenue band, employee band) for greenfield accounts. IFS team to refine data strategy to focus on essential use cases + efficient data sets by Oct 21 + determine business decision on data utilization (direct access, Claude, dashboard) + finalize approach + agree on what data is being purchased + what is needed before procurement deadline + define final solution for data access (super users, MCP, platform access, data feeds). IFS team to discuss specific data access methods (MCP, platform access, data feed, HubSpot connector) on Oct 21 call.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
