@@ -2150,3 +2150,230 @@ function dayActionsHTML_2026_10_08() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
 }
+
+function dayData_2026_10_09() {
+  return {
+    calls: [
+      { ts: 'Oct 09 &middot; 7:30 AM', csm: 'nick', account: `Lenovo Group Ltd.`,
+        note: `HGI- Lenovo Connect (HGI's response) w/ Rani Guy (co-attended) + Adrian Escobar + Alexi Mouarkach + David Crossman + Erica Yim + Gavin Padden + Fiona O'Brien + Ujjaini Mazumdar + Raju Ghosh. Account matching improvements (city/postal). AI + Gen AI 6-month POC (Oct-Mar) &mdash; who agreed to drop from contract requires investigation. PTB model workshop planned. Site vs country-level install data gap.`,
+        mins: 52, health: 'Concerning',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Mixed',
+        detail: `Lenovo deep working session on data matching + delivery scope. Cross-coverage: Rani Guy co-attended as broader-strategic-accounts support. Account matching improved by incorporating city + postal code data (more granular site-level matches). AI + Gen AI data to be provided for 6-month POC Oct-Mar w/ option to purchase after; investigation needed to determine when + who at Lenovo agreed to drop from contract. PTB workshop proposed to understand Lenovo's models + tech stack + propose solutions. Significant discrepancies: Lenovo expects site-level install data (HG provides country + URL level); Lenovo expects account-level PTB scores via data feed (HG focuses on collaborative model building). Pulse Concerning &mdash; expectations gap on install data granularity + PTB delivery model + contract-scope confusion. Next: HG team to investigate who agreed to drop AI/Gen AI data from contract ASAP + schedule PTB modeling workshop + provide full delivery-scope update by Oct 15 + investigate + provide clarity on install data granularity + provide examples linking spend + install + FAI data at city level + brainstorm QC checklist expectations + share project plan via SharePoint + follow up w/ next actions + timelines; Lenovo team to revert w/ desired years of history for time-series data (5-7 yrs instead of 25). Multi-opp: Lenovo Global Expansion 2027 + Data Feed "Sphere" Project 2029 + IDG Nvidia MCP + LATAM CMO Americas 2026 + SSG RGIP 2029 + New License Mktg Team 2027. Attendance from Weflow participants; transcript not synced to SFDC.`, source: 'weflow' },
+
+      { ts: 'Oct 09 &middot; 8:30 AM', csm: 'nick', account: `Protiviti Inc`,
+        note: `Protiviti - HG Insights renewal - SAP MDF (short 5-min) w/ David Garcia Thomas + Patrick NeSmith. SAP MDF funding confirmed; cost + term unchanged. 15 user licenses for Market Analyzer + Sales Copilot (flexible allocation). Expansion play to Oracle/Workday ecosystem via Mary.`,
+        mins: 5, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Protiviti SAP MDF renewal + expansion kickoff &mdash; short 5-min alignment call. Cost + term unchanged for renewal; SAP funding confirmed for credits (requires careful SAP usage policy adherence). 15 user licenses provided for Market Analyzer + Sales Copilot (flexible distribution). Plan to engage Mary (oversees Oracle + Workday ecosystems) to explore similar SAP-funded arrangement &mdash; new ecosystem expansion opportunity. Partners can have separate tenants + profiles for flexibility. Next: Nick to set up conversation w/ Mary re potential similar arrangement for Oracle + Workday + update paperwork to reflect any changes + share quote w/ Patrick; Patrick to include Nick + Ashley (procurement) on relevant communications + submit paperwork to SAP + set up time to go over new version. Multi-opp: Renewal - SAP MDF Funds 2026. Attendance from Weflow participants; transcript not synced to SFDC.`, source: 'weflow' },
+
+      { ts: 'Oct 09 &middot; 9:00 AM', csm: 'nick', account: `E-Strategy International Inc.`,
+        note: `E-Strategy - HG Insights - MDF renewal (short 9-min) w/ David Garcia Thomas + Dhruv Talwar. E-Strategy switching to ZoomInfo for prospecting due to budget constraints. HG subscription ending; SAP MDF compliance requires data removal. Nick to share info on cheaper HG packages for small-high-value prospect profiling.`,
+        mins: 9, health: 'Concerning',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Issue',
+        detail: `E-Strategy SAP MDF non-renewal &mdash; partner reprioritizing demand generation towards events + sponsorships + customer win stories; budget constraints led to decision to use ZoomInfo instead of HG Insights for prospecting tools next year. Nick outlined SAP MDF compliance requirements for ending subscription (data removal required). Both parties acknowledged differing strategies + agreed to revisit potential collaborations in future. HG rebuttal: new platform includes contacts + CRM integrations w/ tighter functionality than competitors. Pulse Concerning &mdash; non-renewal + replacement by ZoomInfo + required data removal; opportunity exists for cheaper-packaged repositioning. Next: Dhruv Talwar's team to remove all HG data from systems by end of subscription; Nick to provide info on cheaper HG Insights packages for profiling small number of high-value prospects. Multi-opp: Renewal - SAP MDF Funds: E-Strategy 2026. Attendance from Weflow participants; transcript not synced to SFDC.`, source: 'weflow' },
+
+      { ts: 'Oct 09 &middot; 10:00 AM', csm: 'rani', account: `NetApp`,
+        note: `HG Insights / NetApp Account match file review w/ Omkar Hunuswadkar + Adrian Escobar + Bini Valsala + Madhup Tibrewala + Michael Danaher + Shuming Chen. High-confidence matched records over volume. DP vs NAGP ID hierarchy clarified. Gap: private + government + large-revenue companies not in HGI list. URL data for match confidence. 15K file delivered.`,
+        mins: 70, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Mixed',
+        detail: `NetApp account match file review &mdash; data matching accuracy + delivery methodology. Primary focus on delivering high-confidence matched records (not just volume) to ensure data utility + accuracy for downstream PTB model. ID hierarchy clarified: NAGP (global HQ), DP (domestic parent/country), Site level &mdash; preference for mapping to NAGP or DP IDs for broader usability. Match confidence categorized as high/medium/low based on criteria (DUNS, company name, country, URL); goal is to maximize high + medium matches. Data gap in private + government companies + some large-revenue companies not appearing in HGI list &mdash; needs investigation. URL data importance highlighted for improving match confidence. Decision: deliver 15K file as is. Next: Bini to share file mapping HGI company name to NAGP name + ID w/ Omkar + Rani by Monday morning + check w/ CDM team for available URL data from Dun & Bradstreet + confirm if 1M records file can be delivered today; Omkar to rerun match on updated file from Bini + send back to Michael by Monday morning + analyze records w/ low confidence matches + identify areas for potential improvement + provide fill rates for IT budget + revenue bands + investigate how private/government company revenues estimated; Rani to add Michael to notification list for file delivery updates + follow up w/ June re intent topics + potential changes based on coverage feedback + submit ticket to outline credit cost for enriching different data sets (buying center, buyer info); Madhup to share list of accounts not showing up in HGI for further investigation; Michael to provide confirmation on whether to include 30 intent topics selected by June. Multi-opp: NetApp + Ne2029. Confirmed via SFDC transcript speaker detection.`, source: 'sfdc' },
+    ],
+    pulses: [
+      { csm: 'nick', account: `Lenovo Group Ltd.`, health: 'Concerning',
+        note: `HGI's response session &mdash; AI/Gen AI 6-month POC (Oct-Mar) contract-drop confusion. Site vs country-level install data gap. PTB-model workshop + full delivery-scope update by Oct 15. Rani co-attended.` },
+      { csm: 'nick', account: `Protiviti Inc`, health: 'Healthy',
+        note: `SAP MDF renewal confirmed (cost + term unchanged); 15 licenses for Market Analyzer + Sales Copilot. Expansion play to Oracle/Workday ecosystem via Mary.` },
+      { csm: 'nick', account: `E-Strategy International Inc.`, health: 'Concerning',
+        note: `Non-renewal &mdash; partner switching to ZoomInfo for prospecting due to budget constraints. SAP MDF compliance requires data removal. Nick to pitch cheaper HG packages for high-value prospect profiling.` },
+      { csm: 'rani', account: `NetApp`, health: 'Healthy',
+        note: `Account match file review (70 min) &mdash; high-confidence match focus; DP vs NAGP ID hierarchy; URL data for match confidence; private/government + large-revenue coverage gaps. 15K file delivered.` },
+    ],
+  };
+}
+
+function dayMeta_2026_10_09() {
+  return {
+    pills: [
+      ['dot-teal',   '4 Calls'],
+      ['dot-amber',  '1 Expansion'],
+      ['dot-red',    '2 Concerning'],
+      ['dot-green',  '4 Vitally Pulses'],
+      ['dot-grey',   'Fri Oct 09 &middot; 50 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (4)', 'Pulses (4)', 'Action Items (6)']
+  };
+}
+
+function dayOverviewHTML_2026_10_09() {
+  return `<div class="section-label">Team Activity &mdash; Friday October 09, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Friday Oct 09 &mdash; 50 recordings scanned</strong> via SFDC SOQL &middot; <strong>4 confirmed CSM calls</strong> across 2 CSMs &middot; 1 Expansion &middot; 2 Concerning &middot; SFDC confirmed 2; Weflow fallback added 2 recoveries. Light Friday &mdash; most recordings were AM-led (Zoom, EPAM, Everpure, Motive, WisdomTree) or interviews. Nick w/ 3 calls (incl. 1 cross-coverage on Lenovo); Rani w/ 2 (NetApp + Lenovo co-attend). All other CSMs inactive.
+  </div>
+  <div style="background:#2a1f1f;border:1px solid #b45309;border-left:3px solid #b45309;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>2 CONCERNING:</strong> E-Strategy (non-renewal &mdash; switching to ZoomInfo for prospecting due to budget constraints; SAP MDF compliance requires data removal) &middot; Lenovo (AI/Gen AI contract-drop confusion requires investigation; site vs country-level install data expectation gap; PTB account-level feed delivery vs HG's collaborative-model approach misaligned)
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>1 EXPANSION:</strong> Protiviti (SAP MDF renewal confirmed + 15 licenses for Market Analyzer/Sales Copilot + ecosystem expansion play to Oracle/Workday via Mary)
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F91D; <strong>CROSS-COVERAGE:</strong> Lenovo deep working session &mdash; Nick Johnson (primary) + Rani Guy co-attended; broader strategic-accounts support for AI/Gen AI POC + PTB workshop planning.
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">3 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">3</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">3</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">2</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">66m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Lenovo (&#x1F534; AI/Gen AI contract confusion + install granularity gap; Rani co-attended) &middot; Protiviti (&#x1F4C8; SAP MDF renewal + Oracle/Workday expansion) &middot; E-Strategy (&#x1F534; non-renewal, switching to ZoomInfo)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">122m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">NetApp (account match file review 70-min &mdash; high-confidence focus + ID hierarchy) &middot; Lenovo co-attend (broader strategic-accounts support)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="varun">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-varun">VT</div><div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No CSM speaker in any recording + no Weflow-participant hit.</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="divyam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-divyam">DD</div><div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No CSM speaker in any recording + no Weflow-participant hit.</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">PH</div><div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No CSM speaker in any recording + no Weflow-participant hit.</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="atisha">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">AW</div><div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Apple biweekly scheduled &mdash; recording captured but no transcript + no Weflow-participant hit.</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="riley">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-riley">RR</div><div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No CSM speaker in any recording + no Weflow-participant hit.</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">AL</div><div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No CSM speaker in any recording + no Weflow-participant hit.</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_10_09() {
+  return `<div class="section-label">Confirmed Calls &mdash; Friday October 09, 2026</div>
+  <div style="background:#2a1f1f;border:1px solid #b45309;border-left:3px solid #b45309;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>2 CONCERNING:</strong> E-Strategy (non-renewal, switching to ZoomInfo; data removal required) &middot; Lenovo (AI/Gen AI contract-drop confusion + install granularity gap + PTB delivery misalignment; Rani co-attended).
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>1 EXPANSION:</strong> Protiviti (SAP MDF renewal + 15 licenses + Oracle/Workday ecosystem expansion play via Mary). 2 of 4 confirmed via Weflow fallback (SFDC transcript sync at 2/4 = 50%).
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F91D; <strong>CROSS-COVERAGE:</strong> Lenovo working session &mdash; Nick Johnson (primary) + Rani Guy co-attended; broader strategic-accounts support for data matching + PTB workshop planning.
+  </div>`;
+}
+
+function dayPulsesHTML_2026_10_09() {
+  const cards = [
+    { csm:'nick', health:'Concerning', account:`Lenovo Group Ltd.`, opp:`Vitally Pulse &mdash; Oct 09 Call`, arr:`Strategic &middot; Nick Johnson`, csmlbl:`Nick Johnson`, change:`Oct 09 &middot; Concerning`,
+      excerpt:`HGI's response session &mdash; AI/Gen AI 6-month POC (Oct-Mar) contract-drop confusion. Site vs country-level install data gap. PTB-model workshop + full delivery-scope update by Oct 15. Rani co-attended.` },
+    { csm:'nick', health:'Healthy', account:`Protiviti Inc`, opp:`Vitally Pulse &mdash; Oct 09 Call`, arr:`Enterprise &middot; Nick Johnson`, csmlbl:`Nick Johnson`, change:`Oct 09 &middot; Healthy`,
+      excerpt:`SAP MDF renewal confirmed (cost + term unchanged); 15 licenses for Market Analyzer + Sales Copilot. Expansion play to Oracle/Workday ecosystem via Mary.` },
+    { csm:'nick', health:'Concerning', account:`E-Strategy International Inc.`, opp:`Vitally Pulse &mdash; Oct 09 Call`, arr:`Enterprise &middot; Nick Johnson`, csmlbl:`Nick Johnson`, change:`Oct 09 &middot; Concerning`,
+      excerpt:`Non-renewal &mdash; partner switching to ZoomInfo for prospecting due to budget constraints. SAP MDF compliance requires data removal. Nick to pitch cheaper HG packages for high-value prospect profiling.` },
+    { csm:'rani', health:'Healthy', account:`NetApp`, opp:`Vitally Pulse &mdash; Oct 09 Call`, arr:`Strategic &middot; Rani Guy`, csmlbl:`Rani Guy`, change:`Oct 09 &middot; Healthy`,
+      excerpt:`Account match file review (70 min) &mdash; high-confidence match focus; DP vs NAGP ID hierarchy; URL data for match confidence; private/government + large-revenue coverage gaps. 15K file delivered.` },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div class="pulse-account">${c.account}</div>
+          <div class="pulse-opp">${c.opp}</div>
+          <div class="pulse-arr">${c.arr}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_10_09() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('0901')?'done':''}" data-csm="nick" id="action-0901">
+      <div class="action-checkbox ${doneActions.has('0901')?'checked':''}" onclick="toggleAction('0901')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F534; Lenovo &mdash; investigate AI/Gen AI contract-drop + install granularity gap + PTB workshop; full delivery-scope update by Oct 15</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Nick Johnson + Rani Guy (co-attend) + Adrian Escobar + Alexi Mouarkach + David Crossman + Erica Yim + Fiona O'Brien + Raju Ghosh + Ujjaini Mazumdar &middot; HG team to investigate the point at which and who at Lenovo agreed to dropping AI/Gen AI data from contract ASAP + schedule PTB modeling workshop + provide full delivery-scope update by Oct 15 + investigate + provide clarity on why installation data is at country level instead of expected site level + provide examples linking spend + install + FAI data at city level + brainstorm QC checklist expectations + share project plan via SharePoint + follow up w/ next actions + timelines for all open items. Lenovo team to revert w/ desired years of history for time-series data (5-7 yrs vs 25).</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0902')?'done':''}" data-csm="nick" id="action-0902">
+      <div class="action-checkbox ${doneActions.has('0902')?'checked':''}" onclick="toggleAction('0902')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F534; E-Strategy &mdash; data removal coordination + cheaper package pitch for high-value prospect profiling</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Nick Johnson + David Garcia Thomas + Dhruv Talwar &middot; Dhruv Talwar's team to remove all HG data from their systems by end of subscription. Nick Johnson to provide information on cheaper HG Insights packages for profiling a small number of high-value prospects + rebuttal context on new platform features (contacts + CRM integrations + tighter functionality than competitors).</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0903')?'done':''}" data-csm="rani" id="action-0903">
+      <div class="action-checkbox ${doneActions.has('0903')?'checked':''}" onclick="toggleAction('0903')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; NetApp &mdash; Monday rerun on Bini's updated mapping file + Michael notification setup + June intent topics follow-up</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Rani Guy + Omkar Hunuswadkar + Bini Valsala + Michael Danaher + Madhup Tibrewala + Shuming Chen + June &middot; Bini to share file mapping HGI company name to NAGP name + ID w/ Omkar + Rani by Monday morning + check w/ CDM team for available URL data from sources like Dun & Bradstreet + confirm if 1M records file can be delivered today. Omkar to rerun match on updated file from Bini + send back to Michael by Monday morning + analyze records w/ low confidence matches + identify areas for improvement in revenue or spend data + provide fill rates for IT budget + revenue bands + investigate how private/government company revenues are estimated. Rani to add Michael to notification list + follow up w/ June re intent topics + potential changes based on coverage feedback + submit ticket to outline credit cost for enriching different data sets (buying center, buyer info). Madhup to share list of accounts not showing up in HGI for further investigation. Michael to confirm whether to include 30 intent topics selected by June.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0904')?'done':''}" data-csm="nick" id="action-0904">
+      <div class="action-checkbox ${doneActions.has('0904')?'checked':''}" onclick="toggleAction('0904')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Protiviti &mdash; set up Mary conversation (Oracle/Workday ecosystem SAP-funded expansion) + paperwork updates</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Nick Johnson + David Garcia Thomas + Patrick NeSmith + Mary + Ashley &middot; Nick to set up conversation w/ Mary regarding a potential similar SAP-funded arrangement for Oracle + Workday ecosystems + update paperwork to reflect any changes + share quote w/ Patrick. Patrick to include Nick + Ashley (procurement) on relevant communications + submit paperwork to SAP + set up time to go over new version w/ Nick Johnson.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0905')?'done':''}" data-csm="nick" id="action-0905">
+      <div class="action-checkbox ${doneActions.has('0905')?'checked':''}" onclick="toggleAction('0905')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Apple biweekly (unconfirmed) &mdash; follow up w/ Atisha; recording captured but no transcript + no Weflow participants hit</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Nick Johnson + Atisha Waghela (acct CSM) &middot; Apple bi-weekly Sync-up recording exists but SFDC transcript not synced + no Weflow participant hit for Atisha. Confirm with Atisha whether she attended; investigate why Weflow fallback did not capture participant list.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('0906')?'done':''}" data-csm="rani" id="action-0906">
+      <div class="action-checkbox ${doneActions.has('0906')?'checked':''}" onclick="toggleAction('0906')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Lenovo cross-coverage &mdash; Rani to brief strategic accounts on Lenovo PTB workshop prep + AI/Gen AI POC readiness</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Rani Guy + Nick Johnson &middot; Rani co-attended Lenovo session as broader strategic-accounts support. Brief strategic-accounts team on Lenovo PTB workshop prep + AI/Gen AI POC readiness + align on cross-coverage model for upcoming Oct 15 delivery-scope update.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
