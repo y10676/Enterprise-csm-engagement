@@ -3009,3 +3009,463 @@ function dayActionsHTML_2026_10_13() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
 }
+
+function dayData_2026_10_14() {
+  return {
+    calls: [
+      { ts: 'Oct 14 &middot; 4:30 AM', csm: 'varun', account: `DXC Technology Services LLC`,
+        note: `DXC and HG Business Case w/ Augie Buettner + Preethi Vaidyanathan + Subash. Follow-up to Oct 12 renewal discussion. Credit packages + complimentary MCP access + AWS marketplace integration explored. Preethi to share business case w/ manager Stefan next week. Walkthrough sessions being set up for team.`,
+        mins: 27, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `DXC business-case continuation &mdash; AGI for account planning + business development + whitespace + tech-estate visibility + transformation signals. Pricing concern remains (strict budgets). AGI must fit into DXC's unified data strategy (not siloed). AWS marketplace option explored for committed cloud spend (use-it-or-lose-it). Next: Preethi to share revised contract options + tiered rates w/ Stefan by next week + discuss AWS marketplace internally w/ IT team before next meeting + speak w/ Stefan re platform + use cases; Augie to send summary email w/ contract options + tiered rates + AWS marketplace info today; Augie + Varun to schedule follow-up next week (Thu suggested) + review Preethi's business case before manager presentation; Varun to send calendar invites for walkthrough sessions today; Subash to be looped in for pricing discussions. Multi-opp: DXC Global Platform Renewal 2026 + Renewal DXC Add Platform. Attendance from Weflow participants; transcript not synced to SFDC.`, source: 'weflow' },
+
+      { ts: 'Oct 14 &middot; 7:00 AM', csm: 'nick', account: `Siemens AG`,
+        note: `Meet with David Garcia Thomas w/ Nick Johnson + Maggie + Isabel Schiffer. Siemens 4% bounce rate too high; data from ZoomInfo + Cognizant + manual guessing. HG contact verification product in beta. Siemens to review internal data-sourcing + guardrails before deeper tech discussion.`,
+        mins: 17, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Issue',
+        detail: `Siemens email bounce-rate challenges &mdash; ~4% bounce impacting efficiency + domain reputation (target &lt;2%). Bad email data from third-party providers (ZoomInfo, Cognizant), purchased lists, manual assumptions. HG contact verification product currently in beta w/ select customers. Multi-vendor waterfall enrichment common; accuracy + regional effectiveness matter, not just volume. Siemens plans to review internal data processes + establish guardrails before external verification. Next: Siemens (Maggie + Isabel) to review internal processes + establish guardrails for data pulling within next month or two + consider incorporating HG contact data into bounce-rate analysis; HG to keep Siemens updated on contact verification product progress (ongoing); HG + Siemens to schedule follow-up technical discussion once internal processes reviewed. Confirmed via SFDC transcript speaker detection.`, source: 'sfdc' },
+
+      { ts: 'Oct 14 &middot; 7:00 AM', csm: 'pam', account: `Epicor Software Corporation`,
+        note: `Epicor Leads Kickoff w/ Anderson Duncan + Michelle Graham + Karen Skogsberg + Nathan Schiller + Scott Olson + Nia Stompanato. Campaign planning for P21 + Kinetic + Propello. Unique campaign IDs for bundled leads. Front-load first 3 quarters for FY. Propello improved after removing certain company types. Geo priorities upgrade for subscribers.`,
+        mins: 26, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Epicor Leads kickoff &mdash; P21 + Kinetic + Propello campaign strategies + lead delivery. Unique campaign codes for bundled leads for proper tracking + differentiation. Front-load majority of bundled leads first 3 quarters to maximize business within fiscal year. Propello lead quality improved w/ lower rejection rate after removing certain company types. Upcoming upgrade to include geo priorities for subscribers aimed at enhancing LLM representation + driving traffic. Next: Nia Stompanato to send landing pages for P21 + Kinetic w/ bundled questions for approval + test leads w/ specific SF ID names before end of week + set up bundled lead campaign ID in opportunity description field; Michelle + Scott + Nathan to confirm unique campaign codes for bundled leads; Pam to fix access issue for Parsa to see all 4 products in vendor portal today + provide instructions on how to find geo stuff / blue metrics / crawl analytics + send questionnaire re geo priorities upgrade + follow up on setting up Propello as possible event for FY27 + send video from Do It Best for Propello. Multi-opp: Epicor Software Corporation. Attendance from Weflow participants; transcript not synced to SFDC.`, source: 'weflow' },
+
+      { ts: 'Oct 14 &middot; 7:30 AM', csm: 'varun', account: `CBTS`,
+        note: `HGI + CBTS Monthly Sync (short 4-min) w/ Ziad Amira + Omkar Hunuswadkar + Mitchell VanderKam. File automation ready pending uploads. Credit calculations updates by tomorrow EOD. Credit consumption notifications now active (50/70/80% thresholds) for Tim + Mitchell. File loading target Oct 20.`,
+        mins: 4, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `CBTS monthly short check-in &mdash; file automation readiness confirmed pending successful file uploads for validation. Credit calculation adjustments underway due to later backend setup; final numbers tomorrow EOD w/ leadership call Monday. Credit consumption notifications configured at 50/70/80% thresholds for Tim + Mitchell. File naming + column headers for automation remain consistent (proper CSV handling). Next: Varun to provide final credit count + calculations by tomorrow EOD; Mitchell to work w/ Tim to get file loaded for Oct 20. Multi-opp: Renewal CBTS 2027 + Renewal CBTS 2029. Attendance from Weflow participants; transcript not synced to SFDC.`, source: 'weflow' },
+
+      { ts: 'Oct 14 &middot; 7:30 AM', csm: 'nick', account: `Intuit`,
+        note: `HG / Mailchimp: Blackbaud Update + Datasets Overview w/ Karin Pindle + Julian Rojas + Ashutosh Singh + Eric McKnight. Blackbaud campaign progress + intent-data use for SMS marketing + identifying switchers. Bitstream + TrustRadius intent data available. Signed DPA pending.`,
+        mins: 31, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Mailchimp Blackbaud campaign update + datasets &mdash; initial results expected soon. Interest in leveraging intent data for SMS marketing + identifying customers looking to switch platforms. HG provides bitstream + TrustRadius intent data filterable + applicable to specific account lists. Signed DPA pending for contact sharing. Renewal process still being clarified; need to identify ultimate decision-maker. Next: Nick + Ashutosh to schedule follow-up to demonstrate how to filter intent data within platform; Julian to connect Ashutosh + Nick w/ TrustRadius account managers to discuss Intuit's current usage + potential expansion + follow up w/ Andres re signed DPA; Eric McKnight to inform sales manager Veron about pending DPA to expedite; Ashutosh to explore platform by uploading account lists for overlap + insights; Nick to schedule follow-up meeting w/ Ashutosh tomorrow. Multi-opp: Intuit (Mailchimp Blackbaud campaign). Attendance from Weflow participants; transcript not synced to SFDC.`, source: 'weflow' },
+
+      { ts: 'Oct 14 &middot; 8:30 AM', csm: 'varun', account: `Five9 Inc`,
+        note: `HG Insights x Five9 Sync w/ Ziad Amira + Brett Castonguay + Jordan Curtis. Potential non-renewal &mdash; Five9 consolidating tech stack to Clay. Renewal May next year. Varun proposing QBR to demonstrate unique value + cost savings vs Clay. Jordan to get buy-in from manager Lily by Nov. Potential POC if needed.`,
+        mins: 28, health: 'Concerning',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Issue',
+        detail: `Five9 renewal risk &mdash; organizational changes + tech stack consolidation strategy favoring Clay driving potential non-renewal decision. HG Insights emphasizing unique data sets + potential cost savings not fully realized if contract discontinued. Significant time until May renewal; HG proposing QBR to highlight unique value + cost-saving benefits even in conjunction w/ Clay. Potential integration w/ Clay for more comprehensive data solution at better cost. Pulse Concerning &mdash; stack-consolidation decision favoring competitor; renewal risk window May 2027. Next: Jordan Curtis to relay HG's QBR proposal to manager Lily + obtain buy-in + identify key personnel from Five9 for QBR by November; Varun Tiwari to schedule QBR w/ Five9 leadership to present value proposition + cost-saving opportunities in November + create updated presentation deck comparing HG w/ Clay (use cases + cost-saving benefits) before November QBR + discuss w/ Ziad to strategize + develop POC if needed + potentially involve HG's Director managing Clay partnership. Multi-opp: Renewal - FIVE9 Global License Opp Gen 2027. Attendance from Weflow participants; transcript not synced to SFDC.`, source: 'weflow' },
+
+      { ts: 'Oct 14 &middot; 8:30 AM', csm: 'andy', account: `SAS Institute Inc.`,
+        note: `SAS Institute EMEA / HG Insights Weekly Sync w/ Andy Lim + Adrian Carr + Neil Dover + Richard Weintrob. Digital campaign using ICPs showed promising results. Plan to build predictive models + download raw HG data for campaign responders. Credit usage analysis for contract negotiations. Need measurable success metrics.`,
+        mins: 22, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `SAS EMEA weekly sync &mdash; data adoption challenges + AI co-pilot features emerging. Cloud-based systems can be slow/frustrating vs local. Digital campaign using ICPs showed promising results &mdash; plan to refine targeting + build predictive models for ROI justification. Clear metrics + measurable success needed for data initiatives (currently not well-defined). Next: Andy Lim to investigate + provide information on credit usage for contract negotiations incl historical data + projections for account briefs + queries ASAP + dig up information re credit usage + past conversations; Adrian Carr to analyze digital campaign results (identify responders + enhance profiles w/ topics + ICP data) + download raw data from HG to build predictive model based on campaign responders + determine credits + account briefs needed for ongoing use focusing on top accounts + value propositions + follow up w/ Neil re his inbox item on contract negotiations + credit usage. Multi-opp: Expansion HG Insider September 2026 (AI Agents, Platform Outbound Scoring, Contact Email Deliverability) + MCP paid pilot + Renewal SAS Max CI Team 2027 + Renewal SAS Team MI Licenses 2027. Attendance from Weflow participants; transcript not synced to SFDC.`, source: 'weflow' },
+
+      { ts: 'Oct 14 &middot; 9:00 AM', csm: 'riley', account: `SAP Inc`,
+        note: `SAP SuccessFactors + TrustRadius Progress call w/ Cole Arutian + Mardigan Moffat + Kristin + Angel + Janessa. Video + audio reviews at events showing high-quality content + positive TR score impact. Buyer's Choice qualifications met; Nov 10 announcement planned. Centralizing peer-review efforts across SAP business lines.`,
+        mins: 29, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `SAP SF TR Progress call &mdash; video + audio reviews collected at events proving high-quality content, deeper insights than written reviews, positive TR score impact. Dedicated-resource (Caslin) model w/o physical booth successful; could be future model. Peer-review content crucial for SAP's SEO + overall digital strategy; recognized need to centralize efforts across business lines. Customer feedback vital for product management + roadmap decisions. Buyer's Choice qualifications met; Nov 10 announcement w/ internal comms planned. Next: Angel + Janessa to update TR scores + reports by end of week; Riley to provide updated reporting on avg TR score + metrics once transcriptions complete + send media kits for Buyer's Choice to Kristin by end of next week + pass along Kristin's feedback on Buyer's Choice minimum review criteria to relevant team; Kristin to check back w/ HR Connect global lead at beginning of November for 2027 event calendar + share event recap + pictures w/ Binode + Alejandro + work w/ comms team on press release + SAP News Center article for Buyer's Choice; Mardigan to wait for updates on event support for 2027 to start planning. Multi-opp: Many SAP opps. Attendance from Weflow participants; transcript not synced to SFDC.`, source: 'weflow' },
+
+      { ts: 'Oct 14 &middot; 9:30 AM', csm: 'rani', account: `Cisco`,
+        note: `Sync Splunk & HGI w/ Adrian Escobar + Ginette Tran. Contract renewal approved. Start date aiming for Q2 (funding alignment). Platform migration to new UI being prepared. Procurement/legal coordination. Prior data-deletion email incidents highlight need for clear role definitions during reorg.`,
+        mins: 19, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `Splunk/Cisco renewal + platform migration prep &mdash; approval secured for contract renewal; focusing on confirming start date aligned w/ Q2 funding. Clarity on roles + responsibilities needed due to anticipated organizational changes. Platform migration to new UI expected to be more intuitive. Past issues w/ automated data-deletion emails + unclear responsibilities highlight importance of clear communication + role definition. Next: Ginette Tran to review contract w/ procurement + help create PO number today afternoon + confirm contract start date w/ procurement aiming for Q2; Adrian Escobar to share MSA + Cisco addendum w/ Ginette ASAP + update SOW w/ confirmed dates once available; Rani Guy to keep Adrian in loop re procurement confirmation (ongoing) + initiate creation of new tenant once confirmation received. Multi-opp: Cisco Observability + Cisco GEO CVPx13 + Events + Market Reports + Cisco WarRoom + Cisco Marimuthu MK Platform. Attendance from Weflow participants; transcript not synced to SFDC.`, source: 'weflow' },
+
+      { ts: 'Oct 14 &middot; 9:30 AM', csm: 'andy', account: `Everpure`,
+        note: `Everpure / HG (SFDC confirmed) w/ Angus Hyams. Platform-reset session to maximize value. Comprehensive walkthrough: Opportunity Generator + Spend Profile + Technographics + Intent Data. Contract: $75K/yr, 2-yr term ending Nov 9, 2027. License reissuance for Milena + Lauren. Market Intelligence tool deeper dive planned.`,
+        mins: 59, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Everpure platform reset + value maximization &mdash; previous data interpretation misunderstandings addressed. Comprehensive walkthrough: Opportunity Generator + Spend Profile + Technographics + Intent Data. Contract clarified: 2-yr term ending Nov 9, 2027, $75K annual cost. Advanced use cases explored: competitive displacement + partner-led introductions + building targeted sales talk tracks based on competitor + partner data. Next: Andy Lim to reissue license for Milena Volkova + Lauren Bonagura + investigate + confirm total number of available licenses + their allocation by next meeting + provide contract details to Bernice; Angus Hyams to forward contract info to Milena + perform deep dive into previous conversations + nuances re contract; Andy's team to conduct follow-up sessions to explore Market Intelligence tool in more detail; Milena to attempt to reset password for purestorage.com access immediately. Multi-opp: Everpure. Confirmed via SFDC transcript speaker detection.`, source: 'sfdc' },
+
+      { ts: 'Oct 14 &middot; 9:30 AM', csm: 'divyam', account: `Lumen Technologies`,
+        note: `Lumen x HG Insights Weekly Sync w/ Julian Rojas + Nathan Der. Aggressive 1000-new-opportunity target by EOY (vs current 100). Co-location + extranet services focus. Fit-score model development by mid-Nov. Scoring methodology clarification needed for partners/sales. Early-Dec target-account list to sales.`,
+        mins: 32, health: 'Healthy',
+        nature: 'Recurring', initiator: 'Customer', purpose: 'Expansion',
+        detail: `Lumen weekly sync w/ aggressive 1000-new-opportunity target by end of December (vs current 100). Focus on existing Lumen customer base for co-location + extranet services. Scoring methodology discrepancy: Alkura's methodology vs Lumen's &mdash; particularly how resellers + end customers counted. Deliverable timeline: list of target accounts submitted to sales by early December for opportunity generation that same month. Partners + sales teams require clearer explanation of score derivation (firmographics + technographics + intent). Next: Nathan to submit list of target accounts to sales by early December + follow up w/ person responsible for untracked products (AT&T, Vodafone, Comcast); Divyam Dewan to develop fit-score model based on firmographics + technographics (potentially product presence + revenue/employee data) by mid-November + share ICP portfolio template w/ Nathan + build out ICPs on platform based on agreed methodology + investigate + resolve CSV upload + product catalog download issues (Chrome workaround for Edge issues) + relay info about Nathan's interest in contact data (buying groups, specific titles) + continue registering for insider sessions; Julian + Divyam to provide explainer on scoring breakdown within export file. Multi-opp: Renewal Lumen Technologies 2027. Attendance from Weflow participants; transcript not synced to SFDC.`, source: 'weflow' },
+
+      { ts: 'Oct 14 &middot; 10:00 AM', csm: 'varun', account: `Autodesk Inc`,
+        note: `HGI + Autodesk Bi Weekly Sync w/ Adrian Escobar + Ravi Sharma + Rishabh Wadhwa + Trishna Patel + Ameya Kambli. Spend-category mapping methodology + custom spend mapping. V0/V1 feed deprecated post-grace Oct. RGI platform AI scoring + read-only licenses available. Whitespace clarification (net-new logos, negate corporate tree matches).`,
+        mins: 27, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Autodesk biweekly &mdash; spend categories + whitespace analysis clarification. Products mapped to spend categories; framework for analyzing potential spend + competitor analysis. Custom spend mapping available for tailored calculations. V0/V1 feed completed; older feed deprovisioned after grace period (firm end date October). RGI platform offers AI scoring + read-only licenses available for Autodesk users (independent of data feed). Whitespace definitions clarified: net-new logos, addressing CRM overlaps by negating corporate-tree matches to avoid duplication. Next: Varun to send confirmation internally before deprovisioning older feed by end of day/tomorrow + follow up w/ Autodesk re RGI platform access + potential new platform access + send recap email of discussions to all aligned stakeholders by EOD/tomorrow; Trishna + Ameya to send one final confirmation to proceed w/ deprovisioning older feed; Rishabh to investigate why 'unknown' appearing in revenue band for certain accounts + flag w/ team. Multi-opp: MK Autodesk 2026 Ren2027 + Autodesk2029. Attendance from Weflow participants; transcript not synced to SFDC.`, source: 'weflow' },
+
+      { ts: 'Oct 14 &middot; 10:00 AM', csm: 'divyam', account: `Informatica`,
+        note: `HG Insights & Informatica Weekly Partnership Sync (short 7-min) w/ Ziad Amira + Alexi Mouarkach + Heather Quesnel. Data feed delivery clarified (no user limits for CRM access). HD Insights platform access being investigated. New 'company group ID' column implementation by Dec 1 for install-base tracking.`,
+        mins: 7, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `Informatica weekly short partnership sync &mdash; data feed provides direct access to data within CRM w/ no limits on internal users. HD Insights platform access requires further investigation. New 'company group ID' column being introduced in data feed to track install base &mdash; requires internal setup by Heather's team by Dec 1. Current data utilization focuses on account scoring; future plans post-org62 transition TBD. Sales + marketing + strategy teams are primary users via CRM. Next: Divyam Dewan to investigate + confirm extent of access to HD Insights platform + user limits by Dec 1 + follow up w/ Hemraj re company group ID column implementation + new UI data feed today + provide Heather w/ details on specific field + data type expected for new column via email today + discuss w/ Ziad + get back to Heather re platform access details within a day + update CRM w/ info on which teams utilizing data + their future plans; Heather's team to make internal arrangements to accommodate new company group ID column by Dec 1. Multi-opp: Informatica LLC Ren2027. Attendance from Weflow participants; transcript not synced to SFDC.`, source: 'weflow' },
+
+      { ts: 'Oct 14 &middot; 10:00 AM', csm: 'pam', account: `Microsoft`,
+        note: `Microsoft - HG Weekly Sync w/ Noah Alford + Mark Fell + Karin Pindle + Will Norris + Bryce Bishop. Dark accounts initiative progress; need better business-impact tracking + comms cadences. COGS vs OPEX for cloud consumption modeling. Buyer intent data + contextual signals to prioritize engagement. CoPilot/Sales Agent workflow pilots. Teams access issue.`,
+        mins: 60, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Mixed',
+        detail: `Microsoft weekly sync &mdash; dark accounts initiative, SME projects, buyer-intent data. Need better tracking of business impact + clearer comms cadences to demonstrate value. Differentiating COGS vs OPEX crucial for accurately modeling cloud consumption (esp SaaS companies). Significant opportunity to leverage buyer-intent data + contextual signals to prioritize engagement + identify active opportunities. Mark Fell has Teams-access issue (as guest) hindering seamless communication. Collaboration on CoPilot pilots + Sales Agent workflows + new product features essential for driving adoption. Next: Mark Fell to follow up w/ Bryson Gordon team today + send Will Norris follow-up emails for context ASAP + sit down w/ IT team (Vince) to resolve Teams access today + summarize meeting + update shared spreadsheet w/ key points + action items today; Will Norris to initiate thread w/ Mark Osinger to align on building account-level intelligence + explore pilots today + provide Mark Fell w/ lists of accounts focused on buyer intent + contextual signals ASAP + coordinate w/ Sam re potential in-person meetings in Seattle + push back on IT ticket for Teams access + schedule walkthrough of Sales Agent + Sales Home UI for enterprise sellers + provide updated lists of accounts for SME + CoreSMB. Multi-opp: Microsoft Core Agreement Annual Renewal + TR Microsoft + Microsoft FY27 Digital Native Propensity. Attendance from Weflow participants; transcript not synced to SFDC.`, source: 'weflow' },
+
+      { ts: 'Oct 14 &middot; 11:00 AM', csm: 'riley', account: `Adobe Systems Incorporated`,
+        note: `TrustRadius <> Adobe: Success Call w/ Cole Arutian + Mardigan Moffat + Giacomo Pesaresi. Buyer's Choice qualifications: CDP + Frame.io need final review. Flat YoY budget indicative; renewal details to firm up. Review acceleration vs geo reports prioritization. Sentiment + citation data for AI/LLM strategies.`,
+        mins: 33, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Mixed',
+        detail: `Adobe success call &mdash; contract renewal + AI/LLM impact on product strategy + ROI. Product qualifications for awards mostly complete; CDP + Frame.io need final review for deadlines. Ongoing company reorg causing chaos but peer-review + AI/LLM focus emphasized for future strategy. Flat YoY budget indicative but need to finalize exact numbers. Value of review acceleration + geo reports being debated; how they contribute to AI/LLM strategies + ROI. Sentiment analysis + citation data crucial for product value + competitive positioning. Next: Riley to provide updated numbers for Frame.io + CDP qualification + double-check updated numbers + turn on product monitoring for geo reports + follow up w/ team to ensure product monitoring enabled + provide raw review export for past 12 months for subscribed products; Giacomo to try to secure more reviews for Frame.io by reaching out to external users + discuss budget + renewal details after reviewing current proposal + talk to team + manager (Megan) to prioritize between review acceleration + geo reports + explore negotiating w/ other teams to cover costs for geo reports + get back to Mardi w/ team's decision + have colleague analyze raw review content for sentiment analysis; Mardi to ask internally if review acceleration can be pursued + ask about cutting support on review acceleration + geo side if needed. Multi-opp: Adobe Renewal (RGIP) + TR Adobe CVP x5 + Adobe APC Team New License RGIF+MCP + many SAP opps linked. Attendance from Weflow participants; transcript not synced to SFDC.`, source: 'weflow' },
+
+      { ts: 'Oct 14 &middot; 11:00 AM', csm: 'nick', account: `Light Reply`,
+        note: `Reply - HG sync (short 12-min) w/ David Garcia Thomas + Sara Tran. Transition to new credit-based model for data exports. Credit costs: firmographic 1 credit/co, spend 3 credits, tech install 0.1 credits. Fabric (bulk delivery) vs Platform (interactive) clarified. Migration path for existing saved data + user access.`,
+        mins: 12, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Reply/Light Reply credit-model transition &mdash; subscription moving to credit-based model (replacing previous entity limit). Each data point exported (platform, HubSpot connector, API) has specific credit cost. New model allows greater flexibility (only charges for specific data points needed). Credit costs: firmographic 1 credit, spend 3 credits, each tech install 0.1 credits. Intent topics consume credits w/ access to all topics under new model. Refreshing same data set does not consume additional credits. Fabric (bulk data delivery) vs Platform (interactive interface) clarified. Next: Nick Johnson to provide updated terms of service + details on changes by April (implied) + investigate migrating existing saved data + user access from old platform to new one before subscription end; Sara Tran to review updated terms of service + changes ASAP + discuss setting user limits for credit export post-contract signing. Multi-opp: Expansion HG Insider October 2026 (AI Sales Copilot, FAI Contacts, Clay API) + Renewal Syskoplan SAP MDM 2026. Attendance from Weflow participants; transcript not synced to SFDC.`, source: 'weflow' },
+
+      { ts: 'Oct 14 &middot; 12:00 PM', csm: 'rani', account: `Lenovo Group Ltd.`,
+        note: `HG Insights | Lenovo sync w/ Adrian Escobar + Ryan Warren + Jeevan Aranha + Neil + Scott + Maggie. Neil intro (new team member). HG platform overview (AI sales co-pilot, AI chat, Market Analyzer TAM/SAM/SOM). Transition to new platform. Market data influencing GTM pivots. Power BI dashboards push.`,
+        mins: 31, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Lenovo new-platform intro + Neil onboarding &mdash; HG platform's AI features (AI sales co-pilot + AI chat) + Market Analyzer configuration (TAM/SAM/SOM across IT spend + industries + technographics). HG data instrumental in strategic planning, enabling pivots in vertical focus + influencing GTM strategies by highlighting new opportunities based on market data (vs IDC). New platform aims to move beyond Excel pivot tables toward Power BI dashboards for data accessibility + usability. Emphasis on methodology understanding for accurate interpretation. Next: Ryan + Scott to finalize contract for new platform; Adrian + Rani to provide ad-hoc enablement calls for Neil (ongoing); Neil to dive into data + play around w/ platform to identify further questions (ongoing) + work on dashboards refreshed more frequently + more visible to team (potentially tracking ROI quantitatively + qualitatively); Rani to investigate possibility of tracking emerging engineering applications across industries + geos + report back + investigate development status + rollout timeline for token calculator; Adrian to show Neil new platform highlights (completed); Ryan to text Adrian WhatsApp w/ questions heard on another call. Multi-opp: Lenovo Global Expansion + Data Feed Sphere Project + IDG Nvidia MCP + LATAM CMO Americas + SSG RGIP + New License Mktg Team. Attendance from Weflow participants; transcript not synced to SFDC.`, source: 'weflow' },
+
+      { ts: 'Oct 14 &middot; 12:00 PM', csm: 'atisha', account: `Optiv Security Inc`,
+        note: `HGI <> Optiv Weekly sync (short 14-min) w/ Augie Buettner + Roger Conarroe + Nick Smith. Crate and Barrel data availability (demographic pending, installation available). AI credits + MCP platform &mdash; data credits can be converted to AI credits. Sales Copilot for contact data access.`,
+        mins: 14, health: 'Healthy',
+        nature: 'Recurring', initiator: 'Customer', purpose: 'Expansion',
+        detail: `Optiv weekly sync &mdash; Crate and Barrel data analysis: demographic data not yet updated on production; installation data for security hardware + software available. Interest in security hardware + security software data (specifically within hardware category + infrastructure security under software). Contact data on separate platform (Sales Copilot) not Market Analyzer. Existing data credits can potentially be converted to AI credits for MCP platform. MCP via copilot/LLM w/ plugins recommended to avoid procurement/legal hurdles (no internal data sharing). Next: Roger to discuss w/ Nick about using existing credits for MCP AI credits + follow up w/ Atisha next week after discussing w/ Nick; Atisha to check w/ Augie re Crate and Barrel's ability to use existing credits for contact data access. Multi-opp: Expansion HG Insider September 2026 + Renewal Optiv 2029 + Optiv Phoenix Automation Demo. Attendance from Weflow participants; transcript not synced to SFDC.`, source: 'weflow' },
+
+      { ts: 'Oct 14 &middot; 12:30 PM', csm: 'atisha', account: `Ping Identity Corporation`,
+        note: `HG Insights <> Ping Identity: Weekly Working Session w/ Charles Hawkins + Meghan Whiteman + Scott Simon + Kim King + Lynette Hushen. Data matching logic update + hierarchy checks. Market sizing discrepancies vs Gartner/Forrester investigated. Glean integration high priority. Credit usage clarity for AI features.`,
+        mins: 36, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Mixed',
+        detail: `Ping Identity weekly working session &mdash; data matching logic updates + market sizing discrepancies vs Gartner/Forrester. Match rate good; checking for hierarchy mismatches. Kim raised significant TAM/SAM differences; investigating whether due to different definitions or subcategories in IAM spend data. Platform access + functionality discussions; Lynette being onboarded. Glean integration high priority (ticket submitted to IS team). Credit usage clarity for AI features + data downloads: platform usage free vs specific feature usage (paid via credits). Next: Charles Hawkins to re-process rest of database for rest of world + update by end of week + send market sizing data definitions to Kim + schedule follow-up call w/ research director + send Lynette platform invite + follow up w/ Brenton from procurement re confusing opt-in details + discuss propensity models for AI scoring w/ Kim + product marketers; Scott Simon to upload EMEA + APJ data when ready + check w/ AI team re documentation needed for Glean integration approval; Kim King to understand source of Charles's data + why might differ from external providers + plan to use working session for account planning next week after Glean sorted; Lynette Hushen to obtain IAM definitions from Gartner, Forrester, Markets and Markets + schedule walkthrough w/ Charles tomorrow morning. Multi-opp: Ping Q2 IDL expansion + Ping Identity Renewal 2026 + TR Ping Identity CVP + Renewal TR Ping Identity up-sell Q4 + Ping June 2026 IDL rebuy. Confirmed via SFDC transcript speaker detection.`, source: 'sfdc' },
+
+      { ts: 'Oct 14 &middot; 8:30 PM', csm: 'nick', account: `LTIMindtree`,
+        note: `LTM - HG Insights - RGIP walkthrough w/ Akash Bhansali + Surya + Apexa. Platform-walkthrough intro for LTI (SAP MDF Funds renewal partner). New Revenue Growth Intelligence (RGIP) platform migration encouraged for SAP partners. Contract renewal Friday &mdash; swift decision needed. Port credits proposal for SAP partners.`,
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `LTIMindtree (LTI) RGIP walkthrough &mdash; introduction to HG platform for data intelligence. HG offers account-level data intelligence enabling target account identification + tech stack understanding + outreach strategy optimization. Platform allows filtering by geo + industry + size + technologies. HG differentiates w/ granular data on IT spend + product installations + vendor usage + contact information (unlike lead-gen services). New Revenue Growth Intelligence (RGIP) platform being encouraged for SAP partners w/ enhanced functionality + more data points + built-in integrations vs older version. LTI's current contract up for renewal Friday &mdash; swift decision + value understanding crucial for continued partnership. Next: Akash Bhansali to discuss HG Insights platform w/ Surya + Apexa to determine next steps; LTI team to move to new RGIP platform before Friday contract renewal; Nick Johnson to provide proposal details re port credits for SAP partners like LTI. Multi-opp: Renewal SAP Partner MDF Funds 2026. Confirmed via SFDC transcript speaker detection.`, source: 'sfdc' },
+    ],
+    pulses: [
+      { csm: 'varun', account: `DXC Technology Services LLC`, health: 'Healthy',
+        note: `Follow-up to Oct 12 pricing discussion &mdash; credit packages + MCP access + AWS marketplace integration explored. Preethi to share business case w/ Stefan next week.` },
+      { csm: 'nick', account: `Siemens AG`, health: 'Healthy',
+        note: `Email bounce-rate verification challenges (4% target &lt;2%). HG contact-verification product in beta. Siemens reviewing internal guardrails before technical follow-up.` },
+      { csm: 'pam', account: `Epicor Software Corporation`, health: 'Healthy',
+        note: `Leads Kickoff for P21 + Kinetic + Propello. Unique campaign codes for bundled leads; front-loading first 3 quarters. Geo priorities upgrade for subscribers.` },
+      { csm: 'varun', account: `CBTS`, health: 'Healthy',
+        note: `Monthly short &mdash; file automation ready; credit calculations by tomorrow EOD; credit-consumption notifications active for Tim + Mitchell; file loading Oct 20.` },
+      { csm: 'nick', account: `Intuit (Mailchimp)`, health: 'Healthy',
+        note: `Blackbaud campaign + datasets &mdash; intent data for SMS marketing + switcher identification. Bitstream + TrustRadius intent available. Signed DPA pending.` },
+      { csm: 'varun', account: `Five9 Inc`, health: 'Concerning',
+        note: `Potential non-renewal &mdash; Five9 consolidating tech stack to Clay. QBR proposed to demonstrate unique value + cost savings vs Clay. Renewal May 2027. POC under consideration.` },
+      { csm: 'andy', account: `SAS Institute Inc.`, health: 'Healthy',
+        note: `EMEA weekly &mdash; digital ICP campaign showed promise. Plan to build predictive models + download raw HG data. Credit-usage analysis for contract negotiations.` },
+      { csm: 'riley', account: `SAP Inc (SF+TR)`, health: 'Healthy',
+        note: `TR Progress call &mdash; video + audio reviews at events proving high-quality content; Buyer's Choice qualifications met; Nov 10 announcement planned.` },
+      { csm: 'rani', account: `Cisco (Splunk)`, health: 'Healthy',
+        note: `Renewal approved; start date aiming Q2. Platform migration to new UI being prepared. Procurement/legal coordination; past data-deletion-email issues highlight role clarity.` },
+      { csm: 'andy', account: `Everpure`, health: 'Healthy',
+        note: `Platform reset session &mdash; comprehensive walkthrough (Opportunity Generator, Spend Profile, Technographics, Intent). Contract $75K/yr through Nov 2027. License reissues for Milena + Lauren.` },
+      { csm: 'divyam', account: `Lumen Technologies`, health: 'Healthy',
+        note: `Aggressive 1000-opp target by EOY (vs current 100). Fit-score model development by mid-Nov. Scoring methodology clarification for partners/sales. Early-Dec target-account list to sales.` },
+      { csm: 'varun', account: `Autodesk Inc`, health: 'Healthy',
+        note: `Biweekly &mdash; spend categories + custom spend mapping clarified. V0/V1 feed deprecated. RGI platform AI scoring + read-only licenses available. Whitespace clarification.` },
+      { csm: 'divyam', account: `Informatica`, health: 'Healthy',
+        note: `Weekly partnership sync (short) &mdash; data feed delivery clarified; HD Insights platform access under investigation; new 'company group ID' column by Dec 1.` },
+      { csm: 'pam', account: `Microsoft`, health: 'Healthy',
+        note: `Weekly sync &mdash; dark accounts initiative tracking, COGS vs OPEX for cloud consumption modeling, buyer intent + contextual signals, CoPilot/Sales Agent pilots.` },
+      { csm: 'riley', account: `Adobe Systems Incorporated`, health: 'Healthy',
+        note: `TR Success Call &mdash; CDP + Frame.io Buyer's Choice qualifications pending final review. Flat YoY budget. Review acceleration vs geo reports prioritization. Sentiment data for AI/LLM.` },
+      { csm: 'nick', account: `Light Reply`, health: 'Healthy',
+        note: `Credit-based model transition for data exports. Firmographic 1 credit, spend 3, tech 0.1. Fabric (bulk) vs Platform (interactive). Migration path for saved data + user access.` },
+      { csm: 'rani', account: `Lenovo Group Ltd.`, health: 'Healthy',
+        note: `Neil (new team member) intro &mdash; HG platform overview (AI co-pilot, AI chat, Market Analyzer). New platform transition. Power BI dashboards push for dynamic visualizations.` },
+      { csm: 'atisha', account: `Optiv Security Inc`, health: 'Healthy',
+        note: `Weekly short &mdash; Crate and Barrel data (demographic pending, install available). Data credits convertible to AI credits for MCP via Copilot/LLM w/ plugins.` },
+      { csm: 'atisha', account: `Ping Identity Corporation`, health: 'Healthy',
+        note: `Weekly working session &mdash; data matching logic updates + market sizing discrepancies vs Gartner/Forrester investigated. Glean integration high priority.` },
+      { csm: 'nick', account: `LTIMindtree`, health: 'Healthy',
+        note: `RGIP walkthrough &mdash; HG platform intro for SAP MDF partner. Friday renewal deadline. New RGIP platform migration encouraged. Port credits proposal for SAP partners.` },
+    ],
+  };
+}
+
+function dayMeta_2026_10_14() {
+  return {
+    pills: [
+      ['dot-teal',   '20 Calls'],
+      ['dot-amber',  '7 Expansion'],
+      ['dot-red',    '1 Concerning'],
+      ['dot-green',  '20 Vitally Pulses'],
+      ['dot-grey',   'Wed Oct 14 &middot; 88 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (20)', 'Pulses (20)', 'Action Items (10)']
+  };
+}
+
+function dayOverviewHTML_2026_10_14() {
+  return `<div class="section-label">Team Activity &mdash; Wednesday October 14, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Wednesday Oct 14 &mdash; 88 recordings scanned</strong> via SFDC SOQL &middot; <strong>20 confirmed CSM calls</strong> across <strong>all 8 CSMs</strong> &middot; 7 Expansion signals &middot; 1 Concerning (Five9 non-renewal threat) &middot; SFDC confirmed 4; Weflow fallback added 16 recoveries (80% dependency). Rare second full-house day in 3 days. Varun + Nick lead w/ 4 each; Rani + Pam + Divyam + Atisha + Riley + Andy 2 each.
+  </div>
+  <div style="background:#2a1f1f;border:1px solid #b45309;border-left:3px solid #b45309;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>1 CONCERNING:</strong> Five9 (potential non-renewal &mdash; consolidating tech stack to Clay; renewal May 2027. Varun proposing QBR + POC strategy to demonstrate unique value + cost savings vs Clay. Jordan to brief manager Lily by November.)
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>7 EXPANSION:</strong> Lumen (1000-opp push by EOY + fit-score model) &middot; Microsoft (dark accounts + buyer intent + CoPilot/Sales Agent pilots) &middot; Lenovo (new RGIP platform transition + Neil onboarding) &middot; Autodesk (V2 feed + RGI + custom spend mapping) &middot; Reply/Light Reply (credit-based model transition + Fabric vs Platform clarification) &middot; LTIMindtree (RGIP walkthrough + Friday renewal) &middot; DXC (business case prep + AWS marketplace integration)
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">4 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">4</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">4</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">86m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">DXC (&#x1F4C8; business case + AWS marketplace) &middot; CBTS (short monthly) &middot; Five9 (&#x1F534; non-renewal threat / Clay consolidation) &middot; Autodesk (&#x1F4C8; V2 feed + RGI access)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="nick">
+      <span class="call-badge">4 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">NJ</div>
+        <div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">4</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">4</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">90m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Siemens (bounce-rate issue + beta verification) &middot; Intuit/Mailchimp (intent data for SMS) &middot; Reply (&#x1F4C8; new credit-model transition) &middot; LTIMindtree (&#x1F4C8; RGIP walkthrough; Friday renewal)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">50m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Cisco/Splunk (renewal approved; Q2 start + PO) &middot; Lenovo (&#x1F4C8; Neil intro + new platform transition)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="pam">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">86m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Epicor Leads Kickoff (P21+Kinetic+Propello) &middot; Microsoft Weekly (&#x1F4C8; dark accounts + CoPilot pilots)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">39m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Lumen (&#x1F4C8; 1000 opp push + fit-score model) &middot; Informatica (short partnership sync; new 'company group ID' column by Dec 1)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">50m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Optiv (short weekly; MCP AI credit conversion) &middot; Ping Identity (data matching + market sizing + Glean integration)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">62m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">SAP SF+TR (Buyer's Choice + video/audio reviews) &middot; Adobe (CDP + Frame.io qualifications + budget prep)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="andy">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AL</div>
+        <div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">81m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Everpure (platform reset + Market Intelligence tool deep dive) &middot; SAS Institute EMEA (predictive models + MCP paid pilot)</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_10_14() {
+  return `<div class="section-label">Confirmed Calls &mdash; Wednesday October 14, 2026</div>
+  <div style="background:#2a1f1f;border:1px solid #b45309;border-left:3px solid #b45309;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>1 CONCERNING:</strong> Five9 (potential non-renewal; stack consolidation to Clay. Varun proposing QBR + POC strategy by November.)
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>7 EXPANSION:</strong> Lumen (1000-opp push) &middot; Microsoft (dark accounts + CoPilot pilots) &middot; Lenovo (new platform transition) &middot; Autodesk (V2 feed + RGI) &middot; Reply (credit-model transition) &middot; LTIMindtree (RGIP walkthrough) &middot; DXC (business case + AWS marketplace). 16 of 20 confirmed via Weflow fallback (SFDC transcript sync at 4/20 = 20%).
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#86efac;">
+    &#x2705; <strong>FULL-HOUSE DAY:</strong> All 8 Enterprise CSMs had at least one confirmed call &mdash; second occurrence in 3 days. Varun + Nick lead w/ 4 each.
+  </div>`;
+}
+
+function dayPulsesHTML_2026_10_14() {
+  const cards = [
+    { csm:'varun', health:'Healthy', account:`DXC Technology Services LLC`, opp:`Vitally Pulse &mdash; Oct 14 Call`, arr:`Enterprise &middot; Varun Tiwari`, csmlbl:`Varun Tiwari`, change:`Oct 14 &middot; Healthy`,
+      excerpt:`Follow-up to Oct 12 pricing discussion &mdash; credit packages + MCP access + AWS marketplace integration explored. Preethi to share business case w/ Stefan next week.` },
+    { csm:'nick', health:'Healthy', account:`Siemens AG`, opp:`Vitally Pulse &mdash; Oct 14 Call`, arr:`Strategic &middot; Nick Johnson`, csmlbl:`Nick Johnson`, change:`Oct 14 &middot; Healthy`,
+      excerpt:`Email bounce-rate verification challenges (4% target &lt;2%). HG contact-verification product in beta. Siemens reviewing internal guardrails before technical follow-up.` },
+    { csm:'pam', health:'Healthy', account:`Epicor Software Corporation`, opp:`Vitally Pulse &mdash; Oct 14 Call`, arr:`Enterprise &middot; Pam Huck`, csmlbl:`Pam Huck`, change:`Oct 14 &middot; Healthy`,
+      excerpt:`Leads Kickoff for P21 + Kinetic + Propello. Unique campaign codes for bundled leads; front-loading first 3 quarters. Geo priorities upgrade for subscribers.` },
+    { csm:'varun', health:'Healthy', account:`CBTS`, opp:`Vitally Pulse &mdash; Oct 14 Call`, arr:`Enterprise &middot; Varun Tiwari`, csmlbl:`Varun Tiwari`, change:`Oct 14 &middot; Healthy`,
+      excerpt:`Monthly short &mdash; file automation ready; credit calculations by tomorrow EOD; credit-consumption notifications active for Tim + Mitchell; file loading Oct 20.` },
+    { csm:'nick', health:'Healthy', account:`Intuit (Mailchimp)`, opp:`Vitally Pulse &mdash; Oct 14 Call`, arr:`Strategic &middot; Nick Johnson`, csmlbl:`Nick Johnson`, change:`Oct 14 &middot; Healthy`,
+      excerpt:`Blackbaud campaign + datasets &mdash; intent data for SMS marketing + switcher identification. Bitstream + TrustRadius intent available. Signed DPA pending.` },
+    { csm:'varun', health:'Concerning', account:`Five9 Inc`, opp:`Vitally Pulse &mdash; Oct 14 Call`, arr:`Enterprise &middot; Varun Tiwari`, csmlbl:`Varun Tiwari`, change:`Oct 14 &middot; Concerning`,
+      excerpt:`Potential non-renewal &mdash; Five9 consolidating tech stack to Clay. QBR proposed to demonstrate unique value + cost savings vs Clay. Renewal May 2027. POC under consideration.` },
+    { csm:'andy', health:'Healthy', account:`SAS Institute Inc.`, opp:`Vitally Pulse &mdash; Oct 14 Call`, arr:`Enterprise &middot; Andy Lim`, csmlbl:`Andy Lim`, change:`Oct 14 &middot; Healthy`,
+      excerpt:`EMEA weekly &mdash; digital ICP campaign showed promise. Plan to build predictive models + download raw HG data. Credit-usage analysis for contract negotiations.` },
+    { csm:'riley', health:'Healthy', account:`SAP Inc (SF+TR)`, opp:`Vitally Pulse &mdash; Oct 14 Call`, arr:`Strategic &middot; Riley Rogers`, csmlbl:`Riley Rogers`, change:`Oct 14 &middot; Healthy`,
+      excerpt:`TR Progress call &mdash; video + audio reviews at events proving high-quality content; Buyer's Choice qualifications met; Nov 10 announcement planned.` },
+    { csm:'rani', health:'Healthy', account:`Cisco (Splunk)`, opp:`Vitally Pulse &mdash; Oct 14 Call`, arr:`Strategic &middot; Rani Guy`, csmlbl:`Rani Guy`, change:`Oct 14 &middot; Healthy`,
+      excerpt:`Renewal approved; start date aiming Q2. Platform migration to new UI being prepared. Procurement/legal coordination; past data-deletion-email issues highlight role clarity.` },
+    { csm:'andy', health:'Healthy', account:`Everpure`, opp:`Vitally Pulse &mdash; Oct 14 Call`, arr:`Enterprise &middot; Andy Lim`, csmlbl:`Andy Lim`, change:`Oct 14 &middot; Healthy`,
+      excerpt:`Platform reset session &mdash; comprehensive walkthrough (Opportunity Generator, Spend Profile, Technographics, Intent). Contract $75K/yr through Nov 2027. License reissues for Milena + Lauren.` },
+    { csm:'divyam', health:'Healthy', account:`Lumen Technologies`, opp:`Vitally Pulse &mdash; Oct 14 Call`, arr:`Enterprise &middot; Divyam Dewan`, csmlbl:`Divyam Dewan`, change:`Oct 14 &middot; Healthy`,
+      excerpt:`Aggressive 1000-opp target by EOY (vs current 100). Fit-score model development by mid-Nov. Scoring methodology clarification for partners/sales. Early-Dec target-account list to sales.` },
+    { csm:'varun', health:'Healthy', account:`Autodesk Inc`, opp:`Vitally Pulse &mdash; Oct 14 Call`, arr:`Enterprise &middot; Varun Tiwari`, csmlbl:`Varun Tiwari`, change:`Oct 14 &middot; Healthy`,
+      excerpt:`Biweekly &mdash; spend categories + custom spend mapping clarified. V0/V1 feed deprecated. RGI platform AI scoring + read-only licenses available. Whitespace clarification.` },
+    { csm:'divyam', health:'Healthy', account:`Informatica`, opp:`Vitally Pulse &mdash; Oct 14 Call`, arr:`Enterprise &middot; Divyam Dewan`, csmlbl:`Divyam Dewan`, change:`Oct 14 &middot; Healthy`,
+      excerpt:`Weekly partnership sync (short) &mdash; data feed delivery clarified; HD Insights platform access under investigation; new 'company group ID' column by Dec 1.` },
+    { csm:'pam', health:'Healthy', account:`Microsoft`, opp:`Vitally Pulse &mdash; Oct 14 Call`, arr:`Strategic &middot; Pam Huck`, csmlbl:`Pam Huck`, change:`Oct 14 &middot; Healthy`,
+      excerpt:`Weekly sync &mdash; dark accounts initiative tracking, COGS vs OPEX for cloud consumption modeling, buyer intent + contextual signals, CoPilot/Sales Agent pilots.` },
+    { csm:'riley', health:'Healthy', account:`Adobe Systems Incorporated`, opp:`Vitally Pulse &mdash; Oct 14 Call`, arr:`Strategic &middot; Riley Rogers`, csmlbl:`Riley Rogers`, change:`Oct 14 &middot; Healthy`,
+      excerpt:`TR Success Call &mdash; CDP + Frame.io Buyer's Choice qualifications pending final review. Flat YoY budget. Review acceleration vs geo reports prioritization. Sentiment data for AI/LLM.` },
+    { csm:'nick', health:'Healthy', account:`Light Reply`, opp:`Vitally Pulse &mdash; Oct 14 Call`, arr:`Enterprise &middot; Nick Johnson`, csmlbl:`Nick Johnson`, change:`Oct 14 &middot; Healthy`,
+      excerpt:`Credit-based model transition for data exports. Firmographic 1 credit, spend 3, tech 0.1. Fabric (bulk) vs Platform (interactive). Migration path for saved data + user access.` },
+    { csm:'rani', health:'Healthy', account:`Lenovo Group Ltd.`, opp:`Vitally Pulse &mdash; Oct 14 Call`, arr:`Strategic &middot; Rani Guy`, csmlbl:`Rani Guy`, change:`Oct 14 &middot; Healthy`,
+      excerpt:`Neil (new team member) intro &mdash; HG platform overview (AI co-pilot, AI chat, Market Analyzer). New platform transition. Power BI dashboards push for dynamic visualizations.` },
+    { csm:'atisha', health:'Healthy', account:`Optiv Security Inc`, opp:`Vitally Pulse &mdash; Oct 14 Call`, arr:`Enterprise &middot; Atisha Waghela`, csmlbl:`Atisha Waghela`, change:`Oct 14 &middot; Healthy`,
+      excerpt:`Weekly short &mdash; Crate and Barrel data (demographic pending, install available). Data credits convertible to AI credits for MCP via Copilot/LLM w/ plugins.` },
+    { csm:'atisha', health:'Healthy', account:`Ping Identity Corporation`, opp:`Vitally Pulse &mdash; Oct 14 Call`, arr:`Enterprise &middot; Atisha Waghela`, csmlbl:`Atisha Waghela`, change:`Oct 14 &middot; Healthy`,
+      excerpt:`Weekly working session &mdash; data matching logic updates + market sizing discrepancies vs Gartner/Forrester investigated. Glean integration high priority.` },
+    { csm:'nick', health:'Healthy', account:`LTIMindtree`, opp:`Vitally Pulse &mdash; Oct 14 Call`, arr:`Enterprise &middot; Nick Johnson`, csmlbl:`Nick Johnson`, change:`Oct 14 &middot; Healthy`,
+      excerpt:`RGIP walkthrough &mdash; HG platform intro for SAP MDF partner. Friday renewal deadline. New RGIP platform migration encouraged. Port credits proposal for SAP partners.` },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div class="pulse-account">${c.account}</div>
+          <div class="pulse-opp">${c.opp}</div>
+          <div class="pulse-arr">${c.arr}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_10_14() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('1401')?'done':''}" data-csm="varun" id="action-1401">
+      <div class="action-checkbox ${doneActions.has('1401')?'checked':''}" onclick="toggleAction('1401')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F534; Five9 &mdash; prepare QBR + POC strategy for November + Clay-comparison deck + involve Clay-partnership director</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Varun Tiwari + Ziad Amira + Brett Castonguay + Jordan Curtis + Lily &middot; Jordan Curtis to relay HG's QBR proposal to manager Lily + obtain buy-in + identify key personnel from Five9 for QBR by November. Varun Tiwari to schedule QBR w/ Five9 leadership to present value proposition + cost-saving opportunities in November + create updated presentation deck comparing HG w/ Clay (use cases + cost-saving benefits) before November QBR + discuss w/ Ziad to strategize + develop POC if needed + potentially involve HG's Director managing Clay partnership.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('1402')?'done':''}" data-csm="varun" id="action-1402">
+      <div class="action-checkbox ${doneActions.has('1402')?'checked':''}" onclick="toggleAction('1402')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; DXC &mdash; revised 250K-credit quote + AWS marketplace path + walkthrough sessions + Thu/next-week manager presentation</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Varun Tiwari + Augie Buettner + Preethi + Subash + Stefan &middot; Preethi to share revised contract options + tiered rates w/ Stefan by next week + discuss AWS marketplace internally w/ IT team before next meeting + speak w/ Stefan re platform + use cases. Augie to send summary email w/ contract options + tiered rates + AWS marketplace info today. Augie + Varun to schedule follow-up meeting next week (Thu suggested) + review Preethi's business case before manager presentation. Varun to send calendar invites for walkthrough sessions today.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('1403')?'done':''}" data-csm="divyam" id="action-1403">
+      <div class="action-checkbox ${doneActions.has('1403')?'checked':''}" onclick="toggleAction('1403')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Lumen &mdash; fit-score model by mid-Nov + ICP portfolio template + early-Dec target-account list to sales</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Divyam Dewan + Julian Rojas + Nathan Der &middot; Nathan Der to submit list of target accounts to sales by early December + follow up w/ person responsible for untracked products (AT&T, Vodafone, Comcast). Divyam Dewan to develop fit-score model based on firmographics + technographics (potentially product presence + revenue/employee data) by mid-November + share ICP portfolio template w/ Nathan + build out ICPs on platform based on agreed methodology + investigate + resolve CSV upload + product catalog download issues (Chrome workaround for Edge issues) + relay info about Nathan's interest in contact data + continue registering for insider sessions. Julian + Divyam to provide explainer on scoring breakdown within export file.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('1404')?'done':''}" data-csm="rani" id="action-1404">
+      <div class="action-checkbox ${doneActions.has('1404')?'checked':''}" onclick="toggleAction('1404')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Lenovo &mdash; Neil enablement + new platform contract finalization + token calculator + emerging engineering apps tracking</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Rani Guy + Adrian Escobar + Ryan Warren + Scott + Neil + Maggie &middot; Ryan + Scott to finalize contract for new platform. Adrian + Rani to provide ad-hoc enablement calls for Neil (ongoing). Neil to dive into data + play around w/ platform + work on dashboards refreshed more frequently + more visible to team (potentially tracking ROI quantitatively + qualitatively). Rani to investigate possibility of tracking emerging engineering applications across industries + geos + report back + investigate development status + rollout timeline for token calculator.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('1405')?'done':''}" data-csm="pam" id="action-1405">
+      <div class="action-checkbox ${doneActions.has('1405')?'checked':''}" onclick="toggleAction('1405')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Microsoft Weekly &mdash; dark accounts tracking + buyer intent lists + CoPilot pilot coordination + Teams access resolution</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Pam Huck + Noah Alford + Mark Fell + Karin Pindle + Will Norris + Bryce Bishop &middot; Mark Fell to follow up w/ Bryson Gordon team today + send Will Norris follow-up emails for context ASAP + sit down w/ IT team (Vince) to resolve Teams access today + summarize meeting + update shared spreadsheet w/ key points + action items today. Will Norris to initiate thread w/ Mark Osinger to align on building account-level intelligence + explore pilots today + provide Mark Fell w/ lists of accounts focused on buyer intent + contextual signals ASAP + schedule walkthrough of Sales Agent + Sales Home UI for enterprise sellers + provide updated lists of accounts for SME + CoreSMB.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('1406')?'done':''}" data-csm="varun" id="action-1406">
+      <div class="action-checkbox ${doneActions.has('1406')?'checked':''}" onclick="toggleAction('1406')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Autodesk &mdash; V0/V1 feed deprovisioning + RGI platform access + recap email</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Varun Tiwari + Adrian Escobar + Ravi Sharma + Rishabh Wadhwa + Trishna Patel + Ameya Kambli &middot; Varun to send confirmation internally before deprovisioning older feed by end of day/tomorrow + follow up w/ Autodesk re RGI platform access + potential new platform access + send recap email of discussions to all aligned stakeholders by EOD/tomorrow. Trishna + Ameya to send one final confirmation to proceed w/ deprovisioning older feed. Rishabh to investigate why 'unknown' appearing in revenue band for certain accounts + flag w/ team.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('1407')?'done':''}" data-csm="nick" id="action-1407">
+      <div class="action-checkbox ${doneActions.has('1407')?'checked':''}" onclick="toggleAction('1407')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; LTIMindtree (LTI) &mdash; Friday renewal deadline + port credits proposal for SAP partners</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Nick Johnson + Akash Bhansali + Surya + Apexa &middot; Akash Bhansali to discuss HG Insights platform w/ Surya + Apexa to determine next steps. LTI team to move to new RGIP platform before Friday contract renewal. Nick Johnson to provide proposal details re port credits for SAP partners like LTI.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('1408')?'done':''}" data-csm="riley" id="action-1408">
+      <div class="action-checkbox ${doneActions.has('1408')?'checked':''}" onclick="toggleAction('1408')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Adobe TR &mdash; Frame.io + CDP qualifications final push + sentiment-data export + geo-report prioritization</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Riley Rogers + Cole Arutian + Mardigan Moffat + Giacomo Pesaresi + Megan &middot; Riley to provide updated numbers for Frame.io + CDP qualification + turn on product monitoring for geo reports + provide raw review export for past 12 months for subscribed products. Giacomo to try to secure more reviews for Frame.io + discuss budget + renewal details after reviewing current proposal + talk to team + manager Megan to prioritize between review acceleration + geo reports. Mardi to ask internally if review acceleration can be pursued + ask about cutting support if needed.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('1409')?'done':''}" data-csm="rani" id="action-1409">
+      <div class="action-checkbox ${doneActions.has('1409')?'checked':''}" onclick="toggleAction('1409')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Cisco (Splunk) &mdash; Q2 PO creation + MSA + addendum share + new tenant creation</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Rani Guy + Adrian Escobar + Ginette Tran &middot; Ginette Tran to review contract w/ procurement + help create PO number today + confirm contract start date w/ procurement aiming for Q2. Adrian Escobar to share MSA + Cisco addendum w/ Ginette ASAP + update SOW w/ confirmed dates once available. Rani Guy to keep Adrian in loop re procurement confirmation (ongoing) + initiate creation of new tenant once confirmation received.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('1410')?'done':''}" data-csm="atisha" id="action-1410">
+      <div class="action-checkbox ${doneActions.has('1410')?'checked':''}" onclick="toggleAction('1410')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Ping Identity &mdash; market sizing data definitions + Glean integration + propensity models for AI scoring</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>Atisha Waghela + Charles Hawkins + Meghan Whiteman + Scott Simon + Kim King + Lynette Hushen &middot; Charles Hawkins to re-process rest of database by end of week + send market sizing data definitions to Kim + schedule follow-up call w/ research director + send Lynette platform invite + follow up w/ Brenton from procurement + discuss propensity models for AI scoring w/ Kim + product marketers. Scott Simon to upload EMEA + APJ data when ready + check w/ AI team re documentation needed for Glean integration approval. Kim King to understand source of Charles's data + plan to use working session for account planning next week. Lynette Hushen to obtain IAM definitions from Gartner + Forrester + Markets and Markets + schedule walkthrough w/ Charles tomorrow morning.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
