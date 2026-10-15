@@ -2775,3 +2775,237 @@ function dayActionsHTML_2026_10_12() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
 }
+
+function dayData_2026_10_13() {
+  return {
+    calls: [
+      { ts: 'Oct 13 &middot; 8:30 AM', csm: 'pam', account: `Microsoft`,
+        note: `MSFT - HG MCP Onboarding w/ Mark Fell + Karin Pindle + Chloé Portier + Léopold Baudry + David Ilitzky + Abhay Sawhney + Cesar Martinez. MCP use for partner co-sell + account targeting + OS market share analysis. Custom workflow demo'd for developer-role OS analysis. Copilot Studio testing + time-series trend analysis to be added.`,
+        mins: 30, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Microsoft MCP + AI insights onboarding &mdash; identifying partner co-sell opportunities + understanding market share for devices + operating systems. Two main use cases for AI insights: identifying right partner for complex account + determining specific account to target for co-sell motion. Accessing + utilizing contract data can be slow if not properly licensed (requires specific licenses for sharing data w/ third parties). MCP provides access to wide range of tools + data incl technographic data to understand company platform usage + market share. Custom workflow built w/in MCP allows guided data retrieval, balancing proprietary data w/ web search results. Next: Abhay + David Ilitzky to test MCP workflows for specific use cases incl OS market share analysis + potential custom blends; Mark Fell + Léopold Baudry to share custom workflow built for OS market share analysis + iterate on it w/ David Ilitzky; Léopold Baudry to provide David Ilitzky w/ MCP servers needed for OS market share use case + add time series analysis to OS market share report to identify trends over 18-24 month period; David Ilitzky to test MCP connection + results w/in Copilot Studio; Mark Fell to run OS market share analysis w/ + w/o developer focus to get broader company view; Mark Fell + Léopold Baudry to provide input + suggestions on how data points can be combined for optimal report outcomes. Multi-opp: Microsoft Core Agreement Annual Renewal + TR Microsoft CVP x6 + Mkt Report x6 + Event Support x2 + Microsoft FY27 Digital Native Propensity Opp Reactivate. Attendance from Weflow participants; transcript not synced to SFDC.`, source: 'weflow' },
+
+      { ts: 'Oct 13 &middot; 9:30 AM', csm: 'atisha', account: `Intel Corporation`,
+        note: `HGI & Intel w/ Adrian Escobar + Ryan Melton + Fernanda Oliveira. Intro call for Ryan. Dec HD Insights renewal discussion. Annual customer-selection cycle (Oct-Nov). AI + robotics scoping rework. MCP via Copilot integration via existing credit conversion. Intel recently signed Gemini deal + uses Microsoft Copilot.`,
+        mins: 29, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Mixed',
+        detail: `Intel intro + renewal discussion &mdash; Ryan + Adrian intro, Fernanda joining later. Intel undergoing major annual 'consolidation action' process in Oct + Nov to cover all accounts for upcoming year. Significant focus on AI + robotics (recently signed large Gemini contract w/ Google + utilizing Microsoft Copilot). HD Insights license renewal due in December; discussions about which org will manage + pay for it. Intel looking to leverage HD Insights for customer selection process. Interest in integrating HD Insights MCP w/ Intel's LLM / custom tools using existing credits. Next: Adrian Escobar to send Fernanda copy of contract for renewal discussions + engage w/ Paul Barelay + Sharon re their team's needs for HD Insights; Atisha Waghela to rework scoping for AI + robotics industry + share updated numbers w/ Fernanda + check w/ Adrian + process internal approvals to convert data credits to AI credits for Ryan + provide Ryan access to use HD Insights plugin on Copilot for testing; Fernanda Oliveira to reach out to Ryan to understand requirements for customer selection process + understand how Intel's credits + capabilities within HD Insights can be optimized across teams; Ryan to connect w/ Carla + Junko re customer selection process support this week + test HD Insights MCP via Copilot to understand functionality + potential integration. Multi-opp: Renewal - Intel - Enterprise Territory Building 2026. Attendance from Weflow participants; transcript not synced to SFDC.`, source: 'weflow' },
+
+      { ts: 'Oct 13 &middot; 10:00 AM', csm: 'pam', account: `Microsoft`,
+        note: `HG - Microsoft Dark Account Targeting w/ Noah Alford + Mark Fell + Karin Pindle + David Crossman + Francis Brero + Will Norris + Ryan Tannenbaum + Rojbin Laleoglu. IT spend reconciliation w/ Microsoft revenue + solution areas. 136 accounts w/ MS revenue > HG IT spend estimate. 82 accounts missing IT spend data. HGID-TPID mapping work ongoing. Technographic + intent signals being explored.`,
+        mins: 44, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Mixed',
+        detail: `Microsoft Dark Account Targeting &mdash; aligning IT spend data w/ Microsoft's revenue + solution areas to identify "dark accounts" (potential customers not yet engaged). Key challenges: discrepancies in IT spend data (Microsoft revenue exceeds HG estimated IT spend for some accounts); mapping issues between customer IDs + child-parent relationships; differing interpretations of 'spend' (absolute vs relative, internal vs external). Technographic data + time-series trends offer valuable insights into tech adoption + market share shifts (complementary view to IT spend). Intent data from user reviews + searches can refine account targeting by signaling genuine interest. Next: Rojbin Laleoglu to share mapping used for IT spend analysis + list of 136 accounts w/ higher Microsoft revenue than estimated IT spend + 82 accounts w/ missing IT spend data + confirm if data used from Exchange dashboard rolls up to parent (suggesting absolute spend) post-call; Mark Fell to review shared mapping + data for offline analysis + provide company name + domain + country for analyzed accounts to facilitate matching + conduct deep view on identified list of accounts to complement ongoing work + suggest other data points; Pam Huck + team to continue working on HGID to TPID mapping (ongoing); David Crossman to investigate potential misalignment between HG absolute vs relative spend models + Microsoft revenue data post-call; David + Pam to explore use of technographic data + time series trends + intent signals to enhance account targeting + strategy (ongoing). Multi-opp: Microsoft Core Agreement Annual Renewal + TR Microsoft + Microsoft FY27 Digital Native Propensity Opp Reactivate. Attendance from Weflow participants; transcript not synced to SFDC.`, source: 'weflow' },
+
+      { ts: 'Oct 13 &middot; 10:00 AM', csm: 'rani', account: `Hewlett Packard Enterprise Co`,
+        note: `HG Insights / HPE Cloud Dynamics Mapping & V2 w/ Adrian Escobar + Alexi Mouarkach. 59M-account matching analysis. 90% match rate (53M accounts). Confidence score + match specificity metrics introduced. Match-category framework (location/company level, deterministic/probabilistic). Output-display bug being fixed. Quarterly matching cadence + migration-to-consumption model under review.`,
+        mins: 34, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Mixed',
+        detail: `HPE Cloud Dynamics Mapping V2 review &mdash; matching process updated to analyze 59M accounts at more granular level, resulting in 90% match rate (53M accounts). Confidence score + match specificity metric introduced to establish acceptance criteria for matches (considering field value + type of match). Different match categories defined: location level + company level, deterministic + probabilistic; location-level deterministic matches highest confidence. Bug in output display (matches incorrectly shown as only country + city) identified + actively being worked on for resolution. Current process involves manual quarterly updates for matching; discussions to potentially automate / streamline in future. Next: Alexi Mouarkach to fix bug in match output display by end of this week or early next week + send corrected file w/ bug resolved by end of this week or early next week + provide analysis on intent data scope by end of today + manually run quarterly matching process (ongoing, starting w/ first quarter prior to delivery); Rani Guy to review intent data scope + follow up via email by end of today + check contract for migration to consumption model ASAP + discuss timing for next file posting + analysis w/ Alexi (ongoing, aiming for December/January). Multi-opp: Hewlett Packard Enterprise Co. Attendance from Weflow participants; transcript not synced to SFDC.`, source: 'weflow' },
+
+      { ts: 'Oct 13 &middot; 11:00 AM', csm: 'atisha', account: `TD Synnex`,
+        note: `IBM TAM accounts w/ Augie Buettner + Max Shaw + Steve Markle + Lisa Fults. IBM 29000 Select Horizon product TAM refinement. "Horizon" list needs revision; "Select" portion solid. Platform transition to internal .com domain requires extra security vetting. MCP adoption being explored. Credit utilization optimization + deal-registration improvement to maximize IBM marketing dollars.`,
+        mins: 38, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `TD Synnex IBM TAM refinement &mdash; target account list for IBM's new 29000 Select Horizon product. Challenges: data accuracy, vendor struggles w/ lead generation, transition from external to internal server environment (extra security vetting). "Select" portion of TAM list solid; "Horizon" list requires revision for accuracy + completeness. Strategic shift towards leveraging detailed install-base + intent data to identify high-value accounts + improve deal registration (maximize IBM marketing dollars). Transition to internal domain (.com) involves significant security testing + vetting (has caused delays but is ultimately positive for integration into mainstream operations). MCP adoption being explored as more efficient + potentially cost-effective way to access data compared to current methods (esp for install data). Other vendors (Dell) aligning strategies w/ similar approaches (integrating lead-gen data into PRM systems). Next: Zoom Info Team to provide revised version of Horizon list by end of week; Augie Buettner + Lisa Fults to review findings from provided list + hop on call to discuss within a couple of days; Steve Markle to provide remaining file (Select vs Horizon) ASAP + share details on Dell's approach w/ their PRM system (Empire) soon + connect w/ Ashley Flowers to discuss collaboration + work w/ Leo to get leadership buy-in for credit utilization + transition to MCP; Lisa Fults to add IBM Sterling as topic to list. Multi-opp: Renewal NA IBM MCP Server by Francis + Renewal TDS EMEA IBM/Automation 2027. Attendance from Weflow participants; transcript not synced to SFDC.`, source: 'weflow' },
+    ],
+    pulses: [
+      { csm: 'pam', account: `Microsoft (MCP Onboarding)`, health: 'Healthy',
+        note: `MCP + AI insights onboarding &mdash; partner co-sell + OS market share analysis. Custom workflow for developer-role OS analysis demo'd. Copilot Studio testing + time-series trend addition planned.` },
+      { csm: 'atisha', account: `Intel Corporation`, health: 'Healthy',
+        note: `Intro call for Ryan + Dec HD Insights renewal discussion. AI + robotics scoping rework; MCP via Copilot integration via credit conversion. Intel annual customer-selection cycle (Oct-Nov).` },
+      { csm: 'pam', account: `Microsoft (Dark Account Targeting)`, health: 'Healthy',
+        note: `IT spend reconciliation w/ Microsoft revenue + solution areas. 136 accounts w/ MS revenue > HG IT spend estimate; 82 accounts missing IT spend data. HGID-TPID mapping work ongoing.` },
+      { csm: 'rani', account: `Hewlett Packard Enterprise Co`, health: 'Healthy',
+        note: `59M-account matching V2 &mdash; 90% match rate (53M accounts). Confidence score + match specificity metrics introduced. Output-display bug fix pending; migration-to-consumption contract review ASAP.` },
+      { csm: 'atisha', account: `TD Synnex`, health: 'Healthy',
+        note: `IBM TAM refinement for 29000 Select Horizon product. "Horizon" list needs revision. Platform transition to .com domain + MCP adoption being explored for data access.` },
+    ],
+  };
+}
+
+function dayMeta_2026_10_13() {
+  return {
+    pills: [
+      ['dot-teal',   '5 Calls'],
+      ['dot-amber',  '4 Expansion'],
+      ['dot-green',  '5 Vitally Pulses'],
+      ['dot-grey',   'Tue Oct 13 &middot; 87 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (5)', 'Pulses (5)', 'Action Items (6)']
+  };
+}
+
+function dayOverviewHTML_2026_10_13() {
+  return `<div class="section-label">Team Activity &mdash; Tuesday October 13, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Tuesday Oct 13 &mdash; 87 recordings scanned</strong> via SFDC SOQL &middot; <strong>5 confirmed CSM calls</strong> across 3 CSMs &middot; 4 Expansion signals &middot; 0 Concerning &middot; SFDC confirmed 0; Weflow fallback added all 5 (100% dependency on fallback today). Pam 2 Microsoft calls (MCP Onboarding + Dark Account Targeting); Atisha 2 (Intel + TD Synnex IBM TAM); Rani 1 (HPE). MCP + consumption-model theme runs through most conversations. Varun, Divyam, Riley, Nick, Andy inactive.
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>4 EXPANSION:</strong> Microsoft MCP Onboarding (partner co-sell use case + OS market share workflow via Copilot Studio) &middot; Intel (Dec renewal + AI/robotics scoping rework + MCP via Copilot credit conversion + annual customer-selection cycle Oct-Nov) &middot; TD Synnex/IBM TAM (Select Horizon product + MCP adoption + credit optimization for IBM marketing dollars) &middot; HPE (59M-account V2 matching @ 90% rate + migration-to-consumption contract review)
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="pam">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">PH</div>
+        <div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">74m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Microsoft MCP Onboarding (&#x1F4C8; partner co-sell + OS market share) &middot; Microsoft Dark Account Targeting (IT spend reconciliation + 136 account investigation + HGID-TPID mapping)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">67m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Intel (&#x1F4C8; Dec renewal + AI/robotics + MCP via Copilot) &middot; TD Synnex/IBM TAM (&#x1F4C8; Select Horizon product + MCP adoption + credit optimization)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="rani">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">RG</div>
+        <div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">34m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">HPE (&#x1F4C8; 59M-account V2 matching @ 90%, consumption-model contract review ASAP)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="varun">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-varun">VT</div><div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Iron Mountain biweekly event scheduled &mdash; no CSM speaker in recording + no Weflow-participant hit.</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="divyam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-divyam">DD</div><div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Adobe Monthly scheduled &mdash; no CSM speaker in recording + no Weflow-participant hit.</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="riley">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-riley">RR</div><div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">FactSet event scheduled &mdash; no CSM speaker in recording + no Weflow-participant hit.</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="nick">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">NJ</div><div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No CSM speaker in any recording + no Weflow-participant hit.</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">AL</div><div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No CSM speaker in any recording + no Weflow-participant hit.</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_10_13() {
+  return `<div class="section-label">Confirmed Calls &mdash; Tuesday October 13, 2026</div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>4 EXPANSION:</strong> Microsoft MCP Onboarding + Microsoft Dark Account Targeting + Intel (Dec renewal + AI/robotics + MCP via Copilot) + TD Synnex/IBM TAM (Select Horizon + MCP adoption) + HPE V2 matching + consumption-model review. 5 of 5 confirmed via Weflow fallback (SFDC transcript sync at 0/5 = 0% today).
+  </div>
+  <div style="background:#1c1f26;border:1px solid #475569;border-left:3px solid #475569;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#cbd5e1;">
+    &#x1F4A1; <strong>THEME OF THE DAY:</strong> MCP + consumption-model shift runs through 4 of 5 calls (Microsoft MCP, Intel MCP via Copilot, TD Synnex MCP adoption, HPE consumption-model contract review). Strategic positioning around MCP as a cost-effective data-access alternative.
+  </div>`;
+}
+
+function dayPulsesHTML_2026_10_13() {
+  const cards = [
+    { csm:'pam', health:'Healthy', account:`Microsoft (MCP Onboarding)`, opp:`Vitally Pulse &mdash; Oct 13 Call`, arr:`Strategic &middot; Pam Huck`, csmlbl:`Pam Huck`, change:`Oct 13 &middot; Healthy`,
+      excerpt:`MCP + AI insights onboarding &mdash; partner co-sell + OS market share analysis. Custom workflow for developer-role OS analysis demo'd. Copilot Studio testing + time-series trend addition planned.` },
+    { csm:'atisha', health:'Healthy', account:`Intel Corporation`, opp:`Vitally Pulse &mdash; Oct 13 Call`, arr:`Strategic &middot; Atisha Waghela`, csmlbl:`Atisha Waghela`, change:`Oct 13 &middot; Healthy`,
+      excerpt:`Intro call for Ryan + Dec HD Insights renewal discussion. AI + robotics scoping rework; MCP via Copilot integration via credit conversion. Intel annual customer-selection cycle (Oct-Nov).` },
+    { csm:'pam', health:'Healthy', account:`Microsoft (Dark Account Targeting)`, opp:`Vitally Pulse &mdash; Oct 13 Call`, arr:`Strategic &middot; Pam Huck`, csmlbl:`Pam Huck`, change:`Oct 13 &middot; Healthy`,
+      excerpt:`IT spend reconciliation w/ Microsoft revenue + solution areas. 136 accounts w/ MS revenue > HG IT spend estimate; 82 accounts missing IT spend data. HGID-TPID mapping work ongoing.` },
+    { csm:'rani', health:'Healthy', account:`Hewlett Packard Enterprise Co`, opp:`Vitally Pulse &mdash; Oct 13 Call`, arr:`Strategic &middot; Rani Guy`, csmlbl:`Rani Guy`, change:`Oct 13 &middot; Healthy`,
+      excerpt:`59M-account matching V2 &mdash; 90% match rate (53M accounts). Confidence score + match specificity metrics introduced. Output-display bug fix pending; migration-to-consumption contract review ASAP.` },
+    { csm:'atisha', health:'Healthy', account:`TD Synnex`, opp:`Vitally Pulse &mdash; Oct 13 Call`, arr:`Enterprise &middot; Atisha Waghela`, csmlbl:`Atisha Waghela`, change:`Oct 13 &middot; Healthy`,
+      excerpt:`IBM TAM refinement for 29000 Select Horizon product. "Horizon" list needs revision. Platform transition to .com domain + MCP adoption being explored for data access.` },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div class="pulse-account">${c.account}</div>
+          <div class="pulse-opp">${c.opp}</div>
+          <div class="pulse-arr">${c.arr}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_10_13() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('1301')?'done':''}" data-csm="atisha" id="action-1301">
+      <div class="action-checkbox ${doneActions.has('1301')?'checked':''}" onclick="toggleAction('1301')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Intel &mdash; December HD Insights renewal + AI/robotics scoping rework + MCP via Copilot credit-conversion approvals</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Atisha Waghela + Adrian Escobar + Ryan Melton + Fernanda Oliveira + Paul Barelay + Sharon &middot; Adrian Escobar to send Fernanda copy of contract for renewal discussions + engage w/ Paul Barelay + Sharon re their team's needs. Atisha to rework scoping for AI + robotics industry + share updated numbers w/ Fernanda + check w/ Adrian + process internal approvals to convert data credits to AI credits for Ryan + provide Ryan access to use HD Insights plugin on Copilot for testing. Fernanda to reach out to Ryan to understand requirements for customer selection process + understand how Intel's credits + capabilities can be optimized across teams. Ryan to connect w/ Carla + Junko re customer selection process support this week + test HD Insights MCP via Copilot.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('1302')?'done':''}" data-csm="pam" id="action-1302">
+      <div class="action-checkbox ${doneActions.has('1302')?'checked':''}" onclick="toggleAction('1302')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Microsoft Dark Account Targeting &mdash; investigate 136-account IT-spend/revenue discrepancy + HGID-TPID mapping continuation</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Pam Huck + Noah Alford + Mark Fell + Karin Pindle + David Crossman + Francis Brero + Rojbin Laleoglu + Will Norris + Ryan Tannenbaum &middot; Rojbin Laleoglu to share mapping used for IT spend analysis + list of 136 accounts w/ higher Microsoft revenue than estimated IT spend + 82 accounts w/ missing IT spend data + confirm if data used from Exchange dashboard rolls up to parent post-call. Mark Fell to review shared mapping + data for offline analysis + provide company name + domain + country for analyzed accounts to facilitate matching + conduct deep view on identified list of accounts. Pam + team to continue working on HGID to TPID mapping ongoing. David Crossman to investigate potential misalignment between HG absolute vs relative spend models + Microsoft revenue data post-call. David + Pam to explore technographic data + time series trends + intent signals to enhance account targeting.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('1303')?'done':''}" data-csm="pam" id="action-1303">
+      <div class="action-checkbox ${doneActions.has('1303')?'checked':''}" onclick="toggleAction('1303')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Microsoft MCP Onboarding &mdash; share custom workflow + add time-series + test in Copilot Studio</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Pam Huck + Mark Fell + Karin Pindle + Chloé Portier + Léopold Baudry + David Ilitzky + Abhay Sawhney &middot; Abhay + David Ilitzky to test MCP workflows for specific use cases incl OS market share analysis + potential custom blends. Mark Fell + Léopold Baudry to share custom workflow built for OS market share analysis + iterate on it w/ David Ilitzky. Léopold Baudry to provide David Ilitzky w/ MCP servers needed for OS market share use case + add time series analysis to OS market share report to identify trends over 18-24 month period. David Ilitzky to test MCP connection + results w/in Copilot Studio. Mark Fell to run OS market share analysis w/ + w/o developer focus to get broader company view.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('1304')?'done':''}" data-csm="rani" id="action-1304">
+      <div class="action-checkbox ${doneActions.has('1304')?'checked':''}" onclick="toggleAction('1304')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; HPE &mdash; fix output-display bug + migration-to-consumption contract review + Dec/Jan next file posting</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Rani Guy + Adrian Escobar + Alexi Mouarkach &middot; Alexi Mouarkach to fix bug in match output display by end of this week or early next week + send corrected file w/ bug resolved by end of this week or early next week + provide analysis on intent data scope by end of today + manually run quarterly matching process (ongoing, starting w/ first quarter prior to delivery). Rani Guy to review intent data scope + follow up via email by end of today + check contract for migration to consumption model ASAP + discuss timing for next file posting + analysis w/ Alexi (ongoing, aiming for December/January).</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('1305')?'done':''}" data-csm="atisha" id="action-1305">
+      <div class="action-checkbox ${doneActions.has('1305')?'checked':''}" onclick="toggleAction('1305')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; TD Synnex/IBM TAM &mdash; Horizon list revision + MCP adoption buy-in + credit utilization optimization</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Atisha Waghela + Augie Buettner + Max Shaw + Steve Markle + Lisa Fults + Ashley Flowers + Leo &middot; Zoom Info Team to provide revised version of Horizon list by end of week. Augie Buettner + Lisa Fults to review findings from provided list + hop on call to discuss within a couple of days. Steve Markle to provide remaining file (Select vs Horizon) ASAP + share details on Dell's approach w/ their PRM system (Empire) soon + connect w/ Ashley Flowers to discuss collaboration + work w/ Leo to get leadership buy-in for credit utilization + transition to MCP. Lisa Fults to add IBM Sterling as topic to list.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('1306')?'done':''}" data-csm="atisha" id="action-1306">
+      <div class="action-checkbox ${doneActions.has('1306')?'checked':''}" onclick="toggleAction('1306')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Unconfirmed scheduled events &mdash; follow up on 10 CSM-owned events w/ no recording hit today</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>All CSMs &middot; 10 CSM-owned SFDC events had no matching recording (Adobe Monthly - Divyam, FactSet - Riley, Iron Mountain Bi-weekly - Varun, Apple Strategy &amp; Planning - Atisha, Intel - duplicate matched Weflow, Microsoft Dark Account Targeting - matched Weflow, HPE Cloud Dynamics - matched Weflow, AppD/Cisco Isovalent - Rani, PANW - Atisha, SAP Team Sync Mark Fell Ops - Rani/internal). Audit calendar sync + Weflow recording automation for these events.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
