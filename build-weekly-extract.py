@@ -34,6 +34,7 @@ for a in accounts:
             'contract_end': o.get('contract_end'),
             'pulse':        o.get('pulse'),
             'arr':          o.get('arr'),
+            'arr_renewal':  o.get('arr_renewal'),
         }
         # pulseNote is 64% of the file; only the at-risk opps are ever quoted
         if o.get('pulse') in ('Concerning', 'Poor'):
