@@ -3894,3 +3894,250 @@ function dayActionsHTML_2026_10_15() {
   </div>
   <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
 }
+
+function dayData_2026_10_16() {
+  return {
+    calls: [
+      { ts: 'Oct 16 &middot; 9:00 AM', csm: 'varun', account: `Zendesk, Inc.`,
+        note: `HGI+Zendesk <> Bi Weekly Sync w/ Charles Hawkins + Rodrigo Gomez-Grassi + Andres Garza. Quarterly sales readouts w/ competitive narratives for VP-level audiences. Long-tail competitor sales plays. MCP + ChatGPT integration complicated by Zendesk security review. OpenAI officially adopted. Platform demo + sales play shell next week.`,
+        mins: 26, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Zendesk biweekly sync &mdash; prioritizing + leveraging HG Insights for sales + competitive intelligence. Two main priorities: (1) enhancing quarterly sales readouts w/ competitive narratives (VP-level, different regions + leadership groups covering competitive intensity + external signals); (2) developing sales plays, particularly targeting 'long tail' competitors by understanding install base + customer stickiness. Accessing + integrating data from MCP + ChatGPT complicated by Zendesk's strict security review + approval processes. Zendesk officially adopting OpenAI as AI tool w/ security-first deployment emphasis to offset smaller headcount w/ AI efficiency. Next: Varun + Charles to schedule follow-up next week for platform demo + sales play shell + discuss internally + get back to Rodrigo w/ plan for account planning + competitor analysis views; Rodrigo Gomez to share list of product names + URLs for new digital-native CRM/support platforms Zendesk wants to track next week; Varun to submit request to track new products next week + provide platform access to additional Zendesk team members upon request; Charles to make email intro to Justin Norris (leading AI GTM at Zendesk) for Rodrigo to discuss app approval + access next week. Multi-opp: Zendesk MCP/Phoenix + Renewal Zendesk U.S. Data Feed 2026 + Renewal Zendesk MI Team Opp Gen 2027. Attendance from Weflow participants; transcript not synced to SFDC.`, source: 'weflow' },
+
+      { ts: 'Oct 16 &middot; 9:30 AM', csm: 'divyam', account: `Adobe Systems Incorporated`,
+        note: `Adobe x HG Insights Pre Renewal Sync w/ Mark Fell + Eric Olson + Man Hon Ding + Abhishek Srivastava + Marcin Rudniak. Platform vs Fabric vs MCP positioning. Platform favored for RevOps (browsing + export credit model). MCP for seller-led deep dives. Credit consumption model clarification. Adobe to provide 50K-account sample scenario. AWS Marketplace procurement option.`,
+        mins: 33, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `Adobe pre-renewal sync &mdash; differentiating + clarifying use cases + pricing of HG Platform + Fabric + MCP. Platform (HG Copilots) suitable for market sizing + segmentation + list building w/ credits consumed on export. Fabric provides wider data set beyond CRM for whitespace + market opportunities (CSV delivery). MCP acts as data conduit into LLM front-ends like Copilot for advanced querying + enrichment for specific account insights. Credit consumption differentiator: Platform credits used on export, Fabric defined feed w/ predictable pricing, MCP credits per API call. Platform is right fit for Adobe's immediate RevOps use case; MCP ideal for targeted seller-led deep dives. Next: Mark Fell to share Platform presentation deck w/ Adobe + work on + share draft working document detailing major themes + credit calculations + incorporate Adobe's use case into docs + advise on AWS Marketplace procurement route if valuable; Adobe team to regroup internally to understand typical use cases + credit consumption model impact + provide Mark w/ sample use case scenario (e.g. 50,000 accounts w/ deep data) for credit calculation. Multi-opp: Adobe APC Team New License RGIF+MCP + Adobe Renewal (RGIP) + TR Adobe CVP x5. Attendance from Weflow participants; transcript not synced to SFDC.`, source: 'weflow' },
+
+      { ts: 'Oct 16 &middot; 10:00 AM', csm: 'atisha', account: `Advanced Micro Devices , Inc.`,
+        note: `HG Insights <> AMD w/ Charles Hawkins + Lyle Welsh. HTA Sales Copilot tool intro + tailored instance for Lyle's evaluation. Query account data + whitespace identification + research briefs. AWS-but-not-AMD-RDS whitespace example. AMD transitioning from data provider to strategic partner. Barrett Tuhi + Colin presentations planned.`,
+        mins: 25, health: 'Healthy',
+        nature: 'Ad-hoc', initiator: 'HG CS', purpose: 'Expansion',
+        detail: `AMD HTA Sales Copilot intro &mdash; Charles demoed new AI-powered sales tool to Lyle Welsh w/ tailored instance for evaluation. HTA Sales Copilot connects to AMD's data to help sales reps query account info + identify opportunities + gain deeper customer insights. Can identify whitespace by cross-referencing existing customer data w/ specific product usage (e.g. AWS-but-not-AMD-RDS accounts). AI-powered research brief feature generates pre-call summaries highlighting key tech + gaps + recommended talking points. Tool uses AI to analyze tech adoption + company size + competitive landscape + research activity to prioritize sales efforts. AMD transitioning from solely data provider to strategic partner, offering tools + enabling custom tool development to increase data utilization. Next: Lyle Welsh to use provided HTA Sales Copilot instance over next week + try to 'break' it + identify interesting wins/insights by next Friday + set up time w/ Colin (Cloud Sales Manager) to demonstrate use + gather feedback by next Wednesday; Charles Hawkins to send Lyle invite immediately + present top-level version of tool to Barrett Tuhi (Corporate VP Sales, Sales Transformation) + team next week by Wed + tweak demonstration based on Colin's use case + potentially add him to platform by next Friday + discuss licensing + potential custom tool development (MCP Server) w/ AMD corporate (ongoing). Confirmed via SFDC transcript speaker detection.`, source: 'sfdc' },
+
+      { ts: 'Oct 16 &middot; 10:30 AM', csm: 'atisha', account: `Palo Alto Networks Inc`,
+        note: `HGI & PANW w/ Charles Hawkins + Kumar Gaurav + Srinivasan Karunakaran. Past contract friction reduced adoption; only Malik currently using data. Key leaders have left org. New MCP server access + flexible consumption model being pitched. Market-level views for industry spend + competitive gaps. Follow-up w/ Malik + Srini + C-level demos planned.`,
+        mins: 18, health: 'Concerning',
+        nature: 'Ad-hoc', initiator: 'Customer', purpose: 'Mixed',
+        detail: `PANW usage + value re-engagement session &mdash; past contract interpretations created friction, causing teams to stop requesting data + leading to decreased adoption. Several key leaders who previously used data have left org, reducing current visibility beyond Malik (sole current user). New flexible data consumption models now available (MCP server for building AI agents + copilots). HG data valuable for market-level views (market size + industry spend + competitive gaps) complementing internal analytics. Need re-education + demonstration of value + new consumption methods to current + potential stakeholders. Pulse Concerning &mdash; adoption significantly down from prior usage; renewal at risk w/o re-engagement. Next: Charles + Atisha to follow up w/ Malik to remove blockages + ensure data helpful + send follow-up email to Srini to schedule call to discuss further + uncover how HG can help at market level + bring market-level data insights to C-level + business counterparts for potential demos + explore replicating business case w/ Malik + potentially other stakeholders. Multi-opp: Renewal-PANW-Central Analy2027. Attendance from Weflow participants; transcript not synced to SFDC.`, source: 'weflow' },
+
+      { ts: 'Oct 16 &middot; 10:30 AM', csm: 'riley', account: `SAP Inc`,
+        note: `TrustRadius <> SAP Events Sync w/ Angel Carvalho + Alejandro Barajas. HG rebrand impact on TrustRadius brand equity protection. Jesse (Orlando contractor) performance concerns + replacement sought by Monday. SAP Teched Berlin 2026 Virtual event + 30-sec review commercials. Link management + SLA process optimization.`,
+        mins: 32, health: 'Healthy',
+        nature: 'Recurring', initiator: 'HG CS', purpose: 'Check-in',
+        detail: `SAP Events Sync &mdash; logistical + strategic aspects of upcoming events + rebranding efforts. HG Insights rebrand impact on TrustRadius brand (TrustRadius considered more powerful + established; emphasis on protecting brand equity). Significant concerns about Jesse (Orlando contractor) performance in engaging attendees + following directions; replacement for upcoming events being sought. New opportunity: 30-sec commercials promoting product reviews during virtual sessions (large audience, on-demand). Repurposing existing field marketing link for 'Connect' being considered for 'SAP Teched Berlin 2026 Virtual' event. Weekend support + clear comms crucial for international events. Next: Angel Carvalho to check availability of Kristen's assistant from Las Vegas as potential replacement for Jesse by Monday + update field marketing link for 'Connect' to be 'SAP Teched Berlin 2026 Virtual' by Monday + confirm expiration date for repurposed link aligned w/ contract end + coordinate w/ Alejandro in January to update product subscriptions + landing pages; Alejandro Barajas to provide Angel w/ specific field marketing link for 'Connect' that needs updating by Monday + email Angel later today to look at Genesis's availability for scheduling calls next week; Riley Rogers to provide Alejandro w/ individual links for upcoming events (Chicago + Copenhagen + Sydney) shortly after call + provide hard SLA for link creation timelines after consulting campaign team next week + create generic non-dedicated links for subscription products. Multi-opp: Many SAP opps. Attendance from Weflow participants; transcript not synced to SFDC.`, source: 'weflow' },
+    ],
+    pulses: [
+      { csm: 'varun', account: `Zendesk, Inc.`, health: 'Healthy',
+        note: `Biweekly &mdash; quarterly sales readouts w/ competitive narratives. Long-tail competitor sales plays. MCP + ChatGPT security review. OpenAI officially adopted. Platform demo + sales play shell next week.` },
+      { csm: 'divyam', account: `Adobe Systems Incorporated`, health: 'Healthy',
+        note: `Pre Renewal Sync &mdash; Platform vs Fabric vs MCP positioning. Platform favored for RevOps; MCP for seller-led deep dives. Credit consumption model clarification. 50K-account sample scenario. AWS Marketplace procurement option.` },
+      { csm: 'atisha', account: `Advanced Micro Devices , Inc.`, health: 'Healthy',
+        note: `HTA Sales Copilot tool intro + tailored instance for Lyle's evaluation. AWS-but-not-AMD-RDS whitespace example. Barrett Tuhi (Corp VP Sales) + Colin (Cloud Sales Mgr) presentations planned.` },
+      { csm: 'atisha', account: `Palo Alto Networks Inc`, health: 'Concerning',
+        note: `Past contract friction reduced adoption; only Malik currently using. Key leaders left org. New MCP server access + flexible consumption model pitch. Follow-up w/ Malik + Srini + C-level demos planned.` },
+      { csm: 'riley', account: `SAP Inc (Events)`, health: 'Healthy',
+        note: `HG rebrand impact on TrustRadius brand equity protection. Jesse replacement sought by Monday. SAP Teched Berlin 2026 Virtual event + 30-sec review commercials. Link management + SLA process optimization.` },
+    ],
+  };
+}
+
+function dayMeta_2026_10_16() {
+  return {
+    pills: [
+      ['dot-teal',   '5 Calls'],
+      ['dot-amber',  '3 Expansion'],
+      ['dot-red',    '1 Concerning'],
+      ['dot-green',  '5 Vitally Pulses'],
+      ['dot-grey',   'Fri Oct 16 &middot; 61 scanned'],
+    ],
+    tabs: ['Overview', 'Calls (5)', 'Pulses (5)', 'Action Items (6)']
+  };
+}
+
+function dayOverviewHTML_2026_10_16() {
+  return `<div class="section-label">Team Activity &mdash; Friday October 16, 2026</div>
+  <div style="background:#1c1f26;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C5; <strong>Friday Oct 16 &mdash; 61 recordings scanned</strong> via SFDC SOQL &middot; <strong>5 confirmed CSM calls</strong> across 4 CSMs &middot; 3 Expansion signals &middot; 1 Concerning (PANW adoption gap) &middot; SFDC confirmed 1; Weflow fallback added 4 recoveries (80% dependency). Light Friday pattern. Atisha leads w/ 2 (AMD + PANW); Varun + Divyam + Riley 1 each. Nick, Rani, Pam, Andy inactive.
+  </div>
+  <div style="background:#2a1f1f;border:1px solid #b45309;border-left:3px solid #b45309;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>1 CONCERNING:</strong> Palo Alto Networks (past contract interpretations created friction, causing teams to stop requesting data; only Malik currently using. Key leaders who previously used data have left org. Re-engagement w/ new MCP server + flexible consumption model being pitched; follow-up w/ Malik + Srini + C-level demos planned to recover adoption)
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>3 EXPANSION:</strong> Zendesk (quarterly VP-level sales readouts w/ competitive narratives + long-tail competitor sales plays + MCP integration planning) &middot; Adobe Pre-Renewal (Platform vs Fabric vs MCP positioning + credit consumption model clarification + 50K-account sample scenario) &middot; AMD (HTA Sales Copilot tool trial for Lyle Welsh + whitespace identification + Barrett Tuhi Corporate VP Sales demo planned)
+  </div>
+  <div class="overview-grid">
+
+    <div class="csm-card has-calls" data-csm="atisha">
+      <span class="call-badge">2 CALLS</span>
+      <div class="csm-card-header">
+        <div class="avatar av-grey">AW</div>
+        <div><div class="csm-name">Atisha Waghela</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">2</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">2</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-red">1</div><div class="metric-lbl">Concerning</div></div>
+        <div><div class="metric-num m-grey">43m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">AMD (&#x1F4C8; HTA Sales Copilot trial for Lyle Welsh) &middot; PANW (&#x1F534; adoption gap; past contract friction; re-engagement needed)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="varun">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-varun">VT</div>
+        <div><div class="csm-name">Varun Tiwari</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">26m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Zendesk (&#x1F4C8; quarterly sales readouts + long-tail competitor sales plays + MCP integration planning)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="divyam">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-divyam">DD</div>
+        <div><div class="csm-name">Divyam Dewan</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">33m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">Adobe (&#x1F4C8; Pre Renewal Sync + Platform/Fabric/MCP positioning + credit consumption model)</div>
+    </div>
+
+    <div class="csm-card has-calls" data-csm="riley">
+      <span class="call-badge">1 CALL</span>
+      <div class="csm-card-header">
+        <div class="avatar av-riley">RR</div>
+        <div><div class="csm-name">Riley Rogers</div><div class="csm-role">Enterprise CSM</div></div>
+      </div>
+      <div class="csm-metrics">
+        <div><div class="metric-num m-teal">1</div><div class="metric-lbl">Calls</div></div>
+        <div><div class="metric-num m-green">1</div><div class="metric-lbl">Pulses</div></div>
+        <div><div class="metric-num m-grey">32m</div><div class="metric-lbl">Duration</div></div>
+      </div>
+      <div class="csm-account-note">SAP Events Sync (HG rebrand impact on TR brand equity; Jesse replacement; SAP Teched Berlin virtual event prep)</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="nick">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">NJ</div><div><div class="csm-name">Nick Johnson</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No CSM speaker in any recording + no Weflow-participant hit.</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="rani">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">RG</div><div><div class="csm-name">Rani Guy</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Google RevX event scheduled &mdash; recording captured but no transcript + no Weflow-participant hit.</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="pam">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">PH</div><div><div class="csm-name">Pam Huck</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">Oracle RGIF Data Requirements event scheduled &mdash; recording captured but no transcript + no Weflow-participant hit.</div>
+    </div>
+
+    <div class="csm-card no-calls" data-csm="andy">
+      <span class="no-call-badge">0 Calls</span>
+      <div class="csm-card-header"><div class="avatar av-grey">AL</div><div><div class="csm-name">Andy Lim</div><div class="csm-role">Enterprise CSM</div></div></div>
+      <div class="csm-account-note" style="color:#94a3b8;font-size:11px;">No CSM speaker in any recording + no Weflow-participant hit.</div>
+    </div>
+
+  </div>`;
+}
+
+function dayCallsHTML_2026_10_16() {
+  return `<div class="section-label">Confirmed Calls &mdash; Friday October 16, 2026</div>
+  <div style="background:#2a1f1f;border:1px solid #b45309;border-left:3px solid #b45309;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#fca5a5;">
+    &#x26A0;&#xFE0F; <strong>1 CONCERNING:</strong> Palo Alto Networks (past contract friction + leader departures reduced adoption to only Malik; re-engagement w/ MCP server + flexible consumption model pitch; follow-up w/ Malik + Srini + C-level demos planned)
+  </div>
+  <div style="background:#1c2333;border:1px solid #0ea5e9;border-left:3px solid #0ea5e9;border-radius:6px;padding:8px 14px;margin:0 0 10px 0;font-size:12px;color:#7dd3fc;">
+    &#x1F4C8; <strong>3 EXPANSION:</strong> Zendesk (quarterly sales readouts + long-tail competitor sales plays) &middot; Adobe (Platform/Fabric/MCP positioning + credit consumption model) &middot; AMD (HTA Sales Copilot trial for Lyle Welsh). 4 of 5 confirmed via Weflow fallback (SFDC transcript sync at 1/5 = 20%).
+  </div>`;
+}
+
+function dayPulsesHTML_2026_10_16() {
+  const cards = [
+    { csm:'varun', health:'Healthy', account:`Zendesk, Inc.`, opp:`Vitally Pulse &mdash; Oct 16 Call`, arr:`Enterprise &middot; Varun Tiwari`, csmlbl:`Varun Tiwari`, change:`Oct 16 &middot; Healthy`,
+      excerpt:`Biweekly &mdash; quarterly sales readouts w/ competitive narratives. Long-tail competitor sales plays. MCP + ChatGPT security review. OpenAI officially adopted. Platform demo + sales play shell next week.` },
+    { csm:'divyam', health:'Healthy', account:`Adobe Systems Incorporated`, opp:`Vitally Pulse &mdash; Oct 16 Call`, arr:`Strategic &middot; Divyam Dewan`, csmlbl:`Divyam Dewan`, change:`Oct 16 &middot; Healthy`,
+      excerpt:`Pre Renewal Sync &mdash; Platform vs Fabric vs MCP positioning. Platform favored for RevOps; MCP for seller-led deep dives. Credit consumption model clarification. 50K-account sample scenario. AWS Marketplace procurement option.` },
+    { csm:'atisha', health:'Healthy', account:`Advanced Micro Devices , Inc.`, opp:`Vitally Pulse &mdash; Oct 16 Call`, arr:`Strategic &middot; Atisha Waghela`, csmlbl:`Atisha Waghela`, change:`Oct 16 &middot; Healthy`,
+      excerpt:`HTA Sales Copilot tool intro + tailored instance for Lyle's evaluation. AWS-but-not-AMD-RDS whitespace example. Barrett Tuhi (Corp VP Sales) + Colin (Cloud Sales Mgr) presentations planned.` },
+    { csm:'atisha', health:'Concerning', account:`Palo Alto Networks Inc`, opp:`Vitally Pulse &mdash; Oct 16 Call`, arr:`Strategic &middot; Atisha Waghela`, csmlbl:`Atisha Waghela`, change:`Oct 16 &middot; Concerning`,
+      excerpt:`Past contract friction reduced adoption; only Malik currently using. Key leaders left org. New MCP server access + flexible consumption model pitch. Follow-up w/ Malik + Srini + C-level demos planned.` },
+    { csm:'riley', health:'Healthy', account:`SAP Inc (Events)`, opp:`Vitally Pulse &mdash; Oct 16 Call`, arr:`Strategic &middot; Riley Rogers`, csmlbl:`Riley Rogers`, change:`Oct 16 &middot; Healthy`,
+      excerpt:`HG rebrand impact on TrustRadius brand equity protection. Jesse replacement sought by Monday. SAP Teched Berlin 2026 Virtual event + 30-sec review commercials. Link management + SLA process optimization.` },
+  ];
+  const bc = h => h==='Healthy'?'badge-healthy':h==='Concerning'?'badge-concerning':'badge-poor';
+  const bi = h => h==='Healthy'?'&#128994;':h==='Concerning'?'&#128993;':'&#128308;';
+  return `<div class="pulse-grid">${cards.map(c=>`
+    <div class="pulse-card" data-csm="${c.csm}" data-health="${c.health}">
+      <div class="pulse-card-top">
+        <div>
+          <div class="pulse-account">${c.account}</div>
+          <div class="pulse-opp">${c.opp}</div>
+          <div class="pulse-arr">${c.arr}</div>
+        </div>
+        <span class="badge ${bc(c.health)}">${bi(c.health)} ${c.health}</span>
+      </div>
+      <div class="pulse-excerpt">${c.excerpt}</div>
+      <div class="pulse-footer"><span>${c.csmlbl}</span><span>${c.change}</span></div>
+    </div>`).join('')}</div>
+  <div class="empty-state" id="pulses-empty" style="display:none">No pulses match the current filter.</div>`;
+}
+
+function dayActionsHTML_2026_10_16() {
+  return `<div class="action-list">
+    <div class="action-item ${doneActions.has('1601')?'done':''}" data-csm="atisha" id="action-1601">
+      <div class="action-checkbox ${doneActions.has('1601')?'checked':''}" onclick="toggleAction('1601')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F534; PANW &mdash; adoption recovery pitch to Malik + Srini + C-level demos w/ MCP server + flexible consumption model</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Atisha Waghela + Charles Hawkins + Kumar Gaurav + Srinivasan Karunakaran + Malik &middot; Charles + Atisha to follow up w/ Malik to remove blockages + ensure data helpful + send follow-up email to Srini to schedule call to discuss further + uncover how HG can help at market level + bring market-level data insights (market size + industry spend + competitive gaps) to C-level + business counterparts for potential demos + explore replicating business case w/ Malik + potentially other stakeholders.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('1602')?'done':''}" data-csm="atisha" id="action-1602">
+      <div class="action-checkbox ${doneActions.has('1602')?'checked':''}" onclick="toggleAction('1602')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; AMD &mdash; HTA Sales Copilot trial for Lyle + Barrett Tuhi Corp VP Sales presentation + Colin Cloud Sales Mgr demo</div>
+        <div class="action-meta"><span class="urgency-badge urgency-high">HIGH PRIORITY</span>Atisha Waghela + Charles Hawkins + Lyle Welsh + Barrett Tuhi + Colin &middot; Lyle Welsh to use provided HTA Sales Copilot instance over next week + try to 'break' it + identify interesting wins/insights by next Friday + set up time w/ Colin to demonstrate use + gather feedback by next Wednesday. Charles Hawkins to send Lyle invite immediately + present top-level version to Barrett Tuhi + team next week by Wed + tweak demonstration based on Colin's use case + potentially add him to platform by next Friday + discuss licensing + potential custom tool development (MCP Server) w/ AMD corporate (ongoing).</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('1603')?'done':''}" data-csm="divyam" id="action-1603">
+      <div class="action-checkbox ${doneActions.has('1603')?'checked':''}" onclick="toggleAction('1603')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Adobe &mdash; share Platform deck + draft credit calc document + Adobe 50K-account sample scenario</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Divyam Dewan + Mark Fell + Eric Olson + Man Hon Ding + Abhishek Srivastava + Marcin Rudniak &middot; Mark Fell to share Platform presentation deck w/ Adobe + work on + share draft working document detailing major themes + credit calculations + incorporate Adobe's use case into docs + advise on AWS Marketplace procurement route if valuable. Adobe team to regroup internally to understand typical use cases + credit consumption model impact + provide Mark w/ sample use case scenario (e.g. 50,000 accounts w/ deep data) for credit calculation.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('1604')?'done':''}" data-csm="varun" id="action-1604">
+      <div class="action-checkbox ${doneActions.has('1604')?'checked':''}" onclick="toggleAction('1604')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4C8; Zendesk &mdash; platform demo + sales play shell + Justin Norris intro + new product tracking</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Varun Tiwari + Charles Hawkins + Rodrigo Gomez-Grassi + Justin Norris &middot; Varun + Charles to schedule follow-up next week for platform demo + sales play shell + discuss internally + get back to Rodrigo w/ plan for account planning + competitor analysis views. Rodrigo Gomez to share list of product names + URLs for new digital-native CRM/support platforms Zendesk wants to track next week. Varun to submit request to track new products next week + provide platform access to additional Zendesk team members upon request. Charles to make email intro to Justin Norris (leading AI GTM at Zendesk) for Rodrigo to discuss app approval + access next week.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('1605')?'done':''}" data-csm="riley" id="action-1605">
+      <div class="action-checkbox ${doneActions.has('1605')?'checked':''}" onclick="toggleAction('1605')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; SAP Events &mdash; Jesse replacement by Monday + SAP Teched Berlin virtual link + Chicago/Copenhagen/Sydney event links</div>
+        <div class="action-meta"><span class="urgency-badge urgency-medium">MEDIUM PRIORITY</span>Riley Rogers + Angel Carvalho + Alejandro Barajas &middot; Angel Carvalho to check availability of Kristen's assistant from Las Vegas as potential Jesse replacement by Monday + update field marketing link for 'Connect' to be 'SAP Teched Berlin 2026 Virtual' by Monday + confirm expiration date for repurposed link aligned w/ contract end + coordinate w/ Alejandro in January to update product subscriptions + landing pages. Alejandro to provide Angel w/ specific field marketing link for 'Connect' that needs updating by Monday + email Angel later today to look at Genesis's availability. Riley to provide Alejandro w/ individual links for upcoming events (Chicago + Copenhagen + Sydney) shortly after call + provide hard SLA for link creation timelines after consulting campaign team next week + create generic non-dedicated links for subscription products.</div>
+      </div>
+    </div>
+    <div class="action-item ${doneActions.has('1606')?'done':''}" data-csm="atisha" id="action-1606">
+      <div class="action-checkbox ${doneActions.has('1606')?'checked':''}" onclick="toggleAction('1606')"></div>
+      <div class="action-body">
+        <div class="action-title">&#x1F4CB; Scheduled-but-unrecorded events &mdash; follow up on Google (Rani), Oracle (Pam) events that recorded but had no transcript / no participant hit</div>
+        <div class="action-meta"><span class="urgency-badge urgency-low">LOW PRIORITY</span>All CSMs + Weflow team &middot; (bw) HG Insights | Google (10:00 AM PT, Rani) + HG<>Oracle Data Requirements (10:30 AM PT, Pam) + HGI+Zendesk also had SFDC event w/ no transcript (Varun confirmed via Weflow). Audit Weflow transcript sync + participant detection reliability for Rani + Pam specifically; these events may have occurred but been missed by both detection paths.</div>
+      </div>
+    </div>
+  </div>
+  <div class="empty-state" id="actions-empty" style="display:none">No action items match the current filter.</div>`;
+}
